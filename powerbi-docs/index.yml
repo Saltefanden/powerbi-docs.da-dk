@@ -12,27 +12,27 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT
   ms.author: maggies
-  ms.date: 03/31/2020
-  ms.openlocfilehash: d293b27b65e3997b895d3fd10d69292db661bc3b
-  ms.sourcegitcommit: a254f6e2453656f6783690669be8e881934e15ac
+  ms.date: 09/09/2020
+  ms.openlocfilehash: f1334267e0b1698c8105115e821d8eccb69c1b00
+  ms.sourcegitcommit: 92b033ee7a6e36808371b247b7b41536cee6c2f6
   ms.translationtype: HT
   ms.contentlocale: da-DK
-  ms.lasthandoff: 07/28/2020
-  ms.locfileid: "87364025"
+  ms.lasthandoff: 09/10/2020
+  ms.locfileid: "90008600"
 highlightedContent:
   items:
-  - title: Opret en COVID-19-rapport med amerikanske data
-    itemType: sample
-    url: create-reports/sample-covid-19-us.md
   - title: Kom i gang med Power BI Desktop
     itemType: get-started
     url: fundamentals/desktop-getting-started.md
-  - title: Tilmeld dig Power BI-tjenesten
-    itemType: how-to-guide
-    url: fundamentals/service-self-service-signup-for-power-bi.md
-  - title: Muligheder for samarbejde og deling
+  - title: Samarbejd med Power BI i Microsoft Teams
     itemType: concept
-    url: collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md
+    url: collaborate-share/service-collaborate-microsoft-teams.md
+  - title: Integrer Power BI-indhold i en applikation
+    itemType: tutorial
+    url: developer/embedded/embed-sample-for-customers.md
+  - title: Power BI på Microsoft Learn
+    itemType: learn
+    url: https://docs.microsoft.com/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link
 conceptualContent:
   items:
   - title: 'Power BI: Kom i gang'
@@ -40,12 +40,12 @@ conceptualContent:
     - url: fundamentals/power-bi-overview.md
       itemType: overview
       text: Hvad er Power BI?
-    - url: fundamentals/desktop-what-is-desktop.md
-      itemType: overview
-      text: Hvad er Power BI Desktop?
     - url: fundamentals/power-bi-overview.md
       itemType: overview
       text: Hvad er Power BI-tjenesten?
+    - url: fundamentals/service-self-service-signup-for-power-bi.md
+      itemType: overview
+      text: Tilmeld dig Power BI-tjenesten
     footerLink:
       url: fundamentals/index.yml
       text: Vis mere
@@ -71,9 +71,9 @@ conceptualContent:
     - url: admin/service-admin-licensing-organization.md
       itemType: concept
       text: Licensering i din organisation
-    - url: admin/service-admin-portal.md
+    - url: admin/service-premium-what-is.md
       itemType: concept
-      text: Administrationsportalen
+      text: Hvad er Power BI Premium?
     footerLink:
       url: admin/index.yml
       text: Vis mere
@@ -107,9 +107,9 @@ conceptualContent:
       text: Vis mere
   - title: Omdan og udform data
     links:
-    - url: transform-model/desktop-analytics-pane.md
-      itemType: how-to-guide
-      text: Brug ruden Analytics
+    - url: transform-model/desktop-query-overview.md
+      itemType: overview
+      text: Oversigt over forespørgselseditor
     - url: transform-model/desktop-common-query-tasks.md
       itemType: concept
       text: Almindelige forespørgselsopgaver
@@ -135,9 +135,9 @@ conceptualContent:
       text: Vis mere
   - title: Opret rapporter og dashboards
     links:
-    - url: create-reports/desktop-report-themes.md
-      itemType: concept
-      text: Rapporttemaer
+    - url: create-reports/sample-covid-19-us.md
+      itemType: sample
+      text: Opret en COVID-19-rapport med amerikanske data
     - url: paginated-reports/paginated-reports-report-builder-power-bi.md
       itemType: concept
       text: Hvad er sideinddelte rapporter?
