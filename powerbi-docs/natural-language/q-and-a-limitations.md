@@ -5,14 +5,14 @@ author: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/21/2020
+ms.date: 09/09/2020
 ms.author: maggies
-ms.openlocfilehash: eebb40d81e9b59b545b30ce55dbf4a362b826455
-ms.sourcegitcommit: 13c4bec679313f2951f1833033316cb8176da8a1
+ms.openlocfilehash: 7b02e1b1fb49eb1c43b12d204250eabec8eafe91
+ms.sourcegitcommit: 002c140d0eae3137a137e9a855486af6c55ad957
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88937579"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89642346"
 ---
 # <a name="limitations-of-power-bi-qa"></a>Begrænsninger for Spørgsmål og svar i Power BI
 
@@ -31,12 +31,17 @@ Spørgsmål og svar i Power BI understøtter følgende konfigurationer af dataki
 
 Sikkerhed på rækkeniveau understøttes i hver af disse konfigurationer.
 
+**DirectQuery-understøttelse for Spørgsmål og svar** (prøveversion)
+
+Spørgsmål og svar understøtter nu SQL DirectQuery-kilder, herunder SQL Server 2019, Azure SQL Database og Azure Synapse Analytics. Du kan bruge Spørgsmål og svar til at stille spørgsmål på et naturligt sprog mod disse datakilder. Der er én lille ændring af funktionsmåden for Spørgsmål og svar i DirectQuery-tilstand: Når du har skrevet dit spørgsmål, skal du vælge knappen **Send**. Denne ændring forhindrer overbelastning af DirectQuery-kilden med unødvendige forespørgsler, mens du skriver.
+
+Andre DirectQuery-kilder understøttes ikke for Spørgsmål og svar. Vi blokerer ikke Spørgsmål og svar fuldstændig, hvis du har andre DirectQuery-kilder i dit datasæt, men nogle spørgsmål besvares muligvis ikke korrekt eller returnerer fejl.
+
 ### <a name="data-sources-not-supported"></a>Ikke-understøttede datakilder
 
 Spørgsmål og svar i Power BI understøtter i øjeblikket ikke følgende konfigurationer:
 
 - Sikkerhed på objektniveau med alle typer datakilder
-- DirectQuery mod en hvilken som helst kilde. En løsning er at bruge Liveforbindelse med Azure Analysis Services, som bruger DirectQuery.
 - Sammensatte modeller
 - Reporting Services 
 

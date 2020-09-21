@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: how-to
 ms.date: 07/08/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 26c27c8cd33929c7bb83a8ef5b1faed0fb12e502
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: f652d09d5d954123a47b45b30ab1076763018225
+ms.sourcegitcommit: 002c140d0eae3137a137e9a855486af6c55ad957
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86216551"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89642642"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publicer på internettet fra Power BI
 
@@ -180,7 +180,7 @@ Du skal [finde en af disse personer](https://docs.microsoft.com/office365/admin/
 - [Delte og certificerede datasæt](../connect-data/service-datasets-share.md).
 - Rapporter, der er delt med dig direkte eller via en organisationsindholdspakke.
 - Rapporter i et arbejdsområde, hvor du ikke er redigeringsmedlem.
-- Visuelle "R"-elementer understøttes i øjeblikket ikke i **Publicer på internettet**-rapporter.
+- "R"- og Python-visualiseringerne understøttes i øjeblikket ikke i **Publicer på internettet**-rapporter.
 - Eksport af data fra visualiseringer i en rapport, som er publiceret på internettet.
 - ArcGIS Maps til Power BI-visualiseringer.
 - Rapporter med DAX-målinger på rapportniveau.

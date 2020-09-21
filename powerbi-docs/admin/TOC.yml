@@ -80,7 +80,9 @@
           href: desktop-admin-sign-in-form.md
         - name: Databeskyttelse
           items:
-            - name: Følsomhedsmærkater i Power BI
+            - name: Databeskyttelse i Power BI
+              href: service-security-data-protection-overview.md
+            - name: Oversigt over følsomhedsmærkat
               href: service-security-sensitivity-label-overview.md
             - name: Aktivér følsomhedsmærkning
               href: service-security-enable-data-sensitivity-labels.md

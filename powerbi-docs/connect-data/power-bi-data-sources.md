@@ -6,22 +6,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/21/2020
+ms.date: 09/11/2020
 ms.author: davidi
-ms.openlocfilehash: ae4d51d9a40044ae939f5cb2b0b15442697df5fd
-ms.sourcegitcommit: ae6559f40e1735d53654cbe9425add6e18171295
+ms.openlocfilehash: 926569e783dad7a97b91e2e5c1752401d21d6612
+ms.sourcegitcommit: 376ea86f69545444f975378cbf63e54c2f75faa3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88764945"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90084047"
 ---
 # <a name="power-bi-data-sources"></a>Power BI-datakilder
 
 Følgende tabel indeholder de datakilder, som Power BI understøtter for datasæt, herunder oplysninger om DirectQuery og datagatewayen i det lokale miljø. Du kan finde oplysninger om dataflow under [Opret forbindelse til datakilder for Power BI-dataflow](../transform-model/service-dataflows-data-sources.md).
-
-> [!NOTE]
-> Der er mange dataconnectors til Power BI Desktop, der kræver Internet Explorer 10 (eller nyere) til godkendelse. 
-
 
 | Datakilde | Opret forbindelse fra skrivebord | Opret forbindelse og opdater fra tjenesten | DirectQuery/direkte forbindelse | Gateway (understøttes) | Gateway (påkrævet) |
 |---|---|---|---|---|---|---|---|
@@ -156,6 +152,11 @@ Følgende tabel indeholder de datakilder, som Power BI understøtter for datasæ
 <sup>7</sup> Power BI-tjenesten understøtter ikke OData-feeds, der kræver godkendelse.
 
 <sup>8</sup> Paxata understøttes i den version af Power BI Desktop, der er optimeret til Power BI-rapportserver. Den understøttes ikke i Power BI-rapporter, der er publiceret til Power BI-rapportserver. Du finder listen over understøttede datakilder i [Power BI-rapportdatakilderne på Power BI-rapportserver](../report-server/data-sources.md).
+
+## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
+
+- Mange dataconnectors til Power BI Desktop kræver Internet Explorer 10 (eller nyere) til godkendelse. 
+- Nogle datakilder, som er tilgængelige i Power BI Desktop, er optimeret til Power BI-rapportserver, men understøttes ikke, når der publiceres til Power BI-rapportserver. Du finder listen over understøttede datakilder i [Power BI-rapportdatakilderne på Power BI-rapportserver](../report-server/data-sources.md).
 
 ## <a name="single-sign-on-sso-for-directquery-sources"></a>Enkeltlogon til DirectQuery-kilder
 

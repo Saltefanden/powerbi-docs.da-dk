@@ -6,20 +6,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 05/04/2020
+ms.date: 09/15/2020
 ms.author: painbar
-ms.openlocfilehash: 7e321bd524dcb4915273627aec6cf487126e5e1d
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: df9c1af29482a40b7e1dd7edbca0020b43e4f00f
+ms.sourcegitcommit: a0d56eeed12253e782e0a3eff8610f72a3ad5cb9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85235675"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90570917"
 ---
 # <a name="create-a-template-app-in-power-bi"></a>Opret en skabelonapp i Power BI
 
-Med de nye Power BI-*skabelonprogrammer* kan Power BI-partnere udarbejde programmer i Power BI med kun lidt eller ingen kode og udrulle dem til Power BI-kunder.  Denne artikel indeholder en trinvis vejledning til at oprette et Power BI-skabelonprogram.
+Med Power BI-*skabelonappsene* kan Power BI-partnere udarbejde programmer i Power BI med kun lidt eller ingen kode og udrulle dem til Power BI-kunder.  Denne artikel indeholder en trinvis vejledning i oprettelse af en Power BI-skabelonapp.
 
-Hvis du kan oprette Power BI-rapporter og -dashboards, kan du blive *udvikler af skabelonprogrammer* og udarbejde og pakke analytisk indhold i et *program*. Du kan udrulle dit program til andre Power BI-lejere via alle tilgængelige platforme, f.eks. AppSource, eller ved at bruge den i din egen webtjeneste. Som udvikler har du mulighed for at oprette en beskyttet analysepakke, som du kan distribuere.
+Hvis du kan oprette Power BI-rapporter og -dashboards, kan du blive *udvikler af skabelonapps* og udarbejde og pakke analytisk indhold i en *app*. Du kan udrulle dit program til andre Power BI-lejere via alle tilgængelige platforme, f.eks. AppSource, eller ved at bruge den i din egen webtjeneste. Som udvikler kan du oprette en beskyttet analysepakke, som du kan distribuere.
 
 Administratorer af Power BI-lejere styrer, hvem der kan oprette skabelonprogrammer i organisationen, og hvem der kan installere dem. Godkendte brugere kan installere dit skabelonprogram og derefter redigere det og distribuere det til Power BI-brugerne i deres organisation.
 
@@ -36,15 +36,13 @@ Her er kravene til at udarbejde et skabelonprogram:
 
 Hvis du vil oprette et skabelonprogram, som du kan distribuere til andre Power BI-lejere, skal du oprette det i et af de nye arbejdsområder.
 
-1. Vælg **Arbejdsområder** > **Opret arbejdsområde** i Power BI-tjenesten.
+1. Vælg **Arbejdsområder** > **Opret et arbejdsområde** i Power BI-tjenesten.
 
     ![Opret arbejdsområde](media/service-template-apps-create/power-bi-new-workspace.png)
 
-2. I **Opret et nyt arbejdsområde** skal du vælge **Opgrader til nyt**.
+2. Angiv et navn, en beskrivelse (valgfrit) og et logobillede (valgfrit) for dit arbejdsområde i **Opret et arbejdsområde**.
 
     ![Prøv nye arbejdsområder](media/service-template-apps-create/power-bi-upgrade-new.png)
-
-3. Angiv et navn, en beskrivelse (valgfrit) og et logobillede (valgfrit) for dit arbejdsområde.
 
 4. Udvid afsnittet **Avanceret**, og vælg **Udvikl en skabelonapp**.
 
@@ -54,25 +52,25 @@ Hvis du vil oprette et skabelonprogram, som du kan distribuere til andre Power B
 >[!NOTE]
 >Du skal have tilladelse fra din Power BI-administrator til at hæve skabelonprogrammer.
 
-## <a name="create-the-content-in-your-template-app"></a>Opret indhold i dit skabelonprogram
+## <a name="add-content-to-the-template-app-workspace"></a>Føj indhold til arbejdsområdet for skabelonapps
 
-Som med et almindeligt Power BI-arbejdsområde er dit næste skridt at oprette indholdet i arbejdsområdet.  
+Som med et almindeligt Power BI-arbejdsområde er dit næste skridt at føje indhold til arbejdsområdet.  
 
 - [Opret dit Power BI-indhold](index.yml) i dit arbejdsområde.
 
-Hvis du bruger parametre i Power-forespørgsel, skal du kontrollere, at de har veldefinerede typer (f.eks. Text). Typerne Any og Binary understøttes ikke.
+Hvis du bruger parametre i Power Query, skal du kontrollere, at de har veldefinerede typer (f.eks. Text). Typerne Any og Binary understøttes ikke.
 
 [Tip til udarbejdelse af skabelonprogrammer i Power BI](service-template-apps-tips.md) indeholder forslag, der er værd at overveje, når du opretter rapporter og dashboards til dit skabelonprogram.
 
-## <a name="create-the-test-template-app"></a>Opret testskabelonprogrammet
+## <a name="define-the-properties-of-the-template-app"></a>Definer egenskaberne for skabelonappen
 
 Nu, hvor du har indhold i dit arbejdsområde, er du klar til at pakke det i et skabelonprogram. Det første trin er at oprette et testskabelonprogram, som kun er tilgængeligt i din organisation på din lejer.
 
-1. Vælg **Opret program** i skabelonen for arbejdsområdet.
+1. Vælg **Opret program** i arbejdsområdet for skabelonprogrammet.
 
     ![Opret app](media/service-template-apps-create/power-bi-create-app.png)
 
-    Her udfylder du yderligere indstillinger i fem kategorier for oprettelse for dit skabelonprogram:
+    Her udfylder du yderligere indstillinger for opbygning af din skabelonapp under seks faner:
 
     **Branding**
 
@@ -93,23 +91,52 @@ Nu, hvor du har indhold i dit arbejdsområde, er du klar til at pakke det i et s
 
     **Kontrolelement**
 
-    Angiv begrænsninger og restriktioner for programindhold for brugerne af dit program. Du kan bruge dette kontrolelement til at beskytte immaterielle rettigheder i programmet.
+    Angiv begrænsninger og restriktioner for appindhold for brugerne af din app. Du kan bruge dette kontrolelement til at beskytte immaterielle rettigheder i programmet.
 
-    ![Kontrolelement](media/service-template-apps-create/power-bi-create-control.png)
+    ![Kontrol](media/service-template-apps-create/power-bi-create-control.png)
 
     >[!NOTE]
     >Eksport til .pbix-format blokeres altid for brugere, der installerer programmet.
 
     **Parametre**
 
-    Brug denne kategori til at administrere funktionsmåden af parameteren, når der oprettes forbindelse til datakilder. Få mere at vide om [oprettelse af forespørgselsparametre](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/).
+    Parametre oprettes i den oprindelige pbix-fil (få mere at vide om [oprettelse af forespørgselsparametre](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/)). Du kan bruge funktionerne under denne fane til at hjælpe appinstallationsprogrammet med at konfigurere appen efter installationen, når de opretter forbindelse til deres data.
+
+    Under denne fane kan du også angive et link til appdokumentationen.
 
     ![Parametre](media/service-template-apps-create/power-bi-create-parameters.png)
-    - **Værdien**: Standardparameterværdi.
-    - **Påkrævet**: Brug dette til at kræve, at installationsprogrammet angiver en brugerspecifik parameter.
-    - **Lås**: Låsning forhindrer, at installationsprogrammet opdaterer en parameter.
 
-    **Adgang** I testfasen kan du bestemme, hvem i din organisation der kan installere og teste dit program. Bare rolig, du kan altid vende tilbage og ændre disse indstillinger senere. Indstillingen påvirker ikke adgangen til den distribuerede skabelonapp.
+    Hver parameter har et navn og en beskrivelse, der kommer fra forespørgslen, og et værdifelt. Du har tre muligheder for at angive en værdi for parameteren under installationen.
+
+    * Du kan kræve, at installationsprogrammet angiver en værdi. I det tilfælde angiver du et eksempel, som erstattes. Hvis du vil konfigurere en parameter på denne måde, skal du markere afkrydsningsfeltet **Påkrævet** og derefter angive et eksempel i tekstfeltet, der viser brugeren, hvilken type værdi der forventes. Eksempel:
+
+       ![Skærmbillede af den parameterværdi, der kræves af brugeren.](media/service-template-apps-create/power-bi-create-parameters-require-user.png)
+
+    * Du kan angive en forhåndsudfyldt værdi, som den bruger, der installerer appen, ikke kan ændre. En parameter, der er konfigureret på denne måde, er skjult for den person, der installerer appen. Du bør kun bruge denne metode, hvis du er sikker på, at den forhåndsudfyldte værdi er gyldig for alle brugere. Ellers skal du bruge den første metode, der er nævnt ovenfor, som kræver input fra brugeren.
+
+       Hvis du vil konfigurere en parameter på denne måde, skal du angive værdien i tekstfeltet **Værdi** og derefter klikke på låseikonet. Det bevirker, at værdien ikke kan ændres. Eksempel:
+
+       ![Skærmbillede af absolut parameterværdi.](media/service-template-apps-create/power-bi-create-parameters-absolute.png)
+
+    * Du kan angive en standardværdi, som brugeren kan ændre under installationen. Hvis du vil konfigurere en parameter på denne måde, skal du angive værdien i tekstfeltet **Værdi** og lade låseikonet være ulåst. Eksempel:
+
+      ![Skærmbillede af standardparameterværdi, der kan ændres.](media/service-template-apps-create/power-bi-create-parameters-default.png)
+
+    **Godkendelse**
+    
+    Under denne fane skal du vælge den godkendelsesmetode, der skal bruges. De indstillinger, der er tilgængelige, afhænger af de datakildetyper, der bruges.
+
+    ![Skærmbillede af valg af godkendelsesmetode.](media/service-template-apps-create/power-bi-create-authentication.png)
+
+    Niveauet for beskyttelse af personlige oplysninger konfigureres automatisk:
+   * Enkelt datakilde: Automatisk konfigureret som privat.
+   * Multianonym datakilde: Automatisk konfigureret som offentlig.
+
+    **Access**
+    
+    I testfasen kan du bestemme, hvilke andre personer i din organisation der kan installere og teste din app. Bare rolig, du kan altid vende tilbage og ændre disse indstillinger senere. Indstillingen påvirker ikke adgangen til den distribuerede skabelonapp.
+
+    ![Skærmbillede af fanen Adgang.](media/service-template-apps-create/power-bi-create-access.png)
 
 2. Vælg **Opret program**.
 
@@ -123,7 +150,7 @@ Nu, hvor du har indhold i dit arbejdsområde, er du klar til at pakke det i et s
 
 Før du udgiver dette skabelonprogram offentligt, skal du sikre, at det er klar. Power BI indeholder ruden Udgivelsesadministration, hvor du kan følge og undersøge den fulde sti til udgivelse af programmet. Du kan også udløse overgangen fra fase til fase. De almindelige faser er:
 
-- Opret et testprogram: kun til test i organisationen.
+- Opret et testprogram: kun til test i din organisation.
 - Hæv testpakken til præproduktionsfasen: test uden for organisationen.
 - Hæv præproduktionspakken til produktion: produktionsversion.
 - Slet en pakke, eller start forfra fra den forrige fase.
@@ -136,17 +163,15 @@ Lad os gennemgå faserne:
 
     ![Ikon for Udgivelsesadministration](media/service-template-apps-create/power-bi-release-management-icon.png)
 
-2. Vælg **Opret program**.
+2. Vælg **Hent link**, hvis du oprettede testappen i afsnittet **Opret testskabelonappen** ovenfor (det bevirker, at den gule prik ud for **Test** allerede er udfyldt).
 
-    Hvis du oprettede testprogrammet under trinnet **Opret testskabelonprogrammet** ovenfor, er den gule prik ud for **Test** allerede udfyldt, og du behøver ikke at vælge **Opret program** her. Hvis du vælger den, vender du tilbage til processen til oprettelse af skabelonprogrammer.
-
-3. Vælg **Få link**.
+    Hvis du endnu ikke har oprettet appen, skal du vælge **Opret app**. Du vender derved tilbage til processen til oprettelse af skabelonapps.
 
     ![Opret program, få link](media/service-template-apps-create/power-bi-dev-template-create-app-get-link.png)
 
 4. Du tester oplevelsen af programinstallationen ved at kopiere linket i meddelelsesvinduet og indsætte det i et nyt browservindue.
 
-    Herfra følger du den samme fremgangsmåde som dine kunder. Se [Installér og distribuer skabelonprogrammer i din organisation](service-template-apps-install-distribute.md) for at se deres version.
+    Herfra følger du den samme fremgangsmåde som dine kunder. Se [Installér og distribuer skabelonapps i din organisation](service-template-apps-install-distribute.md).
 
 5. Vælg **Installér** i dialogboksen.
 
@@ -158,7 +183,7 @@ Lad os gennemgå faserne:
     ![Kom i gang med dit program](media/service-template-apps-create/power-bi-template-app-get-started.png)
 8. Vælg **Udforsk program** for at bekræfte testprogrammet sammen med eksempeldataene.
 9. Hvis du vil foretage ændringer, skal du vende tilbage til programmet i det oprindelige arbejdsområde. Opdater testprogrammet, indtil du er tilfreds.
-10. Når du er klar til at hæve dit program til præproduktion med henblik på yderligere test uden for din lejer, skal du gå tilbage til ruden **Udgivelsesadministration** og vælge **Hæv program**. 
+10. Når du er klar til at hæve dit program til præproduktion med henblik på yderligere test uden for din lejer, skal du gå tilbage til ruden **Udgivelsesadministration** og vælge **Hæv program**.
 
     ![Hæv programmet til præproduktion](media/service-template-apps-create/power-bi-template-app-promote.png)
     >[!NOTE]
@@ -166,7 +191,7 @@ Lad os gennemgå faserne:
 
     Hvis du ikke kan se denne indstilling, skal du kontakte din Power BI-administrator, som skal give dig [tilladelse til at udvikle skabelonprogrammer](../admin/service-admin-portal.md#template-apps-settings) på administrationsportalen.
 11. Vælg **Hæv** for at bekræfte dit valg.
-12. Kopiér denne nye URL-adresse for at dele den uden for din lejer med henblik på test. Dette link er også det, du sender for at begynde processen med at distribuere dit program på AppSource ved at oprette et [nyt tilbud på Partnercenter](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer). Send kun links til præproduktion til Partnercenter. Du kan først hæve denne pakke til produktion i Power BI, når programmet er blevet godkendt, og du har fået en meddelelse om, at det er udgivet i AppSource.
+12. Kopiér denne nye URL-adresse for at dele den uden for din lejer med henblik på test. Dette link er også det, du sender for at begynde processen med at distribuere dit program på AppSource ved at oprette et [nyt tilbud på Partnercenter](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer). Send kun links til præproduktion til Partnercenter. Du kan først hæve denne pakke til produktion i Power BI, når appen er blevet godkendt, og du har fået en meddelelse om, at den er udgivet i AppSource.
 13. Når programmet er klar til produktion eller deling via AppSource, skal du gå tilbage til ruden **Udgivelsesadministration** og vælge **Hæv program** ud for **Præproduktion**.
 14. Vælg **Hæv** for at bekræfte dit valg.
 

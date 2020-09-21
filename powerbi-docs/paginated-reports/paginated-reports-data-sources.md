@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 07/27/2020
-ms.openlocfilehash: fda04d3241db68f1ca8da66d999bfca6cef9e8cf
-ms.sourcegitcommit: 13c4bec679313f2951f1833033316cb8176da8a1
+ms.openlocfilehash: cdce9ead296a25aad95ab504d6da38f06f681b72
+ms.sourcegitcommit: 92b033ee7a6e36808371b247b7b41536cee6c2f6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88937441"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "90008623"
 ---
 # <a name="supported-data-sources-for-power-bi-paginated-reports"></a>Understøttede datakilder for sideinddelte rapporter i Power BI
 
@@ -29,7 +29,7 @@ Følgende liste over datakilder understøttes i det oprindelige miljø i sideind
 | Administreret forekomst af Azure SQL | Grundlæggende | via et offentligt eller privat slutpunkt (det private slutpunkt skal routes via Enterprise-gateway)  |
 | Azure Analysis Services | SSO, OAuth2 | AAS-firewallen skal være deaktiveret eller konfigureret til at tillade alle IP-områder i BlackForest-området. Dette gælder kun i BlackForest-området.  SSO fra ekstern lejer understøttes ikke. |
 | Power BI-datasæt | SSO | Power BI Premium-datasæt og datasæt, der ikke er Premium. Kræver læserettigheder |
-| Power BI Premium-datasæt (XMLA) | SSO | Power BI-datasæt understøttes ikke som en datakilde til integrerede sideinddelte rapporter.  |
+| Power BI Premium-datasæt (XMLA) | SSO | Power BI-datasæt understøttes ikke som en datakilde for integrerede sideinddelte rapporter i "app ejer data"-scenarier.  Hvis du vil sikre korrekt forbindelse til Power BI Report Builder, skal du sørge for, at indstillingen "Brug ikke legitimationsoplysninger" er valgt, når du angiver din datakilde.   |
 | Angiv data | I/T | Data er integreret i rapporten. |
 
 Med undtagelse af Azure SQL Database er alle datakilder klar til brug, når du har uploadet rapporten til Power BI-tjenesten. Datakilderne bruges som standard til enkeltlogon (SSO), hvor det er relevant. Du kan ændre godkendelsestypen til OAuth2 for Azure Analysis Services. Men når godkendelsestypen for en given datakilde ændres til OAuth2, kan den ikke vende tilbage til at bruge SSO.  Denne ændring gælder desuden alle de rapporter, der bruger den pågældende datakilde på tværs af alle arbejdsområder for en given lejer.  Sikkerhed på rækkeniveau i sideinddelte rapporter fungerer ikke, medmindre brugerne vælger SSO som godkendelsestype.

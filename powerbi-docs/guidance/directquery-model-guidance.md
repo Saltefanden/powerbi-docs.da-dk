@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 264d3f4a0c611ca01de627b7656584ceb60e7b18
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: 89d911680d46e159e446dbcf6bd06e2caf4b6b65
+ms.sourcegitcommit: 002c140d0eae3137a137e9a855486af6c55ad957
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86214525"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89642611"
 ---
 # <a name="directquery-model-guidance-in-power-bi-desktop"></a>Vejledning til DirectQuery-model i Power BI Desktop
 
@@ -127,7 +127,7 @@ Der kan opnås mange forbedringer af funktionerne og ydeevnen ved at konvertere 
 
 ## <a name="educate-users"></a>Oplær brugere
 
-Det er vigtigt at oplære dine brugere i, hvordan de arbejder effektivt med rapporter, der er baseret på DirectQuery-datasæt. Rapportforfatterne bør oplæres i indholdet, der er beskrevet under [Optimer rapportdesign](#optimize-report-designs section).
+Det er vigtigt at oplære dine brugere i, hvordan de arbejder effektivt med rapporter, der er baseret på DirectQuery-datasæt. Rapportforfatterne bør oplæres i indholdet, der er beskrevet i afsnittet [Optimer rapportdesign](#optimize-report-designs).
 
 Vi anbefaler, at du oplærer forbrugerne af dine rapporter i de rapporter, der er baseret på DirectQuery-datasæt. Det kan være nyttigt for dem at forstå den generelle dataarkitektur, herunder eventuelle relevante begrænsninger, som beskrevet i denne artikel. Fortæl dem, at de kan forvente, at reaktioner i forbindelse med opdatering og interaktiv filtrering til tider kan være langsom. Når brugerne af rapporten forstår, hvorfor der sker en forringelse af ydeevnen, er der mindre sandsynlighed for, at de mister tilliden til rapporterne og dataene.
 

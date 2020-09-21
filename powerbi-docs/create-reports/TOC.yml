@@ -347,6 +347,8 @@
               href: ../paginated-reports/paginated-reports-create-embedded-dataset.md
             - name: Opret en rapport med et delt Power BI-datasæt
               href: ../paginated-reports/report-builder-shared-datasets.md
+            - name: Download .rdl til en sideinddelt rapport
+              href: ../paginated-reports/paginated-reports-download-rdl.md
             - name: Opret parametre
               href: ../paginated-reports/paginated-reports-parameters.md
             - name: Angiv rapportvisninger

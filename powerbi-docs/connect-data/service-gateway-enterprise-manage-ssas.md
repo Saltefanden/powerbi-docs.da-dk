@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/15/2019
 ms.author: arthii
 LocalizationGroup: Gateways
-ms.openlocfilehash: 2921ea9ff0e5e1fa6bc12c0ecd5dd047b703a937
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: c97a303a5b3241f49e82aac41d9ed7984c3a5af1
+ms.sourcegitcommit: 002c140d0eae3137a137e9a855486af6c55ad957
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237621"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89642298"
 ---
 # <a name="manage-your-data-source---analysis-services"></a>Administrer din datakilde – Analysis Services
 
@@ -36,7 +36,7 @@ Du kan finde oplysninger om, hvordan du tilføjer en datakilde i [Tilføj en dat
 Udfyld oplysningerne om datakilden, herunder **Server** og **Database**. De oplysninger, du indtastede for **Brugernavn** og **Adgangskode**, bruges af gateway'en til at oprette forbindelse til Analysis Services-instansen.
 
 > [!NOTE]
-> Den Windows-konto, du angiver, skal have administratorrettigheder på serveren for den forekomst, som du opretter forbindelse til. Hvis adgangskoden til kontoen er angivet til at udløbe, kan brugerne få en forbindelsesfejl, hvis adgangskoden ikke er opdateret for datakilden. Hvis du vil have mere at vide om, hvor legitimationsoplysningerne gemmes, skal du se [Lagring af krypterede legitimationsoplysninger i cloudmiljøet](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud).
+> Den Windows-konto, du angiver, skal være medlem af rollen Serveradministrator på den Analysis Services-forekomst, du opretter forbindelse til. Hvis adgangskoden til kontoen er angivet til at udløbe, kan brugerne få en forbindelsesfejl, hvis adgangskoden ikke er opdateret for datakilden. Hvis du vil have mere at vide om, hvor legitimationsoplysningerne gemmes, skal du se [Lagring af krypterede legitimationsoplysninger i cloudmiljøet](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud).
 
 ![Angivelse af indstillinger for datakilden](media/service-gateway-enterprise-manage-ssas/datasourcesettings3-ssas.png)
 

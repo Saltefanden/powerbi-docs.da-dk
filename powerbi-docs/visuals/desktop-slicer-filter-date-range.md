@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 05/05/2020
+ms.date: 09/09/2020
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: ef6fef8535e0fb6013e363a23f4736368a66720c
-ms.sourcegitcommit: d91c060913fcb526f9a01dc48e218485daf55b4e
+ms.openlocfilehash: 26e638e106f7bd11544d1d80dae543f06783bda7
+ms.sourcegitcommit: 92b033ee7a6e36808371b247b7b41536cee6c2f6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89562438"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "90008790"
 ---
 # <a name="creating-a-relative-date-slicer-and-filter-in-power-bi"></a>Oprettelse af et udsnit eller et filter for relativ dato i Power BI
 
@@ -45,9 +45,7 @@ Du har følgende valgmuligheder for den første indstilling i det *relative dato
 ![Skærmbillede af indstillingsmulighederne for Relativ med den første indstilling fremhævet.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-04.png)
 
 * Sidste
-
 * Næste
-
 * Denne
 
 Den anden (midterste) indstilling i det *relative datoudsnit* gør det muligt at indtaste et tal for at definere det relative datoområde.
@@ -59,26 +57,19 @@ Den tredje indstilling giver dig mulighed for at vælge datomålingen. Du har f�
 ![Skærmbillede af indstillingsmulighederne for Relativ med den tredje indstilling fremhævet.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-05.png)
 
 * Dage
-
 * Uger
-
 * Uger (kalender)
-
 * Måneder
-
 * Måneder (kalender)
-
 * År
-
 * År (kalender)
 
 Hvis du vælger **Måneder** på listen og angiver *2* i den midterste indstilling, sker følgende:
 
 * Hvis dags dato er 20. juli,
 
-* vises der data for de to foregående måneder i de data i visualiseringer, der er begrænset af udsnittet,
-
-* fra og med d. 21. maj og frem til og med d. 20. juli (dags dato)
+    - vises der data for de to foregående måneder i de data i visualiseringer, der er begrænset af udsnittet,
+    - fra og med d. 21. maj og frem til og med d. 20. juli (dags dato).
 
 Hvis du til sammenligning har valgt *Måneder (kalender)* , viser de begrænsede visualiseringer data fra 1. maj til 30. juni (de to sidste hele kalendermåneder).
 
@@ -100,10 +91,9 @@ Når du har valgt **Filtrering af relativ dato**, kan du se tre sektioner, der s
 
 Følgende begrænsninger og overvejelser, der aktuelt gælder for det **relative datoområdeudsnit** og -filter.
 
+* Datatypen for feltet i udsnittet skal være en dato og ikke standardteksten. Ellers vises de relative indstillinger ikke i udsnittet.
 * Datamodeller i **Power BI** indeholder ikke oplysninger om tidszone. Modeller kan gemme tider, men der er ingen angivelse af den tidszone, de er i.
-
 * Udsnittet og filteret er altid baseret på tidspunktet i UTC-tid. Hvis du konfigurerer et filter i en rapport og sender det til en kollega i en anden tidszone, ser I begge de samme data. Medmindre I befinder jer i UTC-tidszonen, skal I begge tage højde for den tidsforskydning, der gælder for jer.
-
 * Du kan konvertere data, der er hentet i en lokal tidszone, til UTC-tid ved hjælp af **forespørgselseditoren**.
 
 ## <a name="next-steps"></a>Næste trin

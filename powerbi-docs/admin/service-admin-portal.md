@@ -10,12 +10,12 @@ ms.date: 09/03/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: e819902328f49ab06a65869066ab2b2dabce6610
-ms.sourcegitcommit: 1f56cdfc05801ffaf41e3b68dc1eb02142acdab3
+ms.openlocfilehash: f6527b326c2c779dda5a6d4b1c1276c84d3ec320
+ms.sourcegitcommit: 002c140d0eae3137a137e9a855486af6c55ad957
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89490410"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89642796"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrer Power BI på administrationsportalen
 
@@ -253,21 +253,9 @@ Når indstillingen er aktiveret, vises Office 365-grupper, der er oprettet for n
 
 ### <a name="allow-azure-active-directory-guest-users-to-access-power-bi"></a>Tillad, at Azure Active Directory gæstebrugere får adgang til Power BI
 
-Hvis du aktiverer denne indstilling, kan gæstebrugere af Azure Active Directory-B2B få adgang til Power BI. Når du deaktiverer denne indstilling, får gæstebrugere vist en fejl, når de forsøger at få adgang til Power BI. Når du deaktiverer denne indstilling for hele organisationen, forhindrer den også brugerne i at invitere gæster til din organisation og fra at tildele tilladelser til individuelle gæstebrugere. Brug indstillingen for bestemte sikkerhedsgrupper til at styre, hvilke gæstebrugere der har adgang til Power BI.
+Hvis du aktiverer denne indstilling, kan gæstebrugere af Azure Active Directory-B2B få adgang til Power BI. Når du deaktiverer denne indstilling, får gæstebrugere vist en fejl, når de forsøger at få adgang til Power BI. Når du deaktiverer denne indstilling for hele organisationen, forhindrer den også brugerne i at invitere gæster til din organisation. Brug indstillingen for bestemte sikkerhedsgrupper til at styre, hvilke gæstebrugere der har adgang til Power BI.
 
 ![Tillad, at Azure Active Directory gæstebrugere får adgang til Power BI](media/service-admin-portal/powerbi-admin-allow-aad-b2b-guests.png)
-
-### <a name="allow-giving-permissions-to-existing-azure-active-directory-guest-users"></a>Gør det muligt at give tilladelser til eksisterende gæstebrugere af Azure Active Directory
-
-Når denne funktion er aktiveret, kan brugere i din organisation give tilladelse til individuelle gæstebrugere via tilladelser eller delingsoplevelser i Power BI. Når den er deaktiveret for en bruger, kan vedkommende ikke tildele tilladelser til eller invitere gæstebrugere til Power BI.
-
-![Gør det muligt at give tilladelser til eksisterende gæstebrugere af Azure Active Directory](media/service-admin-portal/powerbi-admin-allow-grant-access-to-aad-b2b-guests.png)
-
-
-> [!IMPORTANT]
->  Denne indstilling forhindrer ikke, at gæstebrugere tildeles tilladelser i alle tilfælde. Indstillingen forhindrer kun tildeling af adgang til individuelle gæstebrugere. Gæstebrugere kan stadig få adgang via brugergrupper, f.eks. sikkerhed, Office 365-grupper eller distributionslister. 
-
-Når en bruger, der ikke har ret til at give tilladelser til gæstebrugere, forsøger at gøre det, vises der en fejlmeddelelse i brugergrænsefladen. Når du ændrer tilladelser til et element, skal brugere, der ikke har ret til at give tilladelse til gæster, fjerne alle gæstebrugere fra adgangslisten, før de kan tildele eller ændre tilladelser til elementet. 
 
 ### <a name="invite-external-users-to-your-organization"></a>Inviter eksterne brugere til din organisation 
 
@@ -279,8 +267,6 @@ Indstillingen **Inviter eksterne brugere til din organisation** hjælper organis
 > Denne indstilling blev tidligere kaldt "Del indhold med eksterne brugere". Det reviderede navn er en mere præcis afspejling af indstillingens funktionalitet.
 
 Hvis du vil invitere eksterne brugere til din organisation, skal en bruger også have rollen for invitation af gæster til Azure Active Directory. Denne indstilling styrer kun muligheden for at invitere via Power BI. 
-
-Når indstillingen **Gør det muligt at give tilladelser til eksisterende gæstebrugere af Azure Active Directory** er deaktiveret for en bruger, kan vedkommende heller ikke invitere eksterne brugere til din organisation via Power BI.
 
 ### <a name="publish-to-web"></a>Publicer på internettet
 

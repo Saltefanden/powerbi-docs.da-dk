@@ -6,15 +6,15 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 02/19/2020
+ms.date: 09/03/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 022ce2c28ef41636c4530f93e7c2765784c24ff0
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: 3cbd8acd2f32ea5fa0ccbb0fa3f91e45629cc079
+ms.sourcegitcommit: 002c140d0eae3137a137e9a855486af6c55ad957
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86215858"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89642460"
 ---
 # <a name="featured-dashboards-in-the-power-bi-service"></a>Udvalgte dashboards i Power BI-tjenesten
 
@@ -23,9 +23,9 @@ ms.locfileid: "86215858"
 Mange af os har ét dashboard, som vi besøger oftere end andre. Det kan være det dashboard, vi bruger til at drive vores virksomhed. Det kan også være et dashboard, der indeholder en sammenlægning af felter fra mange forskellige dashboards og rapporter.
 
 ## <a name="create-a-featured-dashboard"></a>Opret et udvalgt dashboard
-Når du markerer et dashboard som *udvalgt*, vises dette dashboard, hver gang du åbner Power BI-tjenesten. 
+Når du angiver et dashboard som *udvalgt*, vises dette dashboard, hver gang du åbner Power BI-tjenesten. 
 
-![Angiv som udvalgt ikon](./media/end-user-featured/power-bi-dropdown.png)
+![Angiv som udvalgt ikon](./media/end-user-featured/power-bi-dropbox.png)
 
 Du kan også vælge et par dashboards og angive dem som Favoritter. Se [dashboardfavoritter](end-user-favorite.md).
 
@@ -37,19 +37,19 @@ Hvis du ikke har angivet et udvalgt dashboard, åbnes det senest anvendte dashbo
 1. Åbn det dashboard, du vil angive som udvalgt. 
 2. Vælg **Flere indstillinger** (...) på den øverste menulinje, og vælg **Angiv som udvalgt**. 
    
-    ![Angiv som udvalgt ikon](./media/end-user-featured/power-bi-dropdown.png)
+    ![Skærmbillede, der viser Dropbox med indstillingen Angiv som udvalgt.](./media/end-user-featured/power-bi-set-as-featured.png)
 3. Bekræft dit valg.
    
     ![Angiv udvalgt dashboard](./media/end-user-featured/power-bi-featured-confirm.png)
 
 ## <a name="change-the-featured-dashboard"></a>Skift det udvalgte dashboard
-Hvis du senere ændrer mening, kan du angive et nyt dashboard som udvalgt.
+Hvis du senere ændrer mening, kan du angive et nyt dashboard som udvalgt. Selvom du fjerner markeringen af et dashboard som udvalgt, fjernes det ikke fra Power BI. 
 
 1. Følg de forrige trin 1 og 2.
    
-2. Vælg **Angiv som udvalgt dashboard**. Selvom du fjerner markeringen af et dashboard som udvalgt, fjernes det ikke fra Power BI. 
+2. Vælg **Angiv som udvalgt dashboard**. 
    
-    ![Meddelelse om fuldførelse](./media/end-user-featured/power-bi-unfeature-new.png)
+    ![Meddelelse om fuldførelse](./media/end-user-featured/power-bi-unfeatured.png)
 
 ## <a name="remove-the-featured-dashboard"></a>Fjern det udvalgte dashboard
 Hvis du beslutter, at du ikke vil have et dashboard markeret som udvalgt, skal du gøre følgende for at fjerne markeringen.
