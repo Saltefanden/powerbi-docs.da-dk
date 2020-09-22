@@ -1,5 +1,5 @@
 ---
-title: Whitepaper om Power BI-sikkerhed
+title: Whitepaper om sikkerhed i Power BI
 description: I denne whitepaper drøftes og beskrives sikkerhedsarkitektur og implementering for Power BI
 author: davidiseminger
 ms.author: davidi
@@ -9,14 +9,14 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/14/2020
 LocalizationGroup: Conceptual
-ms.openlocfilehash: a80870963cf045730fff18413884d9871354b169
-ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
+ms.openlocfilehash: 19548729f4ae85334fea14584e78ad4ee05a5c24
+ms.sourcegitcommit: cff93e604e2c5f24e0f03d6dbdcd10c2332aa487
 ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83792921"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90965335"
 ---
-# <a name="power-bi-security-whitepaper"></a>Whitepaper om Power BI-sikkerhed
+# <a name="power-bi-security-whitepaper"></a>Whitepaper om sikkerhed i Power BI
 
 **Oversigt:** Power BI er et tilbud via online software service (*SaaS*eller software som en service) fra Microsoft, der gør det muligt for dig nemt og hurtigt at oprette dashboards til Business Intelligence, rapporter, datasæt og visualiseringer, der er selvbetjenings baseret. Med Power BI kan du oprette forbindelse til mange forskellige datakilder, kombinere og forme data fra disse forbindelser og derefter oprette rapporter og dashboards, som kan deles med andre.
 
@@ -45,7 +45,7 @@ Hver installation af Power BI består af to klynger – en Web Front End (**WFE*
 
 ![WFE og Back End](media/whitepaper-powerbi-security/powerbi-security-whitepaper_01.png)
 
-Power BI bruger Azure Active Directory (**AAD**) til godkendelse og administration af konti. Power BI bruger også **Azure Traffic Manager** (ATM) til at dirigere brugertrafik til det nærmeste datacenter, hvilket bestemmes af DNS-posten for den klient, der forsøger at oprette forbindelse, til godkendelsesprocessen og til at downloade statisk indhold og statiske filer. Power BI bruger geografisk nærmest WFE til at distribuere det nødvendige statiske indhold og filer effektivt til brugere, med undtagelse af Power BI visuelle elementer, der leveres ved hjælp af **Azure Content Delivery Network (CDN)**.
+Power BI bruger Azure Active Directory (**AAD**) til godkendelse og administration af konti. Power BI bruger også **ATM (Azure Traffic Manager)** til at dirigere bruger trafik til det nærmeste datacenter, der bestemmes af DNS-posten for den klient, der forsøger at oprette forbindelse, for godkendelsesprocessen og til at downloade statisk indhold og filer. Power BI bruger geografisk nærmest WFE til at distribuere det nødvendige statiske indhold og filer effektivt til brugere, med undtagelse af Power BI visuelle elementer, der leveres ved hjælp af **Azure Content Delivery Network (CDN)**.
 
 ### <a name="the-wfe-cluster"></a>WFE-klyngen
 
@@ -53,7 +53,7 @@ Power BI bruger Azure Active Directory (**AAD**) til godkendelse og administrati
 
 ![WFE-klyngen](media/whitepaper-powerbi-security/powerbi-security-whitepaper_02.png)
 
-Når brugerne forsøger at oprette forbindelse til Power BI-tjenesten, kommunikerer klientens DNS-tjeneste muligvis med **Azure Traffic Manager** for at finde det nærmeste datacenter med en Power BI-udrulning. Du kan finde flere oplysninger om denne proces i [Metode til routing af trafik for ydeevne til Azure Traffic Manager](https://azure.microsoft.com/documentation/articles/traffic-manager-routing-methods/#performance-traffic-routing-method).
+Når brugerne forsøger at oprette forbindelse til Power BI-tjenesten, kommunikerer klientens DNS-tjeneste muligvis med **Azure Traffic Manager** for at finde det nærmeste datacenter med en Power BI-udrulning. Du kan finde flere oplysninger om denne proces i [Metode til routing af trafik for ydeevne til Azure Traffic Manager](/azure/traffic-manager/traffic-manager-routing-methods#performance-traffic-routing-method).
 
 Den WFE-klynge, der er tættest på brugeren, administrerer logon- og godkendelsessekvensen, som beskrevet senere i denne artikel, og leverer et AAD-token til brugeren, når godkendelsen lykkedes. Komponenten ASP.NET i WFE-klyngen opdeler anmodningen for at afgøre, hvilken organisation brugeren tilhører, og konsulterer derefter **Global Service** for Power BI. Global Service er en enkelt Azure-tabel, der deles af alle globale WFE- og Back End-klynger, som knytter brugere og kundeorganisationer til det datacenter, der indeholder deres Power BI-lejer. WFE angiver over for browseren, hvilken Back End-klynge der indeholder organisationens lejer. Når en bruger er godkendt, foregår efterfølgende klientinteraktioner direkte med Back End-klyngen, uden at WFE skal fungere som mellemled for disse anmodninger.
 
@@ -227,19 +227,19 @@ I forbindelse med cloudbaserede datakilder krypterer rollen for Dataflytning kry
 
     a. Analysis Services i det lokale miljø og DirectQuery – intet gemmes i Power BI-tjenesten.
 
-    b. ETL – krypteret i Azure Blob Storage, men alle data, der i øjeblikket er i Azure Blob Storage i Power BI-tjenesten, bruger [Azure Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption), som også kaldes for kryptering på serversiden. Multi-geo bruger også SSE.
+    b. ETL – krypteret i Azure Blob Storage, men alle data, der i øjeblikket er i Azure Blob Storage i Power BI-tjenesten, bruger [Azure Storage Service Encryption (SSE)](/azure/storage/common/storage-service-encryption), som også kaldes for kryptering på serversiden. Multi-geo bruger også SSE.
 
-    c. Pushdata v1 – gemmes krypteret i Azure Blob Storage, men alle data, der i øjeblikket er i Azure Blob Storage i Power BI-tjenesten, bruger [Azure Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption), som også kaldes for kryptering på serversiden. Multi-geo bruger også SSE. Push data v1 udgik fra 2016. 
+    c. Pushdata v1 – gemmes krypteret i Azure Blob Storage, men alle data, der i øjeblikket er i Azure Blob Storage i Power BI-tjenesten, bruger [Azure Storage Service Encryption (SSE)](/azure/storage/common/storage-service-encryption), som også kaldes for kryptering på serversiden. Multi-geo bruger også SSE. Push data v1 udgik fra 2016. 
 
     d. Pushdata v2 – gemmes krypteret i Azure SQL.
 
-Power BI bruger tilgangen med kryptering på klientsiden ved hjælp af CBC-tilstanden (cipher block chaining) med Advanced Encryption Standard (AES) til at kryptere Azure Blob Storage. Du kan [få mere at vide om kryptering på klientsiden](https://azure.microsoft.com/documentation/articles/storage-client-side-encryption/).
+Power BI bruger tilgangen med kryptering på klientsiden ved hjælp af CBC-tilstanden (cipher block chaining) med Advanced Encryption Standard (AES) til at kryptere Azure Blob Storage. Du kan [få mere at vide om kryptering på klientsiden](/azure/storage/common/storage-client-side-encryption).
 
 Power BI sikrer overvågning af dataintegritet på følgende måder:
 
 * I forbindelse med inaktive data i Azure SQL bruger Power BI dbcc, TDE og konstant kontrolsum for side som en del af det oprindelige tilbud i SQL.
 
-* I forbindelse med inaktive data i Azure Blob Storage bruger Power BI kryptering på klientsiden og HTTPS til at overføre data til lageret, som omfatter integritetskontroller under hentning af dataene. Du kan [få mere at vide om sikkerhed i Azure Blob Storage](https://azure.microsoft.com/documentation/articles/storage-security-guide/).
+* I forbindelse med inaktive data i Azure Blob Storage bruger Power BI kryptering på klientsiden og HTTPS til at overføre data til lageret, som omfatter integritetskontroller under hentning af dataene. Du kan [få mere at vide om sikkerhed i Azure Blob Storage](/azure/storage/blobs/security-recommendations).
 
 #### <a name="reports"></a>Rapporter
 
@@ -268,7 +268,7 @@ Power BI sikrer overvågning af dataintegritet på følgende måder:
 
 4. Oprindelige .pbix-filer (Power BI Desktop) eller .xlsx-filer (Excel), der er publiceret i Power BI
 
-    Nogle gange gemmes en kopi eller et øjebliksbillede af .xlsx- eller .pbix-filerne i Azure Blob Storage i Power BI. Når det sker, krypteres dataene. I Azure Blob Storage bruger alle sådanne rapporter, som er gemt i Power BI-tjenesten, [Azure Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption), der også kaldes for kryptering på serversiden. Multi-geo bruger også SSE.
+    Nogle gange gemmes en kopi eller et øjebliksbillede af .xlsx- eller .pbix-filerne i Azure Blob Storage i Power BI. Når det sker, krypteres dataene. I Azure Blob Storage bruger alle sådanne rapporter, som er gemt i Power BI-tjenesten, [Azure Storage Service Encryption (SSE)](/azure/storage/common/storage-service-encryption), der også kaldes for kryptering på serversiden. Multi-geo bruger også SSE.
 
 #### <a name="dashboards-and-dashboard-tiles"></a>Dashboards og dashboardfelter
 
@@ -385,7 +385,7 @@ Følgende spørgsmål er almindelige spørgsmål og svar om sikkerhed i Power BI
 
 * **SQL Server Analysis Services og Power bi:** For organisationer, der bruger SQL Server Analysis Services i det lokale miljø, har Power BI den Power BI data gateway i det lokale miljø (som er en **gateway**, som der henvises til i tidligere afsnit).  Power BI-datagatewayen i det lokale miljø kan gennemtvinge sikkerhed på rolleniveau for datakilder. Du kan finde flere oplysninger om sikkerhed på rolleniveau under **Godkendelse af brugeren til datakilder** tidligere i dette dokument. Du kan finde flere oplysninger om gateways i [data gateways i det lokale miljø](../connect-data/service-gateway-onprem.md).
 
-  Organisationer kan desuden bruge Kerberos til **enkeltlogon** (SSO) og problemfrit oprette forbindelse fra Power BI til datakilder i det lokale miljø såsom SQL Server, SAP HANA og Teradata. Du kan finde flere oplysninger og se de specifikke konfigurationskrav i [**Brug Kerberos til SSO fra Power BI til datakilder i det lokale miljø**](https://docs.microsoft.com/power-bi/service-gateway-kerberos-for-sso-pbi-to-on-premises-data).
+  Organisationer kan desuden bruge Kerberos til **enkeltlogon** (SSO) og problemfrit oprette forbindelse fra Power BI til datakilder i det lokale miljø såsom SQL Server, SAP HANA og Teradata. Du kan finde flere oplysninger og se de specifikke konfigurationskrav i [**Brug Kerberos til SSO fra Power BI til datakilder i det lokale miljø**](../connect-data/service-gateway-sso-overview.md).
 
 * **Ikke-domæne forbindelser**: for de dataforbindelser, der ikke er domæneforbundne, og som ikke kan udføre sikkerhed på rolleniveau (RLS), skal brugeren angive legitimationsoplysninger under forbindelses sekvensen, som Power bi derefter overføres til datakilden for at oprette forbindelsen. Hvis der er tilstrækkelige tilladelser, indlæses data fra datakilden i Power BI-tjenesten.
 
@@ -469,7 +469,7 @@ Følgende spørgsmål er almindelige spørgsmål og svar om sikkerhed i Power BI
 
 **Hvordan behandler Microsoft forbindelser til kunder, der har Power BI Premium abonnementer? Er disse forbindelser forskellige fra dem, der er oprettet for de ikke-Premium-Power BI-tjeneste?**
 
-* De forbindelser, der etableres for kunder med Power BI Premium-abonnementer, implementerer en godkendelsesproces af typen [Azure Business-to-Business (B2B)](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) ved hjælp af Azure Active Directory (AD) for at muliggøre adgangskontrol og godkendelse. Power BI håndterer forbindelser fra Power BI Premium-abonnenter til Power BI Premium-ressourcer på samme måde som for alle andre Azure AD-brugere.
+* De forbindelser, der etableres for kunder med Power BI Premium-abonnementer, implementerer en godkendelsesproces af typen [Azure Business-to-Business (B2B)](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) ved hjælp af Azure Active Directory (AD) for at muliggøre adgangskontrol og godkendelse. Power BI håndterer forbindelser fra Power BI Premium-abonnenter til Power BI Premium-ressourcer på samme måde som for alle andre Azure AD-brugere.
 
 ## <a name="conclusion"></a>Konklusion
 
