@@ -137,7 +137,7 @@
             - name: Installér og brug apps
               href: end-user-app-view.md
             - name: Opret forbindelse til tjenester
-              href: end-user-connect-to-services.md
+              href: ../connect-data/service-connect-to-services.md
             - name: Hent en eksempelapp fra appmarkedspladsen
               href: end-user-app-marketing.md
         - name: Stil spørgsmål til dine data
@@ -153,6 +153,6 @@
         - name: Ofte stillede spørgsmål
           href: end-user-faq.md
         - name: Understøttede browsere
-          href: end-user-browsers.md
+          href: ../fundamentals/power-bi-browsers.md
         - name: Typer af Hurtig indsigt
           href: end-user-insight-types.md
