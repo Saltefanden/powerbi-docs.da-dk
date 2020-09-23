@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 01/14/2020
-ms.openlocfilehash: 2bc2e026acf0f895796158408afa6449c93ce254
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: e9e2c44bdcbeabc28a95bd62bf6ba6763ae61442
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236188"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90859054"
 ---
 # <a name="use-web-application-proxy-and-active-directory-federated-services---power-bi-report-server"></a>Brug Web Application Proxy og Active Directory Federated Services – Power BI-rapportserver
 
@@ -40,7 +40,7 @@ Vi skal sikre os, at vi har et gyldigt SPN (Service Principal Name). Det gyldige
 
 Tjenestens hovednavn er et entydigt id for en tjeneste, der bruger Kerberos-godkendelse. Du skal sikre, at du har et korrekt HTTP SPN for rapportserveren.
 
-Du kan finde oplysninger om, hvordan du konfigurerer det korrekte hovednavn for tjenesten for rapportserveren, under [Registrer et hovednavn for tjenesten for en rapportserver](https://docs.microsoft.com/sql/reporting-services/report-server/register-a-service-principal-name-spn-for-a-report-server).
+Du kan finde oplysninger om, hvordan du konfigurerer det korrekte hovednavn for tjenesten for rapportserveren, under [Registrer et hovednavn for tjenesten for en rapportserver](/sql/reporting-services/report-server/register-a-service-principal-name-spn-for-a-report-server).
 
 ### <a name="enabling-negotiate-authentication"></a>Aktivering af forhandling af godkendelse
 
@@ -56,11 +56,11 @@ Hvis du vil gøre det muligt, at en rapportserver kan bruge Kerberos-godkendelse
 </AuthenticationTypes>
 ```
 
-Du kan finde flere oplysninger under [Rediger en Reporting Services-konfigurationsfil](https://docs.microsoft.com/sql/reporting-services/report-server/modify-a-reporting-services-configuration-file-rsreportserver-config) og [Konfigurer Windows-godkendelse på en rapportserver](https://docs.microsoft.com/sql/reporting-services/security/configure-windows-authentication-on-the-report-server).
+Du kan finde flere oplysninger under [Rediger en Reporting Services-konfigurationsfil](/sql/reporting-services/report-server/modify-a-reporting-services-configuration-file-rsreportserver-config) og [Konfigurer Windows-godkendelse på en rapportserver](/sql/reporting-services/security/configure-windows-authentication-on-the-report-server).
 
 ## <a name="2-configure-active-directory-federation-services-ad-fs"></a>2. Konfigurer AD FS (Active Directory Federation Services).
 
-Du skal konfigurere AD FS på en Windows 2016-server i dit miljø. Konfigurationen kan udføres via Server Manager og ved at vælge Tilføj roller og funktioner under Administrer. Du kan finde flere oplysninger under [Active Directory Federation Services](https://docs.microsoft.com/windows-server/identity/active-directory-federation-services).
+Du skal konfigurere AD FS på en Windows 2016-server i dit miljø. Konfigurationen kan udføres via Server Manager og ved at vælge Tilføj roller og funktioner under Administrer. Du kan finde flere oplysninger under [Active Directory Federation Services](/windows-server/identity/active-directory-federation-services).
 
 Udfør disse trin På AD FS-serveren ved hjælp af AD FS Management-appen.
 
@@ -93,7 +93,7 @@ Udfør disse trin På AD FS-serveren ved hjælp af AD FS Management-appen.
 
 ## <a name="3-configure-web-application-proxy-wap"></a>3. Konfigurer WAP (Web Application Proxy)
 
-Du skal aktivere Windows-rollen Web Application Proxy (rolle) på en server i dit miljø. Det skal ske på en Windows 2016-server. Du kan finde flere oplysninger under [Web Application Proxy i Windows Server 2016](https://docs.microsoft.com/windows-server/remote/remote-access/web-application-proxy/web-application-proxy-windows-server) og [Publicering af programmer vha. ADFS-forhåndsgodkendelse](https://docs.microsoft.com/windows-server/remote/remote-access/web-application-proxy/Publishing-Applications-using-AD-FS-Preauthentication).
+Du skal aktivere Windows-rollen Web Application Proxy (rolle) på en server i dit miljø. Det skal ske på en Windows 2016-server. Du kan finde flere oplysninger under [Web Application Proxy i Windows Server 2016](/windows-server/remote/remote-access/web-application-proxy/web-application-proxy-windows-server) og [Publicering af programmer vha. ADFS-forhåndsgodkendelse](/windows-server/remote/remote-access/web-application-proxy/Publishing-Applications-using-AD-FS-Preauthentication).
 
 ### <a name="configure-constrained-delegation"></a>Konfigurer begrænset delegering
 
@@ -174,4 +174,3 @@ Du kan derefter få adgang til URL-adressen til den offentlige WAP, f.eks. `http
 *[Hvad er Power BI-rapportserver?](get-started.md)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-

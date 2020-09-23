@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 05/19/2020
-ms.openlocfilehash: 0f07c27cf9c69c07ae7b05c0cbf2573605647252
-ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
+ms.openlocfilehash: 16fcc18492b371accaaf3c447d7a88978051f8c3
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "86264817"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90859652"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Hvad er sideinddelte rapporter i Power BI Premium?
 
@@ -87,7 +87,7 @@ Du kan finde flere oplysninger i artiklen [Meld dig selv og andre til et abonnem
 
 Her er nogle andre funktioner, der ikke understøttes i den første version:
 
-- Fastgørelse af rapportsider eller visualiseringer til Power BI-dashboards. Du kan stadig fastgøre visualiseringer til et Power BI-dashboard fra en sideinddelt rapport i det lokale miljø på en Power BI-rapportserver eller en Reporting Services-rapportserver. Du kan finde flere oplysninger under [Fastgør Reporting Services-elementer til Power BI-dashboards](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards).
+- Fastgørelse af rapportsider eller visualiseringer til Power BI-dashboards. Du kan stadig fastgøre visualiseringer til et Power BI-dashboard fra en sideinddelt rapport i det lokale miljø på en Power BI-rapportserver eller en Reporting Services-rapportserver. Du kan finde flere oplysninger under [Fastgør Reporting Services-elementer til Power BI-dashboards](/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards).
 - Dokumentoversigt.
 - Rapporter for detaljeadgang.  Overvej at bruge parametre for URL-adresser med sideinddelte rapporter i forbindelse med scenarier med detaljeadgang.
 - Delte datakilder og datasæt.

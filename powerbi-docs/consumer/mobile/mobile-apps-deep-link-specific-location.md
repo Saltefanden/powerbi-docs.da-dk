@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 2590e5fad227027f7cc2fddf2f93a18b92f39ae3
-ms.sourcegitcommit: 46a340937d9f01c6daba86a4ab178743858722ec
+ms.openlocfilehash: b414457c15155053ff6d316d1147536ec9ca5a8e
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85393772"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90856639"
 ---
 # <a name="create-a-link-to-a-specific-location-in-the-power-bi-mobile-apps"></a>Opret et link til en bestemt placering i Power BI-mobilappsene
 Du kan bruge links til at få direkte adgang til bestemte elementer i Power BI: Rapport, Dashboard og Felt.
@@ -100,7 +100,7 @@ https://app.powerbi.com/groups/**groupid comes here**/reports/**reportid comes h
 
 Links i Power BI fungerer i mobilapps præcist på samme måde som i Power BI-tjenesten.
 
-Hvis du vil føje et link til din rapport, der peger på et andet Power BI-element, kan du blot kopiere dette elements URL-adresse fra browserens adresselinje. Læs mere om, [hvordan du føjer et link til et tekstfelt i en rapport](https://docs.microsoft.com/power-bi/service-add-hyperlink-to-text-box).
+Hvis du vil føje et link til din rapport, der peger på et andet Power BI-element, kan du blot kopiere dette elements URL-adresse fra browserens adresselinje. Læs mere om, [hvordan du føjer et link til et tekstfelt i en rapport](../../create-reports/service-add-hyperlink-to-text-box.md).
 
 ## <a name="use-report-url-with-filter"></a>Brug rapportens URL-adresse med filter
 På samme måde som Power BI-tjenesten understøtter Power BI - Mobil-apps også URL-adresser til rapporter, der indeholder en parameter for filterforespørgsel. Du kan åbne en rapport i Power BI - Mobil-appen og filtrere den til en bestemt tilstand. Denne URL-adresse åbner f.eks. salgsrapporten og filtrerer den efter distrikt
@@ -109,7 +109,7 @@ På samme måde som Power BI-tjenesten understøtter Power BI - Mobil-apps også
 https://app.powerbi.com/groups/me/reports/**report guid comes here**/ReportSection3?ctid=**organization id comes here**&filter=Store/Territory eq 'NC'
 ```
 
-Læs mere om, [hvordan du opretter forespørgselsparametre for at filtrere rapporter](https://docs.microsoft.com/power-bi/service-url-filters).
+Læs mere om, [hvordan du opretter forespørgselsparametre for at filtrere rapporter](../../collaborate-share/service-url-filters.md).
 
 ## <a name="next-steps"></a>Næste trin
 Din feedback hjælper os med at afgøre, hvad der skal implementeres fremover, så husk at stemme på andre funktioner, du gerne vil se i Power BI-mobilapps. 
@@ -118,4 +118,3 @@ Din feedback hjælper os med at afgøre, hvad der skal implementeres fremover, s
 * Følg @MSPowerBI på Twitter
 * Deltag i samtalen i [Power BI-communityet](https://community.powerbi.com/)
 * [Hvad er Power BI?](../../fundamentals/power-bi-overview.md)
-

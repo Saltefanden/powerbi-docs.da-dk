@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 05/28/2020
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: f241315eecdbb600a798630167913aa1be0079a3
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 5b2e9cc5cb07eebf3befebd1be1686fdbb0f653b
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239050"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861814"
 ---
 # <a name="create-and-manage-relationships-in-power-bi-desktop"></a>Opret og administrer relationer i Power BI Desktop
 Når du importerer flere tabeller, er det muligt, at du skal udføre analyser ved hjælp af data fra alle disse tabeller. Der skal være relationer mellem disse tabeller, før du kan beregne præcise resultater og vise korrekte oplysninger i dine rapporter. I Power BI Desktop er det nemt at oprette disse relationer. I de fleste tilfælde behøver du faktisk ikke at foretage dig noget – funktionen Registrer automatisk gør det for dig. Men nogle gange skal du muligvis selv oprette relationer, eller du skal muligvis foretage ændringer i en relation. I begge tilfælde er det vigtigt at forstå relationer i Power BI Desktop, og hvordan du opretter og redigerer dem.
@@ -45,7 +45,7 @@ Hvis du får vist denne fejl, er der et par forskellige måder, du kan rette pro
 * Brug **Fjern identiske rækker** til at oprette en kolonne med entydige værdier. Ulempen ved denne metode er, at du kan miste oplysninger, når dublerede rækker fjernes, og der er ofte en god grund til, at en nøgle (række) er dubleret.
 * Tilføj en mellemliggende tabel, der består af listen over særskilte nøgleværdier i modellen, som derefter knyttes til begge de oprindelige kolonner i relationen.
 
-Du kan finde flere oplysninger om dette i dette [blogindlæg](https://blogs.technet.microsoft.com/cansql/2016/12/19/relationships-in-power-bi-fixing-one-of-the-columns-must-have-unique-values-error-message/).
+Du kan finde flere oplysninger om dette i dette [blogindlæg](/archive/blogs/cansql/relationships-in-power-bi-fixing-one-of-the-columns-must-have-unique-values-error-message).
 
 
 ## <a name="edit-a-relationship"></a>Rediger en relation
@@ -65,7 +65,7 @@ Indstillingen **Kardinalitet** kan have en af følgende indstillinger:
 
 **Én til mange (1:*)** : I en relation af typen én til mange har kolonnen i én tabel kun én forekomst af en bestemt værdi, og den anden relaterede tabel kan have mere end én forekomst af en værdi.
 
-**Mange til mange (\*:\*)** : Med sammensatte modeller kan du oprette mange til mange-relationer mellem tabeller, hvilket fjerner kravene til entydige værdier i tabeller. Tidligere midlertidige løsninger, f.eks. introduktion af nye tabeller kun for at oprette relationer, fjernes også. Du kan finde flere oplysninger under [Relationer med mange til mange-kardinalitet](https://docs.microsoft.com/power-bi/desktop-many-to-many-relationships). 
+**Mange til mange (\*:\*)** : Med sammensatte modeller kan du oprette mange til mange-relationer mellem tabeller, hvilket fjerner kravene til entydige værdier i tabeller. Tidligere midlertidige løsninger, f.eks. introduktion af nye tabeller kun for at oprette relationer, fjernes også. Du kan finde flere oplysninger under [Relationer med mange til mange-kardinalitet](./desktop-many-to-many-relationships.md). 
 
 Du kan finde flere oplysninger om, hvornår du skal ændre kardinaliteten, under [Om yderligere indstillinger](#understanding-additional-options).
 
@@ -358,4 +358,3 @@ Vi kan ændre den aktive relation og hente **SubmittedBy** i stedet for **Opened
 Nogle gange indeholder din model flere tabeller, og der kan være komplekse relationer mellem dem. I visningen **Relation** i Power BI Desktop vises alle relationerne i din model, deres retning og kardinaliteten i et diagram, der er let at forstå, og som kan tilpasses. 
 
 Du kan få mere at vide under [Arbejde med relationsvisning i Power BI Desktop](desktop-relationship-view.md).
-

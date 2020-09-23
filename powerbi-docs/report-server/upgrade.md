@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.custom: ''
 ms.date: 09/05/2017
-ms.openlocfilehash: 5696807957d6facc62a92923dcfc888bcab2154b
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: cb2a5ede49acb218450174bbf77388be5c504617
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237991"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861722"
 ---
 # <a name="upgrade-power-bi-report-server"></a>Opgrader Power BI Report Server
 
@@ -30,7 +30,7 @@ Inden du opgraderer en rapportserver, anbefales det, at du udfører følgende tr
 
 ### <a name="backing-up-the-encryption-keys"></a>Sikkerhedskopiering af krypteringsnøgler
 
-Du skal sikkerhedskopiere krypteringsnøglerne, første gang du konfigurerer en rapportserverinstallation. Du skal også sikkerhedskopiere nøglerne, hver gang du ændrer identiteten for tjenestekontiene eller omdøber computeren. Du kan finde flere oplysninger i [Sikkerhedskopiér og gendan krypteringsnøgler til rapporttjenester](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-encryption-keys-back-up-and-restore-encryption-keys).
+Du skal sikkerhedskopiere krypteringsnøglerne, første gang du konfigurerer en rapportserverinstallation. Du skal også sikkerhedskopiere nøglerne, hver gang du ændrer identiteten for tjenestekontiene eller omdøber computeren. Du kan finde flere oplysninger i [Sikkerhedskopiér og gendan krypteringsnøgler til rapporttjenester](/sql/reporting-services/install-windows/ssrs-encryption-keys-back-up-and-restore-encryption-keys).
 
 ### <a name="backing-up-the-report-server-databases"></a>Sikkerhedskopiér rapportserverdatabaser
 
@@ -40,7 +40,7 @@ Da en rapportserver er en tilstandsløs server, gemmes alle programdata i databa
 * Brug den enkle genoprettelsesmodel til at sikkerhedskopiere databasen **reportservertempdb**.
 * Du kan bruge forskellige tidsplaner til sikkerhedskopiering af hver database. Den eneste grund til at sikkerhedskopiere **reportservertempdb** er for at undgå at skulle oprette den igen, hvis der opstår en hardwarefejl. I tilfælde af hardwarefejl er det ikke nødvendigt at genoprette dataene i **reportservertempdb**, men du skal dog bruge tabelstrukturen. Hvis du mister **reportservertempdb**, er den eneste måde at få den tilbage på at genoprette rapportserverdatabasen. Hvis du opretter **reportservertempdb** igen, er det vigtigt, at den har samme navn som den primære rapportserverdatabase.
 
-Du kan finde flere oplysninger om sikkerhedskopiering og gendannelse af SQL Server-relationsdatabaser ved at læse [Sikkerhedskopiering og gendannelse af SQL Server-databaser](https://docs.microsoft.com/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases).
+Du kan finde flere oplysninger om sikkerhedskopiering og gendannelse af SQL Server-relationsdatabaser ved at læse [Sikkerhedskopiering og gendannelse af SQL Server-databaser](/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases).
 
 ### <a name="backing-up-the-configuration-files"></a>Sikkerhedskopiér konfigurationsfilerne
 
@@ -80,13 +80,13 @@ Når rapportserveren er opgraderet, skal du sikre dig, at Power Bi-rapportforfat
 
 * [Administratoroversigt](admin-handbook-overview.md)  
 * [Installér Power BI Desktop optimeret til Power BI Report Server](install-powerbi-desktop.md)  
-* [Bekræft installationen af Reporting Services](https://docs.microsoft.com/sql/reporting-services/install-windows/verify-a-reporting-services-installation)  
-* [Konfigurer kontoen til rapportservertjenesten](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager)  
-* [Konfigurer rapportserverens URL-adresser](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-report-server-urls-ssrs-configuration-manager)  
-* [Konfigurer en rapportservers databaseforbindelse](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager)  
-* [Initialiser en rapportserver](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-encryption-keys-initialize-a-report-server)  
-* [Konfigurer SSL-forbindelser på en rapportserver](https://docs.microsoft.com/sql/reporting-services/security/configure-ssl-connections-on-a-native-mode-report-server)  
-* [Konfigurer Windows-tjenestekonti og -tilladelser](https://docs.microsoft.com/sql/database-engine/configure-windows/configure-windows-service-accounts-and-permissions)  
+* [Bekræft installationen af Reporting Services](/sql/reporting-services/install-windows/verify-a-reporting-services-installation)  
+* [Konfigurer kontoen til rapportservertjenesten](/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager)  
+* [Konfigurer rapportserverens URL-adresser](/sql/reporting-services/install-windows/configure-report-server-urls-ssrs-configuration-manager)  
+* [Konfigurer en rapportservers databaseforbindelse](/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager)  
+* [Initialiser en rapportserver](/sql/reporting-services/install-windows/ssrs-encryption-keys-initialize-a-report-server)  
+* [Konfigurer SSL-forbindelser på en rapportserver](/sql/reporting-services/security/configure-ssl-connections-on-a-native-mode-report-server)  
+* [Konfigurer Windows-tjenestekonti og -tilladelser](/sql/database-engine/configure-windows/configure-windows-service-accounts-and-permissions)  
 * [Browserunderstøttelse af Power BI-rapportserver](browser-support.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

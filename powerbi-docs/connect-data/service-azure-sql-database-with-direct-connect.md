@@ -10,12 +10,12 @@ ms.reviewer: ''
 ms.custom: ''
 ms.date: 04/28/2020
 LocalizationGroup: Data from databases
-ms.openlocfilehash: ffdb18927d5b92ecd10eb4b9e3a3b8fcd921dea2
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 038d18639639fa13250e44da141314e9a94fe412
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85230577"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861906"
 ---
 # <a name="azure-sql-database-with-directquery"></a>Azure SQL Database med DirectQuery
 
@@ -29,7 +29,7 @@ Med DirectQuery sendes forespørgsler tilbage til din Azure SQL Database, mens d
 **Bemærk!**
 
 * Angiv det fuldt gyldige servernavn, når du opretter forbindelse (se yderligere oplysninger nedenfor).
-* Kontrollér, at firewallreglerne for databasen er konfigureret til "[Tillad adgang til Azure-tjenester](https://docs.microsoft.com/azure/sql-database/sql-database-networkaccess-overview#allow-azure-services)".
+* Kontrollér, at firewallreglerne for databasen er konfigureret til "[Tillad adgang til Azure-tjenester](/azure/sql-database/sql-database-networkaccess-overview#allow-azure-services)".
 * Hver handling, f.eks. markering af en kolonne eller tilføjelse af et filter, vil sende en forespørgsel tilbage til databasen.
 * Felterne opdateres ca. hver time (opdateringen skal ikke planlægges). Du kan tilpasse, hvor ofte der skal opdateres, i Avancerede indstillinger, når du opretter forbindelse.
 * Spørgsmål og svar er ikke tilgængelig for DirectQuery-datasæt.

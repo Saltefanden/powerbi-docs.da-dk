@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 05dcae0a2277ee84e6c8bfbdb51532252c50c896
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 23c15b49bfd6b069181b5d860637e00315376059
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238888"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861699"
 ---
 # <a name="add-a-cdm-folder-to-power-bi-as-a-dataflow-preview"></a>Føj en CDM-mappe til Power BI som et dataflow (eksempelvisning)
 
@@ -26,7 +26,7 @@ Der er et par krav til oprettelse af dataflow fra CDM-mapper, som beskrevet på 
 
 * En administrator skal knytte ADLS Gen2-lagerkontoen i Power BI, før den kan bruges. Se [Opret forbindelse til Azure Data Lake Storage Gen2 til dataflowlager](service-dataflows-connect-azure-data-lake-storage-gen2.md) for at få mere at vide om, hvordan du knytter en ADLS Gen2-konto til Power BI.
 * Oprettelse af dataflow fra CDM-mapper er *kun* tilgængeligt i den [nye arbejdsområdeoplevelse](../collaborate-share/service-create-the-new-workspaces.md). 
-* Tilføjelse af en CDM-mappe til Power BI kræver, at brugeren, der tilføjer mappen, skal have [autorisationer til CDM-mappen og dens filer](https://go.microsoft.com/fwlink/?linkid=2029121).
+* Tilføjelse af en CDM-mappe til Power BI kræver, at brugeren, der tilføjer mappen, skal have [autorisationer til CDM-mappen og dens filer](./service-dataflows-azure-data-lake-integration.md).
 * Du skal være tildelt læse- og kørselstilladelser til alle filer og mapper i CDM-mappen for at føje dem til Power BI.
 
 I følgende afsnit beskrives, hvordan du opretter et dataflow fra en CDM-mappe.
@@ -86,7 +86,7 @@ På følgende liste er der beskrevet nogle yderligere overvejelser:
 
   ![Fejl under forsøg på at bruge dataflow](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_08.jpg)
 
-Problemet kan løses ved, at Ben tildeles læsetilladelser til CDM-mappen og dens filer. Du kan få mere at vide om, hvordan du give adgang til CDM-mappen i [denne artikel](https://go.microsoft.com/fwlink/?linkid=2029121).
+Problemet kan løses ved, at Ben tildeles læsetilladelser til CDM-mappen og dens filer. Du kan få mere at vide om, hvordan du give adgang til CDM-mappen i [denne artikel](./service-dataflows-azure-data-lake-integration.md).
 
 
 ## <a name="next-steps"></a>Næste trin
@@ -107,13 +107,13 @@ Du kan finde generelle oplysninger om dataflow i disse artikler:
 * [Udviklerressourcer til Power BI-dataflow](service-dataflows-developer-resources.md)
 
 Du kan finde flere oplysninger om Azure-lager i disse artikler:
-* [Sikkerhedsvejledning til Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-security-guide)
+* [Sikkerhedsvejledning til Azure Storage](/azure/storage/common/storage-security-guide)
 * [Konfiguration af planlagt opdatering](../connect-data/refresh-scheduled-refresh.md)
 * [Kom i gang med Github-eksempler fra Azure Data Services](https://aka.ms/cdmadstutorial)
 
 Du kan finde flere oplysninger om Common Data Model i denne oversigtsartikel:
-* [Common Data Model – oversigt](https://docs.microsoft.com/powerapps/common-data-model/overview)
-* [CDM-mapper](https://go.microsoft.com/fwlink/?linkid=2045304)
-* [Fildefinition af CDM-model](https://go.microsoft.com/fwlink/?linkid=2045521)
+* [Common Data Model – oversigt](/powerapps/common-data-model/overview)
+* [CDM-mapper](/common-data-model/data-lake)
+* [Fildefinition af CDM-model](/common-data-model/model-json)
 
 Du kan altid prøve [at stille spørgsmål i Power BI-community'et](https://community.powerbi.com/).

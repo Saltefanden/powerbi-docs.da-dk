@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.assetid: 87ddb651-a1d0-4a42-8ea9-04dea3f6afa4
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 48e81c91a4555b4c8ea847ddffb1413058bbb152
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 3a24724e67a931860296983fe3a116137d3b5361
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78921142"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90859515"
 ---
 # <a name="expression-examples-in-power-bi-report-builder"></a>Eksempler på udtryk i Power BI Report Builder
 Udtryk bruges ofte i sideinddelte rapporter i Power BI Report Builder til at styre indhold og rapportens udseende. Udtryk er skrevet i Microsoft Visual Basic, og du kan bruge indbyggede funktioner, brugerdefinerede kode, rapport- og gruppevariabler samt brugerdefinerede variabler. Udtryk begynder med et lighedstegn (=).   
@@ -38,7 +38,7 @@ Du kan finde flere oplysninger om simple og komplekse udtryk, hvor du kan bruge 
  Mange udtryk i en rapport indeholder funktioner. Du kan formatere data, anvende logik og få adgang til rapportmetadata ved hjælp af disse funktioner. Du kan skrive udtryk, der bruger funktioner, via kørselsbiblioteket i Microsoft Visual Basic samt via navneområderne `xref:System.Convert` og `xref:System.Math`. Du kan føje referencer til funktioner i brugerdefineret kode. Du kan også bruge klasser fra Microsoft .NET Framework, herunder `xref:System.Text.RegularExpressions`.  
   
 ##  <a name="visual-basic-functions"></a><a name="VisualBasicFunctions"></a> Funktioner i Visual Basic  
- Du kan bruge funktioner i Visual Basic til at håndtere de data, der vises i tekstfelter, eller der bruges til parametre, egenskaber eller andre områder af rapporten. Dette afsnit indeholder eksempler, der demonstrerer nogle af disse funktioner. Du kan finde flere oplysninger i [Medlemmer af kørselsbiblioteket i Visual Basic](https://go.microsoft.com/fwlink/?LinkId=198941) på MSDN.  
+ Du kan bruge funktioner i Visual Basic til at håndtere de data, der vises i tekstfelter, eller der bruges til parametre, egenskaber eller andre områder af rapporten. Dette afsnit indeholder eksempler, der demonstrerer nogle af disse funktioner. Du kan finde flere oplysninger i [Medlemmer af kørselsbiblioteket i Visual Basic](/dotnet/visual-basic/language-reference/runtime-library-members) på MSDN.  
   
  .NET Framework indeholder mange muligheder for brugerdefinerede formater, f.eks. specifikke datoformater. Du kan finde flere oplysninger i [Formateringstyper](/dotnet/standard/base-types/formatting-types).  
   
@@ -517,4 +517,3 @@ Du kan finde flere oplysninger om simple og komplekse udtryk, hvor du kan bruge 
 ## <a name="next-steps"></a>De næste trin
 
 - [Hvad er sideinddelte rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md)
-  

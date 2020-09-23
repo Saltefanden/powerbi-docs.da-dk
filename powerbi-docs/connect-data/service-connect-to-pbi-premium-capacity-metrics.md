@@ -8,19 +8,19 @@ ms.topic: how-to
 ms.date: 05/18/2020
 ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: eb8d7d59e52414620aa888230af59ef98da9e5af
-ms.sourcegitcommit: 13c4bec679313f2951f1833033316cb8176da8a1
+ms.openlocfilehash: 2db7cce57408fa988c9a32057d6f1f880bc55126
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88937625"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861952"
 ---
 # <a name="connect-to-power-bi-premium-capacity-metrics"></a>Opret forbindelse til Power BI Premium Capacity Metrics
 Overvågning af dine kapaciteter er afgørende for at træffe beslutninger om den bedste måde, du kan udnytte dine ressourcer i Premium-kapaciteten på. Appen Power BI Premium Capacity Metrics giver de mest detaljerede oplysninger om ydeevnen af dine kapaciteter.
 
 ![Rapport i appen Power BI Premium Capacity Metrics](media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-report.png)
 
-Denne artikel indeholder en beskrivelse af, hvordan du installerer appen og opretter forbindelse til datakilder. Du kan finde oplysninger om indholdet af rapporter, og hvordan du bruger det i [Overvåg Premium-kapaciteter med appen](../service-admin-premium-monitor-capacity.md) og i [blogindlægget om appen Premium Capacity Metrics](https://powerbi.microsoft.com/blog/premium-capacity-metrics-app-new-health-center-with-kpis-to-explore-relevant-metrics-and-steps-to-mitigate-issues/).
+Denne artikel indeholder en beskrivelse af, hvordan du installerer appen og opretter forbindelse til datakilder. Du kan finde oplysninger om indholdet af rapporter, og hvordan du bruger det i [Overvåg Premium-kapaciteter med appen](../admin/service-admin-premium-monitor-capacity.md) og i [blogindlægget om appen Premium Capacity Metrics](https://powerbi.microsoft.com/blog/premium-capacity-metrics-app-new-health-center-with-kpis-to-explore-relevant-metrics-and-steps-to-mitigate-issues/).
 
 Når du har installeret appen og oprettet forbindelse til datakilderne, kan du tilpasse rapporten til dine behov. Du kan derefter distribuere den til kolleger i organisationen.
 

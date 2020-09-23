@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 07/08/2020
-ms.openlocfilehash: 1263de975319b7b0e2ef5123d985fa50a126d680
-ms.sourcegitcommit: cfcde5ff2421be35dc1efc9e71ce2013f55ec78f
+ms.openlocfilehash: 3be821bfaad91ede2a7348e35c06850c81ddf1b4
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/18/2020
-ms.locfileid: "86459594"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90859238"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Ændringslog for Power BI-rapportserver
 
@@ -32,7 +32,7 @@ Se [Nyheder i Power BI-rapportserver](whats-new.md) for at få flere oplysninger
             - Løste et problem, hvor opdatering mislykkedes, når fuzzy-søgning blev brugt til at flette forespørgsler.
     - *Version: 1.8.7450.37410 (Build 15.0.1103.227), udgivet: 27. maj 2020*
          - Funktioner
-            -  Der er tilføjet understøttelse af størrelsen af det tilpassede katalog for forbindelsesgruppen (se [MaxCatalogConnectionPoolSizePerProcess-indstilling](https://docs.microsoft.com/sql/reporting-services/report-server/rsreportserver-config-configuration-file?view=sql-server-ver15#bkmk_service) for at få flere oplysninger).
+            -  Der er tilføjet understøttelse af størrelsen af det tilpassede katalog for forbindelsesgruppen (se [MaxCatalogConnectionPoolSizePerProcess-indstilling](/sql/reporting-services/report-server/rsreportserver-config-configuration-file#bkmk_service) for at få flere oplysninger).
             -  Forbedret funktionsmåde ved visning af en rapport under en opdateringshandling.
         - Sikkerhedsopdateringer
         - Fejlrettelser
@@ -65,7 +65,7 @@ Se [Nyheder i Power BI-rapportserver](whats-new.md) for at få flere oplysninger
            -  Rettelse til Power BI-rapporter, der ikke kan uploades for visse datakilder
            -  Rettelse til placeringen af linket til download af Desktop for Power BI-rapportserver fra portalen
            -  Rettelse til DynamicImageDPI til Excel-gengivelse
-           -  Rettelse til Oracle-forbindelser, der bruger forkert trådkultur i visse scenarier med flere brugere (se [dokumentation til UseInstalledUICulture](https://docs.microsoft.com/power-bi/report-server/connect-data-sources) for at få flere oplysninger)
+           -  Rettelse til Oracle-forbindelser, der bruger forkert trådkultur i visse scenarier med flere brugere (se [dokumentation til UseInstalledUICulture](./connect-data-sources.md) for at få flere oplysninger)
            -  Rettelse til standardværdien for CustomHeaders, der forårsager fejl i forbindelse med integrering af rapporter
            -  Rettelse til SQL-parameternavne, der oprettes forkert i visse tilfælde
     - *Version: 1.6.7327.3007 (build 15.0.1102.759), udgivet: 23. januar 2020*
@@ -351,7 +351,7 @@ Se [Nyheder i Power BI-rapportserver](whats-new.md) for at få flere oplysninger
 
     - *Build 14.0.600.305, udgivet: 19. september, 2017*  
         - Fejlrettelser
-            - Opdatering til den seneste [Bing Maps Web Control](https://msdn.microsoft.com/library/mt712542.aspx)
+            - Opdatering til den seneste [Bing Maps Web Control](/bingmaps/v8-web-control/)
 
     - *Build 14.0.600.301, udgivet: 11. juli, 2017*
         - Fejlrettelser
@@ -373,6 +373,6 @@ Se [Nyheder i Power BI-rapportserver](whats-new.md) for at få flere oplysninger
 [Administratoroversigt](admin-handbook-overview.md)  
 [Installer Power BI-rapportserver](install-report-server.md)  
 [Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Download SQL Server Data Tools (SSDT)](https://go.microsoft.com/fwlink/?LinkID=616714)
+[Download SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

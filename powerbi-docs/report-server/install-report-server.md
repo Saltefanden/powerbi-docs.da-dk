@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 01/16/2020
-ms.openlocfilehash: a6c668ad08b3b56eeb92919f37b021a77100ceee
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 049f6f563c9ac6e7494b0680b69e0df8909304d4
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239043"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861883"
 ---
 # <a name="install-power-bi-report-server"></a>Installér Power BI-rapportserver
 
@@ -93,9 +93,9 @@ Du behøver ikke adgang til en SQL Server-databaseprogramserver på installation
 
 ## <a name="configure-your-report-server"></a>Konfigurer rapportserveren
 
-Når du har valgt **Configure Report Server** i konfigurationen, vises Reporting Services Configuration Manager. Du kan få mere at vide under [Reporting Services Configuration Manager](https://docs.microsoft.com/sql/reporting-services/install-windows/reporting-services-configuration-manager-native-mode).
+Når du har valgt **Configure Report Server** i konfigurationen, vises Reporting Services Configuration Manager. Du kan få mere at vide under [Reporting Services Configuration Manager](/sql/reporting-services/install-windows/reporting-services-configuration-manager-native-mode).
 
-Hvis du vil fuldføre den indledende konfiguration af Reporting Services, skal du [oprette en rapportserverdatabase](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-report-server-create-a-report-server-database). Der kræves en SQL Server Database-server for at fuldføre dette trin.
+Hvis du vil fuldføre den indledende konfiguration af Reporting Services, skal du [oprette en rapportserverdatabase](/sql/reporting-services/install-windows/ssrs-report-server-create-a-report-server-database). Der kræves en SQL Server Database-server for at fuldføre dette trin.
 
 ### <a name="creating-a-database-on-a-different-server"></a>Opret en database på en anden server
 
@@ -109,7 +109,7 @@ Du kan omgå fejlen ved at ændre tjenestekontoen til enten Netværkstjeneste el
 
 ![Konfigurer konto til rapportservertjeneste](media/install-report-server/pbireportserver-configure-account.png)
 
-Du kan få mere at vide under [Konfigurer kontoen til rapportservertjenesten](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager).
+Du kan få mere at vide under [Konfigurer kontoen til rapportservertjenesten](/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager).
 
 ## <a name="windows-service"></a>Windows-tjeneste
 
@@ -143,23 +143,23 @@ Hvis du tilgår rapportserveren fra en fjerncomputer, skal du sikre dig, at du h
 
 ## <a name="additional-configuration"></a>Yderligere konfiguration
 
-* Hvis du vil konfigurere integration med Power BI-tjenesten, så du kan fastgøre rapportelementer på et Power BI-dashboard, skal du se [Integrer med Power BI-tjenesten](https://docs.microsoft.com/sql/reporting-services/install-windows/power-bi-report-server-integration-configuration-manager).
-* Hvis du vil konfigurere mail til behandling af abonnementer, skal du se [Mailindstillinger](https://docs.microsoft.com/sql/reporting-services/install-windows/e-mail-settings-reporting-services-native-mode-configuration-manager) og [Maillevering på en rapportserver](https://docs.microsoft.com/sql/reporting-services/subscriptions/e-mail-delivery-in-reporting-services).
-* Hvis du vil konfigurere webportalen, så du kan få adgang til den på en computer for at få vist og administrere rapporter, skal du se [Konfigurer en firewall til rapportserveradgang](https://docs.microsoft.com/sql/reporting-services/report-server/configure-a-firewall-for-report-server-access) og [Konfigurer en rapportserver til fjernadministration](https://docs.microsoft.com/sql/reporting-services/report-server/configure-a-report-server-for-remote-administration).
-* Du kan finde flere oplysninger om, hvordan du angiver egenskaber for Report Server-systemet i SQL Server Management Studio, på [siden med avancerede serveregenskaber](https://docs.microsoft.com/sql/reporting-services/tools/server-properties-advanced-page-reporting-services). Medmindre andet er angivet, gælder indstillingerne for både Power BI-rapportserver og SQL Server Reporting Services.
+* Hvis du vil konfigurere integration med Power BI-tjenesten, så du kan fastgøre rapportelementer på et Power BI-dashboard, skal du se [Integrer med Power BI-tjenesten](/sql/reporting-services/install-windows/power-bi-report-server-integration-configuration-manager).
+* Hvis du vil konfigurere mail til behandling af abonnementer, skal du se [Mailindstillinger](/sql/reporting-services/install-windows/e-mail-settings-reporting-services-native-mode-configuration-manager) og [Maillevering på en rapportserver](/sql/reporting-services/subscriptions/e-mail-delivery-in-reporting-services).
+* Hvis du vil konfigurere webportalen, så du kan få adgang til den på en computer for at få vist og administrere rapporter, skal du se [Konfigurer en firewall til rapportserveradgang](/sql/reporting-services/report-server/configure-a-firewall-for-report-server-access) og [Konfigurer en rapportserver til fjernadministration](/sql/reporting-services/report-server/configure-a-report-server-for-remote-administration).
+* Du kan finde flere oplysninger om, hvordan du angiver egenskaber for Report Server-systemet i SQL Server Management Studio, på [siden med avancerede serveregenskaber](/sql/reporting-services/tools/server-properties-advanced-page-reporting-services). Medmindre andet er angivet, gælder indstillingerne for både Power BI-rapportserver og SQL Server Reporting Services.
 
 ## <a name="next-steps"></a>De næste trin
 
 [Administratoroversigt](admin-handbook-overview.md)  
 [Sådan finder du produktnøglen til din rapportserver](find-product-key.md)  
 [Installér Power BI Desktop optimeret til Power BI Report Server](install-powerbi-desktop.md)  
-[Bekræft installationen af Reporting Services](https://docs.microsoft.com/sql/reporting-services/install-windows/verify-a-reporting-services-installation)  
-[Konfigurer kontoen til rapportservertjenesten](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager)  
-[Konfigurer rapportserverens URL-adresser](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-report-server-urls-ssrs-configuration-manager)  
-[Konfigurer en rapportservers databaseforbindelse](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager)  
-[Initialiser en rapportserver](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-encryption-keys-initialize-a-report-server)  
-[Konfigurer SSL-forbindelser på en rapportserver](https://docs.microsoft.com/sql/reporting-services/security/configure-ssl-connections-on-a-native-mode-report-server)  
-[Konfigurer Windows-tjenestekonti og -tilladelser](https://docs.microsoft.com/sql/database-engine/configure-windows/configure-windows-service-accounts-and-permissions)  
+[Bekræft installationen af Reporting Services](/sql/reporting-services/install-windows/verify-a-reporting-services-installation)  
+[Konfigurer kontoen til rapportservertjenesten](/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager)  
+[Konfigurer rapportserverens URL-adresser](/sql/reporting-services/install-windows/configure-report-server-urls-ssrs-configuration-manager)  
+[Konfigurer en rapportservers databaseforbindelse](/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager)  
+[Initialiser en rapportserver](/sql/reporting-services/install-windows/ssrs-encryption-keys-initialize-a-report-server)  
+[Konfigurer SSL-forbindelser på en rapportserver](/sql/reporting-services/security/configure-ssl-connections-on-a-native-mode-report-server)  
+[Konfigurer Windows-tjenestekonti og -tilladelser](/sql/database-engine/configure-windows/configure-windows-service-accounts-and-permissions)  
 [Browserunderstøttelse af Power BI-rapportserver](browser-support.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

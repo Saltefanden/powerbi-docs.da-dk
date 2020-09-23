@@ -8,12 +8,12 @@ ms.subservice: powerbi-report-server
 ms.topic: troubleshooting
 ms.date: 11/01/2017
 ms.author: maggies
-ms.openlocfilehash: dd7d6a140dd9828a188f22144e31ea89e342c370
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 3ad1488869980c56bfe8dd4973fe60806781510a
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "74698687"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861791"
 ---
 # <a name="troubleshoot-scheduled-refresh-in-power-bi-report-server"></a>Fejlfinding i forbindelse med planlagt opdatering i Power BI Report Server
 I denne artikel beskrives ressourcer, der er tilgængelige til fejlfinding i forbindelse med planlagt opdatering i Power BI Report Server.
@@ -35,9 +35,9 @@ Der kan opstå belastning på hukommelsen, når rapporter kræver mere hukommels
 
 Hvis du konstant oplever belastning på hukommelsen, kan det være en god ide at se på en scale-out-udrulning af rapportserveren for at fordele belastningen af ressourcer. Du kan også definere, at en given rapportserver bruges til opdatering af data med indstillingen `IsDataModelRefreshService` i rsreportserver.config. Med denne indstilling kan du definere en eller flere servere til at være frontend-server, der skal håndtere rapporter efter behov, og have et andet sæt af servere, der kun skal anvendes til planlagt opdatering.
 
-Du kan finde oplysninger om, hvordan du overvåger en Analysis Services-forekomst, i [Overvåg en Analysis Services-forekomst](https://docs.microsoft.com/sql/analysis-services/instances/monitor-an-analysis-services-instance).
+Du kan finde oplysninger om, hvordan du overvåger en Analysis Services-forekomst, i [Overvåg en Analysis Services-forekomst](/sql/analysis-services/instances/monitor-an-analysis-services-instance).
 
-Du kan finde oplysninger om hukommelsesindstillinger i Analysis Services under [Egenskaber for hukommelse](https://docs.microsoft.com/sql/analysis-services/server-properties/memory-properties).
+Du kan finde oplysninger om hukommelsesindstillinger i Analysis Services under [Egenskaber for hukommelse](/sql/analysis-services/server-properties/memory-properties).
 
 ### <a name="kerberos-configuration"></a>Kerberos-konfiguration
 Hvis du opretter forbindelse til en datakilde med Windows-legitimationsoplysninger, kan det kræve konfiguration af Kerberos-begrænset delegering for at kunne oprette forbindelse. Du kan finde flere oplysninger om, hvordan du konfigurerer Kerberos-begrænset delegering, under [Konfigurer Kerberos til at bruge Power BI-rapporter](configure-kerberos-powerbi-reports.md).
@@ -180,7 +180,7 @@ Følgende indstillinger nulstilles, når Analysis Services-processen startes. Ev
 ### <a name="profiling-the-local-analysis-services-process"></a>Profiler den lokale Analysis Services-proces
 En SQL Profiler-sporing kan køres på den lokale Analysis Services-proces til diagnoseformål. Gør følgende for at oprette forbindelse til den lokale forekomst af Analysis Services.
 
-SQL Server Profiler Trace er inkluderet i download af [SQL Server Management Studio (SSMS)](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms).
+SQL Server Profiler Trace er inkluderet i download af [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms).
 
 1. Start **SQL Server Profiler** som administrator.
 2. Vælg knappen **Ny sporing**.
@@ -188,7 +188,6 @@ SQL Server Profiler Trace er inkluderet i download af [SQL Server Management Stu
 4. Vælg de hændelser, du vil hente, og vælg **Kør** i dialogboksen **Egenskaber for sporing**.
 
 ## <a name="lock-pages-in-memory-windows-privilege"></a>Windows-rettigheden Lås sider i hukommelsen
-Hvis du finder ud af, at du ikke kan gengive en Power BI-rapport, kan det hjælpe at tildele rettigheden **Lås sider i hukommelsen** til den tjenestekonto, der kører Power BI-rapportserveren. Du kan finde flere oplysninger om, hvordan du konfigurerer **Lås sider i hukommelsen**, i [Windows-rettigheder, der er tildelt Analysis Services-tjenestekontoen](https://docs.microsoft.com/sql/analysis-services/instances/configure-service-accounts-analysis-services#bkmk_winpriv).
+Hvis du finder ud af, at du ikke kan gengive en Power BI-rapport, kan det hjælpe at tildele rettigheden **Lås sider i hukommelsen** til den tjenestekonto, der kører Power BI-rapportserveren. Du kan finde flere oplysninger om, hvordan du konfigurerer **Lås sider i hukommelsen**, i [Windows-rettigheder, der er tildelt Analysis Services-tjenestekontoen](/sql/analysis-services/instances/configure-service-accounts-analysis-services#bkmk_winpriv).
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-

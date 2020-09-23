@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 01/22/2019
-ms.openlocfilehash: ba0cf6b450720e0564b5d476f57d91a4f070391c
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: eb06bc41aaaeea9790c34bb808548506963b8cb8
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238073"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861837"
 ---
 # <a name="row-level-security-rls-in-power-bi-report-server"></a>Sikkerhed på rækkeniveau i Power BI-rapportserver
 
@@ -31,7 +31,7 @@ Som standard bruger filtrering af sikkerhed på rækkeniveau envejsfiltre, uanse
 
     ![Anvend sikkerhedsfilter](media/row-level-security-report-server/rls-apply-security-filter.png)
 
-Marker dette afkrydsningsfelt, når du implementerer [dynamisk sikkerhed på rækkeniveau](https://docs.microsoft.com/analysis-services/tutorial-tabular-1200/supplemental-lesson-implement-dynamic-security-by-using-row-filters) baseret på brugernavn eller logon-id. 
+Marker dette afkrydsningsfelt, når du implementerer [dynamisk sikkerhed på rækkeniveau](/analysis-services/tutorial-tabular-1200/supplemental-lesson-implement-dynamic-security-by-using-row-filters) baseret på brugernavn eller logon-id. 
 
 Du kan få mere at vide i [Tovejskrydsfiltrering ved hjælp af DirectQuery i Power BI Desktop](../transform-model/desktop-bidirectional-filtering.md) og det tekniske whitepaper [Sikring af modellen for tabellarisk BI-semantik](https://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx).
 
@@ -122,4 +122,3 @@ Ja, hvis du allerede har eksisterende roller defineret og tildelt medlemmer i Po
 [Administratorhåndbog](admin-handbook-overview.md)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-

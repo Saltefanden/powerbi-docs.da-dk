@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
 ms.date: 03/02/2020
-ms.openlocfilehash: 001a66fc20455c207bd6ad2928041ae0861732eb
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 37ab82de16e45f86f2d2aba5113ba4efe6fc383c
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239612"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90859675"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service"></a>Opret en integreret datakilde for sideinddelte rapporter i Power BI-tjenesten
 
@@ -59,7 +59,7 @@ Se [Rapportdata i Power BI Report Builder](report-builder-data.md) for at få me
   
 4.  Vælg **Legitimationsoplysninger**.  
   
-     Angiv de legitimationsoplysninger, der skal bruges til denne datakilde. Ejeren af datakilden vælger typen af legitimationsoplysninger, der understøttes. Du kan finde flere oplysninger i [Angiv legitimationsoplysninger og forbindelsesoplysninger til rapportdatakilder](https://docs.microsoft.com/sql/reporting-services/report-data/specify-credential-and-connection-information-for-report-data-sources).
+     Angiv de legitimationsoplysninger, der skal bruges til denne datakilde. Ejeren af datakilden vælger typen af legitimationsoplysninger, der understøttes. Du kan finde flere oplysninger i [Angiv legitimationsoplysninger og forbindelsesoplysninger til rapportdatakilder](/sql/reporting-services/report-data/specify-credential-and-connection-information-for-report-data-sources).
   
 5.  Vælg **OK**.  
   
@@ -93,4 +93,3 @@ Sideinddelte rapporter, der opretter forbindelse til Power BI-datasæt, følger 
 
 - [Opret et integreret datasæt til en sideinddelt rapport i Power BI-tjenesten](paginated-reports-create-embedded-dataset.md)
 - [Hvad er sideinddelte rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md)
-

@@ -8,12 +8,12 @@ ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 06/10/2020
 ms.author: davidi
-ms.openlocfilehash: 3814c0532d94af3265bd608fc7837df982f9b6c4
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 7bc3b77a8badafe1c9660af347a74214176690ac
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236097"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90859031"
 ---
 # <a name="how-to-configure-power-bi-report-scheduled-refresh"></a>Sådan konfigurerer du en planlagt opdatering af en Power BI-rapport
 Hvis du vil opdatere data i din Power BI-rapport på Power BI-rapportserver, skal du oprette en plan for planlagt opdatering. Du kan oprette denne plan i området *Administrer* i en Power BI-rapport på rapportserveren.
@@ -21,7 +21,7 @@ Hvis du vil opdatere data i din Power BI-rapport på Power BI-rapportserver, ska
 ![Vellykkede planlagt opdatering af en Power BI-rapport](media/configure-scheduled-refresh/scheduled-refresh-success.png)
 
 ## <a name="configure-data-source-credentials"></a>Konfigurer legitimationsoplysningerne for datakilden
-Du skal bruge de nødvendige tilladelser til at oprette en plan for planlagt opdatering. Tilladelser er defineret i rolledefinitionerne for rapportserveren. Se [Rolledefinitioner – foruddefinerede roller](https://docs.microsoft.com/sql/reporting-services/security/role-definitions-predefined-roles) i dokumentationen til SQL Server Reporting Services for at få flere oplysninger.
+Du skal bruge de nødvendige tilladelser til at oprette en plan for planlagt opdatering. Tilladelser er defineret i rolledefinitionerne for rapportserveren. Se [Rolledefinitioner – foruddefinerede roller](/sql/reporting-services/security/role-definitions-predefined-roles) i dokumentationen til SQL Server Reporting Services for at få flere oplysninger.
 
 Før du kan oprette en plan for planlagt dataopdatering, skal du angive legitimationsoplysningerne for **hver enkelt datakilde**, der bruges i din Power BI-rapport.
 
@@ -86,9 +86,8 @@ Få vist status for en plan for planlagt opdatering på webportalen.
 Websiden skal opdateres, for at du kan se den aktuelle status. Status ændres ikke automatisk.
 
 ## <a name="next-steps"></a>Næste trin
-Du kan få mere at vide om oprettelse og ændring af tidsplaner under [Opret, rediger og slet tidsplaner](https://docs.microsoft.com/sql/reporting-services/subscriptions/create-modify-and-delete-schedules).
+Du kan få mere at vide om oprettelse og ændring af tidsplaner under [Opret, rediger og slet tidsplaner](/sql/reporting-services/subscriptions/create-modify-and-delete-schedules).
 
 Du kan finde oplysninger om fejlfinding i forbindelse med planlagt opdatering under [Fejlfinding i forbindelse med planlagt opdatering på Power BI-rapportserver](scheduled-refresh-troubleshoot.md).
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-

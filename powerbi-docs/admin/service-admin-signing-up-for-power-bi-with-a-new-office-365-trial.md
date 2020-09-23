@@ -10,12 +10,12 @@ ms.date: 05/17/2020
 ms.author: mihart
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 8f79037c4117baaba1a50b6fe4e728b57fad362f
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.openlocfilehash: e8a5d3b4bf8200e6e990c1bced2920383398b6cf
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87252078"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90857076"
 ---
 # <a name="signing-up-for-power-bi-with-a-new-microsoft-365-trial"></a>Tilmelding til Power BI med en ny prøveversion af Microsoft 365
 
@@ -45,7 +45,7 @@ Hvis du vælger **Office 365 E5**, indeholder din prøveversion Power BI Pro. Pr
 
     ![Vælg at tilmelde dig en ny konto](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-create-account.png)
 
-4. Det er det hele.  Du har nu en mailadresse, som du kan bruge til at tilmelde dig Power BI. Forsæt til [Tilmeld dig Power BI-tjenesten som enkeltperson](../service-self-service-signup-for-power-bi.md)
+4. Det er det hele.  Du har nu en mailadresse, som du kan bruge til at tilmelde dig Power BI. Forsæt til [Tilmeld dig Power BI-tjenesten som enkeltperson](../fundamentals/service-self-service-signup-for-power-bi.md)
 
      ![angiv dine kontaktoplysninger](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-thank.png)
 

@@ -10,12 +10,12 @@ ms.date: 04/08/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 899055ea26d1f36592c426ba402aa363b65bfa15
-ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
+ms.openlocfilehash: 8c5daa2e63b874f1811c3819c60785bdbe93918c
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87878345"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90856916"
 ---
 # <a name="purchase-and-assign-power-bi-pro-user-licenses"></a>Køb og tildel Power BI Pro-brugerlicenser
 
@@ -29,7 +29,7 @@ Power BI Pro er en individuel brugerlicens, der giver brugerne mulighed for at l
 I denne artikel forklares det, hvordan du køber Power BI Pro-brugerlicenser i Microsoft 365 Administration. Når du har købt licenser, kan du tildele dem til brugere enten i Microsoft 365 Administration eller i Azure Portal.
 
 > [!NOTE]
-> Fra og med den 14. januar 2020 er selvbetjeningsindkøb, abonnements- og licensstyringsfunktioner til Power Platform-produkter (Power BI, Power Apps og Power Automate) tilgængelige til kommercielle Cloud-kunder. Du kan få flere oplysninger under [Ofte stillede spørgsmål om køb via selvbetjening](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq). Hvis du vil aktivere eller deaktivere købsmuligheder via selvbetjening, kan du se under [Aktivér eller deaktiver tilmelding og køb via selvbetjening](/power-bi/admin/service-admin-disable-self-service).
+> Fra og med den 14. januar 2020 er selvbetjeningsindkøb, abonnements- og licensstyringsfunktioner til Power Platform-produkter (Power BI, Power Apps og Power Automate) tilgængelige til kommercielle Cloud-kunder. Du kan få flere oplysninger under [Ofte stillede spørgsmål om køb via selvbetjening](/microsoft-365/commerce/subscriptions/self-service-purchase-faq). Hvis du vil aktivere eller deaktivere købsmuligheder via selvbetjening, kan du se under [Aktivér eller deaktiver tilmelding og køb via selvbetjening](./service-admin-disable-self-service.md).
 
 ### <a name="prerequisites"></a>Forudsætninger
 
@@ -40,7 +40,7 @@ Du skal være ejer af det Azure-abonnement, som Power BI bruger til opslag i Azu
 ### <a name="purchase-licenses-in-microsoft-365"></a>Køb licenser i Microsoft 365
 
 > [!NOTE]
-> Hvis du normalt køber licenser via en volumenlicensaftale, f.eks. en Enterprise Aftale, og ønsker at modtage en faktura i stedet for at købe med et kreditkort eller en bankkonto, skal du indsende ordren anderledes. Kontakt din Microsoft-forhandler, eller gå gennem Volume Licensing Service Center for at tilføje eller fjerne licenser. Du kan finde flere oplysninger under [Administrer abonnementslicenser](https://docs.microsoft.com/microsoft-365/commerce/licenses/buy-licenses?view=o365-worldwide).
+> Hvis du normalt køber licenser via en volumenlicensaftale, f.eks. en Enterprise Aftale, og ønsker at modtage en faktura i stedet for at købe med et kreditkort eller en bankkonto, skal du indsende ordren anderledes. Kontakt din Microsoft-forhandler, eller gå gennem Volume Licensing Service Center for at tilføje eller fjerne licenser. Du kan finde flere oplysninger under [Administrer abonnementslicenser](/microsoft-365/commerce/licenses/buy-licenses?view=o365-worldwide).
 
 Følg disse trin for at købe Power BI Pro-licenser via Microsoft 365 Administration:
 

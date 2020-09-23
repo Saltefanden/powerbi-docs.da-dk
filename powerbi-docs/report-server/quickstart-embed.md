@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
-ms.openlocfilehash: 4f6382b78a02750c76987de4fa911eb8c7d33b50
-ms.sourcegitcommit: 00c0b24d5e80009d18cec6da4fee8a9611bcba04
+ms.openlocfilehash: 9e639c4a22cc4e01c04374289026a7006f33143b
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87411997"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861860"
 ---
 # <a name="embed-a-power-bi-report-server-report-using-an-iframe-in-sharepoint-server"></a>Integrer en rapport på Power BI-rapportserveren ved hjælp af en iFrame på SharePoint Server
 
@@ -24,7 +24,7 @@ I denne artikel får du mere at vide om, hvordan du integrerer en rapport fra Po
 ## <a name="prerequisites"></a>Forudsætninger
 * [Power BI-rapportserveren](https://powerbi.microsoft.com/report-server/) skal være installeret og konfigureret.
 * [Power BI Desktop optimeret til Power BI-rapportserveren](install-powerbi-desktop.md) skal være installeret.
-* Et [SharePoint 2013-, 2016- eller 2019-miljø](https://docs.microsoft.com/sharepoint/install/install) installeret og konfigureret.
+* Et [SharePoint 2013-, 2016- eller 2019-miljø](/sharepoint/install/install) installeret og konfigureret.
 * Internet Explorer 11 understøttes kun, hvis dokumenttilstanden er angivet til IE11 (Edge), eller når du bruger SharePoint Online. Du kan bruge andre understøttede browsere med SharePoint i det lokale miljø og SharePoint Online.
 
 ## <a name="create-the-power-bi-report-url"></a>Opret URL-adressen til Power BI-rapporten
@@ -101,4 +101,4 @@ Når du har URL-adressen, kan du oprette en iFrame på en SharePoint-side, der e
 - [Opret en Power BI-rapport til Power BI-rapportserveren](quickstart-create-powerbi-report.md).  
 - [Opret en sideinddelt rapport til Power BI-rapportserveren](quickstart-create-paginated-report.md).  
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/). 
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/).

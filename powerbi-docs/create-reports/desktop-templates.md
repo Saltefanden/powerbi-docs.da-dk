@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 08/16/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 2b1570176138a38e9856691af7d81f201b055db1
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 955e32e99c4f208bbf3582c32b9e5efee95a8f3a
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238529"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861929"
 ---
 # <a name="create-report-templates-for-power-bi-desktop"></a>Opret rapportskabeloner til Power BI Desktop
 
@@ -70,7 +70,7 @@ Det er det hele. Det er nemt at oprette og bruge rapportskabeloner i Power BI De
 
 ## <a name="next-steps"></a>De næste trin
 Du er måske også interesseret i at få mere at vide om **forespørgselsparametre**:
-* [Bruger du forespørgselsparametre i Power BI Desktop?](https://docs.microsoft.com/power-query/power-query-query-parameters)
+* [Bruger du forespørgselsparametre i Power BI Desktop?](/power-query/power-query-query-parameters)
 
 Herudover er der mange andre forskellige ting, du kan gøre med Power BI Desktop. Du kan finde flere oplysninger om funktionerne i følgende ressourcer:
 
@@ -78,4 +78,4 @@ Herudover er der mange andre forskellige ting, du kan gøre med Power BI Desktop
 * [Oversigt over forespørgsler i Power BI Desktop](../transform-model/desktop-query-overview.md)
 * [Datatyper i Power BI Desktop](../connect-data/desktop-data-types.md)
 * [Udform og kombiner data med Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
-* [Almindelige forespørgselsopgaver i Power BI Desktop](../transform-model/desktop-common-query-tasks.md)    
+* [Almindelige forespørgselsopgaver i Power BI Desktop](../transform-model/desktop-common-query-tasks.md)

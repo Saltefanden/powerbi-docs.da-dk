@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 08/13/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: a6513bdf7451db7068fe2540d32546df4d42ae8e
-ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
+ms.openlocfilehash: 737a8df2f8f7e5d4da50259112ad1afd6ec2ecff
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88204572"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90856823"
 ---
 # <a name="bring-your-own-encryption-keys-for-power-bi"></a>Medbring dine egne krypteringsnøgler til Power BI
 
@@ -39,7 +39,7 @@ BYOK anvendes kun på datasæt. Pushdatasæt, Excel-filer og CSV-filer, som brug
 ```PS C:\> Get-PowerBIWorkspace -Scope Organization -Include All```
 
 > [!NOTE]
-> Denne cmdlet kræver Power BI-administrationsmodulet v 1.0.840. Du kan se, hvilken version du har, ved at køre Get-InstalledModule -Name MicrosoftPowerBIMgmt. Installér den nyeste version ved at køre Install-Module -Name MicrosoftPowerBIMgmt. Du kan få flere oplysninger om Power BI-cmdletten og dens parametre i [PowerShell-cmdlet-modulet i Power BI](https://docs.microsoft.com/powershell/power-bi/overview).
+> Denne cmdlet kræver Power BI-administrationsmodulet v 1.0.840. Du kan se, hvilken version du har, ved at køre Get-InstalledModule -Name MicrosoftPowerBIMgmt. Installér den nyeste version ved at køre Install-Module -Name MicrosoftPowerBIMgmt. Du kan få flere oplysninger om Power BI-cmdletten og dens parametre i [PowerShell-cmdlet-modulet i Power BI](/powershell/power-bi/overview).
 
 ## <a name="configure-azure-key-vault"></a>Konfigurer Azure Key Vault
 
@@ -193,7 +193,7 @@ Power BI omfatter yderligere cmdlet'er, der hjælpe med at administrere BYOK i d
 
 ## <a name="next-steps"></a>Næste trin
 
-* [PowerShell-cmdlet-modulet i Power BI](https://docs.microsoft.com/powershell/power-bi/overview) 
+* [PowerShell-cmdlet-modulet i Power BI](/powershell/power-bi/overview) 
 
 * [Måder at dele dit arbejde på i Power BI](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md)
 
@@ -202,4 +202,3 @@ Power BI omfatter yderligere cmdlet'er, der hjælpe med at administrere BYOK i d
 * [Integrer med rapportwebdelen i SharePoint Online](../collaborate-share/service-embed-report-spo.md)
 
 * [Publicer på internettet fra Power BI](../collaborate-share/service-publish-to-web.md)
-

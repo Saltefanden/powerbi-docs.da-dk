@@ -8,12 +8,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 10/24/2018
 ms.author: maggies
-ms.openlocfilehash: 724bd7a9a11c42520c520019f1c4a67415aa5487
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 264eb0c9079e1f54d53aeb41a1ef73016c2bf1b4
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "73874297"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90859268"
 ---
 # <a name="browser-support-for-power-bi-report-server"></a>Browsersupport til Power BI Report Server
 Få mere at vide om, hvilke browserversioner der understøtter administration og visning af Power BI Report Server og Report Viewer-kontrolelementerne.
@@ -91,12 +91,12 @@ Your browser does not support scripts or has been configured to not allow script
  Hvis du vælger at få vist rapporten uden scriptsupport, gengives rapporten i HTML uden rapportfremviserens funktioner såsom værktøjslinjen Rapport og dokumentoversigten.
 
 > [!NOTE]
-> Værktøjslinjen Rapport er en del af HTML Viewer-komponenten. Værktøjslinjen vises som standard øverst på alle rapporter, der gengives i et browservindue. Rapportfremviseren indeholder funktioner, der giver mulighed for at søge efter rapporten for at få oplysninger, rulle til en bestemt side og justere sidestørrelsen ud fra visningsbehov. Du kan finde flere oplysninger om værktøjslinjen Rapport eller HTML Viewer under [HTML Viewer og værktøjslinjen Rapport](https://docs.microsoft.com/sql/reporting-services/html-viewer-and-the-report-toolbar).
+> Værktøjslinjen Rapport er en del af HTML Viewer-komponenten. Værktøjslinjen vises som standard øverst på alle rapporter, der gengives i et browservindue. Rapportfremviseren indeholder funktioner, der giver mulighed for at søge efter rapporten for at få oplysninger, rulle til en bestemt side og justere sidestørrelsen ud fra visningsbehov. Du kan finde flere oplysninger om værktøjslinjen Rapport eller HTML Viewer under [HTML Viewer og værktøjslinjen Rapport](/sql/reporting-services/html-viewer-and-the-report-toolbar).
 > 
 > 
 
 ## <a name="browser-support-for-report-viewer-web-server-controls-in-visual-studio"></a>Browsersupport for Report Viewer-webserverobjekter i Visual Studio
-Report Viewer-webserverobjektet bruges til at integrere rapportfunktionerne i et ASP.NET-webprogram. Du kan finde flere oplysninger om, hvordan du henter Report Viewer-objektet under [Integration af rapporteringstjenester ved hjælp af Report Viewer-objekter – Kom i gang](https://docs.microsoft.com/sql/reporting-services/application-integration/integrating-reporting-services-using-reportviewer-controls-get-started).
+Report Viewer-webserverobjektet bruges til at integrere rapportfunktionerne i et ASP.NET-webprogram. Du kan finde flere oplysninger om, hvordan du henter Report Viewer-objektet under [Integration af rapporteringstjenester ved hjælp af Report Viewer-objekter – Kom i gang](/sql/reporting-services/application-integration/integrating-reporting-services-using-reportviewer-controls-get-started).
 
 Brug en browser med aktivering af scriptsupport. Hvis browseren ikke kan køre scripts, kan du ikke få vist rapporten.
 
@@ -114,7 +114,6 @@ Brug en browser med aktivering af scriptsupport. Hvis browseren ikke kan køre s
 [Administratoroversigt](admin-handbook-overview.md)  
 [Installér Power BI-rapportserver](install-report-server.md)  
 [Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Download SQL Server Data Tools (SSDT)](https://go.microsoft.com/fwlink/?LinkID=616714)
+[Download SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-

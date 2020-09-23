@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
 LocalizationGroup: Administration
-ms.openlocfilehash: 6e006bc858ad9d82073ced7929c87920da6559ab
-ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
+ms.openlocfilehash: ee7954cff7863ff58370bbe1e58f26c64644c8e8
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86034154"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90857053"
 ---
 # <a name="power-bi-security"></a>Power BI-sikkerhed
 
@@ -61,10 +61,10 @@ En undtagelse er forbindelser til **SQL Server Analysis Services** ved hjælp af
 
 ## <a name="enforcing-tls-version-usage"></a>Gennemtvingelse af brug af TLS-version
 
-Netværks- og it-administratorer kan gennemtvinge kravet om at bruge aktuel TLS (Transport Layer Security) til alle former for sikker kommunikation på deres netværk. Windows understøtter TLS-versioner via Microsoft Schannel Provider, som [beskrevet i artiklen TLS Schannel SSP](https://docs.microsoft.com/windows/desktop/SecAuthN/protocols-in-tls-ssl--schannel-ssp-).
+Netværks- og it-administratorer kan gennemtvinge kravet om at bruge aktuel TLS (Transport Layer Security) til alle former for sikker kommunikation på deres netværk. Windows understøtter TLS-versioner via Microsoft Schannel Provider, som [beskrevet i artiklen TLS Schannel SSP](/windows/desktop/SecAuthN/protocols-in-tls-ssl--schannel-ssp-).
 
-Denne gennemtvingelse kan udføres administrativt ved at angive registreringsdatabasenøgler. Gennemtvingelse er beskrevet i [artiklen Administration af SSL-protokoller i AD FS](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/manage-ssl-protocols-in-ad-fs). 
+Denne gennemtvingelse kan udføres administrativt ved at angive registreringsdatabasenøgler. Gennemtvingelse er beskrevet i [artiklen Administration af SSL-protokoller i AD FS](/windows-server/identity/ad-fs/operations/manage-ssl-protocols-in-ad-fs). 
 
 **Power BI Desktop** respekterer de indstillinger for registreringsdatabasenøgler, der er beskrevet i disse artikler, og der oprettes kun forbindelse ved hjælp af den tilladte TLS-version på baggrund af disse indstillinger i registreringsdatabasen, når de findes.
 
-Du kan finde flere oplysninger om, hvordan du angiver disse registreringsdatabasenøgler, i artiklen [TLS-indstillinger i registreringsdatabasen](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings).
+Du kan finde flere oplysninger om, hvordan du angiver disse registreringsdatabasenøgler, i artiklen [TLS-indstillinger i registreringsdatabasen](/windows-server/security/tls/tls-registry-settings).
