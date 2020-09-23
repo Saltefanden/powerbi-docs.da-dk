@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/25/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 6e2fe331fa274305447266321893204dddcc3148
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: 0efa26a6ef3e47272d1434fab453a17ad9823c8c
+ms.sourcegitcommit: cff93e604e2c5f24e0f03d6dbdcd10c2332aa487
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87537452"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90965437"
 ---
 # <a name="dax-sample-model"></a>DAX-eksempelmodel
 
@@ -50,6 +50,6 @@ Du kan hente en Power BI Desktop-eksempelmodelfil [her](https://aka.ms/dax-docs-
 Du kan finde flere oplysninger om denne artikel i følgende ressourcer:
 
 - [Henvisning til DAX (Data Analysis Expressions)](/dax/)
-- Læringsforløb: [Brug DAX i Power BI Desktop](https://docs.microsoft.com/learn/paths/dax-power-bi/)
+- Læringsforløb: [Brug DAX i Power BI Desktop](/learn/paths/dax-power-bi/)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 - Forslag? [Få ideer til at forbedre Power BI](https://ideas.powerbi.com)

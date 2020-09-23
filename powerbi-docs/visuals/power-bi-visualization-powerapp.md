@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 06/01/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 079689fe9c068f433eb39d5363e253fecfc39968
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 78d9d59455a86c5499bc8b01deeacb331bbe7a8b
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85233205"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90858916"
 ---
 # <a name="tutorial-embed-a-power-apps-visual-in-a-power-bi-report"></a>Selvstudium: Integrer en Power Apps-visualisering i en Power BI-rapport
 
@@ -32,8 +32,8 @@ I dette selvstudium lærer du, hvordan du kan:
 ## <a name="prerequisites"></a>Forudsætninger
 
 * En af browserne [Google Chrome](https://www.google.com/chrome/browser/) eller [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge).
-* Et [Power BI-abonnement](https://docs.microsoft.com/power-bi/service-self-service-signup-for-power-bi) med [Eksempel på analyse af salgsmuligheder](https://docs.microsoft.com/power-bi/sample-opportunity-analysis#get-the-content-pack-for-this-sample) installeret.
-* En forståelse af, hvordan du [opretter apps i Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/data-platform-create-app-scratch) og [redigerer Power BI-rapporter](https://docs.microsoft.com/power-bi/service-the-report-editor-take-a-tour).
+* Et [Power BI-abonnement](../fundamentals/service-self-service-signup-for-power-bi.md) med [Eksempel på analyse af salgsmuligheder](../create-reports/sample-opportunity-analysis.md#get-the-content-pack-for-this-sample) installeret.
+* En forståelse af, hvordan du [opretter apps i Power Apps](/powerapps/maker/canvas-apps/data-platform-create-app-scratch) og [redigerer Power BI-rapporter](../create-reports/service-the-report-editor-take-a-tour.md).
 
 
 
@@ -105,8 +105,8 @@ Bemærk, at det viste antal salgsmuligheder i appen stemmer overens med tallet �
 Hvis du ikke længere vil bruge Eksempel på analyse af salgsmuligheder, kan du slette dashboardet, rapporten og dataarket.
 
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
-Du kan finde oplysninger om fejlfinding i [Visualisering af Power Apps til Power BI](https://docs.microsoft.com/powerapps/maker/canvas-apps/powerapps-custom-visual#limitations-of-the-power-apps-visual)
+Du kan finde oplysninger om fejlfinding i [Visualisering af Power Apps til Power BI](/powerapps/maker/canvas-apps/powerapps-custom-visual#limitations-of-the-power-apps-visual)
 
 ## <a name="next-steps"></a>Næste trin
 [Visual til Spørgsmål og svar](power-bi-visualization-types-for-reports-and-q-and-a.md)    
-[Selvstudium: Integrer et Power Apps-visual i en Power BI-rapport](https://docs.microsoft.com/powerapps/maker/canvas-apps/powerapps-custom-visual)    
+[Selvstudium: Integrer et Power Apps-visual i en Power BI-rapport](/powerapps/maker/canvas-apps/powerapps-custom-visual)

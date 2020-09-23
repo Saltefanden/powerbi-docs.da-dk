@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/11/2020
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 0d09fd8c931a92828d11b5813e57e0691c848dc0
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: abd12abf852a220399847bee7903ea83cff1386b
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86214142"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90853603"
 ---
 # <a name="query-overview-in-power-bi-desktop"></a>Oversigt over forespørgsler i Power BI Desktop
 Med Power BI Desktop kan du oprette forbindelse til alverdens data, oprette overbevisende og grundlæggende rapporter og dele dit arbejde med andre – der derefter kan bygge videre på dit arbejde og udvide deres business intelligence.
@@ -81,7 +81,7 @@ Fanen **Transformer** giver adgang til almindelige opgaver til transformation af
 
 ![Skærmbillede af Power BI Desktop, der viser fanen Start.](media/desktop-query-overview/queryoverview_transformribbon.png)
 
-Du kan finde flere oplysninger om transformering af data, herunder eksempler, under [Selvstudium: Udform og kombiner data i Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-shape-and-combine-data).
+Du kan finde flere oplysninger om transformering af data, herunder eksempler, under [Selvstudium: Udform og kombiner data i Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md).
 
 Fanen **Tilføj kolonne** indeholder flere opgaver, der er knyttet til tilføjelse af en kolonne, formatering af kolonnedata og tilføjelse af brugerdefinerede kolonner. Du kan se fanen **Tilføj kolonne** på følgende billede.  
 
@@ -145,4 +145,4 @@ Du kan gøre mange forskellige ting med Power BI Desktop. Du kan finde flere opl
 * [Datakilder i Power BI Desktop](../connect-data/desktop-data-sources.md)
 * [Opret forbindelse til data i Power BI Desktop](../connect-data/desktop-connect-to-data.md)
 * [Selvstudium: Udform og kombiner data med Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
-* [Udfør almindelige forespørgselsopgaver i Power BI Desktop](desktop-common-query-tasks.md)   
+* [Udfør almindelige forespørgselsopgaver i Power BI Desktop](desktop-common-query-tasks.md)

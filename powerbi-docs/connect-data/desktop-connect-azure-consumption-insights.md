@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 5e76cdfc2fd8ad4a90290ecaa559d502d5f847e6
-ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
+ms.openlocfilehash: a8d2284a24bb04b175a00a69339ba9e6ac260c10
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86034422"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90858619"
 ---
 # <a name="connect-to-azure-consumption-insights-data-in-power-bi-desktop"></a>Opret forbindelse til Azure Consumption Insights-data i Power BI Desktop
 
@@ -178,7 +178,7 @@ På nuværende tidspunk burde de fleste af dine oprindelige visualiseringer, tab
 Azure leverer også [**ACI-API'en (Azure Consumption and Insights)** ](https://azure.microsoft.com/blog/announcing-general-availability-of-consumption-and-charge-apis-for-enterprise-azure-customers/). Du kan oprette dine egne brugerdefinerede løsninger til indsamling, rapportering og visualisering af oplysninger om Azure-forbrug ved hjælp af ACI-API'en.
 
 ### <a name="mapping-names-and-usage-details-between-the-portal-the-connector-and-the-api"></a>Tilknyt navne og brugsoplysninger mellem portalen, connectoren og API'en
-Kolonnerne og navnene på oplysninger på Azure Portal svarer til dem i API'en og connectoren, selvom de ikke altid er identiske. Som en hjælp til at afklare dette indeholder følgende tabel en oversigt. Det angives også, om kolonnen er forældet. Du kan finde flere oplysninger om og definitioner på disse vilkår i [ordbog over Azure-faktureringsdata](https://docs.microsoft.com/azure/billing/billing-enterprise-api-usage-detail).
+Kolonnerne og navnene på oplysninger på Azure Portal svarer til dem i API'en og connectoren, selvom de ikke altid er identiske. Som en hjælp til at afklare dette indeholder følgende tabel en oversigt. Det angives også, om kolonnen er forældet. Du kan finde flere oplysninger om og definitioner på disse vilkår i [ordbog over Azure-faktureringsdata](/azure/billing/billing-enterprise-api-usage-detail).
 
 | ACI-connector/ContentPack ColumnName | Kolonnenavn for ACI-API | Kolonnenavn for EA | Forældet/vises for bagudkompatibilitet |
 | --- | --- | --- | --- |
@@ -238,4 +238,4 @@ Du kan oprette forbindelse til mange forskellige datakilder ved hjælp af Power 
 * [Datakilder i Power BI Desktop](desktop-data-sources.md)
 * [Udform og kombiner data med Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Opret forbindelse til Excel-projektmapper i Power BI Desktop](desktop-connect-excel.md)   
-* [Angiv data direkte i Power BI Desktop](desktop-enter-data-directly-into-desktop.md)   
+* [Angiv data direkte i Power BI Desktop](desktop-enter-data-directly-into-desktop.md)

@@ -51,7 +51,9 @@
           items:
             - name: Samarbejd i Teams
               href: service-collaborate-microsoft-teams.md
-            - name: Integrer rapporter i Teams
+            - name: Føj Power BI-appen til Teams
+              href: service-microsoft-teams-app.md
+            - name: Integrer rapporter i Teams-faner
               href: service-embed-report-microsoft-teams.md
             - name: Del direkte i Teams
               href: service-share-report-teams.md

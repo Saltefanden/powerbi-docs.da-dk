@@ -28,7 +28,9 @@
           href: mobile-apps-data-in-real-world-context.md
         - name: Få vist dine data offline i mobilappsene
           href: mobile-apps-offline-data.md
-        - name: Power BI til Mixed Reality-app (Eksempel)
+        - name: Power BI til HoloLens 2
+          href: mobile-hololens2-app.md
+        - name: Power BI til HoloLens (1. generation)
           href: mobile-mixed-reality-app.md
     - name: 'Sådan gør du:'
       items:

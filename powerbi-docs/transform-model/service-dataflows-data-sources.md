@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 09/20/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: b4d1b969e82ef4f6a911f7adc79bf0d9308e7560
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: a3659a2d39faad1d975a5e3c989cb40e800deb76
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85240109"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90853488"
 ---
 # <a name="connect-to-data-sources-for-power-bi-dataflows"></a>Opret forbindelse til datakilder til Power BI-dataflow
 
@@ -186,4 +186,4 @@ Du kan finde flere oplysninger om Power-forespørgsel og planlagt opdatering i d
 * [Konfiguration af planlagt opdatering](../connect-data/refresh-scheduled-refresh.md)
 
 Du kan finde flere oplysninger om Common Data Model i denne oversigtsartikel:
-* [Common Data Model – oversigt](https://docs.microsoft.com/powerapps/common-data-model/overview)
+* [Common Data Model – oversigt](/powerapps/common-data-model/overview)

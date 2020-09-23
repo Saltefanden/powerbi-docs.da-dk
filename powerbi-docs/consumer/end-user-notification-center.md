@@ -7,15 +7,15 @@ featuredvideoid: bZMSv5KAlcE
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 03/11/2020
+ms.date: 09/17/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 6c500c7bf0548d115bc658cab868b8f415bbda90
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: dda0b61f1b74624f13003f57ffb29d99165f126c
+ms.sourcegitcommit: cb606d3ae95300683caf1853e229d8981302a8e2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87537958"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90763858"
 ---
 # <a name="view-power-bi-notifications"></a>Få vist Power BI-meddelelser
 
@@ -35,13 +35,13 @@ Se, hvordan Amanda gennemser, administrerer og besvarer meddelelser. Følg deref
 ## <a name="view-your-notifications"></a>Se dine meddelelser
 1. Når du logger på Power BI, føjes nye meddelelser, der blev sendt til dig, mens du var offline, til dit feed. Hvis du har nye meddelelser, vises en gul boble sammen med antallet af nye elementer i Power BI.
    
-   ![Ikon for ny meddelelse](./media/end-user-notification-center/power-bi-new-notification.png)
+   ![Ikon for ny meddelelse](./media/end-user-notification-center/power-bi-new-notifications.png)
 2. Vælg ikonet **Meddelelser** på Power BI-menulinjen.
    
-   ![øverste menulinje, hvor ikonet Meddelelser er valgt](./media/end-user-notification-center/power-bi-notifications-icon.png)
+   ![øverste menulinje, hvor ikonet Meddelelser er valgt](./media/end-user-notification-center/power-bi-notification-icon.png)
 3. Meddelelser vises med de nyeste øverst, og ulæste meddelelser er fremhævet. Meddelelser gemmes i 90 dage, medmindre du sletter dem hurtigere, eller når de når den maksimale grænse på 100.
    
-   ![Meddelelsescenter](./media/end-user-notification-center/power-bi-notification-center.png)
+   ![Meddelelsescenter](./media/end-user-notification-center/power-bi-notifications-center.png)
 4. Hvis du vil afvise en meddelelse, skal du vælge ikonet X.
 
 ## <a name="next-steps"></a>De næste trin

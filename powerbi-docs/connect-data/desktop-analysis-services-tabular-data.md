@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 01/28/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6f9661b6cda8782e83e64e30f55ae4b0d8bf6fa2
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: bb55342974bcd64e7d5871b7b84977105b7467fa
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85224869"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90858686"
 ---
 # <a name="connect-to-analysis-services-tabular-data-in-power-bi-desktop"></a>Opret forbindelse til Analysis Services-tabeldata i Power BI Desktop
 Med Power BI Desktop er der to måder, du kan oprette forbindelse til og hente data fra dine SQL Server Analysis Services-tabelmodeller: Du kan udforske ved hjælp af en direkte forbindelse, eller du kan vælge elementer og importere dem til Power BI Desktop.
@@ -81,7 +81,7 @@ Hvis du vælger Vælg elementer, og hent data, importerer du data fra tabelmodel
 **Svar:** Ja. Afhængigt af de funktioner, din tabellariske model bruger, kan oplevelsen i Power BI Desktop være forskellig. Nogle eksempler omfatter:
 * Du kan måske se målinger i den model, der er grupperet øverst på listen **Felter** i ruden i stedet for i tabeller ved siden af kolonner. Bare rolig – du kan stadig bruge dem som normalt; det er bare nemmere at finde dem på denne måde.
 
-* Hvis der er defineret beregningsgrupper i tabelmodellen, kan du kun bruge dem sammen med modelmålinger og ikke sammen med implicitte målinger, du opretter ved at føje numeriske felter til et visual. Flaget **DiscourageImplicitMeasures** kan også være angivet manuelt for modellen, hvilket har denne samme effekt. Du kan finde flere oplysninger under [Beregningsgrupper i Analysis Services](https://docs.microsoft.com/analysis-services/tabular-models/calculation-groups#benefits).
+* Hvis der er defineret beregningsgrupper i tabelmodellen, kan du kun bruge dem sammen med modelmålinger og ikke sammen med implicitte målinger, du opretter ved at føje numeriske felter til et visual. Flaget **DiscourageImplicitMeasures** kan også være angivet manuelt for modellen, hvilket har denne samme effekt. Du kan finde flere oplysninger under [Beregningsgrupper i Analysis Services](/analysis-services/tabular-models/calculation-groups#benefits).
 
 ## <a name="to-change-the-server-name-after-initial-connection"></a>Sådan ændrer du servernavnet efter den indledende forbindelse
 Når du opretter en Power BI Desktop-fil med mulighed for at udforske en direkte forbindelse, kan der være nogle tilfælde, hvor du gerne vil skifte forbindelsen til en anden server. Hvis du f.eks. har oprettet Power BI Desktop-filen, da du oprettede forbindelse til en udviklingsserver og før publicering i Power BI-tjenesten, vil du gerne skifte forbindelsen til en produktionsserver.
@@ -97,4 +97,3 @@ Sådan ændrer du servernavnet:
 På følgende liste beskrives alle kendte problemer, når der oprettes forbindelse til SQL Server Analysis Services (SSAS) eller Azure Analysis Services: 
 
 * **Fejl: Det var ikke muligt at indlæse modellen**: Denne fejl opstår sædvanligvis, når den bruger, der opretter forbindelse til Analysis Services, ikke har adgang til databasen/modellen.
-

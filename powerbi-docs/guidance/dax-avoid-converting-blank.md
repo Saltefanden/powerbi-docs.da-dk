@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: ac5eb41aa248eeebf2cbfb6d53e327e2a3e83fdd
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: 0717ad71d3065043a3bff8305c051cdce40e7329
+ms.sourcegitcommit: cff93e604e2c5f24e0f03d6dbdcd10c2332aa487
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87537613"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90965083"
 ---
 # <a name="dax-avoid-converting-blanks-to-values"></a>DAX: Undgå at konvertere BLANKs til værdier
 
@@ -79,6 +79,6 @@ Denne designmetode er effektiv og giver Power BI mulighed for at gengive rapport
 Du kan finde flere oplysninger om denne artikel i følgende ressourcer:
 
 - [Henvisning til DAX (Data Analysis Expressions)](/dax/)
-- Læringsforløb: [Brug DAX i Power BI Desktop](https://docs.microsoft.com/learn/paths/dax-power-bi/)
+- Læringsforløb: [Brug DAX i Power BI Desktop](/learn/paths/dax-power-bi/)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 - Forslag? [Få ideer til at forbedre Power BI](https://ideas.powerbi.com)

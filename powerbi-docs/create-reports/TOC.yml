@@ -269,6 +269,8 @@
               href: ../visuals/power-bi-visualization-combo-chart.md
             - name: Visualiseringer med opdelingstræ
               href: ../visuals/power-bi-visualization-decomposition-tree.md
+            - name: Smarte fortællinger
+              href: ../visuals/power-bi-visualization-smart-narrative.md
             - name: Kransediagrammer
               href: ../visuals/power-bi-visualization-doughnut-charts.md
             - name: Kartogrammer (choropleth)

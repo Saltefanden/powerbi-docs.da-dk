@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/20/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 70f28bd916f2c8d9c6ce40e61cd7f4c90a7726f8
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: 3f80a4bf4d7b220192c81e9c567d676e60f5baf0
+ms.sourcegitcommit: cff93e604e2c5f24e0f03d6dbdcd10c2332aa487
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87537429"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90965051"
 ---
 # <a name="dax-use-selectedvalue-instead-of-values"></a>DAX: Brug SELECTEDVALUE i stedet for VALUES
 
@@ -58,6 +58,6 @@ IF(
 Du kan finde flere oplysninger om denne artikel i følgende ressourcer:
 
 - [Henvisning til DAX (Data Analysis Expressions)](/dax/)
-- Læringsforløb: [Brug DAX i Power BI Desktop](https://docs.microsoft.com/learn/paths/dax-power-bi/)
+- Læringsforløb: [Brug DAX i Power BI Desktop](/learn/paths/dax-power-bi/)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 - Forslag? [Få ideer til at forbedre Power BI](https://ideas.powerbi.com)

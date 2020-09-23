@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/23/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 21a4075861bfa37407ef8ffc73e2beabe50ff095
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: 1a49531c9c7e525371c3c92b7bf116bfa7e99fd3
+ms.sourcegitcommit: cff93e604e2c5f24e0f03d6dbdcd10c2332aa487
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87537544"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90965534"
 ---
 # <a name="dax-use-countrows-instead-of-count"></a>DAX: Brug COUNTROWS i stedet for COUNT
 
@@ -52,6 +52,6 @@ Når du vil tælle tabelrækker, anbefales det, at du altid bruger funktionen CO
 Du kan finde flere oplysninger om denne artikel i følgende ressourcer:
 
 - [Henvisning til DAX (Data Analysis Expressions)](/dax/)
-- Læringsforløb: [Brug DAX i Power BI Desktop](https://docs.microsoft.com/learn/paths/dax-power-bi/)
+- Læringsforløb: [Brug DAX i Power BI Desktop](/learn/paths/dax-power-bi/)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 - Forslag? [Få ideer til at forbedre Power BI](https://ideas.powerbi.com)

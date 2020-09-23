@@ -8,12 +8,12 @@ ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 01/07/2020
 ms.author: maggies
-ms.openlocfilehash: d8e36a9eba34b2c27c9ce6f86edfafa568bccf90
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: cf205603a4807b814e56904151e0ce8db66cfab1
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236327"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90853534"
 ---
 # <a name="create-a-paginated-report-for-power-bi-report-server"></a>Opret en sideinddelt rapport til Power BI-rapportserver
 I denne artikel kan du oprette en sideinddelt rapport for Power BI-rapportserver med nogle få hurtige trin.
@@ -60,7 +60,7 @@ På den første side i guiden Diagram – **Vælg et datasæt**, du kan oprette 
    
     ![Guiden Diagram: Vælg et datasæt](media/quickstart-create-paginated-report/reportserver-paginated-choose-dataset.png)
    
-     Vil du oprette et datasæt? Se [Opret et delt eller integreret datasæt](https://docs.microsoft.com/sql/reporting-services/report-data/create-a-shared-dataset-or-embedded-dataset-report-builder-and-ssrs).
+     Vil du oprette et datasæt? Se [Opret et delt eller integreret datasæt](/sql/reporting-services/report-data/create-a-shared-dataset-or-embedded-dataset-report-builder-and-ssrs).
 2. Vælg en diagramtype – i dette tilfælde et søjlediagram.
    
     ![Guiden Diagram: Diagramtype](media/quickstart-create-paginated-report/reportserver-paginated-choose-chart-type.png)
@@ -81,7 +81,7 @@ Du er nu i visningen Rapportdesign. Bemærk, at dataene er pladsholderdata, ikke
 
 Du kan tilpasse diagrammet, du lige har oprettet, ændre layoutet, værdierne, forklaringen... ja, næsten alt.
 
-Du kan desuden tilføje alle mulige andre forskellige visualiseringer: målere, tabeller, matrixer, tabeller, kort m.m. Du kan tilføje sidehoveder og sidefødder for adskillelige sider. Se [Report Builder-selvstudierne](https://docs.microsoft.com/sql/reporting-services/report-builder-tutorials), og prøv dem selv.
+Du kan desuden tilføje alle mulige andre forskellige visualiseringer: målere, tabeller, matrixer, tabeller, kort m.m. Du kan tilføje sidehoveder og sidefødder for adskillelige sider. Se [Report Builder-selvstudierne](/sql/reporting-services/report-builder-tutorials), og prøv dem selv.
 
 ![Designvisningen Report Builder](media/quickstart-create-paginated-report/reportserver-paginated-finished-design-report.png)
 
@@ -96,8 +96,7 @@ Når rapporten er klar, kan du gemme den på Power BI-rapportserveren.
 ## <a name="next-steps"></a>Næste trin
 Der er mange fantastiske ressourcer til design af rapporter i Report Builder og i Rapportdesigner i SQL Server Data Tools. Report Builder-selvstudier er et godt sted at starte.
 
-* [Report Builder-selvstudier](https://docs.microsoft.com/sql/reporting-services/report-builder-tutorials)
+* [Report Builder-selvstudier](/sql/reporting-services/report-builder-tutorials)
 * [Hvad er Power BI-rapportserveren?](get-started.md)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-

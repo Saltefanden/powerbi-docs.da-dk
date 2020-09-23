@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 09/01/2020
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: b24663acf2a3a3fd76953413c298580041afc4ab
-ms.sourcegitcommit: 89ce1777a85b9fc476f077cbe22978c6cf923603
+ms.openlocfilehash: 3af8779f87c511e0d3e12a062278c20de1852b0b
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89286837"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90853384"
 ---
 # <a name="azure-machine-learning-integration-in-power-bi"></a>Integrering af Azure Machine Learning i Power BI
 
@@ -28,8 +28,8 @@ Du kan få mere at vide om dataflow i [Selvbetjent dataforberedelse i Power BI](
 
 Du kan få mere at vide om Azure Machine Learning i:
 
-- Oversigt:  [Hvad er Azure Machine Learning?](https://docs.microsoft.com/azure/machine-learning/service/overview-what-is-azure-ml)
-- Hurtig start- og selvstudier til Azure Machine Learning:  [Azure Machine Learning-dokumentation](https://docs.microsoft.com/azure/machine-learning/)
+- Oversigt:  [Hvad er Azure Machine Learning?](/azure/machine-learning/service/overview-what-is-azure-ml)
+- Hurtig start- og selvstudier til Azure Machine Learning:  [Azure Machine Learning-dokumentation](/azure/machine-learning/)
 
 > [!NOTE]
 > Der kræves et Power BI Premium-abonnement for at bruge Azure Machine Learning-integration.
@@ -41,7 +41,7 @@ For at få adgang til en Azure Machine Learning-model fra Power BI, skal brugere
 - For modeller af typen Machine Learning Studio (klassisk): adgangen **Læs** til webtjenesten Machine Learning Studio (klassisk)
 - For modeller af typen Machine Learning Studio: adgangen **Læs** til Machine Learning Studio-arbejdsområdet
 
-Trinnene i denne artikel beskriver, hvordan du tildeler en Power BI-bruger adgang til en model, der er hostet i Azure Machine Learning-tjenesten, så brugeren kan få adgang til denne model som en funktion i Power-forespørgsel.  Du kan få flere oplysninger i [Administrer adgang ved hjælp af RBAC og Microsoft Azure-portal](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal).
+Trinnene i denne artikel beskriver, hvordan du tildeler en Power BI-bruger adgang til en model, der er hostet i Azure Machine Learning-tjenesten, så brugeren kan få adgang til denne model som en funktion i Power-forespørgsel.  Du kan få flere oplysninger i [Administrer adgang ved hjælp af RBAC og Microsoft Azure-portal](/azure/role-based-access-control/role-assignments-portal).
 
 1. Log på [Azure Portal](https://portal.azure.com).
 
@@ -70,7 +70,7 @@ Trinnene i denne artikel beskriver, hvordan du tildeler en Power BI-bruger adgan
 
 Dataspecialister bruger primært Python til at udvikle og endda udrulle deres modeller til maskinel indlæring til Machine Learning.  I modsætning til Machine Learning Studio (klassisk), som hjælper med at automatisere oprettelse af en skemafil til modellen, skal dataspecialisterne eksplicit generere skemafilen ved hjælp af Python, når det drejer sig om Machine Learning.
 
-Denne skemafil skal inkluderes i den udrullede webtjeneste for modeller til maskinel indlæring. Hvis du vil generere skemaet for webtjenesten automatisk, skal du angive et eksempel på inputtet/outputtet i postscriptet for den udrullede model. Se underafsnittet om [(Valgfri) Automatisk generering af Swagger-skema i dokumentationen Udrul modeller med Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/how-to-deploy-advanced-entry-script#power-bi-compatible-endpoint) Service. Linket inkluderer eksemplet på postscriptet med sætninger for generering af skemaet. 
+Denne skemafil skal inkluderes i den udrullede webtjeneste for modeller til maskinel indlæring. Hvis du vil generere skemaet for webtjenesten automatisk, skal du angive et eksempel på inputtet/outputtet i postscriptet for den udrullede model. Se underafsnittet om [(Valgfri) Automatisk generering af Swagger-skema i dokumentationen Udrul modeller med Azure Machine Learning](/azure/machine-learning/how-to-deploy-advanced-entry-script#power-bi-compatible-endpoint) Service. Linket inkluderer eksemplet på postscriptet med sætninger for generering af skemaet. 
 
 Funktionerne *\@input_schema* og *\@output_schema* i postscriptet refererer specifikt til eksempelformaterne for input og output i variablerne *input_sample* og *output_sample* og bruger disse eksempler til at generere en OpenAPI-specifikation (Swagger) for webtjenesten under udrulningen.
 

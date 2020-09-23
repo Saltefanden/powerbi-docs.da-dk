@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.date: 05/06/2020
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 2add0d99ac9b8aab7ad60f51a89df5910b9ce8af
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 02ffd0881344c8f2bef45301c25e363981d64646
+ms.sourcegitcommit: cff93e604e2c5f24e0f03d6dbdcd10c2332aa487
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83286147"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90965363"
 ---
 # <a name="tutorial-analyze-facebook-data-by-using-power-bi-desktop"></a>Selvstudium: Analysér Facebook-data ved hjælp af Power BI Desktop
 
@@ -114,7 +114,7 @@ Efter du har anvendt datatransformationerne, bør dine **Anvendte trin** se ud p
    ![Anvendte trin](media/desktop-tutorial-facebook-analytics/applied-steps.png)
    
    >[!TIP]
-   >Bag ved **Anvendte trin** ligger der formler, som er skrevet på [Power-forespørgselssproget M](https://docs.microsoft.com/powerquery-m/quick-tour-of-the-power-query-m-formula-language). Hvis du vil se og redigere formlerne, skal du vælge **Avanceret editor** i gruppen **Forespørgsel** under fanen **Hjem** på båndet. 
+   >Bag ved **Anvendte trin** ligger der formler, som er skrevet på [Power-forespørgselssproget M](/powerquery-m/quick-tour-of-the-power-query-m-formula-language). Hvis du vil se og redigere formlerne, skal du vælge **Avanceret editor** i gruppen **Forespørgsel** under fanen **Hjem** på båndet. 
 
 ### <a name="import-the-transformed-data"></a>Importér de transformerede data
 
@@ -251,7 +251,6 @@ Som du kan se, er det nemt at tilpasse visualiseringer i din rapport, så dataen
 Med Power BI Desktop er det nemt at hente data fra en lang række forskellige datakilder og forme dem til dine analysebehov for at kunne visualisere disse data på omfattende og interaktive måder. Når din rapport er færdig, kan du [uploade den til Power BI-tjenesten](../create-reports/desktop-upload-desktop-files.md) og oprette dashboards ud fra den, som du derefter kan dele med andre Power BI-brugere.
 
 ## <a name="next-steps"></a>Næste trin
-* [Læs andre selvstudier til Power BI Desktop](https://go.microsoft.com/fwlink/?LinkID=521937)
-* [Se videoer om Power BI Desktop](https://go.microsoft.com/fwlink/?LinkID=519322)
+* [Microsoft Learn til Power BI](/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link)
 * [Besøg Power BI-forummet](https://go.microsoft.com/fwlink/?LinkID=519326)
 * [Læs Power BI-bloggen](https://go.microsoft.com/fwlink/?LinkID=519327)

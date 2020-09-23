@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 11/22/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 129b4a22e17b5eab03018efae113ff47133e9dda
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: 8ba43290e0e076963a61a7211ad99e99636ebb2e
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86214157"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90853373"
 ---
 # <a name="use-quick-measures-for-common-calculations"></a>Brug hurtigmålinger til almindelige beregninger
 Du kan bruge *hurtigmålinger* til nemt og hurtigt at udføre almindelige og effektive beregninger. En hurtigmåling kører et sæt af DAX-kommandoer (Data Analysis Expressions) i baggrunden og viser derefter resultaterne, så du kan bruge dem i din rapport. Du behøver ikke at skrive DAX-formlen. Det bliver gjort for dig baseret på det input, du angiver i en dialogboks. Der er mange tilgængelige kategorier med beregninger og måder, som du kan tilpasse hver beregning til dine behov på. Det bedste af det hele er nok, at du kan se den DAX-formel, der udføres af hurtigmålingen, så du kan lære mere om DAX.
@@ -131,8 +131,7 @@ Der er nogle få begrænsninger og overvejelser, du skal være opmærksom på.
 > Der bruges kun kommaer som separatorer i argumenter i DAX-sætninger til hurtigmålinger. Hvis din version af Power BI Desktop er på et sprog, hvor der bruges decimalkomma, vil hurtigmålingerne ikke virke korrekt.
 
 ### <a name="time-intelligence-and-quick-measures"></a>Time intelligence og hurtigmålinger
-Du kan bruge dine egne brugerdefinerede datotabeller med hurtigmålinger for time intelligence. Hvis du bruger en ekstern model i tabelformat, skal du sikre dig, at den primære datokolonne i tabellen blev markeret som en datotabel, som beskrevet i [Angiv mærke som datotabel, der skal bruges sammen med time intelligence](https://docs.microsoft.com/sql/analysis-services/tabular-models/specify-mark-as-date-table-for-use-with-time-intelligence-ssas-tabular), da den blev bygget. Hvis du importerer din egen datotabel, skal du sørge for at markere den som en datotabel, som beskrevet i [Angiv og brug datotabeller i Power BI Desktop](desktop-date-tables.md).
+Du kan bruge dine egne brugerdefinerede datotabeller med hurtigmålinger for time intelligence. Hvis du bruger en ekstern model i tabelformat, skal du sikre dig, at den primære datokolonne i tabellen blev markeret som en datotabel, som beskrevet i [Angiv mærke som datotabel, der skal bruges sammen med time intelligence](/sql/analysis-services/tabular-models/specify-mark-as-date-table-for-use-with-time-intelligence-ssas-tabular), da den blev bygget. Hvis du importerer din egen datotabel, skal du sørge for at markere den som en datotabel, som beskrevet i [Angiv og brug datotabeller i Power BI Desktop](desktop-date-tables.md).
 
 ### <a name="additional-information-and-examples"></a>Yderligere oplysninger og eksempler
 Har du en idé til en hurtigmåling, som ikke allerede findes? Fantastisk! Se siden med [idéer til Power BI](https://go.microsoft.com/fwlink/?linkid=842906), og send dine idéer og DAX-formler til de hurtigmålinger, du godt kunne tænke dig i Power BI Desktop. Vi vil overveje at føje dem til listen over hurtigmålinger i en fremtidig version.
-

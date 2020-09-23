@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 2c3733f98c278895102165e9d2db52f0e9318903
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: 7266861304692a1c70f80e3cf9ed3f1fea60f750
+ms.sourcegitcommit: cff93e604e2c5f24e0f03d6dbdcd10c2332aa487
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87537521"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90965479"
 ---
 # <a name="dax-divide-function-vs-divide-operator-"></a>DAX: DIVIDE-funktion vs. divisionsoperator (/)
 
@@ -65,6 +65,6 @@ Overvej nøje, om funktionen DIVIDE skal returnere en alternativ værdi. I forbi
 Du kan finde flere oplysninger om denne artikel i følgende ressourcer:
 
 - [Henvisning til DAX (Data Analysis Expressions)](/dax/)
-- Læringsforløb: [Brug DAX i Power BI Desktop](https://docs.microsoft.com/learn/paths/dax-power-bi/)
+- Læringsforløb: [Brug DAX i Power BI Desktop](/learn/paths/dax-power-bi/)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 - Forslag? [Få ideer til at forbedre Power BI](https://ideas.powerbi.com)
