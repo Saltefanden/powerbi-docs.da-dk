@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/18/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 56ace35adf6a005c4370bf692d8851dc015688c0
-ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
+ms.openlocfilehash: a9fca9f27baf51c4e4bafbf93244f0d745ba714b
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85782344"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90857421"
 ---
 # <a name="power-bi-high-availability-failover-and-disaster-recovery-faq"></a>Ofte stillede spørgsmål om høj tilgængelighed, failover og it-katastrofeberedskab i Power BI
 
@@ -55,7 +55,7 @@ Der slås en meddelelse op på Power BI-supportsiden ([https://powerbi.microsoft
 
 Det tager ca. 15 minutter for Power BI at komme op og køre igen, når programmet har registreret, at en failover er nødvendig. Den tid, det tager at registrere, at en failover er nødvendig, afhænger af det scenarie, der er ødelagt. 
 
-Når en failover udføres, bruger Power BI Azure Storage GEO-replikering til at udføre failover. Sådanne replikeringer har normalt et returpunkt på 15 minutter, men [Azure Storage garanterer ikke denne tidsramme](https://docs.microsoft.com/azure/storage/common/storage-redundancy) med en SLA, og Power BI kan derfor heller ikke garantere en tidsramme. 
+Når en failover udføres, bruger Power BI Azure Storage GEO-replikering til at udføre failover. Sådanne replikeringer har normalt et returpunkt på 15 minutter, men [Azure Storage garanterer ikke denne tidsramme](/azure/storage/common/storage-redundancy) med en SLA, og Power BI kan derfor heller ikke garantere en tidsramme. 
 
 ## <a name="what-happens-to-workspaces-and-reports-if-my-premium-capacity-becomes-unavailable"></a>Hvad sker der med arbejdsområder og rapporter, hvis min Premium-kapacitet bliver utilgængelig? 
 

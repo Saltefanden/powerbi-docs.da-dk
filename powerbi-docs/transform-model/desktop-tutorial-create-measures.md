@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.date: 11/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 91b0bba3b8e3fc221a05e6ccb2de1ec9b888d1ef
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 61eb4fc54966545858a7ebc85044696064027acd
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349304"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90858387"
 ---
 # <a name="tutorial-create-your-own-measures-in-power-bi-desktop"></a>Selvstudium: Opret dine egne målinger i Power BI Desktop
 Ved hjælp af målinger kan du oprette nogle af de mest effektive løsninger til dataanalyse i Power BI Desktop. Målinger hjælper dig med at udføre beregninger på dine data, når du arbejder med dine rapporter. I dette selvstudium lærer du, hvordan du skal forstå målinger, og hvordan du opretter dine egne grundlæggende målinger i Power BI Desktop.
@@ -245,4 +245,4 @@ Målinger kan give dig den ønskede indsigt i dine data. Du har lært, hvordan d
   
 - Hvis du vil vide mere om DAX-formler og oprette mere avancerede målinger, skal du se [Grundlæggende DAX i Power BI Desktop](desktop-quickstart-learn-dax-basics.md). Denne artikel har fokus på de grundlæggende koncepter i DAX, for eksempel syntaks, funktioner og en dybere forståelse af kontekst.
   
-- Husk at føje [DAX-reference (Data Analysis Expressions)](https://docs.microsoft.com/dax/index) til dine favoritter. I dette referencemateriale kan du finde detaljerede oplysninger om DAX-syntaks, operatorer og mere end 200 DAX-funktioner.
+- Husk at føje [DAX-reference (Data Analysis Expressions)](/dax/index) til dine favoritter. I dette referencemateriale kan du finde detaljerede oplysninger om DAX-syntaks, operatorer og mere end 200 DAX-funktioner.

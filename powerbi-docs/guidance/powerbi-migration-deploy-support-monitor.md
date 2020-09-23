@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/20/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 59f340e6325cf846d1b0453a94a1015b50a987c4
-ms.sourcegitcommit: ffc46032d0771227395cc38be9ec9ff1500eac70
+ms.openlocfilehash: 23d207bb4f070c3c3a35f1e74dd281f012528c82
+ms.sourcegitcommit: cff93e604e2c5f24e0f03d6dbdcd10c2332aa487
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89401996"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90965011"
 ---
 # <a name="deploy-to-power-bi"></a>Udrul til Power BI
 
@@ -100,7 +100,7 @@ Vigtige aktiviteter under en udrulning til produktionsarbejdsområdet omfatter t
 - **Indstillinger for rapport og dashboard:** Opdater og bekræft indstillingerne for hver rapport og hvert dashboard. De vigtigste indstillinger omfatter:
   - Beskrivelse
   - Kontakt eller gruppe
-  - [Følsomhedsmærkat](../collaborate-share/service-security-apply-data-sensitivity-labels.md)
+  - [Følsomhedsmærkat](../admin/service-security-apply-data-sensitivity-labels.md)
   - [Udvalgt indhold](https://powerbi.microsoft.com/blog/promote-your-reports-dashboards-and-apps-on-power-bi-home/)
 - **Abonnementer:** Konfigurer rapportabonnementer, om nødvendigt.
 
@@ -136,7 +136,7 @@ På et tidspunkt skal de rapporter, der er migreret til Power BI, deaktiveres p�
 
 ## <a name="monitor-the-solution"></a>Overvåg løsningen
 
-Hændelser fra [Power BI-aktivitetsloggen](../admin/service-admin-auditing.md) kan bruges til at forstå forbrugsmønstre i forbindelse med den nye løsning (eller [udførelsesloggen](/sql/reporting-services/report-server/report-server-executionlog-and-the-executionlog3-view?view=sql-server-ver15) for indhold, der udrulles i Power BI-rapportserver). Analyse af aktivitetsloggen kan hjælpe med at fastlægge, om den faktiske brug afviger fra forventningerne. Den kan også validere, om der er tilstrækkelig support til løsningen.
+Hændelser fra [Power BI-aktivitetsloggen](../admin/service-admin-auditing.md) kan bruges til at forstå forbrugsmønstre i forbindelse med den nye løsning (eller [udførelsesloggen](/sql/reporting-services/report-server/report-server-executionlog-and-the-executionlog3-view) for indhold, der udrulles i Power BI-rapportserver). Analyse af aktivitetsloggen kan hjælpe med at fastlægge, om den faktiske brug afviger fra forventningerne. Den kan også validere, om der er tilstrækkelig support til løsningen.
 
 Her er nogle spørgsmål, der kan håndteres ved at gennemse aktivitetsloggen:
 

@@ -10,18 +10,18 @@ ms.topic: how-to
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 53606f52752bcc6f7c790b5e2cccaf26f0d10006
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 3ae0a9605391ca1230fb0080490e1ef0eadf3d72
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85224707"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90858480"
 ---
 # <a name="create-visuals-and-reports-with-the-azure-cost-management-connector-in-power-bi-desktop"></a>Opret visualiseringer og rapporter med Azure Cost Management-connectoren i Power BI Desktop
 
 Du kan bruge Azure Cost Management Connector til Power BI Desktop til at oprette effektive, brugerdefinerede visualiseringer og rapporter, der hjælper dig med bedre at forstå dit Azure-forbrug. Connectoren Azure Cost Management understøtter i øjeblikket kunder med en [Microsoft-kundeaftale](https://azure.microsoft.com/pricing/purchase-options/microsoft-customer-agreement/) eller en [Enterprise-aftale](https://azure.microsoft.com/pricing/enterprise-agreement/).  
 
-Azure Cost Management-connectoren bruger OAuth 2.0 til godkendelse i Azure og identificerer de brugere, der skal bruge connectoren. Tokens, der genereres i denne proces, er gyldige i en bestemt periode. Power BI gemmer tokenet til næste logon. OAuth 2.0 er en standard for den proces, der foregår i baggrunden for at sikre sikker håndtering af disse tilladelser. Hvis du vil oprette forbindelse, skal du bruge en [Enterprise-administratorkonto](https://docs.microsoft.com/azure/billing/billing-understand-ea-roles) til Enterprise-aftaler eller en [faktureringskontoejer](https://docs.microsoft.com/azure/billing/billing-understand-mca-roles) for Microsoft-kundeaftaler. 
+Azure Cost Management-connectoren bruger OAuth 2.0 til godkendelse i Azure og identificerer de brugere, der skal bruge connectoren. Tokens, der genereres i denne proces, er gyldige i en bestemt periode. Power BI gemmer tokenet til næste logon. OAuth 2.0 er en standard for den proces, der foregår i baggrunden for at sikre sikker håndtering af disse tilladelser. Hvis du vil oprette forbindelse, skal du bruge en [Enterprise-administratorkonto](/azure/billing/billing-understand-ea-roles) til Enterprise-aftaler eller en [faktureringskontoejer](/azure/billing/billing-understand-mca-roles) for Microsoft-kundeaftaler. 
 
 > [!NOTE]
 > Denne connector erstatter de tidligere tilgængelige connectorer [Azure Consumption Insights og Azure Cost Management (beta)](desktop-connect-azure-consumption-insights.md). Alle rapporter, der er oprettet med den forrige connector, skal oprettes igen ved hjælp af denne connector.
@@ -108,4 +108,4 @@ Du kan oprette forbindelse til mange forskellige datakilder ved hjælp af Power 
 * [Datakilder i Power BI Desktop](desktop-data-sources.md)
 * [Udform og kombiner data med Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Opret forbindelse til Excel-projektmapper i Power BI Desktop](desktop-connect-excel.md)   
-* [Angiv data direkte i Power BI Desktop](desktop-enter-data-directly-into-desktop.md)   
+* [Angiv data direkte i Power BI Desktop](desktop-enter-data-directly-into-desktop.md)

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 07/01/2020
-ms.openlocfilehash: 4b112c3522a35f86f74481a79f3fff919a0e9e33
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: ef981c63aaa1cdececbe03f187d25ee09073f61f
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87544721"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90857743"
 ---
 # <a name="manage-power-bi-visuals-admin-settings"></a>Administrationsindstillinger til administration af Power BI-visualiseringer
 
@@ -64,7 +64,7 @@ Følg nedenstående vejledning for at gøre det muligt for brugere i din organis
 
 ![visualiseringer fra fil eller AppSource](media/organizational-visuals/tenant-settings.png)
 
-Ændringer af lejerindstillinger i brugergrænsefladen gælder kun for Power BI-tjenesten. Hvis du vil gøre det muligt for brugerne i din organisation at uploade .pbiviz-filer og føje visualiseringer fra AppSource til visualiseringsruden i Power BI Desktop, skal du bruge [Microsoft Azure Active Directory-gruppepolitik](https://docs.microsoft.com/azure/active-directory-domain-services/manage-group-policy).
+Ændringer af lejerindstillinger i brugergrænsefladen gælder kun for Power BI-tjenesten. Hvis du vil gøre det muligt for brugerne i din organisation at uploade .pbiviz-filer og føje visualiseringer fra AppSource til visualiseringsruden i Power BI Desktop, skal du bruge [Microsoft Azure Active Directory-gruppepolitik](/azure/active-directory-domain-services/manage-group-policy).
 
 |Nøgle  |Værdinavn  |Værdi  |
 |---------|---------|---------|
@@ -83,7 +83,7 @@ Når denne indstilling er aktiveret, gengives kun [certificerede Power BI-visual
 
 ![certificerede visualiseringer](media/organizational-visuals/certified-visuals.png)
 
-Ændringer af lejerindstillinger i brugergrænsefladen gælder kun for Power BI-tjenesten. Hvis du vil administrere lejerindstillingen for certificerede visualiseringer i Power BI Desktop, skal du bruge [Microsoft Azure Active Directory-gruppepolitik](https://docs.microsoft.com/azure/active-directory-domain-services/manage-group-policy).
+Ændringer af lejerindstillinger i brugergrænsefladen gælder kun for Power BI-tjenesten. Hvis du vil administrere lejerindstillingen for certificerede visualiseringer i Power BI Desktop, skal du bruge [Microsoft Azure Active Directory-gruppepolitik](/azure/active-directory-domain-services/manage-group-policy).
 
 |Nøgle  |Værdinavn  |Værdi  |
 |---------|---------|---------|

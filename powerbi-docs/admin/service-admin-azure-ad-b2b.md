@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/02/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: ca0a33f42c1b2fd466df9af59bb649ae73d7d594
-ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.openlocfilehash: 4a38ca35e6955bc92f52492e657a9e00bad05ea3
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86161370"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90857605"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Distribuer Power BI-indhold til eksterne gæstebrugere med Azure AD B2B
 
@@ -151,7 +151,7 @@ Du kan hjælpe gæster med tilladelse med at logge på Power BI ved at give dem 
 
 * Der findes Microsoft Azure Active Directory-indstillinger, der kan begrænse, hvad eksterne gæstebrugere kan foretage sig overordnet i organisationen. De pågældende indstillinger gælder også for dit Power BI-miljø. I følgende dokumentation beskrives indstillingerne:
   * [Administrer indstillinger for eksternt samarbejde](/azure/active-directory/b2b/delegate-invitations#configure-b2b-external-collaboration-settings)
-  * [Tillad eller bloker invitationer til B2B-brugere fra bestemte organisationer](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list)
+  * [Tillad eller bloker invitationer til B2B-brugere fra bestemte organisationer](/azure/active-directory/b2b/allow-deny-list)
   * [Brug betinget adgang til at tillade eller blokere adgang](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps)
 
 * Du kan dele indhold fra en offentlig cloud, f. eks. GCC, med en ekstern kommerciel cloudbruger. Gæstebrugeren kan dog ikke bruge sin egen licens. Indholdet skal være i den kapacitet, der er tildelt til Premium, for at der er adgang. Du kan også tildele en Power BI Pro-licens til gæstekontoen.
@@ -162,6 +162,6 @@ Du kan hjælpe gæster med tilladelse med at logge på Power BI ved at give dem 
 
 ## <a name="next-steps"></a>Næste trin
 
-Du kan finde flere oplysninger, herunder hvordan sikkerhed på rækkeniveau fungerer, i dette whitepaper: [Distribuer Power BI-indhold til eksterne gæstebrugere med Azure AD B2B](https://aka.ms/powerbi-b2b-whitepaper).
+Du kan finde flere oplysninger, herunder hvordan sikkerhed på rækkeniveau fungerer, i dette whitepaper: [Distribuer Power BI-indhold til eksterne gæstebrugere med Azure AD B2B](../guidance/whitepaper-azure-b2b-power-bi.md).
 
 Du kan finde oplysninger om Azure AD B2B i [Hvad er Azure AD B2B-samarbejde?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b/).

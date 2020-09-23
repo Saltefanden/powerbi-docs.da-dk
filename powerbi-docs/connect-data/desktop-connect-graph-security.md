@@ -10,22 +10,22 @@ ms.topic: conceptual
 ms.date: 01/29/2019
 ms.author: preetikr
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 9f434d27a11d171509645594a6f7f67e62c16faa
-ms.sourcegitcommit: 11deeccf596e9bb8f22615276a152614f7579f35
+ms.openlocfilehash: 5d7fbe9e302c7b1460bc285af140a50304c468da
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "86409300"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90858525"
 ---
 # <a name="connect-to-the-microsoft-graph-security-api-in-power-bi-desktop"></a>Opret forbindelse til Microsoft Graph Security API i Power BI Desktop
 
-Brug Microsoft Graph Security-connectoren til Power BI Desktop til at oprette forbindelse til [Microsoft Graph Security API](https://aka.ms/graphsecuritydocs). Du kan derefter skabe dashboards og rapporter, så du kan få indsigt i dine sikkerhedsrelaterede [beskeder](https://docs.microsoft.com/graph/api/resources/alert?view=graph-rest-1.0) og [sikkerhedsscorer](https://docs.microsoft.com/graph/api/resources/securescores?view=graph-rest-beta).
+Brug Microsoft Graph Security-connectoren til Power BI Desktop til at oprette forbindelse til [Microsoft Graph Security API](/graph/security-concept-overview). Du kan derefter skabe dashboards og rapporter, så du kan få indsigt i dine sikkerhedsrelaterede [beskeder](/graph/api/resources/alert?view=graph-rest-1.0) og [sikkerhedsscorer](/graph/api/resources/securescores?view=graph-rest-beta).
 
-Microsoft Graph Security API'en opretter forbindelse til [flere sikkerhedsløsninger](https://aka.ms/graphsecurityalerts) fra Microsoft og Microsofts økosystem af partnere for at gøre korrelation mellem beskeder nemmere. Denne kombination giver adgang til detaljerede kontekstuelle oplysninger og forenkler automatisering. Den gør det muligt for organisationer hurtigt at få indsigt og reagere på tværs af flere sikkerhedsprodukter og samtidigt reducere omkostningerne og kompleksiteten.
+Microsoft Graph Security API'en opretter forbindelse til [flere sikkerhedsløsninger](/graph/api/resources/security-api-overview#alerts) fra Microsoft og Microsofts økosystem af partnere for at gøre korrelation mellem beskeder nemmere. Denne kombination giver adgang til detaljerede kontekstuelle oplysninger og forenkler automatisering. Den gør det muligt for organisationer hurtigt at få indsigt og reagere på tværs af flere sikkerhedsprodukter og samtidigt reducere omkostningerne og kompleksiteten.
 
 ## <a name="prerequisites-to-use-the-microsoft-graph-security-connector"></a>Forudsætninger for at bruge Microsoft Graph Security-connectoren
 
-Hvis du vil bruge Microsoft Graph Security-connectoren, skal du have *udtrykkelig* samtykke fra administratoren af Azure Active Directory-lejeren (Azure AD). Se [Krav til godkendelse af Microsoft Graph Security](https://aka.ms/graphsecurityauth).
+Hvis du vil bruge Microsoft Graph Security-connectoren, skal du have *udtrykkelig* samtykke fra administratoren af Azure Active Directory-lejeren (Azure AD). Se [Krav til godkendelse af Microsoft Graph Security](/graph/security-authorization).
 Samtykke kræver connectorens program-id og -navn, hvilket er nævnt her og tilgængeligt på [Azure Portal](https://portal.azure.com):
 
 | Egenskab | Værdi |
@@ -37,11 +37,11 @@ Samtykke kræver connectorens program-id og -navn, hvilket er nævnt her og tilg
 
 For at give samtykke for connectoren skal administratoren af din Azure AD-lejer følge en af disse metoder:
 
-* [Giv samtykke til Azure AD-programmer](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent)
+* [Giv samtykke til Azure AD-programmer](/azure/active-directory/develop/v2-permissions-and-consent)
 
-* Besvar en anmodning, som din logikapp sender i løbet af den første kørsel via [oplevelsen for programsamtykke](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience)
+* Besvar en anmodning, som din logikapp sender i løbet af den første kørsel via [oplevelsen for programsamtykke](/azure/active-directory/develop/application-consent-experience)
    
-Den brugerkonto, der bruges til at logge på Microsoft Graph Security-connectoren, skal have rollen Sikkerhedslæser i Azure AD tildelt, **hvis** brugeren ikke er medlem af rollen *Sikkerhedsadministrator*. Se [Tildel Azure AD-roller til brugere](https://docs.microsoft.com/graph/security-authorization#assign-azure-ad-roles-to-users).
+Den brugerkonto, der bruges til at logge på Microsoft Graph Security-connectoren, skal have rollen Sikkerhedslæser i Azure AD tildelt, **hvis** brugeren ikke er medlem af rollen *Sikkerhedsadministrator*. Se [Tildel Azure AD-roller til brugere](/graph/security-authorization#assign-azure-ad-roles-to-users).
 
 ## <a name="using-the-microsoft-graph-security-connector"></a>Brug af Microsoft Graph Security-connectoren
 
@@ -69,13 +69,13 @@ Følg disse trin for at bruge connectoren:
 
     ![Dialogboksen "Du er i øjeblikket logget på"](media/desktop-connect-graph-security/SignedIn.PNG)
     
-8. Når du har oprettet forbindelse, vil du i vinduet **Navigator** se beskeder, sikkerhedsscorer og andre objekter, der er tilgængelige i [Microsoft Graph Security API](https://aka.ms/graphsecuritydocs), for den version, du valgte i trin 4. Vælg et eller flere objekter, du kan importere og bruge i Power BI Desktop. Vælg derefter **Indlæs** for at se resultatvisningen, der vises efter trin 9.
+8. Når du har oprettet forbindelse, vil du i vinduet **Navigator** se beskeder, sikkerhedsscorer og andre objekter, der er tilgængelige i [Microsoft Graph Security API](/graph/security-concept-overview), for den version, du valgte i trin 4. Vælg et eller flere objekter, du kan importere og bruge i Power BI Desktop. Vælg derefter **Indlæs** for at se resultatvisningen, der vises efter trin 9.
 
     ![Dialogboksen Navigator](media/desktop-connect-graph-security/NavTable.PNG)
     
-9. Hvis du vil foretage en avanceret forespørgsel i Microsoft Graph Security API, skal du vælge **Angiv brugerdefineret URL-adresse til Microsoft Graph Security for at filtrere resultaterne**. Brug denne funktion til at foretage en [OData.Feed](https://docs.microsoft.com/power-bi/desktop-connect-odata)-forespørgsel til Microsoft Graph Security API med de påkrævede tilladelser.
+9. Hvis du vil foretage en avanceret forespørgsel i Microsoft Graph Security API, skal du vælge **Angiv brugerdefineret URL-adresse til Microsoft Graph Security for at filtrere resultaterne**. Brug denne funktion til at foretage en [OData.Feed](./desktop-connect-odata.md)-forespørgsel til Microsoft Graph Security API med de påkrævede tilladelser.
 
-   I følgende eksempel bruges `https://graph.microsoft.com/v1.0/security/alerts?$filter=Severity eq 'High'` *serviceUri*. I [Indstillinger for forespørgsler til OData-systemet](https://docs.microsoft.com/graph/query-parameters) kan du se, hvordan du skaber forespørgsler for at filtrere, anmode om eller hente de seneste resultater.
+   I følgende eksempel bruges `https://graph.microsoft.com/v1.0/security/alerts?$filter=Severity eq 'High'` *serviceUri*. I [Indstillinger for forespørgsler til OData-systemet](/graph/query-parameters) kan du se, hvordan du skaber forespørgsler for at filtrere, anmode om eller hente de seneste resultater.
 
    ![OdataFeed-eksempel](media/desktop-connect-graph-security/ODataFeed.PNG)
     

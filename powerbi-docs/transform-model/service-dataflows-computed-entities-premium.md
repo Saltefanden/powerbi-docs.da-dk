@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 0b43864078e52381aa92e6e16366ba4fdf5fea29
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 79ab3a38a6f1df97b445c06adf13a4b53af30d87
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239735"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90858019"
 ---
 # <a name="using-computed-entities-on-power-bi-premium"></a>Brug af beregnede objekter i Power BI Premium
 
@@ -95,4 +95,4 @@ Du kan finde flere oplysninger om Power-forespørgsel og planlagt opdatering i d
 * [Konfiguration af planlagt opdatering](../connect-data/refresh-scheduled-refresh.md)
 
 Du kan finde flere oplysninger om Common Data Model i denne oversigtsartikel:
-* [Common Data Model – oversigt](https://docs.microsoft.com/powerapps/common-data-model/overview)
+* [Common Data Model – oversigt](/powerapps/common-data-model/overview)

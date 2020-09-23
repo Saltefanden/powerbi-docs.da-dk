@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 01/10/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 97bccec3ec0e92ebfcc6b9251cf5c17f176fbed1
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 5efe83cfa43c6fcb156501774bbaeae79381ab85
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85240139"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90857720"
 ---
 # <a name="apply-data-point-limits-and-strategies-by-visual-type"></a>Anvend datapunktgrænser og strategier efter visualiseringstype
 
@@ -41,7 +41,7 @@ For hver strateg er der er standarder, der er baseret på den form og type af da
 ## <a name="statistics"></a>Statistik
 Visse modeller kan levere statistikker om antallet af værdier for bestemte kolonner. Når disse oplysninger er til stede, kan vi udnytte disse oplysninger til at give bedre belastningsjustering på tværs af flere hierarkier, hvis en visualisering ikke udtrykkeligt tilsidesætter antallet af værdier for en strategi.
 
-Du kan finde flere oplysninger under [Nyheder i Analysis Services](https://docs.microsoft.com/sql/analysis-services/what-s-new-in-analysis-services?view=sql-server-2017)
+Du kan finde flere oplysninger under [Nyheder i Analysis Services](/sql/analysis-services/what-s-new-in-analysis-services)
 
 ## <a name="dynamic-limits"></a>Dynamiske grænser
 Ud over ovenfor nævnte strategier bruger visualiseringer med to hierarkier af grupperingskolonner (akse og forklaring eller kategori og serie) yderligere en strategi kaldet *dynamiske grænser*.  Dynamiske grænser er designet til bedre at balancere datapunkter. 
@@ -50,7 +50,7 @@ Dynamiske grænser giver en bedre markering af punkter til sparsomme data, end s
 
 Dynamiske grænser anvendes automatisk, når serveren er funktionsdygtig som beskrevet nedenfor:
 
-* I Power BI Desktop med SSAS-version 2016 eller nyere i det lokale miljø [ved at udnytte serverens SuperDax-funktioner](https://blogs.msdn.microsoft.com/analysisservices/2015/09/02/whats-new-in-microsoft-sql-server-analysis-services-tabular-models-in-sql-server-2016-ctp-2-3/)
+* I Power BI Desktop med SSAS-version 2016 eller nyere i det lokale miljø [ved at udnytte serverens SuperDax-funktioner](/archive/blogs/analysisservices/whats-new-in-microsoft-sql-server-analysis-services-tabular-models-in-sql-server-2016-ctp-2-3)
 
 * I Desktop og Power BI-tjenesten, når der anvendes en importeret model, direkte forespørgsel, direkte forbindelse til tjenesten eller direkte forbindelse til AS PaaS. 
 
@@ -132,7 +132,7 @@ Ingen reduktionsstrategi
 - Værdier: Virtualisering ved hjælp af vindue på 200 rækker ad gangen
 
 ### <a name="scatter-chart-high-density"></a>Punktdiagram (høj tæthed)
-Se [punktdiagram med høj tæthed](https://docs.microsoft.com/power-bi/visuals/desktop-high-density-scatter-charts)
+Se [punktdiagram med høj tæthed](./desktop-high-density-scatter-charts.md)
 
 ### <a name="pie"></a>Cirkel
 - Maksimumpunkter: 3,500

@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/18/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 308e34e5bf70a9999939c99667075b2e468b4df4
-ms.sourcegitcommit: eff98b49e794c7c07670dcfb871f43cb06ed9d3a
+ms.openlocfilehash: 60bb1ef7421d4ebcedd49d2e973cf245edec0381
+ms.sourcegitcommit: cff93e604e2c5f24e0f03d6dbdcd10c2332aa487
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85095613"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90965025"
 ---
 # <a name="row-level-security-rls-guidance-in-power-bi-desktop"></a>Sikkerhed på rækkeniveau (RLS) i Power BI Desktop
 
@@ -54,9 +54,9 @@ Vær forsigtig: Hvis en rapportbruger knyttes til begge roller, kan den pågæld
 RLS fungerer ved automatisk at anvende filtre på alle DAX-forespørgsler, og disse filtre kan have en negativ indvirkning på forespørgslers ydeevne. Det betyder, at effektiv RLS kan reduceres til et godt modeldesign. Det er vigtigt at følge vejledningen til modeldesign, som beskrevet i følgende artikler:
 
 - [Forstå, hvad et stjerneskema er, og hvorfor det er vigtigt for Power BI](star-schema.md)
-- Alle artikler om relationsvejledning i [Dokumentation med Power BI-vejledning](https://docs.microsoft.com/power-bi/guidance/)
+- Alle artikler om relationsvejledning i [Dokumentation med Power BI-vejledning](./index.yml)
 
-Generelt er det ofte mere effektivt at gennemtvinge RLS-filtre i dimensionstype tabeller og ikke faktatypetabeller. Og anvende veldesignede relationer for at sikre, at RLS-filtre overføres til andre modeltabeller. Undgå derfor at bruge DAX-funktionen [LOOKUPVALUE](https://docs.microsoft.com/dax/lookupvalue-function-dax), når du kan opnå det samme resultat med modelrelationer.
+Generelt er det ofte mere effektivt at gennemtvinge RLS-filtre i dimensionstype tabeller og ikke faktatypetabeller. Og anvende veldesignede relationer for at sikre, at RLS-filtre overføres til andre modeltabeller. Undgå derfor at bruge DAX-funktionen [LOOKUPVALUE](/dax/lookupvalue-function-dax), når du kan opnå det samme resultat med modelrelationer.
 
 Når RLS-filtre gennemtvinges på DirectQuery-tabeller, og der er relationer til andre DirectQuery-tabeller, skal du sørge for at optimere kildedatabasen. Det kan involvere design af relevante indekser eller brug af permanente beregnede kolonner. Du kan finde flere oplysninger under [Vejledning til DirectQuery-model i Power BI Desktop](directquery-model-guidance.md).
 
@@ -74,7 +74,7 @@ Medlemmer kan være brugerkonti eller sikkerhedsgrupper. Når det er muligt, anb
 
 Test de enkelte roller for at sikre, at de filtreres korrekt i modellen. Det gøres nemt ved hjælp af kommandoen **Vis som** under båndfanen **Modellering**.
 
-Når modellen har dynamiske regler, der bruger DAX-funktionen [USERNAME](https://docs.microsoft.com/dax/username-function-dax), skal du sørge for at teste, om de forventede værdier er der, og om der er _og uventede_ værdier. Når du integrerer Power BI-indhold – især ved hjælp af scenariet [Appen ejer data](../developer/embedded/embedding.md#embedding-for-your-customers) – kan applogik videresende en hvilken som helst værdi som et effektivt identitetsbrugernavn. Når det er muligt, kan du sikre, at utilsigtede eller skadelige værdier resulterer i filtre, der ikke returnerer nogen rækker.
+Når modellen har dynamiske regler, der bruger DAX-funktionen [USERNAME](/dax/username-function-dax), skal du sørge for at teste, om de forventede værdier er der, og om der er _og uventede_ værdier. Når du integrerer Power BI-indhold – især ved hjælp af scenariet [Appen ejer data](../developer/embedded/embedding.md#embedding-for-your-customers) – kan applogik videresende en hvilken som helst værdi som et effektivt identitetsbrugernavn. Når det er muligt, kan du sikre, at utilsigtede eller skadelige værdier resulterer i filtre, der ikke returnerer nogen rækker.
 
 Forestil dig et eksempel med Power BI Embedded, hvor appen overfører brugerens jobfunktion som det effektive brugernavn: Det er enten "Leder" eller "Medarbejder". Ledere kan se alle rækker, men medarbejdere kan kun se rækker, hvor kolonneværdien **Type** "Intern".
 
@@ -142,7 +142,7 @@ Hver af de tre modelrelationer er beskrevet i følgende tabel:
 
 |Relation|Beskrivelse|
 |---------|---------|
-|![Afslutning 1 i rutediagrammet.](media/common/icon-01-red-30x30.png)|Der er en mange til mange-relation mellem tabellerne **Salesperson** og **Sales**. RLS-reglen filtrerer kolonnen **EmailAddress** for den skjulte tabel **Salesperson** ved hjælp af DAX-funktionen [USERNAME](https://docs.microsoft.com/dax/username-function-dax). Værdien for kolonnen **Region** (for rapportbrugeren) overføres til tabellen **Sales**.|
+|![Afslutning 1 i rutediagrammet.](media/common/icon-01-red-30x30.png)|Der er en mange til mange-relation mellem tabellerne **Salesperson** og **Sales**. RLS-reglen filtrerer kolonnen **EmailAddress** for den skjulte tabel **Salesperson** ved hjælp af DAX-funktionen [USERNAME](/dax/username-function-dax). Værdien for kolonnen **Region** (for rapportbrugeren) overføres til tabellen **Sales**.|
 |![Afslutning 2 i rutediagrammet.](media/common/icon-02-red-30x30.png)|Der er en en til mange-relation mellem tabellerne **Date** og **Sales**.|
 |![Afslutning 3 i rutediagrammet.](media/common/icon-03-red-30x30.png)|Der er en en til mange-relation mellem tabellerne **Date** og **SalesRevenueSummary**.|
 
@@ -163,7 +163,7 @@ DIVIDE(
 
 Undgå at bruge RLS, når det giver mening for dig. Hvis du kun har et lille antal forenklede RLS-regler, der anvender statiske filtre, kan du overveje at publicere flere datasæt i stedet for. Ingen af datasættene definerer roller, fordi hvert datasæt indeholder data for en bestemt rapportbrugermålgruppe, der har de samme datatilladelser. Opret derefter ét arbejdsområde pr. målgruppe og tildele adgangstilladelser til arbejdsområdet eller appen.
 
-En virksomhed, der kun har to salgsområder, beslutter f. eks. at publicere et datasæt _for hvert salgsområde_ til forskellige arbejdsområder. Datasættene gennemtvinger ikke RLS. De bruger dog [forespørgselsparametre](https://docs.microsoft.com/power-query/power-query-query-parameters) til at filtrere kildedata. På denne måde publiceres den samme model i hvert arbejdsområde – de har blot forskellige parameterværdier for datasæt. Sælgere tildeles kun adgang til ét af arbejdsområderne (eller de publicerede apps).
+En virksomhed, der kun har to salgsområder, beslutter f. eks. at publicere et datasæt _for hvert salgsområde_ til forskellige arbejdsområder. Datasættene gennemtvinger ikke RLS. De bruger dog [forespørgselsparametre](/power-query/power-query-query-parameters) til at filtrere kildedata. På denne måde publiceres den samme model i hvert arbejdsområde – de har blot forskellige parameterværdier for datasæt. Sælgere tildeles kun adgang til ét af arbejdsområderne (eller de publicerede apps).
 
 Der er flere fordele ved at undgå RLS:
 
@@ -191,7 +191,7 @@ Hvis RLS giver uventede resultater, skal du kontrollere, om følgende problemer 
 Når en bestemt bruger ikke kan se nogen data, kan det skyldes, at den pågældendes UPN ikke er gemt, eller at den er angivet forkert. Det kan ske pludseligt, hvis brugerens konto er blevet ændret som resultat af et navneskift.
 
 > [!TIP]
-> Til testformål skal du tilføje en måling, der returnerer DAX-funktionen [USERNAME](https://docs.microsoft.com/dax/username-function-dax). Du kan f.eks. kalde den "Hvem er jeg". Føj derefter målingen til et kortvisual i en rapport, og publicer den i Power BI.
+> Til testformål skal du tilføje en måling, der returnerer DAX-funktionen [USERNAME](/dax/username-function-dax). Du kan f.eks. kalde den "Hvem er jeg". Føj derefter målingen til et kortvisual i en rapport, og publicer den i Power BI.
 
 Når en bestemt bruger kan se alle data, kan det skyldes, at den pågældende har adgang til rapporter direkte i arbejdsområdet, og den pågældende er ejeren af datasættet. RLS gennemtvinges kun, når:
 

@@ -10,12 +10,12 @@ ms.topic: overview
 ms.date: 05/29/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: c3e56df49caac8b5250a4e382cab253a0a9c5210
-ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.openlocfilehash: 791b5efce0489e837cb75ed1ae6632dcc240fc1c
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86161324"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90857582"
 ---
 # <a name="what-is-power-bi-administration"></a>Hvad er Power BI-administration
 
@@ -25,7 +25,7 @@ Power BI-administration er administration af de indstillinger, der gælder for h
 
 ## <a name="administrator-roles-related-to-power-bi"></a>Administratorroller, der er relateret til Power BI
 
-Der er flere roller, der arbejder sammen for at administrere Power BI for din organisation. De fleste administratorroller tildeles i Microsoft 365 Administration eller ved hjælp af PowerShell. Administratorrollerne Power BI Premium-kapacitet og Power BI Embedded-kapacitet tildeles, når kapaciteten oprettes. Hvis du vil vide mere om de enkelte administratorroller, kan du se [Om administratorroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide). Du kan få mere at vide om, hvordan du tildeler administratorroller under [Tildel administratorroller](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles?view=o365-worldwide).
+Der er flere roller, der arbejder sammen for at administrere Power BI for din organisation. De fleste administratorroller tildeles i Microsoft 365 Administration eller ved hjælp af PowerShell. Administratorrollerne Power BI Premium-kapacitet og Power BI Embedded-kapacitet tildeles, når kapaciteten oprettes. Hvis du vil vide mere om de enkelte administratorroller, kan du se [Om administratorroller](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide). Du kan få mere at vide om, hvordan du tildeler administratorroller under [Tildel administratorroller](/microsoft-365/admin/add-users/assign-admin-roles?view=o365-worldwide).
 
 | **Type af administrator** | **Administrativt omfang** | **Power BI-opgaver** |
 | --- | --- | --- |
@@ -70,7 +70,7 @@ Power BI-administratorer fungerer primært på Power BI-administrationsportalen.
 | | Informationsstyring |
 | [Azure Active Directory (AAD) på Azure-portalen](https://aad.portal.azure.com) | Konfigurer betinget adgang til Power BI-ressourcer |
 | | Klargør Power BI Embedded-kapacitet |
-| [PowerShell-cmdlet'er](https://docs.microsoft.com/powershell/power-bi/overview) | Administrer arbejdsområder og andre aspekter af Power BI via scripts |
+| [PowerShell-cmdlet'er](/powershell/power-bi/overview) | Administrer arbejdsområder og andre aspekter af Power BI via scripts |
 | [Administrative API'er og SDK](service-admin-reference.md) | Byg brugerdefinerede administrationsværktøjer. Power BI Desktop kan f.eks. bruge disse API'er til at oprette rapporter ud fra data, der er relateret til administration. |
 
 ## <a name="next-steps"></a>Næste trin
@@ -79,7 +79,7 @@ Nu, hvor du kender den grundlæggende viden om, hvad der er involveret i Power B
 
 - [Brug Power BI-administrationsportalen](service-admin-portal.md)
 - [Vejledning til indstillinger for lejeradministrator](../guidance/admin-tenant-settings.md)
-- [Brug PowerShell-cmdlet'er](https://docs.microsoft.com/powershell/power-bi/overview)
+- [Brug PowerShell-cmdlet'er](/powershell/power-bi/overview)
 - [Ofte stillede spørgsmål om Power BI-administration](service-admin-faq.md)
 - [Licens til Power BI-tjeneste for brugere i din organisation](service-admin-licensing-organization.md)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

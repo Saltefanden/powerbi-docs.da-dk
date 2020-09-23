@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 01/29/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: e43edb3241140024241ab78af1236d9551a35f1a
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: ad3684bbf285ff85fa3dec6b0cdc807dc05eca05
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239780"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90857904"
 ---
 # <a name="configure-workspace-dataflow-settings-preview"></a>Konfigurer indstillinger for dataflow for arbejdsområde (eksempelvisning)
 
@@ -128,13 +128,13 @@ Du kan finde generelle oplysninger om dataflow i disse artikler:
 
 Du kan finde flere oplysninger om Azure-lager i disse artikler:
 
-* [Sikkerhedsvejledning til Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-security-guide)
+* [Sikkerhedsvejledning til Azure Storage](/azure/storage/common/storage-security-guide)
 * [Kom i gang med Github-eksempler fra Azure Data Services](https://aka.ms/cdmadstutorial)
 
 Du kan finde flere oplysninger om Common Data Model i denne oversigtsartikel:
 
-* [Common Data Model – oversigt](https://docs.microsoft.com/powerapps/common-data-model/overview)
-* [CDM-mapper](https://go.microsoft.com/fwlink/?linkid=2045304)
-* [Definition af CDM-modelfil](https://go.microsoft.com/fwlink/?linkid=2045521)
+* [Common Data Model – oversigt](/powerapps/common-data-model/overview)
+* [CDM-mapper](/common-data-model/data-lake)
+* [Definition af CDM-modelfil](/common-data-model/model-json)
 
 Du kan altid prøve [at stille spørgsmål i Power BI-community'et](https://community.powerbi.com/).

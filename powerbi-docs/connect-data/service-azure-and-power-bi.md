@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: how-to
 ms.date: 05/08/2019
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 2fcb9b7a7571513eac8fb97b12e60f67a5ac9cb3
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: c7dceceaaf063ffe4b379595cfc010e4eda2ae53
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85230880"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90858144"
 ---
 # <a name="azure-and-power-bi"></a>Azure og Power BI
 
@@ -66,4 +66,4 @@ Integrer flotte, interaktive datavisualiseringer i programmer, websteder, portal
 
 ## <a name="what-could-you-do-with-azure-and-power-bi"></a>Hvad kan du gøre med Azure og Power BI?
 
-Der er alle mulige forskellige scenarier, hvor **Azure** og **Power BI** kan kombineres – løsningerne og mulighederne er lige så unikke som din virksomhed. Hvis du vil have mere at vide om **Azure-tjenester**, skal du se denne [oversigtsside](https://docs.microsoft.com/azure/machine-learning/team-data-science-process/plan-your-environment), som beskriver **dataanalysescenarier med Azure**, samt hvordan du transformerer dine datakilder til efterretninger, der driver din virksomhed fremad.
+Der er alle mulige forskellige scenarier, hvor **Azure** og **Power BI** kan kombineres – løsningerne og mulighederne er lige så unikke som din virksomhed. Hvis du vil have mere at vide om **Azure-tjenester**, skal du se denne [oversigtsside](/azure/machine-learning/team-data-science-process/plan-your-environment), som beskriver **dataanalysescenarier med Azure**, samt hvordan du transformerer dine datakilder til efterretninger, der driver din virksomhed fremad.
