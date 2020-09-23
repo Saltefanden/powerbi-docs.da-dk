@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 01/10/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 48f094def0576d6e90a71117cc37ac975304e07f
-ms.sourcegitcommit: 10c5b6cd5e7070f96de8a9f1d9b95f3d242ac7f2
+ms.openlocfilehash: 58d595ff5e7d3947117aa9663e761a6f98f10c7f
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86557273"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861308"
 ---
 # <a name="create-key-influencers-visualizations"></a>Opret visualiseringer af nøglefaktorer
 
@@ -241,7 +241,7 @@ De øverste segmenter for numeriske mål viser de grupper, hvor huspriserne i ge
 
 ## <a name="analyze-a-metric-that-is-a-measure-or-a-summarized-column"></a>Analysér en metrikværdi, der er en måling eller en opsummeret kolonne
 
-I forbindelse med en måling eller en opsummeret kolonne er analysen som standard den **løbende analysetype** som beskrevet [ovenfor](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-influencers#analyze-a-metric-that-is-numeric). Dette kan ikke ændres. Den største forskel mellem at analysere en måling/opsummeret kolonne og en ikke-opsummeret numerisk kolonne er det niveau, som analysen kører på.
+I forbindelse med en måling eller en opsummeret kolonne er analysen som standard den **løbende analysetype** som beskrevet [ovenfor](#analyze-a-metric-that-is-numeric). Dette kan ikke ændres. Den største forskel mellem at analysere en måling/opsummeret kolonne og en ikke-opsummeret numerisk kolonne er det niveau, som analysen kører på.
 
 Hvis der er tale om ikke-opsummerede kolonner, kører analysen altid på tabelniveau. I huspriseksemplet ovenfor analyserede vi metrikværdien **Huspris** for at se, hvad der får en huspris til at stige/falde. Analysen kører automatisk på tabelniveau. Vores tabel har et entydigt id for hvert hus, hvorfor analysen kører på husniveau.
 
@@ -255,7 +255,7 @@ Målinger og opsummerede kolonner analyseres automatisk på niveauet for de felt
 
 Denne analyse er meget opsummeret, og det vil derfor være svært for regressionsmodellen at finde eventuelle mønstre i dataene, som modellen kan lære af. Vi bør køre analysen på et mere detaljeret niveau for at opnå bedre resultater. Hvis vi ville analysere husprisen på husniveau, skulle vi føje feltet **Id** til analysen. Ikke desto mindre vil vi ikke have, at hus-id'et bliver betragtet som en nøglefaktor. Det er ikke nyttigt at vide, at i takt med at et hus-id stiger, stiger prisen på et hus også. Det er her, feltet **Udvid efter** er virkelig praktisk. Du kan bruge **Forklar med** til at tilføje de felter, du vil bruge til angivelse af niveauet for analysen uden at kigge efter nye nøglefaktorer.
 
-Se, hvordan visualiseringen ser ud, når vi føjer et **Id** til**Forklar med**. Når du har defineret det niveau, som din måling skal evalueres på, fortolkes nøglefaktorer på præcis samme måde som [ikke-opsummerede numeriske kolonner](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-influencers#analyze-a-metric-that-is-numeric).
+Se, hvordan visualiseringen ser ud, når vi føjer et **Id** til**Forklar med**. Når du har defineret det niveau, som din måling skal evalueres på, fortolkes nøglefaktorer på præcis samme måde som [ikke-opsummerede numeriske kolonner](#analyze-a-metric-that-is-numeric).
 
 ![Tabel med målinger](media/power-bi-visualization-influencers/power-bi-ki-measures-analysis.png)
 

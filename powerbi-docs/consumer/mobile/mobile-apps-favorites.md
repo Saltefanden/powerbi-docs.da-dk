@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 12/02/2019
 ms.author: painbar
-ms.openlocfilehash: ee2ce1161f5afbdc39520a0102d3289f00792207
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 553beb5f30625ce416ea778ba6b5fde63526065c
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85240207"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90856455"
 ---
 # <a name="make-and-view-favorites-in-the-power-bi-mobile-apps"></a>Føj til Favoritter, og få dem vist i Power BI-mobilapps
 Gælder for:
@@ -23,7 +23,7 @@ Gælder for:
 | iPhone-telefoner |iPad-tablets |Android-telefoner |Android-tablets |Windows 10-enheder |
 
 >[!NOTE]
->Understøttelse af Power BI-mobilapp til **telefoner, der bruger Windows 10 mobile**, ophører den 16. marts 2021. [Få mere at vide](https://go.microsoft.com/fwlink/?linkid=2121400)
+>Understøttelse af Power BI-mobilapp til **telefoner, der bruger Windows 10 mobile**, ophører den 16. marts 2021. [Få mere at vide](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 Læs, hvordan du føjer dine Power BI-dashboards, -rapporter og -apps samt dine rapporter og KPI'er i Power BI-rapportserver og Reporting Services i det lokale miljø til Favoritter og får dem vist i mobilapps.
 
@@ -76,4 +76,3 @@ Du kan se dine foretrukne Power BI-rapportserver- og Reporting Services-rapporte
 ## <a name="next-steps"></a>Næste trin
 * [Foretrukne dashboards i Power BI-tjenesten](../end-user-favorite.md) 
 * Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-

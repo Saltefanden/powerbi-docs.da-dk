@@ -8,16 +8,16 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/22/2020
 ms.author: maggies
-ms.openlocfilehash: f8d711bba8dc7570f2d470554fd1d971639bbb7b
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: f921d9dbeb16d1b960e22f228f7833c8fbf184b4
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "76710200"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861239"
 ---
 # <a name="always-encrypted-in-power-bi-report-server"></a>Always Encrypted på Microsoft Power BI-rapportserveren
 
-Denne artikel indeholder en detaljeret beskrivelse af Always Encrypted-understøttelse på Power BI-rapportserveren, når du brugerdatakildetyperne Microsoft SQL Server og Microsoft Azure SQL Database. Du kan finde flere oplysninger om Always Encrypted-funktioner i SQL Server i artiklen [Always Encrypted](https://docs.microsoft.com/sql/relational-databases/security/encryption/always-encrypted-database-engine).
+Denne artikel indeholder en detaljeret beskrivelse af Always Encrypted-understøttelse på Power BI-rapportserveren, når du brugerdatakildetyperne Microsoft SQL Server og Microsoft Azure SQL Database. Du kan finde flere oplysninger om Always Encrypted-funktioner i SQL Server i artiklen [Always Encrypted](/sql/relational-databases/security/encryption/always-encrypted-database-engine).
 
 ## <a name="always-encrypted-user-isolation"></a>Always Encrypted-brugerisolation
 
@@ -37,8 +37,8 @@ På nuværende tidspunkt begrænser Microsoft Power BI-rapportserveren ikke adga
 
 Den konto, der kræver adgang til certifikatet, er tjenestekontoen. Certifikatet skal gemmes i certifikatlageret på den lokale computer. Her finder du flere oplysninger:
 
-- [Konfigurer kontoen til rapportservertjenesten](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager) (Configuration Manager)
-- Afsnittet [Making certificates available to applications and users](https://docs.microsoft.com/sql/relational-databases/security/encryption/create-and-store-column-master-keys-always-encrypted#making-certificates-available-to-applications-and-users) i SQL Server-artiklen "Create and store column master keys for Always Encrypted".
+- [Konfigurer kontoen til rapportservertjenesten](/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager) (Configuration Manager)
+- Afsnittet [Making certificates available to applications and users](/sql/relational-databases/security/encryption/create-and-store-column-master-keys-always-encrypted#making-certificates-available-to-applications-and-users) i SQL Server-artiklen "Create and store column master keys for Always Encrypted".
 
 ### <a name="column-encryption-strategy"></a>Kolonnekrypteringsstrategi
 
@@ -51,7 +51,7 @@ På Microsoft Power BI-rapportserveren kan kolonnekrypteringsstrategien være *d
 |Kan bruges som et sammenlægningsfelt, bortset fra COUNT og DISTINCT. | Nej, med undtagelse af COUNT og DISTINCT | Nej |
 |Kan bruges som rapportparameter | Ja | Nej |
 
-Læs mere om [deterministisk vs. tilfældige kryptering](https://docs.microsoft.com/sql/relational-databases/security/encryption/always-encrypted-database-engine#selecting--deterministic-or-randomized-encryption).
+Læs mere om [deterministisk vs. tilfældige kryptering](/sql/relational-databases/security/encryption/always-encrypted-database-engine#selecting--deterministic-or-randomized-encryption).
 
 ### <a name="parameter-usage"></a>Parameterbrug
 
@@ -73,7 +73,7 @@ Parameterbrug gælder kun for deterministisk kryptering.
 | --- | --- | --- | --- | --- | --- |
 | int | Ja | Ja | COUNT, DISTINCT | Ja, som heltal |   |
 | float | Ja | Ja | COUNT, DISTINCT | Ja, som flydende |   |
-| nvarchar | Ja | Ja | COUNT, DISTINCT | Ja, som tekst | Deterministisk kryptering skal bruge en kolonnesortering med en binary2-sorteringsrækkefølge for tegnkolonner. Se SQL Server-artiklen [Always Encrypted](https://docs.microsoft.com/sql/relational-databases/security/encryption/always-encrypted-database-engine#selecting--deterministic-or-randomized-encryption) for at få flere oplysninger.  |
+| nvarchar | Ja | Ja | COUNT, DISTINCT | Ja, som tekst | Deterministisk kryptering skal bruge en kolonnesortering med en binary2-sorteringsrækkefølge for tegnkolonner. Se SQL Server-artiklen [Always Encrypted](/sql/relational-databases/security/encryption/always-encrypted-database-engine#selecting--deterministic-or-randomized-encryption) for at få flere oplysninger.  |
 | varchar | Ja | Ja | COUNT, DISTINCT | Nej |   |
 | decimal | Ja | Ja | COUNT, DISTINCT | Nej |   |
 | numeric | Ja | Ja | COUNT, DISTINCT | Nej |   |
@@ -86,11 +86,10 @@ I øjeblikket er de eneste understøttede sammenlægninger mod deterministiske A
 
 ## <a name="always-encrypted-in-connection-strings"></a>Always Encrypted i forbindelsesstrenge
 
-Du skal aktivere Always Encrypted i forbindelsesstrengen for en SQL Server-datakilde. Læs mere om, hvordan du aktiverer [Always Encrypted i programforespørgsler](https://docs.microsoft.com/sql/relational-databases/security/encryption/develop-using-always-encrypted-with-net-framework-data-provider#enabling-always-encrypted-for-application-queries).
+Du skal aktivere Always Encrypted i forbindelsesstrengen for en SQL Server-datakilde. Læs mere om, hvordan du aktiverer [Always Encrypted i programforespørgsler](/sql/relational-databases/security/encryption/develop-using-always-encrypted-with-net-framework-data-provider#enabling-always-encrypted-for-application-queries).
 
 ## <a name="next-steps"></a>Næste trin
 
-[Always Encrypted](https://docs.microsoft.com/sql/relational-databases/security/encryption/always-encrypted-database-engine) i SQL Server og Azure SQL Database
+[Always Encrypted](/sql/relational-databases/security/encryption/always-encrypted-database-engine) i SQL Server og Azure SQL Database
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-

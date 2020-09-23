@@ -9,16 +9,16 @@ ms.topic: how-to
 ms.date: 10/18/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 18d94702cad6f770aaf078f1d692c96d48ce50ac
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: b898b205ef9d85f8c0a4951f147339f8d315db1e
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85229017"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90855397"
 ---
 # <a name="add-a-custom-column-in-power-bi-desktop"></a>Tilføj en brugerdefineret kolonne i Power BI Desktop
 
-I Power BI Desktop kan du nemt føje en ny brugerdefineret kolonne med data til din model ved hjælp af Query Editor. Med Forespørgselseditor kan du oprette og omdøbe din brugerdefinerede kolonne for at oprette [M-formelforespørgsler i PowerQuery](https://docs.microsoft.com/powerquery-m/quick-tour-of-the-power-query-m-formula-language) og definere din brugerdefinerede kolonne. M-formelforespørgsler i PowerQuery indeholder et [indholdssæt med omfattende funktionsreference](https://docs.microsoft.com/powerquery-m/power-query-m-function-reference). 
+I Power BI Desktop kan du nemt føje en ny brugerdefineret kolonne med data til din model ved hjælp af Query Editor. Med Forespørgselseditor kan du oprette og omdøbe din brugerdefinerede kolonne for at oprette [M-formelforespørgsler i PowerQuery](/powerquery-m/quick-tour-of-the-power-query-m-formula-language) og definere din brugerdefinerede kolonne. M-formelforespørgsler i PowerQuery indeholder et [indholdssæt med omfattende funktionsreference](/powerquery-m/power-query-m-function-reference). 
 
 Når du opretter en brugerdefineret kolonne i Forespørgselseditor, tilføjer Power BI Desktop den som et **Anvendt trin** i **Forespørgselsindstillinger** i forespørgslen. Den kan ændres, flyttes eller redigeres når som helst.
 
@@ -49,7 +49,7 @@ Vinduet **Tilføj brugerdefineret kolonne** indeholder følgende funktioner:
 
 - Det indledende navn på din brugerdefinerede kolonne i feltet **Nyt kolonnenavn**. Du kan omdøbe denne kolonne.
 
-- [M-formelforespørgsler i PowerQuery](https://docs.microsoft.com/powerquery-m/power-query-m-function-reference) i feltet **Formel for brugerdefineret kolonne**. Du kan oprette disse forespørgsler ved at udarbejde den formel, som den nye brugerdefinerede kolonne er defineret på. 
+- [M-formelforespørgsler i PowerQuery](/powerquery-m/power-query-m-function-reference) i feltet **Formel for brugerdefineret kolonne**. Du kan oprette disse forespørgsler ved at udarbejde den formel, som den nye brugerdefinerede kolonne er defineret på. 
 
    ![Siden Tilføj brugerdefineret kolonne](media/desktop-add-custom-column/add-custom-column_03.png)
 
@@ -95,4 +95,3 @@ Når du har oprettet din forespørgsel, kan du også bruge **Avanceret editor** 
 - Du kan oprette en brugerdefineret kolonne på andre måder, f.eks. ved at oprette en kolonne baseret på eksempler, du angiver i Forespørgselseditor. Du kan finde flere oplysninger i [Tilføj en kolonne fra et eksempel i Power BI Desktop](desktop-add-column-from-example.md).
 
 - Du kan finde oplysninger om M-reference i Power Query i [M-funktionsreference i Power Query](/powerquery-m/power-query-m-function-reference).
-

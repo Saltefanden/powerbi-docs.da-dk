@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 05/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 999e146d459fbff541e3655d97ddb841972ec62c
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: dddc90ee30ff58269c723d247a6c0a9fe3718683
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85227715"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90855075"
 ---
 # <a name="power-bi-premium-metrics-app"></a>Appen Power BI Premium Metrics
 
@@ -342,10 +342,9 @@ Når du skal diagnosticere det andet scenarie, skal du først afgøre, om begræ
 ## <a name="next-steps"></a>Næste trin
 
 * [Hvad er Power BI Premium?](service-premium-what-is.md)
-* [Produktbemærkninger til Power BI Premium](../service-premium-release-notes.md)
 * [Hvidbog om Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
 * [Hvidbog om planlægning af en Power BI Enterprise-installation](https://aka.ms/pbienterprisedeploy)
-* [Aktivering af den udvidede Pro-prøveversion](../service-extended-pro-trial.md)
+* [Aktivering af den udvidede Pro-prøveversion](../fundamentals/service-self-service-signup-for-power-bi.md)
 * [Ofte stillede spørgsmål om Power BI Embedded](../developer/embedded/embedded-faq.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

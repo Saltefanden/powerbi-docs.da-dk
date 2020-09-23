@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/29/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 69929ff48428ebf73044c296eabc419f8e442b3b
-ms.sourcegitcommit: 00c0b24d5e80009d18cec6da4fee8a9611bcba04
+ms.openlocfilehash: 7a7988ba9bb9efd4b2dec20fd2dc88478af439a2
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87411951"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90855282"
 ---
 # <a name="using-external-tools-in-power-bi-desktop-preview"></a>Brug af eksterne værktøjer i Power BI Desktop (prøveversion)
 
@@ -37,13 +37,13 @@ De følgende afsnit indeholder en beskrivelse af de handlinger, som de eksterne 
 
 Eksterne værktøjer kan oprette forbindelse til Power BI Desktop-datasæt (Analysis Services-model) for at redigere de følgende objekter. Redigering af en Power BI Desktop-skabelonfil (PBIT) understøttes ikke.
 
-* [Målinger](https://docs.microsoft.com/analysis-services/tabular-models/measures-ssas-tabular) til beregninger
-* [Beregningsgrupper](https://docs.microsoft.com/analysis-services/tabular-models/calculation-groups), der giver mulighed for genanvendelse af beregninger i komplekse modeller
-* [Perspektiver](https://docs.microsoft.com/analysis-services/tabular-models/perspectives-ssas-tabular), der giver mulighed for at definere fokuserede, virksomhedsdomænespecifikke visninger af metadata for datasæt
+* [Målinger](/analysis-services/tabular-models/measures-ssas-tabular) til beregninger
+* [Beregningsgrupper](/analysis-services/tabular-models/calculation-groups), der giver mulighed for genanvendelse af beregninger i komplekse modeller
+* [Perspektiver](/analysis-services/tabular-models/perspectives-ssas-tabular), der giver mulighed for at definere fokuserede, virksomhedsdomænespecifikke visninger af metadata for datasæt
 
 Det kan blive muligt at administrere oversættelser af metadata ved hjælp af eksterne værktøjer, men det understøttes ikke i øjeblikket i denne prøveversion. Hvis den aktuelle brugers landestandard er en oversat landestandard, fungerer redigering af objekter på feltlisten ikke korrekt i den aktuelle version af Power BI Desktop. 
 
-Alle datasæt-metadata for [tabelobjektmodeller](https://docs.microsoft.com/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo) kan åbnes til skrivebeskyttede formål, men objekter, der ikke med på listen, som beskrives i artiklen[Model for tabelobjekt](https://docs.microsoft.com/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo), understøttes endnu ikke til redigering i Power BI Desktop Analysis Services-instansen.
+Alle datasæt-metadata for [tabelobjektmodeller](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo) kan åbnes til skrivebeskyttede formål, men objekter, der ikke med på listen, som beskrives i artiklen[Model for tabelobjekt](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo), understøttes endnu ikke til redigering i Power BI Desktop Analysis Services-instansen.
 
 
 ## <a name="featured-external-tools"></a>Udvalgte eksterne værktøjer
@@ -147,5 +147,3 @@ Du vil måske også være interesseret i følgende artikler:
 
 * [Brug tværgående detaljeadgang i Power BI-rapporter](desktop-cross-report-drill-through.md)
 * [Brug af udsnitsværktøjer i Power BI Desktop](../visuals/power-bi-visualization-slicers.md)
-
-

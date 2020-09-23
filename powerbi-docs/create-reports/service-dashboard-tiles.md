@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 04/17/2020
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 9a6db74384a9fa47d13eb36b0e64cb926600a191
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 84b3fafa3ae5e12a96b4e1117ee74baf94dba597
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85219668"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861423"
 ---
 # <a name="intro-to-dashboard-tiles-for-power-bi-designers"></a>Introduktion til dashboardfelter for Power BI-designere
 
@@ -42,7 +42,7 @@ Der er mange forskellige måder at føje (fastgøre) et felt til et dashboard p�
 * [Et andet dashboard](service-pin-tile-to-another-dashboard.md)
 * [Excel-projektmappe på OneDrive for Business](service-dashboard-pin-tile-from-excel.md)
 * [Quick Insights (Hurtig indsigt)](service-insights.md)
-* [En sideinddelt rapport i det lokale miljø i Power BI-rapportserver eller SQL Server Reporting Services](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards)
+* [En sideinddelt rapport i det lokale miljø i Power BI-rapportserver eller SQL Server Reporting Services](/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards)
 
 Du kan oprette separate felter til billeder, tekstfelter, videoer, streamingdata og webindhold direkte på dashboardet ved hjælp af kontrolelementet [Tilføj felt](service-dashboard-add-widget.md).
 

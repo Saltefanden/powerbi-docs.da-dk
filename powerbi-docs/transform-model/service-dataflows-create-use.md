@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: fd0f9db041fb4862831630249e847c63572263b0
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 2ac06bb288077a15a7227e2eb439762bc182e1a8
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85240249"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861653"
 ---
 # <a name="creating-and-using-dataflows-in-power-bi"></a>Oprettelse og brug af dataflow i Power BI
 
@@ -77,7 +77,7 @@ Hvis du vil have vist den kode, som forespørgselseditoren opretter i hvert trin
 
 Dataflowobjekter indeholder nye værktøjer, så du nemt kan knytte dine data til Common Data Model (Microsofts standardiserede skema), berige den med data fra Microsoft og tredjeparter og få forenklet adgang til maskinel indlæring. Disse nye funktioner kan udnyttes til at give intelligent og handlingsrettet indsigt i dine virksomhedsdata. Når du har fuldført alle transformationer i trinnet Rediger forespørgsler, kan du knytte kolonner fra tabeller i dine datakilder til felter i standardobjekter, som defineret af Common Data Model. Standardobjekter har et kendt skema, der er defineret af Common Data Model.
 
-Du kan finde flere oplysninger om denne fremgangsmåde og Common Data Model i artiklen [Hvad er Common Data Model?](https://docs.microsoft.com/powerapps/common-data-model/overview)
+Du kan finde flere oplysninger om denne fremgangsmåde og Common Data Model i artiklen [Hvad er Common Data Model?](/powerapps/common-data-model/overview)
 
 Du gør brug af Common Data Model i dit dataflow ved at klikke på transformationen **Knyt til standard** i dialogboksen **Rediger forespørgsler**. På skærmen **Tilknyt objekter**, som vises, kan du vælge det standardobjekt, du vil tilknytte.
 
@@ -175,7 +175,7 @@ I denne artikel blev det beskrevet, hvordan du opretter dine egne **dataflow** o
 * [Integration af dataflow og Azure Data Lake (prøveversion)](service-dataflows-azure-data-lake-integration.md)
 
 Du kan finde flere oplysninger om Common Data Model i denne oversigtsartikel:
-* [Common Data Model – oversigt](https://docs.microsoft.com/powerapps/common-data-model/overview)
+* [Common Data Model – oversigt](/powerapps/common-data-model/overview)
 * [Få mere at vide om Common Data Model-skemaet og objekter på GitHub](https://github.com/Microsoft/CDM)
 
 Relaterede artikler om Power BI Desktop:

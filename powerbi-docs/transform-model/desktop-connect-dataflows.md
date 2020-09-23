@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 05/07/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 193463978e3c4d80980a15e154dbeef05aa1a2a0
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 66e94ed2af0b9dc9cf3600594fc6679bd7261b12
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238909"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861078"
 ---
 # <a name="connect-to-data-created-by-power-platform-dataflows-in-power-bi-desktop"></a>Opret forbindelse til data oprettet af Power Platform-dataflow i Power BI Desktop
 I **Power BI Desktop** kan du oprette forbindelse til data oprettet af **Power Platform-dataflow** på samme måde som enhver anden datakilde i Power BI Desktop.
@@ -47,7 +47,7 @@ De fleste dataflow er placeret i Power BI-tjenestelejeren. **Power BI Desktop**-
 
     ![Fejl under forsøg på at bruge dataflow](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_08.jpg)
 
-Problemet kan løses ved, at Ben tildeles læsetilladelser til CDM-mappen og dens filer. Du kan få mere at vide om, hvordan du give adgang til CDM-mappen i [denne artikel](https://go.microsoft.com/fwlink/?linkid=2029121).
+Problemet kan løses ved, at Ben tildeles læsetilladelser til CDM-mappen og dens filer. Du kan få mere at vide om, hvordan du give adgang til CDM-mappen i [denne artikel](./service-dataflows-azure-data-lake-integration.md).
 
 
 
@@ -72,4 +72,4 @@ Der findes også artikler om **Power BI Desktop**, som du kan finde nyttige:
 
 * [Datakilder i Power BI Desktop](../connect-data/desktop-data-sources.md)
 * [Udform og kombiner data med Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
-* [Angiv data direkte i Power BI Desktop](../connect-data/desktop-enter-data-directly-into-desktop.md)   
+* [Angiv data direkte i Power BI Desktop](../connect-data/desktop-enter-data-directly-into-desktop.md)

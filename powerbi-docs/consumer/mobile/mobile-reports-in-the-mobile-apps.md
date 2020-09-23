@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 08/12/2020
 ms.author: painbar
-ms.openlocfilehash: f53fb518df3c82f4570c81b7caa14c20eea8022c
-ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
+ms.openlocfilehash: bdea7bbadc9e974e6b71122775408f50cfe33de3
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88204964"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90855949"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Udforsk rapporter i Power BI-mobilappsene
 Gælder for:
@@ -23,7 +23,7 @@ Gælder for:
 | iPhone-telefoner |iPad-tablets |Android-telefoner |Android-tablets |Windows 10-enheder |
 
 >[!NOTE]
->Understøttelse af Power BI-mobilapp til **telefoner, der bruger Windows 10 mobile**, ophører den 16. marts 2021. [Få mere at vide](https://go.microsoft.com/fwlink/?linkid=2121400)
+>Understøttelse af Power BI-mobilapp til **telefoner, der bruger Windows 10 mobile**, ophører den 16. marts 2021. [Få mere at vide](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 En Power BI-rapport er en interaktiv visning af dine data, hvor visualiseringer repræsenterer forskellige resultater og indsigter fra disse data. At få vist rapporter i Power BI-mobilapps er det sidste trin i en proces med tre trin:
 
@@ -134,13 +134,13 @@ Eksempel:
 
 **Bogmærker** er kun til stede, hvis der er blevet angivet [bogmærker](mobile-reports-in-the-mobile-apps.md#bookmarks) i rapporten. Både personlige bogmærker, som du kan definere i Power BI-tjenesten, og bogmærker, der er defineret af rapportopretteren, vises. Hvis et af bogmærkerne er defineret som standardbogmærket, åbnes rapporten med den pågældende visning, når den indlæses.
 
-**Anmærk og del** kan være slået fra, hvis din organisation har en [Intune-beskyttelsespolitik](https://docs.microsoft.com/intune/app-protection-policies), som forbyder deling fra en Power BI-mobilapp.
+**Anmærk og del** kan være slået fra, hvis din organisation har en [Intune-beskyttelsespolitik](/intune/app-protection-policies), som forbyder deling fra en Power BI-mobilapp.
 
 **Inviter** er kun aktiveret, hvis du har tilladelse til at dele denne rapport med andre. Du har kun tilladelse, hvis du er ejer af rapporten, eller hvis du har fået tilladelse til at dele den igen af ejeren.
 
-**Filtrering efter aktuel placering** er aktiveret, hvis forfatteren af rapporten kategoriserede rapporten med geografiske data. Du kan få flere oplysninger ved at læse om [identifikation af geografiske data i en rapport](https://docs.microsoft.com/power-bi/desktop-mobile-geofiltering).
+**Filtrering efter aktuel placering** er aktiveret, hvis forfatteren af rapporten kategoriserede rapporten med geografiske data. Du kan få flere oplysninger ved at læse om [identifikation af geografiske data i en rapport](../../transform-model/desktop-mobile-geofiltering.md).
 
-**Scan for at filtrere rapporten efter stregkode** er kun aktiveret, hvis datasættet i din rapport er mærket som **stregkode**. Du kan finde flere oplysninger om at [tagge stregkoder i Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-mobile-barcodes).
+**Scan for at filtrere rapporten efter stregkode** er kun aktiveret, hvis datasættet i din rapport er mærket som **stregkode**. Du kan finde flere oplysninger om at [tagge stregkoder i Power BI Desktop](../../transform-model/desktop-mobile-barcodes.md).
 
 ### <a name="bookmarks"></a>Bogmærker
 
@@ -154,7 +154,7 @@ Når en bogmærkevisning af en rapport er åben, vises navnet på bogmærket øv
 
 ![bogmærkevisning](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-title.png)
 
-[Få mere at vide om bogmærker i Power BI-tjenesten](https://docs.microsoft.com/power-bi/consumer/end-user-bookmarks).
+[Få mere at vide om bogmærker i Power BI-tjenesten](../end-user-bookmarks.md).
 
 ## <a name="configure-your-experience-with-reports"></a>Konfigurer din oplevelse med rapporter
 Power BI-mobilappen har en række indstillinger, som du kan bruge til at styre din rapportvisning. Du kan i øjeblikket konfigurere

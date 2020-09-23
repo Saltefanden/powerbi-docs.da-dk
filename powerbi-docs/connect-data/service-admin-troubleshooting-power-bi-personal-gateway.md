@@ -5,16 +5,16 @@ author: arthiriyer
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: how-to
+ms.topic: troubleshooting
 ms.date: 5/06/2019
 ms.author: arthii
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 108a50017a55a2ac87bb8db2adf4f92bd5dca58f
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 9c5e241cee86b9f7ea21607128f5c32099dd0415
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85231083"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861492"
 ---
 # <a name="troubleshooting-power-bi-gateway-personal-mode"></a>Fejlfinding af Power BI-gateway (personlig tilstand)
 
@@ -31,7 +31,7 @@ Der kan opstå mange problemer, hvis gatewayversionen er forældet. Det er gener
 ## <a name="installation"></a>Installation
 **Gatewayen (personlig tilstand) fungerer på 64-bit versioner:** Hvis din computer er en 32-bit version, kan du ikke installere gatewayen (personlig tilstand). Operativsystemet skal være en 64-bit version. Installér en 64-bit version af Windows, eller installér gatewayen (personlig tilstand) på en 64-bit computer.
 
-**Gatewayen (personlig tilstand) kan ikke installeres som en tjeneste, selvom du er lokal administrator for computeren:** Installationen kan mislykkes, hvis brugeren findes i computerens lokale administratorgruppe, men gruppepolitikken ikke tillader, at brugernavnet logger på som en tjeneste. Sørg for, at gruppepolitikken lader brugeren logge på som en tjeneste. Vi arbejder på at finde en rettelse på problemet. Du kan finde flere oplysninger under [Tilføj tjenesten Log på som en tjeneste direkte på en konto](https://technet.microsoft.com/library/cc739424.aspx).
+**Gatewayen (personlig tilstand) kan ikke installeres som en tjeneste, selvom du er lokal administrator for computeren:** Installationen kan mislykkes, hvis brugeren findes i computerens lokale administratorgruppe, men gruppepolitikken ikke tillader, at brugernavnet logger på som en tjeneste. Sørg for, at gruppepolitikken lader brugeren logge på som en tjeneste. Vi arbejder på at finde en rettelse på problemet. Du kan finde flere oplysninger under [Tilføj tjenesten Log på som en tjeneste direkte på en konto](/previous-versions/windows/it-pro/windows-server-2003/cc739424(v=ws.10)).
 
 **Der opstod timeout for handlingen:** Denne meddelelse forekommer tit, hvis den computer (fysisk maskine eller VM), du installerer gatewayen (personlig tilstand) på, har en processor med en enkelt kerne. Luk alle programmer, afbryd alle processer, der ikke er essentielle, og prøv at installere igen.
 

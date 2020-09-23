@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 05/21/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 3e7bb33eae8be4a0eaa7eb4d92ca165c74b14ed5
-ms.sourcegitcommit: 13c4bec679313f2951f1833033316cb8176da8a1
+ms.openlocfilehash: 76c42c52ba877b3e6477a2baee11aef4a531161c
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88937372"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861561"
 ---
 # <a name="use-directquery-with-dataflows-in-power-bi-preview"></a>Brug DirectQuery med dataflow i Power BI (prøveversion)
 
@@ -70,7 +70,7 @@ Følgende artikler indeholder nyttige oplysninger og scenarier, når du bruger d
 * [Integration af dataflow og Azure Data Lake (prøveversion)](service-dataflows-azure-data-lake-integration.md)
 
 Du kan finde flere oplysninger om Common Data Model i denne oversigtsartikel:
-* [Common Data Model – oversigt](https://docs.microsoft.com/powerapps/common-data-model/overview)
+* [Common Data Model – oversigt](/powerapps/common-data-model/overview)
 * [Få mere at vide om Common Data Model-skemaet og objekter på GitHub](https://github.com/Microsoft/CDM)
 
 Relaterede artikler om Power BI Desktop:

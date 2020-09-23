@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.date: 07/08/2020
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: d40bda8ef6469e5dc826d36db3cc21cfe72f0da6
-ms.sourcegitcommit: 70a892df1a0c196db58bf9165b3aa31b26bbe149
+ms.openlocfilehash: eeda30e5a075166af3718084c2c9f7737f876cbe
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "89092377"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861101"
 ---
 # <a name="tutorial-get-started-creating-in-the-power-bi-service"></a>Selvstudium: Kom i gang med at oprette i Power BI-tjenesten
 Dette selvstudium er en introduktion til nogle af funktionerne i *Power BI-tjenesten.* I selvstudiet lærer du, hvordan du opretter forbindelse til data, opretter en rapport og et dashboard samt stiller spørgsmål til dine data. Du kan udføre mange flere opgaver i Power BI-tjenesten, og dette selvstudium er kun ment som en appetitvækker. Hvis du vil have en forståelse af, hvordan Power BI-tjenesten passer sammen med de andre Power BI-tilbud, anbefaler vi, at du læser artiklen [Hvad er Power BI](power-bi-overview.md).
@@ -226,5 +226,5 @@ Nu, hvor du har gennemført selvstudiet, kan du slette datasættet, rapporten og
 
 Udforsk disse samlinger af Microsoft Learn-indhold til Power BI:
 
-- [Få mere at vide om Power BI](https://docs.microsoft.com/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link)
-- [Bliv Power BI-dataanalytiker](https://docs.microsoft.com/users/microsoftpowerplatform-5978/collections/djwu3eywpk4nm)
+- [Få mere at vide om Power BI](/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link)
+- [Bliv Power BI-dataanalytiker](/users/microsoftpowerplatform-5978/collections/djwu3eywpk4nm)

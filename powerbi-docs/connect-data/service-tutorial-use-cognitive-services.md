@@ -10,16 +10,16 @@ ms.topic: tutorial
 ms.date: 02/20/2020
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 4c19965def178d4260527032820c4109c4fe235f
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 6511afb499b12d379957ac37ebfe19890c111282
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83281570"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861032"
 ---
 # <a name="tutorial-use-cognitive-services-in-power-bi"></a>Selvstudium: Brug Cognitive Services i Power BI
 
-Power BI giver adgang til et sæt funktioner fra Azure Cognitive Services, så du kan forbedre dine data via selvbetjent dataforberedelse til dataflow. De tjenester, der understøttes i dag, er [Synspunktsanalyse](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-sentiment-analysis), [Udtrækning af nøglesætninger](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-keyword-extraction), [Registrering af sprog](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-language-detection) og [Billedmarkering](https://docs.microsoft.com/azure/cognitive-services/computer-vision/concept-tagging-images). Transformationerne udføres i Power BI-tjenesten og kræver ikke et Azure Cognitive Services-abonnement. Denne funktion kræver Power BI Premium.
+Power BI giver adgang til et sæt funktioner fra Azure Cognitive Services, så du kan forbedre dine data via selvbetjent dataforberedelse til dataflow. De tjenester, der understøttes i dag, er [Synspunktsanalyse](/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-sentiment-analysis), [Udtrækning af nøglesætninger](/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-keyword-extraction), [Registrering af sprog](/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-language-detection) og [Billedmarkering](/azure/cognitive-services/computer-vision/concept-tagging-images). Transformationerne udføres i Power BI-tjenesten og kræver ikke et Azure Cognitive Services-abonnement. Denne funktion kræver Power BI Premium.
 
 Cognitive Services-transformationer understøttes i [Selvbetjent dataforberedelse til dataflow](https://powerbi.microsoft.com/blog/introducing-power-bi-data-prep-wtih-dataflows/). Brug de trinvise eksempler til tekstanalyse og billedmarkering nedenfor for at komme i gang.
 
@@ -174,7 +174,7 @@ Når forespørgslen ikke længere er nødvendig, kan du slette den ved at højre
 
 I dette selvstudium anvendte du tildeling af point til synspunkter og funktioner til markering af billeder i et Power BI-dataflow. Du kan få mere at vide om Cognitive Services i Power BI ved at læse følgende artikler.
 
-* [Cognitive Services i Azure](https://docs.microsoft.com/azure/cognitive-services/)
+* [Cognitive Services i Azure](/azure/cognitive-services/)
 * Kom i gang [med selvbetjent dataforberedelse i dataflow](../transform-model/service-dataflows-overview.md)
 * Få mere at vide om [Power BI Premium](https://powerbi.microsoft.com/power-bi-premium/)
 

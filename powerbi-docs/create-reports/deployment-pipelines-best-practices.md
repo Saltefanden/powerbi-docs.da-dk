@@ -6,15 +6,15 @@ ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.date: 05/06/2020
-ms.openlocfilehash: a1a30dc09e61e29053a5a1d95cde3d5a339c5a3d
-ms.sourcegitcommit: 6d7d5e6b19e11d557dfa1b79b745728b4ee02b4e
+ms.date: 09/15/2020
+ms.openlocfilehash: ea2fa0625ece88d8da2848dbe6a108d98a55a0d0
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89220854"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90855553"
 ---
-# <a name="deployment-pipelines-best-practices-preview"></a>Bedste fremgangsmåder for udrulningspipelines (prøveversion)
+# <a name="deployment-pipelines-best-practices"></a>Bedste praksis for udrulningspipelines
 
 Denne artikel indeholder en vejledning til BI-oprettere, der administrerer deres indhold i hele indholdets livscyklus. I artiklen fokuseres der på at anvende udrulningspipelines som et værktøj til administration af livscyklusser for BI-indhold.
 
@@ -79,7 +79,7 @@ En produktionsdatabase skal altid være stabil og tilgængelig. Det er bedre ikk
 
 ### <a name="use-parameters-in-your-model"></a>Brug parametre i modellen
 
-Eftersom du ikke kan redigere datakilderne for datasæt i Power BI-tjenesten, anbefaler vi, at du bruger [parametre](https://docs.microsoft.com/power-query/power-query-query-parameters) til at gemme forbindelsesoplysninger som f.eks. forekomstnavne og databasenavne i stedet for at bruge en statisk forbindelsesstreng. Det giver dig mulighed for at administrere forbindelserne via webportalen for Power BI-tjenesten eller [bruge API'er](https://docs.microsoft.com/rest/api/power-bi/datasets/updateparametersingroup) på et senere tidspunkt.
+Eftersom du ikke kan redigere datakilderne for datasæt i Power BI-tjenesten, anbefaler vi, at du bruger [parametre](/power-query/power-query-query-parameters) til at gemme forbindelsesoplysninger som f.eks. forekomstnavne og databasenavne i stedet for at bruge en statisk forbindelsesstreng. Det giver dig mulighed for at administrere forbindelserne via webportalen for Power BI-tjenesten eller [bruge API'er](/rest/api/power-bi/datasets/updateparametersingroup) på et senere tidspunkt.
 
 I udrulningspipelines kan du konfigurere parameterregler for at angive specifikke værdier for udviklings-, test- og produktionsfaser.
 

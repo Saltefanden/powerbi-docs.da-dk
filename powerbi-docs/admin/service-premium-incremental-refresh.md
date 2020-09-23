@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 06/22/2020
 ms.author: davidi
 LocalizationGroup: Premium
-ms.openlocfilehash: 02716f895d84a7aa49ab7f1d48d60372b3546409
-ms.sourcegitcommit: b943ce58c2c079cb18fc5cf23cc609ead1dc9906
+ms.openlocfilehash: 51aa05d49f0691c7ebb916ff84e3a8cbb0416096
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89443323"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90855006"
 ---
 # <a name="incremental-refresh-in-power-bi"></a>Trinvis opdatering i Power BI
 
@@ -112,7 +112,7 @@ Under den første opdatering i Power BI-tjenesten kan det tage længere tid at i
 
 #### <a name="current-date"></a>Aktuel dato
 
-Den *aktuelle dato* er baseret på systemdatoen for opdateringstidspunktet. Hvis en planlagt opdatering er aktiveret for datasættet i Power BI-tjenesten, tages der hensyn til den pågældende tidszone, når den aktuelle dato fastsættes. Der tages hensyn til tidszonen for både manuelt udløste og planlagte opdateringer gennem Power BI-tjenesten, hvis tidszonen er tilgængelig. En opdatering, der finder sted kl. 20.00 Pacific Time (USA og Canada) og har en angiven tidszone, fastsætter den aktuelle dato ud fra Pacific Time og ikke GMT (hvilket i så fald ville være den efterfølgende dag). Opdateringshandlinger, der ikke blev kaldt via Power BI-tjenesten, f.eks. [TMSL-opdateringskommandoen](https://docs.microsoft.com/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current), tager ikke hensyn til tidszonen for planlagt opdatering
+Den *aktuelle dato* er baseret på systemdatoen for opdateringstidspunktet. Hvis en planlagt opdatering er aktiveret for datasættet i Power BI-tjenesten, tages der hensyn til den pågældende tidszone, når den aktuelle dato fastsættes. Der tages hensyn til tidszonen for både manuelt udløste og planlagte opdateringer gennem Power BI-tjenesten, hvis tidszonen er tilgængelig. En opdatering, der finder sted kl. 20.00 Pacific Time (USA og Canada) og har en angiven tidszone, fastsætter den aktuelle dato ud fra Pacific Time og ikke GMT (hvilket i så fald ville være den efterfølgende dag). Opdateringshandlinger, der ikke blev kaldt via Power BI-tjenesten, f.eks. [TMSL-opdateringskommandoen](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current), tager ikke hensyn til tidszonen for planlagt opdatering
 
 ![Tidszone](media/service-premium-incremental-refresh/time-zone2.png)
 
@@ -153,7 +153,7 @@ Du kan nu opdatere modellen. Den første opdatering kan tage længere tid, da ov
 
 ## <a name="query-timeouts"></a>Timeout for forespørgsel
 
-I artiklen [Fejlfinding i forbindelse med opdatering](../connect-data/refresh-troubleshooting-refresh-scenarios.md) forklares det, at der kan opstå timeout for opdateringshandlinger i Power BI-tjenesten. Forespørgsler kan også være begrænset af standardtimeout for datakilden. De fleste relationskilder tillader tilsidesættelse af timeout i M-udtryk. I udtrykket nedenfor bruges [funktionen SQL Server-dataadgang ](https://docs.microsoft.com/powerquery-m/sql-database) f.eks. til at angive det til to timer. Hver periode, der er defineret af politikintervallerne, sender en forespørgsel, der overholder indstillingen for timeout for kommandoer.
+I artiklen [Fejlfinding i forbindelse med opdatering](../connect-data/refresh-troubleshooting-refresh-scenarios.md) forklares det, at der kan opstå timeout for opdateringshandlinger i Power BI-tjenesten. Forespørgsler kan også være begrænset af standardtimeout for datakilden. De fleste relationskilder tillader tilsidesættelse af timeout i M-udtryk. I udtrykket nedenfor bruges [funktionen SQL Server-dataadgang ](/powerquery-m/sql-database) f.eks. til at angive det til to timer. Hver periode, der er defineret af politikintervallerne, sender en forespørgsel, der overholder indstillingen for timeout for kommandoer.
 
 ```powerquery-m
 let
@@ -176,7 +176,7 @@ Med XMLA-slutpunktet kan læse-/skriveaktiveret SSMS bruges til at få vist og a
 
 #### <a name="override-incremental-refresh-behavior"></a>Tilsidesæt funktionsmåde for trinvis opdatering
 
-Med SSMS får du også mere kontrol over, hvordan du aktiverer trinvise opdateringer ved hjælp af [TMSL (Tabular Model Scripting Language)](https://docs.microsoft.com/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=power-bi-premium-current) og [TOM (Tabular Object Model)](https://docs.microsoft.com/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo?view=power-bi-premium-current). I SSMS kan du f. eks. højreklikke på en tabel i Object Explorer og derefter vælge menupunktet **Behandl tabel**. Klik derefter på knappen **Script** for at generere en TMSL-opdateringskommando.
+Med SSMS får du også mere kontrol over, hvordan du aktiverer trinvise opdateringer ved hjælp af [TMSL (Tabular Model Scripting Language)](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=power-bi-premium-current) og [TOM (Tabular Object Model)](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo?view=power-bi-premium-current). I SSMS kan du f. eks. højreklikke på en tabel i Object Explorer og derefter vælge menupunktet **Behandl tabel**. Klik derefter på knappen **Script** for at generere en TMSL-opdateringskommando.
 
 ![Knappen Script i dialogboksen Behandl tabel](media/service-premium-incremental-refresh/ssms-process-table.png)
 
@@ -204,7 +204,7 @@ Følgende parametre kan indsættes i TMSL-opdateringskommandoen for at tilsides�
 }
 ```
 
-Du kan få mere at vide om, hvordan du tilsidesætter standardfunktionen til trinvis opdatering med TMSL, under [Opdater kommando](https://docs.microsoft.com/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current).
+Du kan få mere at vide om, hvordan du tilsidesætter standardfunktionen til trinvis opdatering med TMSL, under [Opdater kommando](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current).
 
 ### <a name="custom-queries-for-detect-data-changes"></a>Brugerdefinerede forespørgsler om registrering af dataændringer
 
@@ -247,4 +247,4 @@ Hent og installér den nyeste version af ALM Toolkit fra [git-lageret til Analys
 ## <a name="see-also"></a>Se også
 
 [Netværksmulighed for datasæt med XMLA-slutpunktet](service-premium-connect-tools.md)   
-[Fejlfinding i forbindelse med opdatering af scenarier](../connect-data/refresh-troubleshooting-refresh-scenarios.md)   
+[Fejlfinding i forbindelse med opdatering af scenarier](../connect-data/refresh-troubleshooting-refresh-scenarios.md)

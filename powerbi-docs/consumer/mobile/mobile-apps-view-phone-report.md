@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 05/05/2020
 ms.author: painbar
-ms.openlocfilehash: eb46c35c4040ead37b132cf2c34a22663ee72b6d
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 9030d7ebacad92780a7dcafe33ae5bdded842b01
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85220281"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90856132"
 ---
 # <a name="view-power-bi-reports-optimized-for-your-phone"></a>Få vist Power BI-rapporter, der er optimeret til din telefon
 
@@ -115,7 +115,7 @@ Der findes få typer detailudledning:
 
 ## <a name="drill-through-from-a-value"></a>Detaljeadgang fra en værdi
 Detaljeadgang knytter værdier på én rapportside til andre rapportsider. Når du får detaljeadgang fra et datapunkt til en anden rapportside, bruges datapunktets værdier til at filtrere siden med detaljeadgang, eller den vil være i konteksten for de valgte data.
-Rapportforfattere kan [definere detaljeadgang](https://docs.microsoft.com/power-bi/desktop-drillthrough), når de opretter rapporten.
+Rapportforfattere kan [definere detaljeadgang](../../create-reports/desktop-drillthrough.md), når de opretter rapporten.
 
 1. Tryk længe (tryk og hold nede) på et datapunkt i en visual.
 2. Der vises værktøjstip, og hvis der er defineret detaljeadgang, vises der en pil for detaljeadgang i sidefoden for værktøjstippet.
