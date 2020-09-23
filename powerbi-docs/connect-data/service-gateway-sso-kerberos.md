@@ -9,12 +9,12 @@ ms.subservice: powerbi-gateways
 ms.topic: how-to
 ms.date: 02/20/2020
 LocalizationGroup: Gateways
-ms.openlocfilehash: cea54821c7a2a31d8ee362559e29a3f79fa40b6c
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 598b41362cb510f8e5bbc60c7ca263c57fa0403e
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85231531"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90859790"
 ---
 # <a name="configure-kerberos-based-sso-from-power-bi-service-to-on-premises-data-sources"></a>Konfigurer Kerberos-baseret SSO fra Power BI-tjenesten til datakilder i det lokale miljø
 
@@ -59,7 +59,7 @@ Først skal du undersøge, om der allerede er oprettet et SPN for den domænekon
 
 4. Hvis fanen **Delegering** er synlig i dialogboksen **Egenskaber**, var der allerede oprettet et SPN, og du kan gå videre til [Beslut, hvilken type begrænset Kerberos-delegering der skal bruges](#decide-on-the-type-of-kerberos-constrained-delegation-to-use).
 
-5. Hvis fanen **Delegering** ikke er synlig i dialogboksen **Egenskaber**, kan du manuelt oprette et SPN for den pågældende konto for at aktivere fanen. Brug det [setspn-værktøj](https://technet.microsoft.com/library/cc731241.aspx), der følger med Windows. Du skal have rettigheder som domæneadministrator for at oprette et SPN.
+5. Hvis fanen **Delegering** ikke er synlig i dialogboksen **Egenskaber**, kan du manuelt oprette et SPN for den pågældende konto for at aktivere fanen. Brug det [setspn-værktøj](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc731241(v=ws.11)), der følger med Windows. Du skal have rettigheder som domæneadministrator for at oprette et SPN.
 
    Forestil dig f.eks., at gatewaytjenestekontoen er **Contoso\GatewaySvc**, og at gatewaytjenesten kører på en computer med navnet **MyGatewayMachine**. Hvis du vil angive SPN'et for gatewaytjenestekontoen, skal du køre følgende kommando:
 

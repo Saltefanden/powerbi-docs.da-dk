@@ -9,12 +9,12 @@ ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
-ms.openlocfilehash: a1d62ad9cd8475e217a0ae051919792970dbb34d
-ms.sourcegitcommit: b66c913a50a5100082e1c8ff7cd1c4f76f514fe7
+ms.openlocfilehash: 4b2b29effb1d9b4b2d8e743990dd3dd0d27470f8
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "84219589"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90859836"
 ---
 # <a name="what-is-power-bi-report-server"></a>Hvad er Power BI-rapportserveren?
 
@@ -38,9 +38,9 @@ Indgangspunktet for Power BI-rapportserveren er en sikker webportal, som du kan 
 
 ![Webportalen til Power BI-rapportserver](media/get-started/web-portal.png)
 
-Afhængigt af dine tilladelser kan du administrere indholdet på webportalen. Du kan planlægge behandling af rapporter, få adgang til rapporter efter behov og abonnere på udgivne rapporter. Du kan anvende din egen brugerdefinerede [branding](https://docs.microsoft.com/sql/reporting-services/branding-the-web-portal) på webportalen. 
+Afhængigt af dine tilladelser kan du administrere indholdet på webportalen. Du kan planlægge behandling af rapporter, få adgang til rapporter efter behov og abonnere på udgivne rapporter. Du kan anvende din egen brugerdefinerede [branding](/sql/reporting-services/branding-the-web-portal) på webportalen. 
 
-Mere om [webportalen til Power BI-rapportserveren](https://docs.microsoft.com/sql/reporting-services/web-portal-ssrs-native-mode).
+Mere om [webportalen til Power BI-rapportserveren](/sql/reporting-services/web-portal-ssrs-native-mode).
 
 ## <a name="power-bi-reports"></a>Power BI-rapporter
 Du opretter Power BI-rapporter (.pbix) med den version af Power BI Desktop, der er optimeret til rapportserveren. Derefter publicerer du dem og får dem vist på webportalen i dit eget miljø.
@@ -56,17 +56,17 @@ Sideinddelte rapporter (.rdl) er dokumentlignende rapporter med visualiseringer,
 
 ![Sideinddelte rapporter på Power BI-rapportserveren](media/get-started/paginated-reports.png)
 
-Du kan oprette sideinddelte rapporter, der bruger [Report Builder](https://docs.microsoft.com/sql/reporting-services/report-builder/report-builder-in-sql-server-2016) eller Rapportdesigner i [SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/reporting-services/tools/reporting-services-in-sql-server-data-tools-ssdt).
+Du kan oprette sideinddelte rapporter, der bruger [Report Builder](/sql/reporting-services/report-builder/report-builder-in-sql-server-2016) eller Rapportdesigner i [SQL Server Data Tools (SSDT)](/sql/reporting-services/tools/reporting-services-in-sql-server-data-tools-ssdt).
 
 ## <a name="reporting-services-mobile-reports"></a>Reporting Services-mobilrapporter
 Mobilrapporter opretter forbindelse til data i det lokale miljø og har et dynamisk layout, der kan tilpasses til forskellige enheder og de forskellige måder, du holder dem på. Du kan oprette dem med SQL Server Mobile Report Publisher.
 
-Mere om [Reporting Services-mobilrapporter](https://docs.microsoft.com/sql/reporting-services/mobile-reports/create-mobile-reports-with-sql-server-mobile-report-publisher). 
+Mere om [Reporting Services-mobilrapporter](/sql/reporting-services/mobile-reports/create-mobile-reports-with-sql-server-mobile-report-publisher). 
 
 ## <a name="report-server-programming-features"></a>Programmeringsfunktioner til Report Server
 Drag fordel af programmeringsfunktionerne til Power BI-rapportserveren, så du kan udvide og tilpasse dine rapporter med API'er til at integrere eller udvide data- og rapportbehandling i brugerdefinerede programmer.
 
-Mere [dokumentation til Report Server-udviklere](https://docs.microsoft.com/sql/reporting-services/reporting-services-developer-documentation).
+Mere [dokumentation til Report Server-udviklere](/sql/reporting-services/reporting-services-developer-documentation).
 
 ## <a name="next-steps"></a>Næste trin
 [Installer Power BI-rapportserver](install-report-server.md)  

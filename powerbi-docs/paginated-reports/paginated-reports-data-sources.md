@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 07/27/2020
-ms.openlocfilehash: cdce9ead296a25aad95ab504d6da38f06f681b72
-ms.sourcegitcommit: 92b033ee7a6e36808371b247b7b41536cee6c2f6
+ms.openlocfilehash: f433a90580034495b4f7b1f6201c4481ffc627c5
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "90008623"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90859859"
 ---
 # <a name="supported-data-sources-for-power-bi-paginated-reports"></a>Understøttede datakilder for sideinddelte rapporter i Power BI
 
@@ -67,11 +67,10 @@ Her er de understøttede godkendelsestyper for Azure SQL Database-datakilder:
 - SSO (enkeltlogon)
 - OAuth2 (gemt AAD-token)
 
-[Understøttelse af AAD-godkendelse](https://docs.microsoft.com/azure/sql-database/sql-database-aad-authentication-configure) skal være aktiveret for den Azure SQL Database-server, som datakilden opretter forbindelse til, for at SSO og OAuth2 fungerer korrekt. Til OAuth2-godkendelsesmetoden opretter AAD et token og gemmer det til fremtidig adgang til datakilderne. Hvis du i stedet vil bruge [SSO-godkendelsesmetoden](https://docs.microsoft.com/power-bi/service-azure-sql-database-with-direct-connect#single-sign-on), skal du vælge SSO-muligheden lige under den, **Slutbrugere bruger deres egne OAuth2-legitimationsoplysninger til at få adgang til denne datakilde via DirectQuery**.
+[Understøttelse af AAD-godkendelse](/azure/sql-database/sql-database-aad-authentication-configure) skal være aktiveret for den Azure SQL Database-server, som datakilden opretter forbindelse til, for at SSO og OAuth2 fungerer korrekt. Til OAuth2-godkendelsesmetoden opretter AAD et token og gemmer det til fremtidig adgang til datakilderne. Hvis du i stedet vil bruge [SSO-godkendelsesmetoden](../connect-data/service-azure-sql-database-with-direct-connect.md#single-sign-on), skal du vælge SSO-muligheden lige under den, **Slutbrugere bruger deres egne OAuth2-legitimationsoplysninger til at få adgang til denne datakilde via DirectQuery**.
   
 ## <a name="next-steps"></a>Næste trin
 
 [Publicer en sideinddelt rapport i Power BI-tjenesten](../consumer/paginated-reports-view-power-bi-service.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-

@@ -9,12 +9,12 @@ ms.topic: overview
 ms.date: 05/22/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 24f507a2457793590b6b123c0f4c9cb68dea4102
-ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.openlocfilehash: a888d9010a418aa51534b94350cc3f6d82385772
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86161738"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90860963"
 ---
 # <a name="the-power-bi-service-for-consumers"></a>Power BI-tjenesten til forbrugere
 
@@ -62,6 +62,5 @@ Det betyder ikke, at du ikke kan gemme dine ændringer. Det kan du. Men disse æ
 ## <a name="next-steps"></a>Næste trin
 
 [Få en præsentation af Power BI-tjenesten for forbrugere](end-user-reading-view.md)    
-[Uddannelse i Power BI-tjenesten for forbrugere](https://docs.microsoft.com/learn/paths/consume-data-with-power-bi/)    
-[Terminologi og begreber for Power BI-*forbrugere*](end-user-basic-concepts.md)    
-
+[Uddannelse i Power BI-tjenesten for forbrugere](/learn/paths/consume-data-with-power-bi/)    
+[Terminologi og begreber for Power BI-*forbrugere*](end-user-basic-concepts.md)

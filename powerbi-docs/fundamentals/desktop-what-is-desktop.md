@@ -9,12 +9,12 @@ ms.topic: overview
 ms.date: 07/23/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: c8d4671d55e09ca6e60599bbc0ac9802258f63ba
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.openlocfilehash: 09e51c46a11c41008f77d3a7597807b35b57d297
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87252722"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90860779"
 ---
 # <a name="what-is-power-bi-desktop"></a>Hvad er Power BI Desktop?
 
@@ -66,7 +66,7 @@ Sådan opretter du forbindelse til data:
 
 ## <a name="transform-and-clean-data-create-a-model"></a>Transformér og rens dataene, og opret en model
 
-I Power BI Desktop kan du rense og transformere data ved hjælp af den indbyggede [Power Query-editor](https://docs.microsoft.com/power-bi/desktop-query-overview). Med Power Query-editoren ændrer du dine data, f.eks. ændring af en datatype, fjernelse af kolonner eller kombination af data fra flere kilder. Det er lige som at lave en skulptur: Du starter med en stor klump ler (eller data), og derefter barberer du stykker af eller tilføjer nogle efter behov, indtil formen af dataene er, som du ønsker det. 
+I Power BI Desktop kan du rense og transformere data ved hjælp af den indbyggede [Power Query-editor](../transform-model/desktop-query-overview.md). Med Power Query-editoren ændrer du dine data, f.eks. ændring af en datatype, fjernelse af kolonner eller kombination af data fra flere kilder. Det er lige som at lave en skulptur: Du starter med en stor klump ler (eller data), og derefter barberer du stykker af eller tilføjer nogle efter behov, indtil formen af dataene er, som du ønsker det. 
 
 Sådan starter du Power Query-editor:
 
@@ -134,4 +134,3 @@ For at komme i gang med Power BI Desktop skal du først downloade og installere 
 
 * [Hent Power BI Desktop fra Windows Store](https://aka.ms/pbidesktopstore)
 * [Download Power BI Desktop fra internettet](https://www.microsoft.com/download/details.aspx?id=58494)
-

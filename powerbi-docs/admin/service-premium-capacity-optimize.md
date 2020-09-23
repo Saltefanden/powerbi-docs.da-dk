@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/09/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 4d03419105244b7fddafea3b26b69e4f4f5f874c
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: ae52e9eb2d018e68f7b84bc412797c25825a8871
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83134107"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90854845"
 ---
 # <a name="optimizing-premium-capacities"></a>Optimering af Premium-kapaciteter
 
@@ -186,7 +186,7 @@ På modellaget:
 
 - Design af Power-forespørgsler kan minimere eller fjerne komplekse transformationer og især dem, der fletter forskellige datakilder (datalagre opnår dette i fasen Udtræk-Transformer-Indlæs). Sikring af der angives relevante niveauer for beskyttelse af personlige oplysninger for datakilder kan forhindre, at Power BI skal indlæse komplette resultater for at generere et kombineret resultatet på tværs af forespørgsler.
 - Modelstrukturen bestemmer de data, der skal indlæses, og har en direkte indvirkning på modelstørrelsen. Det kan designes til at undgå at indlæse unødvendige data ved at fjerne kolonner, fjerne rækker (især historiske data) eller ved at indlæse opsummerede data (i stedet for at indlæse detaljerede data). En væsentlig reduktion af størrelsen kan opnås ved at fjerne kolonner med høj kardinalitet (især tekstkolonner), som hverken kan gemmes eller komprimeres særligt effektivt.
-- Ydeevnen for modelforespørgsler kan forbedres ved at konfigurere relationer i én retning, medmindre der er en meget god grund til at tillade tovejsfiltrering. Du kan også bruge funktionen [CROSSFILTER](https://docs.microsoft.com/dax/crossfilter-function) i stedet for tovejsfiltrering.
+- Ydeevnen for modelforespørgsler kan forbedres ved at konfigurere relationer i én retning, medmindre der er en meget god grund til at tillade tovejsfiltrering. Du kan også bruge funktionen [CROSSFILTER](/dax/crossfilter-function) i stedet for tovejsfiltrering.
 - Med akkumuleringstabeller kan du opnå hurtige forespørgsler ved at indlæse data, der er opsummerede på forhånd, men dette vil forøge størrelsen af modellen og resulterer i længere opdateringstider. Akkumuleringstabeller bør generelt benyttes til design med meget store modeller eller sammensatte modeller.
 - Beregnede tabeller og kolonner forøger størrelsen på modellen og resulterer i længere opdateringstider. En mindre lagerstørrelse og en hurtigere opdateringstid kan generelt opnås, når dataene er oprettet eller beregnet i datakilden. Hvis dette ikke er muligt, kan brug af brugerdefinerede kolonner i Power-forespørglser forbedre lagerkomprimeringen.
 - Det kan være muligt at optimere DAX-udtryk for målinger og RLS-regler og måske omskrive logik for at undgå dyre formler.

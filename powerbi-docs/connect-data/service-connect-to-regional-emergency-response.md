@@ -8,29 +8,29 @@ ms.topic: how-to
 ms.date: 04/24/2020
 ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 3cf846ef7fa7b47b0eaa90c850885af65a4bab80
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: a6cb38d17a84ab41acda96f0564b12188c719254
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85229665"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90860733"
 ---
 # <a name="connect-to-the-regional-emergency-response-dashboard"></a>Opret forbindelse til det områderelaterede dashboard til akutberedskab
-Det områderelaterede dashboard til akutberedskab er komponenten til rapportering i [Microsoft Power Platform-løsningen til områderelateret akutberedskab](https://docs.microsoft.com/powerapps/sample-apps/regional-emergency-response/overview). Administratorer af regionale organisationer kan få vist dashboardet i deres Power BI-lejer, så de hurtigt kan få vist vigtige data og målepunkter, der kan hjælpe dem med at træffe effektive beslutninger.
+Det områderelaterede dashboard til akutberedskab er komponenten til rapportering i [Microsoft Power Platform-løsningen til områderelateret akutberedskab](/powerapps/sample-apps/regional-emergency-response/overview). Administratorer af regionale organisationer kan få vist dashboardet i deres Power BI-lejer, så de hurtigt kan få vist vigtige data og målepunkter, der kan hjælpe dem med at træffe effektive beslutninger.
 
 ![Rapport i appen Dashboard til områderelateret akutberedskab](media/service-connect-to-regional-emergency-response/service-regional-emergency-response-app-report.png)
 
 I denne artikel kan du se, hvordan du installerer appen Områderelateret akutberedskab, og hvordan du opretter forbindelse til datakilderne.
 
-Du kan finde detaljerede oplysninger om, hvad der vises i dashboardet, under [Hent indsigt](https://docs.microsoft.com/powerapps/sample-apps/regional-emergency-response/portals-admin-reporting#get-insights).
+Du kan finde detaljerede oplysninger om, hvad der vises i dashboardet, under [Hent indsigt](/powerapps/sample-apps/regional-emergency-response/portals-admin-reporting#get-insights).
 
 Når du har installeret skabelonappen og oprettet forbindelse til datakilderne, kan du tilpasse rapporten i henhold til dine behov. Du kan derefter distribuere den som en app til kolleger i organisationen.
 
 ## <a name="prerequisites"></a>Forudsætninger
 
-Før du installerer denne skabelonapp, skal du først installere og konfigurere [Power Platform-løsningen til områderelateret akutberedskab](https://docs.microsoft.com/powerapps/sample-apps/regional-emergency-response/deploy). Når du installerer denne løsning, oprettes de referencer til datakilden, der er nødvendige for at udfylde appen med data.
+Før du installerer denne skabelonapp, skal du først installere og konfigurere [Power Platform-løsningen til områderelateret akutberedskab](/powerapps/sample-apps/regional-emergency-response/deploy). Når du installerer denne løsning, oprettes de referencer til datakilden, der er nødvendige for at udfylde appen med data.
 
-Når du installerer løsningen til områderelateret akutberedskab, kan du se [URL-adressen til din forekomst af Common Data Service-miljøet](https://docs.microsoft.com/powerapps/sample-apps/regional-emergency-response/deploy#step-5-configure-and-publish-power-bi-dashboard). Du skal bruge den til at oprette forbindelse mellem skabelonappen og dataene.
+Når du installerer løsningen til områderelateret akutberedskab, kan du se [URL-adressen til din forekomst af Common Data Service-miljøet](/powerapps/sample-apps/regional-emergency-response/deploy#step-5-configure-and-publish-power-bi-dashboard). Du skal bruge den til at oprette forbindelse mellem skabelonappen og dataene.
 
 ## <a name="install-the-app"></a>Installér programmet
 
@@ -62,7 +62,7 @@ Når du installerer løsningen til områderelateret akutberedskab, kan du se [UR
 
    ![Appen Dashboard til områderelateret akutberedskab på appsiden – link til oprettelse af forbindelse til data](media/service-connect-to-regional-emergency-response/service-regional-emergency-response-app-connect-data.png)
 
-1. I den dialogboks, der vises, skal du skrive [URL-adressen til din forekomst af Common Data Service-miljøet](https://docs.microsoft.com/powerapps/sample-apps/emergency-response/deploy-configure#publish-the-power-bi-dashboard). For eksempel: https://[myenv].crm.dynamics.com. Klik på **Næste**, når du er færdig.
+1. I den dialogboks, der vises, skal du skrive [URL-adressen til din forekomst af Common Data Service-miljøet](/powerapps/sample-apps/emergency-response/deploy-configure#publish-the-power-bi-dashboard). For eksempel: https://[myenv].crm.dynamics.com. Klik på **Næste**, når du er færdig.
 
    ![Appen Dashboard til områderelateret akutberedskab – dialogboks til URL-adresse](media/service-connect-to-regional-emergency-response/service-regional-emergency-response-app-url-dialog.png)
 
@@ -92,11 +92,11 @@ Når dataene er blevet opdateret, [kan du konfigurere en opdateringsplan](../con
 
 ## <a name="customize-and-share"></a>Tilpas og del
 
-Se [Tilpas og del appen](../connect-data/service-template-apps-install-distribute.md#customize-and-share-the-app) for at få flere oplysninger. Sørg for at gennemse [ansvarsfraskrivelserne for rapporten](https://docs.microsoft.com/powerapps/sample-apps/regional-emergency-response/overview#disclaimer), før du udgiver eller distribuerer appen.
+Se [Tilpas og del appen](../connect-data/service-template-apps-install-distribute.md#customize-and-share-the-app) for at få flere oplysninger. Sørg for at gennemse [ansvarsfraskrivelserne for rapporten](/powerapps/sample-apps/regional-emergency-response/overview#disclaimer), før du udgiver eller distribuerer appen.
 
 ## <a name="next-steps"></a>Næste trin
-* [Om Dashboard til områderelateret akutberedskab](https://docs.microsoft.com/powerapps/sample-apps/regional-emergency-response/portals-admin-reporting#get-insights)
-* [Konfigurer og få mere at vide om skabelonen med krisekommunikationseksemplet i Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/sample-crisis-communication-app)
+* [Om Dashboard til områderelateret akutberedskab](/powerapps/sample-apps/regional-emergency-response/portals-admin-reporting#get-insights)
+* [Konfigurer og få mere at vide om skabelonen med krisekommunikationseksemplet i Power Apps](/powerapps/maker/canvas-apps/sample-crisis-communication-app)
 * Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 * [Hvad er Power BI-skabelonapps?](../connect-data/service-template-apps-overview.md)
 * [Installér og distribuer skabelonapps i din organisation](../connect-data/service-template-apps-install-distribute.md)

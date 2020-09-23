@@ -9,17 +9,17 @@ ms.topic: conceptual
 ms.date: 04/14/2020
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 40f1e0938f54fe55abf8148e12f8842041b42c3d
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.openlocfilehash: a36c377a7faf82e6aeb544859b72ac973305a3b3
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87252768"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90860158"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheder i Power BI-tjenesten
 Kontrollér denne side for at læse om kendte problemer og nyudgivne funktioner i **Power BI-tjenesten**. Du kan finde relaterede oplysninger om nyheder under:
 
-- Produktbemærkninger til [Nyheder i business intelligence, oktober '18](https://docs.microsoft.com/business-applications-release-notes/October18/intelligence-platform/planned-features) fra gruppen Microsoft Business Applications: De seneste opdateringer til vores virksomhedsprogrammer.
+- Produktbemærkninger til [Nyheder i business intelligence, oktober '18](/business-applications-release-notes/October18/intelligence-platform/planned-features) fra gruppen Microsoft Business Applications: De seneste opdateringer til vores virksomhedsprogrammer.
 - [Nyheder i Power BI Desktop](desktop-latest-update.md)  
 - [Nyheder i mobilappsene til Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)  
 - [Power BI-temaets blog](https://powerbi.microsoft.com/blog/)
@@ -189,7 +189,7 @@ Du kan også få mere at vide om nyheder og funktioner på YouTube-kanalerne.
 *    Del Power BI-rapporter, og føj dem til favoritter.
 *    Understøttelse af OAuth2- og DirectQuery-enkeltlogon til Azure SQL Database og Data Warehouse.
 *    Overvågning i området: Overvågningslogge gemmes nu i det samme Microsoft 365-område som deres lejer.
-*    General tilgængelighed af SharePoint Online [Power BI-rapportwebdel](https://go.microsoft.com/fwlink/p/?LinkId=825698).
+*    General tilgængelighed af SharePoint Online [Power BI-rapportwebdel](../collaborate-share/service-embed-report-spo.md).
 *    Administratorstyring af mulighed for at slå visning af Power BI-visuals fra for alle brugere i lejeren.
 *    Understøttelse af planlagt opdatering til Azure Analysis Services (AAS).
 
@@ -200,7 +200,7 @@ Du kan også få mere at vide om nyheder og funktioner på YouTube-kanalerne.
 * Anbefalinger til AI-drevne apps.
 * Opdateringer af grænsefladen på felter i dashboard.
 * Understøttelse af mailabonnementer til apps. 
-* Detaljeret administratorstyring ifm. [publicer på internettet](https://docs.microsoft.com/power-bi/service-admin-portal#export-and-sharing-settings).
+* Detaljeret administratorstyring ifm. [publicer på internettet](../admin/service-admin-portal.md#export-and-sharing-settings).
 
 ### <a name="september-2017"></a>September 2017
 * I Premium-kapacitet deles dashboards med brugere, der ikke har en Power BI Pro-licens.
@@ -646,7 +646,7 @@ Se [bloggen](https://powerbi.microsoft.com/blog/power-bi-service-weekly-update-1
 * Med denne uges tjenesteopdatering kan du, når du opretter nye rapporter, nu vælge mellem flere sidestørrelser samt definere din egen sidestørrelse. Dette størrelsen og højde-bredde-forholdet for hver side i rapporten.
 * Vi har tilføjet yderligere understøttelse af formatering af visuelle elementer for billeder og boblediagrammer. Du kan låse størrelsesforholdet under tilpasning af billeder for at undgå billedforvrængning, og bobler i punktdiagrammer kan konfigureres til at være udfyldt eller ej.
 * I dag sender Power BI delingsinvitationer til en alternativ mailadresse. Når et dashboard deles med dig, sender vi invitationslinket både til din oprindelige mailadresse og til din alternative mailadresse (hvis du har konfigureret en).
-* Power BI er tilgængeligt for alle kunder, herunder dem på Microsoft 365-arkitekturen Dedicated on Multitenant (DonMT). Du kommer til at bruge Power BI som en delt tjeneste i en tilstand med flere lejere. I de fleste tilfælde kan du tilmelde dig Power BI ved at følge den simple [selvbetjente tilmeldingsproces](https://powerbi.microsoft.com/) – du skal blot angive din arbejdsmailadresse og angive dit navn og en adgangskode for at komme i gang. Hvis du er lejeradministrator, kan du tildele dine brugere licenser ved at følge vejledningen [her](https://go.microsoft.com/fwlink/?LinkId=627174).
+* Power BI er tilgængeligt for alle kunder, herunder dem på Microsoft 365-arkitekturen Dedicated on Multitenant (DonMT). Du kommer til at bruge Power BI som en delt tjeneste i en tilstand med flere lejere. I de fleste tilfælde kan du tilmelde dig Power BI ved at følge den simple [selvbetjente tilmeldingsproces](https://powerbi.microsoft.com/) – du skal blot angive din arbejdsmailadresse og angive dit navn og en adgangskode for at komme i gang. Hvis du er lejeradministrator, kan du tildele dine brugere licenser ved at følge vejledningen [her](/microsoft-365/admin/add-users/add-users?redirectSourcePath=%252fen-us%252farticle%252fAssign-or-unassign-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
 * Azure Audit Logs giver dig mulighed at få vist driftslogge fra control-plane i dit Azure-abonnement. Power BI Azure Audit Logs-indholdspakken kan hjælpe dig med nemt at analysere og visualisere det hav af oplysninger, der findes i disse logge. Indholdspakken gør det muligt at oprette forbindelse til dine data og begynde at få indsigt med køreklare dashboards og rapporter. Læs vores [blog](https://powerbi.microsoft.com/blog/monitor-azure-audit-logs-with-power-bi/) og [onlinedokumentation](../connect-data/service-connect-to-services.md) for at få mere at vide.
 
 [Få mere at vide på vores blog](https://powerbi.microsoft.com/blog/power-bi-weekly-service-update-0929/).
@@ -708,7 +708,7 @@ Se [bloggen](https://powerbi.microsoft.com/blog/power-bi-service-weekly-update-1
 * [Hent hele Excel-filer](../connect-data/service-excel-workbook-files.md): Du kan overføre en hvilken som helst Excel-projektmappe, der er gemt på OneDrive for Business, til Power BI og få vist hele projektmappen, præcis som du ville gøre i Excel Online.
 * [Hent CSV-filer](../connect-data/service-get-data-from-files.md): På samme måde som en Excel- eller Power BI Desktop-fil kan en fil med kommaseparerede værdier (CSV) også udgøre et datasæt for dine Power BI-dashboards og -rapporter.
 * Erstat Excel-, Power BI Desktop- og CSV-filer: Du kan uploade en opdateret version af en fil til Power BI, og så erstattes det eksisterende datasæt. Alle de rapporter og dashboards, der er forbundet til dette datasæt, anvender nu automatisk den nye version.
-* Vi er glade for at kunne meddele, at denne uges opdatering til Power BI nu tilbyder sporing af elementer i [Visual Studio Online-indholdspakken](https://powerbi.microsoft.com/blog/monitoring-your-visual-studio-online-work-items-with-power-bi/). Denne opdatering indeholder et nyt dashboard, en ny rapport og et opdateret datasæt, der giver indsigt i dine arbejdselementer og derudover vigtige metrikværdier for dit Git-lager, pull-anmodninger og versionsstyringsindhold i den første version. Hvis du vil have mere at vide om, hvordan du kommer i gang, skal du se [siden med hjælp til Visual Studio Online-indholdspakken til Power BI](../connect-data/service-connect-to-quickbooks-online.md).
+* Vi er glade for at kunne meddele, at denne uges opdatering til Power BI nu tilbyder sporing af elementer i [Visual Studio Online-indholdspakken](https://powerbi.microsoft.com/blog/monitoring-your-visual-studio-online-work-items-with-power-bi/). Denne opdatering indeholder et nyt dashboard, en ny rapport og et opdateret datasæt, der giver indsigt i dine arbejdselementer og derudover vigtige metrikværdier for dit Git-lager, pull-anmodninger og versionsstyringsindhold i den første version. Hvis du vil have mere at vide om, hvordan du kommer i gang, skal du se [siden med hjælp til Visual Studio Online-indholdspakken til Power BI](../connect-data/service-connect-to-services.md).
 
 **14. juli 2015**
 
@@ -743,7 +743,7 @@ Se [bloggen](https://powerbi.microsoft.com/blog/power-bi-service-weekly-update-1
 
 **28. maj 2015**
 
-* Få hurtig indsigt i dine QuickBooks Online-kontodata ved hjælp af vores [indholdspakke](https://powerbi.microsoft.com/blog/get-quick-insights-into-your-quickbooks-online-account-data). Hvis du vil have mere at vide om, hvordan du opretter forbindelse og kommer i gang, skal du se [dokumentationen](../connect-data/service-connect-to-quickbooks-online.md) til QuickBooks Online-indholdspakken til Power BI.
+* Få hurtig indsigt i dine QuickBooks Online-kontodata ved hjælp af vores [indholdspakke](https://powerbi.microsoft.com/blog/get-quick-insights-into-your-quickbooks-online-account-data). Hvis du vil have mere at vide om, hvordan du opretter forbindelse og kommer i gang, skal du se [dokumentationen](../connect-data/service-connect-to-services.md) til QuickBooks Online-indholdspakken til Power BI.
 
 **13. maj 2015**
 

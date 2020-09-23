@@ -8,12 +8,12 @@ ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 09/15/2020
 ms.author: painbar
-ms.openlocfilehash: df9c1af29482a40b7e1dd7edbca0020b43e4f00f
-ms.sourcegitcommit: a0d56eeed12253e782e0a3eff8610f72a3ad5cb9
+ms.openlocfilehash: e3b6ada10138e6964240c5eb5c53399507170b79
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90570917"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90860664"
 ---
 # <a name="create-a-template-app-in-power-bi"></a>Opret en skabelonapp i Power BI
 
@@ -191,7 +191,7 @@ Lad os gennemgå faserne:
 
     Hvis du ikke kan se denne indstilling, skal du kontakte din Power BI-administrator, som skal give dig [tilladelse til at udvikle skabelonprogrammer](../admin/service-admin-portal.md#template-apps-settings) på administrationsportalen.
 11. Vælg **Hæv** for at bekræfte dit valg.
-12. Kopiér denne nye URL-adresse for at dele den uden for din lejer med henblik på test. Dette link er også det, du sender for at begynde processen med at distribuere dit program på AppSource ved at oprette et [nyt tilbud på Partnercenter](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer). Send kun links til præproduktion til Partnercenter. Du kan først hæve denne pakke til produktion i Power BI, når appen er blevet godkendt, og du har fået en meddelelse om, at den er udgivet i AppSource.
+12. Kopiér denne nye URL-adresse for at dele den uden for din lejer med henblik på test. Dette link er også det, du sender for at begynde processen med at distribuere dit program på AppSource ved at oprette et [nyt tilbud på Partnercenter](/azure/marketplace/partner-center-portal/create-power-bi-app-offer). Send kun links til præproduktion til Partnercenter. Du kan først hæve denne pakke til produktion i Power BI, når appen er blevet godkendt, og du har fået en meddelelse om, at den er udgivet i AppSource.
 13. Når programmet er klar til produktion eller deling via AppSource, skal du gå tilbage til ruden **Udgivelsesadministration** og vælge **Hæv program** ud for **Præproduktion**.
 14. Vælg **Hæv** for at bekræfte dit valg.
 
@@ -199,10 +199,10 @@ Lad os gennemgå faserne:
 
     ![Program i produktion](media/service-template-apps-create/power-bi-template-app-production.png)
 
-Hvis du vil gøre dit program tilgængeligt for tusindvis af Power BI-brugere i hele verden, opfordrer vi dig til at sende det til AppSource. Du kan se yderligere oplysninger under [Power BI-programtilbud](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
+Hvis du vil gøre dit program tilgængeligt for tusindvis af Power BI-brugere i hele verden, opfordrer vi dig til at sende det til AppSource. Du kan se yderligere oplysninger under [Power BI-programtilbud](/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
 
 ## <a name="next-steps"></a>Næste trin
 
 Se, hvordan dine kunder kan interagere med dit skabelonprogram under [Installér, tilpas og distribuer skabelonprogrammer i din organisation](service-template-apps-install-distribute.md).
 
-Du kan se yderligere oplysninger om, hvordan du distribuerer dit program under [Power BI-programtilbud](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
+Du kan se yderligere oplysninger om, hvordan du distribuerer dit program under [Power BI-programtilbud](/azure/marketplace/partner-center-portal/create-power-bi-app-offer).

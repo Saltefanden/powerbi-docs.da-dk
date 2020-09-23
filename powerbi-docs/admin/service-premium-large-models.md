@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 03/03/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 7ea6601514d77f9f7e2e416b358194e871f6445b
-ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
+ms.openlocfilehash: 4f0a34f990613ab57a95d1f299392d77c7c1f625
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88204311"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90854661"
 ---
 # <a name="large-models-in-power-bi-premium-preview"></a>Store modeller i Power BI Premium (prøveversion)
 
@@ -94,7 +94,7 @@ Du bør overveje virkningen af fjernelse på store modeller. På trods af hurtig
 
 ## <a name="checking-dataset-size"></a>Kontrol af datasætstørrelsen
 
-Når du har indlæst historiske data, kan du bruge [SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms) via [XMLA-slutpunktet](service-premium-connect-tools.md) til at kontrollere størrelsen på det anslåede datasæt i vinduet modelegenskaber.
+Når du har indlæst historiske data, kan du bruge [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms) via [XMLA-slutpunktet](service-premium-connect-tools.md) til at kontrollere størrelsen på det anslåede datasæt i vinduet modelegenskaber.
 
 ![Anslået datasætstørrelse](media/service-premium-large-models/estimated-dataset-size.png)
 
@@ -122,7 +122,7 @@ Vær opmærksom på følgende begrænsninger, når du bruger store modeller:
 
 ## <a name="availability-in-regions"></a>Tilgængelighed efter område
 
-Store modeller i Power BI er kun tilgængelige i visse Azure-områder, der understøtter [Azure Premium File Storage](https://docs.microsoft.com/azure/storage/files/storage-files-planning#storage-tiers).
+Store modeller i Power BI er kun tilgængelige i visse Azure-områder, der understøtter [Azure Premium File Storage](/azure/storage/files/storage-files-planning#storage-tiers).
 
 Følgende liste indeholder områder, hvor store modeller i Power BI er tilgængelige. Det er kun de områder, der er på følgende liste, hvor store modeller understøttes:
 
@@ -155,7 +155,7 @@ Følgende liste indeholder områder, hvor store modeller i Power BI er tilgænge
 
 Følgende links indeholder oplysninger, der kan være nyttige til at arbejde med store modeller:
 
-* [Azure Premium Files Storage](https://docs.microsoft.com/azure/storage/files/storage-files-planning#storage-tiers)
+* [Azure Premium Files Storage](/azure/storage/files/storage-files-planning#storage-tiers)
 * [Konfigurer understøttelse af Multi-Geo til Power BI Premium](service-admin-premium-multi-geo.md)
 * [Medbring dine egne krypteringsnøgler til Power BI](service-encryption-byok.md)
 * [Sådan fungerer kapaciteter](service-premium-what-is.md#how-capacities-function)

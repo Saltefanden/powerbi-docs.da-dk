@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 01/22/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 92244304bcffc3544ca8616fd0b16226361d58c8
-ms.sourcegitcommit: d8acf2fb0318708a3e8e1e259cb3747b0312b312
+ms.openlocfilehash: ee24e4aaa54fdbc60c631dc319caf6b1465aed28
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86385946"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90859813"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage"></a>Opret forbindelse til Azure Data Lake Storage Gen2 for dataflowlager
 
@@ -46,13 +46,13 @@ Før du kan konfigurere Power BI med en Azure Data Lake Storage Gen2-konto, skal
 2. Lagerkontoen skal oprettes i den samme AAD-lejer som din Power BI-lejer.
 3. Lagerkontoen skal oprettes i det samme område som din Power BI-lejer. Du kan få hjælp til at se, hvor din Power BI-lejer er placeret, under [Hvor findes min Power BI-lejer?](../admin/service-admin-where-is-my-tenant-located.md)
 4. Funktionen *Hierarkisk navneområde* skal være aktiveret for lagerkontoen.
-5. Hvis lagerkontoen ikke er oprettet af den aktuelle bruger, skal du sørge for, at den aktuelle bruger har fået tildelt tilladelsen [Storage BLOB -dataejer](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#storage-blob-data-owner) og [Ejer](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner). Eftersom Ejer ikke indeholder tilladelsen på dataniveau, er BLOB-dataejer påkrævet.
+5. Hvis lagerkontoen ikke er oprettet af den aktuelle bruger, skal du sørge for, at den aktuelle bruger har fået tildelt tilladelsen [Storage BLOB -dataejer](/azure/role-based-access-control/built-in-roles#storage-blob-data-owner) og [Ejer](/azure/role-based-access-control/built-in-roles#owner). Eftersom Ejer ikke indeholder tilladelsen på dataniveau, er BLOB-dataejer påkrævet.
 
 I følgende afsnit finder du en detaljeret gennemgang af de trin, der er nødvendige for at konfigurere din Azure Data Lake Storage Gen2-konto.
 
 ### <a name="create-the-storage-account"></a>Opret lagerkontoen
 
-Følg trinnene i artiklen [Opret en Azure Data Lake Storage Gen2-lagerkonto](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-quickstart-create-account).
+Følg trinnene i artiklen [Opret en Azure Data Lake Storage Gen2-lagerkonto](/azure/storage/blobs/data-lake-storage-quickstart-create-account).
 
 1. Sørg for, at du vælger den samme placering som din Power BI-lejer, og angiv dit lager som **StorageV2 (Generel v2)**
 2. Sørg for, at du aktiverer funktionen Hierarkisk navneområde
@@ -62,7 +62,7 @@ Følg trinnene i artiklen [Opret en Azure Data Lake Storage Gen2-lagerkonto](htt
 
 Derefter skal du give Power BI-tjenesten rollerne Læser og Dataadgang på din oprettede lagerkonto. De er begge indbyggede roller, så trinnene er ligetil. 
 
-Følg trinnene under [Tildel en indbygget RBAC-rolle](https://docs.microsoft.com/azure/storage/common/storage-auth-aad-rbac#assign-a-built-in-rbac-role).
+Følg trinnene under [Tildel en indbygget RBAC-rolle](/azure/storage/common/storage-auth-aad-rbac#assign-a-built-in-rbac-role).
 
 I vinduet **Tilføj rolletildeling** skal du vælge rollen **Læser og dataadgang**. Brug derefter Søg til at finde **Power BI-tjenesten**.
 Gentag de samme trin for rollen **Ejer af lager-BLOB-data**, og tildel rollen til både **Power BI-tjenesten** og **Power BI Premium**.
@@ -155,11 +155,11 @@ Du kan finde generelle oplysninger om dataflow i disse artikler:
 * [Udviklerressourcer til Power BI-dataflow](service-dataflows-developer-resources.md)
 
 Du kan finde flere oplysninger om Azure-lager i disse artikler:
-* [Sikkerhedsvejledning til Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-security-guide)
+* [Sikkerhedsvejledning til Azure Storage](/azure/storage/common/storage-security-guide)
 
 Du kan finde flere oplysninger om Common Data Model i denne oversigtsartikel:
-* [Common Data Model – oversigt](https://docs.microsoft.com/powerapps/common-data-model/overview)
-* [CDM-mapper](https://go.microsoft.com/fwlink/?linkid=2045304)
-* [Fildefinition af CDM-model](https://go.microsoft.com/fwlink/?linkid=2045521)
+* [Common Data Model – oversigt](/powerapps/common-data-model/overview)
+* [CDM-mapper](/common-data-model/data-lake)
+* [Fildefinition af CDM-model](/common-data-model/model-json)
 
 Du kan altid prøve [at stille spørgsmål i Power BI-community'et](https://community.powerbi.com/).

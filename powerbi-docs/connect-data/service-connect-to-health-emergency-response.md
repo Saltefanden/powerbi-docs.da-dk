@@ -8,27 +8,27 @@ ms.topic: how-to
 ms.date: 05/13/2020
 ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: e10f2144e987f8fdc7ea9dbfd18d4581889ae8bf
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 4455a8da0af7ff928b81baf83245e66cdee578ea
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85230129"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90854224"
 ---
 # <a name="connect-to-the-hospital-emergency-response-decision-support-dashboard"></a>Opret forbindelse til Dashboard til understøttelse af beslutninger i forbindelse med hospitalernes akutberedskab
 Skabelonappen Dashboard til understøttelse af beslutninger i forbindelse med hospitalernes akutberedskab er rapporteringskomponenten i [Microsoft Power Platform-løsningen til akutberedskab](https://powerapps.microsoft.com/blog/emergency-response-solution-a-microsoft-power-platform-solution-for-healthcare-emergency-response/). Dashboardet viser beredskabschefers samlede data på tværs af sundhedssystemet for at hjælpe dem med at træffe rettidige og korrekte beslutninger.
 
 ![Rapport i appen Dashboard til understøttelse af beslutninger i forbindelse med hospitalernes akutberedskab](media/service-connect-to-health-emergency-response/service-health-emergency-response-app-report.png)
 
-I denne artikel får du oplysninger om, hvordan du installerer appen, og hvordan du opretter forbindelse til datakilderne. Hvis du vil have mere at vide om, hvordan du bruger rapporten i denne app, kan du se [dokumentationen til Dashboard til understøttelse af beslutninger i forbindelse med hospitalernes akutberedskab](https://docs.microsoft.com/powerapps/sample-apps/emergency-response/deploy-configure#view-the-power-bi-dashboard).
+I denne artikel får du oplysninger om, hvordan du installerer appen, og hvordan du opretter forbindelse til datakilderne. Hvis du vil have mere at vide om, hvordan du bruger rapporten i denne app, kan du se [dokumentationen til Dashboard til understøttelse af beslutninger i forbindelse med hospitalernes akutberedskab](/powerapps/sample-apps/emergency-response/deploy-configure#view-the-power-bi-dashboard).
 
 Når du har installeret skabelonappen og har oprettet forbindelse til datakilderne, kan du tilpasse rapporten i henhold til dine behov. Du kan derefter distribuere den som en app til kolleger i organisationen.
 
 ## <a name="prerequisites"></a>Forudsætninger
 
-Før du installerer denne skabelonapp, skal du først installere og konfigurere [Power Platform-løsningen til hospitalernes akutberedskab](https://docs.microsoft.com/powerapps/sample-apps/emergency-response/deploy-configure). Når du installerer denne løsning, oprettes de referencer til datakilden, der er nødvendige for at udfylde appen med data.
+Før du installerer denne skabelonapp, skal du først installere og konfigurere [Power Platform-løsningen til hospitalernes akutberedskab](/powerapps/sample-apps/emergency-response/deploy-configure). Når du installerer denne løsning, oprettes de referencer til datakilden, der er nødvendige for at udfylde appen med data.
 
-Når du installerer Power Platform-løsningen til hospitalernes akutberedskab, kan du se [URL-adressen til din instans af Common Data Service-miljøet](https://docs.microsoft.com/powerapps/sample-apps/emergency-response/deploy-configure#publish-the-power-bi-dashboard). Du skal bruge den til at oprette forbindelse mellem skabelonappen og dataene.
+Når du installerer Power Platform-løsningen til hospitalernes akutberedskab, kan du se [URL-adressen til din instans af Common Data Service-miljøet](/powerapps/sample-apps/emergency-response/deploy-configure#publish-the-power-bi-dashboard). Du skal bruge den til at oprette forbindelse mellem skabelonappen og dataene.
 
 ## <a name="install-the-app"></a>Installér programmet
 
@@ -66,7 +66,7 @@ Når du installerer Power Platform-løsningen til hospitalernes akutberedskab, k
 
 1. I dialogboksen:
    1. Angiv navnet på din organisation i feltet organisationsnavn, f.eks. "Contoso Health Systems". Feltet er valgfrit. Dette navn vises i øverste venstre hjørne af dashboardet.
-   1. I feltet CDS_base_solution skal du angive [URL-adressen til din instans af Common Data Service-miljøet](https://docs.microsoft.com/powerapps/sample-apps/emergency-response/deploy-configure#publish-the-power-bi-dashboard). For eksempel: https://[myenv].crm.dynamics.com. Klik på **Næste**, når du er færdig.
+   1. I feltet CDS_base_solution skal du angive [URL-adressen til din instans af Common Data Service-miljøet](/powerapps/sample-apps/emergency-response/deploy-configure#publish-the-power-bi-dashboard). For eksempel: https://[myenv].crm.dynamics.com. Klik på **Næste**, når du er færdig.
 
    ![Dashboard til understøttelse af beslutninger i forbindelse med hospitalernes akutberedskab, URL-dialogboks](media/service-connect-to-health-emergency-response/service-health-emergency-response-app-url-dialog.png)
 
@@ -99,8 +99,8 @@ Når dataene er blevet opdateret, [kan du konfigurere en opdateringsplan](../con
 Se [Tilpas og del appen](../connect-data/service-template-apps-install-distribute.md#customize-and-share-the-app) for at få flere oplysninger. Sørg for at gennemse [ansvarsfraskrivelserne for rapporten](../create-reports/sample-covid-19-us.md#disclaimers), før du udgiver eller distribuerer appen.
 
 ## <a name="next-steps"></a>Næste trin
-* [Om rapporten Hospitalernes akutberedskab](https://docs.microsoft.com/powerapps/sample-apps/emergency-response/deploy-configure#view-the-power-bi-dashboard)
-* [Konfigurer og få mere at vide om skabelonen med krisekommunikationseksemplet i Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/sample-crisis-communication-app)
+* [Om rapporten Hospitalernes akutberedskab](/powerapps/sample-apps/emergency-response/deploy-configure#view-the-power-bi-dashboard)
+* [Konfigurer og få mere at vide om skabelonen med krisekommunikationseksemplet i Power Apps](/powerapps/maker/canvas-apps/sample-crisis-communication-app)
 * Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 * [Hvad er Power BI-skabelonapps?](../connect-data/service-template-apps-overview.md)
 * [Installér og distribuer skabelonapps i din organisation](../connect-data/service-template-apps-install-distribute.md)

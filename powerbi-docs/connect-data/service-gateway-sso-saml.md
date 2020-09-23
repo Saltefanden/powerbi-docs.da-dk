@@ -9,12 +9,12 @@ ms.subservice: powerbi-gateways
 ms.topic: how-to
 ms.date: 10/10/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 772a9c0d171c2391a137f2e8a97f262f59df5cfe
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 38aee727245cd7a33aefe1ee64a8a5be8b062cd7
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85231364"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90859767"
 ---
 # <a name="use-security-assertion-markup-language-saml-for-sso-from-power-bi-to-on-premises-data-sources"></a>Brug SAML (Security Assertion Markup Language) til SSO fra Power BI til datakilder i det lokale miljø
 
@@ -26,7 +26,7 @@ Vi understøtter i øjeblikket SAP HANA med SAML. Få flere oplysninger om konfi
 
 Vi understøtter flere datakilder med [Kerberos](service-gateway-sso-kerberos.md) (herunder SAP HANA).
 
-I forbindelse SAP HANA anbefales det, at du aktiverer kryptering, før du etablerer en SAML SSO-forbindelse. Du aktiverer kryptering ved at konfigurere HANA-serveren til at acceptere krypterede forbindelser og ved at konfigurere gatewayen til at bruge kryptering til at kommunikere med din HANA-server. Da HANA ODBC-driveren ikke krypterer SAML-udsagn som standard, sendes det signerede SAML-udsagn fra gatewayen til HANA-serveren som *godkendt* og er sårbar over for opfangelse og genbrug af tredjeparter. Du kan finde en vejledning til, hvordan du aktiverer kryptering til HANA ved hjælp af OpenSSL-biblioteket i [Aktivér kryptering for SAP HANA](/power-bi/desktop-sap-hana-encryption).
+I forbindelse SAP HANA anbefales det, at du aktiverer kryptering, før du etablerer en SAML SSO-forbindelse. Du aktiverer kryptering ved at konfigurere HANA-serveren til at acceptere krypterede forbindelser og ved at konfigurere gatewayen til at bruge kryptering til at kommunikere med din HANA-server. Da HANA ODBC-driveren ikke krypterer SAML-udsagn som standard, sendes det signerede SAML-udsagn fra gatewayen til HANA-serveren som *godkendt* og er sårbar over for opfangelse og genbrug af tredjeparter. Du kan finde en vejledning til, hvordan du aktiverer kryptering til HANA ved hjælp af OpenSSL-biblioteket i [Aktivér kryptering for SAP HANA](./desktop-sap-hana-encryption.md).
 
 ## <a name="configuring-the-gateway-and-data-source"></a>Konfiguration af gatewayen og datakilden
 

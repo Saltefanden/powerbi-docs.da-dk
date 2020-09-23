@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 06/10/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: d3539da05aed1fda28ca6e93c96e1e2f7793c3d6
-ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
+ms.openlocfilehash: 7439eff964340d3eba20b5d67d2aec992394505f
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87878511"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90860089"
 ---
 # <a name="use-ai-insights-in-power-bi-desktop"></a>Brug AI-indsigter i Power BI Desktop
 
@@ -40,10 +40,10 @@ Med Tekstanalyse og Vision i Power BI kan du anvende forskellige algoritmer fra 
 
 Følgende tjenester understøttes i dag:
 
-* [Synspunktanalyse](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-sentiment-analysis)
-* [Udtrækning af nøgleudtryk](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-keyword-extraction)
-* [Sprogregistrering](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-language-detection)
-* [Billedtagging](https://docs.microsoft.com/azure/cognitive-services/computer-vision/concept-tagging-images). 
+* [Synspunktanalyse](/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-sentiment-analysis)
+* [Udtrækning af nøgleudtryk](/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-keyword-extraction)
+* [Sprogregistrering](/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-language-detection)
+* [Billedtagging](/azure/cognitive-services/computer-vision/concept-tagging-images). 
 
 Transformationerne udføres i Power BI-tjenesten og kræver ikke et Azure Cognitive Services-abonnement. 
 
@@ -63,7 +63,7 @@ I dette afsnit beskrives de tilgængelige funktioner i Cognitive Services i Powe
 
 Funktionen til sprogregistrering evaluerer tekstinput og returnerer sprognavn og ISO-id for hvert felt. Denne funktion er nyttig for datakolonner, der indsamler vilkårlig tekst, hvor sproget er ukendt. Funktionen forventer data i tekstformat som input.
 
-Tekstanalyse genkender op til 120 sprog. Du kan finde flere oplysninger under [understøttede sprog](https://docs.microsoft.com/azure/cognitive-services/text-analytics/text-analytics-supported-languages).
+Tekstanalyse genkender op til 120 sprog. Du kan finde flere oplysninger under [understøttede sprog](/azure/cognitive-services/text-analytics/text-analytics-supported-languages).
 
 #### <a name="extract-key-phrases"></a>Udtræk nøgleudtryk
 
@@ -79,7 +79,7 @@ Tekstanalyse bruger en maskinel indlæringsklassificeringsalgoritme til at gener
 
 Analyser af synspunkter udføres på hele inputfeltet i modsætning til udtræk af synspunkter for et bestemt objekt i teksten. I praksis er der en tendens til, at scoringsnøjagtigheden forbedres, når dokumenter indeholder en eller to sætninger i stedet for en stor tekstmængde. Under objektivitetsvurderingen bestemmer modellen, om et inputfelt som helhed er objektivt eller indeholder et synspunkt. Et inputfelt, der primært er objektivt fortsætter ikke til synspunktsregistreringsfasen, hvilket resulterer i en score på 0,50 uden yderligere behandling. I forbindelse med inputfelter, der fortsætter i pipelinen, genererer den næste fase en score over eller under 0,50, afhængigt af, hvordan synspunktet registreres i inputfeltet.
 
-I øjeblikket understøtter synspunktsanalysen engelsk, tysk, spansk og fransk. Andre sprog er tilgængelig som prøveversion. Du kan finde flere oplysninger under [understøttede sprog](https://docs.microsoft.com/azure/cognitive-services/text-analytics/text-analytics-supported-languages).
+I øjeblikket understøtter synspunktsanalysen engelsk, tysk, spansk og fransk. Andre sprog er tilgængelig som prøveversion. Du kan finde flere oplysninger under [understøttede sprog](/azure/cognitive-services/text-analytics/text-analytics-supported-languages).
 
 #### <a name="tag-images"></a>Tag billeder
 
@@ -87,7 +87,7 @@ Funktionen **Tag billeder** returnerer tags baseret på mere end 2.000 genkendel
 
 Når et billede er uploadet, eller en URL-adresse til et billede er angivet, genereres tags af Computer Vision-algoritmer baseret på de objekter, levende væsener og handlinger, der er identificeret på billedet. Tagging er ikke begrænset til det primære emne, f.eks. en person i forgrunden, men det indeholder også omgivelserne (indendørs eller udendørs), møbler, værktøjer, planter, dyr, tilbehør, gadgets og osv.
 
-Denne funktion kræver en URL-adresse til billedet eller et base-64-felt som input. I øjeblikket understøtter billedtagging engelsk, spansk, japansk, portugisisk og kinesisk (forenklet). Du kan finde flere oplysninger under [understøttede sprog](https://docs.microsoft.com/rest/api/cognitiveservices/computervision/tagimage/tagimage#uri-parameters).
+Denne funktion kræver en URL-adresse til billedet eller et base-64-felt som input. I øjeblikket understøtter billedtagging engelsk, spansk, japansk, portugisisk og kinesisk (forenklet). Du kan finde flere oplysninger under [understøttede sprog](/rest/api/cognitiveservices/computervision/tagimage/tagimage#uri-parameters).
 
 ### <a name="invoking-text-analytics-or-vision-functions-in-power-query"></a>Kald af Tekstanalyse- eller Vision-funktioner i Power Query
 
@@ -162,8 +162,8 @@ Du kan få mere at vide om dataflow i [Selvbetjent dataforberedelse i Power BI](
 
 Du kan få mere at vide om Azure Machine Learning i følgende artikler:
 
-- Oversigt: [Hvad er Azure Machine Learning?](https://docs.microsoft.com/azure/machine-learning/service/overview-what-is-azure-ml)
-- Hurtig start- og selvstudier til Azure Machine Learning: [Azure Machine Learning-dokumentation](https://docs.microsoft.com/azure/machine-learning/)
+- Oversigt: [Hvad er Azure Machine Learning?](/azure/machine-learning/service/overview-what-is-azure-ml)
+- Hurtig start- og selvstudier til Azure Machine Learning: [Azure Machine Learning-dokumentation](/azure/machine-learning/)
 
 ### <a name="granting-access-to-an-azure-ml-model"></a>Tildeling af adgang til en Azure Machine Learning-model
 
@@ -172,7 +172,7 @@ For at få adgang til en Azure Machine Learning-model fra Power BI, skal brugere
 - For modeller af typen Machine Learning Studio (klassisk): adgangen **Læs** til webtjenesten Machine Learning Studio (klassisk)
 - For modeller af typen Machine Learning Studio: adgangen **Læs** til Machine Learning Studio-arbejdsområdet
 
-Trinnene i dette afsnit beskriver, hvordan du tildeler en Power BI-bruger adgang til en model, der er hostet i Azure Machine Learning-tjenesten, så brugeren kan få adgang til denne model som en funktion i Power Query. Du kan få flere oplysninger i [Administrer adgang ved hjælp af RBAC og Microsoft Azure-portal](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal).
+Trinnene i dette afsnit beskriver, hvordan du tildeler en Power BI-bruger adgang til en model, der er hostet i Azure Machine Learning-tjenesten, så brugeren kan få adgang til denne model som en funktion i Power Query. Du kan få flere oplysninger i [Administrer adgang ved hjælp af RBAC og Microsoft Azure-portal](/azure/role-based-access-control/role-assignments-portal).
 
 1. Log på [Azure Portal](https://portal.azure.com/).
 2. Gå til siden **Abonnementer**. Du finder siden **Abonnementer** via listen **Alle tjenester** i venstre navigationsmenu i Microsoft Azure-portal.
@@ -186,7 +186,7 @@ Trinnene i dette afsnit beskriver, hvordan du tildeler en Power BI-bruger adgang
 
 Dataspecialister bruger primært Python til at udvikle og endda udrulle deres modeller til maskinel indlæring til Machine Learning. I modsætning til Machine Learning Studio (klassisk), som hjælper med at automatisere oprettelse af en skemafil til modellen, skal dataspecialisterne eksplicit generere skemafilen ved hjælp af Python, når det drejer sig om Machine Learning.
 
-Denne skemafil skal inkluderes i den udrullede webtjeneste for modeller til maskinel indlæring. Hvis du vil generere skemaet for webtjenesten automatisk, skal du angive et eksempel på inputtet/outputtet i postscriptet for den udrullede model. Se underafsnittet om [(Valgfri) Automatisk generering af Swagger-skema i dokumentationen Udrul modeller med Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/how-to-deploy-and-where#optional-define-model-web-service-schema) Service. Linket inkluderer eksemplet på postscriptet med sætninger for generering af skemaet.
+Denne skemafil skal inkluderes i den udrullede webtjeneste for modeller til maskinel indlæring. Hvis du vil generere skemaet for webtjenesten automatisk, skal du angive et eksempel på inputtet/outputtet i postscriptet for den udrullede model. Se underafsnittet om [(Valgfri) Automatisk generering af Swagger-skema i dokumentationen Udrul modeller med Azure Machine Learning](/azure/machine-learning/how-to-deploy-and-where#optional-define-model-web-service-schema) Service. Linket inkluderer eksemplet på postscriptet med sætninger for generering af skemaet.
 
 Funktionerne _@input\_schema_ og _@output\_schema_ i postscriptet refererer specifikt til eksempelformaterne for input og output i eksempelvariablerne _input\__ og _output\__ og bruger disse eksempler til at generere en OpenAPI-specifikation (Swagger) for webtjenesten under udrulningen.
 

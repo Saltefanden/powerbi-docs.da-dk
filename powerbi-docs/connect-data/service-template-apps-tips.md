@@ -8,12 +8,12 @@ ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 05/04/2020
 ms.author: painbar
-ms.openlocfilehash: f5c8f763b1f02d055d39c62ef2e2902b6efca439
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: ff1fb59a59f72483bab5ec55c9b2cf9805f83b81
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85235536"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90860273"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi"></a>Tip til udarbejdelse af skabelonapps i Power BI
 
@@ -124,15 +124,15 @@ Det anbefales, at du har gode eksempeldata, før du opretter appen. Sørg for, a
 Skabelonapps kan publiceres på AppSource. Følg disse retningslinjer, før du sender din app til AppSource:
 
 * Sørg for at oprette en skabelonapp med engagerende eksempeldata, som kan hjælpe den person, der installerer appen, med at forstå, hvad appen kan gøre (en tom rapport og et tomt dashboard godkendes ikke).
-Skabelonapps understøtter eksempeldata kun for apps. Husk at markere afkrydsningsfeltet for den statiske app. [Få mere at vide](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
+Skabelonapps understøtter eksempeldata kun for apps. Husk at markere afkrydsningsfeltet for den statiske app. [Få mere at vide](./service-template-apps-create.md#define-the-properties-of-the-template-app)
 * Få en vejledning, som valideringsteamet skal følge, der omfatter legitimationsoplysninger og parametre, som kræves for at oprette forbindelse til data.
-* Programmet skal inkludere et appikon i Power BI og på dit CPP-tilbud. [Få mere at vide](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
-* Konfigureret landingsside. [Få mere at vide](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
-* Sørg for at følge dokumentationen på [Partnercenter -> Tilbud om Power BI-program](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
+* Programmet skal inkludere et appikon i Power BI og på dit CPP-tilbud. [Få mere at vide](./service-template-apps-create.md#define-the-properties-of-the-template-app)
+* Konfigureret landingsside. [Få mere at vide](./service-template-apps-create.md#define-the-properties-of-the-template-app)
+* Sørg for at følge dokumentationen på [Partnercenter -> Tilbud om Power BI-program](/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
 * Hvis et dashboard er en del af din app, skal du sørge for, at det ikke er tomt.
 * Installér appen ved hjælp af linket til appen, før du udgiver den, og kontrollér, at du kan oprette forbindelse til datasættet, og at appoplevelsen er, som du forventer.
 * Før du uploader pbix til arbejdsområdet for skabelonen, skal du huske at fjerne alle unødvendige forbindelser.
-* Følg [Bedste praksis for design af rapporter og visuals](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-best-practices) for Power BI for at opnå maksimal indflydelse på dine brugere og blive godkendt til distribution.
+* Følg [Bedste praksis for design af rapporter og visuals](../visuals/power-bi-report-visualizations.md) for Power BI for at opnå maksimal indflydelse på dine brugere og blive godkendt til distribution.
 <!--- * In general, only application with valuable functionality can be approved for general use on AppSource. Application with sample data content only must have either a guidance or statistical value.) -->
 
 ## <a name="create-a-download-link-for-the-app"></a>Opret et downloadlink til appen

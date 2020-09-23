@@ -10,12 +10,12 @@ ms.topic: reference
 ms.date: 08/24/2020
 ms.custom: contperfq1
 ms.author: mihart
-ms.openlocfilehash: cd562d8fe689c2ae82ee1cacfc9e02393a5992f9
-ms.sourcegitcommit: 84e75a2cd92f4ba4e0c08ba296b981b79d6d0e82
+ms.openlocfilehash: 012fad9cd566018a6fd0d96fb172fadd816e3420
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88803037"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90860848"
 ---
 # <a name="glossary-for-business-users-of-the-power-bi-service"></a>Ordliste til virksomhedsbrugere af Power BI-tjenesten    
 Power BI-tjenesten kan introducere terminologi, som er ukendt eller forvirrende. Ordlisten er et godt sted at søge efter terminologi, og du kan endda markere den med et bogmærke. En anden fantastisk ressource, hvor du kan få mere at vide om de komponenter, der udgør Power BI-tjenesten, er [Grundlæggende begreber](end-user-basic-concepts.md). Grundlæggende begreber giver et godt overblik over Power BI-*enheder*, og hvordan de er forbundet.
@@ -97,7 +97,7 @@ Indhold til Power BI-tjenesten er generelt dashboards, rapporter og apps. Det ka
 Indholdsindekset for en app.
 
 **indholdspakke**    
- En samling færdigpakkede datasæt, rapporter og dashboards. De erstattes af **apps**. Få mere at vide [om den nye arbejdsområdeoplevelse](https://docs.microsoft.com/power-bi/service-create-the-new-workspaces). 
+ En samling færdigpakkede datasæt, rapporter og dashboards. De erstattes af **apps**. Få mere at vide [om den nye arbejdsområdeoplevelse](../collaborate-share/service-create-the-new-workspaces.md). 
 
 **indholdsvisning**
 

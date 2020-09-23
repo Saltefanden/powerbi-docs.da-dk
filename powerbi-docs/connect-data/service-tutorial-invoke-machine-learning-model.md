@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 03/12/2019
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 3cb41d7d9d1e85957ebf02ce2742d3e32670d0cc
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 35c20a11c4b446bd3a2636deaeb4c5ee9c2d797b
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83281708"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861009"
 ---
 # <a name="tutorial-invoke-a-machine-learning-studio-classic-model-in-power-bi-preview"></a>Selvstudium: Aktivér en model af typen Machine Learning Studio (klassisk) i Power BI (prøveversion)
 
@@ -31,11 +31,11 @@ I selvstudiet kommer du gennem følgende trin:
 
 ## <a name="create-and-publish-an-azure-ml-model"></a>Opret og publicer en Azure ML-model
 
-Følg instruktionerne i [trin 1 i gennemgangen: Opret et arbejdsområde af typen Machine Learning Studio (klassisk) ](https://docs.microsoft.com/azure/machine-learning/studio/walkthrough-1-create-ml-workspace) for at oprette et **Machine Learning**-arbejdsområde.
+Følg instruktionerne i [trin 1 i gennemgangen: Opret et arbejdsområde af typen Machine Learning Studio (klassisk) ](/azure/machine-learning/studio/walkthrough-1-create-ml-workspace) for at oprette et **Machine Learning**-arbejdsområde.
 
-Du kan bruge disse trin, hvis du allerede har en Azure ML-model eller et datasæt. Hvis du ikke har en publiceret model, kan du oprette en model på få minutter ved at referere til [Opret dit første datavidenskabseksperiment i Azure Machine Learning Studio (klassisk)](https://docs.microsoft.com/azure/machine-learning/studio/create-experiment), hvorved en Azure Machine Learning-model konfigureres til forudsigelse af bilpriser.
+Du kan bruge disse trin, hvis du allerede har en Azure ML-model eller et datasæt. Hvis du ikke har en publiceret model, kan du oprette en model på få minutter ved at referere til [Opret dit første datavidenskabseksperiment i Azure Machine Learning Studio (klassisk)](/azure/machine-learning/studio/create-experiment), hvorved en Azure Machine Learning-model konfigureres til forudsigelse af bilpriser.
 
-Følg trinnene under [Udrul en webtjeneste af typen Azure Machine Learning Studio (klassisk)](https://docs.microsoft.com/azure/machine-learning/studio/tutorial-part3-credit-risk-deploy) for at publicere Azure Machine Learning-modellen som en webtjeneste.
+Følg trinnene under [Udrul en webtjeneste af typen Azure Machine Learning Studio (klassisk)](/azure/machine-learning/studio/tutorial-part3-credit-risk-deploy) for at publicere Azure Machine Learning-modellen som en webtjeneste.
 
 ## <a name="grant-a-power-bi-user-access"></a>Tildel adgang til en Power BI-bruger
 

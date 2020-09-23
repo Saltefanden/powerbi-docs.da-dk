@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: f62237e0aa0ac31d63fee4b980db2991206ddf4d
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 4202d2c7e4c87f8085a04af9922cf7cc6c55fbfd
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85240320"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90860181"
 ---
 # <a name="single-sign-on-in-the-power-bi-mobile-windows-app"></a>Enkeltlogon i Power BI-mobilappen til Windows
 
@@ -24,7 +24,7 @@ Da Power BI-appen til Windows er integreret i Azure Active Directory, kan du bru
 SSO er kun aktiveret for Windows-enheder, der administreres af Windows Azure Active Directory.
 
 >[!NOTE]
->Understøttelse af Power BI-mobilapp til **telefoner, der bruger Windows 10 mobile**, ophører den 16. marts 2021. [Få mere at vide](https://go.microsoft.com/fwlink/?linkid=2121400)
+>Understøttelse af Power BI-mobilapp til **telefoner, der bruger Windows 10 mobile**, ophører den 16. marts 2021. [Få mere at vide](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 ## <a name="sign-in-with-sso"></a>Log på med SSO
 
@@ -38,4 +38,3 @@ Hvis du ikke vil bruge dine aktuelle Windows-legitimationsoplysninger til den ak
 
 - [Kom i gang med Power BI-mobilappen til Windows 10](mobile-windows-10-phone-app-get-started.md)
 - Har du nogen spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-

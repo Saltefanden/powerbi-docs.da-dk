@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/03/2020
 ms.author: davidi
-ms.openlocfilehash: 6bb0039c873dccec318fa9d16c7cf0c96e44b34e
-ms.sourcegitcommit: 70a892df1a0c196db58bf9165b3aa31b26bbe149
+ms.openlocfilehash: 7848ac9539b324dd4b572445877297294dbe8236
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "89092216"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90860043"
 ---
 # <a name="power-bi-videos"></a>Power BI-videoer
 Vi har en YouTube-kanal til Power BI! Du kan besøge [vores kanal](https://www.youtube.com/user/mspowerbi/videos) og, hvis du ikke kender til Power BI, er det en god idé at starte med [Analysér og visualiser data med Power BI-afspilningsliste](https://www.youtube.com/playlist?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP).
@@ -42,7 +42,7 @@ Her er et par videoer fra afspilningslisten, som kan hjælpe dig med at komme i 
 ## <a name="more-videos"></a>Flere videoer
 Se følgende samling af kilder og indhold for flere videoer.
 
-* [[Microsoft Learn til Power BI](https://docs.microsoft.com/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link)
+* [[Microsoft Learn til Power BI](/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link)
 
 ## <a name="next-steps"></a>De næste trin
 [Hvad er Power BI?](power-bi-overview.md)

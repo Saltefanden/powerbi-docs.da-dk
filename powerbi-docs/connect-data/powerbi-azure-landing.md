@@ -9,12 +9,12 @@ ms.author: willthom
 author: MI77
 layout: LandingPage
 LocalizationGroup: Get started
-ms.openlocfilehash: dca45ed9719dfa8d6f17001407835282049382ab
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 4278b59576466942991fef710f8864b5c0a1391c
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83347464"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90860756"
 ---
 # <a name="power-bi-for-microsoft-azure-users"></a>Power BI til Microsoft Azure-brugere 
 
@@ -74,9 +74,9 @@ Er du i højere grad Power BI-forbruger? Velkommen til dig også. Vi anbefaler, 
                                     <div class="cardText"> 
                                           <h3>Analysér data fra andre Azure-tjenester</h3> 
                                           <p></p>
-                                                <a href="https://docs.microsoft.com/azure/stream-analytics/stream-analytics-power-bi-dashboard">Opret forbindelse til Azure Stream Analytics</a><br/> 
-                                                <a href="https://docs.microsoft.com/azure/cosmos-db/powerbi-visualize">Visualiser data fra Cosmos DB</a><br/> 
-                                                <a href="https://docs.microsoft.com/azure/data-explorer/visualize-power-bi">Visualiser data fra Azure Data Explorer</a>
+                                                <a href="/azure/stream-analytics/stream-analytics-power-bi-dashboard">Opret forbindelse til Azure Stream Analytics</a><br/> 
+                                                <a href="/azure/cosmos-db/powerbi-visualize">Visualiser data fra Cosmos DB</a><br/> 
+                                                <a href="/azure/data-explorer/visualize-power-bi">Visualiser data fra Azure Data Explorer</a>
                                     </div> 
                               </div> 
                         </div> 

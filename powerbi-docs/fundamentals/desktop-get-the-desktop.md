@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 08/12/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: c5c4c7b08f69bd91fc8a4e6ab13a05878936225d
-ms.sourcegitcommit: b60063c49ac39f8b28c448908ecbb44b54326335
+ms.openlocfilehash: e95b51d5d50900b8e09de8f5bf62bf31d5578ad1
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "88160205"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90860204"
 ---
 # <a name="get-power-bi-desktop"></a>Hent Power BI Desktop
 Med Power BI Desktop kan du oprette avancerede forespørgsler, modeller og rapporter, som visualiserer data. Med Power BI Desktop kan du skabe datamodeller, oprette rapporter og dele dit arbejde ved at publicere det i Power BI-tjenesten. Power BI Desktop kan downloades gratis.
@@ -38,7 +38,7 @@ Der er et par måder, hvorpå du kan få adgang til den nyeste version af Power 
 
    - Åbn en browser, og gå direkte til [siden Power BI Desktop](https://aka.ms/pbidesktopstore) i Microsoft Store.
 
-    - Fra [Power BI-tjenesten](https://docs.microsoft.com/power-bi/service-get-started) skal du vælge ikonet **Download** i øverste højre hjørne og derefter vælge **Power BI Desktop**.
+    - Fra [Power BI-tjenesten](./service-get-started.md) skal du vælge ikonet **Download** i øverste højre hjørne og derefter vælge **Power BI Desktop**.
 
       ![Skærmbillede af Microsoft Store, der viser indstillingen til download af Power BI Desktop.](media/desktop-get-the-desktop/getpbid_downloads.png)
 
@@ -203,4 +203,4 @@ Når du har installeret Power BI Desktop, kan du se følgende indhold for at få
 * [Datakilder i Power BI Desktop](../connect-data/desktop-data-sources.md)
 * [Opret forbindelse til data i Power BI Desktop](../connect-data/desktop-connect-to-data.md)
 * [Udform og kombiner data i Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
-* [Almindelige forespørgselsopgaver i Power BI Desktop](../transform-model/desktop-common-query-tasks.md)   
+* [Almindelige forespørgselsopgaver i Power BI Desktop](../transform-model/desktop-common-query-tasks.md)

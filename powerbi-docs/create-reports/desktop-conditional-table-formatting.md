@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 05/06/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 2ae57fb5a3d2ff38a29e0c1e3c24af23582af43a
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 1273030bc1fd8664e854eb2b59939cf271b017fa
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85222244"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90860020"
 ---
 # <a name="use-conditional-formatting-in-tables"></a>Brug betinget formatering på tabeller 
 
@@ -181,9 +181,9 @@ Der er et par overvejelser, du skal gøre, når du arbejder med betinget formate
 
 - Betinget formatering anvendes kun på værdier i visualiseringer for Tabel eller Matrix og anvendes ikke på nogen subtotaler, samlede totaler eller rækken **Total**. 
 - Alle tabeller, der ikke har en gruppering, vises som en enkelt række, der ikke understøtter betinget formatering.
-- Du kan ikke anvende gradueringsformat med automatiske værdier for maksimum/minimum eller regelbaseret formatering med procentregler, hvis dine data indeholder *NaN*-værdier. NaN står for "Not a number" (ikke et tal) og skyldes ofte en fejl med division med nul. Du kan bruge [funktionen DIVIDE() DAX](https://docs.microsoft.com/dax/divide-function-dax) til at undgå disse fejl.
+- Du kan ikke anvende gradueringsformat med automatiske værdier for maksimum/minimum eller regelbaseret formatering med procentregler, hvis dine data indeholder *NaN*-værdier. NaN står for "Not a number" (ikke et tal) og skyldes ofte en fejl med division med nul. Du kan bruge [funktionen DIVIDE() DAX](/dax/divide-function-dax) til at undgå disse fejl.
 - Betinget formatering skal have en sammenlægning eller en måling for at blive anvendt på værdien. Det er derfor, at du får vist 'Først' eller 'Sidst' i eksemplet **Farve efter værdi**. Hvis du opretter din rapport i en flerdimensionel Analysis Service-kube, kan du ikke bruge en attribut til betinget formatering, medmindre kubeejeren har oprettet en måling, der giver værdien.
 
 ## <a name="next-steps"></a>Næste trin
 
-Du kan finde flere oplysninger om farveformatering under [Tip og tricks til farveformatering i Power BI](../visuals/service-tips-and-tricks-for-color-formatting.md)  
+Du kan finde flere oplysninger om farveformatering under [Tip og tricks til farveformatering i Power BI](../visuals/service-tips-and-tricks-for-color-formatting.md)

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/01/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 9a0b9eb90e3c39cf1f07842f5ea1da88b7cd06ad
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 2bb23da89489966cd3d96bb2c4daaa6302a96326
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83322395"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90859721"
 ---
 # <a name="self-service-data-prep-in-power-bi"></a>Selvbetjent dataforberedelse i Power BI
 
@@ -24,7 +24,7 @@ Efterhånden som datamængden vokser, stiger behovet for at konvertere dataene i
 
 Power BI introducerer **dataflows**, der kan hjælpe virksomheder med at samle data fra forskellige kilder og forberede dem til modellering. Analytikere kan nemt oprette dataflows ved hjælp af velkendte værktøjer til selvbetjening. Dataflows anvendes til at indsamle, transformere, integrere og forbedre big data ved at definere datakildeforbindelser, ETL-logik, opdatere tidsplaner og meget mere. Desuden gør den nye modelbaserede beregningsmotor, som er en del af dataflows, processen med dataforberedelse lettere at håndtere, mere deterministisk og mindre besværlig for såvel dataanalytikere som rapportoprettere. På samme måde som regneark håndterer genberegninger for alle berørte formler, håndterer dataflows alle ændringer af et objekt eller dataelement på dine vegne, hvilket automatiserer opdatering og letter det, der tidligere selv i forbindelse med almindelige dataopdateringer krævede kedelige og tidskrævende logiske kontroller. Med dataflows kan opgaver, der tidligere krævede opsyn af dataeksperter (og tog mange timer eller dage at fuldføre) nu håndteres med nogle få klik af analytikere og rapportoprettere. 
 
-Data gemmes som objekter i [**Common Data Model**](https://docs.microsoft.com/powerapps/common-data-model/overview) i Azure Data Lake Storage Gen2. Dataflow oprettes og administreres i arbejdsområder ved hjælp af Power BI-tjenesten.  
+Data gemmes som objekter i [**Common Data Model**](/powerapps/common-data-model/overview) i Azure Data Lake Storage Gen2. Dataflow oprettes og administreres i arbejdsområder ved hjælp af Power BI-tjenesten.  
  
 **Dataflows** designes til at anvende **Common Data Model**, en standardiseret, modulær og fleksibel samling af dataskemaer udgivet af Microsoft, som er udviklet til at gøre det nemmere for dig opbygge, bruge og analysere data. Med denne model kan du gå fra datakilder til Power BI-dashboards næsten helt uden friktion.
 
@@ -117,4 +117,4 @@ Du kan finde flere oplysninger om Power-forespørgsel og planlagt opdatering i d
 * [Konfiguration af planlagt opdatering](../connect-data/refresh-scheduled-refresh.md)
 
 Du kan finde flere oplysninger om Common Data Model i denne oversigtsartikel:
-* [Common Data Model – oversigt](https://docs.microsoft.com/powerapps/common-data-model/overview)
+* [Common Data Model – oversigt](/powerapps/common-data-model/overview)

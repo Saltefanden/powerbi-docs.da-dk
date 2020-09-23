@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/16/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: cfe184b1f2bd34796dea8982117e3ba90561fa31
-ms.sourcegitcommit: cfcde5ff2421be35dc1efc9e71ce2013f55ec78f
+ms.openlocfilehash: fb5807dd0a5bfa5d3223a8c436da475c51d8d8a0
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/18/2020
-ms.locfileid: "86459686"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90860618"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Streaming i realtid i Power BI
 Power BI med streaming i realtid gør dig i stand til at streame data og opdatere dashboards i realtid. Alle visuelle elementer eller dashboards, der er oprettet i Power BI, kan også vise og opdatere data og visuelle elementer i realtid. Enhederne og kilderne til streamingdata kan være sensorer på fabrikker, sociale medier, forbrugsdata for tjenester eller mange andre tidsfølsomme dataindsamlere eller dataafsendere.
@@ -85,7 +85,7 @@ Hvis værdien *standardtilstand* er indstillet til *pushStreaming*, er datasætt
 > [!NOTE]
 > Når du bruger datasæt med flaget *Standardtilstand* angivet til *pushStreaming*, vil en anmodning lykkes, og dataene opdateres i pushdatasættet, hvis anmodningen overskrider størrelsesgrænsen på 15 kB for et **streamingdatasæt**, men er mindre end begrænsningen på 16 MB for et **pushdatasæt**. Alle streamingfelter vil dog mislykkes midlertidigt.
 
-Når et datasæt er oprettet, kan du bruge REST-API'er til at pushoverføre data ved hjælp af API'en [**PostRows**](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows).
+Når et datasæt er oprettet, kan du bruge REST-API'er til at pushoverføre data ved hjælp af API'en [**PostRows**](/rest/api/power-bi/pushdatasets/datasets_postrows).
 
 Alle anmodninger til REST API'er er sikret med **Azure AD OAuth**.
 
@@ -154,7 +154,7 @@ I de næste afsnit ser vi skiftevis på begge muligheder.
 
 ![Skærmbillede af dialogboksen Nyt streamingdatasæt, der viser Power BI REST-API-poster for forbindelser.](media/service-real-time-streaming/real-time-streaming_5.png)
 
-Hvis du ønsker, at Power BI skal lagre dataene, der sendes via denne datastream, skal du aktivere *Analyse af historikdata*, så vil du kunne udføre rapportering og analyse på den indsamlede datastream. Du kan også [få mere at vide om API'en](https://docs.microsoft.com/rest/api/power-bi/).
+Hvis du ønsker, at Power BI skal lagre dataene, der sendes via denne datastream, skal du aktivere *Analyse af historikdata*, så vil du kunne udføre rapportering og analyse på den indsamlede datastream. Du kan også [få mere at vide om API'en](/rest/api/power-bi/).
 
 Når du har oprettet dit datastream, får du et URL-slutpunkt til REST-API'en, som programmet kan kalde ved hjælp af *POST*-anmodninger om at pushoverføre dataene til det Power BI-**streamingdatasæt**, du har oprettet.
 
@@ -244,5 +244,5 @@ Få mere at vide om automatisk sideopdatering i artiklen [Automatisk sideopdater
 ## <a name="next-steps"></a>Næste trin
 Her er nogle links, som du kan finde nyttige, når du arbejder med streaming i realtid i Power BI:
 
-* [Oversigt over Power BI REST API med data i realtid](https://docs.microsoft.com/rest/api/power-bi/)
+* [Oversigt over Power BI REST API med data i realtid](/rest/api/power-bi/)
 * [Azure Stream Analytics](https://azure.microsoft.com/services/stream-analytics/)

@@ -10,12 +10,12 @@ ms.topic: troubleshooting
 ms.date: 07/28/2020
 ms.custom: seodec18, css_fy20Q4
 LocalizationGroup: Premium
-ms.openlocfilehash: 8a815f69d4f74ec925c3ac0cc8a84c2a13d80346
-ms.sourcegitcommit: a254f6e2453656f6783690669be8e881934e15ac
+ms.openlocfilehash: bd2b8c4af1fc36fabc863aa1c67ed5af40265de2
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87363956"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90854075"
 ---
 # <a name="troubleshoot-xmla-endpoint-connectivity"></a>Foretag fejlfinding af XMLA-slutpunktsforbindelse
 
@@ -138,11 +138,11 @@ Når der udløses en planlagt opdatering eller en opdatering efter behov i Power
 
 ### <a name="overrides-in-refresh-tmsl-command"></a>Tilsidesættelser i TMSL-kommandoen Opdater
 
-Tilsidesættelser i [kommandoen Opdater (TMSL)](https://docs.microsoft.com/analysis-services/tmsl/refresh-command-tmsl) giver brugere mulighed for at vælge en anden definition af partitionsforespørgsel eller en anden definition af datakilde for opdateringshandlingen. I øjeblikket **understøttes tilsidesættelser ikke** i Power BI Premium. Fejlen "Binding uden for linje er ikke tilladt i Power BI Premium. Du kan finde flere oplysninger i afsnittet "XMLA read/write support" i produktdokumentationen. returneres.
+Tilsidesættelser i [kommandoen Opdater (TMSL)](/analysis-services/tmsl/refresh-command-tmsl) giver brugere mulighed for at vælge en anden definition af partitionsforespørgsel eller en anden definition af datakilde for opdateringshandlingen. I øjeblikket **understøttes tilsidesættelser ikke** i Power BI Premium. Fejlen "Binding uden for linje er ikke tilladt i Power BI Premium. Du kan finde flere oplysninger i afsnittet "XMLA read/write support" i produktdokumentationen. returneres.
 
 ## <a name="see-also"></a>Se også
 
 [Netværksmulighed for datasæt med XMLA-slutpunktet](service-premium-connect-tools.md)   
 [Automatiser opgaver for arbejdsområder og datasæt i Premium med tjenesteprincipaler](service-premium-service-principal.md)   
 [Fejlfinding af Analysér i Excel](../collaborate-share/desktop-troubleshooting-analyze-in-excel.md)   
-[Udrulning af løsning med tabellarisk model](https://docs.microsoft.com/analysis-services/deployment/tabular-model-solution-deployment?view=power-bi-premium-current)
+[Udrulning af løsning med tabellarisk model](/analysis-services/deployment/tabular-model-solution-deployment?view=power-bi-premium-current)

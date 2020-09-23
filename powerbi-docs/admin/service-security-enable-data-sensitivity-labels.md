@@ -8,16 +8,16 @@ ms.topic: how-to
 ms.date: 08/10/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: ebc4601f3575e84c248aef9204537a7d93c428ac
-ms.sourcegitcommit: 9e39232cbc28d8b39dfec5496db7ece9837b5e53
+ms.openlocfilehash: afe81469bc3ce67979602eedbf49b00cf7a3f1e6
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "88049178"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90854304"
 ---
 # <a name="enable-sensitivity-labels-in-power-bi"></a>Aktivér følsomhedsmærkater i Power BI
 
-Hvis [følsomhedsmærkater i Microsoft Information Protection](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) skal bruges i Power BI, skal de være aktiveret i lejeren. Denne artikel viser Power BI-lejeradministratorer, hvordan dette skal gøres. Du kan finde en oversigt over følsomhedsmærkater i Power BI under [Følsomhedsmærkater i Power BI](service-security-sensitivity-label-overview.md). Du kan finde oplysninger om at anvende følsomhedsmærkater i Power BI under [Anvendelse af følsomhedsmærkater](./service-security-apply-data-sensitivity-labels.md) 
+Hvis [følsomhedsmærkater i Microsoft Information Protection](/microsoft-365/compliance/sensitivity-labels) skal bruges i Power BI, skal de være aktiveret i lejeren. Denne artikel viser Power BI-lejeradministratorer, hvordan dette skal gøres. Du kan finde en oversigt over følsomhedsmærkater i Power BI under [Følsomhedsmærkater i Power BI](service-security-sensitivity-label-overview.md). Du kan finde oplysninger om at anvende følsomhedsmærkater i Power BI under [Anvendelse af følsomhedsmærkater](./service-security-apply-data-sensitivity-labels.md) 
 
 Når følsomhedsmærkater aktiveres:
 
@@ -34,10 +34,10 @@ Aktivering af følsomhedsmærkater kræver en licens til Microsoft Azure Informa
 
 * Office-apps har deres egne [licenskrav til visning og anvendelse af følsomhedsmærkater]( https://docs.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels#subscription-and-licensing-requirements-for-sensitivity-labels ).
 
-* Før du aktiverer følsomhedsmærkater på din lejer, skal du sørge for, at der er defineret og publiceret følsomhedsmærkater for relevante brugere og grupper. Se [Opret og konfigurer følsomhedsmærkater og deres politikker](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels?view=o365-worldwide) for at få flere detaljer.
+* Før du aktiverer følsomhedsmærkater på din lejer, skal du sørge for, at der er defineret og publiceret følsomhedsmærkater for relevante brugere og grupper. Se [Opret og konfigurer følsomhedsmærkater og deres politikker](/microsoft-365/compliance/create-sensitivity-labels?view=o365-worldwide) for at få flere detaljer.
 
 >[!NOTE]
-> Hvis din organisation bruger Azure Information Protection-følsomhedsmærkater, skal de overføres til Microsoft Information Protection Unified Labeling-platformen, for at kunne bruges i Power BI. [Få mere at vide om overførsel af følsomhedsmærkater](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels).
+> Hvis din organisation bruger Azure Information Protection-følsomhedsmærkater, skal de overføres til Microsoft Information Protection Unified Labeling-platformen, for at kunne bruges i Power BI. [Få mere at vide om overførsel af følsomhedsmærkater](/azure/information-protection/configure-policy-migrate-labels).
 
 ## <a name="enable-sensitivity-labels"></a>Aktivér følsomhedsmærkater
 
@@ -78,6 +78,6 @@ Se [Følsomhedsmærkater i Power BI](service-security-sensitivity-label-overview
 Denne artikel indeholdt en beskrivelse af, hvordan du aktiverer følsomhedsmærkater i Power BI. Følgende artikler indeholder flere oplysninger om databeskyttelse i Power BI. 
 
 * [Oversigt over følsomhedsmærkater i Power BI](service-security-sensitivity-label-overview.md)
-* [Sådan anvendes følsomhedsmærkater i Power BI](../collaborate-share/service-security-apply-data-sensitivity-labels.md)
+* [Sådan anvendes følsomhedsmærkater i Power BI](./service-security-apply-data-sensitivity-labels.md)
 * [Brug af Microsoft Cloud App Security-kontrolelementer i Power BI](service-security-using-microsoft-cloud-app-security-controls.md)
 * [Rapport over beskyttelsesmålepunkter](service-security-data-protection-metrics-report.md)

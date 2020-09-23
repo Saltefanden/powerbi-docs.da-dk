@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 09/11/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: f095eb351797c228bb5f6e9b70c741ca078e7f67
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 2864e82d5ddc1eb4a70976375cd4da8e57db7e58
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85221670"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90859905"
 ---
 # <a name="use-custom-format-strings-in-power-bi-desktop"></a>Brug brugerdefinerede formatstrenge i Power BI Desktop
 
@@ -68,7 +68,7 @@ Følgende tabel viser understøttede **symboler for klokkeslæt**:
 | _ss_ | 00-59 (sekund i minuttet med foranstillet nul) |
 
 
-Du kan se et [eksempel](https://docs.microsoft.com/office/vba/language/reference/user-interface-help/format-function-visual-basic-for-applications#example) på, hvordan du formaterer brugerdefinerede værdistrenge.
+Du kan se et [eksempel](/office/vba/language/reference/user-interface-help/format-function-visual-basic-for-applications#example) på, hvordan du formaterer brugerdefinerede værdistrenge.
 
 Et udtryk med et brugerdefineret format for tal kan have mellem én og tre sektioner adskilt af semikoloner. Hvis du bruger semikoloner uden noget imellem dem, vises den manglende sektion ikke (den vil være &quot;&quot;). Hvis semikolonet ikke er angivet, bruges det positive format.
 
@@ -151,7 +151,7 @@ I følgende tabel identificeres de tegn, du kan bruge til at oprette **brugerdef
 ## <a name="next-steps"></a>Næste trin
 Du vil måske også være interesseret i følgende artikler:
 
-* [VBA-formatstrenge](https://docs.microsoft.com/office/vba/language/reference/user-interface-help/format-function-visual-basic-for-applications#example)
+* [VBA-formatstrenge](/office/vba/language/reference/user-interface-help/format-function-visual-basic-for-applications#example)
 * [Målinger i Power BI Desktop](../transform-model/desktop-measures.md)
 * [Datatyper i Power BI Desktop](../connect-data/desktop-data-types.md)
 * [Betinget formatering af tabeller](desktop-conditional-table-formatting.md)

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 07/08/2020
-ms.openlocfilehash: af737472b85dcfa05935aefa9ddd7a6fcbb746f2
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: 9c92383dee3cb435c57238be545ccd9e59923b8e
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86214361"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90859974"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nyheder i Power BI-rapportserver
 
@@ -206,7 +206,7 @@ Når du opretter rapporter, kan du bruge værktøjstip til at angive tekst for h
 
 #### <a name="azure-active-directory-application-proxy-support"></a>Understøttelse af proxyprogram til Azure Active Directory
 
-Med proxyprogram til Azure Active Directory behøver du ikke længere at administrere din egen webprogramproxy for at tillade sikker adgang via web- eller mobilprogrammer. Du kan finde flere oplysninger under [Fjernadgang til programmer i det lokale miljø via proxyprogram til Azure Active Directory](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
+Med proxyprogram til Azure Active Directory behøver du ikke længere at administrere din egen webprogramproxy for at tillade sikker adgang via web- eller mobilprogrammer. Du kan finde flere oplysninger under [Fjernadgang til programmer i det lokale miljø via proxyprogram til Azure Active Directory](/azure/active-directory/manage-apps/application-proxy).
 
 #### <a name="custom-headers"></a>Brugerdefinerede headere
 
@@ -572,7 +572,7 @@ Når du foretager detaljeudledning i en bestemt kategori i en visualisering, kan
 
 #### <a name="export-to-accessible-pdf"></a>Eksport til tilgængelig PDF
 
-Når du eksporterer en sideinddelt rapport (RDL) til PDF, kan du nu eksportere til en tilgængelig/tagget PDF-fil. Filen fylder mere, men skærmlæsere og andre hjælpemidler har nemmere ved at læse og navigere i den. Tilgængelig PDF aktiveres ved at angive indstillingen **AccessiblePDF** under enhedsoplysninger til **Sand**. Se [PDF-indstillinger for enhedsoplysninger](https://docs.microsoft.com/sql/reporting-services/pdf-device-information-settings) og [Ændring af indstillinger for enhedsoplysninger](https://docs.microsoft.com/sql/reporting-services/customize-rendering-extension-parameters-in-rsreportserver-config#changing-device-information-settings).
+Når du eksporterer en sideinddelt rapport (RDL) til PDF, kan du nu eksportere til en tilgængelig/tagget PDF-fil. Filen fylder mere, men skærmlæsere og andre hjælpemidler har nemmere ved at læse og navigere i den. Tilgængelig PDF aktiveres ved at angive indstillingen **AccessiblePDF** under enhedsoplysninger til **Sand**. Se [PDF-indstillinger for enhedsoplysninger](/sql/reporting-services/pdf-device-information-settings) og [Ændring af indstillinger for enhedsoplysninger](/sql/reporting-services/customize-rendering-extension-parameters-in-rsreportserver-config#changing-device-information-settings).
 
 ### <a name="other-improvements"></a>Andre forbedringer
 
@@ -639,7 +639,7 @@ Der er en ny separat API til store filer, som vil blive opdateret i Power BI-rap
 
 ### <a name="sql-server-analysis-services-ssas-and-the-power-bi-report-server-memory-footprint"></a>Hukommelsesfodaftryk for SQL Server Analysis Services (SSAS) og Power BI-rapportserver
 
-Power BI-rapportserver hoster nu SQL Server Analysis Services (SSAS) internt. Dette er ikke specifikt for planlagt opdatering. At hoste SSAS kan markant udvide hukommelsesfodaftrykket for rapportserveren. AS.ini-konfigurationsfilen findes på servernoderne, så hvis du kender SSAS, kan du opdatere indstillingerne, herunder største hukommelsesgrænse og cachelagring på disk osv. Se [Serveregenskaber i Analysis Services](https://docs.microsoft.com/sql/analysis-services/server-properties/server-properties-in-analysis-services), for at få mere at vide.
+Power BI-rapportserver hoster nu SQL Server Analysis Services (SSAS) internt. Dette er ikke specifikt for planlagt opdatering. At hoste SSAS kan markant udvide hukommelsesfodaftrykket for rapportserveren. AS.ini-konfigurationsfilen findes på servernoderne, så hvis du kender SSAS, kan du opdatere indstillingerne, herunder største hukommelsesgrænse og cachelagring på disk osv. Se [Serveregenskaber i Analysis Services](/sql/analysis-services/server-properties/server-properties-in-analysis-services), for at få mere at vide.
 
 ### <a name="viewing-and-interacting-with-excel-workbooks"></a>Få vist og interager med Excel-projektmapper
 

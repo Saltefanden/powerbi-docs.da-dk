@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 12/03/2019
-ms.openlocfilehash: 03b361c56bd545036a8d706ae01e2bfa2ec30222
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: bce23ecdc99f6428ecefc28580e3ae0ec05fac6a
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78921234"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90859698"
 ---
 # <a name="pagination-in-power-bi-paginated-reports"></a>Sideinddeling i Power BI-sideinddelte rapporter
 
@@ -34,7 +34,7 @@ ms.locfileid: "78921234"
   
  Sidestørrelsen er som standard 8,5 x 11 tommer, men du kan ændre denne størrelse i ruden **Rapportegenskaber** eller dialogboksen **Sideopsætning** eller ved at ændre egenskaberne PageHeight og PageWidth i Ruden **egenskaber**. Sidestørrelsen vokser eller tilpasses ikke, så den passer til indholdet i rapportens brødtekst. Hvis rapporten skal vises på en enkelt side, skal al indholdet i rapportens brødtekst kunne være på den fysiske side. Hvis der ikke er plads til det, og du bruger formatet med hårdt sideskift, kræver rapporten flere sider. Hvis rapportens brødtekst vokser ud over den højre kant på den fysiske side, indsættes et vandret sideskift. Hvis rapportens brødtekst vokser ud over den nederste kant på den fysiske side, indsættes et lodret sideskift.  
   
- Hvis du vil tilsidesætte den fysiske sidestørrelse, der er defineret i rapporten, kan du angive den fysiske sidestørrelse ved hjælp af indstillingerne for enhedsoplysninger for den specifikke gengivelsesenhed, som du bruger til at eksportere rapporten. Du kan finde en komplet liste under [Indstillinger for enhedsoplysninger for gengivelsesudvidelser](https://docs.microsoft.com/sql/reporting-services/device-information-settings-for-rendering-extensions-reporting-services?view=sql-server-2017) i dokumentationen til SQL Server Reporting Services.  
+ Hvis du vil tilsidesætte den fysiske sidestørrelse, der er defineret i rapporten, kan du angive den fysiske sidestørrelse ved hjælp af indstillingerne for enhedsoplysninger for den specifikke gengivelsesenhed, som du bruger til at eksportere rapporten. Du kan finde en komplet liste under [Indstillinger for enhedsoplysninger for gengivelsesudvidelser](/sql/reporting-services/device-information-settings-for-rendering-extensions-reporting-services) i dokumentationen til SQL Server Reporting Services.  
   
 ### <a name="margins"></a>Margener
 
@@ -77,13 +77,13 @@ ms.locfileid: "78921234"
   
  Du kan bruge konstanter og simple eller komplekse udtryk til at angive værdien af egenskaberne Disabled og ResetPageNumber. Du kan dog ikke bruge udtryk sammen med egenskaben BreakLocation. Du kan finde flere oplysninger om at skrive og bruge udtryk i [Udtryk i Power BI Report Builder](report-builder-expressions.md).  
   
- Du kan skrive udtryk i din rapport, der refererer til de aktuelle sidenavne eller sidenumre, ved hjælp af samlingen **Globals**. Du kan finde flere oplysninger i [Indbyggede Globals og brugerreferencer](https://docs.microsoft.com/sql/reporting-services/report-design/built-in-collections-built-in-globals-and-users-references-report-builder?view=sql-server-2017) i dokumentationen til Report Builder og Reporting Services.
+ Du kan skrive udtryk i din rapport, der refererer til de aktuelle sidenavne eller sidenumre, ved hjælp af samlingen **Globals**. Du kan finde flere oplysninger i [Indbyggede Globals og brugerreferencer](/sql/reporting-services/report-design/built-in-collections-built-in-globals-and-users-references-report-builder) i dokumentationen til Report Builder og Reporting Services.
   
 ### <a name="naming-excel-worksheet-tabs"></a>Navngivning af Excel-regnearksfaner
 
  Disse egenskaber er nyttige, når du eksporterer rapporter til Excel-projektmapper. Brug egenskaben InitialPage til at angive et standardnavn for projektmappens fanenavn, når du eksporterer rapporten, og brug sideskift og egenskaben PageName til at angive forskellige navne til hvert regneark. Hver ny rapportside, der er defineret af et sideskift, eksporteres til et andet regneark, som navngives af værdien af egenskaben PageName. Hvis PageName er tom, men rapporten har et indledende sidenavn, bruger alle regneark i Excel-projektmappen det samme navn, som er det indledende sidenavn.  
   
- Du kan finde flere oplysninger om, hvordan disse egenskaber fungerer, når rapporter eksporteres til Excel, under [Eksport til Microsoft Excel](https://docs.microsoft.com/sql/reporting-services/report-builder/exporting-to-microsoft-excel-report-builder-and-ssrs) i dokumentationen til Report Builder og Reporting Services.  
+ Du kan finde flere oplysninger om, hvordan disse egenskaber fungerer, når rapporter eksporteres til Excel, under [Eksport til Microsoft Excel](/sql/reporting-services/report-builder/exporting-to-microsoft-excel-report-builder-and-ssrs) i dokumentationen til Report Builder og Reporting Services.  
   
 ## <a name="next-steps"></a>De næste trin
 

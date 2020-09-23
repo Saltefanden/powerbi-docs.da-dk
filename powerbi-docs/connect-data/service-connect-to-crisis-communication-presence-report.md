@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.date: 04/06/2020
 ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: cd3a0a8974636d6962fe23a7ffe272e47e487754
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 97501fe6e5a3e12e1b6773ce1b3fd67b503bf0f1
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85230408"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90860296"
 ---
 # <a name="connect-to-the-crisis-communication-presence-report"></a>Opret forbindelse til rapport om eksisterende krisekommunikation
 
@@ -23,15 +23,15 @@ Denne Power BI-app er det rapport-/dashboardartefakt, der findes i Microsoft Pow
 
 Dashboardet viser beredskabschefers samlede data på tværs af sundhedssystemet for at hjælpe dem med at træffe rettidige og korrekte beslutninger.
 
-I denne artikel får du oplysninger om, hvordan du installerer appen, og hvordan du opretter forbindelse til datakilderne. Du kan finde flere oplysninger om appen til krisekommunikation under [Konfigurer og få mere at vide om eksempelskabelonen til krisekommunikation i Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/sample-crisis-communication-app)
+I denne artikel får du oplysninger om, hvordan du installerer appen, og hvordan du opretter forbindelse til datakilderne. Du kan finde flere oplysninger om appen til krisekommunikation under [Konfigurer og få mere at vide om eksempelskabelonen til krisekommunikation i Power Apps](/powerapps/maker/canvas-apps/sample-crisis-communication-app)
 
 Når du har installeret skabelonappen og oprettet forbindelse til datakilderne, kan du tilpasse rapporten i henhold til dine behov. Du kan derefter distribuere den som en app til kolleger i organisationen.
 
 ## <a name="prerequisites"></a>Forudsætninger
 
-Før du installerer denne skabelonapp, skal du først installere og konfigurere [krisekommunikationseksemplet](https://docs.microsoft.com/powerapps/maker/canvas-apps/sample-crisis-communication-app). Når du installerer denne løsning, oprettes de referencer til datakilden, der er nødvendige for at udfylde appen med data.
+Før du installerer denne skabelonapp, skal du først installere og konfigurere [krisekommunikationseksemplet](/powerapps/maker/canvas-apps/sample-crisis-communication-app). Når du installerer denne løsning, oprettes de referencer til datakilden, der er nødvendige for at udfylde appen med data.
 
-Når du installerer krisekommunikationseksemplet, skal du notere [stien til mappen med SharePoint-listen for "CI_Employee Status" og liste-ID](https://docs.microsoft.com/powerapps/maker/canvas-apps/sample-crisis-communication-app#monitor-office-absences-with-power-bi).
+Når du installerer krisekommunikationseksemplet, skal du notere [stien til mappen med SharePoint-listen for "CI_Employee Status" og liste-ID](/powerapps/maker/canvas-apps/sample-crisis-communication-app#monitor-office-absences-with-power-bi).
 
 ## <a name="install-the-app"></a>Installér programmet
 
@@ -68,7 +68,7 @@ Når du installerer krisekommunikationseksemplet, skal du notere [stien til mapp
    ![Appen Rapport om eksisterende krisekommunikation, Opret forbindelse til dine data](media/service-connect-to-crisis-communication-presence-report/service-crisis-communication-presence-report-app-connect-data.png)
 
 1. I dialogboksen:
-   1. I feltet SharePoint_Folder skal du angive [stien til SharePoint-listen "CI_Employee Status"](https://docs.microsoft.com/powerapps/maker/canvas-apps/sample-crisis-communication-app#monitor-office-absences-with-power-bi).
+   1. I feltet SharePoint_Folder skal du angive [stien til SharePoint-listen "CI_Employee Status"](/powerapps/maker/canvas-apps/sample-crisis-communication-app#monitor-office-absences-with-power-bi).
    1. I feltet List_ID skal du angive det liste-id, du har fået fra listeindstillingerne. Klik på **Næste**, når du er færdig.
 
    ![Appen Rapport om eksisterende krisekommunikation, URL-dialogboks](media/service-connect-to-crisis-communication-presence-report/service-crisis-communication-presence-report-app-url-dialog.png)
@@ -102,7 +102,7 @@ Når dataene er blevet opdateret, [kan du konfigurere en opdateringsplan](../con
 Se [Tilpas og del appen](../connect-data/service-template-apps-install-distribute.md#customize-and-share-the-app) for at få flere oplysninger. Sørg for at gennemse [ansvarsfraskrivelserne for rapporten](../create-reports/sample-covid-19-us.md#disclaimers), før du udgiver eller distribuerer appen.
 
 ## <a name="next-steps"></a>Næste trin
-* [Konfigurer og få mere at vide om skabelonen med eksempel på krisekommunikation i Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/sample-crisis-communication-app)
+* [Konfigurer og få mere at vide om skabelonen med eksempel på krisekommunikation i Power Apps](/powerapps/maker/canvas-apps/sample-crisis-communication-app)
 * Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 * [Hvad er Power BI-skabelonapps?](../connect-data/service-template-apps-overview.md)
 * [Installér og distribuer skabelonapps i din organisation](../connect-data/service-template-apps-install-distribute.md)

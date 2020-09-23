@@ -8,12 +8,12 @@ ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 05/04/2020
 ms.author: painbar
-ms.openlocfilehash: 5705b0eaa861b01c7f04f4da9f85985af5f3934e
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: d32e1223a335fc6bf2fdf52598f1e1bdf3d7a685
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85235629"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90860526"
 ---
 # <a name="update-delete-and-extract-template-app"></a>Opdater, slet og udtræk en skabelonapp
 
@@ -46,7 +46,7 @@ Hvis du har foretaget ændringer i Power BI Desktop, skal du starte med trin (1)
 
    Dit link er nu live. **Bemærk, at knappen Send app videre i præproduktionsfasen er nedtonet**. Dette gøres for at forhindre, at linket til liveproduktionen overskrives ved et uheld til den aktuelle appversion, før Cloud-partnerportalen har valideret og godkendt den nye appversion.
 
-1. Send dit link til Cloud-partnerportalen (CCP) igen ved at følge trinnene for [opdatering af tilbud på Power BI-app](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer). Du skal **publicere** dit tilbud igen i Cloud-partnerportalen og også have det valideret og godkendt igen.
+1. Send dit link til Cloud-partnerportalen (CCP) igen ved at følge trinnene for [opdatering af tilbud på Power BI-app](/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer). Du skal **publicere** dit tilbud igen i Cloud-partnerportalen og også have det valideret og godkendt igen.
 
    Når dit tilbud er godkendt, bliver knappen Send app videre, aktiv igen. 
 1. Send din app videre til produktionsfasen.
@@ -84,4 +84,4 @@ Hvis du sletter en appversion, sletter du også URL-adressen til appen, og den v
 
 Se, hvordan dine kunder kan interagere med dit skabelonprogram under [Installér, tilpas og distribuer skabelonprogrammer i din organisation](service-template-apps-install-distribute.md).
 
-Du kan se yderligere oplysninger om, hvordan du distribuerer dit program under [Power BI-programtilbud](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer).
+Du kan se yderligere oplysninger om, hvordan du distribuerer dit program under [Power BI-programtilbud](/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer).

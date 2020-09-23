@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 08/12/2020
 ms.author: painbar
-ms.openlocfilehash: 84ceb5cd856986f2ff068395bac8bcac10baad96
-ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
+ms.openlocfilehash: c8daa87bca6fb5ed47899f804c0710f58b559ff1
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88204888"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90860227"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Hvad er nyt i mobilapps til Power BI
 Du kan finde relaterede oplysninger om nyheder under:
@@ -23,7 +23,7 @@ Du kan finde relaterede oplysninger om nyheder under:
 * [Nyheder i Power BI-tjenesten](../../fundamentals/service-whats-new.md)
 
 >[!NOTE]
->Understøttelse af Power BI-mobilapp til **telefoner, der bruger Windows 10 mobile**, ophører den 16. marts 2021. [Få mere at vide](https://go.microsoft.com/fwlink/?linkid=2121400)
+>Understøttelse af Power BI-mobilapp til **telefoner, der bruger Windows 10 mobile**, ophører den 16. marts 2021. [Få mere at vide](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 ## <a name="august-2020"></a>August 2020
 ### <a name="weve-improved-how-you-navigate-to-your-content-ios-and-android"></a>Vi har forbedret den måde, du navigerer til dit indhold på (iOS og Android)
@@ -153,19 +153,19 @@ Power BI-mobilappen understøtter nu bogmærker, der er oprettet i Power BI. Nå
 
 ### <a name="android-support-for-remote-configuration-of-report-server-access-settings"></a>Understøttelse af fjernkonfiguration af rapportserver-adgangsindstillinger i Android
 
-Vi har tilføjet understøttelse af fjernkonfiguration af Power BI-mobilappens rapportserver-adgangsindstillinger i Android. IT-administratorer kan nu bruge deres organisations MDM-værktøj til at fjernkonfigurere disse indstillinger på både iOS- og Android-enheder. Se [Fjernkonfigurer Power BI-mobilappadgang til rapportserveren](https://docs.microsoft.com/power-bi/report-server/configure-powerbi-mobile-apps-remote) for at få flere oplysninger.
+Vi har tilføjet understøttelse af fjernkonfiguration af Power BI-mobilappens rapportserver-adgangsindstillinger i Android. IT-administratorer kan nu bruge deres organisations MDM-værktøj til at fjernkonfigurere disse indstillinger på både iOS- og Android-enheder. Se [Fjernkonfigurer Power BI-mobilappadgang til rapportserveren](../../report-server/configure-powerbi-mobile-apps-remote.md) for at få flere oplysninger.
 
 ### <a name="cross-report-drillthrough"></a>Tværgående detaljeadgang i rapport
 
 Denne måned har vi tilføjet understøttelse af detaljeadgang på tværs af rapporter. Du kan nu trykke på et datapunkt for at få detaljeadgang til andre rapporter og rapportsider. Når du analyserer ned til en destinationsside, filtreres indholdet på den pågældende side på baggrund af indstillingerne for detaljeadgang.
 
 > [!NOTE]
-> Detaljeadgang på tværs af rapporter er kun tilgængelig, hvis den blev aktiveret under oprettelse af en rapport. [Få mere at vide om detaljeadgang på tværs af rapporter](https://docs.microsoft.com/power-bi/desktop-cross-report-drill-through).
+> Detaljeadgang på tværs af rapporter er kun tilgængelig, hvis den blev aktiveret under oprettelse af en rapport. [Få mere at vide om detaljeadgang på tværs af rapporter](../../create-reports/desktop-cross-report-drill-through.md).
 
 
 ### <a name="data-sensitivity-labels"></a>Etiketter for datafølsomhed
 
-Nu kan du se følsomhedsetiketter, som indholdsejere har angivet på rapporter, dashboards, datasæt og dataflow for at klassificere dataenes følsomhed. Følsomhedsetiketter bestemmer, hvordan indhold kan deles med andre brugere. [Få mere at vide om etiketter for datafølsomhed i Power BI](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview).
+Nu kan du se følsomhedsetiketter, som indholdsejere har angivet på rapporter, dashboards, datasæt og dataflow for at klassificere dataenes følsomhed. Følsomhedsetiketter bestemmer, hvordan indhold kan deles med andre brugere. [Få mere at vide om etiketter for datafølsomhed i Power BI](../../admin/service-security-data-protection-overview.md).
 
 ### <a name="support-for-custom-app-navigation-windows"></a>Understøttelse af brugerdefineret appnavigation (Windows)
 
@@ -190,7 +190,7 @@ Læs mere om [det nye udseende af Power BI – Mobil](https://powerbi.microsoft.
 
 ### <a name="secured-access-with-azure-active-directory-ad-application-proxy-ios-and-android"></a>Sikker adgang med Azure Active Directory-proxyprogram (AD) (iOS og Android)
 
-Vi har indgået partnerskab med Azure Active Directory-teamet om at integrere Power BI-mobilapps med et Azure AD-proxyprogram (Azure Active Directory). Med denne konfiguration kan du oprette forbindelse til rapportserveren, der er hostet inden for virksomhedsgrænserne, fra appen Power BI – Mobil, uden at det er nødvendigt at konfigurere kompleks konfiguration i det lokale miljø. Læs mere om [Power BI-mobil og Azure AD Application Proxy-integration](https://powerbi.microsoft.com/blog/access-on-prem-report-server-from-your-power-bi-mobile-app-with-azure-active-directory-application-proxy/). Få mere at vide om, [hvordan du konfigurerer Azure AD Application Proxy og Power BI](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi).
+Vi har indgået partnerskab med Azure Active Directory-teamet om at integrere Power BI-mobilapps med et Azure AD-proxyprogram (Azure Active Directory). Med denne konfiguration kan du oprette forbindelse til rapportserveren, der er hostet inden for virksomhedsgrænserne, fra appen Power BI – Mobil, uden at det er nødvendigt at konfigurere kompleks konfiguration i det lokale miljø. Læs mere om [Power BI-mobil og Azure AD Application Proxy-integration](https://powerbi.microsoft.com/blog/access-on-prem-report-server-from-your-power-bi-mobile-app-with-azure-active-directory-application-proxy/). Få mere at vide om, [hvordan du konfigurerer Azure AD Application Proxy og Power BI](/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi).
 
 ## <a name="july-2019"></a>Juli 2019
 
@@ -228,11 +228,11 @@ Enkelt tryk er nu generelt tilgængelig og bliver standardmåden for interaktion
 
 ### <a name="enhanced-conditional-access-protection-ios-android"></a>Forbedret beskyttelse af betinget adgang (iOS, Android)
 
-I Azure AD har vi integreret [en ny egenskab for beskyttelse af appen via betinget adgang](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access) for at øge sikkerheden ved at begrænse adgang til Power BI, før politikken for appen er anvendt.
+I Azure AD har vi integreret [en ny egenskab for beskyttelse af appen via betinget adgang](/azure/active-directory/conditional-access/app-protection-based-conditional-access) for at øge sikkerheden ved at begrænse adgang til Power BI, før politikken for appen er anvendt.
 
 ### <a name="device-protection-ios"></a>Enhedsbeskyttelse (iOS)
 
-Brugere kan anvende indbygget beskyttelse af enhed til at sikre Power BI ved at bede om Face ID, Touch ID eller en adgangskode for at få adgang til Power BI. Dette kan styres af brugeren ved hjælp af appindstillingerne, men også af administratorer ved hjælp af Intune og andre MDM-værktøjer. [Få mere at vide](https://docs.microsoft.com/power-bi/consumer/mobile/mobile-ios-native-secure-access).
+Brugere kan anvende indbygget beskyttelse af enhed til at sikre Power BI ved at bede om Face ID, Touch ID eller en adgangskode for at få adgang til Power BI. Dette kan styres af brugeren ved hjælp af appindstillingerne, men også af administratorer ved hjælp af Intune og andre MDM-værktøjer. [Få mere at vide](./mobile-native-secure-access.md).
 
 ### <a name="one-page-report-slideshow-windows"></a>Slideshow med en rapport med én side (Windows)
 
@@ -274,7 +274,7 @@ Vi har ændret interaktionen med rapporten, så der kun kræves ét tryk på en 
 ![Interaktion med et enkelt tryk](./media/mobile-whats-new-in-the-mobile-apps/single-tap-2.gif)
 
 > [!NOTE]
-> Eksisterende brugere skal slå denne funktionsmåde til under appindstillingerne. Du kan finde flere oplysninger i artiklen [Sådan konfigurerer du interaktion i en rapport med et enkelt tryk](https://docs.microsoft.com/power-bi/consumer/mobile/mobile-app-single-tap).
+> Eksisterende brugere skal slå denne funktionsmåde til under appindstillingerne. Du kan finde flere oplysninger i artiklen [Sådan konfigurerer du interaktion i en rapport med et enkelt tryk](./mobile-app-interaction-settings.md).
 
 ## <a name="january---february-2019"></a>Januar-februar 2019
  
@@ -304,11 +304,11 @@ Forbedret præsentationstilstand til Surface Hub- og Windows 10-enheder.  Få gl
 
 ### <a name="portrait-report-layout-in-tablets-ios-and-android"></a>Stående layout af rapporter på tablets (iOS og Android)
 
-Vi bruger nu telefonlayout for rapporter, når dette findes, så du kan se rapporter på din tablet i stående layout. Læs mere om, [hvordan du opretter telefonlayout i Power BI-tjenesten eller Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-create-phone-report/).
+Vi bruger nu telefonlayout for rapporter, når dette findes, så du kan se rapporter på din tablet i stående layout. Læs mere om, [hvordan du opretter telefonlayout i Power BI-tjenesten eller Power BI Desktop](/power-bi/desktop-create-phone-report/).
 
 ### <a name="supporting-report-query-string"></a>Understøttelse af forespørgselsstrenge i rapporten 
 
-Hvis du åbner et rapportlink, der indeholder en forespørgselsstreng, åbnes det nu i mobilappen og bliver filtreret på forhånd på baggrund af de betingelser, der er defineret i forespørgselsstrengen. Få mere at vide om, [hvordan du opretter en URL-adresse for en rapport med en forespørgselsstreng](https://docs.microsoft.com/power-bi/service-url-filters/).  
+Hvis du åbner et rapportlink, der indeholder en forespørgselsstreng, åbnes det nu i mobilappen og bliver filtreret på forhånd på baggrund af de betingelser, der er defineret i forespørgselsstrengen. Få mere at vide om, [hvordan du opretter en URL-adresse for en rapport med en forespørgselsstreng](/power-bi/service-url-filters/).  
 
 ### <a name="shared-credentials-now-in-android"></a>Delte legitimationsoplysninger (nu i Android)
 

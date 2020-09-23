@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 09/04/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 1b0f63d200a94cb7e6524602203864281efe51c0
-ms.sourcegitcommit: 1f56cdfc05801ffaf41e3b68dc1eb02142acdab3
+ms.openlocfilehash: e4f2db2c5b0220215c9c71cc62349c2255cf046d
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89490347"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90854615"
 ---
 # <a name="automate-premium-workspace-and-dataset-tasks-with-service-principals"></a>Automatiser opgaver for arbejdsområder og datasæt i Premium med tjenesteprincipaler
 
@@ -40,14 +40,14 @@ Hvis du vil udføre skrivehandlinger, skal [XMLA-slutpunktet være aktiveret til
 
 Tjenesteprincipaler oprettes som en appregistrering på Azure Portal eller ved hjælp af PowerShell. Når du opretter tjenesteprincipalen, skal du sørge for at kopiere og gemme appnavnet, applikations-id'et (klient-id'et), mappe-id'et (lejer) og klienthemmeligheden separat. Du kan finde trin til, hvordan du opretter en tjenesteprincipal i følgende:
 
-[Opret en tjenesteprincipal – Azure Portal](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal)   
-[Opret en tjenesteprincipal – PowerShell](https://docs.microsoft.com/azure/active-directory/develop/howto-authenticate-service-principal-powershell)
+[Opret en tjenesteprincipal – Azure Portal](/azure/active-directory/develop/howto-create-service-principal-portal)   
+[Opret en tjenesteprincipal – PowerShell](/azure/active-directory/develop/howto-authenticate-service-principal-powershell)
 
 ## <a name="create-an-azure-ad-security-group"></a>Opret en Azure AD-sikkerhedsgruppe
 
 Tjenesteprincipaler har som standard adgang til alle de lejerindstillinger, de er aktiveret for. Afhængigt af administratorindstillingerne kan adgang omfatte specifikke sikkerhedsgrupper eller hele organisationen.
 
-Hvis du vil begrænse tjenesteprincipalens adgang til specifikke lejerindstillinger, kan du tillade adgang til specifikke sikkerhedsgrupper. Du kan også oprette en dedikeret sikkerhedsgruppe til tjenesteprincipaler og udelukke den fra de ønskede lejerindstillinger. Du kan finde trin til, hvordan du opretter en sikkerhedsgruppe og tilføjer en tjenesteprincipal i [Opret en grundlæggende gruppe, og tilføj medlemmer ved hjælp af Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal).
+Hvis du vil begrænse tjenesteprincipalens adgang til specifikke lejerindstillinger, kan du tillade adgang til specifikke sikkerhedsgrupper. Du kan også oprette en dedikeret sikkerhedsgruppe til tjenesteprincipaler og udelukke den fra de ønskede lejerindstillinger. Du kan finde trin til, hvordan du opretter en sikkerhedsgruppe og tilføjer en tjenesteprincipal i [Opret en grundlæggende gruppe, og tilføj medlemmer ved hjælp af Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal).
 
 ## <a name="enable-service-principals"></a>Aktivér tjenesteprincipaler
 
@@ -59,7 +59,7 @@ På Power BI-**administrationsportal** > **Lejerindstillinger** skal du udvide *
 
 ## <a name="workspace-access"></a>Adgang til arbejdsområde
 
-Du skal tilføje tjenesteprincipalen som Medlem eller Administrator af arbejdsområdet, før den har de nødvendige tilladelser til at udføre handlinger for arbejdsområder og datasæt i Premium. Brug af Adgang til arbejdsområde i Power BI-tjenesten er beskrevet her, men du kan også bruge [REST API'en for tilføjelse af gruppebruger](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser).
+Du skal tilføje tjenesteprincipalen som Medlem eller Administrator af arbejdsområdet, før den har de nødvendige tilladelser til at udføre handlinger for arbejdsområder og datasæt i Premium. Brug af Adgang til arbejdsområde i Power BI-tjenesten er beskrevet her, men du kan også bruge [REST API'en for tilføjelse af gruppebruger](/rest/api/power-bi/groups/addgroupuser).
 
 1. Vælg **Mere** > **Adgang til arbejdsområde** for et arbejdsområde i Power BI-tjenesten.
 
@@ -96,7 +96,7 @@ Invoke-ProcessTable -Server "powerbi://api.powerbi.com/v1.0/myorg/myworkspace" -
 
 ### <a name="amo-and-adomd"></a>AMO og ADOMD
 
-Når du opretter forbindelse til klientprogrammer og webapps, understøtter [AMO-og ADOMD-klientbiblioteker](https://docs.microsoft.com/azure/analysis-services/analysis-services-data-providers) version 15.1.42.26 (juni 2020) og nyere installerbare pakker fra NuGet tjenesteprincipaler i forbindelsesstrenge ved hjælp af følgende syntaks: `app:AppID` og adgangskode eller `cert:thumbprint`.
+Når du opretter forbindelse til klientprogrammer og webapps, understøtter [AMO-og ADOMD-klientbiblioteker](/azure/analysis-services/analysis-services-data-providers) version 15.1.42.26 (juni 2020) og nyere installerbare pakker fra NuGet tjenesteprincipaler i forbindelsesstrenge ved hjælp af følgende syntaks: `app:AppID` og adgangskode eller `cert:thumbprint`.
 
 I følgende eksempel bruges `appID` og `password` til at udføre opdateringshandlingen for en modeldatabase:
 
@@ -115,6 +115,6 @@ db.Model.SaveChanges();
 ## <a name="next-steps"></a>Næste trin
 
 [Netværksmuligheder for datasæt med XMLA-slutpunktet](service-premium-connect-tools.md)  
-[Azure Automation](https://docs.microsoft.com/azure/automation)  
-[Azure Logic Apps](https://docs.microsoft.com/azure/logic-apps/)  
-[REST-API'er til Power BI](https://docs.microsoft.com/rest/api/power-bi/)
+[Azure Automation](/azure/automation)  
+[Azure Logic Apps](/azure/logic-apps/)  
+[REST-API'er til Power BI](/rest/api/power-bi/)

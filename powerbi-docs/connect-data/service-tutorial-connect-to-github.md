@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 08/07/2019
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: a3c87a700df1c35596b6520cc64d9b580ccb74eb
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: cf79a5ecf4d98595a033733824a41002a7cd38e0
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83332308"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90860549"
 ---
 # <a name="tutorial-connect-to-a-github-repo-with-power-bi"></a>Selvstudium: Opret forbindelse til et GitHub-lager med Power BI
 I dette selvstudium opretter du forbindelse til virkelige data i GitHub-tjenesten med Power BI, og Power BI opretter automatisk dashboards og rapporter. Du opretter forbindelse til det offentlige Power BI-lagerindhold (også kaldet *lager*) og ser svar på spørgsmål såsom: Hvor mange bidrager til det offentlige Power BI-indhold? Hvem der bidrager mest? På hvilken ugedag er der flest bidrag? Og andre spørgsmål. 
@@ -39,7 +39,7 @@ Hvis du ikke er tilmeldt Power BI, kan du [tilmelde dig en gratis prøveversion]
 
 Hvis du vil gennemføre dette selvstudium, skal du oprette en GitHub-konto, hvis du ikke allerede har en. 
 
-- Tilmeld dig en [GitHub-konto](https://docs.microsoft.com/contribute/get-started-setup-github).
+- Tilmeld dig en [GitHub-konto](/contribute/get-started-setup-github).
 
 
 ## <a name="how-to-connect"></a>Sådan opretter du forbindelse
@@ -139,5 +139,3 @@ I dette selvstudie har du oprettet forbindelse til et offentligt GitHub-lager og
  
 > [!div class="nextstepaction"]
 > [Opret forbindelse til de onlinetjenester, du bruger](service-connect-to-services.md)
-
-
