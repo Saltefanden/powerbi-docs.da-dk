@@ -28,6 +28,8 @@
           href: embedded-capacity.md
         - name: Kapacitetsplanlægning
           href: embedded-capacity-planning.md
+        - name: Overvejelser i forbindelse med genereringen af et integreringstoken
+          href: generate-embed-token.md
         - name: Bedste fremgangsmåder for ydelse
           href: embedded-performance-best-practices.md
         - name: Sikkerhed på rækkeniveau
