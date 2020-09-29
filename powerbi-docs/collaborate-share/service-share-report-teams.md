@@ -1,5 +1,5 @@
 ---
-title: Del direkte i Teams fra Power BI-tjenesten
+title: Del direkte i Microsoft Teams fra Power BI-tjenesten
 description: Du kan dele Power BI-dashboards og -rapporter direkte i Microsoft Teams fra Power BI-tjenesten.
 author: maggiesMSFT
 ms.author: maggies
@@ -10,14 +10,14 @@ ms.subservice: powerbi-service
 ms.topic: how-to
 LocalizationGroup: Share your work
 ms.date: 07/31/2020
-ms.openlocfilehash: 0152f835f130eaea12addee1cc8daa15975d7aa1
-ms.sourcegitcommit: d9d67ee47954379c2df8db8d0dc8302de4c9f1e5
+ms.openlocfilehash: 6f4f083f7ec36fff13624b6b0d28ffd810e0d62b
+ms.sourcegitcommit: cff93e604e2c5f24e0f03d6dbdcd10c2332aa487
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87478055"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90964830"
 ---
-# <a name="share-directly-to-teams-from-the-power-bi-service"></a>Del direkte i Teams fra Power BI-tjenesten
+# <a name="share-directly-to-microsoft-teams-from-the-power-bi-service"></a>Del direkte i Microsoft Teams fra Power BI-tjenesten
 
 Du kan dele Power BI-dashboards, -rapporter og -visualiseringer direkte i Microsoft Teams fra Power BI-tjenesten. Brug funktionen **Del i Teams** til hurtigt at starte samtaler, når du får vist rapporter og dashboards i Power BI-tjenesten.
 
@@ -27,9 +27,9 @@ Hvis du vil bruge **Del i Teams**-funktionalitet i Power BI, skal du sørge for 
 
 - Power BI-administratorer har ikke deaktiveret lejerindstillingen **Del i Teams** på Power BI-administrationsportalen. Denne indstilling giver organisationer mulighed for at skjule **Del i Teams**-knapper. Du kan finde flere oplysninger i artiklen om [Power BI-administrationsportalen](../admin/service-admin-portal.md#share-to-teams-tenant-setting).
 
-Under [Samarbejd i Microsoft Teams med Power BI](service-collaborate-microsoft-teams.md) kan du se, hvordan Power BI og Teams arbejder sammen, herunder andre krav.
+Under [Samarbejd i Microsoft Teams med Power BI](service-collaborate-microsoft-teams.md) kan du se, hvordan Power BI og Microsoft Teams arbejder sammen, herunder andre krav.
 
-## <a name="share-power-bi-content-to-teams"></a>Del Power BI-indhold i Teams
+## <a name="share-power-bi-content-to-microsoft-teams"></a>Del Power BI-indhold i Microsoft Teams
 
 Følg disse trin for at dele links til rapporter, dashboards og visualiseringer i Power BI-tjenesten med Microsoft Teams-kanaler og -chats.
 

@@ -7,15 +7,15 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.author: davidi
-ms.date: 09/14/2020
+ms.date: 09/17/2020
 ms.custom: ''
 LocalizationGroup: Administration
-ms.openlocfilehash: 612fa923f45b427cb9c4fea4ecc1b18ad8580004
-ms.sourcegitcommit: 376ea86f69545444f975378cbf63e54c2f75faa3
+ms.openlocfilehash: 3b8eb9c5e4211097cd6f11d233165ccaf197ddbe
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90084024"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90854362"
 ---
 # <a name="private-links-for-accessing-power-bi"></a>Private links, der giver adgang til Power BI
 
@@ -158,7 +158,7 @@ Næste trin er at oprette et virtuelt netværk og det undernet, der skal hoste d
     |Størrelse | Behold standardindstillingen **Standard DS1 v2** |
     |ADMINISTRATORKONTO ||
     |Brugernavn |Angiv et brugernavn efter eget valg |
-    |Adgangskode | Angiv en adgangskode efter eget valg. Adgangskoden skal indeholde mindst 12 tegn og opfylde de [definerede kompleksitetskrav](https://docs.microsoft.com/azure/virtual-machines/windows/faq?toc=/azure/virtual-network/toc.json#what-are-the-password-requirements-when-creating-a-vm) |
+    |Adgangskode | Angiv en adgangskode efter eget valg. Adgangskoden skal indeholde mindst 12 tegn og opfylde de [definerede kompleksitetskrav](/azure/virtual-machines/windows/faq#what-are-the-password-requirements-when-creating-a-vm) |
     |Bekræft adgangskode | Angiv adgangskode igen |
     |REGLER FOR INDGÅENDE PORTE ||
     |Offentlige indgående porte | Behold standardindstillingen **Ingen** |
@@ -284,6 +284,7 @@ Der er et par overvejelser, du skal gøre dig, når du arbejder med private link
 * Enhver brug af eksterne billeder eller temaer er ikke tilgængelige, når du bruger et miljø med private links, og det kan påvirke brugerdefinerede visualiseringer
 * Eksporttjenester, f. eks. eksport til PDF og eksport til Excel fra en rapport, og andre eksporttjenester fungerer ikke, når du bruger et miljø med private links
 * SQL Server Reporting Services-rapporter, der ofte kaldes RDL-filer (*filer i . rdl-format), gengives ikke i miljøer med private links
+* Hvis internetadgang er deaktiveret, og hvis datasættet eller dataflowet opretter forbindelse til et Power BI-datasæt eller et dataflow som en datakilde, vil forbindelsen ikke blive oprettet
 
 
 ## <a name="next-steps"></a>Næste trin

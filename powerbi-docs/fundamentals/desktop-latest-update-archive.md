@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/12/2020
+ms.date: 09/22/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: d8b98afff55c830a1ce3fadd39c11b4cf98036a8
-ms.sourcegitcommit: 7d505cb7cc9360211d67f1056cb488f7f15ffab4
+ms.openlocfilehash: 99ee50db33d549d33347c9ceedfe9084f0dbe01f
+ms.sourcegitcommit: ff981839e805f523748b7e71474acccf7bdcb04f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "88578191"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91020107"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Tidligere månedlige opdateringer til Power BI Desktop
 
@@ -37,6 +37,88 @@ Linkene ud for hver opdatering betyder følgende:
 Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilledet under listen med opdateringer.
 
 I de følgende afsnit beskrives tidligere måneders opdateringer til **Power BI Desktop**.
+
+
+
+## <a name="august-2020-update-2844610"></a>August 2020-opdatering (2.84.461.0)
+
+Vores opdateringer til Power BI Desktop fra august var fuldt af spændende nye funktioner og muligheder. 
+
+Få den nyeste version af Power BI Desktop from [Download Center](https://www.microsoft.com/download/details.aspx?id=58494). Hvis du kører Windows 10, kan du også få Power BI Desktop fra [Microsoft Store](https://aka.ms/pbidesktopstore). De månedlige versioner er de samme, selvom versionsnummeret kan variere mellem de to, uanset hvilken måde du installerer Power BI Desktop på. Du kan finde flere oplysninger om, hvordan du downloader og installerer Power BI Desktop, under [Få Power BI Desktop](desktop-get-the-desktop.md). 
+
+> [!IMPORTANT]
+> Power BI Desktop opdateres og frigives hver måned med kundefeedback og nye funktioner. Det er kun den nyeste version af Power BI Desktop, der understøttes. Kunder, der kontakter support til Power BI Desktop, bliver bedt om at opgradere til den nyeste version. Du kan hente den nyeste version af Power BI Desktop fra [Windows Store](https://aka.ms/pbidesktopstore) eller som en enkelt eksekverbar fil, der indeholder alle understøttede sprog, som du [downloader](https://www.microsoft.com/download/details.aspx?id=58494) og installerer på din computer.
+
+Linkene ud for hver funktion på opdateringslisten i Power BI Desktop fortolkes på følgende måde:
+
+* \[blog\]: De fleste funktioner er forklaret i et afsnit i den månedlige opdatering i blogindlægget.
+* \[video\]: Der er et videoklip til nogle funktioner, hvor funktionen drøftes. Videoklippet afspilles under en ny browserfane.
+* \[artikel\]: Til nogle funktioner findes der en artikel, som indeholder flere detaljer.
+* De resterende funktioner er selvforklarende og er ikke tilknyttet en artikel eller video.
+
+Du kan også se hele [videoen om den månedlige opdatering til Power BI Desktop](#power-bi-desktop-monthly-update-video).
+
+> [!IMPORTANT]
+> Power BI Desktop understøttes ikke længere på Windows 7 efter den 31. januar 2021. Efter denne dato understøttes Power BI Desktop i Windows 8-versioner eller nyere versioner af Windows, men kun for den nyeste version af Power BI Desktop. 
+
+Følgende opdateringer er nye i Power BI Desktop i denne måned:
+
+
+### <a name="reporting"></a>Rapportering
+* Support til perspektiver for Tilpas visualiseringer (prøveversion) [[video]](https://youtu.be/TPsV7N4bZZg?t=15) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_Perspectives) 
+* Rektangulær frihåndsmarkering for datapunkter (prøveversion) [[video]](https://youtu.be/TPsV7N4bZZg?t=448) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_Data_point) 
+* Understøttelse af dynamisk formatering er føjet til flere visualiseringer [[video]](https://youtu.be/TPsV7N4bZZg?t=715) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_dynamic_formatting) 
+
+
+### <a name="analytics"></a>Analyse
+* DirectQuery-understøttelse for Spørgsmål og svar [[video]](https://youtu.be/TPsV7N4bZZg?t=926) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_Direct_Query) 
+
+
+### <a name="visuals"></a>Visuelle elementer
+* Flere nye visualiseringer fra forskellige virksomheder [[video]](https://youtu.be/TPsV7N4bZZg?t=956) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_Visualizations)
+* Opdateringer til ArcGIS-kort [[video]](https://youtu.be/TPsV7N4bZZg?t=1096) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_ArcGIS)
+* Udvidede administratormuligheder for AppSource-visualiseringer [[video]](https://youtu.be/TPsV7N4bZZg?t=1135) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_Admin)
+
+
+### <a name="template-apps"></a>Skabelonapps
+* Agile CRM Analytics til Dynamics 365 [[video]](https://youtu.be/TPsV7N4bZZg?t=1300) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_CRM)
+
+
+### <a name="data-preparation"></a>Dataforberedelse
+* Text/CSV efter eksempel (prøveversion) [[video]](https://youtu.be/TPsV7N4bZZg?t=1335) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_text_csv) 
+
+### <a name="data-connectivity"></a>Dataforbindelse
+* Cherwell-connector [[video]](https://youtu.be/TPsV7N4bZZg?t=1392) [[artikel]](../create-reports/desktop-external-tools.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_Cherwell_connector) 
+
+* Automation Anywhere-connector [[video]](https://youtu.be/TPsV7N4bZZg?t=1414) [[artikel]](../create-reports/desktop-external-tools.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_Auto_connector) 
+
+* Acterys-connector [[video]](https://youtu.be/TPsV7N4bZZg?t=1434) [[artikel]](../create-reports/desktop-external-tools.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_Acterys_connector) 
+
+
+Du kan finde detaljerede oplysninger om hver af disse nye funktioner i [oversigten over funktioner i Power BI Desktop](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/).
+
+Tjek [nyhederne i Power BI-tjenesten](service-whats-new.md) og [nyhederne i mobilappsene til Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+
+> [!NOTE]
+> Se de [datakilder, der er tilgængelige for Power BI Desktop](../connect-data/desktop-data-sources.md). Vores liste vokser hele tiden, så vend tilbage med jævne mellemrum.
+
+
+### <a name="power-bi-desktop-monthly-update-video"></a>Video om månedlig opdatering til Power BI Desktop
+I følgende video beskrives hver af disse opdateringer. Du kan også se videoen fra blogindlægget:
+
+> [!VIDEO https://www.youtube.com/embed/TPsV7N4bZZg]
+
+Du kan også hente tidligere versioner af Power BI Desktop, hvis din organisation kræver det. Vi anbefaler altid, at du bruger den nyeste version af Power BI Desktop i stedet for en tidligere version. Der er følgende begrænsninger for alle tidligere versioner:
+
+* Der ydes ikke service til tidligere versioner af Power BI Desktop – du skal altid bruge den nyeste version for at få de nyeste funktioner og opdateringer.
+* Du kan muligvis ikke åbne filer, der er oprettet eller gemt i nyere versioner af Power BI Desktop, med tidligere versioner af Power BI Desktop. 
+* Hvis du får vist en advarsel, når du indlæser en rapport, der er gemt i en nyere version af Power BI Desktop, og derefter gemmer rapporten i den tidligere version, mister du alle oplysninger, der er relateret til nye funktioner.
+* Vi arkiverer kun de engelske versioner af Power BI Desktop.
+
+Vælg følgende links for at downloade denne tidligere version: 
+
+* [Version af Power BI Desktop fra august 2020 – 32-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-08.exe)
+* [Version af Power BI Desktop fra august 2020 – 64-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-08_x64.exe)
 
 
 ## <a name="july-2020-update-2835894661"></a>Opdatering i juli 2020 (2.83.5894.661)
@@ -419,7 +501,7 @@ Følgende opdateringer er nye i Power BI Desktop i denne måned:
 
 
 ### <a name="modeling"></a>Modellering
-* Ny DAX-funktion: COALESCE [[video]](https://youtu.be/DMjvJGGB_LQ?t=830)  [[artikel]](https://docs.microsoft.com/dax/coalesce-function-dax)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_New_DAX_function
+* Ny DAX-funktion: COALESCE [[video]](https://youtu.be/DMjvJGGB_LQ?t=830)  [[artikel]](/dax/coalesce-function-dax)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_New_DAX_function
 ) 
 
 ### <a name="visuals"></a>Visualiseringer
@@ -503,7 +585,7 @@ Følgende opdateringer var nye i Power BI Desktop i denne måned:
 
 
 ### <a name="modeling"></a>Modellering
-* Nye DAX-funktioner: FirstNonBlankValue, LastNonBlankValue [[video]](https://youtu.be/TN61JvbUAxk?t=716)  [[article]](https://docs.microsoft.com/dax/firstnonblankvalue-function-dax)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_New_DAX_Functions) 
+* Nye DAX-funktioner: FirstNonBlankValue, LastNonBlankValue [[video]](https://youtu.be/TN61JvbUAxk?t=716)  [[article]](/dax/firstnonblankvalue-function-dax)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_New_DAX_Functions) 
 
 ### <a name="visuals"></a>Visualiseringer
 * Nye brugerdefinerede visuals [[video]](https://youtu.be/TN61JvbUAxk?t=835)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_Visualizations) 
@@ -539,17 +621,6 @@ I følgende video beskrives hver af disse opdateringer. Du kan også se videoen 
 
 > [!VIDEO https://www.youtube.com/embed/TN61JvbUAxk]
 
-Du kan også hente tidligere versioner af Power BI Desktop, hvis din organisation kræver det. Vi anbefaler altid, at du bruger den nyeste version af Power BI Desktop i stedet for en tidligere version. Der er følgende begrænsninger for alle tidligere versioner:
-
-* Der ydes ikke service til tidligere versioner af Power BI Desktop – du skal altid bruge den nyeste version for at få de nyeste funktioner og opdateringer.
-* Du kan muligvis ikke åbne filer, der er oprettet eller gemt i nyere versioner af Power BI Desktop, med tidligere versioner af Power BI Desktop. 
-* Hvis du får vist en advarsel, når du indlæser en rapport, der er gemt i en nyere version af Power BI Desktop, og derefter gemmer rapporten i den tidligere version, mister du alle oplysninger, der er relateret til nye funktioner.
-* Vi arkiverer kun de engelske versioner af Power BI Desktop.
-
-Vælg følgende links for at downloade denne tidligere version: 
-
-* [Power BI Desktop-version fra februar 2020 – 32-bit](https://download.microsoft.com/download/3/C/0/3C0A5D40-85C6-4959-BB51-3A2087B18BCA/PBIDesktopRS.msi)
-* [Power BI Desktop-version fra februar 2020 – 64-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup_x64.exe)
 
 
 ## <a name="december-2019-update-2765678661"></a>Opdatering fra december 2019 (2.76.5678.661)

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 08/12/2020
+ms.date: 09/22/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 1e64ca5c94b180cf98cf8d8992681861281ca2ae
-ms.sourcegitcommit: b60063c49ac39f8b28c448908ecbb44b54326335
+ms.openlocfilehash: 56825599a6b566a93f18e6fea16d995dc8bdda8f
+ms.sourcegitcommit: ff981839e805f523748b7e71474acccf7bdcb04f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "88160389"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91020038"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Datakilder i Power BI Desktop
 
@@ -95,12 +95,13 @@ Kategorien **Database** indeholder følgende dataforbindelser:
 * Denodo
 * Dremio
 * Exasol
-* Indexima (beta)
+* Indexima
 * InterSystems IRIS (beta)
 * Jethro (beta)
 * Kyligence
 * Linkar PICK Style/MultiValue Databases (beta)
 * MarkLogic
+* MariaDB (Beta)
 
 > [!NOTE]
 > Nogle databaseforbindelser kræver, at du aktiverer dem ved at vælge **Filer > Indstillinger > Indstillinger** og derefter vælger **Funktioner til eksempelvisning** og aktiverer forbindelsen. Hvis du ikke kan se nogle af de forbindelser, der er nævnt ovenfor, og du vil bruge dem, skal du kontrollere dine indstillinger for **Funktioner til eksempelvisning**. Bemærk også, at alle datakilder, der er markeret som *Beta* eller *Preview*, har begrænset support og funktionalitet og skal ikke bruges i produktionsmiljøer.
@@ -127,7 +128,7 @@ På følgende billede vises vinduet **Hent data** for **Power Platform**.
 Kategorien **Azure** indeholder følgende dataforbindelser:
 
 * Azure SQL Database
-* Azure SQL Data Warehouse
+* Azure Synapse Analytics (SQL DW)
 * Azure Analysis Services-database
 * Azure Database for PostgreSQL
 * Azure Blob Storage
@@ -139,9 +140,9 @@ Kategorien **Azure** indeholder følgende dataforbindelser:
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
 * Interaktiv HDInsight-forespørgsel
-* Azure Data Explorer (Kusto)
 * Azure Cost Management
 * Azure Time Series Insights (beta)
+* Azure Databricks
 
 
 På følgende billede vises vinduet **Hent data** for **Azure**.
@@ -194,8 +195,10 @@ Kategorien **Onlinetjenester** indeholder følgende dataforbindelser:
 * TeamDesk (beta)
 * Webtrends Analytics (beta)
 * Witivio (beta)
-* Workplace Analytics (beta)
 * Zoho Creator (beta)
+* Workplace Analytics (beta)
+* Hexagon PPM Smart API
+
 
 På følgende billede vises vinduet **Hent data** for **Onlinetjenester**.
 
@@ -217,29 +220,27 @@ Kategorien **Andet** indeholder følgende dataforbindelser:
 * Python-script
 * ODBC
 * OLE DB
+* Acterys: Model Automation & Planning (Beta)
+* Automation Anywhere (Beta)
 * Solver
+* Cherwell (Beta)
+* Cognite Data Fusion (beta)
 * FHIR
 * Information Grid (beta)
 * Jamf Pro (beta)
+* MicroStrategy for Power BI
 * Paxatas
 * QubolePresto (beta)
 * Roamler (beta)
 * Shortcuts Business Insights (beta)
 * Siteimprove
+* SurveyMonkey (beta)
 * Tenforce (Smart)List
 * TIBCO(R) Data Virtualization (beta)
-* Vessel Insight (beta)
-* Workforce Dimensions (beta)
-* Zucchetti HR Infinity (beta)
-* Cognite Data Fusion (beta)
-* MicroStrategy for Power BI
-* SurveyMonkey (beta)
 * Vena (beta)
-* Acterys: Model Automation & Planning (Beta)
-* Automation Anywhere (Beta)
-* Cherwell (Beta)
+* Zucchetti HR Infinity (beta)
+* Vessel Insight (beta)
 * Tom forespørgsel
-
 
 
 
@@ -288,7 +289,7 @@ Dette afsnit indeholder nogle eksempler på datakilder, der ofte bruges. PBIDS-f
 
 PBIDS-filen indeholder *ikke* oplysninger om godkendelse og tabel- og skemaoplysninger.  
 
-Følgende kodestykke viser almindelige eksempler på PBIDS-filer, men listen er ikke fuldstændig. I forbindelse med andre datakilder kan du se [DSR-formatet (Data Source Reference) for protokol- og adresseoplysninger](https://docs.microsoft.com/azure/data-catalog/data-catalog-dsr#data-source-reference-specification).
+Følgende kodestykke viser almindelige eksempler på PBIDS-filer, men listen er ikke fuldstændig. I forbindelse med andre datakilder kan du se [DSR-formatet (Data Source Reference) for protokol- og adresseoplysninger](/azure/data-catalog/data-catalog-dsr#data-source-reference-specification).
 
 Disse eksempler er kun ment som en hjælp og er ikke en udtømmende liste. De omfatter heller ikke alle understøttede connectorer i DSR-format. Administratorer eller organisationer kan oprette deres egne datakilder ved hjælp af disse eksempler som vejledninger og benytte dem til at oprette og understøtte deres egne datakildefiler.
 

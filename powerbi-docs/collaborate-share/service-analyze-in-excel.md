@@ -7,15 +7,15 @@ ms.custom: contperfq4
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 05/26/2020
+ms.date: 09/22/2020
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: 1605e6108b990c95a995eadd9a6b3d03260001f5
-ms.sourcegitcommit: 13c4bec679313f2951f1833033316cb8176da8a1
+ms.openlocfilehash: 845fb523e9045e7a1062d11eebbb5e34bcc29ce3
+ms.sourcegitcommit: ff981839e805f523748b7e71474acccf7bdcb04f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88937487"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91020061"
 ---
 # <a name="analyze-in-excel"></a>Analysér i Excel
 Med **Analysér i Excel** kan du hente Power BI-datasæt til Excel og derefter få vist og interagere med dem ved hjælp af pivottabeller, diagrammer, udsnit og andre Excel-funktioner. Hvis du vil bruge **Analysér i Excel**, skal du først downloade funktionen fra Power BI, installere den og derefter vælge et eller flere datasæt, der skal bruges i Excel. 
@@ -92,6 +92,15 @@ I Power BI-tjenesten skal du navigere til det datasæt eller den rapport, du vil
     >![Skærmbillede af banneret Beskyttet visning aktiverer redigering](media/service-analyze-in-excel/protected-view-enable-editing-banner.png)
     >
     >![Skærmbillede af banneret Dokument, der er tillid til, aktiverer indhold](media/service-analyze-in-excel/trusted-document-enable-content-banner.png)
+
+Når du bruger Excel til at analysere Power BI ved hjælp af en pivottabel, udvider Power BI nedarvning af følsomhedsmærkaten til Excel. En følsomhedsmærkat, der anvendes på et Power BI-datasæt, anvendes automatisk på Excel-filen, når du opretter en pivottabel i Excel. 
+
+Hvis mærkaten på datasættet senere ændres til at være mere restriktiv, opdateres den mærkat, der anvendes på Excel-filen, automatisk efter dataopdatering i Excel. Hvis datasættet ændres, så det bliver mindre restriktivt, sker der ingen nedarvning eller opdatering af mærkater.
+
+Følsomhedsmærkater i Excel, der er blevet angivet manuelt, tilsidesættes ikke automatisk af datasættets mærkat. Hvis en Excel-fil har en manuelt angivet følsomhedsmærkat, vises der et politiktip med en anbefaling om at opgradere mærkaten. 
+
+Du kan få flere oplysninger i [Se hvordan følsomhedsmærkater anvendes i Power BI](../admin/service-security-apply-data-sensitivity-labels.md).
+
 
 ## <a name="use-excel-to-analyze-the-data"></a>Analyser dataene med Excel
 
@@ -177,4 +186,4 @@ Du vil måske også være interesseret i følgende artikler:
 * [Brug af udsnitsværktøjer i Power BI Desktop](../visuals/power-bi-visualization-slicers.md)
 * [Fejlfinding af Analysér i Excel](desktop-troubleshooting-analyze-in-excel.md)
 * [Få adgang til Power BI-tabeller i Excel (prøveversion)](service-excel-featured-tables.md).
-
+* [Sådan anvendes følsomhedsmærkater i Power BI](../admin/service-security-apply-data-sensitivity-labels.md)

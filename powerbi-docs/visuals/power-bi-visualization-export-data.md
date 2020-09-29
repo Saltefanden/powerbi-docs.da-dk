@@ -8,15 +8,15 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 05/20/2020
+ms.date: 09/09/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 1593cecf448b193ce2186be041da771bb8d6a09c
-ms.sourcegitcommit: 92b033ee7a6e36808371b247b7b41536cee6c2f6
+ms.openlocfilehash: 7ab0a093dfd41034aa79d2934ad23cf373fd0474
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "90008922"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861584"
 ---
 # <a name="export-the-data-that-was-used-to-create-a-visualization"></a>Eksportér de data, der blev brugt til at oprette en visualisering
 
@@ -228,7 +228,7 @@ Vigtigt! Hvis der er konflikt mellem indstillingerne på Power BI-administratorp
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
 Disse begrænsninger og overvejelser gælder for Power BI Desktop og Power BI-tjenesten, herunder Power BI Pro og Premium.
 
-- Hvis du vil eksportere dataene fra en visualisering, skal du have [tilladelse til at oprette for det underliggende datasæt](https://docs.microsoft.com/power-bi/service-datasets-build-permissions).
+- Hvis du vil eksportere dataene fra en visualisering, skal du have [tilladelse til at oprette for det underliggende datasæt](../connect-data/service-datasets-build-permissions.md).
 
 -  Det maksimale antal rækker, som **Power BI Desktop** og **Power BI-tjenesten** kan eksportere fra en **rapport for importtilstand** til en *.csv-fil* er 30.000.
 
@@ -268,7 +268,7 @@ Disse begrænsninger og overvejelser gælder for Power BI Desktop og Power BI-tj
   
   1. Gå til den lokale mappe, hvor filen er gemt, og vælg *.csv*-filen.
 
-- Når du eksporterer til *.csv* "escapes" visse tegn med et foranstillet **'** for at forhindre scriptudførelse, når filen åbnes i Excel. Dette sker, når:
+- Når du eksporterer til *CSV* "escapes" visse tegn med et foranstillet **'** for at forhindre scriptudførelse, når filen åbnes i Excel. Dette sker, når:
   - Kolonnen er defineret som typen "Tekst" i datamodellen, **_og_**
   - Det første tegn i teksten er et af følgende: **=, @, +,-**
 

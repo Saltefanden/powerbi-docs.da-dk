@@ -10,12 +10,12 @@ ms.date: 09/03/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: f6527b326c2c779dda5a6d4b1c1276c84d3ec320
-ms.sourcegitcommit: 002c140d0eae3137a137e9a855486af6c55ad957
+ms.openlocfilehash: f52993c3876db5c8f0453fb2e6a25ce0b78af017
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89642796"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90857950"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrer Power BI på administrationsportalen
 
@@ -116,7 +116,7 @@ Brugerspecifikke data er som standard aktiveret for forbrugsdata, og kontooplysn
 Når administratorer deaktiverer forbrugsdata for hele organisationen, kan de kan også vælge en af eller begge disse indstillinger:
 
 - **Slet alt eksisterende forbrugsdataindhold** til at slette alle eksisterende rapporter og dashboardfelter, der blev oprettet ved hjælp af forbrugsdatarapporter og -datasæt. Denne indstilling fjerner al adgang til forbrugsdata for alle brugere i organisationen, som muligvis allerede anvender dem.
-- **Slet alle eksisterende brugerspecifikke data i det aktuelle forbrugsdataindhold** Denne indstilling fjerner al adgang til forbrugsdata for alle brugere i organisationen, som muligvis allerede anvender dem. 
+- **Slet alle eksisterende brugerspecifikke data i det aktuelle forbrugsdataindhold** for at fjerne al adgang til forbrugsdata for alle brugere i organisationen, som muligvis allerede anvender dem.
 
 Vær forsigtig med at gøre dette, da sletning af eksisterende forbrugsdataindhold og brugerspecifikke data ikke kan fortrydes.
 
@@ -156,7 +156,7 @@ Indstillingerne kan have en af tre tilstande:
 
     ![Indstilling aktiveret for alle](media/service-admin-portal/powerbi-admin-tenant-settings-enabled.png)
 
-* **Aktiveret for en del af organisationen**: I stedet for at aktivere funktionen i hele organisationen kan du anvende indstillingen på **bestemte sikkerhedsgrupper** i din organisation, der har tilladelse til at bruge denne funktion.
+* **Aktiveret for en del af organisationen**: Specifikke sikkerhedsgrupper i din organisation har tilladelse til at bruge denne funktion.
 
     Du kan også aktivere en funktion for hele organisationen **med undtagelse af bestemte sikkerhedsgrupper**.
 
@@ -172,9 +172,11 @@ De næste par afsnit giver et overblik over de forskellige typer af lejerindstil
 
 ### <a name="publish-get-help-information"></a>Publicer "Få hjælp"-oplysninger
 
+![Publicer "Få hjælp"-oplysninger](media/service-admin-portal/powerbi-admin-tenant-settings-gethelp.png)
+
 Administratorer kan angive interne URL-adresser for at tilsidesætte linkdestinationen i menuen Hjælp i Power BI og i forbindelse med opgradering af licenser. Hvis der er angivet brugerdefinerede URL-adresser, kan brugere i organisationen gå til interne hjælp- og supportressourcer i stedet for til standarddestinationerne. Følgende ressourcedestinationer kan tilpasses:
 
-* **Learn**. Dette link i menuen Hjælp viser en [liste over alle vores Power BI-læringsforløb og -moduler](https://docs.microsoft.com/learn/browse/?products=power-bi). Hvis du vil sende dette link til interne undervisningsressourcer i stedet for, skal du angive en brugerdefineret URL-adresse til **undervisningsdokumentation**.
+* **Learn**. Dette link i menuen Hjælp viser en [liste over alle vores Power BI-læringsforløb og -moduler](/learn/browse/?products=power-bi). Hvis du vil sende dette link til interne undervisningsressourcer i stedet for, skal du angive en brugerdefineret URL-adresse til **undervisningsdokumentation**.
 
 * **Community**. Hvis du vil sende brugerne til et internt forum fra menuen Hjælp i stedet for til [Power BI-community](https://community.powerbi.com/), skal du angive en brugerdefineret URL-adresse til **Diskussionsforum**.
 
@@ -182,15 +184,15 @@ Administratorer kan angive interne URL-adresser for at tilsidesætte linkdestina
 
 * **Få hjælp**. Hvis du vil sende brugerne til en intern helpdesk fra menuen Hjælp i stedet for til [Power BI-support](https://powerbi.microsoft.com/support/), skal du angive en brugerdefineret URL-adresse til **Helpdesk**.
 
-![Publicer "Få hjælp"-oplysninger](media/service-admin-portal/powerbi-admin-tenant-settings-gethelp.png)
-
 ### <a name="receive-email-notifications-for-service-outages-or-incidents"></a>Modtag mails ved tjenesteafbrydelser eller -hændelser
 
 Mailaktiverede sikkerhedsgrupper modtager mails, hvis lejeren påvirkes af en tjenesteafbrydelse eller -hændelse. Få mere at vide om [Meddelelser om tjenesteafbrydelser](service-interruption-notifications.md).
 
 ### <a name="allow-users-to-try-power-bi-pro"></a>Tillad brugere at prøve Power BI Pro
 
-Indstillingen til **Tillad brugere at prøve Power BI Pro** er aktiveret som standard, og øger kontrollen med, hvordan brugerne kan opnå Power BI Pro-licenser. I scenarier hvor du har blokeret selvbetjening, kan du bruge denne indstilling for at gøre det muligt for brugerne at starte en Power BI Pro-prøveversion. Slutbrugeroplevelsen afhænger af, hvordan du kombinerer licensindstillingerne. I tabellen nedenfor kan du se, hvordan opgraderingsoplevelsen fra Power BI (gratis) til Power BI Pro påvirkes af forskellige indstillingskombinationer:
+![Brugergrænseflade med indstillingen Tillad brugere at prøve Power BI Pro](media/service-admin-portal/allow-pro-trial.png)
+
+Indstillingen til at **gøre det muligt for brugere at prøve Power BI Pro** er aktiveret som standard. Denne indstilling øger din kontrol over, hvordan brugerne får Power BI Pro licenser. I scenarier hvor du har blokeret selvbetjening, kan du bruge denne indstilling for at gøre det muligt for brugerne at starte en Power BI Pro-prøveversion. Slutbrugeroplevelsen afhænger af, hvordan du kombinerer licensindstillingerne. I tabellen nedenfor kan du se, hvordan opgraderingsoplevelsen fra Power BI (gratis) til Power BI Pro påvirkes af forskellige indstillingskombinationer:
 
 | Indstillingen Køb via selvbetjening | Indstillingen Tillad brugere at prøve Power BI Pro | Slutbrugeroplevelse |
 | ------ | ------ | ----- |
@@ -200,9 +202,7 @@ Indstillingen til **Tillad brugere at prøve Power BI Pro** er aktiveret som sta
 | Deaktiveret | Aktiveret | Brugeren kan starte en Pro-prøveversion, men skal kontakte it-administratoren for at få en betalt licens |
 
 > [!NOTE]
-> Du kan tilføje en intern URL-adresse til licensanmodninger i [Indstillinger for Hjælp og support](#help-and-support-settings). Hvis du angiver URL-adressen, tilsidesættes standardkøbsprocessen. Brugere, der kan købe en licens i de scenarier, der er beskrevet i ovenstående tabel, omdirigeres til din interne URL-adresse.
-
-![Brugergrænseflade med indstillingen Tillad brugere at prøve Power BI Pro](media/service-admin-portal/allow-pro-trial.png)
+> Du kan tilføje en intern URL-adresse til licensanmodninger i [Indstillinger for Hjælp og support](#help-and-support-settings). Hvis du angiver URL-adressen, tilsidesættes standardprocessen for køb via selvbetjening. Du kommer ikke til tilmeldingen for en licens til en prøveversion af Power BI Pro. Brugere, der kan købe en licens i de scenarier, der er beskrevet i ovenstående tabel, omdirigeres til din interne URL-adresse.
 
 Du kan finde flere oplysninger i [Aktivér eller deaktiver tilmelding og køb via selvbetjening](service-admin-disable-self-service.md).
 
@@ -237,7 +237,7 @@ I administrationsportalen kan du også styre, hvilke brugere der har tilladelse 
 
 Administratorer kan styre, hvilke brugere i organisationen der kan bruge datasæt på tværs af arbejdsområder. Når denne indstilling er aktiveret, skal brugerne stadig bruge den påkrævede Build-tilladelse til et bestemt datasæt.
 
-:::image type="content" source="media/service-admin-portal/power-bi-admin-datasets-workspaces.png" alt-text="Brug datasæt på tværs af arbejdsområder":::
+:::image type="content" source="media/service-admin-portal/power-bi-admin-datasets-workspaces.png" alt-text="Opret de nye arbejdsområdeoplevelser":::
 
 Du kan få flere oplysninger under [Introduktion til datasæt på tværs af arbejdsområder](../connect-data/service-datasets-across-workspaces.md).
 
@@ -253,13 +253,13 @@ Når indstillingen er aktiveret, vises Office 365-grupper, der er oprettet for n
 
 ### <a name="allow-azure-active-directory-guest-users-to-access-power-bi"></a>Tillad, at Azure Active Directory gæstebrugere får adgang til Power BI
 
-Hvis du aktiverer denne indstilling, kan gæstebrugere af Azure Active Directory-B2B få adgang til Power BI. Når du deaktiverer denne indstilling, får gæstebrugere vist en fejl, når de forsøger at få adgang til Power BI. Når du deaktiverer denne indstilling for hele organisationen, forhindrer den også brugerne i at invitere gæster til din organisation. Brug indstillingen for bestemte sikkerhedsgrupper til at styre, hvilke gæstebrugere der har adgang til Power BI.
+Hvis du aktiverer denne indstilling, kan gæstebrugere af Azure Active Directory-B2B få adgang til Power BI. Hvis du deaktiverer denne indstilling, får gæstebrugere vist en fejl, når de forsøger at få adgang til Power BI. Deaktivering af denne indstilling for hele organisationen forhindrer også brugerne i at invitere gæster til din organisation. Brug indstillingen for bestemte sikkerhedsgrupper til at styre, hvilke gæstebrugere der har adgang til Power BI.
 
 ![Tillad, at Azure Active Directory gæstebrugere får adgang til Power BI](media/service-admin-portal/powerbi-admin-allow-aad-b2b-guests.png)
 
 ### <a name="invite-external-users-to-your-organization"></a>Inviter eksterne brugere til din organisation 
 
-Indstillingen **Inviter eksterne brugere til din organisation** hjælper organisationer med at vælge, om nye eksterne brugere kan inviteres til organisationen via Power BI delings- og tilladelsesoplevelser. Hvis en ekstern bruger ikke allerede er gæstebruger i organisationen, kan vedkommende ikke føjes til organisationen via Power BI, når indstillingen er deaktiveret. 
+Indstillingen **Inviter eksterne brugere til din organisation** hjælper organisationer med at vælge, om nye eksterne brugere kan inviteres til organisationen via Power BI delings- og tilladelsesoplevelser. Hvis indstillingen er deaktiveret, kan en ekstern bruger, der ikke allerede er gæstebruger i organisationen, ikke føjes til organisationen via Power BI.
 
 ![Inviter eksterne brugere til din organisation](media/service-admin-portal/powerbi-admin-allow-invite-aad-b2b-guests.png)
 
@@ -298,7 +298,7 @@ Brugere kan se forskellige indstillinger på brugergrænsefladen afhængigt af i
 
 ### <a name="export-data"></a>Eksportér data
 
-Brugere i virksomheden kan eksportere data fra et felt eller en visualisering. Dette styrer, Analysér i Excel, eksport til. csv, overførsler af datasæt (. pbix) og funktionerne i Power BI Service Live Connect. Få mere at vide om [eksport af data fra et felt eller en visualisering](../visuals/power-bi-visualization-export-data.md).
+Brugere i virksomheden kan eksportere data fra et felt eller en visualisering. Denne indstilling styrer Analysér i Excel, eksport til CSV, overførsler af datasæt (PBIX) og funktionerne i Power BI Service Live Connect. Få mere at vide om [eksport af data fra et felt eller en visualisering](../visuals/power-bi-visualization-export-data.md).
 
 >[!NOTE]
 > Før introduktionen af indstillingen Eksportér til Excel styrede denne indstilling også eksport af data til Excel-filer. Du finder flere oplysninger i [noten under Eksportér til Excel](#export-to-excel).
@@ -403,7 +403,7 @@ Brugere i organisationen kan bruge eksterne søgefunktioner, der bruger Azure Se
 
 Lejerindstillingen **Tillad forbindelser til udvalgte tabeller** under **Lejerindstillinger** gør det muligt for Power BI-administratorer at styre, hvem der i organisationen kan bruge udvalgte tabeller i Excel-datatypegalleriet. 
 
-:::image type="content" source="media/service-admin-portal/admin-allow-connections-featured-tables.png" alt-text="Alle forbindelser til udvalgte tabeller":::
+:::image type="content" source="media/service-admin-portal/admin-allow-connections-featured-tables.png" alt-text="Opret de nye arbejdsområdeoplevelser":::
 
 Forbindelser til udvalgte tabeller deaktiveres også, hvis lejerindstillingen **Eksportér data** er angivet til **Deaktiveret**.
 
@@ -482,25 +482,25 @@ Brugere i organisationen kan oprette og bruge dataflow. Du kan se en oversigt ov
 
 Tre indstillinger styrer, hvorvidt skabelonapps kan publicere eller installere skabelonapps.
 
-![Indstillinger for skabelonprogrammer på Power BI-administrationsportal](media/service-admin-portal/power-bi-admin-portal-template-apps.png)
+![Indstillinger for skabelonapps i Power BI-administrationsportalen](media/service-admin-portal/power-bi-admin-portal-template-apps.png)
 
 ### <a name="publish-template-apps"></a>Publicer skabelonapps
 
 Brugere i organisationen kan oprette arbejdsområder for skabelonapps. Styr, hvilke brugere der kan publicere skabelonapps eller distribuere dem til klienter uden for organisationen ved hjælp af [AppSource](https://appsource.microsoft.com) eller en anden distributionsmetode.
 
-![Power BI-administrationsportal, indstillingen Opret skabelonprogrammer](media/service-admin-portal/power-bi-admin-portal-template-app-settings.png)
+![Publicer indstillingen for skabelonapps for hele organisationen](media/service-admin-portal/power-bi-admin-portal-template-app-settings.png)
 
 ### <a name="install-template-apps-listed-on-appsource"></a>Installér skabelonapps, der er angivet på AppSource
 
 Brugere i organisationen kan **kun** downloade og installere skabelonapps fra [AppSource](https://appsource.microsoft.com). Styr, hvilke specifikke brugere eller sikkerhedsgrupper der kan installere skabelonapps fra AppSource.
 
-![Power BI-administrationsportal, indstillingen Installér skabelonapps](media/service-admin-portal/power-bi-admin-portal-template-app-settings-installer-appsource.png)
+![Indstillingen Installér skabelonapps](media/service-admin-portal/power-bi-admin-portal-template-app-settings-installer-appsource.png)
 
 ### <a name="install-template-apps-not-listed-on-appsource"></a>Installér skabelonapps, der ikke er angivet på AppSource
 
 Styr, hvilke brugere i organisationen der kan downloade og installere skabelonapps, som **ikke er anført på [AppSource](https://appsource.microsoft.com)** .
 
-![Power BI-administrationsportal, indstillingen Installér skabelonapps](media/service-admin-portal/power-bi-admin-portal-template-app-settings-installer-nonappsource.png)
+![Indstillingen til installation af skabelonapps, der ikke er angivet i AppSource](media/service-admin-portal/power-bi-admin-portal-template-app-settings-installer-nonappsource.png)
 
 ## <a name="capacity-settings"></a>Kapacitetsindstillinger
 

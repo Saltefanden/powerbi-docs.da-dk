@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 4172fc2ff4a1da409a1f5586e8b3579e4745fe99
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 193247aaf610d1712b7986394e08d3c21055d2fa
+ms.sourcegitcommit: cff93e604e2c5f24e0f03d6dbdcd10c2332aa487
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83273448"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90965474"
 ---
 # <a name="understand-star-schema-and-the-importance-for-power-bi"></a>Forstå, hvad et stjerneskema er, og hvorfor det er vigtigt for Power BI
 
@@ -65,7 +65,7 @@ Der er mange andre begreber, som er relateret til stjerneskemadesign, der kan an
 
 I et stjerneskemadesign er en **måling** en kolonne i en faktatabel, der gemmer værdier, som skal opsummeres.
 
-I en Power BI-model har en **måling** en anden – men lignende – definition. Det er en formel, som er skrevet i [DAX (Data Analysis Expressions)](https://docs.microsoft.com/dax/data-analysis-expressions-dax-reference), der resulterer i opsummering. DAX-sammenlægningsfunktioner, som SUM, MIN., MAKS., GENNEMSNIT osv., bruges ofte i målingsudtryk til at skabe et skalarværdisæt på forespørgselstidspunktet (værdierne gemmes aldrig i modellen). Målingsudtryk kan variere fra simple kolonnesammenlægninger til mere avancerede formler, der tilsidesætter filterkontekst og/eller relationsoverførsler. Du kan finde flere oplysninger i artiklen [Grundlæggende om DAX i Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-quickstart-learn-dax-basics).
+I en Power BI-model har en **måling** en anden – men lignende – definition. Det er en formel, som er skrevet i [DAX (Data Analysis Expressions)](/dax/data-analysis-expressions-dax-reference), der resulterer i opsummering. DAX-sammenlægningsfunktioner, som SUM, MIN., MAKS., GENNEMSNIT osv., bruges ofte i målingsudtryk til at skabe et skalarværdisæt på forespørgselstidspunktet (værdierne gemmes aldrig i modellen). Målingsudtryk kan variere fra simple kolonnesammenlægninger til mere avancerede formler, der tilsidesætter filterkontekst og/eller relationsoverførsler. Du kan finde flere oplysninger i artiklen [Grundlæggende om DAX i Power BI Desktop](../transform-model/desktop-quickstart-learn-dax-basics.md).
 
 Det er vigtigt at forstå, at Power BI-modeller understøtter en anden metode for at resultere i opsummering. En hvilken som helst kolonne – og som regel numeriske kolonner – kan opsummeres i en visualisering i en rapport eller ved hjælp af Spørgsmål og svar. Disse kolonner kaldes _implicitte målinger_. De er praktiske for dig som modeludvikler, da du i mange tilfælde ikke har brug for at oprette målinger. Kolonnen **Salgsbeløb** for Adventure Works-forhandlersalg kan opsummeres på flere måder (sum, antal, gennemsnit, median, min., maks. osv.), uden at det er nødvendigt at oprette en måling for hver mulige sammenlægningstype.
 
@@ -73,7 +73,7 @@ Det er vigtigt at forstå, at Power BI-modeller understøtter en anden metode fo
 
 Der er dog tre overbevisende grunde til, at du bør oprette målinger selv for simple opsummeringer på kolonneniveau:
 
-- Når du ved, at rapportforfatterne sender forespørgsler til modellen ved hjælp af [flerdimensionelle udtryk (MDX)](https://docs.microsoft.com/sql/analysis-services/multidimensional-models/mdx/mdx-query-the-basic-query?view=sql-server-2017), skal modellen indeholde _eksplicitte målinger_. Eksplicitte målinger defineres ved hjælp af DAX. Denne designmetode er yderst relevant, når der sendes en forespørgsel til et Power BI-datasæt ved hjælp af MDX, da MDX ikke kan opnå opsummering af kolonneværdier. MDX bruges især, når der udføres [analyser i Excel](https://docs.microsoft.com/power-bi/service-analyze-in-excel), fordi pivottabeller udsteder MDX-forespørgsler.
+- Når du ved, at rapportforfatterne sender forespørgsler til modellen ved hjælp af [flerdimensionelle udtryk (MDX)](/sql/analysis-services/multidimensional-models/mdx/mdx-query-the-basic-query), skal modellen indeholde _eksplicitte målinger_. Eksplicitte målinger defineres ved hjælp af DAX. Denne designmetode er yderst relevant, når der sendes en forespørgsel til et Power BI-datasæt ved hjælp af MDX, da MDX ikke kan opnå opsummering af kolonneværdier. MDX bruges især, når der udføres [analyser i Excel](../collaborate-share/service-analyze-in-excel.md), fordi pivottabeller udsteder MDX-forespørgsler.
 - Når du ved, at rapportforfatterne opretter sideinddelte rapporter i Power BI ved hjælp af MDX-forespørgselsdesigneren, skal modellen indeholde eksplicitte metoder. Det er kun MDX-forespørgselsdesigneren, der understøtter [serversamlinger](/sql/reporting-services/report-design/report-builder-functions-aggregate-function). Hvis det er nødvendigt for rapportforfatterne at have målinger, der evalueres af Power BI (i stedet for af det sideinddelte rapportprogram), skal de derfor bruge MDX-forespørgselsdesigneren.
 - Hvis du vil sikre dig, at dine rapportforfattere kun kan opsummere kolonner på bestemte måder. Kolonnen **Enhedspris** for forhandlersalg (der repræsenterer en pris pr. enhed) kan f.eks. opsummeres, men kun ved hjælp af bestemte sammenlægningsfunktioner. Den bør aldrig lægges sammen, men den kan passende opsummeres ved hjælp af andre sammenlægningsfunktioner som f.eks. min., maks., gennemsnit osv. I dette tilfælde kan modeludvikleren skjule kolonnen **Enhedspris** og oprette målinger for alle relevante sammenlægningsfunktioner.
 
@@ -83,7 +83,7 @@ Denne designtilgang fungerer godt til rapporter, der forfattes i Power BI-tjenes
 
 En **surrogatnøgle** er et entydigt id, som du føjer til en tabel for at understøtte udformning af et stjerneskema. Den er pr. definition hverken defineret eller gemt i kildedata. Surrogatnøgler føjes ofte til dimensionstabeller for relationelle data warehouses for at angive et entydigt id for hver række i dimensionstabellen.
 
-Power BI-modelrelationer er baseret på en enkelt entydig kolonne i én tabel, der overfører filtre til en enkelt kolonne i en anden tabel. Når en dimensionstabel i modellen ikke indeholder en enkelt entydig kolonne, skal du tilføje et entydigt id for at blive til "en"-siden af en relation. I Power BI Desktop kan du nemt opfylde dette krav ved at oprette en [Power Query-indekskolonne](https://docs.microsoft.com/powerquery-m/table-addindexcolumn).
+Power BI-modelrelationer er baseret på en enkelt entydig kolonne i én tabel, der overfører filtre til en enkelt kolonne i en anden tabel. Når en dimensionstabel i modellen ikke indeholder en enkelt entydig kolonne, skal du tilføje et entydigt id for at blive til "en"-siden af en relation. I Power BI Desktop kan du nemt opfylde dette krav ved at oprette en [Power Query-indekskolonne](/powerquery-m/table-addindexcolumn).
 
 ![Opret en indekskolonne i Power Query-værktøjslinjen](media/star-schema/toolbar-index.png)
 
@@ -150,12 +150,12 @@ I en Power BI-model kan dette design efterlignes ved at oprette flere relationer
 
 ![Eksempel på en enkelt dimension med forskellige roller og relationer](media/star-schema/relationships.png)
 
-Den eneste måde, du kan bruge en inaktiv relation på, er ved at definere et DAX-udtryk, der bruger [funktionen BRUGRELATION](https://docs.microsoft.com/dax/userelationship-function-dax). I vores eksempel skal modeludvikleren oprette målinger for at aktivere analyse af forhandlersalg efter afsendelsesdato og leveringsdato. Det kan være kedeligt arbejde, især når der defineres mange målinger i forhandlertabellen. Det skaber også rod i ruden **Felter**, hvor der en overflod af målinger. Der er også andre begrænsninger:
+Den eneste måde, du kan bruge en inaktiv relation på, er ved at definere et DAX-udtryk, der bruger [funktionen BRUGRELATION](/dax/userelationship-function-dax). I vores eksempel skal modeludvikleren oprette målinger for at aktivere analyse af forhandlersalg efter afsendelsesdato og leveringsdato. Det kan være kedeligt arbejde, især når der defineres mange målinger i forhandlertabellen. Det skaber også rod i ruden **Felter**, hvor der en overflod af målinger. Der er også andre begrænsninger:
 
 - Når rapportforfatterne sætter deres lid til opsummering af kolonner i stedet for at definere målinger, kan de ikke opsummere de inaktive relationer uden at skrive en måling på rapportniveau. Målinger på rapportniveau kan kun defineres, når der forfattes rapporter i Power BI Desktop.
 - Med kun én aktiv relationssti mellem dato og forhandlersalg, er det ikke muligt at filtrere forhandlersalg efter forskellige typer af datoer samtidigt. Du kan f.eks. ikke oprette en visualisering, der afbilder salg efter ordredato ved hjælp af afsendt salg.
 
-Hvis du vil overvinde disse begrænsninger, er en almindelig udformningsteknik i Power BI at oprette en dimensionstabel for hver dimension med forskellige roller. Du opretter typisk de ekstra dimensionstabeller som [beregnede tabeller](https://docs.microsoft.com/dax/calculatetable-function-dax) ved hjælp af DAX. Ved hjælp af beregnede tabeller kan modellen indeholde en tabel for **Dato**, en tabel for **Afsendelsesdato** og en tabel for **Leveringsdato**, der hver har en enkelt aktiv relation til deres respektive kolonner i tabeller med forhandlersalg.
+Hvis du vil overvinde disse begrænsninger, er en almindelig udformningsteknik i Power BI at oprette en dimensionstabel for hver dimension med forskellige roller. Du opretter typisk de ekstra dimensionstabeller som [beregnede tabeller](/dax/calculatetable-function-dax) ved hjælp af DAX. Ved hjælp af beregnede tabeller kan modellen indeholde en tabel for **Dato**, en tabel for **Afsendelsesdato** og en tabel for **Leveringsdato**, der hver har en enkelt aktiv relation til deres respektive kolonner i tabeller med forhandlersalg.
 
 ![Eksempel på en dimension med forskellige roller og relationer](media/star-schema/relationships2.png)
 
@@ -174,7 +174,7 @@ En **dimension til tilfældige attributter** er nyttig, når der er mange dimens
 
 Designformålet med dimension til tilfældige attributter er at konsolidere mange "små" dimensioner i en enkelt dimension for at reducere størrelsen af modellageret og samtidig reducere rodet i ruden **Felter** ved at vise færre modeltabeller.
 
-En tabel med en dimension til tilfældige attributter er typisk det kartesianske produkt for alle dimensionsattributmedlemmer med en kolonne for surrogatnøgle. Surrogatnøglen indeholder en entydig reference til hver række i tabellen. Du kan oprette dimensionen i et data warehouse eller ved at bruge Power Query til at oprette en forespørgsel, der udfører [komplet ydre joinforbindelse for forespørgslen](https://docs.microsoft.com/powerquery-m/table-join) og derefter tilføjer en surrogatnøgle (indekskolonne).
+En tabel med en dimension til tilfældige attributter er typisk det kartesianske produkt for alle dimensionsattributmedlemmer med en kolonne for surrogatnøgle. Surrogatnøglen indeholder en entydig reference til hver række i tabellen. Du kan oprette dimensionen i et data warehouse eller ved at bruge Power Query til at oprette en forespørgsel, der udfører [komplet ydre joinforbindelse for forespørgslen](/powerquery-m/table-join) og derefter tilføjer en surrogatnøgle (indekskolonne).
 
 ![Eksempel på dimension til tilfældige attributter](media/star-schema/junk-dimension.png)
 
@@ -216,5 +216,3 @@ Du kan finde flere oplysninger om stjerneskemadesign eller design af en Power BI
 - [Vejledning til aktive i forhold til inaktive relationer](relationships-active-inactive.md)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 - Forslag? [Få ideer til at forbedre Power BI](https://ideas.powerbi.com/)
-
-

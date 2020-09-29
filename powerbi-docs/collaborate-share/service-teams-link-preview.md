@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
 ms.date: 07/22/2020
-ms.openlocfilehash: 06bd8271904b9c44de6c71e287f0560c54f6d031
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.openlocfilehash: fb79358bb9149498a39cca32db618cb6971121de
+ms.sourcegitcommit: cff93e604e2c5f24e0f03d6dbdcd10c2332aa487
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87253845"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90964781"
 ---
 # <a name="get-a-power-bi-link-preview-in-microsoft-teams"></a>Få vist et eksempel på et Power BI-link i Microsoft Teams
 
@@ -27,7 +27,7 @@ Når du indsætter et link til dine rapporter, dashboards og apps i Microsoft Te
 
 Tjenesten til linkeksempler kræver, at brugerne logger på. Hvis du vil logge af, skal du vælge **Power BI**-ikonet nederst i meddelelsesfeltet. Vælg derefter **Log af**.
 
-Under [Samarbejd i Microsoft Teams med Power BI](service-collaborate-microsoft-teams.md) kan du se, hvordan Power BI og Teams arbejder sammen, herunder de krav, der skal være opfyldt.
+Under [Samarbejd i Microsoft Teams med Power BI](service-collaborate-microsoft-teams.md) kan du se, hvordan Power BI og Microsoft Teams fungerer sammen, herunder de krav, der skal være opfyldt.
 
 ## <a name="get-a-link-preview"></a>Få et linkeksempel
 

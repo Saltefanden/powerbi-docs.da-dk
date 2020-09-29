@@ -7,25 +7,25 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.author: kfollis
-ms.date: 12/05/2019
+ms.date: 09/17/2020
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 1478c077cda1097d3903bd0379dc79b27d034ffc
-ms.sourcegitcommit: b943ce58c2c079cb18fc5cf23cc609ead1dc9906
+ms.openlocfilehash: 590909ac01240a84a4401c74a63dcf66c99dacfd
+ms.sourcegitcommit: fa0a1561aba2a392fb56e7030e1a0537806a9260
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89443553"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811696"
 ---
 # <a name="row-level-security-rls-with-power-bi"></a>Sikkerhed på rækkeniveau (RLS) med Power BI
 
-Sikkerhed på rækkeniveau (RLS) med Power BI kan bruges til at begrænse adgang til datakilder for bestemte brugere. Filtre begrænser adgangen til data på rækkeniveau, og du kan definere filtre inden for roller. Vær opmærksom på, at i Power BI-tjenesten har medlemmer af et arbejdsområde adgang til datasæt i arbejdsområdet. Sikkerhed på rækkeniveau (RLS) begrænser ikke adgangen til data.
+Sikkerhed på rækkeniveau (RLS) med Power BI kan bruges til at begrænse adgang til datakilder for bestemte brugere. Filtre begrænser adgangen til data på rækkeniveau, og du kan definere filtre inden for roller. I Power BI-tjenesten har medlemmer af et arbejdsområde adgang til datasæt i arbejdsområdet. Sikkerhed på rækkeniveau (RLS) begrænser ikke adgangen til data.
 
-Du kan konfigurere sikkerhed på rækkeniveau for datamodeller, der er importeret til Power BI, med Power BI Desktop. Du kan også konfigurere sikkerhed på rækkeniveau for datasæt, der anvender DirectQuery, f.eks. SQL Server. Tidligere kunne du kun implementere sikkerhed på rækkeniveau i Analysis Services-modeller i det lokale miljø uden for Power BI. Hvis du vil have Analysis Services- eller Azure Analysis Services-liveforbindelser, skal du konfigurere sikkerhed på rækkeniveau i modellen, ikke i Power BI Desktop. Sikkerhedsindstillingen vises ikke for datasæt med liveforbindelse.
+Du kan konfigurere sikkerhed på rækkeniveau for datamodeller, der er importeret til Power BI, med Power BI Desktop. Du kan også konfigurere sikkerhed på rækkeniveau for datasæt, der anvender DirectQuery, f.eks. SQL Server. Hvis du vil have Analysis Services- eller Azure Analysis Services-liveforbindelser, skal du konfigurere sikkerhed på rækkeniveau i modellen, ikke i Power BI Desktop. Sikkerhedsindstillingen vises ikke for datasæt med liveforbindelse.
 
 [!INCLUDE [include-short-name](../includes/rls-desktop-define-roles.md)]
 
-Som standard bruger filtrering af sikkerhed på rækkeniveau envejsfiltre, uanset om relationerne er angivet til envejs eller tovejs. Du kan aktivere tovejskrydsfiltrering med sikkerhed på rækkeniveau manuelt ved at vælge relationen og markere afkrydsningsfeltet **Anvend sikkerhedsfilter i begge retninger**. Du skal markere dette afkrydsningsfelt, når du også har implementeret dynamisk sikkerhed på rækkeniveau på serverniveau, hvor sikkerhed på rækkeniveau er baseret på brugernavn eller logon-id.
+Filtrering af sikkerhed på rækkeniveau bruger som standard envejsfiltre, uanset om relationerne er angivet til envejs eller tovejs. Du kan aktivere tovejskrydsfiltrering med sikkerhed på rækkeniveau manuelt ved at vælge relationen og markere afkrydsningsfeltet **Anvend sikkerhedsfilter i begge retninger**. Du skal markere dette afkrydsningsfelt, når du også har implementeret dynamisk sikkerhed på rækkeniveau på serverniveau, hvor sikkerhed på rækkeniveau er baseret på brugernavn eller logon-id.
 
 Du kan finde flere oplysninger på [Tovejskrydsfiltrering ved hjælp af DirectQuery i Power BI Desktop](../transform-model/desktop-bidirectional-filtering.md) og den tekniske artikel [Sikring af modellen for tabellarisk BI-semantik](https://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx).
 
@@ -36,14 +36,19 @@ Du kan finde flere oplysninger på [Tovejskrydsfiltrering ved hjælp af DirectQu
 
 ## <a name="manage-security-on-your-model"></a>Administrer sikkerheden for din model
 
-Hvis du vil administrere sikkerheden på din datamodel, skal du gøre følgende.
+Hvis du vil administrere sikkerheden for din datamodel, skal du benytte følgende fremgangsmåde:
 
-1. Vælg **ellipsen (…)** for et datasæt.
-2. Vælg **Sikkerhed**.
-   
-   ![Anvend sikkerhedsfilter i begge retninger](media/service-admin-rls/rls-security.png)
+1. Vælg menuen **Flere indstillinger** for et datasæt i Power BI-tjenesten. Denne menu vises, når du peger på navnet på et datasæt, uanset om du vælger det i navigationsmenuen eller på arbejdsområdesiden.
 
-Så kommer du til RLS-siden, hvor du skal føje medlemmer til en rolle, du har oprettet i Power BI Desktop. Kun ejerne af datasættet får vist indstillingen Sikkerhed. Hvis datasættet er i en gruppe, kan kun administratorer af gruppen se sikkerhedsindstillingen. 
+    ![Menuen Flere indstillinger i arbejdsområdet](media/service-admin-rls/dataset-leftnav-more-options.png)
+
+    ![Menuen Flere indstillinger i navigationsmenuen](media/service-admin-rls/dataset-canvas-more-options.png)
+
+1. Vælg **Sikkerhed**.
+
+   ![Vælg sikkerhed i menuen Flere indstillinger](media/service-admin-rls/dataset-more-options-menu.png)
+
+Hvis du vælger Sikkerhed, kommer du til RLS-siden, hvor du skal føje medlemmer til en rolle, du har oprettet i Power BI Desktop. Kun ejerne af datasættet får vist indstillingen Sikkerhed. Hvis datasættet er i en gruppe, kan kun administratorer af gruppen se sikkerhedsindstillingen.
 
 Du kan kun oprette eller redigere roller i Power BI Desktop.
 
@@ -51,7 +56,7 @@ Du kan kun oprette eller redigere roller i Power BI Desktop.
 
 ### <a name="add-members"></a>Tilføj medlemmer
 
-Du kan føje et medlem til rollen ved at skrive mailadressen eller navnet på den bruger, sikkerhedsgruppe eller distributionsliste, du vil tilføje. Du kan ikke tilføje grupper, der er oprettet i Power BI. Du kan tilføje medlemmer, som [ikke er fra organisationen](../guidance/whitepaper-azure-b2b-power-bi.md#data-security-for-external-partners).
+Du kan føje et medlem til rollen ved at skrive mailadressen eller navnet på brugeren eller sikkerhedsgruppen. Du kan ikke tilføje grupper, der er oprettet i Power BI. Du kan tilføje medlemmer, som [ikke er fra organisationen](../guidance/whitepaper-azure-b2b-power-bi.md#data-security-for-external-partners).
 
 ![Tilføj et medlem](media/service-admin-rls/rls-add-member.png)
 
@@ -67,14 +72,14 @@ Du kan fjerne medlemmer ved at vælge X ud for medlemmets navn.
 
 ## <a name="validating-the-role-within-the-power-bi-service"></a>Validering af rollen i Power BI-tjenesten
 
-Du kan bekræfte, at den rolle, du har defineret, fungerer korrekt, ved at teste rollen. 
+Du kan bekræfte, at den rolle, du har defineret, fungerer korrekt, ved at teste rollen.
 
 1. Vælg **Flere indstillinger** (...) ud for rollen.
 2. Vælg **Test data som rolle**
 
 ![Test som rolle](media/service-admin-rls/rls-test-role.png)
 
-Derefter får du vist rapporter, der er tilgængelige for denne rolle. Dashboards vises ikke i denne visning. Du får vist, hvad der anvendes, i den blå bjælke ovenfor.
+Derefter får du vist rapporter, der er tilgængelige for denne rolle. Dashboards vises ikke i denne visning. I sidehovedet vises den rolle, der anvendes.
 
 ![Vises nu som <rolle>](media/service-admin-rls/rls-test-role2.png)
 
@@ -82,7 +87,7 @@ Du kan teste andre roller eller en kombination af roller ved at vælge **Får nu
 
 ![Test andre roller](media/service-admin-rls/rls-test-role3.png)
 
-Du kan vælge at få vist data som en bestemt person, eller du kan vælge en kombination af tilgængelige roller for at bekræfte, om de fungerer. 
+Du kan vælge at få vist data som en bestemt person, eller du kan vælge en kombination af tilgængelige roller for at bekræfte, om de fungerer.
 
 Hvis du vil vende tilbage til normal visning, skal du vælge **Tilbage til sikkerhed på rækkeniveau**.
 
@@ -93,7 +98,7 @@ Hvis du vil vende tilbage til normal visning, skal du vælge **Tilbage til sikke
 Hvis du publicerer din Power BI Desktop-rapport i et arbejdsområde i Power BI-tjenesten, anvendes rollerne for medlemmer, som kun har tilladelse til at få vist indhold. Du skal angive, at medlemmerne kan få vist Power BI-indhold, i indstillingerne for arbejdsområdet.
 
 > [!WARNING]
-> Hvis du har konfigureret arbejdsområdet, så medlemmerne har redigeringstilladelser, anvendes rollerne for sikkerhed på rækkeniveau ikke for dem. Brugerne vil kunne se alle dataene.
+> Hvis du har konfigureret arbejdsområdet, så medlemmerne har redigeringstilladelser, anvendes rollerne for sikkerhed på rækkeniveau ikke for dem. Brugerne kan se alle dataene.
 
 ![Gruppeindstillinger](media/service-admin-rls/rls-group-settings.png)
 
@@ -102,8 +107,6 @@ Hvis du publicerer din Power BI Desktop-rapport i et arbejdsområde i Power BI-t
 [!INCLUDE [include-short-name](../includes/rls-faq.md)]
 
 ## <a name="next-steps"></a>Næste trin
-
-Du kan finde flere oplysninger, der er relateret til denne artikel, i følgende ressourcer:
 
 - [Begræns dataadgang med sikkerhed på rækkeniveau (RLS) for Power BI Desktop](../create-reports/desktop-rls.md)
 - [Sikkerhed på rækkeniveau (RLS) i Power BI Desktop](../guidance/rls-guidance.md)

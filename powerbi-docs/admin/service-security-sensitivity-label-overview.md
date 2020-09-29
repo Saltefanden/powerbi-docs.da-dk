@@ -6,36 +6,50 @@ manager: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 08/10/2020
+ms.date: 08/16/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: 4d719d7df5b982341b6377c41e448267197e769b
-ms.sourcegitcommit: 9e39232cbc28d8b39dfec5496db7ece9837b5e53
+ms.openlocfilehash: 00089c6ba2b2af5a6334fac07fd3991f5201cb44
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "88049228"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90854201"
 ---
 # <a name="sensitivity-labels-in-power-bi"></a>Følsomhedsmærkater i Power BI
 
-I denne artikel beskrives funktionaliteten af [Microsoft Information Protection-følsomhedsmærkater](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide) i Power BI. Du kan finde oplysninger om, hvordan du anvender følsomhedsmærkater til Power BI-rapporter, -dashboards, -datasæt og -dataflows, i [Sådan anvendes følsomhedsmærkater i Power BI](./service-security-apply-data-sensitivity-labels.md). Du kan finde oplysninger om aktivering af følsomhedsmærkater i din lejer under [Aktivér følsomhedsmærkater i Power BI](service-security-enable-data-sensitivity-labels.md).
+I denne artikel beskrives funktionaliteten af Microsoft Information Protection-følsomhedsmærkater i Power BI.
+
+Du kan finde oplysninger om aktivering af følsomhedsmærkater i din lejer, inklusive licenskrav og forudsætninger, under [Aktivér følsomhedsmærkater i Power BI](service-security-enable-data-sensitivity-labels.md).
+
+Du kan finde oplysninger om, hvordan du anvender følsomhedsmærkater til Power BI-rapporter, -dashboards, -datasæt og -dataflows, i [Sådan anvendes følsomhedsmærkater i Power BI](./service-security-apply-data-sensitivity-labels.md).
+
+## <a name="introduction"></a>Introduktion
 
 Microsoft Information Protections følsomhedsmærkater giver brugerne en nem måde at klassificere kritisk indhold i Power BI på uden at gå på kompromis med produktiviteten eller muligheden for at samarbejde.
 
-Følsomhedsmærkater kan kun anvendes på datasæt, rapporter, dashboards og dataflows. Når data eksporteres fra Power BI til Excel-, PowerPoint- eller PDF-filer, anvender Power BI automatisk en følsomhedsmærkat på den eksporterede fil og beskytter den i henhold til indstillingerne for mærkatens filkryptering. På den måde forbliver dine følsomme data beskyttede, uanset hvor de er.
+Følsomhedsmærkater kan kun anvendes på datasæt, rapporter, dashboards og dataflows. Når data, der er forsynet med mærkater, forlader Power BI, enten via eksport til Excel, PowerPoint eller PDF-filer eller via andre understøttede eksportscenarier, f.eks. Analysér i Excel eller pivottabeller i Excel med direkte forbindelse, anvender Power BI automatisk mærkaten på den eksporterede fil og beskytter den i henhold til indstillingerne for mærkatens filkryptering. På den måde forbliver dine følsomme data beskyttede, uanset hvor de er.
 
-Følsomhedsmærkater, der anvendes på Power BI-rapporter, -dashboards, -datasæt og -dataflows, er synlige fra mange forskellige steder i Power BI-tjenesten. Følsomhedsmærkater på rapporter og dashboards er også synlige i Power BI iOS- og Android-mobilapps og i integrerede visualiseringer.
+Følsomhedsmærkater, der anvendes på rapporter, dashboards, datasæt og dataflows, er synlige fra mange forskellige steder i Power BI-tjenesten. Følsomhedsmærkater på rapporter og dashboards er også synlige i Power BI iOS- og Android-mobilapps og i integrerede visualiseringer.
 
 Der er en [målepunktsrapport for beskyttelse](service-security-data-protection-metrics-report.md) i Power BI-administrationsportalen, der giver Power BI-administratorer fuld synlighed over de følsomme data i Power BI-lejeren. Derudover omfatter Power BI-overvågningsloggene oplysninger om følsomhedsmærkater for aktiviteter som f.eks. anvendelse, fjernelse og ændring af mærkater samt om aktiviteter som f.eks. visning af rapporter, dashboards, osv., der giver Power BI og sikkerhedsadministratorer synlighed over forbruget af følsomme data med det formål at overvåge og undersøge samt i forbindelse med sikkerhedsadvarsler.
 
 ## <a name="important-considerations"></a>Vigtige overvejelser
 
-Følsomhedsmærkater påvirker **ikke** adgangen til indhold i Power BI – adgangen til indhold i Power BI styres udelukkende af Power BI-tilladelser. Selvom mærkaterne er synlige, anvendes eventuelle tilknyttede krypteringsindstillinger (konfigureret enten i [Microsoft 365 Security Center](https://security.microsoft.com/) eller [Microsoft 365 Compliance Center](https://compliance.microsoft.com/)) ikke. De anvendes kun på de data, der eksporteres til Excel-, PowerPoint- og PDF-filer.
+Følsomhedsmærkater påvirker **ikke** adgangen til indhold i Power BI – adgangen til indhold i Power BI styres udelukkende af Power BI-tilladelser. Selvom mærkaterne er synlige, anvendes eventuelle tilknyttede krypteringsindstillinger (konfigureret enten i [Microsoft 365 Security Center](https://security.microsoft.com/) eller [Microsoft 365 Compliance Center](https://compliance.microsoft.com/)) ikke. De anvendes kun på data, der forlader Power BI via eksport til Excel-, PowerPoint- eller PDF-filer eller en af de andre understøttede eksportstier.
 
-Følsomhedsmærkater og filkryptering anvendes **ikke** i andre eksportstier end eksport til Excel, PowerPoint og PDF. Power BI-lejeradministratoren kan deaktivere enhver eller alle eksportstier, der ikke understøtter anvendelsen af følsomhedsmærkater og de tilknyttede indstillinger for filkryptering.
+Følsomhedsmærkater og filkryptering anvendes **ikke** for eksportstier, der ikke understøttes. Power BI-lejeradministratoren kan blokere eksport fra eksportstier, der ikke understøttes:
 
 >[!NOTE]
 > Brugere, der har fået adgang til en rapport, bliver tildelt adgang til hele det underliggende datasæt, medmindre [sikkerhed på rækkeniveau](./service-admin-rls.md) begrænser deres adgang. Rapportforfattere kan klassificere og navngive rapporter ved hjælp af følsomhedsmærkater. Hvis følsomhedsmærkaten har beskyttelsesindstillinger, anvender Power BI disse beskyttelsesindstillinger, når rapportdataene eksporteres til Excel-, PowerPoint-eller PDF-filer. Kun autoriserede brugere kan åbne beskyttede filer.
+
+## <a name="supported-export-paths"></a>Understøttede eksportstier
+Anvendelse af følsomhedsmærkater og deres tilknyttede beskyttelse af data, der forlader Power BI, understøttes i øjeblikket for følgende eksportstier:
+* Eksport til Excel-, PowerPoint- og PDF-filer.
+* Analysér i Excel fra Power BI-tjenesten, der udløser hentning af en Excel-fil med en direkte forbindelse til et Power BI-datasæt.
+* Pivottabel i Excel med en direkte forbindelse til et Power BI-datasæt for brugere med M365 E3 og nyere. 
+
+
 
 ## <a name="how-sensitivity-labels-work-in-power-bi"></a>Sådan fungerer følsomhedsmærkater i Power BI
 
@@ -48,9 +62,7 @@ Her er et hurtigt eksempel på, hvordan en følsomhedsmærkat i Power BI kan fun
 
 ![Animeret GIF, der viser følsomhedsmærkaternes anvendelse og fastholdelse](media/service-security-sensitivity-label-overview/ApplyLabelandProtection.gif)
 
-I Microsoft Office-programmer vises en følsomhedsmærkat som et mærke for mailen eller dokumentet ligesom det, der er vist på billedet ovenfor.
-
-Du kan også tildele en klassificering til indhold (f.eks. et klistermærke), der bevares og følger med indholdet, i takt med at det bruges og deles i Power BI. Du kan bruge denne klassificering til at generere forbrugsrapporter og se aktivitetsdata for dit følsomme indhold. På baggrund af disse oplysninger kan du altid senere vælge at anvende beskyttelsesindstillinger.
+De følsomhedsmærkater, du anvender på indhold, bevares og flyttes sammen med indholdet, efterhånden som det bruges og deles i hele Power BI. Du kan bruge denne mærkning til at generere forbrugsrapporter og se aktivitetsdata for dit følsomme indhold.
 
 ## <a name="sensitivity-label-inheritance-upon-creation-of-new-content"></a>Nedarvning af følsomhedsmærkater ved oprettelse af nyt indhold
 
@@ -71,7 +83,7 @@ En bruger, der eksporterer en fil fra Power BI, har tilladelse til at tilgå og 
 
 Følsomhedsmærkater og beskyttelse anvendes ikke, når data eksporteres til .csv- eller .pbix-filer eller andre typer eksportstier.
 
-Anvendelse af en følsomhedsmærkat og beskyttelse af en eksporteret fil føjer ikke indholdsmarkeringer til filen. Men hvis mærkaten er konfigureret til at anvende indholdsmarkeringer, anvendes markeringerne automatisk af Azure Information Protection Unified-navngivningsklienten, når filen åbnes i Office Desktop-apps. Indholdsmærkaterne anvendes ikke automatisk, når du bruger indbygget navngivning til skrivebords-, mobil- eller webapps. Se [Når Office-apps anvender indholdsmarkering og kryptering](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-worldwide#when-office-apps-apply-content-marking-and-encryption) for at få flere oplysninger.
+Anvendelse af en følsomhedsmærkat og beskyttelse af en eksporteret fil føjer ikke indholdsmarkeringer til filen. Men hvis mærkaten er konfigureret til at anvende indholdsmarkeringer, anvendes markeringerne automatisk af Azure Information Protection Unified-navngivningsklienten, når filen åbnes i Office Desktop-apps. Indholdsmærkaterne anvendes ikke automatisk, når du bruger indbygget navngivning til skrivebords-, mobil- eller webapps. Se [Når Office-apps anvender indholdsmarkering og kryptering](/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-worldwide#when-office-apps-apply-content-marking-and-encryption) for at få flere oplysninger.
 
 Eksporten mislykkes, hvis en mærkat ikke kan anvendes, når der eksporteres data til en fil. Hvis du vil kontrollere, om eksporten mislykkedes, fordi mærkaten ikke kunne anvendes, skal du klikke på navnet på rapporten eller dashboardet i midten af titellinjen og se, om der står "Følsomhedsmærkat kan ikke indlæses" på den rulleliste, der åbnes. Dette kan ske som følge af et midlertidigt systemproblem, eller hvis den anvendte mærkat er blevet fjernet eller slettet af sikkerhedsadministratoren.
 
@@ -118,7 +130,7 @@ Følsomhedsmærkater oprettes og administreres enten i [Microsoft 365 Security C
 Hvis du vil have adgang til følsomhedsmærkater i et af disse centre, skal du navigere til **Klassificering > Følsomhedsmærkater**. Disse følsomhedsmærkater kan bruges af flere Microsoft-tjenester, f.eks. Microsoft Azure Information Protection, Office-programmer og Office 365-tjenester.
 
 >[!Important]
-> Hvis din organisation bruger følsomhedsmærkater fra Azure Information Protection, skal du [overføre](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels) dem til en af de tidligere angivne tjenester, før følsomhedsmærkaterne kan bruges i Power BI.
+> Hvis din organisation bruger følsomhedsmærkater fra Azure Information Protection, skal du [overføre](/azure/information-protection/configure-policy-migrate-labels) dem til en af de tidligere angivne tjenester, før følsomhedsmærkaterne kan bruges i Power BI.
 
 ## <a name="limitations"></a>Begrænsninger
 
@@ -127,8 +139,8 @@ Følgende liste indeholder nogle begrænsninger for følsomhedsmærkater i Power
 * Følsomhedsmærkater kan kun anvendes på dashboards, rapporter, datasæt og dataflows. De er i øjeblikket ikke tilgængelige til [sideinddelte rapporter](../paginated-reports/report-builder-power-bi.md) og projektmapper.
 * Følsomhedsmærkater på Power BI-aktiver kan kun ses på listen over arbejdsområder og linjevisninger, Favoritter, Seneste og programvisninger. Mærkater er i øjeblikket ikke synlige i visningen Delt med mig. Bemærk dog, at en mærkat, som er anvendt på et Power BI-aktiv, altid bevares for data, der eksporteres til Excel-, PowerPoint- og PDF-filer, også selvom mærkaten ikke er synlig.
 * Følsomhedsmærkater for data understøttes ikke for skabelonapps. Følsomhedsmærkater, der er angivet af opretteren af skabelonprogrammet, fjernes, når programmet udtrækkes og installeres. Følsomhedsmærkater, der føjes til artefakter i et installeret skabelonprogram af programbrugeren, mistes (nulstilles til ingenting), når programmet opdateres.
-* Power BI understøtter ikke følsomhedsmærkater for beskyttelsestyperne [Videresend ikke](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide#let-users-assign-permissions) og [brugerdefineret](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide#let-users-assign-permissions) og [HYOK](https://docs.microsoft.com/azure/information-protection/configure-adrms-restrictions). Beskyttelsestyperne Videresend ikke og brugerdefineret henviser til de mærkater, der er defineret i [Microsoft 365 Security Center](https://security.microsoft.com/) eller [Microsoft 365 Compliance Center](https://compliance.microsoft.com/).
-* Det anbefales ikke at gøre det muligt for brugerne at anvende overordnede mærkater i Power BI. Hvis der anvendes en overordnet mærkat til indhold, kan eksport af data fra dette indhold til en fil (Excel, PowerPoint og PDF) mislykkes. Se [Undermærkater (grupperingsmærkater)](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide#sublabels-grouping-labels).
+* Power BI understøtter ikke følsomhedsmærkater for beskyttelsestyperne [Videresend ikke](/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide#let-users-assign-permissions) og [brugerdefineret](/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide#let-users-assign-permissions) og [HYOK](/azure/information-protection/configure-adrms-restrictions). Beskyttelsestyperne Videresend ikke og brugerdefineret henviser til de mærkater, der er defineret i [Microsoft 365 Security Center](https://security.microsoft.com/) eller [Microsoft 365 Compliance Center](https://compliance.microsoft.com/).
+* Det anbefales ikke at gøre det muligt for brugere at anvende overordnede mærkater i Power BI (en mærkat anses kun for at være en overordnet mærkat, hvis den har undermærkater). Hvis der anvendes en overordnet mærkat til indhold, kan eksport af data fra dette indhold til en fil (Excel, PowerPoint og PDF) mislykkes. Se [Undermærkater (grupperingsmærkater)](/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide#sublabels-grouping-labels).
 
 ## <a name="next-steps"></a>Næste trin
 

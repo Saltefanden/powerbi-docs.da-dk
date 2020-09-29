@@ -7,15 +7,15 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 03/12/2020
+ms.date: 09/19/2020
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 4c44e7d0ff21f49887a069e0a83686aafecc2f24
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: 600b8d1447d50a1647097d94df9077299f00cccf
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87537268"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90860371"
 ---
 # <a name="printing-from-the-power-bi-service"></a>Udskriv fra Power BI-tjenesten
 
@@ -49,9 +49,9 @@ Eksperimenter med din browsers indstillinger, indtil du har opnået det ønskede
 
 ## <a name="print-a-dashboard"></a>Udskriv et dashboard
 1. Åbn det dashboard, du vil udskrive.
-2. Vælg Eksportér i øverste venstre hjørne, og vælg **Udskriv denne side**.
+2. Vælg **Filer** i øverste venstre hjørne, og vælg **Udskriv denne side**.
    
-    ![Udskrivningsindstilling for dashboard](./media/end-user-print/power-bi-dashboard-print.png)
+    ![Udskrivningsindstilling for dashboard](./media/end-user-print/power-bi-dashboard-print-options.png)
 
 3. Vinduet Udskriv til browseren åbnes. Vælg indstillingerne. Hvis dit dashboard f. eks. er bredere, end det er langt, kan du ændre layoutet til **Liggende**. Vælg **Udskriv**.
    
@@ -62,11 +62,13 @@ Eksperimenter med din browsers indstillinger, indtil du har opnået det ønskede
 
 3. [Åbn feltet i Fokustilstand](end-user-focus.md) ved at holde over det for at få vist **Flere indstillinger** (...), og vælg **Åbn i Fokustilstand** eller ikonet for fokus![ikonet Fokus](./media/end-user-print/power-bi-focus-icon.png).
    
-    ![ellipsemenu](./media/end-user-print/power-bi-menu-options.png)
+    ![ellipsemenu](./media/end-user-print/power-bi-focus-tile.png)
 
 4. Peg på feltet for at få vist menuen Indstillinger.
    
-    ![menu med indstillinger for fuld skærm](./media/end-user-print/menu-options-new.png)
+    ![menu med indstillinger for fuld skærm](./media/end-user-print/power-bi-menu-option.png)
+
+    ![fuldskærmstilstand](./media/end-user-print/power-bi-focus.png)
 
 4. Vælg ikonet Udskriv ![ikonet udskriv](./media/end-user-print/print-icon.png).     
 
@@ -83,9 +85,9 @@ Eksperimenter med din browsers indstillinger, indtil du har opnået det ønskede
 ## <a name="print-a-report-page"></a>Udskriv en rapportside
 Rapporter kan udskrives med én side ad gangen.
 
-1. Åbn rapporten, og vælg **Eksportér** > **Udskriv** for at udskrive den aktuelle rapportside.
+1. Åbn rapporten, og vælg **Filer** > **Udskriv denne side** for at udskrive den aktuelle rapportside.
    
-    ![Power BI-filmenu](./media/end-user-print/power-bi-report-print.png)
+    ![Power BI-filmenu](./media/end-user-print/power-bi-print-report.png)
 2. Vinduet Udskriv til browseren åbnes.
 
 3. Følg udskrivnings trinnene fra **Udskriv et dashboard**ovenfor.
@@ -95,22 +97,25 @@ Rapporter kan udskrives med én side ad gangen.
 ## <a name="print-a-report-visual"></a>Udskriv en rapportvisualisering
 1. [Åbn det visuelle element i fokuseringstilstand](end-user-focus.md) ved at pege på feltet og vælge ikonet Fokus ![Fokusikon](./media/end-user-print/power-bi-focus-icon.png) i øverste højre hjørne.
 
-2. Vælg **Eksportér** > **Udskriv** i øverste venstre hjørne for at udskrive visualiseringen.
 
-    ![Power BI-filmenu](./media/end-user-print/power-bi-report-print.png)
+    ![Open visual in Focus mode](./media/end-user-print/power-bi-visual-focus.png)
+
+2. Vælg **Filer** > **Udskriv denne side** i øverste venstre hjørne for at udskrive visualiseringen.
+
+    ![Skærmbillede af menuen Filer i Power BI](./media/end-user-print/power-bi-visual-print.png)
 
 
 3. Følg udskrivnings trinnene fra **Udskriv et dashboard**ovenfor.
 
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
 
-* Spørgsmål: Jeg kan ikke udskrive alle rapportsider på én gang.    
+* Spørgsmål: Jeg kan ikke udskrive alle rapportsider på en gang.    
 * Svar: Det er korrekt. Rapportsider kan kun udskrives med én side ad gangen.
 * Spørgsmål: Jeg kan ikke udskrive til PDF-fil.    
 * Svar: Du kan kun se denne indstilling, hvis du allerede har konfigureret PDF-driveren i din browser.    
-* Spørgsmål: Dér jeg ser, når jeg vælger **Udskriv**, stemmer ikke overens med det, du viser mig her.    
-* Svar: Skærmbillederne for udskrivning varierer afhængigt af browser og softwareversion.
-* Spørgsmål: Min udskrift er ikke skaleret korrekt.  Mit dashboard kan ikke være på siden. Andre spørgsmål om skalering og retning.    
+* Spørgsmål: Hvad jeg ser, når jeg vælger **Udskriv**, stemmer ikke overens med, hvad du viser mig her.    
+* Svar: Udskriftsskærmbillederne varierer efter browser og softwareversion.
+* Spørgsmål: Min udskrift skaleres ikke korrekt.  Mit dashboard kan ikke være på siden. Andre spørgsmål om skalering og retning.    
 * Svar: Vi kan ikke garantere, at udskriften bliver præcist den samme som i Power BI-tjenesten. Bl.a. skalering, margener, visuelle detaljer, retning og størrelse styres ikke af Power BI. Prøv at justere udskriftsindstillingerne for din browser. Nogle af dem, der er foreslået ovenfor, er sideretning (stående eller liggende), margenstørrelse og skalering. Hvis disse ikke hjælper kan du se i dokumentationen til din browser.      
 * Spørgsmål: Når jeg udskriver fra fuldskærmsvisning, kan jeg ikke se indstillingen Udskriv, når jeg holder markøren over visual'et.   
 * Svar: Gå tilbage til dashboardet eller rapporten i standardvisning, og åbn visual'et i fokustilstand og derefter i fuldskærmsvisning. 

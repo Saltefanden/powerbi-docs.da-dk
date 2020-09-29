@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 06/01/2020
+ms.date: 09/22/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 91b19fd5e357f4ab020b72b259ab5053c36af8f7
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 4405ab8d3e0db949ec825f3eea436183512f862d
+ms.sourcegitcommit: ff981839e805f523748b7e71474acccf7bdcb04f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238424"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91019887"
 ---
 # <a name="publish-datasets-and-reports-from-power-bi-desktop"></a>Udgiv datasæt og rapporter fra Power BI Desktop
 Når du udgiver en Power BI Desktop-fil i Power BI-tjenesten, udgiver du dataene i modellen på dit Power BI-arbejdsområde. Det samme gælder for de rapporter, du har oprettet i visningen **Rapport**. Du kan se et nyt datasæt med det samme navn og alle rapporter i navigatoren til dit arbejdsområde.
@@ -30,8 +30,8 @@ Hvis du udgiver fra Power BI Desktop, har det samme effekt, som hvis du bruger *
    ![Knappen Publicer](media/desktop-upload-desktop-files/pbid_publish_publishbutton.png)
 
 
-2. Log på Power BI.
-3. Vælg en destination.
+2. Log på Power BI, hvis du ikke allerede er logget på.
+3. Vælg en destination. Fra og med udgivelsen i september 2020 kan du søge på listen over tilgængelige arbejdsområder for at finde det arbejdsområde, du vil publicere til. I søgefeltet kan du filtrere dine arbejdsområder. Vælg arbejdsområdet, og klik derefter på knappen **Vælg** for at publicere.
 
    ![Vælg en destination til publicering](media/desktop-upload-desktop-files/pbid_publish_select_destination.png)
 
@@ -58,3 +58,13 @@ Denne proces er ret ligetil, men der er et par ting, du skal vide:
 > [!NOTE]
 > Nogle dataforbindelser i Power BI-rapporter kan indeholde links til data i stedet for at inkludere dataene i det datasæt, der importeres til Power BI-tjenesten. Det kan f.eks. være, at DirectQuery-forbindelser opretter forbindelse til data, mens opdateringer eller interaktioner forekommer, i stedet for at importere selve dataene. Hvis sammenkædede datakilder i din rapport er i det lokale miljø, kan du bruge en gateway til at få adgang til dem fra Power BI. Du kan finde flere oplysninger i [Hvad er en datagateway i det lokale miljø?](../connect-data/service-gateway-onprem.md).
 > 
+
+## <a name="next-steps"></a>Næste trin
+
+Du kan gøre mange forskellige ting med Power BI Desktop. Du kan finde flere oplysninger om funktionerne i følgende ressourcer:
+
+* [Hvad er Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
+* [Oversigt over forespørgsler i Power BI Desktop](../transform-model/desktop-query-overview.md)
+* [Datatyper i Power BI Desktop](../connect-data/desktop-data-types.md)
+* [Selvstudium: Form og kombiner data i Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
+* [Almindelige forespørgselsopgaver i Power BI Desktop](../transform-model/desktop-common-query-tasks.md)

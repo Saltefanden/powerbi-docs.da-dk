@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7b5a935418aacb8de15ea6e7e942f2de440ecec1
-ms.sourcegitcommit: 92b033ee7a6e36808371b247b7b41536cee6c2f6
+ms.openlocfilehash: 8e8411ea29436a5ee19802d2a970b760062fe59e
+ms.sourcegitcommit: cb606d3ae95300683caf1853e229d8981302a8e2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "90008687"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90763982"
 ---
 # <a name="types-of-insights-supported-by-power-bi"></a>Indsigtstyper, der understøttes af Power BI
 
@@ -77,7 +77,7 @@ Finder periodiske mønstre i tidsseriedata, f.eks. ugentlige, månedlige eller �
 ![Eksempel på sæsonudsving](./media/end-user-insight-types/pbi-auto-insight-type-seasonality-new.png)
 
 ### <a name="steady-share"></a>Konstant deling
-Fremhæver tilfælde, hvor der er en overordnet-underordnet-korrelation mellem andelen af en underordnet værdi i forhold til den samlede værdi af den overordnede på tværs af en kontinuerlig variabel. Indsigten med den konstante deling gælder for konteksten af en måling, en dimension og en anden dato-/klokkeslætsdimension. Denne indsigt udløses, når en bestemt dimensionsværdi, f.eks. "det nordøstlige område", har en konstant procentdel af det samlede salg på tværs af denne dato-/klokkeslætsdimension.
+Fremhæver tilfælde, hvor der er en overordnet-underordnet-korrelation mellem andelen af en underordnet værdi i forhold til den samlede værdi af den overordnede på tværs af en kontinuerlig variabel. Indsigten med den konstante deling gælder for konteksten af en måling, en dimension og en anden dato-/klokkeslætsdimension. Denne indsigt udløses, når en bestemt dimensionsværdi, f.eks. "det østlige område", har en konstant procentdel af det samlede salg på tværs af denne dato-/klokkeslætsdimension.
 
 Indsigten med den konstante deling ligner den lave varians, da de begge relaterer til den manglende varians for en værdi på tværs af tiden. Indsigten med den konstante deling måler dog den manglende varians for **den overordnede procentdel** på tværs af tiden, mens indsigten med lav varians måler den manglende varians for de absolutte målingsværdier på tværs af en dimension.
 

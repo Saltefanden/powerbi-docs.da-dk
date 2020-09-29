@@ -6,21 +6,26 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/12/2020
+ms.date: 09/22/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 4282b4fc5d59e2ff5e0def353ad444546dcf5f43
-ms.sourcegitcommit: 92b033ee7a6e36808371b247b7b41536cee6c2f6
+ms.openlocfilehash: 2268cb86ec60e2b461c66cca6034fd47a30c2e38
+ms.sourcegitcommit: ff981839e805f523748b7e71474acccf7bdcb04f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "90008508"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91019969"
 ---
 # <a name="whats-new-in-power-bi-desktop"></a>Nyheder i Power BI Desktop
 
-## <a name="august-2020-update-2844610"></a>August 2020-opdatering (2.84.461.0)
+## <a name="september-2020-update-2852840"></a>Opdatering i september 2020 (2.85.284.0)
 
-Vores Power BI Desktop-opdateringer i august fejrer nye funktioner og egenskaber, der er fyrværkeri, solskinsudflugter og fælles grillaftener værdige. 
+Vores opdateringer til Power BI Desktop fra september er cool og knivskarpe på samme måde som efterårets kommen, og bladene der skifter farve. 
+
+Desuden omfatter de månedlige blog- og videoopdateringer til Power BI Desktop nu også nye opdateringer til Power BI – Mobil og Power BI-tjenesten. I denne artikel beskrives opdateringerne til Power BI Desktop. Hvis du vil vide mere om opdateringer til mobilenheder og Power BI-tjenesten, kan du se de tilhørende artikler om nyheder:
+
+* [Nyheder i Power BI-tjenesten](service-whats-new.md)
+* [Nyheder i mobilappsene til Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
 
 Få den nyeste version af Power BI Desktop from [Download Center](https://www.microsoft.com/download/details.aspx?id=58494). Hvis du kører Windows 10, kan du også få Power BI Desktop fra [Microsoft Store](https://aka.ms/pbidesktopstore). De månedlige versioner er de samme, selvom versionsnummeret kan variere mellem de to, uanset hvilken måde du installerer Power BI Desktop på. Du kan finde flere oplysninger om, hvordan du downloader og installerer Power BI Desktop, under [Få Power BI Desktop](desktop-get-the-desktop.md). 
 
@@ -34,48 +39,56 @@ Linkene ud for hver funktion på opdateringslisten i Power BI Desktop fortolkes 
 * \[artikel\]: Til nogle funktioner findes der en artikel, som indeholder flere detaljer.
 * De resterende funktioner er selvforklarende og er ikke tilknyttet en artikel eller video.
 
-Du kan også se hele [videoen om den månedlige opdatering til Power BI Desktop](#power-bi-desktop-monthly-update-video).
+Du kan også se hele [videoen om den månedlige opdatering til Power BI](#power-bi-desktop-monthly-update-video).
 
 > [!IMPORTANT]
 > Power BI Desktop understøttes ikke længere på Windows 7 efter den 31. januar 2021. Efter denne dato understøttes Power BI Desktop i Windows 8-versioner eller nyere versioner af Windows, men kun for den nyeste version af Power BI Desktop. 
 
 Følgende opdateringer er nye i Power BI Desktop i denne måned:
 
+https://www.youtube.com/watch?v=gPGy18Yo0Go https://youtu.be/TPsV7N4bZZg?t=15
 
-### <a name="reporting"></a>Rapportering
-* Support til perspektiver for Tilpas visualiseringer (prøveversion) [[video]](https://youtu.be/TPsV7N4bZZg?t=15) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_Perspectives) 
-* Rektangulær frihåndsmarkering for datapunkter (prøveversion) [[video]](https://youtu.be/TPsV7N4bZZg?t=448) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_Data_point) 
-* Understøttelse af dynamisk formatering er føjet til flere visualiseringer [[video]](https://youtu.be/TPsV7N4bZZg?t=715) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_dynamic_formatting) 
 
+https://www.youtube.com/watch?v=gPGy18Yo0Go
+
+https://www.youtube.com/watch?v=TPsV7N4bZZg?t=448
 
 ### <a name="analytics"></a>Analyse
-* DirectQuery-understøttelse for Spørgsmål og svar [[video]](https://youtu.be/TPsV7N4bZZg?t=926) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_Direct_Query) 
+* Intelligente narrativer (prøveversion) [[video]](https://www.youtube.com/watch?v=gPGy18Yo0Go?t=51)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#_Smart_narratives_(preview)) 
+* Spørgsmål og svar understøtter nu aritmetiske handlinger [[video]](https://www.youtube.com/watch?v=gPGy18Yo0Go?t=333)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#QA_arithmetic) 
+
+
+### <a name="reporting"></a>Rapportering
+* Rektangel med datapunkter til valg af yderligere diagrammer [[video]](https://www.youtube.com/watch?v=gPGy18Yo0Go?t=370)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Data_point_rectangle_select) 
+* Der er tilføjet en generel visuel indstilling til at vedligeholde lagrækkefølgen [[video]](https://www.youtube.com/watch?v=gPGy18Yo0Go?t=405)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Maintain_layer_order) 
+* Søg efter et arbejdsområde under publicering [[video]](https://www.youtube.com/watch?v=gPGy18Yo0Go?t=615)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Search_workspace) 
+* Det samlede antal mærkater for stablede visualiseringer [[video]](https://www.youtube.com/watch?v=gPGy18Yo0Go?t=630)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Total_labels_stacked) 
+* Forbedringer af mobiloprettelse [[video]](https://www.youtube.com/watch?v=gPGy18Yo0Go?t=786)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Mobile_authoring_enhancements) 
+
+
+### <a name="modeling"></a>Modellering
+* Forbedrede metadata for datasæt er nu generelt tilgængelige [[video]](https://www.youtube.com/watch?v=gPGy18Yo0Go?t=1200)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Enhanced_Dataset_Metadata)
+* Forbedringer af ydeevne til sammenlægningsudtryk, der involverer kolonner af datatypen Currency [[video]](https://www.youtube.com/watch?v=gPGy18Yo0Go?t=1220)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Performance_improvements_to_agg)
+
+
+### <a name="data-connectivity"></a>Dataforbindelse
+* Azure Databricks [[video]](https://www.youtube.com/watch?v=gPGy18Yo0Go?t=1342)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Azure_Databricks)
+* MariaDB [[video]](https://www.youtube.com/watch?v=gPGy18Yo0Go?t=1365)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#MariaDB)
+* Hexagon PPM Smart API [[video]](https://www.youtube.com/watch?v=gPGy18Yo0Go?t=1386)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Hexagon_PPM_Smart)
+* Andre opdateringer til dataforbindelser [[video]](https://www.youtube.com/watch?v=gPGy18Yo0Go?t=1411)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Other_data_connectivity)
 
 
 ### <a name="visuals"></a>Visuelle elementer
-* Flere nye visualiseringer fra forskellige virksomheder [[video]](https://youtu.be/TPsV7N4bZZg?t=956) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_Visualizations)
-* Opdateringer til ArcGIS-kort [[video]](https://youtu.be/TPsV7N4bZZg?t=1096) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_ArcGIS)
-* Udvidede administratormuligheder for AppSource-visualiseringer [[video]](https://youtu.be/TPsV7N4bZZg?t=1135) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_Admin)
+* Nye visualiseringer fra forskellige udbydere [[video]](https://www.youtube.com/watch?v=gPGy18Yo0Go?t=1228)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Visualizations)
 
 
 ### <a name="template-apps"></a>Skabelonapps
-* Agile CRM Analytics til Dynamics 365 [[video]](https://youtu.be/TPsV7N4bZZg?t=1300) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_CRM)
+* Et dashboard med flere kanaler [[video]](https://www.youtube.com/watch?v=gPGy18Yo0Go?t=1290)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Multichannel_Attribution_Dashboard) 
+* Dashboard til arbejdsområdeanalyser [[video]](https://www.youtube.com/watch?v=gPGy18Yo0Go?t=1290)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Workspace_Analytics_Dashboard) 
 
 
-### <a name="data-preparation"></a>Dataforberedelse
-* Text/CSV efter eksempel (prøveversion) [[video]](https://youtu.be/TPsV7N4bZZg?t=1335) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_text_csv) 
+Du kan finde detaljerede oplysninger om hver af disse nye funktioner i [oversigten over funktioner i Power BI Desktop](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/).
 
-### <a name="data-connectivity"></a>Dataforbindelse
-* Cherwell-connector [[video]](https://youtu.be/TPsV7N4bZZg?t=1392) [[artikel]](../create-reports/desktop-external-tools.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_Cherwell_connector) 
-
-* Automation Anywhere-connector [[video]](https://youtu.be/TPsV7N4bZZg?t=1414) [[artikel]](../create-reports/desktop-external-tools.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_Auto_connector) 
-
-* Acterys-connector [[video]](https://youtu.be/TPsV7N4bZZg?t=1434) [[artikel]](../create-reports/desktop-external-tools.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_Acterys_connector) 
-
-
-Du kan finde detaljerede oplysninger om hver af disse nye funktioner i [oversigten over funktioner i Power BI Desktop](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/).
-
-Tjek [nyhederne i Power BI-tjenesten](service-whats-new.md) og [nyhederne i mobilappsene til Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 > [!NOTE]
 > Se de [datakilder, der er tilgængelige for Power BI Desktop](../connect-data/desktop-data-sources.md). Vores liste vokser hele tiden, så vend tilbage med jævne mellemrum.
@@ -91,7 +104,7 @@ I følgende video beskrives hver af disse opdateringer. Du kan også se videoen 
 Kan du lide at lære om Power BI gennem videoer og andet aktiverende indhold? Se følgende samling af videokilder og indhold:
 
 -   [Power BI-kanal](https://www.youtube.com/user/mspowerbi): en samling af Power BI-videoer på YouTube.
--   [Microsoft Learn for Power BI](https://docs.microsoft.com/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link): en række fortløbende lærerige rundvisninger i Power BI i små bidder.
+-   [Microsoft Learn for Power BI](/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link): en række fortløbende lærerige rundvisninger i Power BI i små bidder.
 
 ## <a name="updates-for-previous-months"></a>Forrige måneders opdateringer
 

@@ -6,15 +6,16 @@ ms.author: kesharab
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.date: 05/06/2020
-ms.openlocfilehash: 8ce11c0ac6a5098c49f4d8aba0b0a09f28be975b
-ms.sourcegitcommit: 10c5b6cd5e7070f96de8a9f1d9b95f3d242ac7f2
+ms.custom: contperfq1
+ms.date: 09/15/2020
+ms.openlocfilehash: 8f486d1f872aec8eaec096bf01d5d36a314c5cef
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86557250"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90855750"
 ---
-# <a name="get-started-with-deployment-pipelines-preview"></a>Kom i gang med udrulningspipelines (prøveversion)
+# <a name="get-started-with-deployment-pipelines"></a>Kom i gang med udrulningspipelines
 
 I denne artikel gennemgås de grundlæggende indstillinger, der kræves for at bruge udrulningspipelines.
 
@@ -35,13 +36,31 @@ Hvis følgende betingelser er opfyldt, kan du få adgang til udrulningspipelines
 
 ## <a name="step-1---create-a-deployment-pipeline"></a>1\. trin – opret en udrulningspipeline
 
-Benyt følgende fremgangsmåde for at oprette en udrulningspipeline:
-
-1. I navigationsruden i Power BI-tjenesten skal du vælge **Udrulningspipelines** og klikke på **Opret pipeline**.
-
-2. I dialogboksen *Opret en udrulningspipeline* skal du angive et navn og en beskrivelse for pipelinen og klikke på **Opret**.
+Du kan oprette en pipeline fra fanen Udrulningspipelines eller fra et arbejdsområde.
 
 Når pipelinen er oprettet, kan du dele den med andre brugere eller slette den. Når du deler en pipeline med andre, får de brugere, du deler pipelinen med, [adgang til pipelinen](deployment-pipelines-process.md#user-with-pipeline-access). Pipelineadgang giver brugerne mulighed for at se, dele, redigere og slette pipelinen.
+
+### <a name="create-a-pipeline-from-the-deployment-pipelines-tab"></a>Opret en pipeline fra fanen Udrulningspipelines
+
+Du opretter en pipeline fra fanen Udrulningspipelines ved at benytte følgende fremgangsmåde:
+
+1. I navigationsruden i Power BI-tjenesten skal du vælge **Udrulningspipelines** og derefter vælge **Opret pipeline**.
+
+2. I dialogboksen *Opret en udrulningspipeline* skal du angive et navn og en beskrivelse for pipelinen og vælge **Opret**.
+
+### <a name="create-a-pipeline-from-a-workspace"></a>Opret en pipeline fra et arbejdsområde
+
+Du kan oprette en pipeline ud fra et eksisterende arbejdsområde, forudsat at du er administrator af en [ny arbejdsområdeoplevelse](../collaborate-share/service-create-the-new-workspaces.md).
+
+1. Vælg **Opret en pipeline** i arbejdsområdet.
+
+    > [!div class="mx-imgBorder"]
+    > ![Et skærmbillede af knappen Opret en pipeline i et arbejdsområde.](media/deployment-pipelines-get-started/workspace-deploy.png)
+
+2. I dialogboksen *Opret en udrulningspipeline* skal du angive et navn og en beskrivelse for pipelinen og vælge **Opret**.
+
+>[!NOTE]
+>Hvis arbejdsområdet ikke er tildelt til din organisations Premium-kapacitet, får du vist en meddelelse om, [at tildele det til en kapacitet](../admin/service-admin-premium-manage.md#assign-a-workspace-to-a-capacity).  
 
 ## <a name="step-2---assign-a-workspace-to-a-deployment-pipeline"></a>2\. trin – tildel et arbejdsområde til en udrulningspipeline
 
@@ -51,9 +70,12 @@ Du kan tildele ét arbejdsområde til en udrulningspipeline. Udrulningspipelines
 
 Følg disse trin for at tildele et arbejdsområde i en udrulningspipeline:
 
-1. I den udrulningspipeline, du lige har oprettet, skal du klikke på **Tildel et arbejdsområde**.
+1. I den udrulningspipeline, du lige har oprettet, skal du vælge **Tildel et arbejdsområde**.
 
 2. Vælg det arbejdsområde, du vil tildele til pipelinen, i rullemenuen *Vælg arbejdsområde*.
+
+    >[!NOTE]
+    >Hvis du opretter en pipeline fra et arbejdsområde, kan du springe denne fase over, da arbejdsområdet allerede er valgt.
 
 3. Vælg den fase, du vil tildele arbejdsområdet til.
 
@@ -82,13 +104,13 @@ Når udrulningen er fuldført, skal du opdatere datasættet. Du kan finde flere 
 
 ### <a name="deploying-all-content"></a>Udrulning af alt indhold
 
-Vælg den fase, der skal udrulles fra, og klik på udrulningsknappen. Installationsprocessen opretter et duplikeret arbejdsområde i destinationsfasen. Dette arbejdsområde indeholder alt det indhold, der findes i den aktuelle fase.
+Vælg den fase, der skal udrulles fra, og vælg derefter udrulningsknappen. Installationsprocessen opretter et duplikeret arbejdsområde i destinationsfasen. Dette arbejdsområde indeholder alt det indhold, der findes i den aktuelle fase.
 
 [![Et skærmbillede, der viser udrulningsknappen for udviklings- og testfaserne i en udrulningspipeline.](media/deployment-pipelines-get-started/deploy.png)](media/deployment-pipelines-get-started/deploy.png#lightbox)
 
 ### <a name="selective-deployment"></a>Selektiv udrulning
 
-Hvis du kun vil udrulle bestemte elementer, skal du klikke på linket **Vis mere** og vælge de elementer, du vil udrulle. Når du klikker på udrulningsknappen, er det kun de valgte elementer, der udrulles til den næste fase.
+Hvis du kun vil udrulle bestemte elementer, skal du vælge linket **Vis mere** og derefter vælge de elementer, du vil udrulle. Når du klikker på udrulningsknappen, er det kun de valgte elementer, der udrulles til den næste fase.
 
 Da dashboards, rapporter og datasæt er relateret og har afhængigheder, kan du bruge knappen Vælg relateret til at kontrollere alle de elementer, som disse elementer er afhængige af. Hvis du f.eks. vil udrulle en rapport til næste fase, markeres det datasæt, som rapporten er forbundet til, når du klikker på knappen Vælg relateret, så de begge vil blive udrullet på én gang, og rapporten ikke bliver brudt.
 
@@ -119,7 +141,7 @@ Regler for datasæt er defineret for datakilder og parametre i hvert datasæt. D
 
 ### <a name="create-a-dataset-rule"></a>Opret en datasætregel
 
-1. I den pipelinefase, du vil oprette en datasætregel for, skal du klikke på **Udrulningsindstillinger**.
+1. I den pipelinefase, du vil oprette en datasætregel for, skal du vælge **Udrulningsindstillinger**.
 
     ![Et skærmbillede af knappen Indstillinger for installation, der er placeret øverst til højre i hvert trin i udrulningsspipelinen.](media/deployment-pipelines-get-started/deployment-settings.png)
 
@@ -127,7 +149,7 @@ Regler for datasæt er defineret for datakilder og parametre i hvert datasæt. D
 
     [![Et skærmbillede, der viser, hvordan du vælger et datasæt til oprettelse af en datasætregel.](media/deployment-pipelines-get-started/dataset-rules.png)](media/deployment-pipelines-get-started/dataset-rules.png#lightbox)
 
-3. Vælg den type regel, du vil oprette, udvid listen, og klik på **Tilføj regel**.
+3. Vælg den type regel, du vil oprette, udvid listen, og vælg derefter **Tilføj regel**.
 
      [![Et skærmbillede, der viser, at der bliver valgt en datakilderegel og klikket på indstillingen Tilføj regel.](media/deployment-pipelines-get-started/add-rule.png)](media/deployment-pipelines-get-started/add-rule.png#lightbox)
 
@@ -139,7 +161,7 @@ Der er to typer regler, som du kan oprette:
 
     1. Vælg på en liste.
 
-    2. Klik på **Andet**, og tilføj den nye datakilde manuelt. Du kan kun skifte til en datakilde fra den samme type.
+    2. Vælg **Andet**, og tilføj den nye datakilde manuelt. Du kan kun skifte til en datakilde fra den samme type.
 
 * **Parameterregler** – vælg en parameter på listen over parametre. Den aktuelle værdi vises. Rediger værdien til den værdi, der skal træde i kraft efter hver udrulning.
 
@@ -153,7 +175,7 @@ Der er to typer regler, som du kan oprette:
 
 * Hvis den datakilde eller de parametre, der er defineret i en regel, ændres eller fjernes fra kildedatasættet, er reglen ikke gyldig, og udrulningen vil mislykkes.
 
-* Der kan ikke defineres parameterregler for parametre af typen *Any* eller *Binary*. Du kan finde flere oplysninger under [begrænsninger for opdateringsparametre til datasæt](https://docs.microsoft.com/rest/api/power-bi/datasets/updateparameters).
+* Der kan ikke defineres parameterregler for parametre af typen *Any* eller *Binary*. Du kan finde flere oplysninger under [begrænsninger for opdateringsparametre til datasæt](/rest/api/power-bi/datasets/updateparameters).
 
 * Datakilderegler kan kun defineres for følgende datakilder:
     * Azure Analysis Services
@@ -172,7 +194,7 @@ Der er to typer regler, som du kan oprette:
 
 Når du har indhold i en pipelinefase, kan du udrulle det til næste fase. Udrulning af indhold til en anden fase finder som regel sted, når du har udført nogle handlinger i pipelinen. Hvis du f.eks. har foretaget udviklingsændringer af dit indhold i udviklingsfasen eller testet dit indhold i testfasen. En typisk arbejdsproces for flytning af indhold fra fase til fase er fra udvikling til test og derefter fra test til produktion. Du kan få mere at vide om denne proces i afsnittet om [udrulning af indhold til et eksisterende arbejdsområde](deployment-pipelines-process.md#deploy-content-to-an-existing-workspace).
 
-Hvis du vil udrulle indhold til næste trin i udrulningspipelinen, skal du klikke på knappen Udrul nederst i fasen.
+Hvis du vil udrulle indhold til næste trin i udrulningspipelinen, skal du vælge knappen Udrul nederst i fasen.
 
 Når du gennemgår kortene for test- og produktionsfasen, kan du se det seneste udrulningstidspunkt. Dette angiver, hvornår indholdet senest blev udrullet i fasen.
 

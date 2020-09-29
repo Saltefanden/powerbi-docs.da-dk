@@ -7,15 +7,15 @@ ms.custom: contperfq4
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 07/01/2020
+ms.date: 09/17/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1153b20e77958bbecce9284add3ae7eab21cd47d
-ms.sourcegitcommit: 1aaa742c239a3119cdaad698be5a7553b68801fa
+ms.openlocfilehash: 841b8bb72b7b2a13c833fd313027b38b57511af3
+ms.sourcegitcommit: cb606d3ae95300683caf1853e229d8981302a8e2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "89040283"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90764281"
 ---
 # <a name="export-reports-to-powerpoint"></a>Eksportér rapporter til PowerPoint
 
@@ -44,13 +44,13 @@ Når den rapport, du vil eksportere til PowerPoint, vises på lærredet, skal du
 
 ![Vælg Eksportér på menulinjen](media/end-user-powerpoint/power-bi-export.png)
 
-Der vises et pop op-vindue, hvor du har mulighed for at vælge **Aktuelle værdier** eller **Standardværdier**. Med **Aktuelle værdier** eksporteres rapporten i den aktuelle tilstand, hvilket omfatter de aktive ændringer, du har foretaget af udsnits- og filterværdier.  De fleste brugere vælger denne indstilling. Hvis du har rullet, inkluderes tilstanden for visualiseringen ikke i de **aktuelle værdier**, men i stedet eksporteres den øverste del af dataene. Alternativt kan du vælge **Standardværdier**, hvor rapporten eksporteres i sin oprindelige tilstand, som *designeren* har delt den, og hvor ændringer, du har foretaget af den oprindelige tilstand, ikke afspejles.
+Der vises et pop op-vindue, hvor du har mulighed for at vælge **Aktuelle værdier** eller **Standardværdier**. Med **Aktuelle værdier** eksporteres rapporten i den aktuelle tilstand, hvilket omfatter de aktive ændringer, du har foretaget af udsnits- og filterværdier.  De fleste brugere vælger denne indstilling. Hvis du har rullet, inkluderes tilstanden for visualiseringen ikke i de **aktuelle værdier**, men i stedet eksporteres den øverste del af dataene. Du kan også vælge **Standardværdier**, hvor rapporten eksporteres i sin oprindelige tilstand, som *designeren* har delt den, og hvor ændringer, du har foretaget af den oprindelige tilstand, ikke afspejles.
 
 ![Vælg det, der skal eksporteres](media/end-user-powerpoint/power-bi-current-values.png)
  
-Derudover er der et afkrydsningsfelt, hvor du kan markere, om du vil eksportere skjulte faner i en rapport. Markér afkrydsningsfeltet, hvis du kun vil eksportere de rapportfaner, der er synlige for dig i browseren. Hvis du foretrækker at inkludere alle skjulte faner i din eksport, kan du undlade at markere afkrydsningsfeltet. Hvis afkrydsningsfeltet er nedtonet, er der ingen skjulte faner i rapporten. Et eksempel på en skjult fane er en fane med værktøjstip. [Brugerdefinerede værktøjstip](../create-reports/desktop-tooltips.md) oprettes af rapport*designere* og vises ikke som rapportfaner i Power BI-tjenesten for *forbrugerne*. 
+Derudover er der et afkrydsningsfelt, hvor du kan markere, om du vil eksportere skjulte faner i en rapport. Markér afkrydsningsfeltet, hvis du kun vil eksportere de rapportfaner, der er synlige for dig i browseren. Hvis du foretrækker at inkludere alle skjulte faner i din eksport, kan du undlade at markere afkrydsningsfeltet. Hvis afkrydsningsfeltet er nedtonet, er der ingen skjulte faner i rapporten. Et eksempel på en skjult fane er en fane med værktøjstip. [Brugerdefinerede værktøjstip](../create-reports/desktop-tooltips.md) oprettes af *rapportdesignere* og vises ikke som rapportfaner i Power BI-tjenesten for *forretningsbrugerne*. 
 
-Du kan også vælge kun at eksportere den aktuelle side, du får vist i en rapport, ved at markere indstillingen "Eksportér kun den aktuelle side".  Indstillingen er ikke markeret som standard, så alle sider i rapporten eksporteres som udgangspunkt.
+Du kan også vælge kun at eksportere den aktuelle side, du får vist i en rapport, ved at markere indstillingen **Eksportér kun den aktuelle side**.  Indstillingen er ikke markeret som standard, så alle sider i rapporten eksporteres som udgangspunkt.
 
 Når du har foretaget dine valg, skal du vælge **Eksportér** for at fortsætte. Du får vist et meddelelsesbanner i øverste højre hjørne af Power BI-tjenestens browservindue, hvor der står, at rapporten eksporteres til PowerPoint. 
 
@@ -76,7 +76,7 @@ Når du åbner den PowerPoint-fil, som Power BI har eksporteret, kan du finde no
 
 
 3. Hver rapportside er en separat slide, sådan som det er vist i navigationsruden. 
-4. Din publicerede rapport er gengivet på det sprog, der er angivet under dine Power BI-indstillinger, og ellers i henhold til indstillingen for landestandard i din browser. Hvis du vil se eller angive dine sprogindstillinger, skal du vælge tandhjulsikonet ![Tandhjulsikon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Indstillinger** > **Generelt** > **Sprog**. Du kan finde oplysninger om landestandard i [Understøttede sprog og lande eller områder til Power BI](../fundamentals/supported-languages-countries-regions.md).
+4. Din publicerede rapport er gengivet på det sprog, der er angivet under dine Power BI-indstillinger, og ellers i henhold til indstillingen for landestandard i din browser. Hvis du vil se eller angive dine sprogindstillinger i browseren, skal du vælge tandhjulsikonet ![Tandhjulsikon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Indstillinger** > **Generelt** > **Sprog**. Du kan finde oplysninger om landestandard i [Understøttede sprog og lande eller områder til Power BI](../fundamentals/supported-languages-countries-regions.md).
 
 
 Når du får vist en bestemt slide, kan du se, at hver rapportside er et uafhængigt billede. Det er ikke muligt at rulle i PowerPoint, da hvert enkelt dias er et statisk billede.
@@ -110,8 +110,8 @@ Der er nogle få overvejelser og begrænsninger, du skal huske på, når du arbe
     - Rapporter, som det tager mere end en time at behandle. 
     - Rapportsider, som det tager mere end seks minutter at indlæse. 
 
-* Hvis menuelementet **Eksportér til PowerPoint** ikke er tilgængeligt i Power BI-tjenesten, er det sandsynligvis fordi, din lejeradministrator har deaktiveret funktionen. Kontakt din lejeradministrator for at få flere oplysninger.
-* I Power BI-tjenesten anvendes din Power BI-sprogindstilling for PowerPoint-eksporten. Hvis du vil se eller angive dine sprogindstillinger, skal du vælge tandhjulsikonet ![Tandhjulsikon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Indstillinger** > **Generelt** > **Sprog**.
+* Hvis menuelementet **Eksportér til PowerPoint** ikke er tilgængeligt i Power BI-tjenesten, er det sandsynligvis fordi, din lejeradministrator eller rapportejeren har deaktiveret funktionen. Kontakt din lejeradministrator eller ejeren for at få flere oplysninger.
+* I Power BI-tjenesten anvendes din Power BI-sprogindstilling for PowerPoint-eksporten. Hvis du vil se eller angive dine sprogindstillinger, skal du i din browser vælge tandhjulsikonet ![Tandhjulsikon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Indstillinger** > **Generelt** > **Sprog**.
 
 
 

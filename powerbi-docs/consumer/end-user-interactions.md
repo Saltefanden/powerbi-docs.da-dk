@@ -6,15 +6,15 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 03/11/2020
+ms.date: 09/11/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: ea519b4f120bb643e88d29fba79a5ca464030797
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: 9124322dbf7656b05c4cd174207e074cd4f807fe
+ms.sourcegitcommit: cb606d3ae95300683caf1853e229d8981302a8e2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87537360"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90763959"
 ---
 # <a name="how-visuals-cross-filter-each-other-in-a-power-bi-report"></a>Sådan krydsfiltrerer visualiseringer hinanden i en Power BI-rapport
 
@@ -52,7 +52,7 @@ Lad os definere disser begreber, i takt med at vi kigger på rapportsiderne nede
     
 - Filtre på visualiseringsniveau bevares, når andre visualiseringer på rapportsiden krydsfiltreres og krydsfremhæves. Så hvis du eller rapportdesigneren har anvendt filtre på visualiseringsniveau i Visualisering A, og du bruger Visualisering A til at interagere med Visualisering B, så anvendes filtrene på visualiseringsniveau fra Visualisering A på Visualisering B.
 
-    ![Rapportside efter segmentet Moderation i kransediagrammet er valgt](media/end-user-interactions/power-bi-visual-filters.png)
+    ![Rapportside, der viser filtre, der allerede er angivet](media/end-user-interactions/power-bi-visual-filters.png)
 
 ## <a name="next-steps"></a>Næste trin
 [Sådan bruger du rapportfiltre](../consumer/end-user-report-filter.md)

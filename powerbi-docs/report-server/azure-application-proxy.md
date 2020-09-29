@@ -8,16 +8,16 @@ ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 07/28/2020
 ms.author: maggies
-ms.openlocfilehash: 1a9fbfc5d764a9dbda75bd60e0efb6da55efd202
-ms.sourcegitcommit: a254f6e2453656f6783690669be8e881934e15ac
+ms.openlocfilehash: 53f8a0a2d634ebcbd0023f560f8ee35e629d4d09
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87364071"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861285"
 ---
 # <a name="configure-power-bi-report-server-with-azure-application-proxy"></a>Konfigurer en Power BI-rapportserver med Azure-proxyprogram
 
-I denne artikel gennemgår vi, hvordan du bruger proxyprogram til Azure Active Directory til at oprette forbindelse til Power BI-rapportserver og SSRS 2016 (SQL Server Reporting Services) og nyere. Brugere, der ikke er i nærheden af virksomhedens netværk, kan ved hjælp af denne integration få adgang til deres Power BI-rapportserver og Reporting Services-rapporter fra deres klientbrowsere og være beskyttet af AD (Azure Active Directory). Du kan finde flere oplysninger om fjernadgang til programmer i det lokale miljø under [Proxyprogram til Azure Active Directory](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
+I denne artikel gennemgår vi, hvordan du bruger proxyprogram til Azure Active Directory til at oprette forbindelse til Power BI-rapportserver og SSRS 2016 (SQL Server Reporting Services) og nyere. Brugere, der ikke er i nærheden af virksomhedens netværk, kan ved hjælp af denne integration få adgang til deres Power BI-rapportserver og Reporting Services-rapporter fra deres klientbrowsere og være beskyttet af AD (Azure Active Directory). Du kan finde flere oplysninger om fjernadgang til programmer i det lokale miljø under [Proxyprogram til Azure Active Directory](/azure/active-directory/manage-apps/application-proxy).
 
 ## <a name="environment-details"></a>Oplysninger om miljø
 
@@ -125,7 +125,7 @@ I disse trin kan du få hjælp til at konfigurere Power BI-rapportserver til at 
 
 ## <a name="configure-azure-application-proxy-connector"></a>Konfigurer proxyprogramforbindelse til Azure
 
-Se artiklen for at få oplysninger om[konfigurationer, der er relateret til proxyprogramforbindelsen](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#add-an-on-premises-app-to-azure-ad)
+Se artiklen for at få oplysninger om[konfigurationer, der er relateret til proxyprogramforbindelsen](/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#add-an-on-premises-app-to-azure-ad)
 
 Vi har installeret proxyprogramforbindelsen på Power BI-rapportserver, men du kan konfigurere den på en separat server og sørge for, at delegering er konfigureret korrekt.
 
@@ -150,14 +150,14 @@ Hvis du vil konfigurere KCD, skal du gentage følgende trin for hver forbindelse
 
 Nu er du parat til at konfigurere proxyprogrammet til Azure AD.
 
-Publicer Power BI-rapportserver via proxyprogrammet med følgende indstillinger. Du kan finde en trinvis vejledning til, hvordan du publicerer et program via proxyprogrammet, under [Udgivelse af programmer ved hjælp af proxyprogram til Azure Active Directory](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#add-an-on-premises-app-to-azure-ad).
+Publicer Power BI-rapportserver via proxyprogrammet med følgende indstillinger. Du kan finde en trinvis vejledning til, hvordan du publicerer et program via proxyprogrammet, under [Udgivelse af programmer ved hjælp af proxyprogram til Azure Active Directory](/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#add-an-on-premises-app-to-azure-ad).
 
 - **Intern URL-adresse**: Angiv URL-adressen til den rapportserver, som forbindelsen kan få adgang til i virksomhedens netværk. Sørg for, at der kan oprettes forbindelse til denne URL-adresse fra den server, som forbindelsen er installeret på. Den bedste fremgangsmåde er at bruge et domæne på øverste niveau, såsom `https://servername/`, for at undgå problemer med understier, der er udgivet via proxyprogrammet. Brug f.eks. `https://servername/` og ikke `https://servername/reports/` eller `https://servername/reportserver/`. Vi har konfigureret vores miljø med `https://pbirsazureapp.eastus.cloudapp.azure.com/`.
 
     > [!NOTE]
-    > Vi anbefaler, at du bruger en sikker HTTPS-forbindelse til rapportserveren. Se [Konfigurer SSL-forbindelser på en rapportserver i oprindelig tilstand](https://docs.microsoft.com/sql/reporting-services/security/configure-ssl-connections-on-a-native-mode-report-server?view=sql-server-2017) for at få oplysninger om, hvordan du gør.
+    > Vi anbefaler, at du bruger en sikker HTTPS-forbindelse til rapportserveren. Se [Konfigurer SSL-forbindelser på en rapportserver i oprindelig tilstand](/sql/reporting-services/security/configure-ssl-connections-on-a-native-mode-report-server) for at få oplysninger om, hvordan du gør.
 
-- **Ekstern URL-adresse**: Angiv den offentlige URL-adresse, som Power BI-mobilappen opretter forbindelse til. Den kan f.eks. se ud som `https://reports.contoso.com`, hvis der benyttes et brugerdefineret domæne. Hvis du vil bruge et brugerdefineret domæne, skal du overføre et certifikat til domænet og pege en DNS-post til msappproxy.net-standarddomænet for dit program. Du kan finde en detaljeret vejledning under [Arbejde med brugerdefinerede domæner i proxyprogram til Azure Active Directory](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-custom-domain).
+- **Ekstern URL-adresse**: Angiv den offentlige URL-adresse, som Power BI-mobilappen opretter forbindelse til. Den kan f.eks. se ud som `https://reports.contoso.com`, hvis der benyttes et brugerdefineret domæne. Hvis du vil bruge et brugerdefineret domæne, skal du overføre et certifikat til domænet og pege en DNS-post til msappproxy.net-standarddomænet for dit program. Du kan finde en detaljeret vejledning under [Arbejde med brugerdefinerede domæner i proxyprogram til Azure Active Directory](/azure/active-directory/manage-apps/application-proxy-configure-custom-domain).
 
 Vi har konfigureret den eksterne URL-adresse til `https://pbirsazureapp-umacontoso2410.msappproxy.net/` for vores miljø.
 
@@ -184,7 +184,7 @@ Når din app er publiceret, skal du konfigurere indstillingerne for enkeltlogon 
     - Prøv at køre en rapport eller udføre en testforbindelse til datakilden, så der oprettes en Kerberos-billet.
     - Når du har gennemført kørslen af rapporten/testforbindelsen, skal du åbne kommandoprompten og køre kommandoen: `klist`. I afsnittet med resultater kan du se en billet med SPN'et `http/`. Hvis det er det samme som det SPN, du har konfigureret med Power BI-rapportserver, skal du bruge dette SPN i dette afsnit.
 
-1. Vælg **ID for delegeret logon** for den forbindelse, der skal bruges på brugernes vegne. Du kan finde flere oplysninger under [Arbejde med forskellige identiteter i det lokale miljø og i cloudmiljøet](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd#working-with-different-on-premises-and-cloud-identities).
+1. Vælg **ID for delegeret logon** for den forbindelse, der skal bruges på brugernes vegne. Du kan finde flere oplysninger under [Arbejde med forskellige identiteter i det lokale miljø og i cloudmiljøet](/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd#working-with-different-on-premises-and-cloud-identities).
 
     Vi anbefaler, at du bruger brugerens hovednavn. I vores eksempel har vi konfigureret det til at fungere sammen med indstillingen **Brugerens hovednavn**:
 
@@ -216,7 +216,7 @@ Hvis du vil afslutte konfigurationen af dit program, skal du gå til afsnittet *
 1. Vi skal først konfigurere det brugerdefinerede domæne, som vi planlægger at bruge til logon, så sørg for, at det er bekræftet.
 2. I dette tilfælde har vi købt et domæne, der hedder umacontoso.com, og har konfigureret DNS-zonen med posterne. Du kan også prøve at benytte domænet `onmicrosoft.com` og synkronisere det med AD i det lokale miljø.
 
-    Se artiklen [Selvstudium: Knyt et eksisterende brugerdefineret DNS-navn til Azure App Service](https://docs.microsoft.com/Azure/app-service/app-service-web-tutorial-custom-domain) som reference.
+    Se artiklen [Selvstudium: Knyt et eksisterende brugerdefineret DNS-navn til Azure App Service](/Azure/app-service/app-service-web-tutorial-custom-domain) som reference.
 
 1. Når du har bekræftet DNS-posten for det brugerdefinerede domæne, bør du kunne se statussen **Bekræftet**, hvilket svarer til domænet fra portalen.
 
@@ -295,8 +295,6 @@ Før Power BI-mobilappen kan oprette forbindelse til og få adgang til Power BI-
 
 ## <a name="next-steps"></a>Næste trin
 
-[Aktivér fjernadgang til Power BI - Mobil med Azure AD-programproxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi)
+[Aktivér fjernadgang til Power BI - Mobil med Azure AD-programproxy](/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-
-                

@@ -6,15 +6,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 07/30/2020
+ms.date: 09/17/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: c74c618eb4c748d94260573c1ddd4266d3cf5c0e
-ms.sourcegitcommit: d9d67ee47954379c2df8db8d0dc8302de4c9f1e5
+ms.openlocfilehash: efddfbdb70b2c20ad650eda6a16a5d7defb758e8
+ms.sourcegitcommit: fa0a1561aba2a392fb56e7030e1a0537806a9260
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87478078"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811845"
 ---
 # <a name="set-featured-tables-in-power-bi-desktop-preview"></a>Angiv fremhævede tabeller i Power BI Desktop (prøveversion)
 
@@ -40,21 +40,15 @@ I datatypegalleriet i Excel kan dine brugere finde data fra *fremhævede tabelle
 
 1. Gå til Modelvisning i Power BI Desktop.
 
-    :::image type="content" source="media/service-excel-featured-tables/power-bi-model-view.png" alt-text="Modelvisning":::
+    :::image type="content" source="media/service-excel-featured-tables/power-bi-model-view.png" alt-text="Indstillingen Vis fremhævede tabeller":::
  
 2. Vælg en tabel, og sæt **Er en fremhævet tabel** til **Ja**.
 
-    :::image type="content" source="media/service-excel-featured-tables/power-bi-featured-table-yes.png" alt-text="Sæt Er en fremhævet tabel til Ja":::
-
-4. I **Konfigurer denne tabel** skal du udfylde de påkrævede felter:
-
-    - En **beskrivelse**. 
-        > [!TIP]
-        > Start beskrivelsen med "Fremhævet tabel" for at hjælpe forfattere af Power BI-rapporter med et identificere den.
+    :::image type="content" source="media/service-excel-featured-tables/power-bi-featured-table-yes.png" alt-text="Indstillingen Vis fremhævede tabeller" for at hjælpe forfattere af Power BI-rapporter med et identificere den.
     - Feltværdien **Rækkeetiket** bruges i Excel, så brugerne nemt kan identificere rækken. Den vises som celleværdien for en sammenkædet celle i ruden **Datavælger** og på kortet **Oplysninger**. 
     - Feltværdien **Nøglekolonne** indeholder det entydige id for rækken. Denne værdi gør det muligt for Excel at sammenkæde en celle med en bestemt række i tabellen.
 
-    :::image type="content" source="media/service-excel-featured-tables/power-bi-set-up-featured-table.png" alt-text="Opsæt fremhævet tabel":::
+    :::image type="content" source="media/service-excel-featured-tables/power-bi-set-up-featured-table.png" alt-text="Indstillingen Vis fremhævede tabeller":::
 
 1. Når du har udgivet eller importeret datasættet til Power BI-tjenesten, vises den fremhævede tabel i Excel-datatypegalleriet. Du og andre forfattere af rapporter kan også oprette rapporter, der er bygget ud fra dette datasæt.
 
@@ -66,19 +60,13 @@ I datatypegalleriet i Excel kan dine brugere finde data fra *fremhævede tabelle
 
 Her er begrænsningerne for den oprindelige prøveversion.
 
-- Udvalgte tabeller i Power BI-datasæt, der bruger følgende funktioner, vises ikke i Excel: 
+- Udvalgte tabeller i Power BI-datasæt, der bruger følgende funktioner, vises ikke i Excel:
 
-    - Sikkerhedsdatasæt på rækkeniveau.
-    - Microsoft Information Protection-aktiverede datasæt.
     - DirectQuery-datasæt.
     - Datasæt med en direkte forbindelse.
 
-- Der vises kun data i kolonner og beregnede kolonner i den udvalgte tabel i Excel. Følgende er ikke angivet i den oprindelige prøveversion:
-
-    - De målinger, der er defineret i funktionstabellen.
-    - De målinger, der defineres for relaterede tabeller, og implicitte målinger beregnet ud fra relationer.
-
-- Excel viser kun udvalgte tabeller, der er gemt i de nye Power BI-arbejdsområder. Udvalgte tabeller, der er gemt i de klassiske arbejdsområder eller Mit arbejdsområde, vises ikke som datatyper i Excel. Du kan [opgradere klassiske arbejdsområder til de nye arbejdsområder](service-upgrade-workspaces.md) i Power BI.
+- Der vises kun data i kolonner og beregnede kolonner i den udvalgte tabel i Excel. De målinger, der defineres for relaterede tabeller, og implicitte målinger beregnet ud fra relationer er ikke medtaget i den indledende prøveversion.
+- Excel viser kun udvalgte tabeller, der er gemt i de nye Power BI-arbejdsområder. Udvalgte tabeller, der er gemt i de klassiske arbejdsområder, vises ikke som datatyper i Excel. Du kan [opgradere klassiske arbejdsområder til de nye arbejdsområder](service-upgrade-workspaces.md) i Power BI.
 - Under [Overvejelser og begrænsninger](service-excel-featured-tables.md#considerations-and-limitations) i artiklen "Få adgang til Power BI-tabeller i Excel" kan du finde andre Excel-overvejelser.
 
 ## <a name="next-steps"></a>Næste trin

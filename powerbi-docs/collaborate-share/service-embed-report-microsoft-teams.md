@@ -9,13 +9,13 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 07/31/2020
-ms.openlocfilehash: 53126fe044f65740b9dac072422f749312b960da
-ms.sourcegitcommit: d9d67ee47954379c2df8db8d0dc8302de4c9f1e5
+ms.date: 09/21/2020
+ms.openlocfilehash: 0abaf886806ea783bb478f47d020daeea7829da5
+ms.sourcegitcommit: cff93e604e2c5f24e0f03d6dbdcd10c2332aa487
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87478009"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90965123"
 ---
 # <a name="embed-power-bi-content-in-microsoft-teams"></a>Integrer Power BI-indhold i Microsoft Teams
 
@@ -30,9 +30,9 @@ Hvis du vil bruge fanen **Power BI** i Microsoft Teams, skal du sørge for følg
 - Brugerne skal have tilladelse til at få vist rapporten, før de kan se den under **Power BI**-fanen til Microsoft Teams.
 - Brugere skal være Microsoft Team-brugere med adgang til kanaler og chats.
 
-Under [Samarbejd i Microsoft Teams med Power BI](service-embed-report-microsoft-teams.md) kan du se, hvordan Power BI og Teams arbejder sammen, herunder andre krav.
+Under [Samarbejd i Microsoft Teams med Power BI](service-embed-report-microsoft-teams.md) kan du se, hvordan Power BI og Microsoft Teams arbejder sammen, herunder andre krav.
 
-## <a name="embed-a-report-in-teams"></a>Integrer en rapport i Teams
+## <a name="embed-a-report-in-microsoft-teams"></a>Integrer en rapport i Microsoft Teams
 
 Hvis du vil integrere din rapport i en Microsoft Teams-kanal eller -chat, skal du benytte denne fremgangsmåde.
 
@@ -62,7 +62,7 @@ Du kan integrere følgende typer rapporter på **Power BI**-fanen:
 
 ## <a name="start-a-conversation"></a>Start en samtale
 
-Når du føjer en Power BI-rapportfane til Microsoft Teams, opretter Teams automatisk en fanesamtale til rapporten.
+Når du føjer en Power BI-rapportfane til Microsoft Teams, opretter Microsoft Teams automatisk en fanesamtale til rapporten.
 
 - Vælg ikonet **Vis fanesamtale** i øverste højre hjørne.
 
@@ -74,6 +74,7 @@ Når du føjer en Power BI-rapportfane til Microsoft Teams, opretter Teams autom
 
 ## <a name="known-issues-and-limitations"></a>Kendte problemer og begrænsninger
 
+- Når du eksporterer data fra en visualisering i en Power BI-rapport i Microsoft Teams, gemmes de automatisk i mappen Hentede filer. Det er en Excel-fil med navnet "data (*n*).xlsx", hvor *n* er det antal gange, du har eksporteret data til den samme mappe.
 - Du kan ikke integrere Power BI-dashboards i **Power BI**-fanen til Microsoft Teams.
 - [URL-filtre](service-url-filters.md) understøttes ikke med **Power BI**-fanen til Microsoft Teams.
 - Den nye **Power BI**-fane ikke tilgængelig i de nationale cloudmiljøer. Der er muligvis en ældre version tilgængelig, som ikke understøtter den nye arbejdsområdeoplevelse eller rapporter i Power BI-apps.

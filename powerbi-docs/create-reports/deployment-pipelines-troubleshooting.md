@@ -6,15 +6,15 @@ ms.author: kesharab
 ms.topic: troubleshooting
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.date: 05/06/2020
-ms.openlocfilehash: b911af4c7137aac9352c16985aac3a79a7eec87e
-ms.sourcegitcommit: 10c5b6cd5e7070f96de8a9f1d9b95f3d242ac7f2
+ms.date: 09/15/2020
+ms.openlocfilehash: f7b37392581ad532093b0a543fe75cdb969d2c86
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86557158"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90855355"
 ---
-# <a name="deployment-pipelines-troubleshooting-preview"></a>Fejlfinding af udrulningspipelines (prøveversion)
+# <a name="deployment-pipelines-troubleshooting"></a>Fejlfinding af udrulningspipelines
 
 Brug denne artikel til at foretage fejlfinding af problemer i udrulningspipelines.
 
@@ -39,6 +39,13 @@ Hvis følgende betingelser ikke er opfyldt, kan du ikke se knappen til udrulning
 * Et arbejdsområde kan kun tildeles til en enkelt pipeline
 
 * Du er administrator af et nyt arbejdsområde
+
+### <a name="why-cant-i-see-the-pipeline-stage-tag-in-my-workspace"></a>Hvorfor kan jeg ikke se koden for pipielinefase i mit arbejdsområde?
+
+Udrulningspipelines viser en kode for pipelinefasen i de arbejdsområder, der er knyttet til en pipeline. Koder for *udviklings-* og *testfaser* er altid synlige. Du kan dog kun se koden for *produktion*, hvis du har [adgang til pipelinen](deployment-pipelines-process.md#user-with-pipeline-access), eller hvis du er [administrator af arbejdsområdet](deployment-pipelines-process.md#workspace-admin).
+
+> [!div class="mx-imgBorder"]
+> ![Et skærmbillede af produktionskoden i et arbejdsområde for en produktionspipeline.](media/deployment-pipelines-troubleshooting/production-tag.png)
 
 ## <a name="licensing"></a>Licensering
 
@@ -112,7 +119,7 @@ Reglerne for datasættet mangler værdier. Dette kan ske, hvis dit datasæt er b
 
 ![Et skærmbillede af den ugyldige regelfejl, der vises, når en udrulning mislykkes på grund af brudte links.](media/deployment-pipelines-troubleshooting/broken-rule.png)
 
-Når en tidligere gennemført udrulning mislykkes på grund af brudte links, vises der en advarsel. Du kan klikke på **Konfigurer regler** for at navigere til ruden med udrulningsindstillinger, hvor det mislykkede datasæt er markeret. Når du klikker på datasættet, markeres de brudte regler.
+Når en tidligere gennemført udrulning mislykkes på grund af brudte links, vises der en advarsel. Du kan vælge **Konfigurer regler** for at navigere til ruden med udrulningsindstillinger, hvor det mislykkede datasæt er markeret. Når du vælger datasættet, markeres de brudte regler.
 
 Hvis du vil have udrulningen til at fungere, skal du rette eller fjerne de brudte regler og udrulle igen.
 
@@ -120,9 +127,9 @@ Hvis du vil have udrulningen til at fungere, skal du rette eller fjerne de brudt
 
 Du kan ikke ændre forbindelsen til datakilden i Power BI-tjenesten.
 
-Hvis du vil ændre datakilden i test- eller produktionsfaser, kan du bruge [regler for datasæt](deployment-pipelines-get-started.md#step-4---create-dataset-rules) eller [API'er](https://docs.microsoft.com/rest/api/power-bi/datasets/updateparametersingroup). Regler for datasæt træder først i kraft efter den næste udrulning.
+Hvis du vil ændre datakilden i test- eller produktionsfaser, kan du bruge [regler for datasæt](deployment-pipelines-get-started.md#step-4---create-dataset-rules) eller [API'er](/rest/api/power-bi/datasets/updateparametersingroup). Regler for datasæt træder først i kraft efter den næste udrulning.
 
-### <a name="i-fixed-a-bug-in-production-but-now-i-cant-click-the-deploy-to-previous-stage-button-why-is-it-greyed-out"></a>Jeg har løst en fejl i produktionen, men nu kan jeg ikke klikke på knappen "Udrul til forrige fase". Hvorfor er den nedtonet?
+### <a name="i-fixed-a-bug-in-production-but-now-i-cant-select-the-deploy-to-previous-stage-button-why-is-it-greyed-out"></a>Jeg har løst en fejl i produktionen, men nu kan jeg ikke vælge knappen Udrul til forrige fase. Hvorfor er den nedtonet?
 
 Du kan kun udrulle bagud til en tom fase. Hvis du har indhold i testfasen, kan du ikke installere bagud fra produktionen.
 

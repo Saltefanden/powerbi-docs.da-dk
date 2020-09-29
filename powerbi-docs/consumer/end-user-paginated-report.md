@@ -6,15 +6,15 @@ ms.reviewer: christopher.finlan
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 03/11/2020
+ms.date: 09/09/2020
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: b1f9dd6540707993696bddb4494fc73aa782d363
-ms.sourcegitcommit: 92b033ee7a6e36808371b247b7b41536cee6c2f6
+ms.openlocfilehash: 95b4b423b1dffb51d00760a97d21f2bf52df39d8
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "90008899"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90860319"
 ---
 # <a name="paginated-reports-in-the-power-bi-service"></a>Sideinddelte rapporter i Power BI-tjenesten
 
@@ -36,7 +36,7 @@ Denne enkle sideinddelte rapport genererer profit efter år, når du har valgt p
 
 ![Enkel rapport med én parameter](./media/end-user-paginated-report/power-bi-report-simple.png)
 
-Sammenlignet med sideinddelte rapporter er Power BI-rapporter meget mere interaktive. Power BI-rapporter giver mulighed for ad hoc-rapportering og understøtter mange flere typer visuals, herunder Power BI-visuals.
+Sammenlignet med sideinddelte rapporter er Power BI-rapporter meget mere interaktive. Power BI rapporter giver mulighed for ad hoc-rapportering og understøtter mange flere typer visuals, herunder brugerdefinerede visuals.
 
 ## <a name="identify-a-paginated-report"></a>Identificer en sideinddelt rapport
 
@@ -78,7 +78,7 @@ Nogle sideinddelte rapporter kan indeholde mange sider.  Brug sidekontrolelement
 ### <a name="export-the-paginated-report"></a>Eksporter den sideinddelte rapport
 Du har en række forskellige muligheder for eksport af sideinddelte rapporter, herunder PDF, Word, XML, PowerPoint, Excel med mere. Når du eksporterer, bevares så meget af formateringen som muligt. Sideinddelte rapporter, der eksporteres til Excel, Word, PowerPoint, MHTML og PDF, så du kan f. eks. bevare formateringen "perfekt pixel". 
 
-![en ny salgsordre](./media/end-user-paginated-report/power-bi-exporting.png)
+![Skærmbillede, der viser en eksporteret sideinddelt rapport.](./media/end-user-paginated-report/power-bi-exporting.png)
 
 ![fire forskellige eksporttyper](./media/end-user-paginated-report/power-bi-four.png)
 

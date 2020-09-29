@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 07/08/2020
+ms.date: 09/18/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: f652d09d5d954123a47b45b30ab1076763018225
-ms.sourcegitcommit: 002c140d0eae3137a137e9a855486af6c55ad957
+ms.openlocfilehash: 7009b4b195c89659c032b578ada130e12389b496
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89642642"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90858847"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publicer på internettet fra Power BI
 
@@ -183,6 +183,7 @@ Du skal [finde en af disse personer](https://docs.microsoft.com/office365/admin/
 - "R"- og Python-visualiseringerne understøttes i øjeblikket ikke i **Publicer på internettet**-rapporter.
 - Eksport af data fra visualiseringer i en rapport, som er publiceret på internettet.
 - ArcGIS Maps til Power BI-visualiseringer.
+- Spørgsmål og svar til visualiseringer i Power BI.
 - Rapporter med DAX-målinger på rapportniveau.
 - Forespørgselsmodeller for enkeltlogon til data.
 - Fortrolige eller beskyttede oplysninger.

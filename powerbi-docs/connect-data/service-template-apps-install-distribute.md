@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 05/19/2020
+ms.date: 09/17/2020
 ms.author: painbar
-ms.openlocfilehash: e66d1b8b57af9ee04239e7222db742b64cc25883
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: e152743c243e1af02650d919168dee0969e3a89e
+ms.sourcegitcommit: cb606d3ae95300683caf1853e229d8981302a8e2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85235702"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90763756"
 ---
 # <a name="install-and-distribute-template-apps-in-your-organization"></a>Installér og distribuer skabelonapps i din organisation
 
@@ -75,13 +75,9 @@ Hvis du vil installere, tilpasse og distribuere en skabelonapp, skal du have fø
 
    ![GitHub-appen opretter forbindelse til dit datalink](media/service-template-apps-install-distribute/power-bi-template-app-connect-data.png)
 
+    Dette åbner dialogboksen Parametre, hvor du kan ændre datakilden fra eksempeldataene til din egen datakilde (se [kendte begrænsninger](service-template-apps-overview.md#known-limitations)) efterfulgt af dialogboksen med godkendelsesmetoden. Det kan være nødvendigt at omdefinere værdierne i disse dialogbokse. Se dokumentationen til den specifikke skabelonapp, som du installerer, for at få flere oplysninger.
 
-    
-    Derved åbnes en dialogboks eller en række dialogbokse, hvor du ændrer datakilden fra eksempeldataene til din egen datakilde. Dette betyder normalt, at du omdefinerer parametrene for datasæt og legitimationsoplysningerne for datakilden. Se [Kendte begrænsninger](service-template-apps-overview.md#known-limitations).
-    
-    I eksemplet nedenfor kræves der to dialogbokse for at oprette forbindelse til data.
-
-   ![Dialogbokse til oprettelse af forbindelse til data](media/service-template-apps-install-distribute/power-bi-template-app-connect-to-data-dialogs.png)
+   ![Skærmbillede af oprettelsen af forbindelse til data.](media/service-template-apps-install-distribute/power-bi-template-app-connect-to-data-dialogs.png)
 
     Når du er færdig med at udfylde forbindelsesdialogboksene, starter processen til oprettelse af forbindelse. Et banner informerer dig om, at dataene opdateres, og at du i mellemtiden får vist eksempeldata.
 
@@ -110,11 +106,11 @@ Fra tid til anden offentliggør oprettere af skabelonapps nye forbedrede version
 
 Hvis du oprindeligt har downloadet appen fra AppSource, får du besked på to måder, når en ny version af skabelonappen bliver tilgængelig:
 * Der vises et opdateringsbanner i Power BI-tjenesten, der informerer dig om, at der er en ny appversion tilgængelig.
-  ![Meddelelse om opdatering af skabelonapp](media/service-template-apps-install-distribute/power-bi-new-app-version-notification-banner.png)
+  ![Banner med meddelelse om opdatering af skabelonapp](media/service-template-apps-install-distribute/power-bi-new-app-version-notification-banner.png)
 * Du modtager en meddelelse i meddelelsesruden i Power BI.
 
 
-  ![Meddelelse om opdatering af skabelonapp](media/service-template-apps-install-distribute/power-bi-new-app-version-notification-pane.png)
+  ![Rude med meddelelse om opdatering af skabelonapp](media/service-template-apps-install-distribute/power-bi-new-app-version-notification-pane.png)
 
 >[!NOTE]
 >Hvis du oprindeligt fik appen via et direkte link og ikke via AppSource, skal du kontakte opretteren af skabelonappen for at få oplysninger om, hvornår en ny version er tilgængelig.

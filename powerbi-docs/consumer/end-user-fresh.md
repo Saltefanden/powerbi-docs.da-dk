@@ -7,15 +7,15 @@ ms.reviewer: mihart
 ms.custom: ''
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 02/18/2020
+ms.date: 09/15/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 73affb07b137ee60fe00f7d344759ec2de1bcb85
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: c3ae3974b411ccd7f1be175910878cdeb0bc5c40
+ms.sourcegitcommit: cb606d3ae95300683caf1853e229d8981302a8e2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86215898"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90763163"
 ---
 # <a name="your-content-is-up-to-date"></a>Dit indhold er opdateret
 
@@ -23,7 +23,7 @@ ms.locfileid: "86215898"
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Som *forbruger* interagerer du med indhold, der er oprettet af *designere* og delt med dig. Du undrer dig måske over, om indholdet er opdateret, eller du vil måske blot gerne vide, hvornår indholdet senest blev opdateret. Det giver ro i sindet at vide, at du arbejder med det nyeste indhold.  
+Som *forretningsbruger* interagerer du med indhold, der er oprettet af *designere* og delt med dig. Du undrer dig måske over, om indholdet er opdateret, eller du vil måske blot gerne vide, hvornår indholdet senest blev opdateret. Det giver ro i sindet at vide, at du arbejder med det nyeste indhold.  
  
 ![Power BI-dashboard](media/end-user-fresh/power-bi-dashboards.png)
 
@@ -38,7 +38,7 @@ Hvis du er i tvivl om, hvorvidt dataene er opdateret, skal du kontakte designere
 
 Navnet på ejeren findes på titellinjen i dashboards og rapporter. Vælg navnet på rapporten eller dashboardet for at se yderligere detaljer, herunder **Ejer**.
 
-![Ejer af Power BI-dashboard](media/end-user-fresh/power-bi-owner.png)
+![Ejer af Power BI-dashboard](media/end-user-fresh/power-bi-designer.png)
 
 
 ### <a name="apps"></a>Apps
@@ -47,19 +47,19 @@ På appskærmen kan du se både navnet på designeren og den dato, hvor appen si
 
 1. Vælg **Apps** i navigationsruden.
 
-    ![navigationsrude](media/end-user-fresh/power-bi-nav-app.png)
+    ![navigationsrude](media/end-user-fresh/power-bi-nav-apps.png)
 
 
 
 2. Hold over appen for at få vist titlen, opdateringsdatoen og navnet på designeren. 
 
-    ![2 apps, hvor den ene er valgt](media/end-user-fresh/power-bi-app.png)
+    ![2 apps, hvor den ene er valgt](media/end-user-fresh/power-bi-apps.png)
 
 
 ### <a name="shared-with-me"></a>Delt med mig
 På skærmen **Delt med mig** kan du se navnet på ejeren af indholdet samt den dato, hvor indholdet sidst blev delt med dig.
 
-![delt skærm, der viser ændringsdato og ejer](media/end-user-fresh/power-bi-share.png) 
+![delt skærm, der viser ændringsdato og ejer](media/end-user-fresh/power-bi-shared.png) 
 
 
 ## <a name="how-to-look-up-the-last-refresh-date"></a>Sådan ser du datoen for seneste opdatering
@@ -70,20 +70,20 @@ For felter i dashboardet kan du se feltet i fokustilstand for at se et tidsstemp
 
 1. Vælg **Flere indstillinger** (...) på et dashboardfelt, og vælg **Åbn i Fokustilstand**.
 
-    ![menu, der vises, når du har valgt de tre prikker](media/end-user-fresh/power-bi-focus-mode.png)
+    ![menu, der vises, når du har valgt de tre prikker](media/end-user-fresh/power-bi-fresh-focus.png)
 
 2. Datoen for seneste opdatering vises i øverste højre hjørne. Hvis du ikke kan se datoen, kan du udvide browservinduet. 
 
-    ![browservindue med visning af seneste opdatering](media/end-user-fresh/power-bi-last-refresh2.png)
+    ![browservindue med visning af seneste opdatering](media/end-user-fresh/power-bi-last-refresh.png)
 
 ### <a name="dashboards-and-reports"></a>Dashboards og rapporter
-En anden måde, hvorpå du kan se datoen for seneste opdatering, er ved at vælge **Få vist relaterede**.  **Få vist relaterede** bliver tilgængelig, når du vælger **Flere indstillinger** (…) på den øverste menulinje i Power BI.
+En anden måde, hvorpå du kan se datoen for seneste opdatering, er ved at vælge **Få vist relateret indhold**.  **Få vist relateret indhold** bliver tilgængelig, når du vælger **Flere handlinger** (…) på den øverste menulinje i Power BI.
 
-![Vælg Få vist relaterede i menuen](media/end-user-fresh/power-bi-view-related-dropdown.png)
+![Vælg Få vist relateret i menuen](media/end-user-fresh/power-bi-see-related.png)
 
 I ruden **Relateret indhold** kan du se oplysninger om seneste opdatering for det underliggende datasæt til dashboardet eller rapporten.
 
-![Power BI-dashboard](media/end-user-fresh/power-bi-refresh.png)
+![Skærmbillede af ruden Relateret indhold](media/end-user-fresh/power-bi-see-related-screen.png)
 
 ## <a name="what-happens-if-an-app-is-deleted-by-the-designer"></a>Hvad sker der, hvis en app slettes af designeren?
 

@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 06/15/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: cecb78ec986ddf672a9560598ccf68c95fa5d659
-ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
+ms.openlocfilehash: ab3b250734e2c2c2b4d97d952357669761da9095
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86034215"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90854157"
 ---
 # <a name="using-microsoft-cloud-app-security-controls-in-power-bi"></a>Brug af Microsoft Cloud App Security-kontrolelementer i Power BI
 
@@ -22,7 +22,7 @@ Når du bruger Cloud App Security med Power BI, kan du hjælpe med at beskytte d
 
 ![Brug af ruden for Cloud App Security-kontrolelementer](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-01.png)
 
-Du kan konfigurere Cloud App Security for mange forskellige slags programmer og tjenester og ikke kun Power BI. Du skal konfigurere Cloud App Security for at kunne arbejde med Power BI, så du kan drage fordel af Cloud App Security-beskyttelsen til dine Power BI-data og -analyser. Du kan finde flere oplysninger om Cloud App Security, herunder en oversigt over dashboardet og scorer for programrisici, samt hvordan det fungerer, i dokumentationen til [Cloud App Security](https://docs.microsoft.com/cloud-app-security/).
+Du kan konfigurere Cloud App Security for mange forskellige slags programmer og tjenester og ikke kun Power BI. Du skal konfigurere Cloud App Security for at kunne arbejde med Power BI, så du kan drage fordel af Cloud App Security-beskyttelsen til dine Power BI-data og -analyser. Du kan finde flere oplysninger om Cloud App Security, herunder en oversigt over dashboardet og scorer for programrisici, samt hvordan det fungerer, i dokumentationen til [Cloud App Security](/cloud-app-security/).
 
 
 ## <a name="using-cloud-app-security-with-power-bi"></a>Brug af Cloud App Security med Power BI
@@ -41,17 +41,17 @@ I afsnittene nedenfor beskrives trinnene til brug af Cloud App Security i Power 
 ### <a name="set-session-policies-in-azure-ad-required"></a>Angiv sessionspolitikker i Azure AD (påkrævet)
 De trin, der er nødvendige for at angive sessionskontrolelementer, fuldføres på portalerne til Azure AD og Cloud App Security. På Azure AD-portalen opretter du en politik for betinget adgang i Power BI og dirigerer sessioner, der bruges i Power BI, via Cloud App Security-tjenesten. 
 
-Cloud App Security kører ved hjælp af en omvendt proxyarkitektur og er integreret i betinget adgang i Azure AD for at overvåge Power BI-brugeraktivitet i realtid. Følgende trin er angivet her for at hjælpe dig med at forstå processen, og detaljerede trinvise instruktioner findes i det indhold, der linkes til, for hvert af følgende trin. Du kan også læse denne [artikel om Cloud App Security](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad), der indeholder en beskrivelse af hele processen.
+Cloud App Security kører ved hjælp af en omvendt proxyarkitektur og er integreret i betinget adgang i Azure AD for at overvåge Power BI-brugeraktivitet i realtid. Følgende trin er angivet her for at hjælpe dig med at forstå processen, og detaljerede trinvise instruktioner findes i det indhold, der linkes til, for hvert af følgende trin. Du kan også læse denne [artikel om Cloud App Security](/cloud-app-security/proxy-deployment-aad), der indeholder en beskrivelse af hele processen.
 
-1.  [Opret en testpolitik for betinget adgang i Azure AD](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad#add-azure-ad)
-2.  [Log på hvert enkelt program ved hjælp af en bruger, der er beregnet til politikken](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad#sign-in-scoped)
-3.  [Kontrollér, at programmerne er konfigureret til at bruge adgangs- og sessionskontrolelementerne](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad#portal)
-4.  [Test udrulningen](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad#step-4-test-the-deployment)
+1.  [Opret en testpolitik for betinget adgang i Azure AD](/cloud-app-security/proxy-deployment-aad#add-azure-ad)
+2.  [Log på hvert enkelt program ved hjælp af en bruger, der er beregnet til politikken](/cloud-app-security/proxy-deployment-aad#sign-in-scoped)
+3.  [Kontrollér, at programmerne er konfigureret til at bruge adgangs- og sessionskontrolelementerne](/cloud-app-security/proxy-deployment-aad#portal)
+4.  [Test udrulningen](/cloud-app-security/proxy-deployment-aad#step-4-test-the-deployment)
 
-Processen til angivelse af sessionspolitikker er beskrevet i detaljer i artiklen [Sessionspolitikker](https://docs.microsoft.com/cloud-app-security/session-policy-aad). 
+Processen til angivelse af sessionspolitikker er beskrevet i detaljer i artiklen [Sessionspolitikker](/cloud-app-security/session-policy-aad). 
 
 ### <a name="set-anomaly-detection-policies-to-monitor-power-bi-activities-recommended"></a>Angiv politikker for registrering af uregelmæssigheder for at overvåge Power BI-aktiviteter (anbefales)
-Du kan definere politikker for registrering af uregelmæssigheder i Power BI, der kan tildeles uafhængigt af hinanden, så de kun gælder for de brugere og grupper, du vil inkludere og ekskludere i politikken. [Få mere at vide](https://docs.microsoft.com/cloud-app-security/anomaly-detection-policy#scope-anomaly-detection-policies).
+Du kan definere politikker for registrering af uregelmæssigheder i Power BI, der kan tildeles uafhængigt af hinanden, så de kun gælder for de brugere og grupper, du vil inkludere og ekskludere i politikken. [Få mere at vide](/cloud-app-security/anomaly-detection-policy#scope-anomaly-detection-policies).
 
 Cloud App Security indeholder også to dedikerede, indbyggede registreringer til Power BI. [Du kan finde flere oplysninger under afsnittet senere i dette dokument](#built-in-cloud-app-security-detections-for-power-bi).
 
@@ -69,7 +69,7 @@ Cloud App Security-registreringer giver administratorer mulighed for at overvåg
 
 * **Massedeling af rapporter** – registrerer, når en bruger deler et massivt antal af rapporter i en enkelt session.
 
-Indstillinger for disse registreringer konfigureres på Cloud App Security-portalen. [Få mere at vide](https://docs.microsoft.com/cloud-app-security/anomaly-detection-policy#unusual-activities-by-user). 
+Indstillinger for disse registreringer konfigureres på Cloud App Security-portalen. [Få mere at vide](/cloud-app-security/anomaly-detection-policy#unusual-activities-by-user). 
 
 ## <a name="power-bi-admin-role-in-cloud-app-security"></a>Power BI-administratorrolle i Cloud App Security
 
@@ -80,10 +80,9 @@ Brug af Cloud App Security med Power BI er designet til hjælpe dig med at besky
 
 * Cloud App Security kan kun fungere på Excel-, PowerPoint- og PDF-filer.
 * Hvis du vil bruge egenskaber for følsomhedsmærkater i dine sessionspolitikker til Power BI, skal du have en Premium P1- eller Premium P2-licens til Microsoft Azure Information Protection. Microsoft Azure Information Protection kan købes enten separat eller via en af Microsoft-licenspakkerne. Du kan finde flere oplysninger under [Priser på Microsoft Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection/). Derudover skal der være brugt følsomhedsmærkater på dine Power BI-aktiver.
-* Sessionskontrol er tilgængelig til enhver browser på enhver større platform på et hvilket som helst operativsystem. Vi anbefaler, at du bruger Internet Explorer 11, Microsoft Edge (nyeste), Google Chrome (nyeste), Mozilla Firefox (nyeste) eller Apple Safari (nyeste). Offentlige API-kald i Power BI og andre sessioner, der ikke er baseret på browsere, understøttes ikke som en del af Cloud App Security-sessionskontrol. [Se flere oplysninger](https://docs.microsoft.com/cloud-app-security/proxy-intro-aad#supported-apps-and-clients).
+* Sessionskontrol er tilgængelig til enhver browser på enhver større platform på et hvilket som helst operativsystem. Vi anbefaler, at du bruger Internet Explorer 11, Microsoft Edge (nyeste), Google Chrome (nyeste), Mozilla Firefox (nyeste) eller Apple Safari (nyeste). Offentlige API-kald i Power BI og andre sessioner, der ikke er baseret på browsere, understøttes ikke som en del af Cloud App Security-sessionskontrol. [Se flere oplysninger](/cloud-app-security/proxy-intro-aad#supported-apps-and-clients).
 
 > [!CAUTION]
-> * Politikken for *indholdskontrol* for Cloud App Security er i øjeblikket ikke tilgængelig i Power BI, når der anvendes en politik på en Excel-fil, så undlad at angive denne politik for Power BI.
 > * I sessionspolitikken under delen "Handling" kan egenskaben "Beskyt" kun bruges, hvis der ikke findes nogen mærkater på elementet. Hvis der allerede findes en mærkat, kan handlingen "Beskyt" ikke anvendes. Du kan ikke tilsidesætte en eksisterende mærkat, der allerede er blevet anvendt på et element i Power BI.
 
 ## <a name="example"></a>Eksempel
@@ -110,7 +109,7 @@ I det viste vindue skal du oprette sessionspolitikken. De nummererede trin beskr
 
       I afsnittet **Aktivitetskilde** skal du vælge relevante blokeringspolitikker. Vi anbefaler blokering af enheder, der ikke administreres og ikke overholder angivne standarder. Vælg at blokere downloads, når sessionen er i Power BI.
 
-        ![Opret sessionspolitikken](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-05.png)
+        ![Opret sessionspolitikken – bloker downloads.](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-05.png)
 
         Når du ruller ned, kan du se flere indstillinger. På følgende billede vises disse indstillinger med yderligere eksempler. 
 
@@ -119,28 +118,25 @@ I det viste vindue skal du oprette sessionspolitikken. De nummererede trin beskr
   6. Vælg den **Bloker**-indstilling, der passer til dine behov.
   7. Kontrollér, at du har oprettet en vigtig besked for sådan en handling.
 
-        ![Vælg indstillinger for sessionspolitik](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-06.png)
+        ![Vælg indstillinger for sessionspolitik.](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-06.png)
 
         
 
   8. Sørg til sidst for at få klikket på knappen **Opret** for at oprette sessionspolitikken.
 
-        ![Opret sessionspolitikken](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-07.png)
-
-> [!CAUTION]
-> Sørg for, at du ikke opretter en politik for **Indholdskontrol** på Excel-filer i Power BI. Dette er en kendt begrænsning for denne funktion.
+        ![Opret sessionspolitikken.](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-07.png)
 
 ## <a name="next-steps"></a>Næste trin
 Denne artikel indeholdt en beskrivelse af, hvordan Cloud App Security kan sikre beskyttelse af data og indhold i Power BI. Du kan også være interesseret i følgende artikler, der indeholder beskrivelser af databeskyttelse til Power BI og understøttende indhold til Azure-tjenester, der gør det muligt.
 
 * [Oversigt over følsomhedsmærkater i Power BI](service-security-sensitivity-label-overview.md)
 * [Aktivér følsomhedsmærkater i Power BI](service-security-enable-data-sensitivity-labels.md)
-* [Sådan anvendes følsomhedsmærkater i Power BI](../collaborate-share/service-security-apply-data-sensitivity-labels.md)
+* [Sådan anvendes følsomhedsmærkater i Power BI](service-security-apply-data-sensitivity-labels.md)
 
 Du vil måske også være interesseret i følgende Azure- og sikkerhedsartikler:
 
-* [Beskyt programmer med Appobjekt til betinget adgang i Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/proxy-intro-aad)
-* [Udrul Appobjekt til betinget adgang for udvalgte programmer](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad)
-* [Sessionspolitikker](https://docs.microsoft.com/cloud-app-security/session-policy-aad)
-* [Oversigt over følsomhedsmærkater](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)
+* [Beskyt programmer med Appobjekt til betinget adgang i Microsoft Cloud App Security](/cloud-app-security/proxy-intro-aad)
+* [Udrul Appobjekt til betinget adgang for udvalgte programmer](/cloud-app-security/proxy-deployment-aad)
+* [Sessionspolitikker](/cloud-app-security/session-policy-aad)
+* [Oversigt over følsomhedsmærkater](/microsoft-365/compliance/sensitivity-labels)
 * [Rapport over databeskyttelsesmålepunkter](service-security-data-protection-metrics-report.md)
