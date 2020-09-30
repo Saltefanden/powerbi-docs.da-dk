@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/22/2020
+ms.date: 09/23/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 2268cb86ec60e2b461c66cca6034fd47a30c2e38
-ms.sourcegitcommit: ff981839e805f523748b7e71474acccf7bdcb04f
+ms.openlocfilehash: acfe54479ae02b950dcc8521807add7c06071207
+ms.sourcegitcommit: 3655521f7d6e70d25cbe72006aada69ba08e7dec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91019969"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91224181"
 ---
 # <a name="whats-new-in-power-bi-desktop"></a>Nyheder i Power BI Desktop
 
@@ -97,7 +97,7 @@ Du kan finde detaljerede oplysninger om hver af disse nye funktioner i [oversigt
 ### <a name="power-bi-desktop-monthly-update-video"></a>Video om månedlig opdatering til Power BI Desktop
 I følgende video beskrives hver af disse opdateringer. Du kan også se videoen fra blogindlægget:
 
-> [!VIDEO https://www.youtube.com/embed/TPsV7N4bZZg]
+> [!VIDEO https://www.youtube.com/embed/gPGy18Yo0Go]
 
 ## <a name="more-videos"></a>Flere videoer
 
