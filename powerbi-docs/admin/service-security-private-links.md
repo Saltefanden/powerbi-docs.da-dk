@@ -7,15 +7,15 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.author: davidi
-ms.date: 09/17/2020
+ms.date: 09/24/2020
 ms.custom: ''
 LocalizationGroup: Administration
-ms.openlocfilehash: 3b8eb9c5e4211097cd6f11d233165ccaf197ddbe
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: dee055f53302ef6e7884463b8e0feb113aa9bd5a
+ms.sourcegitcommit: 3655521f7d6e70d25cbe72006aada69ba08e7dec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90854362"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91224204"
 ---
 # <a name="private-links-for-accessing-power-bi"></a>Private links, der giver adgang til Power BI
 
@@ -226,10 +226,7 @@ Næste trin, der beskrives i dette afsnit, er at oprette et privat slutpunkt for
     |Undernet |Vælg *mySubnet* |
     |**PRIVAT DNS-INTEGRATION** ||
     |Integrer med privat DNS-zone|   Vælg **Ja** |
-    |Privat DNS-zone   |Markér <br><br>
-    *(Ny) privatelink.analysis.windows.net* <br>
-    *(Ny) privatelink.pbidedicated.windows.net* <br>
-    *(Ny) privatelink.tip1.powerquery.microsoft.com* |
+    |Privat DNS-zone   |Markér <br> *(Ny) privatelink.analysis.windows.net* <br> *(Ny) privatelink.pbidedicated.windows.net* <br> *(Ny) privatelink.tip1.powerquery.microsoft.com* |
     
     På følgende billede kan du se vinduet **Opret et privat slutpunkt – Konfiguration**.
     

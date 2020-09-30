@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 04/11/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 971c699170103d5521763679c93d3641c094cc58
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: f2b9ee2093889fc9a60d621ad09b3b52d2e90474
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83277427"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91525932"
 ---
 # <a name="separate-reports-from-models-in-power-bi-desktop"></a>Adskil rapporter fra modeller i Power BI Desktop
 
@@ -37,7 +37,7 @@ Det giver mening at adskille model- og rapportudvikling i separate Power BI Desk
 - Datadesignere og rapportforfattere er forskellige personer.
 - Det er forstået, at en model vil være kilden til flere rapporter, nu eller i fremtiden.
 
-:::image type="content" source="media/report-separate-from-model/separate-report-files.png" alt-text="Der er tre PBIX-filer. Den første indeholder kun en model. De andre to indeholder kun rapporter, og de har direkte forbindelse til den model, der hostes i Power BI-tjenesten. Rapporterne er udviklet af forskellige personer." border="true":::
+:::image type="content" source="media/report-separate-from-model/separate-report-files.png" alt-text="En enkelt fil indeholder en model og en rapport, der er udviklet af samme person." border="true":::
 
 Datadesignere kan stadig bruge oplevelsen til rapportskrivning i Power BI Desktop til at teste og validere deres modeldesign. Men så snart de har udgivet deres fil i Power BI-tjenesten, bør de fjerne rapporten fra arbejdsområdet. Og de skal huske at fjerne rapporten, hver gang de genudgiver og overskriver datasættet.
 
@@ -56,7 +56,7 @@ Du kan roligt tilføje nye tabeller, kolonner, hierarkier, hierarkiniveauer elle
 
 Hvis du har behov for at udføre ændringer, der vil resultere i afbrydelser, anbefaler vi, at du gør et af følgende:
 
-- [Få vist relateret indhold for datasættet](../consumer/end-user-related.md#view-related-content-for-a-dataset) i Power BI-tjenesten.
+- [Få vist relateret indhold for datasættet](../consumer/end-user-related.md) i Power BI-tjenesten.
 - Udforsk visningen [Dataafstamning](../collaborate-share/service-data-lineage.md) i Power BI-tjenesten.
 
 Begge muligheder gør dig i stand til hurtigt at identificere relaterede rapporter og dashboards. Visningen Dataafstamning er sandsynligvis det bedste valg, da det er nemt at se kontaktpersonen for hver relaterede artefakt. Det er faktisk et link, der åbner en mail, som er adresseret til kontakten.

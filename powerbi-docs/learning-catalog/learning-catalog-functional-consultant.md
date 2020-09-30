@@ -6,12 +6,12 @@ ms.prod: powerbi
 ms.topic: article
 ms.date: 03/25/2020
 ms.author: margoc
-ms.openlocfilehash: 11150686d1ff922877081a672290069f85b1afc5
-ms.sourcegitcommit: 00c0b24d5e80009d18cec6da4fee8a9611bcba04
+ms.openlocfilehash: 3ebfa0e13293f65d5399aafb7071d4eaad63cc6f
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87411905"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91527786"
 ---
 # <a name="functional-application-consultant-learning-catalog"></a>Læringskatalog til funktionelle programkonsulenter
 
@@ -34,8 +34,8 @@ I forbindelse med funktionelle konsulenter viste vores undersøgelse af jobopgav
 | [Power BI: Udfør analyse korrekt](https://info.microsoft.com/CA-PowerBI-WBNR-FY19-11Nov-08-PowerBIAnalyticsDoneRight-MCW0008690_02OnDemandRegistration-ForminBody.html)  | Hør efter alle analyse- og Excel-visionære: Få mere at vide om, hvordan du laver flotte rapporter, som folk gerne vil bruge, deler interessant indsigt, der er let at forstå, og nedbryder siloer med komplekse data på en sikker måde, så de bliver tilgængelige. Vi deler nye produktinnovationer og vores vision om moderne virksomheds-BI og selvbetjenings-BI, hvilket gør det muligt for din organisation at skabe en datadreven kultur.   | Webinar       |                   |
 | [Kunstig intelligens på tre måder, der ændrer BI](https://info.microsoft.com/ww-landing-Three-Ways-AI-Is-Changing-BI-OnDemand.html)  | Det er afgørende for analytikere at kunne undersøge og visualisere data, så de kan hjælpe deres interessenter med hurtigt og effektivt at finde indsigt. Virksomhedens behov har udviklet sig fra chefer, der spørger, hvad der er sket, til chefer, der spørger, hvorfor det skete – og hvad der vil ske i fremtiden. Tilmeld dig dette webinar for at få mere at vide om tre muligheder for dataindsigt, der blander AI med BI (business intelligence).   | Webinar       |                   |
 | [Udnyt styrken ved Power BI – tip og tricks fra Philip Seamark](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/6-22-2017-Unleash-the-Power-of-Power-BI-tips-and-tricks-by/td-p/161490) (webinaret er på engelsk) | Deltag i webinaret med Philip Seamark, hvor han gennemgår nogle af detaljerne omkring den største udrulning af Power BI på den sydlige halvkugle, hvordan det bruges, og hvordan det opfylder deres behov for BI. Denne session kommer omkring mange tip og tricks, der hjælper dig med at forbedre dine Power BI-rapporter.   | Webinar       | 53 min. 47 sek.       |
-| [Hvad er Power BI?](https://docs.microsoft.com/power-bi/fundamentals/power-bi-overview)  | Oversigt over Power BI   | Websted       | 3 minutter til læsning |
-| [Brug DAX i Power BI Desktop](https://docs.microsoft.com/learn/paths/dax-power-bi/) | Dette læringsforløb introducerer DAX (Data Analysis Expressions) og giver dig de grundlæggende færdigheder, der kræves for at forbedre datamodeller med beregninger.  | Gratis online læringsforløb i dit eget tempo | 4 t. 30 min. |
+| [Hvad er Power BI?](../fundamentals/power-bi-overview.md)  | Oversigt over Power BI   | Websted       | 3 minutter til læsning |
+| [Brug DAX i Power BI Desktop](/learn/paths/dax-power-bi/) | Dette læringsforløb introducerer DAX (Data Analysis Expressions) og giver dig de grundlæggende færdigheder, der kræves for at forbedre datamodeller med beregninger.  | Gratis online læringsforløb i dit eget tempo | 4 t. 30 min. |
 ## <a name="best-practices"></a>Bedste fremgangsmåder<a name="best-practices"></a>
 | Indhold   | Beskrivelse  | Formatér   | Længde   |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|-------------------|
