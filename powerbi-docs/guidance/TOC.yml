@@ -108,7 +108,7 @@
               href: migrate-ssrs-reports-to-power-bi.md
         - name: Administration og installation
           items:
-            - name: Indstillinger for lejeradministrator
+            - name: Lejerindstillinger
               href: admin-tenant-settings.md
             - name: Størrelse af datagateway i det lokale miljø
               href: gateway-onprem-sizing.md
