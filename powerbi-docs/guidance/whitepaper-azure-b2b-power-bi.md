@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/07/2019
 ms.author: davidi
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 9125c87f96641852a16410d3f8287c714816fb4b
-ms.sourcegitcommit: cff93e604e2c5f24e0f03d6dbdcd10c2332aa487
+ms.openlocfilehash: df6b3bd29089f37b11064216568523f442169794
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90965379"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91528384"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-using-azure-active-directory-b2b"></a>Distribuer Power BI-indhold til eksterne gæstebrugere vha. Azure Active Directory B2B
 
@@ -535,7 +535,7 @@ Du kan få flere oplysninger om indstillingerne her:
 
 ### <a name="control-guest-invites"></a>Styring af invitationer til gæster
 
-Power BI-administratorer kan administrere ekstern deling kun for Power BI ved at besøge Power BI Administration. Men lejeradministratorer kan også administrere ekstern deling med forskellige politikker for Azure AD.  Disse politikker giver lejeradministratorer følgende muligheder:
+Power BI-administratorer kan administrere ekstern deling kun for Power BI ved at besøge Power BI Administration. Men administratorer kan også styre ekstern deling med forskellige Azure AD-politikker.  Disse politikker giver administratorer mulighed for at:
 
 - Deaktiver invitationer til slutbrugere.
 - Kun administratorer og brugere, der har rollen til at invitere gæster, kan invitere.
