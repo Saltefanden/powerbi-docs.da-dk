@@ -100,8 +100,6 @@
               href: end-user-copy-paste.md
             - name: Detailudledning i en visualisering
               href: end-user-drill.md
-            - name: Interager med ArcGIS-kort
-              href: ../visuals/power-bi-visualizations-arcgis.md
         - name: Almindelige opgaver
           items:
             - name: Eksportér data til Excel

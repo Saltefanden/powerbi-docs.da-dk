@@ -259,8 +259,6 @@
               href: ../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
             - name: Interager med ArcGIS Maps i Power BI-visualiseringer
               href: ../visuals/power-bi-visualizations-arcgis.md
-            - name: Opret ArcGIS Maps for Power BI-visualiseringer
-              href: ../visuals/power-bi-visualization-arcgis.md
             - name: Basisområdediagrammer
               href: ../visuals/power-bi-visualization-basic-area-chart.md
             - name: Opret kortvisualiseringer (felter med store tal)
