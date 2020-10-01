@@ -5,16 +5,16 @@ author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-admin
+ms.subservice: powerbi-premium
 ms.topic: conceptual
 ms.date: 03/06/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: db5f123f0ab0eba373aca97fd975645cd38b4cd9
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: e24b9949eeaaf488f88677fc1171fae5ece5d383
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349419"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91600383"
 ---
 # <a name="deploying-and-managing-power-bi-premium-capacities"></a>Udrulning og administration af Premium-kapaciteter i Power BI
 
