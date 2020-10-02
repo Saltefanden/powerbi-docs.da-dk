@@ -35,6 +35,22 @@
           href: desktop-bidirectional-filtering.md
         - name: Arbejd med flerdimensionelle modeller i Power BI
           href: ../connect-data/desktop-default-member-multidimensional-models.md
+    - name: Dataflow
+      items:
+        - name: Introduktion til dataflow
+          href: dataflows/dataflows-introduction-self-service.md
+        - name: Opret et dataflow
+          href: dataflows/dataflows-create.md
+        - name: Konfigurer og brug et dataflow
+          href: dataflows/dataflows-configure-consume.md
+        - name: Dataflow og Azure Data Lake Gen2
+          href: dataflows/dataflows-azure-data-lake-storage-integration.md
+        - name: Premium-funktioner for dataflow
+          href: dataflows/dataflows-premium-features.md
+        - name: Brug Machine Learning og Cognitive Services med dataflow
+          href: dataflows/dataflows-machine-learning-integration.md
+        - name: Begrænsninger og overvejelser i forbindelse med dataflow
+          href: dataflows/dataflows-features-limitations.md
     - name: Vejledninger
       items:
         - name: Udfør almindelige forespørgselsopgaver
