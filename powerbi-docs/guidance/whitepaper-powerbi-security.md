@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/14/2020
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 19548729f4ae85334fea14584e78ad4ee05a5c24
-ms.sourcegitcommit: cff93e604e2c5f24e0f03d6dbdcd10c2332aa487
+ms.openlocfilehash: 432f8a7a39e6902c679c83d447039519f90d0dac
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90965335"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91635694"
 ---
 # <a name="power-bi-security-whitepaper"></a>Whitepaper om sikkerhed i Power BI
 
@@ -171,12 +171,11 @@ En forespørgsel om et importdatasæt består af en samling DAX-forespørgsler, 
 
 I følgende tabel beskrives Power BI-data, der er baseret på den type forespørgsel, der bruges. Et **X** angiver tilstedeværelsen af Power BI-data, når du bruger den tilknyttede forespørgselstype.
 
-
-|  |Importér  |DirectQuery  |Live Connect  |
-|---------|---------|---------|---------|
-|Skema     |     X    |    X     |         |
-|Rækkedata     |    X     |         |         |
-|Cachelagring af data for visuelle elementer     |    X     |     X    |    X     |
+|                         | Importér   | DirectQuery | Live Connect  |
+|-------------------------|----------|-------------|---------------|
+|**Skema**               | X        | X           |               |
+|**Rækkedata**             | X        |             |               |
+|**Cachelagring af data for visuelle elementer** | X        | X           | X             |
 
 Forskellen mellem DirectQuery og andre forespørgsler bestemmer, hvordan inaktive data håndteres i Power BI-tjenesten, og om selve forespørgslen krypteres. I følgende afsnit beskrives inaktive data og dataflytning, og kryptering, placering og processer til håndtering af data forklares.
 
