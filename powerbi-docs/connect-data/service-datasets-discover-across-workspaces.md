@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 04/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 0104d88ab926d649b7b2629e0e3427188c771948
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: e9bffc860baa424caef05bad3ac423932868c410
+ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236777"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "91374332"
 ---
 # <a name="create-reports-based-on-datasets-from-different-workspaces"></a>Opret rapporter baseret på datasæt fra forskellige arbejdsområder
 
@@ -50,7 +50,7 @@ På denne måde kan medlemmer af arbejdsområdet se, hvilke rapporter og dashboa
 
 ## <a name="find-an-endorsed-dataset"></a>Find et godkendt datasæt
 
-Der er to forskellige typer godkendte datasæt. Ejere af datasæt kan *fremhæve* et datasæt, som de har anbefalet til dig. Desuden kan Power BI-lejeradministratoren udpege eksperter i din organisation, der kan *certificere* datasæt, som alle kan bruge. Der vises *badges* for fremhævede og certificerede datasæt, som du ser, både når du leder efter et datasæt og på listen over datasæt i et arbejdsområde. Navnet på den person, der har certificeret et datasæt, vises i et værktøjstip i søgningsoplevelsen for datasæt. Peg på etiketten **Certificeret**, så kan du se det.
+Der er to forskellige typer godkendte datasæt. Ejere af datasæt kan *fremhæve* et datasæt, som de har anbefalet til dig. Power BI-administratoren kan også udpege eksperter i organisationen, som kan *certificere* datasæt, som alle kan bruge. Der vises *badges* for fremhævede og certificerede datasæt, som du ser, både når du leder efter et datasæt og på listen over datasæt i et arbejdsområde. Navnet på den person, der har certificeret et datasæt, vises i et værktøjstip i søgningsoplevelsen for datasæt. Peg på etiketten **Certificeret**, så kan du se det.
 
 - I Power BI-tjenesten: **Hent data** > **Publicerede datasæt**.
 - I Power BI Desktop: **Hent data** > **Power BI-datasæt**.

@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.date: 03/23/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: d12e64b98e2282e4446565ebd17a6222ba6276d2
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 09ac807b6823c8d9e8c0b44ad941365eb3ffb766
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85226652"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91526438"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Publicer en app i Power BI
 
@@ -135,7 +135,7 @@ Her er nogle generelle ting, du skal huske på, når du bruger den nye navigatio
 Når du tilføjer links til din appnavigation og vælger indstillingen Indholdsområde:
 * Sørg for, at linket kan integreres. Nogle tjenester blokerer for integrering af deres indhold på tredjepartswebsteder, som f.eks. Power BI.
 * Integration af Power BI-tjenesteindhold, f.eks. rapporter eller dashboards, i andre arbejdsområder understøttes ikke. 
-* Integrer indhold på Power BI-rapportserveren via det oprindelige integrerings-URL-indhold fra en udrulning i det lokale miljø. Udfør trinnene i [Opret URL-adressen til Power BI-rapportserveren](https://docs.microsoft.com/power-bi/report-server/quickstart-embed#create-the-power-bi-report-url) for at få URL-adressen. Vær opmærksom på, at der er gældende godkendelsesregler, så hvis du vil have vist indholdet, skal du have en VPN-forbindelse til serveren i det lokale miljø. 
+* Integrer indhold på Power BI-rapportserveren via det oprindelige integrerings-URL-indhold fra en udrulning i det lokale miljø. Udfør trinnene i [Opret URL-adressen til Power BI-rapportserveren](../report-server/quickstart-embed.md#create-the-power-bi-report-url) for at få URL-adressen. Vær opmærksom på, at der er gældende godkendelsesregler, så hvis du vil have vist indholdet, skal du have en VPN-forbindelse til serveren i det lokale miljø. 
 * Der vises en sikkerhedsadvarsel øverst i det integrerede indhold for at gøre opmærksom på, at indholdet ikke er i Power BI.
 
 ## <a name="automatically-install-apps-for-end-users"></a>Installér automatisk apps for slutbrugere
@@ -144,12 +144,12 @@ Hvis en administrator giver dig tilladelser, kan du installere apps automatisk o
 ### <a name="how-to-push-an-app-automatically-to-end-users"></a>Sådan pusher du automatisk en app til slutbrugere
 Når administratoren har givet dig tilladelser, har du en ny indstilling, hvor du kan **installere appen automatisk**. Når du markerer afkrydsningsfeltet og vælger **Publicer app** (eller **Opdater app**), pushes appen til alle de brugere eller grupper, der er defineret i sektionen **Tilladelser** under fanen **Adgang** i appen.
 
-![Aktivér push af apps](media/service-create-distribute-apps//power-bi-apps-access.png)
+![Skærmbillede, der viser indstillingen for Publicer app i Power BI, hvor Installér app automatisk er valgt.](media/service-create-distribute-apps//power-bi-apps-access.png)
 
 ### <a name="how-users-get-the-apps-that-you-push-to-them"></a>Sådan får brugerne de apps, du pusher til dem
 Når du har pushet en app, vises den automatisk på deres appliste. På denne måde kan du levere de apps, som specifikke brugere eller jobroller i organisationen har brug for at have lige ved hånden.
 
-![Aktivér push af apps](media/service-create-distribute-apps/power-bi-apps-left-nav.png)
+![Skærmbillede, der viser Power BI-apps, hvor din publicerede app er inkluderet.](media/service-create-distribute-apps/power-bi-apps-left-nav.png)
 
 ### <a name="considerations-for-automatically-installing-apps"></a>Overvejelser i forbindelse med automatisk installation af apps
 Her er nogle ting, du skal huske på, når du pusher apps til slutbrugerne:
@@ -215,5 +215,5 @@ Ting, du skal være opmærksom i forbindelse med publicering af apps:
 * [Opret et arbejdsområde](service-create-workspaces.md)
 * [Installér og brug apps i Power BI](../consumer/end-user-apps.md)
 * [Power BI-apps til eksterne tjenester](../connect-data/service-connect-to-services.md)
-* [Power BI-administrationsportal](https://docs.microsoft.com/power-bi/service-admin-portal)
+* [Power BI-administrationsportal](../admin/service-admin-portal.md)
 * Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/15/2019
 ms.author: arthii
 LocalizationGroup: Gateways
-ms.openlocfilehash: c97a303a5b3241f49e82aac41d9ed7984c3a5af1
-ms.sourcegitcommit: 002c140d0eae3137a137e9a855486af6c55ad957
+ms.openlocfilehash: 521c1cbc60c6d616c06bde6b6826bb270d3ddba0
+ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89642298"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "91375298"
 ---
 # <a name="manage-your-data-source---analysis-services"></a>Administrer din datakilde – Analysis Services
 
@@ -219,7 +219,9 @@ EffectiveUserName kan ikke bruges på en Analysis Services-server, der ikke er t
 
 Du ved måske ikke, hvad dit UPN er, og du er muligvis ikke domæneadministrator. Du kan bruge følgende kommando fra din arbejdsstation for at finde ud af, hvad UPN'et for din konto er.
 
-    whoami /upn
+```dos
+whoami /upn
+```
 
 Resultatet ligner en mailadresse, men det er det UPN, der er på din domænekonto. Hvis du bruger en Analysis Services-datakilde til direkte forbindelser, og hvis denne UPN ikke matcher den mailadresse, du bruger til at logge på Power BI, kan du se, hvordan du [tilknytter brugernavne](#map-user-names-for-analysis-services-data-sources).
 
@@ -235,7 +237,7 @@ Cloudtjenesterne kender kun til konti på Azure AD. Det har ingen betydning, hvi
 
 - Du kan bruge værktøjet [Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-sync-whatis) til at synkronisere lokale konti med din Azure AD-lejer.
 
-   Værktøjet Azure AD Connect indeholder muligheder for synkronisering og konfiguration af godkendelse. Mulighederne omfatter synkronisering af adgangskode-hash, videregivelse til godkendelse og samling. Hvis du ikke er administrator af lejeren eller lokal domæneadministrator, skal du kontakte it-administratoren for at få hjælp til konfigurationen.
+   Værktøjet Azure AD Connect indeholder muligheder for synkronisering og konfiguration af godkendelse. Mulighederne omfatter synkronisering af adgangskode-hash, videregivelse til godkendelse og samling. Hvis du ikke er administrator eller lokal domæneadministrator, skal du kontakte it-administratoren for at få hjælp til konfigurationen.
 
    Ved at bruge Azure AD Connect sikrer du, at UPN'et matcher mellem Azure AD og din lokale Active Directory-instans.
 
