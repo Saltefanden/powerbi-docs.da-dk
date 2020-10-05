@@ -8,14 +8,15 @@ ms.topic: how-to
 ms.date: 05/18/2020
 ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 2db7cce57408fa988c9a32057d6f1f880bc55126
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 42526dbae857c6488fe129cc7781672691782de1
+ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90861952"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "91375229"
 ---
 # <a name="connect-to-power-bi-premium-capacity-metrics"></a>Opret forbindelse til Power BI Premium Capacity Metrics
+
 Overvågning af dine kapaciteter er afgørende for at træffe beslutninger om den bedste måde, du kan udnytte dine ressourcer i Premium-kapaciteten på. Appen Power BI Premium Capacity Metrics giver de mest detaljerede oplysninger om ydeevnen af dine kapaciteter.
 
 ![Rapport i appen Power BI Premium Capacity Metrics](media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-report.png)
@@ -25,7 +26,7 @@ Denne artikel indeholder en beskrivelse af, hvordan du installerer appen og opre
 Når du har installeret appen og oprettet forbindelse til datakilderne, kan du tilpasse rapporten til dine behov. Du kan derefter distribuere den til kolleger i organisationen.
 
 > [!NOTE]
-> Installation af skabelonapps kræver [tilladelser](./service-template-apps-install-distribute.md#prerequisites). Kontakt din lejeradministrator, hvis du oplever, at du ikke har tilstrækkelige tilladelser.
+> Installation af skabelonapps kræver [tilladelser](./service-template-apps-install-distribute.md#prerequisites). Kontakt din Power BI-administrator, hvis du oplever, at du ikke har tilstrækkelige tilladelser.
 
 ## <a name="install-the-app"></a>Installér programmet
 
@@ -83,7 +84,7 @@ Når du har installeret appen og oprettet forbindelse til datakilderne, kan du t
 
 Klik på blyantikonet i øverste højre hjørne for at begynde at tilpasse appen.
 
- ![Microsoft-logonskærm](media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-customize.png)
+ ![Ikonet Rediger](media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-customize.png)
 
 Se [Tilpas og del appen](./service-template-apps-install-distribute.md#customize-and-share-the-app) for at få flere oplysninger.
 

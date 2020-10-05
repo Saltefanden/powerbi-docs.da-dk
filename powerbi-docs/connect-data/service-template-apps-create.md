@@ -8,12 +8,12 @@ ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 09/15/2020
 ms.author: painbar
-ms.openlocfilehash: e3b6ada10138e6964240c5eb5c53399507170b79
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 2f663c8e47e9a66ec3f4ee3eb70646239be6126a
+ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860664"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "91374999"
 ---
 # <a name="create-a-template-app-in-power-bi"></a>Opret en skabelonapp i Power BI
 
@@ -21,7 +21,7 @@ Med Power BI-*skabelonappsene* kan Power BI-partnere udarbejde programmer i Powe
 
 Hvis du kan oprette Power BI-rapporter og -dashboards, kan du blive *udvikler af skabelonapps* og udarbejde og pakke analytisk indhold i en *app*. Du kan udrulle dit program til andre Power BI-lejere via alle tilgængelige platforme, f.eks. AppSource, eller ved at bruge den i din egen webtjeneste. Som udvikler kan du oprette en beskyttet analysepakke, som du kan distribuere.
 
-Administratorer af Power BI-lejere styrer, hvem der kan oprette skabelonprogrammer i organisationen, og hvem der kan installere dem. Godkendte brugere kan installere dit skabelonprogram og derefter redigere det og distribuere det til Power BI-brugerne i deres organisation.
+Power BI-administratorer styrer, hvem der kan oprette skabelonprogrammer i organisationen, og hvem der kan installere dem. Godkendte brugere kan installere dit skabelonprogram og derefter redigere det og distribuere det til Power BI-brugerne i deres organisation.
 
 ## <a name="prerequisites"></a>Forudsætninger
 
@@ -163,7 +163,7 @@ Lad os gennemgå faserne:
 
     ![Ikon for Udgivelsesadministration](media/service-template-apps-create/power-bi-release-management-icon.png)
 
-2. Vælg **Hent link**, hvis du oprettede testappen i afsnittet **Opret testskabelonappen** ovenfor (det bevirker, at den gule prik ud for **Test** allerede er udfyldt).
+2. Vælg **Hent link**, hvis du oprettede testappen i afsnittet **Definer egenskaberne for skabelonappen** ovenfor (det bevirker, at den gule prik ud for **Test** allerede er udfyldt).
 
     Hvis du endnu ikke har oprettet appen, skal du vælge **Opret app**. Du vender derved tilbage til processen til oprettelse af skabelonapps.
 

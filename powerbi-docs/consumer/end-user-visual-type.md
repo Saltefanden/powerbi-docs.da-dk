@@ -10,12 +10,12 @@ ms.date: 06/24/2020
 ms.author: mihart
 ms.custom: contperfq4
 LocalizationGroup: Consumer
-ms.openlocfilehash: 86453ff7a192a9c79f1c9eda97529b661c7512d3
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: 05aab15b3807429c20b0ff72a7bfce21b3e25b12
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87537705"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91526875"
 ---
 # <a name="visual-types-in-power-bi"></a>Visualiseringstyper i Power BI
 
@@ -142,7 +142,7 @@ Et udfyldt kort bruger skygger eller toner eller mønstre til at vise, hvordan e
 Med figurkort sammenlignes områder på et kort ved hjælp af farve. Et figurkort kan ikke vise den nøjagtige geografiske placering af datapunkter på et kort. I stedet er dets primære formål at vise relative sammenligninger mellem områder på et kort ved at give dem forskellige farver.
 
 ### <a name="matrix"></a>Matrix
-![matrix](media/end-user-visual-type/matrix.png)
+![Skærmbillede, der viser en datamatrix med år og kvartaler for indtægt og indtægt ÅTD.](media/end-user-visual-type/matrix.png)
 
 Matrixvisualiseringen er en type tabelvisualisering (se "Tabel" herunder), som understøtter et trinvist layout. Rapportdesignere inkluderer ofte matricer i rapporter og på dashboards, så brugerne kan vælge et eller flere elementer (rækker, kolonner, celler) i matrixen til tværgående fremhævning af andre visualiseringer på en rapportside.  
 

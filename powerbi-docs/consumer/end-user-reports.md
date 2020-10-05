@@ -1,20 +1,20 @@
 ---
 title: Rapporter i Power BI-tjenesten
-description: Rapporter i Power BI-tjenesten til forbrugere
+description: Rapporter i Power BI-tjenesten, til virksomhedsbrugere
 author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 03/11/2020
+ms.date: 09/28/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: bc0ef9854afdb95a00502ea6755dc36db6c8fbf4
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: 871f807d18017343b4b23eee4d59833c196cf2f0
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87536210"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91528062"
 ---
 # <a name="reports-in-power-bi"></a>Rapporter i Power BI
 
@@ -22,7 +22,7 @@ ms.locfileid: "87536210"
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-En Power BI-rapport er en visning med flere perspektiver af et datasæt med visualiseringer, som repræsenterer forskellige resultater og indsigter fra dette datasæt.  En rapport kan indeholde en enkelt visualisering eller sider fulde af visualiseringer. Afhængigt af din jobfunktion kan du være en person, der *designer* rapporter. Du også kan være en person, der *forbruger* eller anvender rapporter. Denne artikel er til *forbrugere*.
+En Power BI-rapport er en visning med flere perspektiver af et datasæt med visualiseringer, som repræsenterer forskellige resultater og indsigter fra dette datasæt.  En rapport kan indeholde en enkelt visualisering eller sider fulde af visualiseringer. Afhængigt af din jobfunktion kan du være en person, der *designer* rapporter. Du også kan være en erhvervsbruger, der *forbruger* eller anvender rapporter. Denne artikel er målrettet *virksomhedsbrugere*.
 
 ![Skærmbillede af en rapportside.](./media/end-user-reports/power-bi-report.png)
 
@@ -32,7 +32,7 @@ C. Ruden *Filtre* viser ét filter, som er anvendt på alle rapportsider. Hvis d
 D. På Power BI-banneret kan du se navnet på rapporten og de seneste opdaterede dato. Vælg pilen for at åbne en menu, der også viser navnet på ejeren af rapporten.    
 E. Handlingslinjen indeholder handlinger, du kan udføre på denne rapport.  Du kan f.eks. tilføje en kommentar, få vist et bogmærke eller eksportere data fra rapporten.  Vælg **Flere indstillinger** (...) for at få vist en liste over yderligere rapportfunktionalitet.    
 
-Hvis du ikke har arbejdet med Power BI før, kan du få et godt overblik ved at læse [Grundlæggende begreber for forbrugere af Power BI-tjenesten](end-user-basic-concepts.md). Rapporter er tilgængelige til visning, deling og anmærkning på mobilenheder. Du kan få flere oplysninger under: [Udforsk rapporter i Power BI-mobilapps](mobile/mobile-reports-in-the-mobile-apps.md).
+Hvis du ikke har arbejdet med Power BI før, kan du få et godt overblik ved at læse [Grundlæggende begreber for erhvervsbrugere af Power BI-tjenesten](end-user-basic-concepts.md). Rapporter er tilgængelige til visning, deling og anmærkning på mobilenheder. Du kan få flere oplysninger under: [Udforsk rapporter i Power BI-mobilapps](mobile/mobile-reports-in-the-mobile-apps.md).
 
 ## <a name="advantages-of-reports"></a>Fordele ved rapporter
 
@@ -68,14 +68,14 @@ Dette betyder ikke, at du ikke kan gemme dine ændringer. Det kan du godt, men d
 <!--| Available in Power BI Desktop |No |Yes, can create and view reports in Desktop |
 | Pinning |Can pin existing visuals (tiles) only from current dashboard to your other dashboards |Can pin visuals (as tiles) to any of your dashboards. Can pin entire report pages to any of your dashboards. | -->
 
-## <a name="report-designers-and-report-consumers"></a>Rapportdesignere og rapportforbrugere
+## <a name="report-designers-and-report-users"></a>Rapportdesignere og rapportbrugere
 
 Afhængigt af din rolle kan du være en person, der *designer* rapporter til eget brug eller til at dele med kolleger. Du vil gerne vide mere om, hvordan du opretter og deler rapporter.
 
-Eller måske er du en *forbruger*, der modtager rapporter fra andre. Du vil gerne vide mere om, hvordan du forstår og interagerer med rapporter. Hvis du er *forbruger* af rapporter, er disse links beregnet til dig:
+Eller måske er du en *erhvervsbruger*, der modtager rapporter fra andre. Du vil gerne vide mere om, hvordan du forstår og interagerer med rapporter. Hvis du er *erhvervsbruger* af rapporter, er disse links beregnet til dig:
 
 * Start med en [præsentation af Power BI-tjenesten](end-user-basic-concepts.md), så du ved, hvor du kan finde rapporter og værktøjer til rapporten.
-* Få mere at vide om, hvordan du [åbner en rapport](end-user-report-open.md) og alle de [handlinger, der er tilgængelige for forbrugere](end-user-reading-view.md).
+* Få mere at vide om, hvordan du [åbner en rapport](end-user-report-open.md) og alle de [handlinger, der er tilgængelige for erhvervsbrugere](end-user-reading-view.md).
 * Bliv fortrolig med rapporter ved at se præsentationen af et af vores [eksempler](../create-reports/sample-tutorial-connect-to-the-samples.md).  
 * Hvis du vil se, hvilke datasæt rapporten bruger, og hvilke dashboards der indeholder visualiseringer fra rapporten (*fastgjorte*), skal du se [Få vist relateret indhold i Power BI-tjenesten](end-user-related.md).
 

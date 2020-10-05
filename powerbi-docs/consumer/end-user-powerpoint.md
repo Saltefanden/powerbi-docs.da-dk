@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 09/17/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 841b8bb72b7b2a13c833fd313027b38b57511af3
-ms.sourcegitcommit: cb606d3ae95300683caf1853e229d8981302a8e2
+ms.openlocfilehash: 61c084dca6d80a5e609f642ed6fc6894bef9e63c
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90764281"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91527435"
 ---
 # <a name="export-reports-to-powerpoint"></a>Eksportér rapporter til PowerPoint
 
@@ -110,7 +110,7 @@ Der er nogle få overvejelser og begrænsninger, du skal huske på, når du arbe
     - Rapporter, som det tager mere end en time at behandle. 
     - Rapportsider, som det tager mere end seks minutter at indlæse. 
 
-* Hvis menuelementet **Eksportér til PowerPoint** ikke er tilgængeligt i Power BI-tjenesten, er det sandsynligvis fordi, din lejeradministrator eller rapportejeren har deaktiveret funktionen. Kontakt din lejeradministrator eller ejeren for at få flere oplysninger.
+* Hvis menupunktet **Eksportér til PowerPoint** ikke er tilgængeligt i Power BI-tjenesten, er det sandsynligvis fordi, din Power BI-administrator eller rapportejeren har deaktiveret funktionen. Kontakt din administrator eller ejeren for at få flere oplysninger.
 * I Power BI-tjenesten anvendes din Power BI-sprogindstilling for PowerPoint-eksporten. Hvis du vil se eller angive dine sprogindstillinger, skal du i din browser vælge tandhjulsikonet ![Tandhjulsikon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Indstillinger** > **Generelt** > **Sprog**.
 
 

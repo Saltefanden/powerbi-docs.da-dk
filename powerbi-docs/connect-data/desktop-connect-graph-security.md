@@ -10,22 +10,22 @@ ms.topic: conceptual
 ms.date: 01/29/2019
 ms.author: preetikr
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 5d7fbe9e302c7b1460bc285af140a50304c468da
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 7f08d75ecc9386dc2329c6564448023dfbfb3b9b
+ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90858525"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "91374953"
 ---
 # <a name="connect-to-the-microsoft-graph-security-api-in-power-bi-desktop"></a>Opret forbindelse til Microsoft Graph Security API i Power BI Desktop
 
-Brug Microsoft Graph Security-connectoren til Power BI Desktop til at oprette forbindelse til [Microsoft Graph Security API](/graph/security-concept-overview). Du kan derefter skabe dashboards og rapporter, så du kan få indsigt i dine sikkerhedsrelaterede [beskeder](/graph/api/resources/alert?view=graph-rest-1.0) og [sikkerhedsscorer](/graph/api/resources/securescores?view=graph-rest-beta).
+Brug Microsoft Graph Security-connectoren til Power BI Desktop til at oprette forbindelse til [Microsoft Graph Security API](/graph/security-concept-overview). Du kan derefter skabe dashboards og rapporter, så du kan få indsigt i dine sikkerhedsrelaterede [beskeder](/graph/api/resources/alert) og [sikkerhedsscorer](/graph/api/resources/securescores).
 
-Microsoft Graph Security API'en opretter forbindelse til [flere sikkerhedsløsninger](/graph/api/resources/security-api-overview#alerts) fra Microsoft og Microsofts økosystem af partnere for at gøre korrelation mellem beskeder nemmere. Denne kombination giver adgang til detaljerede kontekstuelle oplysninger og forenkler automatisering. Den gør det muligt for organisationer hurtigt at få indsigt og reagere på tværs af flere sikkerhedsprodukter og samtidigt reducere omkostningerne og kompleksiteten.
+Microsoft Graph Security API'en opretter forbindelse til [flere sikkerhedsløsninger](/graph/api/resources/security-api-overview#alerts) fra Microsoft og Microsofts partnere for at gøre korrelation mellem beskeder nemmere. Denne kombination giver adgang til detaljerede kontekstuelle oplysninger og forenkler automatisering. Den gør det muligt for organisationer hurtigt at få indsigt og reagere på tværs af flere sikkerhedsprodukter og samtidigt reducere omkostningerne og kompleksiteten.
 
 ## <a name="prerequisites-to-use-the-microsoft-graph-security-connector"></a>Forudsætninger for at bruge Microsoft Graph Security-connectoren
 
-Hvis du vil bruge Microsoft Graph Security-connectoren, skal du have *udtrykkelig* samtykke fra administratoren af Azure Active Directory-lejeren (Azure AD). Se [Krav til godkendelse af Microsoft Graph Security](/graph/security-authorization).
+Hvis du vil bruge Microsoft Graph Security-connectoren, skal du have *udtrykkelig* samtykke fra den globale Azure Active Directory-administrator (Azure AD). Se [Krav til godkendelse af Microsoft Graph Security](/graph/security-authorization).
 Samtykke kræver connectorens program-id og -navn, hvilket er nævnt her og tilgængeligt på [Azure Portal](https://portal.azure.com):
 
 | Egenskab | Værdi |
@@ -35,7 +35,7 @@ Samtykke kræver connectorens program-id og -navn, hvilket er nævnt her og tilg
 | **Omdirigerings-URI** | `https://oauth.powerbi.com/views/oauthredirect.html` |
 |||
 
-For at give samtykke for connectoren skal administratoren af din Azure AD-lejer følge en af disse metoder:
+For at give samtykke til connectoren skal den globale Microsoft Azure Active Directory-administrator bruge en af disse metoder:
 
 * [Giv samtykke til Azure AD-programmer](/azure/active-directory/develop/v2-permissions-and-consent)
 
@@ -61,7 +61,7 @@ Følg disse trin for at bruge connectoren:
 
     ![Log på](media/desktop-connect-graph-security/SignIn.PNG) 
     
-6. Hvis du er lejeradministrator, *og* du endnu ikke har givet samtykke til Microsoft Graph Security Power BI-connectoren (program), får du vist følgende dialogboks. Vælg **Samtykke på vegne af din organisation**.
+6. Hvis du er administrator, *og* du endnu ikke har givet samtykke til Microsoft Graph Security Power BI-connectoren (program), får du vist følgende dialogboks. Vælg **Samtykke på vegne af din organisation**.
 
     ![Dialogboksen Administratorsamtykke](media/desktop-connect-graph-security/AdminConsent.PNG)
     

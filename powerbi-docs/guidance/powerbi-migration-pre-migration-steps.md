@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/20/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 9a5ed3d2a4798332de2394e1ad5be6fdbdb6eeae
-ms.sourcegitcommit: 84e75a2cd92f4ba4e0c08ba296b981b79d6d0e82
+ms.openlocfilehash: fba37d9f73ea0f61d8a43dc46cd13a5835d4d2a9
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88803171"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91525794"
 ---
 # <a name="prepare-to-migrate-to-power-bi"></a>Forbered migrering til Power BI
 
@@ -73,7 +73,7 @@ Bemærk, at [fase 2](powerbi-migration-planning.md) refererer til planlægning a
 
 Nogle af de vigtigste punkter, der skal håndteres tidligt i implementeringen af Power BI, omfatter:
 
-- Beslutninger om [indstillinger for Power BI-lejeradministrator](admin-tenant-settings.md), som bør dokumenteres.
+- Beslutninger om [indstillinger for Power BI-lejer](admin-tenant-settings.md), som bør dokumenteres.
 - Beslutninger om [administration af arbejdsområder](../collaborate-share/service-new-workspaces.md), som bør dokumenteres.
 - Overvejelser og indstillinger relateret til data og [metoder til distribution af indhold](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md), f.eks. apps, arbejdsområder, deling, abonnementer og integrering af indhold.
 - Indstillinger relateret til [tilstande for datasæt](../connect-data/service-dataset-modes-understand.md), f.eks. brug af Import-tilstand, DirectQuery-tilstand eller en kombination af disse to tilstande i en [Sammensat model](composite-model-guidance.md).
@@ -96,7 +96,7 @@ Din [arkitektur for BI-løsningen](center-of-excellence-business-intelligence-so
 - Konfiguration og integration af Power BI-lejer med Azure Active Directory.
 - Definer [Power BI-administratorer](../admin/service-admin-role.md).
 - Fremskaf og tildel indledende [brugerlicenser](../admin/service-admin-licensing-organization.md).
-- Konfigurer og gennemse [indstillinger for Power BI-lejeradministrator](admin-tenant-settings.md).
+- Konfigurer og gennemse [indstillinger for Power BI-lejer](admin-tenant-settings.md).
 - Konfigurer [arbejdsområderoller](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces), og tildel adgang til sikkerhedsgrupper og brugere i Azure Active Directory.
 - Konfigurer en indledende [datagateway](../connect-data/service-gateway-deployment-guidance.md)-klynge – med en plan om regelmæssig opdatering.
 - Fremskaf en indledende [licens til en Premium-kapacitet](../admin/service-admin-premium-purchase.md) (hvis relevant).

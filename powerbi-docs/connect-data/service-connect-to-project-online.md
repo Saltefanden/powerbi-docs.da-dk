@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/25/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 25a0ddaaf72e185d795d819e8c2cb990d2823ed2
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 99a8cf5081274f922d210a140d333814b80fd01f
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85229788"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91527740"
 ---
 # <a name="connect-to-project-web-app-with-power-bi"></a>Opret forbindelse til Project Web App med Power BI
 Microsoft Project Web App er en fleksibel onlineløsning til projektporteføljestyring (PPM) og det daglige arbejde. Project Web App gør det muligt for organisationer at komme i gang, prioritere investeringer i projektporteføljen og levere den tilsigtede forretningsværdi. Med Project Web App-skabelonappen til Power BI får du indsigt fra Project Web App, som kan hjælpe dig med at administrere projekter, porteføljer og ressourcer.
@@ -29,7 +29,7 @@ Opret forbindelse til [Project Web App-skabelonappen](https://appsource.microsof
 
 2. Markér **Hent** i feltet **Tjenester**.
    
-   ![AppSource](media/service-connect-to-project-online/AppSource.png)
+   ![Skærmbillede, der viser vinduet AppSource med fem tilgængelige apps.](media/service-connect-to-project-online/AppSource.png)
 3. I AppSource skal du vælge fanen **Apps** og søge/vælge **Microsoft Project Web App**.
    
 4. Du får vist en meddelelse med teksten **Vil du installere denne Power BI-app?** . Vælg **Installér**. 

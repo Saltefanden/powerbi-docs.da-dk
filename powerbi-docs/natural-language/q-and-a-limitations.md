@@ -7,12 +7,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/09/2020
 ms.author: maggies
-ms.openlocfilehash: 7b02e1b1fb49eb1c43b12d204250eabec8eafe91
-ms.sourcegitcommit: 002c140d0eae3137a137e9a855486af6c55ad957
+ms.openlocfilehash: c989dad575f10a6ed4f6b25ed80368315087c1c2
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89642346"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91528292"
 ---
 # <a name="limitations-of-power-bi-qa"></a>Begrænsninger for Spørgsmål og svar i Power BI
 
@@ -53,7 +53,7 @@ Den nye dialogboks for værktøjer giver brugerne mulighed for at tilpasse og fo
 
 Spørgsmål, du har stillet til din datamodel, gemmes kun i 28 dage i repetitionsspørgsmålene. Når du bruger den nye egenskab for repetitionsspørgsmål, vil du måske opleve, at nogle spørgsmål ikke er registreret. De registreres ikke som standard, da programmet for naturligt sprog udfører en række trin til rensning af data for at sikre, at alle tastetryk fra en bruger ikke registreres eller vises.
 
-Lejeradministratorer kan bruge indstillingerne for lejeradministrator til at administrere muligheden for at gemme spørgsmål. Tilladelserne er baseret på sikkerhedsgrupper. 
+Power BI-administratorer kan bruge indstillingerne for lejer til at administrere muligheden for at gemme spørgsmål. Tilladelserne er baseret på sikkerhedsgrupper. 
 
 Brugerne kan også forhindre, at deres spørgsmål bliver registreret ved at vælge **Indstillinger** > **Generelt** og fjerne markeringen i **Giv Spørgsmål og svar tilladelse til at registrere min ytring**. 
 

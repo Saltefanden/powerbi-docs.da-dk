@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/20/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 5fcffd39e9a341478657b63770201ad722b8c291
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 97164fe1db72cac28096b1fde5130cfccec29be2
+ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90855121"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "91374794"
 ---
 # <a name="frequently-asked-questions-for-power-bi-for-germany-cloud-customers"></a>Ofte stillede spørgsmål om Power BI til Germany Cloud-kunder
 **Power BI-tjenesten** har en version, der er tilgængelig for EU/EFTA-kunder, ofte kaldet Microsoft Cloud Deutschland (MCD). Versionen af **Power BI-tjenesten**, der er beskrevet i denne artikel, er udviklet specielt til EU/EFTA-kunder og er separat og adskiller sig fra den kommercielle version af **Power BI-tjenesten** eller Power BI-tjenester, der leveres til regeringskunder.
@@ -34,7 +34,7 @@ Følgende spørgsmål og svar giver vigtige oplysninger om Power BI Pro-tjeneste
    Du kan finde mange oplysninger på [Power BI Germany Cloud-hjemmesiden](https://powerbi.microsoft.com/power-bi-germany/), herunder oplysninger om priser. På den pågældende side finder du også et tilmeldingslink til en 30-dages prøveversion af **Power BI Pro-tjenesten** med 25 brugerlicenser. Som en del af tilmeldingen til prøveversionen får du mulighed for at købe eller tilføje yderligere licenser efter behov. Vi tilbyder også priser på Enterprise Agreement (EA), til offentlige myndigheder og almennyttige organisationer. Kontakt din Microsoft-kunderepræsentant for at få flere oplysninger.
 3. **Jeg har en Germany Cloud-lejer som en del af Azure Germany og/eller Office 365 Germany-abonnementer. Kan jeg bruge den eksisterende lejer til at tilmelde mig Power BI Germany?**
    
-   Ja. Som en del af tilmeldingsprocessen får du mulighed for at logge på med en eksisterende Germany Cloud-lejeradministratorkonto og føje Power BI Pro-tjenestelicenserne til din eksisterende lejer i Germany Cloud. Vær opmærksom på, at Germany Cloud-lejere og brugerkonti er forskellige fra Power BI-tjenesten til Germany Cloud.
+   Ja. Som en del af tilmeldingsprocessen får du mulighed for at logge på med en eksisterende Germany Cloud-administratorkonto og føje Power BI Pro-tjenestelicenserne til din eksisterende lejer i Germany Cloud. Vær opmærksom på, at Germany Cloud-lejere og brugerkonti er forskellige fra Power BI-tjenesten til Germany Cloud.
 4. **Er der en gratis tjeneste i Power BI-tjenesten for Germany Cloud?**
    
    Nej. Vi tilbyder ikke versioner med gratis licens af Power BI-tjenesten for Germany Cloud. Men vi opfordrer dig til at tilmelde dig [den gratis version af Power BI i vores offentlige cloud](https://powerbi.microsoft.com/get-started/), hvis dine virksomhedsbehov opfyldes med den gratis version af Power BI.

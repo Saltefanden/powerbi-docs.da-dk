@@ -11,12 +11,12 @@ ms.date: 09/17/2020
 ms.author: mihart
 ms.custom: licensing support
 LocalizationGroup: consumers
-ms.openlocfilehash: c46da515a4f0f58c0e9fe92f01a3a0eaeb68a1de
-ms.sourcegitcommit: cb606d3ae95300683caf1853e229d8981302a8e2
+ms.openlocfilehash: bfa2faaa95c58541e44dd858f8d544d06d86ba25
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90763936"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91527929"
 ---
 # <a name="licenses-and-subscriptions-for-business-users"></a>Licenser og abonnementer til *forretningsbrugere*
 
@@ -36,7 +36,7 @@ Denne artikel indeholder en beskrivelse af funktionerne for hver licenstype, og 
 
 ## <a name="licenses"></a>Licenser
 
-En bruger af Power BI-tjenesten har enten en *gratis* licens eller en *Pro-licens*. Hvis du er *forretningsbruger* i Power BI, bruger du sandsynligvis en gratis licens, der administreres af din Power BI-lejeradministrator.
+En bruger af Power BI-tjenesten har enten en *gratis* licens eller en *Pro-licens*. Hvis du er *erhvervsbruger* i Power BI, bruger du sandsynligvis en gratis licens, der administreres af din Power BI-administrator.
 
 Det er muligt at have mere end én licens på samme tid.  Tjenesten giver dig altid den funktionalitet, der svarer til licensen med flest tilladelser, som du har i øjeblikket.
 

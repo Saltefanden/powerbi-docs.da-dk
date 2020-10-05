@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/20/2020
 ms.author: painbar
 LocalizationGroup: ''
-ms.openlocfilehash: 2c9834310179d8936cda8b769e3b7e3f80d328e6
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.openlocfilehash: 71c214e265c84eb7436d384a98f793eefe2f6a23
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87253875"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91526212"
 ---
 # <a name="data-source-impact-analysis"></a>Effektanalyse af datakilder
 
@@ -42,6 +42,17 @@ Sidepanelet for effektanalyse åbnes.
  
 * **Effektoversigt**: Viser antallet af potentielt påvirkede arbejdsområder, dataflow og datasæt. Dette antal omfatter arbejdsområder, som du ikke har adgang til.
 * **Brugsopdeling**: Viser navnet på de påvirkede dataflow og datasæt for hvert arbejdsområde. Hvis du vil undersøge effekten på et bestemt arbejdsområde, skal du klikke på navnet på arbejdsområdet for at åbne arbejdsområdet. Når du er i det berørte arbejdsområde, skal du bruge [effektanalysen af datasæt](service-dataset-impact-analysis.md) for at se oplysninger om tilknyttede rapporter og dashboards.
+
+## <a name="notify-contacts"></a>Giv kontakter besked
+
+Hvis du har foretaget en ændring af en datakilde eller påtænker at gøre det, kan det være en god idé at kontakte de relevante brugere for at fortælle dem om det. Når du giver kontakter besked, sendes der en mail til [listen over kontakter](service-create-the-new-workspaces.md#create-a-contact-list) for alle de påvirkede arbejdsområder (i tilfælde af klassiske arbejdsområder sendes mailen til arbejdsområdets administratorer). Dit navn vises på mailen, så kontakterne kan finde dig og besvare dig i en ny mailtråd. 
+
+1. Klik på **Giv kontakter besked** i ruden Effektanalyse. Dialogboksen Giv kontakter besked vises.
+
+   ![Skærmbillede af dialogboksen Giv kontaktpersoner besked for datakilden.](media/service-data-source-impact-analysis/notify-contacts-dialog.png)
+
+1. I tekstfeltet kan du angive oplysninger om ændringen.
+1. Når meddelelsen er klar, skal du klikke på **Send**.
 
 ## <a name="privacy"></a>Beskyttelse af personlige oplysninger
 

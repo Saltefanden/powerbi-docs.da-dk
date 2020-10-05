@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 04/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 385f7278f7fdd55ba76b1b559674040f6513924d
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 0caaf46956656c141992482ae39773d19e8fc550
+ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237283"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "91374144"
 ---
 # <a name="control-the-use-of-datasets-across-workspaces"></a>Styr brugen af datasæt på tværs af arbejdsområder
 
@@ -32,7 +32,7 @@ Hvis du slår denne indstilling fra, kan du her se effekten på forfattere af ra
 
 ## <a name="provide-a-link-for-the-certification-process"></a>Angiv et link til certificeringsprocessen
 
-Som lejeradministrator kan du angive en URL-adresse for linket **Få mere at vide** på siden med indstillingen **Godkendelse**.  Dette link kan føre til dokumentation om certificeringsprocessen. Hvis du ikke angiver en destination for linket **Få mere at vide**, peger det som standard på artiklen om [certificering af datasæt](service-datasets-certify.md).
+Som Power BI-administrator kan du angive en URL-adresse for linket **Få mere at vide** på siden med indstillingen **Godkendelse**.  Dette link kan føre til dokumentation om certificeringsprocessen. Hvis du ikke angiver en destination for linket **Få mere at vide**, peger det som standard på artiklen om [certificering af datasæt](service-datasets-certify.md).
 
 ![Få mere at vide om certificering af datasæt](media/service-datasets-certify-promote/power-bi-dataset-learn-more-certification.png)
 

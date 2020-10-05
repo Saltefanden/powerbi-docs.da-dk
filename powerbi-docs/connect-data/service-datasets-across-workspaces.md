@@ -1,6 +1,6 @@
 ---
 title: Introduktion til datasæt på tværs af arbejdsområder
-description: Få mere at vide om, hvordan du deler et datasæt med brugere på tværs af organisationen. De kan derefter oprette rapporter baseret på dit datasæt i deres egne arbejdsområder.
+description: Få mere at vide om deling af datasæt og registrering for arbejdsområder. Brugerne kan derefter oprette rapporter baseret på dit datasæt i deres egne arbejdsområder på tværs af organisationen.
 author: maggiesMSFT
 ms.reviewer: kayu
 ms.service: powerbi
@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 04/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5f79411d7eedc97e99aabc8b44dbf12a22696bba
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: e943324106148bdbff1edba36650d494fdd9db8c
+ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236862"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "91374263"
 ---
 # <a name="intro-to-datasets-across-workspaces"></a>Introduktion til datasæt på tværs af arbejdsområder
 
@@ -22,7 +22,7 @@ Business intelligence er en aktivitet baseret på samarbejde. Det er vigtigt at 
 
 ![Vælg et delt datasæt](media/service-datasets-across-workspaces/power-bi-select-shared-dataset.png)
 
-I Power BI kan forfattere af datasæt styre, hvem der har adgang til deres data, ved hjælp af [tilladelsen Opret](service-datasets-build-permissions.md). Forfatterne af datasæt kan også *certificere* eller *fremhæve* datasæt, så andre kan finde dem. På denne måde ved forfattere af rapporter, hvilke datasæt der er i høj kvalitet og officielle, og de kan bruge disse datasæt, uanset hvor de er forfattere i Power BI. Lejeradministratorer har en ny lejerindstilling til at [styre brugen af datasæt på tværs af arbejdsområder](service-datasets-admin-across-workspaces.md).
+I Power BI kan forfattere af datasæt styre, hvem der har adgang til deres data, ved hjælp af [tilladelsen Opret](service-datasets-build-permissions.md). Forfatterne af datasæt kan også *certificere* eller *fremhæve* datasæt, så andre kan finde dem. På denne måde ved forfattere af rapporter, hvilke datasæt der er i høj kvalitet og officielle, og de kan bruge disse datasæt, uanset hvor de er forfattere i Power BI. Administratorer har en ny lejerindstilling til at [styre brugen af datasæt på tværs af arbejdsområder](service-datasets-admin-across-workspaces.md).
 
 ## <a name="dataset-sharing-and-the-new-workspace-experience"></a>Deling af datasæt og den nye arbejdsområdeoplevelse
 

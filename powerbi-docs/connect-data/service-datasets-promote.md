@@ -9,19 +9,19 @@ ms.topic: how-to
 ms.date: 04/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 984ac0bc0e89ff1be5281039f4f4586025d7973e
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: ac0b032d8f20610dff97fb112d3ac54d5cc43889
+ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236749"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "91374286"
 ---
 # <a name="promote-your-dataset---power-bi"></a>Fremhæv dit datasæt – Power BI
 
 Forfattere af Power BI-rapporten har nu muligvis adgang til mange forskellige datasæt, så virksomheder skal guide dem til pålidelige datasæt af høj kvalitet. Power BI indeholder to måder at *godkende* datasæt på:
 
 - **Fremhævning**: Som ejer af et datasæt kan du fremhæve dine egne datasæt, når de er klar til almindelig brug. Et hvilket som helst medlem af et arbejdsområde med skriverettigheder kan fremhæve et datasæt. Der er ingen begrænsninger på, hvem der kan fremhæve et datasæt. Fremhævning understøtter samarbejdsmæssig spredning af datasæt i organisationer. Denne artikel handler om at fremhæve dit datasæt.
-- **Certificering**: Du kan anmode om certificering for et fremhævet datasæt. En udvalgt gruppe af brugere, der er defineret under indstillingen **Certificering af datasæt** for lejeradministratoren, beslutter, hvilke datasæt der skal certificeres. Du kan finde flere oplysninger i [Certificer datasæt](service-datasets-certify.md).
+- **Certificering**: Du kan anmode om certificering for et fremhævet datasæt. En udvalgt gruppe af brugere, der er defineret under indstillingen **Certificering af datasæt** for lejeren, beslutter, hvilke datasæt der skal certificeres. Du kan finde flere oplysninger i [Certificer datasæt](service-datasets-certify.md).
 
 ## <a name="promote-a-dataset"></a>Fremhæv et datasæt
 
@@ -41,7 +41,7 @@ Dit datasæt skal være placeret i et arbejdsområde med den nye arbejdsområdeo
 
 ## <a name="request-dataset-certification"></a>Anmod om certificering af datasæt
 
-Din lejeradministrator har identificeret personer i din organisation, som kan certificere datasæt. Du kan bede om, at de certificerer dit datasæt.
+Din Power BI-administrator har identificeret personer i din organisation, som kan certificere datasæt. Du kan bede om, at de certificerer dit datasæt.
 
 1. Giv den person, der udfører certificeringen, medlemstilladelser for det arbejdsområde, hvor datasættet er placeret.
 
@@ -49,7 +49,7 @@ Din lejeradministrator har identificeret personer i din organisation, som kan ce
 
 1. Vælg linket **Få mere at vide**.
 
-    Din Power BI-lejeradministrator kan konfigurere linket **Få mere at vide** for at gå til en angivet placering med oplysninger om certificeringsprocessen i din lejer.   Hvis du ikke har tilpasset linket **Få mere at vide**, peger det som standard på artiklen om [certificering af datasæt](service-datasets-certify.md).
+    Din Power BI-administrator kan konfigurere linket **Få mere at vide** for at gå til en angivet placering med oplysninger om certificeringsprocessen i din lejer.   Hvis du ikke har tilpasset linket **Få mere at vide**, peger det som standard på artiklen om [certificering af datasæt](service-datasets-certify.md).
 
 ## <a name="next-steps"></a>Næste trin
 

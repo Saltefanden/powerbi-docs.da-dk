@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/18/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: a9fca9f27baf51c4e4bafbf93244f0d745ba714b
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: c83565582a47c75e4f55e516afe3be0d9fbe7847
+ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90857421"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "91374217"
 ---
 # <a name="power-bi-high-availability-failover-and-disaster-recovery-faq"></a>Ofte stillede spørgsmål om høj tilgængelighed, failover og it-katastrofeberedskab i Power BI
 
@@ -74,4 +74,8 @@ Hvis den Power BI-løsning, der bruges i din organisation, omfatter en af følge
 
 ## <a name="will-gateways-function-when-in-failover-mode"></a>Fungerer gateways i failovertilstand?
 
-Nej. Data, der kræves fra datakilder i det lokale miljø (alle rapporter og dashboards, der er baseret på DirectQuery og Live Connect), fungerer ikke under en failover. Konfigurationen af gatewayen ændres dog ikke: Når forekomsten af Power BI vender tilbage til sin oprindelige tilstand, vender de pågældende gateways tilbage til deres normale funktioner.
+Nej. Data, der kræves fra datakilder i det lokale miljø (alle rapporter og dashboards, der er baseret på DirectQuery og Live Connect), fungerer ikke under en failover. Konfigurationen af gatewayen ændres dog ikke. Når forekomsten af Power BI vender tilbage til sin oprindelige tilstand, vender de pågældende gateways tilbage til deres normale funktioner.
+
+I tilfælde af en ekstrem katastrofe i et primært område, der forhindrer, at den kan sættes online i en lang periode, muliggør den fejlbehæftede primære region både læse-og skrivehandlinger, og kunderne kan genudrulle og konfigurere gateways i forhold til det nye område.
+
+Kunderne kan vælge at installere en ny gateway på en anden computer eller overtage den eksisterende gateway. Det bør være nemmere at overtage den eksisterende gateway, da alle de datakilder, der er knyttet til den gamle gateway, overføres til den nye.

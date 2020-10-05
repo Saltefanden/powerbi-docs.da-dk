@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 43905b05bfe796c416bb8d91901497f6ca1e573e
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 7e10cfa5c99eb1750829150fd0a25347a4da1880
+ms.sourcegitcommit: 701dd80661a63c76d37d1e4f159f90e3fc8c3160
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83278255"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91136252"
 ---
 # <a name="one-to-one-relationship-guidance"></a>Vejledning til en til en-relationer
 
@@ -131,13 +131,13 @@ I vores eksempel kan rapportforfattere finde feltet **Kategori** i visningsmappe
 
 ![Feltet Kategori vises i ruden Felter i en visningsmappe med navnet Marketing.](media/relationships-one-to-one/product-to-product-category-fields-pane-consolidated-display-folder.png)
 
-Hvis du stadig beslutter dig for at definere en til en-relationer i et internt område i din model, skal du sikre, at der er matchende rækker i de relaterede tabeller, når det er muligt. Da en til en-relationer i et internt område evalueres som en [stærk relation](../transform-model/desktop-relationships-understand.md#strong-relationships), kan problemer med dataintegritet i dine rapportvisualiseringer blive vist som TOMME. Du kan se et eksempel på en TOM gruppering i den første tabelvisualisering, som er præsenteret i denne artikel.
+Hvis du stadig beslutter dig for at definere en til en-relationer i et internt område i din model, skal du sikre, at der er matchende rækker i de relaterede tabeller, når det er muligt. Da en til en-relationer i et internt område evalueres som en [almindelig relation](../transform-model/desktop-relationships-understand.md#regular-relationships), kan problemer med dataintegritet i dine rapportvisualiseringer blive vist som TOMME. Du kan se et eksempel på en TOM gruppering i den første tabelvisualisering, som er præsenteret i denne artikel.
 
 ### <a name="inter-island-one-to-one-relationship"></a>En til en-relation mellem områder
 
-Når der er en én til en-relation _mellem områder_ mellem tabeller, er der ingen alternative modeldesign – medmindre du konsoliderer dataene i dine datakilder på forhånd. Power BI evaluerer en til en-relationen i modellen som en [svag relation](../transform-model/desktop-relationships-understand.md#weak-relationships). Du skal derfor nøje sikre, at der er matchende rækker i de relaterede tabeller, da rækker, som ikke matches, fjernes fra forespørgselsresultaterne.
+Når der er en én til en-relation _mellem områder_ mellem tabeller, er der ingen alternative modeldesign – medmindre du konsoliderer dataene i dine datakilder på forhånd. Power BI evaluerer en til en-relationen i modellen som en [begrænset relation](../transform-model/desktop-relationships-understand.md#limited-relationships). Du skal derfor nøje sikre, at der er matchende rækker i de relaterede tabeller, da rækker, som ikke matches, fjernes fra forespørgselsresultaterne.
 
-Lad os se, hvad der sker, når felter fra begge tabeller føjes til en tabelvisualisering, og der er en svag relation mellem tabellerne.
+Lad os se, hvad der sker, når felter fra begge tabeller føjes til en tabelvisualisering, og der er en begrænset relation mellem tabellerne.
 
 ![En tabelvisualisering indeholder fire kolonner: SKU, Produkt, Farve og Kategori. Tabellen indeholder kun to rækker.](media/relationships-one-to-one/product-to-product-category-table-visual-weak-relationship.png)
 

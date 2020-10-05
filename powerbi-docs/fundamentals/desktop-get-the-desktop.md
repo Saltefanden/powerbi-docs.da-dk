@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 08/12/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: e95b51d5d50900b8e09de8f5bf62bf31d5578ad1
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: ec4bd8788d3c0421118a8e96287b36497683c4b2
+ms.sourcegitcommit: 701dd80661a63c76d37d1e4f159f90e3fc8c3160
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860204"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91136137"
 ---
 # <a name="get-power-bi-desktop"></a>Hent Power BI Desktop
 Med Power BI Desktop kan du oprette avancerede forespørgsler, modeller og rapporter, som visualiserer data. Med Power BI Desktop kan du skabe datamodeller, oprette rapporter og dele dit arbejde ved at publicere det i Power BI-tjenesten. Power BI Desktop kan downloades gratis.
@@ -105,9 +105,12 @@ Følgende liste indeholder minimumkravene til at køre Power BI Desktop:
 * .NET 4.5
 * Internet Explorer 10 eller nyere
 * Hukommelse (RAM): Mindst 1 GB ledig hukommelse, 1,5 GB eller mere anbefales.
-* Skærm: Mindst 1440 x 900 eller 1600 x 900 (16:9) anbefales. En lavere opløsning, f.eks. 1024 x 768 eller 1280 x 800 anbefales ikke, da visse kontrolelementer (f.eks. lukning af startskærmen) vises over disse opløsninger.
+* Skærm: Mindst 1440 x 900 eller 1600 x 900 (16:9) er påkrævet. En lavere opløsning, f.eks. 1024 x 768 eller 1280 x 800 understøttes ikke, da visse kontrolelementer (f.eks. lukning af startskærmen) vises over disse opløsninger.
 * Indstillinger for Windows-skærm: Hvis dine skærmindstillinger er angivet til at ændre størrelsen på tekst, apps og andre elementer til mere end 100 %, kan du muligvis ikke se visse dialogbokse, som du skal interagere med for at fortsætte med at bruge Power BI Desktop. Hvis du oplever dette problem, skal du kontrollere dine skærmindstillinger i Windows ved at gå til **Indstillinger** > **System** > **Skærm** og bruge skyderen for at ændre skærmindstillingerne tilbage til 100 %.
-* CPU: 1 gigahertz (GHz) eller hurtigere, 32-bit eller 64-bit, x86-processor anbefales.
+* CPU: 1 gigahertz (GHz) 64-bit-processor (x64) anbefales.
+
+> [!NOTE]
+> Vi anbefaler, at du bruger en klientversion af Windows, f. eks. Windows 10, i stedet for Windows Server. Power BI Desktop understøtter f. eks. ikke brug af den udvidede sikkerhedskonfiguration i Internet Explorer, da den vil forhindre Power BI Desktop i at logge på Power BI-tjenesten.
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 

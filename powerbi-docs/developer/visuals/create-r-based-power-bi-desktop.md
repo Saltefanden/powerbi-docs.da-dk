@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 05/11/2020
-ms.openlocfilehash: a3cb8d6ae8d8b872d00b3b4ce1aad13105f3b1e4
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 248e641488edb2523a2fa7102bd7a9a4829ee29b
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85232826"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91527763"
 ---
 # <a name="tutorial-create-an-r-powered-power-bi-visual"></a>Selvstudium: Opret en R-drevet Power BI-visualisering
 
@@ -78,7 +78,7 @@ Når du bruger `pbiviz` til at oprette den R-drevne visualisering, der er basere
 
 1. Vælg **R-scriptvisualisering** i Power BI Desktop:
 
-   ![R-visualisering i visualiseringsruden](./media/create-r-based-power-bi-desktop/r-script-icon.png)
+   ![Skærmbillede, der viser kontrolelementet R-scriptvisualisering i Power BI Desktop.](./media/create-r-based-power-bi-desktop/r-script-icon.png)
 
 1. Indsæt denne R-kode i **R-scripteditoren**:
 
@@ -94,7 +94,7 @@ Når du bruger `pbiviz` til at oprette den R-drevne visualisering, der er basere
 
 1. Vælg ikonet **Kør script** for at se resultatet.
 
-    ![R-visualisering i visualiseringsruden](./media/create-r-based-power-bi-desktop/run-r-script.png)
+    ![Skærmbillede, der viser resultatet af kørsel af scriptet, som er et linjeområde.](./media/create-r-based-power-bi-desktop/run-r-script.png)
 
 1. Når R-scriptet er klar, kan du kopiere det til filen `script.r` i det visuelle projekt, der blev oprettet i et af de forrige trin.
 
@@ -176,7 +176,7 @@ Denne fremgangsmåde gør det muligt for din visualisering at bruge `corrplot`-p
 
 Resultatet af at bruge `corrplot`-pakken ser ud som i dette eksempel:
 
-![R-visualisering i visualiseringsruden](./media/create-r-based-power-bi-desktop/r-corrplot-result.png)
+![Skærmbillede, der viser visualiseringsruden med fire ovaler, der er oprettet af corrplot.](./media/create-r-based-power-bi-desktop/r-corrplot-result.png)
 
 ## <a name="adding-a-static-property-to-the-property-pane"></a>Tilføjelse af en statisk egenskab i egenskabsruden
 

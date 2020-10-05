@@ -8,11 +8,11 @@ ms.topic: include
 ms.date: 08/15/2020
 ms.author: mihart
 ms.custom: include file
-ms.openlocfilehash: a9d760bb962a2c4ebf5387faf4c09ebf55aac9b7
-ms.sourcegitcommit: f73ea4b9116ad186817ec5cc5d5f487d49cc0cb0
+ms.openlocfilehash: 8ca9942175916e354a57b9cee9f35382de0fc6ef
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88639144"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91545029"
 ---
-<Token>**GÆLDER FOR:** ![nej](media/no.png)Power BI-tjeneste til ***virksomhedsbrugere*** ![nej](media/no.png)Power BI-tjeneste til designere og udviklere ![ja](media/yes.png)Power BI Desktop ![nej](media/no.png)Kræver Pro- eller Premium-licens </Token>
+<Token>**GÆLDER FOR:** ![Gælder ikke for.](media/no.png)Power BI-tjenesten til ***erhvervsbrugere*** ![Gælder ikke for to.](media/no.png)Power BI-tjenesten til designere og udviklere ![Gælder for.](media/yes.png)Power BI Desktop ![Gælder ikke for.](media/no.png)Kræver Pro- eller Premium-licens </Token>

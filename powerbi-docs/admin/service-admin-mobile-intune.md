@@ -6,19 +6,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 09/09/2019
+ms.date: 09/25/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: b97e26d7e8bc814452491b6363d375e9d9da9982
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 214ef5072808decc4c153a28cf231e070c20508d
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85228608"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91524713"
 ---
 # <a name="configure-mobile-apps-with-microsoft-intune"></a>Konfiguration af mobilapps med Microsoft Intune
 
 Microsoft Intune giver organisationer mulighed for at administrere enheder og programmer. Power BI-mobilprogrammerne til iOS og Android kan integreres med Intune. Denne integration gør det muligt for dig at administrere programmet på dine enheder og styre sikkerheden. Ved hjælp af konfigurationspolitikker kan du kontrollere elementer som at anmode om pinkode for at give adgang, hvordan data håndteres af programmet og tilmed kryptere programdata, når appen ikke er i brug.
+
+Microsoft Power BI-mobilappen gør det muligt for dig at få adgang til dine vigtige forretningsoplysninger. Du kan få vist og interagere med dine dashboards og rapporter for alle organisationens administrerede enheds- og appforretningsdata. Du kan finde flere oplysninger om understøttede Intune-apps under [Beskyttede Microsoft Intune-apps](/intune/apps/apps-supported-intune-apps).
 
 ## <a name="general-mobile-device-management-configuration"></a>Konfiguration af generel administration af mobilenheder
 
@@ -26,167 +28,42 @@ Denne artikel forudsætter, at Intune er konfigureret korrekt, og at du har enhe
 
 Microsoft Intune kan fungere sammen med administration af mobilenheder i Microsoft 365. Hvis du bruger MDM, vises "tilmeldt MDM" på enheden, men den kan administreres i Intune.
 
+Før slutbrugere kan bruge Power BI-appen på deres enheder, skal en Intune-administrator føje appen til Intune og også tildele appen til slutbrugere.
+
 > [!NOTE]
 > Når du konfigurerer Intune, er dataopdatering i baggrunden slået fra for Power BI-mobilappen på din iOS- eller Android-enhed. Power BI opdaterer dataene via Power BI-tjenesten på internettet, når du åbner appen.
 
-## <a name="step-1-get-the-url-for-the-application"></a>Trin 1: Hent URL-adressen til programmet
+## <a name="step-1-add-the-power-bi-app-to-intune"></a>Trin 1: Føj appen Power BI til Intune
 
-Før vi opretter programmet i Intune, skal vi have hentet URL-adresserne for appsene. Til iOS får vi den fra iTunes. Til Android kan du hente den fra Power BI-mobilsiden.
+Hvis du vil føje appen Power BI til Intune, skal du følge de trin, der er angivet i følgende emner:
+- [Tilføj apps fra iOS Store til Microsoft Intune](/intune/apps/store-apps-ios)
+- [Tilføj apps fra Android Store til Microsoft Intune](/intune/apps/store-apps-android)
 
-Gem URL-adressen, da du skal bruge den, når vi opretter programmet.
+## <a name="step-2-assign-the-app-to-your-end-users"></a>Trin 2: Tildel appen til dine slutbrugere
 
-### <a name="get-ios-url"></a>Hent URL-adressen til iOS
+Når du har føjet appen Power BI til Microsoft Intune, kan du tildele appen til brugere og enheder. Det er vigtigt at bemærke, at du kan tildele en app til en enhed, uanset om enheden administreres af Intune.
 
-For at få URL-adressen for appen til iOS skal vi hente den fra iTunes.
+Hvis du vil tildele appen Power BI til brugere og enheder, skal du bruge de trin, der er angivet i [Tildel apps til grupper med Microsoft Intune](/intune/apps/apps-deploy).
 
-1. Åbn iTunes.
+## <a name="step-3-create-and-assign-app-protection-policies"></a>Trin 3: Opret og tildel politikker for appbeskyttelse
 
-1. Søg efter *Power BI*.
+Politikker for appbeskyttelse er regler, der sikrer, at en organisations data forbliver sikre eller findes i en administreret app. En politik kan være en regel, der gennemtvinges, når brugeren forsøger at få adgang til eller flytte "firmadata" eller et sæt handlinger, der ikke er tilladt eller overvåges, når brugeren befinder sig i appen. En administreret app er en app, hvor der anvendes en politik for beskyttelse af apps, og som kan administreres af Intune.
 
-1. Du bør se **Microsoft Power BI** angivet under **iPhone-apps** og **iPad-apps**. Du kan bruge begge dele, da du får den samme URL-adresse.
+Med politikker for administration af mobilapps kan du administrere og beskytte din organisationens data i et program. Med politikker for administration af mobilapps uden tilmelding kan en arbejds- eller skolerelateret app, der indeholder følsomme data, administreres på næsten alle enheder, herunder personlige enheder i BYOD-scenarier (Bring-Your-Your-Device). Du kan finde flere oplysninger under [Oversigt over politikker for appbeskyttelse](/intune/apps/app-protection-policy).
 
-1. Vælg rullemenuen **Hent**, og vælg **Kopiér link**.
+Hvis du vil oprette og tildele en politik for appbeskyttelse til Power BI-appen, skal du bruge de trin, der er angivet i [Sådan opretter og tildeler du politikker for appbeskyttelse](/intune/apps/app-protection-policies).
 
-    ![URL-adresse til iTunes](media/service-admin-mobile-intune/itunes-url.png)
+## <a name="step-4-use-the-application-on-a-device"></a>Trin 4: Brug programmet på en enhed
 
-Det bør ligne følgende: *https://itunes.apple.com/us/app/microsoft-power-bi/id929738808?mt=8* .
+Administrerede apps er apps, som din virksomhedssupport kan konfigurere for at beskytte virksomhedens data, som du har adgang til i den pågældende app. Når du åbner virksomhedsdata i en administreret app på din enhed, kan du opleve, at appen fungerer lidt anderledes end forventet. For eksempel kan du muligvis ikke kopiere og indsætte beskyttede virksomhedsdata, eller du kan muligvis ikke gemme disse data på bestemte placeringer.
 
-### <a name="get-android-url"></a>Hent URL-adressen til Android
-
-Du kan hente URL-adressen til Google Play via [Power BI-mobilsiden](https://powerbi.microsoft.com/mobile/). Vælg **Download fra Google Play** for at komme til appsiden. Du kan kopiere URL-adressen fra browserens adresselinje. Det bør ligne følgende: *https://play.google.com/store/apps/details?id=com.microsoft.powerbim* .
-
-## <a name="step-2-create-a-mobile-application-management-policy"></a>Trin 2: Opret en politik for administration af mobilapps
-
-Politikken for administration af mobilapps giver dig mulighed for at gennemtvinge ting som f.eks. pinkode til adgang. Du kan oprette en på Intune-portalen.
-
-Du kan oprette programmet eller politikken først. Det har ingen betydning, i hvilken rækkefølge de tilføjes. Så længe de begge findes på installationstrinnet.
-
-1. Vælg **Politik** > **Konfigurationspolitikker** på Intune-portalen.
-
-    ![Intune-portalen](media/service-admin-mobile-intune/intune-policy.png)
-
-1. Vælg **Tilføj...** .
-
-1. Under **Software** kan du vælge administration af mobilapps til enten Android eller iOS. For at komme hurtigt i gang kan du vælge **Opret en politik med de anbefalede indstillinger**, eller du kan oprette en brugerdefineret politik.
-
-1. Rediger politikken for at konfigurere de ønskede begrænsninger på programmet.
-
-## <a name="step-3-create-the-application"></a>Trin 3: Opret programmet
-
-Programmet er en reference, eller en pakke, som gemmes i Intune til installation. Vi skal oprette et program og henvise til den URL-adresse for appen, vi fik fra enten Google Play eller iTunes.
-
-Du kan oprette programmet eller politikken først. Det har ingen betydning, i hvilken rækkefølge de tilføjes. Så længe de begge findes på installationstrinnet.
-
-1. Gå til Intune-portalen, og vælg **Apps** fra menuen til venstre.
-
-1. Vælg **Tilføj app**. Dette starter programmet **Tilføj software**.
-
-### <a name="create-for-ios"></a>Opret til iOS
-
-1. Vælg **Styret iOS-app fra App Store** på rullelisten.
-
-1. Angiv URL-adressen for appen, som vi hentede under [Trin 1](#step-1-get-the-url-for-the-application), og vælg **Næste**.
-
-    ![Softwareinstallation: iOS](media/service-admin-mobile-intune/intune-add-software-ios1.png)
-
-1. Angiv en **Udgiver**, et **Navn** og en **Beskrivelse**. Du kan vælge at angive et **Ikon**. **Kategori** er til appen Firmaportal. Når du er færdig, skal du vælge **Næste**.
-
-1. Du kan vælge, om du vil publicere apps til **Alle** (standard), **iPad** eller **iPhone**. Som standard vises **Alle**, og det fungerer for begge enhedstyper. Power BI-appen har den samme URL-adresse til både iPhone og iPad. Vælg **Næste**.
-
-1. Vælg **Upload**.
-
-1. Hvis du ikke kan se appen på listen, kan du opdatere siden: Gå til **Oversigt** og derefter tilbage til **Apps**.
-
-    ![Fanen Apps](media/service-admin-mobile-intune/intune-add-software-ios2.png)
-
-### <a name="create-for-android"></a>Opret til Android
-
-1. Vælg **Eksternt link** på rullelisten.
-
-1. Angiv URL-adressen for appen, som vi hentede under [Trin 1](#step-1-get-the-url-for-the-application), og vælg **Næste**.
-
-    ![Programinstallation: Android](media/service-admin-mobile-intune/intune-add-software-android1.png)
-
-1. Angiv en **Udgiver**, et **Navn** og en **Beskrivelse**. Du kan vælge at angive et **Ikon**. **Kategori** er til appen Firmaportal. Når du er færdig, skal du vælge **Næste**.
-
-1. Vælg **Upload**.
-
-1. Hvis du ikke kan se appen på listen, kan du opdatere siden: Gå til **Oversigt** og derefter tilbage til **Apps**.
-
-    ![Fanen Apps](media/service-admin-mobile-intune/intune-add-software-android2.png)
-
-## <a name="step-4-deploy-the-application"></a>Trin 4: Installér programmet
-
-Når du har tilføjet programmet, skal du installere det, så det bliver tilgængeligt for dine slutbrugere. Dette er trinnet, hvor du binder den politik, du har oprettet, til appen.
-
-### <a name="deploy-for-ios"></a>Udrul på iOS
-
-1. Vælg den app, du har oprettet, på skærmbilledet med apps. Vælg derefter linket **Administrer installation...** .
-
-    ![Administrer udrulning](media/service-admin-mobile-intune/intune-deploy-ios1.png)
-
-1. I skærmbilledet **Vælg grupper** kan du vælge, hvilke grupper du vil installere denne app til. Vælg **Næste**.
-
-1. I skærmbilledet **Installationshandling** kan du vælge, hvordan du vil installere denne app. Hvis du vælger **Tilgængelig installation** eller **Påkrævet installation**, bliver appen tilgængelig på Firmaportal, så brugerne kan installere den efter behov. Når du har foretaget dit valg, skal du vælge **Næste**.
-
-    ![Udrulningshandling](media/service-admin-mobile-intune/intune-deploy-ios2.png)
-
-1. I skærmbilledet **Styring af mobilapp** kan du vælge den politik for administration af mobilapps, du oprettede på [Trin 2](#step-2-create-a-mobile-application-management-policy). Den indstilles som standard til den politik, du har oprettet, hvis det er den eneste iOS-politik, der er tilgængelig. Vælg **Næste**.
-
-    ![Administration af mobilapp](media/service-admin-mobile-intune/intune-deploy-ios3.png)
-
-1. I skærmbilledet **VPN-profil** kan du vælge en politik, hvis du har en for din organisation. Standardindstillingen er **Ingen**. Vælg **Næste**.
-
-1. I skærmbilledet **Konfiguration af mobilapps** kan du vælge en **Politik om appkonfiguration**, hvis du har oprettet en. Standardindstillingen er **Ingen**. Dette er ikke påkrævet. Vælg **Udfør**.
-
-Når du har installeret appen, skal der stå **Ja** ud for installeret på siden med apps.
-
-### <a name="deploy-for-android"></a>Udrul på Android
-
-1. Vælg den app, du har oprettet, på skærmbilledet med apps. Vælg derefter linket **Administrer installation...** .
-
-    ![Administrer udrulning](media/service-admin-mobile-intune/intune-deploy-android1.png)
-1. I skærmbilledet **Vælg grupper** kan du vælge, hvilke grupper du vil installere denne app til. Vælg **Næste**.
-
-1. I skærmbilledet **Installationshandling** kan du vælge, hvordan du vil installere denne app. Hvis du vælger **Tilgængelig installation** eller **Påkrævet installation**, bliver appen tilgængelig på Firmaportal, så brugerne kan installere den efter behov. Når du har foretaget dit valg, skal du vælge **Næste**.
-
-    ![Udrulningshandling](media/service-admin-mobile-intune/intune-deploy-android2.png)
-
-1. I skærmbilledet **Styring af mobilapp** kan du vælge den politik for administration af mobilapps, du oprettede på [Trin 2](#step-2-create-a-mobile-application-management-policy). Den indstilles som standard til den politik, du har oprettet, hvis det er den eneste Android-politik, der er tilgængelig. Vælg **Udfør**.
-
-    ![Administration af mobilapp](media/service-admin-mobile-intune/intune-deploy-android3.png)
-
-Når du har installeret appen, skal der stå **Ja** ud for installeret på siden med apps.
-
-## <a name="step-5-install-the-application-on-a-device"></a>Trin 5: Installér programmet på en enhed
-
-Du installerer programmet via appen *Firmaportal*. Hvis du ikke har installeret appen Firmaportal, kan du hente den via App Store på iOS- eller Android-platformen. Du skal logge på Firmaportal med dit organisationslogon.
-
-1. Åbn appen Firmaportal.
-
-1. Hvis du ikke ser Power BI-appen angivet som en udvalgt app, skal du vælge **Firmaapps**.
-
-    ![Virksomhedsapps](media/service-admin-mobile-intune/intune-companyportal1.png)
-
-1. Vælg den Power BI-app, du har installeret.
-
-    ![Power BI-app](media/service-admin-mobile-intune/intune-companyportal2.png)
-
-1. Vælg **Installér**.
-
-    ![Installér app](media/service-admin-mobile-intune/intune-companyportal3.png)
-
-1. Hvis du er på iOS, får du en pushmeddelelse om installation af appen. Vælg **Installér** i pushdialogboksen.
-
-    ![Appinstallation](media/service-admin-mobile-intune/intune-companyportal5.png)
-
-1. Når appen er installeret, kan du se, at den er **Administreret af dit firma**. Hvis du har aktiveret adgang ved hjælp af pinkode i politikken, får du vist følgende.
-
-    ![Angiv pinkode](media/service-admin-mobile-intune/intune-powerbi-pin.png)
+Hvis du vil vide, hvordan dine slutbrugere kan bruge appen Power BI på deres enhed, skal du gennemgå de trin, der er angivet i følgende artikler:
+- [Brug administrerede apps på din iOS-enhed](https://docs.microsoft.com/intune-user-help/use-managed-apps-on-your-device-ios#how-do-i-get-managed-apps)
+- [Brug administrerede apps på din Android-enhed](https://docs.microsoft.com/intune-user-help/use-managed-apps-on-your-device-android)
 
 ## <a name="next-steps"></a>Næste trin
 
-[Konfigurer og udrul politikker for administration af mobilapps i Microsoft Intune-konsollen](/intune/app-protection-policies/)  
+[Sådan opretter og tildeler du politikker for appbeskyttelse](/intune/app-protection-policies) 
 
 [Power BI-apps til mobilenheder](../consumer/mobile/mobile-apps-for-mobile-devices.md)  
 

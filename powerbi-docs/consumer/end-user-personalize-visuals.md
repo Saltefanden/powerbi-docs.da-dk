@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 09/17/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 8fc61a1aee263b40afb8ae95f365477b4104ca71
-ms.sourcegitcommit: cb606d3ae95300683caf1853e229d8981302a8e2
+ms.openlocfilehash: dfc682e867b65ba9da2b2eee87f52d7fd5d0961c
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90763296"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91528113"
 ---
 # <a name="personalize-visuals-in-a-report"></a>Tilpas visualiseringer i en rapport
 
@@ -117,7 +117,7 @@ Vælg viskelæderikonet for at rydde alle seneste ændringer, du har foretaget, 
 
 Der er i øjeblikket nogle få begrænsninger for funktionen, som du skal være opmærksom på.
 
-- **Tilpas denne visualisering** kan slås fra for en hel rapport eller for en bestemt visualisering. Hvis du ikke har mulighed for at tilpasse en visualisering, skal du kontakte lejeradministratoren eller rapportens ejer. Hvis du vil have vist kontaktoplysninger for rapportejeren, skal du vælge rapportens navn på menulinjen i Power BI.
+- **Tilpas denne visualisering** kan slås fra for en hel rapport eller for en bestemt visualisering. Hvis du ikke har mulighed for at tilpasse en visualisering, skal du kontakte Power BI-administratoren eller rapportens ejer. Hvis du vil have vist kontaktoplysninger for rapportejeren, skal du vælge rapportens navn på menulinjen i Power BI.
 - Brugerudforskninger bevares ikke automatisk. Du skal gemme din visning som et personligt bogmærke for at registrere dine ændringer.
 - Denne funktion understøttes i Power BI-mobilapps til iOS- og Android-tablets og i Power BI Windows-appen. Den understøttes ikke i Power BI-mobilapps til telefoner. Ændringer af visualiseringer, som du gemmer som et personligt bogmærke, mens du er i Power BI-tjenesten, bevares i alle Power BI-mobilapps.
 

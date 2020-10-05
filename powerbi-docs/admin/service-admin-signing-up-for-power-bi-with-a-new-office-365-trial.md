@@ -10,12 +10,12 @@ ms.date: 05/17/2020
 ms.author: mihart
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: e8a5d3b4bf8200e6e990c1bced2920383398b6cf
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 29dad4db6843f0895ea9de791992b3f70ce57e66
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90857076"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91524736"
 ---
 # <a name="signing-up-for-power-bi-with-a-new-microsoft-365-trial"></a>Tilmelding til Power BI med en ny prøveversion af Microsoft 365
 
@@ -35,7 +35,7 @@ Hvis du vælger **Office 365 E5**, indeholder din prøveversion Power BI Pro. Pr
 
     Hvis du har brug for en ny mailadresse, guider Microsoft dig igennem trinnene. Første trin er at oprette en ny konto. Vælg **Konfigurer konto**.
 
-    ![Vælg at tilmelde dig en ny konto](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-email.png)
+    ![Vælg at tilmelde dig en ny konto.](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-email.png)
 
 2. Angiv oplysninger om den nye konto.
 
@@ -43,7 +43,7 @@ Hvis du vælger **Office 365 E5**, indeholder din prøveversion Power BI Pro. Pr
 
 3. Opret din nye mailadresse og adgangskode. Opret et nyt logonnavn, der ligner you@yourcompany.onmicrosoft.com. Det er dette logon, du skal bruge med din nye skole eller arbejdskonto og med Power BI.
 
-    ![Vælg at tilmelde dig en ny konto](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-create-account.png)
+    ![Skærmbillede, der viser indstillinger for Opret din virksomhedsidentitet.](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-create-account.png)
 
 4. Det er det hele.  Du har nu en mailadresse, som du kan bruge til at tilmelde dig Power BI. Forsæt til [Tilmeld dig Power BI-tjenesten som enkeltperson](../fundamentals/service-self-service-signup-for-power-bi.md)
 

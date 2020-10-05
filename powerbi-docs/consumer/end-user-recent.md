@@ -7,23 +7,45 @@ featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 03/11/2020
+ms.date: 09/24/2020
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 7f7aaf150a4b182ec1939820f92f4988ad373b3b
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: 39904a0fc577ca11ae73c5bb9840232b4345e47b
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87537176"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91527319"
 ---
 # <a name="recent-content-in-the-power-bi-service"></a>**Seneste** indhold i Power BI-tjenesten
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-Seneste indhold er de seneste elementer, du har fået vist i Power BI-tjenesten, op til maksimalt 20 elementer.  Dette omfatter: dashboards, rapporter, apps og projektmapper.
+**Seneste indhold** er de seneste elementer, du har fået vist i Power BI-tjenesten. Dette omfatter: dashboards, rapporter, apps og projektmapper. Når du vælger **Seneste** på navigationslinjen, vises dette indhold i faldende rækkefølge efter dato i Power BI.  Hvis du vil ændre sorteringsrækkefølgen, skal du vælge en af overskrifterne og vælge stigende eller faldende.
 
-![Vinduet Seneste indhold](./media/end-user-recent/power-bi-recent.png)
+
+![Vinduet Seneste indhold](./media/end-user-recent/power-bi-recents.png)
+
+Bemærk, at to elementer er [favoritter](end-user-favorite.md), hvilket vises med et stjerneikon. Og et enkelt element, Eksempel på kunderentabilitet, er gemt i [Premium-kapacitet](end-user-license.md).
+
+## <a name="see-your-five-most-recents"></a>Se dine fem nyeste
+
+Hvis du kun vil se de fem elementer, du senest har besøgt, skal du vælge pilen til højre for **Seneste** i navigationsruden.  Her skal du vælge indhold for at åbne det. 
+
+![Pop op-vinduet Seneste indhold](./media/end-user-recent/power-bi-recent-fly-out.png)
+
+## <a name="see-all-of-your-recent-content"></a>Se alt dit seneste indhold
+
+Hvis du har mere end fem elementer, du har besøgt for nylig, skal du vælge **Se alle** for at åbne skærmen **Seneste**. Som vi gjorde i starten af denne artikel, kan du springe over pop op-vinduet og åbne skærmbilledet **Seneste** ved at vælge ordet **Seneste** eller det tilhørende ikon ![ikonet Seneste](./media/end-user-recent/power-bi-icon.png) fra navigationsruden.
+
+![vis alt det nylige indhold](./media/end-user-recent/power-bi-admin-recent.png)
+
+
+## <a name="search-and-sort-your-list-of-recent-content"></a>Søg efter og sortér din liste over det seneste indhold
+
+Hvis dine lister bliver lange, kan du [bruge søgefeltet og sortering til at finde det, du har brug for](end-user-search-sort.md). Hvis du vil finde ud af, om en kolonne kan sorteres, skal du holde over den for at se, om der vises en pil. Hvis du i dette eksempel peger på **Type** vises der en pil – dit seneste indhold kan sorteres alfabetisk efter indholdstype. 
+
+![Skærmbillede, hvor både søgefeltet og sorteringspilen vises](./media/end-user-recent/power-bi-recent-sort-search.png)
 
 Se Amanda demonstrere, hvordan indholdslisterne for **Seneste** udfyldes i Power BI-tjenesten, og følg derefter den trinvise vejledning under videoen for at prøve det selv.
 
@@ -32,27 +54,19 @@ Se Amanda demonstrere, hvordan indholdslisterne for **Seneste** udfyldes i Power
 > [!NOTE]
 > I denne video bruges en ældre version af Power BI-tjenesten.
 
-## <a name="display-recent-content"></a>Vis nyligt indhold
-Hvis du vil se de fem elementer, du senest har besøgt, skal du på venstre navigationslinje vælge pilen til højre for **Seneste**.  Herfra kan du vælge nyligt indhold for at åbne. Kun de fem seneste elementer vises på listen.
-
-![Pop op-vinduet Seneste indhold](./media/end-user-recent/power-bi-recent-flyout.png)
-
-Hvis du har mere end fem elementer, du har besøgt for nylig, skal du vælge **Se alle** for at åbne skærmen Seneste. Du kan også vælge **Seneste**, eller ikonet Seneste ![ikonet Seneste](./media/end-user-recent/power-bi-icon.png) på venstre navigationslinje.
-
-![vis alt det nylige indhold](./media/end-user-recent/power-bi-recent.png)
-
-## <a name="actions-available-from-the-recent-content-list"></a>Tilgængelige handlinger på indholdslisten **Seneste**
-De handlinger, der er tilgængelige for dig, afhænger af de indstillinger, *designeren* af indholdet har tildelt. Nogle af dine muligheder kan omfatte:
-* Vælg stjerneikonet for at [markere et dashboard, en rapport eller et program som favoritter](end-user-favorite.md) ![stjerneikon](./media/end-user-shared-with-me/power-bi-star-icon.png).
-* Nogle dashboards og rapporter kan deles igen  ![delingsikon](./media/end-user-shared-with-me/power-bi-share-icon-new.png).
-* [Åbn rapporten i Excel](end-user-export.md) ![ikonet eksportér til Excel](./media/end-user-shared-with-me/power-bi-excel.png) 
-* [Vis indsigt](end-user-insights.md), som Power BI finder i dataene ![ikonet for indsigt](./media/end-user-shared-with-me/power-bi-insights.png).
-* Hvis dine lister bliver lange, kan du desuden [bruge søgefeltet og sortering til at finde det, du har brug for](end-user-search-sort.md). Hvis du vil finde ud af, om en kolonne kan sorteres, skal du holde over den for at se, om der vises en pil. Hvis du i dette eksempel holder over **Seneste adgang** vises der en pil – dit seneste indhold kan sorteres efter adgangsdato. 
-
-    ![sortér alt senest indhold](./media/end-user-recent/power-bi-recent-sort.png)
+<!--
+## Actions available from the **Recent** content list
+The actions available to you will depend on the settings assigned by the content *designer*. Some of your options may include:
+* Select the star icon to [favorite a dashboard, report, or app](end-user-favorite.md) ![star icon](./media/end-user-shared-with-me/power-bi-star-icon.png).
+* Some dashboards and reports can be re-shared  ![share icon](./media/end-user-shared-with-me/power-bi-share-icon-new.png).
+* [Open the report in Excel](end-user-export.md) ![export to Excel icon](./media/end-user-shared-with-me/power-bi-excel.png) 
+* [View insights](end-user-insights.md) that Power BI finds in the data ![insights icon](./media/end-user-shared-with-me/power-bi-insights.png). -->
 
 
-## <a name="next-steps"></a>De næste trin
+
+
+
+## <a name="next-steps"></a>Næste trin
 [Power BI-tjenesteapps](end-user-apps.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

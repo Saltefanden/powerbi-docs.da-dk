@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 07/01/2020
-ms.openlocfilehash: ef981c63aaa1cdececbe03f187d25ee09073f61f
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 30ab225230784d19bd2aa4eb2f5ea775684b2afb
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90857743"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91524782"
 ---
 # <a name="manage-power-bi-visuals-admin-settings"></a>Administrationsindstillinger til administration af Power BI-visualiseringer
 
@@ -148,11 +148,11 @@ Du kan vælge visualiseringer på siden med visualiseringer til organisationer, 
 
 1. Klik på **Indstillinger** i rækken på den visualisering, du vil tilføje.
 
-    ![organisationsrude](media/organizational-visuals/organizational-pane.png)organisationsrude
+    ![Skærmbillede, der viser administrationsportalen med organisationsvisualiseringer valgt og et fremhævet indstillingsikon.](media/organizational-visuals/organizational-pane.png)organisationsrude
 
 2. Aktivér indstillingen visualiseringsrude, og klik på **Opdater**.
 
-    ![opdater-organisationsrude](media/organizational-visuals/update-organizational-pane.png)
+    ![Skærmbillede, der viser dialogboksen Visuelle indstillinger, hvor du kan indstille visualiseringen, så den vises for hele organisationen.](media/organizational-visuals/update-organizational-pane.png)
 
 ### <a name="delete-a-visual-uploaded-from-a-file"></a>Slet en visualisering, som er uploadet fra en fil
 
