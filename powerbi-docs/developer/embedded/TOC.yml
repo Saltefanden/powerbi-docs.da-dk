@@ -22,7 +22,7 @@
           href: embed-paginated-reports-organization.md
         - name: Integrer indhold for nationale cloudmiljøer
           href: embed-sample-for-customers-national-clouds.md
-    - name: Koncepter
+    - name: Begreber
       items:
         - name: Kapacitet og SKU'er i integrerede Power BI-analyser
           href: embedded-capacity.md
@@ -91,9 +91,9 @@
         - name: API'er
           items:
             - name: REST-API'er til Azure Resource Manager
-              href: 'https://docs.microsoft.com/rest/api/power-bi-embedded/'
+              href: /rest/api/power-bi-embedded/
             - name: REST-API'er til Power BI
-              href: 'https://docs.microsoft.com/rest/api/power-bi/'
+              href: /rest/api/power-bi/
         - name: Power BI-biblioteker
           href: 'https://go.microsoft.com/fwlink/?linkid=848274'
         - name: Indlejr brugerdefinerede layout i en app

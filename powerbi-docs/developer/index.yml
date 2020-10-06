@@ -13,12 +13,12 @@ metadata:
   author: KesemSharabi
   ms.author: kesharab
   ms.date: 31/03/2020
-  ms.openlocfilehash: 57dbd3c64265ba532167db806d714054767bc506
-  ms.sourcegitcommit: 52f365af6ea5359e39d4d4547f1d61e5e0d08c5f
+  ms.openlocfilehash: a4ff9cfe0cb12dbbbd6df79a69f5637609957920
+  ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
   ms.translationtype: HT
   ms.contentlocale: da-DK
-  ms.lasthandoff: 06/16/2020
-  ms.locfileid: "84795041"
+  ms.lasthandoff: 10/06/2020
+  ms.locfileid: "91748488"
 highlightedContent:
   items:
   - title: Integreret analyse med Power BI
@@ -83,13 +83,13 @@ additionalContent:
   - items:
     - title: REST-API'er til Power BI
       summary: Power BI REST-API'er leverer tjenesteslutpunkter til integration, administration og brugerressourcer.
-      url: https://docs.microsoft.com/rest/api/power-bi/
+      url: /rest/api/power-bi/
     - title: REST API til Azure Resource Manager
       summary: Med en API, der giver dig et sæt RESTful-webtjenester, kan du oprette, hente, opdatere og slette dedikerede Power BI-kapaciteter.
-      url: https://docs.microsoft.com/rest/api/power-bi-embedded/
+      url: /rest/api/power-bi-embedded/
     - title: Dokumentation til Power Platform
       summary: Få mere at vide om, hvordan Power BI, Power Apps, Power Automate og Power Virtual Agents fungerer sammen for at forbedre hinanden.
-      url: https://docs.microsoft.com/power-platform/
+      url: /power-platform/
     - title: Power BI Developer Center
       summary: Byg med Power BI.
       url: https://powerbi.microsoft.com/developers/
