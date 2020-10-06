@@ -5,20 +5,20 @@
     - name: Oversigt
       expanded: true
       items:
-        - name: Hvad kan jeg bruge Power BI-API'en til?
+        - name: Hvad kan jeg bruge Power BI-API til?
           href: overview-of-power-bi-rest-api.md
     - name: Selvstudier
       expanded: true
       items:
         - name: Overfør data til et datasæt
           href: walkthrough-push-data.md
-        - name: Hent en adgangstoken til godkendelse
+        - name: Hent et adgangstoken til godkendelse
           href: walkthrough-push-data-get-token.md
         - name: Opret et datasæt
           href: walkthrough-push-data-create-dataset.md
-        - name: Få et datasæt til at tilføje rækker
+        - name: Hent et datasæt for at indsætte rækker
           href: walkthrough-push-data-get-datasets.md
-        - name: Tilføj rækker til en tabel
+        - name: Føj rækker til en tabel
           href: walkthrough-push-data-add-rows.md
     - name: Begreber
       items:
@@ -32,23 +32,23 @@
               href: api-dataset-properties.md
             - name: Versionering af datamodel
               href: api-data-model-versioning.md
-    - name: Sådan gør du
+    - name: 'Sådan gør du:'
       items:
         - name: Konfigurer legitimationsoplysninger
           href: configure-credentials.md
     - name: Reference
       items:
         - name: REST API'er
-          href: 'https://docs.microsoft.com/rest/api/power-bi'
+          href: /rest/api/power-bi
         - name: Reference til Power BI REST-API
           href: rest-api-reference.md
-        - name: Færdiggør kodeliste
+        - name: Komplet kodeliste
           href: walkthrough-push-data-complete-code.md
     - name: Ressourcer
       items:
         - name: Udviklingscenter
           href: 'https://powerbi.microsoft.com/en-us/developers/'
-        - name: 'Git-lager for Power BI C#'
+        - name: Git-lager for Power BI C#
           href: 'https://go.microsoft.com/fwlink/?linkid=848273'
         - name: Henter .NET SDK
           href: 'https://go.microsoft.com/fwlink/?linkid=848274'
