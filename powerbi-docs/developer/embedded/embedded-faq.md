@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/11/2020
-ms.openlocfilehash: fe1eb36a63d504497f15bef8316e96d120439793
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 86ac6bebf6373f14ac343721a8594ee9f45b0e89
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83145097"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91746188"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Ofte stillede spørgsmål om Power BI Embedded
 
@@ -51,7 +51,7 @@ Der kan være situationer, hvor en ISV (typisk en større) ud over integration a
 
 ### <a name="how-many-embed-tokens-can-i-create"></a>Hvor mange integrerede tokens kan jeg oprette?
 
-Integrationstokens med en PRO-licens er beregnet til udviklingstest, så en Power BI-masterkonto eller [tjenesteprincipal](embed-service-principal.md) kan kun generere et begrænset antal tokens. [Køb en kapacitet](#technical) for at integrere i et produktionsmiljø. Der er ingen grænse for hvor mange integrerede tokens, du kan generere, når du køber en kapacitet. Gå til [Tilgængelige funktioner](https://docs.microsoft.com/rest/api/power-bi/availablefeatures) for at undersøge den brugsværdi, der angiver brugen af integrerede tokens i procent.
+Integrationstokens med en PRO-licens er beregnet til udviklingstest, så en Power BI-masterkonto eller [tjenesteprincipal](embed-service-principal.md) kan kun generere et begrænset antal tokens. [Køb en kapacitet](#technical) for at integrere i et produktionsmiljø. Der er ingen grænse for hvor mange integrerede tokens, du kan generere, når du køber en kapacitet. Gå til [Tilgængelige funktioner](/rest/api/power-bi/availablefeatures) for at undersøge den brugsværdi, der angiver brugen af integrerede tokens i procent.
 
 ## <a name="technical"></a>Tekniske spørgsmål
 
@@ -69,7 +69,7 @@ Se artiklen [Kapacitet og SKU'er i integrerede Power BI-analyser](embedded-capac
 
 * Brug [Power BI-administrationsportalen](../../admin/service-admin-portal.md#power-bi-embedded).
 
-* Download den [metriske app](https://docs.microsoft.com/power-bi/service-admin-premium-monitor-capacity) i Power BI.
+* Download den [metriske app](../../admin/service-admin-premium-monitor-capacity.md) i Power BI.
 
 * Brug [logføring af Azure-diagnosticering](azure-pbie-diag-logs.md).
 
@@ -79,7 +79,7 @@ Automatisk skalering er ikke muligt i øjeblikket, men alle API'er kan skaleres 
 
 ### <a name="why-creatingscalingresuming-a-capacity-results-in-putting-the-capacity-into-a-suspended-state"></a>Hvorfor afbrydes kapaciteten midlertidigt, når man opretter/skalerer/genoptager en kapacitet?
 
-Klargøring af en kapacitet (skalering/genoptagelse/oprettelse) kan mislykkes. Du kan bruge API'en Hent oplysninger til at kontrollere en kapacitets ProvisioningState: [Kapaciteter – Hent oplysninger](https://docs.microsoft.com/rest/api/power-bi-embedded/capacities/getdetails).
+Klargøring af en kapacitet (skalering/genoptagelse/oprettelse) kan mislykkes. Du kan bruge API'en Hent oplysninger til at kontrollere en kapacitets ProvisioningState: [Kapaciteter – Hent oplysninger](/rest/api/power-bi-embedded/capacities/getdetails).
 
 ### <a name="can-i-only-create-power-bi-embedded-capacities-in-a-specific-region"></a>Kan jeg kun oprette Power BI Embedded-kapaciteter i et bestemt område?
 
@@ -89,7 +89,7 @@ Med [Multi-Geo-funktionen (prøveversion)](embedded-multi-geo.md) kan du købe e
 
 Når en bruger har fået tildelt tilladelser til et arbejdsområde, en app eller artefakt, er arbejdsområdet muligvis ikke tilgængeligt med det samme via API-kald.
 Resultatet kan enten være et manglende artefakt i et 'GET' API-svar eller en fejl, når du forsøger at bruge artefaktet.
-Brugeren kan løse problemet ved at kalde [refreshUserPermissions API](https://docs.microsoft.com/rest/api/power-bi/users/refreshuserpermissions), der opdaterer brugertilladelserne.
+Brugeren kan løse problemet ved at kalde [refreshUserPermissions API](/rest/api/power-bi/users/refreshuserpermissions), der opdaterer brugertilladelserne.
 
 
 ### <a name="how-can-i-find-my-pbi-tenant-region"></a>Hvordan kan jeg finde mit PBI-lejerområde?
@@ -114,8 +114,8 @@ Power BI kræver, at du tilmelder dig med en organisationskonto. Forsøg på at 
 
 Ja. Der er Powershell-cmdlet'er og Azure Resource Manager-REST-API'er, du kan bruge til at oprette og administrere PBIE ressourcer.
 
-* [REST-API'er](https://docs.microsoft.com/rest/api/power-bi-embedded/) 
-* [PowerShell-cmdlet'er](https://docs.microsoft.com/powershell/module/azurerm.powerbiembedded/)
+* [REST-API'er](/rest/api/power-bi-embedded/) 
+* [PowerShell-cmdlet'er](/powershell/module/azurerm.powerbiembedded/)
 
 ### <a name="what-is-the-pbi-embedded-dedicated-capacity-role-in-a-pbi-embedded-solution"></a>Hvilken rolle har PBI's integrerede dedikerede kapacitet i en PBI-integreret løsning?
 
@@ -145,7 +145,7 @@ Power BI Embedded bruger fortsat Microsoft Azure Active Directory til at godkend
 
 Du kan bruge din eksisterende mappe, hvis du allerede har en Microsoft Azure Active Directory-lejer. Du kan også oprette en ny Microsoft Azure Active Directory-lejer for dit integrerede programindholds sikkerhed.
 
-Du kan bruge et [Azure Active Directory Authentication Library](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) for at få et AAD-token. Der er klientbiblioteker til flere platforme.
+Du kan bruge et [Azure Active Directory Authentication Library](/azure/active-directory/develop/active-directory-authentication-libraries) for at få et AAD-token. Der er klientbiblioteker til flere platforme.
 
 ### <a name="my-application-already-uses-aad-for-user-authentication-how-can-we-use-this-identity-when-authenticating-to-power-bi-in-a-user-owns-data-scenario"></a>Mit program allerede bruger AAD til brugergodkendelse. Hvordan kan vi bruge dette id til godkendelse til Power BI i et scenarie, hvor "Bruger ejer Data"?
 
@@ -194,7 +194,7 @@ Når du aktiverer en [tjenesteprincipal](embed-service-principal.md), der skal b
 
 Tjenesteprincipaler nedarver tilladelserne til alle Power BI-lejerindstillinger fra deres sikkerhedsgruppe. Hvis du vil begrænse tilladelserne, skal du oprette en dedikeret sikkerhedsgruppe for tjenesteprincipaler og føje den til listen **Undtagen specifikke sikkerhedsgrupper** for de relevante aktiverede Power BI-indstillinger.
 
-Dette er vigtigt, når du tilføjer tjenesteprincipalen som **administrator** til det nye arbejdsområde. Du kan administrere denne opgave via [API'erne](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser) eller Power BI-tjenesten.
+Dette er vigtigt, når du tilføjer tjenesteprincipalen som **administrator** til det nye arbejdsområde. Du kan administrere denne opgave via [API'erne](/rest/api/power-bi/groups/addgroupuser) eller Power BI-tjenesten.
 
 ### <a name="when-to-use-an-application-id-vs-a-service-principal-object-id"></a>Hvornår skal jeg bruge et program-id i forhold til et objekt-id for en tjenesteprincipal?
 
@@ -283,7 +283,7 @@ Der er ingen særlige Azure-prissætning for almennyttige organisationer og udda
     > [!Note]
     > Du kan fortsætte med at bruge **Power BI Workspace Collection**, når du opretter parallelt med en **Power BI Embedded**-løsning. Når du er klar, kan du flytte kunden til den nye **Power BI Embedded**-løsning og lade **Power BI Workspace Collection**-løsningen udgå.
 
-Du kan finde flere oplysninger under [Sådan overfører du indhold fra Power BI Workspace Collection til Power BI Embedded](https://docs.microsoft.com/power-bi/developer/migrate-from-powerbi-embedded)
+Du kan finde flere oplysninger under [Sådan overfører du indhold fra Power BI Workspace Collection til Power BI Embedded](./migrate-from-powerbi-embedded.md)
 
 ### <a name="is-power-bi-workspace-collection-on-a-deprecation-path"></a>Frarådes det senere at bruge Power BI-arbejdsområdesamling?
 
@@ -327,11 +327,11 @@ Hvis du arbejder med **Embed for your organization**, skal du gemme og udpakke f
 
 ### <a name="how-can-i-edit-my-registered-application"></a>Hvordan kan jeg redigere min registrerede app?
 
-Du kan få mere at vide om, hvordan du redigerer Azure AD-registrerede apps under [Hurtig start: Opdater et program i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v1-update-azure-ad-app).
+Du kan få mere at vide om, hvordan du redigerer Azure AD-registrerede apps under [Hurtig start: Opdater et program i Azure Active Directory](/azure/active-directory/develop/quickstart-v1-update-azure-ad-app).
 
 ### <a name="how-can-i-edit-my-power-bi-user-profile-or-data"></a>Hvordan kan jeg redigere Power BI-brugerprofilen eller -dataene?
 
-Du kan se, hvordan du redigerer dine Power BI-data, [her](https://docs.microsoft.com/power-bi/service-basic-concepts).
+Du kan se, hvordan du redigerer dine Power BI-data, [her](../../fundamentals/service-basic-concepts.md).
 
 Du kan finde flere oplysninger under [Fejlfinding af det integrerede program](embedded-troubleshoot.md).
 

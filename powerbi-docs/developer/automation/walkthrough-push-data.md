@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 05/22/2019
-ms.openlocfilehash: 932e458c90b248e01a88d45a849838cff27f6dcb
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 792afe42cf302ae552b7f8f1c14d5f232ade320f
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79488194"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91746694"
 ---
 # <a name="push-data-into-a-power-bi-dataset"></a>Overfør data til et Power BI-datasæt
 
@@ -33,14 +33,14 @@ Det næste afsnit er en generel beskrivelse af de handlinger i Power BI-API'en, 
 
 ## <a name="power-bi-api-operations-to-push-data"></a>Handlinger i Power BI-API'en til overførsel af data
 
-Med Power BI REST API'en kan du overføre datakilder til Power BI. Når en app føjer rækker til et datasæt, opdateres dashboardfelter automatisk med de nye data. Hvis du vil overføre data, skal du bruge handlingerne [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postdataset) og [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows). Hvis du vil finde et datasæt, skal du bruge handlingen [Hent datasæt](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets). Du kan overføre et gruppe-id for alle disse handlinger, hvis du vil arbejde med en gruppe. Hvis du vil hente en gruppe-id-liste, skal du bruge handlingen [Get Groups](https://docs.microsoft.com/rest/api/power-bi/groups/getgroups).
+Med Power BI REST API'en kan du overføre datakilder til Power BI. Når en app føjer rækker til et datasæt, opdateres dashboardfelter automatisk med de nye data. Hvis du vil overføre data, skal du bruge handlingerne [PostDataset](/rest/api/power-bi/pushdatasets/datasets_postdataset) og [PostRows](/rest/api/power-bi/pushdatasets/datasets_postrows). Hvis du vil finde et datasæt, skal du bruge handlingen [Hent datasæt](/rest/api/power-bi/datasets/getdatasets). Du kan overføre et gruppe-id for alle disse handlinger, hvis du vil arbejde med en gruppe. Hvis du vil hente en gruppe-id-liste, skal du bruge handlingen [Get Groups](/rest/api/power-bi/groups/getgroups).
 
 Her er de handlinger, du skal bruge for at overføre data til et datasæt:
 
-* [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postdataset)
-* [Hent datasæt](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets)
-* [Post Rows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows)
-* [Hent grupper](https://docs.microsoft.com/rest/api/power-bi/groups/getgroups)
+* [PostDataset](/rest/api/power-bi/pushdatasets/datasets_postdataset)
+* [Hent datasæt](/rest/api/power-bi/datasets/getdatasets)
+* [Post Rows](/rest/api/power-bi/pushdatasets/datasets_postrows)
+* [Hent grupper](/rest/api/power-bi/groups/getgroups)
 
 Du kan oprette et datasæt i Power BI ved at overføre en JSON-streng (JavaScript Object Notation) til Power BI-tjenesten. Hvis du vil have mere at vide om JSON, skal du se [Om JSON](https://json.org/).
 
@@ -48,54 +48,58 @@ JSON-strengen til et datasæt har følgende format:
 
 **Power BI-datasæt JSON-objekt**
 
-    {"name": "dataset_name", "tables":
-        [{"name": "", "columns":
-            [{ "name": "column_name1", "dataType": "data_type"},
-             { "name": "column_name2", "dataType": "data_type"},
-             { ... }
-            ]
-          }
+```json
+{"name": "dataset_name", "tables":
+    [{"name": "", "columns":
+        [{ "name": "column_name1", "dataType": "data_type"},
+         { "name": "column_name2", "dataType": "data_type"},
+         { ... }
         ]
-    }
+      }
+    ]
+}
+```
 
 For eksemplet med SalesMarketing-datasættet ville du overføre en JSON-streng som vist i nedenstående eksempel. I dette eksempel er **SalesMarketing** navnet på datasættet, og **Product** er navnet på tabellen. Når du har defineret tabellen, kan du definere tabelskemaet. For datasættet **SalesMarketing** indeholder tabelskemaet disse kolonner: ProductID, Manufacturer, Category, Segment, Product og IsCompete.
 
 **Eksempeldatasæt JSON-objekt**
 
-    {
-        "name": "SalesMarketing",
-        "tables": [
+```json
+{
+    "name": "SalesMarketing",
+    "tables": [
+        {
+            "name": "Product",
+            "columns": [
+            {
+                "name": "ProductID",
+                "dataType": "int"
+            },
+            {
+                "name": "Manufacturer",
+                "dataType": "string"
+            },
+            {
+                "name": "Category",
+                "dataType": "string"
+            },
+            {
+                "name": "Segment",
+                "dataType": "string"
+            },
             {
                 "name": "Product",
-                "columns": [
-                {
-                    "name": "ProductID",
-                    "dataType": "int"
-                },
-                {
-                    "name": "Manufacturer",
-                    "dataType": "string"
-                },
-                {
-                    "name": "Category",
-                    "dataType": "string"
-                },
-                {
-                    "name": "Segment",
-                    "dataType": "string"
-                },
-                {
-                    "name": "Product",
-                    "dataType": "string"
-                },
-                {
-                    "name": "IsCompete",
-                    "dataType": "bool"
-                }
-                ]
+                "dataType": "string"
+            },
+            {
+                "name": "IsCompete",
+                "dataType": "bool"
             }
-        ]
-    }
+            ]
+        }
+    ]
+}
+```
 
 Hvis du har et Power BI-tabelskema, kan du bruge følgende datatyper.
 

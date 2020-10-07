@@ -8,18 +8,18 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 06/04/2019
-ms.openlocfilehash: e32b33a7e913772215fad63ddea7987d199420fd
-ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
+ms.openlocfilehash: 8b20ee4fbac3c4b22bd420e49df0bc1fbfd6e300
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85355047"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91746602"
 ---
 # <a name="get-an-azure-ad-access-token-for-your-power-bi-application"></a>Få et Azure AD-adgangstoken til dit Power BI-program
 
-I denne artikel får du mere at vide om, hvordan du godkender brugere i dit Power BI-program og henter et adgangstoken, der skal bruges sammen med [Power BI REST-API'en](https://docs.microsoft.com/rest/api/power-bi/).
+I denne artikel får du mere at vide om, hvordan du godkender brugere i dit Power BI-program og henter et adgangstoken, der skal bruges sammen med [Power BI REST-API'en](/rest/api/power-bi/).
 
-Før din app kalder Power BI REST-API'en, skal du have et Azure AD-**adgangstoken til godkendelse** (Azure Active Directory). Et adgangstoken bruges til at få adgang til Power BI-dashboards, -felter og -rapporter. Du kan få mere at vide i [Godkend adgang til Azure Active Directory-webprogrammer ved hjælp af flowet til tildeling af OAuth 2.0.-kode](https://docs.microsoft.com/azure/active-directory/develop/v1-protocols-oauth-code).
+Før din app kalder Power BI REST-API'en, skal du have et Azure AD-**adgangstoken til godkendelse** (Azure Active Directory). Et adgangstoken bruges til at få adgang til Power BI-dashboards, -felter og -rapporter. Du kan få mere at vide i [Godkend adgang til Azure Active Directory-webprogrammer ved hjælp af flowet til tildeling af OAuth 2.0.-kode](/azure/active-directory/develop/v1-protocols-oauth-code).
 
 Adgangstokenet hentes på forskellige måder, afhængigt af hvordan du integrerer indhold. I denne artikel bruges to forskellige metoder.
 
@@ -55,7 +55,7 @@ var @params = new NameValueCollection
 
 Når du har konstrueret en forespørgselsstreng, omdirigerer du til **Azure AD** for at hente en **godkendelseskode**.  Nedenfor kan du se en komplet C#-metode til at konstruere en forespørgselsstreng til en **godkendelseskode** og omdirigere til **Azure AD**. Du kan derefter bruge **godkendelseskoden** til at få et **adgangstoken**.
 
-I redirect.aspx.cs kaldes [AuthenticationContext.AcquireTokenByAuthorizationCode](https://docs.microsoft.com/dotnet/api/microsoft.identitymodel.clients.activedirectory.authenticationcontext.acquiretokenbyauthorizationcodeasync?view=azure-dotnet#Microsoft_IdentityModel_Clients_ActiveDirectory_AuthenticationContext_AcquireTokenByAuthorizationCodeAsync_System_String_System_Uri_Microsoft_IdentityModel_Clients_ActiveDirectory_ClientCredential_System_String_) for at generere tokenet.
+I redirect.aspx.cs kaldes [AuthenticationContext.AcquireTokenByAuthorizationCode](/dotnet/api/microsoft.identitymodel.clients.activedirectory.authenticationcontext.acquiretokenbyauthorizationcodeasync?view=azure-dotnet#Microsoft_IdentityModel_Clients_ActiveDirectory_AuthenticationContext_AcquireTokenByAuthorizationCodeAsync_System_String_System_Uri_Microsoft_IdentityModel_Clients_ActiveDirectory_ClientCredential_System_String_) for at generere tokenet.
 
 #### <a name="get-authorization-code"></a>Hent godkendelseskode
 

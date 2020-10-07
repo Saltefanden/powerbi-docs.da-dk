@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 04/05/2020
-ms.openlocfilehash: 2b4715a388250e00cced8a0164a7dcf687887d8a
-ms.sourcegitcommit: 10c5b6cd5e7070f96de8a9f1d9b95f3d242ac7f2
+ms.openlocfilehash: bb06f5b0a170189c3c98b734a09259645a650c55
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86556882"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91748166"
 ---
 # <a name="export-paginated-report-to-file-preview"></a>Eksportér sideinddelt rapport til fil (prøveversion)
 
@@ -38,9 +38,9 @@ Du kan bruge eksportfunktionen på flere forskellige måder. Her er nogle eksemp
 
 ## <a name="using-the-api"></a>Brug af API'en
 
-API'en er asynkron. Når API'en [exportToFile](https://docs.microsoft.com/rest/api/power-bi/reports/exporttofile) kaldes, udløses et eksportjob. Efter et eksportjob er udløst, kan du bruge [polling](https://docs.microsoft.com/rest/api/power-bi/reports/getexporttofilestatus) til at spore jobbet, indtil det er fuldført.
+API'en er asynkron. Når API'en [exportToFile](/rest/api/power-bi/reports/exporttofile) kaldes, udløses et eksportjob. Efter et eksportjob er udløst, kan du bruge [polling](/rest/api/power-bi/reports/getexporttofilestatus) til at spore jobbet, indtil det er fuldført.
 
-Når eksporten er fuldført, returnerer API-kaldet for polling en [URL-adresse til Power BI](https://docs.microsoft.com/rest/api/power-bi/reports/getfileofexporttofile), så filen kan hentes. URL-adressen er tilgængelig i 24 timer.
+Når eksporten er fuldført, returnerer API-kaldet for polling en [URL-adresse til Power BI](/rest/api/power-bi/reports/getfileofexporttofile), så filen kan hentes. URL-adressen er tilgængelig i 24 timer.
 
 ## <a name="supported-features"></a>Understøttede funktioner
 

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: 4745935e618f47f6092f6a33d879dd95d59b9963
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: f2e421297eb942e6e9a622c91e9d5a074cb042ba
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79488286"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91746487"
 ---
 # <a name="push-data-to-a-dataset-complete-code-listing"></a>Komplet kodeliste til push af data til et datasæt
 
@@ -230,7 +230,7 @@ Når du har fulgt trin 2 til 5 i **Push af data til et datasæt**, bør din komp
 * [Opret et datasæt i Power BI](walkthrough-push-data-create-dataset.md)  
 * [Hent et datasæt for at føje rækker til en Power BI-tabel](walkthrough-push-data-get-datasets.md)  
 * [Føj rækker til en Power BI-tabel](walkthrough-push-data-add-rows.md)  
-* [Reference til Power BI REST-API](https://docs.microsoft.com/rest/api/power-bi/)  
+* [Reference til Power BI REST-API](/rest/api/power-bi/)  
 * [Oversigt over Power BI REST-API'en](overview-of-power-bi-rest-api.md)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

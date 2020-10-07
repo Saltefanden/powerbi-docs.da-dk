@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 06/02/2020
-ms.openlocfilehash: bb693b1b46e193a87365537492c83aa2eb8a479a
-ms.sourcegitcommit: b2c60781da6f756102f91346b35a7651fb5dcda3
+ms.openlocfilehash: 6ba5cd95f3e8b788ca7ee8939dff6616c5610573
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86092233"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91746625"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Selvstudium: Integrer Power BI-indhold i en app til dine kunder
 
@@ -46,7 +46,7 @@ Hvis du vælger at konfigurere miljøet manuelt, kan du dog fortsætte nedenfor.
 
 ### <a name="register-an-application-in-azure-active-directory-azure-ad"></a>Registrer et program i Azure Active Directory (Azure AD)
 
-[Registrer dit program](register-app.md) med Azure Active Directory for at give dit program adgang til [REST API'erne til Power BI](https://docs.microsoft.com/rest/api/power-bi/). Når du registrerer dit program, får du mulighed for at oprette en identitet for programmet og angive [tilladelser til Power BI REST-ressourcer](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent). Den måde, du kommer i gang med at registrere et program på, afhænger af, om du vil bruge en masterkonto eller en [tjenesteprincipal](embed-service-principal.md).
+[Registrer dit program](register-app.md) med Azure Active Directory for at give dit program adgang til [REST API'erne til Power BI](/rest/api/power-bi/). Når du registrerer dit program, får du mulighed for at oprette en identitet for programmet og angive [tilladelser til Power BI REST-ressourcer](/azure/active-directory/develop/v2-permissions-and-consent). Den måde, du kommer i gang med at registrere et program på, afhænger af, om du vil bruge en masterkonto eller en [tjenesteprincipal](embed-service-principal.md).
 
 Den valgte metode påvirker, hvilken programtype du registrerer i Azure.
 
@@ -62,7 +62,7 @@ Hvis du integrerer rapporter, dashboards eller felter for dine kunder, skal du p
 
 ### <a name="create-and-publish-your-reports"></a>Opret og udgiv dine rapporter
 
-Du kan oprette rapporter og datasæt ved hjælp af Power BI Desktop og derefter publicere disse rapporter i et arbejdsområde. Du kan opnå dette på to måder: Som slutbruger kan du publicere rapporter i et traditionelt arbejdsområde med en masterkonto (Power BI Pro-licens). Hvis du bruger en tjenesteprincipal, kan du publicere rapporter i de nye arbejdsområder ved hjælp af [REST API'erne til Power BI](https://docs.microsoft.com/rest/api/power-bi/imports/postimportingroup).
+Du kan oprette rapporter og datasæt ved hjælp af Power BI Desktop og derefter publicere disse rapporter i et arbejdsområde. Du kan opnå dette på to måder: Som slutbruger kan du publicere rapporter i et traditionelt arbejdsområde med en masterkonto (Power BI Pro-licens). Hvis du bruger en tjenesteprincipal, kan du publicere rapporter i de nye arbejdsområder ved hjælp af [REST API'erne til Power BI](/rest/api/power-bi/imports/postimportingroup).
 
 Nedenstående trin viser, hvordan man publicerer en PBIX-rapport i et Power BI-arbejdsområde.
 
@@ -224,11 +224,11 @@ Udfyld oplysningerne om **lejeren** med dit lejer-id til Azure. Du kan få disse
 
 ## <a name="embed-content-within-your-application"></a>Integrer indhold i dit program
 
-Selvom trinnene til at integrere indhold udføres ved hjælp af [REST API'er til Power BI](https://docs.microsoft.com/rest/api/power-bi/), oprettes de eksempelkoder, der er beskrevet i denne artikel, med **.NET-SDK'en**.
+Selvom trinnene til at integrere indhold udføres ved hjælp af [REST API'er til Power BI](/rest/api/power-bi/), oprettes de eksempelkoder, der er beskrevet i denne artikel, med **.NET-SDK'en**.
 
-Hvis du integrerer for dine kunder i dit program, skal du have et **adgangstoken** til din masterkonto eller en [tjenesteprincipal](embed-service-principal.md) fra **Azure AD**. Du skal have et [Azure AD-adgangstoken](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) til dit Power BI-program, før du kan foretage kald til [REST API'erne til Power BI](https://docs.microsoft.com/rest/api/power-bi/).
+Hvis du integrerer for dine kunder i dit program, skal du have et **adgangstoken** til din masterkonto eller en [tjenesteprincipal](embed-service-principal.md) fra **Azure AD**. Du skal have et [Azure AD-adgangstoken](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) til dit Power BI-program, før du kan foretage kald til [REST API'erne til Power BI](/rest/api/power-bi/).
 
-Hvis du vil oprette Power BI-klienten med dit **adgangstoken**, skal du oprette dit Power BI klientobjekt, som gør det muligt for dig at interagere med [REST API'erne til Power BI](https://docs.microsoft.com/rest/api/power-bi/). Du kan oprette dit Power BI-klientobjekt ved at omgive **AccessToken** med objektet ***Microsoft.Rest.TokenCredentials***.
+Hvis du vil oprette Power BI-klienten med dit **adgangstoken**, skal du oprette dit Power BI klientobjekt, som gør det muligt for dig at interagere med [REST API'erne til Power BI](/rest/api/power-bi/). Du kan oprette dit Power BI-klientobjekt ved at omgive **AccessToken** med objektet ***Microsoft.Rest.TokenCredentials***.
 
 ```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -269,11 +269,11 @@ Generér et integreringstoken, som kan bruges fra JavaScript-API'en. Der findes 
 **API'er til generering af et integreringstoken for et bestemt element**
 
 Det integreringstoken, som oprettes med disse API'er, er specifikt for det element, du integrerer. Når du integrerer et Power BI element (f.eks. en rapport, et dashboard eller et felt) med disse API'er, skal du oprette et nyt integreringstoken til det.
-* [GenerateTokenInGroup for dashboards](https://docs.microsoft.com/rest/api/power-bi/embedtoken/dashboards_generatetokeningroup)
-* [GenerateTokenInGroup for datasæt](https://docs.microsoft.com/rest/api/power-bi/embedtoken/datasets_generatetokeningroup)
-* [GenerateTokenForCreateInGroup for rapporter](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup)
-* [GenerateTokenInGroup for rapporter](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokeningroup)
-* [GenerateTokenInGroup for felter](https://docs.microsoft.com/rest/api/power-bi/embedtoken/tiles_generatetokeningroup)
+* [GenerateTokenInGroup for dashboards](/rest/api/power-bi/embedtoken/dashboards_generatetokeningroup)
+* [GenerateTokenInGroup for datasæt](/rest/api/power-bi/embedtoken/datasets_generatetokeningroup)
+* [GenerateTokenForCreateInGroup for rapporter](/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup)
+* [GenerateTokenInGroup for rapporter](/rest/api/power-bi/embedtoken/reports_generatetokeningroup)
+* [GenerateTokenInGroup for felter](/rest/api/power-bi/embedtoken/tiles_generatetokeningroup)
 
 Prøver på oprettelse af et integreringstoken for en rapport, et dashboard eller et felt er tilgængelige fra følgende filer i [prøveprogrammet](https://github.com/Microsoft/PowerBI-Developer-Samples).
 * Services\EmbedService.cs
@@ -300,7 +300,7 @@ var embedConfig = new EmbedConfig()
 
 **API til generering af et integreringstoken for flere elementer**<a id="multiEmbedToken"></a>
 
-API'en til integrering, [Generér token](https://docs.microsoft.com/rest/api/power-bi/embedtoken/generatetoken), genererer et token, der kan bruges til at integrere flere elementer.
+API'en til integrering, [Generér token](/rest/api/power-bi/embedtoken/generatetoken), genererer et token, der kan bruges til at integrere flere elementer.
 
 Det kan også bruges til at vælge et datasæt på en dynamisk måde, mens en rapport integreres. Du kan finde flere oplysninger om denne brug af API'en under [dynamisk binding](embed-dynamic-binding.md).
 
@@ -414,7 +414,7 @@ Når du opretter en dedikeret kapacitet, kan du drage fordel af at have en dedik
 > [!NOTE]
 > Med A-SKU'er kan du ikke få adgang til Power BI-indhold med en GRATIS Power BI-licens.
 
-I nedenstående tabel beskrives ressourcerne og begrænsningerne for hver SKU. Hvis du vil finde ud af, hvilken kapacitet der passer bedst til dine behov, skal du se tabellen [Hvilken SKU skal jeg købe til mit scenarie?](https://docs.microsoft.com/power-bi/developer/embedded-faq#which-solution-should-i-choose)
+I nedenstående tabel beskrives ressourcerne og begrænsningerne for hver SKU. Hvis du vil finde ud af, hvilken kapacitet der passer bedst til dine behov, skal du se tabellen [Hvilken SKU skal jeg købe til mit scenarie?](./embedded-faq.md#which-solution-should-i-choose)
 
 | Kapacitetsnoder | V-kerner i alt | Backend-v-kerner | RAM (GB) | Frontend-v-kerner | DirectQuery/direkte forbindelser (pr. sek.) | Parallel opdatering af modeller |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -430,7 +430,7 @@ I nedenstående tabel beskrives ressourcerne og begrænsningerne for hver SKU. H
 
 I forbindelse med udviklingstest kan du bruge integrerede prøveversionstokens med en Pro-licens. Brug en dedikeret kapacitet for at integrere i et produktionsmiljø.
 
-Det antal prøveversionstokens til integrering, som en Power BI-tjenesteprincipal eller hovedkonto kan generere, er begrænset. Brug API'en [Tilgængelige funktioner](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) til at kontrollere procentdelen af dit aktuelle integrerede forbrug. Forbrugsmængden vises pr. tjenesteprincipal eller hovedkonto.
+Det antal prøveversionstokens til integrering, som en Power BI-tjenesteprincipal eller hovedkonto kan generere, er begrænset. Brug API'en [Tilgængelige funktioner](/rest/api/power-bi/availablefeatures/getavailablefeatures) til at kontrollere procentdelen af dit aktuelle integrerede forbrug. Forbrugsmængden vises pr. tjenesteprincipal eller hovedkonto.
 
 Hvis du løber tør for integreringstokens under test, skal du købe en Power BI Embedded- eller Premium-[kapacitet](embedded-capacity.md). Der er ingen grænse for, hvor mange integreringstokens du kan generere med en dedikeret kapacitet.
 
@@ -441,7 +441,7 @@ Når du har oprettet en dedikeret kapacitet, kan du tildele dit arbejdsområde t
 
 Alle arbejdsområder, der indeholder Power BI-ressourcer, som er relateret til det integrerede indhold (herunder datasæt, rapporter og dashboards), skal tildeles til dedikerede kapaciteter. Hvis en integreret rapport og det datasæt, der er bundet til det, f.eks. er placeret i forskellige arbejdsområder, skal begge arbejdsområder tildeles til dedikerede kapaciteter.
 
-Hvis du vil tildele en dedikeret kapacitet til et arbejdsområde ved hjælp af en [tjenesteprincipal](embed-service-principal.md), skal du bruge [REST API'er til Power BI](https://docs.microsoft.com/rest/api/power-bi/capacities/groups_assigntocapacity). Når du bruger REST API'er til Power BI, skal du sørge for at bruge [objekt-id'et for tjenesteprincipalen](embed-service-principal.md).
+Hvis du vil tildele en dedikeret kapacitet til et arbejdsområde ved hjælp af en [tjenesteprincipal](embed-service-principal.md), skal du bruge [REST API'er til Power BI](/rest/api/power-bi/capacities/groups_assigntocapacity). Når du bruger REST API'er til Power BI, skal du sørge for at bruge [objekt-id'et for tjenesteprincipalen](embed-service-principal.md).
 
 Følg nedenstående trin for at tildele en dedikeret kapacitet til et arbejdsområde ved hjælp af en **masterkonto**.
 

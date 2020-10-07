@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.service: powerbi
 ms.custom: ''
 ms.date: 04/16/2019
-ms.openlocfilehash: 646a09545a06dfa65bd73a666fa2419d82e4da33
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: eb9476b3f21d1149492982a8dcae3d8ce89e9629
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236920"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91748649"
 ---
 # <a name="auto-install-power-bi-apps-when-embedding-for-your-organization"></a>Installér Power BI-apps automatisk, når du integrerer for din organisation
 
@@ -29,7 +29,7 @@ Hvis du vil tillade automatisk installation af apps for dine brugere, skal du gi
 
 ![Indhold oprettes i forbindelse med registrering af app](media/embed-auto-install-app/register-app-create-content.png)
 
-Derefter skal du angive app-id'et i URL-adressen til integrering. For at angive app-id'et skal forfatteren af appen først installere appen og derefter bruge en af de understøttede [REST API-opkald for Power BI](https://docs.microsoft.com/rest/api/power-bi/) – [Hent rapporter](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) eller [Hent dashboards](https://docs.microsoft.com/rest/api/power-bi/dashboards/getdashboards). Derefter skal forfatteren af appen tage URL-adressen til integrering fra REST API-svaret. App-id'et vises i URL-adressen, hvis indholdet er fra en app.  Når du har URL-adressen til integrering, kan du bruge den til at integrere regelmæssigt.
+Derefter skal du angive app-id'et i URL-adressen til integrering. For at angive app-id'et skal forfatteren af appen først installere appen og derefter bruge en af de understøttede [REST API-opkald for Power BI](/rest/api/power-bi/) – [Hent rapporter](/rest/api/power-bi/reports/getreports) eller [Hent dashboards](/rest/api/power-bi/dashboards/getdashboards). Derefter skal forfatteren af appen tage URL-adressen til integrering fra REST API-svaret. App-id'et vises i URL-adressen, hvis indholdet er fra en app.  Når du har URL-adressen til integrering, kan du bruge den til at integrere regelmæssigt.
 
 ## <a name="secure-embed"></a>Sikker integrering
 

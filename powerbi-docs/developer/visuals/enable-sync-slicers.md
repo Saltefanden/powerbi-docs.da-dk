@@ -8,16 +8,16 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: 5c364713ec7e0328e8278694985950266734c91d
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 4e9989bb7a34a89cb6244a2378d6660a5079fc82
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238383"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91748097"
 ---
 # <a name="sync-slicers-in-power-bi-visuals"></a>Synkroniser udsnitsværktøjer i visualiseringer i Power BI
 
-For at understøtte funktionen [Synkroniser udsnitsværktøjer](https://docs.microsoft.com/power-bi/desktop-slicers) skal dit brugerdefinerede visuelle udsnit bruge API-version 1.13.0 eller nyere.
+For at understøtte funktionen [Synkroniser udsnitsværktøjer](../../visuals/power-bi-visualization-slicers.md) skal dit brugerdefinerede visuelle udsnit bruge API-version 1.13.0 eller nyere.
 
 Derudover skal du aktivere indstillingen i filen *capabilities.json* som vist i følgende kode:
 

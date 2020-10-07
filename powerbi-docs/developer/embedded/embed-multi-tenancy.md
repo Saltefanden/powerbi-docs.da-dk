@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/11/2019
-ms.openlocfilehash: cd30727e6329ca91413f2023f7dc3bd715bcbca6
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: b2638c3fdb483f45b6f4b3f9363f42ee36e57f0b
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83276001"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91747752"
 ---
 # <a name="manage-multi-tenancy-with-power-bi-embedded-analytics"></a>Administrer flere lejere med Power BI Embedded-analyse
 
@@ -28,7 +28,7 @@ I denne artikel beskrives og analyseres de forskellige tilgange i forhold til fl
 
 ## <a name="concepts-and-terminology"></a>Koncepter og terminologi
 
-**[AAD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)** – Azure Active Directory.
+**[AAD](/azure/active-directory/fundamentals/active-directory-whatis)** – Azure Active Directory.
 
 **AAD-program** – en programidentitet i AAD. Der kræves et AAD-program til godkendelse.
 
@@ -131,17 +131,17 @@ Der er to primære metoder til administration af lejerens data.
 
 Hvis SaaS-programlageret indeholder en separat database pr. lejer, er det naturlige valg at bruge datasæt med en enkelt lejer i Power BI med forbindelsesstrengen for hvert datasæt, der peger på den tilsvarende database.
 
-Hvis SaaS-programlageret bruger en database med flere lejere for alle lejere, er det er nemt at adskille lejere efter arbejdsområde. Du kan konfigurere databaseforbindelsen til Power BI-datasættet med en parameteriseret databaseforespørgsel, der kun henter den relevante lejers data. Du kan opdatere forbindelsen ved hjælp af [Power BI Desktop](../../transform-model/desktop-query-overview.md) eller ved hjælp af [API'en](https://docs.microsoft.com/rest/api/power-bi/datasets/updatedatasourcesingroup) med [parametre](https://docs.microsoft.com/rest/api/power-bi/datasets/updateparametersingroup) på forespørgslen.
+Hvis SaaS-programlageret bruger en database med flere lejere for alle lejere, er det er nemt at adskille lejere efter arbejdsområde. Du kan konfigurere databaseforbindelsen til Power BI-datasættet med en parameteriseret databaseforespørgsel, der kun henter den relevante lejers data. Du kan opdatere forbindelsen ved hjælp af [Power BI Desktop](../../transform-model/desktop-query-overview.md) eller ved hjælp af [API'en](/rest/api/power-bi/datasets/updatedatasourcesingroup) med [parametre](/rest/api/power-bi/datasets/updateparametersingroup) på forespørgslen.
 
 ### <a name="data-isolation"></a>Dataisolation
 
-Dataene i denne lejermodel er adskilt på arbejdsområdeniveau. En enkel tilknytning mellem et arbejdsområde og en lejer forhindrer, at brugere fra én lejer får vist indhold fra en anden lejer. Hvis du bruger en enkelt *masterbruger*, skal du have adgang til alle de forskellige arbejdsområder. Konfigurationen af, hvilke data der skal vises en slutbruger, defineres i løbet af [genereringen af indlejringstokenet](https://docs.microsoft.com/rest/api/power-bi/embedtoken), en back end-proces, som slutbrugerne ikke kan se eller ændre.
+Dataene i denne lejermodel er adskilt på arbejdsområdeniveau. En enkel tilknytning mellem et arbejdsområde og en lejer forhindrer, at brugere fra én lejer får vist indhold fra en anden lejer. Hvis du bruger en enkelt *masterbruger*, skal du have adgang til alle de forskellige arbejdsområder. Konfigurationen af, hvilke data der skal vises en slutbruger, defineres i løbet af [genereringen af indlejringstokenet](/rest/api/power-bi/embedtoken), en back end-proces, som slutbrugerne ikke kan se eller ændre.
 
 Hvis du vil tilføje yderligere isolation, kan en programudvikler definere en *masterbruger* eller et program pr. arbejdsområde i stedet for en enkelt *masterbruger* eller program med adgang til flere arbejdsområder. På den måde kan du sikre, at alle menneskelige fejl eller læk af legitimationsoplysninger ikke medfører, at flere kunders data blotlægges.
 
 ### <a name="scalability"></a>Skalerbarhed
 
-En fordel ved denne model er, at man ved at adskille dataene i flere datasæt for hver lejer omgår [størrelsesbegrænsningerne for et enkelt datasæt](https://docs.microsoft.com/power-bi/service-premium-large-datasets) (i øjeblikket 10 GB i en kapacitet). Når kapaciteten er overbelastet, kan den fjerne ubrugte datasæt for at frigøre hukommelse til aktive datasæt. Denne opgave er ikke mulig med et enkelt stort datasæt. Brug af flere datasæt gør det også muligt at opdele lejere i flere Power BI-kapaciteter, hvis det er nødvendigt.
+En fordel ved denne model er, at man ved at adskille dataene i flere datasæt for hver lejer omgår [størrelsesbegrænsningerne for et enkelt datasæt](../../admin/service-premium-what-is.md) (i øjeblikket 10 GB i en kapacitet). Når kapaciteten er overbelastet, kan den fjerne ubrugte datasæt for at frigøre hukommelse til aktive datasæt. Denne opgave er ikke mulig med et enkelt stort datasæt. Brug af flere datasæt gør det også muligt at opdele lejere i flere Power BI-kapaciteter, hvis det er nødvendigt.
 
 På trods af disse fordele bør du overveje, hvor meget SaaS-programmet kan rumme i fremtiden. Du kan f.eks. nå begrænsningerne omkring antallet af artefakter, der kan administreres. Se [begrænsninger for udrulninger](#summary-comparison-of-the-different-approaches) senere i denne artikel for at få flere oplysninger. Den kapacitets-SKU, der bruges, introducerer en grænse for størrelsen af den hukommelse, som datasættene er indeholdt i, hvor mange opdateringer, der kan køre på samme tid, og den maksimale hyppighed af dataopdateringer. Det anbefales at teste, når der administreres hundred- eller tusindvis af datasæt. Det anbefales også at tage højde for det gennemsnitlige forbrug og forbruget ved spidsbelastninger, og om der er nogle bestemte lejere med store datasæt eller forskellige forbrugsmønstre, der administreres anderledes end for andre lejere.
 
@@ -155,7 +155,7 @@ Med arbejdsområdebaseret isolation i Power BI kan programudvikleren muligvis v�
    * Ikke-planlagte tilpasninger for bestemte lejere
    * Hyppigheden af datasætopdateringer
 
-Oprettelse af et arbejdsområde til en ny lejer er f.eks. en almindelig opgave, der kræver automatisering. Med [Power BI REST API'en](https://docs.microsoft.com/rest/api/power-bi/) kan du opnå [fuld automatisering, når du opretter arbejdsområder](https://powerbi.microsoft.com/blog/duplicate-workspaces-using-the-power-bi-rest-apis-a-step-by-step-tutorial/).
+Oprettelse af et arbejdsområde til en ny lejer er f.eks. en almindelig opgave, der kræver automatisering. Med [Power BI REST API'en](/rest/api/power-bi/) kan du opnå [fuld automatisering, når du opretter arbejdsområder](https://powerbi.microsoft.com/blog/duplicate-workspaces-using-the-power-bi-rest-apis-a-step-by-step-tutorial/).
 
 ### <a name="multi-geo-needs"></a>Multi-Geo-behov
 
@@ -222,15 +222,15 @@ Når slutbrugere redigerer eller opretter rapporter, kan de bruge produktionsdat
 > [!Important]
 > Følgende analyse er baseret på den aktuelle tilstand af produktet. Da vi frigiver nye funktioner månedligt, kommer der løbende nye egenskaber og funktioner som svar på de eksisterende begrænsninger og svage punkter. Sørg for at tjekke vores månedlige blogindlæg for at se, hvad der er af nyheder, og vend tilbage til denne artikel for at se, hvordan de nye funktioner påvirker anbefalingerne til lejermodel.
 
-| Evalueringskriterier | Arbejdsområdebaseret   | Sikkerhedsbaseret på rækkeniveau  |  |  |
-|--------------------------------------|----------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|---|---|
-| Dataarkitektur  | Nemmest, når der er en separat database pr. lejer  | Nemmest, når alle data for alle lejere er i et enkelt datalager   |  |  |
-| Dataisolation  | God. Hver lejer har et dedikeret datasæt.  | Moderat. Alle data er i det samme delte datasæt, men administreres via adgangskontrol.  |  |  |
-| Skalerbarhed  | Mellem. Opdeling af dataene i flere datasæt gør det muligt at optimere.  | Lavest. Begrænset af begrænsninger for datasæt.  |  |  |
-| Multi-Geo-behov  | Passer godt, når de fleste lejere kun er i ét område.  | Anbefales ikke. Det er nødvendigt at have hele datasættet gemt i flere områder.  |  |  |
-| Automatisering og driftsmæssig kompleksitet  | God automatisering for den enkelte lejer.   Komplekst at administrere mange artefakter i stor skala.  | Let at administrere Power BI-artefakter, men komplekst at administrere sikkerhed på rækkeniveau i stor skala.  |  |  |
-| Omkostning  | Lav-mellem. Kan optimere udnyttelsen for at reducere omkostningerne pr. lejer.  Kan øge behovet for hyppige opdateringer.  | Mellem-høj, hvis importtilstanden benyttes.  Lav-mellem, hvis den direkte forespørgselsstilstand benyttes.  |  |  |
-| Tilpasning og oprettelse af indhold  | Passer godt. Kan nå begrænsninger i stor skala.  | Kun oprettelse af indhold i integreret iFrame  |  |  |
+| Evalueringskriterier | Arbejdsområdebaseret   | Sikkerhedsbaseret på rækkeniveau  |
+|---------------------|-------------------|---------------------------|
+| Dataarkitektur  | Nemmest, når der er en separat database pr. lejer  | Nemmest, når alle data for alle lejere er i et enkelt datalager   |
+| Dataisolation  | God. Hver lejer har et dedikeret datasæt.  | Moderat. Alle data er i det samme delte datasæt, men administreres via adgangskontrol.  |
+| Skalerbarhed  | Mellem. Opdeling af dataene i flere datasæt gør det muligt at optimere.  | Lavest. Begrænset af begrænsninger for datasæt.  |
+| Multi-Geo-behov  | Passer godt, når de fleste lejere kun er i ét område.  | Anbefales ikke. Det er nødvendigt at have hele datasættet gemt i flere områder.  |
+| Automatisering og driftsmæssig kompleksitet  | God automatisering for den enkelte lejer.   Komplekst at administrere mange artefakter i stor skala.  | Let at administrere Power BI-artefakter, men komplekst at administrere sikkerhed på rækkeniveau i stor skala.  |
+| Omkostning  | Lav-mellem. Kan optimere udnyttelsen for at reducere omkostningerne pr. lejer.  Kan øge behovet for hyppige opdateringer.  | Mellem-høj, hvis importtilstanden benyttes.  Lav-mellem, hvis den direkte forespørgselsstilstand benyttes.  |
+| Tilpasning og oprettelse af indhold  | Passer godt. Kan nå begrænsninger i stor skala.  | Kun oprettelse af indhold i integreret iFrame  |
 
 ## <a name="deployment-considerations-and-limitations"></a>Overvejelser og begrænsninger i forbindelse med installationen
 

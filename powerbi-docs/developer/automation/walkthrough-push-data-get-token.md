@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 05/29/2019
-ms.openlocfilehash: cb50e887b7821ed23a928c6eb28d0c8bb3a28cb1
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: b66c87d88e08a4c1f9ee4f9aebdbf44516d9cb43
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86213847"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91746510"
 ---
 # <a name="step-2-get-an-authentication-access-token"></a>Trin 2: Hent et adgangstoken til godkendelse
 
@@ -184,6 +184,6 @@ namespace walkthrough_push_data
 
 * Den næste artikel i denne serie er [Opret et datasæt i Power BI](walkthrough-push-data-create-dataset.md)
 * [Oversigt over Power BI REST-API'en](overview-of-power-bi-rest-api.md)  
-* [REST-API'er til Power BI](https://docs.microsoft.com/rest/api/power-bi/)  
+* [REST-API'er til Power BI](/rest/api/power-bi/)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

@@ -16,12 +16,12 @@ helpviewer_keywords:
 - Power BI APIs
 ms.custom: seodec18
 ms.date: 05/15/2019
-ms.openlocfilehash: ade60bf8b786f70002f0af0672acf951348fee49
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 7c90093fefb98c6b385328e8dd207760e3207cbf
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80487819"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91746211"
 ---
 # <a name="embedded-analytics-with-power-bi"></a>Integreret analyse med Power BI
 
@@ -43,7 +43,7 @@ Der er to hovedscenarier til integrering af Power BI-indhold:
  
 - Integrering for dine brugere og kunder uden krav om licenser til Power BI. 
 
-[REST API'en for Power BI](https://docs.microsoft.com/rest/api/power-bi/) muliggør begge scenarier.
+[REST API'en for Power BI](/rest/api/power-bi/) muliggør begge scenarier.
 
 For kunder og brugere uden Power BI-licenser kan du integrere dashboards og rapporter i dit brugerdefinerede program ved hjælp af den samme API for enten at betjene din organisation eller dine kunder. Dine kunder ser de data, der administreres af programmet. Power BI-brugere i din organisation har desuden yderligere indstillinger, som de kan bruge til at få vist *deres data* direkte i Power BI eller i konteksten af det integrerede program. Du kan fuldt ud benytte JavaScript- og REST-API'erne til dine integreringsbehov.
 
@@ -53,7 +53,7 @@ Se [Eksemplet på integrering af JavaScript](https://microsoft.github.io/PowerBI
 
 Med **Embedding for your organization** kan du udvide Power BI-tjenesten. Denne type integrering kræver, at brugerne af dit program logger på Power BI-tjenesten for at få vist indholdet. Når en person i din organisation logger på, har vedkommende kun adgang til dashboards og rapporter, som de ejer, eller som er delt med vedkommende i Power BI-tjenesten.
 
-Eksempler på integrering for din organisation omfatter interne programmer, f.eks. [SharePoint Online](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Integrering med Microsoft Teams (du skal have administratorrettigheder)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) og [Microsoft Dynamics](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard).
+Eksempler på integrering for din organisation omfatter interne programmer, f.eks. [SharePoint Online](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Integrering med Microsoft Teams (du skal have administratorrettigheder)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) og [Microsoft Dynamics](/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard).
 
 Hvis du vil integrere for din organisation, skal du se [Selvstudium: Integrer Power BI-indhold i et program for din organisation](embed-sample-for-your-organization.md).
 

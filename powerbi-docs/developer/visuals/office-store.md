@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
 ms.date: 07/14/2020
-ms.openlocfilehash: 94cd4fd652fc1b06a73e1ea319a65e1aa5b46c7e
-ms.sourcegitcommit: 8b8d54d46470a311d8654abe92b5a223b696af28
+ms.openlocfilehash: 891f4d57e1c2754f4c98916b2824ef2283d8298a
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86437209"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91747959"
 ---
 # <a name="publish-power-bi-visuals-to-partner-center"></a>Publicer Power BI-visualiseringer i Partnercenter
 
@@ -35,7 +35,7 @@ Når du er klar til at indsende din Power BI-visualisering, skal du bekræfte, a
 | --- | --- | --- |
 | Pbiviz-pakke |Ja |Pak din Power BI-visualisering i en Pbiviz-pakke, der indeholder alle de påkrævede metadata.<br>Navn på visualisering<br>Vist navn<br>GUID<br>Version<br>Beskrivelse<br>Forfatternavn og mailadresse |
 | .pbix-eksempelrapportfil |Ja |Når du fremviser din visualisering, bør du hjælpe brugerne med at blive bekendte med visualiseringen. Fremhæv den værdi, som visualiseringen kan tilføre brugerne, og giv eksempler på brug og formateringsmuligheder. Du kan også tilføje en side med *"tip"* i slutningen, f.eks. tip og tricks samt ting, der bør undgås.<br>.pbix-eksempelrapportfilen skal fungere offline uden nogen eksterne forbindelser. |
-| Ikon |Ja |Du bør medtage logoet for den brugerdefinerede visualisering, som vil blive vist i appbutikken. Formatet kan være .png, .jpg, .jpeg eller .gif. Den skal være nøjagtigt 300 pixel (bredde) x 300 pixel (højde).<BR>**Vigtigt!** Gennemse [vejledningen til AppSource-lageret for billeder](https://docs.microsoft.com/office/dev/store/craft-effective-appsource-store-images) omhyggeligt, inden du indsender ikonet. |
+| Ikon |Ja |Du bør medtage logoet for den brugerdefinerede visualisering, som vil blive vist i appbutikken. Formatet kan være .png, .jpg, .jpeg eller .gif. Den skal være nøjagtigt 300 pixel (bredde) x 300 pixel (højde).<BR>**Vigtigt!** Gennemse [vejledningen til AppSource-lageret for billeder](/office/dev/store/craft-effective-appsource-store-images) omhyggeligt, inden du indsender ikonet. |
 | Skærmbilleder |Ja |Angiv mindst ét skærmbillede. Formatet kan være .png, .jpg, .jpeg eller .gif. Dimensionerne skal være nøjagtigt 1366 px (bredde) gange 768 px (højde). Filens størrelse må ikke være større end 1024 kb.<br>Effekten vil være større, hvis du tilføjer tekstbobler for at fremhæve fordelene ved de vigtigste funktioner, som vises på hvert skærmbillede. |
 | Supportlink |Ja |Angiv en URL-adresse til support til dine kunder. Dette link angives som en del af din Partnercenter-oversigt og er synligt for brugerne, når de få adgang til dine visualiseringer i AppSource. URL-adressen skal indeholde https:// eller https://. |
 | Link til dokument om beskyttelse af personlige oplysninger |Ja |Angiv et link til politikken for beskyttelse af personlige oplysninger for visualiseringen. Dette link angives som en del af din Partnercenter-oversigt og er synligt for brugerne, når de får adgang til oversigten over dine visualiseringer i AppSource. Linket skal indeholde https:// eller https://. |
@@ -71,14 +71,14 @@ Power BI-teamet skal kontrollere filerne for nye Power BI-visualiseringer, opdat
 
 ### <a name="submitting-to-partner-center"></a>Indsendelse til Partnercenter
 
-Hvis du vil indsende din Power BI-visualisering til Partnercenter, skal du være tilmeldt Partnercenter. Hvis du endnu ikke er tilmeldt, kan du [åbne en udviklerkonto i Partnercenter](https://docs.microsoft.com/office/dev/store/open-a-developer-account).
+Hvis du vil indsende din Power BI-visualisering til Partnercenter, skal du være tilmeldt Partnercenter. Hvis du endnu ikke er tilmeldt, kan du [åbne en udviklerkonto i Partnercenter](/office/dev/store/open-a-developer-account).
 
 >[!NOTE]
 >**Individuelle udgivere** kan bruge en af disse metoder til at sende et Power BI-element:
 >* Hvis du har en gammel Seller Dashboard-konto, kan du fortsætte med at bruge denne kontos legitimationsoplysninger til at logge på Partnercenter.
->* Hvis du ikke har en gammel Seller Dashboard-konto og ikke er registreret til Partner Center, skal du [oprette en udviklerkonto i Partnercenter](https://docs.microsoft.com/office/dev/store/open-a-developer-account) med din arbejdsmail.
+>* Hvis du ikke har en gammel Seller Dashboard-konto og ikke er registreret til Partner Center, skal du [oprette en udviklerkonto i Partnercenter](/office/dev/store/open-a-developer-account) med din arbejdsmail.
 
-Følg nedenstående trin for at indsende din Power BI-visualisering til Partnercenter. Du kan finde flere oplysninger om indsendelsesprocessen under [Indsend din Office-løsning til AppSource via Partnercenter](https://docs.microsoft.com/office/dev/store/use-partner-center-to-submit-to-appsource).
+Følg nedenstående trin for at indsende din Power BI-visualisering til Partnercenter. Du kan finde flere oplysninger om indsendelsesprocessen under [Indsend din Office-løsning til AppSource via Partnercenter](/office/dev/store/use-partner-center-to-submit-to-appsource).
 
 1. Log på **Partnercenter**.
 
@@ -107,7 +107,7 @@ Følg nedenstående trin for at indsende din Power BI-visualisering til Partnerc
 
 ## <a name="tracking-submission-status-and-usage"></a>Se statussen for indsendelsen og brugsdata
 
-Du kan gennemse [valideringspolitikkerne](https://docs.microsoft.com/legal/marketplace/certification-policies#1180-power-bi-visuals).
+Du kan gennemse [valideringspolitikkerne](/legal/marketplace/certification-policies#1180-power-bi-visuals).
 
 * Når du har indsendt visualiseringen, vil du kunne se statussen for den i [appdashboardet](https://sellerdashboard.microsoft.com/Application/Summary/).
 

@@ -9,18 +9,18 @@ ms.subservice: powerbi-service
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/05/2019
-ms.openlocfilehash: 9c0927eb46177726c4277b2fa697003d7f0fdc56
-ms.sourcegitcommit: ffc46032d0771227395cc38be9ec9ff1500eac70
+ms.openlocfilehash: c5a902a8de8449290d52974063b25f51ff92dd9d
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89402019"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91747568"
 ---
 # <a name="tutorial-embed-a-power-bi-content-into-your-application-for-national-clouds"></a>Selvstudium: Integrer Power BI-indhold i dit program for nationale cloudmiljøer
 
 Få mere at vide om, hvordan du integrerer analyseindhold i dine virksomhedsprogrammer for det nationale cloudmiljø. Du kan bruge Power BI .NET SDK med Power BI JavaScript-API'en til at integrere en rapport, et dashboard eller et felt i dine webprogrammer.
 
-Power BI understøtter også [nationale cloudmiljøer](https://docs.microsoft.com/azure/active-directory/develop/authentication-national-cloud).
+Power BI understøtter også [nationale cloudmiljøer](/azure/active-directory/develop/authentication-national-cloud).
 
 De forskellige nationale cloudmiljøer er:
 
@@ -43,7 +43,7 @@ Før du begynder denne gennemgang, skal du have en **Power BI**-konto. Hvis du i
 > [!NOTE]
 > Vil du integrere et dashboard for din organisation i stedet? Se i [Integrer et dashboard i en app for din organisation](embed-sample-for-your-organization.md).
 
-Hvis du vil integrere et dashboard i en webapp, skal du bruge API'en til **Power BI** og et **adgangstoken** til Azure Active Directory for at hente et dashboard. Derefter skal du indlæse dashboardet ved hjælp af et integrationstoken. **Power BI** API'en leverer programmeringsmæssig adgang til bestemte **Power BI**-ressourcer. Du kan finde flere oplysninger under [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/), [Power BI .NET SDK] og [JavaScript-API'en til Power BI](https://github.com/Microsoft/PowerBI-JavaScript).
+Hvis du vil integrere et dashboard i en webapp, skal du bruge API'en til **Power BI** og et **adgangstoken** til Azure Active Directory for at hente et dashboard. Derefter skal du indlæse dashboardet ved hjælp af et integrationstoken. **Power BI** API'en leverer programmeringsmæssig adgang til bestemte **Power BI**-ressourcer. Du kan finde flere oplysninger under [Power BI REST API](/rest/api/power-bi/), [Power BI .NET SDK] og [JavaScript-API'en til Power BI](https://github.com/Microsoft/PowerBI-JavaScript).
 
 ## <a name="download-the-sample"></a>Download eksemplet
 
@@ -238,10 +238,10 @@ Tile tile = tiles.Value.FirstOrDefault();
 
 ### <a name="create-the-embed-token"></a>Opret integrationstokenet
 
-Ved hjælp af JavaScript-API'en kan du generere et integrationstoken. Dette integreringstoken er specifikt for det element, du integrerer. Hver gang du integrerer Power BI-indhold, skal du oprette et nyt integreringstoken for det. Du kan finde flere oplysninger, herunder hvilket **adgangsniveau** du skal bruge, i [Integreringstoken](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
+Ved hjælp af JavaScript-API'en kan du generere et integrationstoken. Dette integreringstoken er specifikt for det element, du integrerer. Hver gang du integrerer Power BI-indhold, skal du oprette et nyt integreringstoken for det. Du kan finde flere oplysninger, herunder hvilket **adgangsniveau** du skal bruge, i [Integreringstoken](/rest/api/power-bi/embedtoken).
 
 > [!IMPORTANT]
-> Da integrerede tokens kun er beregnet til udviklingstest, er antallet af integrerede tokens, der kan genereres fra en Power BI-hovedkonto, begrænset. Der [skal købes en kapacitet](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical) til integrerede produktionsscenarier. Der er ingen grænse for generering af integrerede tokens, når der er købt en kapacitet.
+> Da integrerede tokens kun er beregnet til udviklingstest, er antallet af integrerede tokens, der kan genereres fra en Power BI-hovedkonto, begrænset. Der [skal købes en kapacitet](./embedded-faq.md#technical) til integrerede produktionsscenarier. Der er ingen grænse for generering af integrerede tokens, når der er købt en kapacitet.
 
 Du kan finde et eksempel i **Controllers\HomeController.cs** i [prøveappen Embedding for your organization](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/Embed%20for%20your%20customers/PowerBIEmbedded_AppOwnsData).
 
@@ -440,7 +440,7 @@ Du kan finde et eksempel på et program i [Eksempel på integrering for din orga
 
 * Du kan finde flere oplysninger om JavaScript-API'en i [JavaScript-API til Power BI](https://github.com/Microsoft/PowerBI-JavaScript).
 
-* Du kan finde flere oplysninger om cloudmiljøet Power BI til Tyskland i [Ofte stillede spørgsmål om cloudmiljøet Power BI til Tyskland](https://docs.microsoft.com/power-bi/service-govde-faq)
+* Du kan finde flere oplysninger om cloudmiljøet Power BI til Tyskland i [Ofte stillede spørgsmål om cloudmiljøet Power BI til Tyskland](../../admin/service-govde-faq.md)
 
 * [Sådan overfører du indhold fra Power BI Workspace Collection til Power BI](migrate-from-powerbi-embedded.md)
 

@@ -8,20 +8,20 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 02/05/2019
-ms.openlocfilehash: ba37d9fc79405518a59ff188fdb5890e6af8043c
-ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
+ms.openlocfilehash: b43e9c93499f60039a924051c30b0ed631c85e8e
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85355024"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91748373"
 ---
 # <a name="step-5-add-rows-to-a-power-bi-table"></a>Trin 5: Føj rækker til en Power BI-tabel
 
 Denne artikel er en del af en trinvis gennemgang af, hvordan du [sender data til et datasæt](walkthrough-push-data.md).
 
-I **trin 4** af Overfør data til et datasæt, [Få et datasæt til at føje rækker til en Power BI-tabel](walkthrough-push-data-get-datasets.md) brugte du handlingen [Hent datasæt](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets) og Newtonsoft.Json til at hente et datasæt-id. På dette trin bruger du dataset-id'et med handlingen [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows) for at føje rækker til et **Power BI**-datasæt. 
+I **trin 4** af Overfør data til et datasæt, [Få et datasæt til at føje rækker til en Power BI-tabel](walkthrough-push-data-get-datasets.md) brugte du handlingen [Hent datasæt](/rest/api/power-bi/datasets/getdatasets) og Newtonsoft.Json til at hente et datasæt-id. På dette trin bruger du dataset-id'et med handlingen [PostRows](/rest/api/power-bi/pushdatasets/datasets_postrows) for at føje rækker til et **Power BI**-datasæt. 
 
-Når du kalder handlingen [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows), føjer du rækker til et datasæt.
+Når du kalder handlingen [PostRows](/rest/api/power-bi/pushdatasets/datasets_postrows), føjer du rækker til et datasæt.
 
 ![tilføj rækker](media/walkthrough-push-data-add-rows/powerbi-developer-add-rows.png)
 
@@ -105,9 +105,7 @@ Føj denne kode til Program.cs.
     #endregion
 ```
 
-Nedenfor kan du se den [komplette kodeliste](#code).
-
-<a name="code"/>
+Nedenfor kan du se den komplette kodeliste.
 
 ## <a name="complete-code-listing"></a>Komplet kodeliste
 
@@ -315,5 +313,5 @@ Selvom vi angiver, at vi **_//Henter det første id_** i ovenstående kode, er d
 ## <a name="next-steps"></a>Næste trin
 [Send data til et Power BI-dashboard](walkthrough-push-data.md)  
 [Oversigt over Power BI REST-API](overview-of-power-bi-rest-api.md)  
-[Power BI REST-API-reference](https://docs.microsoft.com/rest/api/power-bi/)  
+[Power BI REST-API-reference](/rest/api/power-bi/)  
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/12/2018
-ms.openlocfilehash: ba0a85958fad500bd27f4697a7f46961ca430f49
-ms.sourcegitcommit: 0b1e96de184caf2371adedcc3ee43bcb88048187
+ms.openlocfilehash: 2d33ed5a707a3b4bc3e0a77a38128e7e00154798
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85299566"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91746671"
 ---
 # <a name="power-bi-embedded-performance-best-practices"></a>Bedste praksis for ydeevnen i Power BI Embedded
 
@@ -53,7 +53,7 @@ Hvis du integrerer rapporter med de samme filtre, bogmærker og udsnit for at fo
 Når du integrerer flere rapporter i den samme iframe, skal du ikke generere en ny iframe for hver rapport. Brug i stedet `powerbi.embed(element, config)` med en anden konfiguration for at integrere den nye rapport.
 
 > [!NOTE]
-> Hvis du skifter mellem rapporter, når du integrerer for dine kunder (også kaldet et "app ejer data"-scenarie), skal du bruge et indlejringstoken med tilladelser til alle rapporter og datasæt. Du kan finde flere oplysninger under [Opret token-API](https://docs.microsoft.com/rest/api/power-bi/embedtoken/generatetoken).
+> Hvis du skifter mellem rapporter, når du integrerer for dine kunder (også kaldet et "app ejer data"-scenarie), skal du bruge et indlejringstoken med tilladelser til alle rapporter og datasæt. Du kan finde flere oplysninger under [Opret token-API](/rest/api/power-bi/embedtoken/generatetoken).
 
 ## <a name="query-caching"></a>Cachelagring af forespørgsel
 

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 03/03/2020
-ms.openlocfilehash: 23018dce94efad6c63a22b6ee3a2c0919475adb5
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 9158dfccecd42d13a133a49097b2f85cb3713f00
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83145141"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91746740"
 ---
 # <a name="capacity-planning-in-power-bi-embedded-analytics"></a>Kapacitetsplanlægning i Power BI Embedded-analyser
 
@@ -42,7 +42,7 @@ Når du kører værktøjet, skal du være opmærksom på den eksisterende belast
 Her er nogle eksempler på, hvordan du kan bruge planlægningsværktøjet.
 
 * Kapacitetsadministratorer kan få en bedre forståelse af, hvor mange brugere deres kapacitet kan håndtere i et bestemt tidsrum.
-* Rapportudviklere kan få en forståelse af brugerbelastningseffekten, som måles med Power BI Desktops [Ydeevneanalyse](https://docs.microsoft.com/power-bi/desktop-performance-analyzer).
+* Rapportudviklere kan få en forståelse af brugerbelastningseffekten, som måles med Power BI Desktops [Ydeevneanalyse](../../create-reports/desktop-performance-analyzer.md).
 * Du kan se, at gengivelser sker i realtid i din browser.
 * Du kan ved at bruge SQL Server Profiler [oprette forbindelse til XMLA-slutpunkterne](https://powerbi.microsoft.com/blog/power-bi-open-platform-connectivity-with-xmla-endpoints-public-preview/) for de kapaciteter, der måles, for at få vist de forespørgsler, der udføres.
 * Belastningstesteffekterne er synlige på siden med datasæt for Premium Capacity Metrics-appen. Kapacitetsadministratorer kan bruge dette værktøj til at generere belastning og se, hvordan den pågældende belastning vises.

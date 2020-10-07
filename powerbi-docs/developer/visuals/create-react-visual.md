@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 03/30/2020
-ms.openlocfilehash: 2b1b28608799616f4bc75837f82521ae345cf186
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 0160bf604b23102bcb6e21232a64a776f3bb8290
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83148924"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91746257"
 ---
 # <a name="tutorial-create-a-react-based-visual"></a>Selvstudium: Opret en React-baseret visualisering
 
@@ -36,7 +36,7 @@ I dette selvstudium lærer du, hvordan du kan:
 
 * En **Power BI Pro-konto**. [Tilmeld dig en gratis prøveversion](https://powerbi.microsoft.com/pricing/), før du går i gang.
 * [Visual Studio Code](https://www.visualstudio.com/).
-* Windows-brugere skal have [Windows PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-windows-powershell?view=powershell-6) version 4 eller nyere, og OSX-brugere skal have [Terminal](https://macpaw.com/how-to/use-terminal-on-mac).
+* Windows-brugere skal have [Windows PowerShell](/powershell/scripting/install/installing-windows-powershell?view=powershell-6) version 4 eller nyere, og OSX-brugere skal have [Terminal](https://macpaw.com/how-to/use-terminal-on-mac).
 * Et miljø som beskrevet i [Konfiguration af udviklingsmiljøet](custom-visual-develop-tutorial.md#setting-up-the-developer-environment).
 
 ## <a name="getting-started"></a>Introduktion

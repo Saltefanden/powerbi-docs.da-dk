@@ -8,19 +8,19 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 03/12/2019
-ms.openlocfilehash: 38e6ac3be143381304f1fdfc8e1427b91f398a9a
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 99df7a301a1025d50c82c5cc7f5966325a6a6a6f
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82196623"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91747522"
 ---
 # <a name="how-to-create-mobile-friendly-power-bi-visuals"></a>Sådan opretter du mobilvenlige Power BI-visualiseringer
 Mobilforbruget spiller en afgørende rolle i Power BI. En af fordelene er, at du kan oprette forbindelse til dine data uanset tid og sted.
 
 Du skal som udvikler, der opretter Power BI-visualiseringer, være opmærksom på de entydige begrænsninger for de enkelte mobilenheder for at nå ud til så mange brugere som muligt og levere den bedste mobiloplevelse.
 
-Brug [Power BI-appen til Windows, iOS og Android](/power-bi/consumer/mobile/mobile-apps-for-mobile-devices) for at give dine virksomhedsbrugere en omfattende visning af deres data, når de er på farten – lige ved hånden.
+Brug [Power BI-appen til Windows, iOS og Android](../../consumer/mobile/mobile-apps-for-mobile-devices.md) for at give dine virksomhedsbrugere en omfattende visning af deres data, når de er på farten – lige ved hånden.
 
 ## <a name="requirements"></a>Krav
 
@@ -63,7 +63,7 @@ Følgende betragtes som valgfri og bruges til at oprette en bedre oplevelse for 
   De samme indstillinger kan også anvendes for visualiseringer i browsere på stationære computere, og hvis der er behov for det, tilsidesættes for at tilpasse visualiseringen til mindre skærme.
 
   > [!NOTE]
-  > Hvis du vil optimere en visualisering i **fokustilstand**, skal du være opmærksom på både stående og liggende retning på skærmen. Se [Vis indhold i fokustilstand](/power-bi/consumer/end-user-focus).
+  > Hvis du vil optimere en visualisering i **fokustilstand**, skal du være opmærksom på både stående og liggende retning på skærmen. Se [Vis indhold i fokustilstand](../../consumer/end-user-focus.md).
 
 - Interaktiv
 
@@ -74,9 +74,9 @@ Følgende betragtes som valgfri og bruges til at oprette en bedre oplevelse for 
   En visualisering skal vise en beskrivende fejl, hvis den ikke kan gengives på mobilenheden.
 
 ## <a name="supported-browsers-and-devices"></a>Understøttede browsere og enheder
-Power BI-visualiseringen skal kunne gengives på alle enheder, der understøtter Power BI Apps. Du kan få flere oplysninger i [Understøttede browsere til Power BI](/power-bi/power-bi-browsers) og [Power BI-mobilapps](/power-bi/consumer/mobile/mobile-apps-for-mobile-devices).
+Power BI-visualiseringen skal kunne gengives på alle enheder, der understøtter Power BI Apps. Du kan få flere oplysninger i [Understøttede browsere til Power BI](../../fundamentals/power-bi-browsers.md) og [Power BI-mobilapps](../../consumer/mobile/mobile-apps-for-mobile-devices.md).
 
 Når du tester i forhold til de seneste modeller af Windows-, iOS- og Android-enheder, skal du overveje de fleste af disse kvalitetsaspekter.
 
 ## <a name="next-steps"></a>Næste trin
-Kom i gang ved at se [Selvstudium: Udvikling af en Power BI-visualisering](/power-bi/developer/visuals/custom-visual-develop-tutorial).
+Kom i gang ved at se [Selvstudium: Udvikling af en Power BI-visualisering](./custom-visual-develop-tutorial.md).

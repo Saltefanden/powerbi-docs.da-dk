@@ -8,19 +8,19 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/08/2018
-ms.openlocfilehash: 7dad7071fbf887c36443cacdb9be83d83e0b89be
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: e0092003cbf019bcf720eeb7aa32e8a9e800f143
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83561495"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91747292"
 ---
 # <a name="dataset-properties"></a>Egenskaber for datasæt
 
 Den aktuelle v1 for datasæts API giver kun mulighed for at oprette et datasæt med et navn og en samling af tabeller. Hver tabel kan have et navn og en samling af kolonner. Hver kolonne har et navn og en datatype. Vi udvider disse egenskaber, især med understøttelse af målinger og relationer mellem tabeller. Den komplette liste over understøttede egenskaber for denne version er som følger:
 
 > [!IMPORTANT]
-> Der kan tilgås på siden [Datasæts handlingsgrupper](https://docs.microsoft.com/rest/api/power-bi/datasets).
+> Der kan tilgås på siden [Datasæts handlingsgrupper](/rest/api/power-bi/datasets).
 
 ## <a name="dataset"></a>Dataset
 

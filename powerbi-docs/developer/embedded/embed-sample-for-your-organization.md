@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/04/2020
-ms.openlocfilehash: 38db00f51a333b754267d52aaf3e3eabccc3e6b6
-ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
+ms.openlocfilehash: 7a93260aab9d8195478949ea8044378ea5cfae83
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84273017"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91746395"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Selvstudium: Integrer Power BI-indhold i en app til din organisation
 
@@ -50,7 +50,7 @@ Hvis du vælger at konfigurere miljøet manuelt, kan du fortsætte nedenfor.
 
 ### <a name="register-an-application-in-azure-active-directory"></a>Registrer et program i Microsoft Azure Active Directory
 
-[Registrer dit program](register-app.md) med Azure Active Directory for at give dit program adgang til [REST API'erne til Power BI](https://docs.microsoft.com/rest/api/power-bi/). Når du registrerer dit program, får du mulighed for at oprette en identitet for programmet og angive tilladelser til Power BI REST-ressourcer.
+[Registrer dit program](register-app.md) med Azure Active Directory for at give dit program adgang til [REST API'erne til Power BI](/rest/api/power-bi/). Når du registrerer dit program, får du mulighed for at oprette en identitet for programmet og angive tilladelser til Power BI REST-ressourcer.
 
 Du skal fortsætte med at registrere en app med et **serverbaseret webprogram**. Du registrerer et serverbaseret webprogram for at oprette en programhemmelighed.
 
@@ -190,9 +190,9 @@ Hvis du vil integrere med en gæst, skal du bruge URL-adressen – `https://logi
 
 ## <a name="embed-your-content-within-your-application"></a>Integrer dit indhold i dit program
 
-Selvom trinnene til at integrere dit indhold kan gøres med [Power BI REST-API'er](https://docs.microsoft.com/rest/api/power-bi/), oprettes de eksempelkoder, der er beskrevet i denne artikel, med .NET-SDK'en.
+Selvom trinnene til at integrere dit indhold kan gøres med [Power BI REST-API'er](/rest/api/power-bi/), oprettes de eksempelkoder, der er beskrevet i denne artikel, med .NET-SDK'en.
 
-Hvis du vil integrere en rapport i en webapp, kan du bruge Power BI REST-API'en eller Power BI C#-SDK'en. Du kan også bruge et adgangstoken til godkendelse af Microsoft Azure Active Directory til at hente en rapport. Derefter skal du indlæse rapporten ved hjælp af det samme adgangstoken. Power BI REST-API'en leverer programmatisk adgang til bestemte Power BI-ressourcer. Du kan finde flere oplysninger under [Power BI REST-API'er](https://docs.microsoft.com/rest/api/power-bi/) og [Power BI JavaScript-API](https://github.com/Microsoft/PowerBI-JavaScript).
+Hvis du vil integrere en rapport i en webapp, kan du bruge Power BI REST-API'en eller Power BI C#-SDK'en. Du kan også bruge et adgangstoken til godkendelse af Microsoft Azure Active Directory til at hente en rapport. Derefter skal du indlæse rapporten ved hjælp af det samme adgangstoken. Power BI REST-API'en leverer programmatisk adgang til bestemte Power BI-ressourcer. Du kan finde flere oplysninger under [Power BI REST-API'er](/rest/api/power-bi/) og [Power BI JavaScript-API](https://github.com/Microsoft/PowerBI-JavaScript).
 
 ### <a name="get-an-access-token-from-azure-ad"></a>Hent et adgangstoken fra Azure AD
 
@@ -200,11 +200,11 @@ I programmet skal du hente et adgangstoken fra Microsoft Azure Active Directory,
 
 ### <a name="get-a-report"></a>Hent en rapport
 
-Du henter en Power BI eller sideinddelt rapport ved at bruge handlingen [Hent rapporter](https://docs.microsoft.com/rest/api/power-bi/reports/getreports), hvilket bevirker, at der hentes en liste over Power BI og sideinddelte rapporter. Du kan få et rapport-id fra listen over rapporter.
+Du henter en Power BI eller sideinddelt rapport ved at bruge handlingen [Hent rapporter](/rest/api/power-bi/reports/getreports), hvilket bevirker, at der hentes en liste over Power BI og sideinddelte rapporter. Du kan få et rapport-id fra listen over rapporter.
 
 ### <a name="get-reports-by-using-an-access-token"></a>Hent rapporter ved hjælp af et adgangstoken
 
-Handlingen [Hent rapporter](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) returnerer en liste over rapporter. Du kan få en enkelt rapport på listen over rapporter.
+Handlingen [Hent rapporter](/rest/api/power-bi/reports/getreports) returnerer en liste over rapporter. Du kan få en enkelt rapport på listen over rapporter.
 
 Du skal inkludere en *godkendelsesheader* i formatet *Bearer {adgangstoken}* for at kunne foretage REST-API-kaldet.
 

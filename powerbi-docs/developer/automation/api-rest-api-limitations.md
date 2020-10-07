@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/08/2018
-ms.openlocfilehash: 5f4067e77631f22951844c0d4d64b06e5e2e30cc
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: de9fd241959b679a0da7926cd6b2254689afbfd2
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79079571"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91747269"
 ---
 # <a name="power-bi-rest-api-limitations"></a>Begrænsninger for REST-API'er til Power BI  
   
@@ -32,5 +32,5 @@ ms.locfileid: "79079571"
   
 ## <a name="see-also"></a>Se også
 
-* [Grænser og begrænsninger for Azure AD-tjenesten](https://docs.microsoft.com/azure/active-directory/active-directory-service-limits-restrictions)   
-* [Oversigt over Power BI REST-API'en](https://docs.microsoft.com/rest/api/power-bi/)
+* [Grænser og begrænsninger for Azure AD-tjenesten](/azure/active-directory/active-directory-service-limits-restrictions)   
+* [Oversigt over Power BI REST-API'en](/rest/api/power-bi/)

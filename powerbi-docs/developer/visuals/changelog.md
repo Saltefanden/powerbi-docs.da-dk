@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 03/13/2019
-ms.openlocfilehash: 95d2cec8cf731c403e204beeb6c013c2cfe0ce1d
-ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
+ms.openlocfilehash: 7624e51bf8c1ee49f2b7e7a0682e12b24bcdfa98
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87878563"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91748465"
 ---
 # <a name="power-bi-visuals-api-changelog"></a>Ændringslog for visualiserings-API i Power BI
 Denne side indeholder en hurtig oversigt over API-versionerne. De versioner, der er angivet her, anses som stabile og ændres ikke.
@@ -62,7 +62,7 @@ Denne side indeholder en hurtig oversigt over API-versionerne. De versioner, der
 * Egenskaben `proto` gemmer ikke længere skjulte metadata\data i dataView. Visualiseringer, som får adgang til egenskaber via `proto`, kan blive ødelagt af denne opdatering.
 
 ## <a name="api-v1130"></a>API v1.13.0
-* Understøtter **[Synkroniser udsnit](./enable-sync-slicers.md)** . Bemærk, at dette kun fungerer for enkelte feltudsnit på grund af den aktuelle PBI-kodetilstand, [læs mere](/power-bi/desktop-slicers).
+* Understøtter **[Synkroniser udsnit](./enable-sync-slicers.md)** . Bemærk, at dette kun fungerer for enkelte feltudsnit på grund af den aktuelle PBI-kodetilstand, [læs mere](../../visuals/power-bi-visualization-slicers.md).
 * Tilgængelighed: [Understøttelse af høj kontrast](./high-contrast-support.md) 
 * Tilgængelighed: Tillad tastaturfokusflag
 

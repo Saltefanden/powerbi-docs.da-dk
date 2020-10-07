@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 08/12/2020
-ms.openlocfilehash: c9d6b10c05ac3e19c5ebdcb5a0f3a1ab9b989a10
-ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
+ms.openlocfilehash: 6e9da6e16d32f0093bc0e4be35415f1a23f7fa41
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88204951"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91748558"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Retningslinjer for Power BI-visualiseringer
 Før du [publicerer](office-store.md) din Power BI-visualisering i Microsoft AppSource, så andre kan finde og bruge den, skal du sørge for at følge retningslinjerne for at skabe en fantastisk oplevelse for dine brugere.
@@ -28,7 +28,7 @@ En IAP Power BI-visualisering kan, på samme måde som en gratis Power BI-visual
 
 En IAP Power BI-visualisering er en *gratis* visualisering, der tilbyder *gratis funktioner*. Den indeholder også nogle avancerede funktioner, som man muligvis skal betale for. I beskrivelsen af Power BI-visualiseringen skal udviklerne give brugerne besked om, hvilke funktioner der kræver yderligere køb, før de kan anvendes. I øjeblikket leverer Microsoft ikke oprindelige API'er til understøttelse af apptilkøb og tilføjelsesprogrammer.
 
-Udviklere kan bruge et hvilket som helst betalingssystem fra tredjepart til disse køb. Du kan finde flere oplysninger i [vores politik for Store](https://docs.microsoft.com/legal/marketplace/certification-policies#11002-displaying-ads).
+Udviklere kan bruge et hvilket som helst betalingssystem fra tredjepart til disse køb. Du kan finde flere oplysninger i [vores politik for Store](/legal/marketplace/certification-policies#11002-displaying-ads).
 
 
 >[!IMPORTANT]  
