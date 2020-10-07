@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 05/11/2020
-ms.openlocfilehash: 248e641488edb2523a2fa7102bd7a9a4829ee29b
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: 2046dc389b859ce71c4d26cc31cc686f812e461e
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91527763"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91749315"
 ---
 # <a name="tutorial-create-an-r-powered-power-bi-visual"></a>Selvstudium: Opret en R-drevet Power BI-visualisering
 
@@ -31,9 +31,9 @@ I dette selvstudium lærer du, hvordan du kan:
 ## <a name="prerequisites"></a>Forudsætninger
 
 * En **Power BI Pro-konto**. [Tilmeld dig en gratis prøveversion](https://powerbi.microsoft.com/pricing/), før du går i gang.
-* R-programmet. Du kan downloade det gratis fra mange forskellige steder, herunder [downloadsiden for Revolution Open](https://mran.revolutionanalytics.com/download/) og [CRAN Repository](https://cran.r-project.org/bin/windows/base/). Du kan finde flere oplysninger under [Opret i Power BI-visuals ved hjælp af R](../../desktop-r-visuals.md).
+* R-programmet. Du kan downloade det gratis fra mange forskellige steder, herunder [downloadsiden for Revolution Open](https://mran.revolutionanalytics.com/download/) og [CRAN Repository](https://cran.r-project.org/bin/windows/base/). Du kan finde flere oplysninger under [Opret i Power BI-visuals ved hjælp af R](../../create-reports/desktop-r-visuals.md).
 * [Power BI Desktop](../../fundamentals/desktop-get-the-desktop.md).
-* Windows-brugere skal have [Windows PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-windows-powershell?view=powershell-6) version 4 eller nyere og OSX-brugere skal have [Terminal](https://macpaw.com/how-to/use-terminal-on-mac).
+* Windows-brugere skal have [Windows PowerShell](/powershell/scripting/install/installing-windows-powershell?view=powershell-6) version 4 eller nyere og OSX-brugere skal have [Terminal](https://macpaw.com/how-to/use-terminal-on-mac).
 
 ## <a name="getting-started"></a>Introduktion
 
@@ -283,6 +283,6 @@ Den sidste visualisering ser ud som i det følgende eksempel:
 
 ## <a name="next-steps"></a>Næste trin
 
-Hvis du vil vide mere om R-drevne visualiseringer, kan du se [Brug af R-drevne Power BI-visualiseringer i Power BI](../../desktop-r-powered-custom-visuals.md).
+Hvis du vil vide mere om R-drevne visualiseringer, kan du se [Brug af R-drevne Power BI-visualiseringer i Power BI](../../create-reports/desktop-r-powered-custom-visuals.md).
 
-Du kan finde flere oplysninger om R-drevne visualiseringer i Power BI Desktop, se [Opret visuelle Power BI-elementer ved hjælp af R](../../desktop-r-visuals.md).
+Du kan finde flere oplysninger om R-drevne visualiseringer i Power BI Desktop, se [Opret visuelle Power BI-elementer ved hjælp af R](../../create-reports/desktop-r-visuals.md).

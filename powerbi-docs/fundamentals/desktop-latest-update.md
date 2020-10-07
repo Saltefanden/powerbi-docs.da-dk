@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/23/2020
+ms.date: 10/05/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: acfe54479ae02b950dcc8521807add7c06071207
-ms.sourcegitcommit: 3655521f7d6e70d25cbe72006aada69ba08e7dec
+ms.openlocfilehash: 7460967e12ee13f5aff03c8058c318741c26aa86
+ms.sourcegitcommit: 6ba33e5a500928163e02e007f5ccd52dd2227610
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91224181"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780089"
 ---
 # <a name="whats-new-in-power-bi-desktop"></a>Nyheder i Power BI Desktop
 
@@ -46,45 +46,38 @@ Du kan også se hele [videoen om den månedlige opdatering til Power BI](#power-
 
 Følgende opdateringer er nye i Power BI Desktop i denne måned:
 
-https://www.youtube.com/watch?v=gPGy18Yo0Go https://youtu.be/TPsV7N4bZZg?t=15
-
-
-https://www.youtube.com/watch?v=gPGy18Yo0Go
-
-https://www.youtube.com/watch?v=TPsV7N4bZZg?t=448
-
 ### <a name="analytics"></a>Analyse
-* Intelligente narrativer (prøveversion) [[video]](https://www.youtube.com/watch?v=gPGy18Yo0Go?t=51)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#_Smart_narratives_(preview)) 
-* Spørgsmål og svar understøtter nu aritmetiske handlinger [[video]](https://www.youtube.com/watch?v=gPGy18Yo0Go?t=333)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#QA_arithmetic) 
+* Intelligente narrativer (prøveversion) [[video]](https://youtu.be/gPGy18Yo0Go?t=51)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#_Smart_narratives_(preview)) 
+* Spørgsmål og svar understøtter nu aritmetiske handlinger [[video]](https://youtu.be/gPGy18Yo0Go?t=333)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#QA_arithmetic) 
 
 
 ### <a name="reporting"></a>Rapportering
-* Rektangel med datapunkter til valg af yderligere diagrammer [[video]](https://www.youtube.com/watch?v=gPGy18Yo0Go?t=370)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Data_point_rectangle_select) 
-* Der er tilføjet en generel visuel indstilling til at vedligeholde lagrækkefølgen [[video]](https://www.youtube.com/watch?v=gPGy18Yo0Go?t=405)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Maintain_layer_order) 
-* Søg efter et arbejdsområde under publicering [[video]](https://www.youtube.com/watch?v=gPGy18Yo0Go?t=615)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Search_workspace) 
-* Det samlede antal mærkater for stablede visualiseringer [[video]](https://www.youtube.com/watch?v=gPGy18Yo0Go?t=630)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Total_labels_stacked) 
-* Forbedringer af mobiloprettelse [[video]](https://www.youtube.com/watch?v=gPGy18Yo0Go?t=786)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Mobile_authoring_enhancements) 
+* Rektangel med datapunkter til valg af yderligere diagrammer [[video]](https://youtu.be/gPGy18Yo0Go?t=370)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Data_point_rectangle_select) 
+* Der er tilføjet en generel visuel indstilling til at vedligeholde lagrækkefølgen [[video]](https://youtu.be/gPGy18Yo0Go?t=405)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Maintain_layer_order) 
+* Søg efter et arbejdsområde under publicering [[video]](https://youtu.be/gPGy18Yo0Go?t=615)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Search_workspace) 
+* Det samlede antal mærkater for stablede visualiseringer [[video]](https://youtu.be/gPGy18Yo0Go?t=630)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Total_labels_stacked) 
+* Forbedringer af mobiloprettelse [[video]](https://youtu.be/gPGy18Yo0Go?t=786)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Mobile_authoring_enhancements) 
 
 
 ### <a name="modeling"></a>Modellering
-* Forbedrede metadata for datasæt er nu generelt tilgængelige [[video]](https://www.youtube.com/watch?v=gPGy18Yo0Go?t=1200)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Enhanced_Dataset_Metadata)
-* Forbedringer af ydeevne til sammenlægningsudtryk, der involverer kolonner af datatypen Currency [[video]](https://www.youtube.com/watch?v=gPGy18Yo0Go?t=1220)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Performance_improvements_to_agg)
+* Forbedrede metadata for datasæt er nu generelt tilgængelige [[video]](https://youtu.be/gPGy18Yo0Go?t=1200)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Enhanced_Dataset_Metadata)
+* Forbedringer af ydeevne til sammenlægningsudtryk, der involverer kolonner af datatypen Currency [[video]](https://youtu.be/gPGy18Yo0Go?t=1220)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Performance_improvements_to_agg)
 
 
 ### <a name="data-connectivity"></a>Dataforbindelse
-* Azure Databricks [[video]](https://www.youtube.com/watch?v=gPGy18Yo0Go?t=1342)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Azure_Databricks)
-* MariaDB [[video]](https://www.youtube.com/watch?v=gPGy18Yo0Go?t=1365)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#MariaDB)
-* Hexagon PPM Smart API [[video]](https://www.youtube.com/watch?v=gPGy18Yo0Go?t=1386)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Hexagon_PPM_Smart)
-* Andre opdateringer til dataforbindelser [[video]](https://www.youtube.com/watch?v=gPGy18Yo0Go?t=1411)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Other_data_connectivity)
+* Azure Databricks [[video]](https://youtu.be/gPGy18Yo0Go?t=1342)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Azure_Databricks)
+* MariaDB [[video]](https://youtu.be/gPGy18Yo0Go?t=1365)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#MariaDB)
+* Hexagon PPM Smart API [[video]](https://youtu.be/gPGy18Yo0Go?t=1386)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Hexagon_PPM_Smart)
+* Andre opdateringer til dataforbindelser [[video]](https://youtu.be/gPGy18Yo0Go?t=1411)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Other_data_connectivity)
 
 
 ### <a name="visuals"></a>Visuelle elementer
-* Nye visualiseringer fra forskellige udbydere [[video]](https://www.youtube.com/watch?v=gPGy18Yo0Go?t=1228)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Visualizations)
+* Nye visualiseringer fra forskellige udbydere [[video]](https://youtu.be/gPGy18Yo0Go?t=1228)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Visualizations)
 
 
 ### <a name="template-apps"></a>Skabelonapps
-* Et dashboard med flere kanaler [[video]](https://www.youtube.com/watch?v=gPGy18Yo0Go?t=1290)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Multichannel_Attribution_Dashboard) 
-* Dashboard til arbejdsområdeanalyser [[video]](https://www.youtube.com/watch?v=gPGy18Yo0Go?t=1290)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Workspace_Analytics_Dashboard) 
+* Et dashboard med flere kanaler [[video]](https://youtu.be/gPGy18Yo0Go?t=1290)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Multichannel_Attribution_Dashboard) 
+* Dashboard til arbejdsområdeanalyser [[video]](https://youtu.be/gPGy18Yo0Go?t=1290)[[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Workspace_Analytics_Dashboard) 
 
 
 Du kan finde detaljerede oplysninger om hver af disse nye funktioner i [oversigten over funktioner i Power BI Desktop](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/).

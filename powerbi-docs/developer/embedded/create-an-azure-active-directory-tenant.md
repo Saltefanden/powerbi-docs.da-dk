@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 05/28/2019
-ms.openlocfilehash: f592b7927d713e343f1d3ad11453cbbacc17fffd
-ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
+ms.openlocfilehash: 03ba0a3090a4224cdc97a2f5bdcf80dc4b59dc64
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85354932"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91748764"
 ---
 # <a name="create-an-azure-active-directory-tenant-to-use-with-power-bi"></a>Opret en Azure Active Directory-lejer, du kan bruge med Power BI
 
@@ -27,7 +27,7 @@ Din organisation har muligvis allerede en Azure AD-lejer, som du kan bruge til d
 
 ## <a name="create-an-azure-active-directory-tenant"></a>Opret en Azure Active Directory-lejer
 
-Hvis du vil integrere Power BI i dit brugerdefinerede program, skal du definere et program i Azure AD, hvilket kræver en Azure AD-mappe. Denne mappe er din *lejer*. Hvis din organisation endnu ikke har en lejer, fordi den ikke bruger Power BI eller Microsoft 365, så [skal du oprette et udviklingsmiljø](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant). Du skal også oprette en, hvis du ikke vil have, at dit program bliver blandet med organisationens lejer, hvilket giver dig mulighed for at isolere ting. Eller måske vil du kun oprette et program til testformål.
+Hvis du vil integrere Power BI i dit brugerdefinerede program, skal du definere et program i Azure AD, hvilket kræver en Azure AD-mappe. Denne mappe er din *lejer*. Hvis din organisation endnu ikke har en lejer, fordi den ikke bruger Power BI eller Microsoft 365, så [skal du oprette et udviklingsmiljø](/azure/active-directory/develop/active-directory-howto-tenant). Du skal også oprette en, hvis du ikke vil have, at dit program bliver blandet med organisationens lejer, hvilket giver dig mulighed for at isolere ting. Eller måske vil du kun oprette et program til testformål.
 
 Sådan opretter du en ny Azure AD-lejer:
 
@@ -93,8 +93,8 @@ Nu, hvor vi har en mappe, skal vi oprette mindst to brugere. En har rollen Globa
 
 Nu, hvor du har en Azure AD-lejer, kan du bruge denne lejer til at teste elementer i Power BI. Du kan også integrere Power BI-dashboards og -rapporter i dit program. Du kan finde flere oplysninger i [Sådan integrerer du Power BI-dashboards, -rapporter og -felter](embed-sample-for-customers.md).
 
-[Hvad er en Azure Active-mappe?](https://docs.microsoft.com/azure/active-directory/active-directory-whatis) 
+[Hvad er en Azure Active-mappe?](/azure/active-directory/active-directory-whatis) 
  
-[Hurtig start: Konfigurer et udviklingsmiljø](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant)  
+[Hurtig start: Konfigurer et udviklingsmiljø](/azure/active-directory/develop/active-directory-howto-tenant)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

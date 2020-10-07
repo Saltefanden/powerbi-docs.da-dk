@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/10/2019
-ms.openlocfilehash: e2e2f924f190b7c5904cfe29d1d3cae341974f38
-ms.sourcegitcommit: ffc46032d0771227395cc38be9ec9ff1500eac70
+ms.openlocfilehash: ea7eaf8f7fc36ee1b9dc987ee571dc29dc5b222f
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89402042"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91748902"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Sikkerhed på rækkeniveau med Power BI Embedded
 
@@ -78,7 +78,7 @@ Når du anvender filteret på den måde, som vi gjorde her, vises alle de releva
 
 Nu, hvor du har konfigureret roller i Power BI Desktop, skal du foretage nogle få yderligere handlinger for at kunne drage fordel af rollerne.
 
-Brugere godkendes og autoriseres af dit program, og integreringstokens bruges til at give en bruger adgang til en bestemt rapport i Power BI Embedded. Der findes ingen specifikke oplysninger om, hvem brugeren er, i Power BI Embedded. Hvis sikkerhed på rækkeniveau skal fungere, skal du overføre ekstra kontekst som en del af dit integreringstoken i form af identiteter. Du kan overføre identiteterne ved hjælp af API'en [Integrer Token](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
+Brugere godkendes og autoriseres af dit program, og integreringstokens bruges til at give en bruger adgang til en bestemt rapport i Power BI Embedded. Der findes ingen specifikke oplysninger om, hvem brugeren er, i Power BI Embedded. Hvis sikkerhed på rækkeniveau skal fungere, skal du overføre ekstra kontekst som en del af dit integreringstoken i form af identiteter. Du kan overføre identiteterne ved hjælp af API'en [Integrer Token](/rest/api/power-bi/embedtoken).
 
 API'en accepterer en liste over identiteter med angivelse af de relevante datasæt. Hvis sikkerhed på rækkeniveau skal fungere, skal du overføre nedenstående dele som en del af identiteten.
 
@@ -134,7 +134,7 @@ Sikkerhed på rækkeniveau kan bruges med Analysis Services-liveforbindelser for
 Den faktiske identitet, der leveres for egenskaben brugernavn, skal være en Windows-bruger med tilladelser til Analysis Services-serveren.
 
 >[!NOTE]
-> Når du bruger en tjenesteprincipal med en [Azure Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-overview)-datakilde, skal selve tjenesteprincipalen have tilladelser til en forekomst af Azure Analysis Services. Brug af en sikkerhedsgruppe, der indeholder tjenesteprincipalen til dette formål, fungerer ikke.
+> Når du bruger en tjenesteprincipal med en [Azure Analysis Services](/azure/analysis-services/analysis-services-overview)-datakilde, skal selve tjenesteprincipalen have tilladelser til en forekomst af Azure Analysis Services. Brug af en sikkerhedsgruppe, der indeholder tjenesteprincipalen til dette formål, fungerer ikke.
 
 ### <a name="on-premises-data-gateway-configuration"></a>Konfigurer en datagateway i det lokale miljø
 
@@ -195,7 +195,7 @@ Hvis du kalder REST-API'en, kan du tilføje brugerdefinerede data i hver enkelt 
 
 Her er trinnene, så du kan begynde at konfigurere funktionen CustomData() med dit Power BI Embedded-program.
 
-1. Opret din Azure Analysis Services-database. Log på din Azure Analysis Services-server via [SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017).
+1. Opret din Azure Analysis Services-database. Log på din Azure Analysis Services-server via [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017).
 
     ![Opret en Azure Analysis Services-database](media/embedded-row-level-security/azure-analysis-services-database-create.png)
 
@@ -245,7 +245,7 @@ Når du beslutter dig for at filtrere dine data i en rapport, kan du bruge **RLS
 
 * [Konfiguration af roller i en Power BI-rapport](../../create-reports/desktop-rls.md).
 * Konfiguration af roller på datakildeniveau (kun direkte forbindelse til Analysis Services).
-* Ved hjælp af programmering med et [Integreringstoken](https://docs.microsoft.com/rest/api/power-bi/embedtoken/datasets_generatetokeningroup) via `EffectiveIdentity`. Når du bruger et integreringstoken, går det faktiske filter gennem integreringstokenet for en bestemt session.
+* Ved hjælp af programmering med et [Integreringstoken](/rest/api/power-bi/embedtoken/datasets_generatetokeningroup) via `EffectiveIdentity`. Når du bruger et integreringstoken, går det faktiske filter gennem integreringstokenet for en bestemt session.
 
 [JavaScript-filtre](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Filters#page-level-and-visual-level-filters) bruges til at tillade brugeren at forbruge en reduceret, omfangsangivet eller filtreret visning af dataene. Men brugeren stadig har adgang til modelskematabeller, -kolonner og -målinger og kan potentielt få adgang til alle dataene der. Begrænset dataadgang kan kun anvendes med sikkerhed på rækkeniveau og ikke via filtrerings-API'er på klientsiden.
 
@@ -261,7 +261,7 @@ Det kan bruges til at administrere visningen af hver enkelt bruger i Azure SQL e
 
 Sådanne problemer med eksisterende identiteter gælder for RLS-regler direkte på Azure SQL Server. Power BI Embedded bruger det angivne adgangstoken ved forespørgsler om data fra Azure SQL Server. UPN'et for brugerne (som adgangstokenet blev angivet for) er tilgængeligt som et resultat af funktionen USER_NAME() SQL.
 
-Den tokenbaserede identitet gælder kun for DirectQuery-modeller på dedikeret kapacitet, som er forbundet med en Azure SQL Database, der er konfigureret til at tillade AAD-godkendelse ([få mere at vide om AAD-godkendelse til Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-manage-logins)). Datasættets datakilde skal konfigureres til at bruge slutbrugernes OAuth2-legitimationsoplysninger for at bruge en tokenbaseret identitet.
+Den tokenbaserede identitet gælder kun for DirectQuery-modeller på dedikeret kapacitet, som er forbundet med en Azure SQL Database, der er konfigureret til at tillade AAD-godkendelse ([få mere at vide om AAD-godkendelse til Azure SQL Database](/azure/sql-database/sql-database-manage-logins)). Datasættets datakilde skal konfigureres til at bruge slutbrugernes OAuth2-legitimationsoplysninger for at bruge en tokenbaseret identitet.
 
    ![Konfigurer Azure SQL Server](media/embedded-row-level-security/token-based-configure-azure-sql-db.png)
 
@@ -322,11 +322,11 @@ Værdien i den pågældende identitetsblob skal være et gyldigt adgangstoken ti
 
 Kunder, der konfigurerer sikkerhed på rækkeniveau ved hjælp af en datakilde med direkte forbindelse via SQL Server Analysis Services (SSAS) kan benytte sig af den nye funktionalitet med en [tjenesteprincipal](embed-service-principal.md) til at administrere brugere og deres adgang til data i SSAS, når der integreres med **Power BI Embedded**.
 
-Ved hjælp af [REST API'er til Power BI](https://docs.microsoft.com/rest/api/power-bi/) kan du angive den eksisterende identitet for direkte forbindelser via SSAS i det lokale miljø for et integreringstoken ved hjælp af et [objekt for tjenesteprincipal](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object).
+Ved hjælp af [REST API'er til Power BI](/rest/api/power-bi/) kan du angive den eksisterende identitet for direkte forbindelser via SSAS i det lokale miljø for et integreringstoken ved hjælp af et [objekt for tjenesteprincipal](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object).
 
 Indtil nu skulle masterbrugeren, som skulle generere integreringstokenet, være gatewayadministrator for at kunne angive den eksisterende identitet for direkte forbindelser via SSAS. I stedet for at kræve at brugeren er gatewayadministrator, kan gatewayadministratoren give brugeren dedikeret tilladelse til den pågældende datakilde, hvilket giver brugeren mulighed for at tilsidesætte den eksisterende identitet, når integreringstokenet genereres. Denne nye funktionalitet gør det muligt at integrere med en tjenesteprincipal i forbindelse med en direkte forbindelse via SSAS.
 
-For at muliggøre dette scenarie bruger gatewayadministratoren [Tilføj REST API for bruger af datakilde](https://docs.microsoft.com/rest/api/power-bi/gateways/adddatasourceuser) for at tildele tjenesteprincipalen tilladelsen *ReadOverrideEffectiveIdentity* for Power BI Embedded.
+For at muliggøre dette scenarie bruger gatewayadministratoren [Tilføj REST API for bruger af datakilde](/rest/api/power-bi/gateways/adddatasourceuser) for at tildele tjenesteprincipalen tilladelsen *ReadOverrideEffectiveIdentity* for Power BI Embedded.
 
 Du kan ikke angive denne tilladelse ved hjælp af administrationsportalen. Denne tilladelse kan kun angives ved hjælp af API'en. På administrationsportalen kan du se en angivelse for brugere og tjenesters hovednavne med disse tilladelser.
 

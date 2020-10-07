@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 02/05/2019
-ms.openlocfilehash: 9c99d48a0b9d50312d2ae5ce152826fcf1ab9319
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 23e71d08b344fc27edca26372b7781b9e0d3d6d1
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238781"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91749109"
 ---
 # <a name="multi-geo-support-for-power-bi-embedded"></a>Multi-Geo-understøttelse af Power BI Embedded
 
@@ -65,11 +65,11 @@ Det er vigtigt at bemærke, at hvis du beslutter at slette en kapacitet uden at 
 
 Vi har foretaget nogle ændringer af eksisterende API'er for at understøtte administration af kapaciteter med Multi-Geo via API:
 
-1. **[Hent kapaciteter](https://docs.microsoft.com/rest/api/power-bi/capacities/getcapacities)** –API'en returnerer en liste over kapaciteter med adgang til brugeren. Svaret omfatter nu endnu en egenskab, der kaldes 'region', som angiver placeringen af kapaciteten.
+1. **[Hent kapaciteter](/rest/api/power-bi/capacities/getcapacities)** –API'en returnerer en liste over kapaciteter med adgang til brugeren. Svaret omfatter nu endnu en egenskab, der kaldes 'region', som angiver placeringen af kapaciteten.
 
-2. **[Tildel til kapacitet](https://docs.microsoft.com/rest/api/power-bi/capacities)** – API'en gør det muligt at tildele et givent arbejdsområde til en kapacitet. Denne handling tillader ikke, at du tildeler arbejdsområder til en kapacitet uden for dit lokale område eller flytter arbejdsområder mellem kapaciteter i forskellige områder. For at udføre denne handling skal brugeren eller [tjenesteprincipalen](embed-service-principal.md) stadig have administratortilladelser til arbejdsområdet og administrator- eller tildelingstilladelser til målkapaciteten.
+2. **[Tildel til kapacitet](/rest/api/power-bi/capacities)** – API'en gør det muligt at tildele et givent arbejdsområde til en kapacitet. Denne handling tillader ikke, at du tildeler arbejdsområder til en kapacitet uden for dit lokale område eller flytter arbejdsområder mellem kapaciteter i forskellige områder. For at udføre denne handling skal brugeren eller [tjenesteprincipalen](embed-service-principal.md) stadig have administratortilladelser til arbejdsområdet og administrator- eller tildelingstilladelser til målkapaciteten.
 
-3. **[Azure Resource Manager-API](https://docs.microsoft.com/rest/api/power-bi-embedded/capacities)** – Alle Azure Resource Manager-API-handlinger, herunder *Opret* og *Slet*, understøtter Multi-Geo.
+3. **[Azure Resource Manager-API](/rest/api/power-bi-embedded/capacities)** – Alle Azure Resource Manager-API-handlinger, herunder *Opret* og *Slet*, understøtter Multi-Geo.
 
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
 

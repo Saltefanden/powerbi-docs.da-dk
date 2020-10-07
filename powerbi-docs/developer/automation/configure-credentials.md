@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 06/23/2020
-ms.openlocfilehash: dd85f44057c0e4069a903293ec162028b1cbd66e
-ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
+ms.openlocfilehash: d2cd9786a635aed79f334706f53c21fe87e723a4
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86034054"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91748948"
 ---
 # <a name="configure-credentials-programmatically-for-power-bi"></a>Konfigurer legitimationsoplysninger programmatisk for Power BI
 
@@ -25,7 +25,7 @@ Følg trinene i denne artikel for at konfigurere legitimationsoplysninger progra
 
 ## <a name="update-credentials-flow-for-data-sources"></a>Opdater et flow for legitimationsoplysninger for datakilder
 
-1. Foretag et kald til [Hent datakilder](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasourcesingroup) for at finde datakilderne for datasættet. I svarteksten for hver enkelt datakilde kan du se typen, forbindelsesoplysningerne, gatewayen og id'et for datakilden.
+1. Foretag et kald til [Hent datakilder](/rest/api/power-bi/datasets/getdatasourcesingroup) for at finde datakilderne for datasættet. I svarteksten for hver enkelt datakilde kan du se typen, forbindelsesoplysningerne, gatewayen og id'et for datakilden.
 
     ```csharp
     // Select a datasource
@@ -33,7 +33,7 @@ Følg trinene i denne artikel for at konfigurere legitimationsoplysninger progra
     var datasource = datasources.First();
     ```
 
-2. Opret en streng for legitimationsoplysningerne i henhold til [Opdater eksempler på datakilder](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource) afhængigt af typen af legitimationsoplysninger.
+2. Opret en streng for legitimationsoplysningerne i henhold til [Opdater eksempler på datakilder](/rest/api/power-bi/gateways/updatedatasource) afhængigt af typen af legitimationsoplysninger.
 
     # <a name="net-sdk-v3"></a>[.NET SDK v3](#tab/sdk3)
 
@@ -50,9 +50,9 @@ Følg trinene i denne artikel for at konfigurere legitimationsoplysninger progra
     ---
 
     >[!NOTE]
-    >Hvis du bruger clouddatakilder, skal du ikke følge de næste trin i dette afsnit. Angiv legitimationsoplysningerne ved hjælp af det gateway-id og datakilde-id, der blev hentet i trin 1, ved at kalde [Opdater datakilde](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource). 
+    >Hvis du bruger clouddatakilder, skal du ikke følge de næste trin i dette afsnit. Angiv legitimationsoplysningerne ved hjælp af det gateway-id og datakilde-id, der blev hentet i trin 1, ved at kalde [Opdater datakilde](/rest/api/power-bi/gateways/updatedatasource). 
 
-3. Foretag et kald til [Hent gateway](https://docs.microsoft.com/rest/api/power-bi/gateways/getgateways) for at hente den offentlige nøgle til gatewayen.
+3. Foretag et kald til [Hent gateway](/rest/api/power-bi/gateways/getgateways) for at hente den offentlige nøgle til gatewayen.
 
     ```csharp
     var gateway = pbiClient.Gateways.GetGatewayById(datasource.GatewayId);
@@ -104,7 +104,7 @@ Følg trinene i denne artikel for at konfigurere legitimationsoplysninger progra
 
     ---
 
-6. Foretag et kald til [Opdater datakilde](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource) for at angive legitimationsoplysningerne.
+6. Foretag et kald til [Opdater datakilde](/rest/api/power-bi/gateways/updatedatasource) for at angive legitimationsoplysningerne.
 
     ```csharp
     pbiClient.Gateways.UpdateDatasource(gatewayId, datasourceId, credentialDetails);
@@ -114,7 +114,7 @@ Følg trinene i denne artikel for at konfigurere legitimationsoplysninger progra
 
 1. Installér [Datagatewayen i det lokale miljø](https://powerbi.microsoft.com/gateway/) på din computer.
 
-2. Foretag et kald til [Hent gateway](https://docs.microsoft.com/rest/api/power-bi/gateways/getgateways) for at hente id'et og den offentlige nøgle for gatewayen.
+2. Foretag et kald til [Hent gateway](/rest/api/power-bi/gateways/getgateways) for at hente id'et og den offentlige nøgle for gatewayen.
 
     ```csharp
     // Select a gateway
@@ -134,7 +134,7 @@ Følg trinene i denne artikel for at konfigurere legitimationsoplysninger progra
             dataSourceName: "my sql datasource");
     ```
 
-5. Foretag et kald til API'en for [Opret datakilde](https://docs.microsoft.com/rest/api/power-bi/gateways/createdatasource).
+5. Foretag et kald til API'en for [Opret datakilde](/rest/api/power-bi/gateways/createdatasource).
 
     ```csharp
     pbiClient.Gateways.CreateDatasource(gateway.Id, request);
@@ -142,7 +142,7 @@ Følg trinene i denne artikel for at konfigurere legitimationsoplysninger progra
 
 ## <a name="credential-types"></a>Typer af legitimationsoplysninger
 
-Når du kalder [Opret datakilde](https://docs.microsoft.com/rest/api/power-bi/gateways/createdatasource) eller [Opdater datakilde](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource) under en **virksomhedsgateway i det lokale miljø** ved hjælp af [REST-API'er til Power BI](https://docs.microsoft.com/rest/api/power-bi/), skal legitimationsoplysningerne krypteres ved hjælp af gatewayens offentlige nøgle.
+Når du kalder [Opret datakilde](/rest/api/power-bi/gateways/createdatasource) eller [Opdater datakilde](/rest/api/power-bi/gateways/updatedatasource) under en **virksomhedsgateway i det lokale miljø** ved hjælp af [REST-API'er til Power BI](/rest/api/power-bi/), skal legitimationsoplysningerne krypteres ved hjælp af gatewayens offentlige nøgle.
 
 >[!NOTE]
 >.NET SDK v3 kan også køre eksemplerne på .NET SDK v2, som er angivet nedenfor.
@@ -233,6 +233,6 @@ Dette problem betyder, at datasættet ikke er forbundet til en gateway. Når du 
 
 Når du har oprettet datasættet, oprettes der en automatisk binding mellem datasættet og en passende gateway, som indeholder matchende datakilder for alle forbindelser. Hvis sådan en gateway ikke findes, eller der findes flere passende gateways, mislykkes den automatiske binding.
 
-Hvis du bruger datasæt i det lokale miljø, skal du oprette de manglende datakilder i det lokale miljø og binde datasættet til en gateway manuelt ved hjælp af [Bind til gateway](https://docs.microsoft.com/rest/api/power-bi/datasets/bindtogateway).
+Hvis du bruger datasæt i det lokale miljø, skal du oprette de manglende datakilder i det lokale miljø og binde datasættet til en gateway manuelt ved hjælp af [Bind til gateway](/rest/api/power-bi/datasets/bindtogateway).
 
-Hvis du vil finde gateways, der kan bindes, skal du bruge [Find gateways](https://docs.microsoft.com/rest/api/power-bi/datasets/discovergateways).
+Hvis du vil finde gateways, der kan bindes, skal du bruge [Find gateways](/rest/api/power-bi/datasets/discovergateways).

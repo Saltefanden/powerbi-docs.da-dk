@@ -8,18 +8,18 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: 96e42eb8a4d958eb4ee090cedf12d2ebfe79f941
-ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
+ms.openlocfilehash: aeea5ea3a9d1d2bd375c44b6c6b7eac57eb65aff
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87878599"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91748994"
 ---
 # <a name="add-bookmark-support-for-power-bi-visuals"></a>Tilføj understøttelse af bogmærker i Power BI-visualiseringer
 
 Med bogmærker i Power BI-rapporter kan du registrere en konfigureret visning af en rapportside med visualiseringens markeringstilstand og dens filtreringstilstand. Dette kræver dog yderligere handlinger i forbindelse med Power BI-visualiseringer for at understøtte bogmærket og reagere korrekt på ændringer.
 
-Du kan finde flere oplysninger om bogmærker under [Brug bogmærker til at dele indsigt og oprette tekstenheder i Power BI](https://docs.microsoft.com/power-bi/desktop-bookmarks).
+Du kan finde flere oplysninger om bogmærker under [Brug bogmærker til at dele indsigt og oprette tekstenheder i Power BI](../../create-reports/desktop-bookmarks.md).
 
 ## <a name="report-bookmarks-support-in-your-visual"></a>Understøttelse af bogmærker i rapporter for din visualisering
 

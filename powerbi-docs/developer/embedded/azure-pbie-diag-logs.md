@@ -7,16 +7,16 @@ ms.reviewer: ''
 ms.service: power-bi-embedded
 ms.topic: conceptual
 ms.date: 08/13/2018
-ms.openlocfilehash: 362c765fb5e739563b8d21eaed53304eddce8acc
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: cc64338ed40fcdc6433fdcf231004b4946335c72
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79495797"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91748787"
 ---
 # <a name="diagnostic-logging-for-power-bi-embedded-in-azure"></a>Logføring af diagnosticering for Power BI Embedded på Azure
 
-Med [diagnosticeringslogge for Azure-ressourcer](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs) kan du logføre mange hændelser fra din kapacitet, lægge dem i et analyseværktøj og få indsigt i ressourcens funktionsmåde.
+Med [diagnosticeringslogge for Azure-ressourcer](/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs) kan du logføre mange hændelser fra din kapacitet, lægge dem i et analyseværktøj og få indsigt i ressourcens funktionsmåde.
 
 Ved hjælp af diagnosticering kan du får svar på nogle få scenarier, f.eks.:
 
@@ -36,12 +36,12 @@ Ved hjælp af diagnosticering kan du får svar på nogle få scenarier, f.eks.:
 
     * **Navn** – Angiv et navn for den diagnosticeringindstilling, du vil oprette.
 
-    * **Arkivér til en lagerkonto** – Hvis du vil bruge denne indstilling, skal du oprette forbindelse til en eksisterende lagerkonto. Se [Opret en lagerkonto](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account), og følg instruktionerne for at oprette en lagerkonto. Derefter skal du vælge din lagerkonto ved at gå tilbage til denne side på portalen. Det kan tage et par minutter, før nyligt oprettede lagerkonti vises i rullemenuen. Logfiler lagres i JSON-formatet.
-    * **Stream til en hændelseshub** – Hvis du vil bruge denne indstilling, skal du oprette forbindelse til et eksisterende Event Hub-navneområde og en eksisterende hændelseshub. Du kan få mere at vide under [Opret et Event Hubs-navneområde og en hændelseshub ved hjælp af Azure Portal](https://docs.microsoft.com/azure/event-hubs/event-hubs-create).
-    * **Send til Log Analytics** – Hvis du vil bruge denne indstilling, skal du enten bruge et eksisterende arbejdsområde eller oprette et nyt Log Analytics-arbejdsområde ved at følge trinnene for at [oprette et nyt arbejdsområde](https://docs.microsoft.com/azure/log-analytics/log-analytics-quick-collect-azurevm#create-a-workspace) på portalen. Dermed udnyttes [Azure Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-overview), som indeholder indbyggede funktioner til analyse, dashboarding og meddelelser. Du kan bruge Log Analytics til at forbinde flere data fra andre ressourcer og få en enkelt og komplet visning af data på tværs af alle dit programressourcer. Du kan også oprette forbindelse til [Power BI med et enkelt klik](https://docs.microsoft.com/azure/log-analytics/log-analytics-powerbi).
-    Du kan få flere oplysninger om visning af dine logge i Log Analytics under [Få vist logge i Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-activity).
+    * **Arkivér til en lagerkonto** – Hvis du vil bruge denne indstilling, skal du oprette forbindelse til en eksisterende lagerkonto. Se [Opret en lagerkonto](/azure/storage/common/storage-create-storage-account), og følg instruktionerne for at oprette en lagerkonto. Derefter skal du vælge din lagerkonto ved at gå tilbage til denne side på portalen. Det kan tage et par minutter, før nyligt oprettede lagerkonti vises i rullemenuen. Logfiler lagres i JSON-formatet.
+    * **Stream til en hændelseshub** – Hvis du vil bruge denne indstilling, skal du oprette forbindelse til et eksisterende Event Hub-navneområde og en eksisterende hændelseshub. Du kan få mere at vide under [Opret et Event Hubs-navneområde og en hændelseshub ved hjælp af Azure Portal](/azure/event-hubs/event-hubs-create).
+    * **Send til Log Analytics** – Hvis du vil bruge denne indstilling, skal du enten bruge et eksisterende arbejdsområde eller oprette et nyt Log Analytics-arbejdsområde ved at følge trinnene for at [oprette et nyt arbejdsområde](/azure/log-analytics/log-analytics-quick-collect-azurevm#create-a-workspace) på portalen. Dermed udnyttes [Azure Log Analytics](/azure/log-analytics/log-analytics-overview), som indeholder indbyggede funktioner til analyse, dashboarding og meddelelser. Du kan bruge Log Analytics til at forbinde flere data fra andre ressourcer og få en enkelt og komplet visning af data på tværs af alle dit programressourcer. Du kan også oprette forbindelse til [Power BI med et enkelt klik](/azure/log-analytics/log-analytics-powerbi).
+    Du kan få flere oplysninger om visning af dine logge i Log Analytics under [Få vist logge i Log Analytics](/azure/log-analytics/log-analytics-activity).
     * **Program** – Vælg denne indstilling for at logføre angivelsen af program[hændelser, der er angivet](#whats-logged) nedenfor.
-    * **Alle målepunkter** – Vælg denne indstilling til at gemme detaljerede data i [Målepunkter](https://docs.microsoft.com/azure/analysis-services/analysis-services-monitor#server-metrics). Hvis du arkivering til en lagerkonto, kan du vælge opbevaringsperioden for diagnosticeringslogge. Logfiler slettes automatisk, når opbevaringsperioden udløber.
+    * **Alle målepunkter** – Vælg denne indstilling til at gemme detaljerede data i [Målepunkter](/azure/analysis-services/analysis-services-monitor#server-metrics). Hvis du arkivering til en lagerkonto, kan du vælge opbevaringsperioden for diagnosticeringslogge. Logfiler slettes automatisk, når opbevaringsperioden udløber.
 
 3. Vælg **Gem**.
 
@@ -87,11 +87,11 @@ Du kan kombinere disse parametre for at aktivere flere outputindstillinger.
 
 ### <a name="rest-api"></a>REST API
 
-Få mere at vide om, hvordan du [ændrer diagnosticeringsindstillinger vha. Azure Monitor REST-API'en](https://docs.microsoft.com/rest/api/monitor/). 
+Få mere at vide om, hvordan du [ændrer diagnosticeringsindstillinger vha. Azure Monitor REST-API'en](/rest/api/monitor/). 
 
 ### <a name="resource-manager-template"></a>Resource Manager-skabelon
 
-Få mere at vide om, hvordan du [aktiverer diagnosticeringsindstillinger i forbindelse med ressourceoprettelse vha. en Resource Manager-skabelon](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-enable-diagnostic-logs-using-template).
+Få mere at vide om, hvordan du [aktiverer diagnosticeringsindstillinger i forbindelse med ressourceoprettelse vha. en Resource Manager-skabelon](/azure/monitoring-and-diagnostics/monitoring-enable-diagnostic-logs-using-template).
 
 ## <a name="whats-logged"></a>Hvad logføres?
 
@@ -174,11 +174,11 @@ I **Type** skal du vælge **Azure-diagnosticering** og derefter vælge **Anvend*
 
 Vælg **Hændelsesklasse\_s** eller et af hændelsesnavnene, så fortsætter Log Analytics med at konstruere en forespørgsel. Sørg for at gemme dine forespørgsler, så de kan genbruges senere.
 
-Sørg for at se i [Log Analytics](https://docs.microsoft.com/azure/log-analytics/), hvor du får oplysninger om et websted med forbedrede forespørgsels-, dashboarding- og meddelelsesfunktioner i forbindelse med indsamlede data.
+Sørg for at se i [Log Analytics](/azure/log-analytics/), hvor du får oplysninger om et websted med forbedrede forespørgsels-, dashboarding- og meddelelsesfunktioner i forbindelse med indsamlede data.
 
 ### <a name="queries"></a>Forespørgsler
 
-Der er hundredvis af forespørgsler, du kan bruge. Her er nogle få, så du kan komme i gang. Du kan få mere at vide om brugen af det nye forespørgselssprog i forbindelse med logsøgning under [Om logsøgninger i Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-log-search).
+Der er hundredvis af forespørgsler, du kan bruge. Her er nogle få, så du kan komme i gang. Du kan få mere at vide om brugen af det nye forespørgselssprog i forbindelse med logsøgning under [Om logsøgninger i Log Analytics](/azure/log-analytics/log-analytics-log-search).
 
 * Forespørgselsresultat, det tog mindre end fem minutter (300.000 millisekunder) at generere.
 
@@ -206,7 +206,7 @@ Der er hundredvis af forespørgsler, du kan bruge. Her er nogle få, så du kan 
 Du kan få mere at vide om logføring af Azure-ressourcediagnosticering.
 
 > [!div class="nextstepaction"]
-> [Logføring af Azure-ressourcediagnosticering](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs)
+> [Logføring af Azure-ressourcediagnosticering](/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs)
 
 > [!div class="nextstepaction"]
-> [Set-AzureRmDiagnosticSetting](https://docs.microsoft.com/powershell/module/azurerm.insights/Set-AzureRmDiagnosticSetting)
+> [Set-AzureRmDiagnosticSetting](/powershell/module/azurerm.insights/Set-AzureRmDiagnosticSetting)

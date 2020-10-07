@@ -9,23 +9,23 @@ ms.service: powerbi
 ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
 ms.date: 06/18/2019
-ms.openlocfilehash: e9d1479b596f563edc37f0c7a72b29c3343fed1e
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 5f8b2a54ac7882c02f1ece63ce1362c97ad027af
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239915"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91749017"
 ---
 # <a name="the-analytics-pane-in-power-bi-visuals"></a>Ruden Analyse i Power BI-visualiseringer
 
-Ruden **Analyse** blev introduceret til [oprindelige visualiseringer](https://docs.microsoft.com/power-bi/desktop-analytics-pane) i november 2018.
+Ruden **Analyse** blev introduceret til [oprindelige visualiseringer](../../transform-model/desktop-analytics-pane.md) i november 2018.
 I denne artikel gennemgås det, hvordan Power BI-visualiseringer med API v2.5.0 kan præsentere og administrere deres egenskaber i ruden **Analyse**.
 
 ![Ruden Analyse](media/analytics-pane/visualization-pane-analytics-tab.png)
 
 ## <a name="manage-the-analytics-pane"></a>Administrer ruden Analyse
 
-På samme måde som du ville administrere egenskaberne i ruden [**Format**](https://docs.microsoft.com/power-bi/developer/visuals/custom-visual-develop-tutorial-format-options), administrerer du ruden **Analyse** ved at definere et objekt i den pågældende visualiserings *capabilities.json*-fil.
+På samme måde som du ville administrere egenskaberne i ruden [**Format**](./custom-visual-develop-tutorial-format-options.md), administrerer du ruden **Analyse** ved at definere et objekt i den pågældende visualiserings *capabilities.json*-fil.
 
 Der er følgende forskelle for ruden **Analyse**:
 
