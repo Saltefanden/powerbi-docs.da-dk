@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
 ms.date: 03/02/2020
-ms.openlocfilehash: 37ab82de16e45f86f2d2aba5113ba4efe6fc383c
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: e44b81120ef5eb1d2a384aae4f2d149525c3b7b4
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90859675"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91632497"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service"></a>Opret en integreret datakilde for sideinddelte rapporter i Power BI-tjenesten
 
@@ -41,30 +41,30 @@ Se [Rapportdata i Power BI Report Builder](report-builder-data.md) for at få me
 
 1. På værktøjslinjen i ruden Rapportdata skal du vælge **Ny** > **Datakilde**. Dialogboksen **Egenskaber for datakilde** åbnes.
 
-    ![Ny datakilde](media/paginated-reports-embedded-data-source/power-bi-paginated-new-data-source.png)
+   ![Ny datakilde](media/paginated-reports-embedded-data-source/power-bi-paginated-new-data-source.png)
   
-2.  I tekstfeltet **Navn** skal du skrive et navn til datakilden eller acceptere standardværdien.  
+1. I tekstfeltet **Navn** skal du skrive et navn til datakilden eller acceptere standardværdien.  
   
-3.  Vælg **Brug en forbindelse, som er integreret i min rapport**.  
+1. Vælg **Brug en forbindelse, som er integreret i min rapport**.  
   
-1.  På listen **Vælg forbindelsestype** skal du vælge en datakildetype. 
+1. På listen **Vælg forbindelsestype** skal du vælge en datakildetype. 
 
-1.  Angiv en forbindelsesstreng ved hjælp af en af disse metoder:  
+1. Angiv en forbindelsesstreng ved hjælp af en af disse metoder:  
   
-    -   Skriv forbindelsesstrengen direkte i tekstfeltet **Forbindelsesstreng**. 
+   - Skriv forbindelsesstrengen direkte i tekstfeltet **Forbindelsesstreng**. 
   
-     -   Vælg **Byg** for at åbne dialogboksen **Forbindelsesegenskaber** for den datakilde, du har valgt i trin 2.  
+   - Vælg **Byg** for at åbne dialogboksen **Forbindelsesegenskaber** for den datakilde, du har valgt i trin 2.  
   
-        Udfyld felterne i dialogboksen **Forbindelsesegenskaber**, så de passer til datakilden. Forbindelsesegenskaber omfatter typen af datakilde, navnet på datakilden og de legitimationsoplysninger, du bruger. Når du har angivet værdier i denne dialogboks, skal du vælge **Test forbindelse** for at bekræfte, at datakilden er tilgængelig, og at de legitimationsoplysninger, du har angivet, er korrekte.  
+     Udfyld felterne i dialogboksen **Forbindelsesegenskaber**, så de passer til datakilden. Forbindelsesegenskaber omfatter typen af datakilde, navnet på datakilden og de legitimationsoplysninger, du bruger. Når du har angivet værdier i denne dialogboks, skal du vælge **Test forbindelse** for at bekræfte, at datakilden er tilgængelig, og at de legitimationsoplysninger, du har angivet, er korrekte.  
   
-4.  Vælg **Legitimationsoplysninger**.  
+1. Vælg **Legitimationsoplysninger**.  
   
-     Angiv de legitimationsoplysninger, der skal bruges til denne datakilde. Ejeren af datakilden vælger typen af legitimationsoplysninger, der understøttes. Du kan finde flere oplysninger i [Angiv legitimationsoplysninger og forbindelsesoplysninger til rapportdatakilder](/sql/reporting-services/report-data/specify-credential-and-connection-information-for-report-data-sources).
+   Angiv de legitimationsoplysninger, der skal bruges til denne datakilde. Ejeren af datakilden vælger typen af legitimationsoplysninger, der understøttes. Du kan finde flere oplysninger i [Angiv legitimationsoplysninger og forbindelsesoplysninger til rapportdatakilder](/sql/reporting-services/report-data/specify-credential-and-connection-information-for-report-data-sources).
   
-5.  Vælg **OK**.  
+1. Vælg **OK**.  
   
-     Datakilden vises i ruden Rapportdata.  
-     
+   Datakilden vises i ruden Rapportdata.
+
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
 
 Sideinddelte rapporter, der opretter forbindelse til Power BI-datasæt, følger reglerne for delte datasæt i Power BI med nogle mindre ændringer.  For at brugere kan få vist sideinddelte rapporter korrekt ved hjælp af Power BI-datasæt og for at sikre, at sikkerhed på rækkeniveau er aktiveret og gennemtvunget for dine seere, skal du følge disse regler:

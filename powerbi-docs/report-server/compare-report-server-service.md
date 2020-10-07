@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
 ms.date: 07/28/2020
-ms.openlocfilehash: 18629f38db7d8b88c47d4a1af3a5c3f6512433b4
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 02d5b30f4e3f769e3c20cc7faa8b051e8114e5c5
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90859146"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91599962"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>Sammenlign Power BI-rapportserveren med Power BI-tjenesten
 
@@ -43,7 +43,7 @@ Power BI-rapportserveren og Power BI-tjenesten har mange ligheder og nogle vigti
 | Analysér i Excel | Nej | Ja | [Analysér i Excel](../collaborate-share/service-analyze-in-excel.md) 
 | Sideinddelte rapporter | Ja | Ja | [Sideinddelte rapporter er tilgængelige i Power BI-tjenesten](../paginated-reports/paginated-reports-report-builder-power-bi.md) som prøveversion i en Premium-kapacitet |
 | Power BI-mobilapps | Ja | Ja | [Oversigt over Power BI-mobilapps](../consumer/mobile/mobile-apps-for-mobile-devices.md) |
-| ARC GIS-kort | Nej | Ja | [ArcGIS-kort i Power BI-tjenesten og Power BI Desktop fra Esri](../visuals/power-bi-visualization-arcgis.md) |
+| ARC GIS-kort | Nej | Ja | [ArcGIS-kort i Power BI-tjenesten og Power BI Desktop fra Esri](../visuals/power-bi-visualizations-arcgis.md) |
 | Mailabonnementer på Power BI-rapporter | Nej | Ja | [Meld dig selv eller andre til et abonnement](../collaborate-share/service-report-subscribe.md) på en rapport eller et dashboard i Power BI-tjenesten |
 | Mailabonnementer på sideinddelte rapporter | Ja | Ja | [Meld dig selv og andre til et abonnement på sideinddelte rapporter i Power BI-tjenesten](../consumer/paginated-reports-subscriptions.md)<br><br>[Maillevering i Reporting Services](/sql/reporting-services/working-with-subscriptions-web-portal)  |
 | Databeskeder | Nej | Ja | [Databeskeder](../create-reports/service-set-data-alerts.md) i Power BI-tjenesten

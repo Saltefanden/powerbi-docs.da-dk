@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 06/01/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 82f9ffaeb98610dd9ae5986031638c5086749937
-ms.sourcegitcommit: 7fba2caf3bd7ed93a7ecb6a6b9ba2da26de27395
+ms.openlocfilehash: bb5e2d0accd2db339666e23c449164103bb26ac8
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "84467027"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91527878"
 ---
 # <a name="power-bi-developer-in-a-day-course"></a>Kurset Power BI Developer på en dag
 
@@ -85,7 +85,7 @@ For at fuldføre øvelsen skal du have en Windows-pc (Windows 7 eller nyere), og
 
 - Den nyeste version af [Power BI Desktop](../fundamentals/desktop-get-the-desktop.md).
 - Visual Studio 2015 eller nyere. Vi anbefaler [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/). Du kan bruge udgaven **Community**, som er gratis og velegnet til læringsscenarier. Den skal have arbejdsbelastningen **ASP.NET og webudvikling** installeret.
-- En webbrowser, [der understøttes af Power BI](../power-bi-browsers.md). Vi anbefaler Microsoft Edge.
+- En webbrowser, [der understøttes af Power BI](../fundamentals/power-bi-browsers.md). Vi anbefaler Microsoft Edge.
 
 Følg disse trin for at komme i gang:
 
@@ -106,7 +106,7 @@ Vi anbefaler, at du først ser onlinekurset. Du kan se præsentationsteorien ved
 Åbn filen **&lt;CourseFolder&gt;\PowerBIDevIAD\Lab01A\PowerBIDevIAD_Lab01A.pdf**, når du er klar til at gå i gang med den første øvelse. Dette dokument hjælper dig med at logge på Power BI-tjenesten og klargøre en Power BI-rapport.
 
 > [!NOTE]
-> Du er ansvarlig for at have din egen Power BI-konto. Hvis du ikke allerede har en, kan du se [Tilmeld dig Power BI som enkeltperson](../service-self-service-signup-for-power-bi.md).
+> Du er ansvarlig for at have din egen Power BI-konto. Hvis du ikke allerede har en, kan du se [Tilmeld dig Power BI som enkeltperson](../fundamentals/service-self-service-signup-for-power-bi.md).
 >
 > Din konto skal have en Power BI Pro-licens, eller du kan stadig acceptere en Power BI Pro-prøvelicens, som er et tilbud, der kun kan accepteres én gang. Din konto må heller ikke have opbrugt antallet af gratis integrerede tokens, der følger med Power BI Pro-licensen.
 >

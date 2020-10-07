@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 09/11/2018
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: ff31548801f372fa1e20949e5c109cc9214f55e1
-ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
+ms.openlocfilehash: b2263a1eddfdbc51f0e345443f7bbb75b11da6e7
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "86264486"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91632726"
 ---
 # <a name="delete-almost-anything-in-power-bi-service"></a>Slet næsten alt i Power BI-tjenesten
 I denne artikel kan du lære, hvordan du sletter et dashboard, en rapport, en projektmappe, et datasæt, en app og et arbejdsområde i Power BI-tjenesten.
@@ -28,7 +28,7 @@ Dashboards kan fjernes. Når du fjerner et dashboard, sletter du ikke det underl
 
 ### <a name="to-delete-a-dashboard"></a>Sådan sletter du et dashboard
 1. Vælg fanen **Dashboards** i dit arbejdsområde.
-2. Find det dashboard, du vil slette, og vælg ikonet Slet ![sletteikon](media/service-delete/power-bi-delete-icon.png).
+2. Find det dashboard, du vil slette, og vælg sletteikonet :::image type="icon" source="media/service-delete/power-bi-delete-icon.png" border="false":::.
 
     ![video](media/service-delete/power-bi-delete-dash.gif)
 
@@ -37,7 +37,7 @@ Bare rolig, når du sletter en rapport, bliver det datasæt, som rapporten er ba
 
 ### <a name="to-delete-a-report"></a>Sådan sletter du en rapport
 1. Vælg fanen **Rapporter** i dit arbejdsområde.
-2. Find den rapport, du vil slette, og vælg ikonet Slet   ![sletteikon](media/service-delete/power-bi-delete-icon.png).   
+2. Find den rapport, du vil slette, og vælg sletteikonet :::image type="icon" source="media/service-delete/power-bi-delete-icon.png" border="false":::.   
 
     ![fanen Rapporter i et arbejdsområde](media/service-delete/power-bi-delete-reportnew.png)
 3. Bekræft sletningen.
@@ -56,7 +56,7 @@ Hvis projektmappen er gemt på OneDrive for Business, bliver denne ikke slettet 
 
 ### <a name="to-delete-a-workbook"></a>Sådan sletter du en projektmappe
 1. Vælg fanen **Projektmapper** i dit arbejdsområde.
-2. Find den projektmappe, du vil slette, og vælg ikonet Slet ![sletteikon](media/service-delete/power-bi-delete-report2.png) .
+2. Find den projektmappe, du vil slette, og vælg sletteikonet :::image type="icon" source="media/service-delete/power-bi-delete-report2.png" border="false":::.
 
     ![Fanen Projektmapper](media/service-delete/power-bi-delete-workbooknew.png)
 3. Bekræft sletningen.
@@ -111,7 +111,7 @@ Hvis du ikke længere vil være medlem af et arbejdsområde, kan du ***forlade**
 
 2. Vælg **Flere indstillinger** (...) i øverste højre hjørne, og vælg **Forlad arbejdsområde** > **Forlad**.
 
-      ![forlad arbejdsområde](media/service-delete/power-bi-leave-workspace.png)
+      :::image type="icon" source="media/service-delete/power-bi-leave-workspace.png" border="false":::
 
    > [!NOTE]
    > De indstillinger, du kan se på rullelisten, afhænger af, om du er administrator eller medlem af det pågældende arbejdsområde.
@@ -125,7 +125,7 @@ Apps kan nemt fjernes fra din side med applisten. Det er dog kun appadministrato
 Selvom du sletter en app fra din side med applisten, slettes appen ikke for andre medlemmer.
 
 1. Vælg **Apps** i navigationsruden for at åbne siden med applisten.
-2. Hold musemarkøren over den app, du vil slette, og vælg Slet ![Skraldespandsikon](media/service-delete/power-bi-delete-report2.png)  .
+2. Hold over den app, du vil slette, og vælg sletteikonet :::image type="icon" source="media/service-delete/power-bi-delete-report2.png" border="false":::.
 
    ![vælg Apps](media/service-delete/power-bi-delete-app.png)
 

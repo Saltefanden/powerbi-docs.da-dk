@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: e8ba3203728a72b26d188e96eb1fa66f62f89a55
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: df9405dcf65eb39095f711edbcaf2a35e4a1f6aa
+ms.sourcegitcommit: 701dd80661a63c76d37d1e4f159f90e3fc8c3160
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86215129"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91136229"
 ---
 # <a name="active-vs-inactive-relationship-guidance"></a>Vejledning til aktive i forhold til inaktive relationer
 
@@ -114,7 +114,7 @@ Dette modeldesign understøtter udarbejdelse af følgende rapportdesign.
 
 Rapportsiden filtrerer efter 4. kvartal 2019. Tabelvisualiseringen grupperer efter måned og viser forskellige salgsstatistikker. Målingerne **Ordrer** og **Afsendte ordrer** giver forskellige resultater. De bruger begge den samme opsummeringslogik (antal rækker i tabellen **Salg**), men forskellig filteroverførsel fra tabellen **Dato**.
 
-Bemærk, at kvartalsudsnittet indeholder en TOM værdi. Dette udsnit vises som et resultat af [tabeludvidelsen](../transform-model/desktop-relationships-understand.md#strong-relationships). Hvor hver tabel med **Salg** indeholder en række med ordredato, har nogle rækker en TOM afsendelsesdato, fordi disse ordrer endnu ikke er afsendt. Der tages også højde for inaktive relationer i tabeludvidelsen, og derfor kan der vises TOMME værdier, fordi der er TOMME værdier på mange-siden af relationen, eller fordi der er problemer med dataintegritet.
+Bemærk, at kvartalsudsnittet indeholder en TOM værdi. Dette udsnit vises som et resultat af [tabeludvidelsen](../transform-model/desktop-relationships-understand.md#regular-relationships). Hvor hver tabel med **Salg** indeholder en række med ordredato, har nogle rækker en TOM afsendelsesdato, fordi disse ordrer endnu ikke er afsendt. Der tages også højde for inaktive relationer i tabeludvidelsen, og derfor kan der vises TOMME værdier, fordi der er TOMME værdier på mange-siden af relationen, eller fordi der er problemer med dataintegritet.
 
 ## <a name="recommendations"></a>Anbefalinger
 

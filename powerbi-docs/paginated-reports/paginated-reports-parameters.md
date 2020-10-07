@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
 ms.date: 09/28/2020
-ms.openlocfilehash: 3a755b2b4eeba407178d7afa0a0250b6897e6dac
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: aa4df6db3058ef3d6f8c399e1bf20f0edf17ebc8
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91526346"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91600489"
 ---
 # <a name="create-parameters-for-paginated-reports-in-the-power-bi-service"></a>Opret parametre for sideinddelte rapporter i Power BI-tjenesten
 
@@ -62,11 +62,6 @@ På følgende illustration ses visningen Design i Power BI Report Builder for en
   
 9. Vælg **OK**. 
 
-## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
-
-- Hvis du bruger et Power BI-datasæt eller en Analysis Services-model som datakilde, kan du ikke overføre mere end 1.000 parameterværdier i en enkelt anmodning. DAX-begrænser parametre til 1.000 værdier. 
-
- 
 ## <a name="next-steps"></a>Næste trin
 
 Se [få vist parametre for sideinddelte rapporter](../consumer/paginated-reports-view-parameters.md) for at se, hvordan parametrene ser ud i Power BI-tjenesten.

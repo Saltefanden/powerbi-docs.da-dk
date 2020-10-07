@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 01/10/2020
 ms.author: davidi
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 74dbd1207a39f44f761c5068af41db1f40acabe3
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: f6bcd67d41f2c04cedd7c66eb5989f2a6919b030
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85222679"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91598660"
 ---
 # <a name="create-a-report-on-a-sharepoint-list"></a>Opret en rapport på en SharePoint-liste
 
@@ -30,7 +30,7 @@ Se denne 5-minutters instruktionsvideo, eller rul ned for at få en trinvis vejl
 2. Åbn Power BI Desktop, og vælg **Hent data** > **Mere** på fanen Hjem på båndet.
 3. Vælg **Online Services**, og vælg derefter **SharePoint Online-liste**.  
 
-    <img src="media/desktop-sharepoint-online-list/desktop-sharepoint-online-list-getdata.png" alt="get data" width="350"/>
+    <img src="media/desktop-sharepoint-online-list/desktop-sharepoint-online-list-getdata.png" alt="Screenshot shows the Get Data dialog box with Online Services selected." width="350"/>
 
 4. Vælg **Opret forbindelse**.
 4. Find adressen (også kendt som en URL-adresse) for dit SharePoint Online-websted, der indeholder listen.  På en side i SharePoint Online kan du som regel få webstedsadressen ved at vælge **Hjem** i navigationsruden eller ikonet for webstedet øverst og derefter kopiere adressen fra adresselinjen i webbrowseren.
@@ -52,7 +52,7 @@ Se denne 5-minutters instruktionsvideo, eller rul ned for at få en trinvis vejl
 
 9. I venstre side af navigatoren skal du markere afkrydsningsfeltet ud for den SharePoint-liste, du vil oprette forbindelse til.
 
-    <img src="media/desktop-sharepoint-online-list/desktop-sharepoint-online-list-select-list.png" alt="get data" width="450"/>
+    <img src="media/desktop-sharepoint-online-list/desktop-sharepoint-online-list-select-list.png" alt="Screenshot shows the Navigator page with BudgetRequests selected." width="450"/>
 
 10. Vælg **Indlæs**.  Power BI indlæser listedataene i en ny rapport.
 
