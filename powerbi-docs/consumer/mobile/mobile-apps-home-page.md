@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: quickstart
 ms.date: 12/16/2019
 ms.author: painbar
-ms.openlocfilehash: 16d62af90855c99f9d50c35dd411ef50f2a9a4e6
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: d06478acf53ead63b48afcf58cb2316ff4c5a3bc
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83565163"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91635303"
 ---
 # <a name="a-quick-tour-of-the-mobile-app-home-page"></a>En hurtig rundvisning af startsiden for mobilappen
 I denne rundvisning bliver du bekendt med startsiden for Power BI-mobilappen og den navigationshjælp, du får, så du kan komme hurtigt til det, du har brug for.
@@ -52,7 +52,7 @@ Aktivitetselementer samles, så alle dataopdateringer, der kommer fra samme app 
 
 Nederst på siden finder du navigationslinjen.
 
-![Aktivitetsopdatering](./media/mobile-apps-home-page/powerbi-mobile-app-navbar.png)
+![Navigationslinje](./media/mobile-apps-home-page/powerbi-mobile-app-navbar.png)
 
 Navigationslinjen giver hurtig adgang til:
 

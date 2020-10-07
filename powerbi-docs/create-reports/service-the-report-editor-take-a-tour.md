@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/14/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 6b0b2ae2ca98b7dd3b9940319fc68a7effba4782
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 56a181da60e2a20c08a8c03dd826276d350ec81f
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349764"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91635188"
 ---
 # <a name="tour-the-report-editor-in-power-bi"></a>Præsentation af rapporteditor i Power BI
 
@@ -122,9 +122,14 @@ I ruden Analytics i Power BI-tjenesten kan du føje dynamiske referencelinjer ti
 ## <a name="5-the-fields-pane"></a>5. Ruden Felter
 Ruden Felter indeholder tabellerne, mapperne og felterne i dine data, som er tilgængelige for dig, så du kan bruge dem til at oprette visualiseringer.
 
-|  |  |
-| --- | --- |
-| ![Ruden Felter](media/service-the-report-editor-take-a-tour/power-bi-fields-list.png) |<ul><li>Træk et felt til siden for at starte en ny visualisering.  Du kan også trække et felt til en eksisterende visualisering for at føje feltet til den pågældende visualisering.<br><br></li> <li>Når du markerer afkrydsningsfeltet ud for et felt, føjer Power BI dette felt til den aktive (eller nye) visualisering. Og den beslutter også, hvilken bucket dette felt skal placeres i.  Skal feltet f.eks. bruges som en forklaring, akse eller værdi? Power BI gætter på bedste vis, og du kan om nødvendigt flytte det fra denne bucket til en anden. <br><br></li><li>Uanset hvad, føjes hvert enkelt felt til ruden Visualiseringer i rapporteditoren.</li></ul> |
+:::row:::
+    :::column:::
+        ![Ruden Felter](media/service-the-report-editor-take-a-tour/power-bi-fields-list.png)
+    :::column-end:::
+    :::column:::
+        <ul><li>Træk et felt til siden for at starte en ny visualisering.  Du kan også trække et felt til en eksisterende visualisering for at føje feltet til den pågældende visualisering.<br><br></li> <li>Når du markerer afkrydsningsfeltet ud for et felt, føjer Power BI dette felt til den aktive (eller nye) visualisering. Og den beslutter også, hvilken bucket dette felt skal placeres i.  Skal feltet f.eks. bruges som en forklaring, akse eller værdi? Power BI gætter på bedste vis, og du kan om nødvendigt flytte det fra denne bucket til en anden. <br><br></li><li>Uanset hvad, føjes hvert enkelt felt til ruden Visualiseringer i rapporteditoren.</li></ul>
+    :::column-end:::
+:::row-end:::
 
 I Power BI Desktop har du også mulighed for at vise/skjule felter, tilføje beregninger osv.
 

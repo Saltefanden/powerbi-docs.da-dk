@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 07/13/2020
-ms.openlocfilehash: 8e3ca6d9615a348fec928f13a561fbb97e719d6a
-ms.sourcegitcommit: b60063c49ac39f8b28c448908ecbb44b54326335
+ms.openlocfilehash: f024959c0d7e8bd0b51893a277161c67b5f4dfc6
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "88160366"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91746119"
 ---
 # <a name="export-power-bi-report-to-file-preview"></a>Eksportér Power BI-rapport til fil (prøveversion)
 
@@ -22,7 +22,7 @@ ms.locfileid: "88160366"
 * **PNG**
     * Når du eksporterer til en PNG, komprimeres en rapport med flere sider til en zip-fil
     * Hver fil i zip-filen repræsenterer en rapportside
-    * Sidenavnene er de samme som returværdierne for API'erne [Hent sider](https://docs.microsoft.com/rest/api/power-bi/reports/getpages) eller [Hent sider i gruppe](https://docs.microsoft.com/rest/api/power-bi/reports/getpagesingroup)
+    * Sidenavnene er de samme som returværdierne for API'erne [Hent sider](/rest/api/power-bi/reports/getpages) eller [Hent sider i gruppe](/rest/api/power-bi/reports/getpagesingroup)
 
 ## <a name="usage-examples"></a>Eksempler på brug
 
@@ -38,17 +38,17 @@ Før du bruger API'en, skal du bekræfte, at følgende [lejerindstillinger for a
 * **Eksportér rapporter som PowerPoint-præsentationer eller PDF-dokumenter** – Aktiveret som standard.
 * **Eksportér rapporter som billedfiler** – kræves kun til *PNG* og er deaktiveret som standard.
 
-API'en er asynkron. Når API'en [exportToFile](https://docs.microsoft.com/rest/api/power-bi/reports/exporttofile) kaldes, udløses et eksportjob. Efter et eksportjob er udløst, kan du bruge [polling](https://docs.microsoft.com/rest/api/power-bi/reports/getexporttofilestatus) til at spore jobbet, indtil det er fuldført.
+API'en er asynkron. Når API'en [exportToFile](/rest/api/power-bi/reports/exporttofile) kaldes, udløses et eksportjob. Efter et eksportjob er udløst, kan du bruge [polling](/rest/api/power-bi/reports/getexporttofilestatus) til at spore jobbet, indtil det er fuldført.
 
 Under polling returnerer API'en et tal, der repræsenterer den mængde arbejde, der er fuldført. Arbejdet i hvert eksportjob beregnes på baggrund af det antal sider, rapporten indeholder. Alle sider har samme vægt. Hvis du f.eks. eksporterer en rapport med 10 sider, og polling returnerer 70, betyder det, at API'en har behandlet 7 ud af de 10 sider i eksportjobbet.
 
-Når eksporten er fuldført, returnerer API-kaldet for polling en [URL-adresse til Power BI](https://docs.microsoft.com/rest/api/power-bi/reports/getfileofexporttofile), så filen kan hentes. URL-adressen er tilgængelig i 24 timer.
+Når eksporten er fuldført, returnerer API-kaldet for polling en [URL-adresse til Power BI](/rest/api/power-bi/reports/getfileofexporttofile), så filen kan hentes. URL-adressen er tilgængelig i 24 timer.
 
 ## <a name="supported-features"></a>Understøttede funktioner
 
 ### <a name="selecting-which-pages-to-print"></a>Valg af, hvilke sider der skal udskrives
 
-Angiv de sider, du vil udskrive i henhold til returværdierne [Hent sider](https://docs.microsoft.com/rest/api/power-bi/reports/getpages) eller [Hent sider i gruppe](https://docs.microsoft.com/rest/api/power-bi/reports/getpagesingroup). Du kan også angive rækkefølgen af de sider, du vil eksportere.
+Angiv de sider, du vil udskrive i henhold til returværdierne [Hent sider](/rest/api/power-bi/reports/getpages) eller [Hent sider i gruppe](/rest/api/power-bi/reports/getpagesingroup). Du kan også angive rækkefølgen af de sider, du vil eksportere.
 
 ### <a name="bookmarks"></a>Bogmærker
 

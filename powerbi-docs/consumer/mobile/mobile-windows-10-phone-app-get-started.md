@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: ba582003008e1355156b189b5753f4e4c0a8353c
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 5ef68bac75daf25e48cbd4d24279627d4b494764
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90861469"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91634360"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-for-windows-10"></a>Kom i gang med Power BI-mobilapp til Windows 10
 Power BI-mobilappen til Windows 10 gør det muligt at bruge Power BI på din tablet eller telefon. Du får opdateret, berøringsfølsom mobiladgang til dine virksomhedsoplysninger. Få vist og interager med virksomhedens dashboards, uanset hvor du er, direkte fra [Start i Windows](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
@@ -106,7 +106,7 @@ Få vist alle dine foretrukne Power BI-dashboards sammen med Reporting Services-
 
 Læs mere om [favoritter i Power BI-mobilappsene](mobile-apps-favorites.md).
 
-## <a name="next-steps"></a>Næste trin
+## <a name="other-tasks"></a>Andre opgaver
 Her er nogle andre ting, du kan foretage dig i Power BI-appen til Windows 10-enheder med dashboards og rapporter i Power BI samt Reporting Services-mobilrapporter og -KPI'er på Reporting Services-webportalen.
 
 ### <a name="power-bi-dashboards-and-reports"></a>Power BI-dashboards og -rapporter

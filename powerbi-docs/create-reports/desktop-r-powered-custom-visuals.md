@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
 ms.date: 07/27/2018
 LocalizationGroup: Create reports
-ms.openlocfilehash: 7abbfce4254359c95efe1ef91511672b0aa98be6
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: e4e65c26c9d1b5598ecf6b523649dc70722b7d79
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85229362"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91634981"
 ---
 # <a name="use-r-powered-power-bi-visuals-in-power-bi"></a>Brug R-drevne Power BI-visualiseringer i Power BI
 
@@ -125,20 +125,25 @@ Power BI-teamet arbejder aktivt på at mindske disse problemer, før de opstår 
 
 3. Installer R-pakker manuelt vha. en R-konsol. Fremgangsmåden er følgende:
 
-   a.  Download installationsscriptet for det R-drevne visual, og gem filen på et lokalt drev.
+   a. Download installationsscriptet for det R-drevne visual, og gem filen på et lokalt drev.
 
-   b.  Fra R-konsollen skal du køre følgende:
+   b. Fra R-konsollen skal du køre følgende:
 
-       source("C:/Users/david/Downloads/ScriptInstallPackagesForForecastWithWorkarounds.R")
+      ```console
+      source("C:/Users/david/Downloads/ScriptInstallPackagesForForecastWithWorkarounds.R")
+      ```
 
    Typiske standardinstallationsplaceringer er følgende:
 
+   ```console
        c:\Program Files\R\R-3.3.x\bin\x64\Rterm.exe (for CRAN-R)
        c:\Program Files\R\R-3.3.x\bin\x64\Rgui.exe (for CRAN-R)
        c:\Program Files\R\R-3.3.x\bin\R.exe (for CRAN-R)
        c:\Program Files\Microsoft\MRO-3.3.x\bin\R.exe (for MRO)
        c:\Program Files\Microsoft\MRO-3.3.x\bin\x64\Rgui.exe (for MRO)
        c:\Program Files\RStudio\bin\rstudio.exe (for RStudio)
+   ```
+
 4. Hvis de foregående trin ikke fungerer, kan du prøve følgende:
 
    a. Brug **R Studio**, og følg de trin, der er beskrevet i 3.b. ovenfor (kør scriptlinjen fra R-konsollen).

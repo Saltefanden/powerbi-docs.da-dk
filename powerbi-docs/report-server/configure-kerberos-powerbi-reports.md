@@ -8,12 +8,12 @@ ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 11/01/2017
 ms.author: maggies
-ms.openlocfilehash: b60c56e7b8dfde9c46a784c5f57ca07ca9ca3fa0
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: d4890cf864334951982a8b6d7acc8fc8338016d6
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90859169"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91634958"
 ---
 # <a name="configure-kerberos-to-use-power-bi-reports"></a>Konfigurer Kerberos til at bruge Power BI-rapporter
 <iframe width="640" height="360" src="https://www.youtube.com/embed/vCH8Fa3OpQ0?showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -29,13 +29,17 @@ Specifikt skal du konfigurere begrænset delegering. Du har muligvis konfigurere
 ## <a name="error-running-report"></a>Der opstod en fejl under kørsel af rapporten
 Hvis din rapportserver ikke er konfigureret korrekt, kan du få følgende fejl.
 
-    Something went wrong.
+```output
+Something went wrong.
 
-    We couldn't run the report because we couldn't connect to its data source. The report or data source might not be configured correctly. 
+We couldn't run the report because we couldn't connect to its data source. The report or data source might not be configured correctly. 
+```
 
 Du får vist følgende meddelelse under Tekniske detaljer.
 
-    We couldn't connect to the Analysis Services server. The server forcibly closed the connection. To connect as the user viewing the report, your organization must have configured Kerberos constrained delegation.
+```output
+We couldn't connect to the Analysis Services server. The server forcibly closed the connection. To connect as the user viewing the report, your organization must have configured Kerberos constrained delegation.
+```
 
 ![Skærmbillede af Power BI-rapporter, der viser fejlmeddelelser, som er relateret til problemer vedrørende oprettelse af forbindelse til Analysis Services-server.](media/configure-kerberos-powerbi-reports/powerbi-report-config-error.png)
  
@@ -91,7 +95,9 @@ Hvis din rapportserver er konfigureret til at bruge en domænebrugerkonto, skal 
 
 Det anbefales at oprette to SPN'er. Et med NetBIOS-navnet og et andet med det fulde domænenavn (FQDN). SPN er i følgende format.
 
-    <Service>/<Host>:<port>
+```console
+<Service>/<Host>:<port>
+```
 
 Power BI-rapportserver bruger HTTP som tjeneste. For HTTP-SPN'er skal du ikke angive en port. Tjenesten, vi er interesseret i her, er HTTP. Værten for SPN bliver det navn, du bruger i en webadresse. Dette er normalt computernavnet. Hvis du har installeret en belastningsjustering, kan dette være et virtuelt navn.
 
@@ -119,13 +125,17 @@ Vi kan bruge værktøjet SetSPN til at tilføje SPN. Vi følger det samme eksemp
 
 Hvis SPN placeres på en computerkonto for både FQDN og NetBIOS-SPN, vil det ligne følgende, hvis vi har brugt den virtuelle webadresse contosoreports.
 
-      Setspn -a HTTP/contosoreports.contoso.com ContosoRS
-      Setspn -a HTTP/contosoreports ContosoRS
+```console
+Setspn -a HTTP/contosoreports.contoso.com ContosoRS
+Setspn -a HTTP/contosoreports ContosoRS
+```
 
 Hvis SPN placeres på en domænebrugerkonto for både FQDN og NetBIOS-SPN, vil det ligne følgende, hvis vi har brugt computernavnet til værten for SPN.
 
-      Setspn -a HTTP/ContosoRS.contoso.com RSService
-      Setspn -a HTTP/ContosoRS RSService
+```console
+Setspn -a HTTP/ContosoRS.contoso.com RSService
+Setspn -a HTTP/ContosoRS RSService
+```
 
 ## <a name="spns-for-the-analysis-services-service"></a>SPN'er for Analysis Services-tjenesten
 SPN'er for Analysis Services minder om det, vi gjorde med Power BI-rapportserver. Formatet for SPN er lidt anderledes, hvis du har en navngiven forekomst.
@@ -146,13 +156,17 @@ Vi kan bruge værktøjet SetSPN til at tilføje SPN. I dette eksempel er compute
 
 Hvis SPN placeres på en computerkonto, vil det se ud som følger for både FQDN og NetBIOS-SPN.
 
-    Setspn -a MSOLAPSvc.3/ContosoAS.contoso.com ContosoAS
-    Setspn -a MSOLAPSvc.3/ContosoAS ContosoAS
+```console
+Setspn -a MSOLAPSvc.3/ContosoAS.contoso.com ContosoAS
+Setspn -a MSOLAPSvc.3/ContosoAS ContosoAS
+```
 
 Hvis SPN placeres på en domænebrugerkonto, vil det se ud som følger for både FQDN og NetBIOS-SPN.
 
-    Setspn -a MSOLAPSvc.3/ContosoAS.contoso.com OLAPService
-    Setspn -a MSOLAPSvc.3/ContosoAS OLAPService
+```console
+Setspn -a MSOLAPSvc.3/ContosoAS.contoso.com OLAPService
+Setspn -a MSOLAPSvc.3/ContosoAS OLAPService
+```
 
 ## <a name="spns-for-the-sql-browser-service"></a>SPN'er for SQL Browser-tjenesten
 Hvis du har en navngiven Analysis Services-forekomst, skal du også at sikre dig, at du har et SPN for browsertjenesten. Dette er unikt for Analysis Services.
@@ -164,8 +178,10 @@ Du behøver ikke at angive noget for forekomstnavn eller port.
 
 Et eksempel på et Analysis Services-SPN kan se ud som følger.
 
-    MSOLAPDisco.3/ContosoAS.contoso.com
-    MSOLAPDisco.3/ContosoAS
+```console
+MSOLAPDisco.3/ContosoAS.contoso.com
+MSOLAPDisco.3/ContosoAS
+```
 
 Placeringen af SPN minder også om det, der er nævnt for Power BI-rapportserver. Forskellen er, at SQL Browser altid kører under den lokale systemkonto. Det betyder, at SPN'er altid går på computerkontoen. 
 
@@ -174,8 +190,10 @@ Vi kan bruge værktøjet SetSPN til at tilføje SPN. I dette eksempel er compute
 
 Hvis SPN placeres på en computerkonto, vil det se ud som følger for både FQDN og NetBIOS-SPN.
 
-    Setspn -a MSOLAPDisco.3/ContosoAS.contoso.com ContosoAS
-    Setspn -a MSOLAPDisco.3/ContosoAS ContosoAS
+```console
+Setspn -a MSOLAPDisco.3/ContosoAS.contoso.com ContosoAS
+Setspn -a MSOLAPDisco.3/ContosoAS ContosoAS
+```
 
 Du kan få mere at vide i [Der kræves et SPN til SQL Server Browser-tjenesten](https://support.microsoft.com/kb/950599).
 

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/17/2020
-ms.openlocfilehash: 1e2426b12bf6205e5ed2fc6cfb0540c67740df7d
-ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
+ms.openlocfilehash: 762cc2d3d170f5418616da46806f8a445490ee8d
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83813617"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91635211"
 ---
 # <a name="capacity-and-skus-in-power-bi-embedded-analytics"></a>Kapacitet og SKU'er i integrerede Power BI-analyser
 
@@ -68,10 +68,9 @@ I nedenstående tabel finder du en oversigt over funktioner, den nødvendige kap
 
 I denne tabel refererer en brugerdefineret app til en webapp, der er oprettet ved hjælp af integreret analyse. Når du integrerer til en brugerdefineret webapp som udvikler (ved hjælp af JavaScript, .NET SDK'er eller REST API'er), har du mulighed for at styre og tilpasse UX. Denne mulighed er ikke tilgængelig, når du bruger andre indstillinger for integrering, f.eks. Power BI-tjeneste og Power BI – Mobil.
 
-
-|         |         |         |
-|---------|---------|---------|
-|**Scenarie**</br><p></p>|**Azure**</br>(A-varenummer)|**Office**</br>(P- og EM-varenumre)|
+| Scenarie | Azure   | Office          |
+|----------|---------|-----------------|
+|          | (A-varenummer) | (P- og EM-varenumre) |
 |[Integrer indhold for dine kunder](embed-sample-for-customers.md)</br>(appen ejer data)     |✔        |✔        |
 |[Integrer til din organisation](embed-sample-for-your-organization.md)</br>(brugeren ejer data)     |✖        |✔         |
 |Microsoft 365-apps</br>(tidligere kaldet Office 365-apps)<ul><li>[Integrer i Teams](../../collaborate-share/service-embed-report-microsoft-teams.md)</li><li>[Integrer i SharePoint](../../collaborate-share/service-embed-report-spo.md)</li></ul>     |✖        |✔        |

@@ -5,16 +5,16 @@ author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-admin
+ms.subservice: powerbi-premium
 ms.topic: how-to
 ms.date: 05/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 8e8f1c143f65b1974364a8a1c9c55e132a4131c4
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: c4cf0c4fbdde52181dbc5307a9d97d17344c7c26
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90857030"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91632842"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Konfigurer arbejdsbelastninger i en Premium-kapacitet
 
@@ -24,13 +24,12 @@ I denne artikel beskrives, hvordan du aktiverer og konfigurerer arbejdsbelastnin
 
 Arbejdsbelastninger for forespørgsler optimeres til og begrænses af de ressourcer, som er fastlagt af din SKU for Premium-kapacitet. Premium-kapaciteter understøtter også yderligere arbejdsbelastninger, der kan bruge din kapacitets ressourcer. Standardværdier for hukommelse for disse arbejdsbelastninger er baseret på de kapacitetsnoder, der er tilgængelige for din SKU. Det maksimale antal hukommelsesindstillinger kan ikke akkumuleres. Hukommelse op til den angivne maksimale værdi tildeles dynamisk for AI og dataflow, men tildeles statisk for sideinddelte rapporter.
 
-|                   | EM1/A1                  | EM2/A2                  | EM3/A3                  | P1/A4                  | P2/A5                  | P3/A6                   |
-|-------------------|---------------------------|---------------------------|---------------------------|--------------------------|--------------------------|---------------------------|
-| AI                | Ikke-understøttet               | 40 % som standard, minimum 40 %  | 20 % som standard, minimum 20 %  | 20 % som standard, minimum 8 %  | 20 % som standard, minimum 4 %  | 20 % som standard, minimum 2 %   |
-| Datasæt          | 100 % som standard, minimum 67 % | 100 % som standard, minimum 40 % | 100 % som standard, minimum 20 % | 100 % som standard, minimum 8 % | 100 % som standard, minimum 4 % | 100 % som standard, minimum 2 %  |
-| Dataflow         | 40 % som standard, minimum 40 %  | 24 % som standard, minimum 24 %  | 20 % som standard, minimum 12 %  | 20 % som standard, minimum 5 %  | 20 % som standard, minimum 3 %  | 20 % som standard, minimum 2 %   |
-| Sideinddelte rapporter | Ikke-understøttet               | Ikke-understøttet               | Ikke-understøttet               | 20 % som standard, minimum 10 % | 20 % som standard, minimum 5 %  | 20 % som standard, minimum 2,5 % |
-|                   |                           |                           |                           |                          |                          |                           |
+|                       | EM1/A1                  | EM2/A2                  | EM3/A3                  | P1/A4                  | P2/A5                  | P3/A6                   |
+|-----------------------|---------------------------|---------------------------|---------------------------|--------------------------|--------------------------|---------------------------|
+| **AI**                | Ikke-understøttet               | 40 % som standard, minimum 40 %  | 20 % som standard, minimum 20 %  | 20 % som standard, minimum 8 %  | 20 % som standard, minimum 4 %  | 20 % som standard, minimum 2 %   |
+| **Datasæt**          | 100 % som standard, minimum 67 % | 100 % som standard, minimum 40 % | 100 % som standard, minimum 20 % | 100 % som standard, minimum 8 % | 100 % som standard, minimum 4 % | 100 % som standard, minimum 2 %  |
+| **Dataflow**         | 40 % som standard, minimum 40 %  | 24 % som standard, minimum 24 %  | 20 % som standard, minimum 12 %  | 20 % som standard, minimum 5 %  | 20 % som standard, minimum 3 %  | 20 % som standard, minimum 2 %   |
+| **Sideinddelte rapporter** | Ikke-understøttet               | Ikke-understøttet               | Ikke-understøttet               | 20 % som standard, minimum 10 % | 20 % som standard, minimum 5 %  | 20 % som standard, minimum 2,5 % |
 
 ## <a name="workload-settings"></a>Indstillinger for arbejdsbelastning
 
@@ -81,10 +80,9 @@ Hvis du har et eksisterende datasæt, der er større end den størrelse, du angi
 
 For at beskytte systemets ydeevne er der anvendt et ekstra SKU-specifikt fast loft for den maksimale størrelse på et offlinedatasæt, uanset hvilken værdi der er konfigureret. Dette faste loft gælder ikke for Power BI-datasæt, der er optimeret til store datastørrelser. Du kan finde flere oplysninger i [Store modeller i Power BI Premium](service-premium-large-models.md).
 
-|                                           | EM1/A1 | EM2/A2 | EM3/A3 | P1/A4 | P2/A5 | P3/A6 |   
-|-------------------------------------------|----------|----------|----------|---------|---------|---------|
-| Fast loft for maksimal størrelse på offlinedatasæt | 3 GB     | 5 GB     | 6 GB     | 10 GB   | 10 GB   | 10 GB   |
-|                                           |          |          |          |         |         |         |
+|                                               | EM1/A1 | EM2/A2 | EM3/A3 | P1/A4 | P2/A5 | P3/A6 |
+|-----------------------------------------------|----------|----------|----------|---------|---------|---------|
+| **Fast loft for maksimal størrelse på offlinedatasæt** | 3 GB     | 5 GB     | 6 GB     | 10 GB   | 10 GB   | 10 GB   |
 
 #### <a name="max-result-row-set-count"></a>Maks. antal resulterende rækker
 
@@ -104,10 +102,9 @@ Bemærk, at dataopdateringshandlinger muligvis også udfører DAX-forespørgsler
 
 Standardindstillingen er 0, hvilket medfører, at der anvendes følgende SKU-specifik, automatisk hukommelsesgrænse i forbindelse med forespørgsler.
 
-|                              | EM1/A1 | EM2/A2 | EM3/A3 | P1/A4 | P2/A5 | P3/A6 |   
-|------------------------------|----------|----------|----------|---------|---------|---------|
-| Automatisk hukommelsesgrænse for forespørgsel | 1 GB     | 2 GB     | 2 GB     | 6 GB    | 6 GB    | 10 GB   |
-|                              |          |          |          |         |         |         |
+|                                  | EM1/A1 | EM2/A2 | EM3/A3 | P1/A4 | P2/A5 | P3/A6 |
+|----------------------------------|----------|----------|----------|---------|---------|---------|
+| **Automatisk hukommelsesgrænse for forespørgsel** | 1 GB     | 2 GB     | 2 GB     | 6 GB    | 6 GB    | 10 GB   |
 
 For at beskytte systemets ydeevne gennemtvinges et fast loft på 10 GB for alle forespørgsler, der udføres af Power BI-rapporter, uanset hvilken hukommelsesgrænse for forespørgslen der er konfigureret af brugeren. Dette faste loft gælder ikke for forespørgsler, der er udstedt af værktøjer, som bruger Analysis Services-protokollen (også kaldet XMLA). Brugerne bør overveje at forenkle forespørgslen eller dens beregninger, hvis forespørgslen bruger for meget hukommelse.
 

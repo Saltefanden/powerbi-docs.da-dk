@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 04/20/2020
-ms.openlocfilehash: 7ebc02b2c459517957425e78438e12e89dc2e1bb
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: c22c634ef59a1aae2994dcacaae62dc8ebed7474
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82196554"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91746069"
 ---
 # <a name="how-to-build-a-high-performance-power-bi-visual"></a>Sådan får du høj ydeevne i en visualisering i Power BI
 I denne artikel gennemgås teknikker til, hvordan en udvikler kan opnå høj ydeevne ved gengivelse af visualiseringer. 
@@ -104,7 +104,7 @@ Se [youmightnotneedjquery.com](http://youmightnotneedjquery.com/) for at få fle
 ### <a name="use-canvas-or-webgl"></a>Brug lærred eller WebGL 
 I forbindelse med gentagen brug af animationer bør du overveje at bruge **lærred** eller **WebGL** i stedet for SVG. I modsætning til SVG bestemmes ydeevnen i forhold til størrelsen i stedet for indhold med disse muligheder. 
 
-Du kan læse mere om forskellene i [SVG vs. lærred: Sådan træffer du et valg](https://msdn.microsoft.com/library/gg193983(v=vs.85).aspx). 
+Du kan læse mere om forskellene i [SVG vs. lærred: Sådan træffer du et valg](/previous-versions/windows/internet-explorer/ie-developer/samples/gg193983(v=vs.85)). 
 
 ### <a name="use-requestanimationframe-instead-of-settimeout"></a>Brug requestAnimationFrame i stedet for setTimeout 
 Hvis du bruger [requestAnimationFrame](https://www.w3.org/TR/animation-timing/) til at opdatere dine animationer på skærmen, kaldes dine animationsfunktioner, **før** browseren kalder en anden gentegning.
@@ -113,4 +113,4 @@ Du kan finde flere oplysninger i dette [eksempel](https://testdrive-archive.azur
 
 ## <a name="next-steps"></a>Næste trin
 
-Få mere at vide om teknikker til optimering i [Optimeringsvejledning til Power BI](/power-bi/guidance/power-bi-optimization).
+Få mere at vide om teknikker til optimering i [Optimeringsvejledning til Power BI](../../guidance/power-bi-optimization.md).

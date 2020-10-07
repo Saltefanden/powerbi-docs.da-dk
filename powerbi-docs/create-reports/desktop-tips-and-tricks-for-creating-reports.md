@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: how-to
 ms.date: 05/07/2020
 ms.author: davidi
-ms.openlocfilehash: e2615915503b0eb6d9d1ee08bd2a1fa8599bcf8c
-ms.sourcegitcommit: e9cd61eaa66eda01cc159251d7936a455c55bd84
+ms.openlocfilehash: 336dbad3ac77fb333b52cd3f4c4c0b104573314a
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86953001"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91633532"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop"></a>Tips og tricks til oprettelse af rapporter i Power BI Desktop
 For at få mest muligt ud af dine data skal du nogle gange have lidt ekstra hjælp. Vi har samlet nogle tip og tricks, som du kan bruge, når du opretter rapporter i Microsoft Power BI Desktop *og* i Microsoft Excel 2016 eller Excel 2013 Pro-Plus-udgaver, hvor tilføjelsesprogrammet Power Pivot er aktiveret, og Power-forespørgsel er installeret og aktiveret. 
@@ -44,7 +44,9 @@ Her er et eksempel på en simpel tabel med temperaturer og tidspunktet for læsn
 ## <a name="reference-lines-in-your-report"></a>Referencelinjer i rapporten
 Du kan bruge en beregnet kolonne i Power BI Desktop til at definere en referencelinje. Identificer den tabel og den kolonne, som du vil oprette en referencelinje i. Vælg "Ny kolonne" på båndet, og skriv følgende formel i formellinjen:
 
-    Target Value = 100
+```console
+Target Value = 100
+```
 
 Denne beregnede kolonne returnerer værdien 100, uanset hvor den bruges. Den nye kolonne vises på feltlisten. Føj den beregnede kolonne i målværdien til et kurvediagram for at vise, hvordan alle serier er relateret til den specifikke referencelinje. 
 
@@ -66,7 +68,9 @@ En anden måde til at sikre, at felter er geokodet korrekt, er at angive datakat
 ## <a name="better-geocoding-with-more-specific-locations"></a>Bedre geokodning med mere specifikke placeringer
 Nogle gange er det ikke nok at angive datakategorier i forbindelse med kortlægning. Opret en mere specifik placering, f.eks. adressen, ved hjælp af forespørgselseditoren i Power BI Desktop. Brug funktionen Tilføj kolonne til at oprette en brugerdefineret kolonne. Opret derefter den ønskede placering på følgende måde: 
 
-    = [Field1] & " " & [Field2]
+```console
+= [Field1] & " " & [Field2]
+```
 
 Brug derefter dette felt, der oprettes, i kortvisualiseringer. Dette er meget nyttigt, når du skal oprette adresser ud fra felter med leveringsadresse, der er fælles for datasæt. Bemærk dog, at sammenkædningen kun fungerer sammen med tekstfelter. Du kan eventuelt konvertere husnummeret til en tekstdatatype, før du bruger det til at oprette en adresse.
 
@@ -77,11 +81,13 @@ De nemmeste histogrammer – Find ud af, hvilken forespørgsel der har det felt,
 
 Definer buckets for at oprette et histogram – Find ud af, hvilken forespørgsel der har det felt, du vil oprette et histogram for. Brug indstillingen "Reference" for forespørgslen til at oprette en ny forespørgsel, og kald den "FieldName". Definer nu dine buckets med en regel. Brug indstillingen Tilføj brugerdefineret kolonne på båndet Tilføj kolonne, og opret en brugerdefineret regel. En simpel bucketregel kan f.eks. se sådan ud:
 
-    if([FieldName] \< 2) then "\<2 min" else
-    if([FieldName] \< 5) then "\<5 min" else
-    if([FieldName] \< 10) then "\<10 min" else
-    if([FieldName] \< 30) then "\<30 min" else
-    "longer")
+```console
+if([FieldName] \< 2) then "\<2 min" else
+if([FieldName] \< 5) then "\<5 min" else
+if([FieldName] \< 10) then "\<10 min" else
+if([FieldName] \< 30) then "\<30 min" else
+"longer")
+```
 
 Kontrollér, at datatypen er et tal i den resulterende samlingskolonne. Du kan nu bruge gruppér efter-metoden, der er beskrevet under Nemmeste histogram, for at få det ønskede histogram. Denne indstilling håndterer flere datapunkter, men hjælper stadig ikke med børstning.
 

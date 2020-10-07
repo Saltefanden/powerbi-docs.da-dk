@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: how-to
 ms.date: 04/27/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: e1925c57869a58f111b77c6a50a1289224440ecb
-ms.sourcegitcommit: 01b5fb05f723eab2557e0e420bfde23197987a96
+ms.openlocfilehash: 52593cbcbdc0a67709735a06eca493fefb18e1a0
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86300993"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91633693"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>Integrer en rapport på en sikker portal eller et websted
 
@@ -60,10 +60,10 @@ For at få vist den integrerede rapport skal brugere enten have en Power BI Pro-
 
 Du kan tilpasse brugeroplevelsen ved hjælp af inputindstillingerne for URL-adressen til integrering. I den angivne iFrame kan du opdatere URL-adressens **src**-indstillinger.
 
-| Egenskab  | Beskrivelse  |  |  |  |
-|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|---|---|
-| pageName  | Du kan bruge parameteren **pageName** for forespørgselsstrengen til angive, hvilken side i rapporten der skal åbnes. Du kan finde denne værdi i slutningen af URL-adressen til rapporten, når du får vist en rapport i Power BI-tjenesten, som vist i eksemplet nedenfor. |  |  |  |
-| URL-filtre  | Du kan bruge [Filtre for URL-adresser](service-url-filters.md) i den URL-adresse til integrering, du modtog fra brugergrænsefladen i Power BI, til at filtrere integreret indhold. På denne måde kan du skabe integrationer, der kun kræver begrænset kode og helt grundlæggende erfaring med HTML og JavaScript.  |  |  |  |
+| Egenskab  | Beskrivelse  |
+|-----------|--------------|
+| pageName  | Du kan bruge parameteren **pageName** for forespørgselsstrengen til angive, hvilken side i rapporten der skal åbnes. Du kan finde denne værdi i slutningen af URL-adressen til rapporten, når du får vist en rapport i Power BI-tjenesten, som vist i eksemplet nedenfor. |
+| URL-filtre  | Du kan bruge [Filtre for URL-adresser](service-url-filters.md) i den URL-adresse til integrering, du modtog fra brugergrænsefladen i Power BI, til at filtrere integreret indhold. På denne måde kan du skabe integrationer, der kun kræver begrænset kode og helt grundlæggende erfaring med HTML og JavaScript.  |
 
 ## <a name="set-which-page-opens-for-an-embedded-report"></a>Angiv, hvilken side der skal åbnes for en integreret rapport 
 
