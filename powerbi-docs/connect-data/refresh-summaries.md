@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 08/27/2020
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 44aeb5030008d17a9998e8357f23d47524f11512
-ms.sourcegitcommit: 1aaa742c239a3119cdaad698be5a7553b68801fa
+ms.openlocfilehash: 469e2de86d18b9adeb4a7c8aeabeaae1db2a28de
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "89040218"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91600452"
 ---
 # <a name="refresh-summaries-for-power-bi"></a>Opdateringsoversigter i Power BI
 
@@ -53,11 +53,11 @@ Med oplysningerne i den eksporterede fil kan du gennemse kapaciteten, varigheden
 
 Du kan vælge visningen **Plan** ved at klikke på **Plan** i opdateringsoversigterne. Visningen Plan viser planlægningsoplysninger for ugen opdelt i tidsintervaller på 30 minutter. 
 
-![Visningen Plan](media/refresh-summaries/refresh-summaries-02a.jpg)
+![Skærmbillede, der viser et nærbillede af fanen Tidsplan på siden Opdater tidsplan.](media/refresh-summaries/refresh-summaries-02a.jpg)
 
 Visningen Plan er meget nyttig til at fastslå, om der er nok plads mellem de planlagte opdateringshændelser, hvilket giver alle opdateringerne mulighed for at blive fuldført uden overlap, eller om du har planlagte opdateringshændelser, der tager for lang tid og skaber ressourcekonflikter. Hvis du finder sådanne ressourcekonflikter, bør du tilpasse dine opdateringsplaner for at undgå konflikter eller overlap, så dine planlagte opdateringer kan blive fuldført korrekt. 
 
-![Visningen Plan](media/refresh-summaries/refresh-summaries-02.jpg)
+![Skærmbillede, der viser fanen Tidsplan på siden Opdater tidsplan.](media/refresh-summaries/refresh-summaries-02.jpg)
 
 Kolonnen *Reserveret opdateringstid (minutter)* er en beregning af gennemsnittet af op til 60 poster for hvert tilknyttet datasæt. Den numeriske værdi for hvert 30-minutters tidsinterval er det samlede antal minutter beregnet for alle planlagte opdateringer, som er planlagt til at starte i tidsintervallet **og** eventuelle planlagte opdateringer, som er angivet til at starte i det *forrige* tidsinterval, men hvis gennemsnitlige varighed løber over i det valgte tidsinterval.
 
@@ -67,7 +67,7 @@ Du kan vælge et tidsinterval og derefter vælge den tilknyttede knap med **deta
 
 Lad os kigge på et eksempel for at se, hvordan dette fungerer. Følgende dialogboks vises, når vi vælger tidspunktet søndag kl. 20.30 og klikker på **detaljer**.
 
-![Visningen Plan](media/refresh-summaries/refresh-summaries-04.jpg)
+![Skærmbillede, der viser detaljer om opdateringer for et bestemt tidspunkt.](media/refresh-summaries/refresh-summaries-04.jpg)
 
 Der er tre planlagte opdateringshændelser i dette tidsinterval. 
 

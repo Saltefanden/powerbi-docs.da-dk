@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/26/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 78aac3b12abc0e055094078c59f39911a026e797
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 8e794ecc67f7873efb1ee5750f55aefb3d93b40b
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238505"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91600316"
 ---
 # <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop"></a>Opret værktøjstip baseret på rapportsider i Power BI Desktop
 Du kan oprette visuelt omfattende **værktøjstip til rapporter**, som vises, når du holder over visualiseringer, på baggrund af rapportsider, du opretter i **Power BI Desktop**. Ved at oprette en rapportside, der fungerer som et værktøjstip, kan dine brugerdefinerede værktøjstip{1}{2}indeholde visualiseringer, billeder og mange andre samlinger af elementer, du opretter på en rapportside. 
@@ -46,7 +46,7 @@ Du kan også navngive rapportsiden, så formålet med den er tydelig. Du skal bl
 
 Herfra kan oprette de visualiseringer, som du gerne vil have vist i dit værktøjstip. På følgende billede er der to kort og ét grupperet liggende søjlediagram på værktøjstipsiden sammen med en baggrundsfarve på selve siden og baggrunde for hver visualisering, så det får det udseende, vi ønsker.
 
-![Værktøjstip til rapporter i Power BI Desktop](media/desktop-tooltips/desktop-tooltips_06.png)
+![Skærmbillede, der viser et tilpasset værktøjstip for en rapport.](media/desktop-tooltips/desktop-tooltips_06.png)
 
 Der er flere trin, der skal udføres, før din værktøjstipside er klar til at fungere som et værktøjstip. Du skal konfigurere værktøjstipsiden på nogle forskellige måder, som beskrevet i næste sektion. 
 
