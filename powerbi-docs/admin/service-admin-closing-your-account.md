@@ -6,19 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 09/09/2019
+ms.date: 09/25/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: d5028e4aaa1bbb864f14c3f3cdb58d136275e5fc
-ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.openlocfilehash: 076a1a65e275d58b54e340e30083d1c2a19ebbbf
+ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86161232"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "91374399"
 ---
 # <a name="close-your-power-bi-account"></a>Luk din Power BI-konto
 
-Hvis du ikke vil bruge Power BI længere, kan du lukke din Power BI-konto.  Når du har lukket din konto, kan du ikke logge på Power BI. Som det også er angivet i politikken om dataopbevaring i servicebetingelserne for Power BI, sletter Power BI alle kundedata, du har uploadet eller oprettet. De bevares ikke.
+Hvis du ikke vil bruge Power BI længere, kan du lukke din Power BI-konto.  Når du har lukket din konto, kan du ikke logge på Power BI. Som det også er angivet i politikken om dataopbevaring i [Power BI-serviceaftalen](https://azure.microsoft.com/support/legal/subscription-agreement/), sletter Power BI alle kundedata, du har uploadet eller oprettet.
 
 ## <a name="individual-power-bi-users"></a>Individuelle Power BI-brugere
 
@@ -44,9 +44,9 @@ Hvis du har tilmeldt dig Power BI som enkeltperson, kan du lukke din konto via s
 
     ![Skærmbillede af bekræftelsesdialogboksen Din konto er lukket.](media/service-admin-closing-your-account/close-account-settings-5.png)
 
-## <a name="managed-tenant-users"></a>Brugere i administreret lejer
+## <a name="managed-users"></a>Administrerede brugere
 
-Hvis din organisation har tilmeldt dig Power BI, skal du kontakte din lejeradministrator. Bed vedkommende om at fjerne tildelingen af licensen fra din konto.
+Hvis din organisation har tilmeldt dig Power BI, skal du kontakte din administrator. Bed vedkommende om at fjerne tildelingen af licensen fra din konto.
 
 ![Skærmbillede af Administreret kontolukning.](media/service-admin-closing-your-account/close-account-managed.png)
 

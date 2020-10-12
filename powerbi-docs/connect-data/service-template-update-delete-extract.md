@@ -8,12 +8,12 @@ ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 05/04/2020
 ms.author: painbar
-ms.openlocfilehash: d32e1223a335fc6bf2fdf52598f1e1bdf3d7a685
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: c5bed13799824a0222b2961595108536f66133ee
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860526"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91634935"
 ---
 # <a name="update-delete-and-extract-template-app"></a>Opdater, slet og udtræk en skabelonapp
 
@@ -23,11 +23,11 @@ Nu, hvor programmet er i produktion, kan du starte forfra i testfasen uden at af
 Hvis du har foretaget ændringer i Power BI Desktop, skal du starte med trin (1). Hvis du ikke har foretaget ændringer i Power BI Desktop, skal du starte med trin (4).
 
 1. Upload det opdaterede datasæt, og overskriv det eksisterende datasæt. **Sørg for at bruge nøjagtigt det samme navn på datasættet**. Hvis du bruger et andet navn, oprettes det et nyt datasæt for brugere, der opdaterer appen.
-![overskriv datasæt](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset.png)
+![Skærmbillede, der viser Power BI, der opdaterer en skabelonapp med Datasæt valgt.](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset.png)
 1. Importér PBIX-filen fra din computer.
-![overskriv datasæt](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset2.png)
+![Skærmbillede, der viser siden Hent data med Hent fremhævet under Filer.](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset2.png)
 1. Bekræft overskrivningen.
-![overskriv datasæt](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset3.png)
+![Skærmbillede, der viser bekræftelsesmeddelelsen Der findes et datasæt med det samme navn og en mulighed for at erstatte det.](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset3.png)
 
 1. I ruden **Udgivelsesadministration** skal du vælge **Opret program**.
 1. Gå tilbage gennem oprettelsesprocessen for programmet.
@@ -64,7 +64,8 @@ Det er nu lettere end nogensinde før at gå tilbage til den tidligere version a
 
 1. I ruden til administration af versioner skal du trykke på **(...)**  og derefter på **Udtræk**.
 
-    ![udtræk version af skabelonapp](media/service-template-apps-update-extract-delete/power-bi-template-app-extract.png)![udtræk version af skabelonapp](media/service-template-apps-update-extract-delete/power-bi-template-app-extract-dialog.png)
+    ![Skærmbillede, der viser ruden Udgivelsesadministration med Udtræk valgt i en menu.](media/service-template-apps-update-extract-delete/power-bi-template-app-extract.png)
+    ![Skærmbillede, der viser bekræftelsesmeddelelsen Vil du udtrække denne app?](media/service-template-apps-update-extract-delete/power-bi-template-app-extract-dialog.png)
 2. Angiv et navn til det udtrukne arbejdsområde i dialogboksen. der tilføjes et nyt arbejdsområde.
 
 Den nye version af dit arbejdsområde nulstilles, og du kan fortsætte med at udvikle og distribuere skabelonappen fra det arbejdsområde, der er udtrukket for nylig.
@@ -73,9 +74,9 @@ Den nye version af dit arbejdsområde nulstilles, og du kan fortsætte med at ud
 En skabelon for arbejdsområdet er kilden til en aktiv, distribueret skabelonapp. For at beskytte brugere af skabelonappen er det ikke muligt at slette et arbejdsområde uden først at fjerne alle oprettede versioner af appen i arbejdsområdet.
 Hvis du sletter en appversion, sletter du også URL-adressen til appen, og den vil ikke længere fungere.
 
-1. I ruden til administration af versioner skal du vælge ellipsen **(...)**  og derefter **Slet**.
- ![Slet version af skabelonapp](media/service-template-apps-update-extract-delete/power-bi-template-app-delete.png)
- ![Slet version af skabelonapp](media/service-template-apps-update-extract-delete/power-bi-template-app-delete-dialog.png)
+1. I ruden til administration af versioner skal du vælge ellipsen **(...) ** og derefter **Slet**.
+ ![Skærmbillede, der viser ruden Udgivelsesadministration med Slet valgt i en menu. ](media/service-template-apps-update-extract-delete/power-bi-template-app-delete.png)
+ ![Skærmbilledet viser bekræftelsesmeddelelsen Vil du slette denne app?](media/service-template-apps-update-extract-delete/power-bi-template-app-delete-dialog.png)
 
 >[!NOTE]
 >Sørg for, at du ikke sletter den appversion, der anvendes af kunder eller **AppSource**. Hvis du gør det, virker de ikke længere.

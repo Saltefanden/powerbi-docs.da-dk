@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 10/30/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 40de850663f49a26c1d8ae290d88821bbab8c822
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 13223b2ba9d5b50654c952da6b2517717103a724
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85229461"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91600220"
 ---
 # <a name="design-power-bi-reports-for-accessibility"></a>Design tilgængelige Power BI-rapporter
 Du kan designe og oprette flotte rapporter og samtidig have øje for tilgængelighed. Når du opbygger en rapport, bør du oprette den, så den kan bruges af så mange personer som muligt, uanset hvem din målgruppe er, uden at det er nødvendigt at tilpasse den til en slags specialdesign.
@@ -72,11 +72,11 @@ Generelt er alle objekter i Power BI, der har tastaturnavigation, også kompatib
 
 Power BI understøtter stor kontrast i rapporter. Hvis du bruger en tilstand med stor kontrast i Windows, registrerer Power BI Desktop automatisk, hvilket tema med stor kontrast der bruges og anvender disse indstillinger i dine rapporter. Disse farver med stor kontrast følger rapporten, når den publiceres i Power BI-tjenesten eller andre steder.
 
-![Indstillinger for stor kontrast](media/desktop-accessibility/accessibility-05b.png)
+![Skærmbillede, der viser en rapport med vinduesindstillinger for stor kontrast.](media/desktop-accessibility/accessibility-05b.png)
 
 Power BI-tjenesten forsøger også at registrere de indstillinger for stor kontrast, der er valgt i Windows, men hvor effektiv og nøjagtig registreringen er, afhænger af den browser, er bruges med Power BI-tjenesten. Hvis du vil angive temaet manuelt i Power BI-tjenesten, kan du vælge **V > Farver med stor kontrast** i øverste højre hjørne og derefter vælge det tema, du vil bruge i rapporten.
 
-![Fokus til navigation i forbindelse med tilgængelighed](media/desktop-accessibility/accessibility-creating-reports-02.png)
+![Skærmbillede, der viser, hvordan du vælger et tema med farver med stor kontrast.](media/desktop-accessibility/accessibility-creating-reports-02.png)
 
 ### <a name="focus-mode"></a>Fokustilstand
 Hvis en forbruger af en rapport kigger på en visualisering på et dashboard, kan vedkommende udvide visualiseringen, så den fylder mere af skærmen, ved at navigere til genvejsmenuen for visualiseringen og vælge **Åbn i fokustilstand**.

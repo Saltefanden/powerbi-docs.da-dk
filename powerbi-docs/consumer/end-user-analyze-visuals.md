@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/12/2020
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: fe44b183b77cb1e58c89cfd229f3f76d3b06ce39
-ms.sourcegitcommit: 3268a9b630cf599c50592d83c70a87eeecf7838f
+ms.openlocfilehash: f5b930ade7e0ae4e58977ba33dc725c6f1e34695
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88168453"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91635878"
 ---
 # <a name="use-the-analyze-feature-to-explain-fluctuations-in-report-visuals"></a>Brug funktionen Analysér til at forklare udsving i rapportvisuals
 
@@ -50,7 +50,7 @@ Power BI Desktop kører derefter algoritmerne for maskinlæring via dataene, og 
 
 Ved at vælge små ikoner nederst i vandfaldet kan du vælge at få indsigt til at vise et punktdiagram, et stablet søjlediagram eller et bånddiagram.
 
-![tre visualiseringer med indsigter](media/end-user-analyze-visuals/power-bi-options.png)
+![Skærmbillede, der viser ikonerne nederst i visualiseringen.](media/end-user-analyze-visuals/power-bi-options.png)
 
 Du kan bruge ikonerne med *tommel op* og *tommel ned* øverst på siden til at give feedback på visual'et og funktionen.  
 
@@ -59,7 +59,7 @@ Du kan bruge ikonerne med *tommel op* og *tommel ned* øverst på siden til at g
 
 Du kan bruge indsigt, når rapporten er i Læse- eller Redigeringsvisning, hvilket betyder, at du både kan analysere data og oprette visuals, som du nemt kan føje til dine rapporter. Hvis du har en rapport åben i Redigeringsvisning, får du vist et plusikon ud for tommelikonerne. Vælg plusikonet for at føje indsigt til din rapport som et nyt visual. 
 
-![tre visualiseringer med indsigter](media/end-user-analyze-visuals/power-bi-add-visual.png)
+![Skærmbillede, der viser det plusikon, som bruges til at tilføje indsigt.](media/end-user-analyze-visuals/power-bi-add-visual.png)
 
 ## <a name="details-of-the-results-returned"></a>Oplysninger om de returnerede resultater
 

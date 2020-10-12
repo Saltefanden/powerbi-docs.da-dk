@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: how-to
 ms.date: 07/16/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: 59e99bc44b9b438c76b72addf49beee2b69b8623
-ms.sourcegitcommit: 8b8d54d46470a311d8654abe92b5a223b696af28
+ms.openlocfilehash: 5d5647216caee4eae648d0be0ebf3f453cd17d71
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86437240"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91632995"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrer en rapport ved hjælp af parametre for forespørgselsstrengen i URL-adressen
 
@@ -64,7 +64,7 @@ Og vi kan se i vores kortvisualisering ovenfor, at vi har butikker i North Carol
 ?filter=Store/Territory eq 'NC'
 ```
 
-![Skærmbillede af URL-adresse med filter.](media/service-url-filters/power-bi-filter-urls7.png)
+![Skærmbillede af URL med filter for North Carolina.](media/service-url-filters/power-bi-filter-urls7.png)
 
 Nu er rapporten filtreret efter North Carolina, så alle visualiseringer i rapporten viser kun data for North Carolina.
 
@@ -155,10 +155,10 @@ Specialtegn og mellemrum i tabel- og kolonnenavne kræver yderligere formatering
 |**[Kolonne]**     |  [er 0x005B] er 0x005D       |  _x005B_Column_x005D_       |
 |**Kolonne+Plus**     | + er 0x2B        |  Kolonne_x002B_Plus       |
 
-Navn_x0020_på_x0020_tabel/Kolonne_x002B_Plus eq 3 ![Skærmbillede af specialtegn til gengivelse af tabelvisualisering.](media/service-url-filters/power-bi-special-characters1.png)
+Table_x0020_Name/Column_x002B_Plus eq 3 ![Skærmbillede af specialtegn til gengivelse af tabelvisualisering for Unicode.](media/service-url-filters/power-bi-special-characters1.png)
 
 
-Tabel_x0020_specialtegn/_x005B_Kolonne_x0020_Kantparenteser_x005D_ eq '[C]' ![Skærmbillede af specialtegn til gengivelse af tabelvisualisering.](media/service-url-filters/power-bi-special-characters2.png)
+Table_x0020_Special/_x005B_Column_x0020_Brackets_x005D_ eq '[C]' ![Skærmbillede af specialtegn til gengivelse af tabelvisualisering for kodning til Power BI.](media/service-url-filters/power-bi-special-characters2.png)
 
 ### <a name="special-characters-in-values"></a>Specialtegn i værdier
 
@@ -172,11 +172,11 @@ Eksempel:
 
 - `?filter=Table/Name eq 'Lee''s Summit'` bliver:
 
-    :::image type="content" source="media/service-url-filters/power-bi-url-filter-lees.png" alt-text="Lees møde":::
+    :::image type="content" source="media/service-url-filters/power-bi-url-filter-lees.png" alt-text="Navnet er O'Brien":::
 
 - `in`-operatoren understøtter også denne angivelse af "escape": `?filter=Table/Name in ('Lee''s Summit', 'O''Brien')` bliver:
 
-    :::image type="content" source="media/service-url-filters/power-bi-url-filter-in.png" alt-text="Lees møde eller O'Brien":::
+    :::image type="content" source="media/service-url-filters/power-bi-url-filter-in.png" alt-text="Navnet er O'Brien":::
 
 ## <a name="use-dax-to-filter-on-multiple-values"></a>Brug DAX til at filtrere efter flere værdier
 

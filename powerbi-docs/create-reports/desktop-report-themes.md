@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 07/28/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: fdd08c32277dfaa9a619b024a7fb0ece0517f1cb
-ms.sourcegitcommit: a254f6e2453656f6783690669be8e881934e15ac
+ms.openlocfilehash: ed8d93ef905cca6e934ac2100093475136595c9a
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87364094"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91634728"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Brug af rapporttemaer i Power BI Desktop
 
@@ -53,11 +53,11 @@ Sådan vælger du blandt de tilgængelige indbyggede rapporttemaer:
 
 1. Vælg rullepilen **Temaer** knappen **Skift tema** på båndet **Vis**.
 
-   ![Vælg et rapporttema](media/desktop-report-themes/report-themes-02.png)
+   ![Skærmbillede, der viser det valgte bånd Vis, som indeholder flere temaer.](media/desktop-report-themes/report-themes-02.png)
 
 2. Vælg blandt de inkluderede temaer på rullemenuen, der vises.
 
-   ![Vælg et rapporttema](media/desktop-report-themes/report-themes-03.png)
+   ![Skærmbillede, der viser Power BI-temaer, der er udvidet til, så du kan foretage valg.](media/desktop-report-themes/report-themes-03.png)
 
    Rapporttemaet anvendes nu på rapporten.
 
@@ -600,7 +600,9 @@ Booleske værdier er enten true eller false. Strenge skal være i dobbelte anfø
 
 Farver skal bruge følgende format, hvor den brugerdefinerede hexadecimale kode erstatter "FFFFFF" i det følgende eksempel:
 
-    { "solid": { "color": "#FFFFFF" } }
+```json
+{ "solid": { "color": "#FFFFFF" } }
+```
 
 En optælling, der oftest bruges til indstillinger for formatering af rullemenuer, og som betyder, at den kan indstilles til en hvilken som helst af de indstillinger, der vises i ruden, f.eks. "RightCenter" for placering af forklaring eller "Data value, percent of total" for datamærkat for cirkeldiagram. Optællingsindstillingerne vises under egenskabslisten.
 

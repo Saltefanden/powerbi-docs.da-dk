@@ -6,15 +6,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 05/07/2020
+ms.date: 09/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 432c526479465da5d22e17172582c7f1d2cceb0c
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 8e2b6c8d916cc3c180ab9adb9b6ea6af8eaefea4
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85225280"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91633049"
 ---
 # <a name="upgrade-classic-workspaces-to-the-new-workspaces-in-power-bi"></a>Opgrader klassiske arbejdsområder til de nye arbejdsområder i Power BI
 
@@ -27,7 +27,7 @@ I denne artikel forklares det, hvordan du opgraderer eller *overfører* et klass
 
 Der kan dog være ændringer i dit arbejdsområde, som du skal være opmærksom på og planlægge. Indholdspakker understøttes f.eks. ikke i den nye arbejdsområdeoplevelse. Se afsnittet [Overvejelser og begrænsninger i forbindelse med opgradering](#upgrade-considerations-and-limitations) senere i denne artikel.
 
-## <a name="things-to-do-after-upgrading"></a>Ting, der skal gøres efter opgradering
+## <a name="things-to-plan-before-upgrading"></a>Ting, der skal planlægges før opgradering
 
 Du skal gøre flere ting *efter* opgraderingen. Det er bedst at planlægge dem, *før* du opgraderer:
 - Gennemse adgangslisten, og forstå [tilladelserne efter opgradering](#permissions-after-upgrade).
@@ -48,11 +48,11 @@ Enhver arbejdsområdeadministrator kan opgradere arbejdsområdet. Hvis du vil v�
 
 1. Gennemse oplysningerne i dialogboksen. Du kan se advarsler, hvis du har publiceret eller installeret indholdspakker i arbejdsområdet. Når du er klar, skal du markere **Jeg er klar til at opgradere dette arbejdsområde** og derefter vælge **Opgrader**.
 
-    ![Læs for at opgradere](media/service-upgrade-workspaces/power-bi-ready-upgrade.png)
+    ![Klar til opgradering](media/service-upgrade-workspaces/power-bi-ready-upgrade.png)
 
 2. Under opgraderingen kan du se meddelelsen **Opgraderer**. Det tager normalt mindre end et minut at opgradere dit arbejdsområde.
 
-1. Når opgraderingen er afsluttet, kan du se dialogboksen **Handling lykkedes**. Vi anbefaler, at du læser [Organiser arbejde i nye arbejdsområder i Power BI](service-new-workspaces.md), så du er bekendt med, hvordan nye arbejdsområder adskiller sig fra klassiske arbejdsområder.
+1. Når opgraderingen er afsluttet, kan du se dialogboksen **Handling lykkedes**. Du kan se din nye arbejdsområdebruger med samme navn og indhold. Vi anbefaler, at du læser [Organiser arbejde i nye arbejdsområder i Power BI](service-new-workspaces.md), så du er bekendt med, hvordan nye arbejdsområder adskiller sig fra klassiske arbejdsområder.
 
 ### <a name="impact-on-other-workspace-users"></a>Indvirkning på andre arbejdsområdebrugere
 
@@ -62,6 +62,7 @@ Brugere, der aktivt bruger arbejdsområdet, bliver bedt om at opdatere deres bro
 
 ## <a name="upgrade-considerations-and-limitations"></a>Overvejelser og begrænsninger i forbindelse med opgradering
 
+- Efter opgraderingen vises indholdet af det klassiske arbejdsområde i det nye arbejdsområde. Det er også angivet i **Delt med mig**.
 - URL-adresserne og id'erne for dit arbejdsområde, indholdet i det og den app, der er publiceret fra arbejdsområdet, ændres ikke. Indhold fra indholdspakker, der er installeret i dit arbejdsområde, håndteres separat. Se [Indholdspakker under opgradering](#content-packs-during-upgrade) i denne artikel for at få flere oplysninger.
 - Indholdspakker understøttes ikke i den nye arbejdsområdeoplevelse. Læs afsnittene om [publicerede indholdspakker](#published-content-packs) og [installerede indholdspakker](#installed-content-packs) for at få mere at vide om, hvordan de skal håndteres under opgraderingen. Vi anbefaler, at du sletter indholdspakker, der er installeret eller publiceret i arbejdsområdet, før du opgraderer.
 - Microsoft 365-gruppen til dit klassiske arbejdsområde påvirkes ikke af opgraderingen af arbejdsområdet i Power BI. Alle teams, SharePoint-websteder, postkasser og andre ressourcer, der administreres af Microsoft 365, ændres ikke. De forbliver intakte, når du opgraderer dit Power BI-arbejdsområde. Microsoft 365-gruppen findes som før.
@@ -111,7 +112,7 @@ Den nye arbejdsområdeoplevelse har funktioner, som de klassiske arbejdsområder
 
 1. Vælg **Indstillinger** på menulinjen øverst på listen over arbejdsområder for at få adgang til arbejdsområdeindstillinger.
 
-    ![Indstillinger for arbejdsområde](media/service-upgrade-workspaces/power-bi-new-workspace-settings.png)
+    ![Skærmbillede, der viser, hvordan du vælger indstillinger på menulinjen.](media/service-upgrade-workspaces/power-bi-new-workspace-settings.png)
 
 2. Under **Avanceret**er arbejdsområdet **Kontaktliste** konfigureret til at være den Microsoft 365-gruppe, som arbejdsområdet blev opgraderet fra. Du kan føje flere brugere eller grupper til listen over kontakter eller ændre den til arbejdsområdeadministratorer.
 
@@ -119,11 +120,11 @@ Den nye arbejdsområdeoplevelse har funktioner, som de klassiske arbejdsområder
 
 ### <a name="the-workspace-onedrive"></a>OneDrive for arbejdsområdet 
 
-Efter opgraderingen har **OneDrive** for arbejdsområdet forbindelse til SharePoint-dokumentbiblioteket for Microsoft 365-gruppen. Dette dokumentbibliotek vises som indstillingen **OneDrive** i oplevelsen **Hent data > Filer** visning. Vær opmærksom på, at ikke alle brugere af arbejdsområdet har tilladelse til dette dokumentbibliotek, hvis de ikke er i Microsoft 365-gruppen.
+Efter opgraderingen har **OneDrive** for arbejdsområdet forbindelse til SharePoint-dokumentbiblioteket for Microsoft 365-gruppen. Dette dokumentbibliotek vises som indstillingen **OneDrive** i oplevelsen **Hent data > Filer** visning. Ikke alle brugere af arbejdsområdet har tilladelse til dette dokumentbibliotek, hvis de ikke er i Microsoft 365-gruppen.
 
 ## <a name="content-packs-during-upgrade"></a>Indholdspakker under opgradering
 
-Den nye arbejdsområdeoplevelse understøtter ikke indholdspakker. Brug i stedet apps og delte datasæt til at distribuere indhold i arbejdsområdet. Det anbefales, at du fjerner udgivne eller installerede indholdspakker fra arbejdsområdet, før du opgraderer. Men hvis der er publiceret eller installeret indholdspakker, når du opgraderer, forsøger opgraderingsprocessen at bevare indholdet som beskrevet nedenfor.  Det er ikke muligt at gendanne indholdspakken eller tilknytningen af indhold til indholdspakken, når du har opgraderet.
+Den nye arbejdsområdeoplevelse understøtter ikke indholdspakker. Brug i stedet apps og delte datasæt til at distribuere indhold i arbejdsområdet. Det anbefales, at du fjerner udgivne eller installerede indholdspakker fra arbejdsområdet, før du opgraderer. Men hvis der er publiceret eller installeret indholdspakker, når du opgraderer, forsøger opgraderingsprocessen at bevare indholdet som beskrevet senere i denne artikel.  Det er ikke muligt at gendanne indholdspakken eller tilknytningen af indhold til indholdspakken, når du har opgraderet.
 
 ### <a name="published-content-packs"></a>Publicerede indholdspakker
 
@@ -148,7 +149,7 @@ Hvis du vil gå tilbage, skal du være ejer af den Microsoft 365-gruppe, arbejds
 
 1. Vælg **Flere indstillinger** ( **...** ) > **Indstillinger for arbejdsområde** på listen over arbejdsområder.
 
-    ![Indstillinger for arbejdsområde](media/service-upgrade-workspaces/power-bi-workspace-settings-more-options.png)
+    ![Skærmbillede, der viser valg af Flere indstillinger (...) > Indstillinger for arbejdsområde.](media/service-upgrade-workspaces/power-bi-workspace-settings-more-options.png)
 
 1. Udvid **Avanceret**, og vælg **Skift tilbage til klassisk**. Hvis denne indstilling ikke er tilgængelig for dig, skal du se [Overvejelser i forbindelse med at skifte tilbage til klassisk](#considerations-for-switching-back-to-classic) i denne artikel.
 
@@ -202,10 +203,10 @@ Funktionen til opgradering af arbejdsområdet indeholder ikke værktøjer til ma
    
 ## <a name="known-issues"></a>Kendte problemer
 
-Der er flere kendte problemer, som kan opstå:
-- Efter opgradering får brugerne måske vist advarselsdialogboksen "Modellen kunne ikke indlæses". Denne meddelelse vises fejlagtigt og kan ignoreres. 
-- Efter opgradering er nogle navne på arbejdsområderne måske anderledes end før opgraderingen. Når dette sker, er navnet på arbejdsområdet enten gendannet til et tidligere navn, eller navnet på arbejdsområdet er tomt. Du løser dette problem ved at omdøbe arbejdsområdet til det ønskede navn.
-- Efter opgradering af et arbejdsområde, hvor der var installeret en indholdspakke, få du måske vist yderligere dashboards i arbejdsområdet, som ikke var synlige før opgraderingen. Dette sker nogle gange, hvis en indholdspakke ikke er blevet opdateret for nylig. Du kan roligt fjerne disse dashboards.
+Der er flere kendte problemer, som kan opstå efter opgraderingen:
+- Du får muligvis vist advarselsdialogboksen "Modellen kunne ikke indlæses". Denne meddelelse vises fejlagtigt og kan ignoreres. 
+- Nogle navne på arbejdsområder er måske anderledes end før opgraderingen. I det tilfælde er navnet på arbejdsområdet enten gendannet til et tidligere navn, eller navnet på arbejdsområdet er tomt. Du løser dette problem ved at omdøbe arbejdsområdet til det ønskede navn.
+- I et arbejdsområde, hvor der var installeret en indholdspakke, få du måske vist yderligere dashboards, som ikke var synlige før opgraderingen. I det tilfælde er en indholdspakke muligvis ikke opdateret for nylig. Du kan roligt fjerne disse dashboards.
 
 ## <a name="next-steps"></a>Næste trin
 

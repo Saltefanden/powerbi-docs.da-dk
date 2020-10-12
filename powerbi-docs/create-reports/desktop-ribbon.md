@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/21/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6df5c0310fca47dfd590671766c47349ebb47f7f
-ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
+ms.openlocfilehash: 3cc9277b567a58b60dc86c41b7ae56ad5c678d6b
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83793964"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91600585"
 ---
 # <a name="use-the-updated-ribbon-in-power-bi-desktop"></a>Brug det opdaterede bånd i Power BI Desktop
 
@@ -30,7 +30,7 @@ Det opdaterede bånd er almindeligt tilgængeligt fra maj 2020-udgaven af Power 
 
 Opdateringen af vores bånd har til hensigt at gøre oplevelsen på tværs af Power BI Desktop samt i andre Microsoft-produkter nem og velkendt. 
 
-![Nyt bånd i Power BI Desktop](media/desktop-ribbon/desktop-ribbon-03.png)
+![Skærmbillede, der viser et nærbillede af Power BI Desktop-båndet.](media/desktop-ribbon/desktop-ribbon-03.png)
 
 Fordelene kan grupperes i følgende kategorier:
 

@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/16/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: fb5807dd0a5bfa5d3223a8c436da475c51d8d8a0
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: ec0c4cf9e719615489cbba5929f329e6f4f58826
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860618"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91634521"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Streaming i realtid i Power BI
 Power BI med streaming i realtid gør dig i stand til at streame data og opdatere dashboards i realtid. Alle visuelle elementer eller dashboards, der er oprettet i Power BI, kan også vise og opdatere data og visuelle elementer i realtid. Enhederne og kilderne til streamingdata kan være sensorer på fabrikker, sociale medier, forbrugsdata for tjenester eller mange andre tidsfølsomme dataindsamlere eller dataafsendere.
@@ -52,7 +52,7 @@ Den eneste måde at visualisere et streamingdatasæt er at tilføje et felt og b
 I praksis bruges streamingdatasæt og deres tilhørende streamingvisualiseringer bedst i situationer, hvor det er vigtigt at minimere ventetiden mellem det tidspunkt, hvor data pushoverføres, og hvor de visualiseres. Det er desuden bedste praksis, at dataene pushoverføres i et format, der kan visualiseres, som det er, uden nogen yderligere akkumuleringer. Eksempler på data, der er klar, som de er, omfatter temperaturer og forudberegnede gennemsnit.
 
 ### <a name="pubnub-streaming-dataset"></a>PubNub-streamingdatasæt
-Med et **PubNub**-streamingdatasæt bruger Power BI-webklienten PubNub SDK til at læse en eksisterende PubNub-datastream. Power BI-tjenesten lagrer ingen data. Da dette kald foretages direkte fra webklienten, skal du føje trafik til PubNub til listen som tilladt, hvis du kun tillader udgående trafik, der er føjet til hvidlisten, fra dit netværk. Se vejledningen i supportartiklen om [angivelse af udgående trafik for PubNub på en hvidliste](https://support.pubnub.com/support/solutions/articles/14000043522-can-i-whitelist-ips-for-pubnub-traffic-).
+Med et **PubNub**-streamingdatasæt bruger Power BI-webklienten PubNub SDK til at læse en eksisterende PubNub-datastream. Power BI-tjenesten lagrer ingen data. Da dette kald foretages direkte fra webklienten, skal du føje trafik til PubNub til listen som tilladt, hvis du kun tillader udgående trafik, der er godkendt, fra dit netværk. Se vejledningen i supportartiklen om [godkendelse af udgående trafik for PubNub](https://support.pubnub.com/support/solutions/articles/14000043522-can-i-whitelist-ips-for-pubnub-traffic-).
 
 Som det også gælder for **streamingdatasæt** er der ingen underliggende database i Power BI for **PubNub-streamingdatasættet**, så du kan ikke oprette rapport-visuals i forhold til de data, der kommer ind, og kan ikke drage fordel af rapportfunktioner som filtrering, Power BI-visuals osv. **PubNub-streamingdatasættet** kan også kun visualiseres ved at føje et felt til dashboardet og konfigurere en PubNub-datastream som kilden.
 
@@ -183,12 +183,9 @@ I dette eksempel bruger vi en offentligt tilgængelig stream fra **PubNub**. Her
 2. Hvis du endnu ikke har nogen streamingdatakilder, kan du vælge linket **Administrer data** (lige over knappen **Næste**) og derefter vælge **+ Tilføj streaming data** fra linket øverst til højre i vinduet. Vælg **PubNub**, og vælg derefter **Næste**.
 3. Opret et navn til dit datasæt, indsæt følgende værdier i vinduet, der vises, og vælg derefter **Næste**:
    
-   *Abonnementsnøgle:*
-   
-       sub-c-5f1b7c8e-fbee-11e3-aa40-02ee2ddab7fe
-   *Kanal:*
-   
-       pubnub-sensor-network
+   **Subscribe key:** *sub-c-5f1b7c8e-fbee-11e3-aa40-02ee2ddab7fe*
+
+   **Channel:** *pubnub-sensor-network*
    
    ![Skærmbillede af dialogboksen Nyt streamingdatasæt, der viser, hvordan du opretter et Datasætnavn og datasætposter i felterne Undernøgle og Kanalnavn.](media/service-real-time-streaming/real-time-streaming_8.png)
 4. I følgende vindue skal du blot vælge standardværdierne (som udfyldes automatisk) og derefter vælge **Opret**.

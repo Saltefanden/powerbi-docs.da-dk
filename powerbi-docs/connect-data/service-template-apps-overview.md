@@ -8,12 +8,12 @@ ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 05/04/2020
 ms.author: painbar
-ms.openlocfilehash: bf51270a39f2f07518aaa6d83902519e08f7ab45
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: c647f376502e2575b9eef46e9e2a72d5d76e8053
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860572"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91635165"
 ---
 # <a name="what-are-power-bi-template-apps"></a>Hvad er Power BI-skabelonprogrammer?
 
@@ -29,16 +29,26 @@ Du sender skabelonprogrammer til Partnercenter. Programmerne bliver derefter off
 
 Med Power BI-skabelonprogrammer kan brugere af Power BI Pro eller Power BI Premium få øjeblikkelig indsigt via dashboards og rapporter, der er pakket på forhånd, og som kan forbindes til livedatakilder. Mange Power BI-programmer er allerede tilgængelige på [markedspladsen til Power BI-programmer](https://app.powerbi.com/getdata/services).
 
-|  |
-|     :---:      |
-| [![Microsoft Project-webapp](./media/service-template-apps-overview/project-web.png)](https://app.powerbi.com/groups/me/getapps/services/pbi_msprojectonline.pbi-microsoftprojectwebapp) [![Microsoft 365 Usage Analytics-webapp](./media/service-template-apps-overview/microsoft365-usage-analytics.png)](https://app.powerbi.com/groups/me/getapps/services/cia_microsoft365.microsoft-365-usage-analytics) [![Dynamic 365 Business Central – Sales-webapp](./media/service-template-apps-overview/dynamics-sales.png)](https://app.powerbi.com/groups/me/getapps/services/microsoftdynsmb.businesscentral_sales) [![Microsoft Forms Pro Customer Satisfaction-webapp](./media/service-template-apps-overview/forms-pro.png)](https://app.powerbi.com/groups/me/getapps/services/msfp.formsprocustomersatisfaction) |
-|  |
+:::row:::
+    :::column:::
+        [![Webappen Microsoft Project](./media/service-template-apps-overview/project-web.png)](https://app.powerbi.com/groups/me/getapps/services/pbi_msprojectonline.pbi-microsoftprojectwebapp)
+    :::column-end:::
+    :::column:::
+        [![Webappen Microsoft 365 Usage Analytics](./media/service-template-apps-overview/microsoft365-usage-analytics.png)](https://app.powerbi.com/groups/me/getapps/services/cia_microsoft365.microsoft-365-usage-analytics)
+    :::column-end:::
+    :::column:::
+        [![Webappen Dynamisk 365 Business Central – Sales](./media/service-template-apps-overview/dynamics-sales.png)](https://app.powerbi.com/groups/me/getapps/services/microsoftdynsmb.businesscentral_sales)
+    :::column-end:::
+    :::column:::
+        [![Webappen Microsoft Forms Pro Customer Satisfaction](./media/service-template-apps-overview/forms-pro.png)](https://app.powerbi.com/groups/me/getapps/services/msfp.formsprocustomersatisfaction)
+    :::column-end:::
+:::row-end:::
 
 ## <a name="process"></a>Proces
 Der er flere faser i den generelle proces for udvikling og indsendelse af et skabelonprogram. Nogle faser kan indeholde mere end én aktivitet samtidigt.
 
 
-| Fase | Power BI Desktop |  |Power BI-tjeneste  |  |Partnercenter  |
+| Fase | Power BI Desktop |  |Power BI-tjenesten  |  |Partner Center  |
 |---|--------|--|---------|---------|---------|
 | **Et** | Udarbejd en datamodel og en rapport i en .pbix-fil |  | Opret et arbejdsområde. Importér en PBIX-fil. Opret et supplerende dashboard  |  | Registrer dig som partner |
 | **To** |  |  | Opret en testpakke, og kør intern validering        |  | |
@@ -93,7 +103,7 @@ Du kan finde flere forslag under [Tip til udarbejdelse af skabelonprogrammer i P
 
 ## <a name="known-limitations"></a>Kendte begrænsninger
 
-| Funktion | Kendt begrænsning |
+| Udvalgt | Kendt begrænsning |
 |---------|---------|
 |Indhold:  Datasæt   | Nøjagtigt ét datasæt skal være til stede. Der tillades kun datasæt, som er udarbejdet i Power BI Desktop (.pbix-filer). <br>Understøttes ikke: Datasæt fra andre skabelonprogrammer, datasæt på tværs af arbejdsområder, sideinddelte rapporter (.rdl-filer), Excel-projektmapper |
 |Indhold: Dashboards | Felter i realtid tillades ikke (med andre ord, understøttes push- eller streamingdatasæt ikke) |

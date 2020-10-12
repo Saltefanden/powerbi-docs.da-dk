@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 11/11/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b87e176338552f0a90c4789d35f531fd7b12d44a
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: dd8e453a0cec6c404cad077a85f68044fa57ba1f
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85224753"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91600238"
 ---
 # <a name="connect-to-linkedin-sales-navigator-in-power-bi-desktop"></a>Opret forbindelse til LinkedIn Sales Navigator i Power BI Desktop
 
@@ -86,7 +86,7 @@ Skabelonappen indeholder fire faner, der kan hjælpe dig med at analysere og del
 
 Under fanen **Brug** kan du se de samlede LinkedIn Sales Navigator-data.
 
-![Fanen Brug i LinkedIn Sales Navigator](media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-12.png)
+![Under fanen Brug i LinkedIn Sales Navigator kan du se de samlede LinkedIn Sales Navigator-data.](media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-12.png)
 
 Under fanen **Søg** kan du få flere detaljer om dine søgeresultater:
 

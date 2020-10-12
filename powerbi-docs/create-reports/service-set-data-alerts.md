@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 04/02/2020
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: dab2e4b7bdc3da8278db6765e7233d98d7dba473
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 55d196a9b041f52632300f6e10c00d753ca02a14
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85218717"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91635073"
 ---
 # <a name="data-alerts-in-the-power-bi-service"></a>Databeskeder i Power BI-tjenesten
 
@@ -46,7 +46,7 @@ I dette eksempel bruges et kortfelt fra eksempeldashboardet Retail Analysis. Hvi
 
 1. Når du starter, skal du vælge **+ Tilføj påmindelsesregel**, sikre, at skyderen **Aktiv** er angivet til **Til** og give din besked en titel. Titler hjælper dig med let at genkende dine beskeder.
 
-   ![Vinduet Administrer beskeder](media/service-set-data-alerts/powerbi-alert-title.png)
+   ![Skærmbillede, der viser vinduet Administrer beskeder Tilføj en beskedregel, Besked for butikker i alt og Beskedtitel fremhævet.](media/service-set-data-alerts/powerbi-alert-title.png)
 
 1. Rul ned, og angiv oplysninger om beskederne.  I dette eksempel opretter vi en besked, som skal sendes til os én gang om dagen, hvis antallet af samlede butikker går over 100.
 
@@ -93,7 +93,7 @@ Der er mange måder at administrere dine beskeder på:
 
     Power BI viser alle de beskeder, du har angivet for dette felt.
 
-    ![Vinduet Administrer beskeder](media/service-set-data-alerts/powerbi-see-alerts.png)
+    ![Skærmbillede, der viser vinduet Administrer beskeder.](media/service-set-data-alerts/powerbi-see-alerts.png)
 
 1. Hvis du vil redigere en besked, skal du vælge pilen til venstre for beskednavnet.
 

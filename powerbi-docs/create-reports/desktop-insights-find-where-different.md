@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 975a7304e61042e408d732aa1c85bfed184f75f5
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 3db27630da230ee1805386b039916181e993d412
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239152"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91632520"
 ---
 # <a name="apply-insights-in-power-bi-desktop-to-discover-where-distributions-vary-preview"></a>Anvend indsigt i Power BI Desktop for at finde ud af, hvor distributioner varierer (eksempelvisning)
 
@@ -110,18 +110,20 @@ Efter at have undersøgt forskellige kolonner og værdierne i hver af disse kolo
 
 Det er ikke sikkert, at alle kolonner i modellen bliver undersøgt på den tilgængelige tid, så det kan ikke garanteres, at du får vist de kolonner og værdier, som har den største indflydelse. Der anvendes dog forskellige typer heuristik for at sikre, at de mest sandsynlige kolonner undersøges først. Det kan f.eks. ske, at efter, at alle kolonner er blevet undersøgt, bliver det fastslået, at følgende kolonner/værdier har den største indflydelse på distributionen angivet fra største til mindste indflydelse:
 
-    Subcategory = Touring Bikes
-    Channel = Direct
-    Subcategory = Mountain Bikes
-    Subcategory = Road Bikes
-    Subcategory = Kids Bikes
-    Channel = Store
+```console
+Subcategory = Touring Bikes
+Channel = Direct
+Subcategory = Mountain Bikes
+Subcategory = Road Bikes
+Subcategory = Kids Bikes
+Channel = Store
+```
 
 Disse bliver vist i kolonnerækkefølge på følgende måde:
 
-    Subcategory: Touring Bikes, Mountain Bikes, Road Bikes (only three listed, with the text including “...amongst others” to indicate that more than three have a significant impact) 
+* Underkategori: Touring Bikes, Mountain Bikes, Road Bikes (kun tre angivet med teksten “...amongst others” for at angive, at mere end tre har stor indvirkning) 
 
-    Channel = Direct (only Direct listed, if it’s level of impact was much greater than Store)
+* Channel = Direct (Direct vises kun, hvis indvirkningen er meget større end Store)
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 Følgende liste er en samling af scenarier, der ikke understøttes i øjeblikket for **indsigt**:
@@ -139,7 +141,7 @@ Desuden understøttes følgende modeltyper og datakilder ikke i øjeblikket for 
 * Reporting Services i det lokale miljø
 * Integration
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 Du kan finde flere oplysninger om **Power BI Desktop**, og hvordan du kommer i gang, i følgende artikler.
 
 * [Hvad er Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)

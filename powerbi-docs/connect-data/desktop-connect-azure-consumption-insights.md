@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a8d2284a24bb04b175a00a69339ba9e6ac260c10
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 7d036af591ae9c5fc44370085480c9266e328745
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90858619"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91632589"
 ---
 # <a name="connect-to-azure-consumption-insights-data-in-power-bi-desktop"></a>Opret forbindelse til Azure Consumption Insights-data i Power BI Desktop
 
@@ -110,9 +110,7 @@ Eller i **Forespørgselseditor**:
 1. Højreklik i ruden **Forespørgsler** til venstre 
 2. Vælg **Ny forespørgsel > Tom forespørgsel** i den viste menu
 
-Skriv følgende i **formellinjen**:
-
-    = MicrosoftAzureConsumptionInsights.Contents
+Skriv følgende i **formellinjen**: *= MicrosoftAzureConsumptionInsights.Contents*.
 
 Følgende billede viser en eksemelsamling, der kommer frem.
 
@@ -141,12 +139,14 @@ Det første trin er at bruge den **Azure Consumption Insights**-connector, som b
 ### <a name="step-2-create-a-query-in-advanced-editor"></a>Trin 2: Opret en forespørgsel i Avanceret editor
 I **Forespørgselseditor** skal du vælge **Avanceret editor** i sektionen **Forespørgsel** på båndet **Start**. Angiv følgende forespørgsel i vinduet **Avanceret editor**, der vises:
 
-    let    
-        enrollmentNumber = "100",
-        optionalParameters = [ numberOfMonth = 6, dataType="DetailCharges" ],
-        data = MicrosoftAzureConsumptionInsights.Contents(enrollmentNumber, optionalParameters)   
-    in     
-        data
+```console
+let    
+    enrollmentNumber = "100",
+    optionalParameters = [ numberOfMonth = 6, dataType="DetailCharges" ],
+    data = MicrosoftAzureConsumptionInsights.Contents(enrollmentNumber, optionalParameters)   
+in     
+    data
+```
 
 ![Skærmbillede af en dialogboks til at oprette en forespørgsel i den avancerede editor.](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_10.png)
 

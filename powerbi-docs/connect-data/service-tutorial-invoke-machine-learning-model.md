@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 03/12/2019
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 35c20a11c4b446bd3a2636deaeb4c5ee9c2d797b
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: a5cfbfe52ec8b4e0d9eec07844a3eaa7f9447ded
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90861009"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91600400"
 ---
 # <a name="tutorial-invoke-a-machine-learning-studio-classic-model-in-power-bi-preview"></a>Selvstudium: Aktivér en model af typen Machine Learning Studio (klassisk) i Power BI (prøveversion)
 
@@ -45,7 +45,7 @@ Følgende trin forudsætter, at du er medadministrator af Azure-abonnementet og 
 
 Log på [Azure Portal](https://portal.azure.com), og naviger til siden **Abonnementer**, som du finder ved hjælp af listen **Alle tjenester** i menuen i navigationsruden.
 
-![Azure-portal](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_01.png)
+![Skærmbillede, der viser Azure Portal, hvor Abonnementer er valgt.](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_01.png)
 
 Vælg det Azure-abonnement, som du brugte til publicering af modellen, og vælg **Access Control (IAM)** . Vælg derefter **Tilføj rolletildeling**, rollen **Læser**, og vælg Power BI-brugeren. Vælg **Gem**, når du er færdig. På følgende billede vises disse valg.
 
@@ -95,7 +95,7 @@ Du bliver bedt om at oprette forbindelse til en datakilde på det næste skærmb
 
 I Power-Forespørgselseditor vises et eksempel på dataene fra CSV-filen. Vælg **Transformér tabel** på kommandobåndet, og vælg derefter **Brug den første række som overskrifter**.  Herefter føjes forespørgselstrinnet _Hævede overskrifter_ til ruden **Anvendte trin** til højre. Du kan også omdøbe forespørgslen til et mere brugervenligt navn, f.eks _Bilpriser_, ved hjælp af ruden til højre.
 
-![Azure-portal](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_09.png)
+![Skærmbillede af Power Query-editor, der viser et eksempel på dataene.](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_09.png)
 
 Vores kildedatasæt har ukendte værdier, der er angivet til "?".  Hvis du vil rydde disse værdier, kan du for nemheds skyld erstatte "?" med "0" for at undgå fejl på et senere tidspunkt.  Det gør du ved at vælge kolonnerne *normalized-losses*, *bore*, *stroke*, *compression-ratio*, *horsepower*, *peak-rpm* og *price* ved at klikke på kolonnernes navn i kolonneoverskrifterne, og derefter klikke på "Transformér kolonner" og vælge "Erstat værdier".  Erstat "?" med "0".
 

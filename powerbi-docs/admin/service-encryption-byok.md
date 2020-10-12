@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 08/13/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 737a8df2f8f7e5d4da50259112ad1afd6ec2ecff
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 404e613f3e30bda3115ec0a9a3b71907b115bbcc
+ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90856823"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "91374884"
 ---
 # <a name="bring-your-own-encryption-keys-for-power-bi"></a>Medbring dine egne krypteringsnøgler til Power BI
 
@@ -67,7 +67,7 @@ I vejledningen i dette afsnit antages det, at du har grundlæggende viden om Azu
 
 1. Under **Key permissions** (Nøgletilladelser) skal du vælge **Unwrap Key** (Fjern ombrydning af nøgle) og **Wrap Key** (Ombryd nøgle).
 
-    ![Komponenter i PBIX-fil](media/service-encryption-byok/service-principal.png)
+    ![PBIX-fil – Vælg tjenesteprincipal og kryptografiske handlinger](media/service-encryption-byok/service-principal.png)
 
 1. Vælg **OK** og derefter **Gem**.
 
@@ -80,7 +80,7 @@ I vejledningen i dette afsnit antages det, at du har grundlæggende viden om Azu
 
 1. Vælg en **nøgletype** for RSA og en **RSA-nøglestørrelse** på 4096.
 
-    ![Komponenter i PBIX-fil](media/service-encryption-byok/create-rsa-key.png)
+    ![Opret en nøgle med nøgletypen og størrelsen fremhævet](media/service-encryption-byok/create-rsa-key.png)
 
 1. Vælg **Opret**.
 
@@ -90,7 +90,7 @@ I vejledningen i dette afsnit antages det, at du har grundlæggende viden om Azu
 
 1. Kontrollér, at **Wrap Key** (Ombryd nøgle) og **Unwrap Key** (Fjern ombrydning af nøgle) begge er markeret. Kopiér den **nøgleidentifikator**, der skal bruges, når du aktiverer BYOK i Power BI.
 
-    ![Komponenter i PBIX-fil](media/service-encryption-byok/key-properties.png)
+    ![Egenskaber med nøgle-id og de tilladte handlinger fremhævet](media/service-encryption-byok/key-properties.png)
 
 ### <a name="soft-delete-option"></a>Indstilling til blød sletning
 
@@ -114,7 +114,7 @@ Før du aktiverer BYOK, skal du overveje følgende:
 
 ### <a name="enable-byok"></a>Aktivér BYOK
 
-Hvis du vil aktivere BYOK, skal du være lejeradministrator af Power BI-tjenesten og være logget på med cmdlet'en `Connect-PowerBIServiceAccount`. Brug derefter [`Add-PowerBIEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/Add-PowerBIEncryptionKey) til at aktivere BYOK som vist i følgende eksempel:
+Hvis du vil aktivere BYOK, skal du være en Power BI administrator, der er logget på ved hjælp af cmdlet'en `Connect-PowerBIServiceAccount`. Brug derefter [`Add-PowerBIEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/Add-PowerBIEncryptionKey) til at aktivere BYOK som vist i følgende eksempel:
 
 ```powershell
 Add-PowerBIEncryptionKey -Name'Contoso Sales' -KeyVaultKeyUri'https://contoso-vault2.vault.azure.net/keys/ContosoKeyVault/b2ab4ba1c7b341eea5ecaaa2wb54c4d2'

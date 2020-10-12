@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/15/2019
 ms.author: arthii
 LocalizationGroup: Gateways
-ms.openlocfilehash: e2c65adfaee96eee61e1494f730b752d12020ab4
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 96c7a12e556fde805178bceabfe86f9eff8b9d5c
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236153"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91632566"
 ---
 # <a name="use-personal-gateways-in-power-bi"></a>Brug personlige gateways i Power BI
 
@@ -31,13 +31,13 @@ I følgende tabel beskrives forskelle mellem en datagateway i det lokale miljø 
 
 |   |Datagateway i det lokale miljø | Datagateway i det lokale miljø (personlig tilstand) |
 | ---- | ---- | ---- |
-|Understøttede cloudtjenester |Power BI, PowerApps, Azure Logic Apps, Power Automate, Azure Analysis Services, dataflow |Power BI |
-|Kørsler |Som konfigureret af brugere, der har adgang til gatewayen |Som dig til Windows-godkendelse og som konfigureret af dig til andre godkendelsestyper |
-|Kan kun installeres som computeradministrator |Ja |Nej |
-|Centraliseret administration af gateway og datakilde |Ja |Nej |
-|Importér data, og planlæg opdatering |Ja |Ja |
-|DirectQuery-support |Ja |Nej |
-|Understøttelse af LiveConnect til Analysis Services |Ja |Nej |
+|**Understøttede cloudtjenester** |Power BI, PowerApps, Azure Logic Apps, Power Automate, Azure Analysis Services, dataflow |Power BI |
+|**Kørsler** |Som konfigureret af brugere, der har adgang til gatewayen |Som dig til Windows-godkendelse og som konfigureret af dig til andre godkendelsestyper |
+|**Kan kun installeres som computeradministrator** |Ja |Nej |
+|**Centraliseret administration af gateway og datakilde** |Ja |Nej |
+|**Importér data, og planlæg opdatering** |Ja |Ja |
+|**DirectQuery-support** |Ja |Nej |
+|**Understøttelse af LiveConnect til Analysis Services** |Ja |Nej |
 
 ## <a name="install-the-on-premises-data-gateway-personal-mode"></a>Installér datagatewayen i det lokale miljø (personlig tilstand)
 

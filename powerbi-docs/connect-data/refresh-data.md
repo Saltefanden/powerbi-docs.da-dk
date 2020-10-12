@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 06/16/2020
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: ddb5e4d1476025965e6227e9ae443441f2060fcd
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: c5be2a9fa87b55d0a1b98e284ec4b6b7e1dd9c0c
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85219729"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91633371"
 ---
 # <a name="data-refresh-in-power-bi"></a>Opdatering af data i Power BI
 
@@ -284,7 +284,8 @@ I de fleste tilfælde kan Power BI-datasæt, der bruger dynamiske datakilder, ik
  
 Hvis du vil afgøre, om din dynamiske datakilde kan opdateres, skal du åbne dialogboksen **Indstillinger for datakilde** i **Power Query-editor** og derefter vælge **datakilder i den aktuelle fil**. I det vindue, der vises, skal du holde øje med den følgende advarselsmeddelelse, som vist på følgende billede:
  
-    Some data sources may not be listed because of hand-authored queries.
+> [!NOTE]
+> Visse datakilder er muligvis ikke angivet på grund af håndskrevne forespørgsler.
 
 ![Indikator for dynamisk datakilde](media/refresh-data/dynamic-data-source.png)
 

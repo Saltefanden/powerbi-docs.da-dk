@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.date: 05/06/2020
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 02ffd0881344c8f2bef45301c25e363981d64646
-ms.sourcegitcommit: cff93e604e2c5f24e0f03d6dbdcd10c2332aa487
+ms.openlocfilehash: e8c6ed4476a1bd5236d838610da624f5dde4fb4c
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90965363"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91600477"
 ---
 # <a name="tutorial-analyze-facebook-data-by-using-power-bi-desktop"></a>Selvstudium: Analysér Facebook-data ved hjælp af Power BI Desktop
 
@@ -128,7 +128,7 @@ Når du er tilfreds med dataene, skal du vælge **Luk og anvend** > **Luk og anv
    
    Når dataene er indlæst, vises de i **Rapportvisningen** som en ny forespørgsel i ruden **Felter**.
    
-   ![Ny forespørgsel](media/desktop-tutorial-facebook-analytics/fb-newquery.png)
+   ![Skærmbillede, der viser de tilgængelige felter for forespørgslen Forespørgsel1.](media/desktop-tutorial-facebook-analytics/fb-newquery.png)
    
 ## <a name="use-the-data-in-report-visualizations"></a>Brug dataene i rapportvisualiseringer 
 
@@ -138,7 +138,7 @@ Nu, hvor du har importeret dataene fra Facebook-siden, kan du hurtigt og nemt f�
 
 1. I **Rapportvisning** i Power BI Desktop skal du vælge **meddelelse** i ruden **Felter** eller trække den til canvasset. En tabel med alle opslagsmeddelelser vises på canvasset. 
    
-   ![Ny forespørgsel](media/desktop-tutorial-facebook-analytics/table-viz.png)
+   ![Skærmbillede, der viser visningen Rapport med en meddelelsesliste.](media/desktop-tutorial-facebook-analytics/table-viz.png)
    
 2. Når du har markeret tabellen, skal du også markere **Antal kommentarer** i ruden **Felter** eller trække den ind i tabellen. 
    

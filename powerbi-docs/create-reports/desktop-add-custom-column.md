@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 10/18/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: b898b205ef9d85f8c0a4951f147339f8d315db1e
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 2074094f910efa36d449d8f54ada097d253bb2dd
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90855397"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91598908"
 ---
 # <a name="add-a-custom-column-in-power-bi-desktop"></a>Tilføj en brugerdefineret kolonne i Power BI Desktop
 
@@ -22,7 +22,7 @@ I Power BI Desktop kan du nemt føje en ny brugerdefineret kolonne med data til 
 
 Når du opretter en brugerdefineret kolonne i Forespørgselseditor, tilføjer Power BI Desktop den som et **Anvendt trin** i **Forespørgselsindstillinger** i forespørgslen. Den kan ændres, flyttes eller redigeres når som helst.
 
-![Siden Tilføj brugerdefineret kolonne](media/desktop-add-custom-column/add-custom-column_01.png)
+![Skærmbillede, der viser dialogboksen Tilføj brugerdefineret kolonne.](media/desktop-add-custom-column/add-custom-column_01.png)
 
 ## <a name="use-query-editor-to-add-a-custom-column"></a>Brug Forespørgselseditor til at tilføje en brugerdefineret kolonne
 
@@ -51,7 +51,7 @@ Vinduet **Tilføj brugerdefineret kolonne** indeholder følgende funktioner:
 
 - [M-formelforespørgsler i PowerQuery](/powerquery-m/power-query-m-function-reference) i feltet **Formel for brugerdefineret kolonne**. Du kan oprette disse forespørgsler ved at udarbejde den formel, som den nye brugerdefinerede kolonne er defineret på. 
 
-   ![Siden Tilføj brugerdefineret kolonne](media/desktop-add-custom-column/add-custom-column_03.png)
+   ![Skærmbillede, der viser dialogboksen Tilføj brugerdefineret kolonne, som indeholder tilgængelige kolonner, du kan vælge imellem.](media/desktop-add-custom-column/add-custom-column_03.png)
 
 ## <a name="create-formulas-for-your-custom-column"></a>Opret formler til din brugerdefinerede kolonne
 

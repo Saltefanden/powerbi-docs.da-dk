@@ -5,16 +5,16 @@ author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-admin
+ms.subservice: powerbi-premium
 ms.topic: how-to
 ms.date: 05/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: dddc90ee30ff58269c723d247a6c0a9fe3718683
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: ddaafaf175e2cb083e8e8eb494c156f0e9de8e0f
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90855075"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91633138"
 ---
 # <a name="power-bi-premium-metrics-app"></a>Appen Power BI Premium Metrics
 
@@ -61,7 +61,7 @@ Hvis du vil vide mere om detaljerne i KPI'en for den aktive hukommelse, skal du 
 
 Der er to scenarier, som er forklaret, og som du kan få vist på rapportsiden ved at vælge **Scenarie 1** eller **Scenarie 2** på siden. 
 
-![Detaljeside om den aktive hukommelse](media/service-premium-metrics-app/premium-metrics-app-03.png)
+![Skærmbillede, der viser siden med detaljer om aktiv hukommelse.](media/service-premium-metrics-app/premium-metrics-app-03.png)
 
 De fejlfindingsvejledninger, der er knyttet til hvert scenarie, indeholder detaljerede forklaringer af, hvad målepunkterne betyder, så du bedre kan forstå kapacitetens tilstand, og hvad du kan gøre for at afhjælpe eventuelle problemer. 
 
@@ -116,7 +116,7 @@ Du kan benytte følgende fremgangsmåde til at afhjælpe de problemer, der er kn
 
 Du kan finde ud af, om der er tilstrækkelig hukommelse til kapaciteten til at fuldføre dens arbejdsbelastninger, i visualiseringen **A: Procentdel af forbrugt hukommelse** øverst på siden, som viser den hukommelse, der bruges af datasæt, der behandles aktivt, og som derfor ikke kan fjernes. Den sorte stiplede linje fremhæver tendenserne. I en kapacitet hvor hukommelsen belastes, viser den samme visualisering tydeligt, at tendenslinjen for hukommelse (den sorte stiplede linje) er i opadgående retning, hvilket betyder, at den muligvis forhindrer, at ekstra datasæt indlæses i hukommelsen på det pågældende tidspunkt. Tendenslinjen, den sorte stiplede linje, viser væksttendensen baseret på de syv dage med data. 
 
-![Detaljeside om den aktive hukommelse](media/service-premium-metrics-app/premium-metrics-app-07.png)
+![Skærmbillede, der viser siden med detaljer om aktiv hukommelse for scenarie to.](media/service-premium-metrics-app/premium-metrics-app-07.png)
 
 #### <a name="diagnosing-scenario-two"></a>Diagnosticering af det andet scenarie
 
@@ -267,7 +267,7 @@ Hvis der ikke er tilstrækkelig hukommelse til at indlæse et datasæt til en in
 
 Du diagnosticerer det første scenarie ved først at finde ud af, om begrænsningen skyldes utilstrækkelig hukommelse. Du kan benytte følgende fremgangsmåde.
 
-1.    Vælg det datasæt, du er interesseret i, i **tabel A** ved at klikke på det: 
+1. Vælg det datasæt, du er interesseret i, i **tabel A** ved at klikke på det: 
 
     ![Tabel A](media/service-premium-metrics-app/premium-metrics-app-22.png)
 
@@ -310,7 +310,7 @@ I forbindelse med dedikerede kapaciteter begrænser Power BI antallet af opdater
 
 Når du skal diagnosticere det andet scenarie, skal du først afgøre, om begrænsningen skyldes, at du løber ind i den maksimale samtidighed for opdateringer. Du kan benytte følgende fremgangsmåde.
 
-1.    Vælg det datasæt, du er interesseret i, i **tabel A** ved at klikke på det: 
+1. Vælg det datasæt, du er interesseret i, i **tabel A** ved at klikke på det: 
 
     ![Tabel A](media/service-premium-metrics-app/premium-metrics-app-22.png)
 

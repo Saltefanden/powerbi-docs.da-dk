@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 01/13/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f56acb7859b04f77ca403725740cb7ce472ccb7d
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: c056a48c78ae2e46ccd6419ad1b9d1e1a6693847
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85223069"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91598794"
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Opret forbindelse til datasæt i Power BI-tjenesten fra Power BI Desktop
 
@@ -32,7 +32,7 @@ En udfordring med Power BIs popularitet er det stadig større antal rapporter, d
 
 Lad os sige, at Anna er forretningsanalytiker i dit team. Anna er dygtig til at oprette gode datamodeller, der ofte kaldes datasæt. Anna kan oprette et datasæt og en rapport og derefter dele rapporten i Power BI-tjenesten.
 
-![Publicer til Power BI-tjenesten](media/desktop-report-lifecycle-datasets/report-lifecycle_02a.png)
+![Skærmbillede, der viser knappen Publicer for Power BI-tjenesten.](media/desktop-report-lifecycle-datasets/report-lifecycle_02a.png)
 
 Alle er vilde med Annas rapport og datasæt. Det er her, der kan opstå problemer. Alle på Annas team forsøger at oprette *deres egen version* af datasættet og derefter dele deres egne rapporter med teamet. Lige pludselig er der mange forskellige rapporter (fra forskellige datasæt) i dit teams arbejdsområde i Power BI-tjenesten. Hvilket var det seneste? Var datasættene de samme, eller kun næsten? Hvor var forskellene? Med funktionen Direkte forbindelse til Power BI-tjenesten kan alt dette ændres til det bedre. I næste afsnit kigger vi på, hvordan andre kan bruge Annas publicerede datasæt til deres egne rapporter og i deres egne arbejdsområder samt give alle mulighed for at bruge det samme solide, afprøvede og publicerede datasæt til at udarbejde deres unikke rapporter.
 

@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 10/20/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: bf7fad8195f28303ae0ab73fb957db87861755e6
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: bf81ec873b822fbb1604378aa508b3ffeb408511
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237388"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91635832"
 ---
 # <a name="add-a-filter-to-a-report-in-power-bi"></a>Føj et filter til en rapport i Power BI
 
@@ -77,7 +77,7 @@ Denne procedure anvender i øvrigt Retail Analysis-eksemplet, hvis du gerne vil 
    
     Visualiseringen ændres for at afspejle det nye filter. Hvis du gemmer din rapport med filteret, kan rapportlæsere se den visual, der filtreres fra starten, og interagere med filteret i læsevisning og markere eller fjerne markering af værdier.
      
-    ![Den filtrerede visualisering](media/power-bi-report-add-filter/power-bi-search-visual-filter-results.png)
+    ![Skærmbillede, der viser et liggende søjlediagram, som afspejler de filtrerede værdier.](media/power-bi-report-add-filter/power-bi-search-visual-filter-results.png)
     
     Når du bruger filteret på et felt, der bruges i visualiseringen, hvor feltet er samlet (f.eks. en sum, et gennemsnit eller et antal), filtrerer du den *samlede* værdi i hvert datapunkt. Så ved at filtrere visualiseringen ovenfor efter **This Year Sales > 500000**, får du kun vist datapunktet **13 – Charleston Fashion Direct** i resultatet. Filtrering efter [modelmålinger](../transform-model/desktop-measures.md) gælder altid for den samlede værdi af datapunktet.
 
@@ -95,7 +95,7 @@ Nu skal vi føje et nyt felt til vores visual som et filter på visualiseringsni
 
     Og selve visualiseringen filtreres nu, så kun disse chefers omsætning dette år for de angivne butikker vises.
      
-    ![Den filtrerede visualisering](media/power-bi-report-add-filter/power-bi-search-visual-filter-results-2.png)
+    ![Skærmbillede, der viser et liggende søjlediagram, som afspejler de filtrerede værdier på basis af det nye felt.](media/power-bi-report-add-filter/power-bi-search-visual-filter-results-2.png)
 
     Hvis du gemmer din rapport med filteret, kan rapportlæsere interagere med filteret **District Manager** i læsevisning og markere eller fjerne markering af værdier.
     

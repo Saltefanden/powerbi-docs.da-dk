@@ -7,15 +7,15 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 10/14/2019
+ms.date: 09/30/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 3ae0a9605391ca1230fb0080490e1ef0eadf3d72
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: eae8afc9db44b703ade1a9a4fcc28c24c3d72641
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90858480"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91599881"
 ---
 # <a name="create-visuals-and-reports-with-the-azure-cost-management-connector-in-power-bi-desktop"></a>Opret visualiseringer og rapporter med Azure Cost Management-connectoren i Power BI Desktop
 
@@ -25,6 +25,10 @@ Azure Cost Management-connectoren bruger OAuth 2.0 til godkendelse i Azure og id
 
 > [!NOTE]
 > Denne connector erstatter de tidligere tilgængelige connectorer [Azure Consumption Insights og Azure Cost Management (beta)](desktop-connect-azure-consumption-insights.md). Alle rapporter, der er oprettet med den forrige connector, skal oprettes igen ved hjælp af denne connector.
+
+> [!NOTE]
+> Azure Cost Management-connectoren for Power BI Desktop understøtter ikke oprettelse af forbindelse til cloudmiljøer for offentlige myndigheder. 
+
 
 ## <a name="connect-using-azure-cost-management"></a>Opret forbindelse vha. Azure Cost Management
 
@@ -36,7 +40,7 @@ Benyt følgende fremgangsmåde for at bruge **Azure Cost Management**-connectore
 
     ![Hent data](media/desktop-connect-azure-cost-management/azure-cost-management-00b.png)
 
-4. I den dialogboks, der vises, skal du angive enten dit **faktureringsprofil-id** for **Microsoft-kundeaftaler** eller dit **registreringsnummer** for **Enterprise-aftaler (EA)** . 
+4. I den dialogboks, der vises, skal du angive enten dit **faktureringsprofil-id** for **Microsoft-kundeaftaler** eller dit **registreringsnummer** for **Enterprise-aftaler (EA)**. 
 
 
 ## <a name="connect-to-a-microsoft-customer-agreement-account"></a>Opret forbindelse til en Microsoft-kundeaftalekonto 
@@ -48,9 +52,9 @@ Hvis du vil oprette forbindelse til en **Microsoft-kundeaftalekonto**, kan du he
 3.  Under **Indstillinger** i menuen skal du vælge **Egenskaber** i sidepanelet.
 4.  Kopiér **id'et** under **Faktureringsprofil**. 
 5.  I **Vælg omfang** skal du vælge **Faktureringsprofil-id** og indsætte faktureringsprofil-id'et fra det forrige trin. 
-6.  Angiv antallet af måneder, og vælg **OK** .
+6.  Angiv antallet af måneder, og vælg **OK **.
 
-    ![Hent fakturerings-id](media/desktop-connect-azure-cost-management/azure-cost-management-01a.png)
+    ![Skærmbillede, der viser Azure Cost Management-egenskaber med området Faktureringsprofil-id.](media/desktop-connect-azure-cost-management/azure-cost-management-01a.png)
 
 7.  Når du bliver bedt om det, skal du logge på med din Azure-brugerkonto og din adgangskode. 
 
@@ -63,9 +67,9 @@ Hvis du vil oprette forbindelse til en Enterprise-aftalekonto (EA), kan du hente
 2.  Vælg din faktureringskonto.
 3.  Kopiér **Faktureringskonto-id** i menuen **Oversigt**.
 4.  I **Vælg omfang** skal du vælge **Registreringsnummer** og indsætte faktureringskonto-id'et fra det forrige trin. 
-5.  Angiv antallet af måneder, og vælg derefter **OK** .
+5.  Angiv antallet af måneder, og vælg derefter **OK **.
 
-    ![Hent fakturerings-id](media/desktop-connect-azure-cost-management/azure-cost-management-01b.png)
+    ![Skærmbillede viser Azure Cost Management egenskaber med området Tilmeldingsnummer.](media/desktop-connect-azure-cost-management/azure-cost-management-01b.png)
 
 6.  Når du bliver bedt om det, skal du logge på med din Azure-brugerkonto og din adgangskode. 
 
@@ -93,7 +97,7 @@ Når du er blevet godkendt, vises vinduet **Navigator** med følgende tilgængel
 
 Du kan vælge en tabel for at få vist et eksempel. Du kan vælge en eller flere tabeller ved at markere afkrydsningsfeltet ud for tabellernes navn og derefter vælge **Indlæs**.
 
-![Hent fakturerings-id](media/desktop-connect-azure-cost-management/azure-cost-management-01c.png)
+![Skærmbillede, der viser dialogboksen Navigator.](media/desktop-connect-azure-cost-management/azure-cost-management-01c.png)
 
 Når du vælger **Indlæs**, indlæses dataene i Power BI Desktop. 
 

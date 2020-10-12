@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c0a7ef3ef7ce62ca1939791c3dcf198428f1353c
-ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
+ms.openlocfilehash: 698abf814b9b93635ba425b2c9d1d30a292714ab
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86034353"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91599891"
 ---
 # <a name="apply-the-assume-referential-integrity-setting-in-power-bi-desktop"></a>Anvend indstillingen Antag referentiel integritet i Power BI Desktop
 Når der oprettes forbindelse til en datakilde, der bruger **DirectQuery**, kan du bruge indstillingen **Antag referentiel integritet** for at gøre det muligt at køre mere effektive forespørgsler i forhold til datakilden. Denne funktion har et par krav til de underliggende data, og den er kun tilgængelig, når du bruger **DirectQuery**.
@@ -39,7 +39,7 @@ I følgende eksempel vises, hvordan **Antag referentiel integritet** fungerer, n
    ![Skærmbillede af tabellen Orders og tabellen Products.](media/desktop-assume-referential-integrity/assume-referential-integrity_2.png)
 2. På næste billede kan du se, at der ikke findes referentiel integritet mellem tabellen **Orders[DepotID]** og **Depots[DepotID]** , fordi **DepotID** er *Null* for nogle *Orders*. Derfor skal **Antag referentiel integritet** *ikke* angives.
    
-   ![Skærmbillede af tabellen Orders og tabellen Products.](media/desktop-assume-referential-integrity/assume-referential-integrity_3.png)
+   ![Skærmbillede af tabellen Orders og tabellen Depots.](media/desktop-assume-referential-integrity/assume-referential-integrity_3.png)
 3. Endelig findes der ingen referentiel integritet mellem **Orders[CustomerID]** og **Customers[CustID]** i følgende tabeller. **CustomerID** indeholder nogle værdier (i dette tilfælde *CustX*), der ikke findes i tabellen *Customers*. Derfor skal **Antag referentiel integritet** *ikke* angives.
    
    ![Skærmbillede af tabellen Orders og tabellen Customers.](media/desktop-assume-referential-integrity/assume-referential-integrity_4.png)

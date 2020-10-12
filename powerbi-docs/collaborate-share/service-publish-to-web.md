@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: how-to
 ms.date: 09/18/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 7009b4b195c89659c032b578ada130e12389b496
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: cea4af4a8c265e5195a8239bd592c8734e332255
+ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90858847"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "91375160"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publicer på internettet fra Power BI
 
@@ -161,14 +161,14 @@ Dataene cachelagres i én time fra det tidspunkt, hvor de hentes. Hvis du opdate
 
 Power BI-administrationsportalen har indstillinger, der styrer, hvem der kan udgive på internettet. Du kan arbejde sammen med din organisations [Power BI-administrator](../admin/service-admin-role.md), hvis du vil ændre [lejerindstillingerne for Publicer på internettet](../admin/service-admin-portal.md#publish-to-web).
 
-Mindre organisationer eller enkeltpersoner, der har tilmeldt sig Power BI, har muligvis endnu ikke en Power BI-administrator. Følg vores [proces for overtagelse af lejeradministrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover). Når du har en Power BI-administrator, kan vedkommende aktivere oprettelse af integreringskoder for dig.
+Mindre organisationer eller enkeltpersoner, der har tilmeldt sig Power BI, har muligvis endnu ikke en Power BI-administrator. Følg vores [proces for overtagelse af lejeradministrator](/azure/active-directory/users-groups-roles/domains-admin-takeover). Når du har en Power BI-administrator, kan vedkommende aktivere oprettelse af integreringskoder for dig.
 
 Etablerede organisationer har normalt allerede en Power BI-administrator. Personer med en af følgende roller kan fungere som Power BI-administrator:
 
 - Globale administratorer
 - Brugere med rollen Power BI-tjenesteadministrator i Azure Active Directory
 
-Du skal [finde en af disse personer](https://docs.microsoft.com/office365/admin/admin-overview/admin-overview#who-has-admin-permissions-in-my-business) i organisationen og bede vedkommende om at opdatere [lejerindstillingerne for Publicer på internettet](../admin/service-admin-portal.md#publish-to-web) i administrationsportalen.
+Du skal [finde en af disse personer](/office365/admin/admin-overview/admin-overview#who-has-admin-permissions-in-my-business) i organisationen og bede vedkommende om at opdatere [lejerindstillingerne for Publicer på internettet](../admin/service-admin-portal.md#publish-to-web) i administrationsportalen.
 
 ## <a name="limitations"></a>Begrænsninger
 
@@ -196,5 +196,3 @@ Du skal [finde en af disse personer](https://docs.microsoft.com/office365/admin/
 - [Integrer en rapport på en sikker portal eller et websted](service-embed-secure.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-
-

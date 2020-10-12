@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/01/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 51871e9653a1f3d0d48f25de33d4a72603695cf4
-ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.openlocfilehash: 1b0b677e67fa15906492fbaa41fcfd456d77bf01
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86161784"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91633878"
 ---
 # <a name="buttons-in-the-power-bi-service"></a>Knapper i Power BI-tjenesten
 I de rapporter, du modtager fra kolleger, har du måske lagt mærke til knapperne og spekuleret på, hvordan du bruger dem. Nogle har ord, nogle har pile, andre har grafik og nogle har endda rullemenuer. I denne artikel gennemgår vi, hvordan du genkender en knap og finder ud af, hvad du kan foretage dig med den.
@@ -31,11 +31,11 @@ En tilbage-knap kan have et pileikon, og når du vælger den, tager Power BI dig
 1. Vælg **Word** i søjlediagrammet.
 1. Vælg **Detaljeadgang**, og vælg **Affinitetsanalyse**.
 
-    ![skærmbillede af tilbage-knappen](media/end-user-buttons/power-bi-drillthrough.png)
+    ![Skærmbillede af knappen Detaljeadgang.](media/end-user-buttons/power-bi-drillthrough.png)
 
     Når du vælger **Affinitetsanalyse**, åbner Power BI rapportsiden *Affinitetsanalyse* og bruger de valg, der er foretaget på kildesiden, til at filtrere det, der vises på destinationssiden.
 
-    ![skærmbillede af tilbage-knappen](media/end-user-buttons/power-bi-go-back.png)
+    ![Skærmbillede af knappen Tilbage.](media/end-user-buttons/power-bi-go-back.png)
 
     Du er nu på rapportsiden **Affinitetsanalyse**, der er filtreret for Word. Vælg tilbage-knappen for at vende tilbage til den forrige rapportside. 
 
@@ -60,15 +60,15 @@ Detaljeadgangsknapper kan have mere end én forudsætning. Medmindre du opfylder
 
 Her er en detaljeadgangsknap, der vil tage os til siden *Butiksoplysninger*. Hvis du holder markøren over knappen, vises et værktøjstip, der gør det muligt at finde ud af, om du skal vælge både en butik og et produkt. Knappen forbliver inaktiv, indtil vi har valgt en af mulighederne.
 
-![skærmbillede af detaljeadgangsknappen med pegefølsomt værktøjstip](media/end-user-buttons/power-bi-drill-two-selections.png)
+![Skærmbillede af knappen Detaljeadgang med pegefølsomt værktøjstip.](media/end-user-buttons/power-bi-drill-two-selections.png)
 
 Nu, hvor vi har valgt et produkt (**Word**) og en butik (**Leo**), skifter knappen farven for at fortælle os, at den nu er aktiv.
 
-![skærmbillede af detaljeadgangsknappen med pegefølsomt værktøjstip](media/end-user-buttons/power-bi-select-both.png)
+![Skærmbillede af knappen Detaljeadgang for Butiksoplysninger.](media/end-user-buttons/power-bi-select-both.png)
 
 Når du vælger detaljeadgangsknappen, kommer du til rapportsiden *Butik*. Siden *Butik* er filtreret efter vores valg af **Word** og **Leo**.
 
-![skærmbillede af detaljeadgangsknappen med pegefølsomt værktøjstip](media/end-user-buttons/power-bi-store.png)
+![Skærmbillede af siden Butiksrapporter.](media/end-user-buttons/power-bi-store.png)
 
 Detaljeadgangsknapper kan også have rullemenuer, der giver dig mulighed for at vælge mellem destinationer. Når du har foretaget dine valg på kilderapportsiden, skal du vælge destinationsrapportsiden for detaljeadgangen. I eksemplet nedenfor ændrer vi vores valg for at få detaljeadgang til rapportsiden med *Markedsdetaljer*. 
 
@@ -78,13 +78,13 @@ Detaljeadgangsknapper kan også have rullemenuer, der giver dig mulighed for at 
 
 Sidenavigationsknapper fører dig til en anden side i den samme rapport. Rapportdesignere opretter ofte navigationsknapper for at fortælle en historie eller vejlede dig gennem rapportindsigten. I eksemplet nedenfor har rapportdesigneren tilføjet en knap på hver rapportside, der fører dig til den første side, oversigtssiden på øverste niveau, i rapporten. Denne sidenavigationsknap er nyttig, fordi der er mange sider i rapporten.
 
-![skærmbillede af sidenavigationsknappen, der hedder Team scorecard](media/end-user-buttons/power-bi-nav-button.png)
+![Skærmbillede af sidenavigationsknappen med navnet Teamscorecard.](media/end-user-buttons/power-bi-nav-button.png)
 
 
 ## <a name="qa-buttons"></a>Spørgsmål og svar-knapper 
 Når du vælger en Spørgsmål og svar-knap, åbnes Spørgsmål og svar-stifindervinduet i Power BI. Vinduet Spørgsmål og svar vises øverst på rapportsiden og kan lukkes ved at vælge X. [Få mere at vide om Spørgsmål og svar](end-user-q-and-a.md)
 
-![skærmbillede af sidenavigationsknappen, der hedder Team scorecard](media/end-user-buttons/power-bi-qna.png)
+![Skærmbillede af vinduet Stifinder med spørgsmål og svar i Power BI med teksten Stil et spørgsmål om dine data.](media/end-user-buttons/power-bi-qna.png)
 
 ## <a name="web-url"></a>URL-adresse til websted
 Webadresseknapper åbner et nyt browservindue. Rapportdesignere kan tilføje denne type knap som en referencekilde, til at oprette et link til virksomhedens websted eller endda som et link til en anden rapport eller et andet dashboard. I eksemplet nedenfor kan du bruge webadresseknappen til at downloade kildefilen til rapporten. 

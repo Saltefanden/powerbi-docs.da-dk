@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: how-to
 ms.date: 07/17/2019
 ms.author: maggies
-ms.openlocfilehash: 18fae9e7bca385ee10fed90649430a8062054b2e
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: f1892af9d943df1f4abf39aa55ae99c5e6ee1b34
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85219568"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91633417"
 ---
 # <a name="create-a-power-bi-dashboard-from-a-report"></a>Opret et Power BI-dashboard fra en rapport
 Du har læst [Introduktion til dashboards i Power BI](service-dashboards.md), og nu vil du oprette dit eget. Der er mange forskellige måder at oprette et dashboard på. Du kan f.eks. oprette et dashboard fra en rapport, fra bunden, fra et datasæt, ved at kopiere et eksisterende dashboard og meget mere.  
@@ -27,7 +27,7 @@ Når du har gennemgået hele denne artikel, vil du have en god forståelse af:
 - Sådan fastgøres felter 
 - Sådan navigerer du mellem et dashboard og en rapport 
  
-![Dashboard](media/service-dashboard-create/power-bi-completed-dashboard-small.png)
+![Skærmbillede, der viser et Power BI-dashboard med flere visualiseringer.](media/service-dashboard-create/power-bi-completed-dashboard-small.png)
 
 > [!NOTE] 
 > Dashboards er en funktion i Power BI-tjenesten ikke Power BI Desktop. Selvom du ikke opretter dashboards i Power BI-mobilapps, kan du [få vist og dele](../consumer/mobile/mobile-apps-view-dashboard.md) dem der.
@@ -59,7 +59,7 @@ I denne trinvise vejledning importerer vi et af eksempeldatasættene i Power BI 
     ![Vinduet OneDrive for Business](media/service-dashboard-create/power-bi-import.png)
 8. Når du får vist meddelelsen om, at processen lykkedes, skal du klikke på **x** for at afvise den.
 
-   ![Meddelelse om fuldførelse](media/service-dashboard-create/power-bi-view-datasetnew.png)
+   ![Skærmbillede, der viser en meddelelse om fuldførelse med X'et fremhævet.](media/service-dashboard-create/power-bi-view-datasetnew.png)
 
 > [!TIP]
 > Vidste du det? Du kan indsnævre navigationsruden ved at vælge ikonet med tre linjer øverst ![ikon for vis eller skjul navigationsrude](media/service-dashboard-create/power-bi-new-look-hide-nav-pane.png). Det giver dig mere plads til selve rapporten.
@@ -77,17 +77,17 @@ I denne trinvise vejledning importerer vi et af eksempeldatasættene i Power BI 
     ![Peg på et felt](media/service-dashboard-create/power-bi-hover.png)
 4. Da vi opretter et nyt dashboard, skal du markere indstillingen for **nyt dashboard** og give den et navn.
 
-    ![Dialogboksen Fastgør til dashboard](media/service-dashboard-create/power-bi-pin-tile.png)
+    ![Skærmbillede, der viser vinduet Fastgør til dashboard.](media/service-dashboard-create/power-bi-pin-tile.png)
 5. Når du vælger **Fastgør**, opretter Power BI det nye dashboard i det aktuelle arbejdsområde. Efter at meddelelsen **Fastgjort til dashboard** vises, skal du vælge **Gå til dashboard**. Hvis du bliver bedt om at gemme rapporten, skal du vælge **Gem**.
 
-    ![Meddelelse om fuldførelse](media/service-dashboard-create/power-bi-pin-success.png)
+    ![Skærmbillede, der viser en meddelelse om fuldførelse med indstillingen Gå til dashboard fremhævet.](media/service-dashboard-create/power-bi-pin-success.png)
 
     Power BI åbner det nye dashboard. Det har ét felt: den visualisering, du lige har fastgjort.
 
    ![dashboard med et felt](media/service-dashboard-create/power-bi-pinned.png)
 7. Markér feltet for at vende tilbage til rapporten. Fastgør nogle flere felter til det nye dashboard. Når vinduet **Fastgør til dashboard** vises, skal du vælge **Eksisterende dashboard**.  
 
-   ![Dialogboksen Fastgør til dashboard](media/service-dashboard-create/power-bi-existing-dashboard.png)
+   ![Skærmbillede, der viser vinduet Fastgør til dashboard med indstillingen Eksisterende dashboard fremhævet.](media/service-dashboard-create/power-bi-existing-dashboard.png)
 
 ## <a name="pin-an-entire-report-page-to-the-dashboard"></a>Fastgør en hel rapportside til dashboardet
 I stedet for at fastgøre én visualisering ad gangen, kan du [fastgøre en hel rapportside som et *dynamisk felt*](service-dashboard-pin-live-tile-from-report.md). Lad os gøre det.
@@ -102,11 +102,11 @@ I stedet for at fastgøre én visualisering ad gangen, kan du [fastgøre en hel 
 
 3. Når vinduet **Fastgør til dashboard** vises, skal du vælge **Eksisterende dashboard**.
 
-   ![Dialogboksen Fastgør til dashboard](media/service-dashboard-create/power-bi-pin-live2.png)
+   ![Skærmbillede, der viser vinduet Fastgør til dashboard med indstillingen Eksisterende dashboard fremhævet og knappen Fastgør dynamisk.](media/service-dashboard-create/power-bi-pin-live2.png)
 
 4. Efter du får vist en meddelelse om, at handlingen er udført, skal du vælge **Gå til dashboard**. Der kan du se de felter, du har fastgjort fra rapporten. I nedenstående eksempel har vi fastgjort to felter fra side 1 i rapporten, og ét dynamisk felt, som udgør side 2 i rapporten.
 
-   ![Dashboard](media/service-dashboard-create/power-bi-dashboard.png)
+   ![Skærmbillede, der viser et Power BI-dashboard med visualiseringerne fra denne artikel.](media/service-dashboard-create/power-bi-dashboard.png)
 
 ## <a name="next-steps"></a>Næste trin
 Tillykke med oprettelsen af dit første dashboard! Nu, hvor du har et dashboard, er der utroligt meget, du kan bruge det til. Følg en af de foreslåede artikler nedenfor, eller kom i gang med at udforske det: 

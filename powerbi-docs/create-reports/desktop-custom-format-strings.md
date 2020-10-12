@@ -9,18 +9,18 @@ ms.topic: how-to
 ms.date: 09/11/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 2864e82d5ddc1eb4a70976375cd4da8e57db7e58
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: d4036bb6a2fdc8db7c251a39f5527c54ae1c578b
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90859905"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91600572"
 ---
 # <a name="use-custom-format-strings-in-power-bi-desktop"></a>Brug brugerdefinerede formatstrenge i Power BI Desktop
 
 Med brugerdefinerede formatstrenge i **Power BI Desktop** kan du tilpasse den måde felter vises på i visualiseringer og sikre, at dine rapporter ser ud, ligesom du ønsker.
 
-![Brug af brugerdefinerede formatstrenge](media/desktop-custom-format-strings/custom-format-strings-01.png)
+![Skærmbillede, der viser Power BI Desktop med et brugerdefineret format valgt. ](media/desktop-custom-format-strings/custom-format-strings-01.png)
 
 
 ## <a name="how-to-use-custom-format-strings"></a>Sådan bruger du brugerdefinerede formatstrenge
@@ -31,7 +31,7 @@ Du opretter brugerdefinerede formatstrenge ved at vælge feltet i visningen **Ud
 
 Når du har valgt **Brugerdefineret** på rullelisten **Format**, kan du vælge fra en liste over almindeligt anvendte formatstrenge. 
 
-![Brug af brugerdefinerede formatstrenge](media/desktop-custom-format-strings/custom-format-strings-03.png)
+![Skærmbillede, der viser detaljer om det brugerdefinerede format.](media/desktop-custom-format-strings/custom-format-strings-03.png)
 
 
 ## <a name="supported-custom-format-syntax"></a>Understøttet syntaks for brugerdefineret format

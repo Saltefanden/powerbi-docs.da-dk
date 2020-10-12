@@ -5,17 +5,17 @@ author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-admin
+ms.subservice: powerbi-premium
 ms.topic: conceptual
 ms.date: 04/09/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: dc5f952aa38e2ab36887ec3f2727e2e253389460
-ms.sourcegitcommit: e9cd61eaa66eda01cc159251d7936a455c55bd84
+ms.openlocfilehash: 1bc11d94162ab2c6ed62de0825acd6e94db30291
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86952656"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91599385"
 ---
 # <a name="premium-capacity-scenarios"></a>Premium-kapacitetsscenarier
 
@@ -53,53 +53,53 @@ Til at undersøge dette kan Power BI-administratoren søge efter følgende ting:
 
 - Manglende hukommelse på tidspunktet for opdateringen af data, når den tilgængelige hukommelse er mindre end 2 gange størrelsen på det datasæt, der skal opdateres.
 - Datasæt, der ikke opdateres og ikke var i hukommelsen før opdatering, men alligevel begyndte at vise interaktiv trafik på tidspunkter med mange opdateringer. Hvis du vil se, hvilke datasæt der indlæses i hukommelsen på et givet tidspunkt kan en Power BI-administrator se på datasætområdet under fanen **Datasæt** i appen. Administratoren kan derefter filtrere på tværs til et givent tidspunkt ved at klikke på en af søjlerne i **Antal indlæste datasæt pr. time**. En lokal stigning (vist på billedet nedenfor) angiver en time, hvor flere datasæt blev indlæst i hukommelsen, hvilket kan udskyde starten af planlagte opdateringer.
-- Der sker en øget fjernelse af datasæt, når dataopdateringer er planlagt til start. Fjernelser kan angive, at der er et højt hukommelsesforbrug, som skyldes, at der er for mange forskellige interaktive rapporter før opdateringstidspunktet. Visualiseringen **Hourly Dataset Evictions and Memory Consumption** viser tydlige stigninger i antallet af fjernelser.
+- Der sker en øget fjernelse af datasæt, når dataopdateringer er planlagt til start. Fjernelser kan angive, at der er et højt hukommelsesforbrug, som skyldes, at der er for mange forskellige interaktive rapporter før opdateringen. Visualiseringen **Hourly Dataset Evictions and Memory Consumption** viser tydlige stigninger i antallet af fjernelser.
 
-På følgende billede vises en lokal stigning i indlæste datasæt, hvilket antyder, at interaktive forespørgsler forsinkede påbegyndelsen af opdateringerne. Hvis du vælger en bestemt periode i visualiseringen **Hourly Loaded Dataset Counts**, filtreres visualiseringen **Dataset Sizes** på tværs.
+På følgende billede vises en lokal stigning i indlæste datasæt, hvilket antyder, at interaktive forespørgsler forsinkede påbegyndelsen af opdateringerne. Hvis du vælger en bestemt periode i visualiseringen **Antal indlæste datasæt pr. time**, filtreres visualiseringen **Størrelser af datasæt** på tværs.
 
 ![En lokal stigning i de indlæste datasæt antyder, at interaktive forespørgsler forsinkede påbegyndelsen af opdateringerne](media/service-premium-capacity-scenarios/hourly-loaded-dataset-counts.png)
 
 Power BI-administratoren kan forsøge at løse problemet ved at sikre, at tilstrækkelig hukommelse er tilgængelig for at dataopdateringerne kan starte, ved at:
 
 - Kontakte datasætejerne og bede dem om at forskyde og lave mellemrum i tidsplanerne for opdateringer.
-- Reducere indlæsningen af datasætforespørgsler ved at fjerne unødvendige dashboards eller dashboardfelter, især dem med sikkerhed på rækkeniveau.
+- Reducere indlæsningen af datasætforespørgsler ved at fjerne unødvendige dashboards eller dashboardfelter, især indhold, der gennemtvinger sikkerhed på rækkeniveau.
 - Sætte fart på opdatering af data ved at optimere Microsoft Power Query til Excel-logic. Øge modellerings beregnede kolonner eller tabeller. Reducere datasætstørrelsen eller konfigurere større datasæt for at udføre trinvis opdatering af data.
 
 ## <a name="identifying-slow-responding-datasets"></a>Sådan identificeres datasæt med lange svartider
 
-I dette scenarie blev der igangsæt en undersøgelse, da brugerne klagede over, at det tog lang tid at åbne visse rapporter, og at de nogle gange holdt op med at svare.
+I dette scenarie blev der igangsæt en undersøgelse, da brugerne klagede over, at det tog lang tid at åbne visse rapporter. Nogle gange holdt rapporterne op med at svare.
 
 I appen kan Power BI-administratoren bruge visualiseringen **Query Durations** til at fastsætte, hvilke datasæt der har den dårligste ydeevne, ved at sortere datasættene efter **gennemsnitlig varighed**. Denne visualisering viser også antallet af datasætforespørgsler, så du kan se, hvor ofte datasættene forespørges.
 
 ![Datasæt med den dårligste ydeevne](media/service-premium-capacity-scenarios/worst-performing-datasets.png)
 
-Administratoren kan referere til visual'et **Distribution af forespørgselsvarighed**, der viser en overordnet fordeling af ydeevnen for bucketforespørgsler (< = 30ms, 0-100 MS osv.) for den filtrerede tidsperiode. Forespørgsler, der tager ét sekund eller mindre betragtes som dynamiske af de fleste brugere. Forespørgsler, der tager længere tid, har tendens til at blive opfattet som dårlig ydeevne.
+Administratoren kan referere til visual'et **Distribution af forespørgselsvarighed**, der viser en overordnet fordeling af ydeevnen for bucketforespørgsler (< = 30ms, 0-100 MS osv.) for den filtrerede tidsperiode. De fleste brugere anser forespørgsler, der kræver et sekund eller mindre for at have en god ydeevne. Forespørgsler, der varer længere, anses ofte for at have en dårlig ydeevne.
 
 I visualiseringen **Hourly Query Duration Distribution** kan Power BI-administratoren identificere entimes perioder, hvor kapacitetsydeevnen kan være blevet opfattet som dårlig. Jo større de søjler, der repræsenterer varigheder over ét sekund for forespørgsler, er, desto større er risikoen for, at brugerne oplever det som dårlig ydeevne.
 
 Visualiseringen er interaktiv, og når en del af søjlen vælges, filtreres den tilsvarende tabelvisualisering **Query Durations** på rapportsiden på tværs for at vise de datasæt, den repræsenterer. Denne filtrering på tværs gør det muligt for Power BI-administratoren nemt at identificere datasæt med lange svartider.
 
-På følgende billede vises en visualisering, der er filtreret efter **Hourly Query Duration Distributions**, og som fokuserer på datasættet med den dårligste ydeevne i buckets på én time. 
+På følgende billede vises en visualisering, der er filtreret efter **Hourly Query Duration Distributions**, og som fokuserer på datasættet med den dårligste ydeevne i buckets på én time.
 
 ![Filtreringen af visualiseringen Hourly Query Duration Distributions viser datasættet med den dårligste ydeevne](media/service-premium-capacity-scenarios/hourly-query-duration-distributions.png)
 
-Når datasættet med dårlig ydeevne i en bestemt tidsperiode på én time er identificeret, kan Power BI-administratoren undersøge, om den dårlige ydeevne er forårsaget af en overbelastet kapacitet eller skyldes et datasæt eller en rapport i et dårligt design. Administratoren kan se visual'et **Ventetid for forespørgsler** og sortere datasæt efter faldende gennemsnitlig ventetid for forespørgsler. Hvis en stor procentdel af forespørgslerne venter, er en høj efterspørgsel efter datasættet sandsynligvis årsagen til de mange ventende forespørgsler. Hvis den gennemsnitlige ventetid for forespørgsler er meget lang (> 100 millisekunder), kan det være en god ide at gennemse datasættet og rapporten for at se, om der kan foretages optimeringer. For eksempel færre visuals på en given rapportside eller en optimering af DAX-udtryk.
+Efter at datasættet med dårlig ydeevne i en bestemt tidsperiode på én time er identificeret, kan Power BI-administratoren undersøge, om den dårlige ydeevne er forårsaget af en overbelastet kapacitet eller skyldes et datasæt eller en rapport i et dårligt design. Administratoren kan se visual'et **Ventetid for forespørgsler** og sortere datasæt efter faldende gennemsnitlig ventetid for forespørgsler. Hvis en stor procentdel af forespørgslerne venter, er en høj efterspørgsel efter datasættet sandsynligvis årsagen til de mange forsinkede forespørgsler. Hvis den gennemsnitlige ventetid for forespørgsler er meget lang (> 100 millisekunder), kan det være en god ide at gennemse datasættet og rapporten for at se, om der kan foretages optimeringer. For eksempel færre visuals på en given rapportside eller en optimering af DAX-udtryk.
 
 ![Visualiseringen Query Wait Times hjælper med at vise datasæt med en dårlig ydeevne](media/service-premium-capacity-scenarios/query-wait-times.png)
 
 Der er flere mulige årsager til, at ventetider for forespørgsler hober sig up i datasæt:
 
 - Et knapt så optimalt modeldesign, målingsudtryk eller endda rapportdesign – alle sammen omstændigheder, der kan bidrage til langvarige forespørgsler, der bruger meget CPU. Dette tvinger nye forespørgsler til at vente, indtil CPU-tråde bliver tilgængelige, og kan skabe en prop, hvilket ofte ses på travle tidspunkter. Siden **Query Waits** er den primære ressource til at afgøre, om datasæt har en høj gennemsnitlig forespørgselsventetid.
-- Et højt antal samtidige kapacitetsbrugere (hundredvis eller tusindvis), der forbruger den samme rapport eller det samme datasæt. Selv veludformede datasæt kan have en dårlig ydeevne, hvis grænsen for samtidighed overskrides. Dette er normalt angivet, ved at et enkelt datasæt viser en væsentlig højere værdi for forespørgselsantal end andre datasætvisninger (f.eks. 300.000 forespørgsler sammenlignet < 30.000 forespørgsler for alle andre datasæt). På et tidspunkt bliver forespørgselsventetiderne for dette datasæt forskudt, hvilket kan ses i visual'et **Forespørgselsvarigheder**.
-- Mange forskellige datasæt, der forespørges samtidigt, og som medfører hukommelsesudskiftning, da datasæt ofte bevæger sig ind og ud af hukommelsen. Dette medfører, at brugerne oplever langsom ydeevne, når datasættet indlæses i hukommelsen. Power BI-administratoren kan benytte visual'et **Fjernelser af datasæt og hukommelsesforbrug pr. time** for at få bekræftet dette, hvilket også kan indikere, at et højt antal datasæt, der indlæses i hukommelsen, gentagne gange fjernes.
+- Et højt antal samtidige kapacitetsbrugere (hundredvis eller tusindvis), der forbruger den samme rapport eller det samme datasæt. Selv veludformede datasæt kan have en dårlig ydeevne, hvis grænsen for samtidighed overskrides. Dette problem med ydeevnen er angivet af et enkelt datasæt, der viser en dramatisk højere værdi for forespørgselsantallet end andre datasæt. Du kan f. eks. 300.000 forespørgsler for ét datasæt i forhold til < 30.000 forespørgsler for alle andre datasæt. På et tidspunkt bliver forespørgselsventetiderne for dette datasæt forskudt, hvilket kan ses i visual'et **Forespørgselsvarigheder**.
+- Mange forskellige datasæt, der forespørges samtidigt, og som medfører hukommelsesudskiftning, da datasæt ofte bevæger sig ind og ud af hukommelsen. Denne situation medfører, at brugerne oplever langsom ydeevne, når datasættet indlæses i hukommelsen. Power BI-administratoren kan benytte visual'et **Fjernelser af datasæt og hukommelsesforbrug pr. time** for at få bekræftet dette, hvilket også kan indikere, at et højt antal datasæt, der indlæses i hukommelsen, gentagne gange fjernes.
 
 ## <a name="identifying-causes-for-sporadically-slow-responding-datasets"></a>Sådan identificeres årsager til datasæt med sporadisk langsomme svartider
 
-I dette scenarie blev en undersøgelse igangsat, da brugerne beskrev, at visuals i rapporter nogle gange svarede langsomt eller slet ikke svarede, men at de på andre tidspunkt havde en acceptabel svartid.
+I dette scenarie blev en undersøgelse igangsat, da brugerne beskrev, at visualiseringer i rapporter nogle gange svarede langsomt eller slet ikke svarede. På andre tidspunkter var rapportvisualiseringernes svartid acceptabel.
 
 Afsnittet **Query Durations** i appen blev brugt til at finde det pågældende datasæt på følgende måde:
 
-- I visualiseringen **Query Durations** filtrerede administratoren datasæt efter datasæt (startende med de datasæt, der forespørges mest hyppigt) og undersøgte de krydsfiltrerede søjler i visualiseringen **Hourly Query Distributions**.
+- I visualiseringen Query Durations filtrerede administratoren datasæt efter datasæt (startende med de datasæt, der forespørges mest hyppigt) og undersøgte de krydsfiltrerede søjler i visualiseringen **Hourly Query Distributions**.
 - Eftersom en enkelt 1-times søjle viste betydelige ændringer i forholdet mellem alle grupper for forespørgselsvarigheder i forhold til andre 1-times søjler for dette datasæt (f.eks. forholdet mellem farverne ændres drastisk), betyder det, at dette datasæt viste en sporadisk ændring i ydeevne.
 - De én-timers søjler, der viser en uregelmæssig del af forespørgsler med dårlig ydeevne, viste en tidsperiode, hvor datasættet blev påvirket af andre datasæts aktiviteter.
 

@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 05/05/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 81ba595be7262c81cdb68f2a1ed052c45663d7a7
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 108c7cea815475c98a7529a53b9a177ff5fbf405
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85234368"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91600155"
 ---
 # <a name="publish-to-power-bi-from-microsoft-excel"></a>Publicer i Power BI fra Microsoft Excel
 Med Microsoft Excel 2016 og nyere kan du publicere dine Excel-projektmapper direkte i dit [Power BI](https://powerbi.microsoft.com)-arbejdsområde, hvor du kan oprette meget interaktive rapporter og dashboards, der er baseret på data i din projektmappe. Derefter kan du dele din indsigt med andre i organisationen.
@@ -44,11 +44,11 @@ Excel understøtter publicering af lokale Excel-filer. De behøver ikke at blive
 
 Når du vælger **Publicer**, kan du vælge det arbejdsområde, du vil publicere til. Hvis din Excel-fil er placeret på OneDrive for Business, kan du kun publicere til dit *Mit arbejdsområde*. Hvis din Excel-fil er placeret på et lokalt drev, kan du publicere til *Mit arbejdsområde* eller et delt arbejdsområde, som du har adgang til.
 
-![Publicer i Power BI](media/service-publish-from-excel/pbi_choose_workspace.png)
+![Skærmbillede, der viser Publicer i Power BI med Mit arbejdsområde valgt.](media/service-publish-from-excel/pbi_choose_workspace.png)
 
 To muligheder for at få din projektmappe ind i Power BI.
 
-![Publicer i Power BI](media/service-publish-from-excel/pbi_uploadexport3.png)
+![Skærmbillede, der viser Publicer med Mit arbejdsområde valgt.](media/service-publish-from-excel/pbi_uploadexport3.png)
 
 Når det er publiceret, importeres det projektmappeindhold, du publicerer, i Power BI, adskilt fra den lokale fil. Hvis du vil opdatere filen i Power BI, skal du publicere den opdaterede version igen, eller du kan opdatere dataene ved at konfigurere en planlagt opdatering i projektmappen eller i datasættet i Power BI.
 

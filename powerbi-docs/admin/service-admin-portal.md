@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 09/03/2020
+ms.date: 09/25/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: f52993c3876db5c8f0453fb2e6a25ce0b78af017
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 62c463972d4811bac0c5400da96a88264273a873
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90857950"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91600276"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrer Power BI på administrationsportalen
 
@@ -270,7 +270,7 @@ Hvis du vil invitere eksterne brugere til din organisation, skal en bruger også
 
 ### <a name="publish-to-web"></a>Publicer på internettet
 
-Som administrator for en Power BI-lejer giver indstillingen **Publicer på internettet** dig mulighed for at vælge, hvilke brugere der kan oprette integreringskoder til udgivelse af rapporter på internettet. Denne funktion gør rapporten og de data, den indeholder, tilgængelige for alle på internettet. Få mere at vide om [publicering på internettet](../collaborate-share/service-publish-to-web.md).
+Som Power BI-administrator får du med indstillingen **Publicer på internettet** mulighed for at vælge, hvilke brugere der kan oprette integreringskoder til udgivelse af rapporter på internettet. Denne funktion gør rapporten og de data, den indeholder, tilgængelige for alle på internettet. Få mere at vide om [publicering på internettet](../collaborate-share/service-publish-to-web.md).
 
 > [!NOTE]
 > Det er kun Power BI-administratorer, der kan tillade oprettelse af nye integreringskoder til publicering på internettet. Organisationer kan have eksisterende integreringskoder. Se afsnittet [Integreringskoder](service-admin-portal.md#embed-codes) i administrationsportalen for at gennemse de aktuelt udgivne rapporter.
@@ -319,7 +319,7 @@ Brugere i organisationen kan eksportere dataene fra en visualisering til en Exce
 ![Indstillingen Eksportér til Excel](media/service-admin-portal/powerbi-admin-portal-export-to-excel-setting.png)
 
 >[!IMPORTANT]
-> Før introduktionen af indstillingen Eksportér til Excel styrede indstillingen Eksportér data eksport til en Excel-fil. I de lejere, der fandtes før introduktionen af indstillingen Eksportér to Excel, kan lejeradministratorerne derfor se, at der er *Ikke-anvendte ændringer*, første gang de ser indstillingen Eksportér til Excel. De skal anvende disse ændringer, før den nye indstilling træder i kraft. I modsat fald styres eksporten til en Excel-fil fortsat af indstillingen Eksportér data.
+> Før introduktionen af indstillingen Eksportér til Excel styrede indstillingen Eksportér data eksport til en Excel-fil. I de lejere, der fandtes før introduktionen af indstillingen Eksportér to Excel, kan Power BI-administratorer derfor se, at der er *Ikke-anvendte ændringer*, første gang de ser indstillingen Eksportér til Excel. De skal anvende disse ændringer, før den nye indstilling træder i kraft. I modsat fald styres eksporten til en Excel-fil fortsat af indstillingen Eksportér data.
 
 ### <a name="export-reports-as-powerpoint-presentations-or-pdf-documents"></a>Eksportér rapporter som PowerPoint-præsentationer eller PDF-dokumenter
 
@@ -393,7 +393,7 @@ Brugere i virksomheden kan bruge Excel til at se og interagere med Power BI-data
 
 ### <a name="use-arcgis-maps-for-power-bi"></a>Brug ArcGIS Maps for Power BI
 
-Brugere i organisationen kan anvende ArcGIS Maps for Power BI-visualiseringen fra Esri. [Få mere at vide](../visuals/power-bi-visualization-arcgis.md)
+Brugere i organisationen kan anvende ArcGIS Maps for Power BI-visualiseringen fra Esri. [Få mere at vide](../visuals/power-bi-visualizations-arcgis.md)
 
 ### <a name="use-global-search-for-power-bi-preview"></a>Brug global søgning til Power BI (prøveversion)
 
@@ -401,11 +401,11 @@ Brugere i organisationen kan bruge eksterne søgefunktioner, der bruger Azure Se
 
 ## <a name="featured-tables-settings"></a>Udvalgte tabelindstillinger
 
-Lejerindstillingen **Tillad forbindelser til udvalgte tabeller** under **Lejerindstillinger** gør det muligt for Power BI-administratorer at styre, hvem der i organisationen kan bruge udvalgte tabeller i Excel-datatypegalleriet. 
+**Tillad forbindelser til udvalgte tabeller** under **Lejerindstillinger** gør det muligt for Power BI-administratorer at styre, hvem i organisationen der kan bruge udvalgte tabeller i Excel-datatypegalleriet. 
 
 :::image type="content" source="media/service-admin-portal/admin-allow-connections-featured-tables.png" alt-text="Opret de nye arbejdsområdeoplevelser":::
 
-Forbindelser til udvalgte tabeller deaktiveres også, hvis lejerindstillingen **Eksportér data** er angivet til **Deaktiveret**.
+Forbindelser til udvalgte tabeller deaktiveres også, hvis indstillingen **Eksportér data** er angivet til **Deaktiveret**.
 
 Læs mere om [Udvalgte Power BI-tabeller i Excel](../collaborate-share/service-excel-featured-tables.md).
 
@@ -586,7 +586,7 @@ Når du har aktiveret informationsbeskyttelse for Power BI, vises der målepunkt
 
 ## <a name="manage-featured-content"></a>Administrer fremhævet indhold
 
-Som lejeradministrator kan du administrere alle de rapporter, dashboards og apps, der er blevet opgraderet til afsnittet Udvalgte i Power BI Start i hele organisationen.
+Som Power BI-administrator kan du administrere alle de rapporter, dashboards og apps, der er blevet opgraderet til afsnittet Udvalgte i Power BI Start i hele organisationen.
 
 - Vælg **Fremhævet indhold** i administrationsportalen.
 

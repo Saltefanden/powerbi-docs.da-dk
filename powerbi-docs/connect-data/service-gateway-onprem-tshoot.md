@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: troubleshooting
-ms.date: 07/15/2019
+ms.date: 09/25/2020
 LocalizationGroup: Gateways
-ms.openlocfilehash: 4d106a2bd2c11d049307a2b6f752d9486cd5aa20
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 045d7df36deefae5c323e88d0ddf3053ea56682e
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860687"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91634636"
 ---
 # <a name="troubleshoot-gateways---power-bi"></a>Foretag fejlfinding af gateways – Power BI
 
@@ -32,9 +32,11 @@ I slutningen af konfigurationen kaldes Power BI-tjenesten igen for at bekræfte 
 
 ### <a name="error-unable-to-connect-details-invalid-connection-credentials"></a>Fejl: Der kan ikke oprettes forbindelse. Detaljer: Legitimationsoplysningerne for forbindelsen er ugyldige.
 
-I **Vis detaljer** vises den fejlmeddelelse, der blev modtaget fra datakilden. Hvis du bruger SQL Server, får du vist noget, der ligner nedenstående:
+I **Vis detaljer** vises den fejlmeddelelse, der blev modtaget fra datakilden. Hvis du bruger SQL Server, får du vist en meddelelse, der ligner nedenstående:
 
-    Login failed for user 'username'.
+```output
+Login failed for user 'username'.
+```
 
 Bekræft, at du har det rigtige brugernavn og den rigtige adgangskode. Bekræft også, at der kan oprettes forbindelse til datakilden med disse legitimationsoplysninger. Sørg for, at den konto, der bruges, stemmer overens med godkendelsesmetoden.
 
@@ -44,7 +46,9 @@ Du kunne oprette forbindelse til serveren, men ikke til den database, der var an
 
 I **Vis detaljer** vises den fejlmeddelelse, der blev modtaget fra datakilden. Hvis du bruger SQL Server, får du vist noget, der ligner nedenstående:
 
-    Cannot open database "AdventureWorks" requested by the login. The login failed. Login failed for user 'username'.
+```output
+Cannot open database "AdventureWorks" requested by the login. The login failed. Login failed for user 'username'.
+```
 
 ### <a name="error-unable-to-connect-details-unknown-error-in-data-gateway"></a>Fejl: Der kan ikke oprettes forbindelse. Detaljer: Ukendt fejl i datagateway.
 
@@ -62,11 +66,15 @@ I **Vis detaljer** får du vist fejlkoden **DM_GWPipeline_Gateway_DataSourceAcce
 
 Hvis den underliggende fejlmeddelelse ligner nedenstående, betyder det, at den konto, du bruger til datakilden, ikke er serveradministrator for denne Analysis Services-forekomst. Du kan finde flere oplysninger i [Tildel serveradministratorrettigheder til en Analysis Services-forekomst](/sql/analysis-services/instances/grant-server-admin-rights-to-an-analysis-services-instance).
 
-    The 'CONTOSO\account' value of the 'EffectiveUserName' XML for Analysis property is not valid.
+```output
+The 'CONTOSO\account' value of the 'EffectiveUserName' XML for Analysis property is not valid.
+```
 
 Hvis den underliggende fejlmeddelelse ligner nedenstående, kan det betyde, at tjenestekontoen til Analysis Services mangler mappeattributten [token-groups-global-and-universal](/windows/win32/adschema/a-tokengroupsglobalanduniversal) (TGGAU).
 
-    The username or password is incorrect.
+```output
+The username or password is incorrect.
+```
 
 Domæner med kompatibilitetsadgang fra før Windows 2000 har TGGAU-attributten aktiveret. De fleste domæner, der senest er oprettet, aktiverer ikke denne attribut som standard. Hvis du vil have flere oplysninger, skal du se [Nogle programmer og API'er kræver adgang til godkendelsesoplysninger om kontoobjekter](https://support.microsoft.com/kb/331951).
 
@@ -75,13 +83,17 @@ Følg disse trin for at kontrollere, om attributten er aktiveret.
 1. Opret forbindelse til Analysis Services-computeren i SQL Server Management Studio. Medtag EffectiveUserName for den pågældende bruger i egenskaberne for avanceret forbindelse, og se, om denne tilføjelse gengiver fejlen.
 2. Du kan bruge værktøjet dsacls Active Directory til at kontrollere, om attributten er angivet. Dette værktøj findes på en domænecontroller. Du skal kende det entydige domænenavn for kontoen og videregive dette navn til værktøjet.
 
-        dsacls "CN=John Doe,CN=UserAccounts,DC=contoso,DC=com"
+   ```console
+   dsacls "CN=John Doe,CN=UserAccounts,DC=contoso,DC=com"
+   ```
 
     Du ønsker at få vist noget, der ligner nedenstående, i resultaterne:
 
-            Allow BUILTIN\Windows Authorization Access Group
-                                          SPECIAL ACCESS for tokenGroupsGlobalAndUniversal
-                                          READ PROPERTY
+   ```console
+   Allow BUILTIN\Windows Authorization Access Group
+                                   SPECIAL ACCESS for tokenGroupsGlobalAndUniversal
+                                   READ PROPERTY
+   ```
 
 For at løse problemet skal du aktivere TGGAU på den konto, der bruges til Windows-tjenesten Analysis Services.
 
@@ -139,7 +151,9 @@ Følg disse trin for at bekræfte det effektive brugernavn.
 1. Find det effektive brugernavn i [gatewaylogfilerne](/data-integration/gateway/service-gateway-tshoot#collect-logs-from-the-on-premises-data-gateway-app).
 2. Når du har den værdi, der sendes, skal du bekræfte, at den er korrekt. Hvis det er din bruger, kan du bruge følgende kommando fra en kommandoprompt til at se UPN-værdien. UPN-værdien ligner en mailadresse.
 
-        whoami /upn
+   ```console
+   whoami /upn
+   ```
 
 Du kan eventuelt se, hvad Power BI henter fra Azure Active Directory.
 
@@ -147,10 +161,13 @@ Du kan eventuelt se, hvad Power BI henter fra Azure Active Directory.
 2. Vælg **Log på** i øverste højre hjørne.
 3. Kør følgende forespørgsel. Du får vist et ret stort JSON-svar.
 
-        https://graph.windows.net/me?api-version=1.5
+   ```http
+   https://graph.windows.net/me?api-version=1.5
+   ```
+
 4. Søg efter **userPrincipalName**.
 
-Hvis dit Azure Active Directory-UPN ikke stemmer overens med dit lokale Active Directory-UPN, kan du bruge funktionen [Tilknyt brugernavne](service-gateway-enterprise-manage-ssas.md#map-user-names-for-analysis-services-data-sources) til at erstatte det med en gyldig værdi. Du kan også arbejde sammen med enten din lejeradministrator eller den lokale Active Directory-administrator om at få ændret dit UPN.
+Hvis dit Azure Active Directory-UPN ikke stemmer overens med dit lokale Active Directory-UPN, kan du bruge funktionen [Tilknyt brugernavne](service-gateway-enterprise-manage-ssas.md#map-user-names-for-analysis-services-data-sources) til at erstatte det med en gyldig værdi. Du kan også arbejde sammen med enten din Power BI-administrator eller den lokale Active Directory-administrator om at få ændret dit UPN.
 
 ## <a name="kerberos"></a>Kerberos
 
@@ -192,11 +209,11 @@ Du får vist 1033-fejlen, når dit eksterne id, som er konfigureret i SAP HANA, 
 
 * SAP HANA kræver, at den repræsenterede bruger anvender attributten sAMAccountName i Active Directory (brugeralias). Hvis denne attribut ikke er korrekt, får du vist 1033-fejlen.
 
-    ![sAMAccount](media/service-gateway-onprem-tshoot/sAMAccount.png)
+    ![Attributeditor](media/service-gateway-onprem-tshoot/sAMAccount.png)
 
 * I loggene kan du se sAMAccountName (alias) og ikke UPN, som er aliasset efterfulgt af domænet (alias@doimain.com).
 
-    ![sAMAccount](media/service-gateway-onprem-tshoot/sAMAccount-02.png)
+    ![Kontooplysninger i logfiler](media/service-gateway-onprem-tshoot/sAMAccount-02.png)
 
 ```xml
       <setting name="ADUserNameReplacementProperty" serializeAs="String">

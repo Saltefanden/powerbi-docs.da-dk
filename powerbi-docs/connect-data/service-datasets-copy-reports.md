@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 04/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: b6f5b1250604f435a49fe6310193eeb80da16763
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 86c663e7b9ba035af6592dc10972d868344df7f7
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236802"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91633202"
 ---
 # <a name="copy-reports-from-other-workspaces"></a>Kopiér rapporter fra andre arbejdsområder
 
@@ -82,7 +82,7 @@ Når du har en rapport i et arbejdsområde, der er baseret på et datasæt i et 
 
 1. Vælg **Få vist relaterede** i listevisningen Rapporter.
 
-    ![ikonet Få vist relaterede](media/service-datasets-copy-reports/power-bi-dataset-view-related.png)
+    ![Skærmbillede, der viser ikonet Få vist relaterede under Handlinger.](media/service-datasets-copy-reports/power-bi-dataset-view-related.png)
 
 1. I dialogboksen **Relateret indhold** vises alle relaterede elementer. På denne liste ligner datasættet ethvert andet. Du kan ikke se, at den befinder sig i et andet arbejdsområde. Dette er et kendt problem.
  
@@ -98,7 +98,7 @@ Du kan beslutte, du ikke længere vil have rapporten og dens tilknyttede delte d
 
 2. På listen over datasæt kan du se, at de delte datasæt ikke har ikonet **Slet**. Opdater siden, eller gå til en anden side og vend tilbage igen. Datasættet vil nu være væk. Hvis dette ikke er tilfældet, skal du markere **Få vist relaterede**. Det kan være relateret til en anden tabel i dit arbejdsområde.
 
-    ![ikonet Få vist relaterede](media/service-datasets-across-workspaces/power-bi-dataset-view-related-icon.png)
+    ![Skærmbillede, der viser et datasæt med indstillingen Få vist relaterede, så det kan kontrolleres, om der er relaterede tabeller.](media/service-datasets-across-workspaces/power-bi-dataset-view-related-icon.png)
 
     > [!NOTE]
     > Hvis du sletter det delte datasæt i dette arbejdsområde, slette datasættet ikke. Der er kun referencen til det, der slettes.

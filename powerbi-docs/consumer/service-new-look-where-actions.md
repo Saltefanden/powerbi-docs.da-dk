@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/15/2020
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: c184fa19c2d94690f8609871babf5b60b2855b99
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: 13792dbefbb459f4a3bb428b5965c6c56eff4b8c
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87538050"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91600117"
 ---
 # <a name="the-new-look-where-did-the-actions-go"></a>Det "nye udseende": Hvor blev handlingerne af?
 
@@ -38,17 +38,17 @@ Leder du efter oplysninger om det nye udseende af **Power BI Desktop**? Se [Brug
 | Tilpas til bredden | Vis > Tilpas til bredden | Menulinjen Vis (højre side) > Tilpas til bredden |
 | Faktisk størrelse | Vis > Faktisk størrelse | Menulinjen Vis (højre side) > Faktisk størrelse |
 | Farver med høj kontrast | Vis > Farver med høj kontrast | Menulinjen Vis (højre side) > Farver med høj kontrast |
-| Ruden Bogmærker | Vis > Ruden Bogmærker |  Menulinjen Bogmærker > Vis flere bogmærker |
-| Opdater | Opdater | Menulinjen Flere indstillinger (...) > Opdater |
+| Ruden Bogmærker | Vis > Ruden Bogmærker |  Menulinjen Bogmærker (højre side) > Vis flere bogmærker |
+| Opdater | Opdater | Menulinje (højre side) Opdater |
 | Fastgør en dynamisk side | Fastgør en dynamisk side | Menulinjen Flere indstillinger (...) > Fastgør en dynamisk side |
 | Nulstil til standard | Nulstil til standard | Nulstil til standard |
 | Kommentarer | Kommentarer | Kommentarer |
 | Vis relaterede | Vis relaterede | Menulinjen Flere indstillinger (...) > Få vist relaterede |
 | Favorit | Favorit | Favorit |
 | Abonner | Abonner |Abonner |
-| Del | Del | Del |
-| Generér QR-kode | Menulinjen Flere indstillinger (...) > Generér QR-kode | Menulinjen Flere indstillinger (...) > Generér QR-kode |
-| Analysér i Excel | Menulinjen Flere indstillinger (...) > Analysér i Excel | Menulinjen Flere indstillinger (...) > Analysér i Excel |
+| Del | Del | Del > Rapport |
+| Generér QR-kode | Menulinjen Flere indstillinger (...) > Generér QR-kode | Del > Generér QR-kode |
+| Analysér i Excel | Menulinjen Flere indstillinger (...) > Analysér i Excel | Eksportér > Analysér i Excel |
 | Fuldskærmsvisning | Fuldskærmsvisning | Øverste linje Vis (højre side) > Fuld skærm |
 
 ## <a name="dashboard-actions-in-the-new-look"></a>Dashboardhandlinger i det nye udseende
