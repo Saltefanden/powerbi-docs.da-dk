@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7d1ecb8f15cc6d10bc2e04d43796874efb161a83
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: 6d35d19a1d47adc6a918f01a71c2009d71692fbd
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87537912"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91633900"
 ---
 # <a name="dashboard-tiles-in-power-bi"></a>Dashboard-felter i Power BI
 
@@ -41,15 +41,15 @@ Har brug for hjælp til at forstå de komponenter, der udgør Power BI?  Se [Pow
 
     - felt, der er oprettet ved hjælp af Spørgsmål og svar
    
-        ![ellipseikon](./media/end-user-tiles/power-bi-options-1.png)
+        ![Skærmbillede, der viser en menu med seks indstillinger.](./media/end-user-tiles/power-bi-options-1.png)
 
     - felt, der oprettet ud fra en projektmappe
    
-        ![ellipseikon](./media/end-user-tiles/power-bi-options-2.png)
+        ![Skærmbillede, der viser en menu med tre indstillinger.](./media/end-user-tiles/power-bi-options-2.png)
 
     - felt, der oprettet ud fra en rapport
    
-        ![ellipseikon](./media/end-user-tiles/power-bi-options-3.png)
+        ![Skærmbillede, der viser en menu med fem indstillinger.](./media/end-user-tiles/power-bi-options-3.png)
    
     Herfra kan du:
    

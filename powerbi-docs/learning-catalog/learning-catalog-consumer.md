@@ -1,17 +1,17 @@
 ---
 title: Læringskatalog til forbrugere
-description: Find alle træningsmuligheder til Power BI
+description: Find alle træningsmuligheder til Power BI for forbrugere, der bruger rapporter og dashboards – lige fra det mest basale til det mest avancerede.
 author: margoc
 ms.prod: powerbi
 ms.topic: article
 ms.date: 03/25/2020
 ms.author: margoc
-ms.openlocfilehash: 51ccaa55eba6a03aa7b41780aaf859f134d2ddae
-ms.sourcegitcommit: 66b1a0c74b8a7dcb33a2f8570fb67bce2401a895
+ms.openlocfilehash: 4a4190dd8a1f17c1a49eca09e6c673a102ae0924
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84532735"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91749408"
 ---
 # <a name="consumers-learning-catalog"></a>Læringskatalog til forbrugere
 
@@ -22,6 +22,6 @@ Følgende katalog er organiseret fra kerneviden til bestemte domæner og fra gru
 ## <a name="get-started"></a>Kom i gang<a name="get-started"></a>
 | Indhold  | Beskrivelse  | Format| Længde  |
 |--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-------------------|
-| [Forbrug af data med Power BI](https://docs.microsoft.com/learn/paths/consume-data-with-power-bi/) | Vil du kunne træffe forretningsbeslutninger, der understøttes af data? Få mere at vide om, hvordan du gør det i Power BI. Få mere at vide om, hvordan du arbejder i Power BI for at gennemse og interagere med dette indhold for at kunne træffe forretningsmæssige beslutninger. | Gratis online læringsforløb i dit eget tempo | 2 t. 9 min.  |
+| [Forbrug af data med Power BI](/learn/paths/consume-data-with-power-bi/) | Vil du kunne træffe forretningsbeslutninger, der understøttes af data? Få mere at vide om, hvordan du gør det i Power BI. Få mere at vide om, hvordan du arbejder i Power BI for at gennemse og interagere med dette indhold for at kunne træffe forretningsmæssige beslutninger. | Gratis online læringsforløb i dit eget tempo | 2 t. 9 min.  |
 | [Microsoft Power BI's YouTube-kanal](https://www.youtube.com/user/mspowerbi/videos) | YouTube-kanal med indhold fra Microsofts Power BI-produktteam  | Videoer  |            |
-| [Hvad er Power BI?](https://docs.microsoft.com/power-bi/fundamentals/power-bi-overview) | Oversigt over Power BI | Websted  | 3 minutter til læsning |
+| [Hvad er Power BI?](../fundamentals/power-bi-overview.md) | Oversigt over Power BI | Websted  | 3 minutter til læsning |

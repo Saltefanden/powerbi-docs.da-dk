@@ -7,12 +7,12 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
 ms.date: 06/30/2018
-ms.openlocfilehash: 6b8d02984fdd6af467b0df5acb6c1455a6e93172
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: f3f76bd7c422d07cb2b390c2aebd92a2d7fe4ef3
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85221040"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91749040"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Sådan overfører du indhold fra Power BI Workspace Collection til Power BI Embedded
 
@@ -48,7 +48,7 @@ Der er et par ting, du skal gøre som forberedelse til at overføre fra Power BI
    * Skal du bruge en separat lejer til din app?
    * Skal du bruge en separat lejer for hver kunde?
 
-     Hvis du beslutter at oprette en ny lejer til din app eller for hver kunde, skal du se [Opret en Azure Active Directory-lejer](create-an-azure-active-directory-tenant.md) eller [Sådan får du en Azure Active Directory-lejer](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant).
+     Hvis du beslutter at oprette en ny lejer til din app eller for hver kunde, skal du se [Opret en Azure Active Directory-lejer](create-an-azure-active-directory-tenant.md) eller [Sådan får du en Azure Active Directory-lejer](/azure/active-directory/develop/active-directory-howto-tenant).
 2. Opret en bruger under den nye lejer. Brugeren skal fungere som masterkonto i din app. Masterkontoen skal tilmeldes Power BI, og den skal også være tildelt en Power BI Pro-licens.
 
 ## <a name="accounts-within-azure-ad"></a>Konti i Azure AD
@@ -58,7 +58,7 @@ Der skal findes følgende konti i din lejer.
 > [!NOTE]
 > Disse konti skal have Power BI Pro-licenser for at kunne bruge arbejdsområder.
 
-1. En lejeradministratorbruger.
+1. En Power BI-administrator.
 
     Det anbefales, at brugeren er medlem af alle de arbejdsområder, der oprettes med henblik på integrering.
 
@@ -168,7 +168,7 @@ Foruden det indhold, du migrerede fra Power BI-arbejdsområdesamlingen, kan du o
 ## <a name="rebuild-your-application"></a>Byg din app igen
 
 1. Du skal ændre din app til at bruge Power BI REST API'er og rapportplaceringen på powerbi.com.
-2. Byg din AuthN/AuthZ-godkendelse igen ved hjælp af *master*kontoen til din app. Du kan med fordel bruge et [integreringstoken](https://docs.microsoft.com/rest/api/power-bi/embedtoken) for at give brugeren tilladelse til at agere på vegne af andre brugere.
+2. Byg din AuthN/AuthZ-godkendelse igen ved hjælp af *master*kontoen til din app. Du kan med fordel bruge et [integreringstoken](/rest/api/power-bi/embedtoken) for at give brugeren tilladelse til at agere på vegne af andre brugere.
 3. Integrer dine rapporter fra powerbi.com i din app.
 
 ## <a name="map-your-users-to-a-power-bi-user"></a>Knyt dine brugere til en Power BI-bruger
@@ -180,7 +180,7 @@ I din app kan du knytte de brugere, du administrerer i appen, til en *master*bru
 Når du er klar til at skifte til produktionsmiljøet, skal du bruge følgende.
 
 * Hvis du bruger en separat lejer til udvikling, skal du sikre, at dine arbejdsområder samt dashboards og rapporter er tilgængelige i dit produktionsmiljø. Du skal også sikre, at du har oprettet appen i Azure AD for din produktionslejer, og at du har tildelt de nødvendige apptilladelser som angivet på trin 1.
-* Køb den kapacitet, der passer med dit behov. I dette [whitepaper om planlægning af analysekapacitet i Power BI Embedded](https://aka.ms/pbiewhitepaper) kan du få oplysninger, så du kan få en bedre forståelse af, hvor meget kapacitet og hvilken type du har brug for. Du kan [købe kapacitet](https://portal.azure.com/#create/Microsoft.PowerBIDedicated) i Azure.
+* Køb den kapacitet, der passer med dit behov. I dette [whitepaper om planlægning af analysekapacitet i Power BI Embedded](./embedded-capacity-planning.md) kan du få oplysninger, så du kan få en bedre forståelse af, hvor meget kapacitet og hvilken type du har brug for. Du kan [købe kapacitet](https://portal.azure.com/#create/Microsoft.PowerBIDedicated) i Azure.
 * Rediger arbejdsområdet, og tildel det til en Premium-kapacitet under avanceret.
 
     ![Premium-kapacitet](media/migrate-from-powerbi-embedded/powerbi-embedded-premium-capacity02.png)
@@ -204,7 +204,7 @@ Du bør rydde op i Azure.
 [Git-lager for JavaScript-API](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Git-lager til Power BI C#](https://github.com/Microsoft/PowerBI-CSharp)  
 [Integreringseksempel til JavaScript](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
-[Whitepaper om planlægning af analysekapacitet i Workspace Collection](https://aka.ms/pbiewhitepaper)  
+[Whitepaper om planlægning af analysekapacitet i Workspace Collection](./embedded-capacity-planning.md)  
 [Hvidbog til Power BI Premium](https://aka.ms/pbipremiumwhitepaper)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

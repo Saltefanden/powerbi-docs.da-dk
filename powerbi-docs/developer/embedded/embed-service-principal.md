@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: ''
 ms.date: 05/12/2020
-ms.openlocfilehash: e7b1e33322e0c1174b05a4e7b3617b5d3f7a18e8
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: e9faa50cd7e2c4a1a51dfb4a72dda950cf3a396a
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85231219"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91746786"
 ---
 # <a name="embed-power-bi-content-with-service-principal-and-an-application-secret"></a>Integrer Power BI-indhold med tjenesteprincipal og en programhemmelighed
 
@@ -24,21 +24,21 @@ I denne artikel beskrives godkendelse af tjenesteprincipalen ved hjælp af et *p
 
 >[!NOTE]
 >Vi anbefaler, at du sikrer dine backend-tjenester ved hjælp af certifikater i stedet for hemmelige nøgler.
->* [Få mere at vide om at hente adgangstoken fra Azure AD ved hjælp af hemmelige nøgler eller certifikater](https://docs.microsoft.com/azure/architecture/multitenant-identity/client-assertion).
+>* [Få mere at vide om at hente adgangstoken fra Azure AD ved hjælp af hemmelige nøgler eller certifikater](/azure/architecture/multitenant-identity/client-assertion).
 >* [Integrer Power BI-indhold med tjenesteprincipal og et certifikat](embed-service-principal-certificate.md).
 
 ## <a name="method"></a>Metode
 
 Hvis du vil bruge tjenesteprincipalen og et program-id med integreret analyse, skal du følge disse trin:
 
-1. Opret en [Microsoft Azure AD-app](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-application-management).
+1. Opret en [Microsoft Azure AD-app](/azure/active-directory/manage-apps/what-is-application-management).
 
     1. Opret Microsoft Azure AD-appens hemmelighed.
     
     2. Hent appens *program-id* og *programhemmelighed*.
 
     >[!NOTE]
-    >Disse trin er beskrevet i **trin 1**. Du kan finde flere oplysninger om, hvordan du opretter en Microsoft Azure AD-app, i artiklen [Opret en Microsoft Azure ADD-app](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal).
+    >Disse trin er beskrevet i **trin 1**. Du kan finde flere oplysninger om, hvordan du opretter en Microsoft Azure AD-app, i artiklen [Opret en Microsoft Azure ADD-app](/azure/active-directory/develop/howto-create-service-principal-portal).
 
 2. Opret en Microsoft Azure AD-sikkerhedsgruppe.
 
@@ -55,7 +55,7 @@ Hvis du vil bruge tjenesteprincipalen og et program-id med integreret analyse, s
 
 Opret en Microsoft Azure AD-app ved hjælp af en af disse metoder:
 * Opret appen i [Microsoft Azure-portalen](https://portal.azure.com/#allservices)
-* Opret appen ved hjælp af [PowerShell-](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-3.6.1).
+* Opret appen ved hjælp af [PowerShell-](/powershell/azure/create-azure-service-principal-azureps?view=azps-3.6.1).
 
 ### <a name="creating-an-azure-ad-app-in-the-microsoft-azure-portal"></a>Oprettelse af en Microsoft Azure AD-app i Microsoft Azure-portalen
 
@@ -63,7 +63,7 @@ Opret en Microsoft Azure AD-app ved hjælp af en af disse metoder:
 
 7. Klik på fanen **Certifikater og hemmeligheder**.
 
-     ![program-id](media/embed-service-principal/certificates-and-secrets.png)
+     ![Skærmbillede, der viser ruden Certifikater og hemmeligheder for en app på Azure Portal.](media/embed-service-principal/certificates-and-secrets.png)
 
 
 8. Klik på **Ny klienthemmelighed**
@@ -81,7 +81,7 @@ Opret en Microsoft Azure AD-app ved hjælp af en af disse metoder:
 
 ### <a name="creating-an-azure-ad-app-using-powershell"></a>Oprettelse af en Microsoft Azure AD-app ved hjælp af PowerShell
 
-Dette afsnit indeholder et eksempelscript til oprettelse af en ny Microsoft Azure AD-app ved hjælp af [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
+Dette afsnit indeholder et eksempelscript til oprettelse af en ny Microsoft Azure AD-app ved hjælp af [PowerShell](/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
 
 ```powershell
 # The app ID - $app.appid
@@ -111,7 +111,7 @@ Du kan oprette en Microsoft Azure AD-sikkerhedsgruppe på to måder:
 
 ### <a name="create-a-security-group-manually"></a>Opret en sikkerhedsgruppe manuelt
 
-Hvis du vil oprette en Azure-sikkerhedsgruppe manuelt, skal du følge vejledningen i artiklen [Opret en basisgruppe, og tilføj medlemmer ved hjælp af Azure Active Directory (Create a basic group and add members using Azure Active Directory)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). 
+Hvis du vil oprette en Azure-sikkerhedsgruppe manuelt, skal du følge vejledningen i artiklen [Opret en basisgruppe, og tilføj medlemmer ved hjælp af Azure Active Directory (Create a basic group and add members using Azure Active Directory)](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). 
 
 ### <a name="create-a-security-group-using-powershell"></a>Opret en sikkerhedsgruppe ved hjælp af PowerShell
 
@@ -121,7 +121,7 @@ Nedenfor er et eksempelscript, der kan bruges til at oprette en ny sikkerhedsgru
 >Hvis du vil give tjenesteprincipaler adgang til hele organisationen, skal du springe dette trin over.
 
 ```powershell
-# Required to sign in as a tenant admin
+# Required to sign in as admin
 Connect-AzureAD
 
 # Create an Azure AD security group
@@ -149,7 +149,7 @@ Føj den sikkerhedsgruppe, du oprettede i Microsoft Azure AD, til det specifikke
 Hvis du vil aktivere dine Microsoft Azure AD-adgangsartefakter, f. eks. rapporter, dashboards og datasæt i Power BI-tjenesten, skal du tilføje tjenestens principalenhed som medlem eller administrator til dit arbejdsområde.
 
 >[!NOTE]
->Dette afsnit indeholder instruktioner til brugergrænsefladen. Du kan også føje en tjenesteprincipal til et arbejdsområde ved hjælp af [Grupper – Tilføj API for gruppebruger](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser).
+>Dette afsnit indeholder instruktioner til brugergrænsefladen. Du kan også føje en tjenesteprincipal til et arbejdsområde ved hjælp af [Grupper – Tilføj API for gruppebruger](/rest/api/power-bi/groups/addgroupuser).
 
 1. Rul til det arbejdsområde, du vil aktivere adgang til, og vælg **Adgang til arbejdsområde** i menuen **Mere**.
 
@@ -179,7 +179,7 @@ Når dit indhold er integreret, er du klar til at [gå videre til produktionen](
 >[Power BI Embedded til dine kunder](embed-sample-for-customers.md)
 
 >[!div class="nextstepaction"]
->[Objekter for et program og en tjenesteprincipal i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)
+>[Objekter for et program og en tjenesteprincipal i Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals)
 
 >[!div class="nextstepaction"]
 >[Sikkerhed på rækkeniveau ved hjælp af datagateway i det lokale miljø med tjenesteprincipal](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)

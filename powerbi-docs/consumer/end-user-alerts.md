@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 08/05/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 3e34a736148a5d962c1f2d56782d38f31c15b9b6
-ms.sourcegitcommit: 9e39232cbc28d8b39dfec5496db7ece9837b5e53
+ms.openlocfilehash: 22d9baaf50ce32c4a9d3644cff455b474bdd1549
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "88049421"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91525293"
 ---
 # <a name="tutorial-set-alerts-on-power-bi-dashboards"></a>Selvstudium: Angiv beskeder i dashboards i Power BI
 
@@ -47,7 +47,7 @@ Det er kun dig, der kan se de angivne beskeder, selvom du deler dashboardet. Dat
 Denne artikel omhandler følgende:
 > [!div class="checklist"]
 > * Hvem kan indstille beskeder
-> * Hvilke visuals understøtter beskeder
+> * Hvilke visualiseringer understøtter beskeder
 > * Hvem kan indstille beskeder
 > * Virker beskeder i Power BI Desktop og Mobil
 > * Sådan opretter du en besked
@@ -86,7 +86,7 @@ Hvis du ikke er tilmeldt Power BI, kan du [tilmelde dig en gratis prøveversion]
    
 1. I ruden **Administrer beskeder** skal du vælge **+ Tilføj påmindelsesregel**.  Kontrollér, at skyderen er angivet til **Til**, og giv beskeden en titel. Titler hjælper dig med let at genkende dine beskeder.
    
-   ![Vinduet Administrer beskeder](media/end-user-alerts/power-bi-alert-manage.png)
+   ![Vinduet Tilføj en påmindelsesregel](media/end-user-alerts/power-bi-alert-manage.png)
 4. Rul ned, og angiv oplysninger om beskederne.  I dette eksempel opretter vi en besked, som skal sendes til os én gang om dagen, hvis markedsandelen når over 40. Beskederne vises i [Meddelelsescenter](end-user-notification-center.md). Vi får også Power BI til at sende os en mail.
    
    ![Vinduet Administrer beskeder, angiv grænseværdi](media/end-user-alerts/power-bi-manage-alert-detail.png)
@@ -142,7 +142,7 @@ Der er mange måder, du kan administrere dine beskeder på: fra selve dashboardf
 
 ## <a name="tips-and-troubleshooting"></a>Tip og fejlfinding 
 
-* Hvis du ikke kan angive en besked for en måler, en KPI eller et kort, skal du kontakte din lejeradministrator eller it-helpdesk for at få hjælp. Nogle gange er beskeder slået fra eller utilgængelige for dit dashboard eller for bestemte typer dashboardfelter.
+* Hvis du ikke kan angive en besked for en måler, en KPI eller et kort, skal du kontakte din Power BI-administrator eller it-helpdesk for at få hjælp. Nogle gange er beskeder slået fra eller utilgængelige for dit dashboard eller for bestemte typer dashboardfelter.
 * Beskeder fungerer kun i forbindelse med opdaterede data. De fungerer ikke med statistiske data. De fleste af de eksempler, der leveres af Microsoft, er statiske. 
 * Muligheden for at modtage og få vist delt indhold kræver en Power BI Pro- eller Premium-licens. Du kan få flere oplysninger ved at læse [Hvilken licens har jeg?](end-user-license.md)
 * Beskeder kan angives på visuelle elementer, der er oprettet ud fra streamingdatasæt, som er fastgjort fra en rapport til et dashboard. Der kan ikke angives beskeder for streamingfelter, der er oprettet direkte på dashboardet ved hjælp af **Tilføj felt** > **Brugerdefinerede streamingdata**.

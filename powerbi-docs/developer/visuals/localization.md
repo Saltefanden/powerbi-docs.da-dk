@@ -1,6 +1,6 @@
 ---
-title: Forstå tilknytning af datavisning i Power BI-visualiseringer
-description: I denne artikel beskrives det, hvordan Power BI transformerer data, før de sendes til visualiseringer.
+title: Tilføj landestandarden i Power BI for Power BI-visualiseringer
+description: Få mere at vide om, hvordan Power BI-landestandarden kan hentes i visualiseringer, så indholdet kan lokaliseres til det relevante sprog.
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
@@ -9,31 +9,31 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 06/18/2019
-ms.openlocfilehash: fece594fa6236f01c707f0b84ddca977fb32dede
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 7492b70b9a82fe6c5579c4251000e9af7509e8fb
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349281"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91746049"
 ---
-# <a name="add-the-locale-in-power-bi-for-power-bi-visuals"></a>Tilføj landestandarden i Power BI for Power BI-visuals
+# <a name="add-the-locale-in-power-bi-for-power-bi-visuals"></a>Tilføj landestandarden i Power BI for Power BI-visualiseringer
 
-I visuals kan Power BI-landestandarden hentes, så indholdet kan lokaliseres til det relevante sprog.
+I visualiseringer kan Power BI-landestandarden hentes, så indholdet kan lokaliseres til det relevante sprog.
 
 Læs mere om [Understøttede sprog og lande/områder til Power BI](./../../fundamentals/supported-languages-countries-regions.md)
 
-Det kan f. eks. være hentning af landestandarden i visual'et Eksempelsøjlediagram.
+Det kan f. eks. være hentning af landestandarden i visualiseringen Eksempelsøjlediagram.
 
-![Lokalisering i visual'et Eksempelsøjlediagram](media/localization/locale-in-samplebarchart.png)
+![Lokalisering i visualiseringen Eksempelsøjlediagram](media/localization/locale-in-samplebarchart.png)
 
 Hvert af disse liggende søjlediagrammer er oprettet under en anden landestandard (engelsk, baskisk og hindi), og det vises i værktøjstippet.
 
 > [!NOTE]
-> Lokaliseringsstyringen i visual'ets kode understøttes fra API 1.10.0 og nyere.
+> Lokaliseringsstyringen i visualiseringens kode understøttes fra API 1.10.0 og nyere.
 
 ## <a name="get-the-locale"></a>Hent landestandarden
 
-`locale` overføres som en streng under initialiseringen af visual'et. Hvis en landestandard ændres i Power BI, genereres visual'et igen med den nye landestandard. Du kan finde hele eksempelkoden i SampleBarChart med landestandard
+`locale` overføres som en streng under initialiseringen af visualiseringen. Hvis en landestandard ændres i Power BI, genereres visualiseringen igen med den nye landestandard. Du kan finde hele eksempelkoden i SampleBarChart med landestandard
 
 BarChart-konstruktøren har nu et landestandardmedlem, som er instantieret i konstruktøren med værtens landestandardforekomst.
 
@@ -95,11 +95,11 @@ zh-TW | 中國 (kinesisk traditionelt)
 > [!NOTE]
 > I PowerBI Desktop indeholder egenskaben for landestandard sproget i den PowerBI Desktop, der er installeret.
 
-## <a name="localizing-the-property-pane-for-power-bi-visuals"></a>Lokalisering af egenskabsruden for Power BI-visuals
+## <a name="localizing-the-property-pane-for-power-bi-visuals"></a>Lokalisering af egenskabsruden for Power BI-visualiseringer
 
-Felter i egenskabsruden kan lokaliseres for at give en mere integreret og sammenhængende oplevelse. Det får det brugerdefinerede visual til at fungere som alle andre kernevisuals i Power BI.
+Felter i egenskabsruden kan lokaliseres for at give en mere integreret og sammenhængende oplevelse. Det får den brugerdefinerede visualisering til at fungere som alle andre kernevisualiseringer i Power BI.
 
-Et ikke-lokaliseret brugerdefineret visual, der er oprettet ved hjælp af kommandoen `pbiviz new`, viser f. eks. følgende felter i egenskabsruden:
+En ikke-lokaliseret brugerdefineret visualisering, der er oprettet ved hjælp af kommandoen `pbiviz new`, viser f. eks. følgende felter i egenskabsruden:
 
 ![Lokalisering i egenskabsrude](media/localization/property-pane.png)
 
@@ -128,7 +128,7 @@ Føj først en nøgle for et vist navn til alle de viste navne, du vil lokaliser
 }
 ```
 
-Tilføj derefter en mappe med navnet stringResources. Mappen indeholder alle dine forskellige strengressourcefiler på basis af de landestandarder, dit visual skal understøtte. Under denne mappe skal du tilføje en JSON-fil for hver landestandard, du vil understøtte. Disse filer indeholder landestandardoplysningerne og de lokaliserede strengværdier for hver displayNameKey, du vil erstatte.
+Tilføj derefter en mappe med navnet stringResources. Mappen indeholder alle dine forskellige strengressourcefiler på basis af de landestandarder, din visualisering skal understøtte. Under denne mappe skal du tilføje en JSON-fil for hver landestandard, du vil understøtte. Disse filer indeholder landestandardoplysningerne og de lokaliserede strengværdier for hver displayNameKey, du vil erstatte.
 
 I vores eksempel kan vi sige, at vi vil understøtte arabisk og hebraisk. Vi skal tilføje to JSON-filer på følgende måde:
 
@@ -149,7 +149,7 @@ Alle JSON-filer definerer en enkelt landestandard (denne fil skal være en af la
 Alle de trin, der kræves for at bruge lokaliserings styring, er beskrevet nedenfor.
 
 > [!NOTE]
-> I øjeblikket understøttes lokalisering ikke for fejlfinding af udviklingsvisual'et
+> I øjeblikket understøttes lokalisering ikke for fejlfinding af udviklingsvisualiseringen
 
 ## <a name="setup-environment"></a>Installationsmiljø
 
@@ -195,7 +195,7 @@ Dette eksempel er en-US-versionen af resources.resjson-filen:
 }
 ```
 
-Den nye localizationManager-forekomst opretter en forekomst af localizationManager i dit visuals kode på følgende måde
+Den nye localizationManager-forekomst opretter en forekomst af localizationManager i din visualiserings kode på følgende måde
 
 ```typescript
 private localizationManager: ILocalizationManager;

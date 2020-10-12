@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 08/12/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: f8020e68db6b0baaabdde626d1b17674fe995ca2
-ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
+ms.openlocfilehash: c3019abae20aec5e71d6b4cbae94c77426a151bd
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88205038"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91635809"
 ---
 # <a name="install-and-use-the-sample-sales-and-marketing-app-in-the-power-bi-service"></a>Installér og brug appeksemplet Sales & Marketing i Power BI-tjenesten
 
@@ -53,11 +53,11 @@ Nu, hvor du har en [grundlæggende forståelse af, hvordan du henter Power BI-in
 
 6. Vælg, om du vil oprette forbindelse til dine egne data, udforske med eksempeldata eller tilpasse og dele din nye app. Da vi har valgt en Microsoft-eksempelapp, kan vi begynde med at udforske den. 
 
-    ![Udforsk ved hjælp af eksempeldata](./media/end-user-app-marketing/power-bi-explore-app.png)
+    ![Skærmbillede, der viser "Kom i gang med din nye app" med indstillingen "Udforsk med eksempeldata" fremhævet.](./media/end-user-app-marketing/power-bi-explore-app.png)
 
 7.  Din nye app åbnes med et dashboard. *Appdesigneren* kunne have konfigureret, at appen skulle åbne i en rapport i stedet for.  
 
-    ![Udforsk ved hjælp af eksempeldata](./media/end-user-app-marketing/power-bi-app-new.png)
+    ![Skærmbillede, der viser et dashboard for din app.](./media/end-user-app-marketing/power-bi-app-new.png)
 
 
 

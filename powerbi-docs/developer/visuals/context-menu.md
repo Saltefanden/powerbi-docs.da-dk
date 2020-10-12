@@ -1,20 +1,20 @@
 ---
-title: Funktioner og egenskaber for visualiseringer i Power BI
-description: I denne artikel beskrives egenskaberne og funktionerne for visualiseringer i Power BI.
+title: Føj en genvejsmenu til Power BI-visual
+description: Få mere at vide om, hvordan du føjer en genvejsmenu til en Power BI-visualisering.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: rkarlin
 manager: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: 7d24ea77fd73ca6a83176d1b8560c88fa98a8d6b
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 9e63a1196ddc7557fcf8b2fceb424415a63d4df9
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79380749"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91748074"
 ---
 # <a name="add-context-menu-to-power-bi-visual"></a>Føj en genvejsmenu til Power BI-visual
 

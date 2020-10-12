@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 374b9eb1becb5c343600521efc2d493f7d83e677
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 5656e4b708cb52519b6dee25a8142b3c49af6532
+ms.sourcegitcommit: 7e99e8af9caf9340958c4607a94728d43e8c3811
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90854041"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91668430"
 ---
 # <a name="share-a-dashboard-or-report-from-the-power-bi-mobile-apps"></a>Del et dashboard eller en rapport fra Power BI-mobilappsene
 Gælder for:
@@ -61,7 +61,7 @@ Du kan kun stoppe med at dele, hvis du er ejer.
  
 2. Skriv mailadresser og en meddelelse, der skal ledsage dashboardinvitationen. Ellers sendes en standardmeddelelse i Power BI. Hvis du vil tillade videredeling, skal indstillingen **Tillad, at modtagerne må dele dette dashboard** være markeret. Videredeling gør det muligt for dine kollegaer at sende invitationen via mail til andre i organisationen, enten via browseren eller mobilappsene.
    
-3. Tryk på ikonet **Send**![afsendelsesikon](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-send-icon.png) i øverste højre hjørne for at sende mailen.
+3. Tryk på ikonet **Send** :::image type="icon" source="./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-send-icon.png" border="false"::: i øverste højre hjørne for at sende mailen.
    
     Modtagerne får en invitation via mail med et direkte link til dashboardet eller rapporten. Invitationen udløber efter én måned. Når modtagerne åbner invitationen i Power BI-tjenesten eller Power BI-mobilappen, føjes den til afsnittet **Delt med mig** under deres Power BI-konto. Sådan får du adgang til afsnittet Delt med mig:
    * Tryk på **Flere indstillinger** (...) på navigationslinjen i Power BI-mobilappen, og vælg ![Delt med mig](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Delt med mig**.
@@ -90,7 +90,7 @@ Du kan kun stoppe med at dele, hvis du er ejer.
 
 2. Skriv mailadresser og en meddelelse, der skal ledsage invitationen. Ellers sendes en standardmeddelelse i Power BI. Hvis du vil tillade videredeling, skal indstillingen **Tillad, at modtagerne må dele dette dashboard** være markeret. Videredeling gør det muligt for dine kolleger at dele med andre i organisationen, enten via browseren eller mobilappsene.
    
-3. Tryk på ikonet **Send**![afsendelsesikon](./media/mobile-share-dashboard-from-the-mobile-apps/pbi_win10ph_sendicon.png).
+3. Tryk på ikonet **Send** :::image type="icon" source="./media/mobile-share-dashboard-from-the-mobile-apps/pbi_win10ph_sendicon.png" border="false":::.
    
     Modtagerne får en invitation via mail med et direkte link til dashboardet eller rapporten. Invitationen udløber efter én måned. Når modtagerne åbner invitationen i Power BI-tjenesten eller Power BI-mobilappen, føjes den til afsnittet **Delt med mig** under deres Power BI-konto. Sådan får du adgang til afsnittet Delt med mig:
    

@@ -8,17 +8,17 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 12/11/2019
 ms.author: painbar
-ms.openlocfilehash: a0fdc83db8d24f4733d3eb8402a4ea9ccce15869
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 71fb659ba102e139c7a1679b0c58c07c47a38bf0
+ms.sourcegitcommit: 7e99e8af9caf9340958c4607a94728d43e8c3811
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860595"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91668660"
 ---
 # <a name="set-data-alerts-in-the-power-bi-mobile-apps"></a>Indstil databeskeder i Power BI-mobilapps
 Gælder for:
 
-| ![iPhone](./media/mobile-set-data-alerts-in-the-mobile-apps/iphone-logo-50-px.png) | ![iPad](./media/mobile-set-data-alerts-in-the-mobile-apps/ipad-logo-50-px.png) | ![Android-telefon](./media/mobile-set-data-alerts-in-the-mobile-apps/android-phone-logo-50-px.png) | ![Android-tablet](./media/mobile-set-data-alerts-in-the-mobile-apps/android-tablet-logo-50-px.png) | ![Android-tablet](./media/mobile-set-data-alerts-in-the-mobile-apps/win-10-logo-50-px.png) |
+| ![iPhone](./media/mobile-set-data-alerts-in-the-mobile-apps/iphone-logo-50-px.png) | ![iPad](./media/mobile-set-data-alerts-in-the-mobile-apps/ipad-logo-50-px.png) | ![Android-telefon](./media/mobile-set-data-alerts-in-the-mobile-apps/android-phone-logo-50-px.png) | ![Android-tablet](./media/mobile-set-data-alerts-in-the-mobile-apps/android-tablet-logo-50-px.png) | ![Windows 10-enhed.](./media/mobile-set-data-alerts-in-the-mobile-apps/win-10-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |:--- |
 | iPhone-telefoner |iPad-tablets |Android-telefoner |Android-tablets |Windows 10-enheder |
 
@@ -38,7 +38,7 @@ Du kan angive beskeder på felter, hvis du har en licens til Power BI Pro, eller
 1. Tryk på et tal- eller et målerfelt på et dashboard for at åbne det i Fokustilstand.  
    
    ![Skærmbillede af et dashboard, der viser målefeltet i fokustilstand.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-card-visual.png)
-2. Tryk på klokkeikonet ![Klokkeikon](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-alert-icon.png) for at sende en besked.  
+2. Tryk på klokkeikonet :::image type="icon" source="media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-alert-icon.png" border="false"::: for at tilføje en besked.  
 3. Tryk på **Tilføj regel for vigtig besked**.
    
    ![Skærmbillede af påmindelsesreglen, hvor ingen beskeder er angivet.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-add-alert-rule.png)
@@ -62,9 +62,9 @@ Du kan administrere individuelle beskeder på din mobilenhed eller [administrere
 
 1. Tryk på et tal- eller målerfelt på et dashboard, som der er oprettet en besked for.  
    
-   ![Skærmbillede af dashboardet, som viser antallet af felter med en besked.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-card-visual_has_alert.png)
+   ![Skærmbillede af dashboardet på en iPhone eller iPad, der viser talfeltet med en vigtig besked.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-card-visual_has_alert.png)
 
-2. Tryk på klokkeikonet ![Klokkeikon](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-has-alert-icon.png).  
+2. Tryk på klokkeikonet :::image type="icon" source="media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-has-alert-icon.png" border="false":::.  
 3. Tryk på navnet på beskeden for at redigere den, tryk på skyderen for at slå mailbeskeder fra, eller tryk på skraldespanden for at slette beskeden.
    
     ![Skærmbillede af en besked, der peger på beskednavnet, papirkurven til sletning af beskeden og skyderen til at slå beskeden fra.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-edit-delete-alert.png)
@@ -72,9 +72,9 @@ Du kan administrere individuelle beskeder på din mobilenhed eller [administrere
 ## <a name="data-alerts-on-an-android-device"></a>Databeskeder på en Android-enhed
 ### <a name="set-an-alert-on-an-android-device"></a>Indstil en besked på en Android-enhed
 1. Tryk på et tal- eller målerfelt på et Power BI-dashboard for at åbne det.  
-2. Tryk på klokkeikonet ![Klokkeikon](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-alert-icon.png) for at sende en besked.  
+2. Tryk på klokkeikonet :::image type="icon" source="media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-alert-icon.png" border="false"::: for at tilføje en besked.  
    
-   ![Skærmbillede af dashboardet, som viser antallet af felter med en besked.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-tap-alert.png)
+   ![Skærmbillede af dashboardet på en Android-enhed, der viser talfeltet med en vigtig besked.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-tap-alert.png)
 3. Tryk på plusikonet (+).
    
    ![Skærmbillede af beskeden Administrer, der viser en pil, som peger på plusikonet.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-plus-alert.png)
@@ -95,7 +95,7 @@ Du kan administrere individuelle beskeder på din mobilenhed eller [administrere
 Du kan administrere individuelle beskeder i din Power BI-mobilapp, eller du kan [administrere alle dine beskeder i Power BI-tjenesten](../../create-reports/service-set-data-alerts.md).
 
 1. Tryk på et kort- eller målerfelt på et dashboard, som der er oprettet en besked for.  
-2. Tryk på det udfyldte klokkeikon ![Klokkeikon](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-filled-alert-bell.png).  
+2. Tryk på det udfyldte klokkeikon :::image type="icon" source="media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-filled-alert-bell.png" border="false":::.  
 3. Tryk på beskeden for at ændre en værdi, eller slå den fra.
    
     ![Skærmbillede af beskedfeltet Administrer, der viser plusikonet til tilføjelse af en besked.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-manage-alerts.png)
@@ -109,9 +109,9 @@ Du kan administrere individuelle beskeder i din Power BI-mobilapp, eller du kan 
 
 ### <a name="set-data-alerts-on-a-windows-device"></a>Indstil databeskeder på en Windows-enhed
 1. Tryk på et tal- eller målerfelt på et dashboard for at åbne det.  
-2. Tryk på klokkeikonet ![Klokkeikon](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-alert-bell-off.png) for at sende en besked.  
+2. Tryk på klokkeikonet :::image type="icon" source="media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-alert-bell-off.png" border="false"::: for at tilføje en besked.  
    
-   ![Skærmbillede af dashboardet, som viser antallet af felter med en besked.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-tap-alert.png)
+   ![Skærmbillede af dashboardet på en Windows-enhed, der viser talfeltet med en vigtig besked.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-tap-alert.png)
 3. Tryk på plusikonet (+).
    
    ![Skærmbillede af Administrer beskeder, som viser, at der ikke er angivet nogen beskeder.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-no-alerts-yet.png)
@@ -134,7 +134,7 @@ Du kan administrere individuelle beskeder i din Power BI-mobilapp, eller du kan 
 Du kan administrere individuelle beskeder i din Power BI-mobilapp, eller du kan [administrere alle dine beskeder i Power BI-tjenesten](../../create-reports/service-set-data-alerts.md).
 
 1. Tryk på et kort- eller målerfelt på et dashboard, som der er oprettet en besked for.  
-2. Tryk på klokkeikonet ![Klokkeikon](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-alert-bell-on.png).  
+2. Tryk på klokkeikonet :::image type="icon" source="media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-alert-bell-on.png" border="false":::.  
    
    ![Skærmbillede af dashboardet, som viser antallet af felter med en besked.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-has-alerts.png)
 3. Tryk på beskeden for at ændre en værdi, eller slå den fra.
@@ -153,10 +153,10 @@ Datakilder er ofte indstillet til at blive opdateret dagligt, selvom nogle opdat
 2. Hvis du har indstillet beskeden til at sende en mail til dig, modtager du mail i din indbakke.
    
    ![Skærmbillede af en mailmeddelelse, der viser beskeden.](media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alerts-email.png)
-3. Power BI føjer en meddelelse til dit [Meddelelsescenter](mobile-apps-notification-center.md) og føjer en gul prik til klokkeikonet ![klokkeikon](media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alert-tile-notification-icon.png) på titellinjen (iOS og Android) eller til knappen til global navigation ![knap til global navigation](./media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-alert-global-nav-button.png) (Windows 10-enheder).
+3. Power BI føjer en meddelelse til dit [Meddelelsescenter](./media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-alert-global-nav-button.png) og føjer en gul prik til klokkeikonet ](mobile-apps-notification-center.md) på titellinjen (iOS og Android) eller til knappen til global navigation :::image type="icon" source="media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alert-tile-notification-icon.png" border="false":::knap til global navigation![ (Windows 10-enheder).
 
 
-4. Tryk på klokkeikonet ![klokkeikon](media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alert-tile-notification-icon.png) eller knappen til global navigation ![knap til global navigation](./media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-alert-global-nav-button.png) for at [åbne dit **Meddelelsescenter**](mobile-apps-notification-center.md) og se oplysningerne om de vigtige beskeder.
+4. Tryk på klokkeikonet :::image type="icon" source="media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alert-tile-notification-icon.png" border="false"::: eller knappen til global navigation ![knap til global navigation](./media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-alert-global-nav-button.png) for at [åbne dit **Meddelelsescenter**](mobile-apps-notification-center.md) og se oplysningerne om de vigtige beskeder.
    
      
 

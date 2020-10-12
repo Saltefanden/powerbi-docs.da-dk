@@ -7,12 +7,12 @@ ms.subservice: powerbi-service
 ms.topic: how-to
 ms.date: 10/23/2019
 ms.author: mohaali
-ms.openlocfilehash: a94f4bda1f7ebc4a612da65623f539e820c8c333
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 249e3cd56359a54c358341f463d049435f407515
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85240442"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91635786"
 ---
 # <a name="best-practices-to-optimize-qa-in-power-bi"></a>Bedste praksis for optimering af Spørgsmål og svar i Power BI
 Det er effektivt, når du bruger almindelige udtryk og naturligt sprog til dataforespørgsler. Det er endnu mere effektivt, når dine data svarer, hvilket er, hvad der sker i Spørgsmål og svar i Power BI.
@@ -116,11 +116,11 @@ Hvis du har flere kolonner, der fungerer som en enkelt særskilt enhed i en stø
 
 **Skal forbedres**
 
-![Brug flere tabeller til Spørgsmål og svar](media/q-and-a-best-practices/desktop-qna-09.png)
+![Skærmbillede, der viser en tabel med leverandører, som indeholder kontaktoplysninger.](media/q-and-a-best-practices/desktop-qna-09.png)
 
 **Klar til Spørgsmål og svar**
 
-![Brug flere tabeller til Spørgsmål og svar](media/q-and-a-best-practices/desktop-qna-10.png)
+![Skærmbillede, der viser to tabeller: én for leverandører og én for kontakter.](media/q-and-a-best-practices/desktop-qna-10.png)
 
 ### <a name="pivot-to-eliminate-property-bags"></a>Pivotér for at eliminere egenskabsbeholdere
 
@@ -134,7 +134,7 @@ Lad os f.eks. antage, at vi har tabellen *Kundedemografi* med kolonnerne Kunde-i
 
 **Klar til Spørgsmål og svar**
 
-![Brug flere tabeller til Spørgsmål og svar](media/q-and-a-best-practices/desktop-qna-12.png)
+![Skærmbillede, der viser fire kolonner, hvor egenskaberne Age, MartialStatus, City og Gender er kolonner med værdier for forskellige kunder.](media/q-and-a-best-practices/desktop-qna-12.png)
 
 ### <a name="union-to-eliminate-partitioning"></a>Benyt samling for at fjerne partitionering
 
@@ -148,7 +148,7 @@ Overvej desuden en typisk pivoteret værdikolonne: en tabel over en *Bogturné*,
 
 **Klar til Spørgsmål og svar**
 
-![Brug flere tabeller til Spørgsmål og svar](media/q-and-a-best-practices/desktop-qna-14.png)
+![Skærmbillede, der viser to tabeller: én med oplysninger om bog og forfatter til rundturen og én med byer, der er knyttet til rundturen.](media/q-and-a-best-practices/desktop-qna-14.png)
 
 ### <a name="split-formatted-columns"></a>Opdel formaterede kolonner
 
@@ -160,7 +160,7 @@ Hvis kilden, hvorfra du importerer dine data, indeholder formaterede kolonner, v
 
 **Klar til Spørgsmål og svar**
 
-![Brug flere tabeller til Spørgsmål og svar](media/q-and-a-best-practices/desktop-qna-16.png)
+![Skærmbillede, der viser en tabel med kunder, en fuldstændig adresselinje og tre linjer, der opdeler adressen i gade, by og land.](media/q-and-a-best-practices/desktop-qna-16.png)
 
 Hvis du på samme måde har en kolonne med det fulde navn på en person, skal du tilføje kolonnerne **Fornavn** og **Efternavn**, i tilfælde af at nogen vil stille spørgsmål ved hjælp af delvise navne. 
 
@@ -175,7 +175,7 @@ En lignende situation forekommer, hvis kilden, hvorfra du importerer dataene, in
 
 **Klar til Spørgsmål og svar**
 
-![Brug flere tabeller til Spørgsmål og svar](media/q-and-a-best-practices/desktop-qna-18.png)
+![Skærmbillede, der viser to tabeller: én med navn og genre og én med komponist.](media/q-and-a-best-practices/desktop-qna-18.png)
 
 ### <a name="denormalize-to-eliminate-inactive-relationships"></a>Benyt denormalisering for at fjerne inaktive relationer
 

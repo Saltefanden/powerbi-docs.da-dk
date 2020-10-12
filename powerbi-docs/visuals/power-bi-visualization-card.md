@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 05/05/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a3e213107f84f81aef78a52cdb282b70379c7465
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 8ee29bcfb85c627ed6e9bb4c33c48b941ded7dd7
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237520"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91526811"
 ---
 # <a name="create-card-visualizations"></a>Opret kortvisualiseringer
 
@@ -102,7 +102,8 @@ Ruden Formatering er tilgængelig, når du interagerer med kortet i en rapport.
 5. Fortsæt med at udforske formateringsindstillingerne, indtil dit kort er præcis, som du vil det. 
 
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
-Hvis du ikke kan se feltet til spørgsmål, skal du kontakte system- eller lejeradministratoren.    
+
+Hvis du ikke kan se feltet til spørgsmål, skal du kontakte din Power BI-administrator.
 
 ## <a name="next-steps"></a>Næste trin
 [Kombinationsdiagrammer i Power BI](power-bi-visualization-combo-chart.md)

@@ -10,12 +10,12 @@ ms.date: 05/20/2020
 ms.author: mihart
 ms.custom: licensing support
 LocalizationGroup: Consumers
-ms.openlocfilehash: ebc402bf317eb99294137260fcd0cd1e9178d9eb
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 5e1da5cc99cbc12b9cbcc41544569f8f0ede9590
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237318"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91634015"
 ---
 # <a name="collaborate-in-workspaces"></a>Samarbejd i et arbejdsområde
 
@@ -25,7 +25,7 @@ ms.locfileid: "85237318"
 
  Du kan se dine arbejdsområder på **startsiden** i Power BI eller ved at vælge **Arbejdsområde** eller **Mit arbejdsområde** fra navigationsruden til venstre.
 
- ![navigationsruden, der viser to typer arbejdsområder](media/end-user-workspaces/power-bi-home.png)
+ ![Skærmbillede, der viser navigationsruden med to typer arbejdsområder.](media/end-user-workspaces/power-bi-home.png)
 
 ## <a name="types-of-workspaces"></a>Typer af arbejdsområder
 I **Mit arbejdsområde** gemmes alt det indhold, du ejer og opretter. Tænk på det som din personlige sandkasse eller arbejdsområde til dit eget indhold. For mange Power BI-*forbrugere* vil **Mit arbejdsområde** vedblive med at være tomt, fordi deres job ikke involverer oprettelse af nyt indhold. *Forbrugere* er defineret som dem, der forbruger data, som er oprettet af andre, og bruger disse data til at træffe forretningsbeslutninger. Hvis du opretter indhold, kan du overveje at læse [Power BI-artiklerne til designere](../create-reports/index.yml) i stedet for.
@@ -34,7 +34,7 @@ I **Mit arbejdsområde** gemmes alt det indhold, du ejer og opretter. Tænk på 
 
 Arbejdsområdet med salg af figner nedenfor indeholder tre rapporter og ét dashboard. 
 
-![navigationsruden, der viser to typer arbejdsområder](media/end-user-workspaces/power-bi-app-workspace.png)
+![Skærmbillede, der viser, hvordan et arbejdsområde ser ud under menupunktet Arbejdsområder, og som indeholder rapporter og et dashboard.](media/end-user-workspaces/power-bi-app-workspace.png)
 
 ## <a name="roles-in-the-workspaces"></a>Roller i arbejdsområderne
 

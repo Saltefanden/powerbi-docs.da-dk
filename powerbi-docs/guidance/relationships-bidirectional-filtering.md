@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: c362a8012635becb68200a9d513157c05310edaf
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: e9c25089c5141f16cc3f993039dc69bece9231f1
+ms.sourcegitcommit: 7e99e8af9caf9340958c4607a94728d43e8c3811
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86215154"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91668614"
 ---
 # <a name="bi-directional-relationship-guidance"></a>Vejledning til tovejsrelationer
 
@@ -67,7 +67,7 @@ Rækkedetaljerne for de tre tabeller er beskrevet i følgende punktopstilling:
 
 Se nu følgende rapportside.
 
-![Diagram, der viser rapportsiden med tre visuals. Detaljerne er beskrevet i følgende afsnit.](media/relationships-bidirectional-filtering/sales-report-no-bi-directional-filter.png)
+![Diagram, der viser rapportsiden med tre visualiseringer. Detaljerne er beskrevet i følgende afsnit.](media/relationships-bidirectional-filtering/sales-report-no-bi-directional-filter.png)
 
 Siden består af to udsnit og en kortvisualisering. Det første udsnit er for **Land-Område** og indeholder to elementer: Australien og USA. Det er i øjeblikket filtreret efter Australien. Det andet udsnit er for **Produkt** og indeholder tre elementer: Hat, jeans og T-shirt. Der er ikke valgt nogen elementer (hvilket betyder, at der ikke filtreres efter _nogen produkter_). Der vises et antal på 30 i kortvisualiseringen.
 
@@ -77,7 +77,7 @@ Når rapportbrugerne opretter udsnit efter Australien, vil du måske begrænse u
 
 Der vises nu et enkelt element i udsnittet **Produkt**: T-shirt. Dette element repræsenterer det eneste produkt, der sælges til australske kunder.
 
-![Diagram, der viser rapportsiden med tre visuals. Detaljerne er beskrevet i følgende afsnit.](media/relationships-bidirectional-filtering/sales-report-bi-directional-filter.png)
+![Diagram, der viser rapportsiden, som indeholder tre visualiseringer med Produkt fremhævet. Detaljerne er beskrevet i følgende afsnit.](media/relationships-bidirectional-filtering/sales-report-bi-directional-filter.png)
 
 Det anbefales, at du først overvejer, om dette design fungerer for dine rapportbrugere. Nogle rapportbrugere synes, at det er forvirrende. De forstår ikke, hvorfor udsnitselementer vises dynamisk eller forsvinder, når de interagerer med andre udsnit.
 
@@ -128,7 +128,7 @@ Under evalueringen af målingsudtrykket **Salg i forskellige lande** filtreres r
 
 I følgende tabelvisualisering vises statistik for hvert solgte produkt. Kolonnen **Antal** er blot summen af værdierne for antal. Kolonnen **Salg i forskellige lande** repræsenterer det entydige antal af lande-/områdespecifikke værdier for alle kunder, der har købt produktet.
 
-![Diagram, der viser to produkter i et tabelvisual. I kolonnen "Salg i forskellige lande" er jeans 1, og T-shirt er 2.](media/relationships-bidirectional-filtering/country-sales-crossfilter-function.png)
+![Diagram, der viser to produkter i en tabelvisualisering. I kolonnen "Salg i forskellige lande" er jeans 1, og T-shirt er 2.](media/relationships-bidirectional-filtering/country-sales-crossfilter-function.png)
 
 ## <a name="next-steps"></a>Næste trin
 

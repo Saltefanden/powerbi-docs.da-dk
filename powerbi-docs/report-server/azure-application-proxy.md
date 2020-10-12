@@ -8,12 +8,12 @@ ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 07/28/2020
 ms.author: maggies
-ms.openlocfilehash: 53f8a0a2d634ebcbd0023f560f8ee35e629d4d09
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 60287bfde79c918250037ccc03781e7cb47d6320
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90861285"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91634222"
 ---
 # <a name="configure-power-bi-report-server-with-azure-application-proxy"></a>Konfigurer en Power BI-rapportserver med Azure-proxyprogram
 
@@ -201,7 +201,7 @@ Hvis du vil afslutte konfigurationen af dit program, skal du gå til afsnittet *
     - Opret en ny webadresse til omdirigering, og konfigurer den med **Type** = **Web** og **Omdirigerings-URI** = `https://pbirsazureapp-umacontoso2410.msappproxy.net/`
     - I afsnittet **Avancerede indstillinger** skal du konfigurere **URL-adresse til logout** til `https://pbirsazureapp-umacontoso2410.msappproxy.net/?Appproxy=logout`
 
-    ![Indstillinger for godkendelse](media/azure-application-proxy/azure-report-server-authentication-1.png)
+    ![Skærmbillede, der viser ruden Godkendelse i Power BI-rapportserver med Omdirigerings-URI'er og Avancerede indstillinger.](media/azure-application-proxy/azure-report-server-authentication-1.png)
 
 1. Fortsæt med at konfigurere **godkendelsesafsnittet** i Appregistrering for Power BI-rapportserverprogrammet på følgende måde for **Implicit bonus**, **Standardklienttype** og **Understøttede kontotyper**:
 
@@ -209,7 +209,7 @@ Hvis du vil afslutte konfigurationen af dit program, skal du gå til afsnittet *
     - Angiv **Standardklienttype** til **Nej**.
     - Angiv **Understøttede kontotyper** til **Kun konti i denne organisations mappe (kun UmaContoso – enkelt lejer)** .
 
-    ![Indstillinger for godkendelse](media/azure-application-proxy/azure-report-server-authentication-2.png)
+    ![Skærmbillede, der viser ruden Godkendelse i Power BI-rapportserver med de beskrevne indstillinger.](media/azure-application-proxy/azure-report-server-authentication-2.png)
 
 1. Når enkeltlogon er konfigureret, og URL-adressen `https://pbirsazureapp-umacontoso2410.msappproxy.net` fungerer, skal vi sikre, at den konto, som vi logger på med, er synkroniseret med den konto, som rettighederne er angivet til i Power BI-rapportserver.
 

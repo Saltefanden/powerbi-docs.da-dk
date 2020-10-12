@@ -1,6 +1,6 @@
 ---
 title: Planlagt opdatering af Power BI-rapport på Power BI-rapportserver
-description: Power BI-rapporter kan forbindes med forskellige datakilder. Der er adgang til forskellige datakilder, afhængigt af hvordan dataene bruges.
+description: Planlagt opdatering af Power BI-rapporter gør det muligt at holde dataene til en rapport med en integreret model ajourført.
 author: maggiesMSFT
 ms.reviewer: kayu
 ms.service: powerbi
@@ -8,12 +8,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/09/2020
 ms.author: maggies
-ms.openlocfilehash: 89adff51d70be24e4f42c379a729fd1123ca10a5
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 710df5f4159f49884d9eee1044b2c077c7edcb88
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90861768"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91749086"
 ---
 # <a name="power-bi-report-scheduled-refresh-in-power-bi-report-server"></a>Planlagt opdatering af Power BI-rapport på Power BI-rapportserver
 Planlagt opdatering af Power BI-rapporter gør det muligt at holde dataene til en rapport ajourført.
@@ -57,14 +57,14 @@ Ud over ovennævnte liste er der specifikke scenarier med datakilder i tilstande
 ### <a name="memory-limits"></a>Hukommelsesbegrænsninger
 Traditionelt set har en rapportservers arbejdsbelastning svaret nogenlunde til et webprogram. Evnen til at indlæse rapporter med importerede data eller DirectQuery og evnen til at udføre planlagte opdateringer afhænger af, at en Analysis Services-forekomst hostes sammen med rapportserveren. Dette kan derfor resultere i et uventet stort hukommelsesforbrug i serveren. Planlæg serverinstallationen på baggrund af denne mulighed for, at Analysis Services bruger hukommelsen samtidig med rapportserveren.
 
-Du kan finde oplysninger om, hvordan du overvåger en Analysis Services-forekomst, i [Overvåg en Analysis Services-forekomst](/sql/analysis-services/instances/monitor-an-analysis-services-instance).
+Du kan finde oplysninger om, hvordan du overvåger en Analysis Services-forekomst, under [Overvåg en Analysis Services-forekomst](/sql/analysis-services/instances/monitor-an-analysis-services-instance).
 
 Du kan finde oplysninger om hukommelsesindstillinger i Analysis Services under [Egenskaber for hukommelse](/sql/analysis-services/server-properties/memory-properties).
 
 ### <a name="data-model-size-limit"></a>Grænse for størrelse på datamodel
 Den datamodel, der indlæses i det interne Analysis Services-program under en planlagt opdatering, har en maksimal størrelse på 2.000 MB (2 GB). Denne maksimale størrelse kan ikke konfigureres. Hvis din datamodel vokser til større end 2 GB, modtager du en opdateringsfejl, "længden på resultatet overskrider længdegrænsen (2 GB) for målets størrelsestype." I det tilfælde anbefaler vi, at modellen hostes i en Analysis Services-forekomst og bruger en direkte forbindelse til modellen i rapporten.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 Konfigurer [planlagt opdatering](configure-scheduled-refresh.md) af en Power BI-rapport.
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

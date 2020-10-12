@@ -1,17 +1,17 @@
 ---
 title: Læringskatalog til løsningsarkitekter
-description: Find alle træningsmuligheder til Power Apps
+description: Find alle træningsmuligheder til Power Apps for løsningsdesignere – lige fra det mest basale til det mest avancerede.
 author: margoc
 ms.prod: powerbi
 ms.topic: article
 ms.date: 03/25/2020
 ms.author: margoc
-ms.openlocfilehash: 4a14dd303307413b354d2cf2441347f275497bfa
-ms.sourcegitcommit: 66b1a0c74b8a7dcb33a2f8570fb67bce2401a895
+ms.openlocfilehash: c75e3d45199173ce949bb876e9755c44c8bd06a5
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84532091"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91749339"
 ---
 # <a name="solution-architects-learning-catalog"></a>Læringskatalog til løsningsarkitekter
 

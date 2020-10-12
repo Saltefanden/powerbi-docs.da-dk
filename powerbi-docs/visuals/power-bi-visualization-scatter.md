@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 11/21/2019
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b4a5733e0c4b8617dc93edb1e7fe35a0a76a3338
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 963bd77568db4390bca73a4ec4e9ce97ee616a58
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238158"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91632888"
 ---
 # <a name="scatter-charts-bubble-charts-and-dot-plot-charts-in-power-bi"></a>Punktdiagrammer, boblediagrammer og prikdiagrammer i Power BI
 
@@ -143,7 +143,7 @@ Nu tilføjer jeg en tredje dimension.
 
         a. Ret feltet **Afvigelse for samlet salg i %** til **Bruttoavance for sidste år i %**
 
-        ![Skærmbillede af boblediagrammet, hvor der er tilføjet en medianlinje.](media/power-bi-visualization-scatter/power-bi-format-symmetry.png)
+        ![Skærmbillede af Detaljer med Bruttoavance for sidste år i % valgt.](media/power-bi-visualization-scatter/power-bi-format-symmetry.png)
 
         b. Tilføj **symmetriskygge** fra ruden Analyse. Ud fra skyggen kan vi se, at Hosiery (den grønne boble i det lyserøde område) er den eneste kategori, der favoriserer bruttoavancen frem for salget pr. butikskvadratmeter. 
 
@@ -151,7 +151,7 @@ Nu tilføjer jeg en tredje dimension.
 
     - Fortsæt med at udforske ruden Analyse for at se mere om dine data. 
 
-        ![Skærmbillede af boblediagrammet, hvor der er tilføjet en symmetriskygge.](media/power-bi-visualization-scatter/power-bi-analytics-example.png)
+        ![Skærmbillede af ruden Analyse.](media/power-bi-visualization-scatter/power-bi-analytics-example.png)
 
 ## <a name="create-a-dot-plot-chart"></a>Opret et prikdiagram
 

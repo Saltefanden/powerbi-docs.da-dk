@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 01/10/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 9d74733e6baad4f84d52e8bc8749fe0295eedb2e
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: b7aebef72952c75ed6ec406c6f3f9e888f047086
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239828"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91632819"
 ---
 # <a name="create-and-view-decomposition-tree-visuals-in-power-bi"></a>Opret og få vist fordelingstrævisualiseringer i Power BI
 
@@ -23,7 +23,7 @@ ms.locfileid: "85239828"
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
-Fordelingstrævisual'et i Power BI giver dig mulighed for at visualisere data på tværs af flere dimensioner. Den samler automatisk data og giver dig mulighed for at foretage detailudledning i dine dimensioner i vilkårlig rækkefølge. Det er også en AI-visualisering (kunstig intelligens), så du kan bede den om at finde den næste dimension, så du kan foretage detailudledning på baggrund af bestemte kriterier. Det gør det til et værdifuldt værktøj til ad hoc-udforskning og udførelse af rodårsags analyser.
+Visualiseringen med fordelingstræet i Power BI giver dig mulighed for at visualisere data på tværs af flere dimensioner. Den samler automatisk data og giver dig mulighed for at foretage detailudledning i dine dimensioner i vilkårlig rækkefølge. Det er også en AI-visualisering (kunstig intelligens), så du kan bede den om at finde den næste dimension, så du kan foretage detailudledning på baggrund af bestemte kriterier. Det gør det til et værdifuldt værktøj til ad hoc-udforskning og udførelse af rodårsags analyser.
 
 ![Fordelingstræ](media/power-bi-visualization-decomposition-tree/tree-full.png)
 
@@ -53,7 +53,7 @@ Når du trækker din måling til feltbrønd, viser de visuelle opdateringer den 
 
 Næste trin er af hente en eller flere dimensioner, hvor du vil foretage detailudledning. Føj disse felter til bucket'en **Forklar efter**. Bemærk, at der vises et plustegn ud for rodnoden. Hvis du vælger knappen +, kan du vælge, hvilket felt du vil foretage detailudledning i (du kan foretage detailudledning i felterne i en hvilken som helst rækkefølge).
 
-![Menu for fordelingstræ](media/power-bi-visualization-decomposition-tree/tree-menu.png)
+![Skærmbillede, der viser plusikonet valgt med indstillinger på listen Forklar efter.](media/power-bi-visualization-decomposition-tree/tree-menu.png)
 
 Hvis du vælger **Forventningsbias** udvides træet, og målingerne analyseres efter værdierne i kolonnen. Denne proces kan gentages ved at vælge en anden node, hvor der skal foretages detailudledning.
 
@@ -61,16 +61,16 @@ Hvis du vælger **Forventningsbias** udvides træet, og målingerne analyseres e
 
 Når du vælger en node fra det sidste niveau, filtreres dataene i tværgående retning. Når du vælger en node fra et tidligere niveau, ændres stien.
 
-![Menu for fordelingstræ](media/power-bi-visualization-decomposition-tree/tree-interaction.gif)
+![Animation, der viser valg af en node fra et tidligere niveau, og hvordan det ændrer visningen, så de underordnede noder vises.](media/power-bi-visualization-decomposition-tree/tree-interaction.gif)
 
-Ved interaktion med andre visuals filtreres fordelingstræet i tværgående retning. Det kan betyde af nodernes rækkefølge på de enkelte niveauer ændres.
+Ved interaktion med andre visualiseringer filtreres fordelingstræet i tværgående retning. Det kan betyde af nodernes rækkefølge på de enkelte niveauer ændres.
 I eksemplet nedenfor har vi filtreret træet i tværgående retning efter Ubisoft. Stien opdateres, og Xbox-salget flyttes fra første til anden placering og overhales af PlayStation. 
 
 Hvis vi derefter filtrerer træet i tværgående retning efter Nintendo, er Xbox Sales tomt, da der ikke er udviklet Nintendo-spil til Xbox. Xbox filtreres ud af visningen sammen med den efterfølgende sti.
 
 Selvom stien forsvinder, forbliver de eksisterende niveauer (i dette tilfælde Spilgenre) fastgjort i træet. Hvis du vælger noden Nintendo, udvides træet derfor automatisk til Spilgenre.
 
-![Menu for fordelingstræ](media/power-bi-visualization-decomposition-tree/tree-interaction-2.gif)
+![Animation, der viser valg af krydsfiltre, som påvirker, hvilke noder der vises.](media/power-bi-visualization-decomposition-tree/tree-interaction-2.gif)
 
 
 ## <a name="ai-splits"></a>AI-opdelinger
@@ -90,7 +90,7 @@ Der vises en elpære ud for **Produkttype**, der angiver, at dette var en 'AI-op
 
 Peg på elpæren for at se et værktøjstip. I dette eksempel er værktøjstippet "restordre-% er højest, når Produkttype er Patientovervågning".
 
-Du kan konfigurere visual'et for at finde **relative** AI-opdelinger i modsætning til **absolutte** opdelinger. 
+Du kan konfigurere visualiseringen for at finde **relative** AI-opdelinger i modsætning til **absolutte** opdelinger. 
 
 I relativ tilstand søges der efter høje værdier, der skiller sig ud (sammenlignet med de øvrige data i kolonnen). Lad os tage et kig på et eksempel, der illustrerer dette:
 
@@ -132,11 +132,11 @@ Hvis du vælger en anden node i træet, genberegnes AI-opdelingerne fra bunden. 
 
 AI-niveauer genberegnes også, når du filtrerer fordelingstræet efter et andet visual. I eksemplet nedenfor ses det, at restordre-% er højest for fabrik #0477.
 
-![Tværgående filtrering af fordelingstræ](media/power-bi-visualization-decomposition-tree/tree-ai-crossfilter1.png)
+![Skærmbillede, der viser rodårsagen med alle måneder valgt.](media/power-bi-visualization-decomposition-tree/tree-ai-crossfilter1.png)
 
 Men hvis vi vælger **april** i det liggende søjlediagram, er de største ændringer af **Produkttype Avanceret kirurgisk**. I dette tilfælde er det ikke kun noderne, der blev genbestilt, men der blev valgt en helt anden kolonne. 
 
-![Tværgående filtrering af fordelingstræ](media/power-bi-visualization-decomposition-tree/tree-ai-crossfilter2.png)
+![Skærmbillede, der viser rodårsagen med kun aprilmåned valgt.](media/power-bi-visualization-decomposition-tree/tree-ai-crossfilter2.png)
 
 Hvis du vil have AI-niveauer til at fungere som ikke-AI-niveauer, skal du vælge elpæren for at gendanne standardfunktionsmåden. 
 

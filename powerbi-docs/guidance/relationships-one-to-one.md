@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 7e10cfa5c99eb1750829150fd0a25347a4da1880
-ms.sourcegitcommit: 701dd80661a63c76d37d1e4f159f90e3fc8c3160
+ms.openlocfilehash: cbcf7fc1890ae1455f1f6ec7c8604e275f60b2d5
+ms.sourcegitcommit: 7e99e8af9caf9340958c4607a94728d43e8c3811
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91136252"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91668407"
 ---
 # <a name="one-to-one-relationship-guidance"></a>Vejledning til en til en-relationer
 
@@ -82,7 +82,7 @@ Bemærk, at tabellen **Produktkategori** ikke indeholder en række for produkt-S
 
 I ruden **Felter** finder rapportforfattere produktrelaterede felter i to tabeller: **Produkt** og **Produktkategori**.
 
-![Begge tabeller vises udvidet i ruden Felter, og kolonnerne er angivet som felter.](media/relationships-one-to-one/product-to-product-category-fields-pane.png)
+![Begge tabeller vises udvidet i ruden Felter, og kolonnerne er angivet som felter med Produkt og Produktkategori fremhævet.](media/relationships-one-to-one/product-to-product-category-fields-pane.png)
 
 Lad os se, hvad der sker, når felter fra begge tabeller føjes til en tabelvisualisering. I dette eksempel hentes kolonnen **SKU** fra tabellen **Produkt**.
 
@@ -112,7 +112,7 @@ I følgende trin præsenteres en metodik til at konsolidere og udforme en til en
 
     I vores eksempel kan rapportforfattere nu finde en enkelt tabel med navnet **Produkt** i ruden **Felter**. Den indeholder alle produktrelaterede felter.
 
-    ![Begge tabeller vises udvidet i ruden Felter, og kolonnerne er angivet som felter.](media/relationships-one-to-one/product-to-product-category-fields-pane-consolidated.png)
+    ![Begge tabeller vises udvidet i ruden Felter, og kolonnerne er angivet som felter med Produkt fremhævet.](media/relationships-one-to-one/product-to-product-category-fields-pane-consolidated.png)
 3. **Erstat manglende værdier**: Hvis den anden forespørgsel indeholder rækker, der ikke er matchet, vises NULL i kolonnerne, der introduceres fra den. Overvej, at erstatte NULL med en tokenværdi, når det er relevant. Det er især vigtigt at erstatte manglende værdier, når rapportforfattere filtrerer eller grupperer kolonneværdierne, da der ellers vises TOMME værdier i rapportvisualiseringer.
 
     I følgende tabelvisualisering vil du bemærke, at der nu står _[Udefineret]_ under kategorien for produkt-SKU'en CL-02. I forespørgslen blev null-kategorier erstattet med denne tokentekstværdi.
@@ -123,7 +123,7 @@ I følgende trin præsenteres en metodik til at konsolidere og udforme en til en
 
     I vores eksempel kan rapportforfattere nu bruge et hierarki, der har to niveauer: **Kategori** og **Produkt**.
 
-    ![Begge tabeller vises udvidet i ruden Felter, og kolonnerne er angivet som felter.](media/relationships-one-to-one/product-to-product-category-fields-pane-consolidated-with-hierarchy.png)
+    ![Begge tabeller vises udvidet i ruden Felter, og kolonnerne er angivet som felter med Produkter fremhævet.](media/relationships-one-to-one/product-to-product-category-fields-pane-consolidated-with-hierarchy.png)
 
 Selvom du godt kan lide den måde, som separate tabeller hjælper dig med at organisere felter på, anbefaler vi stadig, at du konsoliderer til en enkelt tabel. Du kan stadig organisere felterne, men ved hjælp af _visningsmapper_ i stedet.
 

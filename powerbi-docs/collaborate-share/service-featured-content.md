@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 03/16/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3154becb2f496c0bbb0f84d1c1e7316868251c36
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 3340225ccd4c6457e25013b6c347769d848b104c
+ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85226042"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "91374930"
 ---
 # <a name="feature-content-on-colleagues-power-bi-home-page"></a>Fremhæv indhold på kollegaers Power BI Start-side
 
@@ -24,7 +24,7 @@ Du kan fremhæve dashboards, rapporter og apps, så de vises i afsnittet Udvalgt
 
 ## <a name="who-can-feature-content"></a>Hvem kan fremhæve indhold?
 
-Det er op til din Power BI-lejeradministrator at aktivere muligheden for at fremhæve indhold i din lejer. Administratoren vælger også, hvem der kan fremhæve indhold. Du kan finde flere oplysninger i artiklen om [administrationsportalen](../admin/service-admin-portal.md#featured-content).
+Det er op til din Power BI-administrator at aktivere muligheden for at fremhæve indhold i din lejer. Administratoren vælger også, hvem der kan fremhæve indhold. Du kan finde flere oplysninger i artiklen om [administrationsportalen](../admin/service-admin-portal.md#featured-content).
 
 Hvis du er en af de udvalgte grupper i din organisation med dette ansvar, skal du have en Power BI Pro-licens. Hvis du vil bruge dashboards og rapporter, skal du have rollen Administrator, Medlem eller Bidragsyder i arbejdsområdet. Hvis du vil fremhæve selve appen, skal du have rollen Administrator eller Medlem i arbejdsområdet. Se [Roller i de nye arbejdsområder](service-new-workspaces.md#roles-in-the-new-workspaces) for at få flere oplysninger.
 
@@ -38,13 +38,13 @@ Fremgangsmåden til fremhævning af et dashboard og en rapport er den samme.
 
 1. Vælg ikonet **Indstillinger** på listen **Dashboards** eller **Rapporter** for et arbejdsområde.
 
-    :::image type="content" source="media/service-featured-content/power-bi-settings-icon.png" alt-text="Ikonet Rapportindstillinger":::
+    :::image type="content" source="media/service-featured-content/power-bi-settings-icon.png" alt-text="Fremhævet Power BI-indhold på startside":::
 
 2. Kontrollér eller rediger navnet i ruden **Indstillinger**. Tilføj en **beskrivelse** og upload et **snapshot**, hvis du vil. Det er nyttigt, fordi det hjælper dine brugere med at finde dit indhold.
 
 3. Vælg **Fremhævet**.
 
-    :::image type="content" source="media/service-featured-content/power-bi-featured-content-settings.png" alt-text="Indstillinger for fremhævet indhold":::
+    :::image type="content" source="media/service-featured-content/power-bi-featured-content-settings.png" alt-text="Fremhævet Power BI-indhold på startside":::
 
 4. Vælg **Gem**.
 

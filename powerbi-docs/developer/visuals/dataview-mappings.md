@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 571d4a2992a5017114cf94c3f49296769062d8ee
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 86572383e2e88f5a1efcf5126828e3365933cbc2
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79380796"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91635947"
 ---
 # <a name="understand-data-view-mapping-in-power-bi-visuals"></a>Forstå tilknytning af datavisning i Power BI-visualiseringer
 
@@ -183,7 +183,7 @@ export class Visual implements IVisual {
 }
 ```
 
-Som et resultat heraf viser visual'et en enkelt værdi fra Power BI:
+Som et resultat heraf viser visualiseringen en enkelt værdi fra Power BI:
 
 ![Eksempel på tilknytning af datavisninger for visual](media/dataview-mappings/visual-simple-dataview-mapping.png)
 
@@ -337,14 +337,13 @@ Her er tilknytningen mellem datavisninger:
 
 Datavisning i kategorier kan visualiseres på følgende måde:
 
-| Efter kategori |  |  | | | |
-|-----|-----|------|------|------|------|
-| | År | 2013 | 2014 | 2015 | 2016 |
-| Land | | |
-| USA | | x | x | 650 | 350 |
-| Canada | | x | 630 | 490 | x |
-| Mexico | | 645 | x | x | x |
-| Storbritannien | | x | x | 831 | x |
+| Land | 2013 | 2014 | 2015 | 2016 |
+|---------|------|------|------|------|
+| USA | x | x | 650 | 350 |
+| Canada | x | 630 | 490 | x |
+| Mexico | 645 | x | x | x |
+| Storbritannien | x | x | 831 | x |
+
 
 Power BI fremstiller det som den kategoriske datavisning. Det er sættet af kategorier.
 
@@ -491,9 +490,9 @@ export class Visual implements IVisual {
 }
 ```
 
-Resultatet af visual'et:
+Resultatet af visualiseringen:
 
-![Visual'et med tilknytning af kategoriske datavisninger](media/dataview-mappings/categorical-data-view-mapping-visual.png)
+![Visualiseringen med tilknytning af kategoriske datavisninger](media/dataview-mappings/categorical-data-view-mapping-visual.png)
 
 ## <a name="table-data-mapping"></a>Tilknytning af tabeldata
 
@@ -545,7 +544,7 @@ Tabeldatavisningen kan visualiseres på følgende måde:
 
 Dataeksempel:
 
-| Land| År | Salg |
+| Land| Year | Sales |
 |-----|-----|------|
 | USA | 2016 | 100 |
 | USA | 2015 | 50 |
@@ -686,7 +685,7 @@ td {
 }
 ```
 
-![Visual'et med tilknytning af tabeldatavisninger](media/dataview-mappings/table-dataview-mapping-visual.png)
+![Visualiseringen med tilknytning af tabeldatavisninger](media/dataview-mappings/table-dataview-mapping-visual.png)
 
 ## <a name="matrix-data-mapping"></a>Matrixdatatilknytning
 
@@ -936,4 +935,4 @@ Du kan anvende algoritmen datareduktion til sektionerne `rows` og `columns` i ti
 
 ## <a name="next-steps"></a>Næste trin
 
-Læs, hvordan du [tilføjer understøttelse af detailudledning for tilknytning af datavisninger i Power BI-visuals](drill-down-support.md).
+Læs, hvordan du [tilføjer understøttelse af detailudledning for tilknytning af datavisninger i Power BI-visualiseringer](drill-down-support.md).

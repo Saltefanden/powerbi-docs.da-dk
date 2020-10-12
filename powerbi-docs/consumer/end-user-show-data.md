@@ -1,20 +1,20 @@
 ---
-title: Vis de data, der blev brugt til at oprette visualiseringen
-description: I dette dokument forklares det, hvordan Power BI-forbrugere kan "få vist" de data, der bruges til at oprette en visualisering.
+title: Vis de data, der blev brugt til at oprette rapportvisualiseringen
+description: Dette dokument indeholder en forklaring på, hvordan Power BI-virksomhedsbrugere kan "få vist" de data, der bruges til at oprette en rapportvisualisering.
 author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 04/28/2020
+ms.date: 10/6/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a48f6aa12a1fd3f3a3dcea39524ed3d51251b062
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: 737fe43a7a94ef5738676792e1e903564d29e4bb
+ms.sourcegitcommit: 6ba33e5a500928163e02e007f5ccd52dd2227610
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87536233"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780202"
 ---
 # <a name="show-data-with-power-bi-reports"></a>Vis data med Power BI-rapporter
 
@@ -37,7 +37,11 @@ På et dashboard kan du få vist de underliggende data ved at bruge [Eksportér 
 
 4. Hvis du vil ændre retningen, skal du vælge lodret layout ![ikon for layout](media/end-user-show-data/power-bi-vertical-icon-new.png) i øverste højre hjørne af visualiseringen.
    
-   ![visning af visualisering og vandrette data](./media/end-user-show-data/power-bi-horizontal.png)
+   ![visning af visualisering og vandrette data](./media/end-user-show-data/power-bi-show-horizontal.png)
+
+Vælg **Tilbage til rapporten** i øverste venstre hjørne for at vende tilbage til rapporten. 
+
+   ![Skærmbillede, der viser linket til Tilbage til rapporten.](./media/end-user-show-data/power-bi-back.png)
 
 ## <a name="next-steps"></a>Næste trin
 [Visualiseringer i Power BI-rapporter](../visuals/power-bi-report-visualizations.md)    

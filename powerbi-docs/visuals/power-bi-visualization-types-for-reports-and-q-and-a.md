@@ -9,18 +9,18 @@ ms.topic: conceptual
 ms.date: 01/14/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e2245861e37a67e023efde1e6fc7c68a551f2944
-ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
+ms.openlocfilehash: e2ad8867117977cb7f53fbd295a2f560d65b0d76
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83814008"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91600519"
 ---
 # <a name="visualization-types-in-power-bi"></a>Visualiseringstyper i Power BI
 ## <a name="power-bi-visualizations"></a>Visualiseringer i Power BI
 Vi tilføjer løbende nye visualiseringer, så hold dig orienteret her.
 
-Og besøg [Office AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals), hvor du finder en stadigt større liste over [Power BI-visuals](../developer/visuals/power-bi-custom-visuals.md), du kan downloade og bruge i dine egne dashboards og rapporter. Er du i det kreative hjørne? [Få mere at vide om, hvordan du opretter og føjer dine egne visuals til dette communitywebsted](../developer/visuals/office-store.md).  
+Og besøg [Office AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals), hvor du finder en stadigt større liste over [Power BI-visualiseringer](../developer/visuals/power-bi-custom-visuals.md), du kan downloade og bruge i dine egne dashboards og rapporter. Er du i det kreative hjørne? [Få mere at vide om, hvordan du opretter og føjer dine egne visualiseringer til dette communitywebsted](../developer/visuals/office-store.md).  
 
 ## <a name="list-of-visualizations-available-in-power-bi"></a>Liste over de visualiseringer, der er tilgængelige i Power BI
 Du kan bruge alle disse visualiseringer i Power BI-rapporter, de kan specificeres under Spørgsmål og svar, og du kan fastgøre dem til dashboards.
@@ -113,7 +113,7 @@ Du kan finde flere oplysninger under [Tip og tricks til kortvisualiseringer](pow
 ### <a name="maps-arcgis-maps"></a>Kort: ArcGIS-kort
 ![ArcGIS-kort](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-esri-map-theme2.png)
 
-Du kan finde flere oplysninger under [ArcGIS-kort i Power BI](power-bi-visualization-arcgis.md).
+Du kan finde flere oplysninger under [ArcGIS-kort i Power BI](power-bi-visualizations-arcgis.md).
 
 ### <a name="maps-filled-maps-choropleth"></a>Kort: Kartogrammer (Choropleth)
 ![Kartogram](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_filledmap.png)
@@ -133,7 +133,7 @@ Du kan finde flere oplysninger under [Figurkort i Power BI](desktop-shape-map.md
 
 
 ### <a name="matrix"></a>Matrix
-![matrix](media/power-bi-visualization-types-for-reports-and-q-and-a/matrix.png)
+![skærmbillede af matrixvisualisering](media/power-bi-visualization-types-for-reports-and-q-and-a/matrix.png)
 
 >[!TIP]
 >En tabel understøtter to dimensioner, men en matrix gør det lettere at få vist data på tværs af flere dimensioner på en meningsfuld måde – det understøtter et trinvist layout. Matricen samler automatisk dataene og gør det muligt at foretage detailudledning. 
@@ -165,9 +165,9 @@ Du kan finde flere oplysninger under [Visualiseringer af Spørgsmål og svar i P
 ![R-visualiseringer](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-r-visuals.png)
 
 >[!TIP]
->Visualiseringer, der er oprettet med R-scripts, også kaldet *R-visuals*, kan vise avanceret dataformatering og analyse, f.eks. prognoser, ved hjælp af styrken i R's omfattende analyse- og visualiseringsfunktioner. R-visuals kan oprettes i Power BI Desktop og publiceres i Power BI-tjenesten.   
+>Visualiseringer, der er oprettet med R-scripts, også kaldet *R-visualiseringer*, kan vise avanceret dataformatering og analyse, f.eks. prognoser, ved hjælp af styrken i R's omfattende analyse- og visualiseringsfunktioner. R-visualiseringer kan oprettes i Power BI Desktop og publiceres i Power BI-tjenesten.   
 
-Du kan finde flere oplysninger under [R-visuals i Power BI](service-r-visuals.md).
+Du kan finde flere oplysninger under [R-visualiseringer i Power BI](service-r-visuals.md).
 
 ### <a name="ribbon-chart"></a>Bånddiagram
 ![bånddiagram](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-ribbon.png)
@@ -232,7 +232,7 @@ Når du skriver forespørgsler i naturligt sprog med Spørgsmål og svar i Power
 
 "***salg efter område som trækort***"
 
-Hvis dit dashboard ikke har et felt med spørgsmål og svar, er det muligvis blevet deaktiveret af lejeradministratoren. 
+Hvis dit dashboard ikke har et felt med spørgsmål og svar, er det muligvis blevet deaktiveret af Power BI-administratoren. 
 
 ![Spørgsmålsfelt til Spørgsmål og svar med visualiseringstypen angivet](media/power-bi-visualization-types-for-reports-and-q-and-a/qatreemap.png)
 

@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 01/04/2019
-ms.openlocfilehash: 78487f52df9f62e85e80f02d9653c9ac2f5b52c7
-ms.sourcegitcommit: f05f7b0112a8ec2dce60839ea5f922eda3cc776c
+ms.openlocfilehash: 771c41b896a6b886e8c72fa3d88ca8842e8ebffe
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84337113"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91748833"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-customers"></a>Selvstudium: Integrer sideinddelte Power BI-rapporter i et program til dine kunder
 
@@ -57,7 +57,7 @@ Før du importerer eller uploader en sideinddelt rapport, der skal integreres, s
 * **Power BI Premium** – når du integrerer en sideinddelt rapport, kræves der en *P*-SKU-kapacitet. Når du integrerer Power BI-indhold, kaldes denne løsning for *Power BI integration*. Du kan finde flere oplysninger om dette abonnement under [Hvad er Power BI Premium?](../../admin/service-premium-what-is.md)
 * **Azure Power BI Embedded** – du kan købe en dedikeret kapacitet på [Microsoft Azure-portalen](https://portal.azure.com). Dette abonnement bruger *A*-SKU'erne. Hvis du vil integrere sideinddelte rapporter, skal du mindst have et *A4*-abonnement. Du kan finde flere oplysninger om, hvordan du opretter en kapacitet til Power BI Embedded, under [Opret kapacitet til Power BI Embedded på Azure-portalen](azure-pbie-create-capacity.md).
 
-I nedenstående tabel beskrives ressourcerne og grænserne for de enkelte SKU'er. Hvis du vil finde ud af, hvilken kapacitet der passer bedst til dine behov, skal du se tabellen [Hvilken SKU skal jeg købe til mit scenarie?](https://docs.microsoft.com/power-bi/developer/embedded-faq#which-solution-should-i-choose)
+I nedenstående tabel beskrives ressourcerne og grænserne for de enkelte SKU'er. Hvis du vil finde ud af, hvilken kapacitet der passer bedst til dine behov, skal du se tabellen [Hvilken SKU skal jeg købe til mit scenarie?](./embedded-faq.md#which-solution-should-i-choose)
 
 | Kapacitetsnoder | V-kerner i alt | Backend-v-kerner | RAM (GB) | Frontend-v-kerner | 
 | --- | --- | --- | --- | --- |
@@ -70,13 +70,13 @@ I nedenstående tabel beskrives ressourcerne og grænserne for de enkelte SKU'er
 
 Når du opretter en dedikeret kapacitet, kan du tildele dit apparbejdsområde til den dedikerede kapacitet.
 
-Hvis du vil tildele en dedikeret kapacitet til et arbejdsområde ved hjælp af en [tjenesteprincipal](embed-service-principal.md), skal du bruge [REST API'er til Power BI](https://docs.microsoft.com/rest/api/power-bi/capacities/groups_assigntocapacity). Når du bruger REST API'er til Power BI, skal du sørge for at bruge [objekt-id'et for tjenesteprincipalen](embed-service-principal.md).
+Hvis du vil tildele en dedikeret kapacitet til et arbejdsområde ved hjælp af en [tjenesteprincipal](embed-service-principal.md), skal du bruge [REST API'er til Power BI](/rest/api/power-bi/capacities/groups_assigntocapacity). Når du bruger REST API'er til Power BI, skal du sørge for at bruge [objekt-id'et for tjenesteprincipalen](embed-service-principal.md).
 
 ### <a name="create-and-upload-your-paginated-reports"></a>Opret og upload dine sideinddelte rapporter
 
 Du kan oprette din sideinddelte rapport ved hjælp af [Power BI Report Builder](../../paginated-reports/paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder)og derefter [uploade rapporten til tjenesten](../../paginated-reports/paginated-reports-quickstart-aw.md#upload-the-report-to-the-service).
 
-Du kan importere sideinddelte rapporter i de nye arbejdsområder ved hjælp af [REST API'erne til Power BI](https://docs.microsoft.com/rest/api/power-bi/imports/postimportingroup).
+Du kan importere sideinddelte rapporter i de nye arbejdsområder ved hjælp af [REST API'erne til Power BI](/rest/api/power-bi/imports/postimportingroup).
 
 ## <a name="embed-content-using-the-sample-application"></a>Integrer indhold ved hjælp af eksempelprogrammet
 
@@ -119,7 +119,7 @@ Hvis du vil hente **applicationId**, skal du følge disse trin:
 
 3. Vælg programmet, der skal bruge **applicationId**.
 
-    ![Vælg app](media/embed-paginated-reports-for-customers/display-name.png)
+    ![Skærmbillede, der viser de viste navne på programmer med ét valgt, som skal bruge program-id'et.](media/embed-paginated-reports-for-customers/display-name.png)
 
 4. Der er angivet et **program-id** som GUID. Brug dette **Program-id** som **applicationId** for programmet.
 
@@ -171,7 +171,7 @@ Hvis du vil hente **ApplicationSecret**, skal du følge disse trin:
 
 3. Vælg programmet, der skal bruge **ApplicationSecret**.
 
-    ![Vælg app](media/embed-paginated-reports-for-customers/display-name-2.png)
+    ![Skærmbillede, der viser de viste navne på programmer med ét valgt, som skal bruge programhemmeligheden.](media/embed-paginated-reports-for-customers/display-name-2.png)
 
 4. Vælg **Certifikater og hemmeligheder** under **Administrer**.
 
@@ -201,11 +201,11 @@ Udfyld oplysningerne om **tenant** med dit lejer-id til Azure. Du kan få disse 
 
 ## <a name="embed-power-bi-paginated-reports-within-your-application"></a>Integrer sideinddelte Power BI-rapporter i dit program
 
-Selvom trinnene til at integrere dine sideinddelte Power BI-rapporter udføres ved hjælp af [REST API'er til Power BI](https://docs.microsoft.com/rest/api/power-bi/), oprettes de eksempelkoder, der er beskrevet i denne artikel, med **.NET-SDK'en**.
+Selvom trinnene til at integrere dine sideinddelte Power BI-rapporter udføres ved hjælp af [REST API'er til Power BI](/rest/api/power-bi/), oprettes de eksempelkoder, der er beskrevet i denne artikel, med **.NET-SDK'en**.
 
-Når du integrerer sideinddelte Power BI-rapporter for kunderne i dit program, kræver det, at du har en **Azure AD**-[tjenesteprincipal](embed-service-principal.md) og får et [Azure AD-adgangstoken](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) til dit Power BI-program, før du foretager kald til [REST API'erne til Power BI](https://docs.microsoft.com/rest/api/power-bi/).
+Når du integrerer sideinddelte Power BI-rapporter for kunderne i dit program, kræver det, at du har en **Azure AD**-[tjenesteprincipal](embed-service-principal.md) og får et [Azure AD-adgangstoken](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) til dit Power BI-program, før du foretager kald til [REST API'erne til Power BI](/rest/api/power-bi/).
 
-Hvis du vil oprette Power BI-klienten med dit **adgangstoken**, skal du oprette dit Power BI klientobjekt, som gør det muligt for dig at interagere med [REST API'erne til Power BI](https://docs.microsoft.com/rest/api/power-bi/). Du kan oprette dit Power BI-klientobjekt ved at omgive **AccessToken** med objektet ***Microsoft.Rest.TokenCredentials***.
+Hvis du vil oprette Power BI-klienten med dit **adgangstoken**, skal du oprette dit Power BI klientobjekt, som gør det muligt for dig at interagere med [REST API'erne til Power BI](/rest/api/power-bi/). Du kan oprette dit Power BI-klientobjekt ved at omgive **AccessToken** med objektet ***Microsoft.Rest.TokenCredentials***.
 
 ```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -242,7 +242,7 @@ Report report = reports.Value.FirstOrDefault();
 
 ### <a name="create-the-embed-token"></a>Opret integrationstokenet
 
-Generér et integreringstoken, som kan bruges fra JavaScript-API'en. Hvis du vil oprette et integreringstoken til integrering af sideinddelte Power BI-rapporter, skal du bruge API'en [Reports GenerateTokenInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokeningroup).
+Generér et integreringstoken, som kan bruges fra JavaScript-API'en. Hvis du vil oprette et integreringstoken til integrering af sideinddelte Power BI-rapporter, skal du bruge API'en [Reports GenerateTokenInGroup](/rest/api/power-bi/embedtoken/reports_generatetokeningroup).
 
 Du kan se et eksempel på, hvordan du opretter et integreringstoken, i filen  *Services\EmbedService.cs* i [eksempelprogrammet](https://github.com/Microsoft/PowerBI-Developer-Samples).
 

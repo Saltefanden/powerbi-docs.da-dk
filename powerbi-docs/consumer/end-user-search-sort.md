@@ -7,17 +7,17 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 07/09/2020
+ms.date: 10/01/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 799cbe00274e14709e6987df1f9c4abe664f9b55
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: 1fbfa8a85ada8512aff54526407799a00fbfa891
+ms.sourcegitcommit: 6ba33e5a500928163e02e007f5ccd52dd2227610
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87536256"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780312"
 ---
-# <a name="navigation-for-power-bi-consumers-global-search"></a>Navigation for Power BI-forbrugere: global søgning
+# <a name="navigation-for-power-bi-business-users-global-search"></a>Navigation for Power BI-virksomhedsbrugere: global søgning
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
@@ -31,7 +31,7 @@ Når du er ny bruger af Power BI-tjenesten, har du kun lidt indhold (dashboards,
 
  Skriv hele eller en del af navnet på et dashboard, en rapport, en projektmappe, et arbejdsområde, en app eller en ejer i feltet Søg. Power BI søger i hele dit indhold. 
 
- ![søg efter en rapport](./media/end-user-search-sort/power-bi-search-field.png) 
+ ![Skærmbillede, der viser søgefeltet med ordet Indkøb angivet.](./media/end-user-search-sort/power-bi-search-field.png) 
 
  I nogle områder af Power BI, f. eks. arbejdsområder, kan du finde to forskellige søgefelter. Søgefeltet på menulinjen søger i hele dit indhold, mens søgefeltet på lærredet for arbejdsområdet kun søger i det pågældende arbejdsområde.
 
@@ -39,24 +39,27 @@ Når du er ny bruger af Power BI-tjenesten, har du kun lidt indhold (dashboards,
 
 ## <a name="sorting-content-lists"></a>Sortering af indholdslister
 
-Hvis du kun har begrænset indhold, er det muligvis ikke nødvendigt at sortere.  Men når du har lange lister over dashboards og rapporter, kan du bruge sortering til at finde det, du har brug for. Denne **Delt med mig**-indholdsliste omfatter f.eks. 257 punkter. 
+Hvis du kun har begrænset indhold, er det muligvis ikke nødvendigt at sortere.  Men når du har lange lister over dashboards og rapporter, kan du bruge sortering til at finde det, du har brug for. Denne indholdsliste af typen **Delt med mig** indeholder f.eks. 70 elementer. 
 
-![delt med mig-indholdsliste](./media/end-user-search-sort/power-bi-all-shared.png)
+![delt med mig-indholdsliste](./media/end-user-search-sort/power-bi-a-to-z.png)
 
-I øjeblikket sorteres indholdslisten alfabetisk efter navn fra A til Å. Hvis du vil ændre sorteringskriterierne, skal du vælge pilen til højre for **Navn (A-Å)** .
+I øjeblikket sorteres denne indholdsliste alfabetisk efter navn fra Å til A. Hvis du vil ændre sorteringskriterierne, skal du vælge pilen til højre for **Navn (A-Å)** .
 
-![Rullemenuen Sortér](./media/end-user-search-sort/power-bi-sort-date.png)
+![Rullemenuen Sortér](./media/end-user-search-sort/power-bi-sort-z-to-a.png)
 
 
-Sortering er også tilgængelig i arbejdsområder. I dette eksempel sorteres indholdet efter datoen for **Opdateret**. Hvis du vil angive sorteringskriterier for arbejdsområder, skal du vælge kolonneoverskrifter, vælge dem én gang for at markere overskriften og vælge igen for at ændre sorteringsretningen. 
+Sortering er også tilgængelig i arbejdsområder. I dette eksempel sorteres indholdet efter datoen for **Opdateret**. Hvis du vil angive sorteringskriterier for arbejdsområder, skal du vælge kolonneoverskrifter og vælge igen for at ændre sorteringsretningen. 
 
-![søg efter en rapport](./media/end-user-search-sort/power-bi-workspace-sort.png)
+
+![søg efter en rapport](./media/end-user-search-sort/power-bi-refreshed.png)
 
 Ikke alle kolonner kan sorteres. Hold over kolonneoverskrifterne for at finde ud af, hvilke der kan sorteres.
 
+## <a name="filtering-content-lists"></a>Filtrering af indholdslister
+En anden måde at finde indhold hurtigt på er ved at bruge indholdslisten **Filtre**. Få vist filtrene ved ar vælge **Filtre** i øverste højre hjørne. De tilgængelige filtre afhænger af din placering i Power BI-tjenesten.  Nedenstående eksempel er fra en indholdsliste af typen **seneste**.  Det giver dig mulighed for at filtrere listen efter indholdstype.  På en indholdsliste af typen **Delt med mig** omfatter de tilgængelige **Filtre** Ejer samt indholdstype.
 
-## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
-* **Sortér efter** ikke tilgængelig efter ejer i forbindelse med datasæt.
+![Skærmbillede af filter på indholdsliste.](./media/end-user-search-sort/power-bi-sort-filters.png)
+
 
 ## <a name="next-steps"></a>Næste trin
 [Sorter visualiseringer i rapporter](end-user-change-sort.md)

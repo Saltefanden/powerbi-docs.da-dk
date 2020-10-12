@@ -8,18 +8,18 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 04/02/2019
-ms.openlocfilehash: 92bccc80c36fdf6de0972dd67b33a4f1f9c85c0c
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: eac2f6d1bcb79ccf25f69eb79b73ae884898ec58
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85240149"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91748672"
 ---
 # <a name="register-an-azure-ad-application-to-use-with-power-bi"></a>Registrer et Azure AD-program, som skal bruges sammen med Power BI
 
 Få mere at vide om, hvordan du registrerer et program i Azure Active Directory (Azure AD), som skal bruges til at integrere Power BI-indhold.
 
-Du kan registrere dit program i Azure AD for at give programmet adgang til REST [API'erne til Power BI](https://docs.microsoft.com/rest/api/power-bi/). Når du har registreret dit program, kan du oprette en identitet for programmet og angive tilladelser til Power BI REST-ressourcer.
+Du kan registrere dit program i Azure AD for at give programmet adgang til REST [API'erne til Power BI](/rest/api/power-bi/). Når du har registreret dit program, kan du oprette en identitet for programmet og angive tilladelser til Power BI REST-ressourcer.
 
 > [!IMPORTANT]
 > Før du kan registrere et Power BI-app, skal du have en [Azure Active Directory-lejer og en organisationsbruger](create-an-azure-active-directory-tenant.md). Hvis du ikke har tilmeldt dig Power BI med en bruger i din lejer, fuldføres registreringen af appen ikke.
@@ -54,7 +54,7 @@ Sådan registrerer du dit program ved hjælp af værktøjet Power BI App Registr
 
 5. Hvis du har valgt **serverbaseret webprogram** som programtype, skal du fortsætte med at angive en værdi for **URL-adresse til startside** og **URL-adresse til omdirigering**. **URL-adressen til omdirigering** fungerer sammen med en hvilken som helst gyldig URL-adresse og bør stemme overens med det program, du har oprettet. Hvis du har valgt **oprindeligt**, skal du fortsætte til trin 6.
 
-6. Vælg de Power BI-API'er, som dit program har brug for. Du kan få flere oplysninger om Power BI-adgangstilladelser i [Tilladelser og indhold i slutpunktet for Microsoft-identitetsplatformen](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent). Vælg derefter **Registrer**.
+6. Vælg de Power BI-API'er, som dit program har brug for. Du kan få flere oplysninger om Power BI-adgangstilladelser i [Tilladelser og indhold i slutpunktet for Microsoft-identitetsplatformen](/azure/active-directory/develop/v2-permissions-and-consent). Vælg derefter **Registrer**.
 
     ![Vælg de API'er, du vil registrere](media/register-app/register-app-new-app-registration-apis-register.png)
 
@@ -86,7 +86,7 @@ Din anden mulighed for at registrere dit program er at gør det direkte på Azur
 
 5. Følg prompterne, og opret et nyt program.
 
-   Du kan finde flere oplysninger om, hvordan du registrerer programmer i Azure Active Directory i [Registrer en app med Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v2-register-an-app)
+   Du kan finde flere oplysninger om, hvordan du registrerer programmer i Azure Active Directory i [Registrer en app med Azure Active Directory](/azure/active-directory/develop/quickstart-v2-register-an-app)
 
 ## <a name="how-to-get-the-application-id"></a>Sådan får du program-id'et
 
@@ -94,7 +94,7 @@ Når du registrerer et program, modtager du et [program-id](embed-sample-for-cus
 
 ## <a name="how-to-get-the-service-principal-object-id"></a>Sådan får du objekt-id'et for tjenesteprincipalen
 
-Når du bruger [Power BI-API'erne](https://docs.microsoft.com/rest/api/power-bi/), skal du sørge for at definere handlinger ved hjælp af [objekt-id'et for tjenesteprincipalen](embed-service-principal.md) for at henvise til tjenesteprincipalen, f.eks. ved anvendelse af tjenesteprincipalen som administrator i et arbejdsområde.
+Når du bruger [Power BI-API'erne](/rest/api/power-bi/), skal du sørge for at definere handlinger ved hjælp af [objekt-id'et for tjenesteprincipalen](embed-service-principal.md) for at henvise til tjenesteprincipalen, f.eks. ved anvendelse af tjenesteprincipalen som administrator i et arbejdsområde.
 
 ## <a name="apply-permissions-to-your-application-within-azure-ad"></a>Anvend tilladelser til dit program i Azure AD
 
@@ -120,7 +120,7 @@ Du skal være logget på enten via *hovedkontoen*, der er brugt til integrering,
 
 ### <a name="applying-permissions-programmatically"></a>Anvendelse af tilladelser fra et program
 
-1. Du skal hente de eksisterende tjenesteprincipaler (brugere) inden for din lejer. Du kan finde oplysninger om, hvordan du gør det, i [ servicePrincipal](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-beta).
+1. Du skal hente de eksisterende tjenesteprincipaler (brugere) inden for din lejer. Du kan finde oplysninger om, hvordan du gør det, i [ servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta).
 
     Du kan kalde API'en *Get servicePrincipal* uden {ID}, så får du alle tjenesteprincipalerne i lejeren.
 
@@ -145,7 +145,7 @@ Du skal være logget på enten via *hovedkontoen*, der er brugt til integrering,
 
    Værdien for **consentType** kan være enten **AllPrincipals** eller **Principal**.
 
-   * **AllPrincipals** kan kun bruges af en lejeradministrator til at give tilladelser på vegne af alle brugere i lejeren.
+   * **AllPrincipals** kan kun bruges af en Power BI-administrator til at tildele tilladelser på vegne af alle brugere i lejeren.
    * **Principal** bruges til at give tilladelser på vegne af en bestemt bruger. I dette tilfælde skal endnu en egenskab føjes til anmodningens brødtekst – *principalId = {User_ObjectId}* .
 
      Du skal bruge *Tildel tilladelser* for masterkontoen for at undgå, at Azure AD beder om dit samtykke, hvilket ikke er muligt, når der ikke logges på interaktivt.
@@ -164,18 +164,18 @@ Du skal være logget på enten via *hovedkontoen*, der er brugt til integrering,
      }
      ```
 
-    **Ressource-id'et** *c78a3685-1ce7-52cd-95f7-dc5aea8ec98e* er ikke universelt, men er afhængig af en lejer. Denne værdi er objectId for programmet "Power BI-tjeneste" i Azure Active Directory-lejeren (AAD).
+    **resourceId** *c78a3685-1ce7-52cd-95f7-dc5aea8ec98e* er ikke universel, men er afhængig af en lejer. Denne værdi er objectId for programmet "Power BI-tjeneste" i Azure Active Directory.
 
     Brugeren kan hurtigt hente denne værdi på Azure Portal:
     1. https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AllApps
 
     2. Søg efter "Power BI-tjeneste" i søgefeltet
 
-5. Tildel apptilladelser til Azure Active Directory (AAD)
+5. Tildel apptilladelser til Azure Active Directory
 
    Værdien for **consentType** kan være enten **AllPrincipals** eller **Principal**.
 
-   * **AllPrincipals** kan kun bruges af en lejeradministrator til at give tilladelser til alle brugere i lejeren.
+   * **AllPrincipals** kan kun bruges af en Power BI-administrator til at tildele tilladelser til alle brugere i lejeren.
    * **Principal** bruges til at give tilladelser til en bestemt bruger. I dette tilfælde skal endnu en egenskab føjes til anmodningens brødtekst – *principalId = {User_ObjectId}* .
 
    Du skal bruge *Tildel tilladelser* for masterkontoen for at undgå, at Azure AD beder om dit samtykke, hvilket ikke er muligt, når der ikke logges på interaktivt.

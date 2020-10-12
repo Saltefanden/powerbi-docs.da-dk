@@ -9,12 +9,12 @@ ms.devlang: csharp, javascript
 ms.topic: how-to
 ms.reviewer: zakharb
 ms.date: 08/02/2020
-ms.openlocfilehash: 2f330b42e674f11f27d695fb65bc8d5de928eaae
-ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
+ms.openlocfilehash: 99943f30aa0c31223eae2058aff8b4d34d49bf1d
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88204832"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91748856"
 ---
 # <a name="create-power-bi-embedded-capacity-in-the-azure-portal"></a>Opret Power BI Embedded-kapacitet på Azure-portalen
 
@@ -26,11 +26,11 @@ For at følge denne hurtige start skal du have følgende:
 
 * **Azure-abonnement:** Gå til [den gratis prøveversion af Azure](https://azure.microsoft.com/free/) for at oprette en konto.
 
-* **Azure Active Directory:** Abonnementet skal være tilknyttet en AAD-lejer (Microsoft Azure Active Directory). Du skal desuden ***være logget på Azure med en konto i den lejer***. Microsoft-konti understøttes ikke. Du kan finde flere oplysninger under [Godkendelse og brugertilladelser](https://docs.microsoft.com/azure/analysis-services/analysis-services-manage-users).
+* **Azure Active Directory:** Abonnementet skal være tilknyttet en AAD-lejer (Microsoft Azure Active Directory). Du skal desuden ***være logget på Azure med en konto i den lejer***. Microsoft-konti understøttes ikke. Du kan finde flere oplysninger under [Godkendelse og brugertilladelser](/azure/analysis-services/analysis-services-manage-users).
 
 * **Power BI-lejer:** Mindst én konto i din AAD-lejer skal være tilmeldt Power BI.
 
-* **Ressourcegruppe:** Brug en eksisterende ressourcegruppe, eller [opret en ny](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview).
+* **Ressourcegruppe:** Brug en eksisterende ressourcegruppe, eller [opret en ny](/azure/azure-resource-manager/resource-group-overview).
 
 ## <a name="create-a-capacity"></a>Opret kapacitet
 
@@ -46,17 +46,17 @@ Før du opretter en Power BI Embedded-kapacitet, skal du sørge for, at du har l
 
 4. Angiv de påkrævede oplysninger, og klik derefter på **Gennemse + Opret**.
 
-    ![Skærmbillede af felterne, der skal udfyldes for at oprette ny kapacitet på Azure Portal](media/azure-pbie-create-capacity/azure-create-capacity.png)
+    ![Skærmbillede, der viser fanen Grundlæggende på siden Power BI Embedded for at oprette ny kapacitet på Azure Portal.](media/azure-pbie-create-capacity/azure-create-capacity.png)
 
     * **Abonnement** – det abonnement, som kapaciteten skal oprettes for.
 
-    * **Ressourcegruppe** – den ressourcegruppe, der indeholder den nye kapacitet. Vælg mellem en eksisterende ressourcegruppe, eller opret en anden. Du kan finde flere oplysninger under [Oversigt over Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview).
+    * **Ressourcegruppe** – den ressourcegruppe, der indeholder den nye kapacitet. Vælg mellem en eksisterende ressourcegruppe, eller opret en anden. Du kan finde flere oplysninger under [Oversigt over Azure Resource Manager](/azure/azure-resource-manager/resource-group-overview).
 
     * **Ressourcenavn** – ressourcenavnet på kapaciteten.
 
     * **Placering** – den placering, hvor Power BI hostes for din lejer. Din standardplacering er dit lokale område, men du kan ændre placeringen ved hjælp af [Multi-Geo-indstillinger](embedded-multi-geo.md).
 
-    * **Størrelse** – det [A-varenummer](../../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios), du har brug for. Du kan finde flere oplysninger under [Varenummerhukommelse og beregningskraft](/power-bi/developer/embedded/embedded-capacity).
+    * **Størrelse** – det [A-varenummer](../../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios), du har brug for. Du kan finde flere oplysninger under [Varenummerhukommelse og beregningskraft](./embedded-capacity.md).
 
     * **Power BI-kapacitetsadministrator** – en administrator for kapaciteten.
         >[!NOTE]
@@ -114,7 +114,7 @@ Power BI-integrerede kapacitetskommandoer kræver version 2.3.1 eller nyere af A
 
 ### <a name="create-a-capacity-with-azure-cli"></a>Opret en kapacitet med Azure-kommandolinjegrænsefladen
 
-Brug kommandoen [az Power BI embedded-capacity create](https://docs.microsoft.com/cli/azure/ext/powerbidedicated/powerbi/embedded-capacity?view=azure-cli-latest#ext-powerbidedicated-az-powerbi-embedded-capacity-create) for at oprette en kapacitet.
+Brug kommandoen [az Power BI embedded-capacity create](/cli/azure/ext/powerbidedicated/powerbi/embedded-capacity?view=azure-cli-latest#ext-powerbidedicated-az-powerbi-embedded-capacity-create) for at oprette en kapacitet.
 
 ```azurecli
 az powerbi embedded-capacity create --location westeurope
@@ -126,7 +126,7 @@ az powerbi embedded-capacity create --location westeurope
 
 ### <a name="delete-a-capacity-with-azure-cli"></a>Slet en kapacitet med Azure-kommandolinjegrænsefladen
 
-Hvis du vil slette en kapacitet ved hjælp af Azure-kommandolinjegrænsefladen, skal du bruge kommandoen [az powerbi embedded-capacity delete](https://docs.microsoft.com/cli/azure/ext/powerbidedicated/powerbi/embedded-capacity?view=azure-cli-latest#ext-powerbidedicated-az-powerbi-embedded-capacity-delete).
+Hvis du vil slette en kapacitet ved hjælp af Azure-kommandolinjegrænsefladen, skal du bruge kommandoen [az powerbi embedded-capacity delete](/cli/azure/ext/powerbidedicated/powerbi/embedded-capacity?view=azure-cli-latest#ext-powerbidedicated-az-powerbi-embedded-capacity-delete).
 
 ```azurecli
 az powerbi embedded-capacity delete --name
@@ -135,13 +135,13 @@ az powerbi embedded-capacity delete --name
 
 ### <a name="manage-your-capacity-with-azure-cli"></a>Administrer din kapacitet med Azure-kommandolinjegrænsefladen
 
-Du kan få vist alle kommandoer i Power BI Embedded Azure-kommandolinjegrænsefladen i [az powerbi](https://docs.microsoft.com/cli/azure/ext/powerbidedicated/powerbi?view=azure-cli-latest).
+Du kan få vist alle kommandoer i Power BI Embedded Azure-kommandolinjegrænsefladen i [az powerbi](/cli/azure/ext/powerbidedicated/powerbi?view=azure-cli-latest).
 
 # <a name="arm-template"></a>[ARM-skabelon](#tab/ARM-template)
 
 ### <a name="use-resource-manager-template"></a>Brug Resource Manager-skabelon
 
-[Resource Manager-skabelonen](https://docs.microsoft.com/azure/azure-resource-manager/templates/overview) er en JavaScript Object Notation-fil (JSON), der definerer infrastrukturen og konfigurationen for dit projekt. Skabelonen bruger deklarativ syntaks, som gør det muligt for dig at angive, hvad du vil installere uden at skulle skrive hele sekvensen af programmeringskommandoer for at oprette den. Hvis du vil vide mere om, hvordan du udvikler Resource Manager-skabeloner, skal du se [Resource Manager-dokumentation](https://docs.microsoft.com/azure/azure-resource-manager/) og [-skabelonreference](https://docs.microsoft.com/azure/templates/).
+[Resource Manager-skabelonen](/azure/azure-resource-manager/templates/overview) er en JavaScript Object Notation-fil (JSON), der definerer infrastrukturen og konfigurationen for dit projekt. Skabelonen bruger deklarativ syntaks, som gør det muligt for dig at angive, hvad du vil installere uden at skulle skrive hele sekvensen af programmeringskommandoer for at oprette den. Hvis du vil vide mere om, hvordan du udvikler Resource Manager-skabeloner, skal du se [Resource Manager-dokumentation](/azure/azure-resource-manager/) og [-skabelonreference](/azure/templates/).
 
 Hvis du ikke har et Azure-abonnement, skal du oprette en [gratis konto](https://azure.microsoft.com/free/), før du begynder.
 
@@ -209,7 +209,7 @@ Den skabelon, der anvendes i denne hurtigstart, er fra [Azure-skabeloner til hur
 }
 ```
 
-Én Azure-ressource er defineret i skabelonen, [Microsoft.PowerBIDedicated/capacities Az](https://docs.microsoft.com/azure/templates/microsoft.powerbidedicated/allversions) – Opret en Power BI Embedded-kapacitet.
+Én Azure-ressource er defineret i skabelonen, [Microsoft.PowerBIDedicated/capacities Az](/azure/templates/microsoft.powerbidedicated/allversions) – Opret en Power BI Embedded-kapacitet.
 
 ### <a name="deploy-the-template"></a>Anvend skabelonen
 
@@ -219,20 +219,20 @@ Den skabelon, der anvendes i denne hurtigstart, er fra [Azure-skabeloner til hur
 
 2. Angiv de påkrævede oplysninger, og klik derefter på **Gennemse + Opret**.
 
-    ![Skærmbillede af felterne, der skal udfyldes for at oprette ny kapacitet på Azure Portal](media/azure-pbie-create-capacity/arm-template.png)
+    ![Skærmbillede, der viser fanen Grundlæggende på siden Opret en Power BI Embedded-kapacitet for at oprette en ny kapacitet på Azure Portal.](media/azure-pbie-create-capacity/arm-template.png)
 
     * **Abonnement** – det abonnement, som kapaciteten skal oprettes for.
 
-    * **Ressourcegruppe** – den ressourcegruppe, der indeholder den nye kapacitet. Vælg mellem en eksisterende ressourcegruppe, eller opret en anden. Du kan finde flere oplysninger under [Oversigt over Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview).
+    * **Ressourcegruppe** – den ressourcegruppe, der indeholder den nye kapacitet. Vælg mellem en eksisterende ressourcegruppe, eller opret en anden. Du kan finde flere oplysninger under [Oversigt over Azure Resource Manager](/azure/azure-resource-manager/resource-group-overview).
 
     * **Område** – det område, som kapaciteten tilhører.
 
     * **Navn** – kapacitetsnavnet.
 
-    * **Placering** – den placering, hvor Power BI hostes for din lejer. Din standardplacering er dit lokale område, men du kan ændre placeringen ved hjælp af [Multi-Geo-indstillinger](https://docs.microsoft.com/power-bi/developer/embedded/embedded-multi-geo
+    * **Placering** – den placering, hvor Power BI hostes for din lejer. Din standardplacering er dit lokale område, men du kan ændre placeringen ved hjælp af [Multi-Geo-indstillinger](./embedded-multi-geo.md
 ).
 
-    * **Varenummer** – det [A-varenummer](../../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios), du har brug for. Du kan finde flere oplysninger under [Varenummerhukommelse og beregningskraft](/power-bi/developer/embedded/embedded-capacity).
+    * **Varenummer** – det [A-varenummer](../../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios), du har brug for. Du kan finde flere oplysninger under [Varenummerhukommelse og beregningskraft](./embedded-capacity.md).
 
     * **Administrator** – en administrator for kapaciteten.
         >[!NOTE]

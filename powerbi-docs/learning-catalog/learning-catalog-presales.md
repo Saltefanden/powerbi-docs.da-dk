@@ -1,17 +1,17 @@
 ---
 title: Læringskatalog til partneres førsalgsroller
-description: Find alle træningsmuligheder til Power Apps
+description: Find alle træningsmuligheder til Power Apps for forsalgseksperter – lige fra det mest basale til det mest avancerede.
 author: margoc
 ms.prod: powerbi
 ms.topic: article
 ms.date: 03/25/2020
 ms.author: margoc
-ms.openlocfilehash: 4225a8a7cc0da8c84b326fc2a2c9c082fd3fb3e6
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: bdc42b263e274983e5bcf85dde4d733c94d5d82d
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91526102"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91747683"
 ---
 # <a name="partner-pre-sales-learning-catalog"></a>Læringskatalog til partneres førsalgsroller
 

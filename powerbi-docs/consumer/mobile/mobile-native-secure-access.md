@@ -7,12 +7,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 04/07/2020
 ms.author: painbar
-ms.openlocfilehash: 634252979129353ac628c574acb23bb184782ffa
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: a32ac9b1631a23502d9752ed9f96355fa36b90da
+ms.sourcegitcommit: 7e99e8af9caf9340958c4607a94728d43e8c3811
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85220005"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91668591"
 ---
 # <a name="protect-power-bi-app-with-face-id-touch-id-passcode-or-biometric-data"></a>Beskyt Power BI-app med Face ID, Touch ID, adgangskode eller biometriske data 
 
@@ -48,7 +48,7 @@ Når denne indstilling er aktiveret, bliver du bedt om at angive biometriske dat
 
 På billedet nedenfor vises skærmbilledet for godkendelse med fingeraftryk.
 
-![iOS Face ID i Power BI](./media/mobile-native-secure-access/mobile-android-native-secured-fingerprint-id.png)
+![Skærmbillede, der viser meddelelsen om, at yderligere identifikation er påkrævet, på en Android-telefon.](./media/mobile-native-secure-access/mobile-android-native-secured-fingerprint-id.png)
 
 >[!NOTE]
 >Hvis du vil bruge indstillingen Kræv biometrisk godkendelse i mobilappen, skal du først konfigurere biometriske data på din Android-enhed. Hvis din enhed ikke understøtter biometriske data, kan du ikke sikre adgangen til dine Power BI-data ved hjælp af denne mobilappindstilling.

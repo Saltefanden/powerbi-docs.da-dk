@@ -1,18 +1,18 @@
 ---
 title: Brug naturligt sprog til at udforske data ved hjælp af Spørgsmål og svar i Power BI
-description: Sådan bruger du Spørgsmål og svar i Power BI til at udforske dine data
+description: Sådan bruger du Spørgsmål og svar i Power BI til at udforske dine data og oprette visualiseringer ved hjælp af naturligt sprog til forespørgsler.
 author: mohaali
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/01/2020
 ms.author: mohaali
-ms.openlocfilehash: de16ddbbaca69aea5283c7ab61c462493a6da1d0
-ms.sourcegitcommit: 7d505cb7cc9360211d67f1056cb488f7f15ffab4
+ms.openlocfilehash: d9339c0005f7f2af9fedd5cc5bfcce40469afb8c
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "88578099"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91749155"
 ---
 # <a name="intro-to-power-bi-qa"></a>Introduktion til Spørgsmål og svar i Power BI
 

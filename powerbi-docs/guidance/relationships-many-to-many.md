@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 7c9b5c753b262900d61a1a71b4c9a8167c943121
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: 3c94c25f5f1ba717f68a0c2a5ec661be10f70135
+ms.sourcegitcommit: 7e99e8af9caf9340958c4607a94728d43e8c3811
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86216693"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91668522"
 ---
 # <a name="many-to-many-relationship-guidance"></a>Vejledning til mange-til-mange-relation
 
@@ -48,7 +48,7 @@ For at hjælpe med at beskrive, hvordan filteroverførslen af relationen fungere
 > [!NOTE]
 > Det er ikke muligt at vise tabelrækkerne i Power BI Desktop-modeldiagrammet. Det gøres i denne artikel for at understøtte diskussionen med tydeligere eksempler.
 
-![Diagram, hvor det ses, at tabelrækkerne nu vises i modellen. Rækkedetaljerne beskrives i følgende afsnit.](media/relationships-many-to-many/bank-account-customer-model-related-tables-2.png)
+![Diagram, hvor det ses, at tabelrækkerne nu vises i modellen. Rækkedetaljerne for de fire tabeller er beskrevet i følgende afsnit.](media/relationships-many-to-many/bank-account-customer-model-related-tables-2.png)
 
 Rækkedetaljerne for de fire tabeller er beskrevet i følgende punktopstilling:
 
@@ -137,7 +137,7 @@ Relationskardinaliteten er angivet til mange-til-mange for at understøtte lagri
 
 Lad os nu se på tabelrækkerne. I tabellen **Opfyldelse** vil du bemærke, at ordrelinjer kan opfyldes af flere forsendelser. (Manglen på en ordrelinje betyder, at ordren endnu ikke er opfyldt.)
 
-![Diagram, hvor det ses, at tabelrækkerne nu vises i modellen. Rækkedetaljerne beskrives i følgende afsnit.](media/relationships-many-to-many/order-fulfillment-model-related-tables.png)
+![Diagram, hvor det ses, at tabelrækkerne nu vises i modellen. Rækkedetaljerne for de to tabeller er beskrevet i følgende afsnit.](media/relationships-many-to-many/order-fulfillment-model-related-tables.png)
 
 Rækkedetaljerne for de to tabeller er beskrevet i følgende punktopstilling:
 
@@ -161,7 +161,7 @@ Der præsenteres et nøjagtigt resultat i visualiseringen. Modellens anvendeligh
 
 ### <a name="relate-many-to-many-facts-guidance"></a>Vejledning til relatering af fakta med mange til mange-relation
 
-Generelt anbefaler vi ikke, at du relaterer to tabeller af faktatypen direkte ved hjælp af mange til mange-kardinalitet. Den primære årsag er, at modellen ikke giver fleksibilitet i den måde, som rapportvisualiseringerne filtrerer eller grupperer på. I eksemplet er det kun muligt for visualiseringer at filtrere eller gruppere efter tabellen **Ordre** og kolonnen **Ordre-id**. En yderligere årsag vedrører kvaliteten af dine data. Hvis der er integritetsproblemer med dine data, udelades nogle rækker muligvis under forespørgsler på grund af den _svage relation_. Du kan finde flere oplysninger i [Modelrelationer i Power BI Desktop (Evaluering af relationer)](../transform-model/desktop-relationships-understand.md#relationship-evaluation).
+Generelt anbefaler vi ikke, at du relaterer to tabeller af faktatypen direkte ved hjælp af mange til mange-kardinalitet. Den primære årsag er, at modellen ikke giver fleksibilitet i den måde, som rapportvisualiseringerne filtrerer eller grupperer på. I eksemplet er det kun muligt for visualiseringer at filtrere eller gruppere efter tabellen **Ordre** og kolonnen **Ordre-id**. En yderligere årsag vedrører kvaliteten af dine data. Hvis der er integritetsproblemer med dine data, udelades nogle rækker muligvis under forespørgsler på grund af den _begrænsede relation_. Du kan finde flere oplysninger i [Modelrelationer i Power BI Desktop (Evaluering af relationer)](../transform-model/desktop-relationships-understand.md#relationship-evaluation).
 
 I stedet for at relatere tabeller af faktatypen direkte, anbefaler vi, at du indfører principper for design af et [stjerneskema](star-schema.md). Det gør du ved at tilføje tabeller af dimensionstypen. Tabeller af dimensionstypen relateres derefter til tabeller af faktatypen ved hjælp af én til mange-relationer. Denne designmetode er robust, da den giver fleksible rapporteringsmuligheder. Den giver dig mulighed for at filtrere eller gruppere ved hjælp af en hvilken som helst af kolonnerne i dimensionstypen og opsummere en hvilken som helst tabel af faktatypen.
 
@@ -184,7 +184,7 @@ Hvis du tager dig tid til at anvende principper for design af et stjerneskema, f
 - Dine rapportvisualiseringer kan _filtrere eller gruppere_ efter en hvilken som helst synlig kolonne fra tabeller af dimensionstypen
 - Dine rapportvisualiseringer kan _opsummere_ en hvilken som helst synlig kolonne fra tabeller af faktatypen
 - Filtre, der er anvendt på tabellerne **Ordrelinje**, **Ordredato** eller **Produkt**, overføres til begge tabeller af faktatypen
-- Alle relationer er én til mange-relationer, og hver relation er en _stærk relation_. Problemer med dataintegritet maskeres ikke. Du kan finde flere oplysninger i [Modelrelationer i Power BI Desktop (Evaluering af relationer)](../transform-model/desktop-relationships-understand.md#relationship-evaluation).
+- Alle relationer er én til mange-relationer, og hver relation er en _almindelig relation_. Problemer med dataintegritet maskeres ikke. Du kan finde flere oplysninger i [Modelrelationer i Power BI Desktop (Evaluering af relationer)](../transform-model/desktop-relationships-understand.md#relationship-evaluation).
 
 ## <a name="relate-higher-grain-facts"></a>Relater fakta på højere detaljeringsniveau
 
@@ -228,7 +228,7 @@ IF(
 
 Målingen **Målantal** bruges nu i følgende matrixvisualisering. Alle månedlige målantal vises som TOMME.
 
-![Diagram, der viser en matrixvisualisering, der afslører, at målet for året 2020 er 270.](media/relationships-many-to-many/sales-targets-model-matrix-blank-months-good.png)
+![Diagram, der viser en matrixvisualisering, som afslører, at målet for året 2020 er 270 med tomme månedlige værdier.](media/relationships-many-to-many/sales-targets-model-matrix-blank-months-good.png)
 
 ### <a name="relate-higher-grain-non-date"></a>Relater højere detaljeringsniveau (ikke dato)
 

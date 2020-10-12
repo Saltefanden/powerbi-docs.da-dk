@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 05/05/2019
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e7f36ada69f1ee98c7392d05eb169947c600774e
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 0e5687f9bb3f27af7bdfee28cd9753fbda4fa44f
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85221641"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91635763"
 ---
 # <a name="create-ribbon-charts-in-power-bi"></a>Opret bånddiagrammer i Power BI
 
@@ -24,7 +24,7 @@ ms.locfileid: "85221641"
 
 Du kan oprette bånddiagrammer for at visualisere data og hurtigt finde ud af, hvilken datakategori der har den højeste placering (største værdi). Bånddiagrammer er effektive til at vise ændringer af placeringer, hvor den højeste placering (værdi) altid vises øverst for hver tidsperiode. 
 
-![bånddiagram](media/desktop-ribbon-charts/ribbon-charts-01.png)
+![Skærmbillede, der viser et bånddiagram med data for Lyd, Mobiltelefoner og andre kategorier, der vises efter år og kvartal.](media/desktop-ribbon-charts/ribbon-charts-01.png)
 
 > [!NOTE]
 > Når du deler din rapport med en Power BI-kollega, kræves det, at I begge har individuelle Power BI Pro-licenser, eller at rapporten er gemt i en Premium-kapacitet. Se [deling af rapporter](../collaborate-share/service-share-reports.md).
@@ -57,12 +57,12 @@ I dette selvstudium bruges [PBIX-filen med eksemplet Detailhandelsanalyse](https
 
 3. I bånddiagrammet kan du se placeringen for hver måned. Bemærk, hvordan placering ændres over tid. Kategorien Hjem rykker for eksempel fra anden til femte fra februar til marts.
 
-    ![bånddiagram](media/desktop-ribbon-charts/power-bi-ribbon.png)
+    ![Skærmbillede, der viser det bånddiagram, du har oprettet med nogle data, som du har fremhævet.](media/desktop-ribbon-charts/power-bi-ribbon.png)
 
 ## <a name="format-a-ribbon-chart"></a>Formatér et bånddiagram
 Når du opretter et bånddiagram, er der formateringsindstillinger tilgængelige under afsnittet **Format** i ruden **Visualiseringer**. Formateringsindstillingerne for bånddiagrammer ligner indstillingerne for et stablet søjlediagram, men byder på yderligere formateringsindstillinger, som er specifikke for båndene.
 
-![båndskabelon i ruden Visualisering](media/desktop-ribbon-charts/power-bi-format-ribbon.png)
+![Skærmbillede, der viser formateringsikonet valgt og området Bånd udvidet.](media/desktop-ribbon-charts/power-bi-format-ribbon.png)
 
 Ved hjælp af disse formateringsindstillinger for bånddiagrammer kan du foretage følgende justeringer.
 
@@ -77,7 +77,7 @@ Da bånddiagrammet ikke har mærkater for y-aksen, kan det være en god idé at 
 
 Angiv formateringsindstillingerne for dine datamærkater. I dette eksempel har vi sat tekstfarven til hvid og visningsenheder til tusinde.
 
-![båndskabelon i ruden Visualisering](media/desktop-ribbon-charts/power-bi-data-labels.png)
+![Skærmbilleder, der viser dit endelige formaterede bånddiagram.](media/desktop-ribbon-charts/power-bi-data-labels.png)
 
 ## <a name="next-steps"></a>Næste trin
 

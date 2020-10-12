@@ -11,12 +11,12 @@ ms.topic: quickstart
 ms.date: 01/31/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 49ed6bd0ae8021936c327aede83d0e6a8539179a
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: b9b299207a95091244d1f9ff7ab5f7a0d5460fc8
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86216140"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91634108"
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Hurtig introduktion – Navigation i Power BI-tjenesten
 
@@ -47,12 +47,12 @@ Du kommer i gang ved at åbne Power BI-tjenesten (app.powerbi.com), og gå til *
 
 1. Når appen er installeret, skal du vælge **Apps** i navigationsruden. 
 
-   ![åbne Power BI-tjenesten første gang](./media/end-user-experience/power-bi-home-steps.png)
+   ![Skærmbillede, der viser Power BI-startskærmen med en velkomstmeddelelse.](./media/end-user-experience/power-bi-home-steps.png)
 
 
 2. På skærmen **Apps** skal du vælge appen **Eksempel på salg og marketing**.
 
-    ![åbne Power BI-tjenesten første gang](./media/end-user-experience/power-bi-sample-app.png)
+    ![Skærmbillede, der viser skærmen Power BI-apps med en app kaldet Eksempel på salg og marketing.](./media/end-user-experience/power-bi-sample-app.png)
 
 2. Vælg **Udforsk app**.
 

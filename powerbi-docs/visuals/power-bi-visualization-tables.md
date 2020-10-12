@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 02/10/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 11ccbdd3a5586aa10c051e6bfed820ed7f0ae48b
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 45f5ff81e8ab11c2082af7f570f02bd3671719c6
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237534"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91634659"
 ---
 # <a name="tables-in-power-bi-reports-and-dashboards"></a>Tabeller i Power BI-rapporter og -dashboards
 
@@ -157,7 +157,7 @@ Sådan kopierer du værdien af en enkelt celle:
 
 1. Vælg **Kopiér** > **Kopiér værdi**.
 
-    ![kopieringsindstillinger](media/power-bi-visualization-tables/power-bi-copy-value.png)
+    ![Skærmbillede, der viser Kopiér valgt med indstillingen Kopiér værdi valgt.](media/power-bi-visualization-tables/power-bi-copy-value.png)
 
     Den ikke-formaterede celleværdi er nu i din udklipsholder, og du kan indsætte den i et andet program.
 
@@ -169,7 +169,7 @@ Sådan kopierer du mere end en enkelt celle:
 
 1. Vælg **Kopiér** > **Kopiér markering**.
 
-    ![kopieringsindstillinger](media/power-bi-visualization-tables/power-bi-copy-selection.png)
+    ![Skærmbillede, der viser Kopiér valgt med indstillingen Kopiér markering valgt.](media/power-bi-visualization-tables/power-bi-copy-selection.png)
 
 ## <a name="adjust-the-column-width-of-a-table"></a>Tilpas kolonnebredden i en tabel
 

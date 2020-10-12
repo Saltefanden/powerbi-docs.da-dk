@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: tutorial
 ms.date: 11/26/2019
 ms.author: painbar
-ms.openlocfilehash: f946c3b10f9d4922c227dd92a748af91266c040e
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 3b84cf4969df05d4e9570b12a80436bca3e280be
+ms.sourcegitcommit: 7e99e8af9caf9340958c4607a94728d43e8c3811
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75221761"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91668315"
 ---
 # <a name="tutorial-ask-questions-about-your-data-with-the-qa-virtual-analyst-in-the-power-bi-ios-apps"></a>Selvstudium: Stil spørgsmål om dine data ved hjælp af den virtuelle Spørgsmål og svar-analytiker i iOS-apps med Power BI
 
@@ -92,13 +92,13 @@ Når du er færdig med selvstudiet, kan du slette dashboardet med eksemplet på 
 
 3. Klik på fanen Dashboards, og klik derefter på papirkurven på linjen med eksemplet på analyse af salgsmuligheder.
 
-    ![Vælg ikonet Slet](./media/tutorial-mobile-apps-ios-qna/power-bi-tutorial-mobile-apps-ios-qna-delete-opportunity-analysis-sample.png)
+    ![Skærmbillede, der viser Power BI-arbejdsområdet med et dashboard valgt og ikonet for sletning fremhævet.](./media/tutorial-mobile-apps-ios-qna/power-bi-tutorial-mobile-apps-ios-qna-delete-opportunity-analysis-sample.png)
 
     Klik nu på fanen Rapporter, og gør det samme.
 
 4. Vælg nu fanen Datasæt, klik på **Flere indstillinger** (...), og vælg derefter **Slet**.
 
-    ![Vælg ikonet Slet](./media/tutorial-mobile-apps-ios-qna/power-bi-tutorial-mobile-apps-ios-qna-delete-opportunity-analysis-sample-datasets.png)
+    ![Skærmbillede, der viser Power BI-arbejdsområdet med et datasæt valgt og Slet valgt i menuen Flere indstillinger.](./media/tutorial-mobile-apps-ios-qna/power-bi-tutorial-mobile-apps-ios-qna-delete-opportunity-analysis-sample-datasets.png)
 
 ## <a name="next-steps"></a>Næste trin
 

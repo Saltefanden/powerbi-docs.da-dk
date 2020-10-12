@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/18/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b273b5ea265815f26e58010356790186163c4aa8
-ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
+ms.openlocfilehash: e896b3aeabc6a22c98563d0836984cd2d8a644de
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85354610"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91633831"
 ---
 # <a name="tips-and-tricks-for-color-formatting-in-power-bi"></a>Tip og tricks til farveformatering i Power BI
 
@@ -43,7 +43,7 @@ Når ruderne **Filtre** og **Visualiseringer** vises langs højre side af rappor
 ![rapportcanvas i redigeringsvisning](media/service-tips-and-tricks-for-color-formatting/power-bi-edit.png)
 
 ## <a name="apply-a-theme"></a>Anvend et tema
-Med rapporttemaer kan du anvende designændringer på hele rapporten, f.eks. bruge virksomhedsfarver, ændre ikonsæt eller anvende ny visualstandardformatering. Når du anvender et rapporttema, anvendes farver og formatering fra det valgte tema på alle visuals i rapporten. Du kan få mere at vide under [Brug rapporttemaer](../create-reports/desktop-report-themes.md)
+Med rapporttemaer kan du anvende designændringer på hele rapporten, f.eks. bruge virksomhedsfarver, ændre ikonsæt eller anvende ny standardformatering af visualiseringer. Når du anvender et rapporttema, anvendes farver og formatering fra det valgte tema på alle visualiseringer i rapporten. Du kan få mere at vide under [Brug rapporttemaer](../create-reports/desktop-report-themes.md)
 
 ![Ikonet Skift tema på menulinjen](media/service-tips-and-tricks-for-color-formatting/power-bi-theme.png)
 
@@ -72,7 +72,7 @@ Når du har foretaget et valg, får datapunktet **Convenience** en pæn orange n
 
 Selvom du ændrer visualiseringstyper og derefter vender tilbage, kan Power BI huske valget, og **Convenience** er stadig orange.
 
-Du kan ændre farven på et datapunkt for én, flere eller alle dataelementer i visualiseringen. Måske vil du gerne have, at dit visual får virksomhedens gule, grønne og blå farver. 
+Du kan ændre farven på et datapunkt for én, flere eller alle dataelementer i visualiseringen. Måske vil du gerne have, at din visualisering får virksomhedens gule, grønne og blå farver. 
 
 ![liggende søjlediagram i grønne, gule og blå farver](media/service-tips-and-tricks-for-color-formatting/power-bi-corporate.png)
 
@@ -130,15 +130,15 @@ Når skyderen **Divergerende** er slået til, kan du angive farverne for **Minim
 ## <a name="add-color-to-table-rows"></a>Føj farve til tabelrækker
 Tabeller og matrixer indeholder mange muligheder for farveformatering. 
 
-![standardtabel](media/service-tips-and-tricks-for-color-formatting/power-bi-table.png)
+![Skærmbillede, der viser en tabel med rækker i skiftevist hvid og grå.](media/service-tips-and-tricks-for-color-formatting/power-bi-table.png)
 
 En af de hurtigste måder at anvende farver på i en tabel eller matrix er at åbne fanen Formatering og vælge **Typografi**.  På billedet nedenfor har vi valgt **Overskrift med fed skrift og blinkende rækker**.
 
-![standardtabel](media/service-tips-and-tricks-for-color-formatting/power-bi-table-style.png)
+![Skærmbillede, der viser typografiindstillingen Fed for iøjnefaldende overskriftsrækker, hvilket gør overskriftsrækken sort og de andre rækker lyse- og mørkegrøn.](media/service-tips-and-tricks-for-color-formatting/power-bi-table-style.png)
 
 Eksperimentér med andre indstillinger for farveformatering. På dette billede har vi ændret baggrundsfarven under **Kolonneoverskrifter** og ændret både **baggrundsfarven** og **den alternative baggrundsfarve** for **Værdier** (rækker).
 
-![standardtabel](media/service-tips-and-tricks-for-color-formatting/power-bi-table-rows.png)
+![Skærmbillede, der viser værdivælgere for Baggrundsfarve og Alternativ baggrundsfarve.](media/service-tips-and-tricks-for-color-formatting/power-bi-table-rows.png)
 
 ## <a name="how-to-undo-in-power-bi"></a>Sådan fortryder du i Power BI
 Som mange andre Microsoft-tjenester og -software giver Power BI en nem måde at fortryde den seneste kommando på. Lad os for eksempel antage, at du ændrer farven på et datapunkt eller en serie af datapunkter, og du ikke kan lide farven, når den vises i visualiseringen. Du kan ikke huske præcis, hvilken farve det havde før, men du ved, du vil farven tilbage!
@@ -149,7 +149,7 @@ Hvis du vil kassere alle de ændringer, du har foretaget på kortet Formatering,
 
 ![Kortet Formatering med Gendan standardindstillingerne vist nederst](media/service-tips-and-tricks-for-color-formatting/power-bi-revert.png)
 
-## <a name="feedback"></a>Feedback
+## <a name="give-us-your-feedback"></a>Giv os din feedback
 Har du et tip, du vil dele? Send det til os, og vi finder ud af, om det skal medtages her.
 
 ## <a name="next-steps"></a>Næste trin

@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.date: 04/21/2020
 ms.author: maggies
 LocalizationGroup: Ask questions of your datadefintion
-ms.openlocfilehash: 8f0d4c970de1724f47a016cbe063f1cc3df20178
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: b2eff10484a7e05a9e51dfc09d44598de034ee88
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239919"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91635234"
 ---
 # <a name="teach-qa-to-understand-questions-and-terms-in-power-bi-qa"></a>Træn Spørgsmål og svar til at forstå spørgsmål og udtryk i Spørgsmål og svar i Power BI
 
@@ -61,7 +61,7 @@ Spørgsmål og svar registrerer automatisk, når et ukendt ord er et substantiv 
 
 Du udfylder feltet med begrebet fra dine data.
 
-![Prompt med synonym i Træn Spørgsmål og svar](media/q-and-a-tooling-teach-q-and-a/qna-tooling-synonym-prompt.png)
+![Skærmbillede, der viser en del af feltet til spørgsmålet og svar med ordet "Omsætning" og prompten "Omsætning henviser til" ved siden af et tekstfelt.](media/q-and-a-tooling-teach-q-and-a/qna-tooling-synonym-prompt.png)
 
 Hvis du angiver noget andet end et felt fra datamodellen, kan du få uønskede resultater.
 
@@ -73,7 +73,7 @@ Nogle gange vil du måske definere begreber, der fungerer som en betingelse for 
 
 Du udfylder feltet med betingelsen.
 
-![Prompt med synonym i Træn Spørgsmål og svar](media/q-and-a-tooling-teach-q-and-a/qna-tooling-adjectives.png)
+![Skærmbillede, der viser en del af feltet til spørgsmål og svar med ordet "Fantastiske udgivere" og prompten "Udgivere, der har" ved siden af et tekstfelt, og ordene "er fantastiske".](media/q-and-a-tooling-teach-q-and-a/qna-tooling-adjectives.png)
 
 Nogle eksempler på betingelser, som du kan definere, er:
 

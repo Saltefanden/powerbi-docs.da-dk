@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: quickstart
 ms.date: 11/25/2019
 ms.author: painbar
-ms.openlocfilehash: 003543579e26262194668f94bdf78b8b002cb114
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 52728d6cb2daa1bb2753454e8b19a7e06800d080
+ms.sourcegitcommit: 7e99e8af9caf9340958c4607a94728d43e8c3811
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90856143"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91668499"
 ---
 # <a name="quickstart-explore-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Hurtig start: Vis dashboards og rapporter i Power BI-mobilappene
 I denne hurtige introduktion får du en hurtig rundvisning i Power BI – Mobil-appen og udforsker et eksempeldashboard og en eksempelrapport. Power BI-appen til iOS vises, men du kan nemt følge med på andre enheder.
@@ -68,7 +68,7 @@ Når du har gennemført forudsætningerne og downloadet Eksempel på detailhande
 
 10. Stryg opad for se værktøjslinjen langs den nederste kant, og tryk på **Flere indstillinger (...)** .
 
-    ![Tryk på blyanten](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-tap-pencil.png)
+    ![Skærmbillede, der viser placeringen af kontrolelementet Flere indstillinger i nederste højre hjørne.](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-tap-pencil.png)
 
 
 11. Rul ned på listen, og vælg **Anmærk**.

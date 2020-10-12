@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 01/10/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 58d595ff5e7d3947117aa9663e761a6f98f10c7f
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: a8a38790b606fa5f700f2b9389ebad5338919d28
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90861308"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91635280"
 ---
 # <a name="create-key-influencers-visualizations"></a>Opret visualiseringer af nøglefaktorer
 
@@ -231,13 +231,13 @@ Til sidst ser vi på det gennemsnitlige år, et hus blev bygget. Analysen her er
 -   Punktdiagrammet i ruden til højre viser den gennemsnitlige huspris for hver eneste værdi i tabellen
 -   Værdien i boblen viser, hvor meget den gennemsnitlige huspris stiger (i dette tilfælde $1.350), når det gennemsnitlige år stiger efter standardafvigelsen (i dette tilfælde 30 år)
 
-![Nøglefaktorer for målinger af numeriske mål](media/power-bi-visualization-influencers/power-bi-ki-numeric-measures.png)
+![Skærmbillede, der viser nøglefaktorer på huspriser med faktorerne til venstre og punktdiagrammet til højre.](media/power-bi-visualization-influencers/power-bi-ki-numeric-measures.png)
 
 ## <a name="interpret-the-results-top-segments"></a>Fortolkning af resultaterne: De øverste segmenter
 
 De øverste segmenter for numeriske mål viser de grupper, hvor huspriserne i gennemsnit er højere end i det overordnede datasæt. Nedenfor kan vi f.eks. se, at **Segment 1** består af huse, hvor **GarageCars** (antallet af biler, der kan være i garagen) er større end 2 og **RoofStyle** er moderne. Huse med disse karakteristika har en gennemsnitlig pris på $355.000 sammenlignet med det samlede gennemsnit i dataene, som er $180.000.
 
-![Nøglefaktorer for målinger af numeriske mål](media/power-bi-visualization-influencers/power-bi-ki-numeric-segments.png)
+![Skærmbillede, der viser de øverste segmenter for huspriser.](media/power-bi-visualization-influencers/power-bi-ki-numeric-segments.png)
 
 ## <a name="analyze-a-metric-that-is-a-measure-or-a-summarized-column"></a>Analysér en metrikværdi, der er en måling eller en opsummeret kolonne
 
@@ -245,19 +245,19 @@ I forbindelse med en måling eller en opsummeret kolonne er analysen som standar
 
 Hvis der er tale om ikke-opsummerede kolonner, kører analysen altid på tabelniveau. I huspriseksemplet ovenfor analyserede vi metrikværdien **Huspris** for at se, hvad der får en huspris til at stige/falde. Analysen kører automatisk på tabelniveau. Vores tabel har et entydigt id for hvert hus, hvorfor analysen kører på husniveau.
 
-![Tabel med målinger](media/power-bi-visualization-influencers/power-bi-ki-measures-table.png)
+![Skærmbillede, der viser analyse på tabelniveau for eksemplet med huspriser.](media/power-bi-visualization-influencers/power-bi-ki-measures-table.png)
 
 I forbindelse med kolonner med målinger og opsummerede kolonner ved vi ikke umiddelbart, hvilket niveau de skal analyseres på. Hvis **Huspris** blev opsummeret som et **gennemsnit**, blev vi nødt til at overveje, hvilket niveau vi ville have denne gennemsnitlige huspris analyseret på. Er det den gennemsnitlige huspris i kvarteret? Eller måske på regionalt niveau?
 
 Målinger og opsummerede kolonner analyseres automatisk på niveauet for de felter af typen **Forklar med**, der bruges. Forestil dig, at vi har tre felter i **Forklar med**, som vi er interesseret i: **Køkkenkvalitet**, **Bygningstype** og **Aircondition**. Den **Gennemsnitlige huspris** ville blive beregnet for hver unikke kombination af disse tre felter. Det er ofte nyttigt at skifte til en tabelvisning for at se, hvordan de data, der evalueres, ser ud.
 
-![Tabel med målinger](media/power-bi-visualization-influencers/power-bi-ki-measures-table2.png)
+![Skærmbillede, der viser de tre kolonner og den gennemsnitlige huspris.](media/power-bi-visualization-influencers/power-bi-ki-measures-table2.png)
 
 Denne analyse er meget opsummeret, og det vil derfor være svært for regressionsmodellen at finde eventuelle mønstre i dataene, som modellen kan lære af. Vi bør køre analysen på et mere detaljeret niveau for at opnå bedre resultater. Hvis vi ville analysere husprisen på husniveau, skulle vi føje feltet **Id** til analysen. Ikke desto mindre vil vi ikke have, at hus-id'et bliver betragtet som en nøglefaktor. Det er ikke nyttigt at vide, at i takt med at et hus-id stiger, stiger prisen på et hus også. Det er her, feltet **Udvid efter** er virkelig praktisk. Du kan bruge **Forklar med** til at tilføje de felter, du vil bruge til angivelse af niveauet for analysen uden at kigge efter nye nøglefaktorer.
 
 Se, hvordan visualiseringen ser ud, når vi føjer et **Id** til**Forklar med**. Når du har defineret det niveau, som din måling skal evalueres på, fortolkes nøglefaktorer på præcis samme måde som [ikke-opsummerede numeriske kolonner](#analyze-a-metric-that-is-numeric).
 
-![Tabel med målinger](media/power-bi-visualization-influencers/power-bi-ki-measures-analysis.png)
+![Skærmbillede, der viser visualiseringen med huspriser, som er afhængig af de tre kolonner, der drøftes i dette afsnit.](media/power-bi-visualization-influencers/power-bi-ki-measures-analysis.png)
 
 Hvis du vil vide mere om, hvordan du kan analysere målinger med visualiseringen af nøglefaktorer, skal du se følgende selvstudium.
 

@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 05/06/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 332c1c1b6c3e4888f0177bab284e6b4902987be2
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 0da34397c1b707eeece6fdf127c2c4e96f5ab6a5
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85219775"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91635671"
 ---
 # <a name="customize-x-axis-and-y-axis-properties"></a>Tilpas egenskaberne for x- og y-aksen
 
@@ -75,7 +75,7 @@ Navnene på X-aksen vises under kolonnerne i diagrammet. Lige nu er de så lyseg
 
 3. Flyt skyderen for **X-aksen** til **Til**.
 
-    ![Skærmbillede af skyderen slået til.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-slider-on.png)
+    ![Skærmbillede af skyderen slået til for X-aksen.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-slider-on.png)
 
     Nogle af årsagerne til, at du vil angive X-aksen til **Fra**, kan være, at visualiseringen er selvforklarende uden navne, eller hvis du har en rapportside, der er overfyldt, og du har brug for mere plads for at få vist flere data.
 
@@ -139,7 +139,7 @@ Navnene på Y-aksen vises som standard til venstre. Lige nu er de så lysegrå, 
 
 1. Flyt skyderen for **Y-aksen** til **Til**.  
 
-    ![Skærmbillede af skyderen slået til.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-y-axis-on.png)
+    ![Skærmbillede af skyderen slået til for Y-aksen.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-y-axis-on.png)
 
     Du kan for eksempel vælge at slå Y-aksen fra, hvis du vil frigøre mere plads til data.
 
@@ -173,7 +173,7 @@ I nogle visualiseringer kan du med fordel bruge to Y-akser. Kombinationsdiagramm
 
 ### <a name="create-a-chart-with-two-y-axes"></a>Opret et diagram med to Y-akser
 
-1. Vælg søjlediagrammet, og skift det til et *kurvediagram og stablet søjlediagram*. Denne type visuals understøtter en enkelt kurvediagramværdi og flere værdier for kolonner, der kan stables. 
+1. Vælg søjlediagrammet, og skift det til et *kurvediagram og stablet søjlediagram*. Denne type visualisering understøtter en enkelt kurvediagramværdi og flere værdier for kolonner, der kan stables. 
 
     ![Skærmbillede af ruden Visualiseringer, hvor ikonet for kurvediagram og stablet søjlediagram er fremhævet.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-combo.png)
    

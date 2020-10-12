@@ -1,6 +1,6 @@
 ---
 title: Sideinddeling i Power BI-sideinddelte rapporter
-description: I denne artikel får du mere at vide om understøttede datakilder for sideinddelte rapporter i Power BI-tjenesten, og hvordan du opretter forbindelse til datakilder i Azure SQL Database.
+description: Få mere at vide om sideinddelte rapporter i Power BI-tjenesten og de regler, der bruges til at styre sideinddeling, for at designe en rapport, der er optimeret til den gengivelse, du planlægger at bruge.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 12/03/2019
-ms.openlocfilehash: bce23ecdc99f6428ecefc28580e3ae0ec05fac6a
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 87dc2541dd8fd91f22c1e89ce146be10eca14db9
+ms.sourcegitcommit: 6ba33e5a500928163e02e007f5ccd52dd2227610
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90859698"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780123"
 ---
 # <a name="pagination-in-power-bi-paginated-reports"></a>Sideinddeling i Power BI-sideinddelte rapporter
 

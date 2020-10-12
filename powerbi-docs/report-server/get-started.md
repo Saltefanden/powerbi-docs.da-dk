@@ -9,18 +9,18 @@ ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
-ms.openlocfilehash: 4b2b29effb1d9b4b2d8e743990dd3dd0d27470f8
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 3f44353fc562793037d80a2aa7f0a1d42d207bc6
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90859836"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91634038"
 ---
 # <a name="what-is-power-bi-report-server"></a>Hvad er Power BI-rapportserveren?
 
 Power BI-rapportserveren er en rapportserver med en webportal i det lokale miljø, hvor du kan få vist og administrere rapporter og KPI'er. Der medfølger værktøjer til oprettelse af Power BI-rapporter, sideinddelte rapporter, mobilrapporter og KPI'er. Dine brugere kan få adgang til disse rapporter på forskellige måder: Se kan få vist dem i en webbrowser eller på en mobilenhed eller som en mail i deres indbakke.
 
-![Webportalen til Power BI-rapportserver](media/get-started/power-bi-report-server-overview.png)
+![Skærmbillede, der viser webportalen for Power BI-rapportserver.](media/get-started/power-bi-report-server-overview.png)
 
 ## <a name="comparing-power-bi-report-server"></a>Sammenlign Power BI-rapportserveren 
 Power BI-rapportserveren ligner både SQL Server Reporting Services og Power BI-onlinetjenesten, men på forskellige måder. På samme måde som med Power BI-tjenesten er Power BI-rapportserveren vært for Power BI-rapporter (.pbix), Excel-filer og sideinddelte rapporter (.rdl). På samme måde som Reporting Services findes Power BI-rapportserveren i det lokale miljø. Power BI-rapportserverens funktioner er overordnede i forhold til Reporting Services: Alt det, du kan bruge Reporting Services til, kan du også bruge Power BI-rapportserveren til, inklusive understøttelse af Power BI-rapporter. Se [Sammenlign Power BI-rapportserveren med Power BI-tjenesten](compare-report-server-service.md) for at få flere oplysninger.
@@ -36,7 +36,7 @@ Hvis du publicerer Power BI-rapporter til Power BI-rapportserver, har du også b
 ## <a name="web-portal"></a>Webportal
 Indgangspunktet for Power BI-rapportserveren er en sikker webportal, som du kan få vist i alle moderne browsere. Her får du adgang til alle dine rapporter og KPI'er. Indholdet på webportalen er organiseret i et traditionelt mappehierarki. Indhold i dine mapper er grupperet efter type: Power BI-rapporter, mobilrapporter, sideinddelte rapporter, KPI'er og Excel-projektmapper. Delte datasæt og delte datakilder har deres egne mapper, du kan bruge som komponenter til dine rapporter. Du markerer dem som favoritter for at få vist dem i en enkelt mappe. Du kan også oprette KPI'er direkte på webportalen. 
 
-![Webportalen til Power BI-rapportserver](media/get-started/web-portal.png)
+![Foto, der viser en bærbar computer med webportalen for Power BI-rapportserveren.](media/get-started/web-portal.png)
 
 Afhængigt af dine tilladelser kan du administrere indholdet på webportalen. Du kan planlægge behandling af rapporter, få adgang til rapporter efter behov og abonnere på udgivne rapporter. Du kan anvende din egen brugerdefinerede [branding](/sql/reporting-services/branding-the-web-portal) på webportalen. 
 

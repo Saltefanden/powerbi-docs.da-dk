@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: troubleshooting
 ms.date: 02/05/2019
-ms.openlocfilehash: 245a23f0477b542ecd402a5028cffebe2d1142ad
-ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
+ms.openlocfilehash: 3016cce1e4dd8fb1be5b5ab95ebcc73bdcb56ac1
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85485685"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91749063"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Foretag fejlfinding af dit integrerede program
 
@@ -75,27 +75,27 @@ En fiddler-optagelse kan være påkrævet med henblik på yderligere efterforskn
 
 En fiddler-optagelse kan være påkrævet med henblik på yderligere efterforskning. Der kan være flere grunde til en 403-fejl.
 
-* Brugeren har overskredet antallet af integrerede tokens, der kan genereres på en delt kapacitet. Køb Azure-kapacitet for at generere integreringstokens og tildele arbejdsområdet til den pågældende kapacitet. Se [Opret Power BI Embedded-kapacitet på Azure Portal](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity).
+* Brugeren har overskredet antallet af integrerede tokens, der kan genereres på en delt kapacitet. Køb Azure-kapacitet for at generere integreringstokens og tildele arbejdsområdet til den pågældende kapacitet. Se [Opret Power BI Embedded-kapacitet på Azure Portal](/azure/power-bi-embedded/create-capacity).
 * Azure AD auth-tokenet kan være udløbet.
 * Den godkendte bruger er ikke et medlem af gruppen (arbejdsområde).
 * Den godkendte bruger er ikke en administrator af gruppen (arbejdsområde).
-* Den godkendte bruger har ikke tilladelser. Tilladelser kan opdateres ved hjælp af [refreshUserPermissions API](https://docs.microsoft.com/rest/api/power-bi/users/refreshuserpermissions)
+* Den godkendte bruger har ikke tilladelser. Tilladelser kan opdateres ved hjælp af [refreshUserPermissions API](/rest/api/power-bi/users/refreshuserpermissions)
 * Godkendelsesheaderen kan være angivet forkert. Kontroller for tastefejl.
 
 Programmets backend skal muligvis opdatere godkendelsestokenet før kaldet til GenerateToken.
 
-    ```
-    GET https://wabi-us-north-central-redirect.analysis.windows.net/metadata/cluster HTTP/1.1
-    Host: wabi-us-north-central-redirect.analysis.windows.net
-    ...
-    Authorization: Bearer eyJ0eXAiOi...
-    ...
+```console
+GET https://wabi-us-north-central-redirect.analysis.windows.net/metadata/cluster HTTP/1.1
+Host: wabi-us-north-central-redirect.analysis.windows.net
+...
+Authorization: Bearer eyJ0eXAiOi...
+...
 
-    HTTP/1.1 403 Forbidden
-    ...
+HTTP/1.1 403 Forbidden
+...
 
-    {"error":{"code":"TokenExpired","message":"Access token has expired, resubmit with a new access token"}}
-    ```
+{"error":{"code":"TokenExpired","message":"Access token has expired, resubmit with a new access token"}}
+```
 
 ## <a name="authentication"></a>Godkendelse
 
@@ -113,13 +113,13 @@ Hvis du vil løse dette problem, skal du fjerne "oauth2/authorize/" fra slutning
 
 Hvis du bruger Power BI Embedded og Azure AD Direkte-godkendelse, og du modtager meddelelser, når du logger på, f.eks. ***fejl: uautoriseret_klient, fejlbeskrivelse:AADSTS70002: Der opstod en fejl under validering af legitimationsoplysningerne. AADSTS50053: Du har forsøgt at logge på for mange gange med et forkert bruger-id eller en forkert adgangskode***, fordi direkte godkendelse som standard ikke har været i brug siden d. 14. juni 2018.
 
-Dette kan aktiveres igen ved hjælp af en [Azure AD-politik](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications), der er begrænset til organisationen eller en [tjenesteprincipal](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
+Dette kan aktiveres igen ved hjælp af en [Azure AD-politik](/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications), der er begrænset til organisationen eller en [tjenesteprincipal](/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
 
 Vi anbefaler, at du kun aktiverer denne politik for ét program ad gangen.
 
 Hvis du vil oprette denne politik, skal du være **Global Administrator** for den mappe, hvor du opretter politikken og tildelingen. Her er et eksempel på et script til oprettelse af politikken og tildeling af den til SP for dette program:
 
-1. Installér [Azure AD PowerShell-modulet som prøveversion](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
+1. Installér [Azure AD PowerShell-modulet som prøveversion](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
 
 2. Kør følgende PowerShell-kommandoer linje for linje. Sørg for, at variablen $sp ikke har mere end ét program som resultat.
 
@@ -153,7 +153,7 @@ GenerateToken kan mislykkes af forskellige grunde, når effektiv identitet er an
 
 Prøv nedenstående trin for at bekræfte, hvilken en det er.
 
-* Kør [get dataset](https://docs.microsoft.com/rest/api/power-bi/datasets). Er egenskaben IsEffectiveIdentityRequired sand?
+* Kør [get dataset](/rest/api/power-bi/datasets). Er egenskaben IsEffectiveIdentityRequired sand?
 * Brugernavn er obligatorisk for enhver EffectiveIdentity.
 * Hvis IsEffectiveIdentityRolesRequired er sandt, så er Rolle påkrævet.
 * DatasetId er obligatorisk for enhver EffectiveIdentity.
@@ -270,19 +270,23 @@ Hvis du arbejder med oplevelsen **Embed for your customers**, skal du gemme og u
 
 Når du vælger **Grant permissions**, får du vist følgende fejl:
 
-    AADSTS70001: Application with identifier <client ID> wasn't found in the directory <directory ID>
+```output
+AADSTS70001: Application with identifier <client ID> wasn't found in the directory <directory ID>
+```
 
 Du kan løse fejlen ved at lukke pop op-vinduet, vente nogle sekunder og prøve igen. Det kan være nødvendigt at gentage dette nogle gange. Et tidsinterval er årsag til problemet, hvor programregistreringsprocessen ikke kan fuldføres, når den er tilgængelig for eksterne API'er.
 
 Følgende fejlmeddelelse vises, når eksempelappen køres:
 
-    Password is empty. Please fill password of Power BI username in web.config.
+```output
+Password is empty. Please fill password of Power BI username in web.config.
+```
 
 Denne fejl opstår, fordi den eneste værdi, der ikke bliver overført til eksempelprogrammet, er din brugeradgangskode. Åbn filen Web.config i løsningen, og udfyld feltet pbiPassword med din brugeradgangskode.
 
 Hvis du får vist fejlen – AADSTS50079: Brugeren skal anvende multifaktorgodkendelse.
 
-    Need to use an AAD account that doesn't have MFA enabled.
+Der skal bruges en AAD-konto, hvor multifaktorgodkendelse ikke er aktiveret.
 
 #### <a name="using-the-embed-for-your-organization-sample-application"></a>Brug af eksempelappen Embed for your organization
 
@@ -290,17 +294,19 @@ Hvis du arbejder med **Embed for your organization**, skal du gemme og udpakke f
 
 Når du kører eksempelappen **Embed for your organization**, får du følgende fejl:
 
-    AADSTS50011: The reply URL specified in the request doesn't match the reply URLs configured for the application: <client ID>
+```output
+AADSTS50011: The reply URL specified in the request doesn't match the reply URLs configured for the application: <client ID>
+```
 
 Denne fejl skyldes, at den URL-adresse til omdirigering, der er angivet for webserverprogrammet, er forskellig fra URL-adressen i eksemplet. Hvis du vil registrere eksempelappen, skal du bruge `https://localhost:13526/` som URL-adresse til omdirigering.
 
-Hvis du vil redigere det registrerede program, skal du lære at [opdatere den Azure AD-registrerede app](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v1-update-azure-ad-app), så den kan give adgang til web-API'erne.
+Hvis du vil redigere det registrerede program, skal du lære at [opdatere den Azure AD-registrerede app](/azure/active-directory/develop/quickstart-v1-update-azure-ad-app), så den kan give adgang til web-API'erne.
 
-Hvis du vil redigere Power BI-brugerprofilen eller -dataene, skal du lære, hvordan du redigere dine [Power BI-data](https://docs.microsoft.com/power-bi/service-basic-concepts).
+Hvis du vil redigere Power BI-brugerprofilen eller -dataene, skal du lære, hvordan du redigere dine [Power BI-data](../../fundamentals/service-basic-concepts.md).
 
 Hvis du får vist fejlen – AADSTS50079: Brugeren skal anvende multifaktorgodkendelse.
 
-    Need to use an AAD account that doesn't have MFA enabled.
+Der skal bruges en AAD-konto, hvor multifaktorgodkendelse ikke er aktiveret.
 
 Du kan finde flere oplysninger under [Ofte stillede spørgsmål om Power BI Embedded](embedded-faq.md).
 

@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 68bfe1a97d9db0b12f3942961c4e50e5c535fd84
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 23f1ab7fb7ae5e143084042699db708c0827114f
+ms.sourcegitcommit: 7e99e8af9caf9340958c4607a94728d43e8c3811
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90856179"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91668545"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Udforsk felter i Power BI-mobilappsene
 Kan anvendes med:
@@ -57,7 +57,7 @@ Derefter åbner du felter i fokustilstand i Power BI-mobilappsene og interagerer
     ![Skærmbillede af en dialogboks, der giver Power BI tilladelse til at åbne links med den interne browser.](media/mobile-tiles-in-the-mobile-apps/pbi_andr_openlinkmessage.png)
    
     Når du har åbnet linket i Power BI-appen, kan du kopiere linket og åbne det i et browservindue i stedet for.
-7. [Åbn rapporten](mobile-reports-in-the-mobile-apps.md) ![Åbn rapportikon](././media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png), som delen er baseret på.
+7. [Åbn rapporten](mobile-reports-in-the-mobile-apps.md) ![Åbn rapportikonet i iOS,](././media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png) som feltet er baseret på.
 8. Hvis du vil forlade fokustilstanden, skal du trykke på feltets navn og derefter trykke på dashboardets navn eller **Mit arbejdsområde**.
    
     ![Skærmbillede af et dashboard, der viser pile, som peger på Mit arbejdsområde og Eksempel på analyse af salgsmuligheder.](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-tile-breadcrumb.png)
@@ -72,7 +72,7 @@ Derefter åbner du felter i fokustilstand i Power BI-mobilappsene og interagerer
    
    * Trykke på diagrammet for at flytte værktøjslinjen i et kurvediagram, et liggende eller stående søjlediagram eller et boblediagram og få vist værdierne for et bestemt sted i visualiseringen.  
    * Tryk på blyantsikonet ![Blyantsikon](./media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-annotate-icon.png) for at [anmærke et felt](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md#annotate-and-share-the-tile-report-or-visual) og derefter ikonet Del snapshot, ![Ikonet Del snapshot](./media/mobile-tiles-in-the-mobile-apps/pbi_andr_sharesnapicon.png) for at [dele det](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md#annotate-and-share-the-tile-report-or-visual) med andre.
-   * Tryk på ikonet Åbn rapport ![Ikonet Åbn rapport](./media/mobile-tiles-in-the-mobile-apps/power-bi-android-tablet-open-report-icon.png) for at [få vist rapporten](mobile-reports-in-the-mobile-apps.md) i mobilappen.
+   * Tryk på ikonet Åbn rapport ![ikonet Åbn rapport i Android.](./media/mobile-tiles-in-the-mobile-apps/power-bi-android-tablet-open-report-icon.png) for at [få vist rapporten](mobile-reports-in-the-mobile-apps.md) i mobilappen.
 3. Nogle gange har opretteren af dashboardet føjet et link til et felt. I så fald vil du, når du trykker på den lodrette ellipse ( **...** ), se **Åbn link** ![Linkikonet](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-link-icon.png):
    
     ![Skærmbillede af et dashboard, der viser den lodrette ellipse, der peger på Åbn link.](media/mobile-tiles-in-the-mobile-apps/power-bi-android-tile-link.png)

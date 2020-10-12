@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 08/27/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e9b950d85d50727ed1e9ca5ec2f94498a37d1665
-ms.sourcegitcommit: 89ce1777a85b9fc476f077cbe22978c6cf923603
+ms.openlocfilehash: f447856ac387bdabdbd29e1d1ebf47caef22677a
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89286795"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91633946"
 ---
 # <a name="view-a-dashboard"></a>Få vist et dashboard
 
@@ -31,14 +31,11 @@ En Power BI Pro-licens er påkrævet både for at dele et dashboard og få vist 
 
 ## <a name="open-a-dashboard"></a>Åbn et dashboard
 
+Dashboards kan åbnes fra mange forskellige steder i Power BI-tjenesten.
 
+![dashboardikon](media/end-user-dashboard-open/power-bi-dashboard-icon.png)
 
-|              |         |
-|------------|--------------------------------|
-|![dashboardikon](media/end-user-dashboard-open/power-bi-dashboard-icon.png)      |Dashboards kan åbnes fra mange forskellige steder i Power BI-tjenesten. <br> Kig kun efter dette dashboardikon. Når du har identificeret et <br>dashboard, kan du åbne det ved at vælge det for at åbne det på dit Power BI-lærred. |
-|                    |          |
-
-
+Kig kun efter dette dashboardikon. Når du har identificeret et dashboard, skal du åbne det ved at vælge det. Så fylder dashboardet dit Power BI-lærred.
 
 Du kan finde dashboards i alle objektbeholderne i navigationsruden. 
 

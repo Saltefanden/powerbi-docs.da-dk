@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 9f7cd6c277a02ce4e44db40930184cce955e5948
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 59cede1cae716661be8d3796330bde7da44170eb
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83274184"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91634590"
 ---
 # <a name="line-charts-in-power-bi"></a>Kurvediagrammer i Power BI
 
@@ -67,11 +67,11 @@ I stedet for at kigge på enheder i alt for alle områder som en enkelt kurve i 
 ### <a name="use-two-y-axes"></a>Brug to Y-akser
 Hvad nu, hvis du vil se nærmere på det samlede salg og enheder i alt i det samme diagram? Salgstal er meget højere end antal enheder, så kurvediagrammet bliver ubrugeligt. Faktisk ser den røde kurve for enheder i alt ud til at være nul.
 
-   ![yderst divergerende værdier](media/power-bi-line-charts/power-bi-diverging.png)
+   ![Skærmbillede, der viser, hvordan brug af en enkelt y-akse viser det samlede antal enheder som en grundlæggende flad og ubrugelig sammenligning med salgstallene.](media/power-bi-line-charts/power-bi-diverging.png)
 
 Hvis du vil have vist meget divergerende værdier i ét diagram, kan du bruge et kombinationsdiagram. Du kan få mere at vide om kombinationsdiagrammer ved at læse [Kombinationsdiagrammer i Power BI](power-bi-visualization-combo-chart.md). I eksemplet nedenfor kan vi få vist salg og enheder i alt sammen i ét diagram ved at tilføje endnu en Y-akse. 
 
-   ![yderst divergerende værdier](media/power-bi-line-charts/power-bi-dual-axes.png)
+   ![Skærmbillede, der viser salgsværdierne som et liggende søjlediagram med y-aksen til venstre og det samlede antal enheder som en kurve med y-aksen til højre.](media/power-bi-line-charts/power-bi-dual-axes.png)
 
 ## <a name="highlighting-and-cross-filtering"></a>Fremhævning og krydsfiltrering
 Du kan få mere at vide om brug af ruden Filters under [Føj et filter til en rapport](../create-reports/power-bi-report-add-filter.md).

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/04/2019
-ms.openlocfilehash: a929374e3d974606d27defed4a7faa99e5450c87
-ms.sourcegitcommit: aece2382b618dc5b730705b4c76e76a657986588
+ms.openlocfilehash: 4066911e90090fe770ca0d33f7e0d9a18d9dde71
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84427864"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91746303"
 ---
 # <a name="implementing-row-level-security-in-embedded-paginated-reports"></a>Implementering af sikkerhed på rækkeniveau i integrerede sideinddelte rapporter
 
@@ -28,7 +28,7 @@ Denne funktion er en sikker måde at få vist et undersæt af dataene på, så d
 
 Når du anvender sikkerhed på rækkeniveau på en sideinddelt Power BI-rapport, skal du tildele en [parameter](../../paginated-reports/report-builder-parameters.md) til attributten **UserID**. Denne parameter begrænser de data, der trækkes fra datasættet, før rapporten integreres.
 
-Når du har tildelt parameteren til **UserID**, skal du bruge [Reports GenerateTokenInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokeningroup)-API'en til at hente integreringstokenet.
+Når du har tildelt parameteren til **UserID**, skal du bruge [Reports GenerateTokenInGroup](/rest/api/power-bi/embedtoken/reports_generatetokeningroup)-API'en til at hente integreringstokenet.
 
 ## <a name="use-userid-as-a-filter-at-report-or-query-level"></a>Brug UserID som et filter på rapport- eller forespørgselsniveau
 
@@ -42,7 +42,7 @@ Du kan bruge **UserId** som et *filter* eller i en *forespørgsel* til datakilde
 
 2. Vælg den parameter, du vil bruge til filtrering af dataene, i rullemenuen **Udtryk**.
 
-     ![Power BI Report Builder-udtryk](media/paginated-reports-row-level-security/expression.png)
+     ![Skærmbillede, der viser værdien Farve valgt i menuen Udtryk.](media/paginated-reports-row-level-security/expression.png)
 
 3. Klik på funktionsknappen **Værdi**. 
 
@@ -50,7 +50,7 @@ Du kan bruge **UserId** som et *filter* eller i en *forespørgsel* til datakilde
 
 4. I vinduet **Udtryk** skal du vælge **Indbyggede felter** på listen **Kategori**.
 
-    ![Power BI Report Builder-udtryk](media/paginated-reports-row-level-security/built-in-fields.png)
+    ![Skærmbillede, der viser vinduet Udtryk med Indbyggede felter valgt som Kategori og ExecutionTime valgt som Element.](media/paginated-reports-row-level-security/built-in-fields.png)
 
 5. På listen **Element** skal du vælge **UserID** og klikke på **OK**.
 
@@ -78,7 +78,7 @@ Du kan bruge **UserId** som et *filter* eller i en *forespørgsel* til datakilde
 
 ## <a name="passing-the-configured-parameter-using-the-embed-token"></a>Overførsel af den konfigurerede parameter ved hjælp af integreringtokenet
 
-Når du integrerer en sideinddelt rapport til dine kunder, bruges [Reports GenerateTokenInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokeningroup)-API'en til at hente integreringtokenet. Dette token kan også bruges til at filtrere nogle af de data, der trækkes ud af de sideinddelte rapporter.
+Når du integrerer en sideinddelt rapport til dine kunder, bruges [Reports GenerateTokenInGroup](/rest/api/power-bi/embedtoken/reports_generatetokeningroup)-API'en til at hente integreringtokenet. Dette token kan også bruges til at filtrere nogle af de data, der trækkes ud af de sideinddelte rapporter.
 
 Hvis du kun vil vise nogle af dataene, skal du tildele feltet `username` med de oplysninger, du vil have vist. Hvis du f. eks. angiver *grøn* i feltet `username` i en sideinddelt rapport, der har en farveparameter, begrænser det integrerede token for eksempel de integrerede data til kun at vise de data, der har værdien *grøn* i farvekolonnen.
 

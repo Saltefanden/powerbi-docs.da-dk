@@ -8,12 +8,12 @@ ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 11/07/2019
 ms.author: painbar
-ms.openlocfilehash: 996e3835337ce8aa1002abce7682d707daec032e
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: d5f55c005f34bc1e3aa9ab5351b816616f4f7664
+ms.sourcegitcommit: 7e99e8af9caf9340958c4607a94728d43e8c3811
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90859123"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91668338"
 ---
 # <a name="configure-power-bi-mobile-app-access-to-report-server-remotely"></a>Konfigurer Power BI-mobilapps eksternt for rapportservere
 
@@ -63,7 +63,7 @@ Her er et eksempel på, hvordan du indstiller konfigurationspolitikken ved hjæl
 
 3. De indtaster en adgangskode som godkendelse og trykker derefter på **Log på**. 
 
-    ![Rapportserveroplysningerne er udfyldt](media/configure-powerbi-mobile-apps-remote/power-bi-config-server-address.png)
+    ![Skærmbillede, der viser indtastning af adgangskode med knappen Log på.](media/configure-powerbi-mobile-apps-remote/power-bi-config-server-address.png)
 
 Nu kan de få vist og interagere med KPI'er og Power BI-rapporter på rapportserveren.
 

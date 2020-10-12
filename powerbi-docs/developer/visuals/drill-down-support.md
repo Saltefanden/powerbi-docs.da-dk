@@ -1,6 +1,6 @@
 ---
 title: Tilføj understøttelse af detailudledning
-description: I denne artikel beskrives det, hvordan du føjer understøttelse af detailudledning i Power BI-visuals
+description: I denne artikel beskrives det, hvordan du føjer understøttelse af detailudledning i Power BI-visualiseringer
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
@@ -9,24 +9,26 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: b02d8d61a4580e70a72aa4da66c4409f04b7f6bb
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 054d7a4f96c83b97fbd5e96e7a3cf66d58a74823
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85240081"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91635924"
 ---
 # <a name="add-drill-down-support"></a>Tilføj understøttelse af detailudledning
 
-Power BI-visuals kan bruge detaljeadgang i Power BI.
+Power BI-visualiseringer kan bruge detaljeadgang i Power BI.
 
 Læs mere om detailudledning i Power BI[her](./../../consumer/end-user-drill.md)
 
-## <a name="enable-drill-down-support-in-the-visual"></a>Aktivér understøttelse af detailudledning i visual'et
+## <a name="enable-drill-down-support-in-the-visual"></a>Aktivér understøttelse af detailudledning i visualiseringen
 
 Hvis du vil understøtte detailudledning i dit visual, skal du føje et nyt felt til `capabilities.json` med navnet "detailudledning". Det skal have én egenskab:
 
-    *roles - the name of the dataRole you want to enable drill-down on.
+```json
+*roles - the name of the dataRole you want to enable drill-down on.
+```
 
 > [!NOTE]
 > dataRole for detailudledningen skal være af typen `Grouping`.
@@ -78,7 +80,7 @@ eksempel:
 }
 ```
 
-## <a name="create-the-visual-with-drill-down-support"></a>Opret visual'et med understøttelse af detailudledning
+## <a name="create-the-visual-with-drill-down-support"></a>Opret visualiseringen med understøttelse af detailudledning
 
 Kør
 
@@ -150,7 +152,7 @@ export class Visual implements IVisual {
 }
 ```
 
-Opdater metoden `update` for visual'et for at oprette `button`'er:
+Opdater metoden `update` for visualiseringen for at oprette `button`'er:
 
 ```typescript
 export class Visual implements IVisual {
@@ -203,7 +205,7 @@ button {
 }
 ```
 
-Forbered eksempeldata for at teste visual'et:
+Forbered eksempeldata for at teste visualiseringen:
 
 |   H1  |   H2    | H3  |   VÆRDIER  |
 |-----|-----|------|-------|
@@ -222,23 +224,23 @@ Forbered eksempeldata for at teste visual'et:
 
 Og opret et hierarki i Power BI Desktop:
 
-![Opret et nyt hierarki](media/drill-down-support/create-new-hierarchy.png)
+![Skærmbillede, der viser Power BI Desktop med Nyt hierarki valgt i en genvejsmenu.](media/drill-down-support/create-new-hierarchy.png)
 
 Medtag alle kategorikolonner (H1, H2, H3) i det nye hierarki:
 
-![Opret et nyt hierarki](media/drill-down-support/new-hierarchy.png)
+![Skærmbillede, der viser kategorikolonner, som du kan føje til det nye hierarki.](media/drill-down-support/new-hierarchy.png)
 
-Efter disse trin får du vist følgende visual:
+Efter disse trin får du vist følgende visualisering:
 
-![Udviklervisual med knapper](media/drill-down-support/dev-visual-drilldown1.png)
+![Udviklervisualisering med knapper](media/drill-down-support/dev-visual-drilldown1.png)
 
-## <a name="add-context-menu-to-visual-elements"></a>Føj en genvejsmenu til visualelementer
+## <a name="add-context-menu-to-visual-elements"></a>Føj en genvejsmenu til visualiseringselementer
 
-I dette trin skal du føje genvejsmenuen til visual'ets knapper:
+I dette trin skal du føje genvejsmenuen til visualiseringens knapper:
 
-![Genvejsmenu i visual'et](media/drill-down-support/dev-visual-drilldown-context-menu.png)
+![Genvejsmenu i visualiseringen](media/drill-down-support/dev-visual-drilldown-context-menu.png)
 
-Hvis du vil oprette en genvejsmenu, skal du gemme `host`-objektet i egenskaberne for visual'et og kalde metoden `createSelectionManager` til oprettelse af valgstyring for at få vist en genvejsmenu ved hjælp af Power BI-visuals-API'en.
+Hvis du vil oprette en genvejsmenu, skal du gemme `host`-objektet i egenskaberne for visualiseringen og kalde metoden `createSelectionManager` til oprettelse af valgstyring for at få vist en genvejsmenu ved hjælp af Power BI-API'en for visualiseringer.
 
 ```typescript
 "use strict";
@@ -303,17 +305,17 @@ Skift brødteksten for tilbagekald af funktionen `forEach` til:
     });
 ```
 
-Anvend data på visual'et:
+Anvend data på visualiseringen:
 
-![Visual'et med data](media/drill-down-support/dev-visual-drilldown-data.png)
+![Skærmbillede, der viser hierarkiet med H2 fremhævet.](media/drill-down-support/dev-visual-drilldown-data.png)
 
-I det sidste trin får du vist visual'et med valgene og genvejsmenuen:
+I det sidste trin får du vist visualiseringen med valgene og genvejsmenuen:
 
-![Visual'et med understøttelse af detailudledning](media/drill-down-support/dev-visual-drilldown-demo.gif)
+![Animation, der viser, hvordan du vælger Zoom ind på detaljeniveauet og Zoom ud fra detaljeniveauet fra visualiseringens genvejsmenu.](media/drill-down-support/dev-visual-drilldown-demo.gif)
 
 ## <a name="add-drill-down-support-for-matrix-data-view-mapping"></a>Tilføj understøttelse af detailudledning for tilknytning af matrixdatavisninger
 
-Forbered eksempeldata for at teste visual'et med tilknytninger af matrixdatavisninger:
+Forbered eksempeldata for at teste visualiseringen med tilknytninger af matrixdatavisninger:
 
 |   Række1   |   Række2   |   Række3   |   Column1   |   Column2   |   Kolonne3   |   Værdier   |
 |-----|-----|------|-------|-------|-------|-------|
@@ -336,7 +338,7 @@ Forbered eksempeldata for at teste visual'et med tilknytninger af matrixdatavisn
 |   R2   |   R23   |   R232   |   C2   |   C23   |   C232   |   18   |
 |   R2   |   R23   |   R233   |   C2   |   C23   |   C233   |   19   |
 
-Anvend følgende tilknytning af datavisninger for visual'et:
+Anvend følgende tilknytning af datavisninger for visualiseringen:
 
 ```json
 {
@@ -387,9 +389,9 @@ Anvend følgende tilknytning af datavisninger for visual'et:
 }
 ```
 
-Anvend data på visual'et:
+Anvend data på visualiseringen:
 
-![Visual'et med data](media/drill-down-support/dev-matrix-visual-drilldown-data.png)
+![Skærmbillede, der viser MatrixHierarchy med hierarkierne for kolonner og rækker samt deres medlemmer valgt.](media/drill-down-support/dev-matrix-visual-drilldown-data.png)
 
 Importér påkrævede grænseflader for at behandle tilknytninger af matrixdatavisninger:
 
@@ -536,7 +538,7 @@ const treeWalker = (matrixNode: DataViewMatrixNode, index: number, levels: DataV
 }
 ```
 
-Opret `buttons` for at interagere med visual'et og få vist genvejsmenuen for matrixdatapunkter:
+Opret `buttons` for at interagere med visualiseringen og få vist genvejsmenuen for matrixdatapunkter:
 
 ```typescript
 const treeWalker = (matrixNode: DataViewMatrixNode, index: number, levels: DataViewHierarchyLevel[], div: HTMLDivElement)  => {
@@ -612,9 +614,9 @@ public update(options: VisualUpdateOptions) {
 }
 ```
 
-På det sidste trin får du vist visual'et med genvejsmenuen:
+På det sidste trin får du vist visualiseringen med genvejsmenuen:
 
-![Visual'et med understøttelse af detailudledning](media\drill-down-support\dev-visual-drilldown-demo.gif)
+![Animation, der viser en genvejsmenu for visualiseringen med indstillinger for at zoome ind på eller ud fra detaljeniveauet.](media\drill-down-support\dev-visual-drilldown-demo.gif)
 
 ## <a name="next-steps"></a>De næste trin
 

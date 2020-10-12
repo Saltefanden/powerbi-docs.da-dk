@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/18/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: beb744e1293db077111df8212c0861154aa86242
-ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
+ms.openlocfilehash: e96431aaa17b1ae79d940d768a7e160e402c0af3
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85354702"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91635855"
 ---
 # <a name="create-matrix-visualizations-in-power-bi"></a>Opret matrixvisualiseringer i Power BI
 
@@ -207,7 +207,7 @@ Din matrix eller tabel kan have indhold, som du gerne vil bruge i andre programm
 
 Hvis du har en kolonne eller måling, der indeholder webadresser, kan du bruge betinget formatering til at anvende disse URL-adresser til felter som aktive links. Du kan finde denne indstilling under kortet **Betinget formatering** kortet i formateringsruden.
 
-![Filtrerer kort, der viser, hvilke rækker der er valgt](media/desktop-matrix-visual/power-bi-web-url.png)
+![Skærmbillede, der viser det formateringsikon, der er knyttet til URL-adressen.](media/desktop-matrix-visual/power-bi-web-url.png)
 
 Slå **URL-adresse til websted** til, og vælg et felt, der skal bruges som URL-adressen for kolonnen. Når værdierne i det pågældende felt (kolonne) er anvendt, bliver de til aktive links. Peg på linket for at få det vist, og vælg det for at gå til den pågældende side. 
 

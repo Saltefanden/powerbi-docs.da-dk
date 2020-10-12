@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 60f49775db1f461ff5105ada63920686e5ab5cbf
-ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
+ms.openlocfilehash: 323ea88f3a8843dd663985abac5552be1de71584
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "86264919"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91634406"
 ---
 # <a name="qa-virtual-analyst-in-ios-apps---power-bi"></a>Virtuel Spørgsmål og svar-analytiker i iOS-apps – Power BI
 
@@ -52,7 +52,7 @@ Når du har fuldført forudsætningerne, er du klar til at prøve den virtuelle 
 4. Tryk på **af** fra søgeordene, og tryk derefter på **element** fra listen over forslag > **Send** ![Ikonet Send](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
     ![Salg efter vare](./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-sale-by-item.png)
-5. Tryk på **som** blandt nøgleordene, tryk på ikonet for søjlediagrammet ![Ikonet søjlediagram](./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-column-chart-icon.png), og tryk derefter på **Send** ![Ikonet Send](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
+5. Tryk på **som** blandt nøgleordene, tryk på ikonet for søjlediagrammet :::image type="icon" source="./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-column-chart-icon.png" border="false":::, og tryk derefter på **Send** ![ikonet Send](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 6. Tryk vedvarende på det resulterende diagram og derefter på **Udvid**.
 
     ![Skærmbillede af et søjlediagram, der viser en pil, som peger på Udvid.](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-tap-expand-feedback.png)
@@ -68,7 +68,7 @@ Når du har fuldført forudsætningerne, er du klar til at prøve den virtuelle 
 10. Vælg **efter** blandt nøgleordene, tryk på **klokkeslæt** på listen over forslag øverst > **Send** ![Ikonet Send](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
      ![Skærmbillede af et diagram, der viser det største salg efter gennemsnitsbeløb pr. enhed over tid.](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-by-time.png)
-11. Skriv **som**, vælg ikonet for kurvediagrammet ![ikonet for Diagram](./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-line-chart-icon.png) på listen over forslag > **Send** ![Ikonet Send](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
+11. Skriv **som**, vælg ikonet for kurvediagrammet :::image type="icon" source="./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-line-chart-icon.png" border="false"::: på listen over forslag > **Send** ![ikonet Send](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
     ![Skærmbillede af et søjle- og kurvediagram, der viser en pil fra kolonnen til kurvediagrammet](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-as-line.png)
 

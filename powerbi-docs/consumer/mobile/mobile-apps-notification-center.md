@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 492b41192f3ab423ff8dacf73aac9ff49b9d15d9
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: b3b447b315befef11f342f537d4ab3ad8c837f03
+ms.sourcegitcommit: 7e99e8af9caf9340958c4607a94728d43e8c3811
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90856225"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91668476"
 ---
 # <a name="get-notifications-in-the-power-bi-mobile-apps"></a>Modtag meddelelser i Power BI-mobilapps
 Gælder for:
@@ -61,15 +61,15 @@ Du kan ændre, hvordan Power BI underretter dig.
    
     **På en iPhone**
    
-    ![Vælg Meddelelser](./media/mobile-apps-notification-center/power-bi-notifications-iphone-settings.png)
+    ![Skærmbillede, der viser en iPhone-skærm med titlen Power BI, hvor du kan tillade og administrere meddelelser.](./media/mobile-apps-notification-center/power-bi-notifications-iphone-settings.png)
    
     **På en Android-telefon**
    
-    ![Vælg Meddelelser](./media/mobile-apps-notification-center/power-bi-notifications-android-settings.png)
+    ![Skærmbillede, der viser en skærm med titlen Power BI på en Android-telefon, hvor du kan tillade og administrere meddelelser.](./media/mobile-apps-notification-center/power-bi-notifications-android-settings.png)
 
     **På en Windows 10-enhed**
 
-    ![Vælg Meddelelser](./media/mobile-apps-notification-center/power-bi-notifications-windows10-settings.png)
+    ![Skærmbillede, der viser en skærm på en Windows 10-enhed, hvor du kan tillade og administrere Power BI-meddelelser.](./media/mobile-apps-notification-center/power-bi-notifications-windows10-settings.png)
 
 ## <a name="next-steps"></a>Næste trin
 * [Databeskeder i Power BI-tjenesten](../../create-reports/service-set-data-alerts.md)
