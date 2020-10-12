@@ -1,6 +1,6 @@
 ---
 title: Underrapporter i sideinddelte rapporter i Power BI
-description: I denne artikel får du mere at vide om understøttede datakilder for sideinddelte rapporter i Power BI-tjenesten, og hvordan du opretter forbindelse til datakilder i Azure SQL Database.
+description: I denne artikel får du mere at vide om understøttede datakilder for sideinddelte rapporter i Power BI-tjenesten.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
 ms.date: 04/29/2020
-ms.openlocfilehash: fbe60bab0d1c8d95cec1a3fda1d4b23fe919ea31
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 9da6268e90e3f70797c2cfff19bb1d5c4b633e9a
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90861377"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91746579"
 ---
 # <a name="subreports-in-power-bi-paginated-reports"></a>Underrapporter i sideinddelte rapporter i Power BI
 
@@ -33,7 +33,7 @@ Power BI Report Builder kan arbejde med sideinddelte rapporter på computeren (k
 
 Efter du er logget på, kan du se muligheden **Power BI-tjeneste** i Power BI Report Builder for mulighederne **Åbn** og **Gem som** i menuen **Filer**. Når du vælger muligheden **Power BI-tjeneste** til at gemme en rapport, kan du oprette en liveforbindelse mellem Power BI Report Builder og Power BI-tjenesten. 
 
-:::image type="content" source="media/subreports/report-builder-subreport-open-service.png" alt-text="Åbn fra Power BI-tjenesten":::
+:::image type="content" source="media/subreports/report-builder-subreport-open-service.png" alt-text="Log på Power BI":::
 
 ## <a name="save-a-local-report-to-the-power-bi-service"></a>Gem en lokal rapport i Power BI-tjenesten
 
@@ -48,7 +48,7 @@ Du skal først oprette de to rapporter og gemme dem i det samme Power BI Premium
 
 3. I dialogboksen **Gem som** skal du vælge et Power BI Premium-arbejdsområde, hvor du kan gemme dine sideinddelte rapporter.  Premium-arbejdsområder har et rombeikon ![Premium-rombeikon](media/subreports/report-builder-premium-diamond.png) ud for deres navn.
 
-    :::image type="content" source="media/subreports/report-builder-subreport-save-as-service.png" alt-text="Gem som i Power BI-tjenesten":::
+    :::image type="content" source="media/subreports/report-builder-subreport-save-as-service.png" alt-text="Log på Power BI":::
 
 4. Vælg **Gem**.
 
@@ -58,7 +58,7 @@ Nu, hvor du har gemt begge rapporter i det samme Premium-arbejdsområde, kan du 
 
 1. På båndet **Indsæt** skal du vælge knappen **Underrapport** eller højreklikke på rapportlærredet og vælge **Indsæt** > **Underrapport**.
 
-    :::image type="content" source="media/subreports/report-builder-insert-subreport.png" alt-text="Indsæt en underrapport i en rapport":::
+    :::image type="content" source="media/subreports/report-builder-insert-subreport.png" alt-text="Log på Power BI":::
 
     Dialogboksen **Egenskaber for underrapport** åbnes.  
 

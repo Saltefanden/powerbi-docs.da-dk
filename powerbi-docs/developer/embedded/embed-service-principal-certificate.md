@@ -9,23 +9,23 @@ ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: ''
 ms.date: 06/01/2020
-ms.openlocfilehash: 7caa39ca6fbf196aaa2be4492ab132ad05983f94
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 521c705587c10c76dedb731aeae34221244f3a83
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85231842"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91749178"
 ---
 # <a name="embed-power-bi-content-with-service-principal-and-a-certificate"></a>Integrer Power BI-indhold med tjenesteprincipal og et certifikat
 
 [!INCLUDE[service principal overview](../../includes/service-principal-overview.md)]
 
 >[!NOTE]
->Vi anbefaler, at du sikrer dine backend-tjenester ved hjælp af certifikater i stedet for hemmelige nøgler. [Få mere at vide om at hente adgangstoken fra Azure AD ved hjælp af hemmelige nøgler eller certifikater](https://docs.microsoft.com/azure/architecture/multitenant-identity/client-assertion).
+>Vi anbefaler, at du sikrer dine backend-tjenester ved hjælp af certifikater i stedet for hemmelige nøgler. [Få mere at vide om at hente adgangstoken fra Azure AD ved hjælp af hemmelige nøgler eller certifikater](/azure/architecture/multitenant-identity/client-assertion).
 
 ## <a name="certificate-based-authentication"></a>Certifikatbaseret godkendelse
 
-Certifikatbaseret godkendelse gør det muligt for dig at blive godkendt af Azure Active Directory (Azure AD) med et klientcertifikat på en Windows-, Android- eller iOS-enhed eller opbevaret i en [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/basic-concepts).
+Certifikatbaseret godkendelse gør det muligt for dig at blive godkendt af Azure Active Directory (Azure AD) med et klientcertifikat på en Windows-, Android- eller iOS-enhed eller opbevaret i en [Azure Key Vault](/azure/key-vault/basic-concepts).
 
 Ved hjælp af denne godkendelsesmetode kan du administrere certifikater fra et centralt sted ved hjælp af nøglecentret, til rotation eller tilbagekaldelse.
 
@@ -49,7 +49,7 @@ Hvis du vil bruge tjenesteprincipalen og et certifikat med integreret analyse, s
 
 Du kan oprette et certifikat fra et *nøglecenter*, der er tillid til, eller du kan selv oprette et certifikat.
 
-I dette afsnit beskrives det, hvordan du opretter et certifikat ved hjælp af [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/create-certificate) og downloader *.cer-* filen, som indeholder den offentlige nøgle.
+I dette afsnit beskrives det, hvordan du opretter et certifikat ved hjælp af [Azure Key Vault](/azure/key-vault/create-certificate) og downloader *.cer-* filen, som indeholder den offentlige nøgle.
 
 1. Log på [Microsoft Azure](https://ms.portal.azure.com/#allservices).
 
@@ -63,11 +63,11 @@ I dette afsnit beskrives det, hvordan du opretter et certifikat ved hjælp af [A
 
 4. Klik på **Certifikater**.
 
-    ![certifikater](media/embed-service-principal-certificate/certificates.png)
+    ![Skærmbillede, der viser siden Nøglesamlinger med Certifikater fremhævet.](media/embed-service-principal-certificate/certificates.png)
 
 5. Klik på **Generer/Importér**.
 
-    ![generer](media/embed-service-principal-certificate/generate.png)
+    ![Skærmbillede, der viser ruden Certifikat med Generér/Importér fremhævet.](media/embed-service-principal-certificate/generate.png)
 
 6. Konfigurer feltet **Opret et certifikat** på følgende måde:
 
@@ -107,7 +107,7 @@ I dette afsnit beskrives det, hvordan du opretter et certifikat ved hjælp af [A
 
 1. I dit Azure AD-program skal du klikke på fanen **Certifikater og hemmeligheder**.
 
-     ![program-id](media/embed-service-principal/certificates-and-secrets.png)
+     ![Skærmbillede, der viser ruden Certifikater og hemmeligheder for en app i Azure Portal.](media/embed-service-principal/certificates-and-secrets.png)
 
 2. Klik på **Upload certifikat**, og upload den *.cer-* -fil, du har oprettet og downloadet, i [første trin](#step-1---create-a-certificate) i dette selvstudium. *.cer*-filen indeholder den offentlige nøgle.
 
@@ -175,7 +175,7 @@ public async Task<AuthenticationResult> DoAuthentication(){
 
 ## <a name="configure-visual-studio-to-use-msi"></a>Konfigurer Visual Studio til at bruge MSI
 
-Når du opretter din integrerede løsning, kan det være en god ide at konfigurere Visual Studio til at bruge Managed Service Identity (MSI). [MSI](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/overview) er en funktion, der gør det muligt for dig at administrere din Azure AD-identitet. Når den er konfigureret, kan Visual Studio godkende i forhold til din Azure Key Vault.
+Når du opretter din integrerede løsning, kan det være en god ide at konfigurere Visual Studio til at bruge Managed Service Identity (MSI). [MSI](/azure/active-directory/managed-identities-azure-resources/overview) er en funktion, der gør det muligt for dig at administrere din Azure AD-identitet. Når den er konfigureret, kan Visual Studio godkende i forhold til din Azure Key Vault.
 
 1. Åbn dit projekt i Visual Studio.
 
@@ -200,7 +200,7 @@ Når du opretter din integrerede løsning, kan det være en god ide at konfigure
 >[Power BI Embedded til dine kunder](embed-sample-for-customers.md)
 
 >[!div class="nextstepaction"]
->[Objekter for et program og en tjenesteprincipal i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)
+>[Objekter for et program og en tjenesteprincipal i Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals)
 
 >[!div class="nextstepaction"]
 >[Sikkerhed på rækkeniveau ved hjælp af datagateway i det lokale miljø med tjenesteprincipal](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 04/02/2020
-ms.openlocfilehash: 2cc37d1296d7f170bf8c6280465e7a3f1aa52e33
-ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
+ms.openlocfilehash: e0bdb5174c1392e1a2f81a101a62798f82e2b191
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87878690"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91747706"
 ---
 # <a name="tutorial-build-a-funnel-plot-from-r-script-to-r-visual"></a>Selvstudium: Byg en tragtformet afbildning fra R-script til R-visualisering
 I denne artikel beskrives det, hvordan du opretter en tragtformet afbildning ved hjælp af R-script i R-visualisering trin for trin.
@@ -66,11 +66,11 @@ Rediger derefter scriptet for at afspejle [dette script](https://github.com/micr
 
 1. Rediger *capabilities.json*, og erstat strengen `Values` med `dataset`. Dette erstatter navnet på "rolle" i skabelonen, så den er som i R-kode.
 
-   ![før vs. efter](./samples/funnel-plot/chapter-3/funnel-r-visual-v01/capabilities-changes.PNG)
+   ![Skærmbillede, der viser en sammenligning af ændringen i json-filen.](./samples/funnel-plot/chapter-3/funnel-r-visual-v01/capabilities-changes.PNG)
 
 1. *(valgfrit)* Rediger *dependencies.json*, og tilføj et afsnit for hver R-pakke, der kræves af R-scriptet. Dette fortæller Power BI, at disse pakker skal importeres automatisk, når visualiseringen indlæses for første gang.
 
-   ![før vs. efter](./samples/funnel-plot/chapter-3/funnel-r-visual-v01/dependencies-changes.PNG)
+   ![Skærmbillede, der viser en sammenligning, hvor indhold er føjet til cranPackages-elementerne.](./samples/funnel-plot/chapter-3/funnel-r-visual-v01/dependencies-changes.PNG)
 
 1. Opret en ny pakke med det visuelle element ved hjælp af kommandoen `pbiviz package`, og prøv at importere den i Power BI.
 
@@ -119,7 +119,7 @@ Det visuelle element er endnu ikke brugervenligt, fordi brugeren skal kende ræk
 
 1. Tilføj funktioner, som brugeren kan bruge til at styre farver og størrelser på visuelle elementer, herunder interne parametre fra brugergrænsefladen.
 
-   ![CV02to03](./media/funnel-plot/diagram-two.PNG)
+   ![Skærmbillede, der viser to versioner af ruden Værktøjer, hvor der er føjet indstillinger til versionen til højre.](./media/funnel-plot/diagram-two.PNG)
 
 1. Rediger *capabilities.json*, og opdater afsnittet `objects`. Her definerer vi navne, værktøjstip og typer for hver parameter og beslutter også, hvilken partition af parametre der skal være i grupper (tre grupper i dette tilfælde).
 
@@ -274,7 +274,7 @@ Da det resulterende visuelle element i PNG-format ikke reagerer på musemarkøre
 
 * Hver R-visualisering anvender `unique`-operatoren på dens inputtabel. Hvis du vil undgå, at identiske rækker fjernes, kan du overveje at tilføje et ekstra inputfelt med et entydigt ID og ignorere det i R-koden.   
 
-* Hvis du har en Power BI-konto, kan du bruge Power BI-tjenesten til at udvikle en visualisering [undervejs](/power-bi/developer/visuals/custom-visual-develop-tutorial/) i stedet for at pakke dem ud med kommandoen `pbiviz package`.
+* Hvis du har en Power BI-konto, kan du bruge Power BI-tjenesten til at udvikle en visualisering [undervejs](./custom-visual-develop-tutorial.md) i stedet for at pakke dem ud med kommandoen `pbiviz package`.
 
 ### <a name="html-widgets-gallery"></a>Galleri med HTML-widgets
 Udforsk visuelle elementer i [galleriet med HTML-widgets](http://gallery.htmlwidgets.org/) til brug i det næste visuelle element. For at gøre tingene nemmere har vi oprettet et [lager med visuelle projekter](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/multipleRHTML) med mere end 20 interaktive HTML-visualiseringer, som du kan vælge imellem!
@@ -291,15 +291,15 @@ Udforsk visuelle elementer i [galleriet med HTML-widgets](http://gallery.htmlwid
 1. Skift metadata i *pbiviz.jsonN*, vigtigst af alt `guid`-feltet.
 1. Opret en ny pakke, og fortsæt med at tilpasse visualiseringen efter ønske. 
 
-![CV02to03](./media/funnel-plot/diagram-four.PNG)
+![Skærmbillede, der viser seks widgets, som er beskrevet tidligere i denne artikel.](./media/funnel-plot/diagram-four.PNG)
 
-![CV02to03](./media/funnel-plot/diagram-five.PNG)
+![Skærmbillede, der viser yderligere seks widgets, som er beskrevet tidligere i denne artikel.](./media/funnel-plot/diagram-five.PNG)
 
 > [!NOTE]
 > Ikke alle widgets i dette projekt understøttes af tjenesten.
 
 ## <a name="next-steps"></a>Næste trin
 
-Hvis du vil vide mere, kan du se yderligere selvstudier til [Power BI-visualiseringer](./custom-visual-develop-tutorial.md) og [R-visualiseringer](/power-bi/visuals/service-r-visuals).
+Hvis du vil vide mere, kan du se yderligere selvstudier til [Power BI-visualiseringer](./custom-visual-develop-tutorial.md) og [R-visualiseringer](../../visuals/service-r-visuals.md).
 
 Få mere at vide om, hvordan du [udvikler og sender visuelle elementer](https://powerbi.microsoft.com/documentation/powerbi-developer-office-store/) til [Office Store (galleri)](https://store.office.com/appshome.aspx?ui=en-US&rs=en-US&ad=US&clickedfilter=OfficeProductFilter%3aPowerBI&productgroup=PowerBI), eller se flere eksempler i [R-script-fremvisning](https://community.powerbi.com/t5/R-Script-Showcase/bd-p/RVisuals)

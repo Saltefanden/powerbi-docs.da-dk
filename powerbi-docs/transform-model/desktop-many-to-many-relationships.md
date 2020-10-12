@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 12/19/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 5bcc2123c5e22cb5b0ff91122a30ce3d7beb51fe
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 17006405a495798618bf7562e6b94864b795a224
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83325569"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91528039"
 ---
 # <a name="apply-many-many-relationships-in-power-bi-desktop"></a>Anvend mange til mange-relationer i Power BI Desktop
 
@@ -93,7 +93,7 @@ Du kan gøre tabellen med midlertidige løsninger synlig. Eller du kan skjule ta
 
 En visualisering, der viser **State** (fra tabellen **CityData**) sammen med totalen af **Population** og totalen af **Sales**, vil derefter se ud på følgende måde:
 
-![Tabellerne State, Population og Sales, Power BI Desktop](media/desktop-many-to-many-relationships/many-to-many-relationships_09.png)
+![Skærmbillede, der viser en tabel med data for State, Population og Sales.](media/desktop-many-to-many-relationships/many-to-many-relationships_09.png)
 
 > [!NOTE]
 > Da delstaten fra tabellen **CityData** bruges i denne midlertidige løsning, vises der kun delstater fra den tabel, så delstaten TX vises ikke. Rækken Total indeholder oplysninger om alt **Sales** (inklusive for TX), men i modsætning til *Mange-1*-relationer vises der ikke en tom række for sådanne rækker, der ikke stemmer overens. På samme måde vil en tom række ikke dække **Sales**, hvor der er en null-værdi for **State**.

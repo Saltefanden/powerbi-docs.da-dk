@@ -1,21 +1,21 @@
 ---
 title: Power BI til US Government-kunder – oversigt
-description: US Government-kunder kan føje et Power BI Pro-abonnement til deres Microsoft 365 Government-abonnement. Få mere at vide om, hvordan du tilmelder dig og gennemser tilgængelige funktioner i denne tjenestebeskrivelse.
+description: US Government-kunder kan føje et Power BI Pro-abonnement til deres Microsoft 365 Government-abonnement. Få mere at vide om, hvordan du tilmelder dig, opretter forbindelse og gennemser tilgængelige funktioner i denne tjenestebeskrivelse.
 author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/02/2020
+ms.date: 09/23/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Get started
-ms.openlocfilehash: 948e0260f13aa243a45ba5bdf6fe59c9699d47a0
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: eecc36377ab79e4af4ea7882c24f4eb5a6e376c7
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90855098"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91524621"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI til US Government-kunder
 
@@ -51,7 +51,8 @@ Microsoft 365 indeholder forskellige miljøer, så de offentlige myndigheder kan
 
 * [Microsoft 365 DoD-miljøet](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) er udviklet udelukkende til det amerikanske forsvarsministerium.
 
-## <a name="connect-to-power-bi-for-us-government"></a>Oversigt over Power BI til US Government
+
+## <a name="sign-in-to-power-bi-for-us-government"></a>Log på Power BI for US Government
 
 URL-adressen til oprettelse af forbindelse til Power BI er forskellig for offentlige brugere og kommercielle brugere. Hvis du vil logge på Power BI, skal du bruge følgende URL-adresser:
 
@@ -61,6 +62,38 @@ URL-adressen til oprettelse af forbindelse til Power BI er forskellig for offent
 
 Din konto kan være konfigureret i mere end ét cloudmiljø. Hvis din konto er konfigureret på denne måde, kan du vælge, hvilken cloud der skal oprettes forbindelse til, når du logger på Power BI Desktop.
 
+## <a name="allow-connections-to-power-bi"></a>Tillad, at der oprettes forbindelse til Power BI
+
+Hvis du vil bruge Power BI-tjenesten, skal du tillade forbindelser til påkrævede slutpunkter på internettet. Disse destinationer skal være tilgængelige for at muliggøre kommunikation mellem dit eget netværk, Power BI og andre afhængige tjenester.
+
+I nedenstående tabel viser vi de påkrævede slutpunkter, som du kan føje til din liste over tilladte for at aktivere forbindelsen til Power BI-tjenesten med henblik på generel brug af webstedet. Disse slutpunkter er entydige for US Government-cloudmiljøet. Power BI-tjenesten kræver kun, at TCP-port 443 er åben for de viste slutpunkter. Slutpunkterne for hentning af data, dashboard- og rapportintegration, Power BI-visualiseringer og andre valgfri tjenester er ikke unikke for US Government-cloudmiljøet. Hvis du også vil føje disse URL-adresser til listen over tilladte, skal du se [Føj Power BI URL-adresser til listen over tilladte](power-bi-whitelist-urls.md).
+
+Godkendelse, identitet og administration for Power BI afhænger af forbindelsen til Microsoft 365-tjenester. Du skal også oprette forbindelse til Microsoft 365 for at få vist overvågningslogge. Hvis du vil identificere slutpunkterne for disse tjenester, skal du se Microsoft 365-integration i nedenstående tabel.
+
+### <a name="power-bi-urls-for-general-site-usage"></a>Power BI-URL-adresser til generel brug af webstedet
+
+|  Formål | Destination |
+| ---- | ----- |
+| Back-end-API'er | **GCC**: api.powerbigov.us |
+| | **GCC-High**: api.high.powerbigov.us |
+| | **DoD**: api.mil.powerbi.gov.us |
+| Back-end-API'er | **GCC**: *analysis.usgovcloudapi.net |
+| | **GCC High**: *.high.analysis.usgovcloudapi.net |
+| | **DoD**: *.mil.analysis.usgovcloudapi.net |
+| Back-end-API'er | **Alle**: *.pbidedicated.usgovcloudapi.net |
+| CDN (Content Delivery Network) | **GCC**: gov.content.powerapps.us |
+| | **GCC High**: high.content.powerapps.us |
+| | **DoD**: mil.content.powerapps.us |
+| Microsoft 365-integration | **GCC**: [Globale slutpunkter](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges) |
+| | **GCC High**: [US Government GCC High-slutpunkter](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints) |
+| | **DoD**: [US Government DOD-slutpunkter](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints) |
+| Portal |**GCC**: *.powerbigov.us |
+| | **GCC-High**: *.high.powerbigov.us |
+| | **DoD**: *.mil.powerbigov.us |
+| Tjenestetelemetri | **Alle**: dc.services.visualstudio.us |
+| Meddelelser til orientering (valgfrit) | **Alle**: dynmsg.modpim.com |
+| NPS-undersøgelser (valgfrit) | **Alle**: nps.onyx.azure.net |
+
 ## <a name="connect-government-and-global-azure-cloud-services"></a>Opret forbindelse mellem Government-tjenester og globale Azure Cloud-tjenester
 
 Azure er fordelt på flere cloudmiljøer. Du kan som standard aktivere firewallregler for at åbne en forbindelse til en cloudspecifik forekomst, men netværket på tværs af skyen er anderledes.  Hvis du vil kommunikere mellem tjenester i den offentlige cloud og tjenesterne i Government Community Cloud, skal du konfigurere særlige firewallregler. Hvis du f.eks. vil have adgang til offentlige cloudforekomster af en SQL-database fra din offentlige cloududrulning af Power BI, skal du have en firewallregel i SQL-databasen. Konfigurer særlige firewallregler for SQL-databaser, så der tillades forbindelser til Azure Government Cloud for følgende datacentre:
@@ -69,8 +102,12 @@ Azure er fordelt på flere cloudmiljøer. Du kan som standard aktivere firewallr
 * USGov Virginia
 * USGov Texas
 * USGov Arizona
+* Det østlige US DoD
+* Det centrale US DoD
 
-Pladserne for IP-adresse er tilgængelige i det offentlige cloudmiljø. Hvis du vil have adgang til cloud-IP-intervallerne for US Government, skal du downloade filen [Azure IP Ranges and Service Tags – US Government Cloud](https://www.microsoft.com/download/details.aspx?id=57063).
+Hvis du vil have adgang til cloud-IP-intervallerne for US Government, skal du downloade filen [Azure IP Ranges and Service Tags – US Government Cloud](https://www.microsoft.com/download/details.aspx?id=57063). der vises intervaller for både Power BI og Power Query.
+
+Du kan finde flere oplysninger om Microsoft Azure Government-cloudtjenester under [Azure Government-dokumentation](https://docs.microsoft.com/azure/azure-government/).
 
 Hvis du vil konfigurere firewalls for SQL-databaser, skal du følge fremgangsmåden for at [oprette og administrere IP-firewallregler](/azure/sql-database/sql-database-firewall-configure#create-and-manage-ip-firewall-rules).
 
@@ -78,12 +115,12 @@ Hvis du vil konfigurere firewalls for SQL-databaser, skal du følge fremgangsmå
 
 Der er visse forskelle mellem offentlige planer og kommercielle planer for at imødekomme kravene til offentlige cloudkunder. Vores mål er at gøre alle funktioner tilgængelige i cloudmiljøer for de offentlige myndigheder inden for 30 dage fra, de bliver generelt tilgængelige. I nogle tilfælde forhindrer underliggende afhængigheder os i at gøre en funktion tilgængelig.
 
-Følgende tabel indeholder en liste over de funktioner, der ikke er tilgængelige i et bestemt miljø for de offentlige myndigheder, samt den estimerede tilgængelighed, hvis en udgivelse er planlagt:
+Følgende tabel indeholder en liste over de funktioner, der ikke er tilgængelige i et bestemt miljø for de offentlige myndigheder. Vi medtager den anslåede tilgængelighed, hvis udgivelsen er planlagt:
 
 |Funktion |GCC |GCC High |DoD|
 |------|------|------|------|
 |[Azure B2B-samarbejde mellem cloudmiljøet for de offentlige myndigheder og det kommercielle cloudmiljø](service-admin-azure-ad-b2b.md)<sup>1</sup>|![tilgængelig](../media/yes.png)|![ikke tilgængelig](../media/no.png)|![ikke tilgængelig](../media/no.png)|
-|[Integrer i SharePoint Online ved hjælp af Power BI-webdelen](/esharepoint/dev/spfx/web-parts/overview-client-side-web-parts)|![tilgængelig](../media/yes.png)|![Tilgængelig](../media/yes.png)|![ikke tilgængelig](../media/no.png)|
+|[Integrer i SharePoint Online ved hjælp af Power BI-webdelen](/sharepoint/dev/spfx/web-parts/overview-client-side-web-parts)|![tilgængelig](../media/yes.png)|![Tilgængelig](../media/yes.png)|![ikke tilgængelig](../media/no.png)|
 |[Power Automate-forbindelse til datadrevne underretninger](../connect-data/power-bi-data-sources.md)|![tilgængelig](../media/yes.png)|![tilgængelig](../media/yes.png)|![ikke tilgængelig](../media/no.png)|
 |[Fanen Power BI i Teams](../collaborate-share/service-collaborate-microsoft-teams.md)<sup>2</sup>|![tilgængelig](../media/yes.png)|![ikke tilgængelig](../media/no.png)|![ikke tilgængelig](../media/no.png)|
 |[Målepunkter for kapacitet](../admin/service-admin-premium-monitor-portal.md)|3\. kvartal 2020 |3\. kvartal 2020|3\. kvartal 2020|

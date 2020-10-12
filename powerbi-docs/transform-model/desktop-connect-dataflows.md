@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 05/07/2020
+ms.date: 10/01/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 66e94ed2af0b9dc9cf3600594fc6679bd7261b12
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 24635df4a07f0f73a701fcb9d30b5db3ef678666
+ms.sourcegitcommit: 7e99e8af9caf9340958c4607a94728d43e8c3811
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90861078"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91668453"
 ---
 # <a name="connect-to-data-created-by-power-platform-dataflows-in-power-bi-desktop"></a>Opret forbindelse til data oprettet af Power Platform-dataflow i Power BI Desktop
 I **Power BI Desktop** kan du oprette forbindelse til data oprettet af **Power Platform-dataflow** på samme måde som enhver anden datakilde i Power BI Desktop.
@@ -37,7 +37,7 @@ Du kan forbedre ydeevnen for dataindtagelse for dataflow. Hvis f.eks. mængden a
 
 Dette medfører, at behandling af store datamængder udføres online i dataflow i stedet for at blive udført lokalt i din kørende forekomst af **Power BI Desktop**. Denne tilgang giver Power BI Desktop mulighed for at overføre mindre datamængder og sørger for, at oplevelsen med dataflow forbliver dynamisk og hurtig.
 
-## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
+## <a name="additional-considerations"></a>Yderligere overvejelser
 
 De fleste dataflow er placeret i Power BI-tjenestelejeren. **Power BI Desktop**-brugerne kan dog ikke få adgang til dataflow, der er gemt under Azure Data Lake Storage Gen2-kontoen, medmindre de er ejer af dataflowet, eller de udtrykkeligt er godkendt til dataflowets CDM-mappe. Overvej følgende situation:
 
@@ -45,28 +45,21 @@ De fleste dataflow er placeret i Power BI-tjenestelejeren. **Power BI Desktop**-
 2.  Ben, der også er medlem af det arbejdsområde, Anna har oprettet, vil gerne bruge Power BI Desktop og dataflowconnectoren til at hente data fra det dataflow, Anna har oprettet.
 3.  Ben får vist en fejl, da han ikke er føjet til dataflowets CDM-mappe som en godkendt bruger i datasøen.
 
-    ![Fejl under forsøg på at bruge dataflow](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_08.jpg)
-
-Problemet kan løses ved, at Ben tildeles læsetilladelser til CDM-mappen og dens filer. Du kan få mere at vide om, hvordan du give adgang til CDM-mappen i [denne artikel](./service-dataflows-azure-data-lake-integration.md).
+Problemet kan løses ved, at Ben tildeles læsetilladelser til CDM-mappen og dens filer. Du kan få mere at vide om, hvordan du giver adgang til CDM-mappen i [Konfigurer og brug et dataflow](dataflows/dataflows-configure-consume.md).
 
 
 
 
 ## <a name="next-steps"></a>Næste trin
-Du kan gøre mange forskellige interessante ting med Power Platform-dataflow. Du kan finde flere oplysninger i følgende ressourcer:
+Du kan gøre mange forskellige interessante ting med dataflow. Du kan finde flere oplysninger i følgende ressourcer:
 
-* [Selvbetjent dataforberedelse med dataflow](service-dataflows-overview.md)
-* [Opret og brug dataflow i Power BI](service-dataflows-create-use.md)
-* [Brug beregnede objekter i Power BI Premium (prøveversion)](service-dataflows-computed-entities-premium.md)
-* [Brug dataflow med datakilder i det lokale miljø (prøveversion)](service-dataflows-on-premises-gateways.md)
-* [Udviklerressourcer til Power Platform-dataflow (prøveversion)](service-dataflows-developer-resources.md)
+* [Introduktion til dataflow og selvbetjent dataforberedelse](dataflows/dataflows-introduction-self-service.md)
+* [Oprettelse af et dataflow](dataflows/dataflows-create.md)
+* [Konfigurer og brug et dataflow](dataflows/dataflows-configure-consume.md)
+* [Konfiguration af dataflowlager til brug af Azure Data Lake Gen 2](dataflows/dataflows-azure-data-lake-storage-integration.md)
+* [Premium-funktioner for dataflow](dataflows/dataflows-premium-features.md)
+* [AI med dataflow](dataflows/dataflows-machine-learning-integration.md)
 
-Du kan finde flere oplysninger om integration med Azure Data Lake Storage Gen2 i følgende artikler:
-
-* [Integration af dataflow og Azure Data Lake (eksempelvisning)](service-dataflows-azure-data-lake-integration.md)
-* [Konfigurer indstillinger for dataflow for et arbejdsområde (prøveversion)](service-dataflows-configure-workspace-storage-settings.md)
-* [Føj en CDM-mappe til Power BI som et dataflow (prøveversion)](service-dataflows-add-cdm-folder.md)
-* [Slut Azure Data Lake Storage Gen2 til et dataflowlager (prøveversion)](service-dataflows-connect-azure-data-lake-storage-gen2.md)
 
 Der findes også artikler om **Power BI Desktop**, som du kan finde nyttige:
 

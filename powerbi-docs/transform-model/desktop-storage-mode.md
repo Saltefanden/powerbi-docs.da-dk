@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/29/2020
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: b3e661e8581f07ea9e19f295c30f29e5331754e7
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: e1b93b244a040fba1213fbb3b15bca3114e7075a
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83331365"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91528154"
 ---
 # <a name="manage-storage-mode-in-power-bi-desktop"></a>Administrer lagringstilstand i Power BI Desktop
 
@@ -78,7 +78,7 @@ Lad os sige, at alle tabeller i denne model er angivet til **DirectQuery** til a
 
 ![Vindue med advarsel om lagringstilstand](media/desktop-storage-mode/storage-mode-05.png)
 
-Du kan indstille dimensionstabellerne (**Kunde**, **Geografi** og **Dato**) til **Dual** for at reducere antallet af svage relationer i datasættet og forbedre ydeevnen. Svage relationer involverer normalt mindst én DirectQuery-tabel, hvor joinforbindelse af logik ikke kan sendes til kildesystemerne. Da Dual-tabeller kan fungere som enten DirectQuery- eller Import-tabeller, undgås denne situation.
+Du kan indstille dimensionstabellerne (**Customer**, **Geography** og **Date**) til **Dual** for at reducere antallet af begrænsede relationer i datasættet og forbedre ydeevnen. Begrænsede relationer involverer normalt mindst én DirectQuery-tabel, hvor joinforbindelse af logik ikke kan sendes til kildesystemerne. Da Dual-tabeller kan fungere som enten DirectQuery- eller Import-tabeller, undgås denne situation.
 
 Overførselslogikken er designet til at hjælpe med modeller, der indeholder mange tabeller. Lad os antage, at du har en model med 50 tabeller, og kun visse faktatabeller (transaktionstabeller) skal cachelagres. Logikken i Power BI Desktop beregner sættet af dimensionstabeller, der som minimum skal angives til **Dual**, så det behøver du ikke at gøre.
 
@@ -118,15 +118,15 @@ Forespørgsler, der refererer til Dual-tabeller, returnerer data fra cachen, hvi
 
 I forlængelse af det forrige eksempel henviser følgende forespørgsel kun til en kolonne fra tabellen **Date**, som er i **Dual**-tilstand. Forespørgslen burde derfor finde indhold i cachen:
 
-![Script til diagnosticering af lagringstilstand](media/desktop-storage-mode/storage-mode-06.png)
+![Skærmbillede, der viser tekst fra forespørgsel, der refererer til tabellen Date.](media/desktop-storage-mode/storage-mode-06.png)
 
 Følgende forespørgsel henviser kun til en kolonne fra tabellen **Salg**, som er i tilstanden **DirectQuery**. Derfor bør den *ikke* finde indhold i cachen:
 
-![Script til diagnosticering af lagringstilstand](media/desktop-storage-mode/storage-mode-07.png)
+![Skærmbillede, der viser tekst fra forespørgsel, der refererer til tabellen Sales.](media/desktop-storage-mode/storage-mode-07.png)
 
 Følgende forespørgsel er interessant, fordi den kombinerer begge kolonner. Denne forespørgsel blev ikke sendt til cachen. Indledningsvist forventer du nok, at den henter **CalendarYear**-værdier fra cachen og **SalesAmount**-værdier fra kilden og derefter kombinerer resultaterne, men denne fremgangsmåde er være mindre effektiv, end hvis du sender handlingen SUM/GROUP BY til kildesystemet. Hvis handlingen skubbes ned til kilden, vil antallet af returnerede rækker sandsynligvis være langt færre: 
 
-![Script til diagnosticering af lagringstilstand](media/desktop-storage-mode/storage-mode-08.png)
+![Skærmbillede, der viser tekst fra forespørgsel, der både refererer til tabellen Date og tabellen Sales.](media/desktop-storage-mode/storage-mode-08.png)
 
 > [!NOTE]
 > Denne funktionsmåde er anderledes end [mange til mange-relationer](desktop-many-to-many-relationships.md) i Power BI Desktop, når cachelagrede og ikke-cachelagrede tabeller kombineres.

@@ -1,6 +1,6 @@
 ---
 title: Integrer sideinddelte Power BI-rapporter i dit program til organisationen
-description: Få mere at vide om, hvordan du integrerer en sideinddelt Power BI-rapport i et program ved hjælp af Power BI-API'er.
+description: I dette selvstudium får du mere at vide om, hvordan du integrerer en sideinddelt Power BI-rapport i et program ved hjælp af Power BI-API'er.
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
@@ -9,19 +9,19 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 06/25/2020
-ms.openlocfilehash: 1c348cbf74e6bc2999383bc5a5c031576a293ac2
-ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
+ms.openlocfilehash: 0d52dd7df774dd834d0356e6de57b9c80beab801
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87878741"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91747614"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-organization"></a>Selvstudium: Integrer sideinddelte Power BI-rapporter i et program til din organisation
 
 I **Power BI**kan du integrere sideinddelte rapporter i et program til din organisation ved hjælp af scenariet *brugeren ejer data*.
 
 Sideinddelte rapporter er rapporter, der er udviklet til udskrivning i høj kvalitet. Disse rapporter indeholder normalt en masse data, der gengives på en måde, så de passer til sider, der udskrives.
-Hvis du vil vide, hvordan Power BI understøtter sideinddelte rapporter, kan du se [Hvad er sideinddelte rapporter i Power BI Premium?](https://docs.microsoft.com/power-bi/paginated-reports-report-builder-power-bi)
+Hvis du vil vide, hvordan Power BI understøtter sideinddelte rapporter, kan du se [Hvad er sideinddelte rapporter i Power BI Premium?](../../paginated-reports/paginated-reports-report-builder-power-bi.md)
 
 Ved hjælp af funktionen **Brugeren ejer data** kan programmet udvide Power BI-tjenesten til at bruge integreret analyse. Dette selvstudium viser, hvordan du integrerer en sideinddelt rapport i et program.
 

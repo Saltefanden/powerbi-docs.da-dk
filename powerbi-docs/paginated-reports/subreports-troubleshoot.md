@@ -1,6 +1,6 @@
 ---
 title: Foretag fejlfinding af underrapporter i sideinddelte rapporter i Power BI
-description: I denne artikel får du mere at vide om understøttede datakilder for sideinddelte rapporter i Power BI-tjenesten, og hvordan du opretter forbindelse til datakilder i Azure SQL Database.
+description: Få mere at vide om løsninger på almindelige problemer, når du bruger underrapporter, som er rapportelementer i en sideinddelt rapport.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: troubleshooting
 ms.date: 04/29/2020
-ms.openlocfilehash: 49a4143fe3dbf55b31b4d30473fe6af3c047dda4
-ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
+ms.openlocfilehash: 6a0e90036b759c409a9f5b3e994571c2a0eb510c
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85485915"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91747499"
 ---
 # <a name="troubleshoot-subreports-in-power-bi-paginated-reports"></a>Foretag fejlfinding af underrapporter i sideinddelte rapporter i Power BI
 
