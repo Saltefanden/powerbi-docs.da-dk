@@ -1,16 +1,16 @@
 - name: Udforsk Power BI (../forbruger)
-  href: 'https://docs.microsoft.com/learn/modules/explore-power-bi-service'
+  href: /learn/modules/explore-power-bi-service
 - name: Analysér data i Power BI (../forbruger)
-  href: 'https://docs.microsoft.com/learn/modules/analyze-data-power-bi'
+  href: /learn/modules/analyze-data-power-bi
 - name: Kom i gang med at bygge med Power BI
-  href: 'https://docs.microsoft.com/learn/modules/get-started-with-power-bi'
+  href: /learn/modules/get-started-with-power-bi
 - name: Hent data
-  href: 'https://docs.microsoft.com/learn/modules/get-data-power-bi'
+  href: /learn/modules/get-data-power-bi
 - name: Modellér data
-  href: 'https://docs.microsoft.com/learn/modules/model-data-power-bi'
+  href: /learn/modules/model-data-power-bi
 - name: Brug visualiseringer
-  href: 'https://docs.microsoft.com/learn/modules/visuals-in-power-bi'
+  href: /learn/modules/visuals-in-power-bi
 - name: Udforsk data
-  href: 'https://docs.microsoft.com/learn/modules/explore-data-power-bi'
+  href: /learn/modules/explore-data-power-bi
 - name: Publicer og del
   href: 'https://docs.microsoft.com/learn/modules/publish-share-power-bi'
