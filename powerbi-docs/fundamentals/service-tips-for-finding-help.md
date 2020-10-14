@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 2500ba94a6ad387e9944fb29f865b391ea4c0711
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: f5cb17187770c8c0b37c48a495c6844c462e83ec
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860940"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91525615"
 ---
 # <a name="10-tips-for-getting-help-with-your-power-bi-questions"></a>10 tips til at få hjælp til dine Power BI-spørgsmål
 Bliver du nogensinde frustreret, når du bruger Power BI, eller har problemer, fordi du ikke kan få svar på dine spørgsmål om Power Bi, når du skal bruge dem – dvs. "lige til tiden"? 
@@ -49,7 +49,7 @@ De tilgængelige kursusmuligheder er næsten uendelige – fra personlige kurser
 
 Du kan finde flere muligheder online, som f.eks.:
 
-* **edX.org** tilbyder et gratis kursus: [Analyzing and Visualizing Data with Power BI](https://www.edx.org/course/analyzing-visualizing-data-power-bi-microsoft-dat207x-4).
+* **edX.org** tilbyder et gratis kursus: [Analyzing and Visualizing Data with Power BI](https://www.edx.org/course/data-analysis-in-power-bi).
 * **Lynda.com** tilbyder kurser som f.eks [Power BI Pro Essential Training](https://www.lynda.com/Power-BI-tutorials/Power-BI-Pro-Essential-Training/485820-2.html).
 * Søg efter personlige kurser om "**Dashboard in a day**".
 

@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/25/2020
 ms.author: kfollis
-ms.openlocfilehash: aa69be7cabae3abeeaf1888272389a791909cae7
-ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
+ms.openlocfilehash: 20fb1f117432d5c36bfe0c536bc0803871134c95
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "91374861"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91981521"
 ---
 # <a name="service-interruption-notifications"></a>Meddelelser om tjenesteafbrydelser
 
@@ -70,7 +70,7 @@ En administrator af Power BI-lejeren aktiverer meddelelser på administrationspo
 
 ## <a name="service-health-in-microsoft-365"></a>Tjenestetilstand i Microsoft 365
 
-I denne artikel beskrives det, hvordan du modtager tjenestemeddelelser via Power BI. Du kan også overvåge Power BI-tjenestetilstand via Microsoft 365. Tilmeld dig for at modtage meddelelser om tjenestetilstand fra Microsoft 365. Få mere at vide i [Sådan kontrollerer du Microsoft 365-tjenestetilstand](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health).
+I denne artikel beskrives det, hvordan du modtager tjenestemeddelelser via Power BI. Du kan også overvåge Power BI-tjenestetilstand via Microsoft 365. Tilmeld dig for at modtage meddelelser om tjenestetilstand fra Microsoft 365. Få mere at vide i [Sådan kontrollerer du Microsoft 365-tjenestetilstand](/microsoft-365/enterprise/view-service-health).
 
 ## <a name="next-steps"></a>Næste trin
 

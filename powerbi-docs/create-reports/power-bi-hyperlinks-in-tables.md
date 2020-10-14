@@ -7,15 +7,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 02/13/2020
+ms.date: 09/29/2020
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 55b08d608e30b8a1f4b06319f1de835a12f7ca77
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 87bb15829936c452999872f95f49f35c2b60af77
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85234834"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91525651"
 ---
 # <a name="add-hyperlinks-urls-to-a-table-or-matrix"></a>Føj links (URL-adresser) til en tabel eller en matrix
 I dette emne lærer du, hvordan du føjer links (URL-adresser) til en tabel. Du kan bruge Power BI Desktop til at føje links (URL-adresser) til et datasæt. Derefter kan du bruge enten Power BI Desktop eller Power BI-tjenesten til at føje disse links til tabeller og matrixer i din rapport. Du kan derefter få vist URL-adressen eller et linkikon eller formatere en anden kolonne som linktekst.
@@ -136,7 +136,6 @@ URL-adresser skal starte med en af følgende:
 - http
 - https
 - -mailto
-- fil
 - ftp
 - nyheder
 - telnet
@@ -145,7 +144,7 @@ Spørgsmål: Kan jeg bruge en brugerdefineret URL-adresse som et hyperlink i en 
 Svar: Nej. Du kan bruge et linkikon. Hvis du har brug for brugerdefineret tekst til dine hyperlinks, og din liste over URL-adresser er kort, bør du overveje at bruge et tekstfelt i stedet for.
 
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 [Visualiseringer i Power BI-rapporter](../visuals/power-bi-report-visualizations.md)
 
 [Grundlæggende begreber for designere i Power BI-tjenesten](../fundamentals/service-basic-concepts.md)

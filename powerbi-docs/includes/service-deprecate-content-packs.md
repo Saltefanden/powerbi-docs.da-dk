@@ -8,12 +8,12 @@ ms.topic: include
 ms.date: 08/29/2019
 ms.author: maggies
 ms.custom: include file
-ms.openlocfilehash: cbd800d8114ccc7e8d8acebf5cdcb5347a508c86
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: c6cfc5705ba0f9c78b97db989ac2f58513170ca1
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "70184559"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91989570"
 ---
 >[!IMPORTANT]
->Vi udfaser denne indholdspakke den 25. september 2019. Hvis du installerede denne indholdspakke før dette tidspunkt, vil den fortsat fungere, men du kan ikke installere en ny efter dette tidspunkt. [Skabelonapps](https://docs.microsoft.com/power-bi/service-template-apps-overview) erstatter tjenesteindholdspakker.
+>Vi udfaser denne indholdspakke den 25. september 2019. Hvis du installerede denne indholdspakke før dette tidspunkt, vil den fortsat fungere, men du kan ikke installere en ny efter dette tidspunkt. [Skabelonapps](../connect-data/service-template-apps-overview.md) erstatter tjenesteindholdspakker.
