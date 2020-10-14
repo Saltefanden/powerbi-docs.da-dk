@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.custom: ''
 ms.date: 09/22/2020
-ms.openlocfilehash: 9267d6318bd951fdff41cb51786a4a519fa75917
-ms.sourcegitcommit: 701dd80661a63c76d37d1e4f159f90e3fc8c3160
+ms.openlocfilehash: 890b3c8124cc1711e08415cdcfda1f51b548fa63
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91136045"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91983062"
 ---
 # <a name="upgrade-power-bi-report-server"></a>Opgrader Power BI Report Server
 
@@ -30,7 +30,7 @@ Inden du opgraderer en rapportserver, anbefaler vi, at følgende trin udføres f
 
 ### <a name="backing-up-the-encryption-keys"></a>Sikkerhedskopiering af krypteringsnøgler
 
-Sikkerhedskopiér krypteringsnøglerne, første gang du konfigurerer en rapportserverinstallation. Sikkerhedskopiér også nøglerne, hver gang du ændrer identiteten for tjenestekontiene eller omdøber computeren. Du kan finde flere oplysninger i [Sikkerhedskopiér og gendan krypteringsnøgler til rapporttjenester](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-encryption-keys-back-up-and-restore-encryption-keys).
+Sikkerhedskopiér krypteringsnøglerne, første gang du konfigurerer en rapportserverinstallation. Sikkerhedskopiér også nøglerne, hver gang du ændrer identiteten for tjenestekontiene eller omdøber computeren. Du kan finde flere oplysninger i [Sikkerhedskopiér og gendan krypteringsnøgler til rapporttjenester](/sql/reporting-services/install-windows/ssrs-encryption-keys-back-up-and-restore-encryption-keys).
 
 ### <a name="backing-up-the-report-server-databases"></a>Sikkerhedskopiér rapportserverdatabaser
 
