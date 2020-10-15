@@ -10,8 +10,8 @@
     - name: Selvstudier
       expanded: true
       items:
-        - name: Udvikl en Power BI-visualisering
-          href: custom-visual-develop-tutorial.md
+        - name: 'Selvstudium: Udvikling af en cirkelkortvisualisering i Power BI'
+          href: develop-circle-card.md
         - name: Opret React-baserede visualiseringer
           href: create-react-visual.md
         - name: Opret et liggende søjlediagram
@@ -54,6 +54,8 @@
           href: power-bi-custom-visuals-certified.md
         - name: Publicer Power BI-visualiseringer i AppSource
           href: office-store.md
+        - name: Konfigurer dit miljø for at udvikle en Power BI-visualisering
+          href: environment-setup.md
         - name: Opret R-drevne visualiseringer
           href: create-r-based-power-bi-desktop.md
         - name: Test din Power BI-visualisering
