@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 02/14/2020
-ms.openlocfilehash: 67470ec405806f44fdb483e857d222ad4ff05a45
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 69650982bd3e71c235ffb09b00a99959bc02c231
+ms.sourcegitcommit: 1428acb6334649fc2d3d8ae4c42cfbc17e8f7476
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79379162"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "92197627"
 ---
 # <a name="tooltip-utils"></a>Hjælpeprogrammer til værktøjstip
 Denne artikel kan hjælpe dig med at installere, importere og bruge hjælpeprogrammer til værktøjstip. Dette hjælpeprogram er nyttigt til en hvilken som helst tilpasning af værktøjstip i Power BI-visualiseringer.
@@ -29,7 +29,7 @@ Hvis du vil bruge pakken, skal du have følgende:
 Hvis du vil installere pakken, skal du køre følgende kommando i mappen med din aktuelle visual:
 
 ```bash
-npm install powerbi-visuals-utils-colorutils --save
+npm install powerbi-visuals-utils-tooltiputils --save
 ```
 Med denne kommando installeres pakken, og der tilføjes en pakke som en afhængighed af din ```package.json```
 

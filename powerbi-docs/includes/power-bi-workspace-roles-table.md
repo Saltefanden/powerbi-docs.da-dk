@@ -8,12 +8,12 @@ ms.topic: include
 ms.date: 09/04/2020
 ms.author: maggies
 ms.custom: include file
-ms.openlocfilehash: b4b73b71a944fbb34d53be05cacc39c18e4226de
-ms.sourcegitcommit: 2cf8159535c114045e236c076a711638cfd7d2c8
+ms.openlocfilehash: 0bf9f1a6eb918e55ab3811b9c6fde2628bdd91ad
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89512793"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91983718"
 ---
 |Funktion   | Administrator  | Medlem  | Bidragsyder  | Fremviser |
 |---|---|---|---|---|
@@ -42,6 +42,6 @@ ms.locfileid: "89512793"
 
 <sup>3</sup> Hvis du vil kopiere en rapport og oprette en rapport i et andet arbejdsområde, der er baseret på et datasæt i dette arbejdsområde, skal du have tilladelsen [Opret for datasættet](../connect-data/service-datasets-build-permissions.md). Personer med rolle som administrator, medlem eller bidragyder får automatisk Build-tilladelse til datasæt for dette arbejdsområde gennem deres rolle i arbejdsområdet.
 
-<sup>4</sup> Vær opmærksom på, at du også skal have tilladelser til gatewayen. Disse tilladelser administreres andre steder, uafhængigt af rollerne og tilladelserne til arbejdsområder. Se [Administrer en gateway i det lokale miljø](https://docs.microsoft.com/data-integration/gateway/service-gateway-manage) for at få flere oplysninger.
+<sup>4</sup> Vær opmærksom på, at du også skal have tilladelser til gatewayen. Disse tilladelser administreres andre steder, uafhængigt af rollerne og tilladelserne til arbejdsområder. Se [Administrer en gateway i det lokale miljø](/data-integration/gateway/service-gateway-manage) for at få flere oplysninger.
 
 <sup>5</sup> Selvom du ikke har en Power BI Pro-licens, kan du få vist og interagere med elementer i Power BI-tjenesten, hvis elementerne findes i et arbejdsområde i en Premium-kapacitet.

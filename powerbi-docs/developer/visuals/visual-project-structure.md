@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 01/12/2020
-ms.openlocfilehash: ce0f22c17ed718d3e2ad4e4fa9d9514edd315583
-ms.sourcegitcommit: 21b06e49056c2f69a363d3a19337374baa84c83f
+ms.openlocfilehash: 74fec4e7fae2fc8630592c435adb42b34c93ef43
+ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83407422"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92049355"
 ---
 # <a name="power-bi-visual-project-structure"></a>Struktur for visual-projekter i Power BI
 
@@ -174,4 +174,4 @@ Kommentarerne i den følgende kodetekst fra `pbiviz.json`-filen beskriver metada
 
 * Hvis du vil vide mere om interaktionerne mellem en visualisering, en bruger og Power BI, kan du se [Visuelle koncepter i Power BI](./power-bi-visuals-concept.md).
 
-* Begynd at udvikle dine egne Power BI-visualiseringer fra bunden [med en trinvis vejledning](./custom-visual-develop-tutorial.md).
+* Begynd at udvikle dine egne Power BI-visualiseringer fra bunden [med en trinvis vejledning](./develop-circle-card.md).

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 08/12/2020
+ms.date: 10/12/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: ec4bd8788d3c0421118a8e96287b36497683c4b2
-ms.sourcegitcommit: 701dd80661a63c76d37d1e4f159f90e3fc8c3160
+ms.openlocfilehash: d53e7a3205d8e1915f8dd0969fe35d5c32d25cf5
+ms.sourcegitcommit: eab5a02520c421a57019595c03e9ecfdb41d52ad
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91136137"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92256365"
 ---
 # <a name="get-power-bi-desktop"></a>Hent Power BI Desktop
 Med Power BI Desktop kan du oprette avancerede forespørgsler, modeller og rapporter, som visualiserer data. Med Power BI Desktop kan du skabe datamodeller, oprette rapporter og dele dit arbejde ved at publicere det i Power BI-tjenesten. Power BI Desktop kan downloades gratis.
@@ -80,7 +80,7 @@ Fra og med udgivelsen i juli 2019 sendes Power BI Desktop som en enkelt .exe-ins
 
 Efter du har startet installationspakken, installeres Power BI Desktop som et program og køres på din computer.
 
-![Skærmbillede af Power BI Desktop-installationen, hvor installationsguiden vises.](media/desktop-get-the-desktop/designer_gsg_install.png)
+![Skærmbillede af Power BI Desktop-installationen, hvor installationsguiden vises.](media/desktop-get-the-desktop/desktop-install-01.png)
 
 > [!NOTE]
 > Du kan ikke installere den downloadede version (MSI), som er udgået, og Microsoft Store-versionen af Power BI Desktop på samme computer, hvilket også kaldes for en *side om side*-installation. Du skal fjerne Power BI Desktop manuelt, før du downloader den fra Microsoft Store.
@@ -89,7 +89,7 @@ Efter du har startet installationspakken, installeres Power BI Desktop som et pr
 ## <a name="using-power-bi-desktop"></a>Brug Power BI Desktop
 Når du starter Power BI Desktop, vises der et velkomstbillede.
 
-![Skærmbillede af Power BI Desktop-installationen, hvor velkomstskærmen vises.](media/desktop-get-the-desktop/getpbid_05.png)
+![Skærmbillede af Power BI Desktop-installationen, hvor velkomstskærmen vises.](media/desktop-get-the-desktop/desktop-splash-screen.png)
 
 Hvis det er første gang, du bruger Power BI Desktop, dvs. hvis installationen ikke er en opgradering, bliver du bedt om at udfylde en formular eller logge på Power BI-tjenesten, før du kan fortsætte.
 

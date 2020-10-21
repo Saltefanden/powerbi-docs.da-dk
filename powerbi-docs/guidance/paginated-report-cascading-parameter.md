@@ -8,12 +8,12 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 01/14/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 35a62923ba69520c1197e7bb80114a22ec1d9a20
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: f239622d8b6012913298212790f7f9aa8c3115a5
+ms.sourcegitcommit: 1428acb6334649fc2d3d8ae4c42cfbc17e8f7476
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86214086"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "92197650"
 ---
 # <a name="use-cascading-parameters-in-paginated-reports"></a>Anvend overlappende parametre i sideinddelte rapporter
 
@@ -128,7 +128,7 @@ Sådan kan du udvikle de overlappende parametre:
 >
 > Lagrede procedurer er generelt den bedste designmetode. Det skyldes, at deres forespørgselsplaner cachelagres for at køre hurtigere, og de giver dig mulighed for at udvikle mere avanceret logik, når det er nødvendigt. De understøttes dog ikke i øjeblikket for datakilder, der er baseret på gateways, hvilket betyder SQL Server, Oracle og Teradata.
 >
-> Endelig skal du altid sikre, at der findes egnede indekser til at understøtte effektiv datahentning. Ellers kan det tage lang tid at udfylde rapportparametrene, og databasen kan blive overbelastet. Du kan finde flere oplysninger om SQL Server-indeksering under [Arkitektur af SQL Server-indeks og designvejledning](/sql/relational-databases/sql-server-index-design-guide?view=sql-server-2017).
+> Endelig skal du altid sikre, at der findes egnede indekser til at understøtte effektiv datahentning. Ellers kan det tage lang tid at udfylde rapportparametrene, og databasen kan blive overbelastet. Du kan finde flere oplysninger om SQL Server-indeksering under [Arkitektur af SQL Server-indeks og designvejledning](/sql/relational-databases/sql-server-index-design-guide).
 
 ### <a name="filter-by-a-grouping-column"></a>Filtrer efter en grupperingskolonne
 
@@ -220,7 +220,7 @@ Sådan kan du udvikle de overlappende parametre:
 > [!TIP]
 > Du kan forbedre dette design for at give brugerne mere kontrol over rapporterne. Det giver dem mulighed for at definere deres egen værdi, der stemmer overens med et mønster. Søgeværdien "red%" filtrerer f.eks. forhandlere efter navne, der _begynder_ med tegnene "red".
 >
-> Du kan finde flere oplysninger under [LIKE (Transact-SQL)](/sql/t-sql/language-elements/like-transact-sql?view=sql-server-ver15#using-the--wildcard-character).
+> Du kan finde flere oplysninger under [LIKE (Transact-SQL)](/sql/t-sql/language-elements/like-transact-sql#using-the--wildcard-character).
 
 Her kan du se, hvordan du kan give rapportbrugerne mulighed for at definere deres eget mønster.
 

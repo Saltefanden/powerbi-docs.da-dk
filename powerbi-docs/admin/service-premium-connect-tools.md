@@ -3,19 +3,19 @@ title: Netværksmulighed for datasæt og administration med XMLA-slutpunktet i P
 description: Beskriver, hvordan du opretter forbindelse til datasæt i Power BI Premium fra klientprogrammer og værktøjer.
 author: minewiskan
 ms.author: owend
-ms.reviewer: ''
+ms.reviewer: kayu
 ms.service: powerbi
-ms.subservice: powerbi-premium
+ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 06/04/2020
+ms.date: 10/14/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 6859cce8c50d34218e99c3466fdc9aeaa6ed57e6
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: 5e30a59e637b39099cdd0ad2eb99223cff20fbe6
+ms.sourcegitcommit: 59d07be9c3e4a2067f6d42c3002a194371bc4341
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91599210"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92116540"
 ---
 # <a name="dataset-connectivity-with-the-xmla-endpoint-preview"></a>Netværksmulighed for datasæt med XMLA-slutpunktet (prøveversion)
 

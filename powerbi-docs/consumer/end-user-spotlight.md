@@ -6,15 +6,15 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 03/04/2020
+ms.date: 10/06/2020
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: d684ab319a61c932f851e76322af758a4188c5e0
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: 51f98bd5bc22609aba01a775678c5dccf6cf0d0c
+ms.sourcegitcommit: d2f633b4bfa271051ba1d2ef0e6e8da7dcf42818
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87536003"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91830233"
 ---
 # <a name="add-spotlights-to-power-bi-reports"></a>Føj fremhævelser til Power BI-rapporter
 
@@ -32,7 +32,7 @@ Med Fremhæv kan du henlede opmærksomheden på en bestemt visualisering på en 
 
 3. Vælg indstillingen for **Fremhæv**. Den valgte visualisering fremhæves, hvilket betyder, at alle andre visualiseringer på siden kan tones op og ned til næsten gennemsigtig. 
 
-    ![Spotlighttilstand](media/end-user-spotlight/power-bi-spotlighted.png)
+    ![Spotlighttilstand](media/end-user-spotlight/power-bi-spotlighted-treemap.png)
 
 
 
