@@ -217,7 +217,7 @@
               href: service-aggregates.md
             - name: Opret en QR-kode for en rapport
               href: service-create-qr-code-for-report.md
-            - name: Lad brugerne tilpasse visualiseringer (eksempelvisning)
+            - name: Lad brugerne tilpasse visualiseringer
               href: power-bi-personalize-visuals.md
             - name: Eksportér en rapport til Power BI Desktop (eksempelvisning)
               href: service-export-to-pbix.md

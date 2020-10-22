@@ -62,6 +62,8 @@
           items:
             - name: Opret forbindelse til datakilder
               href: desktop-data-sources.md
+            - name: Brug dynamiske M-forespørgselsparametre
+              href: desktop-dynamic-m-query-parameters.md
             - name: Opret en rapport på en SharePoint-liste
               href: desktop-sharepoint-online-list.md
             - name: Opret forbindelse til LinkedIn Sales Navigator
