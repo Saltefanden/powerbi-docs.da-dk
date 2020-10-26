@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 02/10/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 45f5ff81e8ab11c2082af7f570f02bd3671719c6
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 8730860a63d8d78dad7cfaafa11fb411ec8422fe
+ms.sourcegitcommit: 220427415e2fdc9337244b1ee23e734854179d43
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91634659"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862963"
 ---
 # <a name="tables-in-power-bi-reports-and-dashboards"></a>Tabeller i Power BI-rapporter og -dashboards
 
@@ -183,6 +183,8 @@ Nogle gange kan Power BI afskære en kolonneoverskrift i en rapport og på et da
 * Når du anvender kolonneformatering, kan du kun vælge én indstilling for justering pr. kolonne: **Automatisk**, **Venstre**, **Centreret**, **Højre**. En kolonne indeholder som regel enten tekst eller tal og ikke en blanding. Hvis en kolonne indeholder både tal og tekst, vil indstillingen **Automatisk** venstrejustere tekst og højrejustere tal. Denne funktionalitet understøtter de sprog, der læses fra venstre mod højre.
 
 * Hvis tekstdataene i cellerne eller overskrifterne i tabellen indeholder nye linjetegn, ignoreres disse tegn, medmindre du slår indstillingen Tekstombrydning til på elementets tilknyttede formateringsrudekort. 
+
+* Power BI beregner den maksimale cellestørrelse baseret på de første tyve kolonner og de første 50 rækker. Celler, der ligger uden for disse punkter, er muligvis ikke korrekt tilpasset.
 
 
 ## <a name="next-steps"></a>Næste trin

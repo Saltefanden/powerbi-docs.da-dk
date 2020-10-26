@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 04/30/2020
-ms.openlocfilehash: c8cf0f4e896b8a44764d1c363c597182f55d30b3
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 1e5a4cf8c80d8123d39fd2ab76898abc0c439ad9
+ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83276507"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92049378"
 ---
 # <a name="use-the-supportskeyboardfocus-feature"></a>Brug af funktionen supportsKeyboardFocus
 
@@ -52,4 +52,4 @@ Denne egenskab gør det muligt, at der fokuseres på visualiseringen gennem navi
 
 Du kan få mere at vide om tilgængelighedsfunktioner i [Design Power BI-rapporter om tilgængelighed](../../create-reports/desktop-accessibility-creating-reports.md).
 
-Hvis du vil prøve Power BI-udvikling, kan du se [Udvikling af en Power BI-visualisering](custom-visual-develop-tutorial.md).
+Hvis du vil prøve Power BI-udvikling, kan du se [Udvikling af en Power BI-cirkelkortvisualisering](develop-circle-card.md).

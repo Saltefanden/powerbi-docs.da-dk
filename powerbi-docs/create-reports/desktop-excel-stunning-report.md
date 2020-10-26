@@ -6,19 +6,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 07/21/2020
+ms.date: 10/13/2020
 ms.author: maggies
 LocalizationGroup: Data from files
-ms.openlocfilehash: 275a83c8588bb9489361d467c6c6ab458abc86b2
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 40c874e9178ffc3586c2dde83f32260bdb86bfad
+ms.sourcegitcommit: eab5a02520c421a57019595c03e9ecfdb41d52ad
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91635326"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92256913"
 ---
 # <a name="tutorial-from-excel-workbook-to-stunning-report-in-power-bi-desktop"></a>Selvstudium: Fra Excel-projektmappe til imponerende rapport i Power BI Desktop
 
 I dette selvstudium opretter du en fantastisk rapport fra start til slut på 20 minutter! 
+
+:::image type="content" source="media/desktop-excel-stunning-report/power-bi-excel-formatted-report.png" alt-text="Skærmbillede, der viser en færdig Power BI-rapport."::: 
 
 Din chef vil gerne have en rapport over dine seneste salgstal. Ledelsen har anmodet om en oversigt over: 
 
@@ -28,12 +30,10 @@ Din chef vil gerne have en rapport over dine seneste salgstal. Ledelsen har anmo
 
 Med vores eksempelprojektmappe kan vi hurtigt oprette denne rapport. Sådan ser den færdige rapport ud. Lad os komme i gang! 
 
-:::image type="content" source="media/desktop-excel-stunning-report/power-bi-excel-formatted-report.png" alt-text="Skærmbillede af Power BI-rapporten i Power BI-tjenesten."::: 
-
 I dette selvstudium lærer du, hvordan du:
 
 > [!div class="checklist"]
-> * Downloader eksempeldata
+> * Download eksempeldata på to forskellige måder
 > * Forbereder dine data med nogle få transformationer
 > * Opretter en rapport med en titel, tre visualiseringer og et udsnit
 > * Publicerer din rapport til Power BI-tjenesten, så du kan dele den med dine kolleger
@@ -43,9 +43,23 @@ I dette selvstudium lærer du, hvordan du:
 - Før du starter, skal du [downloade Power BI Desktop](https://powerbi.microsoft.com/desktop/).
 - Hvis du planlægger at publicere din rapport til Power BI-tjenesten og ikke har tilmeldt dig endnu, kan du [tilmelde dig en gratis prøveperiode](https://app.powerbi.com/signupredirect?pbi_source=web).
 
-## <a name="download-the-sample"></a>Download eksemplet
+## <a name="get-data"></a>Hent data 
 
-For at følge med skal du downloade eksempelprojektmappen. 
+Du kan hente dataene til dette selvstudium ved hjælp af en af to metoder.
+
+### <a name="get-data-in-power-bi-desktop"></a>Hent data i Power BI Desktop
+
+Når du åbner Power BI Desktop, skal du vælge **Prøv et eksempeldatasæt** fra det tomme lærred.
+
+:::image type="content" source="media/desktop-excel-stunning-report/power-bi-desktop-canvas-sample-dataset.png" alt-text="Skærmbillede, der viser en færdig Power BI-rapport."::: 
+
+Hvis du har startet dette selvstudium fra Power BI Desktop, skal du gå videre og vælge **Indlæs data**.
+
+:::image type="content" source="media/desktop-excel-stunning-report/power-bi-two-ways-load-data.png" alt-text="Skærmbillede, der viser en færdig Power BI-rapport.":::
+
+### <a name="download-the-sample"></a>Download eksemplet
+
+Du kan også *downloade eksempelprojektmappen direkte. 
 
 1. Download [Excel-projektmappen Økonomieksempel](https://go.microsoft.com/fwlink/?LinkID=521962).
 1. Åbn Power BI Desktop.
@@ -58,39 +72,39 @@ I **Navigator** kan du vælge at *transformere* eller *indlæse* dataene. Naviga
 
 1. Markér tabellen **Økonomi**, og vælg **Transformér data**. 
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-financial-navigator.png" alt-text="Skærmbillede af Power BI-rapporten i Power BI-tjenesten."::: 
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-financial-navigator.png" alt-text="Skærmbillede, der viser en færdig Power BI-rapport."::: 
 
 1. Vælg kolonnen **Solgte enheder**. På fanen **Start** skal du vælge **Datatype** og derefter **Heltal**. Vælg **Erstat aktuel** for at ændre kolonnetypen. 
 
     Det trin, som brugerne oftest foretager i forbindelse med datarensning, er at skifte datatype. I dette tilfælde er antallet af solgte enheder i decimalform. Det giver ikke mening at have 0,2 eller 0,5 solgte enheder, vel? Så lad os ændre det til heltal. 
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-query-whole-number.png" alt-text="Skærmbillede af Power BI-rapporten i Power BI-tjenesten."::: 
+    :::image type="content" source="media/desktop-excel-stunning-report/power-query-whole-number.png" alt-text="Skærmbillede, der viser en færdig Power BI-rapport."::: 
 
 1. Vælg kolonnen **Segment**. På fanen **Transformer** skal du vælge **Format** og derefter **STORE BOGSTAVER**.
 
     Vi vil også gøre det nemmere at se segmenterne i diagrammet på et senere tidspunkt. Lad os formatere kolonnen Segment. 
 
-     :::image type="content" source="media/desktop-excel-stunning-report/power-query-upper-case.png" alt-text="Skærmbillede af Power BI-rapporten i Power BI-tjenesten.":::
+     :::image type="content" source="media/desktop-excel-stunning-report/power-query-upper-case.png" alt-text="Skærmbillede, der viser en færdig Power BI-rapport.":::
 
 1. Lad os forkorte kolonnenavnet fra **Månedsnavn** til bare **Måned**. Dobbeltklik på kolonnen **Månedsnavn**, og omdøb den til bare **Måned**.  
 
-     :::image type="content" source="media/desktop-excel-stunning-report/power-query-month-name.png" alt-text="Skærmbillede af Power BI-rapporten i Power BI-tjenesten.":::
+     :::image type="content" source="media/desktop-excel-stunning-report/power-query-month-name.png" alt-text="Skærmbillede, der viser en færdig Power BI-rapport.":::
 
 1. I kolonnen **Produkt** skal du vælge rullelisten og fjerne markeringen af afkrydsningsfeltet ud for **Montana**. 
 
      Vi ved, at produktet Montana udgik i sidste måned, så vi vil gerne filtrere disse data fra vores rapport for at undgå forvirring. 
 
-     :::image type="content" source="media/desktop-excel-stunning-report/power-query-montana.png" alt-text="Skærmbillede af Power BI-rapporten i Power BI-tjenesten.":::
+     :::image type="content" source="media/desktop-excel-stunning-report/power-query-montana.png" alt-text="Skærmbillede, der viser en færdig Power BI-rapport.":::
 
 1. Du kan se, at hver transformation er føjet til listen under **Forespørgselsindstillinger** i **Anvendte trin**.
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-query-applied-steps.png" alt-text="Skærmbillede af Power BI-rapporten i Power BI-tjenesten.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-query-applied-steps.png" alt-text="Skærmbillede, der viser en færdig Power BI-rapport.":::
 
 1. Tilbage på fanen **Start** skal du vælge **Luk og anvend**. Vores data er næsten klar til oprettelse af en rapport. 
 
     Kan du se Sigma-symbolet på listen Felter? Power BI har registreret, at disse felter er numeriske. Power BI angiver også datofeltet med et kalendersymbol.
 
-     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-fields-list-sigmas-date.png" alt-text="Skærmbillede af Power BI-rapporten i Power BI-tjenesten.":::
+     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-fields-list-sigmas-date.png" alt-text="Skærmbillede, der viser en færdig Power BI-rapport.":::
 
 ### <a name="extra-credit-write-a-measure-in-dax"></a>Ekstra kredit: Skriv en måling i DAX
 
@@ -98,11 +112,11 @@ Skrivning af *målinger* i formelsproget *DAX* er et meget effektivt middel til 
 
 1. Vælg **Datavisning** til venstre. 
  
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-data-view.png" alt-text="Skærmbillede af Power BI-rapporten i Power BI-tjenesten.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-data-view.png" alt-text="Skærmbillede, der viser en færdig Power BI-rapport.":::
 
 1. På båndet **Hjem** skal du vælge **Ny tabel**. 
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-new-table.png" alt-text="Skærmbillede af Power BI-rapporten i Power BI-tjenesten.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-new-table.png" alt-text="Skærmbillede, der viser en færdig Power BI-rapport.":::
 
 1. Indtast denne måling for at generere en kalendertabel med alle datoer mellem den 1. januar 2013 og den 31. december 2014.  
 
@@ -110,15 +124,15 @@ Skrivning af *målinger* i formelsproget *DAX* er et meget effektivt middel til 
 
 2. Vælg markeringen for at bekræfte.
 
-     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-dax-expression.png" alt-text="Skærmbillede af Power BI-rapporten i Power BI-tjenesten.":::
+     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-dax-expression.png" alt-text="Skærmbillede, der viser en færdig Power BI-rapport.":::
 
 1. Vælg nu **Modelvisning** til venstre. 
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-model-view.png" alt-text="Skærmbillede af Power BI-rapporten i Power BI-tjenesten.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-model-view.png" alt-text="Skærmbillede, der viser en færdig Power BI-rapport.":::
 
 1. Træk feltet **Dato** fra tabellen Økonomi til feltet **Dato** i tabellen Kalender for at forbinde tabellerne, og opret en *Relation* mellem dem.  
 
-     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-date-relationship.png" alt-text="Skærmbillede af Power BI-rapporten i Power BI-tjenesten.":::
+     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-date-relationship.png" alt-text="Skærmbillede, der viser en færdig Power BI-rapport.":::
 
 ## <a name="build-your-report"></a>Opbyg din rapport 
 
@@ -126,14 +140,14 @@ Nu, hvor du har transformeret og indlæst dine data, er det tid til at oprette d
 
 Lad os opbygge den endelige rapport, én visualisering ad gangen. 
 
-:::image type="content" source="media/desktop-excel-stunning-report/power-bi-report-by-numbers.png" alt-text="Skærmbillede af Power BI-rapporten i Power BI-tjenesten.":::
+:::image type="content" source="media/desktop-excel-stunning-report/power-bi-report-by-numbers.png" alt-text="Skærmbillede, der viser en færdig Power BI-rapport.":::
 
 ### <a name="visual-1-add-a-title"></a>Visualisering 1: Tilføj en titel 
 
 1. På båndet **Indsæt** skal du vælge **Tekstboks**. Skriv "Resume af udførelsen – økonomirapport". 
 1. Vælg den tekst, du har skrevet. Indstil skriftstørrelsen til 20 og fed skrift. 
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-title-executive-summary.png" alt-text="Skærmbillede af Power BI-rapporten i Power BI-tjenesten.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-title-executive-summary.png" alt-text="Skærmbillede, der viser en færdig Power BI-rapport.":::
 
 1. I ruden Visualiseringer skal du skifte **Baggrund** til **Fra**. 
 1. Tilpas feltets størrelse, så den passer til én linje. 
@@ -145,19 +159,19 @@ Nu kan du oprette et kurvediagram for at se, hvilken måned og hvilket år der g
 1. Fra ruden Felter skal du trække feltet **Avance** til et tomt område på rapportlærredet. Power BI viser som standard et søjlediagram med én kolonne, Avance. 
 1. Træk feltet **Dato** til den samme visualisering. Power BI opdaterer kolonnediagrammet for at vise avancen efter de to år.
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-column-year.png" alt-text="Skærmbillede af Power BI-rapporten i Power BI-tjenesten.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-column-year.png" alt-text="Skærmbillede, der viser en færdig Power BI-rapport.":::
 
 1. I afsnittet **Felter** i ruden Visualiseringer skal du vælge rullelisten i værdien **Akse**. Skift **Dato** fra **Datohierarki** til **Dato**.
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-date-hierarchy.png" alt-text="Skærmbillede af Power BI-rapporten i Power BI-tjenesten.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-date-hierarchy.png" alt-text="Skærmbillede, der viser en færdig Power BI-rapport.":::
 
     Power BI opdaterer kolonnediagrammet for at vise avancen for hver måned.
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-column-month.png" alt-text="Skærmbillede af Power BI-rapporten i Power BI-tjenesten.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-column-month.png" alt-text="Skærmbillede, der viser en færdig Power BI-rapport.":::
 
 1. I ruden Visualiseringer skal du ændre visualiseringstypen til **Kurvediagram**. 
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-profit-date-line-chart.png" alt-text="Skærmbillede af Power BI-rapporten i Power BI-tjenesten.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-profit-date-line-chart.png" alt-text="Skærmbillede, der viser en færdig Power BI-rapport.":::
 
     Nu kan du nemt se, at avancen var størst i december 2014.
 
@@ -170,7 +184,7 @@ Opret et kort for at se, hvilket land der havde den højeste avance.
 
     Power BI opretter en kortvisual med bobler, der repræsenterer avancen for hver af de enkelte placeringer. 
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-map-visual.png" alt-text="Skærmbillede af Power BI-rapporten i Power BI-tjenesten.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-map-visual.png" alt-text="Skærmbillede, der viser en færdig Power BI-rapport.":::
 
     Det lader til, at Europa klarer sig bedre end Nordamerika. 
 
@@ -187,7 +201,7 @@ Opret et liggende søjlediagram for at bestemme, hvilke virksomheder og segmente
 
 1. Træk diagrammet, så det er bredt nok til at fylde pladsen under de to øverste diagrammer.
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-clustered-column-chart.png" alt-text="Skærmbillede af Power BI-rapporten i Power BI-tjenesten.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-clustered-column-chart.png" alt-text="Skærmbillede, der viser en færdig Power BI-rapport.":::
 
     Virksomheden skal tilsyneladende fortsætte med at investere i Paseo-produktet og fokusere på segmenterne Små virksomheder og Offentlige myndigheder.  
 
@@ -199,11 +213,11 @@ Udsnit er et værdifuldt værktøj til filtrering af visualiseringer på en rapp
 2. I ruden Visualiseringer skal du vælge **Udsnit**. 
 3. I afsnittet Felter i ruden Visualiseringer skal du vælge rullelisten i **Felter**. Fjern Kvartal og Dag, så kun År og Måned er tilbage. 
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-date-hierarchy-trim.png" alt-text="Skærmbillede af Power BI-rapporten i Power BI-tjenesten.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-date-hierarchy-trim.png" alt-text="Skærmbillede, der viser en færdig Power BI-rapport.":::
 
 4. Udvid hvert år, og tilpas størrelsen på visualiseringen, så alle måneder er synlige.
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-hierarchy-date-slicer.png" alt-text="Skærmbillede af Power BI-rapporten i Power BI-tjenesten.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-hierarchy-date-slicer.png" alt-text="Skærmbillede, der viser en færdig Power BI-rapport.":::
 
 Hvis din chef beder om kun at se data fra 2013, kan du bruge udsnittet til at skifte mellem år eller bestemte måneder i hvert år. 
 
@@ -215,13 +229,13 @@ Hvis du vil finpudse formateringen af denne rapport, kan du følge disse enkle t
 
 - På båndet **Visning** kan du ændre temaet til **Ledelse**.  
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-theme-executive.png" alt-text="Skærmbillede af Power BI-rapporten i Power BI-tjenesten."::: 
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-theme-executive.png" alt-text="Skærmbillede, der viser en færdig Power BI-rapport."::: 
 
 **Gør visualiseringen klar** 
 
 Foretag følgende ændringer under fanen **Format** i ruden Visualiseringer.
 
-:::image type="content" source="media/desktop-excel-stunning-report/power-bi-format-tab-visualizations.png" alt-text="Skærmbillede af Power BI-rapporten i Power BI-tjenesten." og **Tekststørrelse** til **16 pkt.** . Sæt **Skygge** på **Til**. 
+:::image type="content" source="media/desktop-excel-stunning-report/power-bi-format-tab-visualizations.png" alt-text="Skærmbillede, der viser en færdig Power BI-rapport." og **Tekststørrelse** til **16 pkt.** . Sæt **Skygge** på **Til**. 
 
 1. Vælg visualisering 3. I afsnittet **Kortformater** skal du ændre **Tema** til **Gråtoneskala**. I afsnittet **Titel** skal du ændre titlen **Tekststørrelse** til **16 pkt.** . Sæt **Skygge** på **Til**.
 
@@ -235,7 +249,7 @@ Foretag følgende ændringer under fanen **Format** i ruden Visualiseringer.
 1. I ruden **Formatform** skal du i afsnittet **Linje** ændre **Gennemsigtighed** til **100 %** . 
 1. I afsnittet **Fyld** skal du ændre **Fyldfarve** til **Temafarve 5 #6B91C9** (blå). 
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-theme-color-5.png" alt-text="Skærmbillede af Power BI-rapporten i Power BI-tjenesten.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-theme-color-5.png" alt-text="Skærmbillede, der viser en færdig Power BI-rapport.":::
 
 1. På fanen **Format** skal du vælge **Send bagud** > **Placer bagest**. 
 1. Vælg teksten i Visualisering 1, titlen, og skift skriftfarve til **Hvid**. 
@@ -250,7 +264,7 @@ Foretag følgende ændringer under fanen **Format** i ruden Visualiseringer.
 
 Her kan du se, hvordan den endelige rapport kommer til at se ud:  
 
-:::image type="content" source="media/desktop-excel-stunning-report/power-bi-excel-formatted-report.png" alt-text="Skærmbillede af Power BI-rapporten i Power BI-tjenesten.":::
+:::image type="content" source="media/desktop-excel-stunning-report/power-bi-excel-formatted-report.png" alt-text="Skærmbillede, der viser en færdig Power BI-rapport.":::
 
 For at opsummere besvarer denne rapport din chefs vigtigste spørgsmål: 
 
@@ -281,15 +295,15 @@ Hvis du vil dele din rapport med din chef og dine kolleger, kan du publicere den
 1. Vælg en destination, f. eks. **Mit arbejdsområde** i Power BI-tjenesten > **Vælg**.
 1. Vælg **Åbn 'dit-filnavn' i Power BI**.
 
-    :::image type="content" source="media/desktop-excel-stunning-report/open-power-bi.png" alt-text="Skærmbillede af Power BI-rapporten i Power BI-tjenesten.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/open-power-bi.png" alt-text="Skærmbillede, der viser en færdig Power BI-rapport.":::
 
     Din færdige rapport åbnes i browseren.
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-excel-report-service.png" alt-text="Skærmbillede af Power BI-rapporten i Power BI-tjenesten."::: 
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-excel-report-service.png" alt-text="Skærmbillede, der viser en færdig Power BI-rapport."::: 
 
 1. Hvis du vil dele din rapport med andre, skal du vælge **Del** øverst i rapporten.
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-share-report.png" alt-text="Skærmbillede af Power BI-rapporten i Power BI-tjenesten.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-share-report.png" alt-text="Skærmbillede, der viser en færdig Power BI-rapport.":::
 
 ## <a name="next-steps"></a>Næste trin
 

@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 01/09/2020
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 38c14aa33504e7a3bb21cf68c6466a829d0653a7
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 931c500cd2c2dbbf750eb3699ac5290a2977c21b
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238865"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91526254"
 ---
 # <a name="perform-common-query-tasks-in-power-bi-desktop"></a>Udfør almindelige forespørgselsopgaver i Power BI Desktop
 
@@ -87,7 +87,7 @@ I dette eksempel grupperer du rækker i et datasæt med uddannelsestilmeldinger.
 
 Lad os finde ud af, hvor mange organisationer hver stat har. (Institutioner kan omfatte skoledistrikter, andre uddannelsesinstitutioner, f.eks. regionale distrikter) og meget mere. Vælg kolonnen **Agency ID - NCES Assigned \[District\] Latest available year**, og vælg derefter knappen **Gruppér efter** på fanen **Transformér** eller fanen **Hjem** på båndet. (**Gruppér efter** er tilgængelig på begge faner).
 
-![Dialogboksen Gruppér efter, Power Query-editor, Power BI Desktop](media/desktop-common-query-tasks/commonquerytasks_groupby.png)
+![Skærmbillede, der viser, hvordan rækker skal grupperes i en tabel.](media/desktop-common-query-tasks/commonquerytasks_groupby.png)
 
 Dialogboksen **Gruppér efter** vises. Når rækker grupperes i Power Query-editor, oprettes der en ny kolonne, som resultaterne fra **Gruppér efter** placeres i. Du kan justere handlingen **Gruppér efter** på følgende måder:
 
@@ -98,7 +98,7 @@ Dialogboksen **Gruppér efter** vises. Når rækker grupperes i Power Query-edit
 
 Vælg **Tilføj gruppering** eller **Tilføj aggregering** for at føje flere grupperinger eller aggregeringer til en handling af typen **Gruppér efter**. Hvis du vil fjerne en gruppering eller aggregering, skal du vælge ellipseikonet ( **...** ) til højre for rækken og derefter **Slet**. Prøv handlingen **Gruppér efter** ved hjælp af standardværdierne for at se, hvad der sker.
 
-![Dialogboksen Gruppér efter, Power Query-editor, Power BI Desktop](media/desktop-common-query-tasks/commonquerytasks_groupbynumbered.png)
+![Skærmbillede, der viser dialogboksen Gruppér efter med Tilføj gruppering og Tilføj sammenlægning vist.](media/desktop-common-query-tasks/commonquerytasks_groupbynumbered.png)
 
 Når du vælger **OK**, udføres handlingen **Gruppér efter**, og resultaterne returneres. Vi kan se, at Ohio, Texas, Illinois og Californien hver især har over 1.000 institutioner.
 

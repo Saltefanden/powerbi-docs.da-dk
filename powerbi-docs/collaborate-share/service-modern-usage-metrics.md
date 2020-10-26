@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/31/2020
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 0555f6c46ef864ed89d3d364420a14a2ff18ab84
-ms.sourcegitcommit: 701dd80661a63c76d37d1e4f159f90e3fc8c3160
+ms.openlocfilehash: c4f9d83d612d8f8d442fc5267be66a2a5cf288a2
+ms.sourcegitcommit: 59d07be9c3e4a2067f6d42c3002a194371bc4341
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91136091"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92116609"
 ---
 # <a name="monitor-usage-metrics-in-the-new-workspace-experience-preview"></a>Overvåg forbrugsdata i den nye arbejdsområdeoplevelse (prøveversion)
 
@@ -92,7 +92,7 @@ Den forbedrede rapport med forbrugsdata indeholder følgende rapportsider:
 | Rapportanvendelse | Platformudsnit | Om rapporten blev tilgået via Power BI-tjenesten (powerbi.com), Power BI Embedded eller en mobilenhed. |
 | Rapportanvendelse | Brugere med rapportvisninger | Viser listen over brugere, der åbnede rapporten, sorteret efter antal visninger. |
 | Rapportanvendelse | Sider | Hvis rapporten indeholder mere end 1 side, skal du opdele rapporten efter de sider, der blev vist. Hvis du får vist en listeindstilling for "Tom", betyder det, at en rapportside blev tilføjet for nylig (inden for 24 timer vises det faktiske navn på den nye side på listen over udsnit), og/eller at rapportsider er blevet slettet. "Tom" henter disse typer situationer. |
-| Rapportydeevne | Typisk åbningstid | Den typiske åbningstid for rapporten svarer til 50. fraktil af den tid, det tager at åbne rapporten. Med andre ord, så er det den tid nedenfor, hvor 50 % af handlingerne for åbning af rapporten blev udført. Siden Rapportydeevne opdeler også den typiske åbningstid for rapporten efter forbrugsmetode og browsertype.   |
+| Rapportydeevne | Typisk åbningstid | Den typiske åbningstid for rapporten svarer til 50. fraktil af den tid, det tager at åbne rapporten. Med andre ord, så er det den tid nedenfor, hvor 50 % af handlingerne for åbning af rapporten blev udført. Siden Rapportydeevne opdeler også den typiske åbningstid for rapporten efter forbrugsmetode og browsertype. På dette tidspunkt måler vi ydeevnen for den indledende rapportindlæsning, og den første side blev vist. Målingen starter, når der anmodes om en rapport, og slutter, når den seneste visualisering er færdig med gengivelse. Rapportinteraktioner, f.eks. udsnit, filtrering eller ændring af sider, er ikke inkluderet i målingerne for ydeevnen.  |
 | Rapportydeevne | Tendens for åbningstid | Tendens for åbningstid afspejler ændringer i ydeevnen for åbning af rapporten over tid. Åbningstiderne for rapporten for den første halvdel af den valgte tidsperiode sammenlignes med åbningstiderne for den anden halvdel. |
 | Rapportydeevne | Datoudsnit | Du kan ændre tidsperioden på siden Rapportydeevne, f.eks. for at beregne ugentlige tendenser eller tendenser for hver anden uge. I nederste venstre hjørne af siden Rapportydeevne kan du bestemme den tidligste og seneste dato, hvor forbrugsdata er tilgængelige for den valgte rapport. |
 | Rapportydeevne | Daglig ydeevne | Ydeevnen for 10 %, 50 % og 90 % af handlingerne for åbning af rapporten beregnet for hver enkelt dag. |

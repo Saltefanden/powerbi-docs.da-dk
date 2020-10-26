@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 04/02/2020
-ms.openlocfilehash: e0bdb5174c1392e1a2f81a101a62798f82e2b191
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 5df13baf295745f86c89ce75d2890ca2c13894ee
+ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91747706"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92049332"
 ---
 # <a name="tutorial-build-a-funnel-plot-from-r-script-to-r-visual"></a>Selvstudium: Byg en tragtformet afbildning fra R-script til R-visualisering
 I denne artikel beskrives det, hvordan du opretter en tragtformet afbildning ved hjælp af R-script i R-visualisering trin for trin.
@@ -49,7 +49,7 @@ Rediger derefter scriptet for at afspejle [dette script](https://github.com/micr
 
 ## <a name="create-an-r-powered-visual-and-package-in-r-code"></a>Opret et R-drevet visuelt element og en pakke i R-kode
 
-1. Før du begynder, skal du sørge for at [installere PBIVIZ-værktøjer](./custom-visual-develop-tutorial.md#installing-packages).
+1. Før du begynder, skal du sørge for at [installere PBIVIZ-værktøjer](./environment-setup.md#install-pbiviz).
 
 1. Kør følgende kommando for at oprette et nyt R-drevet visuelt element:
 
@@ -274,7 +274,7 @@ Da det resulterende visuelle element i PNG-format ikke reagerer på musemarkøre
 
 * Hver R-visualisering anvender `unique`-operatoren på dens inputtabel. Hvis du vil undgå, at identiske rækker fjernes, kan du overveje at tilføje et ekstra inputfelt med et entydigt ID og ignorere det i R-koden.   
 
-* Hvis du har en Power BI-konto, kan du bruge Power BI-tjenesten til at udvikle en visualisering [undervejs](./custom-visual-develop-tutorial.md) i stedet for at pakke dem ud med kommandoen `pbiviz package`.
+* Hvis du har en Power BI-konto, kan du bruge Power BI-tjenesten til at udvikle en visualisering [undervejs](./develop-circle-card.md) i stedet for at pakke dem ud med kommandoen `pbiviz package`.
 
 ### <a name="html-widgets-gallery"></a>Galleri med HTML-widgets
 Udforsk visuelle elementer i [galleriet med HTML-widgets](http://gallery.htmlwidgets.org/) til brug i det næste visuelle element. For at gøre tingene nemmere har vi oprettet et [lager med visuelle projekter](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/multipleRHTML) med mere end 20 interaktive HTML-visualiseringer, som du kan vælge imellem!
@@ -300,6 +300,6 @@ Udforsk visuelle elementer i [galleriet med HTML-widgets](http://gallery.htmlwid
 
 ## <a name="next-steps"></a>Næste trin
 
-Hvis du vil vide mere, kan du se yderligere selvstudier til [Power BI-visualiseringer](./custom-visual-develop-tutorial.md) og [R-visualiseringer](../../visuals/service-r-visuals.md).
+Hvis du vil vide mere, kan du se yderligere Power BI-selvstudier, [Udvikling af en Power BI-cirkelkortvisualisering](./develop-circle-card.md) og [R-visualiseringer](../../visuals/service-r-visuals.md).
 
 Få mere at vide om, hvordan du [udvikler og sender visuelle elementer](https://powerbi.microsoft.com/documentation/powerbi-developer-office-store/) til [Office Store (galleri)](https://store.office.com/appshome.aspx?ui=en-US&rs=en-US&ad=US&clickedfilter=OfficeProductFilter%3aPowerBI&productgroup=PowerBI), eller se flere eksempler i [R-script-fremvisning](https://community.powerbi.com/t5/R-Script-Showcase/bd-p/RVisuals)

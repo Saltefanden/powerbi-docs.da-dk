@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 06/25/2020
-ms.openlocfilehash: 0d52dd7df774dd834d0356e6de57b9c80beab801
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 41c7ba43d16b6d77ecf6324d3cd175dbbabc51a1
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91747614"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91983388"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-organization"></a>Selvstudium: Integrer sideinddelte Power BI-rapporter i et program til din organisation
 
@@ -58,11 +58,11 @@ Følg vejledningen i [Registrer et Microsoft Azure Active Directory-program, som
 >* Hent programhemmeligheden
 >* Anvend **Report.ReadAll**-tilladelser (område) på din app.
 
-### <a name="create-a-dedicated-capacity"></a>Opret en dedikeret kapacitet
+### <a name="create-a-capacity"></a>Opret kapacitet
 
-Når du opretter en dedikeret kapacitet, kan du drage fordel af at have en dedikeret ressource for indholdet i dit apparbejdsområde. I forbindelse med sideinddelte rapporter skal du som minimum understøtte dit apparbejdsområde med en P1-kapacitet. Du kan oprette en dedikeret kapacitet ved hjælp af [Power BI Premium ](../../admin/service-premium-what-is.md).
+Når du opretter en kapacitet, kan du drage fordel af at have en ressource for indholdet i dit apparbejdsområde. I forbindelse med sideinddelte rapporter skal du som minimum understøtte dit apparbejdsområde med en P1-kapacitet. Du kan oprette en kapacitet ved hjælp af [Power BI Premium ](../../admin/service-premium-what-is.md).
 
-I følgende tabel vises Power BI Premium SKU'er, der kan bruges til at oprette en dedikeret kapacitet til sideinddelte rapporter i [Microsoft Office 365](../../admin/service-admin-premium-purchase.md):
+I følgende tabel vises Power BI Premium SKU'er, der kan bruges til at oprette en kapacitet til sideinddelte rapporter i [Microsoft Office 365](../../admin/service-admin-premium-purchase.md):
 
 | Kapacitetsnode | Samlet antal vCores<br/>(back-end + front-end) | Back end-vCores | Front-end-vCores | Grænser for DirectQuery/liveforbindelser |
 | --- | --- | --- | --- | --- | --- |
@@ -75,7 +75,7 @@ I følgende tabel vises Power BI Premium SKU'er, der kan bruges til at oprette e
 
 ### <a name="enable-paginated-reports-workload"></a>Aktivér arbejdsbelastning for sideinddelte rapporter
 
-Du skal aktivere arbejdsbelastningen for sideinddelte rapporter på din dedikerede kapacitet.
+Du skal aktivere arbejdsbelastningen for sideinddelte rapporter på din kapacitet.
 
 1. Log på [Power BI > Administrationsportal > Kapacitetsindstillinger](https://app.powerbi.com/admin-portal/capacities).
 
@@ -91,17 +91,17 @@ Du skal aktivere arbejdsbelastningen for sideinddelte rapporter på din dedikere
 
     ![Arbejdsbelastning for sideinddelte rapporter](media/embed-paginated-reports-organization/paginated-reports-workload.png)
 
-### <a name="assign-an-app-workspace-to-a-dedicated-capacity"></a>Tildel et apparbejdsområde til en dedikeret kapacitet
+### <a name="assign-an-app-workspace-to-a-capacity"></a>Tildel et apparbejdsområde til en kapacitet
 
-Når du opretter en dedikeret kapacitet, kan du tildele dit apparbejdsområde til den dedikerede kapacitet. Gennemgå følgende trin for at udføre denne handling:
+Når du har oprettet en kapacitet, kan du tildele dit apparbejdsområde til kapaciteten. Gennemgå følgende trin for at udføre denne handling:
 
 1. Udvide arbejdsområder i Power BI-tjenesten, og vælge **Mere** for det arbejdsområde, du bruger til integrering af dit indhold. Vælg derefter **Indstillinger for arbejdsområde**.
 
     ![Rediger et arbejdsområde](media/embed-paginated-reports-organization/workspace-settings.png)
 
-2. Vælg **Premium**, og aktiver **Dedikeret kapacitet**. Vælg den dedikerede kapacitet, du har oprettet. Vælg derefter **Gem**.
+2. Vælg **Premium**, og aktivér **Kapacitet**. Vælg den kapacitet, du har oprettet. Vælg derefter **Gem**.
 
-    ![Tildel en dedikeret kapacitet](media/embed-paginated-reports-organization/dedicated-capacity.png)
+    ![Tildel en kapacitet](media/embed-paginated-reports-organization/capacity.png)
 
 3. Når du har valgt **Gem**, kan du se en rombe ud for navnet på apparbejdsområdet.
 

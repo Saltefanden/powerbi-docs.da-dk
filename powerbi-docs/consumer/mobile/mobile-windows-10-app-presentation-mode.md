@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 08/12/2020
 ms.author: painbar
-ms.openlocfilehash: 2a0c326902063759d10f49f3c5d745c22f477ec2
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: a47af4b96e80508a6ea21de2d8d3e0b40f907d8d
+ms.sourcegitcommit: 383d87841d2509131fac7cc02c5c37c6a868144f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91634797"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92025927"
 ---
 # <a name="view-reports-and-dashboards-in-presentation-mode-on-surface-hub-and-windows-10-devices"></a>Få vist rapporter og dashboards i præsentationstilstand på Surface Hub og Windows 10-enheder
 Du kan bruge præsentationstilstand til at vise rapporter og dashboards i fuld skærm på Windows 10-enheder og Surface Hub. Præsentationstilstand er praktisk til at vise Power BI på møder eller konferencer eller på en dedikeret projektor på kontoret. Du kan også bruge det for at se mest muligt på en lille skærm.
@@ -56,7 +56,7 @@ Du kan fradocke værktøjslinjen og trække den til en hvilken som helst placeri
 
 ## <a name="slideshows"></a>Slideshow
 
-Du kan afspille et slideshow for automatisk at gennemgå din præsentation. Du kan indstille slideshowet til at gennemgå sider, bogmærker eller både sider og bogmærker.
+Du kan afspille et slideshow for automatisk at gennemgå din præsentation. Du kan indstille slideshowet til at gennemgå sider, bogmærker eller både sider og bogmærker. Under slideshowet vil rapportsider med [automatisk sideopdatering](../../create-reports/desktop-automatic-page-refresh.md) fortsætte med automatisk opdatering som konfigureret, så det sikres, at de mest aktuelle data altid vises.
 
 Når du vælger knappen **Afspil** på handlingsværktøjslinjen, begynder slideshowet. Der vises en controller, som giver dig mulighed for at afbryde slideshowet midlertidigt eller ændre det, der afspilles: sider, bogmærker eller både sider og bogmærker.
 

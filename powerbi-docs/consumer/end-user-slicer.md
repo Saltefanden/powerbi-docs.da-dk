@@ -6,15 +6,15 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 04/06/2020
+ms.date: 10/06/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7e74bb6b2d3414e37924319016a0fab421dd096e
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: bbcac4eb3adf8fe47ff6576e15d8d1334a8c13f0
+ms.sourcegitcommit: d2f633b4bfa271051ba1d2ef0e6e8da7dcf42818
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87536095"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91830411"
 ---
 # <a name="slicers-in-the-power-bi-service"></a>Udsnitsværktøjer i Power BI-tjenesten
 
@@ -29,7 +29,7 @@ Et udsnit er en type visualisering, der filtrerer de andre visualiseringer på e
 Når *designere* opretter rapporter, tilføjer de udsnitsværktøjer for at fortælle en historie og give dig værktøjer til at udforske dine data.
 
 ### <a name="numeric-range-slicer"></a>Udsnitsværktøj til numerisk område
- Udsnitsværktøjet til numeriske områder hjælper dig med at udforske det samlede salg efter: geografi, enheder på lager og ordredato. Brug håndtagene til at vælge et interval. 
+ Udsnitsværktøjet til numeriske områder hjælper dig med at udforske kvantitative data som f.eks. det samlede salg efter: geografi, enheder på lager og ordredato. Brug håndtagene til at vælge et interval. 
 
 ![håndtagene til et intervaludsnit](media/end-user-slicer/power-bi-handles.png)
 

@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 4202d2c7e4c87f8085a04af9922cf7cc6c55fbfd
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 41ddc6e0c9a4f4f2c9b5687194e043bb1ef80bec
+ms.sourcegitcommit: 6b436f6ed872cbc040ed6e2d3ac089c08fc78daf
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860181"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928257"
 ---
 # <a name="single-sign-on-in-the-power-bi-mobile-windows-app"></a>Enkeltlogon i Power BI-mobilappen til Windows
 
@@ -21,7 +21,7 @@ Læs om enkeltlogon (SSO – Single Sign-On) i Power BI-mobilappen til Windows. 
 
 Da Power BI-appen til Windows er integreret i Azure Active Directory, kan du bruge din primære organisationskonto til både at logge på dine domænetilsluttede enheder og Power BI-tjenesten uden problemer. Hvis du får vist Power BI på en Windows-telefon, skal du sørge for, at den konto, du bruger til Power BI, er konfigureret som en arbejds- eller skolekonto i enhedsindstillingerne.  
 
-SSO er kun aktiveret for Windows-enheder, der administreres af Windows Azure Active Directory.
+SSO er kun aktiveret for Windows-enheder, der administreres af Azure Active Directory.
 
 >[!NOTE]
 >Understøttelse af Power BI-mobilapp til **telefoner, der bruger Windows 10 mobile**, ophører den 16. marts 2021. [Få mere at vide](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)

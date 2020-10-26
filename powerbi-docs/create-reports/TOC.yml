@@ -121,6 +121,8 @@
       items:
         - name: Power BI-rapporter
           items:
+            - name: Opret en rapport in tjenesten
+              href: service-report-create-new.md
             - name: Aktivér automatisk sideopdatering
               href: desktop-automatic-page-refresh.md
             - name: Undersøg rapportelementer med Effektivitetsanalyse
@@ -205,8 +207,12 @@
               href: desktop-grouping-visuals.md
             - name: Opret rapportskabeloner
               href: desktop-templates.md
-            - name: Opret en rapport ud fra et datasæt
-              href: service-report-create-new.md
+            - name: Skift rapportindstillinger
+              href: power-bi-report-settings.md
+            - name: Funktionsrapporter på andres startsider
+              href: ../collaborate-share/service-featured-content.md
+            - name: Lad brugerne tilpasse visualiseringer (eksempelvisning)
+              href: power-bi-personalize-visuals.md
             - name: Gem en rapport
               href: service-report-save.md
             - name: Interager med en rapport i redigeringsvisning

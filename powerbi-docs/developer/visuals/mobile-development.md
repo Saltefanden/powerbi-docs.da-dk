@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 03/12/2019
-ms.openlocfilehash: 99df7a301a1025d50c82c5cc7f5966325a6a6a6f
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: dca16fd29dc89fc2e67ce1e8f5c6abfc0adcb9a6
+ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91747522"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92049286"
 ---
 # <a name="how-to-create-mobile-friendly-power-bi-visuals"></a>Sådan opretter du mobilvenlige Power BI-visualiseringer
 Mobilforbruget spiller en afgørende rolle i Power BI. En af fordelene er, at du kan oprette forbindelse til dine data uanset tid og sted.
@@ -79,4 +79,4 @@ Power BI-visualiseringen skal kunne gengives på alle enheder, der understøtter
 Når du tester i forhold til de seneste modeller af Windows-, iOS- og Android-enheder, skal du overveje de fleste af disse kvalitetsaspekter.
 
 ## <a name="next-steps"></a>Næste trin
-Kom i gang ved at se [Selvstudium: Udvikling af en Power BI-visualisering](./custom-visual-develop-tutorial.md).
+Se [Udvikling af en Power BI-cirkelkortvisualisering](./develop-circle-card.md) for at komme i gang.

@@ -16,12 +16,12 @@ helpviewer_keywords:
 - Power BI APIs
 ms.custom: seodec18
 ms.date: 05/15/2019
-ms.openlocfilehash: 7c90093fefb98c6b385328e8dd207760e3207cbf
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 32fb26faa42f0ce6128a4a4cc0e491f78f270d36
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91746211"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91982188"
 ---
 # <a name="embedded-analytics-with-power-bi"></a>Integreret analyse med Power BI
 
@@ -82,9 +82,9 @@ En [tjenesteprincipal](embed-service-principal.md) kan integrere Power BI-indhol
 Udviklere, der bruger Power BI Embedded, kan fokusere på at udarbejde kernefunktionaliteten i deres program i stedet for at bruge tid på at udvikle visualiseringer og analyse. De kan hurtigt imødekomme kunders efterspørgsel på rapporter og dashboards og nemt integrere med fuldt dokumenterede API'er og SDK'er. ISV'er kan give kunder mulighed for at træffe hurtige databaserede beslutninger i kontekst fra enhver enhed ved at muliggøre intuitiv udforskning af data i deres apps.
 
 > [!IMPORTANT]
-> Selvom integrering kræver Power BI-tjenesten, behøver dine kunder ikke at have en Power BI-konto for at få vist det integrerede indhold i programmet. 
+> Selvom integrering kræver Power BI-tjenesten, behøver dine kunder ikke at have en Power BI-konto for at få vist det integrerede indhold i programmet.
 
-Når du er klar til at overgå til produktion, skal arbejdsområdet tildeles til en dedikeret kapacitet. Power BI Embedded i Microsoft Azure tilbyder [dedikeret kapacitet](azure-pbie-create-capacity.md), som du kan bruge til dine apps.
+Når du er klar til at overgå til produktion, skal arbejdsområdet tildeles til en kapacitet. [Opret en Power BI Embedded-kapacitet](azure-pbie-create-capacity.md) i Microsoft Azure, som du kan bruge til dine applikationer.
 
 I [Sådan integrerer du Power BI-indhold](embed-sample-for-customers.md) kan de se flere oplysninger om integrering.
 

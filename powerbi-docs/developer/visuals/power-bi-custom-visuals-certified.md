@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
 ms.date: 03/08/2020
-ms.openlocfilehash: 84c33cfc1d9163ff631c11d285b5441dd301578e
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 8dd6a33ab19e692d9dc04138d53b04e8e49da2bf
+ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91748120"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92049171"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>Få en Power BI-visualisering certificeret
 
@@ -170,11 +170,9 @@ Udrulning i AppSource er en proces, der kan tage et stykke tid. Din Power BI-vis
 
 ## <a name="next-steps"></a>Næste trin
 
-* Hvis du er webudvikler, der er interesseret i at oprette dine egne Power BI-visualiseringer og føje dem til  [Microsoft AppSource](https://appsource.microsoft.com), kan du starte med selvstudiet  [Udvikling af en Power BI-visualisering](custom-visual-develop-tutorial.md).
+* Hvis du er webudvikler, der er interesseret i at oprette dine egne Power BI-visualiseringer og føje dem til  [Microsoft AppSource](https://appsource.microsoft.com), kan du starte med selvstudiet  [Udvikling af en Power BI-cirkelkortvisualisering](develop-circle-card.md).
 
 * Du kan finde flere oplysninger om visualiseringer under [Ofte stillede spørgsmål om certificerede visualiseringer](power-bi-custom-visuals-faq.md#certified-power-bi-visuals).
-
-* [Udvikling af en Power BI-visualisering](custom-visual-develop-tutorial.md)
 
 * [Microsofts afspilningsliste for Power BI-visuals på YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)
 

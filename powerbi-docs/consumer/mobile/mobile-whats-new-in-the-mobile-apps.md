@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 08/12/2020
 ms.author: painbar
-ms.openlocfilehash: c8daa87bca6fb5ed47899f804c0710f58b559ff1
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: d2e229dda05c1761fdaa5c7336c0eca5db538e46
+ms.sourcegitcommit: 383d87841d2509131fac7cc02c5c37c6a868144f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860227"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92026042"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Hvad er nyt i mobilapps til Power BI
 Du kan finde relaterede oplysninger om nyheder under:
@@ -23,7 +23,21 @@ Du kan finde relaterede oplysninger om nyheder under:
 * [Nyheder i Power BI-tjenesten](../../fundamentals/service-whats-new.md)
 
 >[!NOTE]
->Understøttelse af Power BI-mobilapp til **telefoner, der bruger Windows 10 mobile**, ophører den 16. marts 2021. [Få mere at vide](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+>Understøttelsen af Power BI-mobilapp til **telefoner, der bruger Windows 10 Mobile**, ophører den 16. marts 2021. [Få mere at vide](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+
+## <a name="october-2020"></a>Oktober 2020
+### <a name="automatic-page-refresh-is-now-supported-windows"></a>Automatisk sideopdatering understøttes nu (Windows)
+
+Nu opdateres rapportsider, der er konfigureret med [automatisk sideopdatering](../../create-reports/desktop-automatic-page-refresh.md), automatisk i Power BI-appen til Windows-enheder. Og det betyder ikke kun i almindelig rapportvisning. Med automatisk sideopdatering vil dine [præsentationer og slideshows](mobile-windows-10-app-presentation-mode.md#slideshows) også blive opdateret i realtid, så det sikres, at du altid får vist de nyeste forretningsdata og indsigter.
+
+### <a name="support-for-notch-displays-ios"></a>Understøttelse af skærme med hak foroven (iOS)
+Vi har tilføjet understøttelse af skærme med hak foroven på iPhone og iPads, hvilket giver dig mere skærmplads til dine rapporter og dashboards. 
+
+## <a name="september-2020"></a>September 2020
+### <a name="power-bi-app-preview-for-hololens-2-is-out-in-the-stores"></a>Power BI-app (eksempelvisning) til HoloLens 2 er i butikkerne!
+
+Power BI-appen til HoloLens 2 giver dig en fuldstændig fængslende oplevelse. Ved hjælp af håndbevægelsessystemet i HoloLens 2 kan du få dine foretrukne rapporter og dashboards væk fra værktøjsbæltet, tilpasse størrelsen og placere dem rundt omkring på det sted, hvor du har brug for dem, og du kan også gennemse rapportens sider. Opdatering af rapporter og dashboards, mens du bruger appen, så hvis dataene ændres, vil ændringerne blive vist med det samme. Få mere at vide i vores [dokumentation](mobile-hololens2-app.md) og [blog](https://powerbi.microsoft.com/blog/power-bi-app-for-mixed-reality-now-available-for-hololens-2/)!
+
 
 ## <a name="august-2020"></a>August 2020
 ### <a name="weve-improved-how-you-navigate-to-your-content-ios-and-android"></a>Vi har forbedret den måde, du navigerer til dit indhold på (iOS og Android)

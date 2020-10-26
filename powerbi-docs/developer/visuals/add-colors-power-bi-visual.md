@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 03/27/2020
-ms.openlocfilehash: 3f3574545d82ac11c762b7011afdc49cbe855224
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 3a68f3dedbef9e97b6c29d3a0923d43872a5f01a
+ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83141163"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92048803"
 ---
 # <a name="add-colors-to-your-power-bi-visuals"></a>Føj farver til dine Power BI-visualiseringer
 
@@ -23,7 +23,7 @@ I denne artikel beskrives det, hvordan du kan føje farver til dine visualiserin
 Kodeeksemplet i denne artikel ændrer [SampleBarChart-visualiseringen](https://github.com/microsoft/PowerBI-visuals-sampleBarChart).
 Se [barChart.ts](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/master/src/barChart.ts) for at få kildekoden.
 
-Se [Udvikling af en Power BI-visualisering](custom-visual-develop-tutorial.md) for at komme i gang med at oprette visualiseringer.
+Se [Udvikling af en Power BI-cirkelkortvisualisering](develop-circle-card.md) for at komme i gang med at oprette visualiseringer.
 
 ## <a name="add-color-to-data-points"></a>Føj farve til datapunkter
 

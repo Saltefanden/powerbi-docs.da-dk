@@ -6,16 +6,16 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 08/13/2020
+ms.date: 10/09/2020
 ms.author: mihart
 ms.custom: licensing support, css_fy20Q4
 LocalizationGroup: Share your work
-ms.openlocfilehash: cbf4c242ef1bc3fe304e162a49d2d971677f463d
-ms.sourcegitcommit: 642b0c04d3ff3aa4d5422ca5054a5a158fb01b22
+ms.openlocfilehash: 15345c8ca7249c3a6bf4018a322a8ce3d78b9de3
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88512902"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91982076"
 ---
 # <a name="apps-in-power-bi"></a>Apps i Power BI
 
@@ -35,7 +35,7 @@ Hvis du vil se og åbne en app, er det nødvendigt med visse tilladelser. Modtag
 ## <a name="advantages-of-apps"></a>Fordele ved apps
 Apps er en nem måde for *designere* at dele forskellige typer indhold på samtidig. *Appdesignere* kan oprette dashboards og rapporter og samle dem i en app. *Designerne* deler eller publicerer derefter appen på en placering, hvor du, *virksomhedsbrugeren*, kan få adgang til den. Eftersom relaterede dashboards og rapporter er samlet, er det nemmere for dig at finde og installere den i Power BI-tjenesten ([https://powerbi.com](https://powerbi.com)) og på din mobilenhed. Når du har installeret en app, behøver du ikke huske navnene på mange forskellige dashboards eller rapporter, fordi de alle er samlet i én app, i webbrowseren eller på din mobilenhed.
 
-Med apps ser du automatisk ændringerne, hver gang appens forfatteren udgiver opdateringer. Forfatteren styrer også, hvor ofte dataene er planlagt til opdatering, så du ikke skal bekymre dig om at holde dem opdateret. 
+Med apps får du enten en notifikation eller du ser automatisk ændringerne, hver gang appens forfatteren udgiver opdateringer. Forfatteren styrer også, hvor ofte dataene er planlagt til opdatering, så du ikke skal bekymre dig om at holde dem opdateret. 
 
 <!-- add conceptual art -->
 ## <a name="get-a-new-app"></a>Hent en ny app
@@ -44,7 +44,7 @@ Der er flere forskellige måder at få en ny app på. Du kan søge efter, finde 
 ### <a name="find-and-install-apps-from-the-power-bi-apps-marketplace"></a>Find og installer apps på markedspladsen for Power BI-apps
 Én måde at finde apps på er at vælge **Hent app** på skærmen **Apps** i Power BI. 
 
-![Skærmbillede af skærmen Apps, der viser ikonet Hent apps](./media/end-user-apps/power-bi-get-apps-icon.png)
+![Skærmbillede af skærmen Apps, der viser ikonet Hent apps](./media/end-user-apps/power-bi-get-apps-button.png)
 
 Gennemse listen over apps på markedspladsen for Power BI-apps, indtil du finder en, du vil installere. Vælg mellem **organisationsapps**, som kun er tilgængelige for medarbejdere i din virksomhed, eller **skabelonapps**, der udgives af Microsoft og community'et, så de kan installeres af alle Power BI-brugere. 
 
@@ -59,7 +59,7 @@ Der er andre måder at hente apps på. Nogle af disse måder er angivet nedenfor
 
 Dine apps er organiseret på **appindholdslisten**. Du skal blot vælge **Apps** for at få vist dine apps. Peg på en app for at få vist datoen for den seneste opdatering og ejeren. 
 
-![Apps i Power BI](./media/end-user-apps/power-bi-apps-red.png)
+![Apps i Power BI](./media/end-user-apps/power-bi-apps.png)
 
 
 ## <a name="next-steps"></a>Næste trin

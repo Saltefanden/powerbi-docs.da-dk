@@ -8,16 +8,16 @@ ms.service: powerbi
 ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
 ms.date: 07/14/2020
-ms.openlocfilehash: 891f4d57e1c2754f4c98916b2824ef2283d8298a
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 55661d8faa39d26d19d15696252cf46b74c84a50
+ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91747959"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92049424"
 ---
 # <a name="publish-power-bi-visuals-to-partner-center"></a>Publicer Power BI-visualiseringer i Partnercenter
 
-Når du har oprettet en Power BI-visualisering, kan du publicere den i AppSource, så andre kan finde og bruge den. Du kan finde flere oplysninger om, hvordan du opretter en Power BI-visualisering, under [Udvikling af en Power BI-visualisering](custom-visual-develop-tutorial.md).
+Når du har oprettet en Power BI-visualisering, kan du publicere den i AppSource, så andre kan finde og bruge den. Du kan finde flere oplysninger om, hvordan du opretter en Power BI-visualisering, under [Udvikling af en Power BI-cirkelkortvisualisering](develop-circle-card.md).
 
 ## <a name="what-is-appsource"></a>Hvad er AppSource?
 
@@ -119,7 +119,7 @@ Når du har oprettet din visualisering, kan du vælge at få den [certificeret](
 
 ## <a name="next-steps"></a>Næste trin
 
-* [Udvikling af en brugerdefineret visualisering i Power BI](custom-visual-develop-tutorial.md)
+* [Udvikling af en Power BI-cirkelkortvisualisering](develop-circle-card.md)
 
 * [Visualiseringer i Power BI](../../visuals/power-bi-report-visualizations.md)  
 

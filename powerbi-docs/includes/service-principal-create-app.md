@@ -7,12 +7,12 @@ ms.author: kesharab
 ms.topic: include
 ms.date: 05/20/2020
 ms.custom: include file
-ms.openlocfilehash: 0fe3e1743cb8853d6626b59b748d70bfcc292dbd
-ms.sourcegitcommit: cd64ddd3a6888253dca3b2e3fe24ed8bb9b66bc6
+ms.openlocfilehash: 80886eab6de6c125d0361b326f5d31d2b3bb35e5
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84315760"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91524510"
 ---
 1. Log på [Microsoft Azure](https://ms.portal.azure.com/#allservices).
 
@@ -33,4 +33,4 @@ ms.locfileid: "84315760"
 
 6. Efter registrering er *program-id'et* tilgængeligt via fanen **Oversigt**. Kopiér og gem *program-id'et* til senere brug.
 
-    ![program-id](media/embedded-service-principal/application-id.png)
+    ![Skærmbillede, der viser, hvor du kan få vist et program-id under fanen Oversigt.](media/embedded-service-principal/application-id.png)

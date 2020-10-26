@@ -5,17 +5,17 @@ author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-admin
+ms.subservice: powerbi-premium
 ms.topic: conceptual
 ms.date: 07/28/2020
 ms.custom: licensing support
 LocalizationGroup: Premium
-ms.openlocfilehash: 7f90840284c5b17a118b414db606902789657b7a
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 7c81f3b624de0692d597cfb6c79f2159a6133593
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90854684"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91599003"
 ---
 # <a name="what-is-power-bi-premium"></a>Hvad er Power BI Premium?
 
@@ -30,7 +30,7 @@ Du kan bruge Power BI Premium til at hente dedikerede og forbedrede ressourcer t
 > * Del data med alle uden at købe en licens pr. bruger
 
 
-![Administrationsportal](media/service-premium-what-is/premium-admin-portal.png) 
+![Skærmbillede, der viser Power BI-administrationsportalen.](media/service-premium-what-is/premium-admin-portal.png) 
 
 I denne artikel introduceres vigtige funktioner i Power BI Premium. Hvor det er nødvendigt, leveres der links til flere artikler med mere detaljerede oplysninger. Du kan finde flere oplysninger om Power BI Pro og Power BI Premium i afsnittet _Sammenligning af Power BI-funktioner_ under [Power BI-priser](https://powerbi.microsoft.com/pricing/).
 
@@ -139,11 +139,11 @@ Globale administratorer eller administratorer af Power BI-tjenesten kan oprette 
 
 Når der oprettes kapaciteter, udføres de fleste administrative opgaver på [administrationsportalen](service-admin-portal.md).
 
-![Administrationsportal](media/service-premium-what-is/premium-admin-portal.png)
+![Skærmbillede, der viser Power BI-administrationsportalen med Mit arbejdsområde valgt.](media/service-premium-what-is/premium-admin-portal.png)
 
 Kapacitetsadministratorer kan tildele arbejdsområder til kapaciteten, administrere brugertilladelser og tildele andre administratorer. Kapacitetsadministratorer kan også konfigurere arbejdsbelastninger, justere hukommelsesallokeringer og om nødvendigt genstarte en kapacitet, hvilket medfører nulstilling af handlinger, hvis en kapacitet overbelastes.
 
-![Administrationsportal](media/service-premium-what-is/premium-admin-portal-mgmt.png)
+![Skærmbillede, der viser kapacitetsstyring på Power BI-administrationsportalen.](media/service-premium-what-is/premium-admin-portal-mgmt.png)
 
 Kapacitetsadministratorer kan også sikre, at en kapacitet kører, som den skal. De kan overvåge kapacitetens tilstand direkte via administrationsportalen eller ved hjælp af programmet Premium Capacity Metrics.
 
@@ -155,7 +155,7 @@ Overvågning af Premium-kapaciteter giver administratorer en forståelse af, hvo
 
 Overvågning på portalen giver et hurtigt overordnet overblik over målepunkter og angiver belastninger, der er placeret, og de ressourcer, der er brugt af din kapacitet. Det vises som et gennemsnit for de seneste syv dage. 
 
-![Administrationsportal](media/service-premium-what-is/premium-admin-portal-health.png)
+![Skærmbillede, der viser kapacitetstilstand i Power BI-administrationsportalen.](media/service-premium-what-is/premium-admin-portal-health.png)
 
 Programmet **Power BI Premium Capacity Metrics** giver de mest detaljerede oplysninger om ydeevnen af dine kapaciteter. Programmet indeholder et overordnet dashboard og mere detaljerede rapporter.
 

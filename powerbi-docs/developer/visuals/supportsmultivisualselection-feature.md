@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 04/30/2020
-ms.openlocfilehash: 6ad986308fb82f8191829d29654bb96b55d0fbd0
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 091bdeb4eeb4c979ccf0e79476eb081895fae2e1
+ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83272689"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92049401"
 ---
 # <a name="use-the-supportsmultivisualselection-feature"></a>Brug af funktionen supportsMultiVisualSelection
 
@@ -45,4 +45,4 @@ Hvis du vil bruge funktionen `supportsMultiVisualSelection`, skal du føje følg
 
 Du kan få mere at vide om Power BI-koncepter i [Visualiseringer i Power BI](power-bi-visuals-concept.md).
 
-Hvis du vil prøve Power BI-udvikling, kan du se [Udvikling af en Power BI-visualisering](custom-visual-develop-tutorial.md).
+Hvis du vil prøve Power BI-udvikling, kan du se [Udvikling af et Power BI-cirkelkort](develop-circle-card.md).

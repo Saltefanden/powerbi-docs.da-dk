@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/16/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: ec0c4cf9e719615489cbba5929f329e6f4f58826
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 8ec7b228f17fc87dcaac6ae5e278dd2c99ab036d
+ms.sourcegitcommit: 59d07be9c3e4a2067f6d42c3002a194371bc4341
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91634521"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92116632"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Streaming i realtid i Power BI
 Power BI med streaming i realtid gør dig i stand til at streame data og opdatere dashboards i realtid. Alle visuelle elementer eller dashboards, der er oprettet i Power BI, kan også vise og opdatere data og visuelle elementer i realtid. Enhederne og kilderne til streamingdata kan være sensorer på fabrikker, sociale medier, forbrugsdata for tjenester eller mange andre tidsfølsomme dataindsamlere eller dataafsendere.
@@ -159,6 +159,9 @@ Hvis du ønsker, at Power BI skal lagre dataene, der sendes via denne datastream
 Når du har oprettet dit datastream, får du et URL-slutpunkt til REST-API'en, som programmet kan kalde ved hjælp af *POST*-anmodninger om at pushoverføre dataene til det Power BI-**streamingdatasæt**, du har oprettet.
 
 Når du foretager *POST*-anmodninger, skal du kontrollere, at anmodningens indhold matcher eksemplet på JSON, der er leveret af Power BI-brugergrænsefladen. Du kan f.eks. ombryde dine JSON-objekter i en matrix.
+
+> [!WARNING]
+> For streaming af datasæt, der er oprettet ved hjælp af brugergrænsefladen i Power BI-tjenesten, modtager ejeren af datasættet en URL-adresse, som indeholder en **ressourcenøgle**. Denne nøgle godkender anmoderen om at sende data til datasættet uden at bruge et ihændehavertoken til Azure AD OAuth, så vær opmærksom på konsekvenserne af at have en **hemmelig nøgle** i URL-adressen, når du arbejder med denne type datasæt og metode.
 
 ### <a name="using-pubnub"></a>Brug PubNub
 Med integration af **PubNub**-streaming med Power BI kan du bruge dine **PubNub**-datastrømme med lav ventetid (eller oprette nye) og bruge dem i Power BI. Når du vælger **PubNub** og derefter vælger **Næste**, ser du følgende vindue:

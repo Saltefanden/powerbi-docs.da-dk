@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 03/02/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 63acae99f0abd4fc91f4ae51b33786a3e01093ea
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: c05cb79d0996ad1819f0145193760ab16a031ffb
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85226013"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91526714"
 ---
 # <a name="manage-your-workspace-in-power-bi-and-microsoft-365"></a>Administrer dit arbejdsområde i Power BI og Microsoft 365
 
@@ -42,7 +42,7 @@ Du skal bruge en [Power BI Pro-licens](../fundamentals/service-features-license-
 
 1. I Power BI-tjenesten skal du vælge pilen ud for **Arbejdsområder** > vælge **Flere indstillinger** (...) ud for navnet på dit arbejdsområde > **Rediger dette arbejdsområde**.
 
-   ![Rediger arbejdsområder i Power BI](media/service-manage-app-workspace-in-power-bi-and-office-365/power-bi-app-ellipsis.png)
+   ![Skærmbillede, der viser Power BI Home med Arbejdsområder valgt og Rediger dette arbejdsområde valgt fra menuen Flere indstillinger.](media/service-manage-app-workspace-in-power-bi-and-office-365/power-bi-app-ellipsis.png)
 
    > [!NOTE]
    > Du kan kun se **Rediger dette arbejdsområde**, hvis du er administrator af arbejdsområdet.
@@ -61,7 +61,7 @@ Du kan også redigere aspekter af et arbejdsområde direkte i Outlook til Micros
 
 1. I Power BI-tjenesten skal du vælge pilen ud for **Arbejdsområder** > og vælge **Flere indstillinger** (…) ud for navnet på dit arbejdsområde > **Medlemmer**.
 
-   ![Rediger arbejdsområder i Power BI](media/service-manage-app-workspace-in-power-bi-and-office-365/power-bi-app-ellipsis-members.png)
+   ![Skærmbillede, der viser Power BI Home med Arbejdsområder valgt og Medlemmer valgt fra menuen Flere indstillinger.](media/service-manage-app-workspace-in-power-bi-and-office-365/power-bi-app-ellipsis-members.png)
 
    Dette åbner gruppevisningen i Outlook til Microsoft 365 af dit arbejdsområde. Du skal muligvis logge på din firmakonto.
 

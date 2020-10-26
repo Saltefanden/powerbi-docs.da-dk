@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 08/12/2020
 ms.author: painbar
-ms.openlocfilehash: bdea7bbadc9e974e6b71122775408f50cfe33de3
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 47f1db75eb3923c1c4195a319323c3a37d17484e
+ms.sourcegitcommit: 383d87841d2509131fac7cc02c5c37c6a868144f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90855949"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92026069"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Udforsk rapporter i Power BI-mobilappsene
 Gælder for:
@@ -156,6 +156,25 @@ Når en bogmærkevisning af en rapport er åben, vises navnet på bogmærket øv
 
 [Få mere at vide om bogmærker i Power BI-tjenesten](../end-user-bookmarks.md).
 
+## <a name="refresh-your-data"></a>Opdater dine data
+
+Hvis du ikke er sikker på, om du får vist de nyeste data, kan du trække nye data ned til din rapport fra Power BI-tjenesten:
+
+* På iOS-enheder og Android-tablets kan du trække lidt ned fra toppen til bunden på rapportsiden.
+* På Android-telefoner kan du enten bruge handlingen med at trække ned eller en opdateringsknap, afhængigt af hvordan du har konfigureret den i [interaktionsindstillingerne](mobile-app-interaction-settings.md).
+* På Windows-enheder skal du bruge knappen Opdater øverst til højre på skærmen.
+
+    Rapportsider, der har [automatisk opdatering af sider](../../create-reports/desktop-automatic-page-refresh.md), opdateres automatisk som konfigureret (kun Windows-app).
+
+>[!NOTE]
+>Ovenstående opdateringsmetoder opdaterer ikke det underliggende datasæt. De opdaterer i stedet den rapport, du får vist i mobilappen, med nye data, der kan være i Power BI.
+
+### <a name="how-do-i-know-when-my-report-was-last-refreshed"></a>Hvordan ved jeg, hvornår min rapport senest blev opdateret?
+
+Tryk på rapportens overskrift for at finde ud af, hvornår din rapport sidst blev opdateret. Navigationstræet til rapporten vises, herunder dato og klokkeslæt for seneste opdatering. 
+
+![Skærmbillede af oplysninger om rapportopdatering på mobil-app.](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-refresh-info.png)
+ 
 ## <a name="configure-your-experience-with-reports"></a>Konfigurer din oplevelse med rapporter
 Power BI-mobilappen har en række indstillinger, som du kan bruge til at styre din rapportvisning. Du kan i øjeblikket konfigurere
 * **Interaktion med rapportvisualiseringer**: Du kan vælge at bruge interaktion med enten enkelt tryk eller dobbelttryk.

@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 07/08/2020
-ms.openlocfilehash: 893becbcfc7d58b04bbff2819baed4bbc829fe9d
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.date: 10/19/2020
+ms.openlocfilehash: 2a0490106d5954a57abea1dd5de61f26f2fe2377
+ms.sourcegitcommit: eab5a02520c421a57019595c03e9ecfdb41d52ad
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91526668"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92257006"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Sideinddelte rapporter i Power BI: Ofte stillede spørgsmål 
 
@@ -178,6 +178,12 @@ Ja, du kan nu søge efter dine sideinddelte rapporter fra Hjem.  Du kan også se
 Det er noget, du skal huske på, når du arbejder med dato/klokkeslæt-felter i sideinddelte rapporter.
 
 - Der er i øjeblikket nogen globaliseringsbegrænsninger, der er knyttet til dato/klokkeslæt-parametre. Alle parametre for dato/klokkeslæt i Power BI-tjenesten hentes i amerikansk format (MM/DD/ÅÅÅÅ), uanset hvordan du designer dato/klokkeslæt i Power BI Report Builder.
+
+Når du får vist sideinddelte rapporter i Power BI-tjenesten, kan der opstå timeout for sessioner, der præsenterer brugeren med følgende meddelelse:
+
+:::image type="content" source="media/paginated-reports-faq/expired-session-notification.png" alt-text="Sideinddelte rapporter under fanen Kapacitetsindstillinger":::
+
+- Sessionen får timeout efter 60 minutter med inaktivitet eller tidligere, når enheden er låst eller inaktiv, eller når rapporten ikke vises på den aktive fane i browseren.
 
 ## <a name="next-steps"></a>Næste trin
 

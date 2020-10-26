@@ -1,5 +1,5 @@
 ---
-title: Generér automatisk dataindsigt med Power BI
+title: Generér automatisk dataindsigt i dit datasæt
 description: Find ud af, hvordan du kan få indsigt i datasæt og dashboardfelter.
 author: maggiesMSFT
 ms.reviewer: ''
@@ -8,29 +8,29 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 08/06/2019
+ms.date: 09/28/2020
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 5523c08b81a129bab70f1c087e8895dedf83621f
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 79148389a697feb2a3d2e2cba0b919eb59632ff7
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85221086"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91524460"
 ---
-# <a name="generate-data-insights-automatically-with-power-bi"></a>Generér automatisk dataindsigt med Power BI
-Har du et nyt datasæt, og er du ikke helt sikker på, hvor du skal starte?  Har du brug for hurtigt at oprette et dashboard?  Vil du hurtigt søge efter indsigter, som du måske gik glip af?
+# <a name="generate-data-insights-on-your-dataset-automatically-with-power-bi"></a>Generér automatisk dataindsigt i dit datasæt med Power BI
+Har du et nyt datasæt, og er du ikke sikker på, hvor du skal starte?  Har du brug for hurtigt at oprette et dashboard?  Vil du hurtigt søge efter indsigter, som du måske gik glip af?
 
-Kør Quick Insights for at oprette interessante interaktive visualiseringer, der er baseret på dine data. Quick Insights kan køres på et helt datasæt (hurtig indsigt) eller på et bestemt dashboardfelt (områdebaseret indsigt). Du kan endda køre indsigter på en indsigt!
+Kør hurtig indsigt for at generere interessante visualiseringer, der er baseret på dine data. I denne artikel forklares det, hvordan du kan køre hurtig indsigt på et helt datasæt (hurtig indsigt). Du kan også køre [hurtig indsigt på et bestemt dashboardfelt](../consumer/end-user-insights.md) (begrænset indsigt). Du kan endda køre indsigter på en indsigt!
 
 > [!NOTE]
 > Insights fungerer ikke med DirectQuery. Det fungerer kun med data, der er uploadet til Power BI.
 > 
 
-Funktionen Quick Insights er baseret på et voksende [sæt avancerede analytiske algoritmer](../consumer/end-user-insight-types.md), der er udviklet sammen med Microsoft Research, som vi vil fortsætte med at bruge for at gøre det muligt for flere personer at finde indsigter i deres data på nye og intuitive måder.
+Vi har bygget indsigtsfunktionen i et voksende [sæt avancerede analysealgoritmer](../consumer/end-user-insight-types.md), som vi udviklede med Microsoft Research. Vi bruger fortsat disse algoritmer til at hjælpe flere personer med at få indsigt i deres data på nye og intuitive måder. Du vil måske også være interesseret i at lære, hvordan du [optimerer dine data til hurtig indsigt](service-insights-optimize.md).
 
 ## <a name="run-quick-insights-on-a-dataset"></a>Kør Quick Insights på et datasæt
-Se Amanda køre Quick Insights på et datasæt, åbne en indsigt i Fokustilstand, fastgøre en af disse indsigter som et felt på sit dashboard og derefter få indsigter for et dashboardfelt.
+Se, hvordan Amanda kører hurtig indsigt i et datasæt, og åbn en indsigt i fokustilstand. Amanda fastgør en indsigt som et felt på dashboardet og får derefter indsigt i et dashboardfelt.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/et_MLSL2sA8" frameborder="0" allowfullscreen></iframe>
 
@@ -76,23 +76,13 @@ Nu er det din tur. Udforsk Insights ved hjælp af [Eksempel på analyse af lever
      
        ![Få indsigt-ikon](media/service-insights/pbi-autoinsights-tile.png)
      
-     Indsigterne vises til venstre, og nye kort, som udelukkende er baseret på dataene i den enkelte indsigt, vises til højre.
+     Indsigten vises til venstre. Nye kort, som udelukkende er baseret på dataene i den enkelte indsigt, vises til højre.
      
        ![Indsigt i indsigt](media/service-insights/power-bi-insights-on-insights-new.png)
 4. Vælg **Afslut Fokustilstand** øverst til venstre, hvis du vil vende tilbage til det oprindelige indsigtslærred.
 
-## <a name="run-insights-on-a-dashboard-tile"></a>Kør indsigt på et dashboardfelt
-I stedet for at søge efter indsigt i et helt datasæt kan du begrænse din søgning og foretage en områdebaseret indsigt for de data, der er brugt til at oprette et enkelt dashboardfelt. 
-
-1. Åbn et dashboard.
-2. Peg på et felt. vælg **Flere indstillinger** (...), og vælg derefter **Vis indsigt**. Feltet åbnes i [Fokustilstand](../consumer/end-user-focus.md) med indsigtskortene vist langs højre.    
-   
-    ![Fokustilstand](media/service-insights/pbi-insights-tile.png)    
-3. Er der en indsigt, der vækker din interesse? Vælg indsigtskortet for at udforske mere. Den valgte indsigt vises til venstre, og nye indsigtskort, som udelukkende er baseret på dataene i den enkelte indsigt, vises til højre.    
-4. Fortsæt med udforske dine data, og når du finder en interessant indsigt, kan du fastgøre den til dit dashboard ved at vælge **Fastgør din visual** fra øverste højre hjørne.
-
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 - Hvis du ejer et datasæt, [kan du optimere det til Hurtig indsigt](service-insights-optimize.md).
 - Få mere at vide om de [tilgængelige typer Hurtig indsigt](../consumer/end-user-insight-types.md).
 
-Har du flere spørgsmål? [Prøv Power BI-community'et](https://community.powerbi.com/).
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/).

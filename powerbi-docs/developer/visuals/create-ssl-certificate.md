@@ -8,18 +8,18 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 05/08/2020
-ms.openlocfilehash: 8eeca13acb1568a671618dca75d20cb7667b538b
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: f6f458d2fe82668074d7cfb046cb5a72afa35c38
+ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91747545"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92048780"
 ---
 # <a name="create-an-ssl-certificate"></a>Opret et SSL-certifikat
 
 I denne artikel beskrives det, hvordan du opretter og installerer SSL-certifikater (Secure Sockets Layer) til Power BI-visualiseringer.
 
-I forbindelse med Windows-, macOS X- og Linux-procedurerne skal **PBIVIZ**-pakken Power BI Visual Tools være installeret. Du kan finde flere oplysninger under [Konfigurer udviklermiljøet](./custom-visual-develop-tutorial.md#setting-up-the-developer-environment). 
+I forbindelse med Windows-, macOS X- og Linux-procedurerne skal **PBIVIZ**-pakken Power BI Visual Tools være installeret. Du kan få flere oplysninger under [Konfigurer dit miljø til udvikling af en Power BI-visualisering](./environment-setup.md). 
 
 ## <a name="create-a-certificate-on-windows"></a>Opret et certifikat i Windows
 
@@ -31,7 +31,7 @@ pbiviz --install-cert
 
 I Windows 7 kræver `pbiviz`-værktøjet, at OpenSSL-værktøjet er tilgængeligt fra kommandolinjen. Du installerer OpenSSL ved at gå til [OpenSSL](https://www.openssl.org) eller [OpenSSL Binaries](https://wiki.openssl.org/index.php/Binaries).
 
-Du kan finde flere oplysninger og instruktioner til installation af et certifikat under [Opret og installér et certifikat til Windows](./custom-visual-develop-tutorial.md#windows).
+Du kan finde flere oplysninger og instruktioner til installation af et certifikat under [Opret og installér et certifikat til Windows](./environment-setup.md#create-and-install-a-certificate).
 
 ## <a name="create-a-certificate-on-macos-x"></a>Opret et certifikat i macOS X
 
@@ -58,7 +58,7 @@ Når du har installeret OpenSSL-værktøjet, skal du køre følgende kommando fo
 pbiviz --install-cert
 ```
 
-Du kan finde flere oplysninger og instruktioner under [Opret og installér et certifikat til OS X](./custom-visual-develop-tutorial.md#osx).
+Du kan finde flere oplysninger og instruktioner under fanen OSX i [Opret og installér et certifikat](./environment-setup.md#create-and-install-a-certificate).
 
 ## <a name="create-a-certificate-on-linux"></a>Opret et certifikat i Linux
 
@@ -199,6 +199,6 @@ Hvis PFX-certifikatfilen kræver et adgangsudtryk:
     ```
 
 ## <a name="next-steps"></a>Næste trin
-- [Udvikling af en Power BI-visualisering](custom-visual-develop-tutorial.md)
+- [Udvikling af en Power BI-cirkelkortvisualisering](develop-circle-card.md)
 - [Eksempler på Power BI-visualiseringer](samples.md)
 - [Publicer Power BI-visualiseringer i AppSource](office-store.md)

@@ -7,16 +7,16 @@ ms.service: powerbi
 ms.subservice: powerbi-consumer
 Ms.custom: css_fy20Q4
 ms.topic: how-to
-ms.date: 09/17/2020
+ms.date: 10/07/2020
 ms.author: mihart
 ms.custom: licensing support
 LocalizationGroup: consumers
-ms.openlocfilehash: bfa2faaa95c58541e44dd858f8d544d06d86ba25
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: 2b0bde7aa193af831a95fc53d461f874a3c1d1d1
+ms.sourcegitcommit: d2f633b4bfa271051ba1d2ef0e6e8da7dcf42818
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91527929"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91830342"
 ---
 # <a name="licenses-and-subscriptions-for-business-users"></a>Licenser og abonnementer til *forretningsbrugere*
 
@@ -51,8 +51,16 @@ I disse arbejdsområder tildeler designere roller, f.eks. **Seer**, **Bidragyder
 Du kan finde flere oplysninger om Premium-kapacitet under [Hvad er Microsoft Power BI Premium?](../admin/service-premium-what-is.md)
 
 ## <a name="find-out-which-licenses-you-have"></a>Find ud af, hvilke licenser du har
+Vælg dit profilbillede for at få vist kontooplysninger. Zalan bruger en gratis licens. 
 
-Besøg [din Microsoft-side **Min konto**](https://portal.office.com/account) for at se, hvilke licenser der er tildelt dig.  Vælg fanen **Abonnementer**.
+![Skærmbillede af rullemenu, der vises, når du klikker på dit profilbillede](media/end-user-license/power-bi-profiles.png)
+
+
+Hvis du vil have vist flere oplysninger om din konto, skal du vælge **Vis konto**. Siden [Din Microsoft **Min konto**](https://portal.office.com/account) åbnes i en ny fane i browseren.  Her kan du se, hvilke licenser der er tildelt til dig.  Vælg fanen **Abonnementer**.
+
+![Skærmbillede, der viser siden Microsoft 365-konti.](media/end-user-license/power-bi-subscriptions.png)
+
+
 
 
 Den første bruger, Pradtanna, har Office 365 E5, som omfatter en Power BI Pro-licens.
@@ -95,7 +103,7 @@ Når en organisation køber et Premium-abonnement, tildeler administratoren norm
 
 |Licenstype  |Delt kapacitet |Dedikeret Premium-kapacitet  |
 |---------|---------|---------|
-|**Gratis**     |  Bruges som en personlig sandkasse, hvor du opretter indhold til dig selv og interagerer med dette indhold. En gratislicens er en god måde at prøve Power BI-tjenesten på. Du kan ikke bruge indhold fra andre eller dele dit indhold med andre <sup>1</sup>     |   Interagerer med indhold, der er tildelt en dedikeret kapacitet og delt med dig. Brugere af den gratis version og Pro-brugere kan samarbejde, uden at det kræves, at brugerne af den gratis version har Pro-konti.      |
+|**Gratis**     |  Bruges som en personlig sandkasse, hvor du opretter indhold til dig selv og interagerer med dette indhold. En gratislicens er en god måde at prøve Power BI-tjenesten på. Du kan ikke bruge indhold fra andre eller dele dit indhold med andre <sup>1</sup>     |   Mulighed for at interagere med indhold, der er tildelt en dedikeret Premium-kapacitet og delt med dig. Brugere af den gratis version og Pro-brugere kan samarbejde, uden at det kræves, at brugerne af den gratis version har Pro-konti.      |
 |**Pro**     |  Mulighed for at samarbejde med andre Pro-brugere ved at oprette og dele indhold.        |  Mulighed for at samarbejde med brugere af den gratis version og Pro-brugere ved at oprette og dele indhold.       |
 
 
@@ -125,7 +133,7 @@ Power BI Pro-*designeren* kan dele og samarbejde med andre Pro-brugere i et hvil
 
 - <sup>1</sup> En gratis brugerlicens til Power BI-tjenesten er perfekt til dem, der vil udforske tjenesten eller bruge den til personlige dataanalyser og visualiseringer ved hjælp af **Mit arbejdsområde**. En separat bruger af den gratis version bruger ikke Power BI til at samarbejde med kolleger. Separate brugere med gratis licenser kan ikke få vist indhold, der deles med andre, eller dele deres eget indhold med andre Power BI-brugere.
 
-    ![billede af separate brugere](media/end-user-license/power-bi-free-license.jpg)
+
 
 ## <a name="next-steps"></a>Næste trin
 

@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/04/2020
-ms.openlocfilehash: 7a93260aab9d8195478949ea8044378ea5cfae83
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 9a38533e76fec134d667ae4026258a2a3c07f410
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91746395"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91983108"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Selvstudium: Integrer Power BI-indhold i en app til din organisation
 
@@ -375,13 +375,13 @@ function updateEmbedReport() {
 }
 ```
 
-## <a name="using-a-power-bi-premium-dedicated-capacity"></a>Ved brug af en dedikeret kapacitet fra Power BI Premium
+## <a name="using-a-power-bi-premium-capacity"></a>Brug af en Power BI Premium-kapacitet
 
-Nu, hvor du er færdig med at udvikle dit program, er tiden kommet til at underbygge dit arbejdsområde med en dedikeret kapacitet.
+Nu, hvor du er færdig med at udvikle dit program, er tiden kommet til at underbygge dit arbejdsområde med en kapacitet.
 
-### <a name="create-a-dedicated-capacity"></a>Opret en dedikeret kapacitet
+### <a name="create-a-capacity"></a>Opret kapacitet
 
-Når du opretter en dedikeret kapacitet, kan du drage fordel af at have en dedikeret ressource for indholdet i dit arbejdsområde. I forbindelse med sideinddelte rapporter skal du som minimum understøtte dit arbejdsområde med en P1-kapacitet. Du kan oprette en dedikeret kapacitet ved hjælp af [Power BI Premium ](../../admin/service-premium-what-is.md).
+Når du opretter en kapacitet, kan du drage fordel af at have en ressource for indholdet i dit arbejdsområde. I forbindelse med sideinddelte rapporter skal du som minimum understøtte dit arbejdsområde med en P1-kapacitet. Du kan oprette en kapacitet ved hjælp af [Power BI Premium ](../../admin/service-premium-what-is.md).
 
 I tabellen nedenfor kan du se en oversigt over de Power BI Premium-varenumre, der er tilgængelige i [Microsoft 365](../../admin/service-admin-premium-purchase.md):
 
@@ -400,17 +400,17 @@ I tabellen nedenfor kan du se en oversigt over de Power BI Premium-varenumre, de
 > - Når du forsøger at integrere med Microsoft Office-apps, kan du bruge EM-SKU'er til at få adgang til indhold med en gratis Power BI-licens. Men du kan ikke få adgang til indhold med en gratis Power BI-licens, når du bruger Powerbi.com eller Power BI – Mobil.
 > - Når du forsøger at integrere med Microsoft Office-apps ved hjælp af Powerbi.com eller Power BI – Mobil, kan du få adgang til indhold med en gratis Power BI-licens.
 
-### <a name="assign-a-workspace-to-a-dedicated-capacity"></a>Tildel et arbejdsområde til en dedikeret kapacitet
+### <a name="assign-a-workspace-to-a-capacity"></a>Tildel et arbejdsområde til en kapacitet
 
-Når du har oprettet en dedikeret kapacitet, kan du tildele dit arbejdsområde til den dedikerede kapacitet. Gennemgå følgende trin for at udføre denne handling:
+Når du har oprettet en kapacitet, kan du tildele dit arbejdsområde til kapaciteten. Gennemgå følgende trin for at udføre denne handling:
 
 1. I Power BI-tjenesten skal du udvide arbejdsområder og vælge ellipsen for det arbejdsområde, du bruger til integrering af dit indhold. Vælg derefter **Rediger arbejdsområder**.
 
     ![Rediger et arbejdsområde](media/embed-sample-for-your-organization/embed-sample-for-your-organization-036.png)
 
-2. Udvid **Avanceret**, og aktiver **Dedikeret kapacitet**. Vælg den dedikerede kapacitet, du har oprettet. Vælg derefter **Gem**.
+2. Udvid **Avanceret**, og aktivér **Kapacitet**. Vælg den kapacitet, du har oprettet. Vælg derefter **Gem**.
 
-    ![Tildel en dedikeret kapacitet](media/embed-sample-for-your-organization/embed-sample-for-your-organization-024.png)
+    ![Tildel en kapacitet](media/embed-sample-for-your-organization/embed-sample-for-your-organization-024.png)
 
 3. Når du har valgt **Gem**, kan du se en rombe ud for navnet på arbejdsområdet.
 

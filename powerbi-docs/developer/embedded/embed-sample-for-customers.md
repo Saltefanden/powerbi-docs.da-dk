@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 06/02/2020
-ms.openlocfilehash: 6ba5cd95f3e8b788ca7ee8939dff6616c5610573
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 9af0edbe63841f6fb0e0de2e628784c89a5e44f1
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91746625"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91983361"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Selvstudium: Integrer Power BI-indhold i en app til dine kunder
 
@@ -401,16 +401,16 @@ Her er et eksempel, der anvender modellen **EmbedConfig** og modellen **TileEmbe
 
 ## <a name="move-to-production"></a>Flyt til produktion
 
-Nu, hvor du er færdig med at udvikle dit program, er tiden kommet til at underbygge dit arbejdsområde med en dedikeret kapacitet. 
+Nu, hvor du er færdig med at udvikle dit program, er tiden kommet til at underbygge dit arbejdsområde med en kapacitet.
 
 > [!Important]
-> Dedikeret kapacitet er påkrævet for at flytte til produktionen. Alle arbejdsområder (dem, der indeholder rapporter eller dashboards, og dem, der indeholder datasættene) skal være tildelt en kapacitet.
+> En kapacitet er påkrævet for at flytte til produktionen. Alle arbejdsområder (dem, der indeholder rapporter eller dashboards, og dem, der indeholder datasættene) skal være tildelt en kapacitet.
 
-### <a name="create-a-dedicated-capacity"></a>Opret en dedikeret kapacitet
+### <a name="create-a-capacity"></a>Opret kapacitet
 
-Når du opretter en dedikeret kapacitet, kan du drage fordel af at have en dedikeret ressource for din kunde. Du kan vælge mellem to kapacitetstyper:
+Når du opretter en kapacitet, kan du drage fordel af at have en ressource for din kunde. Du kan vælge mellem to kapacitetstyper:
 * **Power BI Premium** – Et Office 356-abonnement på lejerniveau, der er tilgængeligt i to SKU-serier, *EM* og *P*. Når du integrerer Power BI-indhold, kaldes denne løsning for *integrering i Power BI*. Du kan finde flere oplysninger om dette abonnement under [Hvad er Power BI Premium?](../../admin/service-premium-what-is.md)
-* **Azure Power BI Embedded** – du kan købe en dedikeret kapacitet på [Microsoft Azure-portalen](https://portal.azure.com). Dette abonnement bruger *A*-SKU'erne. Du kan finde flere oplysninger om, hvordan du opretter en kapacitet til Power BI Embedded, under [Opret kapacitet til Power BI Embedded på Azure-portalen](azure-pbie-create-capacity.md).
+* **Azure Power BI Embedded** – Du kan købe en kapacitet på [Microsoft Azure-portalen](https://portal.azure.com). Dette abonnement bruger *A*-SKU'erne. Du kan finde flere oplysninger om, hvordan du opretter en kapacitet til Power BI Embedded, under [Opret kapacitet til Power BI Embedded på Azure-portalen](azure-pbie-create-capacity.md).
 > [!NOTE]
 > Med A-SKU'er kan du ikke få adgang til Power BI-indhold med en GRATIS Power BI-licens.
 
@@ -428,30 +428,30 @@ I nedenstående tabel beskrives ressourcerne og begrænsningerne for hver SKU. H
 
 ### <a name="development-testing"></a>Udviklingstest
 
-I forbindelse med udviklingstest kan du bruge integrerede prøveversionstokens med en Pro-licens. Brug en dedikeret kapacitet for at integrere i et produktionsmiljø.
+I forbindelse med udviklingstest kan du bruge integrerede prøveversionstokens med en Pro-licens. Brug en kapacitet for at integrere i et produktionsmiljø.
 
 Det antal prøveversionstokens til integrering, som en Power BI-tjenesteprincipal eller hovedkonto kan generere, er begrænset. Brug API'en [Tilgængelige funktioner](/rest/api/power-bi/availablefeatures/getavailablefeatures) til at kontrollere procentdelen af dit aktuelle integrerede forbrug. Forbrugsmængden vises pr. tjenesteprincipal eller hovedkonto.
 
-Hvis du løber tør for integreringstokens under test, skal du købe en Power BI Embedded- eller Premium-[kapacitet](embedded-capacity.md). Der er ingen grænse for, hvor mange integreringstokens du kan generere med en dedikeret kapacitet.
+Hvis du løber tør for integreringstokens under test, skal du købe en Power BI Embedded- eller Premium-[kapacitet](embedded-capacity.md). Der er ingen grænse for, hvor mange integreringstokens du kan generere med en kapacitet.
 
 
-### <a name="assign-a-workspace-to-a-dedicated-capacity"></a>Tildel et arbejdsområde til en dedikeret kapacitet
+### <a name="assign-a-workspace-to-a-capacity"></a>Tildel et arbejdsområde til en kapacitet
 
-Når du har oprettet en dedikeret kapacitet, kan du tildele dit arbejdsområde til den dedikerede kapacitet.
+Når du har oprettet en kapacitet, kan du tildele dit arbejdsområde til kapaciteten.
 
-Alle arbejdsområder, der indeholder Power BI-ressourcer, som er relateret til det integrerede indhold (herunder datasæt, rapporter og dashboards), skal tildeles til dedikerede kapaciteter. Hvis en integreret rapport og det datasæt, der er bundet til det, f.eks. er placeret i forskellige arbejdsområder, skal begge arbejdsområder tildeles til dedikerede kapaciteter.
+Alle arbejdsområder, der indeholder Power BI-ressourcer, som er relateret til det integrerede indhold (herunder datasæt, rapporter og dashboards), skal tildeles til kapaciteter. Hvis en integreret rapport og det datasæt, der er bundet til det, f.eks. er placeret i forskellige arbejdsområder, skal begge arbejdsområder tildeles til kapaciteter.
 
-Hvis du vil tildele en dedikeret kapacitet til et arbejdsområde ved hjælp af en [tjenesteprincipal](embed-service-principal.md), skal du bruge [REST API'er til Power BI](/rest/api/power-bi/capacities/groups_assigntocapacity). Når du bruger REST API'er til Power BI, skal du sørge for at bruge [objekt-id'et for tjenesteprincipalen](embed-service-principal.md).
+Hvis du vil tildele en kapacitet til et arbejdsområde ved hjælp af en [tjenesteprincipal](embed-service-principal.md), skal du bruge [REST API'en til Power BI](/rest/api/power-bi/capacities/groups_assigntocapacity). Når du bruger REST API'er til Power BI, skal du sørge for at bruge [objekt-id'et for tjenesteprincipalen](embed-service-principal.md).
 
-Følg nedenstående trin for at tildele en dedikeret kapacitet til et arbejdsområde ved hjælp af en **masterkonto**.
+Følg nedenstående trin for at tildele en kapacitet til et arbejdsområde ved hjælp af en **masterkonto**.
 
 1. I **Power BI-tjenesten** skal du udvide arbejdsområder og vælge ellipsen for det arbejdsområde, du bruger til at integrere dit indhold i. Vælg derefter **Rediger arbejdsområder**.
 
     ![Rediger arbejdsområde](media/embed-sample-for-customers/embed-sample-for-customers-036.png)
 
-2. Udvid **Avanceret**, aktivér derefter **Dedikeret kapacitet**, og vælg derefter den dedikerede kapacitet, du har oprettet. Vælg derefter **Gem**.
+2. Udvid **Avanceret**, aktivér derefter **Kapacitet**, og vælg derefter den kapacitet, du har oprettet. Vælg derefter **Gem**.
 
-    ![Tildel dedikeret kapacitet](media/embed-sample-for-customers/embed-sample-for-customers-024.png)
+    ![Tildel kapacitet](media/embed-sample-for-customers/embed-sample-for-customers-024.png)
 
 3. Når du har valgt **Gem**, kan du se en **rombe** ud for navnet på arbejdsområdet.
 

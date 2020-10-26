@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/10/2019
-ms.openlocfilehash: ea7eaf8f7fc36ee1b9dc987ee571dc29dc5b222f
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 09489c3dbb33e1c5fb289cc1cc132eae0083a95f
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91748902"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91981729"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Sikkerhed på rækkeniveau med Power BI Embedded
 
@@ -195,7 +195,7 @@ Hvis du kalder REST-API'en, kan du tilføje brugerdefinerede data i hver enkelt 
 
 Her er trinnene, så du kan begynde at konfigurere funktionen CustomData() med dit Power BI Embedded-program.
 
-1. Opret din Azure Analysis Services-database. Log på din Azure Analysis Services-server via [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017).
+1. Opret din Azure Analysis Services-database. Log på din Azure Analysis Services-server via [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms).
 
     ![Opret en Azure Analysis Services-database](media/embedded-row-level-security/azure-analysis-services-database-create.png)
 
@@ -217,7 +217,7 @@ Her er trinnene, så du kan begynde at konfigurere funktionen CustomData() med d
 
     ![Opret rolle – angiv rækkefiltre](media/embedded-row-level-security/azure-analysis-services-database-create-role-row-filters.png)
 
-6. Byg en PBI-rapport, og publicer den i et arbejdsområde med dedikeret kapacitet.
+6. Byg en PBI-rapport, og publicer den i et arbejdsområde med kapacitet.
 
     ![Eksempel på PBI-rapport](media/embedded-row-level-security/rls-sample-pbi-report.png)
 
@@ -261,7 +261,7 @@ Det kan bruges til at administrere visningen af hver enkelt bruger i Azure SQL e
 
 Sådanne problemer med eksisterende identiteter gælder for RLS-regler direkte på Azure SQL Server. Power BI Embedded bruger det angivne adgangstoken ved forespørgsler om data fra Azure SQL Server. UPN'et for brugerne (som adgangstokenet blev angivet for) er tilgængeligt som et resultat af funktionen USER_NAME() SQL.
 
-Den tokenbaserede identitet gælder kun for DirectQuery-modeller på dedikeret kapacitet, som er forbundet med en Azure SQL Database, der er konfigureret til at tillade AAD-godkendelse ([få mere at vide om AAD-godkendelse til Azure SQL Database](/azure/sql-database/sql-database-manage-logins)). Datasættets datakilde skal konfigureres til at bruge slutbrugernes OAuth2-legitimationsoplysninger for at bruge en tokenbaseret identitet.
+Den tokenbaserede identitet gælder kun for DirectQuery-modeller på en kapacitet, som er forbundet med en Azure SQL Database, der er konfigureret til at tillade AAD-godkendelse ([få mere at vide om AAD-godkendelse til Azure SQL Database](/azure/sql-database/sql-database-manage-logins)). Datasættets datakilde skal konfigureres til at bruge slutbrugernes OAuth2-legitimationsoplysninger for at bruge en tokenbaseret identitet.
 
    ![Konfigurer Azure SQL Server](media/embedded-row-level-security/token-based-configure-azure-sql-db.png)
 
@@ -342,7 +342,7 @@ Du kan ikke angive denne tilladelse ved hjælp af administrationsportalen. Denne
 
 ### <a name="token-based-identity-limitations"></a>Begrænsninger for tokenbaseret identitet
 
-* Du kan kun bruge RLS, hvis du har en dedikeret kapacitet.
+* Du kan kun bruge RLS, hvis du har en kapacitet.
 * RLS fungerer ikke sammen med SQL Server i det lokale miljø.
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

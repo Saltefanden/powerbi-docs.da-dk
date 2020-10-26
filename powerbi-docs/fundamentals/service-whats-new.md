@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/14/2020
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: a36c377a7faf82e6aeb544859b72ac973305a3b3
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 0f4b84067389e93de0e5c5c2b5008b08cd78151f
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860158"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91525196"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheder i Power BI-tjenesten
 Kontrollér denne side for at læse om kendte problemer og nyudgivne funktioner i **Power BI-tjenesten**. Du kan finde relaterede oplysninger om nyheder under:
@@ -80,7 +80,7 @@ Du kan også få mere at vide om nyheder og funktioner på YouTube-kanalerne.
 * Send meddelelser om opdatering til andre.
 * [Testværktøj](https://powerbi.microsoft.com/blog/power-bi-premium-know-what-your-premium-capacity-can-handle/) til Power BI Premium-kapaciteter.
 * Offentlig prøveversion af [meddelelser om tilgængelighed af tjeneste](https://powerbi.microsoft.com/blog/power-bi-introduces-service-availability-notifications/).
-* Offentlig prøveversion af [Nyt udseende](https://powerbi.microsoft.com/blog/introducing-the-new-look-for-power-bi-service/) til Power BI-rapporter.
+* Offentlig prøveversion af [Nyt udseende](https://powerbi.microsoft.com/blog/introducing-the-new-look-of-workspaces-in-the-power-bi-service/) til Power BI-rapporter.
 * Nyt Power BI-område i Sydafrika.
 
 ### <a name="june-2019"></a>Juni 2019
@@ -312,7 +312,7 @@ Du kan få alle detaljerne ved at [besøge Power BI-teamets blog](https://powerb
 
 ***Sikkerhed på rækkeniveau (RLS)***
 
-* Understøttelse af Azure Active Directory (AAD): Brugerne kan nu tildele AAD-grupper (sikkerhedsgrupper og distributionslister) til en rolle. Det gør det lettere at tildele roller til en stor gruppe af brugere på én gang.
+* Gruppesupport af Azure Active Directory (Azure AD): Brugerne kan nu tildele Microsoft Azure AD-grupper (sikkerhedsgrupper) til en rolle. Det gør det lettere at tildele roller til en stor gruppe af brugere på én gang.
 * [Test dine RLS-roller med rapporter, der understøttes af data, der har RLS implementeret](../admin/service-admin-rls.md#validate-the-roles-within-power-bi-desktop): Vi har tilføjet en funktion i vores RLS-prøveversion, som du kan bruge til at teste dit datasæt som en bestemt rolle. Dette sikrer, at rollen fungerer som forventet, før nogen brugere får fingrene i dit dashboard.
 * Definer og anvend RLS på cloudmodeller, der er baseret på direkte forespørgsler: Du kan nu oprette og anvende RLS-regler for datakilder, der er baseret på direkte forespørgsler.
 
@@ -646,7 +646,7 @@ Se [bloggen](https://powerbi.microsoft.com/blog/power-bi-service-weekly-update-1
 * Med denne uges tjenesteopdatering kan du, når du opretter nye rapporter, nu vælge mellem flere sidestørrelser samt definere din egen sidestørrelse. Dette størrelsen og højde-bredde-forholdet for hver side i rapporten.
 * Vi har tilføjet yderligere understøttelse af formatering af visuelle elementer for billeder og boblediagrammer. Du kan låse størrelsesforholdet under tilpasning af billeder for at undgå billedforvrængning, og bobler i punktdiagrammer kan konfigureres til at være udfyldt eller ej.
 * I dag sender Power BI delingsinvitationer til en alternativ mailadresse. Når et dashboard deles med dig, sender vi invitationslinket både til din oprindelige mailadresse og til din alternative mailadresse (hvis du har konfigureret en).
-* Power BI er tilgængeligt for alle kunder, herunder dem på Microsoft 365-arkitekturen Dedicated on Multitenant (DonMT). Du kommer til at bruge Power BI som en delt tjeneste i en tilstand med flere lejere. I de fleste tilfælde kan du tilmelde dig Power BI ved at følge den simple [selvbetjente tilmeldingsproces](https://powerbi.microsoft.com/) – du skal blot angive din arbejdsmailadresse og angive dit navn og en adgangskode for at komme i gang. Hvis du er lejeradministrator, kan du tildele dine brugere licenser ved at følge vejledningen [her](/microsoft-365/admin/add-users/add-users?redirectSourcePath=%252fen-us%252farticle%252fAssign-or-unassign-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
+* Power BI er tilgængeligt for alle kunder, herunder dem på Microsoft 365-arkitekturen Dedicated on Multitenant (DonMT). Du kommer til at bruge Power BI som en delt tjeneste i en tilstand med flere lejere. I de fleste tilfælde kan du tilmelde dig Power BI ved at følge den simple [selvbetjente tilmeldingsproces](https://powerbi.microsoft.com/) – du skal blot angive din arbejdsmailadresse og angive dit navn og en adgangskode for at komme i gang. Hvis du er licensadministrator, kan du tildele dine brugere licenser ved at følge vejledningen [her](/microsoft-365/admin/add-users/add-users?redirectSourcePath=%252fen-us%252farticle%252fAssign-or-unassign-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
 * Azure Audit Logs giver dig mulighed at få vist driftslogge fra control-plane i dit Azure-abonnement. Power BI Azure Audit Logs-indholdspakken kan hjælpe dig med nemt at analysere og visualisere det hav af oplysninger, der findes i disse logge. Indholdspakken gør det muligt at oprette forbindelse til dine data og begynde at få indsigt med køreklare dashboards og rapporter. Læs vores [blog](https://powerbi.microsoft.com/blog/monitor-azure-audit-logs-with-power-bi/) og [onlinedokumentation](../connect-data/service-connect-to-services.md) for at få mere at vide.
 
 [Få mere at vide på vores blog](https://powerbi.microsoft.com/blog/power-bi-weekly-service-update-0929/).

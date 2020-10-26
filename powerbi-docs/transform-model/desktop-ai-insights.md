@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 06/10/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 7439eff964340d3eba20b5d67d2aec992394505f
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 48e8788ca81365e1f46dbe6d3c4804c10f3f308a
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860089"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91525495"
 ---
 # <a name="use-ai-insights-in-power-bi-desktop"></a>Brug AI-indsigter i Power BI Desktop
 
@@ -199,13 +199,13 @@ Disse instruktioner til generering af skemaet ved opdatering af postscriptet ska
 
 Du kan kalde en hvilken som helst Azure Machine Learning-model, som du har fået adgang til, direkte fra Power Query Editor. Hvis du vil have adgang til Azure Machine Learning-modeller, skal du vælge knappen **Azure Machine Learning** på båndet **Hjem** eller **Tilføj kolonne** i Power Query Editor.
 
-![Azure Machine Learning](media/desktop-ai-insights/ai-insights-06.png)
+![Skærmbillede, der viser knappen Azure Machine Learning i Power Query-editor.](media/desktop-ai-insights/ai-insights-06.png)
 
 Alle Azure Machine Learning-modeller, du har adgang til, er angivet her som funktioner i Power Query. Inputparametrene for Azure Machine Learning-modellen er også automatisk tilknyttet som parametre for den tilsvarende funktion i Power-forespørgsel.
 
 For at aktivere en Azure Machine Learning-model kan du angive en af den valgte enheds kolonner som input på rullelisten. Du kan også angive en konstant værdi, der skal bruges som input, ved at slå kolonneikonet til venstre for inputdialogboksen til og fra.
 
-![Azure Machine Learning](media/desktop-ai-insights/ai-insights-07.png)
+![Skærmbillede, der viser Azure Machine Learning-modeller, du kan vælge.](media/desktop-ai-insights/ai-insights-07.png)
 
 Vælg **OK** for at få vist Azure Machine Learning-modellens output som en ny kolonne i enhedstabellen. Du får også modelaktiveringen som et anvendt trin for forespørgslen.
 

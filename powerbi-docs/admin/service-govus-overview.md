@@ -10,12 +10,12 @@ ms.date: 09/23/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Get started
-ms.openlocfilehash: eecc36377ab79e4af4ea7882c24f4eb5a6e376c7
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: 45d89fe7a224d56e710765e533a7c075c24b8a66
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91524621"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91981498"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI til US Government-kunder
 
@@ -84,9 +84,9 @@ Godkendelse, identitet og administration for Power BI afhænger af forbindelsen 
 | CDN (Content Delivery Network) | **GCC**: gov.content.powerapps.us |
 | | **GCC High**: high.content.powerapps.us |
 | | **DoD**: mil.content.powerapps.us |
-| Microsoft 365-integration | **GCC**: [Globale slutpunkter](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges) |
-| | **GCC High**: [US Government GCC High-slutpunkter](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints) |
-| | **DoD**: [US Government DOD-slutpunkter](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints) |
+| Microsoft 365-integration | **GCC**: [Globale slutpunkter](/microsoft-365/enterprise/urls-and-ip-address-ranges) |
+| | **GCC High**: [US Government GCC High-slutpunkter](/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints) |
+| | **DoD**: [US Government DOD-slutpunkter](/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints) |
 | Portal |**GCC**: *.powerbigov.us |
 | | **GCC-High**: *.high.powerbigov.us |
 | | **DoD**: *.mil.powerbigov.us |
@@ -107,7 +107,7 @@ Azure er fordelt på flere cloudmiljøer. Du kan som standard aktivere firewallr
 
 Hvis du vil have adgang til cloud-IP-intervallerne for US Government, skal du downloade filen [Azure IP Ranges and Service Tags – US Government Cloud](https://www.microsoft.com/download/details.aspx?id=57063). der vises intervaller for både Power BI og Power Query.
 
-Du kan finde flere oplysninger om Microsoft Azure Government-cloudtjenester under [Azure Government-dokumentation](https://docs.microsoft.com/azure/azure-government/).
+Du kan finde flere oplysninger om Microsoft Azure Government-cloudtjenester under [Azure Government-dokumentation](/azure/azure-government/).
 
 Hvis du vil konfigurere firewalls for SQL-databaser, skal du følge fremgangsmåden for at [oprette og administrere IP-firewallregler](/azure/sql-database/sql-database-firewall-configure#create-and-manage-ip-firewall-rules).
 
@@ -123,7 +123,6 @@ Følgende tabel indeholder en liste over de funktioner, der ikke er tilgængelig
 |[Integrer i SharePoint Online ved hjælp af Power BI-webdelen](/sharepoint/dev/spfx/web-parts/overview-client-side-web-parts)|![tilgængelig](../media/yes.png)|![Tilgængelig](../media/yes.png)|![ikke tilgængelig](../media/no.png)|
 |[Power Automate-forbindelse til datadrevne underretninger](../connect-data/power-bi-data-sources.md)|![tilgængelig](../media/yes.png)|![tilgængelig](../media/yes.png)|![ikke tilgængelig](../media/no.png)|
 |[Fanen Power BI i Teams](../collaborate-share/service-collaborate-microsoft-teams.md)<sup>2</sup>|![tilgængelig](../media/yes.png)|![ikke tilgængelig](../media/no.png)|![ikke tilgængelig](../media/no.png)|
-|[Målepunkter for kapacitet](../admin/service-admin-premium-monitor-portal.md)|3\. kvartal 2020 |3\. kvartal 2020|3\. kvartal 2020|
 |[Store modeller](service-premium-large-models.md) | 4\. kvartal 2020 |4\. kvartal 2020| ![ikke tilgængelig](../media/no.png) |
 |[Dataflow – SQL Compute-programoptimering](../transform-model/service-dataflows-enhanced-compute-engine.md) | 4\. kvartal 2020 |4\. kvartal 2020| ![ikke tilgængelig](../media/no.png) |
 |[Dataflow – -direkte forespørgsel](../transform-model/service-dataflows-directquery.md) | 4\. kvartal 2020 |4\. kvartal 2020|![ikke tilgængelig](../media/no.png)|
@@ -131,6 +130,7 @@ Følgende tabel indeholder en liste over de funktioner, der ikke er tilgængelig
 |[Data beskyttelse (MIP-mærkater)](service-security-sensitivity-label-overview.md)|4\. kvartal 2020|4\. kvartal 2020 |4\. kvartal 2020|
 |[Skabelonapps](../connect-data/service-template-apps-overview.md)<sup>3</sup>|4\. kvartal 2020 |4\. kvartal 2020| 4\. kvartal 2020|
 |[Brugerdefinerede visualiseringer](../developer/visuals/power-bi-custom-visuals.md)<sup>3</sup>|4\. kvartal 2020 |4\. kvartal 2020| 4\. kvartal 2020|
+|[Foretag et kald til kvalitetsdata-connector](/microsoftteams/cqd-power-bi-connector)|![ikke tilgængelig](../media/no.png)|![ikke tilgængelig](../media/no.png)|![ikke tilgængelig](../media/no.png)|
 |[QR-kodeoprettelse](../create-reports/service-create-qr-code-for-tile.md)|![ikke tilgængelig](../media/no.png)|![ikke tilgængelig](../media/no.png)|![ikke tilgængelig](../media/no.png)|
 
 <sup>1</sup> Selvom B2B Collaboration er tilgængelig til GCC, skal der udstedes en licens til eksterne brugere i dette miljø. Kommercielle cloudlicenser er ikke gyldige i GCC. Du kan finde flere oplysninger om kendte begrænsninger med B2B Collaboration til US Government ved at [sammenligne Azure Government og global Azure](/azure/azure-government/compare-azure-government-global-azure#azure-active-directory-premium-p1-and-p2)

@@ -10,12 +10,12 @@ ms.reviewer: ''
 ms.cunstom: ''
 ms.date: 09/16/2019
 LocalizationGroup: Get started
-ms.openlocfilehash: d845cde571679355fd50560a154358885f981db0
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 9e83d8689564471365666f9b4adfe2c3b9d1c05e
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85225499"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91526737"
 ---
 # <a name="get-started-with-third-party-apps"></a>Kom i gang med tredjepartsapps
 
@@ -58,4 +58,4 @@ På webstedet **Mine apps i Office 365** kan du tilbagekalde tilladelser fra tre
 
 3. Hold musemarkøren over appfeltet, klik på knappen **(...)** , og klik på **Fjern**.
 
-   ![Fjern](media/service-power-bi-get-started-third-party-apps/remove.png)
+   ![Skærmbillede, der viser indstillingen Fjern for at tilbagekalde tilladelser fra tredjepart.](media/service-power-bi-get-started-third-party-apps/remove.png)

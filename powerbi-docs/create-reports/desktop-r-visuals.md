@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 11/04/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 65291c81ab1952599079ff93ed4ed19694657132
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 96d33351ba1f0d96cac71548854c94810cfdc692
+ms.sourcegitcommit: 6b436f6ed872cbc040ed6e2d3ac089c08fc78daf
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239069"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928280"
 ---
 # <a name="create-power-bi-visuals-using-r"></a>Opret Power BI-visualiseringer ved hjælp af R
 Med Power BI Desktop kan du bruge *R* til at visualisere dine data. [R](https://mran.revolutionanalytics.com/documents/what-is-r) er et sprog og et miljø til statistisk databehandling og grafik.
@@ -129,6 +129,8 @@ R-visualiseringer i Power BI Desktop har følgende begrænsninger:
 
 * Datastørrelser: De data, der bruges af R-visualiseringen til afbildning, er begrænset til 150.000 rækker. Hvis der er valgt flere end 150.000 rækker, bruges kun de øverste 150.000 rækker, og der vises en meddelelse på billedet.
 
+* Outputstørrelse: R-visualiseringen har en grænse for outputstørrelsen på 2 MB.
+
 * Opløsning: Alle R-visualiseringer vises ved 72 DPI.
 
 * Afbildningsenhed: Kun afbildning til standardenheden understøttes. 
@@ -151,4 +153,4 @@ R-visualiseringer i Power BI Desktop har følgende begrænsninger:
 Du kan finde flere oplysninger om R i Power BI i følgende artikler:
 
 * [Kørsel af R-scripts i Power BI Desktop](../connect-data/desktop-r-scripts.md)
-* [Brug en ekstern R-IDE med Power BI](../connect-data/desktop-r-ide.md)
+* [Brug et eksternt R IDE med Power BI](../connect-data/desktop-r-ide.md)

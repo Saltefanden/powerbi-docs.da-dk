@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 03/03/2020
-ms.openlocfilehash: 9158dfccecd42d13a133a49097b2f85cb3713f00
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 23f58c047eeb47fce24ad38ae54d8f4d7a1c57e7
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91746740"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91983039"
 ---
 # <a name="capacity-planning-in-power-bi-embedded-analytics"></a>Kapacitetsplanlægning i Power BI Embedded-analyser
 
@@ -27,11 +27,11 @@ Nogle af de ting, du skal tage højde for, når du planlægger din kapacitet, er
 * Dataopdateringshastigheder.
 * Yderligere forbrugsmønstre, der er vanskelige at forudsige.
 
-Denne artikel har til formål at lette kapacitetsplanlægningen i forbindelse med Power BI Embedded-analyser ved at introducere [værktøj til evaluering af arbejdsbelastning for dedikerede kapaciteter i Power BI](https://github.com/microsoft/PowerBI-Tools-For-Capacities/tree/master/LoadTestingPowerShellTool/), der er udviklet til automatisering af belastningstest for kapaciteter til Power BI Embedded-analyser (*A-* , *EM-* eller *P*-SKU'er).
+Denne artikel har til formål at lette kapacitetsplanlægningen i forbindelse med Power BI Embedded-analyser ved at introducere [værktøj til evaluering af arbejdsbelastning for kapaciteter i Power BI](https://github.com/microsoft/PowerBI-Tools-For-Capacities/tree/master/LoadTestingPowerShellTool/), der er udviklet til automatisering af belastningstest for kapaciteter til Power BI Embedded-analyser (*A-* , *EM-* eller *P*-SKU'er).
 
 ## <a name="planning-tool"></a>Planlægningsværktøj
 
- [Værktøjet til evaluering af arbejdsbelastning for dedikerede kapaciteter i Power BI](https://github.com/microsoft/PowerBI-Tools-For-Capacities/tree/master/LoadTestingPowerShellTool/) kan hjælpe dig med at forstå, hvor meget brugerbelastning din kapacitet kan håndtere. Værktøjet gør brug af PowerShell til at oprette automatiserede belastningstest i forhold til dine kapaciteter, og du kan vælge, hvilke rapporter der skal testes, og hvor mange samtidige brugere der skal simuleres.
+ [Værktøjet til evaluering af arbejdsbelastning for kapaciteter i Power BI](https://github.com/microsoft/PowerBI-Tools-For-Capacities/tree/master/LoadTestingPowerShellTool/) kan hjælpe dig med at forstå, hvor meget brugerbelastning din kapacitet kan håndtere. Værktøjet gør brug af PowerShell til at oprette automatiserede belastningstest i forhold til dine kapaciteter, og du kan vælge, hvilke rapporter der skal testes, og hvor mange samtidige brugere der skal simuleres.
 
 Værktøjet opretter belastning på en kapacitet ved løbende at gengive hver rapport med nye filterværdier (for at forhindre en realistisk god ydeevne, der skyldes cachelagring af rapporten), indtil det token, der kræves for at godkende værktøjet i forhold til tjenesten, udløber.
 

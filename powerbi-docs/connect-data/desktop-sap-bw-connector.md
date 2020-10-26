@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 01/13/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: db5c8b77851ccd35c5f8ccddf5e6587eb1383518
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 1b3250124fa813f3da96e63455d483cf05f01cb6
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85223020"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91598845"
 ---
 # <a name="use-the-sap-business-warehouse-connector-in-power-bi-desktop"></a>Brug af SAP BW Connector (Business Warehouse) i Power BI Desktop
 
@@ -147,19 +147,19 @@ Det er kun muligt at ændre eksisterende rapporter til at bruge Implementation 2
 
     Find ud af, om forespørgslen allerede indeholder en post med indstillinger som i eksemplet nedenfor:
 
-    ![forespørgselstykke](media/desktop-sap-bw-connector/sap_bw_9.png)
+    ![Skærmbillede, der viser en PlainText-forespørgsel med en post med indstillinger.](media/desktop-sap-bw-connector/sap_bw_9.png)
 
     Hvis det er tilfældet, skal du tilføje indstillingen `Implementation` 2.0 og fjerne indstillingen `ScaleMeasures`, hvis den findes, som vist:
 
-    ![forespørgselstykke](media/desktop-sap-bw-connector/sap_bw_10.png)
+    ![Skærmbillede, der viser en PlainText-forespørgsel med den tilføjede værdiimplementering = 2.0.](media/desktop-sap-bw-connector/sap_bw_10.png)
 
     Hvis forespørgslen ikke allerede indeholder en post med indstillinger, skal du tilføje den. For følgende indstilling:
 
-    ![forespørgselstykke](media/desktop-sap-bw-connector/sap_bw_11.png)
+    ![Skærmbillede, der viser en PlainText-forespørgsel med en post med indstillinger tilføjet.](media/desktop-sap-bw-connector/sap_bw_11.png)
 
     Skal du ændre den til:
 
-    ![forespørgselstykke](media/desktop-sap-bw-connector/sap_bw_12.png)
+    ![Skærmbillede, der viser en PlainText-forespørgsel for den nye indstilling med den tilføjede værdiimplementering = 2.0.](media/desktop-sap-bw-connector/sap_bw_12.png)
 
 Vi har gjort alt for at gøre Implementation 2.0 af SAP BW Connector kompatibel med version 1. Der kan dog være nogle forskelle på grund af de forskellige SAP BW MDX-udførelsestilstande, der anvendes. Du kan forsøge at løse eventuelle uoverensstemmelser ved at skifte til en anden udførelsestilstand.
 

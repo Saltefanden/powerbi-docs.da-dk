@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 48255955f6611f4687ca6dd48cbb5ec9876daed7
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: edf49ba9fa85ab2c46040fdac74691bea8b5b960
+ms.sourcegitcommit: 6b436f6ed872cbc040ed6e2d3ac089c08fc78daf
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85224781"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928303"
 ---
 # <a name="connect-to-a-google-bigquery-database-in-power-bi-desktop"></a>Opret forbindelse til en Google BigQuery-database i Power BI Desktop
 I Power BI Desktop kan du oprette forbindelse til en Google **BigQuery**-database og bruge de underliggende data på samme måde som enhver anden datakilde i Power BI Desktop.
@@ -41,13 +41,28 @@ Der er et par begrænsninger og overvejelser, du skal være opmærksom på i for
 
 * Google BigQuery-forbindelsen er tilgængelig i Power BI Desktop og Power BI-tjenesten. I Power BI-tjenesten kan du få adgang til forbindelsen ved hjælp af cloud til cloud-forbindelsen fra Power BI til Google BigQuery.
 
-Du kan bruge Power BI sammen med **faktureringsprojektet** i Google BigQuery. Power BI bruger som standard det første projekt på listen, som returneres til brugeren. Du kan tilpasse funktionsmåden for faktureringsprojektet, når du bruger det sammen med Power BI, ved at benytte følgende fremgangsmåde:
+* Du kan bruge Power BI sammen med **faktureringsprojektet** i Google BigQuery. Power BI bruger som standard det første projekt på listen, som returneres til brugeren. 
 
- * Angiv følgende indstilling i det underliggende M i kildetrinnet, som kan tilpasses ved at bruge **Power-forespørgsel** i Power BI Desktop:
+  Hvis du vil tilpasse adfærden for faktureringsprojektet, når du bruger det med Power BI, skal du angive følgende indstilling i det underliggende M i kildetrinnet, som kan tilpasses ved at bruge **Power Query-editor** i Power BI Desktop:
 
-    ```Source = GoogleBigQuery.Database([BillingProject="Include-Billing-Project-Id-Here"])```
+  ```
+  Source = GoogleBigQuery.Database([BillingProject="Include-Billing-Project-Id-Here"])
+  ```
 
-## <a name="next-steps"></a>De næste trin
+  Fra og med udgivelsen i september 2020 aktiverede vi support til [Google BigQuery Storage API](https://cloud.google.com/bigquery/docs/reference/storage). Nogle kunder kan støde på problemer med denne funktion, hvis de bruger detaljerede tilladelser. I dette scenarie kan du se følgende fejlmeddelelse:
+
+  `ERROR [HY000] [Microsoft][BigQuery] (131) Unable to authenticate with Google BigQuery Storage API. Check your account permissions`
+
+  Du kan løse dette problem ved at justere brugertilladelserne for Storage API. Tildel disse Storage API-tilladelser:
+
+  - `bigquery.readsessions.create` - Opretter en ny læsesession via BigQuery Storage API'en.
+  - `bigquery.readsessions.getData` - Læser data fra en ny læsesession via BigQuery Storage API'en.
+  - `bigquery.readsessions.update` - Opdaterer en læsesession via BigQuery Storage API'en.
+
+  Disse tilladelser er typisk tilgængelige i BigQuery.User-rollen. Du kan finde flere oplysninger under [Foruddefinerede roller og tilladelser for Google BigQuery](https://cloud.google.com/bigquery/docs/access-control).
+
+
+## <a name="next-steps"></a>Næste trin
 Du kan oprette forbindelse til mange forskellige typer data ved hjælp af Power BI Desktop. Hvis du vil have mere at vide om datakilder, kan du se følgende ressourcer:
 
 * [Hvad er Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)

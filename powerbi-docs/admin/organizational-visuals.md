@@ -7,13 +7,13 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 07/01/2020
-ms.openlocfilehash: 30ab225230784d19bd2aa4eb2f5ea775684b2afb
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.date: 08/11/2020
+ms.openlocfilehash: 4725db331269bc9a2f41abf4c432e0bdf427bae6
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91524782"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91981682"
 ---
 # <a name="manage-power-bi-visuals-admin-settings"></a>Administrationsindstillinger til administration af Power BI-visualiseringer
 
@@ -130,7 +130,7 @@ Brug denne metode til at tilføje en ny Power BI-visualisering fra en .pbiviz-fi
 
 3. Vælg **Tilføj** for at starte anmodningen om at uploade. Når det er fuldført, vises visualiseringen på listen over visualiseringer til organisationer.
 
-### <a name="add-a-visual-from-appsource-preview"></a>Tilføj en visualisering fra AppSource (eksempel)
+### <a name="add-a-visual-from-appsource"></a>Tilføj en visualisering fra AppSource
 
 Brug denne metode til at tilføje en ny Power BI-visualisering fra AppSource.
 

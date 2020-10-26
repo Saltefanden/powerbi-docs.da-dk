@@ -1,20 +1,20 @@
 ---
-title: Sådan arbejder du med visualiseringer (visuelle elementer) som forbruger
+title: Sådan arbejder du med visualiseringer (visuelle elementer) som virksomhedsbruger
 description: Power BI-begreber og -terminologi – visualiseringer, visuelle elementer. Hvad er en visualisering/et visuelt element i Power BI?
 author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 01/29/2020
+ms.date: 10/7/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a65752f6b49590c4b83c6dee471fa881a639acbe
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: f463e9a065ddfa550cdab6929393cfb71ce30158
+ms.sourcegitcommit: d2f633b4bfa271051ba1d2ef0e6e8da7dcf42818
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87537659"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91830298"
 ---
 # <a name="interact-with-visuals-in-reports-dashboards-and-apps"></a>Interager med visualiseringer i rapporter, på dashboards og i apps
 
@@ -27,19 +27,21 @@ Der findes visualiseringer på dashboards, i rapporter, og de kan oprettes ved h
 ![Dashboard med felter](media/end-user-visualizations/power-bi-dashboard.png)
 
 > [!TIP]
-> Vi anbefaler, at du først læser det overordnede emne [Power BI – grundlæggende begreber for *forbrugere*](end-user-basic-concepts.md), før du læser dette mere detaljerede indhold.
+> Vi anbefaler, at du først læser det overordnede emne [Power BI – grundlæggende begreber for *virksomhedsbrugere*](end-user-basic-concepts.md), før du læser dette mere detaljerede indhold.
 
 ## <a name="what-can-i-do-with-visuals"></a>Hvad kan jeg gøre med visualiseringer?
 
-Visualiseringer oprettes af *designere* af rapporter og dashboards og deles med *forbrugere*. Som forbruger har du mange muligheder for at interagere med visualiseringerne for at få indsigt og træffe databaserede forretningsbeslutninger. De fleste af disse muligheder er angivet i tabellen nedenfor med links til en trinvis vejledning.
+Visualiseringer oprettes af *designere* af rapporter og dashboards og deles med kollegaer. Designeren tildeler forskellige tilladelser til deres kollegaer, afhængigt af hvordan kollegaen skal bruge rapporten eller dashboardet. En *udvikler* kan f.eks. tildeles forskellige tilladelser end en *virksomhedsbruger*. 
 
-I forbindelse med mange af disse indstillinger kan din administrator eller *designeren* deaktivere din mulighed for at få vist eller bruge disse funktioner. Og nogle af disse funktioner fungerer kun på bestemte visualiseringer.  Hvis du har spørgsmål, skal du kontakte administratoren eller ejeren af rapporten eller dashboardet. Du kan finde ejeren ved at vælge dashboardet eller rapporten på rullelisten. 
+De mest almindelige opgaver for en *virksomhedsbruger* er angivet i tabellen nedenfor med links til en trinvis vejledning. *Virksomhedsbrugere* har mange muligheder for at interagere med visualiseringerne for at få indsigt og træffe databaserede forretningsbeslutninger.  
 
-![Titel på rulleliste, der viser ejeren](media/end-user-visualizations/power-bi-owner.png)
+I forbindelse med mange af disse indstillinger kan din administrator eller *designeren* deaktivere din mulighed for at få vist eller bruge disse funktioner. Og nogle af disse funktioner fungerer kun på bestemte visualiseringstyper.  Hvis du har spørgsmål, skal du kontakte administratoren eller ejeren af rapporten eller dashboardet. Du kan finde ejeren ved at vælge dashboardet eller rapporten på rullelisten. 
+
+![Titel på rulleliste, der viser ejeren](media/end-user-visualizations/power-bi-designer.png)
 
 
 > [!IMPORTANT]
-> Først lidt om spørgsmål og svar. Spørgsmål og svar er Power BI's søgeværktøj til naturligt sprog. Du skriver et spørgsmål i et naturligt sprog, og derefter svarer Spørgsmål og svar på spørgsmålet i form af en visualisering. Forbrugerne kan bruge Spørgsmål og svar til løbende at oprette deres egne visualiseringer. De visualiseringer, du opretter med Spørgsmål og svar, kan dog ikke gemmes. Hvis der er noget bestemt, du vil have at vide via dataene, og designeren ikke inkluderede det i en rapport eller på et dashboard, er Spørgsmål og svar en rigtig god mulighed. Få mere at vide om Spørgsmål og svar under [Spørgsmål og svar til forbrugere](end-user-q-and-a.md).
+> Først lidt om spørgsmål og svar. Spørgsmål og svar er Power BI's søgeværktøj til naturligt sprog. Du skriver et spørgsmål i et naturligt sprog, og derefter svarer Spørgsmål og svar på spørgsmålet i form af en visualisering. Virksomhedsbrugerne kan bruge Spørgsmål og svar til løbende at oprette deres egne visualiseringer. De visualiseringer, du opretter med Spørgsmål og svar, kan dog ikke gemmes. Hvis der er noget bestemt, du vil have at vide via dataene, og designeren ikke inkluderede det i en rapport eller på et dashboard, er Spørgsmål og svar en rigtig god mulighed. Få mere at vide om Spørgsmål og svar under [Spørgsmål og svar til virksomhedsbrugere](end-user-q-and-a.md).
 
 
 
@@ -60,13 +62,13 @@ I forbindelse med mange af disse indstillinger kan din administrator eller *desi
 |[Brug tværgående filtrering og tværgående fremhævning på andre visualiseringer på siden.](end-user-interactions.md)    |   nej      |   ja      | i/t  |
 |[Vis de data, der er brugt til at oprette visualiseringen](end-user-show-data.md).     |  nej       |   ja      | nej  |
 | [Skift den måde visualiseringen sorteres på](end-user-change-sort.md). | nej  | ja  | kan ændre sortering ved at omformulere spørgsmålet  |
-| Føj spotlight til en visualisering. | nej  | ja  |  nej |
+| [Føj spotlight til en visualisering](end-user-spotlight.md). | nej  | ja  |  nej |
 | [Eksportér til Excel.](end-user-export.md) | ja | ja | nej|
 | [Opret en besked](end-user-alerts.md), som giver dig besked, når en værdi overskrider den angivne grænse.  | ja  | nej  | nej |
 | [Filtrer og fremhæv på tværs af de andre visualiseringer på siden](end-user-report-filter.md).  | nej      | ja  | i/t |
 | [Foretag detailudledning af en visualisering, der har et hierarki](end-user-drill.md).  | nej  | ja   | nej |
 
-## <a name="next-steps"></a>De næste trin
-Tilbage til [Grundlæggende begreber for forbrugere](end-user-basic-concepts.md)    
+## <a name="next-steps"></a>Næste trin
+Tilbage til [Grundlæggende begreber for virksomhedsbrugere](end-user-basic-concepts.md)    
 [Vælg en visualisering for at åbne en rapport](end-user-report-open.md)    
 [Typer af visualiseringer, der er tilgængelige i Power BI](end-user-visual-type.md)

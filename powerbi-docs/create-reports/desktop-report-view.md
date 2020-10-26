@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/13/2020
+ms.date: 10/12/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: a840a549e5dee79406ddfb2a07877895ce7b6c0f
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 859fb6156af38fc5333e9c94281255369d9ee413
+ms.sourcegitcommit: eab5a02520c421a57019595c03e9ecfdb41d52ad
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83335551"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92256959"
 ---
 # <a name="work-with-report-view-in-power-bi-desktop"></a>Arbejde med Rapportvisning i Power BI Desktop
 
@@ -26,9 +26,9 @@ Forskellen mellem dem er, at når du bruger Power BI Desktop, kan du arbejde med
 
 ## <a name="lets-take-a-look"></a>Lad os se!
 
-Når du indlæser data i Power BI Desktop, får du vist Rapportvisning med et tomt lærred.
+Når du indlæser data i Power BI Desktop, får du vist Rapportvisning med et tomt lærred, med links, der kan hjælpe dig med at føje data til din rapport.
 
-![Power BI Desktop](media/desktop-report-view/pbi_reportviewinpbidesigner_reportview.png)
+![Power BI Desktop](media/desktop-report-view/report-view-blank-canvas.png)
 
 Du kan skifte mellem **Rapportvisning**, **Datavisning** og **Relationsvisning** ved at vælge ikonerne på navigationsruden til venstre:
 

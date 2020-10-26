@@ -1,27 +1,27 @@
 ---
 title: Vis en rapport
-description: I dette emne beskrives, at Power BI-forbrugere og slutbrugere var nødt til at åbne og få vist en Power BI-rapport.
+description: I dette emne beskrives, at Power BI-virksomhedsbrugere og slutbrugere var nødt til at åbne og få vist en Power BI-rapport.
 author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 09/25/2020
+ms.date: 10/09/2020
 ms.author: mihart
-ms.openlocfilehash: d70bc80f7cea3fcff7a25446dd0f73a3c96ee461
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: dc352a44b5db14dc82fdcc48f0d1ddb350c5b3de
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91527504"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91983507"
 ---
 # <a name="view-a-report-in-the-power-bi-service-for-business-users"></a>Få vist en rapport i Power BI-tjenesten til *virksomhedsbrugere*
 
-[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-En rapport er en eller flere sider med visualiseringer. Rapporter oprettes af Power BI-*designere* og [deles med *erhvervsbrugere*](end-user-shared-with-me.md) direkte eller som en del af en [app](end-user-apps.md). Hvis du vil åbne en rapport, skal du bruge en Power BI Pro-licens, eller rapporten skal være en del af et arbejdsområde, der er gemt i en Premium-dedikeret kapacitet.
+En rapport er en eller flere sider med visualiseringer. Rapporter oprettes af Power BI-*designere* og [deles med *erhvervsbrugere*](end-user-shared-with-me.md) direkte eller som en del af en [app](end-user-apps.md). Hvis du vil åbne en rapport, skal du bruge en Power BI Pro-licens, eller rapporten skal være en del af et arbejdsområde, der er gemt i en Premium-dedikeret kapacitet. [Få mere at vide om licenser og abonnementer](end-user-license.md)
 
 Der er mange forskellige måder at åbne en rapport på. Her kan du se to af dem: Åbn fra startsiden, og åbn fra et dashboard. 
 
@@ -33,7 +33,7 @@ Lad os åbne en rapport, der er delt med dig direkte, og derefter åbne en rappo
 
    ![Skærmbillede, der viser lærredet for startsiden for Power BI-tjenesten med pile, der peger på rapporter.](./media/end-user-report-open/power-bi-home.png)
 
-### <a name="open-a-report-that-has-been-shared-with-you"></a>Åbn en rapport, der er delt med dig
+### <a name="open-a-report-that-has-been-directly-shared-with-you"></a>Åbn en rapport, der er delt direkte med dig
 Power BI-*designere* kan dele en individuel rapport direkte med dig via et link i en mail eller ved at føje den til dit Power BI-indhold automatisk. Rapporter, der deles på denne måde, vises i objektbeholderen **Delt med mig** i navigationsruden og i afsnittet **Delt med mig** på lærredet Start.
 
 1. Åbn Power BI-tjenesten (app.powerbi.com).
@@ -54,15 +54,15 @@ Power BI-*designere* kan dele en individuel rapport direkte med dig via et link 
 
    ![Skærmbillede, der viser fanerne på rapportsiden.](./media/end-user-report-open/power-bi-report-open.png)
 
-6. Udvid ruden **Filtre** til højre. De filtre, der er anvendt på denne rapportside eller i hele rapporten, vises her.
+6. Udvid ruden **Filtre** til højre. De filtre, der er anvendt på denne rapportside eller i hele rapporten, vises her. Du kan ændre disse filtre for at se virkningen på dine visualiseringer og din rapport.
 
    ![Power BI-tjenesten med Filtre udvidet](./media/end-user-report-open/power-bi-filters.png)
 
-7. Når du holder over en rapportvisualisering, vises flere ikoner og **Flere indstillinger** (...). Hvis du vil se de filtre, der er anvendt på en bestemt visualisering, skal du vælge filterikonet. Her har vi valgt filterikonet for kurvediagrammet *Total units by month and manufacturer*.
+7. Vis menuen Handlinger for en visualisering. Hvis du peger på en rapportvisualisering, vises de handlinger, du kan udføre på den pågældende visualisering. Hvis du vil se de filtre, der er anvendt på en bestemt visualisering, skal du vælge filterikonet. Her har vi valgt filterikonet for kurvediagrammet *Total units by month and manufacturer*.
 
-   ![Skærmbillede, der viser filtre for den valgte visualisering.](./media/end-user-report-open/power-bi-visual-filter.png)
+   ![Skærmbillede, der viser filtre for den valgte visualisering.](./media/end-user-report-open/power-bi-visual-filters.png)
 
-6. Lige nu får vi vist hele rapportsiden. Hvis du vil ændre visningen af siden (zoom), skal du vælge rullemenuen Vis i øverste højre hjørne og vælge **Faktisk størrelse** og derefter skifte til **Tilpas til bredde**.
+6. Du kan også ændre visningen af rapportsiden. Lige nu får vi vist hele rapportsiden. Hvis du vil ændre visningen af siden (zoom), skal du vælge rullemenuen **Vis** i øverste højre hjørne og vælge **Faktisk størrelse** og derefter skifte til **Tilpas til bredde**. Bemærk de forskelle, hver visningsindstilling giver, for visningen af din rapport.
 
    ![skift zoom](./media/end-user-report-open/power-bi-view-actual.png)
 
@@ -71,20 +71,23 @@ Power BI-*designere* kan dele en individuel rapport direkte med dig via et link 
 Der er mange måder, du kan interagere med en rapport på for at finde indsigt og træffe forretningsbeslutninger.  Brug indholdsfortegnelsen til venstre for at gennemse andre artikler om Power BI-rapporter. 
 
 ### <a name="open-a-report-that-is-part-of-an-app"></a>Åbn en rapport, der er en del af en app
-Hvis du har modtaget apps fra kolleger eller fra AppSource, er disse apps tilgængelige via Start og via objektbeholderen **Apps** i navigationsruden. En [app](end-user-apps.md) er en samling af dashboards og rapporter, der er bundtet til dig af en Power BI-*designer*.
+Hvis du har modtaget apps fra kolleger eller fra AppSource, er disse apps tilgængelige via Start og via objektbeholderen **Apps** og **Delt med mig** i navigationsruden. En [app](end-user-apps.md) er en samling af dashboards og rapporter, der er bundtet til dig af en Power BI-*designer*.
 
 ### <a name="prerequisites"></a>Forudsætninger
+Åbning af en app kræver en Power BI Pro-licens, eller at appens arbejdsområde er gemt i en Power BI Premium-kapacitet. [Få mere at vide om licenser og abonnementer](end-user-license.md)    
+    
 Hvis du vil følge med, skal du downloade appen Sales & Marketing.
 1. Gå til appsource.microsoft.com i din browser.
-1. Søg efter "Sales and marketing" og vælg **Microsoft Sample - Sales & Marketing**.
+1. Markér afkrydsningsfeltet for **Microsoft Power Platform**.
+1. Søg efter "Sales & marketing", og vælg **Microsoft Sample - Sales & Marketing**. Rul ned for at se søgeresultaterne.
 1. Vælg **Hent det nu** > **Fortsæt** > **Installér** for at installere appen i din objektbeholder til apps. 
 
-Du kan åbne appen fra din objektbeholder til apps eller fra startsiden.
+Du kan nu åbne appen fra din objektbeholder **Apps** eller fra **Start**.
 1. Gå tilbage til Start ved at vælge **Start** i navigationsruden.
 
 7. Rul ned, indtil du ser **Mine apps**.
 
-   ![Skærmbillede, der viser afsnittet Mine apps i Power BI Start.](./media/end-user-report-open/power-bi-apps.png)
+   ![Skærmbillede, der viser afsnittet Mine apps i Power BI Start.](./media/end-user-report-open/power-bi-apps-new.png)
 
 8. Vælg din nye *Salg og marketing*-app for at åbne den. Afhængigt af de indstillinger der er angivet af app*designeren*, åbner appen enten et dashboard eller en rapport. Denne app åbnes i et dashboard.  
 

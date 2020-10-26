@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 02/14/2020
-ms.openlocfilehash: 2978401c7ec949c8c8df7c813395b3d84db18b72
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: f3a3551db1d7d995db0194ff7fa9b7141415c9eb
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85232662"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91525541"
 ---
 # <a name="how-to-debug-power-bi-visuals"></a>Sådan foretager du fejlfinding af Power BI-visualiseringer
 
@@ -78,7 +78,7 @@ Du kan også indstille browseren til at afbryde ved opfangede undtagelser. Dette
 3. Klik på ikonet for **afbrydelse ved undtagelser** (sekskant med et pausesymbol).
 4. Vælg **Afbryd ved alle undtagelser**.
 
-![Datarollefelter](media/visuals-how-to-debug/how-to-debug-edge.png)
+![Skærmbillede, der viser fanen Fejlfindingsprogram med Afbryd ved alle undtagelser valgt.](media/visuals-how-to-debug/how-to-debug-edge.png)
 
 ## <a name="chrome"></a>Chrome
 
@@ -87,7 +87,7 @@ Du kan også indstille browseren til at afbryde ved opfangede undtagelser. Dette
 3. Klik på ikonet for **afbrydelse ved undtagelser** (stoptegnet med et pausesymbol).
 4. Markér afkrydsningsfeltet **Afbryd midlertidigt ved opfangede undtagelser**.
 
-![Datarollefelter](media/visuals-how-to-debug/how-to-debug-chrome.png)
+![Skærmbillede, der viser fanen Kilder med Afbryd midlertidigt ved opfangede undtagelser valgt.](media/visuals-how-to-debug/how-to-debug-chrome.png)
 
 ## <a name="next-steps"></a>De næste trin
 * [Foretag fejlfinding af Power BI-visualiseringer](power-bi-custom-visuals-troubleshoot.md)

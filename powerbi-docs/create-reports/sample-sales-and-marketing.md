@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/19/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 6bd70657cecd12ebab7ac54f125e4c358b2cc4aa
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 95f9ebd689f06fcacde9819789e1240f2dd6c3d3
+ms.sourcegitcommit: 383d87841d2509131fac7cc02c5c37c6a868144f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349051"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92025973"
 ---
 # <a name="sales-and-marketing-sample-for-power-bi-take-a-tour"></a>Eksempel på salg og marketing til Power BI: Få en introduktion
 
@@ -24,17 +24,17 @@ VanArsdel har mange konkurrenter, men er førende inden for branchen. Marketingc
 
 ![Dashboard til eksempel på salg og marketing](media/sample-sales-and-marketing/sales1.png)
 
-Dette eksempel er en del af en serie, der viser, hvordan du kan bruge Power BI med forretningsrelaterede data, rapporter og dashboards. Det blev oprettet af [obviEnce](http://www.obvience.com/) med rigtige data, som er blevet anonymiseret. Dataene er tilgængelige i flere formater: indholdspakke, .pbix-fil til Power BI Desktop eller Excel-projektmappe. Se [Eksempler til Power BI](sample-datasets.md). 
+Dette eksempel er en del af en serie, der viser, hvordan du kan bruge Power BI med forretningsrelaterede data, rapporter og dashboards. Det blev oprettet af [obviEnce](http://www.obvience.com/) med rigtige data, som er blevet anonymiseret. Dataene er tilgængelige i flere formater: prøve i produkt, .pbix-fil til Power BI Desktop eller Excel-projektmappe. Se [Eksempler til Power BI](sample-datasets.md). 
 
-I dette selvstudium udforskes indholdspakken med eksemplet på salgs- og marketinganalyse i Power BI-tjenesten. Da rapportoplevelsen i Power BI Desktop og i tjenesten minder meget om hinanden, kan du også følge med ved at bruge .pbix-eksempelfilen i Power BI Desktop. 
+I dette selvstudium udforskes eksemplet på salgs- og marketinganalyse i Power BI-tjenesten. Da rapportoplevelsen i Power BI Desktop og i tjenesten minder meget om hinanden, kan du også følge med ved at bruge .pbix-eksempelfilen i Power BI Desktop. 
 
 Du behøver ikke en Power BI-licens for at udforske eksemplerne i Power BI Desktop. Hvis du ikke har en Power BI Pro-licens, kan du gemme eksemplet i Mit arbejdsområde i Power BI-tjenesten. 
 
 ## <a name="get-the-sample"></a>Hent eksemplet
 
-Før du kan bruge eksemplet, skal du først downloade det som en [indholdspakke](#get-the-content-pack-for-this-sample), [.pbix-fil](#get-the-pbix-file-for-this-sample) eller [Excel-projektmappe](#get-the-excel-workbook-for-this-sample).
+Før du kan bruge eksemplet, skal du først downloade [dashboardet, rapporten og datasættet](#get-the-sample-from-the-power-bi-service), [pbix-filen](#get-the-pbix-file-for-this-sample) eller [Excel-projektmappen](#get-the-excel-workbook-for-this-sample).
 
-### <a name="get-the-content-pack-for-this-sample"></a>Hent indholdspakken for dette eksempel
+### <a name="get-the-sample-from-the-power-bi-service"></a>Hent eksemplet fra Power BI-tjenesten
 
 1. Åbn Power BI-tjenesten (app.powerbi.com), log på, og åbn det arbejdsområde, hvor du vil gemme eksemplet.
 
@@ -49,7 +49,7 @@ Før du kan bruge eksemplet, skal du først downloade det som en [indholdspakke]
   
    ![Opret forbindelse til eksempel](media/sample-sales-and-marketing/sales9.png)
    
-5. Power BI importerer indholdspakken og føjer derefter et nyt dashboard, en ny rapport og et nyt datasæt til dit aktuelle arbejdsområde.
+5. Power BI importerer eksemplet og føjer derefter et nyt dashboard, en ny rapport og et nyt datasæt til dit aktuelle arbejdsområde.
    
    ![Eksempel på post fra salg og marketing](media/sample-sales-and-marketing/sales11.png)
   

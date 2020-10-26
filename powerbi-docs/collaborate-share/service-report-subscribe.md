@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 05/15/2020
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: d7e1365ce1328e529d056a80b46230b97febc446
-ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
+ms.openlocfilehash: 1fd5f4748ffd7a59095bfe34090d9494ff0a9134
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85485662"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91526760"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Meld dig selv og andre til abonnementer på rapporter og dashboards i Power BI-tjenesten
 
@@ -48,13 +48,13 @@ Det er lidt anderledes at abonnere på sideinddelte rapporter. Du kan finde fler
 ![vælg ikonet Abonner](media/service-report-subscribe/power-bi-subscribe-orientation.png).
 
 1. Åbn dashboardet eller rapporten.
-2. Vælg **Abonner** på menulinjen øverst, eller vælg konvolutikonet ![ikonet Abonner](media/service-report-subscribe/power-bi-icon-envelope.png).
+2. Vælg **Abonner** på den øverste menulinje, eller vælg konvolutikonet :::image type="icon" source="media/service-report-subscribe/power-bi-icon-envelope.png" border="false":::.
    
     ![Ikonet Abonner](media/service-report-subscribe/power-bi-subscribe-icon.png)
 
 1. Brug den gule skyder til at slå abonnementet til og fra. Abonnementet slettes ikke, når skyderen sættes til **Fra**. Hvis du vil slette abonnementet, skal du vælge ikonet for papirkurven.
 
-2. Din mailadresse er allerede angivet i feltet **Abonner**. Du kan også føje andre mailadresser i det samme domæne til abonnementet. Hvis rapporten eller dashboardet hostes i en [Premium-kapacitet](https://docs.microsoft.com/power-bi/service-premium-what-is), kan du oprette abonnementer for andre mailadresser og gruppealiasser, uanset om de er i domænet eller ej. Hvis rapporten eller dashboardet ikke hostes i en Premium-kapacitet, kan du oprette abonnementer for andre, men de skal også have Power BI Pro-licenser. Se flere oplysninger under [Overvejelser og fejlfinding](#considerations-and-troubleshooting) herunder.
+2. Din mailadresse er allerede angivet i feltet **Abonner**. Du kan også føje andre mailadresser i det samme domæne til abonnementet. Hvis rapporten eller dashboardet hostes i en [Premium-kapacitet](../admin/service-premium-what-is.md), kan du oprette abonnementer for andre mailadresser og gruppealiasser, uanset om de er i domænet eller ej. Hvis rapporten eller dashboardet ikke hostes i en Premium-kapacitet, kan du oprette abonnementer for andre, men de skal også have Power BI Pro-licenser. Se flere oplysninger under [Overvejelser og fejlfinding](#considerations-and-troubleshooting) herunder.
 
 3. Udfyld mailoplysningerne **Emne** og **Meddelelse**.
 
@@ -131,7 +131,7 @@ Power BI-administratorer kan bruge Power BI-overvågningslogge til at få vist o
 - For mailabonnementer på rapporter kan du ikke oprette et abonnement til dig selv, hvis datasættet anvender sikkerhed på rækkeniveau. Du kan ikke tilmelde andre til et abonnement på en rapport med sikkerhed på rækkeniveau, undtagen sideinddelte rapporter. Du kan tilmelde andre til et abonnement på en sideinddelt rapport ved hjælp af din sikkerhedskontekst. Læs mere om at [abonnere på sideinddelte rapporter](../consumer/paginated-reports-subscriptions.md).
 - Rapportsideabonnementer er bundet til navnet på siden i rapporten. Hvis du abonnerer på en rapportside og omdøber den, skal du genoprette dit abonnement.
 - Din organisation kan konfigurere bestemte indstillinger i Azure Active Directory, som begrænser muligheden for at bruge mailabonnementer i Power BI. Disse begrænsninger omfatter, men er ikke begrænset til, multifaktorgodkendelse eller IP-intervalbegrænsning, når ressourcer tilgås.
-- Mailabonnementer understøtter ikke de fleste [brugerdefinerede visualiseringer](../developer/power-bi-custom-visuals.md). Den eneste undtagelse er de brugerdefinerede visuelle elementer, der er blevet [certificeret](../developer/power-bi-custom-visuals-certified.md).
+- Mailabonnementer understøtter ikke de fleste [brugerdefinerede visualiseringer](../developer/visuals/power-bi-custom-visuals.md). Den eneste undtagelse er de brugerdefinerede visuelle elementer, der er blevet [certificeret](../developer/visuals/power-bi-custom-visuals-certified.md).
 - Mailabonnementer understøtter ikke R-drevne brugerdefinerede visualiseringer på nuværende tidspunkt.
 - Mailabonnementer sendes med rapportens tilstande for standardfilter og -udsnit. Hvis du ændrer standardværdierne, efter du har oprettet abonnementet, vises de ikke i mailen. Sideinddelte rapporter understøtter denne egenskab og giver dig mulighed for at angive de specifikke parameterværdier pr. abonnement.
 - Lad os sige, at du har en rapport med en direkte forbindelse til Analysis Services, og du har det abonnementssæt, der skal køres, efter opdateringen af dataene. Det køres, første gang Power BI-tjenesten registrerer en ændring i modellen i det lokale miljø, når den forespørger Analysis Services-forekomsten.  Power BI kontrollerer hver time, om der er ændringer i Analysis Services-datamodellen for at bestemme, hvornår abonnementet skal sendes.

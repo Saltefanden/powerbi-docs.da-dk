@@ -1,22 +1,22 @@
 ---
-title: Hvad er Power BI til "forbruger"?
-description: Oversigt over Power BI til forbrugere (også kaldet slutbrugere eller virksomhedsbrugere).
+title: Hvad er en virksomhedsbruger af Power BI?
+description: Oversigt over Power BI til virksomhedsbrugere (også kaldet slutbrugere eller forretningsbrugere).
 author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: overview
-ms.date: 05/22/2020
+ms.date: 10/11/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 74f6d14ed96e7e33929aafe315965c04b2f78863
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 7616d84ca93c336e606b3a96e7a362a1b57e6a96
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91633969"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91982050"
 ---
-# <a name="the-power-bi-service-for-consumers"></a>Power BI-tjenesten til forbrugere
+# <a name="the-power-bi-service-for-business-users"></a>Power BI-tjenesten til virksomhedsbrugere
 
 [!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
@@ -24,9 +24,9 @@ Du bor i en datakultur, hvor forretningsbeslutningerne er baseret på fakta og i
  
 De sender dig alle typer rapporter, regneark, mails med diagrammer og endda trykte kopier. I takt med at dataene hober sig op, bliver det sværere og sværere at finde det, du har brug for, og du kan være bekymret for, at du ikke bruger de nyeste oplysninger.  
  
-![Diagram, der viser en forbruger, som modtager data i formater, der kaldes Rapporter, Diagrammer, Mail og Regneark.](media/end-user-consumer/power-bi-consumer-pipes.png)
+![Diagram, der viser en virksomhedsbruger, som modtager data i formater, der kaldes Rapporter, Diagrammer, Mail og Regneark.](media/end-user-consumer/power-bi-consumer-pipes.png)
 
-## <a name="the-power-bi-service-for-consumers"></a>Power BI-tjenesten til *forbrugere*
+## <a name="the-power-bi-service-for-business-users"></a>Power BI-tjenesten til *virksomhedsbrugere*
 
 Power BI gør dit arbejde både lettere og mere virkningsfuldt. Alle disse data bliver til diagrammer og grafer, der kan visualisere dine data for dig. I stedet for lange lister eller tabeller med tal og ord er din dataindsigt ***smukke*** , farverige og overbevisende visuelle elementer, der fortæller historier om indsigten i dine data. 
 
@@ -38,15 +38,19 @@ Du skal blot åbne Power BI-tjenesten i en browser eller på en mobilenhed. Du o
 
 Da indholdet ikke er statisk, kan du se nærmere på dataene, lede efter tendenser, indsigt og anden business intelligence. Opdel indholdet, og stil selv spørgsmål til det med dine egne ord. Eller læn dig tilbage, og lad dine data finde interessant indsigt for dig: Give dig besked, når data ændres, og sende rapporter til dig via mail efter en tidsplan, som du har angivet. Alle dine data, når som helst, i cloudmiljøet eller i det lokale miljø og fra alle enheder. Det er kun begyndelsen på det, Power BI kan gøre. 
 
-## <a name="am-i-a-power-bi-consumer"></a>Er jeg en Power BI-*forbruger*?
+## <a name="am-i-a-power-bi-business-user"></a>Er jeg en *forretningsbruger* i Power BI?
 
-Den måde, du interagerer med Power BI på, afhænger af din jobfunktion. Som slutbruger eller *forbruger* er du den person, der modtager indhold (dashboards, rapporter og apps) fra kolleger. Du arbejder i online- eller mobilversionen af Power BI, som kaldes Power BI-tjenesten, og gennemgår og interagerer med dette indhold, så du kan træffe forretningsbeslutninger. 
+Den måde, du interagerer med Power BI på, afhænger af din jobfunktion. Som forbruger eller *virksomhedsbruger* er du den person, der modtager indhold (dashboards, rapporter og apps) fra kollegaer. Du arbejder i online- eller mobilversionen af Power BI, som kaldes Power BI-tjenesten, og gennemgår og interagerer med dette indhold, så du kan træffe forretningsbeslutninger. 
    
-Som forbruger har du ikke adgang til alle funktioner i Power BI – og det er helt fint, da det ikke er din opgave at oprette dashboards og rapporter. Din opgave er at bruge Power BI til analyse, overvågning, udforskning og beslutningstagning. 
+Som virksomhedsbruger har du ikke adgang til alle funktionerne i Power BI – og det er helt fint, da det ikke er din opgave at oprette dashboards og rapporter. Din opgave er at bruge Power BI til analyse, overvågning, udforskning og beslutningstagning. 
 
-Du hører uden tvivl udtrykket "Power BI Desktop" eller blot "Desktop". Dette er et separat værktøj, som bruges af *designere*, der udarbejder og deler dashboards og rapporter med dig.  Det er vigtigt, at du er klar over, at der er andre Power BI-værktøjer derude, men så længe du er en forbruger, vil du kun arbejde med Power BI-tjenesten. 
+Du hører uden tvivl udtrykket "Power BI Desktop" eller blot "Desktop". Dette er et separat værktøj, som bruges af *designere*, der udarbejder og deler dashboards og rapporter med dig.  Det er vigtigt, at du er klar over, at der er andre Power BI-værktøjer derude, men så længe du er *virksomhedsbruger*, vil du kun arbejde med Power BI-tjenesten. 
 
-Når du arbejder med *delt* indhold, er alt, du skal bruge, en **gratis** standardlicens, eftersom du arbejder i en organisation, der benytter en **Premium-kapacitet**. [Hvilken licens har jeg?](end-user-license.md)
+Og da du arbejder med *delt* indhold, skal du bruge en af følgende fremgangsmåder:
+- En Power BI Pro-licens
+- så din organisation har et Power BI Premium-abonnement, og hvis indhold skal deles med dig fra Premium-kapacitet. 
+
+Du kan finde flere oplysninger om licenser og abonnementer under [Hvilken licens har jeg?](end-user-license.md)
 
 
 ## <a name="safely-interact-with-content"></a>Sikker interaktion med indhold 
@@ -61,6 +65,6 @@ Det betyder ikke, at du ikke kan gemme dine ændringer. Det kan du. Men disse æ
 
 ## <a name="next-steps"></a>Næste trin
 
-[Få en præsentation af Power BI-tjenesten for forbrugere](end-user-reading-view.md)    
-[Uddannelse i Power BI-tjenesten for forbrugere](/learn/paths/consume-data-with-power-bi/)    
-[Terminologi og begreber for Power BI-*forbrugere*](end-user-basic-concepts.md)
+[Få en præsentation af Power BI-tjenesten for virksomhedsbrugere](end-user-reading-view.md)    
+[Uddannelse i Power BI-tjenesten til virksomhedsbrugere](/learn/paths/consume-data-with-power-bi/)    
+[Terminologi og begreber for Power BI-*virksomhedsbrugere*](end-user-basic-concepts.md)

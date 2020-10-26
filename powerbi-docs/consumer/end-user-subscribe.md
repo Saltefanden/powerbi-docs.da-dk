@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 05/11/2020
+ms.date: 10/06/2020
 LocalizationGroup: Common tasks
-ms.openlocfilehash: aa8277a8d0ddea43aff356ced32c9edad8710c93
-ms.sourcegitcommit: a4e06e401abc67dffab52f34e268467def42a97e
+ms.openlocfilehash: e6ab41b7a9330ff1c99bb0dcc963608485cc3f94
+ms.sourcegitcommit: d2f633b4bfa271051ba1d2ef0e6e8da7dcf42818
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86875043"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91830599"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>Abonner på en rapport eller et dashboard i Power BI-tjenesten 
 
@@ -27,13 +27,13 @@ Det har aldrig været nemmere at holde dig opdateret om dine vigtigste dashboard
 
 Det sprog, der er angivet under Power BI-indstillingerne, bruges til mail og snapshot (se [Understøttede sprog og lande/regioner til Power BI](../fundamentals/supported-languages-countries-regions.md)). Hvis der ikke er defineret et sprog, bruger Power BI engelsk som reserve. Hvis du vil se eller indstille dine sprogindstillinger, skal du vælge ![tandhjulsikonet](./media/end-user-subscribe/power-bi-settings-icon.png) > **Indstillinger > Generelt > Sprog**. 
 
-![Rullelisten Sprog](./media/end-user-subscribe/power-bi-language.png)
+![Rullelisten Sprog](./media/end-user-subscribe/power-bi-languages.png)
 
 Når du modtager mailen, indeholder den et link til at "gå til rapport eller dashboard". På mobile enheder med Power BI-apps installeret, startes appen (i modsætning til standardhandlingen med at åbne rapporten eller dashboardet på Power BI-webstedet), hvis du vælger dette link.
 
 
 ## <a name="requirements"></a>Krav
-Hvis du vil **oprette** et abonnement til dig selv, skal du have en bestemt type [licens](end-user-license.md). Hvis du ikke kan oprette et abonnement, skal du kontakte din Power BI-administrator. **Abonnement til andre** kan kun oprettes af ejeren af dashboardet eller rapporten. Det er lidt anderledes at abonnere på sideinddelte rapporter. Du kan finde flere oplysninger i [Meld dig selv og andre til et abonnement på en sideinddelt rapport i Power BI-tjenesten](paginated-reports-subscriptions.md). 
+Hvis du vil **oprette** et abonnement til dig selv, skal du have en bestemt type [licens](end-user-license.md). Hvis du ikke kan oprette et abonnement, skal du kontakte din Power BI-administrator eller IT HelpDesk. **Abonnement til andre** kan kun oprettes af ejeren af dashboardet eller rapporten. Det er lidt anderledes at abonnere på sideinddelte rapporter. Du kan finde flere oplysninger i [Meld dig selv og andre til et abonnement på en sideinddelt rapport i Power BI-tjenesten](paginated-reports-subscriptions.md). 
 
 ## <a name="subscribe-to-a-dashboard-or-a-report-page"></a>Abonner på et dashboard eller en rapportside
 Uanset om du abonnerer på et dashboard eller en rapport, er processen den samme. Du bruger den samme knap til at abonnere på dashboards og rapporter i Power BI-tjenesten.
@@ -41,7 +41,8 @@ Uanset om du abonnerer på et dashboard eller en rapport, er processen den samme
 ![vælg ikonet Abonner](./media/end-user-subscribe/power-bi-subscribe.png).
 
 1. Åbn dashboardet eller rapporten.
-2. Vælg **Abonner** på menulinjen øverst, eller vælg konvolutikonet ![ikonet Abonner](./media/end-user-subscribe/power-bi-icon-envelope.png).
+2. Vælg **Abonner** på menulinjen øverst, eller vælg konvolutikonet ![ikonet Abonner](./media/end-user-subscribe/power-bi-icon-envelope.png).    
+1. Vælg **Tilføj nyt abonnement**.
    
 
 
@@ -65,7 +66,7 @@ Uanset om du abonnerer på et dashboard eller en rapport, er processen den samme
 
 3. Hvis alt ser rigtigt ud, skal du vælge **Gem og luk** for at gemme abonnementet. Du modtager en mail og et snapshot af dashboardet eller rapporten iht. den plan, du har angivet. For alle abonnementer, hvor hyppigheden er angivet til **Efter dataopdatering**, sendes der kun en mail efter den første planlagte opdatering på den pågældende dag.
    
-   ![mail snapshot af dashboard](media/end-user-subscribe/power-bi-email-old.png)
+   ![mail snapshot af dashboard](media/end-user-subscribe/power-bi-subscription-email.png)
    
     Opdatering af rapportsiden opdaterer ikke datasættet. Det er kun ejeren af datasættet, der kan opdatere et datasæt manuelt. Hvis du vil søge efter navnet på ejeren af det eller de underliggende datasæt, skal du vælge rullelisten på den øverste menulinje eller søge efter den oprindelige abonnementsmail.
    
@@ -73,7 +74,7 @@ Uanset om du abonnerer på et dashboard eller en rapport, er processen den samme
 
 
 ## <a name="manage-your-subscriptions"></a>Administrer dine abonnementer
-Det er kun dig, der kan administrere de abonnementer, du opretter. Vælg **Abonner** igen, og vælg **Administrer alle abonnementer** i nederste venstre hjørne. Se skærmbilleder ovenfor. De abonnementer, der vises, afhænger af, hvilket arbejdsområde der er aktivt i øjeblikket. Hvis du vil se alle dine abonnementer på én gang for alle arbejdsområder, skal du sørge for, at **Mit arbejdsområde** er aktivt. Du kan få hjælp til arbejdsområder i [Arbejdsområder i Power BI](end-user-workspaces.md). 
+Det er kun dig, der kan administrere de abonnementer, du opretter. Vælg **Abonner** igen, og vælg **Administrer alle abonnementer** i nederste venstre hjørne. Se skærmbilleder ovenfor. De abonnementer, der vises i det aktuelle arbejdsområde. Du kan få hjælp til arbejdsområder i [Arbejdsområder i Power BI](end-user-workspaces.md). 
 
 ![se alle abonnementer under Mit arbejdsområde](./media/end-user-subscribe/power-bi-manage-subscriptions.png)
 
@@ -86,14 +87,13 @@ Et abonnement slutter, hvis Pro-licensen udløber, dashboardet eller rapporten s
 * Hvis linkene i din mail (til indholdet) ikke længere fungerer, kan det være, at indholdet er blevet slettet. Under skærmbilledet i mailen kan du se, om du eller en anden har tilmeldt dig. Hvis en anden person har, kan du bede denne kollega om enten at annullere mailene eller at tilmelde dig igen.
 * Visse typer felter understøttes endnu ikke for dashboardabonnementer. Det omfatter: streamingfelter, videofelter, felter med brugerdefineret webindhold. 
 * Rapportsideabonnementer er bundet til navnet på siden i rapporten. Hvis du abonnerer på en rapportside, og den bliver omdøbt, skal du genoprette dit abonnement.
-* Hvis du ikke kan bruge abonnementsfunktionen, skal du kontakte din systemadministrator. Din organisation kan have deaktiveret denne funktion.  
+* Hvis du ikke kan bruge abonnementsfunktionen, skal du kontakte din systemadministrator eller IT HelpDesk. Din organisation kan have deaktiveret denne funktion.  
 * Mailabonnementer understøtter ikke de fleste [brugerdefinerede visuelle elementer](../developer/visuals/power-bi-custom-visuals.md).  Undtagelsen er de brugerdefinerede Power BI-visuals, der er blevet [certificeret](../developer/visuals/power-bi-custom-visuals-certified.md).    
 * Mailabonnementer sendes med rapportens tilstande for standardfilter og -udsnit. Hvis du ændrer standardværdierne, efter du har oprettet abonnementet, vises de ikke i mailen. Sideinddelte rapporter understøtter denne egenskab og giver dig mulighed for at angive de specifikke parameterværdier pr. abonnement.  
 * Mailabonnementer understøtter ikke R-drevne Power BI-visuals på nuværende tidspunkt.  
-* Særligt for dashboardabonnementer understøttes nogle typer af felter endnu ikke.  Det omfatter: streamingfelter, videofelter, felter med brugerdefineret webindhold.     
 * Abonnementer mislykkes muligvis på dashboards og rapporter med meget store billeder på grund af størrelsesbegrænsninger for mails.    
 * Power BI afbryder automatisk midlertidigt opdatering af datasæt, der er knyttet til dashboards og rapporter, som ikke er blevet besøgt i mere end to måneder.  Men hvis du føjer et abonnement til et dashboard eller en rapport, sættes det ikke på pause, selvom det ikke besøges.
-* Husk, at dit abonnement påbegynder behandling på det tidspunkt, du angiver for abonnementet, på samme måde som med andre BI-produkter.  Når rapportbehandlingen er fuldført, sættes abonnementet i kø og sendes til modtagerne af mailen.  Selvom vi bestræber os på at behandle og levere alle abonnementer så hurtigt som muligt, er der til tider spidsbelastning, hvor du kan opleve en længere forsinkelse på grund af antallet af abonnementer, der kan sendes på én gang.  Størstedelen af kunderne bør ikke opleve en forsinkelse på mere end 15 minutter til behandling og afsendelse af deres rapporter, men det kan tage op til 30 minutter for bestemte tidspunkter og lejere med betydelig brug.  Vi forventer aldrig nogen forskydning i forbindelse med levering på mere end 60 minutter fra det tidspunkt, som abonnementet er planlagt.  Hvis en kunde oplever en så lang forskydning, skal vedkommende først sikre, at adressen no-reply-powerbi@microsoft.com er angivet på listen over sikre afsendere og ikke er blokeret af din mailudbyder.  Hvis mailen ikke er blokeret, skal vedkommende kontakte Power BI-support for at få hjælp.
+* Husk, at dit abonnement påbegynder behandling på det tidspunkt, du angiver for abonnementet, på samme måde som med andre BI-produkter.  Når rapportbehandlingen er fuldført, sættes abonnementet i kø og sendes til modtagerne af mailen.  Selvom vi bestræber os på at behandle og levere alle abonnementer så hurtigt som muligt, er der til tider spidsbelastning, hvor du kan opleve en længere forsinkelse på grund af antallet af abonnementer, der kan sendes på én gang.  Størstedelen af kunderne bør ikke opleve en forsinkelse på mere end 15 minutter til behandling og afsendelse af deres rapporter, men det kan tage op til 30 minutter for bestemte tidspunkter og lejere med betydelig brug.  Vi forventer aldrig nogen forskydning i forbindelse med levering på mere end 60 minutter fra det tidspunkt, som abonnementet er planlagt.  Hvis en kunde oplever en så lang forskydning, skal vedkommende først sikre, at adressen no-reply-powerbi@microsoft.com er angivet på listen over sikre afsendere og ikke er blokeret af din mailudbyder.  Hvis mailen ikke er blokeret, skal vedkommende kontakte Power BI-administratoren eller IT HelpDesk for at få hjælp.
 
 ## <a name="next-steps"></a>Næste trin
 

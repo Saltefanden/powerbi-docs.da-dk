@@ -1,21 +1,21 @@
 ---
-title: Visualiseringstyper i Power BI til forbrugere
+title: Visualiseringstyper i Power BI til virksomhedsbrugere
 description: Visualiseringstyper i Power BI-tjeneste
 author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 06/24/2020
+ms.date: 10/07/2020
 ms.author: mihart
 ms.custom: contperfq4
 LocalizationGroup: Consumer
-ms.openlocfilehash: 05aab15b3807429c20b0ff72a7bfce21b3e25b12
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: 6d2ded8060ebe663989fd4f91fc22e4163f60c93
+ms.sourcegitcommit: d2f633b4bfa271051ba1d2ef0e6e8da7dcf42818
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91526875"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91830650"
 ---
 # <a name="visual-types-in-power-bi"></a>Visualiseringstyper i Power BI
 
@@ -25,18 +25,20 @@ Visuals (også kaldet *diagrammer* og *visualiseringer*) er billedgengivelser af
 
 De visuals, der er beskrevet på denne side, er dem, der følger med Power BI. Disse visualtyper er dem, du oftest støder på. Denne side giver et hurtigt overblik over de medfølgende visuals. Du kan finde detaljerede oplysninger om disse visuals i dokumentationen om visualtyper til [Power BI Report *Designer*](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
 
-Visuals, som ikke automatisk er inkluderet i Power BI, kaldes *brugerdefinerede visuals*. Brugerdefinerede visuals kan importeres til Power BI fra eksterne websteder, f. eks. Microsoft AppSource, eller fra interne kilder, f. eks. organisationslageret. Import af brugerdefinerede visuals kræver redigeringsrettigheder til rapporten. Hvis du vil vide mere om disse tilføjelsesvisuals kan du besøge [Visualiseringer i Power BI](../developer/visuals/power-bi-custom-visuals.md).
+Visuals, som ikke automatisk er inkluderet i Power BI, kaldes *brugerdefinerede visuals*. Brugerdefinerede visuals kan importeres til Power BI fra eksterne websteder, f. eks. Microsoft AppSource, eller fra interne kilder, f. eks. organisationslageret. Import af brugerdefinerede visuals kræver redigeringsrettigheder til rapporten. Hvis du vil vide mere om disse tilføjelsesvisualiseringer, kan du besøge [Brugerdefinerede visualiseringer i Power BI](../developer/visuals/power-bi-custom-visuals.md).
 
 
 
 ## <a name="list-of-visuals-available-in-power-bi"></a>Liste over visualiseringer, der er tilgængelige i Power BI
 Du finder alle disse visualiseringer på dashboards, i rapporter og [angivet under Spørgsmål og svar](end-user-q-and-a.md) i Power BI. Hvis du vil vide mere om, hvordan du interagerer med visualiseringer, skal du se [Interager med visualiseringer i rapporter, på dashboards og i apps](end-user-visualizations.md)
 
-### <a name="area-charts-basic-layered-and-stacked"></a>Områdediagrammer: Grundlæggende (lagdelte) og stablede
+## <a name="a"></a>A
+### <a name="area-charts-basic-layered-and-stacked"></a>Områdediagrammer: grundlæggende (lagdelte) og stablede
 ![områdediagram](media/end-user-visual-type/basic-area-map-small.png)
 
 Det grundlæggende områdediagram er baseret på kurvediagrammet med området mellem aksen og kurven udfyldt. Områdediagrammer fremhæver omfanget af ændringer over tid og kan bruges til at fremhæve den samlede værdi på tværs af en udvikling. Data, som repræsenterer indtjening over tid, kan f.eks. afbildes i et områdediagram for at fremhæve den samlede indtjening.
 
+## <a name="b"></a>B
 ### <a name="bar-and-column-charts"></a>Liggende søjlediagrammer og søjlediagrammer
 ![søjlediagram](media/end-user-visual-type/pbi-nancy-viz-bar.png)
 
@@ -44,6 +46,7 @@ Det grundlæggende områdediagram er baseret på kurvediagrammet med området me
 
 Liggende søjlediagrammer er standarden for at finde en specifik værdi på tværs af en række kategorier.
 
+## <a name="c"></a>C
 ### <a name="cards-single-number"></a>Kort: Enkelt tal
 ![kort med enkelt tal](media/end-user-visual-type/pbi-nancy-viz-card.png)
 
@@ -67,7 +70,7 @@ Kombinationsdiagrammer er et fantastisk valg i følgende tilfælde:
 - til at kontrollere, om en måling opfylder målet, der er defineret af en anden måling
 - til at spare plads på lærredet.
 
-
+## <a name="d"></a>D    
 ### <a name="decomposition-tree"></a>Fordelingstræ
 ![fordelingstræ](media/end-user-visual-type/power-bi-decomposition.png)
 
@@ -78,6 +81,7 @@ Fordelingstrævisual'et giver dig mulighed for at visualisere data på tværs af
 
 Kransediagrammer ligner cirkeldiagrammer.  De viser relationen mellem dele og en helhed. Den eneste forskel er, at centreret i det er tomt og giver plads til en etiket eller et ikon.
 
+## <a name="f"></a>F
 ### <a name="funnel-charts"></a>Tragtformede diagrammer
 ![tragtformet diagram](media/end-user-visual-type/pbi-nancy-viz-funnel.png)
 
@@ -86,7 +90,7 @@ Tragtformede diagrammer hjælper med at visualisere en proces med faser og eleme
 F.eks. et tragtformet salgsdiagram, der sporer kunder gennem forskellige faser: Kundeemne > Kvalificeret kundeemne > Kundeemne > Kontrakt > Luk. I korte træk afspejler tragtens form tilstanden af den proces, du holder øje med.
 De enkelte faser i tragten repræsenterer en procentdel af det samlede antal. Så i de fleste tilfælde vil et tragtformet diagram være formet som en tragt – hvor det første trin er det største, og hvor hvert efterfølgende trin bliver mindre end det foregående. En pæreformet tragt er også nyttig – det kan bruges til at identificere et problem i processen. Det første trin i fasen, "indgangsfasen", er dog typisk det største.
 
-
+## <a name="g"></a>G
 ### <a name="gauge-charts"></a>Målerdiagrammer
 ![målerdiagram](media/end-user-visual-type/gauge-m.png)
 
@@ -100,6 +104,7 @@ Radiale målere er fantastiske til:
 - vise tilstanden for en enkelt måling
 - vise oplysninger, der er hurtige at skimme og forstå.
 
+## <a name="k"></a>K
  ### <a name="key-influencers-chart"></a>Diagram over nøglepersoner med indflydelse
 ![nøgleperson med indflydelse](media/end-user-visual-type/power-bi-influencer.png)
 
@@ -116,11 +121,13 @@ KPI'er er et godt valg:
 - til at måle fremgang (hvad er jeg foran eller bagefter med?)
 - til at måle afstanden til et mål (hvor langt foran eller bagefter er jeg?)
 
+## <a name="l"></a>L
 ### <a name="line-charts"></a>Kurvediagrammer
 ![kurvediagram](media/end-user-visual-type/pbi-nancy-viz-line.png)
 
 Kurvediagrammer fremhæver den overordnede form af en hel serie af værdier som regel over tid.
 
+## <a name="m"></a>M
 ### <a name="maps-basic-maps"></a>Kort: Basiskort
 ![basiskort](media/end-user-visual-type/pbi-nancy-viz-map.png)
 
@@ -146,6 +153,7 @@ Med figurkort sammenlignes områder på et kort ved hjælp af farve. Et figurkor
 
 Matrixvisualiseringen er en type tabelvisualisering (se "Tabel" herunder), som understøtter et trinvist layout. Rapportdesignere inkluderer ofte matricer i rapporter og på dashboards, så brugerne kan vælge et eller flere elementer (rækker, kolonner, celler) i matrixen til tværgående fremhævning af andre visualiseringer på en rapportside.  
 
+## <a name="p"></a>P
 ### <a name="pie-charts"></a>Cirkeldiagrammer
 ![cirkeldiagram](media/end-user-visual-type/pbi-nancy-viz-pie.png)
 
@@ -154,8 +162,9 @@ I cirkeldiagrammer vises relationen mellem dele og en helhed.
 ### <a name="power-apps-visual"></a>Power Apps-visualisering
 ![Power Apps-visualisering](media/end-user-visual-type/power-bi-powerapps-visual.png)
 
-Rapportdesignere kan oprette en Power-app og integrere den i en Power BI-rapport. Forbrugere kan interagere med denne visualisering i Power BI-rapporten. 
+Rapportdesignere kan oprette en Power-app og integrere den i en Power BI-rapport. *Virksomhedsbrugere* kan interagere med denne visualisering i Power BI-rapporten. 
 
+## <a name="q"></a>Q
 ### <a name="qa-visual"></a>Visualisering til Spørgsmål og svar
 ![Visualiseringer af Spørgsmål og svar](media/end-user-visual-type/power-bi-q-and-a.png)
 
@@ -164,13 +173,14 @@ Rapportdesignere kan oprette en Power-app og integrere den i en Power BI-rapport
 
 Du kan finde flere oplysninger under [Visualiseringer af Spørgsmål og svar i Power BI](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
 
+## <a name="r"></a>R
 ### <a name="ribbon-chart"></a>Bånddiagram
 ![bånddiagram](media/end-user-visual-type/power-bi-ribbon.png)
 
 I bånddiagrammer vises, hvilken datakategori der har den højeste placering (største værdi). Bånddiagrammer er effektive til at vise ændringer af placeringer, hvor den højeste placering (værdi) altid vises øverst for hver tidsperiode.
 
+## <a name="s"></a>S
 ### <a name="scatter-bubble-and-dot-plot-charts"></a>Punktdiagrammer, boblediagrammer og prikdiagrammer
-
 
 Et punktdiagram har altid to værdiakser for at vise ét sæt numeriske data langs en vandret akse og et andet sæt numeriske værdier langs en lodret akse. Diagrammet viser punkter ved skæringspunktet for en numerisk x- og y-værdi og kombinerer disse værdier i enkelte datapunkter. Disse datapunkter kan være fordelt jævnt eller ujævnt på tværs af den vandrette akse afhængigt af dataene.
 
@@ -202,12 +212,18 @@ Udsnit er et fantastisk valg til at:
 - filtrere efter kolonner, der ikke er behov for, og som er skjult i datatabeller
 - oprette mere fokuserede rapporter ved at placere udsnit ved siden af vigtige visualiseringer.
 
+
+### <a name="smart-narrative"></a>Intelligent narrativ
+![intelligent narrativ](media/end-user-visual-type/power-bi-smart-narrative.png)
+
+De intelligente narrativer tilføjer tekst til rapporter for at belyse tendenser, vigtige punkter og tilføje forklaringer og kontekst. Teksten hjælper brugerne med at forstå dataene og identificere de vigtige resultater hurtigt.
+
 ### <a name="standalone-images"></a>Separate billeder
 ![separate billeder](media/end-user-visual-type/pbi-nancy-viz-image.png)
 
 Et separat billede er en grafik, der er blevet føjet til en rapport eller et dashboard. 
 
-
+## <a name="t"></a>T
 ### <a name="tables"></a>Tabeller
 ![tabeldiagram](media/end-user-visual-type/table-type.png)
 
@@ -231,6 +247,7 @@ Trækort er et godt valg:
 - til at vise attributter ved hjælp af størrelse og farvekodning
 - til at identificere mønstre, udenforliggende værdier, de vigtigste bidragsydere samt undtagelser.
 
+## <a name="w"></a>W
 ### <a name="waterfall-charts"></a>Vandfaldsdiagrammer
 ![vandfaldsdiagram](media/end-user-visual-type/waterfall-small.png)
 

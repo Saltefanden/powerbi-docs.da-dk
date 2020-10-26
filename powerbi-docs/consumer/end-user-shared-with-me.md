@@ -6,15 +6,15 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 10/5/2020
+ms.date: 10/09/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 0b6ccdf2e5caad141ef0c33ae70b9c2f2b604462
-ms.sourcegitcommit: 6ba33e5a500928163e02e007f5ccd52dd2227610
+ms.openlocfilehash: 0e13a7bd273121429cd186c99ef8110b38e839fb
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780184"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91983338"
 ---
 # <a name="display-the-dashboards-and-reports-that-have-been-shared-with-me"></a>Få vist dashboards og rapporter, der er delt med mig
 
@@ -22,7 +22,7 @@ ms.locfileid: "91780184"
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Når en kollega deler et dashboard eller en rapport med dig, vises det eller den i objektbeholderen **Delt med mig**. Når en kollega deler en app med dig, vises appen i objektbeholderen **Apps**.   
+Når en kollega deler et dashboard eller en rapport med dig, vises det eller den i objektbeholderen **Delt med mig**. Når en kollega deler en app med dig, vises appen i objektbeholderen **Apps**, og appens rapporter og dashboards vises i objektbeholderen **Delt med mig**.   
 
 ![Delingsikon](./media/end-user-shared-with-me/power-bi-shared-with-me.png)
 
@@ -41,6 +41,6 @@ Du har mulighed for at interagere med de delte dashboards og rapporter, afhængi
 
 
 ## <a name="search-and-sort-shared-dashboards-and-reports"></a>Søg efter og sortér delte dashboards og rapporter
-Hvis din indholdsliste over **Delt med mig** bliver for lang, har du flere muligheder for at finde det, du har brug for. Du kan bruge søgefeltet (1), du kan sortere efter en af kolonnerne (2), eller du kan bruge ruden Filtre. Vælg **Filtre** i øverste højre hjørne for at åbne ruden Filtre.    
+Hvis din indholdsliste over **Delt med mig** bliver for lang, har du flere muligheder for at finde det, du har brug for. Brug søgefeltet (1), sortér efter en af kolonnerne (2), eller brug ruden Filtre. Vælg **Filtre** i øverste højre hjørne for at åbne ruden Filtre.    
 
 ![dashboardet Ejer og Søg](./media/end-user-shared-with-me/power-bi-filter.png)

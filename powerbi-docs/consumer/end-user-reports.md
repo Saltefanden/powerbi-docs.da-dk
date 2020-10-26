@@ -6,23 +6,25 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 09/28/2020
+ms.date: 10/09/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 871f807d18017343b4b23eee4d59833c196cf2f0
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: 4ee852e18056fc6db0288066f5b2074eba784487
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91528062"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91983435"
 ---
 # <a name="reports-in-power-bi"></a>Rapporter i Power BI
 
-[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yyn.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-En Power BI-rapport er en visning med flere perspektiver af et datasæt med visualiseringer, som repræsenterer forskellige resultater og indsigter fra dette datasæt.  En rapport kan indeholde en enkelt visualisering eller sider fulde af visualiseringer. Afhængigt af din jobfunktion kan du være en person, der *designer* rapporter. Du også kan være en erhvervsbruger, der *forbruger* eller anvender rapporter. Denne artikel er målrettet *virksomhedsbrugere*.
+En Power BI-rapport er en visning med flere perspektiver af et datasæt med visualiseringer, som repræsenterer forskellige resultater og indsigter fra dette datasæt.  En rapport kan indeholde en enkelt visualisering eller sider fulde af visualiseringer. Afhængigt af din jobfunktion kan du være en person, der *designer* rapporter. Du også kan være en *virksomhedsbruger*, der *forbruger* eller anvender rapporter. Denne artikel er målrettet *virksomhedsbrugere*.
+
+## <a name="the-parts-of-a-report"></a>Rapportens dele
 
 ![Skærmbillede af en rapportside.](./media/end-user-reports/power-bi-report.png)
 
@@ -36,14 +38,14 @@ Hvis du ikke har arbejdet med Power BI før, kan du få et godt overblik ved at 
 
 ## <a name="advantages-of-reports"></a>Fordele ved rapporter
 
-Power BI baserer en rapport på et enkelt datasæt. *Designere* af rapporter opretter visualiseringerne i en rapport, der repræsenterer en guldgrube af oplysninger. Visualiseringerne er ikke statiske.  De opdateres, når de underliggende data ændres. Du kan interagere med visualiseringer og filtre, når du graver dig dybere ned i dataene for at få indsigt og søge efter svar. Ligesom et dashboard er en rapport meget interaktiv og kan tilpasses i høj grad.
+Power BI baserer en rapport på et enkelt datasæt. *Designere* af rapporter opretter visualiseringerne i en rapport, der repræsenterer en guldgrube af oplysninger. Visualiseringerne er ikke statiske.  De opdateres, når de underliggende data ændres. Du kan interagere med visualiseringer og filtre, når du graver dig dybere ned i dataene for at få indsigt og søge efter svar. Ligesom et dashboard er en rapport meget interaktiv og kan i høj grad tilpasses. Omfanget af det, du kan foretage dig med en rapport, afhænger af den rolle og de tilladelser, der er tildelt af *rapportdesigneren*.
 
 ### <a name="safely-interact-with-content"></a>Sikker interaktion med indhold
 
 Når du udforsker og interagerer med dit indhold, kan du filtrere, lave udsnit, abonnere og eksportere – og du kan ikke ødelægge rapporterne. Dit arbejde påvirker ikke det underliggende datasæt eller det oprindelige delte indhold. Dette gælder for dashboards, rapporter og apps.
 
 > [!NOTE]
-> Husk, at du ikke kan beskadige dine data. Power BI er et fantastisk sted at udforske og eksperimentere, uden at du behøver at bekymre dig om at ødelægge noget.
+> Husk, at du ikke kan beskadige dine data. Power BI-tjenesten er et fantastisk sted at udforske og eksperimentere, uden at du behøver at bekymre dig om at ødelægge noget.
 
 ### <a name="save-your-changes-or-revert-to-the-default-settings"></a>Gem dine ændringer, eller gendan standardindstillingerne
 

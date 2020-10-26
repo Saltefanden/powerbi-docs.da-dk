@@ -6,15 +6,15 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 07/01/2020
+ms.date: 10/10/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 1b0b677e67fa15906492fbaa41fcfd456d77bf01
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: f0ddbbbce93a14c3468eacca130163758ca85c45
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91633878"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91982146"
 ---
 # <a name="buttons-in-the-power-bi-service"></a>Knapper i Power BI-tjenesten
 I de rapporter, du modtager fra kolleger, har du måske lagt mærke til knapperne og spekuleret på, hvordan du bruger dem. Nogle har ord, nogle har pile, andre har grafik og nogle har endda rullemenuer. I denne artikel gennemgår vi, hvordan du genkender en knap og finder ud af, hvad du kan foretage dig med den.
@@ -23,24 +23,23 @@ I de rapporter, du modtager fra kolleger, har du måske lagt mærke til knappern
 Knapper kan minde om figurer, billeder eller ikoner på en rapportside. Men hvis der opstår en handling, når du vælger (klikker) på den, er det sandsynligvis en knap.
 
 ## <a name="types-of-buttons"></a>Knaptyper
-Rapportforfattere føjer knapper til rapporter, så du kan få hjælp til navigation og udforskning. Disse typer knapper er: **Tilbage**, **Bogmærke**, **Detaljeadgang**, **Sidenavigation**, **Spørgsmål og svar** og **Webadresse**. 
+Rapportforfattere føjer knapper til rapporter, så du kan få hjælp til navigation og udforskning. Kun nogle af knaptyperne er: tilbage, bogmærke, pile, Spørgsmål og svar, hjælp og tom. 
 
 ### <a name="back-buttons"></a>Tilbage-knapper 
 En tilbage-knap kan have et pileikon, og når du vælger den, tager Power BI dig tilbage til den forrige side.  Tilbage-knapper bruges ofte sammen med detaljeadgang. Her er et eksempel på en tilbage-knap, der bruges til detaljeadgang.
 
-1. Vælg **Word** i søjlediagrammet.
-1. Vælg **Detaljeadgang**, og vælg **Affinitetsanalyse**.
+1. Brugeren har valgt **Word** i liggende søjlediagram, og der foretages detailudledning til  **Affinitetsanalyse**.
 
     ![Skærmbillede af knappen Detaljeadgang.](media/end-user-buttons/power-bi-drillthrough.png)
 
-    Når du vælger **Affinitetsanalyse**, åbner Power BI rapportsiden *Affinitetsanalyse* og bruger de valg, der er foretaget på kildesiden, til at filtrere det, der vises på destinationssiden.
+2. Når du vælger **Affinitetsanalyse**, åbner Power BI rapportsiden *Affinitetsanalyse* og bruger de valg, der er foretaget på kildesiden, til at filtrere det, der vises på destinationssiden.
 
-    ![Skærmbillede af knappen Tilbage.](media/end-user-buttons/power-bi-go-back.png)
+    ![Skærmbillede af knappen Tilbage.](media/end-user-buttons/power-bi-back.png)
 
-    Du er nu på rapportsiden **Affinitetsanalyse**, der er filtreret for Word. Vælg tilbage-knappen for at vende tilbage til den forrige rapportside. 
+    Du er nu på rapportsiden **Affinitetsanalyse**, der er filtreret for **Word**. Vælg tilbage-knappen med navnet **Gå tilbage** for at vende tilbage til den forrige side. 
 
 ## <a name="bookmark-buttons"></a>Bogmærkeknapper
-Rapportdesignere medtager ofte bogmærker i deres rapporter. Du kan få vist listen over rapportbogmærker ved at vælge **Vis** > **Bogmærker** i øverste højre hjørne. Når en rapportdesigner tilføjer en *bogmærkeknap*, er det blot en anden måde at navigere til den bestemte rapportside, der er knyttet til bogmærket. På siden vises de anvendte filtre og indstillinger, der er hentet af bogmærket. [Få mere at vide om bogmærker i Power BI](end-user-bookmarks.md). 
+*Rapportdesignere* medtager ofte bogmærker i deres rapporter. Du kan få vist listen over rapportbogmærker ved at vælge **Bogmærker** i øverste højre hjørne. Når en rapportdesigner tilføjer en *bogmærkeknap*, er det blot en anden måde at navigere til den bestemte rapportside, der er knyttet til bogmærket. På siden vises de anvendte filtre og indstillinger, der er hentet af bogmærket. [Få mere at vide om bogmærker i Power BI](end-user-bookmarks.md). 
 
 I dette eksempel har knappen et bogmærkeikon og navnet på bogmærket, *Urban*. 
 
@@ -76,7 +75,7 @@ Detaljeadgangsknapper kan også have rullemenuer, der giver dig mulighed for at 
 
 ## <a name="page-navigation"></a>Sidenavigation
 
-Sidenavigationsknapper fører dig til en anden side i den samme rapport. Rapportdesignere opretter ofte navigationsknapper for at fortælle en historie eller vejlede dig gennem rapportindsigten. I eksemplet nedenfor har rapportdesigneren tilføjet en knap på hver rapportside, der fører dig til den første side, oversigtssiden på øverste niveau, i rapporten. Denne sidenavigationsknap er nyttig, fordi der er mange sider i rapporten.
+Sidenavigationsknapper fører dig til en anden side i den samme rapport. Rapportdesignere opretter ofte navigationsknapper for at fortælle en historie eller vejlede dig gennem rapportindsigten. I eksemplet nedenfor har rapportdesigneren tilføjet en knap på hver rapportside, der fører dig tilbage til den første side, oversigtssiden på øverste niveau, i rapporten. Denne sidenavigationsknap er nyttig, fordi der er mange sider i rapporten.
 
 ![Skærmbillede af sidenavigationsknappen med navnet Teamscorecard.](media/end-user-buttons/power-bi-nav-button.png)
 
@@ -87,7 +86,7 @@ Når du vælger en Spørgsmål og svar-knap, åbnes Spørgsmål og svar-stifinde
 ![Skærmbillede af vinduet Stifinder med spørgsmål og svar i Power BI med teksten Stil et spørgsmål om dine data.](media/end-user-buttons/power-bi-qna.png)
 
 ## <a name="web-url"></a>URL-adresse til websted
-Webadresseknapper åbner et nyt browservindue. Rapportdesignere kan tilføje denne type knap som en referencekilde, til at oprette et link til virksomhedens websted eller endda som et link til en anden rapport eller et andet dashboard. I eksemplet nedenfor kan du bruge webadresseknappen til at downloade kildefilen til rapporten. 
+Webadresseknapper åbner et nyt browservindue. Rapportdesignere kan tilføje denne type knap som en referencekilde, til at oprette et link til virksomhedens websted eller en hjælpeside eller endda som et link til en anden rapport eller et andet dashboard. I eksemplet nedenfor kan du bruge webadresseknappen til at downloade kildefilen til rapporten. 
 
 Eftersom siden åbnes i et separat vindue, skal du lukke vinduet eller vælge Power BI-fanen for at vende tilbage til Power BI-rapporten.
 

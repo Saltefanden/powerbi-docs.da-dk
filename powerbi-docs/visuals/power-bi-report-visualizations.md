@@ -10,12 +10,12 @@ ms.subservice: powerbi-desktop
 ms.topic: how-to
 ms.date: 05/05/2020
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2ae4223a6e156be3907bcad980df9446dbb64127
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: c94990f3126191cf568c2cc20fb5db0c954a6424
+ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85234640"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92049447"
 ---
 # <a name="visualizations-in-power-bi-reports"></a>Visualiseringer i Power BI-rapporter
 
@@ -29,7 +29,7 @@ Der er mange forskellige typer visualiseringer, der er tilgængelige direkte fra
 
 ![rude med ikoner for hver visualiseringstype](media/power-bi-report-visualizations/power-bi-icons.png)
 
-Flere Power BI-visualiseringer er tilgængelige fra [webstedet for Microsoft AppSource-community'et](https://appsource.microsoft.com). I AppSource kan du gennemse og [downloade](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) [Power BI-visuals](../developer/visuals/custom-visual-develop-tutorial.md), der leveres af Microsoft og community'et.
+Flere Power BI-visualiseringer er tilgængelige fra [webstedet for Microsoft AppSource-community'et](https://appsource.microsoft.com). I AppSource kan du gennemse og [downloade](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) Power BI-visualiseringer, der leveres af Microsoft og community'et.
 
 Hvis du ikke har erfaring med Power BI, eller hvis du har brug for at opfriske din viden, kan du bruge linkene nedenfor til at lære det grundlæggende om Power BI-visualiseringer.  Alternativt kan du bruge indholdsfortegnelsen (til venstre for denne artikel) til at finde flere praktiske oplysninger.
 
@@ -39,7 +39,7 @@ Hvis du ikke har erfaring med Power BI, eller hvis du har brug for at opfriske d
 
 ## <a name="upload-a-visualization-from-a-file-or-from-appsource"></a>Upload en visualisering fra en fil eller fra AppSource
 
-Tilføj en visualisering, som du selv har oprettet, eller som du har fundet på [webstedet for Microsoft AppSource-community'et](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Er du i det kreative hjørne? Dyk ned i kildekoden, og brug vores [udviklerværktøjer](../developer/visuals/custom-visual-develop-tutorial.md) til at oprette en ny visualiseringstype, og [del den med community'et](../developer/visuals/office-store.md). Hvis du vil have mere at vide om udvikling af Power BI-visualiseringer, kan du se [Udvikling af en visualisering i Power BI](../developer/visuals/custom-visual-develop-tutorial.md).
+Tilføj en visualisering, som du selv har oprettet, eller som du har fundet på [webstedet for Microsoft AppSource-community'et](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Er du i det kreative hjørne? Dyk ned i kildekoden, og brug vores [udviklerværktøjer](../developer/visuals/environment-setup.md) til at oprette en ny visualiseringstype, og [del den med community'et](../developer/visuals/office-store.md). Hvis du vil have mere at vide om udvikling af Power BI-visualiseringer, kan du se [Udvikling af en visualisering i Power BI](../developer/visuals/develop-circle-card.md).
 
 ## <a name="personalize-your-visualization-pane"></a>Tilpas din visualiseringsrude
 

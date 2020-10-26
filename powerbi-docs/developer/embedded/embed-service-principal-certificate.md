@@ -8,13 +8,13 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: ''
-ms.date: 06/01/2020
-ms.openlocfilehash: 521c705587c10c76dedb731aeae34221244f3a83
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.date: 10/15/2020
+ms.openlocfilehash: 3d25fe925b98dbdd74d61fd70320bd4275db35e3
+ms.sourcegitcommit: 1428acb6334649fc2d3d8ae4c42cfbc17e8f7476
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91749178"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "92197765"
 ---
 # <a name="embed-power-bi-content-with-service-principal-and-a-certificate"></a>Integrer Power BI-indhold med tjenesteprincipal og et certifikat
 
@@ -35,17 +35,48 @@ Du kan få mere at vide om certifikater i Azure AD på GitHub-siden [Klientens l
 
 Hvis du vil bruge tjenesteprincipalen og et certifikat med integreret analyse, skal du følge disse trin:
 
-1. Opret et certifikat.
+1. Opret en Azure AD-app.
 
-2. Opret en Azure AD-app.
+2. Opret en Microsoft Azure AD-sikkerhedsgruppe.
 
-3. Konfigurer certifikatgodkendelse.
+3. Aktivér indstillingerne for Power BI-tjenesteadministration.
 
-4. Hent certifikatet fra Azure Key Vault.
+4. Føj tjenesteprincipalen til dit arbejdsområde.
 
-5. Godkend ved hjælp af en tjenesteprincipal og et certifikat.
+5. Opret et certifikat.
 
-## <a name="step-1---create-a-certificate"></a>Trin 1 – Opret et certifikat
+6. Konfigurer certifikatgodkendelse.
+
+7. Hent certifikatet fra Azure Key Vault.
+
+8. Godkend ved hjælp af en tjenesteprincipal og et certifikat.
+
+## <a name="step-1---create-an-azure-ad-application"></a>Trin 1 – Opret et Microsoft Azure AD-program
+
+[!INCLUDE[service principal create app](../../includes/service-principal-create-app.md)]
+
+### <a name="creating-an-azure-ad-app-using-powershell"></a>Oprettelse af en Microsoft Azure AD-app ved hjælp af PowerShell
+
+Dette afsnit indeholder et eksempelscript til oprettelse af en ny Microsoft Azure AD-app ved hjælp af [PowerShell](/powershell/azure/create-azure-service-principal-azureps).
+
+```powershell
+# The app ID - $app.appid
+# The service principal object ID - $sp.objectId
+# The app key - $key.value
+
+# Sign in as a user that's allowed to create an app
+Connect-AzureAD
+
+# Create a new Azure AD web application
+$app = New-AzureADApplication -DisplayName "testApp1" -Homepage "https://localhost:44322" -ReplyUrls "https://localhost:44322"
+
+# Creates a service principal
+$sp = New-AzureADServicePrincipal -AppId $app.AppId
+```
+
+[!INCLUDE[service create steps two, three and four](../../includes/service-principal-create-steps.md)]
+
+## <a name="step-5---create-a-certificate"></a>Trin 5 – Opret et certifikat
 
 Du kan oprette et certifikat fra et *nøglecenter*, der er tillid til, eller du kan selv oprette et certifikat.
 
@@ -55,19 +86,19 @@ I dette afsnit beskrives det, hvordan du opretter et certifikat ved hjælp af [A
 
 2. Søg efter **Key Vaults**, og klik på linket **Key Vaults**.
 
-    ![key vault](media/embed-service-principal-certificate/key-vault.png)
+    ![Et skærmbillede, der viser et link til nøglesamlingen i Microsoft Azure-portalen.](media/embed-service-principal-certificate/key-vault.png)
 
 3. Klik på den key vault, du vil føje et certifikat til.
 
-    ![Vælg key vault](media/embed-service-principal-certificate/select-key-vault.png)
+    ![Et skærmbillede, der viser en liste over slørede nøglesamlinger i Microsoft Azure-portalen.](media/embed-service-principal-certificate/select-key-vault.png)
 
 4. Klik på **Certifikater**.
 
-    ![Skærmbillede, der viser siden Nøglesamlinger med Certifikater fremhævet.](media/embed-service-principal-certificate/certificates.png)
+    ![Et skærmbillede, der viser siden Nøglesamlinger med Certifikater fremhævet.](media/embed-service-principal-certificate/certificates.png)
 
 5. Klik på **Generer/Importér**.
 
-    ![Skærmbillede, der viser ruden Certifikat med Generér/Importér fremhævet.](media/embed-service-principal-certificate/generate.png)
+    ![Et skærmbillede, der viser ruden Certifikat med Generér/Importér fremhævet.](media/embed-service-principal-certificate/generate.png)
 
 6. Konfigurer feltet **Opret et certifikat** på følgende måde:
 
@@ -97,21 +128,17 @@ I dette afsnit beskrives det, hvordan du opretter et certifikat ved hjælp af [A
 
 9. Klik på **Download i CER-format**. Den downloadede fil indeholder den offentlige nøgle.
 
-    ![download som cer](media/embed-service-principal-certificate/download-cer.png)
+    ![Et skærmbillede, der viser knappen download i cer-format.](media/embed-service-principal-certificate/download-cer.png)
 
-## <a name="step-2---create-an-azure-ad-application"></a>Trin 2 – Opret et Azure AD-program
-
-[!INCLUDE[service principal create app](../../includes/service-principal-create-app.md)]
-
-## <a name="step-3---set-up-certificate-authentication"></a>Trin 3 – Konfigurer certifikatgodkendelse
+## <a name="step-6---set-up-certificate-authentication"></a>Trin 6 – Konfigurer certifikatgodkendelse
 
 1. I dit Azure AD-program skal du klikke på fanen **Certifikater og hemmeligheder**.
 
-     ![Skærmbillede, der viser ruden Certifikater og hemmeligheder for en app i Azure Portal.](media/embed-service-principal/certificates-and-secrets.png)
+     ![Et skærmbillede, der viser ruden Certifikater og hemmeligheder for en app på Microsoft Azure-portalen.](media/embed-service-principal/certificates-and-secrets.png)
 
-2. Klik på **Upload certifikat**, og upload den *.cer-* -fil, du har oprettet og downloadet, i [første trin](#step-1---create-a-certificate) i dette selvstudium. *.cer*-filen indeholder den offentlige nøgle.
+2. Klik på **Upload certifikat**, og upload den *.cer-* -fil, du har oprettet og downloadet, i [første trin](#step-5---create-a-certificate) i dette selvstudium. *.cer*-filen indeholder den offentlige nøgle.
 
-## <a name="step-4---get-the-certificate-from-azure-key-vault"></a>Trin 4 – Hent certifikatet fra Azure Key Vault
+## <a name="step-7---get-the-certificate-from-azure-key-vault"></a>Trin 7 – Hent certifikatet fra Azure Key Vault
 
 Brug Managed Service Identity (MSI) til at hente certifikatet fra Azure Key Vault. Denne proces omfatter hentning af det *.pfx*-certifikat, der indeholder både offentlige og private nøgler.
 
@@ -138,7 +165,7 @@ private X509Certificate2 ReadCertificateFromVault(string certName)
 }
 ```
 
-## <a name="step-5---authenticate-using-service-principal-and-a-certificate"></a>Trin 5 – Godkend ved hjælp af en tjenesteprincipal og et certifikat
+## <a name="step-8---authenticate-using-service-principal-and-a-certificate"></a>Trin 8 – Godkend ved hjælp af en tjenesteprincipal og et certifikat
 
 Du kan godkende din app ved hjælp af tjenesteprincipalen og et certifikat, der er gemt i Azure Key Vault, ved at oprette forbindelse til Azure Key Vault.
 
@@ -181,11 +208,11 @@ Når du opretter din integrerede løsning, kan det være en god ide at konfigure
 
 2. Klik på **Værktøjer** > **Indstillinger**.
 
-     ![Visual Studio-indstillinger](media/embed-service-principal-certificate/visual-studio-options.png)
+     ![Et skærmbillede, der viser knappen Indstillinger i menuen Funktioner i Visual Studio.](media/embed-service-principal-certificate/visual-studio-options.png)
 
 3. Søg efter **Kontovalg**, og klik på **Kontovalg**.
 
-    ![kontovalg](media/embed-service-principal-certificate/account-selection.png)
+    ![Et skærmbillede, der viser indstillingen Kontovalg i vinduet Visual Studio-indstillinger.](media/embed-service-principal-certificate/account-selection.png)
 
 4. Tilføj den konto, der har adgang til din Azure Key Vault.
 

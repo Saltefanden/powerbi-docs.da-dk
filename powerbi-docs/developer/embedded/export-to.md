@@ -6,13 +6,13 @@ ms.author: kesharab
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 07/13/2020
-ms.openlocfilehash: f024959c0d7e8bd0b51893a277161c67b5f4dfc6
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.date: 10/01/2020
+ms.openlocfilehash: f997547bb61bf203f7806dbe68d45beb29c6538b
+ms.sourcegitcommit: 59d07be9c3e4a2067f6d42c3002a194371bc4341
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91746119"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92116448"
 ---
 # <a name="export-power-bi-report-to-file-preview"></a>Eksportér Power BI-rapport til fil (prøveversion)
 
@@ -52,11 +52,18 @@ Angiv de sider, du vil udskrive i henhold til returværdierne [Hent sider](/rest
 
 ### <a name="bookmarks"></a>Bogmærker
 
- Du kan bruge `exportToFile`-API'en til programmeringsmæssigt at eksportere en rapport i en bestemt tilstand, efter du har anvendt filtre på den. Det gør du ved hjælp af egenskaber for [bogmærker](../../consumer/end-user-bookmarks.md). Hvis du vil eksportere en rapport ved hjælp af bogmærker, skal du bruge [JavaScript-API'en til bogmærker](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Bookmarks).
+[Bogmærker](../../consumer/end-user-bookmarks.md) kan bruges til at gemme en rapport i en bestemt konfiguration, herunder anvendte filtre og tilstanden for rapportens visualiseringer. Du kan bruge API'en [exportToFile](https://docs.microsoft.com/rest/api/power-bi/reports/exporttofile) til programmeringsmæssigt at eksportere en rapports bogmærke på to måder:
 
- Du kan f.eks. bruge bogmærkets `capturedBookmark.state`-metode til at hente de ændringer, som en bestemt bruger har foretaget i en rapport, og derefter eksportere den i dens nuværende tilstand.
+* **Eksportér et eksisterende bogmærke**
 
-[Personlige bogmærker](../../consumer/end-user-bookmarks.md#personal-bookmarks) og [vedvarende filtre](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) understøttes ikke.
+    Hvis du vil eksportere et eksisterende [rapportbogmærke](../../consumer/end-user-bookmarks.md#report-bookmarks), skal du bruge egenskaben `name`, der er en entydig identifikator (forskel på store og små bogstaver), som du kan få ved at bruge [API'en med bogmærker til JavaScript](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Bookmarks).
+
+* **Eksportér rapportens tilstand**
+
+    Hvis du vil eksportere rapportens aktuelle tilstand, skal du bruge egenskaben `state`. Du kan f.eks. bruge bogmærkets `bookmarksManager.capture`-metode til at hente de ændringer, som en bestemt bruger har foretaget i en rapport, og derefter eksportere den i dens nuværende tilstand ved hjælp af `capturedBookmark.state`.
+
+>[!NOTE]
+>[Personlige bogmærker](../../consumer/end-user-bookmarks.md#personal-bookmarks) og [vedvarende filtre](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) understøttes ikke.
 
 ### <a name="authentication"></a>Godkendelse
 

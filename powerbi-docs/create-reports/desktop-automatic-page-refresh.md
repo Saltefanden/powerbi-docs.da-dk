@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 08/13/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f282db76417fb99f07d39bb9f684515dd1d312c0
-ms.sourcegitcommit: ae6559f40e1735d53654cbe9425add6e18171295
+ms.openlocfilehash: 3ffc865a4be18b8fa11dda2d94bc2c8892fc3000
+ms.sourcegitcommit: 59d07be9c3e4a2067f6d42c3002a194371bc4341
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88764968"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92116517"
 ---
 # <a name="automatic-page-refresh-in-power-bi"></a>Automatisk sideopdatering i Power BI
 
@@ -197,6 +197,9 @@ I denne tabel beskrives flere detaljer, hvor denne funktion er tilgængelig, og 
 *Tabelforklaring:*
 1. *FI: Fast interval*
 2. *ÆR: Ændre registrering*
+
+> [!WARNING]
+> Når funktionen er aktiveret i dit datasæt, åbnes der en forbindelse til din DirectQuery-datakilde, når der registreres ændringer, for at beregne målingen og afstemningen af ændringer. Denne forbindelse adskiller sig fra de opdateringsforbindelser med lav prioritet, Power BI allerede foretager.
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 

@@ -10,12 +10,12 @@ ms.subservice: powerbi-desktop
 ms.topic: overview
 ms.date: 07/14/2020
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e56b03eeccc3140709fb458d4e42a9065a4da5d4
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: 62a88a8267ae38b1dbfc0bbb0ee1d9020e7f9408
+ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87538004"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92049240"
 ---
 # <a name="visuals-in-power-bi"></a>Visualiseringer i Power BI
 
@@ -72,7 +72,7 @@ Power BI-visualiseringer er pakker, der indeholder kode til gengivelse af de dat
 
 Hvis du vil importere en Power BI-visualisering, skal du i ruden *Visualisering* klikke på **Importér en brugerdefineret visualisering** og vælge **Importér fra fil**.
 
-Hvis du er webudvikler og er interesseret i at oprette din egen visualisering og vil føje den til AppSource, kan du få mere at vide om, hvordan du [udvikler en Power BI-visualisering](custom-visual-develop-tutorial.md) og [udgiver en Power BI-visualisering til AppSource](office-store.md).
+Hvis du er webudvikler og er interesseret i at oprette din egen visualisering og vil føje den til AppSource, kan du få mere at vide om, hvordan du [udvikler en Power BI-cirkelkortvisualisering](develop-circle-card.md) og [udgiver en Power BI-visualisering til AppSource](office-store.md).
 
 > [!WARNING]
 > En Power BI-visualisering kan indeholde kode, der kan udgøre en risiko for sikkerheden eller beskyttelsen af personlige oplysninger. Vær sikker på, at du har tillid til forfatteren og kilden til Power BI-visualiseringen, før du importerer den i din rapport.
@@ -80,7 +80,7 @@ Hvis du er webudvikler og er interesseret i at oprette din egen visualisering og
 ## <a name="next-steps"></a>Næste trin
 
 >[!div class="nextstepaction"]
->[Udvikling af en Power BI-visualisering](custom-visual-develop-tutorial.md)
+>[Udvikling af en Power BI-cirkelkortvisualisering](develop-circle-card.md)
 
 >[!div class="nextstepaction"]
 >[Projektstruktur i Power BI-visualiseringer](visual-project-structure.md)

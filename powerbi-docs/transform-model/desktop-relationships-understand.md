@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/15/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 3df3e29d2f6517fec68bf185bf71d9f4f3c5618a
-ms.sourcegitcommit: 642b0c04d3ff3aa4d5422ca5054a5a158fb01b22
+ms.openlocfilehash: 472f2ecce2e28fcb7d50356ec1322f67f2395411
+ms.sourcegitcommit: 701dd80661a63c76d37d1e4f159f90e3fc8c3160
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88512856"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91135999"
 ---
 # <a name="model-relationships-in-power-bi-desktop"></a>Modelrelationer i Power BI Desktop
 
@@ -140,7 +140,7 @@ Der findes adskillige DAX-funktioner, som er relevante for modelrelationer. Hver
 
 ## <a name="relationship-evaluation"></a>Validering af relationer
 
-Modelrelationer klassificeres fra et evalueringsperspektiv enten som _stærke_ eller _svage_. Det er ikke en konfigurerbar relationsegenskab. Det er faktisk afledt af kardinalitetstypen og datakilden for de to relaterede tabeller. Det er vigtigt at forstå evalueringstypen, fordi der kan opstå problemer med ydeevnen eller konsekvenser, hvis dataintegriteten kompromitteres. Disse konsekvenser og konsekvensen for integriteten er beskrevet i dette emne.
+Modelrelationer klassificeres fra et evalueringsperspektiv enten som _almindelige_ eller _begrænsede_. Det er ikke en konfigurerbar relationsegenskab. Det er faktisk afledt af kardinalitetstypen og datakilden for de to relaterede tabeller. Det er vigtigt at forstå evalueringstypen, fordi der kan opstå problemer med ydeevnen eller konsekvenser, hvis dataintegriteten kompromitteres. Disse konsekvenser og konsekvensen for integriteten er beskrevet i dette emne.
 
 For det første kræves der modelteori for at forstå relationsevalueringer.
 
@@ -154,17 +154,17 @@ Lad os se et eksempel på en sammensat model.
 
 I dette eksempel består den sammensatte model af to øer: en VertiPaq-dataø og en DirectQuery-kildedataø. VertiPaq-dataøen indeholder tre tabeller, og DirectQuery-kildedataøen indeholder to tabeller. Der eksisterer en tværgående relation, som kan relatere en tabel i VertiPaq-dataøen til en tabel i DirectQuery-kildedataøen.
 
-### <a name="strong-relationships"></a>Stærke relationer
+### <a name="regular-relationships"></a>Almindelige relationer
 
-En modelrelation er _stærk_, når forespørgselsprogrammet kan bestemme relationens "en"-side. Det har bekræftelse på, at kolonnen "en" indeholder entydige værdier. Alle en til mange-relationer mellem øer er stærke relationer.
+En modelrelation er _almindelig_, når forespørgselsprogrammet kan bestemme relationens "en"-side. Det har bekræftelse på, at kolonnen "en" indeholder entydige værdier. Alle en til mange-relationer mellem øer er almindelige relationer.
 
-I det følgende eksempel er der to stærke relationer, der begge er markeret som **S**. Relationerne omfatter en til mange-relationen inden for Vertipaq-øen og mange-relationerne inden for DirectQuery-kilden.
+I det følgende eksempel er der to almindelige relationer, der begge er markeret som **S**. Relationerne omfatter en til mange-relationen inden for Vertipaq-øen og mange-relationerne inden for DirectQuery-kilden.
 
-![Eksempel på en sammensat model bestående af to øer med stærke relationer markeret](media/desktop-relationships-understand/data-island-example-strong.png)
+![Eksempel på en sammensat model bestående af to øer med almindelige relationer markeret](media/desktop-relationships-understand/data-island-example-strong.png)
 
-I forbindelse med importmodeller, hvor alle data er gemt i VertiPaq-cachen, oprettes der en datastruktur for hver stærk relation på dataopdateringstidspunktet. Datastrukturerne består af indekserede tilknytninger af alle kolonne til kolonne-værdier, og formålet er at fremskynde sammenkædningen af tabeller på forespørgselstidspunktet.
+I forbindelse med importmodeller, hvor alle data er gemt i VertiPaq-cachen, oprettes der en datastruktur for hver almindelig relation på dataopdateringstidspunktet. Datastrukturerne består af indekserede tilknytninger af alle kolonne til kolonne-værdier, og formålet er at fremskynde sammenkædningen af tabeller på forespørgselstidspunktet.
 
-På forespørgselstidspunktet tillader stærke relationer _tabeludvidelse_. Tabeludvidelse resulterer i oprettelsen af en virtuel tabel ved at medtage de oprindelige kolonner i basistabellen og derefter udvide til relaterede tabeller. I forbindelse med importtabeller udføres det i forespørgselsprogrammet. I forbindelse med DirectQuery-tabeller udføres det i den oprindelige forespørgsel, der sendes til kildedatabasen (forudsat at egenskaben **Antag referentiel integritet** ikke er aktiveret). Forespørgselsprogrammet reagerer derefter på den udvidede tabel og anvender filtre og gruppering efter værdierne i de udvidede tabelkolonner.
+På forespørgselstidspunktet tillader almindelige relationer _tabeludvidelse_. Tabeludvidelse resulterer i oprettelsen af en virtuel tabel ved at medtage de oprindelige kolonner i basistabellen og derefter udvide til relaterede tabeller. I forbindelse med importtabeller udføres det i forespørgselsprogrammet. I forbindelse med DirectQuery-tabeller udføres det i den oprindelige forespørgsel, der sendes til kildedatabasen (forudsat at egenskaben **Antag referentiel integritet** ikke er aktiveret). Forespørgselsprogrammet reagerer derefter på den udvidede tabel og anvender filtre og gruppering efter værdierne i de udvidede tabelkolonner.
 
 > [!NOTE]
 > Inaktive relationer udvides også, selvom relationen ikke bruges af en beregning. Tovejs relationer har ingen indvirkning på tabeludvidelser.
@@ -181,34 +181,34 @@ Lad os se, hvordan tabeludvidelse fungerer i et animeret eksempel.
 
 I dette eksempel består modellen af tre tabeller: **Kategori**, **Produkt** og **Salg**. Tabellen **Kategori** relaterer til tabellen **Produkt** med en en til mange-relation, og tabellen **Produkt** relaterer til tabellen **Salg** med en en til mange-relation. Tabellen **Kategori** indeholder to rækker, tabellen **Produkt** indeholder tre rækker, og tabellen **Salg** indeholder fem rækker. Der er tilsvarende værdier på begge sider af alle relationer, hvilket betyder, at der ikke er nogen overtrædelser af referentiel integritet. Der vises en udvidet forespørgselstidstabel. Tabellen består af kolonnerne fra alle tre tabeller. Det er effektivt et ikke-normaliseret perspektiv for dataene i de tre tabeller. Der føjes en ny række til tabellen **Salg**, og den har en produktions-id-værdi (9), som ikke har en tilsvarende værdi i tabellen **Produkt**. Det er en overtrædelse af referentiel integritet. I den udvidede tabel indeholder den nye række (tomme) værdier for tabelkolonnerne **Kategori** og **Produkt**.
 
-### <a name="weak-relationships"></a>Svage relationer
+### <a name="limited-relationships"></a>Begrænsede relationer
 
-En modelrelation er _svag_, når der ikke er nogen garanteret "en"-side. Det kan skyldes to årsager:
+En modelrelation er _begrænset_, når der ikke er nogen garanteret "en"-side. Det kan skyldes to årsager:
 
 - Relationen bruger en mange til mange-kardinalitetstype (selvom en eller begge kolonner indeholder entydige værdier)
 - Relationen er på tværs af øen (hvilket kun kan være tilfældet for sammensatte modeller)
 
-I det følgende eksempel er der to svage relationer, der begge er markeret som **W**. De to relationer omfatter mange til mange-relationen inden for Vertipaq-øen og en til mange-relationen på tværs af øen.
+I det følgende eksempel er der to begrænsede relationer, der begge er markeret som **W**. De to relationer omfatter mange til mange-relationen inden for Vertipaq-øen og en til mange-relationen på tværs af øen.
 
-![Eksempel på en sammensat model bestående af to øer med svage relationer markeret](media/desktop-relationships-understand/data-island-example-weak.png)
+![Eksempel på en sammensat model bestående af to øer med begrænsede relationer markeret](media/desktop-relationships-understand/data-island-example-weak.png)
 
-I forbindelse med importmodeller oprettes der aldrig datastrukturer for svage relationer. Det betyder, at tabellens joinforbindelser skal løses på forespørgselstidspunktet.
+I forbindelse med importmodeller oprettes der aldrig datastrukturer for begrænsede relationer. Det betyder, at tabellens joinforbindelser skal løses på forespørgselstidspunktet.
 
-Der sker aldrig tabeludvidelse for svage relationer. Tabel-joinforbindelser opnås ved hjælp af semantikken for indre joinforbindelse, og derfor tilføjes der ikke tomme virtuelle rækker for at kompensere for overtrædelser af referentiel integritet.
+Der sker aldrig tabeludvidelse for begrænsede relationer. Tabel-joinforbindelser opnås ved hjælp af semantikken for indre joinforbindelse, og derfor tilføjes der ikke tomme virtuelle rækker for at kompensere for overtrædelser af referentiel integritet.
 
-Der er yderligere begrænsninger i forbindelse med svage relationer:
+Der er yderligere begrænsninger i forbindelse med begrænsede relationer:
 
 - Den relaterede DAX-funktion kan ikke bruges til at hente kolonneværdierne for "en"-side
 - Gennemtvingning af RLS har topologibegrænsninger
 
 > [!NOTE]
-> I Power BI Desktops modelvisning er det ikke altid muligt at afgøre, om en modelrelation er stærk eller svag. En mange til mange-relation er altid svag, da den er en en til mange-relation, når den er en tværgående relation. Hvis du vil finde ud af, om det er en tværgående relation, skal du inspicere tabellagingstilstandene og datakilderne for at nå frem til den korrekte afgørelse.
+> I Power BI Desktops modelvisning er det ikke altid muligt at afgøre, om en modelrelation er almindelig eller begrænset. En mange til mange-relation er altid begrænset, da den er en en til mange-relation, når den er en tværgående relation. Hvis du vil finde ud af, om det er en tværgående relation, skal du inspicere tabellagingstilstandene og datakilderne for at nå frem til den korrekte afgørelse.
 
 ### <a name="precedence-rules"></a>Rangplaceringsregler
 
 Tovejs relationer kan introducere flere – og derfor tvetydige – filteroverførselsstier mellem modeltabeller. Følgende liste viser rangplaceringsregler, som Power BI bruger til registrering af flertydighed og stiopløsning:
 
-1. Mange til en- og en til en-relationer, herunder svage relationer
+1. Mange til en- og en til en-relationer, herunder begrænsede relationer
 2. Mange til mange-relationer
 3. Tovejsrelationer i den omvendte retning (dvs. fra "mange"-siden)
 

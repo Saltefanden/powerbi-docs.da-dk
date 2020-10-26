@@ -2,26 +2,36 @@
 title: Download Excel-projektmappen Financial Sample til Power BI
 description: Download projektmappen Financial Sample til Power BI
 author: maggiesMSFT
-ms.reviewer: ''
+ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: sample
-ms.date: 07/21/2020
+ms.date: 10/13/2020
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 99d4b7a2fa51673688c3e673fddf67664f3231d9
-ms.sourcegitcommit: e9cd61eaa66eda01cc159251d7936a455c55bd84
+ms.openlocfilehash: 46f6179edc63b0a865043674b22ffe88e813a3b4
+ms.sourcegitcommit: eab5a02520c421a57019595c03e9ecfdb41d52ad
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86953070"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92255947"
 ---
 # <a name="download-the-financial-sample-excel-workbook-for-power-bi"></a>Download Excel-projektmappen Financial Sample til Power BI
-Mangler du nogle data for at teste Power BI Desktop og Power BI-tjenesten? Vi har en simpel Excel-projektmappe med økonomiske eksempeldata, som du kan downloade: [Excel-projektmappe med økonomisk eksempel](https://go.microsoft.com/fwlink/?LinkID=521962).
+Mangler du nogle data for at teste Power BI-tjenesten? Vi har en simpel Excel-projektmappe med økonomiske eksempeldata. Projektmappen indeholder en tabel med data for salg og overskud sorteret efter markedssegment og land. 
 
-Projektmappen indeholder en tabel med data for salg og overskud sorteret efter markedssegment og land.
+## <a name="download-it-directly"></a>Download den direkte
 
-### <a name="next-steps"></a>Næste trin
+Du kan downloade den direkte: [Excel-projektmappe med økonomisk eksempel](https://go.microsoft.com/fwlink/?LinkID=521962).
+
+## <a name="get-the-sample-in-power-bi-desktop"></a>Hent eksemplet i Power BI Desktop
+
+Du kan også downloade den fra Power BI Desktop. Vælg **Prøv et eksempel på datasæt** fra den gule velkomstskærm eller fra det tomme lærred.
+
+:::image type="content" source="media/desktop-excel-stunning-report/power-bi-desktop-canvas-sample-dataset.png" alt-text="Skærmbillede af Prøv et eksempel på datasæt på lærredet."::: 
+
+Hvis du har startet dette selvstudium i dialogboksen med eksempel på datasæt, skal du gå videre og vælge **Indlæs data**.
+
+## <a name="next-steps"></a>Næste trin
 
 Her er to selvstudier, der bruger disse økonomiske eksempeldata:
 

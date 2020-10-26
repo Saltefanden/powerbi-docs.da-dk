@@ -1,20 +1,20 @@
 ---
-title: Tilpas visualiseringer i en rapport (prøveversion)
+title: Tilpas visualiseringer i en rapport
 description: Opret din egen visning af en rapport uden at redigere den.
 author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 09/17/2020
+ms.date: 10/13/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: dfc682e867b65ba9da2b2eee87f52d7fd5d0961c
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: 718363da3bd1f66de199db8d854d8d23d6de3eb5
+ms.sourcegitcommit: eab5a02520c421a57019595c03e9ecfdb41d52ad
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91528113"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92256733"
 ---
 # <a name="personalize-visuals-in-a-report"></a>Tilpas visualiseringer i en rapport
 
@@ -45,7 +45,7 @@ Denne funktion muliggør ikke kun nye udforskningsegenskaber. Den omfatter også
 - Ryd alle dine seneste ændringer.
 
 > [!IMPORTANT]
-> Muligheden for at tilpasse en visualisering er en prøveversionsfunktion, der skal aktiveres af rapportens *designer*. Hvis du ikke kan se **Tilpas denne visualisering** ![ikonet for Tilpas denne visualisering](media/end-user-personalize-visuals/power-bi-personalize-visual-icon.png), har rapportdesigneren ikke aktiveret denne funktion for den aktuelle rapport. 
+> Muligheden for at tilpasse en visualisering skal aktiveres af rapportens *designer*. Hvis du ikke kan se **Tilpas denne visualisering** ![ikonet for Tilpas denne visualisering](media/end-user-personalize-visuals/power-bi-personalize-visual-icon.png), har rapportdesigneren ikke aktiveret denne funktion for den aktuelle rapport. Kontakt rapportejeren eller din Power BI-administrator for at få funktionen aktiveret. Hvis du vil have vist kontaktoplysninger for rapportejeren, skal du vælge rapportens navn på menulinjen i Power BI.
 
 ## <a name="personalize-visuals-in-the-power-bi-service"></a>Tilpas visualiseringer i Power BI-tjenesten
 
@@ -54,8 +54,6 @@ Når en visualisering tilpasses, kan du udforske dine data på mange måder uden
 1. Åbn en rapport i læsevisning i Power BI-tjenesten.
 
 2. I menulinen for visualiseringen skal du vælge ikonet **Tilpas denne visualisering** ![ikonet Tilpas denne visualisering](media/end-user-personalize-visuals/power-bi-personalize-visual-icon.png). 
-
-3. Hvis du vil rydde et af felterne for **tilpasningen**, skal du vælge **Flere indstillinger (...)** og vælge **Fjern felt**.
 
 ### <a name="change-the-visualization-type"></a>Ret visualiseringstypen
 
@@ -72,6 +70,16 @@ Erstat det felt, der bruges til X-aksen, ved at vælge det felt, du vil erstatte
 Når du tilføjer en forklaring, kan du farvekode en visualisering baseret på en kategori. I dette eksempel farvekoder vi på baggrund af virksomhedens navn. 
 
 :::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-change-legend.png" alt-text="Tilpas en visualisering":::
+
+### <a name="change-the-placement-of-fields"></a>Skift placering af felterne
+
+Ved hjælp af træk og slip kan du ændre placeringen af felterne i samme visuelle egenskab eller også på tværs af forskellige visuelle egenskaber. Du kan f.eks. hurtigt flytte et felt i forklaringen til aksen i en visualisering.
+
+:::image type="content" source="media/end-user-personalize-visuals/personalize-drag-and-drop.png" alt-text="Tilpas en visualisering":::
+
+Du kan også hurtigt ændre rækkefølgen af kolonnerne i en tabel eller matrix.
+
+:::image type="content" source="media/end-user-personalize-visuals/personalize-reorder-columns.png" alt-text="Tilpas en visualisering":::
 
 ### <a name="compare-two-or-more-different-measures"></a>Sammenlign to eller flere forskellige målinger
 Du kan sammenligne værdier for forskellige målinger ved hjælp af ikonet + for at tilføje flere målinger for en visualisering. Hvis du vil fjerne en måling, skal du vælge **Flere indstillinger (...)** og vælge **Fjern felt**.
@@ -113,7 +121,7 @@ Vælg viskelæderikonet for at rydde alle seneste ændringer, du har foretaget, 
 
 :::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-revert-changes.png" alt-text="Tilpas en visualisering":::
 
-## <a name="limitations-and-known-issues"></a>Begrænsninger og kendte problemer
+## <a name="limitations"></a>Begrænsninger
 
 Der er i øjeblikket nogle få begrænsninger for funktionen, som du skal være opmærksom på.
 
@@ -121,12 +129,6 @@ Der er i øjeblikket nogle få begrænsninger for funktionen, som du skal være 
 - Brugerudforskninger bevares ikke automatisk. Du skal gemme din visning som et personligt bogmærke for at registrere dine ændringer.
 - Denne funktion understøttes i Power BI-mobilapps til iOS- og Android-tablets og i Power BI Windows-appen. Den understøttes ikke i Power BI-mobilapps til telefoner. Ændringer af visualiseringer, som du gemmer som et personligt bogmærke, mens du er i Power BI-tjenesten, bevares i alle Power BI-mobilapps.
 
-Der er også nogle kendte problemer, som vi er i gang med at håndtere:
-
-- Tilføjelse af hierarki understøttes ikke. Du skal tilføje de enkelte underordnede elementer.
-- Med personlige bogmærker får du måske resultater, der er lidt anderledes, afhængigt af den valgte sekvens. Der kan være uoverensstemmelser, fordi vi ikke registrerer den fulde stilstand af rapporten, men kun de foretagne ændringer. Du kan løse problemet ved at vælge **Nulstil til standard** og derefter vælge det bogmærke, du vil have vist. 
-
 ## <a name="next-steps"></a>Næste trin
 [Kopiér en rapportvisualisering som et statisk billede](../visuals/power-bi-visualization-copy-paste.md)    
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-
