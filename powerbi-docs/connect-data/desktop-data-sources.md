@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 09/22/2020
+ms.date: 10/12/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 56825599a6b566a93f18e6fea16d995dc8bdda8f
-ms.sourcegitcommit: ff981839e805f523748b7e71474acccf7bdcb04f
+ms.openlocfilehash: 8565f6ef18192110688d01127129dcc19919cb0f
+ms.sourcegitcommit: eab5a02520c421a57019595c03e9ecfdb41d52ad
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91020038"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92256542"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Datakilder i Power BI Desktop
 
@@ -185,19 +185,21 @@ Kategorien **Onlinetjenester** indeholder følgende dataforbindelser:
 * Emigo-datakilde
 * Entersoft Business Suite (beta)
 * FactSet-analyse
-* Palantir Foundry
-* Industrial App Store
+* Hexagon PPM Smart API
 * Intune Data Warehouse (beta)
 * Microsoft Graph Security (beta)
-* Projectplace til Power BI (beta)
 * Product Insights (beta)
 * Quick Base
 * TeamDesk (beta)
 * Webtrends Analytics (beta)
 * Witivio (beta)
-* Zoho Creator (beta)
 * Workplace Analytics (beta)
-* Hexagon PPM Smart API
+* Zoho Creator (beta)
+* Palantir Foundry
+* Industrial App Store
+* Projectplace til Power BI
+* eWay-CRM (Beta)
+* Spigit (Beta)
 
 
 På følgende billede vises vinduet **Hent data** for **Onlinetjenester**.
@@ -238,18 +240,26 @@ Kategorien **Andet** indeholder følgende dataforbindelser:
 * Tenforce (Smart)List
 * TIBCO(R) Data Virtualization (beta)
 * Vena (beta)
-* Zucchetti HR Infinity (beta)
 * Vessel Insight (beta)
+* Zucchetti HR Infinity (beta)
 * Tom forespørgsel
 
 
 
 På følgende billede vises vinduet **Hent data** for **Andet**.
 
-![Andre datakilder, dialogboksen Hent data, Power BI Desktop](media/desktop-data-sources/data-sources-08.png)
+![Andre datakilder i Power BI Desktop](media/desktop-data-sources/data-sources-08.png)
 
 > [!NOTE]
 > På nuværende tidspunkt er det ikke muligt at oprette forbindelse til brugerdefinerede datakilder, der er beskyttet via Azure Active Directory.
+
+### <a name="template-apps"></a>Skabelonapps
+
+Du kan finde skabelonapps til din organisation ved at vælge linket **Skabelonapps** nederst i vinduet **Hent data**. 
+
+![Dialogboksen Hent data for andre datakilder i Power BI Desktop](media/desktop-data-sources/data-sources-12.png)
+
+Tilgængelige skabelonapps kan variere afhængigt af din organisation.
 
 ## <a name="connecting-to-a-data-source"></a>Oprettelse af forbindelse til en datakilde
 
@@ -273,25 +283,43 @@ Det er det eneste, du skal gøre for at oprette forbindelse til datakilder i Pow
 
 PBIDS-filer er Power BI Desktop-filer, der har en bestemt struktur, og som har filtypenavnet PBIDS, der identificerer, at der er tale om en Power BI-datakildefil.
 
-Du kan oprette en PBIDS-fil for at strømline **Hent data** for forfattere af rapporter i din organisation. Vi anbefaler, at en administrator opretter disse filer til almindeligt anvendte forbindelser for at gøre det nemmere for en ny rapportforfatter at bruge PBIDS-filer.
+Du kan oprette en PBIDS-fil for at strømline **Hent data**-oplevelsen for nye eller uerfarne forfattere af rapporter i din organisation. Hvis du opretter PBIDS-filen ud fra eksisterende rapporter, er det lettere for nye rapportforfattere at oprette nye rapporter ud fra de samme data.
 
-Når en forfatter åbner en PBIDS-fil, åbnes Power BI Desktop, og brugeren bliver bedt om at angive legitimationsoplysninger for at godkende og oprette forbindelse til den datakilde, der er angivet i filen. Dialogboksen **Navigation** vises, og brugeren skal vælge de tabeller i datakilden, der skal indlæses i modellen. Brugerne skal muligvis også vælge databasen eller databaserne, hvis der ikke blev angivet en i PBIDS-filen.
+Når en forfatter åbner en PBIDS-fil, åbnes Power BI Desktop, og brugeren bliver bedt om at angive legitimationsoplysninger for at godkende og oprette forbindelse til den datakilde, der er angivet i filen. Dialogboksen **Navigation** vises, og brugeren skal vælge de tabeller i datakilden, der skal indlæses i modellen. Brugerne skal muligvis også vælge databasen eller databaserne og forbindelsestilstand, hvis der ikke blev angivet en i PBIDS-filen.
 
 Fremover kan brugeren begynde at oprette visualiseringer eller vælge **Seneste kilder igen** for at indlæse et nyt sæt tabeller i modellen.
 
 I øjeblikket understøtter PBIDS-filer kun en enkelt datakilde i én fil. Hvis du angiver mere end én datakilde, resulterer det i en fejl.
 
-Hvis du vil oprette PBIDS-filen, skal en administrator angive de påkrævede input for en enkelt forbindelse. De kan også angive forbindelsestilstanden som enten DirectQuery eller Import. Hvis **tilstand** mangler/er null i filen, bliver den bruger, der åbner filen i Power BI Desktop, bedt om at vælge **DirectQuery** eller **Import**.
+
+### <a name="how-to-create-a-pbids-connection-file"></a>Sådan opretter du en PBIDS-forbindelsesfil
+
+Hvis du har en eksisterende Power BI Desktop-fil (.PBIX-fil), der allerede har forbindelse til de data, du er interesseret i, kan du blot eksportere disse forbindelsesfiler fra Power BI Desktop. Dette er den anbefalede metode, da PBIDS-filen kan genereres automatisk fra Desktop. Du kan også stadig redigere filen eller oprette den manuelt i en teksteditor. 
+
+Hvis du vil oprette PBIDS-filen, skal du vælge **Filer > Indstillinger > Indstillinger for datakilde**:
+
+![Menuindstillingen Indstillinger for datakilde](media/desktop-data-sources/data-sources-09.png)
+
+I den dialogboks, der vises, skal du vælge den datakilde, du vil eksportere som en PBIDS, og derefter vælge **Eksportér PBIDS**.
+
+![Dialogboksen Indstillinger for datakilde](media/desktop-data-sources/data-sources-10.png)
+
+Når du vælger knappen **Eksportér PBIDS**, opretter Power BI Desktop PBIDS-filen, som du kan omdøbe og gemme i din mappe og dele med andre. Du kan også åbne filen i en teksteditor og redigere filen yderligere, herunder angive forbindelsesmåden i selve filen, som vist på følgende billede. 
+
+![Brug en teksteditor til at ændre PBIDS-filen](media/desktop-data-sources/data-sources-11.png)
+
+Hvis du foretrækker at oprette dine PBIDS-filer manuelt i en teksteditor, skal du angive de påkrævede input for en enkelt forbindelser og gemme filen med filtypenavnet PBIDS. Du kan også vælge at angive forbindelsestilstanden som enten DirectQuery eller Import. Hvis **tilstand** mangler/er null i filen, bliver den bruger, der åbner filen i Power BI Desktop, bedt om at vælge **DirectQuery** eller **Import**.
+
 
 ### <a name="pbids-file-examples"></a>Eksempler på PBIDS-filer
 
-Dette afsnit indeholder nogle eksempler på datakilder, der ofte bruges. PBIDS-filtypen understøtter kun dataforbindelser, der også understøttes i Power BI Desktop, med to undtagelser: Live Connect og Tom forespørgsel.
+Dette afsnit indeholder nogle eksempler på datakilder, der ofte bruges. PBIDS-filtypen understøtter kun dataforbindelser, der også understøttes i Power BI Desktop, med følgende undtagelser: Wiki-URL-adresser, Live Connect og Tom forespørgsel.
 
 PBIDS-filen indeholder *ikke* oplysninger om godkendelse og tabel- og skemaoplysninger.  
 
 Følgende kodestykke viser almindelige eksempler på PBIDS-filer, men listen er ikke fuldstændig. I forbindelse med andre datakilder kan du se [DSR-formatet (Data Source Reference) for protokol- og adresseoplysninger](/azure/data-catalog/data-catalog-dsr#data-source-reference-specification).
 
-Disse eksempler er kun ment som en hjælp og er ikke en udtømmende liste. De omfatter heller ikke alle understøttede connectorer i DSR-format. Administratorer eller organisationer kan oprette deres egne datakilder ved hjælp af disse eksempler som vejledninger og benytte dem til at oprette og understøtte deres egne datakildefiler.
+Hvis du redigerer forbindelsesfiler eller opretter dem manuelt, er disse eksempler kun ment som en hjælp og er ikke en udtømmende liste. De omfatter heller ikke alle understøttede connectorer i DSR-format.
 
 #### <a name="azure-as"></a>Azure AS
 

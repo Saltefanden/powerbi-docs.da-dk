@@ -8,21 +8,24 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: quickstart
-ms.date: 01/31/2020
+ms.date: 10/12/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: b9b299207a95091244d1f9ff7ab5f7a0d5460fc8
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 1c67ce91ce625bec3bb3be978bc553f2ff5a3eef
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91634108"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91982426"
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Hurtig introduktion – Navigation i Power BI-tjenesten
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Nu, hvor du kender de grundlæggende funktioner i Power BI, kan vi se nærmere på **Power BI-tjenesten**. Som tidligere nævnt kan en person i dit team måske bruge al sin tid i **Power BI Desktop** på at kombinere data og oprette rapporter for andre. Mens du måske bruger al din tid i Power BI-tjenesten på at se på og interagere med indhold, der er oprettet af andre, dvs. at du har oplevelsen som **forbruger**. I denne hurtige introduktion prøver du at importere eksempeldata og bruge disse data til at finde rundt i om Power BI-tjenesten. 
+Nu, hvor du kender de [grundlæggende funktioner i Power BI](end-user-basic-concepts.md), kan vi se nærmere på **Power BI-tjenesten**. Som nævnt i forrige artikel bruger kollegaer i dit team muligvis al deres tid i **Power BI Desktop** på at kombinere data og oprette rapporter, dashboards og apps for andre. De er *designere*. Du måske bruger al din tid i Power BI-tjenesten på at se på og interagere med indhold, der er oprettet af andre, dvs. at du har oplevelsen som **forbruger**. Du er *erhvervsbruger*. Denne hurtige start er for *erhvervsbrugere*. 
+
+
+   
  
 ## <a name="prerequisites"></a>Forudsætninger
 
@@ -30,101 +33,104 @@ Nu, hvor du kender de grundlæggende funktioner i Power BI, kan vi se nærmere p
 
 - Læs om [grundlæggende begreber i Power BI-tjenesten](end-user-basic-concepts.md)
 
+- Hvis du vil have vist Power BI-indhold (rapporter, dashboards, apps), der er oprettet af *designere*, kræver det, at en af to betingelser er opfyldt:
+    - en Power BI Pro-licens
+    - at din organisation har et Power BI Premium-abonnement, og at indholdet skal deles med dig fra Premium-kapacitet.    
+    [Få mere at vide om licenser og abonnementer](end-user-license.md).     
 
+    I forbindelse med denne hurtige start kræver vi ikke, at nogen af disse betingelser er opfyldt. Microsoft har gjort eksempelindhold tilgængeligt direkte fra grænsefladen i Power BI-tjenesten. Vi bruger dette eksempelindhold til at lære at bruge Power BI-tjenesten. 
 
 ## <a name="open-the-power-bi-service"></a>Åbn Power BI-tjenesten
 
 
-Du kommer i gang ved at åbne Power BI-tjenesten (app.powerbi.com), og gå til **Start**. 
+Åbn først Power BI-tjenesten (app.powerbi.com). 
 1. Hvis navigationsruden til venstre er skjult, skal du vælge ikonet navigationsrude ![ikon med tre vandrette streger](./media/end-user-experience/power-bi-burger.png) for at udvide den. 
 
-1. Vælg **Start**, hvis startsiden ikke allerede er åben. 
+
+1. Vælg **Hent data** i nederste venstre hjørne. Vi tager nogle eksempeldata, som vi bruger til vores præsentation af Power BI-tjenesten. Vi giver dig alle mulige former for eksempeldata, som du kan udforske, og i dette eksempel bruger vi dataene om marketing og salg. 
+
+   ![Skærmbillede viser knappen Hent data.](./media/end-user-experience/power-bi-get-data.png)
+
+1. Når skærmen **Hent data** er åbnet, skal du vælge **Eksempler**.
+
+   ![Skærmbillede viser skærmbilledet Hent data med et rødt felt rundt om Eksempler.](./media/end-user-experience/power-bi-sample.png)
+
+1. Vælg **Salg og marketing** > **Opret forbindelse**. 
+
+   ![Skærmbillede viser, at eksemplet Salg og marketing er valgt.](./media/end-user-experience/power-bi-sales.png)
 
 
-1. Hent eksempeldata. Vi tager nogle eksempeldata, som vi bruger til vores præsentation af Power BI-tjenesten. Vi giver dig alle mulige former for eksempeldata, som du kan udforske, og i dette eksempel bruger vi dataene om marketing og salg. 
+5. Power BI-tjenesten installerer eksemplet i **Mit arbejdsområde**.  **Mit arbejdsområde** er din private sandkasse til læring og eksperimentering.  Det er kun dig, der kan se indholdet i **Mit arbejdsområde**. Eksemplet omfatter ét dashboard, én rapport og ét datasæt. *Erhvervsbrugere* modtager typisk ikke datasæt, men dette eksempel er designet til alle brugere, og det indeholder ét.
 
-    Hvis du vil følge med, skal du bruge denne vejledning til at installere appen [Eksempel på salg og marketing](end-user-app-marketing.md).
-
-1. Når appen er installeret, skal du vælge **Apps** i navigationsruden. 
-
-   ![Skærmbillede, der viser Power BI-startskærmen med en velkomstmeddelelse.](./media/end-user-experience/power-bi-home-steps.png)
+    ![Skærmbillede, der viser skærmen Power BI-apps med en app kaldet Eksempel på salg og marketing.](./media/end-user-experience/power-bi-new-sample.png)
 
 
-2. På skærmen **Apps** skal du vælge appen **Eksempel på salg og marketing**.
-
-    ![Skærmbillede, der viser skærmen Power BI-apps med en app kaldet Eksempel på salg og marketing.](./media/end-user-experience/power-bi-sample-app.png)
-
-2. Vælg **Udforsk app**.
-
-    ![vælge eksemplet](./media/end-user-experience/power-bi-explore.png)
 
 
-3. Power BI-tjenesten åbner appens dashboard. Dashboards er noget, der adskiller Power BI-tjenesten fra Power BI Desktop. Eksemplet indeholder også en rapport og et datasæt. 
+    Som *erhvervsbruger* vil størstedelen af det indhold, der deles med dig, ikke give direkte adgang til de underliggende datasæt. Da Power BI-eksemplerne er oprettet til alle Power BI-kunder, er datasættene dog inkluderet her.   
 
-    ![dashboardvisninger](media/end-user-experience/power-bi-dash.png)
-
-    Som *forbruger* vil du opleve, at de fleste apps, du modtager, ikke giver direkte adgang til de underliggende datasæt. Da Power BI-eksemplerne er oprettet til alle Power BI-kunder, er datasættene dog inkluderet her. De af dine kolleger, som har fokus på arbejdet som *designer*, bruger disse datasæt til at få mere at vide om, hvordan de opretter nye dashboards og rapporter. 
+    Du kan få mere at vide om eksempler under [Hent eksempler til Power BI](../create-reports/sample-datasets.md).
 
 ## <a name="view-content-dashboards-and-reports"></a>Få vist indhold (dashboards og rapporter)
-Lad os starte med at se på, hvordan det grundlæggende indhold (dashboards, rapporter og apps) er organiseret. Indhold vises i forbindelse med et arbejdsområde. Hver forbruger har mindst ét arbejdsområde, og det kaldes **Mit arbejdsområde**. Hver gang du installerer en app, oprettes der et arbejdsområde til den pågældende app.  Da vi har installeret appen "Eksempel på Salg og marketing", har vi nu to arbejdsområder. 
+Indhold er organiseret i forhold til et arbejdsområde. Hver erhvervsbruger har mindst ét arbejdsområde, og det kaldes **Mit arbejdsområde**. Når *designer*kollegaer deler indhold med dig, får du muligvis flere arbejdsområder.  Hvis en *designer* f.eks. giver dig adgangstilladelse til et af sine arbejdsområder, vises det pågældende arbejdsområde på dit Power BI-websted.  
 
-Du kan selv se dem ved at vælge **Arbejdsområder** i navigationsruden til venstre. 
+I **Mit arbejdsområde** gemmes alt det indhold, du ejer og opretter. Tænk på det som din personlige sandkasse eller arbejdsområde til dit eget indhold. For mange Power BI-*erhvervsbrugere* vil **Mit arbejdsområde** blive ved med at være tomt, fordi deres job ikke involverer oprettelse af nyt indhold.  *Erhvervsbrugere* forbruger pr. definition data, som er oprettet af andre, og de bruger disse data til at træffe forretningsbeslutninger. Hvis du opretter indhold, kan du overveje at læse [Power BI-artiklerne til *rapportdesignere*](../index.yml) i stedet for.
 
-![Mine arbejdsområder ](./media/end-user-experience/power-bi-workspaces.png)
+Et arbejdsområde er meget mere end blot en simpel liste over indhold. På denne side kan du få meget mere at vide om arbejdsområdets dashboards og rapporter. Brug et par minutter på at identificere indholdsejeren, datoen for seneste opdatering, dataenes følsomhed og eventuelle godkendelser. Vælg **Flere handlinger (...)** for at få vist en liste over handlinger for dashboardet og rapporten.   
 
-I **Mit arbejdsområde** gemmes alt det indhold, du ejer og opretter. Tænk på det som din personlige sandkasse eller arbejdsområde til dit eget indhold. For mange Power BI-*forbrugere* vil **Mit arbejdsområde** vedblive med at være tomt, fordi deres job ikke involverer oprettelse af nyt indhold.  *Forbrugere* er defineret som dem, der forbruger data, som er oprettet af andre, og bruger disse data til at træffe forretningsbeslutninger. Hvis du opretter indhold, kan du overveje at læse [Power BI-artiklerne til *rapportdesignere*](../index.yml) i stedet for.
+Du kan finde flere oplysninger under [Arbejdsområder](end-user-workspaces.md).
 
-**App-arbejdsområder** indeholder alt indhold til en specifik app.  Når en *designer* opretter en app, samler vedkommende alt det indhold, der er nødvendigt for at bruge den pågældende app, og inkluderer det i appen.  Vælg arbejdsområdet "Salg og marketing" for at se, hvad *designeren* har inkluderet i denne app. 
+![Skærmen Apparbejdsområde med menuen Flere handlinger vist for rapporten](./media/end-user-experience/power-bi-more-actions.png)
 
-![Skærmen App-arbejdsområde](./media/end-user-experience/power-bi-app-workspace.png)
+Et arbejdsområde er også en af adgangsvejene til dine data. Fra et arbejdsområde kan du åbne et dashboard eller en rapport ved at vælge elementet på listen.  Du kan angive et dashboard eller en rapport som favorit ved at holde markøren over elementet og vælge stjerneikonet. Hvis *designeren* har givet dig [delingstilladelser](end-user-shared-with-me.md), kan du også dele herfra. 
 
-App-arbejdsområdet "Salg og marketing" indeholder ét dashboard, én rapport og ét datasæt. Det er ikke alle apps, der indeholder disse tre indholdselementer. En app kan indeholde blot ét dashboard eller tre af hver indholdstype eller endda 20 rapporter. Det afhænger af, hvad *designeren* inkluderer i appen. Da dataene i "Salg og marketing" er et eksempel, indeholder denne app et datasæt. Det mest almindelige er dog, at app-arbejdsområder til *forbrugere* ikke indeholder datasæt. 
+![Menu, der vises, når markøren holdes over et element](./media/end-user-experience/power-bi-dashboard.png)
 
-Et arbejdsområde er meget mere end blot en simpel liste over indhold. På denne side kan du få meget mere at vide om arbejdsområdets dashboards og rapporter. Brug et par minutter på at identificere indholdsejeren, datoen for seneste opdatering, relateret indhold og godkendelser. Hvis arbejdsområdet har en beskrivelse, kan beskrivelsen hjælpe dig med at få en bedre forståelse af arbejdsområdets mål, og hvordan du kan bruge det til dine forretningsmæssige formål. Hvis arbejdsområdet har meget indhold, kan du bruge funktionerne til søgning og sortering til hurtigt at finde det, du skal bruge.
+1. Vælg navnet på dashboardet for at åbne det. Dashboards er noget, der adskiller Power BI-tjenesten fra Power BI Desktop. [Få mere at vide om dashboards](end-user-dashboards.md)
 
-![Skærmen App-arbejdsområde med menuen Flere handlinger vist](./media/end-user-experience/power-bi-workspace-app.png)
+    ![Åbne dashboards](./media/end-user-experience/power-bi-dashboard-open.png)
 
-Et arbejdsområde er også en af adgangsvejene til dine data. Åbn et dashboard eller en rapport ved at vælge elementet på listen.  Gør et dashboard eller en rapport til favorit ved at holde markøren over elementet og vælge stjerneikonet. Hvis *designeren* har givet dig [delingstilladelse](end-user-shared-with-me.md), vises denne handling også, når du holder markøren over elementet. 
+2. De handlinger, du kan udføre på et dashboard, vises på den øverste menulinje.    
 
-![Menu, der vises, når markøren holdes over et element](./media/end-user-experience/power-bi-hover.png)
+    ![Skærmbillede af den øverste del af Power BI-tjenesten.](./media/end-user-experience/power-bi-top-menu.png)
 
-Åbn dashboardet ved at vælge navnet på dashboardet.
+3. Peg på et dashboardfelt, og vælg **Flere indstillinger (...)** for at se de indstillinger, du kan bruge til at interagere med det pågældende felt.
 
-![Åbne dashboards](./media/end-user-experience/power-bi-dashboard-open.png)
+    ![Skærmbillede, der viser rullemenuen for et dashboardfelt.](./media/end-user-experience/power-bi-tile-menu.png)
 
-## <a name="favorite-a-dashboard-and-a-report"></a>Vælg et dashboard og en rapport som favorit
-Med **Favoritter** kan du hurtigt få adgang til det indhold, der er vigtigst for dig. Nu har du lært, hvordan du kan gøre et dashboard fra et arbejdsområde til favorit. Du kan også oprette favoritter direkte fra et dashboard eller en rapport.
+4. Vælg et dashboardfelt for at åbne den rapport, der blev brugt til at oprette det pågældende felt. Rapporten åbnes på den side, der indeholder den visualisering, der findes på feltet. Her har jeg valgt dashboardfeltet med træstrukturen. Power BI-tjenesten åbner rapportsiden **Kategori ÅTD**.
 
-1. Mens dashboardet er åbent, skal du vælge **Favorit** på menulinjen.
-   
-   ![tilføj favorit](./media/end-user-experience/power-bi-select-favorite.png)
-   
-   **Favoritter** ændres til **Fjern fra Favoritter**, og stjerneikonet bliver gult.
-   
-   ![fjern favorit](./media/end-user-experience/power-bi-unfavorite.png)
+    ![Rapporten åbnes.](./media/end-user-experience/power-bi-report.png)
 
-2. Du kan få vist en liste over alt indhold, du har gjort til favoritter, ved at vælge pilen til højre for **Favoritter** i navigationsruden. Da den venstre navigationsrude er en permanent funktion i Power BI-tjenesten, har du adgang til denne liste overalt i Power BI-tjenesten.
-   
-    ![pop op-vinduet favoritter](./media/end-user-experience/power-bi-favorites-flyout.png)
-   
-    Denne Power BI-bruger har fire favoritter indtil videre. Favoritter kan være dashboards, rapporter eller apps.  
+    Rapporter indeholder flere afsnit. Til venstre kan du klikke på en liste over rapportsider. Langs toppen findes menulinjen med de handlinger, du kan udføre i rapporten.  De tilgængelige indstillinger afhænger af den rolle og tilladelse, som rapport*designeren* har tildelt til dig. Til højre vises ruden **Filtre**. Og det midterste lærred indeholder selve rapporten. På samme måde som for dashboardet er der handlinger, som du kan udføre for hele rapporten, for de enkelte visualiseringer og også for en enkelt rapportside. 
+
+    Få mere at vide om rapporter under [Power BI-rapporter](end-user-reports.md).
+
+## <a name="using-the-left-navigation-pane"></a>Brug af den venstre navigationsrude
+Navigationsruden bliver mere nyttig, efterhånden som kollegaer deler indhold med dig. I dette afsnit af Hurtig start vil vi ikke kigge på eksemplet *Salg og marketing*, men i stedet på et dashboard og en rapport, der tilhører en Power BI-*erhvervsbruger*, som har en stor mængde delt indhold.
+
+1. **Startsiden** er standardlandingssiden, når du logger på Power BI-tjenesten. Startsiden er et godt sted at starte og en anden måde at navigere i dit indhold på. Indhold på startsiden er organiseret efter favorit, seneste, hyppige og udvalgte. Startsiden viser også dine seneste arbejdsområder og apps. Du skal bare vælge et element for at åbne det.
+
+    Start samler søgnings- og sorteringsværktøjer, navigationsrude og et lærred med *kort*, som du kan vælge for at åbne dashboards, rapporter og apps. I begyndelsen har du måske ikke så mange kort på dit lærred på Start, men det ændrer sig, i takt med at du begynder at bruge Power BI sammen med dine kolleger. Dit lærred for startsiden opdateres også med de anbefalede indholds- og læringsressourcer.
+
+   ![Skærmbillede af en hel startside.](./media/end-user-experience/power-bi-full-home.png)
+
+    Du kan få mere at vide under [Power BI Start](end-user-home.md)
+
+2. Både **Favoritter** og **Seneste** har pile. Vælg en pil for hurtigt at se de fem øverste favoritter eller de fem senest besøgte indholdsområder. I pop op-vinduet skal du vælge indhold for at åbne det. 
+
+   ![Pop op-liste med det seneste indhold.](./media/end-user-experience/power-bi-recent.png)
+
+    Hvis du vil se en komplet liste over favoritter eller seneste, skal du vælge ordet eller ikonet. Disse indholdslister indeholder flere oplysninger om rapporter, apps og dashboards.
+
+    ![Indholdsliste for favoritter.](./media/end-user-experience/power-bi-favorites.png)
 
 
-Du kan få flere oplysninger i [Favoritter](end-user-favorite.md)
+    Du kan få mere at vide under [Seneste i Power BI](end-user-recent.md) og [Favoritter i Power BI](end-user-recent.md).
 
-## <a name="locate-your-most-recent-content"></a>Find dit seneste indhold
+4. Vælg **Apps** for at få vist alle de apps, der er blevet delt med dig, eller som du har installeret. Og vælg **Delt med mig** for at få vist dashboards og rapporter, der er delt med dig. Da du lige er gået i gang med Power BI-tjenesten, er disse indholdsområder tomme. 
 
-1. På samme måde som med favoritter kan du hurtigt få adgang til dit seneste indhold overalt i Power BI-tjenesten ved at vælge pilen ud for **Seneste** i navigationsruden.
-
-   ![Pop op-vinduet Seneste](./media/end-user-experience/power-bi-flyout-recent.png)
-
-    I pop op-vinduet skal du vælge indhold for at åbne det.
-
-2. Nogle gange ønsker du ikke blot at åbne det seneste indhold, men vil også have vist oplysninger eller udføre andre handlinger, f.eks. få vist Indsigt eller eksportere til Excel. I sådanne tilfælde skal du åbne ruden **Seneste** ved at vælge **Seneste** eller ved at klikke på ikonet i navigationsruden. I dette eksempel har Power BI-brugeren mere end ét arbejdsområde, så denne liste kan inkludere indhold fra alle disse arbejdsområder.
-
-   ![Ruden Seneste](./media/end-user-experience/power-bi-recent-action.png)
-
-Hvis du vil vide mere, kan du se [Seneste i Power BI](end-user-recent.md)
+    Få mere at vide om [Apps](end-user-apps.md) og [Delt med mig](end-user-shared-with-me.md).
 
 ### <a name="search-and-sort-content"></a>Søg og sortér indholdet
 Når du er ny bruger af Power BI-tjenesten, har du kun lidt indhold. Men når kollegaer begynder at dele indhold med dig, og du begynder at downloade apps, kan du få en lang liste med indhold. Det er i den situation, at søgning og sortering er meget praktisk.
@@ -140,31 +146,28 @@ Der er også mange måder at sortere indhold på. Hold markøren over kolonneove
 
 ![pil ud for kolonneoverskriften Type](./media/end-user-experience/power-bi-sort-icon.png)
 
-Du kan også se efter kontrolelementet til sortering tæt på det øverste højre hjørne af dit lærred. Vælg, om du vil sortere stigende eller faldende efter dato, navn eller ejer.  
+Du kan også kigge efter søge**filtrene**, som findes tæt på det øverste højre hjørne af dine indholdslister. Find hurtigt indhold ved at vælge blandt indholdstyper, ejere eller andre tilgængelige felter.
 
 ![sortér indhold](./media/end-user-experience/power-bi-sort-date.png)
 
 
 Hvis du vil vide mere, kan du se [Power BI-navigation: søg og sortér](end-user-search-sort.md)
 
-## <a name="power-bi-home"></a>Power BI Start
-Vi afslutter denne hurtige introduktion, hvor vi begyndte, dvs. på startsiden: Power BI **Start**. 
+## <a name="find-the-owner"></a>Find ejeren
+Og vi afslutter denne hurtige start med et nyttigt tip. Hvis du har spørgsmål om et dashboard, en rapport eller en app – kan du slå ejeren op. Åbn indholdet, og vælg rullelisten med titler for at få vist ejeren. Ejeren kan være en person eller en gruppe.
 
-![Lærred på startsiden](./media/end-user-experience/power-bi-home-oldest.png)
+![Lærred på startsiden](./media/end-user-experience/power-bi-owner.png)
 
-Start samler søgnings- og sorteringsværktøjer, navigationsrude og et lærred med *kort*, som du kan vælge for at åbne dashboards, rapporter og apps. I begyndelsen har du måske ikke så mange kort på dit lærred på Start, men det ændrer sig, i takt med at du begynder at bruge Power BI sammen med dine kolleger. Dit lærred for startsiden opdateres også med de anbefalede indholds- og læringsressourcer.
-
-Få flere oplysninger under [Power BI Start](end-user-home.md)
 
 ## <a name="clean-up-resources"></a>Fjern ressourcer
 Når du er færdig med denne hurtige introduktion, kan du slette dashboardet, rapporten og datasættet fra eksemplet, hvis du vil.
 
 1. Åbn Power BI-tjenesten (app.powerbi.com), og log på.    
-2. Åbn Power BI Start, rul ned til **Arbejdsområder**, og vælg *Salg og marketing*.      
+2. Åbn Power BI Start, rul ned, og vælg **Mit arbejdsområde**.      
 
 3. Hold markøren over dashboardet, rapporten eller datasættet, og vælg **Flere indstillinger (...)**  >  **Slet**. Gentag, indtil alle tre elementer er fjernet.
 
-    ![slet dashboard](./media/end-user-experience/power-bi-delete.png)
+    ![slet dashboard](./media/end-user-experience/power-bi-cleanup.png)
 
 
 

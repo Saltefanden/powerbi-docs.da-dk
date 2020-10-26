@@ -1,6 +1,6 @@
 ---
 title: Selvstudium i intelligente narrativer
-description: 'Selvstudium: Opret intelligente narrativer i Power BI'
+description: 'Selvstudium: Opret visualiseringer af en oversigt over intelligente narrativer i Power BI'
 author: aphilip94
 ms.reviewer: aphilip94
 ms.service: powerbi
@@ -9,89 +9,95 @@ ms.topic: how-to
 ms.date: 09/14/2020
 ms.author: anphil
 LocalizationGroup: Visualizations
-ms.openlocfilehash: aef49d1528611a48eae21459f516bf3740987289
-ms.sourcegitcommit: ff981839e805f523748b7e71474acccf7bdcb04f
+ms.openlocfilehash: 4417d66b4afc3c3848667364bdca47150afdf04a
+ms.sourcegitcommit: 220427415e2fdc9337244b1ee23e734854179d43
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91020648"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862921"
 ---
-# <a name="create-smart-narratives-preview"></a>Opret intelligente narrativer i Power BI (prøveversion)
+# <a name="create-smart-narrative-summaries-preview"></a>Opret oversigter over intelligente narrativer (prøveversion)
 
 [!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
-Med visualiseringen Intelligent narrativ kan du hurtigt opsummere visualiseringer og rapporter ved at levere relevant indsigt, der er klar til brug, og som kan tilpasses.
+Visualiseringen af intelligente narrativer hjælper dig med at få et hurtigt overblik over visualiseringer og rapporter. Den giver dig relevant innovativ indsigt, som du kan tilpasse.
 
-![Intelligente narrativer](media/power-bi-visualization-smart-narratives/1.png)
+![Skærmbillede, der viser en oversigt over intelligente narrativer til højre i en rapport.](media/power-bi-visualization-smart-narratives/1.png)
 
-Hvis du bruger denne funktion, kan du føje narrativer til din rapport for at belyse vigtige punkter og tendenser samt redigere sproget og formatere det, så det passer til en bestemt målgruppe. I stedet for at indsætte et skærmbillede af rapporten i PowerPoint, hvor de vigtigste punkter er tilføjet, er det nu muligt at føje narrativer til rapporten, der opdateres ved hver opdatering. Dine slutbrugere kan bruge narrativerne til at forstå deres data, få adgang til centrale punkter hurtigere og forklare dataene til andre.
+Brug oversigter over intelligente narrativer i dine rapporter til at belyse vigtigste punkter og tendenser samt til at redigere sproget og formatet for en bestemt målgruppe. I stedet for at indsætte et skærmbillede af rapportens vigtigste punkter i PowerPoint, kan du tilføje narrativer, der opdateres ved hver opdatering. Dine slutbrugere kan bruge oversigterne til at forstå dataene, til at få hurtigere adgang til centrale punkter og til at forklare dataene til andre.
 
 >[!NOTE]
-> Da denne funktion er tilgængelig som prøveversion, skal du først aktivere funktionen ved at gå til Filer > Indstillinger > Indstillinger > Prøveversion og sørge for, at **visualiseringen Intelligent narrativ** er slået til:
+> Da funktionen til intelligente narrativer findes i prøveversion, skal du slå den til, hvis du vil bruge den. Vælg **Filer** > **Indstillinger** > **Indstillinger** > **Prøveversionsfunktioner** i Power BI. Vælg derefter **Visualisering til intelligent narrativ**.
+>
+>![Skærmbillede, der viser Power BI-indstillinger. Indstillingen Visualisering til intelligent narrativ er valgt.](media/power-bi-visualization-smart-narratives/2.png)
 
-![Prøveversionsflag](media/power-bi-visualization-smart-narratives/2.png)
+For at følge med i dette selvstudium skal du downloade [eksempelfilen](https://github.com/microsoft/powerbi-desktop-samples/blob/master/Monthly%20Desktop%20Blog%20Samples/2020/2020SU09%20Blog%20Demo%20-%20September.pbix) med et onlinesalgsscenarie.
 
-Du kan finde den PBIX, der er brugt til scenariet Onlinesalg i denne dokumentation, [her](https://github.com/microsoft/powerbi-desktop-samples/blob/master/Monthly%20Desktop%20Blog%20Samples/2020/2020SU09%20Blog%20Demo%20-%20September.pbix).
+## <a name="get-started"></a>Kom i gang 
 
-## <a name="get-started"></a>Kom godt i gang 
+Vælg ikonet **Intelligent narrativ** i ruden **Visualiseringer** for at oprette en oversigt automatisk.
 
-Klik på det nye ikon for intelligente narrativer i ruden Visualiseringer for automatisk at oprette en oversigt.
+![Skærmbillede, der viser ruden Visualiseringer. Ikonet Intelligent narrativ valgt.](media/power-bi-visualization-smart-narratives/3.png)
 
-![Ikon for intelligente narrativer](media/power-bi-visualization-smart-narratives/3.png)
-
- Du får vist et narrativ, der er oprettet på baggrund af alle visualiseringerne på siden. Du kan f.eks. klikke på ikonet for automatisk at generere en oversigt over de visualiseringer, der omhandler omsætning, besøg på websted og salg i denne rapport. Vær opmærksom på, at Power BI automatisk foretager en tendensanalyse for at vise, at både omsætning og besøg er steget, og det beregnes også, hvor stor væksten er – i dette tilfælde en stigning på 72 %.
+Du får vist et narrativ, der er baseret på alle visualiseringerne på siden. I eksempelfilen kan intelligente narrativer f.eks. automatisk generere en oversigt over de visualiseringer i rapporten, der belyser indtægter, besøg på websteder og salg. Power BI analyserer automatisk tendenser for at vise, at indtægter og antallet af besøg er steget. Det beregner endda stigningen, hvilket i dette tilfælde er 72 %.
  
- ![Oversigt over intelligente narrativer](media/power-bi-visualization-smart-narratives/4.gif)
+![Skærmbillede, der viser, hvordan du opretter en oversigt over intelligente narrativer.](media/power-bi-visualization-smart-narratives/4.gif)
  
- Du kan også højreklikke på visualiseringen og vælge **Opsummer**. Dette genererer en automatisk opsummering af visualiseringen. Når du f.eks. højreklikker på -> opsummer punktdiagram, der viser de forskellige transaktioner, analyserer Power BI dataene og viser, hvilken by eller hvilket område der har den højeste omsætning pr. transaktion og det højeste antal transaktioner. Det viser også det forventede interval af værdier for disse målepunkter, så du kan se, at de fleste byer havde en omsætning, der var mindre end 45 USD og havde færre end 10 transaktioner.
+Hvis du vil oprette et intelligent narrativ af en visualisering, skal du højreklikke på den og derefter vælge **Opsummer**. I eksempelfilen kan du f.eks. prøve at opsummere et punktdiagram, der viser forskellige transaktioner. Power BI analyserer dataene og viser, hvilken by eller hvilket område der har den højeste indtægt pr. transaktion og det største antal transaktioner. De intelligente narrativer viser også det forventede værdiinterval for disse målepunkter. Du kan se, at de fleste byer producerer mindre end 45 USD pr. transaktion og har færre end 10 transaktioner.
  
   
- ![Oversigt over intelligente narrativer](media/power-bi-visualization-smart-narratives/5.gif)
+![Skærmbillede, der viser et intelligent narrativ, der opsummerer et punktdiagram.](media/power-bi-visualization-smart-narratives/5.gif)
  
- ## <a name="edit-the-summary"></a>Rediger oversigten
+## <a name="edit-the-summary"></a>Rediger oversigten
  
- Oversigten kan **tilpasses** på mange måder, og du kan tilføje ny tekst eller redigere den eksisterende tekst ved hjælp af de samme kontrolelementer som i et almindeligt tekstfelt. Du kan f.eks. gøre teksten fed eller ændre tekstfarven.
+Oversigten over intelligente narrativer kan tilpasses i meget stort omfang. Du kan redigere eller føje til den eksisterende tekst ved hjælp af tekstfeltkommandoerne. Du kan f.eks. gøre teksten fed eller ændre tekstens farve.
  
-  ![Kontrolelementet Tekstfelt for Intelligente narrativer](media/power-bi-visualization-smart-narratives/6.png)
+![Skærmbillede, der viser kommandoer til tekstformatering på en værktøjslinje.](media/power-bi-visualization-smart-narratives/6.png)
   
-  Du kan også tilpasse oversigten og tilføje din egen indsigt ved at tilføje **dynamiske værdier**. Du kan knytte tekst til eksisterende felter og målinger eller bruge naturligt sprog til at definere en ny måling, der skal knyttes til tekst. Hvis du f.eks. vil tilføje oplysninger om antallet af returnerede varer, kan du bruge brugergrænsefladen for tilføjelse af værdier som vist på billedet. Vi har integreret Spørgsmål og svar-brugergrænsefladen for at kunne tilføje dynamiske værdier. Mens du skriver, får du forslag på en rulleliste som i en Spørgsmål og svar-visualisering, og du kan blot gemme forslagene som en værdi.  Ud over at stille spørgsmål om dine data i Spørgsmål og svar er omfanget blevet udvidet, så du kan oprette dine egne beregninger uden at skulle foretage DAX. 
+Hvis du vil tilpasse oversigten eller tilføje din egen indsigt, skal du bruge *dynamiske værdier*. Du kan knytte tekst til eksisterende felter og målinger eller bruge naturligt sprog til at definere en ny måling, der skal knyttes til tekst. Hvis du f.eks. vil tilføje oplysninger om antallet af returnerede elementer i eksempelfilen, skal du tilføje en værdi. 
+
+Når du skriver et værdinavn, kan du vælge på en liste over forslag, som du gør i en visualisering til Spørgsmål og svar. Og ud over at stille spørgsmål om dine data i en visualisering til Spørgsmål og svar kan du nu oprette dine egne beregninger også uden at bruge DAX (Data Analysis Expressions). 
   
-   ![Dynamisk værdi](media/power-bi-visualization-smart-narratives/7.gif)
+![Skærmbillede, der viser, hvordan du opretter en dynamisk værdi for en visualisering af et intelligent narrativ.](media/power-bi-visualization-smart-narratives/7.gif)
   
-  Du kan formatere de dynamiske værdier, f.eks. for at vise dem som valuta, angive decimalpladser, tusindseparator osv. 
+Du kan også formatere dynamiske værdier. I eksempelfilen kan du f.eks. få vist værdier som valuta, angive decimaler og vælge en tusindtalsseparator. 
    
-   ![Formatér dynamisk værdi](media/power-bi-visualization-smart-narratives/8.gif)
+![Skærmbillede, der viser, hvordan du formaterer en dynamisk værdi.](media/power-bi-visualization-smart-narratives/8.gif)
    
-   Det kan du gøre ved at klikke direkte på værdien i oversigten for at formatere den eller klikke på den redigeringsknap, der svarer til værdien, på fanen Gennemse i kontrolelementet for tekstfeltet. 
+Hvis du vil formatere en dynamisk værdi, skal du vælge værdien i oversigten for at se dine redigeringsindstillinger under fanen **Gennemse**. Du kan også vælge knappen Rediger ud for den værdi, du vil redigere, i tekstfeltet. 
    
-   ![Formatér dynamisk værdi på fanen Gennemse](media/power-bi-visualization-smart-narratives/9.png)
+![Skærmbillede, der viser tekstfeltet, hvor fanen Værdi er valgt. Ud for værdinavnet er knappen Rediger fremhævet.](media/power-bi-visualization-smart-narratives/9.png)
    
-   Du kan også bruge fanen Gennemse til at gennemse, slette eller genbruge tidligere definerede værdier.  Hvis du klikker på plusikonet, indsættes værdien i oversigten. Du kan også få vist de automatisk genererede værdier ved at slå indstillingen til nederst.
+Du kan også bruge fanen **Gennemse** til at gennemse, slette eller genbruge tidligere definerede værdier. Vælg plustegnet (+) for at indsætte værdien i oversigten. Du kan også få vist automatisk genererede værdier ved at aktivere indstillingen nederst under fanen **Gennemse**.
 
-Nogle gange vil du se symbolet for skjulte oversigter, der angiver, at "aktuelle data og filtre ikke giver noget resultat for denne værdi". Det skyldes, at nogle oversigter kan være tomme, da der ikke er noget interessant at sige. En oversigt, der f.eks. ser på høje og lave værdier i et kurvediagram, kan være tom, hvis det er en flad linje, men er ikke tom under andre betingelser. Disse symboler er kun synlige, når du forsøger at redigere oversigterne.
+Nogle gange vises der et symbol for skjult oversigt i det intelligente narrativ. Det indikerer, at aktuelle data og filtre intet resultat giver for værdien. En oversigt er tom, når der ikke er tilgængelige indsigter. I et kurvediagram i eksempelfilen kan en oversigt over høje og lave værdier f.eks. være tom, når diagrammets kurve er flad. Men oversigten vises muligvis under andre betingelser. Symboler for skjulte oversigter er kun synlige, når du forsøger at redigere en oversigt.
 
 
-   ![Skjult oversigt](media/power-bi-visualization-smart-narratives/10.png)
+![Skærmbillede, der viser to symboler for skjulte oversigter i en oversigt over intelligente narrativer.](media/power-bi-visualization-smart-narratives/10.png)
    
-   ## <a name="visual-interactions"></a>Interaktioner mellem visualiseringer
-   Oversigten er dynamisk og opdaterer automatisk den genererede tekst og de dynamiske værdier, når du krydsfiltrerer. Hvis du f.eks. vælger elektronikprodukter i kransediagrammet, krydsfiltreres resten af rapporten, og oversigten krydsfiltreres også for at fokusere på elektronikprodukterne.  I dette tilfælde er der forskellige tendenser for besøg og omsætning, og teksten opdateres for at afspejle dette. Og antallet af returværdier, du har tilføjet, bliver opdateret til 4196 USD. Nogle af de tomme oversigter kan også opdateres, når du krydsfiltrerer.
+## <a name="visual-interactions"></a>Interaktioner mellem visualiseringer
+En oversigt er dynamisk. Den opdaterer automatisk den genererede tekst og de dynamiske værdier, når du krydsfiltrerer. Hvis du f.eks. vælger elektronikprodukter i eksempelfilen, krydsfiltreres resten af rapporten, og oversigten krydsfiltreres også for at fokusere på elektronikprodukterne.  
+
+I dette tilfælde er der forskellige tendenser for besøg og indtægter, og oversigtsteksten opdateres for at afspejle tendenserne. Antallet af returværdier, vi har tilføjet, opdateres til 4196 USD. Tomme oversigter kan opdateres, når du krydsfiltrerer.
    
-   ![Krydsfiltrering](media/power-bi-visualization-smart-narratives/11.gif)
+![Skærmbillede, der viser, hvordan en markering i et diagram kan krydsfiltrere en oversigt.](media/power-bi-visualization-smart-narratives/11.gif)
    
-   Du kan også udføre mere avanceret filtrering. Hvis du f.eks. kun er interesseret i tendensen på tværs af et bestemt kvartal i denne visualisering, der ser på tendenser for flere forskellige produkter, kan du blot vælge de relevante datapunkter for at få oversigten opdateret for det pågældende fragment.
+Du kan også udføre mere avanceret filtrering. Du kan f.eks. se på visualiseringen af tendenser for flere produkter i eksempelfilen. Hvis du kun er interesseret i en tendens for et bestemt kvartal, skal du vælge de relevante datapunkter for at opdatere oversigten for den pågældende tendens.
    
-   ![Filtrering ](media/power-bi-visualization-smart-narratives/12.gif)
+![Skærmbillede, der viser, hvordan du vælger en tendenslinje for at filtrere oversigten, så den kun viser den pågældende tendens.](media/power-bi-visualization-smart-narratives/12.gif)
    
-   ## <a name="limitations"></a>Begrænsninger
-   - Fastgørelse til dashboardet understøttes ikke.
-   - Brug af dynamiske værdier og betinget formatering (f.eks. databundet titel) understøttes ikke.
-   - Azure Analysis Services, On-Prem AS understøttes ikke.
-   - KPI, Kort, Kort med flere rækker, Kartogram, Matrixer, R/Phyton-visualiseringer og brugerdefinerede visualiseringer understøtter ikke opsummering. Nogle af disse visualiseringer tilføjes på et senere tidspunkt.
-   - Opsummering understøttes ikke for visualiseringer med kolonner, der er grupperet efter andre kolonner, og kolonner, der er bygget på et datagruppefelt. 
-   - Krydsfiltrering uden for visualiseringen understøttes ikke.
-   - Omdøbning af dynamiske værdier eller redigering af automatisk genererede dynamiske værdier understøttes ikke.
-   - Opsummering af visualiseringer, der indeholder løbende beregninger som spørgsmål og svar med aritmetik, procent af samlet beløb osv. understøttes ikke.
+## <a name="limitations"></a>Begrænsninger
+
+Funktionen for intelligente narrativer understøtter ikke følgende funktionalitet:
+- Fastgørelse til et dashboard 
+- Brug af dynamiske værdier og betinget formatering (f.eks. databundet titel)
+- Azure Analysis Services, AS i det lokale miljø
+- KPI'er, kort, kort med flere rækker, tilknytninger, tabeller, matrixer, R-visualiseringer eller Python-visualiseringer, brugerdefinerede visualiseringer 
+- Oversigter over visualiseringer, hvis kolonner er grupperet efter andre kolonner, og for visualiseringer, der er bygget på et datagruppefelt 
+- Krydsfiltrering ud fra en visualisering
+- Omdøbning af dynamiske værdier eller redigering af automatisk genererede dynamiske værdier
+- Oversigter over visualiseringer, der indeholder løbende beregninger som spørgsmål og svar med aritmetik og procent af samlet beløb 
    
 
