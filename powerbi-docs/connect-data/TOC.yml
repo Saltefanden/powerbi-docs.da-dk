@@ -36,13 +36,13 @@
           href: service-tutorial-build-machine-learning-model.md
         - name: Opdater data fra SQL Server
           href: service-gateway-sql-tutorial.md
-    - name: Koncepter
+    - name: Begreber
       items:
         - name: Power BI-datakilder
           href: power-bi-data-sources.md
         - name: Forudsætninger for Power BI-datakilder
           href: desktop-data-source-prerequisites.md
-        - name: Brug af forbedrede metadata for datasæt i Power BI Desktop (eksempelvisning)
+        - name: Brug af forbedrede metadata for datasæt i Power BI Desktop
           href: desktop-enhanced-dataset-metadata.md
         - name: Arbejd med flerdimensionelle modeller i Power BI
           href: desktop-default-member-multidimensional-models.md
@@ -184,12 +184,6 @@
               href: service-datasets-copy-reports.md
             - name: Kontrollér brugen af datasæt
               href: service-datasets-admin-across-workspaces.md
-        - name: Påtegn datasæt
-          items:
-            - name: Hæv datasæt
-              href: service-datasets-promote.md
-            - name: Certificer datasæt
-              href: service-datasets-certify.md
         - name: Hent data fra databaser
           items:
             - name: Azure og Power BI
