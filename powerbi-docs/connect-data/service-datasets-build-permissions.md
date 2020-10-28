@@ -6,19 +6,19 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 04/30/2020
+ms.date: 10/21/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: d602c97384f42bdd35f12052f67b15a0ca7bae38
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 343351fd762a074de010bc307c0138773e265226
+ms.sourcegitcommit: fddba666c6ea90d525a1c3188bbd3c4a03410cdc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236890"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92462412"
 ---
 # <a name="build-permission-for-shared-datasets"></a>Opret tilladelse til delte datasæt
 
-Når du opretter en rapport i Power BI Desktop, gemmes dataene i den pågældende rapport i en *datamodel*. Når du publicerer dine rapporter i Power BI-tjenesten, publicerer du også dataene som et *datasæt*. Du kan give andre *tilladelsen Opret* for den pågældende rapport, så de kan finde og genbruge det datasæt, du har delt. I denne artikel forklares det, hvordan du styrer adgang til dataene ved hjælp af tilladelsen Opret.
+Når du opretter en rapport i Power BI Desktop, gemmes dataene i den pågældende rapport i en *datamodel* . Når du publicerer dine rapporter i Power BI-tjenesten, publicerer du også dataene som et *datasæt* . Du kan give andre *tilladelsen Opret* for den pågældende rapport, så de kan finde og genbruge det datasæt, du har delt. I denne artikel forklares det, hvordan du styrer adgang til dataene ved hjælp af tilladelsen Opret.
 
 Tilladelsen Opret anvendes på datasæt. Når du giver brugerne tilladelsen Opret, kan de oprette nyt indhold i dit datasæt, f.eks. rapporter, dashboards, fastgjorte felter fra Spørgsmål og svar samt Søgning efter indsigt. 
 
@@ -32,9 +32,9 @@ Brugerne skal også have tilladelsen Opret for at kunne arbejde med data *uden f
 
 Du kan give tilladelsen Opret for et datasæt på forskellige måder:
 
-- Medlemmer af et arbejdsområde med mindst en rolle som Bidragyder har automatisk tilladelsen Opret for datasæt i det pågældende arbejdsområde og tilladelse til at kopiere en rapport.
+- Medlemmer af et arbejdsområde med mindst en rolle som Bidragyder har automatisk tilladelsen Opret for datasæt i det pågældende arbejdsområde og tilladelse til at kopiere en rapport. Læs mere om [roller i de nye arbejdsområder](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces).
  
-- Medlemmer af arbejdsområdet, hvor datasættet er placeret, kan tildele tilladelsen til specifikke brugere eller sikkerhedsgrupper i centret for tilladelser. Hvis du er medlem af arbejdsområdet, skal du vælge **Flere indstillinger** (...) ud for et datasæt > **Administrer tilladelser**.
+- Medlemmer af arbejdsområdet, hvor datasættet er placeret, kan tildele tilladelsen til specifikke brugere eller sikkerhedsgrupper i centret for tilladelser. Hvis du er medlem af arbejdsområdet, skal du vælge **Flere indstillinger** (...) ud for et datasæt > **Administrer tilladelser** .
 
     ![Vælg ellipsen](media/service-datasets-build-permissions/power-bi-dataset-permissions-new-look.png)
 
@@ -55,11 +55,11 @@ Du kan fjerne tilladelsen Opret for et datasæt fra en person. Hvis du gør det,
 På et tidspunkt kan du få brug for at fjerne tilladelsen Opret for nogle brugere af et delt datasæt. 
 
 1. Gå til siden med listen over **Datasæt** i et arbejdsområde. 
-1. Vælg **Flere indstillinger** (...) ud for datasættet > **Administrer tilladelse**.
+1. Vælg **Flere indstillinger** (...) ud for datasættet > **Administrer tilladelse** .
 
     ![Administrer tilladelser](media/service-datasets-build-permissions/power-bi-dataset-permissions-new-look.png)
 
-1. Vælg **Flere indstillinger** (...) ud for et navn > **Fjern Opret**.
+1. Vælg **Flere indstillinger** (...) ud for et navn > **Fjern Opret** .
 
     ![Fjern tilladelsen Opret](media/service-datasets-build-permissions/power-bi-dataset-remove-build-permissions.png)
 
@@ -76,20 +76,20 @@ Lad os sige, at du har distribueret en app fra et arbejdsområde til en gruppe p
 1. På fanen **Tilladelser** skal du vælge **X** for at slette personen eller gruppen. 
 
     ![Vælg X'et](media/service-datasets-build-permissions/power-bi-app-delete-user.png)
-1. Vælg **Opdater program**.
+1. Vælg **Opdater program** .
 
     Du får vist en meddelelse, der forklarer, at du skal gå til **Administrer tilladelser** for at fjerne tilladelsen Opret for brugere med eksisterende adgang. 
 
     ![Meddelelsen Administrer tilladelser](media/service-datasets-build-permissions/power-bi-dataset-app-remove-message.png)
 
-1. Vælg **Opdater**.
+1. Vælg **Opdater** .
 
 1. Gå til siden med listen over **Datasæt** i arbejdsområdet. 
-1. Vælg **Flere indstillinger** (...) ud for datasættet > **Administrer tilladelse**.
+1. Vælg **Flere indstillinger** (...) ud for datasættet > **Administrer tilladelse** .
 
     ![Administrer tilladelser](media/service-datasets-build-permissions/power-bi-dataset-permissions-new-look.png)
 
-1. Vælg **Flere indstillinger** (...) ud for deres navn > **Fjern Opret**.
+1. Vælg **Flere indstillinger** (...) ud for deres navn > **Fjern Opret** .
 
     ![Fjern tilladelsen Opret](media/service-datasets-build-permissions/power-bi-dataset-remove-build-permissions.png)
 

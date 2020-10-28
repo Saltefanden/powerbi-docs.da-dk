@@ -8,16 +8,16 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/20/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 60a22946ccde642987e748904d0dc7fe636ec700
-ms.sourcegitcommit: ffc46032d0771227395cc38be9ec9ff1500eac70
+ms.openlocfilehash: f96fa15981de8d86007c6e1fa768f95a77921280
+ms.sourcegitcommit: 4e347efd132b48aaef6c21236c3a21e5fce285cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89401973"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92680964"
 ---
 # <a name="gather-requirements-to-migrate-to-power-bi"></a>Indsaml krav til migrering til Power BI
 
-I denne artikel beskrives **fase 1**, der omhandler indsamling og prioritering af krav ved migrering til Power BI.
+I denne artikel beskrives **fase 1** , der omhandler indsamling og prioritering af krav ved migrering til Power BI.
 
 :::image type="content" source="media/powerbi-migration-requirements/migrate-to-powerbi-stage-1.png" alt-text="Billede, der viser faserne i en migrering til Power BI. Der fokuseres på fase 1 i denne artikel.":::
 
@@ -46,17 +46,17 @@ Kompiler grundige og letlæselige oplysninger om rapporter, f. eks.:
 - **Den måde forbrugerne bruger rapporten på:** Overvej at iagttage forbrugere af den eksisterende rapport for at forstå, præcis hvordan de bruger den. Du finder måske ud af, at visse elementer i rapporten kan fjernes eller forbedres i den nye Power BI-version. Denne proces omfatter en ekstra tidsinvestering, men den er værdifuld for kritiske rapporter eller rapporter, der bruges ofte.
 - **Ejer og ekspert inden for emnet:** Identificer rapport ejeren og eventuelle eksperter inden for emnet, der er knyttet til rapporten eller datadomænet. De kan fremover blive ejerne af den nye Power BI-rapport. Medtag eventuelle specifikke krav til ændringsstyring (som typisk er forskellige for henholdsvis it-administrerede og virksomhedsadministrerede løsninger) samt godkendelser, der er nødvendige, når der foretages ændringer fremover.
 - **Metode til levering af indhold:** Tydeliggør rapportforbrugernes forventninger til levering af indhold. Det kan være levering i form af interaktiv udførelse efter behov, levering, der er integreret i et brugerdefineret program, eller levering efter en tidsplan ved hjælp af et mailabonnement. Der kan også være krav til udløsning af beskeder.
-- **Behov i forbindelse med interaktivitet:** Fastlæg krav til _skal have_- og _godt at have_-interaktivitet, f. eks. filtre, detailudledning eller detailadgang.
+- **Behov i forbindelse med interaktivitet:** Fastlæg krav til _skal have_ - og _godt at have_ -interaktivitet, f. eks. filtre, detailudledning eller detailadgang.
 - **Datakilder:** Sørg for, at alle datakilder, der kræves af rapporten, er fundet, og at behov i forbindelse med dataventetid (dataopdatering) er forstået. Identificer krav til historiske data, tendenser og datasnapshot for hver rapport, så de kan justeres i forhold til datakravene. Dokumentation af datakilden kan også være nyttig på et senere tidspunkt, når du udfører datavalidering af en ny rapport med dens kildedata.
 - **Sikkerhedskrav:** Tydeliggør sikkerhedskrav (f. eks. tilladte læsere, tilladte redaktører og eventuelle krav til sikkerhed på rækkeniveau), herunder eventuelle undtagelser i forhold til normal organisationssikkerhed. Dokumenter et niveau for datafølsomhed, beskyttelse af personlige oplysninger og/eller lovmæssige krav.
 - **Beregninger, KPI'er og forretningsregler:** Identificer og dokumenter alle beregninger, KPI'er og forretningsregler, der i øjeblikket er defineret i den eksisterende rapport, så de kan justeres i forhold til datakravene.
 - **Krav til anvendelighed, layout og udseende:** Identificer de specifikke behov i forbindelse med krav til anvendelighed, layout og udseende, der er relateret til datavisualiseringer, gruppering, sortering og betinget synlighed. Medtag eventuelle specifikke overvejelser, der er relateret til levering til mobilenheder.
-- **Behov for udskrivning og eksport:** Find ud af, om der er krav, der er specifikke for udskrivning, eksport eller et pixel – perfekt layout. Disse behov påvirker, hvilke typer rapporter der er mest passende (f. eks. en Power BI- eller Excel-rapport eller en sideinddelt rapport). Vær opmærksom på, at brugerne har tendens til at lægge stor vægt på, hvordan de altid har gjort tingene, så være ikke bange for at udfordre deres måde at tænke på. Husk at fokusere på _forbedringer_ i stedet for _ændringer_.
+- **Behov for udskrivning og eksport:** Find ud af, om der er krav, der er specifikke for udskrivning, eksport eller et pixel – perfekt layout. Disse behov påvirker, hvilke typer rapporter der er mest passende (f. eks. en Power BI- eller Excel-rapport eller en sideinddelt rapport). Vær opmærksom på, at brugerne har tendens til at lægge stor vægt på, hvordan de altid har gjort tingene, så være ikke bange for at udfordre deres måde at tænke på. Husk at fokusere på _forbedringer_ i stedet for _ændringer_ .
 - **Risici eller overvejelser:** Find ud af, om der er andre tekniske eller funktionelle krav til rapporter samt eventuelle risici eller overvejelser vedrørende de oplysninger, der præsenteres i dem.
 - **Åbne problemer og ventende opgaver:** Identificer eventuel fremtidig vedligeholdelse, kendte problemer eller udskudte anmodninger for at føje dem til rækken af aktuelt ventende opgaver.
 
 > [!TIP]
-> Overvej krav til rangering ved at klassificere dem som _skal have_ eller _godt at have_. Ofte beder kunderne om alt det, de muligvis har brug for, på forhånd, fordi de tror, at det er deres eneste chance for at foretage anmodninger. Når du har adresseret prioriteter i flere gentagelser, kan du også gøre rækken af ventende problemer tilgængelig for interessenter. Det hjælper med kommunikation, beslutningstagning og sporing af ventende forpligtelser.
+> Overvej krav til rangering ved at klassificere dem som _skal have_ eller _godt at have_ . Ofte beder kunderne om alt det, de muligvis har brug for, på forhånd, fordi de tror, at det er deres eneste chance for at foretage anmodninger. Når du har adresseret prioriteter i flere gentagelser, kan du også gøre rækken af ventende problemer tilgængelig for interessenter. Det hjælper med kommunikation, beslutningstagning og sporing af ventende forpligtelser.
 
 ### <a name="gather-data-requirements"></a>Indsaml datakrav
 
@@ -74,7 +74,7 @@ Kompiler detaljerede oplysninger vedrørende data, f. eks.:
 - **Åbne problemer og ventende opgaver:** Tilføj eventuelle kendte problemer, kendte problemer med datakvaliteten, fremtidig vedligeholdelse eller udskudte anmodninger på dette tidspunkt.
 
 > [!IMPORTANT]
-> Genbrug af data kan opnås ved hjælp af [delte datasæt](../connect-data/service-datasets-share.md), der eventuelt kan [certificeres](../connect-data/service-datasets-certify.md) for at angive troværdighed og gøre dem nemmere at finde. Genbrug af dataklargøring kan opnås ved hjælp af [dataflow](../transform-model/service-dataflows-overview.md), der reducerer gentagen logik i flere datasæt. Dataflows kan også reducere belastningen på kildesystemer væsentligt, da dataene hentes mindre hyppigt – flere datasæt kan derefter importere data fra dataflowet.
+> Genbrug af data kan opnås ved hjælp af [delte datasæt](../connect-data/service-datasets-share.md), der eventuelt kan [certificeres](../collaborate-share/service-endorse-content.md) for at angive troværdighed og gøre dem nemmere at finde. Genbrug af dataklargøring kan opnås ved hjælp af [dataflow](../transform-model/service-dataflows-overview.md), der reducerer gentagen logik i flere datasæt. Dataflows kan også reducere belastningen på kildesystemer væsentligt, da dataene hentes mindre hyppigt – flere datasæt kan derefter importere data fra dataflowet.
 
 ## <a name="identify-improvement-opportunities"></a>Identificer muligheder for forbedring
 

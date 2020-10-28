@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 04/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e943324106148bdbff1edba36650d494fdd9db8c
-ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
+ms.openlocfilehash: 23d520815c47c9ff9f1ec045ec67921141e8eb7a
+ms.sourcegitcommit: 4e347efd132b48aaef6c21236c3a21e5fce285cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "91374263"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92681150"
 ---
 # <a name="intro-to-datasets-across-workspaces"></a>Introduktion til datasæt på tværs af arbejdsområder
 
@@ -47,7 +47,7 @@ Hvis du er forfatteren af et datasæt, kan du med tilladelsen Opret bestemme, hv
 
 ## <a name="promotion-and-certification"></a>Fremhævning og certificering
 
-Hvis du opretter datasæt, som andre kan få glæde af, kan du gøre det nemmere for dem at finde det ved at [fremhæve dit datasæt](service-datasets-promote.md). Du kan også anmode om, at eksperter i din organisation [certificerer dit datasæt](service-datasets-certify.md).
+Hvis du opretter datasæt, som andre kan få glæde af, kan du gøre det nemmere for dem at finde det ved at [fremhæve dit datasæt](../collaborate-share/service-endorse-content.md#promote-content). Du kan også anmode om, at eksperter i din organisation [certificerer dit datasæt](../collaborate-share/service-endorse-content.md#request-content-certification).
 
 ## <a name="licensing"></a>Licensering
 
@@ -69,7 +69,8 @@ De specifikke funktioner og oplevelser, der er baseret på funktioner for delte 
 
 ## <a name="next-steps"></a>Næste trin
 
-- [Fremhæv datasæt](service-datasets-promote.md)
-- [Certificer datasæt](service-datasets-certify.md)
+- [Fremhæv datasæt](../collaborate-share/service-endorse-content.md#promote-content)
+- [Certificer datasæt](../collaborate-share/service-endorse-content.md#certify-content)
+- [Anmod om certificering af datasæt](../collaborate-share/service-endorse-content.md#request-content-certification)
 - [Styr brugen af datasæt på tværs af arbejdsområder](service-datasets-admin-across-workspaces.md)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

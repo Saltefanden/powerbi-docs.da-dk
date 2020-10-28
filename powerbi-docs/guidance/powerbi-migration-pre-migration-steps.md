@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/20/2020
 ms.author: v-pemyer
-ms.openlocfilehash: fba37d9f73ea0f61d8a43dc46cd13a5835d4d2a9
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: 01d1e48537b2d373be3897259f8ac6e97886f268
+ms.sourcegitcommit: 4e347efd132b48aaef6c21236c3a21e5fce285cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91525794"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92680965"
 ---
 # <a name="prepare-to-migrate-to-power-bi"></a>Forbered migrering til Power BI
 
@@ -79,7 +79,7 @@ Nogle af de vigtigste punkter, der skal håndteres tidligt i implementeringen af
 - Indstillinger relateret til [tilstande for datasæt](../connect-data/service-dataset-modes-understand.md), f.eks. brug af Import-tilstand, DirectQuery-tilstand eller en kombination af disse to tilstande i en [Sammensat model](composite-model-guidance.md).
 - [Sikring af data og adgang](../admin/service-admin-power-bi-security.md).
 - Arbejde med [delte datasæt](../connect-data/service-datasets-share.md) med henblik på genanvendelighed.
-- Anvendelse af [datacertificering](../connect-data/service-datasets-certify.md) for at fremme brugen af autoritative og pålidelige data.
+- Anvendelse af [datacertificering](../collaborate-share/service-endorsement-overview.md) for at fremme brugen af autoritative og pålidelige data.
 - Brug af forskellige [rapporttyper](../create-reports/index.yml), herunder Power BI-rapporter, Excel-rapporter eller sideinddelte rapporter til forskellige use cases eller forretningsenheder.
 - Tilgange til administration af ændringer med henblik på at administrere centraliserede BI-artefakter og forretningsadministrerede BI-artefakter.
 - Oplæringsplaner til forbrugere, dataudformere, rapportforfattere og administratorer.
@@ -123,7 +123,7 @@ Den første opgave er at forstå, hvordan en vellykket migrering af en enkelt l�
 Forberedelse af en oversigt over eksisterende rapporter på den tidligere BI-platform er et vigtigt skridt mod at forstå, hvad der allerede findes. Resultatet af dette trin bruges som input til at vurdere indsatsniveauet for migrering. Aktiviteter, der er relateret til forberedelse af en oversigt, kan omfatte:
 
 1. **Oversigt over rapporter:** Udarbejd en liste over rapporter og dashboards, der er kandidater til migrering.
-2. **Oversigt over datakilder:** Udarbejd en liste over alle datakilder, som eksisterende rapporter tilgår. Den bør omfatte både datakilder for virksomheden og afdelinger samt personlige datakilder. I forbindelse med denne proces kan der afdækkes datakilder, som it-afdelingen ikke havde kendskab til tidligere, hvilket ofte omtales som _skygge-it_.
+2. **Oversigt over datakilder:** Udarbejd en liste over alle datakilder, som eksisterende rapporter tilgår. Den bør omfatte både datakilder for virksomheden og afdelinger samt personlige datakilder. I forbindelse med denne proces kan der afdækkes datakilder, som it-afdelingen ikke havde kendskab til tidligere, hvilket ofte omtales som _skygge-it_ .
 3. **Overvågningslog:** Hent data fra overvågningsloggen for den tidligere BI-platform for at forstå forbrugsmønstre og hjælpe med prioriteringen. Vigtige oplysninger, der skal hentes fra overvågningsloggen, omfatter:
     - Det gennemsnitlige antal gange, hver rapport blev udført pr. uge/måned/kvartal.
     - Det gennemsnitlige antal forbrugere pr. rapport pr. uge/måned/kvartal.

@@ -8,16 +8,16 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/20/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 23d207bb4f070c3c3a35f1e74dd281f012528c82
-ms.sourcegitcommit: cff93e604e2c5f24e0f03d6dbdcd10c2332aa487
+ms.openlocfilehash: f9268409977b3aa78e1ebda6f1f6b2e732451455
+ms.sourcegitcommit: 4e347efd132b48aaef6c21236c3a21e5fce285cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90965011"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92681028"
 ---
 # <a name="deploy-to-power-bi"></a>Udrul til Power BI
 
-Denne artikel indeholder en beskrivelse af **fase 5**, som omhandler udrulning, support og overvågning af indhold, når der migreres til Power BI.
+Denne artikel indeholder en beskrivelse af **fase 5** , som omhandler udrulning, support og overvågning af indhold, når der migreres til Power BI.
 
 :::image type="content" source="media/powerbi-migration-deploy-support-monitor/migrate-to-powerbi-stage-5.png" alt-text="Billede, der viser faserne i en migrering til Power BI. Der fokuseres på fase 5 i denne artikel.":::
 
@@ -93,7 +93,7 @@ Vigtige aktiviteter under en udrulning til produktionsarbejdsområdet omfatter t
 - **App:** Hvis apps er en del af din strategi til distribution af indhold, kan du publicere en [app](../consumer/end-user-apps.md) ved hjælp af indholdet fra produktionsarbejdsområdet.
 - **Sikkerhed:** Opdater og bekræft [arbejdsområderoller](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces) baseret på din strategi for distribution af og samarbejde om indhold.
 - **Indstillinger for datasæt:** Opdater og bekræft indstillingerne for hvert datasæt, herunder:
-  - [Anbefaling](../connect-data/service-datasets-certify.md) (f.eks. certificeret eller fremhævet)
+  - [Anbefaling](../collaborate-share/service-endorse-content.md) (f.eks. certificeret eller fremhævet)
   - Legitimationsoplysninger til gatewayforbindelse eller datakilde
   - Planlagt opdatering
   - [Udvalgte spørgsmål i Spørgsmål og svar](../create-reports/service-q-and-a-create-featured-questions.md)

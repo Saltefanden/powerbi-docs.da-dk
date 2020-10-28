@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
-ms.custom: seodec18
+ms.custom: seodec18, devx-track-js
 ms.date: 02/05/2019
-ms.openlocfilehash: c5a902a8de8449290d52974063b25f51ff92dd9d
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: faacbe602a8c80dc036583cca599b24b072df315
+ms.sourcegitcommit: 702ababd71c38846303bf49990b51afc73f9ebb8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91747568"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92795652"
 ---
 # <a name="tutorial-embed-a-power-bi-content-into-your-application-for-national-clouds"></a>Selvstudium: Integrer Power BI-indhold i dit program for nationale cloudmiljøer
 
@@ -38,12 +38,12 @@ De forskellige nationale cloudmiljøer er:
 
 ![Integreret dashboard](media/embed-sample-for-customers/powerbi-embed-dashboard.png)
 
-Før du begynder denne gennemgang, skal du have en **Power BI**-konto. Hvis du ikke har konfigureret en konto, kan du vælge det rette nationale cloudmiljø for dig afhængigt af typen af land eller offentlige myndighed. Du kan tilmelde dig en [Power BI-konto af typen US Government](../../admin/service-govus-signup.md), [en cloudkonto af typen Power BI til Tyskland](https://powerbi.microsoft.com/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1) eller en [cloudkonto af typen Power BI til Kina](https://www.21vbluecloud.com/powerbi/).
+Før du begynder denne gennemgang, skal du have en **Power BI** -konto. Hvis du ikke har konfigureret en konto, kan du vælge det rette nationale cloudmiljø for dig afhængigt af typen af land eller offentlige myndighed. Du kan tilmelde dig en [Power BI-konto af typen US Government](../../admin/service-govus-signup.md), [en cloudkonto af typen Power BI til Tyskland](https://powerbi.microsoft.com/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1) eller en [cloudkonto af typen Power BI til Kina](https://www.21vbluecloud.com/powerbi/).
 
 > [!NOTE]
 > Vil du integrere et dashboard for din organisation i stedet? Se i [Integrer et dashboard i en app for din organisation](embed-sample-for-your-organization.md).
 
-Hvis du vil integrere et dashboard i en webapp, skal du bruge API'en til **Power BI** og et **adgangstoken** til Azure Active Directory for at hente et dashboard. Derefter skal du indlæse dashboardet ved hjælp af et integrationstoken. **Power BI** API'en leverer programmeringsmæssig adgang til bestemte **Power BI**-ressourcer. Du kan finde flere oplysninger under [Power BI REST API](/rest/api/power-bi/), [Power BI .NET SDK] og [JavaScript-API'en til Power BI](https://github.com/Microsoft/PowerBI-JavaScript).
+Hvis du vil integrere et dashboard i en webapp, skal du bruge API'en til **Power BI** og et **adgangstoken** til Azure Active Directory for at hente et dashboard. Derefter skal du indlæse dashboardet ved hjælp af et integrationstoken. **Power BI** API'en leverer programmeringsmæssig adgang til bestemte **Power BI** -ressourcer. Du kan finde flere oplysninger under [Power BI REST API](/rest/api/power-bi/), [Power BI .NET SDK] og [JavaScript-API'en til Power BI](https://github.com/Microsoft/PowerBI-JavaScript).
 
 ## <a name="download-the-sample"></a>Download eksemplet
 
@@ -143,7 +143,7 @@ Registrer din app i Azure AD for at foretage REST-API-kald. Du kan finde flere o
 
 * Cloudmiljøet Power BI til Kina – ```https://app.powerbi.cn/apps```
 
-Hvis du har downloadet [eksemplet Integration for din kunde](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/Embed%20for%20your%20customers/PowerBIEmbedded_AppOwnsData), skal du bruge det **program-id**, du får, så eksemplet kan godkendes i Azure AD. Du kan konfigurere prøveappen ved at ændre **program-id** i filen *web.config*.
+Hvis du har downloadet [eksemplet Integration for din kunde](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/Embed%20for%20your%20customers/PowerBIEmbedded_AppOwnsData), skal du bruge det **program-id** , du får, så eksemplet kan godkendes i Azure AD. Du kan konfigurere prøveappen ved at ændre **program-id** i filen *web.config* .
 
 ## <a name="step-2---get-an-access-token-from-azure-ad"></a>Trin 2 – Få et adgangstoken fra Azure AD
 
@@ -159,7 +159,7 @@ I programmet skal du hente et **adgangstoken** fra Azure AD, før du kan foretag
 
 * Cloudmiljøet Power BI til Kina – ```https://login.chinacloudapi.cn```
 
-Du kan se eksempler på disse adgangstokens i de enkelte indholdselementopgaver i filen **Controllers\HomeController.cs**.
+Du kan se eksempler på disse adgangstokens i de enkelte indholdselementopgaver i filen **Controllers\HomeController.cs** .
 
 ## <a name="step-3---get-a-content-item"></a>Trin 3: Hent et indholdselement
 
@@ -167,7 +167,7 @@ Før du integrerer dit Power BI-indhold, er der nogle ting, du skal gøre for at
 
 ### <a name="create-the-power-bi-client-with-your-access-token"></a>Opret Power BI-klienten med dit eget adgangstoken
 
-Brug dit adgangstoken til at oprette dit Power BI-klientobjekt, som gør det muligt for dig at interagere med API'erne til Power BI. Du kan oprette dit Power BI-klientobjekt ved at omgive AccessToken med objektet *Microsoft.Rest.TokenCredentials*.
+Brug dit adgangstoken til at oprette dit Power BI-klientobjekt, som gør det muligt for dig at interagere med API'erne til Power BI. Du kan oprette dit Power BI-klientobjekt ved at omgive AccessToken med objektet *Microsoft.Rest.TokenCredentials* .
 
 ```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -245,7 +245,7 @@ Ved hjælp af JavaScript-API'en kan du generere et integrationstoken. Dette inte
 
 Du kan finde et eksempel i **Controllers\HomeController.cs** i [prøveappen Embedding for your organization](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/Embed%20for%20your%20customers/PowerBIEmbedded_AppOwnsData).
 
-Der oprettes en klasse for **EmbedConfig** og **TileEmbedConfig**. Du kan finde et eksempel i **Models\EmbedConfig.cs** og **Models\TileEmbedConfig.cs**.
+Der oprettes en klasse for **EmbedConfig** og **TileEmbedConfig** . Du kan finde et eksempel i **Models\EmbedConfig.cs** og **Models\TileEmbedConfig.cs** .
 
 #### <a name="reports"></a>Rapporter
 
