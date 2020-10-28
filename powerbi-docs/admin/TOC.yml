@@ -11,7 +11,7 @@
           href: service-admin-where-is-my-tenant-located.md
         - name: Hvad er Power BI Premium?
           href: service-premium-what-is.md
-    - name: Koncepter
+    - name: Begreber
       expanded: true
       items:
         - name: Administrationsrolle i Microsoft 365
@@ -94,7 +94,7 @@
               href: service-security-data-protection-metrics-report.md
         - name: Sikkerhed på rækkeniveau
           href: service-admin-rls.md
-        - name: Konfigurer certificering af datasæt og dataflow
+        - name: Aktivér indholdscertificering
           href: service-admin-setup-certification.md
         - name: Konfiguration af mobilapps med Intune
           href: service-admin-mobile-intune.md

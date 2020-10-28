@@ -7,7 +7,7 @@
       items:
         - name: Måder at dele dit arbejde på
           href: service-how-to-collaborate-distribute-dashboards-reports.md
-    - name: Koncepter
+    - name: Begreber
       expanded: true
       items:
         - name: Organiser arbejde i arbejdsområder
@@ -16,6 +16,8 @@
           href: service-usage-metrics.md
         - name: Overvåg brug i nye arbejdsområder
           href: service-modern-usage-metrics.md
+        - name: Indholdsanbefaling
+          href: service-endorsement-overview.md
     - name: Vejledninger
       expanded: true
       items:
@@ -73,6 +75,8 @@
               href: service-url-filters.md
             - name: Tilmeld dig selv og andre
               href: service-report-subscribe.md
+            - name: Anbefal dit indhold
+              href: service-endorse-content.md
             - name: Udvalgt indhold på startsiden
               href: service-featured-content.md
             - name: Integrer rapport i SharePoint Online
