@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/07/2019
 ms.author: davidi
 LocalizationGroup: Conceptual
-ms.openlocfilehash: df6b3bd29089f37b11064216568523f442169794
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: cc4387c3c1c0f83347823bbc6b95beb437b235e9
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91528384"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92916883"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-using-azure-active-directory-b2b"></a>Distribuer Power BI-indhold til eksterne gæstebrugere vha. Azure Active Directory B2B
 
@@ -25,7 +25,7 @@ ms.locfileid: "91528384"
 **Tekniske reviewere:** Adam Wilson, Sheng Liu, Qian Liang, Sergei Gundorov, Jacob Grimm, Adam Saxton, Maya Shenhav, Nimrod Shalit
 
 > [!NOTE]
-> Du kan gemme eller udskrive denne whitepaper ved at vælge **Udskriv** i din browser og derefter vælge **Gem som PDF**.
+> Du kan gemme eller udskrive denne whitepaper ved at vælge **Udskriv** i din browser og derefter vælge **Gem som PDF** .
 
 ## <a name="introduction"></a>Introduktion
 
@@ -244,7 +244,7 @@ Power BI-integration med Azure AD B2B giver Contoso en problemfri og nem måde a
 
     Når denne metode benyttes, inviterer Contoso gæstebrugere til deres Azure AD på forhånd og distribuerer derefter Power BI-indhold til dem. Contoso kan invitere gæstebrugere fra Azure-portalen eller ved hjælp af PowerShell. Her er trinnene til at invitere gæstebrugere fra Azure-portalen:
 
-    - Contosos Azure AD-administrator navigerer til **Azure Portal > Azure Active Directory > Brugere og grupper > Alle brugere > Ny gæstebruger**.
+    - Contosos Azure AD-administrator navigerer til **Azure Portal > Azure Active Directory > Brugere og grupper > Alle brugere > Ny gæstebruger** .
 
     ![Gæstebruger](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_15.png)
 
@@ -344,7 +344,7 @@ Med denne metode køber Contoso Power BI Premium-kapacitet og tildeler indholdet
 
 Eksterne brugere kan også kun forbruge indhold på samme måde som brugere med en "gratis" licens i Power BI, når de forbruger indhold i Power BI Premium.
 
-Contoso kan også drage nytte af andre Power BI Premium-funktioner i forbindelse med sine apps, f.eks. øget opdateringshastighed, dedikeret kapacitet og store modelstørrelser.
+Contoso kan også drage fordel af andre Power BI Premium-funktioner for sine apps, som f. eks. øgede opdaterings priser, kapacitet og store model størrelser.
 
 ![Yderligere funktioner](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_24.png)
 
@@ -391,7 +391,7 @@ For at sikre at Contoso kan filtrere data, der er baseret på den person, der op
 
 ![Administration af roller](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_28.png)
 
-Når roller defineres i rapporten, skal en bruger tildeles til en bestemt rolle for at få adgang til data. Tildelingen af roller sker i Power BI-tjenesten (**Datasæt > Sikkerhed**).
+Når roller defineres i rapporten, skal en bruger tildeles til en bestemt rolle for at få adgang til data. Tildelingen af roller sker i Power BI-tjenesten ( **Datasæt > Sikkerhed** ).
 
 ![Angivelse af sikkerhed](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_29.png)
 
@@ -490,8 +490,8 @@ Gæstebrugere får adgang til den skrivebeskyttede standardoplevelse og kan redi
 
 Du kan hjælpe disse brugere med at logge på Power BI ved at give dem lejerens URL-adresse. Du kan finde lejerens URL-adresse ved at følge disse trin.
 
-1. I den øverste menu i Power BI skal du vælge Hjælp ( **?** ) og derefter **Om Power BI**.
-2. Se efter værdien ud for  **lejerens URL-adresse**. Dette er den URL-adresse for lejeren, som du kan dele med dine gæstebrugere.
+1. I den øverste menu i Power BI skal du vælge Hjælp ( **?** ) og derefter **Om Power BI** .
+2. Se efter værdien ud for  **lejerens URL-adresse** . Dette er den URL-adresse for lejeren, som du kan dele med dine gæstebrugere.
 
     ![Lejerens URL-adresse](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_42.png)
 
