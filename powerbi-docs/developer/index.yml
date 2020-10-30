@@ -13,12 +13,12 @@ metadata:
   author: KesemSharabi
   ms.author: kesharab
   ms.date: 31/03/2020
-  ms.openlocfilehash: 33b047952ce5ca7748bc54595e27c4025bd34e6b
-  ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
+  ms.openlocfilehash: 3ed27c97169c1b4a579dadb001555445fe8fc43f
+  ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
   ms.translationtype: HT
   ms.contentlocale: da-DK
-  ms.lasthandoff: 10/14/2020
-  ms.locfileid: "92048826"
+  ms.lasthandoff: 10/29/2020
+  ms.locfileid: "92916768"
 highlightedContent:
   items:
   - title: Integreret analyse med Power BI
@@ -85,7 +85,7 @@ additionalContent:
       summary: Power BI REST-API'er leverer tjenesteslutpunkter til integration, administration og brugerressourcer.
       url: /rest/api/power-bi/
     - title: REST API til Azure Resource Manager
-      summary: Med en API, der giver dig et sæt RESTful-webtjenester, kan du oprette, hente, opdatere og slette dedikerede Power BI-kapaciteter.
+      summary: Med en API, der giver dig et sæt RESTful-webtjenester, kan du oprette, hente, opdatere og slette Power BI-kapaciteter.
       url: /rest/api/power-bi-embedded/
     - title: Dokumentation til Power Platform
       summary: Få mere at vide om, hvordan Power BI, Power Apps, Power Automate og Power Virtual Agents fungerer sammen for at forbedre hinanden.
