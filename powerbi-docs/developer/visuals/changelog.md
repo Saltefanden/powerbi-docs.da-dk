@@ -8,15 +8,19 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 03/13/2019
-ms.openlocfilehash: 7624e51bf8c1ee49f2b7e7a0682e12b24bcdfa98
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: c43542bc6c2bb0699403062f68024f9718bbbb60
+ms.sourcegitcommit: 54e571a10b0fdde5cd6036017eac9ef228de5116
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91748465"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "92501943"
 ---
 # <a name="power-bi-visuals-api-changelog"></a>Ændringslog for visualiserings-API i Power BI
 Denne side indeholder en hurtig oversigt over API-versionerne. De versioner, der er angivet her, anses som stabile og ændres ikke.
+
+
+## <a name="api-v340"></a>API v3.4.0
+  * `fetchMoreData`: Den nye parameter `aggregateSegments` (standard til sand) til understøttelse af ingen sammenlægning for fetchMoreData
 
 ## <a name="api-v320"></a>API v3.2.0
   * Understøtter **[supportsMultiVisualSelection](./supportsmultivisualselection-feature.md)**
@@ -84,7 +88,7 @@ Denne side indeholder en hurtig oversigt over API-versionerne. De versioner, der
 
 ## <a name="api-v180"></a>API v1.8.0
 * Understøtter den nye type **fillRule** (graduering) i egenskabsskemaer
-* Understøtter **regel**egenskab i skemaegenskaber for objektegenskaber
+* Understøtter **regel** egenskab i skemaegenskaber for objektegenskaber
 
 ## <a name="api-v170"></a>API v1.7.0
 * Understøtter **[RESJSON](./localization.md#resource-file)**

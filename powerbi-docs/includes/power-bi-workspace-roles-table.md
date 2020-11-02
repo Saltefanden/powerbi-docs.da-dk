@@ -5,15 +5,15 @@ services: powerbi
 author: maggiesMSFT
 ms.service: powerbi
 ms.topic: include
-ms.date: 09/04/2020
+ms.date: 10/21/2020
 ms.author: maggies
 ms.custom: include file
-ms.openlocfilehash: 0bf9f1a6eb918e55ab3811b9c6fde2628bdd91ad
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.openlocfilehash: 87c35df25a17090f1788abbeb979afab3ad9d6a9
+ms.sourcegitcommit: fddba666c6ea90d525a1c3188bbd3c4a03410cdc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91983718"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92462209"
 ---
 |Funktion   | Administrator  | Medlem  | Bidragsyder  | Fremviser |
 |---|---|---|---|---|
@@ -31,6 +31,7 @@ ms.locfileid: "91983718"
 | Publicere rapporter til arbejdsområdet, slette indhold.  |  ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |
 | Opret en rapport i et andet arbejdsområde, der er baseret på et datasæt i dette arbejdsområde.<sup>2</sup> |  ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |
 | Kopiere en rapport.<sup>3</sup> | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) |  |
+| Administrer tilladelser for datasæt.<sup>3</sup> | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) |  |
 | Planlægge dataopdateringer via gatewayen i det lokale miljø.<sup>4</sup> | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) |  |
 | Redigere indstillinger for gatewayforbindelse.<sup>4</sup> | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) |  |
 | Få vist og interagere med et element.<sup>5</sup> |  ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png)  |

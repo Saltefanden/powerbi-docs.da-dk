@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 23f1ab7fb7ae5e143084042699db708c0827114f
-ms.sourcegitcommit: 7e99e8af9caf9340958c4607a94728d43e8c3811
+ms.openlocfilehash: 1afde236dd4fc9698efe4391cb2d9e095ade37a4
+ms.sourcegitcommit: 5fdb45736ca0c8070124279fed4dab1ced8b7b27
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91668545"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92683353"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Udforsk felter i Power BI-mobilappsene
 Kan anvendes med:
@@ -35,12 +35,12 @@ Derefter åbner du felter i fokustilstand i Power BI-mobilappsene og interagerer
    
     ![Skærmbillede af et kurvediagram, der viser de valgte værdier for Dette års salg og Sidste års salg.](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-line-tile-values.png)
    
-   *For eksempel er de valgte værdier i dette kurvediagram **Dette års salg** og **Sidste års salg** i **August**.*  
+   *For eksempel er de valgte værdier i dette kurvediagram **Dette års salg** og **Sidste års salg** i **August** .*  
    
    Tryk på en cirkeludsnit i et cirkeldiagram for at få vist dets værdi øverst i diagrammet.  
    
    ![Skærmbillede af et cirkeldiagram, der viser værdien af Optælling af salgsmulighed.](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-tile-pie.png)
-3. Tryk på **Centrer kort**-ikonet ![Ikonet Centrer kort](media/mobile-tiles-in-the-mobile-apps/power-bi-center-map-icon.png) for at centrere kortet til din aktuelle placering.
+3. Tryk på **Centrer kort** -ikonet ![Ikonet Centrer kort](media/mobile-tiles-in-the-mobile-apps/power-bi-center-map-icon.png) for at centrere kortet til din aktuelle placering.
 
    ![Skærmbillede af et kort, der viser din aktuelle placering i Alabama centreret på kortet.](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-center-map.png)
 
@@ -58,7 +58,7 @@ Derefter åbner du felter i fokustilstand i Power BI-mobilappsene og interagerer
    
     Når du har åbnet linket i Power BI-appen, kan du kopiere linket og åbne det i et browservindue i stedet for.
 7. [Åbn rapporten](mobile-reports-in-the-mobile-apps.md) ![Åbn rapportikonet i iOS,](././media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png) som feltet er baseret på.
-8. Hvis du vil forlade fokustilstanden, skal du trykke på feltets navn og derefter trykke på dashboardets navn eller **Mit arbejdsområde**.
+8. Hvis du vil forlade fokustilstanden, skal du trykke på feltets navn og derefter trykke på dashboardets navn eller **Mit arbejdsområde** .
    
     ![Skærmbillede af et dashboard, der viser pile, som peger på Mit arbejdsområde og Eksempel på analyse af salgsmuligheder.](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-tile-breadcrumb.png)
 
@@ -87,7 +87,7 @@ Derefter åbner du felter i fokustilstand i Power BI-mobilappsene og interagerer
 ## <a name="tiles-in-the-windows-10-mobile-app"></a>Felter i mobilappen til Windows 10
 
 >[!NOTE]
->Understøttelse af Power BI-mobilapp til **telefoner, der bruger Windows 10 mobile**, ophører den 16. marts 2021. [Få mere at vide](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+>Understøttelse af Power BI-mobilapp til **telefoner, der bruger Windows 10 mobile** , ophører den 16. marts 2021. [Få mere at vide](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 1. Åbn et [dashboard i Power BI-mobilappen](mobile-apps-view-dashboard.md) til Windows 10.
 2. Tryk på den lodrette ellipse på feltet. Herfra kan du: 
@@ -111,14 +111,14 @@ Derefter åbner du felter i fokustilstand i Power BI-mobilappsene og interagerer
    
    *I dette liggende søjlediagram vises værdierne for linjen **Decor** øverst i diagrammet.*
    
-   Tryk på **Fuld skærm**-ikonet ![Ikonet Fuld skærm](media/mobile-tiles-in-the-mobile-apps/power-bi-full-screen-icon.png) for at åbne feltet i fuldskærmsvisning uden navigations- og menulinjerne.
+   Tryk på ikonet **Skift til præsentationstilstand** ![billede af ikonet til skift til præsentation.](media/mobile-tiles-in-the-mobile-apps/power-bi-full-screen-icon.png) for at åbne feltet i præsentationstilstand uden navigation og menulinjer.
    
    > [!NOTE]
-   > Du kan også [få vist dashboards og rapporter i fuldskærmsvisning](mobile-windows-10-app-presentation-mode.md) i Power BI-mobilappen til Windows 10.
+   > Du kan også [få vist dashboards og rapporter i præsentationstilstand](mobile-windows-10-app-presentation-mode.md) i Power BI-mobilappen til Windows 10.
    > 
    > 
    
-   Tryk på **Centrer kort**-ikonet ![Ikonet Centrer kort](media/mobile-tiles-in-the-mobile-apps/power-bi-center-map-icon.png) for at centrere kortet til din aktuelle placering.
+   Tryk på **Centrer kort** -ikonet ![Ikonet Centrer kort](media/mobile-tiles-in-the-mobile-apps/power-bi-center-map-icon.png) for at centrere kortet til din aktuelle placering.
    
    ![Skærmbillede af et kort, der viser din aktuelle placering i Kentucky centreret på kortet.](media/mobile-tiles-in-the-mobile-apps/power-bi-windows-10-center-map.png)
    

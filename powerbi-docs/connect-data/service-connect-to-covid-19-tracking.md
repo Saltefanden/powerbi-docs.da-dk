@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.date: 04/05/2020
 ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 5487d9f0eb5d8b172cc3e29ea24e88704267cd85
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 01dab6cad6142b455a0d61a0011e43cea6da23e1
+ms.sourcegitcommit: 3ddfd9ffe2ba334a6f9d60f17ac7243059cf945b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85230248"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92349493"
 ---
 # <a name="connect-to-the-covid-19-us-tracking-report"></a>Opret forbindelse til den amerikanske sporingsrapport for COVID-19
 I denne artikel får du oplysninger om, hvordan du installerer skabelonappen til den amerikanske sporingsrapport for COVID-19, og hvordan du opretter forbindelse til datakilderne.
@@ -26,13 +26,13 @@ Når du har installeret skabelonappen og oprettet forbindelse til datakilderne, 
 
 ## <a name="install-the-app"></a>Installér programmet
 
-1. Klik på følgende link for at få adgang til appen: [Skabelonappen Amerikansk sporingsrapport for COVID-19](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.covid19ms)
+1. Klik på følgende link for at få adgang til appen: [Skabelonappen Amerikansk sporingsrapport for COVID-19](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.covid19ms)
 
-1. Når du er på appens Appsource-side, skal du klikke på [**Hent den nu**](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.covid19ms).
+1. Når du er på appens Appsource-side, skal du klikke på [**Hent den nu**](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.covid19ms).
 
-    [![Amerikansk sporingsrapport for Covid-19 i Appsource](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-appsource-icon.png)](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.covid19ms)
+    [![Amerikansk sporingsrapport for Covid-19 i Appsource](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-appsource-icon.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.covid19ms)
 
-1. Klik på **Installer**, når du bliver bedt om det. Når appen er installeret, kan du se den på siden med dine apps.
+1. Klik på **Installer** , når du bliver bedt om det. Når appen er installeret, kan du se den på siden med dine apps.
 
    ![Amerikansk sporingsrapport for COVID-19 på appsiden](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-apps-page-icon.png)
 
@@ -44,11 +44,21 @@ Når du har installeret skabelonappen og oprettet forbindelse til datakilderne, 
 
    ![Velkomstskærmbilledet for skabelonappen](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-splash-screen.png)
 
-1. Der vises to dialogbokse til logon i træk. Angiv niveauet for beskyttelse af personlige oplysninger til Offentlig.
+1. Dialogboksen for parametre vises. Der er ingen påkrævede parametre. Klik på **Next** .
 
-   ![Amerikansk sporingsrapport for COVID-19, logon-dialogboks](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-signin-dialog.png)
+   ![Skærmbillede af dialogboksen for parameteren i forbindelse med Sporingsrapport for Covid-19 i USA.](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-parameters-dialog.png)
 
-   Rapporten opretter forbindelse til datakilderne og udfyldes med opdaterede data. Aktivitetsovervågningen aktiveres i dette tidsrum.
+1. Dialogboksen for godkendelsesmetode vises. De anbefalede værdier er udfyldt på forhånd. Undlad at ændre disse, medmindre du har specifik viden om forskellige værdier.
+
+    Klik på **Next** .
+
+   ![Skærmbillede af dialogboksen for godkendelse i forbindelse med Sporingsrapport for Covid-19 i USA.](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-authentication-dialog.png)
+
+1. Klik på **Log på** .
+
+   ![Skærmbillede af dialogboksen for logon i forbindelse med Sporingsrapport for Covid-19 i USA.](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-signin-dialog.png)
+ 
+   Rapporten opretter forbindelse til datakilderne og udfyldes med opdaterede data. I denne periode får du vist eksempeldata, og at en opdatering er i gang.
 
    ![Opdatering af amerikansk sporingsrapport for COVID-19 er i gang](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-refresh-monitor.png)
 
@@ -61,7 +71,7 @@ Når dataene er blevet opdateret, er du i det arbejdsområde, der er knyttet til
 Se [Tilpas og del appen](../connect-data/service-template-apps-install-distribute.md#customize-and-share-the-app) for at få flere oplysninger. Sørg for at gennemse [ansvarsfraskrivelserne for rapporten](../create-reports/sample-covid-19-us.md#disclaimers), før du udgiver eller distribuerer appen.
 
 ## <a name="next-steps"></a>Næste trin
-* [Eksempel på sporing af COVID-19 til centralregeringen og delstatsregeringerne i USA](../create-reports/sample-covid-19-us.md)
+* [COVID-19-sporingseksempel til centralregeringen og delstatsregeringerne i USA](../create-reports/sample-covid-19-us.md)
 * Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 * [Hvad er Power BI-skabelonapps?](../connect-data/service-template-apps-overview.md)
 * [Installér og distribuer skabelonapps i din organisation](../connect-data/service-template-apps-install-distribute.md)

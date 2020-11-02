@@ -7,24 +7,26 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 08/12/2020
+ms.date: 10/21/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 8d13cc7a24486fada7f8d428ba52abeaa49d2518
-ms.sourcegitcommit: b60063c49ac39f8b28c448908ecbb44b54326335
+ms.openlocfilehash: fc93ae0f54bfe4f72ec18687829e9eb78dfaedd7
+ms.sourcegitcommit: 3ddfd9ffe2ba334a6f9d60f17ac7243059cf945b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "88160922"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92349362"
 ---
 # <a name="use-customer-managed-keys-in-power-bi"></a>Brug kundeadministrerede nøgler i Power BI
 
 Power BI krypterer inaktive og igangværende data. Power BI bruger som standard Microsoft-administrerede nøgler til kryptering af dine data. Organisationer kan vælge at bruge deres egne nøgler til kryptering af inaktivt brugerindhold i hele Power BI, fra rapportbilleder til importerede datasæt i Premium-kapaciteter. 
 
 ## <a name="why-use-customer-managed-keys"></a>Derfor skal du bruge kundeadministrerede nøgler
-Med Power BI CMK (Customer Managed Keys) kan organisationer overholde gældende krav til kryptering af inaktive data hos deres udbyder af cloudtjenester (i dette tilfælde Microsoft). CMK gør det muligt for organisationer at kryptere deres Power BI-brugerindhold med en nøgle, de leverer og administrerer. Hvis du tilbagekalder en kundeadministreret nøgle, bliver brugerindhold i Power BI ulæseligt for alle i løbet af en time, herunder Microsoft. Sammenlignet med BYOK-tilbuddet dækker CMK også brugerindhold uden for Power BI Premium-kapaciteter, det håndhæver strengere politikker for cachelagring og aktiverer som standard BYOK på alle kapaciteter. 
- 
+
+Med kundeadministrerede nøgler (CMK – customer-managed keys) i Power BI kan organisationer overholde gældende krav til kryptering af inaktive data hos deres udbyder af cloudtjenester (i dette tilfælde Microsoft). CMK tilbydes kun til nye Power BI Premium-kunder, og det giver organisationer mulighed for at kryptere deres Power BI-brugerindhold ved hjælp af en nøgle, som de leverer og administrerer. Hvis du tilbagekalder en kundeadministreret nøgle, bliver brugerindhold i Power BI ulæseligt for alle i løbet af en time, herunder Microsoft. Sammenlignet med BYOK-tilbuddet dækker CMK også brugerindhold, der genereres af tjenesten, foruden de kundedata, der importeres til rapporter og datasæt, som hostes på Premium-kapaciteter. Det gennemtvinger strengere politikker for cachelagring, og der kan kun anvendes en enkelt nøgle til at kryptere alle dataene.
+
+
 ## <a name="how-to-use-customer-managed-keys"></a>Sådan bruger du kundeadministrerede nøgler
-Hvis du vil tilmelde dig kundeadministrerede Power BI-nøgler, skal din organisation opfylde størrelseskravene. Din organisations globale administrator skal indsende en supportanmodning til Microsoft, eller administratoren kan kontakte den Microsoft-kundeansvarlige i din organisation for at få mere at vide om processen.  
+Hvis du gerne vil tilmelde dig kundeadministrerede nøgler i Power BI, skal din organisation kontakte organisationens Microsoft-kontoadministrator for at bekræfte, at organisationen overholder visse størrelsesmæssige krav, der kræves for at aktivere CMK.  
 
 
 ## <a name="next-steps"></a>Næste trin

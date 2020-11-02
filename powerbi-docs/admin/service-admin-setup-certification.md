@@ -1,31 +1,34 @@
 ---
-title: Konfigurer certificering af datasæt og dataflow (prøveversion)
-description: Få mere at vide om, hvordan du konfigurerer certificeringsprocessen for datasæt og dataflow i din organisation.
+title: Aktivér certificering af indhold
+description: Få mere at vide om, hvordan du aktiverer certificering for datasæt, dataflow, rapporter og apps.
 author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 05/15/2020
+ms.date: 10/26/2020
 ms.author: painbar
 LocalizationGroup: Share your work
-ms.openlocfilehash: 11079e2ab1578cfe5db352e7e3286d491bdfca2c
-ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
+ms.openlocfilehash: 4961f5f2b6364e06488baf32478b1f6e9338675e
+ms.sourcegitcommit: 4e347efd132b48aaef6c21236c3a21e5fce285cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "91374907"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92680846"
 ---
-# <a name="set-up-dataset-and-dataflow-certification-preview"></a>Konfigurer certificering af datasæt og dataflow (prøveversion)
+# <a name="enable-content-certification"></a>Aktivér certificering af indhold
 
-Din organisation kan certificere datasæt og dataflows, der er den autoritative kilde til vigtige oplysninger.
+Din organisation kan certificere udvalgt indhold for at identificere det som en autoritativ kilde til vigtige oplysninger. Følgende indholdstyper kan certificeres i øjeblikket:
+* Datasæt
+* Dataflow (prøveversion)
+* Rapporter (prøveversion)
+* Apps (prøveversion)
 
-Du er som Power BI-administrator ansvarlig for at konfigurere certificeringsprocessen for din organisation. Det betyder følgende:
-* Aktiverer af certificering på din lejer.
-* Angivelse af definitioner af en liste over grupper og brugere, der har tilladelse til at certificere datasæt og dataflows.
-* Angivelse af URL-adressen til organisationens certificeringspolitik for datasæt, hvis der findes en sådan.
+Som Power BI-administrator er du ansvarlig for at aktivere og konfigurere certificeringsprocessen for din organisation. Det betyder:
+* Aktivering af certificering på din lejer.
+* Definering af en liste over sikkerhedsgrupper, hvis medlemmer er autoriseret til at certificere indhold.
+* Angivelse af en URL-adresse, der peger på dokumentationen til organisationens certificeringsproces for indhold, hvis en sådan dokumentation findes.
 
-Certificering af datasæt og dataflwos er en del *godkendelsen* af datasættet eller dataflowet. Se [godkendelse af datasæt](../connect-data/service-datasets-promote.md) og [godkendelse af dataflow](../transform-model/service-dataflows-promote-certify.md) for at få flere oplysninger.
-
+Certificering er en del af funktionen til *anbefalinger* i Power BI. Se [Anbefaling: Promovering og certificering af Power BI-indhold](../collaborate-share/service-endorsement-overview.md) for at få flere oplysninger.
 
 ## <a name="set-up-certification"></a>Konfiguration af certificering
 
@@ -35,13 +38,13 @@ Certificering af datasæt og dataflwos er en del *godkendelsen* af datasættet e
    ![Konfigurer certificering af datasæt og dataflow](media/service-admin-setup-certification/service-admin-certification-setup-dialog.png)
 
 1. Slå **Aktiveret** til.
-1. Hvis din organisation har en offentliggjort certificeringspolitik for datasætcertificering, kan du angive dens URL-adresse her. Dette bliver linket til **at få mere at vide** afsnittet Certificering i [dialogboksen med indstillinger for godkendelsen](../connect-data/service-datasets-promote.md#request-dataset-certification) 
-1. Angiv de grupper og brugere, der har tilladelse til at certificere datasæt og dataflows. Disse godkendte certificeringseksperter kan bruge knappen Certificering i afsnittet Certificering i dialogboksen med indstillinger for godkendelsen af [datasættet](../connect-data/service-datasets-promote.md#request-dataset-certification) eller [dataflowet](../transform-model/service-dataflows-promote-certify.md#certify-a-dataflow).
-1. Klik på **Anvend**.
+1. Hvis din organisation har en publiceret certificeringspolitik, kan du angive URL-adressen til den her. Dette bliver linket til at **få mere at vide** under certificeringsafsnittet i [dialogboksen med indstillinger for anbefalinger](../collaborate-share/service-endorse-content.md#request-content-certification). Hvis du ikke angiver et link, bliver de brugere, der gerne vil anmode om certificering af deres indhold, bedt om at kontakte deres Power BI-administrator.
+1. Angiv en eller flere sikkerhedsgrupper, hvis medlemmer vil være autoriseret til at certificere indhold. Disse autoriserede certificeringseksperter kan bruge knappen Certificering under certificeringsafsnittet i [dialogboksen med indstillinger for anbefalinger](../collaborate-share/service-endorse-content.md#certify-content).
+    
+    Hvis en sikkerhedsgruppe indeholder undersikkerhedsgrupper, som du ikke vil give certificeringsrettigheder til, kan du markere afkrydsningsfeltet **Undtagen bestemte sikkerhedsgrupper** og angive navnene på disse grupper i det tekstfelt, der vises.
+1. Klik på **Anvend** .
 
 ## <a name="next-steps"></a>Næste trin
-* [Fremhæv datasæt](../connect-data/service-datasets-promote.md)
-* [Certificer datasæt](../connect-data/service-datasets-certify.md)
-* [Fremhæv datasæt](../transform-model/service-dataflows-promote-certify.md#promote-a-dataflow)
-* [Certificer datasæt](../transform-model/service-dataflows-promote-certify.md#certify-a-dataflow)
+* [Promover eller certificer indhold](../collaborate-share/service-endorse-content.md)
+* [Læs om anbefalinger i Power BI](../collaborate-share/service-endorsement-overview.md)
 * Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

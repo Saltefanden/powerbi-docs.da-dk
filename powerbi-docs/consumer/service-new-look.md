@@ -6,88 +6,66 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 04/15/2020
+ms.date: 10/22/2020
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 01edbc2a3ec3fe9423b5eab575b1b0450185d6bd
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: f398b0b3331d5677419c824646108f8d04815338
+ms.sourcegitcommit: fddba666c6ea90d525a1c3188bbd3c4a03410cdc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87538027"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92462277"
 ---
 # <a name="the-new-look-of-the-power-bi-service"></a>Power BI-tjenestens nye udseende
 
 Power BI-tjenesten (app.powerbi.com) har fået et nyt udseende, der gør det lettere at få vist og interagere med dine rapporter. Det nye udseende er enklere og bygger på dit kendskab til andre Microsoft-produkter. På tværs af Power BI-tjenesten har vi sat rapportindhold i fokus ved at skifte til et lysere farvetema og opdatere ikoner. 
 
-Leder du efter oplysninger om det nye udseende af **Power BI Desktop**? Se [Brug det opdaterede bånd i Power BI Desktop](../create-reports/desktop-ribbon.md).
+Leder du efter oplysninger om det nye udseende af **Power BI Desktop** ? Se [Brug det opdaterede bånd i Power BI Desktop](../create-reports/desktop-ribbon.md).
 
 Her er en oversigt over, hvad der er ændret i det nye udseende. Du kan finde flere oplysninger i de nummererede afsnit:
 
-![Oversigt over ændringer i det nye udseende](media/service-new-look/power-bi-new-look-changes.png)
+![Skærmbillede af oversigt over ændringer i Nyt udseende.](media/service-new-look/power-bi-new-look-changes-callouts.png)
 
 Leder du efter en specifik handling? Se [Det "nye udseende": Hvor blev handlingerne af?](service-new-look-where-actions.md)
 
-## <a name="quick-tour-of-the-changes"></a>Hurtig rundvisning af ændringerne
+## <a name="1-vertical-list-of-pages"></a>1. Lodret liste over sider 
+Navnene på rapportsiderne i Læsevisning findes på en liste i en lodret rude. De er fremtrædende, svære at overse og ligner navigation i Word og PowerPoint. Du kan øge eller mindske resten af rapportområdet: Tilpas størrelsen af den lodrette rude, eller vælg de to pile for at lukke den helt.
 
-Denne animation viser ændringerne af den måde, rapporterne ser ud på, i praksis.
+![Skærmbillede af navne på rapportsider på langs af siden.](media/service-new-look/power-bi-new-look-report-pages.png)
 
-![Nyt udseende – hurtig rundvisning](media/service-new-look/power-bi-new-look-quick-tour.gif)
+Hvis du har redigeringstilladelser til en rapport, kan du angive, at navnene på siderne skal vises nederst på tværs ligesom i Redigeringsvisning i rapporten. Du kan finde flere oplysninger i [Konfigurer ruden Sider](../create-reports/power-bi-report-settings.md#set-the-pages-pane) i artiklen "Skift indstillinger for Power BI-rapporter".
 
-## <a name="1-opt-in-to-the-new-look"></a>1. Tilmeld dig det nye udseende
+## <a name="2-simplified-action-bar"></a>2. Forenklet handlingslinje 
 
-Alle brugere af Power BI-tjenesten kan vælge det nye udseende. Du skal blot skubbe **Nyt udseende fra** til **Nyt udseende til**.
+Den opdaterede handlingslinje langs toppen indeholder de mest relevante kommandoer, foran og centreret, for forbrugerne af rapporten. Det er nemmere at eksportere, dele, chatte i Teams og abonnere. 
 
-![Tilmeld dig det nye udseende](media/service-new-look/power-bi-new-look-off.png)
+![Skærmbillede af ny handlingslinje.](media/service-new-look/power-bi-new-look-action-bar.png)
 
-Hvis du har brug for at vende tilbage til det gamle udseende, skal du blot skubbe tilbage til **fra** for ![Nyt udseende til](media/service-new-look/power-bi-new-look-toggle-on.png). Hvis du ikke kan se indstillingen, skal du vælge ellipsemenuen i øverste højre hjørne.
+## <a name="3-where-are-the-report-commands"></a>3. Hvor er rapportkommandoerne?
 
-![Frameld dig det nye udseende](media/service-new-look/power-bi-new-look-on.png)
+Vi har ikke fjernet nogen funktioner fra det gamle udseende. Vælg **flere indstillinger (...)** for at se andre og mere avancerede kommandoer. Se [Det "nye udseende": Hvor blev handlingerne af?](service-new-look-where-actions.md) for at få flere oplysninger.
 
-## <a name="2-view-report-details"></a>2. Vis rapportdetaljer 
+## <a name="4-new-filter-experience"></a>4. Ny filteroplevelse
+
+Som standard ser du den nye rude Filtre for rapporten med det nye udseende. Og når du holder markøren over filterikonet for en visualisering, kan du se alle de filtre og udsnit, der påvirker visualiseringen.
+
+![Skærmbillede af alle de filtre og udsnit, der påvirker visualiseringen.](media/service-new-look/power-bi-new-look-filters.png)
+
+## <a name="view-report-details"></a>Vis rapportdetaljer 
 
 Du kan hurtigt få vist f.eks. seneste opdateringsdato og kontaktoplysninger direkte i det øverste banner.  Åbn menuen for at få vist flere detaljer om rapporten. Du kan også sende en mail til rapportejeren.
 
-![Vis rapportdetaljer](media/service-new-look/power-bi-new-look-metadata.png)
+![Skærmbillede af Vis rapportoplysninger.](media/service-new-look/power-bi-new-look-metadata.png)
 
-## <a name="3-vertical-list-of-pages"></a>3. Lodret liste over sider 
-Rapportsidenavne vises nu på en liste i en lodret rude. De er fremtrædende, svære at overse og ligner navigation i Word og PowerPoint. Du kan øge eller mindske resten af rapportområdet ved at ændre størrelsen på den lodrette rude.
+## <a name="no-changes-to-report-edit-mode"></a>Ingen ændringer af redigeringstilstand i rapporten 
 
-![Rapportsider](media/service-new-look/power-bi-new-look-report-pages.png)
-
-## <a name="4-simplified-action-bar"></a>4. Forenklet handlingslinje 
-
-Den opdaterede handlingslinje langs toppen indeholder de mest relevante kommandoer, foran og centreret, for forbrugerne af rapporten. Det er lettere at eksportere, abonnere, samarbejde med andre og dykke dybere ned gennem filtre og bogmærker.
-
-![Ny handlingslinje](media/service-new-look/power-bi-new-look-action-bar.png)
-
-## <a name="5-where-are-the-report-commands"></a>5. Hvor er rapportkommandoerne?
-
-Vi har ikke fjernet nogen funktioner fra det gamle udseende. Du kan finde de ekstra kommandoer, f. eks. redigering, lagring af en kopi osv. ved at udvide ellipsen (menuen ...) på handlingslinjen. Du kan også få adgang til forbrugsdata fra indholdslisten.
-
-![Handlingslinje for rapporten i det nye udseende](media/service-new-look/power-bi-report-action-bar-new-look.gif)
-
-### <a name="where-are-file-menu-actions"></a>Hvor er handlingerne i menuen Filer?
-
-Søger du handlingerne i menuen **Filer**? De handlinger, der plejede at være i menuen **Filer**, er nu også i menuen **Flere indstillinger** (...). 
-
-![Menuen Filer i det nye udseende](media/service-new-look/power-bi-file-menu-new-look.gif)
-
-## <a name="6-new-filter-experience"></a>6. Ny filteroplevelse
-
-De seneste opdateringer, f. eks. visning af anvendte filtre og den nye rude med filtre, er som standard tilgængelige i det nye udseende. Selvom din rapportdesigner ikke har opgraderet til den nye filtervisning, får du vist den nye filterrude.
-
-![Filtergentagelse](media/service-new-look/power-bi-new-look-filters.png)
+Vi har bibeholdt den samme oprettelsesoplevelse som den i Desktop. Ændringerne i det nye udseende gælder kun læsevisningen.
 
 ## <a name="dashboard-new-look-experience"></a>Dashboardets nye udseende 
 
-Dashboards har også en forenklet handlingslinje på samme måde som rapporter og apps, så du får en ensartet oplevelse, samtidig med at de funktionsmæssige forskelle bevares. Her er en gennemgang af handlinger i et dashboard.
+Der er også en forenklet handlingslinje på dashboards. For at skabe en ensartet oplevelse er det ligesom rapporter og apps, men de funktionelle forskelle bevares. Her er en gennemgang af handlinger i et dashboard.
  
-![Handlingslinje for dashboardet i det nye udseende](media/service-new-look/power-bi-dashboard-action-bar-new-look.gif)
-
-## <a name="no-changes-to-edit-mode"></a>Ingen ændringer af redigeringstilstand 
-
-Vi har bibeholdt den samme oprettelsesoplevelse som den i Desktop. Ændringerne i det nye udseende gælder kun læsevisningen.
+![Skærmbillede af handlingslinje på dashboardet i det nye udseende.](media/service-new-look/power-bi-dashboard-action-bar-new-look.png)
 
 ## <a name="next-steps"></a>Næste trin
 

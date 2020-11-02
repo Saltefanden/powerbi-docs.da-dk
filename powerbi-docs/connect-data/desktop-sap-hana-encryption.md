@@ -7,19 +7,22 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 07/26/2019
+ms.date: 10/22/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 83e1725b7ce7d38a00d0564702977c3a8eef7c1d
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 9aaa89db53e22fcefe55a53ec7a5414a8835255b
+ms.sourcegitcommit: 54e571a10b0fdde5cd6036017eac9ef228de5116
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85222867"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "92501897"
 ---
 # <a name="enable-encryption-for-sap-hana"></a>Aktivér kryptering for SAP HANA
 
-Vi anbefaler, at du krypterer forbindelser til en SAP HANA-server fra Power BI Desktop og Power BI-tjenesten. Du kan aktivere HANA-kryptering ved hjælp af både OpenSSL og SAP's beskyttede bibliotek CommonCryptoLib (tidligere kaldet sapcrypto). SAP anbefaler brug af CommonCryptoLib, men de grundlæggende krypteringsfunktioner er tilgængelige, uanset hvilket at disse biblioteker der bruges.
+Vi anbefaler, at du krypterer forbindelser til en SAP HANA-server fra Power BI Desktop og Power BI-tjenesten. Du kan aktivere HANA-kryptering ved hjælp af SAP's ejerskabsbibliotek CommonCryptoLib (tidligere kendt som sapcrypto). SAP anbefaler brug af CommonCryptoLib.
+
+> [!IMPORTANT]
+> SAP understøtter ikke længere OpenSSL, og derfor har Microsoft også stoppet sin support. Eksisterende og nye forbindelser fungerer fortsat korrekt indtil udgangen af 2020, men holder op med at fungerer fra den 1. januar 2021 og frem. Brug i stedet CommonCryptoLib.
 
 I denne artikel får du en oversigt over, hvordan du aktiverer kryptering ved hjælp af OpenSSL, og henvisninger til specifikke områder i SAP-dokumentationen. Vi opdaterer indhold og links med jævne mellemrum, men du kan altid finde detaljeret vejledning og support i den officielle SAP-dokumentation. Hvis du vil konfigurere kryptering ved hjælp af CommonCryptoLib i stedet for OpenSSL, kan du få mere at vide under [Sådan konfigurerer du TLS/SSL i SAP HANA 2.0](https://blogs.sap.com/2018/11/13/how-to-configure-tlsssl-in-sap-hana-2.0/). Hvis du vil have en trinvis vejledning til at migrere fra OpenSSL til CommonCryptoLib, kan du få mere at vide i [SAP note 2093286](https://launchpad.support.sap.com/#/notes/2093286) ( s-bruger er påkrævet).
 
@@ -40,7 +43,7 @@ Opret en anmodning om signering af et X509-certifikat for HANA-serveren.
 
 1. Brug SSH til at oprette forbindelse til den Linux-maskine, hvorpå HANA-serveren kører som \<sid\>administrator.
 
-1. Gå til startmappen _/__usr/sap/\<sid\>/home_.
+1. Gå til startmappen _/_ _usr/sap/\<sid\>/home_ .
 
 1. Opret en skjult mappe med navnet _. __ssl_, hvis der ikke allerede findes en.
 
@@ -82,7 +85,7 @@ Hent certifikatet, der er signeret af et nøglecenter (CA), som de klienter, der
 
     Klienten skal have tillid til det nøglecenter, der bruges til at signere HANA-serverens X509-certifikat, før der kan etableres en krypteret forbindelse til HANA-serveren fra klientens maskine.
 
-    Der findes forskellige metoder til at sikre, at denne tillidsrelation eksisterer, ved hjælp af Microsoft Management Console (MMC) eller kommandolinjen. Du kan importere nøglecentrets X509-certifikat (trust.pem) til mappen **Rodnøglecentre, der er tillid til**, for den bruger, der skal etablere forbindelsen, eller til den samme mappe for selve klientmaskinen, hvis dette ønskes.
+    Der findes forskellige metoder til at sikre, at denne tillidsrelation eksisterer, ved hjælp af Microsoft Management Console (MMC) eller kommandolinjen. Du kan importere nøglecentrets X509-certifikat (trust.pem) til mappen **Rodnøglecentre, der er tillid til** , for den bruger, der skal etablere forbindelsen, eller til den samme mappe for selve klientmaskinen, hvis dette ønskes.
 
     ![Mappen Rodnøglecentre, der er tillid til](media/desktop-sap-hana-encryption/trusted-root-certification.png)
 

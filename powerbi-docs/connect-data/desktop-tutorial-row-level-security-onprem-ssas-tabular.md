@@ -1,6 +1,6 @@
 ---
 title: Dynamisk sikkerhed på rækkeniveau med Analysis Services-tabelmodel
-description: Dynamisk sikkerhed på rækkeniveau med Analysis Services-tabelmodel
+description: Dynamisk sikkerhed på rækkeniveau med Analysis Services-tabelmodel i det lokale miljø
 author: davidiseminger
 ms.reviewer: davidi
 editor: davidi
@@ -10,16 +10,16 @@ ms.topic: tutorial
 ms.date: 01/17/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 4426960cefc23111740d0e930f7a9704e18f8bb6
-ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
+ms.openlocfilehash: 047c4e7d71cbbae95f4b1f8067548d807421385d
+ms.sourcegitcommit: 3ddfd9ffe2ba334a6f9d60f17ac7243059cf945b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87878309"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92349592"
 ---
-# <a name="implement-row-level-security-in-an-analysis-services-tabular-model"></a>Implementer sikkerhed på rækkeniveau i en Analysis Services-tabelmodel
+# <a name="implement-row-level-security-in-an-on-premises-analysis-services-tabular-model"></a>Implementer sikkerhed på rækkeniveau i en Analysis Services-tabelmodel i det lokale miljø
 
-Ved hjælp af et eksempeldatasæt til gennemgang af nedenstående trin viser dette selvstudium, hvordan du implementerer [**sikkerhed på rækkeniveau**](../admin/service-admin-rls.md) i en *Analysis Services-tabelmodel* og bruger den i en Power BI-rapport.
+Ved hjælp af et eksempeldatasæt til gennemgang af nedenstående trin kan du i dette selvstudium se, hvordan du implementerer [**sikkerhed på rækkeniveau**](../admin/service-admin-rls.md) i en *Analysis Services-tabelmodel* i det lokale miljø og bruger den i en Power BI-rapport.
 
 * Opret en ny sikkerhedstabel i [databasen AdventureworksDW2012](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)
 * Opret tabelmodellen med de nødvendige fakta- og dimensionstabeller
@@ -44,11 +44,11 @@ Disse trin kræver brug af relationsdatabasen AdventureworksDW2012.
 
 1. Når du har oprettet og gemt tabellen, skal du oprette relationen mellem `DimUserSecurity`-tabellens `SalesTerritoryID`-kolonne og `DimSalesTerritory`-tabellens `SalesTerritoryKey`-kolonne som vist nedenfor.
 
-   Højreklik på **DimUserSecurity** i SQL Server Management Studio, og vælg **Design**. Vælg derefter **Tabeldesigner** > **Relationer...** . Gem tabellen, når du er færdig.
+   Højreklik på **DimUserSecurity** i SQL Server Management Studio, og vælg **Design** . Vælg derefter **Tabeldesigner** > **Relationer...** . Gem tabellen, når du er færdig.
 
    ![Relationer for fremmede nøgler](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/createusersecuritytable_keys.png)
 
-1. Føj brugere til tabellen. Højreklik på **DimUserSecurity**, og vælg **Rediger de første 200 rækker**. Når du har tilføjet brugere, skal tabellen `DimUserSecurity` se ud som i det følgende eksempel:
+1. Føj brugere til tabellen. Højreklik på **DimUserSecurity** , og vælg **Rediger de første 200 rækker** . Når du har tilføjet brugere, skal tabellen `DimUserSecurity` se ud som i det følgende eksempel:
 
    ![Tabellen DimUserSecurity med eksempelbrugere](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/createusersecuritytable_users.png)
 
@@ -60,7 +60,7 @@ Disse trin kræver brug af relationsdatabasen AdventureworksDW2012.
     select b.SalesTerritoryCountry, b.SalesTerritoryRegion, a.EmployeeID, a.FirstName, a.LastName, a.UserName from [dbo].[DimUserSecurity] as a join [dbo].[DimSalesTerritory] as b on a.[SalesTerritoryID] = b.[SalesTerritoryKey]
     ```
 
-   Den joinforbundne tabel viser, hvem der er ansvarlig for hvert salgsområde, takket være den relation, der blev oprettet i trin 2. Eksempelvis kan du se, at *Rita Santos* er ansvarlig for *Australien*.
+   Den joinforbundne tabel viser, hvem der er ansvarlig for hvert salgsområde, takket være den relation, der blev oprettet i trin 2. Eksempelvis kan du se, at *Rita Santos* er ansvarlig for *Australien* .
 
 ## <a name="task-2-create-the-tabular-model-with-facts-and-dimension-tables"></a>Opgave 2: Opret tabelmodellen med fakta- og dimensionstabeller
 
@@ -70,13 +70,13 @@ Når dit relations-data warehouse er på plads, skal du definere tabelmodellen. 
 
     ![Importeret SQL Server til brug sammen med dataværktøjer](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/ssdt_model.png)
 
-1. Når du har importeret de nødvendige tabeller, skal du definere rollen *SalesTerritoryUsers* med læsetilladelse. Vælg menuen **Model** i SQL Server Data Tools, og vælg derefter **Roller**. I **Rolleadministrator**skal du vælge **Ny**.
+1. Når du har importeret de nødvendige tabeller, skal du definere rollen *SalesTerritoryUsers* med læsetilladelse. Vælg menuen **Model** i SQL Server Data Tools, og vælg derefter **Roller** . I **Rolleadministrator** skal du vælge **Ny** .
 
 1. Under **Medlemmer** i **Rolleadministrator** skal du tilføje de brugere, som du definerede i tabellen `DimUserSecurity` i [Opgave 1](#task-1-create-the-user-security-table-and-define-data-relationship).
 
     ![Tilføj brugere i Rolleadministrator](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/rolemanager.png)
 
-1. Tilføj derefter de rette funktioner for tabellerne `DimSalesTerritory` og `DimUserSecurity` som vist nedenfor under fanen **Rækkefiltre**.
+1. Tilføj derefter de rette funktioner for tabellerne `DimSalesTerritory` og `DimUserSecurity` som vist nedenfor under fanen **Rækkefiltre** .
 
     ![Føj funktioner til Rækkefiltre](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/rolemanager_complete.png)
 
@@ -93,7 +93,7 @@ Når dit relations-data warehouse er på plads, skal du definere tabelmodellen. 
 
    Det sæt salgs `SalesTerritoryKey`er, `LOOKUPVALUE` returnerer, bruges derefter til at begrænse de rækker, der vises i `DimSalesTerritory`. Det er kun rækker, hvor værdien for `SalesTerritoryKey` findes i de id'er, som returneres af funktionen `LOOKUPVALUE`, der vises.
 
-1. Tilføj følgende formular for tabellen `DimUserSecurity` i kolonnen **DAX Filter**:
+1. Tilføj følgende formular for tabellen `DimUserSecurity` i kolonnen **DAX Filter** :
 
     ```dax
         =FALSE()
@@ -109,7 +109,7 @@ Når din tabelmodel er udrullet og klar til forbrug, skal du føje en datakildef
 
 1. Hvis du vil give Power BI-tjenesten adgang til din analysetjeneste i det lokale miljø, skal du i dit miljø have installeret og konfigureret en [datagateway i det lokale miljø](service-gateway-onprem.md).
 
-1. Når gatewayen er konfigureret korrekt, skal du oprette en datakildeforbindelse til din forekomst af *Analysis Services*-tabellen. Du kan finde flere oplysninger i [Administrer din datakilde – Analysis Services](service-gateway-enterprise-manage-ssas.md).
+1. Når gatewayen er konfigureret korrekt, skal du oprette en datakildeforbindelse til din forekomst af *Analysis Services* -tabellen. Du kan finde flere oplysninger i [Administrer din datakilde – Analysis Services](service-gateway-enterprise-manage-ssas.md).
 
    ![Opret forbindelse til datakilde](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/pbi_gateway.png)
 
@@ -117,33 +117,33 @@ Når denne procedure er fuldført, er gatewayen konfigureret og klar til at inte
 
 ## <a name="task-4-create-report-based-on-analysis-services-tabular-model-using-power-bi-desktop"></a>Opgave 4: Opret en rapport, der er baseret på Analysis Services-tabelmodellen, ved hjælp af Power BI Desktop
 
-1. Start Power BI Desktop, og vælg **Hent data** > **Database**.
+1. Start Power BI Desktop, og vælg **Hent data** > **Database** .
 
-1. På listen over datakilder skal du vælge **SQL Server Analysis Services-databasen** og vælge **Opret forbindelse**.
+1. På listen over datakilder skal du vælge **SQL Server Analysis Services-databasen** og vælge **Opret forbindelse** .
 
    ![Opret forbindelse til SQL Server Analysis Services-databasen](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/getdata.png)
 
-1. Udfyld dine oplysninger i din forekomst af Analysis Services-tabellen, og vælg **Opret liveforbindelse**. Vælg derefter **OK**.
+1. Udfyld dine oplysninger i din forekomst af Analysis Services-tabellen, og vælg **Opret liveforbindelse** . Vælg derefter **OK** .
   
    ![Detaljer om Analysis Services](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/getdata_connectlive.png)
 
    I Power BI fungerer dynamisk sikkerhed kun sammen med en direkte forbindelse.
 
-1. Du kan se, at den udrullede model er i Analysis Services-forekomsten. Vælg den pågældende model, og vælg derefter **OK**.
+1. Du kan se, at den udrullede model er i Analysis Services-forekomsten. Vælg den pågældende model, og vælg derefter **OK** .
 
-   I Power BI Desktop vises nu alle tilgængelige felter til højre for lærredet i ruden **Felter**.
+   I Power BI Desktop vises nu alle tilgængelige felter til højre for lærredet i ruden **Felter** .
 
-1. I ruden **Felter** skal du vælge målingen **SalesAmount** i tabellen **FactInternetSales** og dimensionen **SalesTerritoryRegion** i tabellen **SalesTerritory**.
+1. I ruden **Felter** skal du vælge målingen **SalesAmount** i tabellen **FactInternetSales** og dimensionen **SalesTerritoryRegion** i tabellen **SalesTerritory** .
 
-1. For at holde rapporten simpel tilføjer vi ikke flere kolonner lige nu. Hvis du vil have en mere meningsfuld datavisning, kan du ændre visualiseringen til et **kransdiagram**.
+1. For at holde rapporten simpel tilføjer vi ikke flere kolonner lige nu. Hvis du vil have en mere meningsfuld datavisning, kan du ændre visualiseringen til et **kransdiagram** .
 
    ![Visualiseringen Kransediagram](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/donut_chart.png)
 
-1. Når rapporten er klar, kan du udgive den direkte på Power BI-portalen. På båndet **Hjem** i Power BI Desktop skal du vælge **Publicer**.
+1. Når rapporten er klar, kan du udgive den direkte på Power BI-portalen. På båndet **Hjem** i Power BI Desktop skal du vælge **Publicer** .
 
 ## <a name="task-5-create-and-share-a-dashboard"></a>Opgave 5: Opret og del et dashboard
 
-Du har oprettet rapporten og publiceret den i **Power BI**-tjenesten. Nu kan du bruge det eksempel, der blev oprettet i forrige trin til at demonstrere modelsikkerhedsscenariet.
+Du har oprettet rapporten og publiceret den i **Power BI** -tjenesten. Nu kan du bruge det eksempel, der blev oprettet i forrige trin til at demonstrere modelsikkerhedsscenariet.
 
 I sin rolle som *salgschef* kan brugeren Grace se data fra alle de forskellige salgsområder. Grace opretter denne rapport og publicerer den i Power BI-tjenesten. Denne rapport blev oprettet i de foregående opgaver.
 

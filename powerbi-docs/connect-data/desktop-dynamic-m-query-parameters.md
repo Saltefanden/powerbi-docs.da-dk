@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 10/13/2020
+ms.date: 10/22/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b2fd8375e105769ed0c9a81e7d894cc0f31f08b0
-ms.sourcegitcommit: eab5a02520c421a57019595c03e9ecfdb41d52ad
+ms.openlocfilehash: 104692fff7f94168a505dc6e1f2c513d647554ce
+ms.sourcegitcommit: 3ddfd9ffe2ba334a6f9d60f17ac7243059cf945b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92258191"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92349638"
 ---
 # <a name="dynamic-m-query-parameters-in-power-bi-desktop-preview"></a>Dynamiske M-forespørgselsparametre i Power BI Desktop (prøveversion)
 
@@ -24,11 +24,16 @@ Når modeludviklere forstår den forventede semantik for deres filtre, vil de of
 
 ## <a name="enabling-dynamic-m-query-parameters"></a>Aktivering af dynamiske M-forespørgselsparametre
 
-**Dynamiske M-forespørgselsparametre** er i øjeblikket tilgængelige som prøveversion og skal aktiveres, før de kan bruges. Vælg **Filer > Indstillinger > Indstillinger**, og vælg derefter **Prøveversionsfunktioner** i ruden til venstre. Her skal du kontrollere, at afkrydsningsfeltet **Dynamiske M-forespørgselsparametre** er markeret. Du skal genstarte Power BI Desktop, før ændringen træder i kraft.
+**Dynamiske M-forespørgselsparametre** er i øjeblikket tilgængelige som prøveversion og skal aktiveres, før de kan bruges. Vælg **Filer > Indstillinger > Indstillinger** , og vælg derefter **Prøveversionsfunktioner** i ruden til venstre. Her skal du kontrollere, at afkrydsningsfeltet **Dynamiske M-forespørgselsparametre** er markeret. Du skal genstarte Power BI Desktop, før ændringen træder i kraft.
 
 ![Aktiver prøveversionsfunktionen](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-01.png)
 
-Som en forudsætning for denne funktion skal du have oprettet en gyldig [M-forespørgselsparameter](/power-query/power-query-query-parameters), der skal refereres til i en eller flere direkte forespørgselstabeller. Lad os gennemgå et eksempel på dynamisk overførsel af en **enkelt værdi** til en parameter:
+Som en forudsætning for denne funktion skal du have oprettet en gyldig [M-forespørgselsparameter](/power-query/power-query-query-parameters), der skal refereres til i en eller flere direkte forespørgselstabeller. 
+
+> [!NOTE]
+> Husk at se afsnittet [Overvejelser og begrænsninger](#considerations-and-limitations) i denne artikel, da det ikke er alle DirectQuery-kilder, der understøttes med denne funktion.
+
+Lad os gennemgå et eksempel på dynamisk overførsel af en **enkelt værdi** til en parameter:
 
 1. I Power BI Desktop skal du starte **Power Query** under fanen **Data** og vælge **Nye parametre** under knappen **Administrer parametre** på båndet.
 
@@ -54,7 +59,7 @@ Som en forudsætning for denne funktion skal du have oprettet en gyldig [M-fores
 
     ![Opret en ny tabel](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-07.png)
 
-7. Her er den første tabel, jeg har oprettet for værdierne for parameteren *StartTime*:
+7. Her er den første tabel, jeg har oprettet for værdierne for parameteren *StartTime* :
 
     ```StartDateTable = CALENDAR (DATE(2016,1,1), DATE(2016,12,31))```
 
@@ -69,22 +74,22 @@ Som en forudsætning for denne funktion skal du have oprettet en gyldig [M-fores
     > [!NOTE]
     > Vi anbefaler, at du bruger et andet kolonnenavn, der ikke findes i en faktisk tabel. Hvis de har samme navn, anvendes den valgte værdi som et filter på den faktiske forespørgsel.
 
-9. Nu, hvor tabellerne med feltet *Dato* er oprettet, kan vi binde de enkelte felter til en parameter. Når vi binder feltet til en parameter, betyder det grundlæggende, at den valgte værdi for feltet ændres, værdien overføres til parameteren, og forespørgslen opdateres, hvor der refereres til parameteren. Så hvis feltet skal bindes, skal du gå til fanen **Modellering**, vælge det netop oprettede felt og derefter gå til de **avancerede** egenskaber:
+9. Nu, hvor tabellerne med feltet *Dato* er oprettet, kan vi binde de enkelte felter til en parameter. Når vi binder feltet til en parameter, betyder det grundlæggende, at den valgte værdi for feltet ændres, værdien overføres til parameteren, og forespørgslen opdateres, hvor der refereres til parameteren. Så hvis feltet skal bindes, skal du gå til fanen **Modellering** , vælge det netop oprettede felt og derefter gå til de **avancerede** egenskaber:
 
     > [!NOTE]
     > Kolonnens datatype skal stemme overens med M-parametertypen.
 
     ![Bind feltet til en parameter](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-10.png)
 
-10. Vælg rullelisten under **Bind til parameter**, og vælg den parameter, du vil binde til feltet:
+10. Vælg rullelisten under **Bind til parameter** , og vælg den parameter, du vil binde til feltet:
 
     ![Bind parameteren til feltet](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-11.png)
 
-    Da dette eksempel bruger en enkelt værdi (hvor parameteren er indstillet til en enkelt værdi), skal du lade **Flere valg** være angivet til **Nej**, som er standard:
+    Da dette eksempel bruger en enkelt værdi (hvor parameteren er indstillet til en enkelt værdi), skal du lade **Flere valg** være angivet til **Nej** , som er standard:
 
     ![Flere valg slået fra](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-12.png)
 
-    Hvis dine use cases kræver flere valg (overførsel af flere værdier til en enkelt parameter), skal du skifte parameteren til **Ja** og sikre, at M-forespørgslen er konfigureret korrekt til at acceptere flere værdier i M-forespørgslen. Her er et eksempel på *RepoNameParameter*, som tillader flere værdier:
+    Hvis dine use cases kræver flere valg (overførsel af flere værdier til en enkelt parameter), skal du skifte parameteren til **Ja** og sikre, at M-forespørgslen er konfigureret korrekt til at acceptere flere værdier i M-forespørgslen. Her er et eksempel på *RepoNameParameter* , som tillader flere værdier:
 
     ![Eksempel med flere værdier](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-13.png)
 
@@ -100,7 +105,7 @@ Hvis den tilknyttede kolonne er indstillet til **Nej** for flere markeringer, sk
 
 ## <a name="potential-security-risk"></a>Potentiel sikkerhedsrisiko
 
-Når du giver rapportlæsere mulighed for dynamisk at angive værdierne for M-forespørgselsparametrene, kan de muligvis få adgang til yderligere data eller udløse ændringer af kildesystemet ved hjælp af **indskydningsangreb**, afhængigt af hvordan der refereres til parametrene i M-forespørgslen, og hvilke værdier der overføres til den pågældende parameter.
+Når du giver rapportlæsere mulighed for dynamisk at angive værdierne for M-forespørgselsparametrene, kan de muligvis få adgang til yderligere data eller udløse ændringer af kildesystemet ved hjælp af **indskydningsangreb** , afhængigt af hvordan der refereres til parametrene i M-forespørgslen, og hvilke værdier der overføres til den pågældende parameter.
 
 Lad os f.eks. sige, at du har en Kusto-forespørgsel med parametre, der er oprettet på følgende måde:
 
@@ -110,7 +115,7 @@ Products
  | project ReleaseDate, Name, Category, Region```
 ```
 
-Du har muligvis ikke problemer med en venligsindet bruger, der overfører en passende værdi for parameteren, f.eks. *Spil*:
+Du har muligvis ikke problemer med en venligsindet bruger, der overfører en passende værdi for parameteren, f.eks. *Spil* :
 
 ```
 | where Category == 'Games' & HasReleased == 'True'
@@ -147,7 +152,13 @@ Her er nogle eksempler:
 Der er visse overvejelser og begrænsninger i forbindelse med brugen af dynamiske M-forespørgselsparametre:
 
 * En enkelt parameter kan ikke bindes til flere felter eller omvendt.
-* Funktionen understøttes kun i forbindelse med M-baserede datakilder og understøtter ikke integrerede SQL-forespørgsler.
+* Funktionen understøttes kun for M-baserede datakilder. Følgende DirectQuery-kilder understøttes ikke:
+    * T-SQL-baserede datakilder: SQL Server, Azure SQL Database, Synapse SQL-grupper (også kaldet Azure SQL Data Warehouse) og Synapse SQL OnDemand-grupper
+    * Live Connect-datakilder: Azure Analysis Services, SQL Server Analysis Services, Power BI-datasæt
+    * Andre ikke-understøttede datakilder: Oracle, Teradata og relationel SAP Hana
+    * Understøttes delvist via programmering af XMLA/TOM-slutpunkt: SAP BW og SAP Hana 
+
+
 * Ikke-understøttede standardparametertyper er følgende:
   * En hvilken som helst
   * Varighed

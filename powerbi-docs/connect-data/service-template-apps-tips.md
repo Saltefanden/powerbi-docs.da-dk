@@ -8,12 +8,12 @@ ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 05/04/2020
 ms.author: painbar
-ms.openlocfilehash: ff1fb59a59f72483bab5ec55c9b2cf9805f83b81
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: d23062a5b8fe4a1a68be372865746a1a7d497c26
+ms.sourcegitcommit: 3ddfd9ffe2ba334a6f9d60f17ac7243059cf945b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860273"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92349661"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi"></a>Tip til udarbejdelse af skabelonapps i Power BI
 
@@ -30,7 +30,7 @@ Du kender hver enkelt del som eksisterende funktioner i Power BI. Når du udarbe
 <a name="queries"></a>
 
 ## <a name="queries"></a>Forespørgsler
-I forbindelse med skabelonprogrammer bruges forespørgsler, der er udviklet i Power BI Desktop, til at oprette forbindelse til datakilden og importere data. Disse forespørgsler skal returnere et ensartet skema, og de understøttes med henblik på planlagt dataopdatering (DirectQuery understøttes ikke).
+I forbindelse med skabelonprogrammer bruges forespørgsler, der er udviklet i Power BI Desktop, til at oprette forbindelse til datakilden og importere data. Disse forespørgsler kræves for at returnere et ensartet skema og understøttes i forbindelse med opdatering af Planlagte data.
 
 ### <a name="connect-to-your-api"></a>Opret forbindelse til din API
 Du kommer i gang ved at oprette forbindelse til din API fra Power BI Desktop, så du kan begynde at udarbejde dine forespørgsler.

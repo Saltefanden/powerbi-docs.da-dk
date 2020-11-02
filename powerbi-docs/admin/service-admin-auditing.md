@@ -10,12 +10,12 @@ ms.date: 08/20/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 0c1c113f100c3ae1db0902c90833c44788fa7ec6
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 330f844e9c97a3a59ff854ac14612c328b7cb9b6
+ms.sourcegitcommit: 4e347efd132b48aaef6c21236c3a21e5fce285cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90857697"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92680992"
 ---
 # <a name="track-user-activities-in-power-bi"></a>Spor brugeraktiviteter i Power BI
 
@@ -81,7 +81,7 @@ Du kan finde flere oplysninger om REST API til Power BI, herunder eksempler på,
 
 ### <a name="get-powerbiactivityevent-cmdlet"></a>Cmdlet'en Get-PowerBIActivityEvent
 
-Download aktivitetshændelser ved hjælp af Power BI Management-cmdlet'er til PowerShell. Cmdlet'en**Get-PowerBIActivityEvent** håndterer automatisk fortsættelsestokenet for dig. Cmdlet'en **Get-PowerBIActivityEvent** bruger en parameter af typen StartDateTime og EndDateTime med de samme begrænsninger som REST API'en **ActivityEvents**. Det vil sige, at startdato og slutdato skal referere til den samme datoværdi, da du kun kan hente aktivitetsdataene for én dag ad gangen.
+Download aktivitetshændelser ved hjælp af Power BI Management-cmdlet'er til PowerShell. Cmdlet'en **Get-PowerBIActivityEvent** håndterer automatisk fortsættelsestokenet for dig. Cmdlet'en **Get-PowerBIActivityEvent** bruger en parameter af typen StartDateTime og EndDateTime med de samme begrænsninger som REST API'en **ActivityEvents** . Det vil sige, at startdato og slutdato skal referere til den samme datoværdi, da du kun kan hente aktivitetsdataene for én dag ad gangen.
 
 Følgende script viser, hvordan du downloader alle Power BI-aktiviteter. Kommandoen konverterer resultaterne fra JSON til .NET-objekter, så der opnås direkte adgang til separate aktivitetsegenskaber. Disse eksempler viser det mindste mulige og det største mulige tidsstempel for en dag for at sikre, at ingen hændelser springes over.
 
@@ -97,7 +97,7 @@ $activities[0]
 
 ### <a name="filter-activity-data"></a>Filtrer aktivitetsdata
 
-Du kan filtrere aktivitetshændelser efter aktivitetstype og bruger-id. Følgende script viser, hvordan du kun downloader hændelsesdata for aktiviteten **ViewDashboard**. Du kan finde flere oplysninger om understøttede parametre ved at bruge kommandoen `Get-Help Get-PowerBIActivityEvent`.
+Du kan filtrere aktivitetshændelser efter aktivitetstype og bruger-id. Følgende script viser, hvordan du kun downloader hændelsesdata for aktiviteten **ViewDashboard** . Du kan finde flere oplysninger om understøttede parametre ved at bruge kommandoen `Get-Help Get-PowerBIActivityEvent`.
 
 ```powershell
 Login-PowerBI
@@ -136,13 +136,13 @@ For at tilgå loggene skal du først sørge for at aktivere logføring i Power B
 
 Power BI-overvågningslogs er tilgængelige direkte via [Office 365 Security & Compliance Center](https://sip.protection.office.com/#/unifiedauditlog). Der er også et link fra Power BI-administrationsportalen:
 
-1. Vælg **tandhjulsikonet** i øverste højre hjørne i Power BI, og vælg derefter **Administrationsportal**.
+1. Vælg **tandhjulsikonet** i øverste højre hjørne i Power BI, og vælg derefter **Administrationsportal** .
 
    ![Skærmbillede af rullemenuen ved tandhjulsikonet, hvor administrationsportalen er markeret.](media/service-admin-auditing/powerbi-admin.png)
 
-1. Vælg **Overvågningslogger**.
+1. Vælg **Overvågningslogger** .
 
-1. Vælg **Gå til Microsoft 365 Administration**.
+1. Vælg **Gå til Microsoft 365 Administration** .
 
    ![Skærmbillede af administrationsportalen, hvor indstillingerne Overvågningslogge og Gå til Microsoft 365 Administration er markeret.](media/service-admin-auditing/audit-log-o365-admin-center.png)
 
@@ -150,9 +150,9 @@ Power BI-overvågningslogs er tilgængelige direkte via [Office 365 Security & C
 
 Begræns resultaterne til aktiviteter, der kun er for Power BI, ved at følge disse trin. Se listen over [aktiviteter, der overvåges af Power BI](#operations-available-in-the-audit-and-activity-logs) senere i denne artikel for at få et overblik.
 
-1. På siden **Søgning i overvågningslog** under **Søg** skal du vælge rullelisten for **Aktiviteter**.
+1. På siden **Søgning i overvågningslog** under **Søg** skal du vælge rullelisten for **Aktiviteter** .
 
-2. Vælg **Power BI-aktiviteter**.
+2. Vælg **Power BI-aktiviteter** .
 
    ![Skærmbillede af Søgning i overvågningslog, hvor Power BI-aktiviteter er fremhævet.](media/service-admin-auditing/audit-log-search-filter-by-powerbi.png)
 
@@ -162,21 +162,21 @@ Dine søgninger returnerer kun Power BI-aktiviteter.
 
 ### <a name="search-the-audit-logs-by-date"></a>Søg i overvågningslogfilerne efter dato
 
-Du kan søge i logfilerne efter datointerval ved hjælp af felterne **Startdato** og **Slutdato**. Standardvalget er de seneste syv dage. Datoen og klokkeslættet vises i UTC-format (Coordinated Universal Time). Det maksimale datointerval, du kan angive, er 90 dage. 
+Du kan søge i logfilerne efter datointerval ved hjælp af felterne **Startdato** og **Slutdato** . Standardvalget er de seneste syv dage. Datoen og klokkeslættet vises i UTC-format (Coordinated Universal Time). Det maksimale datointerval, du kan angive, er 90 dage. 
 
-Du får vist en fejlmeddelelse, hvis det valgte datointerval er mere end 90 dage. Hvis du bruger det maksimale datointerval på 90 dage, skal du vælge det aktuelle klokkeslæt som **Startdato**. Ellers får du vist en fejlmeddelelse om, at startdatoen ligger tidligere end slutdatoen. Hvis du har slået overvågning til inden for de sidste 90 dage, kan datointervallet ikke starte før den dato, hvor overvågning blev slået til.
+Du får vist en fejlmeddelelse, hvis det valgte datointerval er mere end 90 dage. Hvis du bruger det maksimale datointerval på 90 dage, skal du vælge det aktuelle klokkeslæt som **Startdato** . Ellers får du vist en fejlmeddelelse om, at startdatoen ligger tidligere end slutdatoen. Hvis du har slået overvågning til inden for de sidste 90 dage, kan datointervallet ikke starte før den dato, hvor overvågning blev slået til.
 
 ![Skærmbillede af Søgning i overvågningslog, hvor indstillingerne Startdato og Slutdato er fremhævet.](media/service-admin-auditing/search-audit-log-by-date.png)
 
 ### <a name="search-the-audit-logs-by-users"></a>Søg i overvågningslogfilerne efter brugere
 
-Du kan søge efter overvågningslogposter for aktiviteter, der er udført af bestemte brugere. Angiv et eller flere brugernavne i feltet **Brugere**. Brugernavnet ligner en mailadresse. Det er den konto, som brugerne logger på Power BI med. Lad dette felt være tomt for at returnere poster for alle brugere (og tjenestekonti) i din organisation.
+Du kan søge efter overvågningslogposter for aktiviteter, der er udført af bestemte brugere. Angiv et eller flere brugernavne i feltet **Brugere** . Brugernavnet ligner en mailadresse. Det er den konto, som brugerne logger på Power BI med. Lad dette felt være tomt for at returnere poster for alle brugere (og tjenestekonti) i din organisation.
 
 ![Skærmbillede af Søgning i overvågningslog, hvor Brugere er fremhævet.](media/service-admin-auditing/search-audit-log-by-user.png)
 
 ### <a name="view-search-results"></a>Få vist søgeresultaterne
 
-Når du har valgt **Søg**, indlæses søgeresultaterne. Efter et øjeblik vises de under **Resultater**. Når søgningen er fuldført, vises antallet af fundne resultater. Der vises maksimalt 1000 hændelser i forbindelse med **Søgning i overvågningslog**. Hvis mere end 1000 hændelser opfylder søgekriterierne, viser appen de nyeste 1000 hændelser.
+Når du har valgt **Søg** , indlæses søgeresultaterne. Efter et øjeblik vises de under **Resultater** . Når søgningen er fuldført, vises antallet af fundne resultater. Der vises maksimalt 1000 hændelser i forbindelse med **Søgning i overvågningslog** . Hvis mere end 1000 hændelser opfylder søgekriterierne, viser appen de nyeste 1000 hændelser.
 
 #### <a name="view-the-main-results"></a>Få vist de vigtigste resultater
 
@@ -187,7 +187,7 @@ Området **Resultater** indeholder følgende oplysninger om hver hændelse, der 
 | Dato |Den dato og det klokkeslæt (i UTC-format), da hændelsen fandt sted. |
 | IP-adresse |IP-adressen for den enhed, der bruges til den logførte aktivitet. Appen viser IP-adressen enten i et IPv4- eller IPv6-adresseformat. |
 | Bruger |Brugeren (eller tjenestekontoen), som udførte den handling, der udløste hændelsen. |
-| Aktivitet |Den aktivitet, der blev udført af brugeren. Denne værdi svarer til de aktiviteter, som du har valgt på rullelisten **Aktiviteter**. For en hændelse fra Exchange-administratorens overvågningslogfil er værdien i denne kolonne en Exchange-cmdlet . |
+| Aktivitet |Den aktivitet, der blev udført af brugeren. Denne værdi svarer til de aktiviteter, som du har valgt på rullelisten **Aktiviteter** . For en hændelse fra Exchange-administratorens overvågningslogfil er værdien i denne kolonne en Exchange-cmdlet . |
 | Element |Det objekt, der blev oprettet eller ændret som følge af den tilsvarende aktivitet. For eksempel den viste eller ændrede fil eller den opdaterede brugerkonto. Ikke alle aktiviteter har en værdi i denne kolonne. |
 | Detaljer |Yderligere oplysninger om en aktivitet. Igen er det ikke alle aktiviteter, der har en værdi. |
 
@@ -203,9 +203,9 @@ Vælg **Flere oplysninger** for at få vist disse detaljer. Alle poster i Power 
 
 Følg disse trin for at eksportere Power BI-overvågningsloggen til en csv-fil.
 
-1. Vælg **Eksportér resultater**.
+1. Vælg **Eksportér resultater** .
 
-1. Vælg enten **Gem indlæste resultater** eller **Download alle resultater**.
+1. Vælg enten **Gem indlæste resultater** eller **Download alle resultater** .
 
     ![Skærmbillede af indstillingen Eksportér resultater, hvor Download alle resultater er fremhævet.](media/service-admin-auditing/export-auditing-results.png)
 
@@ -310,6 +310,7 @@ Følgende handlinger er tilgængelige både i overvågnings- og aktivitetslogge.
 | Dataflowtilladelser blev ikke fjernet             | FailedToRemoveDataflowPermissions           | Anvendes ikke i øjeblikket                       |
 | SAS-token til Power BI dataflow er oprettet             | GenerateDataflowSasToken                    |                                          |
 | Integrationstoken til Power BI er oprettet                    | GenerateEmbedToken                          |                                          |
+| Generér skærmbillede                       | GenerateScreenshot |                     |
 | Fil er importeret i Power BI                         | Importér                                      |                                          |
 | Power BI-app er installeret                            | InstallApp                                  |                                          |
 | Arbejdsområde er overført til en kapacitet                  | MigrateWorkspaceIntoCapacity                |                                          |

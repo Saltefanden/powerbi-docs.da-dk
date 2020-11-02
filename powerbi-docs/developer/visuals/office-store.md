@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
 ms.date: 07/14/2020
-ms.openlocfilehash: 55661d8faa39d26d19d15696252cf46b74c84a50
-ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
+ms.openlocfilehash: 1809b1f539c82de4bf98689dbb259594a603b90c
+ms.sourcegitcommit: 3ddfd9ffe2ba334a6f9d60f17ac7243059cf945b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92049424"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92349684"
 ---
 # <a name="publish-power-bi-visuals-to-partner-center"></a>Publicer Power BI-visualiseringer i Partnercenter
 
@@ -47,7 +47,7 @@ Når du er klar til at indsende din Power BI-visualisering, skal du bekræfte, a
 
 Du skal bruge en XML-programpakke fra Power BI-teamet for at indsende en Power BI-visualisering. Du få en XML-programpakke ved at sende en mail til indsendelsesteamet for Power BI-visualiseringer ([pbivizsubmit@microsoft.com](mailto:pbivizsubmit@microsoft.com)).
 
-Før du opretter **pbiviz**-pakken, skal du udfylde følgende felter i **pbiviz.json**-filen:
+Før du opretter **pbiviz** -pakken, skal du udfylde følgende felter i **pbiviz.json** -filen:
 * beskrivelse
 * supportUrl
 * forfatter
@@ -63,9 +63,12 @@ Vedhæft **pbiviz-filen** og **pbix-eksempelrapportfilen** i din mail. Power BI-
 
 Hvis du vil indsende din Power BI visualisering til AppSource, skal du have en programpakke fra Power BI-teamet og derefter indsende den til Partnercenter.
 
+>[!IMPORTANT]
+>Hvis du vil sende en visualisering igen, må du ikke ændre dens GUID.
+
 ### <a name="getting-the-app-package"></a>Sådan får du programpakken
 
-Du skal sende en mail med **pbiviz**-filen og **pbix**-filen til Power BI-teamet, før du indsender til AppSource. Power BI-teamet overfører så filerne til den offentlige shareserver. Ellers vil filerne ikke kunne hentes i butikken. 
+Du skal sende en mail med **pbiviz** -filen og **pbix** -filen til Power BI-teamet, før du indsender til AppSource. Power BI-teamet overfører så filerne til den offentlige shareserver. Ellers vil filerne ikke kunne hentes i butikken. 
 
 Power BI-teamet skal kontrollere filerne for nye Power BI-visualiseringer, opdateringer til eksisterende Power BI-visualiseringer og rettelser til afviste indsendelser.
 
@@ -80,29 +83,29 @@ Hvis du vil indsende din Power BI-visualisering til Partnercenter, skal du være
 
 Følg nedenstående trin for at indsende din Power BI-visualisering til Partnercenter. Du kan finde flere oplysninger om indsendelsesprocessen under [Indsend din Office-løsning til AppSource via Partnercenter](/office/dev/store/use-partner-center-to-submit-to-appsource).
 
-1. Log på **Partnercenter**.
+1. Log på **Partnercenter** .
 
 2. Vælg **OFFICE STORE** i ruden til venstre.
 
-3. Vælg **Oversigt**.
+3. Vælg **Oversigt** .
 
-4. Vælg **Opret en ny**, og vælg **Power BI-visualisering** i rullemenuen.
+4. Vælg **Opret en ny** , og vælg **Power BI-visualisering** i rullemenuen.
 
     ![Skærmbillede af oprettelse af en ny Power BI-visualisering på Office Store-fanen i Partnercenter.](media/office-store/power-bi-visual.png)
 
-5. I vinduet **Opret en ny Power BI-visualisering** skal du angive navnet på din Power BI-visualisering og vælge **Opret**.
+5. I vinduet **Opret en ny Power BI-visualisering** skal du angive navnet på din Power BI-visualisering og vælge **Opret** .
 
-6. Vælg **Pakker**, og upload din XML-programpakke for Power BI-visualiseringen.
+6. Vælg **Pakker** , og upload din XML-programpakke for Power BI-visualiseringen.
 
-7. Vælg **Egenskaber**, og angiv de nødvendige oplysninger.
+7. Vælg **Egenskaber** , og angiv de nødvendige oplysninger.
 
-8. Hvis dit produkt kræver yderligere køb, skal du vælge **Produktkonfiguration** og derefter markere afkrydsningsfeltet **Køb af tilknyttet tjeneste**.
+8. Hvis dit produkt kræver yderligere køb, skal du vælge **Produktkonfiguration** og derefter markere afkrydsningsfeltet **Køb af tilknyttet tjeneste** .
 
-9. (Valgfri) Hvis du vil [certificere](power-bi-custom-visuals-certified.md) visualiseringen, skal du vælge **Produktkonfiguration** og markere afkrydsningsfeltet **Power BI-certificering**.
+9. (Valgfri) Hvis du vil [certificere](power-bi-custom-visuals-certified.md) visualiseringen, skal du vælge **Produktkonfiguration** og markere afkrydsningsfeltet **Power BI-certificering** .
     >[!TIP]
     >Power BI-certificeringsprocessen kan tage lidt tid. Hvis du opretter en ny Power BI-visualisering, anbefales det, at du publicerer Power BI-visualiseringen via Partnercenter, før du anmoder om Power BI-certificering. Dette sikrer, at publiceringen af din visualisering ikke forsinkes.
 
-10. Vælg **Produktkonfiguration**, og klik på **Gennemse og publicer**.
+10. Vælg **Produktkonfiguration** , og klik på **Gennemse og publicer** .
 
 
 ## <a name="tracking-submission-status-and-usage"></a>Se statussen for indsendelsen og brugsdata

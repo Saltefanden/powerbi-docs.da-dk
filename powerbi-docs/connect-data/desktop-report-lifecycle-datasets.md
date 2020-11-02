@@ -9,16 +9,16 @@ ms.topic: how-to
 ms.date: 01/13/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c056a48c78ae2e46ccd6419ad1b9d1e1a6693847
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: 5701e94991f64d1f05a867da189c814dd1484370
+ms.sourcegitcommit: 4e347efd132b48aaef6c21236c3a21e5fce285cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91598794"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92680443"
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Opret forbindelse til datasæt i Power BI-tjenesten fra Power BI Desktop
 
-Du kan oprette en direkte forbindelse til et delt datasæt i *Power Bi-tjenesten* og oprette mange forskellige rapporter fra det samme datasæt. Du kan oprette en perfekt datamodel i Power BI Desktop og publicere den i Power BI-tjenesten. Derefter kan du og andre oprette flere forskellige rapporter (i separate *PBIX-filer*) ud fra den samme almindelige datamodel og gemme dem i forskellige arbejdsområder. Denne funktion kaldes *Direkte forbindelse til Power BI-tjenesten*.
+Du kan oprette en direkte forbindelse til et delt datasæt i *Power Bi-tjenesten* og oprette mange forskellige rapporter fra det samme datasæt. Du kan oprette en perfekt datamodel i Power BI Desktop og publicere den i Power BI-tjenesten. Derefter kan du og andre oprette flere forskellige rapporter (i separate *PBIX-filer* ) ud fra den samme almindelige datamodel og gemme dem i forskellige arbejdsområder. Denne funktion kaldes *Direkte forbindelse til Power BI-tjenesten* .
 
 ![Hent data fra Power BI-tjenesten](media/desktop-report-lifecycle-datasets/report-lifecycle_01.png)
 
@@ -38,11 +38,11 @@ Alle er vilde med Annas rapport og datasæt. Det er her, der kan opstå probleme
 
 ### <a name="connect-to-a-power-bi-service-dataset-using-a-live-connection"></a>Opret forbindelse til et Power BI-datasæt ved brug af en direkte forbindelse
 
-Anna opretter en rapport og opretter det datasæt, rapporten er baseret på. Anna udgiver derefter rapporten i Power BI-tjenesten. Rapporten vises i teamets arbejdsområde i Power BI-tjenesten. Hvis Anna gemmer den i et *arbejdsområde med den nye oplevelse*, kan hun derefter angive *tilladelsen Opret* for at gøre den tilgængelig for alle, der kommer og går i hendes arbejdsområde, så de kan se rapporten og bruge den.
+Anna opretter en rapport og opretter det datasæt, rapporten er baseret på. Anna udgiver derefter rapporten i Power BI-tjenesten. Rapporten vises i teamets arbejdsområde i Power BI-tjenesten. Hvis Anna gemmer den i et *arbejdsområde med den nye oplevelse* , kan hun derefter angive *tilladelsen Opret* for at gøre den tilgængelig for alle, der kommer og går i hendes arbejdsområde, så de kan se rapporten og bruge den.
 
 Hvis du vil vide mere om arbejdsområder med den nye oplevelse, skal du se [arbejdsområder](../collaborate-share/service-new-workspaces.md).
 
-Andre medlemmer af Annas arbejdsområde kan nu oprette en direkte forbindelse til hendes delte datamodel ved at bruge funktionen Direkte forbindelse til Power BI-tjenesten. De kan oprette deres egne unikke rapporter fra *deres oprindelige datasæt* i *deres egne arbejdsområder med den nye oplevelse*.
+Andre medlemmer af Annas arbejdsområde kan nu oprette en direkte forbindelse til hendes delte datamodel ved at bruge funktionen Direkte forbindelse til Power BI-tjenesten. De kan oprette deres egne unikke rapporter fra *deres oprindelige datasæt* i *deres egne arbejdsområder med den nye oplevelse* .
 
 På følgende billede kan du se, hvordan Anna opretter en Power BI Desktop-rapport og udgiver den (inklusive dens datamodel) til Power BI-tjenesten. Andre kan derefter oprette forbindelse til Annas datamodel ved hjælp af funktionen Direkte forbindelse til Power BI-tjenesten og oprette deres egne unikke rapporter i deres egne arbejdsområder på baggrund af hendes datasæt.
 
@@ -79,7 +79,7 @@ Når publiceringen er udført, viser Power BI Desktop dig, at publiceringen er u
 
 ![Vellykket publicering](media/desktop-report-lifecycle-datasets/report-lifecycle_07.png)
 
-Nu, hvor din rapport med tilhørende datasæt befinder sig i Power BI-tjenesten, kan du også *fremhæve* den. Når du fremhæver den, attesterer du rapportens kvalitet og pålidelighed. Du kan tilmed anmode om, at det bliver *certificeret* af en central myndighed i din Power BI-lejer. Med begge disse godkendelser vil dit datasæt blive vist på listen over emner, når folk søger efter datasæt. Du kan finde flere oplysninger under [Fremhæv din model](service-datasets-promote.md).
+Nu, hvor din rapport med tilhørende datasæt befinder sig i Power BI-tjenesten, kan du også *fremhæve* den. Når du fremhæver den, attesterer du rapportens kvalitet og pålidelighed. Du kan tilmed anmode om, at det bliver *certificeret* af en central myndighed i din Power BI-lejer. Med begge disse godkendelser vil dit datasæt blive vist på listen over emner, når folk søger efter datasæt. Du kan finde flere oplysninger under [Anbefal dit indhold](../collaborate-share/service-endorse-content.md).
 
 Det sidste trin er at angive tilladelsen Opret for det datasæt, som rapporten er baseret på. Tilladelsen Opret bestemmer, hvem der kan se og bruge dit datasæt. Du kan konfigurere den i selve arbejdsområdet, eller når du deler et program fra arbejdsområdet. Du kan finde flere oplysninger under [Opret tilladelse til delte datasæt](service-datasets-build-permissions.md).
 
@@ -95,7 +95,7 @@ Datasættene på listen er alle de delte datasæt, du har tilladelsen Opret til,
 
 ![Liste over tilgængelige datasæt](media/desktop-report-lifecycle-datasets/desktop-select-shared-dataset.png)
 
-Når du vælger **Opret**, opretter du en direkte forbindelse til det valgte datasæt. Power BI Desktop indlæser felterne og deres værdier, som du kan se i Power BI Desktop i realtid.
+Når du vælger **Opret** , opretter du en direkte forbindelse til det valgte datasæt. Power BI Desktop indlæser felterne og deres værdier, som du kan se i Power BI Desktop i realtid.
 
 ![Felter i datasættet i ruden Felter](media/desktop-report-lifecycle-datasets/report-lifecycle_10.png)
 
@@ -107,12 +107,12 @@ Når du bruger funktionen Direkte forbindelse til Power BI-tjenesten, er der et 
 
 * Det er kun brugere med tilladelsen Opret for et datasæt, der kan oprette forbindelse til et publiceret datasæt ved hjælp af den direkte forbindelse til Power BI-tjenesten.
 * Gratis brugere kan kun se datasæt i deres **Mit arbejdsområde** og i Premium-baserede arbejdsområder.
-* Da denne forbindelse er en direkte forbindelse, deaktiveres navigationen til venstre og modellering. Du kan kun oprette forbindelse til ét datasæt i hver rapport. Denne funktionsmåde svarer til samme funktionsmåde, når der oprettes forbindelse til *SQL Server Analysis Services*.
+* Da denne forbindelse er en direkte forbindelse, deaktiveres navigationen til venstre og modellering. Du kan kun oprette forbindelse til ét datasæt i hver rapport. Denne funktionsmåde svarer til samme funktionsmåde, når der oprettes forbindelse til *SQL Server Analysis Services* .
 * Eftersom denne forbindelse er en direkte forbindelse, gennemtvinges sikkerhed på rækkeniveau (RLS) og andre forbindelsesfunktioner. Det er det samme, som når du har oprettet forbindelse til SQL Server Analysis Services.
-* Hvis ejeren ændrer den originale delte *PBIX-fil*, overskrives datasættet og rapporten, der er delt i Power BI-tjenesten. Rapporter baseret på dette datasæt overskrives ikke, men alle ændringer af datasættet afspejles i rapporten.
+* Hvis ejeren ændrer den originale delte *PBIX-fil* , overskrives datasættet og rapporten, der er delt i Power BI-tjenesten. Rapporter baseret på dette datasæt overskrives ikke, men alle ændringer af datasættet afspejles i rapporten.
 * Medlemmer af et arbejdsområde kan ikke erstatte den oprindeligt delte rapport. Forsøg på at gøre dette resulterer i en advarsel, der beder dig om at omdøbe filen og udgive den.
 * Hvis du sletter det delte datasæt i Power BI-tjenesten, så vil andre rapporter, der er baseret på dette datasæt ikke længere fungere korrekt eller vise deres visualiseringer.
-* Hvad angår indholdspakker, skal du først oprette en kopi af en indholdspakke, inden den bruges som basis for at dele en *PBIX*-rapport eller et PBIX-datasæt til Power BI-tjenesten.
-* Hvad angår indholdspakker fra *Min organisation*, kan du, når de er kopieret, ikke erstatte rapporten, der er oprettet på tjenesten, og/eller en rapport, der er oprettet som en del af kopiering af en indholdspakke med en direkte forbindelse. Forsøg på at gøre dette resulterer i en advarsel, der beder dig om at omdøbe filen og udgive den. I denne situation kan du kun erstatte udgivne rapporter, der er direkte forbundne.
+* Hvad angår indholdspakker, skal du først oprette en kopi af en indholdspakke, inden den bruges som basis for at dele en *PBIX* -rapport eller et PBIX-datasæt til Power BI-tjenesten.
+* Hvad angår indholdspakker fra *Min organisation* , kan du, når de er kopieret, ikke erstatte rapporten, der er oprettet på tjenesten, og/eller en rapport, der er oprettet som en del af kopiering af en indholdspakke med en direkte forbindelse. Forsøg på at gøre dette resulterer i en advarsel, der beder dig om at omdøbe filen og udgive den. I denne situation kan du kun erstatte udgivne rapporter, der er direkte forbundne.
 * Sletning af et delt datasæt i Power BI-tjenesten betyder, at ingen længere kan få adgang til det pågældende datasæt fra Power BI Desktop.
 * Rapporter, der deler et datasæt i Power BI-tjenesten, understøtter ikke automatiserede udrulninger ved hjælp af Power BI REST API'en.

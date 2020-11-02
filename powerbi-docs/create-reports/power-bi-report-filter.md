@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 05/15/2020
+ms.date: 10/23/2020
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 926334f5708914b30277ac0c855937dfb6b79bfb
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 358d0575c2de3297614bfed0656d953945b2ed13
+ms.sourcegitcommit: 54e571a10b0fdde5cd6036017eac9ef228de5116
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85233926"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "92502150"
 ---
 # <a name="design-filters-in-power-bi-reports"></a>Design filtre i Power BI-rapporter
 
@@ -38,38 +38,16 @@ Når forbrugerne læser en rapport, kan de pege på en hvilken som helst visuali
 
 ![Liste over filtre for en visualisering](media/power-bi-report-filter/power-bi-filter-visual.png)
 
-## <a name="turn-on-new-filters-in-existing-reports"></a>Slå nye filtre til i eksisterende rapporter 
-
-Den nye filtreringsoplevelse er som standard slået til for nye rapporter. Du kan aktivere den nye oplevelse for eksisterende rapporter i Power BI Desktop eller i Power BI-tjenesten.
-
-### <a name="turn-on-new-filters-for-an-existing-report-in-power-bi-desktop"></a>Slå nye filtre til for en eksisterende rapport i Power BI Desktop
-
-1. I en eksisterende rapport i Power BI Desktop skal du vælge **Filer** > **Indstillinger** > **Indstillinger**
-2. Under **Aktuel fil** skal du vælge **Rapportindstillinger**.
-3. Under **Filtreringsoplevelse** skal du vælge **Aktivér den opdaterede filtreringsrude, og vis filtre i rapportens visuelle header for denne rapport**.
-
-### <a name="turn-on-new-filters-for-an-existing-report-in-the-service"></a>Slå nye filtre til for en eksisterende rapport i tjenesten
-
-Hvis du har aktiveret **det nye udseende** i Power BI-tjenesten ![Nyt udseende aktiveret](media/power-bi-report-filter/power-bi-new-look-on.png), aktiveres den nye filtreringsoplevelse automatisk. Læs mere om [det nye udseende i Power BI-tjenesten](../consumer/service-new-look.md).
-
-Hvis du ikke har aktiveret det nye udseende, kan du alligevel få vist den nye filtreringsoplevelse ved at benytte denne fremgangsmåde.
-
-1. Åbn indholdslisten for et arbejdsområde i Power BI-tjenesten.
-2. Find den rapport, du vil aktivere, Vælg **Flere indstillinger (...)** , og vælg derefter **Indstillinger** for den pågældende rapport.
-
-    ![Rapportindstillinger](media/power-bi-report-filter/power-bi-filter-options.png)
-
-3. Under **Filtreringsoplevelse** skal du vælge **Aktivér den opdaterede filtreringsrude, og vis filtre i rapportens visuelle header for denne rapport**.
-
-    ![Aktivér ruden med opdaterede filtre](media/power-bi-report-filter/power-bi-service-filter-enable.png)
+Læs om, [hvordan læsere af rapporten bruger filtre](../consumer/end-user-report-filter.md) i din rapport.
 
 ## <a name="view-filters-for-a-visual-in-reading-mode"></a>Vis filtre for en visualisering i Læsetilstand
 
-I Læsetilstand kan du holde markøren over filterikonet for en visualisering og se en pop op-filterliste med alle de filtre, udsnitsværktøjer m.m., der påvirker denne visualisering. Formateringen af pop op-filterlisten er den samme som formateringen af filtreringsruden. 
+I Læsetilstand kan du holde markøren over filterikonet for en visualisering og se en pop op-filterliste med alle de filtre, udsnitsværktøjer m.m., der påvirker denne visualisering. Formateringen af pop op-filterlisten er den samme som formateringen af filtreringsruden.
 
 ![Filtre, der påvirker en visualisering](media/power-bi-report-filter/power-bi-filter-per-visual.png)
 
-Her er de filtertyper, der vises i denne visning: 
+Her er de filtertyper, der vises i denne visning:
+
 - Grundlæggende filtre
 - Udsnit
 - Tværgående fremhævning 
@@ -81,11 +59,13 @@ Her er de filtertyper, der vises i denne visning:
 - Filtre for Inkluder/Ekskluder
 - Filtre sendt via en URL-adresse
 
+Læs mere om [interaktion med filtre i læsetilstand](../consumer/end-user-report-filter.md).
+
 ## <a name="build-the-filters-pane"></a>Opbyg filtreringsruden
 
 Efter du har aktiveret den nye filtreringsrude, kan du se den til højre for den rapportside, der som standard er formateret på baggrund af de aktuelle rapportindstillinger. I filtreringsruden konfigurerer du, hvilke filtre du vil inkludere, og opdaterer eksisterende filtre. Filtreringsruden ser ud på samme måde for forbrugerne af din rapport, når du publicerer rapporten. 
 
-1. Dine rapportforbrugere kan som standard se filtreringsruden. Hvis de ikke skal kunne se den, skal du vælge ikonet med øjet ud for **Filtre**.
+1. Dine rapportforbrugere kan som standard se filtreringsruden. Hvis de ikke skal kunne se den, skal du vælge ikonet med øjet ud for **Filtre** .
 
     ![Ikon med øje for Power BI-filter](media/power-bi-report-filter/power-bi-filter-eye-icon.png)
 
@@ -99,7 +79,7 @@ Power BI Desktop har fået et nyt bånd, der er tilgængeligt som prøveversion.
 
 ![Vis eller skjul ruden Filtre under redigering](media/power-bi-report-filter/power-bi-filter-hide.png)
 
-Denne indstilling skjuler kun ruden filtre i Power BI Desktop. Hvis du vil skjule ruden Filtre for dine slutbrugere, skal du i stedet vælge **øje**-ikonet ud for **Filtre**.
+Denne indstilling skjuler kun ruden filtre i Power BI Desktop. Hvis du vil skjule ruden Filtre for dine slutbrugere, skal du i stedet vælge **øje** -ikonet ud for **Filtre** .
 
 ![Ikonet med øjet](media/power-bi-report-filter/power-bi-filter-eye.png) 
 
@@ -136,14 +116,14 @@ Du kan også formatere disse elementer for filterkort, afhængigt af om de er an
 
 ### <a name="format-the-filters-pane-and-cards"></a>Formatér filtreringsruden og kortene
 
-1. I rapporten skal du klikke på selve rapporten eller baggrunden (*tapetet*), og derefter skal du i ruden **Visualiseringer** vælge **Formatér**. 
+1. I rapporten skal du klikke på selve rapporten eller baggrunden ( *tapetet* ), og derefter skal du i ruden **Visualiseringer** vælge **Formatér** . 
     Du kan se formateringsindstillinger for rapportsiden, tapetet samt filtreringsruden og filterkort.
 
 1. Udvid **ruden Filtre** for at angive farven på baggrunden, ikonet og den venstre kant, som skal komplementere rapportsiden.
 
     ![Udvid ruden Filtre](media/power-bi-report-filter/power-bi-format-filter-pane.png)
 
-1. Udvid **Filterkort** for at angive farve og kant for **Tilgængelig** og **Anvendt**. Hvis du angiver forskellige farver for kortene Tilgængelig og Anvendt, er det oplagt, hvilke filtre der anvendes. 
+1. Udvid **Filterkort** for at angive farve og kant for **Tilgængelig** og **Anvendt** . Hvis du angiver forskellige farver for kortene Tilgængelig og Anvendt, er det oplagt, hvilke filtre der anvendes. 
   
     ![Udvid filterkort](media/power-bi-report-filter/power-bi-format-filter-cards.png)
 
@@ -234,7 +214,7 @@ Vi har forbedret navigation via tastaturet for filtreringsruden. Du kan bruge ta
 ![Tilgængelighed i filtreringsruden](media/power-bi-report-filter/power-bi-filter-accessible.png)
 
 ## <a name="rename-filters"></a>Omdøb filtre
-Når du redigerer filtreringsruden, kan du dobbeltklikke på titlen for at redigere den. Det er nyttigt at kunne omdøbe filtre, hvis du vil opdatere filterkortet, så det giver mere mening for dine slutbrugere. Husk, at når du omdøber filterkortet, omdøbes det viste navn på feltet på feltlisten *ikke*. Det ændrer blot det viste navn, der bruges i filterkortet.
+Når du redigerer filtreringsruden, kan du dobbeltklikke på titlen for at redigere den. Det er nyttigt at kunne omdøbe filtre, hvis du vil opdatere filterkortet, så det giver mere mening for dine slutbrugere. Husk, at når du omdøber filterkortet, omdøbes det viste navn på feltet på feltlisten *ikke* . Det ændrer blot det viste navn, der bruges i filterkortet.
 
 ![Omdøb et filter](media/power-bi-report-filter/power-bi-filter-rename.png)
 
@@ -248,41 +228,49 @@ Du kan også formatere søgefeltet på samme måde, som du kan formatere de andr
 
 ![Formater søgefeltet](media/power-bi-report-filter/power-bi-filter-format-search.png)
 
-Denne søgefunktion i ruden Filtre er som standard er slået til, men du kan også vælge at slå den til eller fra ved at vælge **Aktivér søgning for ruden Filtre** i rapportindstillingerne i dialogboksen Indstillinger.
+Denne søgefunktion i ruden Filtre er som standard er slået til, men du kan også vælge at slå den til eller fra ved at vælge **Aktivér søgning for ruden Filtre** under indstillingerne for **rapporten** i dialogboksen **Indstillinger** .
 
 ![Slå søgning til eller fra](media/power-bi-report-filter/power-bi-enable-search-filter.png)
 
 ## <a name="restrict-changes-to-filter-type"></a>Begræns ændringer af filtertype
 
-Under sektionen **Filtreringsoplevelse** i rapportindstillingerne kan du styre, om brugere kan ændre filtertypen.
+I afsnittet **Filtreringsoplevelse** under indstillinger for **rapporten** kan du styre, om brugere kan ændre filtertypen.
 
 ![Begræns ændring af filtertype](media/power-bi-report-filter/power-bi-enable-change-filter-type.png)
 
-## <a name="apply-filters-button-preview"></a>Knappen Anvend filtre (eksempel)
+## <a name="allow-saving-filters"></a>Tillad lagring af filtre
 
-Du kan tilføje en enkelt **Anvend**-knap i filtreringsruden, så du og dine slutbrugere kan anvende alle filterændringer på én gang. Denne knap kan være en fordel, hvis du vil udsætte anvendelse af filterændringer. Du behøver kun at vente én gang, når du er klar til at anvende alle filter ændringerne i rapporten eller visualiseringerne.
+Læserne af din rapport kan som standard gemme filtre for din rapport. Du kan vælge, at de ikke skal have tilladelse til at gemme filtre.
 
-:::image type="content" source="media/power-bi-report-filter/apply-filter-button.png" alt-text="Anvend filterknappen":::
+- Under indstillingerne for **rapporten** i dialogboksen **Indstillinger** under **Faste filtre** skal du vælge **Giv ikke slutbrugere tilladelse til at gemme filtre i denne rapport** .
+
+    :::image type="content" source="media/power-bi-report-filter/power-bi-persistent-filters.png" alt-text="Skærmbillede af Giv ikke slutbrugere tilladelse til at gemme filtre i denne rapport.":::
+
+## <a name="apply-filters-apply-button-preview"></a>Knappen Anvend filtre (prøveversion)
+
+Du kan tilføje en enkelt **Anvend** -knap i filtreringsruden, så du og dine slutbrugere kan anvende alle filterændringer på én gang. Denne knap kan være en fordel, hvis du vil udsætte anvendelse af filterændringer. Du behøver kun at vente én gang, når du er klar til at anvende alle filter ændringerne i rapporten eller visualiseringerne.
+
+:::image type="content" source="media/power-bi-report-filter/apply-filter-button.png" alt-text="Skærmbillede af Giv ikke slutbrugere tilladelse til at gemme filtre i denne rapport.":::
 
 ### <a name="turn-on-apply"></a>Slå Anvend til
 
 Du kan vælge denne funktion på rapportniveau. Funktionen er dog som standard slået fra.
 
-1. Gå til **Filer** > **Indstillinger** > **Indstillinger** > **Reduktion af forespørgsler**.
+1. Gå til **Filer** > **Indstillinger** > **Indstillinger** > **Reduktion af forespørgsler** .
 
-1. Vælg **Føj en enkelt Anvend-knap til filterruden for at anvende ændringer på én gang**.
+1. Vælg **Føj en enkelt Anvend-knap til filterruden for at anvende ændringer på én gang** .
 
-    :::image type="content" source="media/power-bi-report-filter/turn-on-apply-filter-button.png" alt-text="Slå knappen Anvend filter til":::
+    :::image type="content" source="media/power-bi-report-filter/turn-on-apply-filter-button.png" alt-text="Skærmbillede af Giv ikke slutbrugere tilladelse til at gemme filtre i denne rapport.":::
 
 ### <a name="format-the-apply-button"></a>Formatér knappen Anvend
 
-Du kan i øjeblikket styre en del af formateringen af teksten **Anvend** til knappen. Angiv følgende indstillinger i afsnittet **Filterrude** i ruden **Formatér**:
+Du kan i øjeblikket styre en del af formateringen af teksten **Anvend** til knappen. Angiv følgende indstillinger i afsnittet **Filterrude** i ruden **Formatér** :
 
 - **Farve på skrifttype og ikon** styrer tekstfarven.
 - **Tekststørrelse i sidehoved** styrer tekststørrelsen.
 - **Skrifttypefamilie** styrer skrifttypen.
 
-    :::image type="content" source="media/power-bi-report-filter/format-apply-filter.gif" alt-text="Formatér teksten til knappen Anvend filter":::
+    :::image type="content" source="media/power-bi-report-filter/format-apply-filter.gif" alt-text="Skærmbillede af Giv ikke slutbrugere tilladelse til at gemme filtre i denne rapport.":::
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 
