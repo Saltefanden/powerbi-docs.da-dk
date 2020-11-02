@@ -79,6 +79,8 @@
               href: access-dataset-odata.md
             - name: Skift forbindelsesstrenge til datakilden med PowerShell
               href: connect-data-source-apis.md
+            - name: 'Skift forbindelsesstrenge til datakilden med PowerShell, før oktober 2020'
+              href: connect-data-source-apis-pre-oct-2020.md
             - name: Konfigurer planlagt opdatering
               href: configure-scheduled-refresh.md
             - name: Føj kommentarer til en rapport
