@@ -8,14 +8,16 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
-ms.openlocfilehash: 778ce3c810cb0d59559940f489dfeda34f366fda
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: baccdcae82fb56b2f7f7a9d6cb4839e941e99bf0
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90853971"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93297532"
 ---
 # <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service"></a>Selvstudium: Opret en sideinddelt rapport, og upload den til Power BI-tjenesten
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
 I dette selvstudium kan du oprette forbindelse til et eksempel på en Azure SQL-database. Brug derefter en guide i Power BI Report Builder til at oprette en sideinddelt rapport med en tabel, der ombrydes på flere sider. Derefter uploader du den sideinddelte rapport til et arbejdsområde i en Premium-kapacitet i Power BI-tjenesten.
 
@@ -79,7 +81,7 @@ Her er forudsætningerne for at overføre din sideinddelte rapport til Power BI-
 
 1. På fanen **Oversigt** skal du kopiere værdien i feltet **Servernavn**.
 
-2. **I Report Builder**: I dialogboksen **Egenskaber for forbindelse** under **Servernavn** skal du indsætte det servernavn, du kopierede. 
+2. **I Report Builder** : I dialogboksen **Egenskaber for forbindelse** under **Servernavn** skal du indsætte det servernavn, du kopierede. 
 
 1. Under **Log på serveren** skal du kontrollere, at **Brug SQL Server-godkendelse** er valgt, og derefter indtaste det brugernavn og den adgangskode, du oprettede i Azure til eksempeldatabasen.
 
@@ -126,17 +128,17 @@ Her er forudsætningerne for at overføre din sideinddelte rapport til Power BI-
 
     ![Vælg et datasæt](media/paginated-reports-quickstart-aw/power-bi-paginated-choose-dataset.png)
 
-1. På siden **Arranger felter** trækker du følgende felter fra feltet **Tilgængelige felter** til feltet **Rækkegrupper**:
+1. På siden **Arranger felter** trækker du følgende felter fra feltet **Tilgængelige felter** til feltet **Rækkegrupper** :
 
-    - CompanyName
+    - Firmanavn
     - SalesOrderNumber
-    - Product_Name
+    - Produktnavn
 
-1. Træk følgende felter fra feltet **Tilgængelige felter** til feltet **Værdier**:
+1. Træk følgende felter fra feltet **Tilgængelige felter** til feltet **Værdier** :
 
     - OrderQty
     - UnitPrice
-    - Linjesum
+    - LineTotal
 
     Report Builder oprettede automatisk summerne af felterne **Værdier**.
 
@@ -165,7 +167,7 @@ Lad os kigge på resultaterne af guiden et øjeblik.
 5. I ruden Gruppering kan du se de tre rækkegrupper, du oprettede i guiden: 
 
     - Firmanavn
-    - Salgsordre
+    - Sales Order
     - Produktnavn
 
     Denne matrix har ikke nogen kolonnegrupper.
@@ -176,7 +178,7 @@ Hvis du vil se de faktiske værdier, skal du køre rapporten.
 
 1. Vælg **Kørsel** i værktøjslinjen **Hjem**.
 
-   Nu kan du se værdierne. Matrixen har mange flere rækker, end du så i Designvisning! Bemærk, at Report Builder angiver, at det er side **1** af **2?** . Report Builder indlæser rapporten så hurtigt som muligt, så den henter kun data til et par sider ad gangen. Spørgsmålstegnet angiver, at Report Builder endnu ikke har indlæst alle dataene.
+   Nu kan du se værdierne. Matrixen har mange flere rækker, end du så i Designvisning! Bemærk, at Report Builder angiver, at det er side **1** af **2?**. Report Builder indlæser rapporten så hurtigt som muligt, så den henter kun data til et par sider ad gangen. Spørgsmålstegnet angiver, at Report Builder endnu ikke har indlæst alle dataene.
 
    ![Kør rapporten](media/paginated-reports-quickstart-aw/power-bi-paginated-run-report.png)
 
@@ -186,7 +188,7 @@ Hvis du vil se de faktiske værdier, skal du køre rapporten.
 
 Nu har du en rapport med en matrix, der ombrydes til 33 sider. Lad os tilføje nogle flere funktioner og få det til at se bedre ud. Hvis du vil se, hvordan det ser ud, kan du køre rapporten efter hvert trin.
 
-- På fanen **Kørsel** på båndet vælger du **Design**, så du kan fortsætte med at redigere den.  
+- På fanen **Kørsel** på båndet vælger du **Design** , så du kan fortsætte med at redigere den.  
 
 ### <a name="set-page-width"></a>Angiv sidebredde
 
@@ -198,7 +200,7 @@ Typisk er en sideinddelt rapport formateret til udskrivning, og en typisk side e
 
     Hvis ruden Egenskaber ikke vises, skal du klikke på fanen **Vis** > **Egenskaber**.
 
-2. Udvid **Margener**, og skift **Venstre** og **Højre** fra 1 til 0,75 tomme. 
+2. Udvid **Margener** , og skift **Venstre** og **Højre** fra 1 til 0,75 tomme. 
 
     ![Sæt sidemargener](media/paginated-reports-quickstart-aw/power-bi-paginated-set-margins.png)
   
@@ -276,7 +278,7 @@ Yderligere en forbedring af formateringen, inden du publicerer rapporten til Pow
 
 5. Vælg **Kørsel** på fanen **Hjem**.
 
-6. Vælg **Udskriftslayout**, hvis det ikke allerede er valgt. Rapporten indeholder nu 29 sider. Rul gennem nogle få sider. Du kan se at valutaen er formateret, kolonnerne har overskrifter på alle sider, og rapporten har en sidefod med sidetal samt dato- og tidsstempel på alle sider.
+6. Vælg **Udskriftslayout** , hvis det ikke allerede er valgt. Rapporten indeholder nu 29 sider. Rul gennem nogle få sider. Du kan se at valutaen er formateret, kolonnerne har overskrifter på alle sider, og rapporten har en sidefod med sidetal samt dato- og tidsstempel på alle sider.
  
     ![Færdig side](media/paginated-reports-quickstart-aw/power-bi-paginated-finished-page.png)
 
@@ -290,7 +292,7 @@ Nu, hvor du har oprettet denne sideinddelte rapport, er det tid til at uploade d
 
 2. Navngiv dit arbejdsområde **Azure AW** eller et andet entydigt navn. Du er indtil videre det eneste medlem. 
 
-3. Vælg pilen ud for **Avanceret**, og slå **Dedikeret kapacitet** til. 
+3. Vælg pilen ud for **Avanceret** , og slå **Dedikeret kapacitet** til. 
 
     ![Opret et arbejdsområde i Premium-kapacitet](media/paginated-reports-quickstart-aw/power-bi-paginated-create-workspace-premium-capacity.png)
 
@@ -306,7 +308,7 @@ Nu, hvor du har oprettet denne sideinddelte rapport, er det tid til at uploade d
 
 2. I feltet **Filer** > **Hent**.
 
-3. Vælg **Lokal fil**, naviger til det sted, hvor du gemte filen > **Åbn**.
+3. Vælg **Lokal fil** , naviger til det sted, hvor du gemte filen > **Åbn**.
 
    Power BI importerer din fil, og du kan se den under **Rapporter** på siden med applisten.
 
@@ -318,7 +320,7 @@ Nu, hvor du har oprettet denne sideinddelte rapport, er det tid til at uploade d
 
     ![Administrer din rapport](media/paginated-reports-quickstart-aw/power-bi-paginated-manage-report.png)
 
-6. Vælg **Rediger legitimationsoplysninger**, og indtast de legitimationsoplysninger, du brugte i Azure, da du oprettede Azure-databasen.
+6. Vælg **Rediger legitimationsoplysninger** , og indtast de legitimationsoplysninger, du brugte i Azure, da du oprettede Azure-databasen.
 
     ![Rediger rapportens legitimationsoplysninger](media/paginated-reports-quickstart-aw/power-bi-paginated-edit-credentials.png)
 

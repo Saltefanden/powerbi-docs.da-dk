@@ -8,14 +8,16 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
-ms.openlocfilehash: a77631cbf2438c00a8c05b196837b73b8dc6bb61
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: f19e80a421c6e27fa3b85814d00bfb05dc2789b2
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79207131"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93297721"
 ---
 # <a name="getting-around-in-report-design-view-for-paginated-reports"></a>Navigering i visningen Rapportdesign for sideinddelte rapporter
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
 Rapportdesignet Vis i Power BI Report Builder er det designområde, hvor du kan oprette sideinddelte rapporter, som du kan publicere i Power BI-tjenesten. Designområdet er placeret centralt i Report Builder, og båndet og ruderne er placeret rundt om det. Designområdet er, hvor du tilføjer og organiserer dine rapportelementer. I denne artikel forklares de ruder, du bruger til at tilføje, vælge og organisere dine rapportressourcer og ændre egenskaber for rapportelementer.  
 
@@ -87,14 +89,14 @@ Designområdestørrelsen kan være anderledes end det udskriftsområde, du angiv
  Afhængigt af egenskaben kan du angive en værdi for egenskaben via en rulleliste, angive værdien eller vælge `<Expression>` for at oprette et udtryk.  
   
 ### <a name="changing-the-properties-pane-view"></a>Ændring af visningen af ruden Egenskaber  
- Som standard er egenskaber, der vises i ruden Egenskaber, organiseret i brede kategorier, f.eks. Handling, Kant, Udfyldning, Skrifttype og Generelt. Hver enkelt kategori har et sæt tilknyttede egenskaber. Følgende egenskaber vises f.eks. i kategorien Skrifttype: Color, FontFamily, FontSize, FontStyle, FontWeight, LineHeight og TextDecoration. Hvis du foretrækker det, kan du alfabetisere alle de egenskaber, der vises i ruden. Dette fjerner kategorierne og viser alle egenskaberne i alfabetisk rækkefølge, uanset kategori.  
+ Som standard er egenskaber, der vises i ruden Egenskaber, organiseret i brede kategorier, f.eks. Handling, Kant, Udfyldning, Skrifttype og Generelt. Hver enkelt kategori har et sæt tilknyttede egenskaber. Følgende egenskaber er f.eks. angivet i kategorien Skrifttype: Color, FontFamily, FontSize, FontStyle, FontWeight, LineHeight og TextDecoration. Hvis du foretrækker det, kan du alfabetisere alle de egenskaber, der vises i ruden. Dette fjerner kategorierne og viser alle egenskaberne i alfabetisk rækkefølge, uanset kategori.  
   
- Ruden Egenskaber indeholder tre knapper øverst i ruden: **Kategori**, **Alfabetiser** og **Egenskabsside**. Vælg knapperne Kategori og Alfabetiser for at skifte mellem visning af egenskabsruderne. Vælg knappen **Egenskabssider** for at åbne dialogboksen Egenskaber for et valgt rapportelement.  
+ I ruden Egenskaber er der tre knapper øverst: **Kategori** , **Alfabetiser** og **Egenskabssider**. Vælg knapperne Kategori og Alfabetiser for at skifte mellem visning af egenskabsruderne. Vælg knappen **Egenskabssider** for at åbne dialogboksen Egenskaber for et valgt rapportelement.  
   
   
 ## <a name="5-grouping-pane"></a>5 Ruden Gruppering
 
- Grupper bruges til at organisere dine rapportdata i et visuelt hierarki og til at beregne totaler. Du kan få vist række- og kolonnegrupperne i et dataområde i designområdet samt i ruden Gruppering. Ruden Gruppering har to ruder: Rækkegrupper og Kolonnegrupper. Når du vælger et dataområde, vises alle grupperne i det pågældende dataområde i ruden Gruppering som en hierarkiske liste: Underordnede grupper vises indrykket under deres overordnede grupper.  
+ Grupper bruges til at organisere dine rapportdata i et visuelt hierarki og til at beregne totaler. Du kan få vist række- og kolonnegrupperne i et dataområde i designområdet samt i ruden Gruppering. Ruden Gruppering indeholder to ruder: Rækkegrupper og Kolonnegrupper. Når du vælger et dataområde, vises alle grupperne i det pågældende dataområde i ruden Gruppering som en hierarkiske liste: Underordnede grupper vises indrykket under deres respektive overordnede grupper.  
   
  Du kan oprette grupper ved at trække felter fra ruden Rapportdata og slippe dem i designområdet eller i ruden Gruppering. I ruden Gruppering kan du tilføje overordnede, tilstødende og underordnede grupper, ændre gruppeegenskaber og slette grupper.  
   

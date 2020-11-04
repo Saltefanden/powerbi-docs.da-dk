@@ -8,14 +8,16 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
 ms.date: 05/04/2020
-ms.openlocfilehash: edda0fa0232430541af1fc1766fd5d8bc23c5e1c
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 28058161672de9db0cac5093e652e1d551f6a80a
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85221017"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93297312"
 ---
 # <a name="publish-a-paginated-report-to-the-power-bi-service"></a>Publicer en sideinddelt rapport i Power BI-tjenesten
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
 I denne artikel lærer du om publicering af en sideinddelt rapport i Power BI-tjenesten ved at uploade den fra din lokale computer. Du kan uploade sideinddelte rapporter til Mit arbejdsområde eller andre arbejdsområder, så længe arbejdsområdet er i en Premium-kapacitet. Se efter rombeikonet ![Rombeikon for Power BI Premium-kapacitet](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) ud for navnet på arbejdsområdet. 
 
@@ -25,7 +27,7 @@ Hvis din datakilde til rapporten er i det lokale miljø, skal du oprette en gate
 
 Hvis arbejdsområdet ikke har rombeikonet ![Rombeikon for Power BI Premium-kapacitet](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) ud for navnet, skal du føje arbejdsområdet til en Premium-kapacitet. 
 
-1. Vælg **Arbejdsområder**, vælg ellipsen ( **...** ) ud for navnet på arbejdsområdet, og vælg derefter **Rediger arbejdsområde**.
+1. Vælg **Arbejdsområder** , vælg ellipsen ( **...** ) ud for navnet på arbejdsområdet, og vælg derefter **Rediger arbejdsområde**.
 
     ![Vælg Rediger arbejdsområde](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-edit-workspace.png)
 
@@ -69,7 +71,7 @@ Du kan også starte fra Power BI-tjenesten og overføre en sideinddelt rapport.
 
 1. Vælg **Hent data**.
 
-    ![Power BI Hent data](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-get-data.png)
+    ![Power BI – Hent data](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-get-data.png)
 
 1. Vælg **Hent** i feltet **Filer**.
 

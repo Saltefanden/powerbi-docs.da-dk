@@ -8,17 +8,18 @@ ms.topic: conceptual
 ms.assetid: c1490ff0-5b8a-43c1-8d22-e459395db4f6
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 13b9e37d4a64493dfdcac02d9df86a1e19a1c24b
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: dc8400361ca8d7bdd3713efa7bdf180578a597a2
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78921165"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93297917"
 ---
 # <a name="report-design-tips-in-power-bi-report-builder"></a>Tip til rapportdesign i Power BI Report Builder
-  Brug følgende tip til at designe dine sideinddelte rapporter i Power BI Report Builder.  
-  
-   
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
+
+Brug følgende tip til at designe dine sideinddelte rapporter i Power BI Report Builder.  
   
 ##  <a name="designing-reports"></a><a name="DesigningReports"></a> Design af rapporter  
   
@@ -145,6 +146,6 @@ ms.locfileid: "78921165"
 
  Kombinationen af denne funktionsmåde, egenskaberne for bredde og højde af rapportelementer, størrelsen af rapportens brødtekst, definitionen af højde og bredde for siden, margenindstillingerne for den overordnede rapport og understøttelse af specifik gengivelse for sider bestemmer alt sammen, hvilke rapportelementer der passer sammen på en gengivet side.
  
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 - [Hvad er sideinddelte rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md)  

@@ -9,14 +9,16 @@ ms.author: maggies
 ms.reviewer: cfinlan
 ms.custom: ''
 ms.date: 05/01/2020
-ms.openlocfilehash: c26f9c8f219517e3039b62cdbc89af24ba1af288
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: f103f29c61d1a4e4a5340d97598d80a86c708701
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239564"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93298033"
 ---
 # <a name="pass-a-report-parameter-in-a-url-for-a-paginated-report-in-power-bi"></a>Videregiv en rapportparameter i en URL-adresse til en sideinddelt rapport i Power BI 
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
 Du kan videregive rapportparametre til en rapport ved at inkludere dem i en URL-adresse til en sideinddelt rapport. Alle forespørgselsparametre kan have tilsvarende rapportparametre. Derfor videregiver du en forespørgselsparameter til en rapport ved at videregive den tilsvarende rapportparameter. Parameternavnet skal have præfikset `rp:`, så Power BI kan genkende det i URL-adressen. 
 
@@ -63,7 +65,7 @@ rp:SalesOrderNumber:isnull=true
 Hvis du vil videregive en boolesk værdi, skal du bruge 0 for falsk og 1 for sand. Hvis du vil videregive en flydende værdi, skal du inkludere decimalseparatoren for serverens landestandard.
 
 > [!NOTE]
-> Hvis din rapport indeholder en rapportparameter, som har en standardværdi, og værdien for egenskaben**Spørg** er **falsk** (dvs. egenskaben **Spørg bruger** ikke er valgt i Rapportstyring), kan du ikke videregive en værdi for den pågældende rapportparameter i en URL-adresse. Det giver administratorer mulighed for at forhindre, at slutbrugerne kan tilføje eller ændre værdierne for visse rapportparametre.
+> Hvis din rapport indeholder en rapportparameter, som har en standardværdi, og værdien for egenskaben **Spørg** er **falsk** (dvs. egenskaben **Spørg bruger** ikke er valgt i Rapportstyring), kan du ikke videregive en værdi for den pågældende rapportparameter i en URL-adresse. Det giver administratorer mulighed for at forhindre, at slutbrugerne kan tilføje eller ændre værdierne for visse rapportparametre.
 > 
 > Power BI understøtter ikke en forespørgselsstreng på mere end 2.000 tegn.  Denne værdi kan overskrides, hvis du bruger URL-parametre til at få vist din sideinddelte rapport.  Det er især tilfældet, hvis du bruger parametre med flere værdier.
 
@@ -81,7 +83,7 @@ Følgende eksempel på en URL-adresse videregiver en enkel parameter for SellSta
 https://app.powerbi.com/groups/me/rdlreports/xxxxxxx-abc7-40f0-b456-febzf9cdda4d?rp:SellStartDate=7/1/2005
 ```
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 - [URL-parametre i sideinddelte rapporter i Power BI](report-builder-url-parameters.md)
 - [Hvad er sideinddelte rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md)

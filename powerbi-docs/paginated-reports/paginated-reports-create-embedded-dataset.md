@@ -8,14 +8,16 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
 ms.date: 11/5/2018
-ms.openlocfilehash: c61a89923e4451aaa0b3324d25fa7888021acbd6
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 81d755a529edb2f4fdae0ae6dbe90026b5b290d8
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238273"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93297662"
 ---
 # <a name="create-an-embedded-dataset-for-a-paginated-report-in-the-power-bi-service"></a>Opret et integreret datasæt til en sideinddelt rapport i Power BI-tjenesten
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
 I denne artikel lærer du, hvordan du opretter et integreret datasæt, der er baseret på en integreret datakilde, til en sideinddelt rapport i Power BI-tjenesten. Integrerede datasæt er indeholdt i en enkelt sideinddelt rapport til brug i den pågældende rapport. I øjeblikket skal sideinddelte rapporter, der er publiceret i Power BI-tjenesten, bruge integrerede datasæt og datakilder. Du opretter den integrerede datakilde og det integrerede datasæt i Power BI Report Builder, mens du opretter din rapport. 
 
@@ -25,12 +27,12 @@ Du skal oprette en datakilde, før du kan oprette datasættet. Du kan få mere a
   
 1. Vælg **Nyt** > **Datasæt** i ruden Rapportdata i Power BI Report Builder.
 
-1. På fanen **Forespørgsel** i dialogboksen **Egenskaber for datasæt** skal du give et navn for datasættet. Den integrerede datakilde er allerede angivet i feltet **Datakilde**, eller du kan vælge **Ny**, hvis du vil oprette en anden integreret datakilde.
+1. På fanen **Forespørgsel** i dialogboksen **Egenskaber for datasæt** skal du give et navn for datasættet. Den integrerede datakilde er allerede angivet i feltet **Datakilde** , eller du kan vælge **Ny** , hvis du vil oprette en anden integreret datakilde.
  
    ![Nyt datasæt](media/paginated-reports-create-embedded-dataset/power-bi-paginated-new-dataset.png)  
 
 3. Under **Forespørgselstype** skal du vælge den kommandotype eller forespørgsel, der skal bruges til datasættet. 
-    - **Tekst** kører en forespørgsel for at hente data fra databasen. Det er standard, og denne fremgangsmåde bruges til de fleste forespørgsler. Skriv en forespørgsel, eller importér en eksisterende forespørgsel ved at vælge **Importér**. Hvis du vil oprette forespørgslen grafisk, skal du vælge **Forespørgselsdesigner**. Hvis du bruger forespørgselsdesigneren til at bygge en forespørgsel, vises forespørgselsteksten i dette felt. Vælg knappen **Udtryk** (**fx**) for at bruge et udtryk til at generere forespørgslen dynamisk. 
+    - **Tekst** kører en forespørgsel for at hente data fra databasen. Det er standard, og denne fremgangsmåde bruges til de fleste forespørgsler. Skriv en forespørgsel, eller importér en eksisterende forespørgsel ved at vælge **Importér**. Hvis du vil oprette forespørgslen grafisk, skal du vælge **Forespørgselsdesigner**. Hvis du bruger forespørgselsdesigneren til at bygge en forespørgsel, vises forespørgselsteksten i dette felt. Vælg knappen **Udtryk** ( **fx** ) for at bruge et udtryk til at generere forespørgslen dynamisk. 
     - Når du vælger **Tabel** markeres alle felterne i en tabel. Angiv navnet på den tabel, du vil bruge som et datasæt.
     - **Lagret procedure** kører en lagret procedure efter navn.
 
