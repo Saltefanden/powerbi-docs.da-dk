@@ -9,14 +9,16 @@ ms.author: maggies
 ms.reviewer: cfinlan
 ms.custom: ''
 ms.date: 09/09/2020
-ms.openlocfilehash: 7b12f6f6db864fb7b6af4df0d1019dc2eeed2617
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 0816ba6f3ff606a73c835ac71af66655fd49acfd
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91747476"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93298053"
 ---
 # <a name="url-parameters-in-paginated-reports-in-power-bi"></a>URL-parametre i sideinddelte rapporter i Power BI
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
 Du kan sende kommandoer til sideinddelte rapporter i Power BI ved at føje en parameter til en URL-adresse. For eksempel har du måske fået vist rapporten ved hjælp af et bestemt sæt rapportparameterværdier. Du kan indkapsle disse oplysninger i URL-adressen ved hjælp af foruddefinerede URL-adgangsparametre. Du kan desuden tilpasse, hvordan Power BI behandler rapporten, ved at integrere parametre for gengivelsesformater eller for udseendet og funktionaliteten af rapportværktøjslinjen. Du kan derefter indsætte denne URL-adresse direkte i en mail eller på en webside, så andre kan opleve din rapport på samme måde i browseren. 
 

@@ -9,14 +9,16 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.custom: seodec18
 ms.date: 08/04/2020
-ms.openlocfilehash: fe6ca733a5498c0e576ec30e6992ffbf26d54319
-ms.sourcegitcommit: 65822b51810a5239fea9d3d0af1fc286436c6cad
+ms.openlocfilehash: 97b93f23c8070af1b514032cea122b257097d664
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87837583"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93297939"
 ---
 # <a name="report-data-in-power-bi-report-builder"></a>Rapportdata i Power BI Report Builder
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
 Rapportdata kan stamme fra flere kilder af data i din organisation. Dit første trin til at designe en rapport i Power BI Report Builder er at oprette datakilder og datasæt, som repræsenterer de underliggende rapportdata. Hver datakilde indeholder oplysninger om dataforbindelse. Hvert datasæt indeholder en forespørgselskommando, der definerer det sæt af felter, der skal bruges som data fra en datakilde. Hvis du vil visualisere data fra hvert datasæt, skal du tilføje et dataområde, f.eks. en tabel, en matrix, et diagram eller et kort. Når rapporten behandles, kører forespørgslerne på datakilden, og hvert dataområde udvides efter behov for at vise forespørgselsresultaterne for datasættet.  
 

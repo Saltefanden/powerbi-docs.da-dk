@@ -8,14 +8,16 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
 ms.date: 04/29/2020
-ms.openlocfilehash: 9da6268e90e3f70797c2cfff19bb1d5c4b633e9a
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: d2cd4e9f5d6cb8872e266fabacb9f8a5a3e318cb
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91746579"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93298004"
 ---
 # <a name="subreports-in-power-bi-paginated-reports"></a>Underrapporter i sideinddelte rapporter i Power BI
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
 En *underrapport* er et sideinddelt rapportelement, der viser en anden sideinddelt rapport i den primære del af en sideinddelt hovedrapport. En underrapport i en rapport er begrebsmæssigt magen til en ramme på en webside. Du kan bruge den til at integrere en rapport i en anden rapport. Du kan bruge en hvilken som helst rapport som en underrapport. Du gemmer den rapport, der vises som underrapport, i det samme Premium-arbejdsområde som den overordnede rapport. Du kan designe den overordnede rapport, så den overfører parametre til underrapporten. En underrapport kan gentages i dataområder ved hjælp af en parameter til filtrering af data i hver enkelt forekomst af underrapporten.  
   
@@ -33,7 +35,7 @@ Power BI Report Builder kan arbejde med sideinddelte rapporter på computeren (k
 
 Efter du er logget på, kan du se muligheden **Power BI-tjeneste** i Power BI Report Builder for mulighederne **Åbn** og **Gem som** i menuen **Filer**. Når du vælger muligheden **Power BI-tjeneste** til at gemme en rapport, kan du oprette en liveforbindelse mellem Power BI Report Builder og Power BI-tjenesten. 
 
-:::image type="content" source="media/subreports/report-builder-subreport-open-service.png" alt-text="Log på Power BI":::
+:::image type="content" source="media/subreports/report-builder-subreport-open-service.png" alt-text="Åbn fra Power BI-tjenesten":::
 
 ## <a name="save-a-local-report-to-the-power-bi-service"></a>Gem en lokal rapport i Power BI-tjenesten
 
@@ -48,7 +50,7 @@ Du skal først oprette de to rapporter og gemme dem i det samme Power BI Premium
 
 3. I dialogboksen **Gem som** skal du vælge et Power BI Premium-arbejdsområde, hvor du kan gemme dine sideinddelte rapporter.  Premium-arbejdsområder har et rombeikon ![Premium-rombeikon](media/subreports/report-builder-premium-diamond.png) ud for deres navn.
 
-    :::image type="content" source="media/subreports/report-builder-subreport-save-as-service.png" alt-text="Log på Power BI":::
+    :::image type="content" source="media/subreports/report-builder-subreport-save-as-service.png" alt-text="Gem som i Power BI-tjenesten":::
 
 4. Vælg **Gem**.
 
@@ -58,7 +60,7 @@ Nu, hvor du har gemt begge rapporter i det samme Premium-arbejdsområde, kan du 
 
 1. På båndet **Indsæt** skal du vælge knappen **Underrapport** eller højreklikke på rapportlærredet og vælge **Indsæt** > **Underrapport**.
 
-    :::image type="content" source="media/subreports/report-builder-insert-subreport.png" alt-text="Log på Power BI":::
+    :::image type="content" source="media/subreports/report-builder-insert-subreport.png" alt-text="Indsæt en underrapport i en rapport":::
 
     Dialogboksen **Egenskaber for underrapport** åbnes.  
 

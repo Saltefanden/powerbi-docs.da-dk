@@ -7,14 +7,16 @@ ms.subservice: report-builder
 ms.topic: how-to
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: d3955b8dde22863e7b0224d335b162846e0741d2
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: 44f1c1280e176d99ab909402a77804074e7d8cbd
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86216831"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93298112"
 ---
 # <a name="create-a-paginated-report-based-on-a-power-bi-shared-dataset"></a>Opret en sideinddelt rapport baseret på et delt datasæt i Power BI
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)] 
 
 Du kan bruge et datasæt, som du opretter i Power BI Desktop, som en datakilde til sideinddelte rapporter i Power BI Report Builder. Forestil dig dette scenarie: Du har oprettet en Power BI-rapport i Power BI Desktop. Du har brugt en masse tid på at designe datamodellen og derefter oprettet en smuk Power BI-rapport med alle mulige flotte visuals. Rapporten har en matrix med mange rækker, så du skal rulle for at se dem alle. Dine rapportlæsere vil have en rapport, som de kan udskrive, og som viser alle rækkerne i den pågældende matrix. Det kan en sideinddelt rapport fra Power BI gøre: udskrive en tabel eller matrix, der fylder flere sider, med sidehoveder og sidefødder og et perfekt sidelayout, som du designer. Den vil supplere Power BI Desktop-rapporten. Du vil gerne have, at de skal være baseret på de samme data uden uoverensstemmelser, så du bruger det samme datasæt.
 
@@ -93,7 +95,7 @@ Her kan du se trinnene til hentning af forespørgslen.
 ## <a name="create-the-dataset-with-the-query"></a>Opret datasættet med forespørgslen
 
 1. Gå tilbage til Power BI Report Builder.
-1. Højreklik på datasættet under **Datakilder**, og vælg **Tilføj datasæt**.
+1. Højreklik på datasættet under **Datakilder** , og vælg **Tilføj datasæt**.
 
     ![Tilføj datasæt](media/report-builder-shared-datasets/power-bi-report-builder-add-dataset.png)
 
@@ -155,7 +157,7 @@ En hurtig måde at oprette en tabel på er at bruge guiden Tabel.
 
     ![Visningen Reportdesign](media/report-builder-shared-datasets/power-bi-report-builder-design-view.png)
 
-1. Vælg **Klik for at tilføje en titel**, og tilføj en titel.
+1. Vælg **Klik for at tilføje en titel** , og tilføj en titel.
 
 1. Vælg **Kør** for at få vist rapporten.
 
@@ -192,7 +194,7 @@ Du har flere formateringsmuligheder, så du kan få tabellen til at passe på é
 
     ![Angiv talformat](media/report-builder-shared-datasets/power-bi-report-builder-number-format.png)
 
-1. Skift typen af **Pladsholder** til **Eksempelværdier**, så du kan se formateringen i cellen. 
+1. Skift typen af **Pladsholder** til **Eksempelværdier** , så du kan se formateringen i cellen. 
 
     ![Se eksempelværdier](media/report-builder-shared-datasets/power-bi-report-builder-sample-values.png)
 
@@ -202,7 +204,7 @@ Du har flere formateringsmuligheder, så du kan få tabellen til at passe på é
 
 Selvom du har gjort margenerne og tabelkolonnerne smallere, kan du stadig komme ud for, at hver anden side er tom. Hvorfor? På grund af matematikken. 
 
-Når du tilføjer de sidemargener, du angiver, plus bredden af rapportens *brødtekst*, skal den være mindre end bredden af rapportformatet.
+Når du tilføjer de sidemargener, du angiver, plus bredden af rapportens *brødtekst* , skal den være mindre end bredden af rapportformatet.
 
 Antag f.eks., at din rapport har et format på 8,5" x 11", og du har angivet, at sidemargenerne skal være på 0,75" hver. De to margener udgør tilsammen 1,5", så brødteksten skal have en bredde på mindre end 7".
 

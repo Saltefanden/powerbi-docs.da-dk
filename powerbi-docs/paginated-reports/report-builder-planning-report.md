@@ -8,14 +8,16 @@ ms.topic: conceptual
 ms.assetid: 79113505-1ce8-4f8c-9260-d861838f7813
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 30ab632d11befd34ff9a234e441b345c696fb54d
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 3f075372436723cd8952decd68ecc764bd6e92a0
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78922982"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93297727"
 ---
 # <a name="planning-a-report-in-power-bi-report-builder"></a>Planlægning af en rapport i Power BI Report Builder
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
 Med Power BI Report Builder kan du oprette mange slags sideinddelte rapporter. Du kan f.eks. oprette rapporter, der viser en oversigt over eller detaljerede salgsdata, marketing- og salgstendenser, driftsrapporter eller dashboards. Du kan også oprette rapporter, der drager fordel af formateret tekst, f.eks. til salgsordrer, produktkataloger eller standardbreve. Alle disse rapporter oprettes ved hjælp af forskellige kombinationer af de samme grundlæggende byggesten i Report Builder. Hvis du vil oprette en nyttig rapport, der er let at forstå, er det en god idé at planlægge den først. Her er nogle ting, det kan være en god idé at overveje, før du går i gang:  
   
@@ -47,6 +49,6 @@ Overvej, om du vil skjule rapportelementer, herunder dataområder, grupper og ko
   
 Du kan gemme din rapport på din lokale computer og fortsætte med at arbejde på den eller køre den lokalt med dine egne oplysninger. Men hvis du vil dele rapporten med andre, skal du gemme den på Power BI. Hvis du gemmer den på Power BI, kan andre køre den, når de vil. Alternativt kan du konfigurere et abonnement og e-mail-levering af rapporten til andre personer. Du kan få rapporten leveret i et bestemt eksportformat, hvis du foretrækker det. 
   
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 - [Hvad er sideinddelte rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md)

@@ -8,14 +8,16 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
 ms.date: 09/28/2020
-ms.openlocfilehash: aa4df6db3058ef3d6f8c399e1bf20f0edf17ebc8
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: 217c1b571c01068d64283df0b25b5e56bbc8b956
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91600489"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93297282"
 ---
 # <a name="create-parameters-for-paginated-reports-in-the-power-bi-service"></a>Opret parametre for sideinddelte rapporter i Power BI-tjenesten
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
 I denne artikel kan du lære, hvordan du opretter parametre for sideinddelte rapporter i Power BI-tjenesten.  En rapportparameter gør det muligt at vælge rapportdata og variere rapportpræsentationen. Du kan angive en standardværdi og en liste over tilgængelige værdier. Dine rapportlæsere kan ændre valget. De kan også bruge tekstfelterne for parametre til at søge efter værdier. Se [Få vist parametre for sideinddelte rapporter](../consumer/paginated-reports-view-parameters.md) for at se, hvordan erhvervsbrugerne interagerer med parametre i Power BI-tjenesten.  
 

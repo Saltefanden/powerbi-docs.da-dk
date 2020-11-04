@@ -8,14 +8,16 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 10/19/2020
-ms.openlocfilehash: 2a0490106d5954a57abea1dd5de61f26f2fe2377
-ms.sourcegitcommit: eab5a02520c421a57019595c03e9ecfdb41d52ad
+ms.openlocfilehash: 7cba43ff6339ce890ca2f4f1744282648eaf877b
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92257006"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93297901"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Sideinddelte rapporter i Power BI: Ofte stillede spørgsmål 
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
 I denne artikel finder du svar på ofte stillede spørgsmål om sideinddelte rapporter. Disse rapporter indeholder megen formatering og er perfekt pixeleret output, der er optimeret til udskrivning eller generering af PDF. De kaldes "sideinddelte", fordi de er formateret til at passe godt på flere sider. Sideinddelte rapporter er baseret på RDL-rapportteknologien i SQL Server Reporting Services. 
 
@@ -72,9 +74,9 @@ Du får vist en fejlmeddelelse, og du kan ikke få vist rapporten, før arbejdsb
 
 Standardhukommelsen for hver Premium SKU for sideinddelte rapporter er:
 
-- **P1/A4**: 20 % som standard, minimum 10 %
-- **P2/A5**: 20 % som standard, minimum 5 %
-- **P3/A6**: 20 % som standard, minimum 2,5 %
+- **P1/A4** : 20 % som standard, minimum 10 %
+- **P2/A5** : 20 % som standard, minimum 5 %
+- **P3/A6** : 20 % som standard, minimum 2,5 %
 
 Power BI-administratorer kan ændre standardprocenten for maksimal hukommelse i administrationsportalen. Se arbejdsbelastningsafsnittet **Sideinddelte rapporter** under **Power BI Premium** under fanen **Kapacitetsindstillinger**.
 
@@ -181,7 +183,7 @@ Det er noget, du skal huske på, når du arbejder med dato/klokkeslæt-felter i 
 
 Når du får vist sideinddelte rapporter i Power BI-tjenesten, kan der opstå timeout for sessioner, der præsenterer brugeren med følgende meddelelse:
 
-:::image type="content" source="media/paginated-reports-faq/expired-session-notification.png" alt-text="Sideinddelte rapporter under fanen Kapacitetsindstillinger":::
+:::image type="content" source="media/paginated-reports-faq/expired-session-notification.png" alt-text="Meddelelse om udløb af session for sideinddelte rapporter":::
 
 - Sessionen får timeout efter 60 minutter med inaktivitet eller tidligere, når enheden er låst eller inaktiv, eller når rapporten ikke vises på den aktive fane i browseren.
 

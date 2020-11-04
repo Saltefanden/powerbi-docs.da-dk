@@ -8,14 +8,16 @@ ms.service: powerbi
 ms.subservice: ''
 ms.topic: how-to
 ms.date: 05/14/2020
-ms.openlocfilehash: 5ed7f3a05be1e600fc67e5162b496309ce315f94
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 41d59f12ad95430e13eb4d856bc1b7d321f7006f
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85230951"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93297351"
 ---
 # <a name="set-report-views-for-paginated-reports-in-the-power-bi-service"></a>Angiv rapportvisninger af sideinddelte rapporter i Power BI-tjenesten
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
 Når du gengiver en sideinddelt rapport i Power BI-tjenesten, er standardvisningen HTML-baseret og interaktiv. En anden rapportvisning af faste sideformater, f.eks. PDF, er den nye indstilling Sidevisning.
 

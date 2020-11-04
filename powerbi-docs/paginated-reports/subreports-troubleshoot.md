@@ -8,14 +8,16 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: troubleshooting
 ms.date: 04/29/2020
-ms.openlocfilehash: 6a0e90036b759c409a9f5b3e994571c2a0eb510c
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 06d9b0fc60d9b44f98108cf46bc35c5de15316d6
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91747499"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93297993"
 ---
 # <a name="troubleshoot-subreports-in-power-bi-paginated-reports"></a>Foretag fejlfinding af underrapporter i sideinddelte rapporter i Power BI
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
 Nogle gange kan du få et uventet resultat, når du bruger underrapporter i sideinddelte rapporter, eller funktionen fungerer ikke som forventet. Denne artikel indeholder løsninger på almindelige problemer, når der bruges underrapporter. En *underrapport* er et rapportelement, der viser en anden rapport i den primære del af en sideinddelt hovedrapport. Du kan finde flere oplysninger i [Underrapporter i sideinddelte rapporter i Power BI](subreports.md).
 

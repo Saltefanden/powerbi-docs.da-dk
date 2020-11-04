@@ -8,14 +8,16 @@ ms.subservice: report-builder
 ms.topic: how-to
 ms.date: 07/10/2020
 ms.author: maggies
-ms.openlocfilehash: f362303a79acb3468d6523eb24383ca0f3d49609
-ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
+ms.openlocfilehash: 05da5fa050fc92ebae320af9e07fe6505b5790f4
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "86264649"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93297972"
 ---
 # <a name="enter-data-directly-in-a-paginated-report-in-report-builder---power-bi"></a>Angiv data direkte i en sideinddelt rapport i Report Builder – Power BI
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
 I denne artikel får du mere at vide om en funktion i den nye version af Microsoft Power BI Report Builder, som gør det muligt at angive data direkte i en RDL-rapport som et integreret datasæt.  Denne funktion er magen til Power BI Desktop. Du kan skrive data direkte i et datasæt i din rapport eller indsætte dem vha. et andet program, f.eks. Microsoft Excel. Når du har oprettet et datasæt ved at angive data, kan du bruge det på præcis samme måde, som du ville bruge alle andre integrerede datasæt, du har oprettet. Du kan desuden tilføje mere end én tabel og bruge én som et filter for den anden. Denne funktion er især nyttig til små, statiske datasæt, som du evt. vil bruge i din rapport, f.eks. rapportparametre.
  
@@ -94,7 +96,7 @@ Nu, hvor du har en datakilde og et datasæt, er du klar til at oprette din rappo
 
     - Salgsbeløb
 
-    Report Builder opsummerer som standard felterne i boksen **Værdier**, men du kan vælge en anden sammenlægning.
+    Report Builder opsummerer som standard felterne i boksen **Værdier** , men du kan vælge en anden sammenlægning.
 
     :::image type="content" source="media/paginated-reports-enter-data/paginated-select-aggregation.png" alt-text="Skærmbillede af forskellige sammenlægninger, du kan vælge imellem.":::
  
