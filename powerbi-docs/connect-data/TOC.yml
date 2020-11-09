@@ -36,7 +36,7 @@
           href: service-tutorial-build-machine-learning-model.md
         - name: Opdater data fra SQL Server
           href: service-gateway-sql-tutorial.md
-    - name: Begreber
+    - name: Koncepter
       items:
         - name: Power BI-datakilder
           href: power-bi-data-sources.md
@@ -284,7 +284,7 @@
               href: service-gateway-personal-mode.md
             - name: Administrer gatewaydatakilder
               items:
-                - name: Administrer datakilder
+                - name: Tilføj eller fjern en gatewaydatakilde
                   href: service-gateway-data-sources.md
                 - name: Administrer din virksomheds datakilde – Analysis Services
                   href: service-gateway-enterprise-manage-ssas.md
