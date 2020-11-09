@@ -9,12 +9,12 @@ ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 03/18/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 533dba01bb975d774741643771415aaafa8f155c
-ms.sourcegitcommit: 70a892df1a0c196db58bf9165b3aa31b26bbe149
+ms.openlocfilehash: 94ffbb508fea27e8b80f137539b6120e4c094030
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "89092285"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92916722"
 ---
 # <a name="power-bi-paginated-reports-in-a-day-course"></a>Kurset Sideinddelte Power BI-rapporter på én dag
 
@@ -87,10 +87,10 @@ Du kan downloade og konfigurere en selvstudiepakke, der består af præsentation
 1. Åbn filegenskaberne for .zip-filen, og markér feltet Fjern blokering (Windows kan have markeret filen som potentielt upålidelig).
 1. Opret en kursusmappe i roden. Vi anbefaler, at du f.eks. kalder den "C:\Uddannelse". Det er vigtigt, at du husker placeringen, da du har brug for at åbne kursusfilerne under laboratorieøvelserne. Alle laboratoriedokumenterne henviser til denne placering som **&lt;CourseFolder&gt;** .
 1. Pak filen **PowerBIPRIAD-Student.zip** ud i rodmappen med kursusfilerne.
-1. Gå til mappen **&lt;CourseFolder&gt;\PowerBIPRIAD**, åbn filen **ReadMe.txt**, og følg installationsvejledningen.
+1. Gå til mappen **&lt;CourseFolder&gt;\PowerBIPRIAD** , åbn filen **ReadMe.txt** , og følg installationsvejledningen.
 
 > [!TIP]
-> Filen **ReadMe. txt**, laboratoriedokumenterne og præsentationsfilen (PDF) er tilgængelige på engelsk og følgende otte sprog:
+> Filen **ReadMe. txt** , laboratoriedokumenterne og præsentationsfilen (PDF) er tilgængelige på engelsk og følgende otte sprog:
 > - Tysk (de-DE)
 > - Spansk (es-ES)
 > - Fransk (fr-FR)
@@ -105,7 +105,7 @@ Du kan downloade og konfigurere en selvstudiepakke, der består af præsentation
 >
 > Du skal logge på Power BI for at udgive en Power BI Desktop-fil til et arbejdsområde. Udgivelsen resulterer i et datasæt, der bruges som en rapportdatakilde. Du behøver ikke at have en Power BI Pro-licens eller et Power BI Premium-abonnement for at bruge et datasæt som en rapportdatakilde.
 >
-> Nogle øvelser omfatter publicering af sideinddelte rapporter i et arbejdsområde. Du kan kun åbne en sideinddelt rapport, når den er gemt i et arbejdsområde i en [dedikeret kapacitet](../admin/service-premium-what-is.md#dedicated-capacities), hvor arbejdsbelastningen for sideinddelte rapporter er aktiveret. Hvis du ikke har adgang til et egnet arbejdsområde, får du i stedet vist et link i laboratoriet, hvor du kan se en video om rapportudgivelse.
+> Nogle øvelser omfatter publicering af sideinddelte rapporter i et arbejdsområde. Du kan kun åbne en sideinddelt rapport, når den er gemt i et arbejdsområde i en [kapacitet](../admin/service-premium-what-is.md#dedicated-capacities), hvor arbejdsbelastningen for sideinddelte rapporter er aktiveret. Hvis du ikke har adgang til et egnet arbejdsområde, får du i stedet vist et link i laboratoriet, hvor du kan se en video om rapportudgivelse.
 
 ## <a name="instructor-kit"></a>Instruktørpakke
 

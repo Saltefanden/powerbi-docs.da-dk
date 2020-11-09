@@ -8,14 +8,16 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 07/27/2020
-ms.openlocfilehash: f433a90580034495b4f7b1f6201c4481ffc627c5
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: d6f436477a8226dec870d039c8fe10491456a325
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90859859"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93298186"
 ---
 # <a name="supported-data-sources-for-power-bi-paginated-reports"></a>Understøttede datakilder for sideinddelte rapporter i Power BI
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
 I denne artikel præsenteres understøttede datakilder for sideinddelte rapporter i Power BI-tjenesten, og hvordan du opretter forbindelse til datakilder i Azure SQL Database. Nogle datakilder understøttes i det oprindelige miljø. Du kan oprette forbindelse til andre vha. datagateways.
 
@@ -57,7 +59,7 @@ Hvis du ikke angiver nogen legitimationsoplysninger, opstår der en fejl, når d
 
 ![Indstillinger for Azure SQL Database](media/paginated-reports-data-sources/power-bi-paginated-settings-azure-sql.png)
 
-Vælg linket **Rediger legitimationsoplysninger** for en given datakilde for at få vist dialogboksen **Konfigurer**:
+Vælg linket **Rediger legitimationsoplysninger** for en given datakilde for at få vist dialogboksen **Konfigurer** :
 
 ![Konfigurer Azure SQL Database](media/paginated-reports-data-sources/power-bi-paginated-configure-azure-sql.png)
 
@@ -65,9 +67,9 @@ Her er de understøttede godkendelsestyper for Azure SQL Database-datakilder:
 
 - Basic (brugernavn og adgangskode)
 - SSO (enkeltlogon)
-- OAuth2 (gemt AAD-token)
+- OAuth2 (lagret Azure Active Directory-token)
 
-[Understøttelse af AAD-godkendelse](/azure/sql-database/sql-database-aad-authentication-configure) skal være aktiveret for den Azure SQL Database-server, som datakilden opretter forbindelse til, for at SSO og OAuth2 fungerer korrekt. Til OAuth2-godkendelsesmetoden opretter AAD et token og gemmer det til fremtidig adgang til datakilderne. Hvis du i stedet vil bruge [SSO-godkendelsesmetoden](../connect-data/service-azure-sql-database-with-direct-connect.md#single-sign-on), skal du vælge SSO-muligheden lige under den, **Slutbrugere bruger deres egne OAuth2-legitimationsoplysninger til at få adgang til denne datakilde via DirectQuery**.
+[Understøttelse af Azure Active Directory-godkendelse](/azure/sql-database/sql-database-aad-authentication-configure) skal være aktiveret for den Azure SQL Database-server, som datakilden opretter forbindelse til, for at SSO og OAuth2 fungerer korrekt. Til OAuth2-godkendelsesmetoden opretter Azure Active Directory et token og gemmer det til fremtidig adgang til datakilderne. Hvis du i stedet vil bruge [SSO-godkendelsesmetoden](../connect-data/service-azure-sql-database-with-direct-connect.md#single-sign-on), skal du vælge SSO-muligheden lige under den, **Slutbrugere bruger deres egne OAuth2-legitimationsoplysninger til at få adgang til denne datakilde via DirectQuery**.
   
 ## <a name="next-steps"></a>Næste trin
 

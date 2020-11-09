@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/25/2020
 ms.author: kfollis
-ms.openlocfilehash: 20fb1f117432d5c36bfe0c536bc0803871134c95
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.openlocfilehash: 8b9c10c8b3faa87cfc19c3c1d8f87a36de0307dd
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91981521"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92916124"
 ---
 # <a name="service-interruption-notifications"></a>Meddelelser om tjenesteafbrydelser
 
@@ -21,7 +21,7 @@ Det er vigtigt at have indsigt i tilgængeligheden af dine missionskritiske virk
 
 ![Meddelelse via mail om opdatering](media/service-interruption-notifications/refresh-notification-email.png)
 
-På nuværende tidspunkt sender vi mails for følgende _pålidelighedsscenarier_:
+På nuværende tidspunkt sender vi mails for følgende _pålidelighedsscenarier_ :
 
 - Pålidelighed af åben rapport
 - Pålidelighed af opdatering af model
@@ -30,7 +30,7 @@ På nuværende tidspunkt sender vi mails for følgende _pålidelighedsscenarier_
 Der sendes meddelelser, når der er en _længere forsinkelse_ i handlinger såsom åbning af rapporter, opdateringer af datasæt eller udførelser af forespørgsler. Når en hændelse er løst, modtager du en opfølgningsmail.
 
 > [!NOTE]
-> Denne funktion er i øjeblikket kun tilgængelig for dedikerede kapaciteter i Power BI Premium. Den er ikke tilgængelig til delt eller integreret kapacitet.
+> Denne funktion er i øjeblikket kun tilgængelig for kapaciteter i Power BI Premium. Den er ikke tilgængelig til delt eller integreret kapacitet.
 
 ## <a name="capacity-and-reliability-notifications"></a>Notifikationer om kapacitet og pålidelighed
 

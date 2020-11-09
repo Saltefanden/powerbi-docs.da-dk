@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 07/24/2020
-ms.openlocfilehash: d361430387d9c24b8b4ef0b673c50cf4cec5a24b
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.date: 10/16/2020
+ms.openlocfilehash: 62add0b1268b06bb227bdc1b8ec2e4ae59358c57
+ms.sourcegitcommit: a5fa368abad54feb44a267fe26c383a731c7ec0d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87252588"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93044747"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Installér Power BI Desktop optimeret til Power BI-rapportserver
 
@@ -45,9 +45,9 @@ Den nemmeste måde til at sikre, at du har den nyeste version af Power BI Deskto
     Programmet starter automatisk, og du er klar til at gå i gang.
 
 ## <a name="verify-youre-using-the-correct-version"></a>Kontrollér, at du bruger den korrekte version
-Det er nemt at kontrollere, at du bruger den korrekte version af Power BI Desktop: Se på startskærmen eller titellinjen i Power BI Desktop. Du kan se, at du har den rigtige version, hvis der står **Power BI Desktop (maj 2020)** i titellinjen. Farverne i Power BI-logoet er også omvendt: gul på sort i stedet for sort på gul.
+Det er nemt at kontrollere, at du bruger den korrekte version af Power BI Desktop: Se på startskærmen eller titellinjen i Power BI Desktop. Du kan se, at du har den rigtige version, fordi der står **Power BI Desktop (oktober 2020)** i titellinjen. Farverne i Power BI-logoet er også omvendt: gul på sort i stedet for sort på gul.
 
-![Power BI Desktop maj 2020](media/install-powerbi-desktop/power-bi-report-server-desktop-may-2020.png)
+![Power BI Desktop oktober 2020](media/install-powerbi-desktop/power-bi-report-server-desktop-may-2020.png)
 
 I versionen af Power BI Desktop til Power BI-tjenesten vises måned og årstal ikke på titellinjen.
 

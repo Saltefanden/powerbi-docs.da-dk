@@ -10,15 +10,15 @@ ms.topic: reference
 ms.date: 08/24/2020
 ms.custom: contperfq1
 ms.author: mihart
-ms.openlocfilehash: 012fad9cd566018a6fd0d96fb172fadd816e3420
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 47526e06da24f720f273c45616a012483f077ed5
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860848"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92916584"
 ---
 # <a name="glossary-for-business-users-of-the-power-bi-service"></a>Ordliste til virksomhedsbrugere af Power BI-tjenesten    
-Power BI-tjenesten kan introducere terminologi, som er ukendt eller forvirrende. Ordlisten er et godt sted at søge efter terminologi, og du kan endda markere den med et bogmærke. En anden fantastisk ressource, hvor du kan få mere at vide om de komponenter, der udgør Power BI-tjenesten, er [Grundlæggende begreber](end-user-basic-concepts.md). Grundlæggende begreber giver et godt overblik over Power BI-*enheder*, og hvordan de er forbundet.
+Power BI-tjenesten kan introducere terminologi, som er ukendt eller forvirrende. Ordlisten er et godt sted at søge efter terminologi, og du kan endda markere den med et bogmærke. En anden fantastisk ressource, hvor du kan få mere at vide om de komponenter, der udgør Power BI-tjenesten, er [Grundlæggende begreber](end-user-basic-concepts.md). Grundlæggende begreber giver et godt overblik over Power BI- *enheder* , og hvordan de er forbundet.
 
 Denne ordliste er blevet til takket være communityet.  Er der et ord, du ikke kan finde her? Bed os om at tilføje det. Du kan bruge knappen til dokumentationsfeedback nederst i denne artikel.
 
@@ -52,7 +52,7 @@ Centraliseret onlinelager, hvor du kan gennemse og finde dashboards, rapporter, 
 ArcGIS er en tilknytnings- og analyseplatform, der er oprettet af virksomheden ESRI. Navnet på den visualisering, der er inkluderet i biblioteket med visualiseringer i Power BI, kaldes ArcGIS for Power BI.
 
 **tildele**    
-[Power BI Premium] Verbum, der dækker over flytning af et arbejdsområde ind i eller ud af en dedikeret kapacitet. Brug ikke hævning for at flytte et arbejdsområde til dedikeret kapacitet, fordi det betyder, at dedikeret kapacitet ligger over delt kapacitet. 
+[Power BI Premium] Verbum, der dækker over flytning af et arbejdsområde ind eller ud af en kapacitet. Brug ikke hævning for at flytte et arbejdsområde til en kapacitet, fordi det betyder, at kapaciteten ligger over den delte kapacitet. 
 
 **Automatisk indsigt**    
 Kaldes nu *Hurtig indsigt*.
@@ -71,6 +71,9 @@ Navigationen øverst til venstre, hvor du hurtigt kan navigere mellem rapporter 
 
 **beregning**    
 En matematisk bestemmelse af størrelsen eller antallet af noget.
+
+**Kapacitet**    
+[Power BI Premium] Datamodeller, der kører på dedikeret hardware i Microsoft-clouddatacentre for at sikre ensartet ydeevne i stor skala. BI-løsninger leveres til hele organisationen, uanset Power BI-licens.
 
 **kort** (visualiseringstype)    
 En [visualiseringstype](end-user-visual-type.md) i Power BI.
@@ -136,12 +139,8 @@ Dataflow anvendes til at indtage, transformere, integrere og forbedre big data v
 **datasæt** vs. **datakilde**    
 Et **datasæt** er en samling data, der bruges til at oprette visualiseringer og rapporter.
 
-**dedikeret kapacitet**    
-[Power BI Premium] Datamodeller, der kører på dedikeret hardware i Microsoft-clouddatacentre for at sikre ensartet ydeevne i stor skala. BI-løsninger leveres til hele organisationen, uanset Power BI-licens.
-
 **Desktop** eller **Power BI Desktop**    
 Gratis Power BI-værktøj, der primært bruges af rapportdesignere, administratorer og udviklere. 
-
 
 **rombe**    
 Power BI Premium. Formen på det ikon, der angiver, at et arbejdsområde er et arbejdsområde i Premium-kapacitet.
@@ -232,7 +231,7 @@ Nøgletalsindikatorer. En type visualisering.
 ## <a name="l"></a>L
 
 **venstre navigation**    
-Den er blevet erstattet med **navigationsruden**, men vises måske stadig i noget af dokumentationen.    
+Den er blevet erstattet med **navigationsruden** , men vises måske stadig i noget af dokumentationen.    
 Kontrolelementerne langs den venstre kant af Power BI-tjenesten.
 
 Almindeligt brugt: navigationsrude, ved lidt plads: nav.rude
@@ -240,9 +239,9 @@ Almindeligt brugt: navigationsrude, ved lidt plads: nav.rude
 **licens**    
 Dit adgangsniveau bestemmes af den Power BI-licens, der er knyttet til din konto, og den kapacitetstype, som indhold gemmes i. I en delt kapacitet kan brugere med f.eks. en Power BI Pro-licens kun samarbejde med andre brugere, der har en Pro-licens. I en delt kapacitet giver en gratis licens kun adgang til brugerens personlige arbejdsområde. Men når indholdet er i en Premium-kapacitet, kan brugere med en Pro-licens dele det pågældende indhold med brugere, der har fået tildelt en gratis licens. 
 
-En licens tildeles en bruger og kan være en gratis licens eller en Pro-licens. Afhængigt af hvordan licensen blev erhvervet, kan den være betalt eller gratis. Kontiene er enten pr. bruger eller pr. organisation. Kontiene pr. bruger er tilgængelige som *gratis* eller *Pro*.  En *gratis* bruger af Power BI benytter enten en separat udgave af Power BI Desktop eller Power BI-tjenesten eller bruger en Power BI-tjeneste i en organisation, der har et Premium-organisationsabonnement. Power BI *Pro*-kontoen pr. bruger er et betalt månedligt abonnement, der gør det muligt at samarbejde og dele indhold med andre *Pro*-brugere. 
+En licens tildeles en bruger og kan være en gratis licens eller en Pro-licens. Afhængigt af hvordan licensen blev erhvervet, kan den være betalt eller gratis. Kontiene er enten pr. bruger eller pr. organisation. Kontiene pr. bruger er tilgængelige som *gratis* eller *Pro*.  En *gratis* bruger af Power BI benytter enten en separat udgave af Power BI Desktop eller Power BI-tjenesten eller bruger en Power BI-tjeneste i en organisation, der har et Premium-organisationsabonnement. Power BI *Pro* -kontoen pr. bruger er et betalt månedligt abonnement, der gør det muligt at samarbejde og dele indhold med andre *Pro* -brugere. 
 
-Det organisatoriske *Premium*-abonnement (også kaldet *Premium-kapacitet*) tilføjer et lag af funktioner oven på licenserne pr. bruger. Indehavere af en *gratis* konto pr. bruger i en organisation, der har et *Premium*-abonnement, kan foretage sig meget mere med Power BI end *gratis* brugere uden *Premium*. *Gratis* brugere i *Premium*-organisationskonti kan f.eks. samarbejde med kolleger og få vist indhold, der hostes i en Power BI Premium kapacitet. 
+Det organisatoriske *Premium* -abonnement (også kaldet *Premium-kapacitet* ) tilføjer et lag af funktioner oven på licenserne pr. bruger. Indehavere af en *gratis* konto pr. bruger i en organisation, der har et *Premium* -abonnement, kan foretage sig meget mere med Power BI end *gratis* brugere uden *Premium*. *Gratis* brugere i *Premium* -organisationskonti kan f.eks. samarbejde med kolleger og få vist indhold, der hostes i en Power BI Premium kapacitet. 
 
 **listeside** eller **indholdsliste**    
 En af afsnitssiderne for elementerne i navigationsruden. F.eks. Favoritter, Seneste, Mit arbejdsområde osv.
@@ -259,14 +258,14 @@ Apps, der giver dig mulighed for at køre Power BI på iOS-, Android- og Windows
 [Power BI Desktop] Gør de data, du har oprettet forbindelse til, klar til brug i Power BI. Dette omfatter oprettelse af relationer mellem tabeller i flere datakilder, oprettelse af målinger og tildeling af målepunkter.
 
 **Mit arbejdsområde**    
-Det arbejdsområde, hvor den enkelte Power BI-kunde kan oprette indhold. Hvis de vil bundte noget, der er oprettet her, i en app, og de har *designertilladelser*, uploader de det til det relevante arbejdsområde eller opretter et nyt.
+Det arbejdsområde, hvor den enkelte Power BI-kunde kan oprette indhold. Hvis de vil bundte noget, der er oprettet her, i en app, og de har *designertilladelser* , uploader de det til det relevante arbejdsområde eller opretter et nyt.
 
 ## <a name="n"></a>N
 
 **oprindelig**    
 Inkluderet i produktet. Power BI leveres f.eks. med et sæt *oprindelige* visualiseringstyper. Men du kan også importere andre typer, f.eks. Power BI-visualiseringer.
 
-**navigationsrude** ****    
+**navigationsrude**     
 Kontrolelementerne langs den venstre kant i Power BI-tjenesten.
 
 Almindeligt brugt: navigationsrude, ved lidt plads: nav.rude
@@ -296,7 +295,7 @@ PaaS står for Platform as a Service. F.eks. Power BI Embedded.
 Rapporter har én eller flere sider. Hver fane nederst på rapportlærredet repræsenterer en side.
 
 **sideinddelte rapporter**    
-Sideinddelte rapporter er designet til at skulle udskrives eller deles. De kaldes *sideinddelte*, fordi de er formateret til at passe godt på en side. De viser alle data i en tabel, selvom tabellen strækker sig over flere sider. De kaldes også perfekt pixel, fordi du kan styre layoutet af rapportsiderne helt præcist. Power BI Report Builder er det separate værktøj, der bruges til oprettelse af sideinddelte rapporter.
+Sideinddelte rapporter er designet til at skulle udskrives eller deles. De kaldes *sideinddelte* , fordi de er formateret til at passe godt på en side. De viser alle data i en tabel, selvom tabellen strækker sig over flere sider. De kaldes også perfekt pixel, fordi du kan styre layoutet af rapportsiderne helt præcist. Power BI Report Builder er det separate værktøj, der bruges til oprettelse af sideinddelte rapporter.
 
 **pbiviz**    
 Filtypenavnet for en brugerdefineret Power BI-visualisering.
@@ -305,7 +304,7 @@ Filtypenavnet for en brugerdefineret Power BI-visualisering.
 Filtypenavnet for en Power BI Desktop-fil.
 
 **tilladelser**    
-Det, en bruger kan og ikke kan gøre i Power BI, er baseret på tilladelser. Som *forbruger* har du ikke har de samme tilladelser som en *designer*, administrator eller udvikler.
+Det, en bruger kan og ikke kan gøre i Power BI, er baseret på tilladelser. Som *forbruger* har du ikke har de samme tilladelser som en *designer* , administrator eller udvikler.
 
 **telefonrapport**    
 Betegnelsen for en Power BI-rapport, der er blevet formateret til visning på telefonen.
@@ -316,7 +315,7 @@ Den brugergrænseflade i Power BI-tjenesten, der bruges til visning af telefonra
 **fastgøre, frigøre**    
 Den handling, hvor en *rapportdesigner* tager en visualisering, normalt fra en rapport, og placerer den på et dashboard.
 
-**Power BI**, **Power BI-tjenesten**, **Power BI Desktop**, **Power BI – Mobil**    
+**Power BI** , **Power BI-tjenesten** , **Power BI Desktop** , **Power BI – Mobil**    
 Nogle af Power BI-tilbuddene. *Power BI* er det generelle begreb. Det bruges ofte i stedet for det fulde produktnavn, f.eks. *Power BI-tjenesten* og *Power BI – Mobil* efter den første forekomst af det fulde produktnavn.
 
 **Power BI Desktop**    
@@ -341,9 +340,9 @@ Dette en rapportserver i det lokale miljø med en webportal, hvor du kan få vis
 En online SaaS-tjeneste (Software as a Service). Du kan finde flere oplysninger under [Hvad er Power BI](../fundamentals/power-bi-overview.md)?
 
 **Premium-arbejdsområde**    
-Et arbejdsområde, der kører i en dedikeret kapacitet, som er angivet over for kunderne med et rombeikon.  
+Et arbejdsområde, der kører i en kapacitet, som er angivet over for kunderne med et rombeikon.  
 
-**Pro**-licens eller **Pro**-konto. Se *konto*.
+**Pro** -licens eller **Pro** -konto. Se *konto*.
 
 **publicere**    
 *Rapportdesignere* i Power BI-tjenesten bundter indholdet af et Power BI-arbejdsområde for at gøre det tilgængeligt for andre som en Power BI-app. *Rapportdesignere* i Power BI Desktop bruger Publicer til at henvise til at sende en Power BI Desktop-rapport i PBIX-format til Power BI-tjenesten, så de kan oprette dashboards ud fra dem og nemt dele dem med andre. 
@@ -432,7 +431,7 @@ Et sæt værktøjer og tjenester i det lokale miljø til at oprette, udrulle og 
 **streamingdata**    
 Se *streaming i realtid*.
 
-**abonnementer**, **Abonnere**     
+**abonnementer** , **Abonnere**     
 Du kan abonnere på rapportsider, apps og dashboards og modtage mails, der indeholder et snapshot. Kræver en Power BI Pro-licens.
 
 **opsummering**    

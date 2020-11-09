@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 05/26/2019
+ms.date: 10/29/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 5d8841c35b2086f9a7e452cdcb4aa9a0fc4c16bd
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: 899dc5092ac86e08d552758e74dfabd8b373f5c0
+ms.sourcegitcommit: a5fa368abad54feb44a267fe26c383a731c7ec0d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91599639"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93044708"
 ---
 # <a name="configure-multi-geo-support-for-power-bi-premium"></a>Konfigurer understøttelse af Multi-Geo til Power BI Premium
 
@@ -90,14 +90,16 @@ Du kan fjerne arbejdsområder fra Multi-Geo-kapacitet på to måder:
 - Slet den aktuelle kapacitet, hvor arbejdsområdet er placeret.  Derved flyttes arbejdsområdet tilbage til delt kapacitet i det lokale område.
 - Overfør individuelle arbejdsområder tilbage til Premium-kapacitet, der er placeret i den lokale lejer.
 
+Datasæt med store lagerformater bør ikke flyttes fra det område, hvor de blev oprettet. Rapporter, der er baseret på et datasæt i et stort format, kan ikke indlæse datasættet og returnerer fejlen *Modellen kan ikke indlæses*. Flyt datasættet med det store lagerformat tilbage til det oprindelige område for at gøre det tilgængeligt igen.
+
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
 
 - Bekræft, at enhver bevægelse, du indleder mellem områder, opfylder alle erhvervs- og myndighedsbestemmelser før igangsætning af dataoverførslen.
 - En cachelagret forespørgsel, der er gemt i et fjernområde, forbliver i dette område som inaktive data. Dog kan andre data under overførsel føres frem og tilbage mellem flere geografiske områder.
 - Når du flytter data fra ét område til et andet i et Multi-Geo-miljø, kan kildedataene forblive i det område, hvorfra dataene blev flyttet, i op til 30 dage. I denne periode har slutbrugere ikke adgang til dem. De fjernes fra det pågældende område og destrueres i løbet perioden på 30 dage.
 - Forespørgselsteksten og forespørgselsresultattrafikken for importerede datamodeller passerer ikke gennem hjemmeområdet. Rapportens metadata kommer stadig fra det eksterne område, og visse DNS-routing-tilstande kan føre trafik ud af området. 
-
 - Funktionen [Dataflow](../transform-model/service-dataflows-overview.md) understøttes ikke på Multi-GEO i øjeblikket.
+- Flytning af datasæt i store lagerformater fra det område, hvor de blev oprettet, medfører, at rapporter ikke kan indlæse datasættet. Flyt datasættet med det store lagerformat tilbage til det oprindelige område for at gøre det tilgængeligt. 
 
 ## <a name="next-steps"></a>Næste trin
 

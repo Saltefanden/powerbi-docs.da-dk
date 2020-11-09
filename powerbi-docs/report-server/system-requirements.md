@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/17/2020
-ms.openlocfilehash: 4579296568524304f416d8e353dcbccac77bfc63
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.date: 10/29/2020
+ms.openlocfilehash: 30e8f1cb1ef8f12d9573d77a70771eef915a2704
+ms.sourcegitcommit: a5fa368abad54feb44a267fe26c383a731c7ec0d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90861745"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93044803"
 ---
 # <a name="hardware-and-software-requirements-for-installing-power-bi-report-server"></a>Hardware- og softwarekrav til installation af Power BI-rapportserver
 
@@ -23,7 +23,7 @@ I denne artikel kan du se minimumkrav til hardware og software, hvis du vil inst
 
 | Komponent | Krav |
 | --- | --- |
-| .NET Framework |4.7<br><br>Du kan installere .NET Framework manuelt fra [Microsoft .NET Framework 4.7 (webinstallation) til Windows](https://support.microsoft.com/en-us/kb/3186500).<br/><br/> Du kan få yderligere oplysninger, anbefalinger og vejledning om .NET Framework 4.7 i [.NET Framework-installationsvejledning for udviklere](/dotnet/framework/deployment/deployment-guide-for-developers).<br/><br/>Windows 8.1 og Windows Server 2012 R2 kræver [KB2919355](https://support.microsoft.com/kb/2919355), før du installerer .NET Framework 4.7. |
+| .NET Framework |4.8<br><br>Du kan installere .NET Framework manuelt fra [Microsoft .NET Framework 4.8 (webinstallation) til Windows](https://support.microsoft.com/en-us/help/4503548/).<br/><br/> Du kan få yderligere oplysninger, anbefalinger og vejledning om .NET Framework 4.8 i [.NET Framework-installationsvejledning for udviklere](/dotnet/framework/deployment/deployment-guide-for-developers).<br/><br/>Windows 8.1 og Windows Server 2012 R2 kræver [KB2919355](https://support.microsoft.com/kb/2919355), før du installerer .NET Framework 4.8. |
 | Harddisk |Power BI-rapportserver kræver minimum 1 GB ledig plads på harddisken.<br><br>Yderligere plads kræves på den databaseserver, der skal hoste rapportserverdatabasen. |
 | Hukommelse |**Minimum:** 1 GB<br/><br/> **Anbefalet:** Mindst 4 GB |
 | Processorhastighed |**Minimum:** x64-processor: 1,4 GHz<br/><br/> **Anbefalet:** 2,0 GHz eller hurtigere |

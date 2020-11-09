@@ -10,12 +10,12 @@ ms.date: 06/24/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 825b336a96b998c04b019195ad3f3beea96d0a19
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 86a28c1d89537a59bf96d82fb3df87a4a0ccf391
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90857283"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92916078"
 ---
 # <a name="licensing-the-power-bi-service-for-users-in-your-organization"></a>Licens til Power BI-tjenesten for brugere i din organisation
 
@@ -55,7 +55,7 @@ Når du deaktiverer tilmelding via selvbetjening, kan brugerne ikke udforske Pow
 1. Vælg **Fakturering** > **Køb tjenester** i navigationsmenuen.
 1. Søg eller rul for at finde Power BI (gratis)-tilbuddet. Vælg tilbuddet, og vælg derefter **Hent nu**.
 1. Angiv det antal licenser, der kræves for at dække alle dine brugere.
-1. Vælg **Tildel automatisk alle brugere uden licenser**, og tjek derefter ud.
+1. Vælg **Tildel automatisk alle brugere uden licenser** , og tjek derefter ud.
 
   ![Skærmbillede af det gratis automatisk tildelte abonnement Power BI-abonnement med der viser tilmelding til selvbetjening.](media/service-admin-licensing-organization/m365-auto-assign.png)
 
@@ -84,7 +84,7 @@ Der findes to typer Power BI-abonnementer til organisationer: Standard og Premiu
 
 Med et selvbetjent Power BI Pro-standardabonnement kan administratorer tildele licenser pr. bruger. Der er et månedligt gebyr pr. bruger for Power BI Pro-licenser. Denne licenstype gør det muligt at samarbejde, publicere, dele og udføre ad hoc-analyser. Indhold gemmes i en delt lagerkapacitet, som er fuldt administreret af Microsoft.
 
-Med et Power BI Premium-abonnement tildeles en dedikeret kapacitet til en organisation. Premium er velegnet til BI i virksomheder, big data-analyse samt rapportering i cloudmiljøet og det lokale miljø. Det muliggør avanceret administration og styring af udrulning. Dedikerede beregnings- og lagerressourcer administreres af kapacitetsadministratorer i organisationen. Der er en månedlig omkostning for dette dedikerede miljø. Foruden andre Premium-fordele kan indhold, der gemmes i en Premium-kapacitet, tilgås af og distribueres til brugere, der ikke har Power BI Pro-licenser. Mindst én bruger skal være tildelt en Power BI Pro-licens for at bruge Premium, og indholdsskabere og udviklere skal stadig have en Power BI Pro-licens.
+Med et Power BI Premium-abonnement tildeles en kapacitet til en organisation. Premium er velegnet til BI i virksomheder, big data-analyse samt rapportering i cloudmiljøet og det lokale miljø. Det muliggør avanceret administration og styring af udrulning. Dedikerede beregnings- og lagerressourcer administreres af kapacitetsadministratorer i organisationen. Der er en månedlig omkostning for dette dedikerede miljø. Foruden andre Premium-fordele kan indhold, der gemmes i en Premium-kapacitet, tilgås af og distribueres til brugere, der ikke har Power BI Pro-licenser. Mindst én bruger skal være tildelt en Power BI Pro-licens for at bruge Premium, og indholdsskabere og udviklere skal stadig have en Power BI Pro-licens.
 
 De to abonnementstyper er ikke indbyrdes uforenelige. Du kan have både Power BI Premium og Power BI Pro. I denne konfiguration kan indhold, der er gemt i en Premium-kapacitet, deles med alle brugere, og delt indhold er også tilgængeligt. Du kan finde oplysninger om kapacitetsgrænser under [Administrer datalager i Power BI-arbejdsområder](service-admin-manage-your-data-storage-in-power-bi.md).
 

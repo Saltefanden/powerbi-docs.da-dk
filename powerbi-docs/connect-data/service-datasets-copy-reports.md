@@ -6,22 +6,24 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 04/30/2020
+ms.date: 10/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 86c663e7b9ba035af6592dc10972d868344df7f7
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 4b9573d0a24efdbb4c0b5a4130f973a0dfac0f10
+ms.sourcegitcommit: 8861dac6724202a5b3be456a6aff8f3584e0cccf
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91633202"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93132315"
 ---
 # <a name="copy-reports-from-other-workspaces"></a>Kopiér rapporter fra andre arbejdsområder
 
 Når du finder en rapport, du vil bruge i et arbejdsområde eller en app, kan du lave en kopi af den og gemme den i et andet arbejdsområde. Du kan derefter ændre din kopi af rapporten og tilføje eller slette visualiseringer og andre elementer. Du behøver ikke at oprette datamodellen. Den er allerede oprettet for dig. Og det er meget nemmere at redigere en eksisterende rapport end at starte forfra. Når du opretter en app fra dit arbejdsområde, kan du dog nogle gange ikke publicere din kopi af rapporten i appen. Se yderligere oplysninger under [Overvejelser og begrænsninger i artiklen "Brug datasæt på tværs af arbejdsområder"](service-datasets-across-workspaces.md#considerations-and-limitations).
 
-> [!NOTE]
-> Hvis du vil lave en kopi, skal du have en Pro-licens, selvom den oprindelige rapport er i et arbejdsområde med en Premium-kapacitet.
+## <a name="prerequisites"></a>Forudsætninger
+
+- Hvis du vil kopiere en rapport, skal du have en Pro-licens, selvom den oprindelige rapport er i et arbejdsområde i en Premium-kapacitet.
+- Hvis du vil kopiere en rapport eller oprette en rapport i et andet arbejdsområde, der er baseret på et datasæt i et andet arbejdsområde, skal du have tilladelsen Opret for datasættet. Personer med rolle som administrator, medlem eller bidragyder får automatisk Build-tilladelse til datasæt i det oprindelige arbejdsområde gennem deres rolle i arbejdsområdet. Se [Roller i de nye arbejdsområder](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces) for at få flere oplysninger.
 
 ## <a name="save-a-copy-of-a-report-in-a-workspace"></a>Gem en kopi af en rapport i et arbejdsområde
 
@@ -33,7 +35,7 @@ Når du finder en rapport, du vil bruge i et arbejdsområde eller en app, kan du
 
     ![Gem en kopi af en rapport](media/service-datasets-copy-reports/power-bi-dataset-save-report-copy.png)
 
-    Du kan kun se ikonet **Gem en kopi**, hvis rapporten er i et arbejdsområde med den nye oplevelse, og du har [tilladelsen Opret](service-datasets-build-permissions.md). Selvom du har adgang til arbejdsområdet, skal du have tilladelsen Opret for datasættet.
+    Du kan kun se ikonet **Gem en kopi** , hvis rapporten er i et arbejdsområde med den nye oplevelse, og du har [tilladelsen Opret](service-datasets-build-permissions.md). Selvom du har adgang til arbejdsområdet, skal du have tilladelsen Opret for datasættet.
 
 3. Navngiv rapporten, og vælg destinationsarbejdsområdet under **Gem en kopi af denne rapport**.
 
@@ -58,7 +60,7 @@ Når du finder en rapport, du vil bruge i et arbejdsområde eller en app, kan du
 
     ![Gem en kopi af rapporten](media/service-datasets-copy-reports/power-bi-save-copy.png)
 
-    Du kan kun se indstillingen **Gem en kopi**, hvis rapporten er i et arbejdsområde med den nye oplevelse, og du har [tilladelsen Opret](service-datasets-build-permissions.md).
+    Du kan kun se indstillingen **Gem en kopi** , hvis rapporten er i et arbejdsområde med den nye oplevelse, og du har [tilladelsen Opret](service-datasets-build-permissions.md).
 
 3. Giv din rapport et navn > **Gem**.
 

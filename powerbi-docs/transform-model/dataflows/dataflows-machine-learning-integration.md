@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 10/01/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: aca67da12bd1a80337a269c779691401161a4e83
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: a2622d2d3da5e4149e93a2b4b6f04dc87b55d9e1
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91637734"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92917021"
 ---
 # <a name="ai-with-dataflows"></a>AI med dataflow
 
@@ -112,7 +112,7 @@ Dataflow omfatter selvbetjent dataforberedelse af big data. AutoML er integreret
 
 AutoML i Power BI gør det muligt for dataanalytikere at bruge dataflows til at bygge modeller til maskinel indlæring med en forenklet oplevelse udelukkende ved hjælp af Power BI-færdigheder. Det meste af datavidenskaben bag oprettelsen af ML-modellerne er automatiseret i Power BI. Der er retningslinjer, som sikrer, at den skabte model er af god kvalitet og giver synlighed i den proces, der blev brugt til at skabe ML-modellen.
 
-AutoML understøtter oprettelsen af **modeller til binær forudsigelse**, **klassificering** og **regression** til dataflow. Dette er overvågede tekniktyper til maskinel indlæring, hvilket betyder, at de lærer fra kendte resultater af tidligere observationer for at forudsige resultatet af andre observationer. Inputdatasættet til oplæring af en AutoML-model er et sæt poster, der er **mærket** med de kendte resultater.
+AutoML understøtter oprettelsen af **modeller til binær forudsigelse** , **klassificering** og **regression** til dataflow. Dette er overvågede tekniktyper til maskinel indlæring, hvilket betyder, at de lærer fra kendte resultater af tidligere observationer for at forudsige resultatet af andre observationer. Inputdatasættet til oplæring af en AutoML-model er et sæt poster, der er **mærket** med de kendte resultater.
 
 AutoML i Power BI integrerer [automatiseret maskinel indlæring](https://docs.microsoft.com/azure/machine-learning/service/concept-automated-ml) fra [Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/service/overview-what-is-azure-ml) for at oprette dine modeller til maskinel indlæring. Du behøver dog ikke et Azure-abonnement for at bruge AutoML i Power BI. Processen til oplæring og hosting af ML-modeller administreres udelukkende af Power BI-tjenesten.
 
@@ -182,7 +182,7 @@ Derefter anvendes stikprøvetagning og normalisering for dataene, som nødvendig
 
 AutoML anvender flere transformationer på hvert valgte inputfelt på baggrund af feltets datatype og dets statistiske egenskaber. AutoML bruger disse transformationer til at udtrække funktioner, som kan bruges til oplæring af din ML-model.
 
-Oplæringsprocessen for AutoML-modeller består af op til 50 gentagelser med forskellige modelalgoritmer og indstillinger for hyperparametre for at finde modellen med den bedste ydeevne. Oplæringen kan slutte tidligt med færre gentagelser, hvis AutoML bemærker, at der ikke er nogen forbedring af ydeevnen. Ydeevnen for hver af disse modeller vurderes ved hjælp af validering med testdatasættet. I løbet af dette oplæringstrin opretter AutoML flere pipelines til oplæring og validering af disse gentagelser. Processen med at vurdere modellernes ydeevne kan tage alt lige fra adskillige minutter til et par timer op til den oplæringstid, der er konfigureret i guiden, afhængigt af størrelsen af datasættet og de tilgængelige dedikerede kapacitetsressourcer.
+Oplæringsprocessen for AutoML-modeller består af op til 50 gentagelser med forskellige modelalgoritmer og indstillinger for hyperparametre for at finde modellen med den bedste ydeevne. Oplæringen kan slutte tidligt med færre gentagelser, hvis AutoML bemærker, at der ikke er nogen forbedring af ydeevnen. Ydeevnen for hver af disse modeller vurderes ved hjælp af validering med testdatasættet. I løbet af dette oplæringstrin opretter AutoML flere pipelines til oplæring og validering af disse gentagelser. Processen med at vurdere modellernes ydeevne kan tage alt lige fra adskillige minutter til et par timer op til den oplæringstid, der er konfigureret i guiden, afhængigt af størrelsen af datasættet og de tilgængelige kapacitetsressourcer.
 
 I nogle tilfælde kan den endelige model, der genereres, bruge Ensemble Learning, hvor der bruges flere modeller til at levere en bedre forudsigelsesydeevne.
 
@@ -202,7 +202,7 @@ De diagrammer og målinger, der bruges til at beskrive modellens ydeevne i rappo
 
 Yderligere sider i rapporten kan beskrive statistiske målinger om modellen fra et datavidenskabeligt perspektiv. Rapporten med **binære forudsigelser** indeholder f.eks. et resultatdiagram og ROC-kurven for modellen.
 
-Rapporterne omfatter også siden **Oplæringsoplysninger**, der indeholder en beskrivelse af, hvordan modellen blev oplært, og et diagram, der beskriver modellens ydeevne for hver af de enkelte kørte gentagelser.
+Rapporterne omfatter også siden **Oplæringsoplysninger** , der indeholder en beskrivelse af, hvordan modellen blev oplært, og et diagram, der beskriver modellens ydeevne for hver af de enkelte kørte gentagelser.
 
 ![Oplæringsoplysninger](media/service-machine-learning-automated/automated-machine-learning-power-bi-08.png)
 
@@ -220,11 +220,11 @@ Hvis du er tilfreds med ydeevnen i den ML-model, der er blevet oprettet, kan du 
 
 Hvis du vil anvende ML-modellen, skal du angive navnet på den enhed, som modellen skal anvendes for, og et præfiks for de kolonner, der føjes til denne enhed for modeloutputtet. Standardpræfikset for kolonnenavnene er modelnavnet. Funktionen _Anvend_ omfatter muligvis yderligere parametre, der er specifikke for modeltypen.
 
-Når du anvender ML-modellen, oprettes der to nye dataflowenheder, som indeholder forudsigelser og individuelle forklaringer for hver række, som den angiver scorer for, i outputenheden. Hvis du f.eks. anvender modellen _PurchaseIntent_ for enheden _OnlineShoppers_, genererer outputtet enhederne **OnlineShoppers enriched PurchaseIntent** og **OnlineShoppers enriched PurchaseIntent explanations**. For hver række i den forbedrede enhed er **forklaringerne** opdelt i flere rækker i de forbedrede forklaringer baseret på inputfunktionen. **ExplanationIndex** hjælper med at knytte rækkerne fra enheden med forbedrede forklaringer til rækken i den forbedrede enhed.
+Når du anvender ML-modellen, oprettes der to nye dataflowenheder, som indeholder forudsigelser og individuelle forklaringer for hver række, som den angiver scorer for, i outputenheden. Hvis du f.eks. anvender modellen _PurchaseIntent_ for enheden _OnlineShoppers_ , genererer outputtet enhederne **OnlineShoppers enriched PurchaseIntent** og **OnlineShoppers enriched PurchaseIntent explanations**. For hver række i den forbedrede enhed er **forklaringerne** opdelt i flere rækker i de forbedrede forklaringer baseret på inputfunktionen. **ExplanationIndex** hjælper med at knytte rækkerne fra enheden med forbedrede forklaringer til rækken i den forbedrede enhed.
 
 ![Forespørgselseditor](media/service-machine-learning-automated/automated-machine-learning-power-bi-11.png)
 
-Du kan også anvende en Power BI AutoML model til enheder i et hvilket som helst dataflow i samme arbejdsområde ved hjælp af Brug kunstig intelligens i PQO-funktionsbrowseren. På denne måde kan du bruge modeller, der er oprettet af andre, i det samme arbejdsområde uden nødvendigvis at være ejer af det dataflow, der har modellen. Power Query registrerer alle Power BI-modeller til maskinel indlæring i arbejdsområdet og viser dem som dynamiske Power Query-funktioner. Du kan kalde disse funktioner ved at oprette adgang til dem fra båndet i Power Query-editor eller ved at aktivere funktionen M direkte.Denne funktionalitet understøttes i øjeblikket kun for Power BI dataflows, og for Power Query Online i Power BI-tjenesten. Bemærk, at dette er meget anderledes end anvendelse af modeller til maskinel indlæring i et dataflow ved hjælp af guiden AutoML. Der oprettes ikke noget forklaringsobjekt ved hjælp af denne metode, og medmindre du er ejer af dataflowet, kan du ikke få adgang til modeltræningsrapporter eller træne modellen igen. Hvis kildemodellen redigeres (der tilføjes eller fjernes inputfelter), eller hvis modellen eller kildedataflowet slettes, afbrydes dette afhængige dataflow.
+Du kan også anvende en Power BI AutoML model til enheder i et hvilket som helst dataflow i samme arbejdsområde ved hjælp af Brug kunstig intelligens i PQO-funktionsbrowseren. På denne måde kan du bruge modeller, der er oprettet af andre, i det samme arbejdsområde uden nødvendigvis at være ejer af det dataflow, der har modellen. Power Query registrerer alle Power BI-modeller til maskinel indlæring i arbejdsområdet og viser dem som dynamiske Power Query-funktioner.  Du kan kalde disse funktioner ved at oprette adgang til dem fra båndet i Power Query-editor eller ved at aktivere funktionen M direkte. Denne funktionalitet understøttes i øjeblikket kun for Power BI dataflows, og for Power Query Online i Power BI-tjenesten. Bemærk, at dette er meget anderledes end anvendelse af modeller til maskinel indlæring i et dataflow ved hjælp af guiden AutoML. Der oprettes ikke noget forklaringsobjekt ved hjælp af denne metode, og medmindre du er ejer af dataflowet, kan du ikke få adgang til modeltræningsrapporter eller træne modellen igen. Hvis kildemodellen redigeres (der tilføjes eller fjernes inputfelter), eller hvis modellen eller kildedataflowet slettes, afbrydes dette afhængige dataflow.
 
 ![Anvend en model ved hjælp af PQO-funktionsbrowseren](media/service-machine-learning-automated/automated-machine-learning-power-bi-20.png)
 
@@ -234,7 +234,7 @@ Hvis du vil bruge indsigt og forudsigelser fra ML-modellen i en Power BI-rapport
 
 ### <a name="binary-prediction-models"></a>Binære forudsigelsesmodeller
 
-Binære forudsigelsesmodeller, der mere formelt er kendt som **binære klassifikationsmodeller**, bruges til at klassificere et datasæt i to grupper. De bruges til at forudsige hændelser, der kan have et binært resultat. For eksempel om en salgsmulighed vil blive konverteret, om en kunde falder fra, om en faktura betales til tiden, om en transaktion er falsk osv.
+Binære forudsigelsesmodeller, der mere formelt er kendt som **binære klassifikationsmodeller** , bruges til at klassificere et datasæt i to grupper. De bruges til at forudsige hændelser, der kan have et binært resultat. For eksempel om en salgsmulighed vil blive konverteret, om en kunde falder fra, om en faktura betales til tiden, om en transaktion er falsk osv.
 
 Outputtet af den binære forudsigelsesmode er en sandsynlighedsscore, som identificerer sandsynligheden for, at det ønskede resultat opnås.
 
@@ -272,7 +272,7 @@ Hvis du vil anvende en binær forudsigelsesmodel, skal du angive data for den en
 
 ![Forudsigelsesinput](media/service-machine-learning-automated/automated-machine-learning-power-bi-16.png)
 
-Når der anvendes en binær forudsigelsesmodel, føjes der fire outputkolonner til den forbedrede outputenhed: **Outcome**, **PredictionScore**, **PredictionExplanation** og **ExplanationIndex**. Der angives et præfiks for kolonnenavnene i enheden, når modellen anvendes.
+Når der anvendes en binær forudsigelsesmodel, føjes der fire outputkolonner til den forbedrede outputenhed: **Outcome** , **PredictionScore** , **PredictionExplanation** og **ExplanationIndex**. Der angives et præfiks for kolonnenavnene i enheden, når modellen anvendes.
 
 **PredictionScore** er en procentdel, der identificerer sandsynligheden for, at det ønskede resultat opnås.
 
@@ -314,7 +314,7 @@ Klassificeringsmodelrapporten omfatter også siden Oplæringsoplysninger, der mi
 
 Hvis du vil anvende en klassificerings-ML-model, skal du angive inputdata for enheden og præfikset for outputkolonnens navn.
 
-Når der anvendes en klassificeringsmodel, føjes der fem outputkolonner til den forbedrede outputenhed: **ClassificationScore**, **ClassificationResult**, **ClassificationExplanation**, **ClassProbabilities** og **ExplanationIndex**. Der angives et præfiks for kolonnenavnene i enheden, når modellen anvendes.
+Når der anvendes en klassificeringsmodel, føjes der fem outputkolonner til den forbedrede outputenhed: **ClassificationScore** , **ClassificationResult** , **ClassificationExplanation** , **ClassProbabilities** og **ExplanationIndex**. Der angives et præfiks for kolonnenavnene i enheden, når modellen anvendes.
 
 Kolonnen **ClassProbabilities** indeholder listen over sandsynlighedsscorer for posten for hver af de mulige klasser.
 
@@ -358,13 +358,13 @@ Hvis du vil anvende en regressions-ML-model, skal du angive inputdata for enhede
 
 ![Anvend en regression](media/service-machine-learning-automated/automated-machine-learning-power-bi-19.png)
 
-Når der anvendes en regressionsmodel, føjes der tre outputkolonner til den forbedrede outputenhed: **RegressionResult**, **RegressionExplanation** og **ExplanationIndex**. Der angives et præfiks for kolonnenavnene i enheden, når modellen anvendes.
+Når der anvendes en regressionsmodel, føjes der tre outputkolonner til den forbedrede outputenhed: **RegressionResult** , **RegressionExplanation** og **ExplanationIndex**. Der angives et præfiks for kolonnenavnene i enheden, når modellen anvendes.
 
 Kolonnen **RegressionResult** indeholder den forudsagte værdi for posten baseret på inputfelterne. Kolonnen **RegressionExplanation** indeholder en forklaring af den bestemte indvirkning, som inputfunktionerne havde på **RegressionResult**.
 
 ## <a name="azure-machine-learning-integration-in-power-bi"></a>Integrering af Azure Machine Learning i Power BI
 
-Mange organisationer bruger **Machine Learning**-modeller for at få større indsigt i deres virksomhed og dens fremtidige udvikling. Muligheden for at visualisere og aktivere indsigt fra disse modeller i dine rapporter og dashboards og andre analyser kan hjælpe med at udbrede denne indsigt til de forretningsbrugere, der har størst behov for den.  Power BI gør det nu nemt at integrere indsigt fra modeller, der hostes i Azure Machine Learning, ved hjælp af enkle peg og klik-håndbevægelser.
+Mange organisationer bruger **Machine Learning** -modeller for at få større indsigt i deres virksomhed og dens fremtidige udvikling. Muligheden for at visualisere og aktivere indsigt fra disse modeller i dine rapporter og dashboards og andre analyser kan hjælpe med at udbrede denne indsigt til de forretningsbrugere, der har størst behov for den.  Power BI gør det nu nemt at integrere indsigt fra modeller, der hostes i Azure Machine Learning, ved hjælp af enkle peg og klik-håndbevægelser.
 
 For at gøre det muligt at bruge denne funktion kan en dataspecialist ganske enkelt give BI analytikeren adgang til Azure Machine Learning-modellen ved hjælp af Microsoft Azure-portal.  I starten af hver session finder Power-forespørgsel derefter alle de Azure Machine Learning-modeller, brugeren har adgang til, og viser dem som dynamiske funktioner i Power-forespørgsel.  Brugeren kan derefter aktivere disse funktioner ved at oprette adgang til dem på båndet i editoren i Power-forespørgsel, eller ved at aktivere funktionen M direkte. For at opnå en bedre ydeevne samler Power BI også automatisk anmodninger om adgang i bundter, når Azure Machine Learning-modellen aktiveres for et sæt af rækker.
 

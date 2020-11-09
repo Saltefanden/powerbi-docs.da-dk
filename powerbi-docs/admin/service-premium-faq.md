@@ -9,12 +9,12 @@ ms.subservice: powerbi-premium
 ms.topic: conceptual
 ms.date: 09/16/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: d97c1a4be226d81ca20ef2f31a1f535174cb6c5b
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: 82237286fa4d6ac3713ca6674a541b7d59c20a49
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91599114"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92915894"
 ---
 # <a name="power-bi-premium-faq"></a>Ofte stillede spørgsmål om Power BI Premium
 
@@ -32,7 +32,7 @@ Power BI Premium er et nyt kapacitetsbaseret tilbud, der omfatter:
 * En API-brugergrænseflade, en konsistent række funktioner og adgang til de nyeste funktioner for integrerede analytics.
 
 **Hvad gør Power BI Premium? Hvordan fungerer det?**  
-Power BI Premium består af kapacitet i Power BI-tjenesten, der udelukkende er allokeret til den enkelte organisation. Kapaciteten understøttes af dedikeret hardware, der administreres fuldt ud af Microsoft. Organisationer kan vælge at anvende deres dedikerede kapacitet bredt eller tildele den til arbejdsområder, afhængigt af antallet af brugere, arbejdsbelastningsbehov eller andre faktorer samt skalere op eller ned, i takt med at kravene ændres.
+Power BI Premium består af kapacitet i Power BI-tjenesten, der udelukkende er allokeret til den enkelte organisation. Kapaciteten understøttes af dedikeret hardware, der administreres fuldt ud af Microsoft. Organisationer kan vælge at anvende deres kapacitet bredt eller tildele den til arbejdsområder, afhængigt af antallet af brugere, arbejdsbelastningsbehov eller andre faktorer, samt skalere op eller ned, i takt med at kravene ændres.
 
 **Hvordan adskiller Power BI Pro sig fra Power BI Premium?**  
 Power BI Premium er en kapacitet-baseret licens, mens Power BI Pro er en brugerbaseret licens. Power BI Pro er til de brugere, der publicerer rapporter, deler dashboards, samarbejder med kolleger i arbejdsområder og er engageret i andre relaterede aktiviteter og f.eks.:

@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/23/2020
+ms.date: 10/30/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Get started
-ms.openlocfilehash: 45d89fe7a224d56e710765e533a7c075c24b8a66
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.openlocfilehash: fe4f9c54b45035cc22f2e582a75ba98d648c549d
+ms.sourcegitcommit: 8861dac6724202a5b3be456a6aff8f3584e0cccf
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91981498"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93132361"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI til US Government-kunder
 
@@ -74,25 +74,25 @@ Godkendelse, identitet og administration for Power BI afhænger af forbindelsen 
 
 |  Formål | Destination |
 | ---- | ----- |
-| Back-end-API'er | **GCC**: api.powerbigov.us |
-| | **GCC-High**: api.high.powerbigov.us |
-| | **DoD**: api.mil.powerbi.gov.us |
-| Back-end-API'er | **GCC**: *analysis.usgovcloudapi.net |
-| | **GCC High**: *.high.analysis.usgovcloudapi.net |
-| | **DoD**: *.mil.analysis.usgovcloudapi.net |
-| Back-end-API'er | **Alle**: *.pbidedicated.usgovcloudapi.net |
-| CDN (Content Delivery Network) | **GCC**: gov.content.powerapps.us |
-| | **GCC High**: high.content.powerapps.us |
-| | **DoD**: mil.content.powerapps.us |
-| Microsoft 365-integration | **GCC**: [Globale slutpunkter](/microsoft-365/enterprise/urls-and-ip-address-ranges) |
-| | **GCC High**: [US Government GCC High-slutpunkter](/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints) |
-| | **DoD**: [US Government DOD-slutpunkter](/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints) |
-| Portal |**GCC**: *.powerbigov.us |
-| | **GCC-High**: *.high.powerbigov.us |
-| | **DoD**: *.mil.powerbigov.us |
-| Tjenestetelemetri | **Alle**: dc.services.visualstudio.us |
-| Meddelelser til orientering (valgfrit) | **Alle**: dynmsg.modpim.com |
-| NPS-undersøgelser (valgfrit) | **Alle**: nps.onyx.azure.net |
+| Back-end-API'er | **GCC** : api.powerbigov.us |
+| | **GCC-High** : api.high.powerbigov.us |
+| | **DoD** : api.mil.powerbi.gov.us |
+| Back-end-API'er | **GCC** : *analysis.usgovcloudapi.net |
+| | **GCC High** : *.high.analysis.usgovcloudapi.net |
+| | **DoD** : *.mil.analysis.usgovcloudapi.net |
+| Back-end-API'er | **Alle** : *.pbidedicated.usgovcloudapi.net |
+| CDN (Content Delivery Network) | **GCC** : gov.content.powerapps.us |
+| | **GCC High** : high.content.powerapps.us |
+| | **DoD** : mil.content.powerapps.us |
+| Microsoft 365-integration | **GCC** : [Globale slutpunkter](/microsoft-365/enterprise/urls-and-ip-address-ranges) |
+| | **GCC High** : [US Government GCC High-slutpunkter](/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints) |
+| | **DoD** : [US Government DOD-slutpunkter](/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints) |
+| Portal |**GCC** : *.powerbigov.us |
+| | **GCC-High** : *.high.powerbigov.us |
+| | **DoD** : *.mil.powerbigov.us |
+| Tjenestetelemetri | **Alle** : dc.services.visualstudio.us |
+| Meddelelser til orientering (valgfrit) | **Alle** : dynmsg.modpim.com |
+| NPS-undersøgelser (valgfrit) | **Alle** : nps.onyx.azure.net |
 
 ## <a name="connect-government-and-global-azure-cloud-services"></a>Opret forbindelse mellem Government-tjenester og globale Azure Cloud-tjenester
 
@@ -126,11 +126,11 @@ Følgende tabel indeholder en liste over de funktioner, der ikke er tilgængelig
 |[Store modeller](service-premium-large-models.md) | 4\. kvartal 2020 |4\. kvartal 2020| ![ikke tilgængelig](../media/no.png) |
 |[Dataflow – SQL Compute-programoptimering](../transform-model/service-dataflows-enhanced-compute-engine.md) | 4\. kvartal 2020 |4\. kvartal 2020| ![ikke tilgængelig](../media/no.png) |
 |[Dataflow – -direkte forespørgsel](../transform-model/service-dataflows-directquery.md) | 4\. kvartal 2020 |4\. kvartal 2020|![ikke tilgængelig](../media/no.png)|
-|[Meddelelser om tjenesteafbrydelser](service-premium-large-models.md)|4\. kvartal 2020 |4\. kvartal 2020|4\. kvartal 2020|
 |[Data beskyttelse (MIP-mærkater)](service-security-sensitivity-label-overview.md)|4\. kvartal 2020|4\. kvartal 2020 |4\. kvartal 2020|
 |[Skabelonapps](../connect-data/service-template-apps-overview.md)<sup>3</sup>|4\. kvartal 2020 |4\. kvartal 2020| 4\. kvartal 2020|
 |[Brugerdefinerede visualiseringer](../developer/visuals/power-bi-custom-visuals.md)<sup>3</sup>|4\. kvartal 2020 |4\. kvartal 2020| 4\. kvartal 2020|
 |[Foretag et kald til kvalitetsdata-connector](/microsoftteams/cqd-power-bi-connector)|![ikke tilgængelig](../media/no.png)|![ikke tilgængelig](../media/no.png)|![ikke tilgængelig](../media/no.png)|
+|[Bring Your Own Storage (Azure Data Lake Gen 2)](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md)|![ikke tilgængelig](../media/no.png)|![ikke tilgængelig](../media/no.png)|![ikke tilgængelig](../media/no.png)|
 |[QR-kodeoprettelse](../create-reports/service-create-qr-code-for-tile.md)|![ikke tilgængelig](../media/no.png)|![ikke tilgængelig](../media/no.png)|![ikke tilgængelig](../media/no.png)|
 
 <sup>1</sup> Selvom B2B Collaboration er tilgængelig til GCC, skal der udstedes en licens til eksterne brugere i dette miljø. Kommercielle cloudlicenser er ikke gyldige i GCC. Du kan finde flere oplysninger om kendte begrænsninger med B2B Collaboration til US Government ved at [sammenligne Azure Government og global Azure](/azure/azure-government/compare-azure-government-global-azure#azure-active-directory-premium-p1-and-p2)

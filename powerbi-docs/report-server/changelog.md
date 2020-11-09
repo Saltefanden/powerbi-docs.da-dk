@@ -7,13 +7,13 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 07/08/2020
-ms.openlocfilehash: 3be821bfaad91ede2a7348e35c06850c81ddf1b4
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.date: 10/29/2020
+ms.openlocfilehash: 3173108abe6082c199cbf6ff1229ca57fde31064
+ms.sourcegitcommit: a5fa368abad54feb44a267fe26c383a731c7ec0d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90859238"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93044773"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Ændringslog for Power BI-rapportserver
 
@@ -21,6 +21,26 @@ Denne ændringslog er for Power BI-rapportserver, og den viser nye elementer sam
 
 Se [Nyheder i Power BI-rapportserver](whats-new.md) for at få flere oplysninger om nye funktioner. 
 
+## <a name="october-2020"></a>Oktober 2020
+- **Power BI-rapportserver**
+    - *Version: 1.9.7604.41261 (Build 15.0.1104.239), udgivet: 27. oktober 2020*
+         - Funktioner
+            - Aktiveret understøttelse af udvidet metadata for datasæt i Power BI-rapportserver.
+            - Mulighed for at opdatere forbindelser for Power BI-rapporter til DirectQuery og opdatering (Se [Skift forbindelsesstrenge til datakilden](./connect-data-source-apis.md) for at få flere oplysninger).
+        - Sikkerhedsopdateringer
+        - Fejlrettelser
+            - Løste problem, der forhindrer brugere i at ændre planlægningen af Power BI-rapportopdatering.
+            - Løste problem med den forvirrende fejlmeddelelse, der blev vist, når brugerne administrerede rapporter, efter at legitimationsoplysningerne var udløbet.
+            - Løste problem med eksport af rapporter med punktummer i deres navn.
+            - Løste problemer med skærmbilleder i et tablix.
+            - Løste problem med logfiler, der i nogle tilfælde var tomme.
+            - Løste problem med, at dialogboksen Opret forbindelse til Power BI ikke lukkede
+            - Opdaterede MHTML-gengivelsesprogram til brug af nyere HTML-dokumenttyper
+
+- **Power BI Desktop (optimeret til Power BI-rapportserver)**
+   - *Version: 2.86.961.0 (oktober 2020), udgivet: 27. september 2020* (nyt build og ny version)
+        - Indeholder ændringer, der kræves for at oprette forbindelse med Power BI-rapportserver (oktober 2020)        
+   
 ## <a name="may-2020"></a>Maj 2020
 - **Power BI-rapportserver**
     - *Version: 1.8.7485.35104 (Build 15.0.1103.234), udgivet: 30. juni 2020*
@@ -103,7 +123,7 @@ Se [Nyheder i Power BI-rapportserver](whats-new.md) for at få flere oplysninger
     - *Version: 1.6.7221.30698 (Build 15.0.1102.620), udgivet: 9. oktober 2019*
         - Fejlrettelser
             - Rettelse til den brugerdefinerede visualisering Tekstfilter.
-            - Rettelse af ydeevnen for rullelisteudsnitsværktøjer.
+            - Rettelse til ydeevnen for rulleudsnitsværktøjer.
             - Rettelse til Strip PII fra telemetri.
           - Rettelse af URL-adresser, så der ikke skelnes mellem store og små bogstaver.
           
@@ -225,7 +245,7 @@ Se [Nyheder i Power BI-rapportserver](whats-new.md) for at få flere oplysninger
 - **Power BI-rapportserver**
     - *Version 1.3.6816.37243 (Build 15.0.2.557), udgivet: 30. august, 2018*
         - Fejlrettelser
-            - Der er løst et problem, der opstod, når serveren blev opgraderet fra tidligere versioner af PBI Report Server, hvor en omdirigering af en binding ikke blev opdateret, så kunderne så dette:      
+            - Løste et problem, der opstod, når serveren blev opgraderet fra tidligere versioner af PBI Report Server, hvor en omdirigering af en binding ikke blev opdateret, så kunderne så denne meddelelse:      
             *`
             Failed to load expression host assembly. Details: Could not load file or assembly 'Microsoft.ReportingServices.ProcessingObjectModel, Version=2018.7.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040) (rsErrorLoadingExprHostAssembly)
              `*
@@ -360,7 +380,7 @@ Se [Nyheder i Power BI-rapportserver](whats-new.md) for at få flere oplysninger
             - Det var ikke muligt at ændre navnet på en Power BI-rapport i Power BI-rapportserver
             - Der kunne ikke indlæses Power BI-visuals i Power BI-mobilappen (det kræver geninstallation af mobilappen for at rydde op i det lokale cachelager)
 
-    - *Build 14.0.600.271,udgivet: 12. juni, 2017*
+    - *Build 14.0.600.271, udgivet: 12. juni, 2017*
         - Første udgivelse af Power BI-rapportserver
 
 - **Power BI Desktop (optimeret til Power BI-rapportserver)**

@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/07/2020
 ms.author: davidi
-ms.openlocfilehash: 918b9a98d66a1c739421433d35f593dc74d19773
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.openlocfilehash: ae6047950256a783172ef871c2bd58dc15ff033a
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91981475"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93297596"
 ---
 # <a name="power-bi-data-sources"></a>Power BI-datakilder
 
@@ -64,6 +64,7 @@ Følgende tabel indeholder de datakilder, som Power BI understøtter for datasæ
 | Google Analytics | Ja | Ja | Nej | Nej | Nej | Nej |
 | Google BigQuery | Ja | Ja | Ja | Nej | Nej | Ja |
 | Hadoop File (HDFS) | Ja | Nej | Nej | Nej | Nej | Nej |
+| Hive LLAP | Ja | Ja | Ja | Ja | Nej | Nej |
 | Interaktiv HDInsight-forespørgsel | Ja | Ja | Ja | Nej | Nej | Nej |
 | IBM DB2 | Ja | Ja | Ja | Ja | Nej | Ja |
 | IBM Informix Database | Ja | Ja | Nej | Ja | Nej | Nej |
@@ -109,8 +110,8 @@ Følgende tabel indeholder de datakilder, som Power BI understøtter for datasæ
 | Salesforce-rapporter | Ja | Ja | Nej | Nej | Nej | Ja |
 | SAP Business Warehouse-meddelelsesserver | Ja | Ja | Ja | Ja | Ja | Ja |
 | SAP Business Warehouse-server | Ja | Ja | Ja | Ja | Ja | Ja |
-| SAP HANA | Ja | Ja | Ja | Ja | Ja | Ja |
-| SharePoint-mappe | Ja | Ja | Nej | Ja | Nej <sup>4</sup> | Yes |
+| SAP HANA | Ja | Ja | Ja | Ja | Ja | Yes |
+| SharePoint-mappe | Ja | Ja | Nej | Ja | Nej <sup>4</sup> | Ja |
 | SharePoint-liste | Ja | Ja | Nej | Ja | Nej <sup>4</sup> | Ja |
 | SharePoint Online-liste | Ja | Ja | Nej | Ja | Nej | Ja |
 | Smartsheet | Ja | Ja | Nej | Nej | Nej | Ja |
@@ -125,11 +126,11 @@ Følgende tabel indeholder de datakilder, som Power BI understøtter for datasæ
 | Sybase | Ja | Ja | Nej | Ja | Ja | Ja |
 | TeamDesk | Ja | Ja | Nej | Ja | Nej | Nej |
 | Tenforce | Ja | Ja | Nej | Nej | Nej | Nej |
-| Teradata | Ja | Ja | Ja | Ja | Ja | Ja |
+| Teradata | Ja | Ja | Ja | Ja | Ja | Yes |
 | Tekst/CSV | Ja | Ja | Nej | Ja | Nej <sup>4</sup> | Yes |
 | Twilio | Ja | Ja | Nej | Nej | Nej | Nej |
 | tyGraph | Ja | Ja | Nej | Nej | Nej | Nej |
-| Vertica | Ja | Ja | Ja | Ja | Ja | Ja |
+| Vertica | Ja | Ja | Ja | Ja | Ja | Yes |
 | Web | Ja | Ja | Nej | Ja | Ja <sup>6</sup> | Yes |
 | Webtrends | Ja | Ja | Nej | Nej | Nej | Nej |
 | Workforce Dimensions | Ja | Ja | Nej | Ja | Nej | Nej |

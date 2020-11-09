@@ -6,71 +6,110 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 09/01/2020
+ms.date: 10/26/2020
 ms.author: maggies
-ms.openlocfilehash: 69aa11216624416f005dcb2e47d1b818204ae7ec
-ms.sourcegitcommit: 89ce1777a85b9fc476f077cbe22978c6cf923603
+ms.openlocfilehash: 165d38c718377ff7e47442cdf0fe67173b610bd8
+ms.sourcegitcommit: a5fa368abad54feb44a267fe26c383a731c7ec0d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89286722"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93044987"
 ---
 # <a name="change-data-source-connection-strings-in-power-bi-reports-with-powershell---power-bi-report-server"></a>Skift forbindelsesstrenge til datakilden i Power BI-rapporter ved hjælp PowerShell – Power BI-rapportserver
 
 
-Du kan ændre datakildeforbindelsesstrenge for Power BI-rapporter, der hostes i Power BI-rapportserver, ved at bruge PowerShell til at kommunikere med de nødvendige API'er. 
+Fra og med versionen af Power BI-rapportserver fra oktober 2020 aktiverer vi muligheden for at opdatere forbindelser for Power BI-rapporter til DirectQuery og opdatering.
 
-> [!NOTE]
-> Denne funktionalitet fungerer i øjeblikket kun for DirectQuery. Understøttelse af import og dataopdatering er på vej.
+> [!IMPORTANT]
+> Dette er også en banebrydende ændring af, hvordan du kunne konfigurere dette i tidligere versioner. Hvis du bruger en version af Power BI-rapportserver fra før oktober 2020, kan du se [Skift af forbindelsesstrenge for datakilden i Power BI-rapporter med PowerShell – Power BI-rapportserver fra før oktober 2020](connect-data-source-apis-pre-oct-2020.md)
 
-1. Installér PowerShell-commandlets for Power BI-rapportserver. Find commandlets og installationsvejledningen på [https://github.com/Microsoft/ReportingServicesTools](https://github.com/Microsoft/ReportingServicesTools). 
+## <a name="prerequisites"></a>Forudsætninger:
+- Download versionen af [Power BI-rapportserver og Power BI Desktop optimeret til Power BI-rapportserver](https://powerbi.microsoft.com/report-server/) fra oktober 2020.
+- En rapport, der er gemt med udgivelsen af Power BI Desktop optimeret til rapportserver fra oktober 2020, med **forbedret metadata for datasæt** aktiveret.
+- En rapport, der bruger parameteriserede forbindelser. Det er kun rapporter med parameteriserede forbindelser og databaser, der kan opdateres efter udgivelsen.
+- Dette eksempel bruger værktøjerne til Reporting Services PowerShell. Du kan opnå det samme ved at bruge de nye REST API'er.
 
-    Installer `ReportingServicesTools` modulet direkte fra [PowerShell Gallery](https://www.powershellgallery.com/packages/ReportingServicesTools/) ved hjælp af følgende kommando.
+## <a name="create-a-report-with-parameterized-connections"></a>Opret en rapport med parameteriserede forbindelser
+    
+1. Opret en SQL Server-forbindelse til en server. I eksemplet nedenfor opretter vi forbindelse til den lokale vært for en database med navnet ReportServer og henter data fra ExecutionLog.
 
-    ```powershell
-    Install-Module ReportingServicesTools
+    :::image type="content" source="media/connect-data-source-apis/sql-server-connect-database.png" alt-text="Opret forbindelse til SQL Server-databasen":::
+
+    Sådan ser M-forespørgslen ud på dette tidspunkt:
+
+    ```
+    let
+        Source = Sql.Database("localhost", "ReportServer"),
+        dbo_ExecutionLog3 = Source{[Schema="dbo",Item="ExecutionLog3"]}[Data]
+    in
+        dbo_ExecutionLog3
     ```
 
-2. Hent oplysningerne om den eksisterende datakilde for Power BI-filen via PowerShell-commandlets:
+2. Vælg **Administrer parametre** på båndet i Power Query-editor.
+
+    :::image type="content" source="media/connect-data-source-apis/power-query-manage-parameters.png" alt-text="Vælg Administrer parametre":::
+
+1.  Opret parametre for servernavnet og databasenavnet.
+
+    :::image type="content" source="media/connect-data-source-apis/report-server-manage-parameters.png" alt-text="Administrer parametre, angiv servernavn og databasenavn.":::
+
+
+3. Rediger forespørgslen for den første forbindelse, og tilknyt databasen og servernavnet.
+
+    :::image type="content" source="media/connect-data-source-apis/report-server-map-database-server.png" alt-text="Tilknyt server- og databasenavnet":::
+
+    Nu kommer forespørgslen til at se sådan ud:
+
+    ```
+    let
+        Source = Sql.Database(ServerName, Databasename),
+        dbo_ExecutionLog3 = Source{[Schema="dbo",Item="ExecutionLog3"]}[Data]
+    in
+        dbo_ExecutionLog3
+    ```
+    
+    4. Publicer denne rapport på serveren. I dette eksempel hedder rapporten executionlogparameter. Det følgende billede er et eksempel på en side med administration af datakilder.
+
+    :::image type="content" source="media/connect-data-source-apis/report-server-manage-data-source-credentials.png" alt-text="Siden til administration af datakilder.":::
+
+## <a name="update-parameters-using-the-powershell-tools"></a>Opdater parametre ved hjælp af PowerShell-værktøjerne
+
+1. Åbn PowerShell, og installér de nyeste Reporting Services-værktøjer ved at følge vejledningen til [https://github.com/microsoft/ReportingServicesTools](https://github.com/microsoft/ReportingServicesTools).
+    
+2.  Hvis du vil hente parameteren til rapporten, skal du bruge den nye REST DataModelParameters-API ved hjælp af følgende PowerShell-kald:
 
     ```powershell
-    Get-RsRestItemDataSource -RsItem '/MyPbixReport'
+    Get-RsRestItemDataModelParameters '/executionlogparameter'
+
+        Name         Value
+        ----         -----
+        ServerName   localhost
+        Databasename ReportServer
     ```
 
-    Hvis du vil have vist oplysninger om den første datakilde, der findes i Power BI rapporten: 
+3. Vi gemmer resultatet af dette kald i en variabel:
 
     ```powershell
-    $dataSources[0]
+    $parameters = Get-RsRestItemDataModelParameters '/executionlogparameter'
     ```
 
-3. Opdater oplysningerne om forbindelse og legitimationsoplysninger efter behov. Hvis du opdaterer forbindelsesstrengen, og datakilden anvender gemte legitimationsoplysninger, skal du angive adgangskoden til kontoen. 
-
-    Sådan opdaterer du en forbindelsesstreng til datakilden:
+4. Denne variabel opdateres med de værdier, som vi skal ændre.
+5. Vi gemmer resultatet af dette kald i en variabel:
 
     ```powershell
-    $dataSources[0].ConnectionString = 'data source=myCatalogServer;initial catalog=ReportServer;persist security info=False' 
+    $parameters[0].Value = 'myproductionserver'
+    $parameters[1].Value = 'myproductiondatabase'
     ```
 
-    Sådan ændrer du typen af legitimationsoplysninger for datakilden:
+6. Med de opdaterede værdier kan vi bruge commandlet'en `Set-RsRestItemDataModelParameters` til at opdatere værdierne på serveren:
 
     ```powershell
-    $dataSources[0].DataModelDataSource.AuthType = 'Integrated'
+    Set-RsRestItemDataModelParameters -RsItem '/executionlogparameter' -DataModelParameters $parameters
     ```
 
-    Sådan ændrer du brugernavn/adgangskode for datakilden:
+7. Når parametrene er blevet opdateret, opdaterer serveren alle datakilder, der var bundet til parametrene. Hvis du går tilbage til dialogboksen **Rediger datakilde** , kan du angive legitimationsoplysninger for den opdaterede server og databasen.
 
-    ```powershell
-    $dataSources[0].DataModelDataSource.Username = 'domain\user'
-    ```
-    ```powershell
-    $dataSources[0].DataModelDataSource.Secret = 'password'
-    ```
-
-4. Gem de opdaterede legitimationsoplysninger på serveren igen.
-
-    ```powershell
-    Set-RsRestItemDataSource -RsItem '/MyPbixReport' -RsItemType 'PowerBIReport' -DataSources $dataSources
-    ```
+    :::image type="content" source="media/connect-data-source-apis/report-server-manage-executionlogparameter-dialog.png" alt-text="Angiv legitimationsoplysninger for den opdaterede server og databasen.":::
 
 ## <a name="next-steps"></a>Næste trin
 

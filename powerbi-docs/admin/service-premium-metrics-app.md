@@ -9,16 +9,16 @@ ms.subservice: powerbi-premium
 ms.topic: how-to
 ms.date: 05/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: ddaafaf175e2cb083e8e8eb494c156f0e9de8e0f
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: b74c381bfddc638c1371d571492eedfc7cf82a65
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91633138"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92916400"
 ---
 # <a name="power-bi-premium-metrics-app"></a>Appen Power BI Premium Metrics
 
-Du kan bruge appen **Power BI Premium Metrics** til at administrere dit Power BI Premium-abonnements tilstand og kapacitet. Administratorer kan bruge appens **Capacity Health Center** til at se og interagere med indikatorer, der overvåger tilstanden af deres Premium-kapacitet. Metrics-appen består af landingssiden, der kaldes **Capacity Health Center**, og detaljer om tre vigtige målepunkter:
+Du kan bruge appen **Power BI Premium Metrics** til at administrere dit Power BI Premium-abonnements tilstand og kapacitet. Administratorer kan bruge appens **Capacity Health Center** til at se og interagere med indikatorer, der overvåger tilstanden af deres Premium-kapacitet. Metrics-appen består af landingssiden, der kaldes **Capacity Health Center** , og detaljer om tre vigtige målepunkter:
 
 * Aktiv hukommelse
 * Forespørgselsventetider
@@ -35,7 +35,7 @@ I de følgende afsnit beskrives landingssiden og de tre målepunktssider i en ra
 
 ## <a name="premium-capacity-health-center"></a>Premium Capacity Health Center
 
-Når du åbner **Power BI Premium Metrics-appen**, får du vist **Capacity Health Center**, der giver en oversigt over din Power BI Premium-kapacitets tilstand.
+Når du åbner **Power BI Premium Metrics-appen** , får du vist **Capacity Health Center** , der giver en oversigt over din Power BI Premium-kapacitets tilstand.
 
 ![Capacity Health Center i Premium Metrics-appen](media/service-premium-metrics-app/premium-metrics-app-01.png)
 
@@ -69,7 +69,7 @@ Disse to scenarier er beskrevet i følgende afsnit.
 
 ### <a name="scenario-one---current-load-is-too-high"></a>1\. scenarie – den aktuelle belastning er for høj 
 
-Du kan finde ud af, om der er tilstrækkelig hukommelse til kapaciteten til at fuldføre dens arbejdsbelastninger, i den første visualisering på siden: **A: Procentdel af forbrugt hukommelse**, som viser den hukommelse, der bruges af datasæt, der behandles aktivt, og som derfor ikke kan fjernes.
+Du kan finde ud af, om der er tilstrækkelig hukommelse til kapaciteten til at fuldføre dens arbejdsbelastninger, i den første visualisering på siden: **A: Procentdel af forbrugt hukommelse** , som viser den hukommelse, der bruges af datasæt, der behandles aktivt, og som derfor ikke kan fjernes.
 
 Alarmtærsklen, som er den røde stiplede linje, markerer hændelser med et hukommelsesforbrug på 90 %.
 
@@ -161,10 +161,10 @@ Du kan undersøge, om dårlig rapportydeevne skyldes en overbelastet kapacitet e
 
 På rapportsiden vises følgende visualiseringer: 
 
-* Den øverste tabel, der hedder **A: Lange ventetider**, viser datasæt med forespørgsler, der venter. 
+* Den øverste tabel, der hedder **A: Lange ventetider** , viser datasæt med forespørgsler, der venter. 
 * **B: Distribution af lange ventetider pr. time** viser fordelingen af lange ventetider. 
 * Diagrammet med titlen **C: Antallet af langvarige forespørgsler pr. time** viser antallet af langvarige forespørgsler, der blev udført, opdelt pr. time.
-* Den sidste visualisering, tabel **D: Langvarige forespørgsler**, viser en liste over de langvarige forespørgsler og deres statistik.
+* Den sidste visualisering, tabel **D: Langvarige forespørgsler** , viser en liste over de langvarige forespørgsler og deres statistik.
 
 ![Detaljeside om forespørgselsventetider](media/service-premium-metrics-app/premium-metrics-app-10.png)
 
@@ -176,7 +176,7 @@ Først kan du se, om langvarige forespørgsler finder sted, når dine forespørg
 
 ![Tabel over lange ventetider](media/service-premium-metrics-app/premium-metrics-app-11.png)
 
-Se **Diagram B**, der viser antallet af forespørgsler, der venter mere end 100 ms. Vælg en af kolonnerne, der viser et højt antal af forespørgselsventetider.
+Se **Diagram B** , der viser antallet af forespørgsler, der venter mere end 100 ms. Vælg en af kolonnerne, der viser et højt antal af forespørgselsventetider.
 
 ![Distribution af lang ventetid](media/service-premium-metrics-app/premium-metrics-app-12.png)
 
@@ -242,7 +242,7 @@ Målepunktet for **opdateringsventetider** giver indsigt i, hvornår brugerne ka
 
 Denne måler viser, at i de seneste syv dage fra den seneste opdateringsrapport ventede 3,18 % af opdateringerne mere end 10 minutter. 
 
-Du kan få flere detaljer om KPI'en **Opdateringsventetider** ved at klikke på knappen **Udforsk**, der viser en side med målepunkter og en fejlfindingsvejledning i den højre kolonne på rapportsiden. Vejledningen indeholder detaljerede forklaringer af de målepunkter, der er på siden, og hjælper dig med at forstå kapacitetens tilstand, og hvad du kan gøre for at afhjælpe eventuelle problemer.
+Du kan få flere detaljer om KPI'en **Opdateringsventetider** ved at klikke på knappen **Udforsk** , der viser en side med målepunkter og en fejlfindingsvejledning i den højre kolonne på rapportsiden. Vejledningen indeholder detaljerede forklaringer af de målepunkter, der er på siden, og hjælper dig med at forstå kapacitetens tilstand, og hvad du kan gøre for at afhjælpe eventuelle problemer.
 
 ![Udforskning af målepunkterne for opdateringsventetider](media/service-premium-metrics-app/premium-metrics-app-21.png)
 
@@ -271,17 +271,17 @@ Du diagnosticerer det første scenarie ved først at finde ud af, om begrænsnin
 
     ![Tabel A](media/service-premium-metrics-app/premium-metrics-app-22.png)
 
-    a. Når et datasæt vælges i **tabel A**, filtreres **diagram B** for at vise, hvornår ventetiden fandt sted.
+    a. Når et datasæt vælges i **tabel A** , filtreres **diagram B** for at vise, hvornår ventetiden fandt sted.
 
     ![Diagram B](media/service-premium-metrics-app/premium-metrics-app-23.png)
 
     b. **Diagram C** filtreres derefter for at vise eventuelle begrænsninger, hvilket forklares i næste trin. 
 
-2. Kig på resultaterne i **diagram C**, som nu er filtreret. Hvis diagrammet viser, at der er opstået en hukommelsesbegrænsning på de tidspunkter, hvor datasættet ventede, ventede datasættet på grund af problemer med manglende hukommelse.
+2. Kig på resultaterne i **diagram C** , som nu er filtreret. Hvis diagrammet viser, at der er opstået en hukommelsesbegrænsning på de tidspunkter, hvor datasættet ventede, ventede datasættet på grund af problemer med manglende hukommelse.
 
     ![Diagram C](media/service-premium-metrics-app/premium-metrics-app-24.png)
 
-3. Til sidst skal du tjekke **diagram D**, som viser de typer opdateringer, der fandt sted, planlagt i forhold til efter behov. Eventuelle opdateringer efter behov, der udføres samtidig, kan være årsagen til begrænsningen.
+3. Til sidst skal du tjekke **diagram D** , som viser de typer opdateringer, der fandt sted, planlagt i forhold til efter behov. Eventuelle opdateringer efter behov, der udføres samtidig, kan være årsagen til begrænsningen.
 
     ![Diagram D](media/service-premium-metrics-app/premium-metrics-app-25.png)
 
@@ -302,7 +302,7 @@ Du kan benytte følgende fremgangsmåde til at afhjælpe de problemer, der er kn
 
 I det andet scenarie er der ikke tilstrækkelig tilgængelig CPU til at udføre opdateringen. 
 
-I forbindelse med dedikerede kapaciteter begrænser Power BI antallet af opdateringer, der kan ske samtidig. Dette tal svarer til antallet af back end-kerner x 1,5. En dedikeret P1-kapacitet, som har fire back end-kerner, kan f.eks. køre seks opdateringer samtidig. Når det maksimale antal samtidige opdateringer er nået, vil andre opdateringer vente, indtil en opdatering er fuldført.
+I forbindelse med kapaciteter begrænser Power BI antallet af opdateringer, der kan ske samtidig. Dette tal svarer til antallet af back end-kerner x 1,5. En P1-kapacitet, som har fire back end-kerner, kan f.eks. køre seks opdateringer samtidig. Når det maksimale antal samtidige opdateringer er nået, vil andre opdateringer vente, indtil en opdatering er fuldført.
 
 ![Andet scenarie for opdatering](media/service-premium-metrics-app/premium-metrics-app-26.png)
 
@@ -314,17 +314,17 @@ Når du skal diagnosticere det andet scenarie, skal du først afgøre, om begræ
 
     ![Tabel A](media/service-premium-metrics-app/premium-metrics-app-22.png)
 
-    a. Når et datasæt vælges i **tabel A**, filtreres **diagram B** for at vise, hvornår ventetiden fandt sted.
+    a. Når et datasæt vælges i **tabel A** , filtreres **diagram B** for at vise, hvornår ventetiden fandt sted.
 
     ![Diagram B](media/service-premium-metrics-app/premium-metrics-app-23.png)
 
     b. **Diagram C** filtreres derefter for at vise eventuelle begrænsninger, hvilket forklares i næste trin. 
 
-2. Kig på resultaterne i **diagram C**, som nu er filtreret. Hvis diagrammet viser *maksimal samtidighed* på de tidspunkter, hvor datasættet ventede, ventede datasættet på grund af problemer med utilstrækkelig CPU.
+2. Kig på resultaterne i **diagram C** , som nu er filtreret. Hvis diagrammet viser *maksimal samtidighed* på de tidspunkter, hvor datasættet ventede, ventede datasættet på grund af problemer med utilstrækkelig CPU.
 
     ![Diagram C](media/service-premium-metrics-app/premium-metrics-app-24.png)
 
-3. Til sidst skal du tjekke **diagram D**, som viser de typer opdateringer, der fandt sted, planlagt i forhold til efter behov. Eventuelle opdateringer efter behov, der udføres samtidig, kan være årsagen til begrænsningen.
+3. Til sidst skal du tjekke **diagram D** , som viser de typer opdateringer, der fandt sted, planlagt i forhold til efter behov. Eventuelle opdateringer efter behov, der udføres samtidig, kan være årsagen til begrænsningen.
 
     ![Diagram D](media/service-premium-metrics-app/premium-metrics-app-25.png)
 

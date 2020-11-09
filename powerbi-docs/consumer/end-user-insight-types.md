@@ -6,15 +6,15 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/09/2020
+ms.date: 10/12/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 8e8411ea29436a5ee19802d2a970b760062fe59e
-ms.sourcegitcommit: cb606d3ae95300683caf1853e229d8981302a8e2
+ms.openlocfilehash: 53074b44457abcf4cae6ffc3cffab2be6e8b95bb
+ms.sourcegitcommit: a5fa368abad54feb44a267fe26c383a731c7ec0d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90763982"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045270"
 ---
 # <a name="types-of-insights-supported-by-power-bi"></a>Indsigtstyper, der understøttes af Power BI
 
@@ -27,7 +27,7 @@ Se [Power BI-indsigt](end-user-insights.md) for at få mere at vide om, hvordan 
 ![et sæt indsigter](media/end-user-insight-types/power-bi-insight.png)
 
 ## <a name="how-does-insights-work"></a>Hvordan fungerer indsigter?
-Power BI søger hurtigt i forskellige undersæt af dit datasæt. I takt med at Power BI søger, anvendes et sæt avancerede algoritmer for at finde indsigt, der kan være interessant. Power BI-*virksomhedsbrugere* kan køre indsigter på dashboardfelter.
+Power BI søger hurtigt i forskellige undersæt af dit datasæt. I takt med at Power BI søger, anvendes et sæt avancerede algoritmer for at finde indsigt, der kan være interessant. Power BI- *virksomhedsbrugere* kan køre indsigter på dashboardfelter.
 
 ## <a name="some-terminology"></a>Terminologi
 Power BI bruger statistiske algoritmer til at afdække indsigt. Algoritmerne er angivet og beskrevet i næste afsnit i denne artikel. Før vi går videre med algoritmerne, er der her nogle definitioner for nogle af de ord, som du muligvis ikke kender. 
@@ -66,6 +66,11 @@ Finder tilfælde, hvor en majoritet af en samlet værdi kan tilskrives en enkelt
 
 ![Eksempel på vigtige faktorer](./media/end-user-insight-types/pbi-auto-insight-type-majority.png)
 
+### <a name="outliers"></a>Udenforliggende værdier
+Denne type indsigt bruger en klyngemodel til at finde udenforliggende værdier i ikke-tidsseriedata. Udenforliggende værdier registrerer, når der er bestemte kategorier med værdier, der er væsentligt forskellige fra de andre kategorier.
+
+![Eksempel på udenforliggende værdier](./media/end-user-insight-types/power-bi-outliers.png)
+
 ### <a name="overall-trends-in-time-series"></a>Samlede tendenser i tidsserie
 Registrerer op- eller nedadgående tendenser i tidsseriedata.
 
@@ -87,6 +92,7 @@ Indsigten med den konstante deling ligner den lave varians, da de begge relatere
 Registrerer for data på tværs af en tidsserie, når der er specifikke datoer og klokkeslæt med værdier, som er væsentligt anderledes end de andre dato-/klokkeslætsværdier.
 
 ![Eksempel på tidsserier med udenforliggende værdier](./media/end-user-insight-types/pbi-auto-insight-type-time-series-outliers-purple.png)
+
 
 ## <a name="next-steps"></a>De næste trin
 [Power BI-indsigter](end-user-insights.md)

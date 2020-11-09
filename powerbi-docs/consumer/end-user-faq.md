@@ -10,12 +10,12 @@ ms.date: 09/02/2020
 ms.author: mihart
 ms.custom: licensing support
 LocalizationGroup: Get started
-ms.openlocfilehash: dca1b3bb107c8a2e02b48db9d22a4fe6c2875a4c
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: c604bec5213b14f91e514c9a1552acb99ac5d0aa
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860917"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92916791"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Ofte stillede spørgsmål om Power BI
 
@@ -37,7 +37,7 @@ Den måde, du interagerer med Power BI på, afhænger af din jobfunktion. Som sl
 
 Power BI Pro er en individuel brugerlicens, der giver adgang til alt indhold og alle funktioner i Power BI-tjenesten. Du kan også dele indhold og samarbejde med andre Pro-brugere. Det er kun Pro-brugere, der kan publicere indhold til andre arbejdsområder, dele dashboards og abonnere på dashboards og rapporter. 
 
-Power BI Premium indeholder dedikeret kapacitet til at levere en mere ensartet ydeevne. Det understøtter også større datamængder i Power BI. I Premium kan de enkelte brugere udføre omfattende distribution af indhold fra Pro-brugere, og det kræver ikke en Pro-licens pr. bruger at få vist indholdet. Det betyder, at *virksomhedsbrugere* kan samarbejde med kolleger og få vist og interagere med dashboards, rapporter og apps, der er blevet delt med dem. 
+Power BI Premium indeholder en kapacitet til at levere en mere ensartet ydeevne. Det understøtter også større datamængder i Power BI. I Premium kan de enkelte brugere udføre omfattende distribution af indhold fra Pro-brugere, og det kræver ikke en Pro-licens pr. bruger at få vist indholdet. Det betyder, at *virksomhedsbrugere* kan samarbejde med kolleger og få vist og interagere med dashboards, rapporter og apps, der er blevet delt med dem. 
 
 Du kan få mere at vide under [Hvilken type licens har jeg?](end-user-license.md).
 
@@ -49,7 +49,7 @@ For spørgsmål knyttet til Power BI Premium henvises til [Power BI Premium – 
 
 Power BI Desktop er et gratis program, du kan installere direkte på dine egne computere. Power BI Desktop fungerer i sammenhæng med Power BI-tjenesten.  Datateknikere, rapportdesignere, administratorer og udviklere arbejder med Power BI Desktop for at oprette rapporter og gøre dem tilgængelige for *virksomhedsbrugere* af Power BI-tjenesten. Læs mere om [Hvad er Power BI Desktop](../fundamentals/desktop-what-is-desktop.md).
 
-## <a name="as-a-business-user-what-do-i-need-to-use-the-power-bi-service"></a>Hvad kræves der, for at jeg kan bruge Power BI-tjenesten som *virksomhedsbruger*?
+## <a name="as-a-business-user-what-do-i-need-to-use-the-power-bi-service"></a>Hvad kræves der, for at jeg kan bruge Power BI-tjenesten som *virksomhedsbruger* ?
 
 Hvis din virksomhed har købt Power BI-licenser eller en Premium-kapacitetskonto, skal du bare have en webbrowser og legitimationsoplysninger. Du logger på med din arbejdsmailadresse og en adgangskode (angivet af din Power BI-administrator).  
 

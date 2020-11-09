@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/11/2019
-ms.openlocfilehash: b2638c3fdb483f45b6f4b3f9363f42ee36e57f0b
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: ed8f44e7dd1a7e713a9b2bd75dc33f259cb52f2a
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91747752"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92916331"
 ---
 # <a name="manage-multi-tenancy-with-power-bi-embedded-analytics"></a>Administrer flere lejere med Power BI Embedded-analyse
 
@@ -135,7 +135,7 @@ Hvis SaaS-programlageret bruger en database med flere lejere for alle lejere, er
 
 ### <a name="data-isolation"></a>Dataisolation
 
-Dataene i denne lejermodel er adskilt på arbejdsområdeniveau. En enkel tilknytning mellem et arbejdsområde og en lejer forhindrer, at brugere fra én lejer får vist indhold fra en anden lejer. Hvis du bruger en enkelt *masterbruger*, skal du have adgang til alle de forskellige arbejdsområder. Konfigurationen af, hvilke data der skal vises en slutbruger, defineres i løbet af [genereringen af indlejringstokenet](/rest/api/power-bi/embedtoken), en back end-proces, som slutbrugerne ikke kan se eller ændre.
+Dataene i denne lejermodel er adskilt på arbejdsområdeniveau. En enkel tilknytning mellem et arbejdsområde og en lejer forhindrer, at brugere fra én lejer får vist indhold fra en anden lejer. Hvis du bruger en enkelt *masterbruger* , skal du have adgang til alle de forskellige arbejdsområder. Konfigurationen af, hvilke data der skal vises en slutbruger, defineres i løbet af [genereringen af indlejringstokenet](/rest/api/power-bi/embedtoken), en back end-proces, som slutbrugerne ikke kan se eller ændre.
 
 Hvis du vil tilføje yderligere isolation, kan en programudvikler definere en *masterbruger* eller et program pr. arbejdsområde i stedet for en enkelt *masterbruger* eller program med adgang til flere arbejdsområder. På den måde kan du sikre, at alle menneskelige fejl eller læk af legitimationsoplysninger ikke medfører, at flere kunders data blotlægges.
 
@@ -240,13 +240,13 @@ Når slutbrugere redigerer eller opretter rapporter, kan de bruge produktionsdat
 * Det antal V2-arbejdsområder (mapper), som en enkelt bruger/et enkelt program kan være medlem af/administrator for, er 1000.
 * Antallet af datasæt i et enkelt arbejdsområde er 1000.
 * Antallet af rapporter/dashboards, der er tilknyttet et enkelt datasæt, er 1000.
-* Størrelsesgrænsen for datasæthukommelsen ved upload af en *PBIX*-fil er 10 GB.
+* Størrelsesgrænsen for datasæthukommelsen ved upload af en *PBIX* -fil er 10 GB.
 
 **Overvejelser og begrænsninger i forbindelse med Power BI-kapacitet:**
 
 * Hver kapacitet kan kun bruge den hukommelse og de V-kerner, kapaciteten har fået tildelt, i overensstemmelse med det [SKU, der er købt](../../admin/service-premium-what-is.md).
 * Du kan finde den anbefalede datasætstørrelse for hver SKU i [store datasæt i Premium](../../admin/service-premium-what-is.md#large-datasets).
-* Den maksimale datasætstørrelse i en dedikeret kapacitet er 10 GB.
+* Den maksimale datasætstørrelse i en kapacitet er 10 GB.
 * Antallet af planlagte opdateringer for et datasæt i *importtilstand* i løbet af en dag er 48.
 * Intervallet mellem planlagte opdateringer for et datasæt i *importtilstand* er 30 minutter.
 * Du kan få oplysninger om det antal opdateringer, der kan køre samtidigt på en kapacitet, i [ressourcestyring og optimering](../../admin/service-premium-what-is.md#capacity-nodes).

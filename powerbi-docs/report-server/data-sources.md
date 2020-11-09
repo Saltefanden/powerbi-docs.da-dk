@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 08/04/2020
+ms.date: 10/29/2020
 ms.author: maggies
-ms.openlocfilehash: cedabd613e177aa9a3645e80db38b74d799b8799
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 52d38fd0705a6f9335f0ddd965acb0d9f56d38ee
+ms.sourcegitcommit: a5fa368abad54feb44a267fe26c383a731c7ec0d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90861193"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045082"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Power BI-rapportdatakilder på Power BI-rapportserver
 Power BI-rapporter kan oprette forbindelse til en række datakilder. Der er adgang til forskellige datakilder, afhængigt af hvordan dataene bruges. Dataene kan importeres, eller der kan foretages forespørgsler om data direkte ved hjælp af DirectQuery eller en direkte forbindelse til SQL Server Analysis Services. Nogle datakilder, som er tilgængelige i Power BI Desktop, er optimeret til Power BI-rapportserver, men understøttes ikke, når der publiceres til Power BI-rapportserver.
@@ -189,6 +189,8 @@ Power BI-rapportserver understøtter ikke OAuth-baseret godkendelse i forbindels
 | Zendesk (beta) |Nej |Nej |Nej |Nej |
 
 ** Brug af LDAP-godkendelse med Teradata (aktiveret i Power BI Desktop ved hjælp af kommandoprompten 'setx PBI_EnableTeradataLdap true') understøttes ikke i forbindelse med opdatering af modellen.
+
+Power BI-rapportserver er begrænset, når du bruger webdata: Det er kun datafiler fra internettet, der kan opdateres. Data, der er baseret på en side eller som eksempel, opdateres ikke. Denne begrænsning skyldes, at de M-udtryk, der er oprettet med Web.BrowserContents og Web.Page, ikke kan opdateres. Power BI-rapportserver kan kun opdatere Web.Contents-datakilder.
 
 ## <a name="list-of-supported-authentication-methods-for-directquery"></a>Liste over understøttede godkendelsesmetoder i forbindelse med DirectQuery
 

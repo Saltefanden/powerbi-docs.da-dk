@@ -7,12 +7,12 @@ ms.topic: troubleshooting
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.date: 09/15/2020
-ms.openlocfilehash: 0a90c03c516b64e5a0a81c6a2bbdf0049d48b76f
-ms.sourcegitcommit: be0971576a3f1af7a064371c9cf27dd462dfca82
+ms.openlocfilehash: 929a79d7e940f729b90d0cdf6d3ebd905a621f6a
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92080248"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92916814"
 ---
 # <a name="deployment-pipelines-troubleshooting"></a>Fejlfinding af udrulningspipelines
 
@@ -42,7 +42,7 @@ Hvis følgende betingelser ikke er opfyldt, kan du ikke se knappen til udrulning
 
 ### <a name="why-cant-i-see-the-pipeline-stage-tag-in-my-workspace"></a>Hvorfor kan jeg ikke se koden for pipielinefase i mit arbejdsområde?
 
-Udrulningspipelines viser en kode for pipelinefasen i de arbejdsområder, der er knyttet til en pipeline. Koder for *udviklings-* og *testfaser* er altid synlige. Du kan dog kun se koden for *produktion*, hvis du har [adgang til pipelinen](deployment-pipelines-process.md#user-with-pipeline-access), eller hvis du er [administrator af arbejdsområdet](deployment-pipelines-process.md#workspace-admin).
+Udrulningspipelines viser en kode for pipelinefasen i de arbejdsområder, der er knyttet til en pipeline. Koder for *udviklings-* og *testfaser* er altid synlige. Du kan dog kun se koden for *produktion* , hvis du har [adgang til pipelinen](deployment-pipelines-process.md#user-with-pipeline-access), eller hvis du er [administrator af arbejdsområdet](deployment-pipelines-process.md#workspace-admin).
 
 > [!div class="mx-imgBorder"]
 > ![Et skærmbillede af produktionskoden i et arbejdsområde for en produktionspipeline.](media/deployment-pipelines-troubleshooting/production-tag.png)
@@ -55,7 +55,7 @@ Hvis du vil bruge udrulningspipelines, skal du være [Pro-bruger](../admin/servi
 
 ### <a name="what-type-of-capacity-can-i-assign-to-a-workspace-in-a-pipeline"></a>Hvilken type kapacitet kan jeg tildele til et arbejdsområde i en pipeline?
 
-Alle arbejdsområder i en udrulningspipeline skal være placeret inden for en dedikeret kapacitet, for at pipelinen kan fungere. Du kan dog bruge forskellige kapaciteter til forskellige arbejdsområder i en pipeline. Du kan også bruge forskellige kapacitetstyper til forskellige arbejdsområder i den samme pipeline.
+Alle arbejdsområder i en udrulningspipeline skal være placeret inden for en kapacitet, for at pipelinen kan fungere. Du kan dog bruge forskellige kapaciteter til forskellige arbejdsområder i en pipeline. Du kan også bruge forskellige kapacitetstyper til forskellige arbejdsområder i den samme pipeline.
 
 I forbindelse med udvikling og test kan du bruge en A- eller EM-kapacitet sammen med en Power BI Pro-konto til hver bruger.
 

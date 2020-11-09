@@ -1,25 +1,147 @@
 ---
 title: Nyheder i Power BI-rapportserver
-description: Læs om nyheder i Power BI-rapportserver. I denne artikel beskrives de primære funktionsområder, og den opdateres, når der udgives nye elementer.
+description: Få mere at vide om nyheder i den nyeste version af Power BI-rapportserver. I denne artikel beskrives de primære funktionsområder, og den opdateres, når der udgives nye versioner.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 07/08/2020
-ms.openlocfilehash: 9c92383dee3cb435c57238be545ccd9e59923b8e
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.date: 10/30/2020
+ms.openlocfilehash: 14b629eed17eca2d1e016913dcfffb5858d4ddc3
+ms.sourcegitcommit: 8861dac6724202a5b3be456a6aff8f3584e0cccf
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90859974"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93132407"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nyheder i Power BI-rapportserver
 
-Få mere at vide om, hvad der er nyt i Power BI-rapportserver og i Power BI Desktop optimeret til Power BI-rapportserver. I denne artikel beskrives de primære funktionsområder, og den opdateres, hver gang der udgives en ny version. Se [Ændringslog for Power BI-rapportserver](changelog.md) for at få mere at vide om, hvad der er nyt i Power BI-rapportserver og Power BI Desktop, der er optimeret til Power BI-rapportserver.
+Få mere at vide om de nyeste versioner af Power BI-rapportserver og Power BI Desktop optimeret til Power BI-rapportserver. I denne artikel beskrives de primære funktionsområder, og den opdateres, hver gang der udgives en ny version. Se [Ændringslog for Power BI-rapportserver](changelog.md) for at få mere at vide om, hvad der er nyt i Power BI-rapportserver og Power BI Desktop, der er optimeret til Power BI-rapportserver.
 
 Download [Power BI-rapportserver og Power BI Desktop optimeret til Power BI-rapportserver](https://powerbi.microsoft.com/report-server/).
+
+## <a name="october-2020"></a>Oktober 2020
+
+Det følgende er en komplet liste over nye og opdaterede funktioner. Du kan finde flere oplysninger i [Blogindlægget om Power BI-rapportserver fra oktober 2020](https://powerbi.microsoft.com/blog/power-bi-report-server-october-2020-feature-summary/). 
+
+### <a name="power-bi-desktop-optimized-for-power-bi-report-server"></a>Power BI Desktop optimeret til Power BI-rapportserver
+
+Her er nogle af de nye funktioner.
+
+**Moderne bånd**  
+
+Det moderne bånd fås nu i Power BI Desktop optimeret til Power BI-rapportserver. Vi vil fortsætte med at foretage tilføjelser og føje flere funktioner til båndet. Se [Brug af det opdaterede bånd i Power BI Desktop](../create-reports/desktop-ribbon.md) for at få mere at vide om ændringerne og fordelene.
+
+:::image type="content" source="media/whats-new/report-server-new-ribbon.png" alt-text="Skærmbillede af det nye bånd i Power BI Desktop optimeret til Power BI-rapportserver.":::
+
+**Hierarki-udsnitsværktøjer**
+
+Du kan oprette det, der kaldes et *hierarki-udsnitsværktøj* , til at filtrere flere relaterede felter i et enkelt udsnit. Nu hvor det er offentligt tilgængelig, er der blevet tilføjet yderligere funktioner:
+
+- Nye indstillinger for ikonerne for udvid/skjul.
+- Ikonerne skaleres nu med skriftstørrelsen.
+- Brugerdefinerbar indrykning for underordnede elementer.
+- Yderligere tilpasning af teksten i udsnittets header.
+
+:::image type="content" source="media/whats-new/report-server-slicer-hierarchy.png" alt-text="Hierarki-udsnitsværktøj i Power BI Desktop optimeret til Power BI-rapportserver.":::
+
+Se [Udsnit i Power BI](../visuals/power-bi-visualization-slicers.md) i dokumentationen for at få flere oplysninger.
+
+**Forbedringer af mobiloprettelse** 
+
+I denne version introducerer vi en forbedret funktionalitet til oprettelse af mobillayout og yderligere funktioner til mobillayout. Da flere og flere organisationer benytter Power BI-mobilapps, har vi modtaget feedback om at få flere muligheder og forbedringer til mobiloprettelse. Forbedringerne i denne version vil hjælpe dig med lettere at oprette overbevisende interaktive rapporter, der er optimeret til mobilenheder.
+
+Her er de nye funktioner til oprettelse af mobiloptimerede rapporter:  
+
+- Ny telefonemulator  
+- Opdateret visualiseringsrude  
+- Understøttelse af overlejrede visualiseringer  
+- Bogmærker, der er tilgængelige i mobillayoutvisningen  
+- Deaktivering af gitterlinjer og fastgørelse til gitter  
+
+:::image type="content" source="media/whats-new/report-server-mobile-layout.png" alt-text="Forbedret mobillayout i Power BI Desktop optimeret til Power BI-rapportserver.":::
+
+Se dette blogindlæg [Forbedringer af mobiloprettelse](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_mobile) for at få flere oplysninger.
+
+**Dataforberedelse: automatisk tabelregistrering fra Excel-filer**
+
+Denne nye funktion i Excel Connector identificerer automatisk sektioner i hvert Excel-regneark til udtrækning til en tabel. Den viser dem under gruppen Foreslåede tabeller i navigatoren. Tidligere skulle data formateres som en tabel eller et navngivet område i Excel. Ellers skulle du kassere de relevante rækker/kolonner med bestemte transformeringer, f.eks. ved at springe rækker over og fjerne kolonner fra regnearksobjekter, som i Ark1 i følgende eksempel. Hvis du vil bruge denne funktion, skal du aktivere den i dialogboksen **Indstillinger**.
+
+:::image type="content" source="media/whats-new/report-server-excel-table.png" alt-text="Genkendelse af en Excel-tabel i Power BI Desktop optimeret til Power BI-rapportserver.":::
+
+**Udformning: metadata for forbedrede datasæt**
+
+Tidligere var det kun de forespørgsler, der kunne indlæses, og som blev genereret i Power-forespørgsel, der blev knyttet til datamodellen. Nu er alle forespørgsler knyttet til objekter i datamodellen. Forespørgslerne gendannes baseret på datamodellen, når du åbner den pågældende PBIX-fil.
+
+Denne backend-opdatering vil blive yderligere forbedret i fremtiden. 
+
+Eksempel:
+
+- Når eksterne værktøjer tilføjes i Power BI Desktop (i øjeblikket som prøveversion), vises de tabeller, du tilføjer via disse eksterne værktøjer, nu som forespørgsler, når du åbner din rapport igen.
+- Hvis du har prøvet at eksportere en PBIT-fil og udpakke filen, kan du nu se modellen i JSON og får ikke længere fejl om beskadigede filer. 
+
+Hvis du har en ældre PBIX, der ikke automatisk kan opdateres, f.eks. på grund af ikke-anvendte ændringer, skal du opgradere din model korrekt, før du kan foretage yderligere udformningsændringer. 
+
+**Understøttelse af Windows 7 stopper**
+
+Understøttelsen af Windows 7 ophørte efter 10 år den 14. januar 2020. I tråd med dette vil vi stoppe understøttelsen af Power BI Desktop i Windows 7 den 31. januar 2021. Herefter understøttes Power BI Desktop udelukkende i Windows 8 og nyere. Januar 2021-udgivelsen af Power BI Desktop optimeret til rapportserver understøttes i henhold til den moderne politik for livscyklus. Det vil med andre ord sige, at den understøttes fuldt ud indtil den næste version (der er planlagt til maj 2021). Efter maj 2021 vil den kun modtage sikkerhedsopdateringer indtil januar 2022. Al support stopper efter januar 2022. Se [Supporttidslinje for Power BI-rapportserver](support-timeline.md) for at få flere oplysninger. 
+
+**Komplet liste over opdateringer**
+
+Her er en komplet liste over opdateringerne i oktober-udgaven af Power BI Desktop optimeret til Power BI-rapportserver. 
+
+**Rapportering**
+
+- Moderne bånd
+- Lærredsvandmærker
+- Det samlede antal mærkater for stablede visualiseringer
+- Der er tilføjet en generel visuel indstilling til at vedligeholde lagrækkefølgen
+- Gradueringsforklaring
+- Relativt tidsfilter
+- Mulighed for yderligere at tilpasse overskriftsteksten i udsnitsværktøjet
+- Forbedringer af hierarkiske udsnitsværktøjer
+
+    - Nye indstillinger for ikonerne for udvid/skjul
+    - Ikonerne skaleres nu med skriftstørrelsen
+    - Mulighed for at tilpasse indrykning for underordnede elementer
+
+- Forbedringer af mobiloprettelse
+
+    - Ny telefonemulator
+    - Opdateret visualiseringsrude
+    - Understøttelse af overlejrede visualiseringer
+    - Bogmærker, der er tilgængelige i mobillayoutvisningen
+    - Deaktivering af gitterlinjer og fastgørelse til gitter  
+
+**Visualiseringer**
+
+- Formateringsindstillinger for punkter i kurvediagram 
+
+**Modellering**
+
+- Metadata for forbedrede datasæt
+- Forbedringer af ydeevnen til IF- og SWITCH-funktioner
+- Understøttelse af Excel-økonomifunktioner
+- Modelvisning aktiveret til Live Connect
+- Opdateringer af modelvisning 
+
+**Dataforberedelse**
+
+- Automatisk tabelregistrering fra Excel-filer  
+- Automatisk tabelregistrering fra JSON-filer  
+- Global indstilling til deaktivering af automatisk typeregistrering 
+
+**Andet**  
+
+- Eksportér datakilde til PBIDS i Power BI Desktop
+- Annullering af velkomstbillede på stationære computere 
+
+### <a name="power-bi-report-server"></a>Power BI-rapportserver
+
+**Skift forbindelsesstrenge til datakilden i Power BI-rapporter ved hjælp af PowerShell**
+
+I versionen af Power BI-rapportserver fra oktober aktiverer vi muligheden for at opdatere forbindelser for Power BI-rapporter til DirectQuery og opdatering. Dette er også en banebrydende ændring af, hvordan du kunne konfigurere dette i tidligere versioner. Du kan få mere at vide i [Skift forbindelsesstrenge til datakilden i Power BI-rapporter ved hjælp af PowerShell – Power BI-rapportserver](connect-data-source-apis.md). 
 
 ## <a name="may-2020"></a>Maj 2020
 
@@ -351,7 +473,7 @@ Vi har tilføjet understøttelse af visualiseringer, der er tillid til, i Power 
 
 #### <a name="improved-security-features"></a>Forbedrede sikkerhedsfunktioner
 
-**RestrictedResourceMimeTypeForUpload**, som administratorer kan bruge til at angive en kommasepareret liste over forbudte MIME-typer, f.eks. text/html.
+**RestrictedResourceMimeTypeForUpload** , som administratorer kan bruge til at angive en kommasepareret liste over forbudte MIME-typer, f.eks. text/html.
 
 ## <a name="january-2019"></a>Januar 2019
 
@@ -664,7 +786,7 @@ Power BI-rapportserver understøtter nu de nye Power BI-tabel- og matrixvisuals.
 - Prøveversion af Power BI-rapportserver gjort tilgængelig
 - Mulighed for at publicere Power BI-rapporter i det lokale miljø
   - understøttelse af Power BI-visuals
-  - Kun understøttelse af **Analysis Services-liveforbindelser*, men med flere datakilder på vej.
+  - Kun understøttelse af * *Analysis Services-liveforbindelser* , men med flere datakilder på vej.
   - Appen Power BI - Mobil er blevet opdateret til at vise Power BI-rapporter, der hostes i Power BI-rapportserver
 - Forbedret samarbejde i rapporter med kommentarer
 

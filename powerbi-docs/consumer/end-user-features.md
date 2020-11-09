@@ -10,18 +10,18 @@ ms.date: 09/16/2020
 ms.author: mihart
 ms.custom: licensing support
 LocalizationGroup: consumers
-ms.openlocfilehash: 9ab371844f4c746bfcb4c993dec0b32237e5c26a
-ms.sourcegitcommit: cb606d3ae95300683caf1853e229d8981302a8e2
+ms.openlocfilehash: ddd63a4f18c9994e0a89f4028bcdec96eda21600
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90763062"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92916699"
 ---
 # <a name="power-bi-feature-list-for-consumers-and-others-with-free-licenses"></a>Liste over Power BI-funktioner til *forbrugere* og andre med gratis licenser
 
 [!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
-Som *forretningsbruger* kan du bruge Power BI-tjenesten til at udforske rapporter og dashboards og træffe forretningsbeslutninger på baggrund af disse. Disse rapporter og dashboards oprettes af *designere*, der har Power BI *Pro*-licenser. Pro-brugere har mulighed for at dele indhold med deres kolleger og styre, hvad deres kolleger kan og ikke kan foretage sig med dette indhold. Nogle gange kan designere dele indhold ved at sende dig links, og i nogle tilfælde installeres indholdet automatisk og vises i Power BI under **Apps** eller **Delt med mig**.
+Som *forretningsbruger* kan du bruge Power BI-tjenesten til at udforske rapporter og dashboards og træffe forretningsbeslutninger på baggrund af disse. Disse rapporter og dashboards oprettes af *designere* , der har Power BI *Pro* -licenser. Pro-brugere har mulighed for at dele indhold med deres kolleger og styre, hvad deres kolleger kan og ikke kan foretage sig med dette indhold. Nogle gange kan designere dele indhold ved at sende dig links, og i nogle tilfælde installeres indholdet automatisk og vises i Power BI under **Apps** eller **Delt med mig**.
 
 Der er mange forskellige måder, designere kan dele indhold på. Denne artikel henvender sig til *forretningsbrugere* af Power BI, og vi vil derfor kun beskrive, hvordan *forretningsbrugere* modtager og interagerer med indhold. Du kan finde flere oplysninger om andre måder at dele indhold på under [Måder at dele dit arbejde på i Power BI](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md).
 
@@ -42,7 +42,7 @@ Der er to typer arbejdsområder: **Mit arbejdsområde** og apparbejdsområder. D
 I programarbejdsområder tildeles *roller* af designere for at administrere, hvem der kan gøre hvad i det pågældende arbejdsområde. *Forretningsbrugere* er ofte tildelt rollen **Læser**. 
 
 ### <a name="premium-capacity"></a>Premium-kapacitet
-Når en organisation har et abonnement på en Premium-kapacitet, kan administratorer og Pro-brugere tildele arbejdsområder til en *dedikeret kapacitet*. Et arbejdsområde i en dedikeret kapacitet er et sted, hvor Pro-brugere kan dele og samarbejde med gratis brugere – uden at det er nødvendigt for de gratis brugere at have Pro-licenser. I disse arbejdsområder har gratis brugere administratorrettigheder (se listen nedenfor). 
+Når en organisation har et abonnement på en Premium-kapacitet, kan administratorer og Pro-brugere tildele arbejdsområder til en *kapacitet*. Et arbejdsområde i en kapacitet er et sted, hvor Pro-brugere kan dele og samarbejde med gratis brugere – uden at det er nødvendigt for de gratis brugere at have Pro-licenser. I disse arbejdsområder har gratis brugere administratorrettigheder (se listen nedenfor). 
 
 ### <a name="licenses"></a>Licenser 
 Hver Power BI-tjenestebruger har enten en gratis licens eller en Pro-licens. *Forretningsbrugere* har gratis licenser.
@@ -59,7 +59,7 @@ Hver Power BI-tjenestebruger har enten en gratis licens eller en Pro-licens. *Fo
    
 
 ## <a name="power-bi-feature-list-for-consumers-and-free-users"></a>Liste over Power BI-funktioner til *forbrugere* og gratis brugere
-Følgende diagram viser, hvilke opgaver der kan udføres af en *forretningsbruger*, som interagerer med indhold i en Premium-kapacitet.    
+Følgende diagram viser, hvilke opgaver der kan udføres af en *forretningsbruger* , som interagerer med indhold i en Premium-kapacitet.    
 
 Den første kolonne repræsenterer en gratis bruger, der arbejder med indhold i **Mit arbejdsområde**. Denne bruger kan ikke samarbejde med kolleger i Power BI-tjenesten. Kolleger kan ikke dele indhold direkte med denne bruger, og denne bruger kan ikke dele fra **Mit arbejdsområde**. 
 
@@ -79,7 +79,7 @@ Den anden kolonner repræsenterer en *forretningsbruger*.  En forretningsbruger:
 
 ### <a name="feature-list"></a>Liste over funktioner
 
-|Funktioner   | Scenarie 1: Gratis Power BI-bruger, der ikke har adgang til indhold, som er hostet i en dedikeret kapacitet.    | Scenarie 2: Gratis Power BI-bruger med tilladelser som **Læser** til indhold, der er gemt i en dedikeret kapacitet. Denne person er en *forretningsbruger* i Power BI. |
+|Funktioner   | Scenarie 1: Gratis Power BI-bruger, der ikke har adgang til indhold, der er hostet i en kapacitet.    | Scenarie 2: Gratis Power BI-bruger med tilladelser som **Læser** til indhold, der er gemt i en kapacitet. Denne person er en *forretningsbruger* i Power BI. |
 |---|---|---|
 |**Apps** 
 |Installeres automatisk | ![orange x](media/end-user-features/orange-x.png) | ![grøn prik](media/end-user-license/power-bi-green-dot.png)*| 

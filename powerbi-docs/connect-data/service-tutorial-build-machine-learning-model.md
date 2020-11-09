@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 08/03/2020
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 9f25c9ffc294a1733a3dba5818dc00bd23124837
-ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
+ms.openlocfilehash: ad4715bbecc94934d0f2ac53551b27d82cb4282c
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87878888"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92916952"
 ---
 # <a name="tutorial-build-a-machine-learning-model-in-power-bi"></a>Selvstudium: Skab en model til maskinel indlæring i Power BI
 
@@ -44,9 +44,9 @@ Du kan downloade datasættet fra UC Irvine-webstedet. Til dette selvstudium har 
 
 ### <a name="create-the-entities"></a>Opret enhederne
 
-Log på Power BI-tjenesten for at oprette enhederne i dit dataflow, og naviger til et arbejdsområde i den dedikerede kapacitet, hvor kunstig intelligens er aktiveret.
+Log på Power BI-tjenesten for at oprette enhederne i dit dataflow, og naviger til et arbejdsområde i den kapacitet, hvor kunstig intelligens er aktiveret.
 
-Hvis du ikke allerede har et arbejdsområde, kan du oprette et ved at vælge **Arbejdsområder** i navigationsrudens menu i Power BI-tjenesten og vælge **Opret arbejdsområde** nederst i det viste panel. Herefter åbnes et panel til højre, hvor du kan angive oplysninger om arbejdsområdet. Skriv et navn til arbejdsområdet, og vælg derefter **Avanceret**. Bekræft, at arbejdsområdet bruger dedikeret kapacitet, ved hjælp af alternativknappen, og at det er tildelt til en forekomst af dedikeret kapacitet, hvor AI Preview er slået til. Vælg derefter **Gem**.
+Hvis du ikke allerede har et arbejdsområde, kan du oprette et ved at vælge **Arbejdsområder** i navigationsrudens menu i Power BI-tjenesten og vælge **Opret arbejdsområde** nederst i det viste panel. Herefter åbnes et panel til højre, hvor du kan angive oplysninger om arbejdsområdet. Skriv et navn til arbejdsområdet, og vælg derefter **Avanceret**. Bekræft, at arbejdsområdet bruger dedikeret kapacitet, ved hjælp af alternativknappen, og at det er tildelt til en forekomst af en kapacitet, hvor AI Preview er slået til. Vælg derefter **Gem**.
 
 ![Opret et arbejdsområde](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-01.png)
 
@@ -66,7 +66,7 @@ Vælg **Tekst/CSV-fil** som en datakilde, som vist på følgende billede.
 
 ![Tekst/CSV-fil er valgt](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-05.png)
 
-På siden **Opret forbindelse til en datakilde**, der vises herefter, skal du indsætte følgende link til _online_shoppers_intention.csv_ i feltet **Filsti eller URL-adresse** og derefter vælge  **Næste**.
+På siden **Opret forbindelse til en datakilde** , der vises herefter, skal du indsætte følgende link til _online_shoppers_intention.csv_ i feltet **Filsti eller URL-adresse** og derefter vælge  **Næste**.
 
 `https://raw.githubusercontent.com/santoshc1/PowerBI-AI-samples/master/Tutorial_AutomatedML/online_shoppers_intention.csv`
 
@@ -145,7 +145,7 @@ Vælg knappen **Anvend model** øverst i rapporten for at aktivere denne model. 
 
 Du skal **opdatere** dataflowet for at få vist et eksempel på resultatet af din model, når du bliver bedt om det.
 
-Anvendelse af modellen vil oprette to nye enheder med suffikset **enriched <model_name>** og **enriched <model_name> explanations**. Anvendelse af modellen i enheden **Online Visitors** vil i vores tilfælde oprette **Online Visitors enriched Purchase Intent Prediction**, som omfatter det forudsagte output fra modellen, og **Online Visitors enriched Purchase Intent Prediction explanations**, som indeholder de vigtigste postspecifikke influencere for forudsigelsen. 
+Anvendelse af modellen vil oprette to nye enheder med suffikset **enriched <model_name>** og **enriched <model_name> explanations**. Anvendelse af modellen i enheden **Online Visitors** vil i vores tilfælde oprette **Online Visitors enriched Purchase Intent Prediction** , som omfatter det forudsagte output fra modellen, og **Online Visitors enriched Purchase Intent Prediction explanations** , som indeholder de vigtigste postspecifikke influencere for forudsigelsen. 
 
 Hvis du anvender en model til binær forudsigelse, tilføjes der fire kolonner med et forudsagt resultat, en sandsynlighedsscore, de vigtigste postspecifikke influencere for forudsigelsen og et forklaringsindeks, der hver især har det angivne kolonnenavn som præfiks.  
 

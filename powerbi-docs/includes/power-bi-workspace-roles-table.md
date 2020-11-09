@@ -8,12 +8,12 @@ ms.topic: include
 ms.date: 10/21/2020
 ms.author: maggies
 ms.custom: include file
-ms.openlocfilehash: 87c35df25a17090f1788abbeb979afab3ad9d6a9
-ms.sourcegitcommit: fddba666c6ea90d525a1c3188bbd3c4a03410cdc
+ms.openlocfilehash: 3828a11f4b4447f6484e121fec84fb44d702c86a
+ms.sourcegitcommit: 8861dac6724202a5b3be456a6aff8f3584e0cccf
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92462209"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93135520"
 ---
 |Funktion   | Administrator  | Medlem  | Bidragsyder  | Fremviser |
 |---|---|---|---|---|
@@ -21,7 +21,7 @@ ms.locfileid: "92462209"
 | Tilføje/fjerne personer, herunder andre administratorer.  |  ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) |   |   |   |
 | Tillade, at bidragydere opdaterer appen for arbejdsområdet  |  ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) |   |   |   |
 | Tilføje medlemmer eller andre med lavere tilladelser.  |  ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |   |
-| Publicere og redigere tilladelser for en app |  ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |   |
+| Publicer, annuller publicering og rediger tilladelser for en app |  ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |   |
 | Opdatere en app. |  ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png)  |  Hvis tilladt <sup>1</sup>  |   |
 | Dele et element eller dele en app.<sup>2</sup> |  ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |   |
 | Give andre tilladelse til at dele elementer igen.<sup>2</sup> |  ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |   |

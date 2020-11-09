@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/20/2020
 ms.author: v-pemyer
-ms.openlocfilehash: a725d2763d7d044220785c2f9727ee30f14bfd5d
-ms.sourcegitcommit: 84e75a2cd92f4ba4e0c08ba296b981b79d6d0e82
+ms.openlocfilehash: d436f01e074c27dc8a0d37f9e62d0ac422c4ab81
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88803195"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92916676"
 ---
 # <a name="learn-from-customer-power-bi-migrations"></a>Få mere viden fra kunder i forbindelse med migrering til Power BI
 
@@ -158,7 +158,7 @@ I løbet af det seneste år har virksomheden forbedret sine tilbud om intern opl
 
 Der er nu seks interne Power BI-kurser i deres interne katalog. Kurset [Dashboard på en dag](https://powerbi.microsoft.com/diad/) er fortsat et populært kursus for begyndere. For at hjælpe brugerne med at udbygge deres færdigheder leverer de en serie bestående af tre Power BI-kurser og to DAX-kurser.
 
-Hvilket er en af deres vigtigste beslutninger i forbindelse med datastyring, som er relateret til administration af Premium-kapaciteter. Virksomheden valgte at tilpasse deres dedikerede kapacitet til vigtige analyseområder i forretningsenheder og delte tjenester. Så hvis der er ineffektivitet, mærkes effekten kun inden for dette ene område, og administratorerne af den decentraliserede kapacitet kan administrere kapaciteten, efter hvad de finder passende.
+Hvilket er en af deres vigtigste beslutninger i forbindelse med datastyring, som er relateret til administration af Premium-kapaciteter. Virksomheden valgte at tilpasse deres kapacitet til vigtige analyseområder i forretningsenheder og delte tjenester. Så hvis der er ineffektivitet, mærkes effekten kun inden for dette ene område, og administratorerne af den decentraliserede kapacitet kan administrere kapaciteten, efter hvad de finder passende.
 
 > [!IMPORTANT]
 > Vær opmærksom på, hvordan Premium-kapaciteter bruges, og hvordan arbejdsområder tildeles til dem.

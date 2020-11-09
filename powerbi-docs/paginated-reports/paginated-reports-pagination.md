@@ -1,6 +1,6 @@
 ---
 title: Sideinddeling i Power BI-sideinddelte rapporter
-description: Få mere at vide om sideinddelte rapporter i Power BI-tjenesten og de regler, der bruges til at styre sideinddeling, for at designe en rapport, der er optimeret til den gengivelse, du planlægger at bruge.
+description: Få mere at vide om sideinddelte rapporter i Power BI-tjenesten. Få mere at vide om de regler, der bruges til at styre sideinddeling, for at designe en rapport, der er optimeret til den gengivelse, du planlægger at bruge.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -8,37 +8,39 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 12/03/2019
-ms.openlocfilehash: 87dc2541dd8fd91f22c1e89ce146be10eca14db9
-ms.sourcegitcommit: 6ba33e5a500928163e02e007f5ccd52dd2227610
+ms.openlocfilehash: 591caf8aaefa1b71576a014c5e74cce6ae79acac
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780123"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93297874"
 ---
 # <a name="pagination-in-power-bi-paginated-reports"></a>Sideinddeling i Power BI-sideinddelte rapporter
 
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
+
  *Sideinddeling* henviser til antallet af sider i en rapport, og hvordan rapportelementer er arrangeret på disse sider. Sideinddeling i Power BI sideinddelte rapporter varierer afhængigt af den gengivelsesudvidelse, du bruger til at få vist og levere rapporten. Når du kører en rapport på rapportserveren, bruger rapporten HTML-gengivelsen. HTML følger et bestemt sæt af regler for sideinddeling. Hvis du eksporterer den samme rapport til PDF, kan du f. eks. bruge PDF-gengivelse, som anvender et andet sæt regler. Rapporten sideinddeles derfor på en anden måde. Du skal forstå de regler, der bruges til at styre sideinddeling i sideinddelte rapporter i Power BI. Derefter kan du designe en læsevenlig rapport, som du optimerer til den gengivelse, du vil bruge til at levere din rapport.  
   
- I dette emne beskrives virkningen af den fysiske sidestørrelse og rapportlayoutet for, hvordan gengivere med hårde sideskift gengiver rapporten. Du kan angive egenskaber for at ændre den fysiske sidestørrelse og margenerne og opdele rapporten i kolonner ved hjælp af ruden **Egenskaber for rapport**, ruden **Egenskaber** eller dialogboksen **Sideopsætning**. Opret adgang til ruden **Rapportegenskaber** ved at klikke på det blå område uden for rapportens brødtekst. Opret adgang til dialogboksen **Sideopsætning** ved at klikke på **Kør** på fanen Hjem og derefter **Sideopsætning** under fanen Kør.  
+ I dette emne beskrives virkningen af den fysiske sidestørrelse og rapportlayoutet for, hvordan gengivere med hårde sideskift gengiver rapporten. Du kan angive egenskaber for at ændre den fysiske sidestørrelse og margenerne og opdele rapporten i kolonner ved hjælp af ruden **Egenskaber for rapport** , ruden **Egenskaber** eller dialogboksen **Sideopsætning**. Opret adgang til ruden **Rapportegenskaber** ved at klikke på det blå område uden for rapportens brødtekst. Opret adgang til dialogboksen **Sideopsætning** ved at klikke på **Kør** på fanen Hjem og derefter **Sideopsætning** under fanen Kør.  
   
 > [!NOTE]  
 >  Hvis du har designet en rapport, der er én side bred, men som gengives på tværs af flere sider, skal du kontrollere, at bredden af rapportens brødtekst inklusive margener ikke er større end bredden på den fysiske side. Hvis du vil forhindre, at tomme sider føjes til din rapport, kan du reducere størrelsen på objektbeholderen ved at trække objektbeholderens hjørne til venstre.  
 
 ## <a name="the-report-body"></a>Rapportens brødtekst  
- Brødteksten i rapporten er en rektangulær objektbeholder, der vises som et hvidt felt på designoverfladen. Den kan udvides eller reduceres, så det passer til de rapportelementer, der er indeholdt i den. Rapportens brødtekst afspejler ikke den fysiske sidestørrelse, og rapportens brødtekst kan faktisk blive større end grænserne for den fysiske sidestørrelse, så den spænder over flere rapportsider. Nogle gengivelser såsom Microsoft Excel, Word, HTML og MHTML gengiver rapporter, der vokser eller formindskes afhængigt af sidens indhold. Rapporter, der gengives i disse formater, er optimeret til skærmbaseret visning, f.eks. i en webbrowser. Disse gengivelser tilføjer lodrette sideskift, når det er nødvendigt.  
+ Brødteksten i rapporten er en rektangulær objektbeholder, der vises som et hvidt felt på designoverfladen. Den kan udvides eller reduceres, så det passer til de rapportelementer, der er indeholdt i den. Rapportens brødtekst afspejler ikke den fysiske sidestørrelse, og rapportens brødtekst kan faktisk blive større end grænserne for den fysiske sidestørrelse, så den spænder over flere rapportsider. Nogle gengivelser gengiver rapporter, der vokser eller formindskes, afhængigt af sidens indhold. Rapporter, der gengives i disse formater, er optimeret til skærmbaseret visning, f.eks. i en webbrowser. Disse gengivelser, f.eks. Microsoft Excel, Word, HTML og MHTML, tilføjer lodrette sideskift, når det er påkrævet.  
   
  Du kan formatere brødteksten i rapporten med en kantfarve, en kanttype og en kantbredde. Du kan også tilføje en baggrundsfarve og et baggrundsbillede.  
   
 ## <a name="the-physical-page"></a>Den fysiske side  
  Den fysiske sidestørrelse er papirstørrelsen. Den papirstørrelse, du angiver for rapporten, bestemmer, hvordan rapporten gengives. Rapporter, der gengives i formaterne med hårdt sideskift, indsætter sideskift vandret og lodret på basis af den fysiske sidestørrelse. Disse sideskift giver en optimeret læseoplevelse ved udskrivning eller visning i et format med hårdt sideskift. Rapporter, der gengives i formaterne med blødt sideskift, indsætter sideskift vandret på basis af den fysiske størrelse. Igen giver sideskift en optimeret læseoplevelse ved visning i en webbrowser.  
   
- Sidestørrelsen er som standard 8,5 x 11 tommer, men du kan ændre denne størrelse i ruden **Rapportegenskaber** eller dialogboksen **Sideopsætning** eller ved at ændre egenskaberne PageHeight og PageWidth i Ruden **egenskaber**. Sidestørrelsen vokser eller tilpasses ikke, så den passer til indholdet i rapportens brødtekst. Hvis rapporten skal vises på en enkelt side, skal al indholdet i rapportens brødtekst kunne være på den fysiske side. Hvis der ikke er plads til det, og du bruger formatet med hårdt sideskift, kræver rapporten flere sider. Hvis rapportens brødtekst vokser ud over den højre kant på den fysiske side, indsættes et vandret sideskift. Hvis rapportens brødtekst vokser ud over den nederste kant på den fysiske side, indsættes et lodret sideskift.  
+ Sidestørrelsen er som standard 8,5 x 11 tommer. Du kan ændre denne størrelse i ruden **Rapportegenskaber** eller dialogboksen **Sideopsætning** eller ved at ændre egenskaberne PageHeight og PageWidth i Ruden **Egenskaber**. Sidestørrelsen vokser eller tilpasses ikke, så den passer til indholdet i rapportens brødtekst. Hvis rapporten skal vises på en enkelt side, skal al indholdet i rapportens brødtekst kunne være på den fysiske side. Hvis der ikke er plads til det, og du bruger formatet med hårdt sideskift, kræver rapporten flere sider. Hvis rapportens brødtekst vokser ud over den højre kant på den fysiske side, indsættes et vandret sideskift. Hvis rapportens brødtekst vokser ud over den nederste kant på den fysiske side, indsættes et lodret sideskift.  
   
- Hvis du vil tilsidesætte den fysiske sidestørrelse, der er defineret i rapporten, kan du angive den fysiske sidestørrelse ved hjælp af indstillingerne for enhedsoplysninger for den specifikke gengivelsesenhed, som du bruger til at eksportere rapporten. Du kan finde en komplet liste under [Indstillinger for enhedsoplysninger for gengivelsesudvidelser](/sql/reporting-services/device-information-settings-for-rendering-extensions-reporting-services) i dokumentationen til SQL Server Reporting Services.  
+ Du kan tilsidesætte den fysiske sidestørrelse, der er defineret i rapporten. Angiv den fysiske sidestørrelse ved hjælp af indstillingerne for enhedsoplysninger for den gengivelse, som du bruger til at eksportere rapporten. Du kan finde en komplet liste under [Indstillinger for enhedsoplysninger for gengivelsesudvidelser](/sql/reporting-services/device-information-settings-for-rendering-extensions-reporting-services) i dokumentationen til SQL Server Reporting Services.  
   
 ### <a name="margins"></a>Margener
 
- Der tegnes margener indad fra kanten af de fysiske sides dimensioner til den angivne margenindstilling. Hvis et rapportelement udvides ind i margenområdet, beskæres det, så det overlappende område ikke gengives. Hvis du angiver margenstørrelser, der medfører, at den vandrette eller lodrette bredde på siden svarer til nul, er margenindstillingerne som standard nul. Margener angives i ruden med **Rapportegenskaber** eller dialogboksen **Sideopsætning** eller ved at ændre egenskaberne TopMargin, BottomMargin, LeftMargin og RightMargin i ruden **Egenskaber**. Hvis du vil tilsidesætte den margenstørrelse, der er defineret i rapporten, kan du angive margenstørrelsen ved hjælp af indstillingerne for enhedsoplysninger for den specifikke gengivelsesenhed, som du bruger til at eksportere rapporten.  
+Der tegnes margener indad fra kanten af den fysiske sides dimensioner til den angivne margenindstilling i Report Builder. Hvis et rapportelement udvides ind i margenområdet, beskæres det, så det overlappende område ikke gengives. Hvis du angiver margenstørrelser, der medfører, at den vandrette eller lodrette bredde på siden svarer til nul, er margenindstillingerne som standard nul. Du angiver margener i ruden med **Rapportegenskaber** eller dialogboksen **Sideopsætning** eller ved at ændre egenskaberne TopMargin, BottomMargin, LeftMargin og RightMargin i ruden **Egenskaber**. Hvis du vil tilsidesætte den margenstørrelse, der er defineret i rapporten, kan du angive margenstørrelsen ved hjælp af indstillingerne for enhedsoplysninger for den specifikke gengivelsesenhed, som du bruger til at eksportere rapporten.  
   
  Det område på den fysiske side, der forbliver, efter at pladsen er allokeret til margener, kolonneafstand og sidehoveder og sidefødder, kaldes det *brugbare sideområde*. Margener anvendes kun, når du gengiver og udskriver rapporter i gengivelsesformater med hårdt sideskift. Det følgende billede angiver margenen og det brugbare sideområde på en fysisk side.  
   
@@ -46,7 +48,7 @@ ms.locfileid: "91780123"
   
 ### <a name="newsletter-style-columns"></a>Kolonner som i et nyhedsbrev  
 
- Din rapport kan inddeles i kolonner på samme måde som kolonner i en avis. Kolonner behandles som *logiske* sider, der gengives på den samme *fysiske* side. De er arrangeret fra venstre mod højre fra top til bund og adskilt af et blanktegn mellem hver kolonne. Hvis rapporten er inddelt i mere end én kolonne, opdeles hver fysiske side lodret i kolonner, og hver kolonne anses som en logisk side. Antag for eksempel, at du har to kolonner på en fysisk side. Indholdet af rapporten fylder den første kolonne og derefter den anden kolonne. Hvis rapporten ikke passer fuldstændigt inden for de første to kolonner, udfylder rapporten derefter den første og anden kolonne på den næste side. Udfyldningen af kolonnerne fortsætter fra venstre mod højre, top til bund, indtil alle rapportelementer er gengivet. Hvis du angiver kolonnestørrelser, der medfører, at den vandrette eller lodrette bredde er lig med nul, er kolonneafstanden som standard nul.  
+ Din rapport kan inddeles i kolonner på samme måde som kolonner i en avis. Kolonner behandles som *logiske* sider, der gengives på den samme *fysiske* side. De er arrangeret fra venstre mod højre fra top til bund og adskilt af et blanktegn mellem hver kolonne. Hvis rapporten er inddelt i mere end én kolonne, opdeles hver fysiske side lodret i kolonner. Hver kolonne anses som en logisk side. Antag for eksempel, at du har to kolonner på en fysisk side. Indholdet af rapporten fylder den første kolonne og derefter den anden kolonne. Hvis rapporten ikke passer fuldstændigt inden for de første to kolonner, udfylder rapporten derefter den første og anden kolonne på den næste side. Udfyldningen af kolonnerne fortsætter fra venstre mod højre, top til bund, indtil alle rapportelementer er gengivet. Hvis du angiver kolonnestørrelser, der medfører, at den vandrette eller lodrette bredde er lig med nul, er kolonneafstanden som standard nul.  
   
  Du angiver margener i ruden med **Rapportegenskaber** eller dialogboksen **Sideopsætning** eller ved at ændre egenskaberne TopMargin, BottomMargin, LeftMargin og RightMargin i ruden **Egenskaber**. Hvis du vil bruge en margenstørrelse, der ikke er defineret, kan du specificere margenstørrelsen med indstillingerne Enhedsoplysninger for den specifikke gengiver, som du eksporterer rapporten til. Kolonner anvendes kun, når du gengiver og udskriver rapporter i PDF- eller Image-format. Det følgende billede viser det brugbare sideområde på en side, der indeholder kolonner.  
   
@@ -54,7 +56,14 @@ ms.locfileid: "91780123"
   
 ## <a name="page-breaks-and-page-names"></a>Sideskift og sidenavne
 
- En rapport kan være mere læselig og dens data nemmere at overvåge og eksportere, når rapporten indeholder sidenavne. SQL Server Reporting Services indeholder egenskaber for rapporter, tabel-, matrix-og listedataområder, filgrupper og rektangler i rapporten til at styre sideinddeling, nulstille sidetal og angive nye rapportsidenavne på sideskift. Disse funktioner kan forbedre rapporter, uanset hvilket format rapporterne er gengivet i, men er især nyttige ved eksport af rapporter til Excel-projektmapper.
+ En rapport kan være mere læselig og dens data nemmere at overvåge og eksportere, når rapporten indeholder sidenavne. Report Builder indeholder egenskaber for disse elementer:
+
+- rapporter
+- tabel, matrix og listedataområder
+- grupper
+- rektangler i rapporten til at styre sideinddeling, nulstille sidetal og angive nye rapportsidenavne ved sideskift. 
+ 
+Disse funktioner kan forbedre rapporter, uanset hvilket format rapporterne er gengivet i. De er især nyttige, når du eksporterer rapporter til Excel-projektmapper.
 
 > [!NOTE]
 > Tabel-, matrix- og listedataområder er reelt den samme type dataområde bag kulisserne: en *tablix.* Så du kan møde dette navn. 
@@ -73,7 +82,7 @@ ms.locfileid: "91780123"
   
 - **ResetPageNumber** angiver, om sidetallet skal nulstilles til 1, når der vises et sideskift. Hvis denne egenskab evalueres som Sand, nulstilles sidetallet.  
   
- Du kan angive egenskaben BreakLocation i dialogboksene **Egenskaber for tablix**, **Egenskaber for rektangel** eller **Egenskaber for grupper**, men du skal angive egenskaberne Disabled, ResetPageNumber og PageName i ruden Egenskaber i Report Builder. Hvis egenskaberne i ruden Egenskaber er organiseret efter kategori, finder du egenskaberne i kategorien **PageBreak**. For grupper er kategorien **PageBreak** placeret i kategorien **Gruppe**.  
+ Du kan angive egenskaben BreakLocation i dialogboksene **Egenskaber for tablix** , **Egenskaber for rektangel** eller **Egenskaber for grupper** , men du skal angive egenskaberne Disabled, ResetPageNumber og PageName i ruden Egenskaber i Report Builder. Hvis egenskaberne i ruden Egenskaber er organiseret efter kategori, finder du egenskaberne i kategorien **PageBreak**. For grupper er kategorien **PageBreak** placeret i kategorien **Gruppe**.  
   
  Du kan bruge konstanter og simple eller komplekse udtryk til at angive værdien af egenskaberne Disabled og ResetPageNumber. Du kan dog ikke bruge udtryk sammen med egenskaben BreakLocation. Du kan finde flere oplysninger om at skrive og bruge udtryk i [Udtryk i Power BI Report Builder](report-builder-expressions.md).  
   
