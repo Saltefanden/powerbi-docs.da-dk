@@ -8,7 +8,7 @@
         - name: Oversigt over forespørgselseditor
           href: desktop-query-overview.md
         - name: Selvbetjent dataforberedelse med dataflow
-          href: service-dataflows-overview.md
+          href: ./dataflows/dataflows-introduction-self-service.md
     - name: Selvstudier
       expanded: true
       items:
@@ -98,39 +98,39 @@
         - name: Selvbetjent dataforberedelse
           items:
             - name: Opret og brug dataflow
-              href: service-dataflows-create-use.md
+              href: ./dataflows/dataflows-create.md
             - name: Brug DirectQuery med dataflow i Power BI (prøveversion)
-              href: service-dataflows-directquery.md
+              href: ./dataflows/dataflows-configure-consume.md
             - name: Brug det forbedrede beregningsprogram med dataflows
-              href: service-dataflows-enhanced-compute-engine.md
+              href: ./dataflows/dataflows-premium-features.md
             - name: Beregnede enheder med Power BI Premium
-              href: service-dataflows-computed-entities-premium.md
+              href: ./dataflows/dataflows-premium-features.md
             - name: Opret forbindelse til datakilder med dataflow
-              href: service-dataflows-data-sources.md
+              href: ./dataflows/dataflows-configure-consume.md
             - name: Brug dataflow med datakilder i det lokale miljø
-              href: service-dataflows-on-premises-gateways.md
+              href: ./dataflows/dataflows-configure-consume.md
             - name: Link enheder mellem dataflow
-              href: service-dataflows-linked-entities.md
+              href: ./dataflows/dataflows-premium-features.md
             - name: Brug gradvis opdatering med dataflow
-              href: service-dataflows-incremental-refresh.md
+              href: ./dataflows/dataflows-premium-features.md
             - name: Udviklerressourcer til dataflow
-              href: service-dataflows-developer-resources.md
+              href: ./dataflows/dataflows-configure-consume.md
             - name: Opret forbindelse til dataflow i Power BI Desktop
               href: desktop-connect-dataflows.md
             - name: Integration af dataflow og Azure Data Lake (prøveversion)
-              href: service-dataflows-azure-data-lake-integration.md
+              href: ./dataflows/dataflows-azure-data-lake-storage-integration.md
             - name: Opret forbindelse til Azure Data Lake Storage Gen2 for dataflowlager
-              href: service-dataflows-connect-azure-data-lake-storage-gen2.md
+              href: ./dataflows/dataflows-azure-data-lake-storage-integration.md
             - name: Konfigurer indstillinger for dataflow for arbejdsområder (prøveversion)
-              href: service-dataflows-configure-workspace-storage-settings.md
+              href: ./dataflows/dataflows-configure-consume.md
             - name: Føj en CDM-mappe til Power BI som et dataflow (eksempelvisning)
-              href: service-dataflows-add-cdm-folder.md
+              href: ./dataflows/dataflows-machine-learning-integration.md
             - name: Integrer Machine Learning i Power BI
-              href: service-machine-learning-integration.md
+              href: ./dataflows/dataflows-machine-learning-integration.md
             - name: Brug Cognitive Services i Power BI
-              href: service-cognitive-services.md
+              href: ./dataflows/dataflows-machine-learning-integration.md
             - name: Automatiseret Machine Learning i Power BI
-              href: service-machine-learning-automated.md
+              href: ./dataflows/dataflows-machine-learning-integration.md
     - name: Reference
       items:
         - name: Genveje til formeleditor

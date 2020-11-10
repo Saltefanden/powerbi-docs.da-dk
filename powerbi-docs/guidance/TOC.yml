@@ -21,7 +21,7 @@
             - name: Deaktiver baggrundsopdatering i Power Query
               href: power-query-background-refresh.md
             - name: Bedste praksis i forbindelse med dataflow
-              href: ../transform-model/service-dataflows-best-practices.md
+              href: ../transform-model/dataflows/dataflows-introduction-self-service.md
         - name: Datamodellering
           items:
             - name: Hvad er et stjerneskema?
