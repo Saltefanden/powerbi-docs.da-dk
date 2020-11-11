@@ -1,8 +1,8 @@
 ---
 title: Punktdiagrammer, boblediagrammer og prikdiagrammer i Power BI
 description: Punktdiagrammer, prikdiagrammer og boblediagrammer i Power BI
-author: mihart
-ms.reviewer: amac
+author: msftrien
+ms.reviewer: mihart
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 11/21/2019
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 963bd77568db4390bca73a4ec4e9ce97ee616a58
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: b3b2dc8892b2b9b875621c6925c6f3c652da44c6
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91632888"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93412688"
 ---
 # <a name="scatter-charts-bubble-charts-and-dot-plot-charts-in-power-bi"></a>Punktdiagrammer, boblediagrammer og prikdiagrammer i Power BI
 
@@ -87,7 +87,7 @@ I dette selvstudium bruges [PBIX-filen med eksemplet Detailhandelsanalyse](https
 
 ## <a name="create-a-scatter-chart"></a>Opret et punktdiagram
 
-1. Start på en tom rapportside, og vælg følgende felter i ruden **Felter**:
+1. Start på en tom rapportside, og vælg følgende felter i ruden **Felter** :
 
     * **Salg** > **Salg pr. kvm.**
 
@@ -128,7 +128,7 @@ Nu tilføjer jeg en tredje dimension.
     > [!NOTE]
     > Flere datapunkter kan betyde en længere indlæsningstid. Hvis du vælger at publicere rapporter med begrænsninger i den højere ende af skalaen, skal du sørge for at teste dine rapporter på både internettet og mobilenheder. Du ønsker at bekræfte, at diagrammets ydeevne svarer til dine brugeres forventninger.
 
-1. Fortsæt med at formatere farver, navne, titler, baggrund og mere i dine visualiseringer. Hvis du vil [forbedre tilgængeligheden](../create-reports/desktop-accessibility-overview.md), bør du overveje at føje mærkeformer til hver enkelt linje. Hvis du vil vælge mærkeformen, skal du udvide **Figurer**, vælge **Mærkeform** og derefter vælge en form.
+1. Fortsæt med at formatere farver, navne, titler, baggrund og mere i dine visualiseringer. Hvis du vil [forbedre tilgængeligheden](../create-reports/desktop-accessibility-overview.md), bør du overveje at føje mærkeformer til hver enkelt linje. Hvis du vil vælge mærkeformen, skal du udvide **Figurer** , vælge **Mærkeform** og derefter vælge en form.
 
     ![Skærmbillede af rullelisten Figurer, hvor indstillingerne for mærkeformerne er fremhævet.](media/power-bi-visualization-scatter/pbi-scatter-marker.png)
 

@@ -1,8 +1,7 @@
 ---
 title: Fordelingstræ
 description: 'Selvstudium: Opret en fordelingstrævisualisering i Power BI'
-author: mihart
-manager: kvivek
+author: msftrien
 ms.reviewer: juluczni
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: how-to
 ms.date: 01/10/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b7aebef72952c75ed6ec406c6f3f9e888f047086
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 0a8bc86217dac8f0c2b70e300f08b1667ee63568
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91632819"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93413079"
 ---
 # <a name="create-and-view-decomposition-tree-visuals-in-power-bi"></a>Opret og få vist fordelingstrævisualiseringer i Power BI
 
@@ -79,14 +78,14 @@ Du kan bruge "AI-opdelinger" til at finde ud af, hvor du efterfølgende skal kig
 
 Analysen kan fungere på to måder, afhængigt af dine indstillinger. Standardfunktionsmåden er følgende:
 
- - **Højeste værdi**: Tager alle tilgængelige felter i betragtning og bestemmer, hvilke data der skal foretages detailudledning i for at få den højeste værdi af den måling, der analyseres.  
- - **Laveste værdi**: Tager alle tilgængelige felter i betragtning og bestemmer, hvilke data der skal foretages detailudledning i for at få den laveste værdi af den måling, der analyseres.  
+ - **Højeste værdi** : Tager alle tilgængelige felter i betragtning og bestemmer, hvilke data der skal foretages detailudledning i for at få den højeste værdi af den måling, der analyseres.  
+ - **Laveste værdi** : Tager alle tilgængelige felter i betragtning og bestemmer, hvilke data der skal foretages detailudledning i for at få den laveste værdi af den måling, der analyseres.  
 
 Hvis du vælger **Højeste værdi** i eksemplet med restordrer, resulterer det i følgende:
 
 ![AI-opdeling for fordelingstræ](media/power-bi-visualization-decomposition-tree/tree-ai-split.png)
 
-Der vises en elpære ud for **Produkttype**, der angiver, at dette var en 'AI-opdeling'. Træet indeholder også en punkteret linje, der anbefaler noden **Patient Monitoring**, da det resulterer i den højeste værdi for restordrer (9,2 %). 
+Der vises en elpære ud for **Produkttype** , der angiver, at dette var en 'AI-opdeling'. Træet indeholder også en punkteret linje, der anbefaler noden **Patient Monitoring** , da det resulterer i den højeste værdi for restordrer (9,2 %). 
 
 Peg på elpæren for at se et værktøjstip. I dette eksempel er værktøjstippet "restordre-% er højest, når Produkttype er Patientovervågning".
 
@@ -98,7 +97,7 @@ I relativ tilstand søges der efter høje værdier, der skiller sig ud (sammenli
 
 I skærmbilledet ovenfor kigger vi på Nordamerikas salg af videospil. Vi opdeler først træet ved **Udgivernavn** og foretager derefter en detailudledning i Nintendo. Hvis du vælger **Højeste værdi** resulterer det i en udvidelse af **Platform er Nintendo**. Da Nintendo (udgiveren) kun udvikler til Nintendo-konsoller, findes der kun én værdi som ikke overraskende er den højeste værdi.
 
-En mere interessant opdeling ville dog være at se på, hvilken høj værdi, der adskiller sig fra andre værdier i den samme kolonne. Hvis vi ændrer analysetypen fra **Absolut** til **Relative**, får vi følgende resultat for Nintendo: ![Relativ opdeling for fordelingstræ](media/power-bi-visualization-decomposition-tree/tree-ai-relative.png)
+En mere interessant opdeling ville dog være at se på, hvilken høj værdi, der adskiller sig fra andre værdier i den samme kolonne. Hvis vi ændrer analysetypen fra **Absolut** til **Relative** , får vi følgende resultat for Nintendo: ![Relativ opdeling for fordelingstræ](media/power-bi-visualization-decomposition-tree/tree-ai-relative.png)
 
 Denne gang er den anbefalede værdi **Platform i Spilgenre**.  Platformen giver ikke en højere absolut værdi end Nintendo (19.950.000 USD vs. 46.950.000 USD). Det er dog en værdi, der skiller sig ud.
 
@@ -116,7 +115,7 @@ Hvilket kan oversættes til:
 vs.  
 46.950.000/(46.950.000/1) = 1x  
 
-Hvis du foretrækker ikke at bruge nogen AI-opdelinger i træet, har du også mulighed for at slå dem fra under indstillingerne for **Analyseformatering**:  
+Hvis du foretrækker ikke at bruge nogen AI-opdelinger i træet, har du også mulighed for at slå dem fra under indstillingerne for **Analyseformatering** :  
 
 ![Deaktiver AI-opdeling for fordelingstræ](media/power-bi-visualization-decomposition-tree/tree-ai-disable.png)
 

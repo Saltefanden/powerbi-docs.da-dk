@@ -1,20 +1,20 @@
 ---
 title: Opret en matrixvisualiseringen i Power BI
 description: Få mere at vide om, hvordan matrixvisualisering giver dig mulighed for trinvist layout og findelt fremhævning i Power BI.
-author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/18/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e96431aaa17b1ae79d940d768a7e160e402c0af3
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: bf3210982380a0a3aa498dea8038366733182d7e
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91635855"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93412297"
 ---
 # <a name="create-matrix-visualizations-in-power-bi"></a>Opret matrixvisualiseringer i Power BI
 
@@ -75,7 +75,7 @@ I det følgende billede indeholder sektionen **Rækker** *Sales stage* og *Oppor
 
 ![Filtrerer kort, der viser, hvilke rækker der er valgt](media/desktop-matrix-visual/power-bi-rows-matrix.png)
 
-Når der er oprettet gruppering for visualiseringen i sektionen **Rækker**, viser selve visualiseringen *detailudledningen* og *udvider* ikonerne i øverste venstre hjørne i visualiseringen.
+Når der er oprettet gruppering for visualiseringen i sektionen **Rækker** , viser selve visualiseringen *detailudledningen* og *udvider* ikonerne i øverste venstre hjørne i visualiseringen.
 
 ![matrix med viste kontrolelementer til detailudledning](media/desktop-matrix-visual/power-bi-matrix-drilldown.png)
 
@@ -89,11 +89,11 @@ Ud over at bruge disse ikoner kan du vælge en af rækkeoverskrifterne og foreta
 
 Bemærk, at der er nogle indstillinger i den viste menu, der udløser forskellige resultater:
 
-Hvis du vælger **Foretag detailudledning**, udvides matricen for *det pågældende* rækkeniveau, og alle andre rækkeoverskrifter *udelades* bortset fra den rækkeoverskrift, der blev valgt. På følgende billede er **Forslag** > **Detailudledning** valgt. Bemærk, at andre rækker på øverste niveau ikke længere vises i matrixen. Funktionen til detailudledning er nyttig, og den er specielt god, når vi kommer til afsnittet om krydsfremhævning.
+Hvis du vælger **Foretag detailudledning** , udvides matricen for *det pågældende* rækkeniveau, og alle andre rækkeoverskrifter *udelades* bortset fra den rækkeoverskrift, der blev valgt. På følgende billede er **Forslag** > **Detailudledning** valgt. Bemærk, at andre rækker på øverste niveau ikke længere vises i matrixen. Funktionen til detailudledning er nyttig, og den er specielt god, når vi kommer til afsnittet om krydsfremhævning.
 
 ![matrix med detailudledning ét niveau ned](media/desktop-matrix-visual/power-bi-drill-down-matrix.png)
 
-Vælg ikonet **Færre detaljer** for at komme tilbage til den forrige visning af øverste niveau. Hvis du derefter vælger **Forslag** > **Vis næste niveau**, får du vist en liste i stigende rækkefølge over alle elementer på næste niveau (i dette tilfælde feltet *Opportunity size*) uden den hierarkiske kategorisering på højere niveau.
+Vælg ikonet **Færre detaljer** for at komme tilbage til den forrige visning af øverste niveau. Hvis du derefter vælger **Forslag** > **Vis næste niveau** , får du vist en liste i stigende rækkefølge over alle elementer på næste niveau (i dette tilfælde feltet *Opportunity size* ) uden den hierarkiske kategorisering på højere niveau.
 
 ![matrix, der bruger Vis næste niveau](media/desktop-matrix-visual/power-bi-next-level-matrix.png)
 
@@ -106,19 +106,19 @@ Du kan også bruge menupunktet **Udvid** til at styre visningen yderligere.  Væ
 ![Matrix, efter at Udvid er anvendt på Forslag](media/desktop-matrix-visual/power-bi-matrix-expand.png)
 
 ### <a name="drill-down-on-column-headers"></a>Detailudledning på kolonneoverskrifter
-Du kan også foretage detailudledning for kolonner, hvilket minder meget om detailudledning for rækker. I det følgende billede er der to felter i feltområdet **Kolonner**, hvilket opretter et hierarki, der minder om det, der blev brugt til rækkerne tidligere i denne artikel. I feltområdet **Kolonner** har vi *Område* og *Segment*. Så snart det andet felt blev føjet til **Kolonner**, blev der vist en ny rullemenu i visualiseringen. Den viser i øjeblikket **Rækker**.
+Du kan også foretage detailudledning for kolonner, hvilket minder meget om detailudledning for rækker. I det følgende billede er der to felter i feltområdet **Kolonner** , hvilket opretter et hierarki, der minder om det, der blev brugt til rækkerne tidligere i denne artikel. I feltområdet **Kolonner** har vi *Område* og *Segment*. Så snart det andet felt blev føjet til **Kolonner** , blev der vist en ny rullemenu i visualiseringen. Den viser i øjeblikket **Rækker**.
 
 ![Matrix, efter at endnu en kolonneværdi blev tilføjet](media/desktop-matrix-visual/power-bi-matrix-row.png)
 
-Hvis du vil foretage detailudledning for kolonner, skal du vælge **Kolonner** i menuen *Fortsæt analyse*, der findes i øverste venstre hjørne af matricen. Vælg området *East*, og vælg **Detailudledning**.
+Hvis du vil foretage detailudledning for kolonner, skal du vælge **Kolonner** i menuen *Fortsæt analyse* , der findes i øverste venstre hjørne af matricen. Vælg området *East* , og vælg **Detailudledning**.
 
 ![menu til detailudledning for kolonner](media/desktop-matrix-visual/power-bi-matrix-column.png)
 
-Når du vælger **Detailudledning**, vises næste niveau i kolonnehierarkiet for *Område > East*, hvilket i dette tilfælde er *Opportunity count*. Det andet område er skjult.
+Når du vælger **Detailudledning** , vises næste niveau i kolonnehierarkiet for *Område > East* , hvilket i dette tilfælde er *Opportunity count*. Det andet område er skjult.
 
 ![matrix med detailudledning ét niveau ned for kolonner](media/desktop-matrix-visual/power-bi-matrix-column-drill.png)
 
-Resten af punkterne i menuen fungerer i kolonner på samme måde, som de gør i rækker (se forrige afsnit, **Detailudledning på rækkeoverskrifter**). Du kan vælge **Vis næste niveau** og **Udvid til næste niveau** med kolonner, som du kan med rækker.
+Resten af punkterne i menuen fungerer i kolonner på samme måde, som de gør i rækker (se forrige afsnit, **Detailudledning på rækkeoverskrifter** ). Du kan vælge **Vis næste niveau** og **Udvid til næste niveau** med kolonner, som du kan med rækker.
 
 > [!NOTE]
 > Ikonerne for detailudledning og færre detaljer øverst til venstre i matrixvisualiseringen gælder kun for rækker. Hvis du vil foretage detailudledning for kolonner, skal du bruge genvejsmenuen.
@@ -135,7 +135,7 @@ På det følgende billede kan du se en matrixvisualisering med trinvist layout. 
 
 ![den måde, en matrix i øjeblikket formaterer data på](media/desktop-matrix-visual/matrix-visual_13.png)
 
-Du kan nemt justere indstillingerne for det trinvise layout. Når matrixvisualiseringen er valgt i sektionen **Format** (malerrulleikonet) i ruden **Visualiseringer**, kan du udvide sektionen med rækkeoverskrifter. Du har to muligheder: Til/fra-knappen til trinvist layout (som slår det til eller fra) og indrykning i forbindelse med det trinvise layout (angiver mængden af indrykning i pixel).
+Du kan nemt justere indstillingerne for det trinvise layout. Når matrixvisualiseringen er valgt i sektionen **Format** (malerrulleikonet) i ruden **Visualiseringer** , kan du udvide sektionen med rækkeoverskrifter. Du har to muligheder: Til/fra-knappen til trinvist layout (som slår det til eller fra) og indrykning i forbindelse med det trinvise layout (angiver mængden af indrykning i pixel).
 
 ![Rækkeoverskriftskortet, der viser kontrolelementet Trinvist layout](media/desktop-matrix-visual/power-bi-stepped-matrix.png)
 
@@ -160,7 +160,7 @@ Den samme proces gælder for kolonnesubtotaler.
 ## <a name="add-conditional-icons"></a>Tilføj betingede ikoner
 Føj visualiseringsstikord til din tabel eller matrix med *betingede ikoner*. 
 
-I afsnittet Formatér i ruden Visualiseringer skal du vise kortet **Betinget formatering**. Slå skyderen for **Ikoner** **Til**, og vælg **Avancerede kontrolelementer**.
+I afsnittet Formatér i ruden Visualiseringer skal du vise kortet **Betinget formatering**. Slå skyderen for **Ikoner** **Til** , og vælg **Avancerede kontrolelementer**.
 
 ![Matrix med skærmbilledet Ikoner vises](media/desktop-matrix-visual/power-bi-icons.png)
 
@@ -216,7 +216,7 @@ Se [Betinget tabelformatering](../create-reports/desktop-conditional-table-forma
 ## <a name="shading-and-font-colors-with-matrix-visuals"></a>Skygge og skrifttypefarver med matrixvisualiseringer
 Når du bruger matrixvisualiseringen, kan du anvende betinget formatering (farver, skygge og datalinjer) i cellernes baggrund i matrixen, og du kan anvende betinget formatering på selve teksten og værdierne.
 
-Hvis du vil anvende betinget formatering, skal du vælge matrixvisualiseringen og åbne ruden **Formatér**. Udvid kortet **Betinget formatering**, og indstil skyderen til **Til** for **Baggrundsfarve** eller **Skriftfarve** eller **Datalinjer**. Når du aktiverer en af indstillingerne, vises et link til *avancerede kontrolelementer*, så du kan tilpasse farver og værdier for farveformateringen.
+Hvis du vil anvende betinget formatering, skal du vælge matrixvisualiseringen og åbne ruden **Formatér**. Udvid kortet **Betinget formatering** , og indstil skyderen til **Til** for **Baggrundsfarve** eller **Skriftfarve** eller **Datalinjer**. Når du aktiverer en af indstillingerne, vises et link til *avancerede kontrolelementer* , så du kan tilpasse farver og værdier for farveformateringen.
   
   ![Ruden Formatér, der viser kontrolelementet Datalinjer](media/desktop-matrix-visual/power-bi-matrix-data-bars.png)
 

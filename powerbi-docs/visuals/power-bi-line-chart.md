@@ -1,20 +1,20 @@
 ---
 title: Kurvediagrammer i Power BI
 description: Kurvediagrammer i Power BI
-author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 59cede1cae716661be8d3796330bde7da44170eb
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: acbd6e40a351885b8644aca48edf41db81462864
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91634590"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93411975"
 ---
 # <a name="line-charts-in-power-bi"></a>Kurvediagrammer i Power BI
 
@@ -47,7 +47,7 @@ I denne vejledning bruges appen Sales and Marketing Sample til at oprette et kur
      
     ![linje ud for ruden Felter](media/power-bi-line-charts/power-bi-year-filter.png)
 
-    Skift **Advanced filters** til **Basic filters**, og vælg **2012**, **2013** og **2014**.
+    Skift **Advanced filters** til **Basic filters** , og vælg **2012** , **2013** og **2014**.
 
     ![Filtrer efter år](media/power-bi-line-charts/power-bi-filter-year.png)
 

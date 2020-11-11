@@ -8,12 +8,12 @@ ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 05/04/2020
 ms.author: painbar
-ms.openlocfilehash: d23062a5b8fe4a1a68be372865746a1a7d497c26
-ms.sourcegitcommit: 3ddfd9ffe2ba334a6f9d60f17ac7243059cf945b
+ms.openlocfilehash: 4530a6579a3109a2696c77a79a3a5a1c6b8092dd
+ms.sourcegitcommit: 1b3a626c5ca612a7f23058f8e5cc0147a94db51c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92349661"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348053"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi"></a>Tip til udarbejdelse af skabelonapps i Power BI
 
@@ -141,7 +141,7 @@ Når du har publiceret skabelonappen på AppSource, kan du overveje at oprette e
 * AppSource-downloadside – kan ses offentligt, få linket fra din AppSource-side.
 * Power BI – kan ses af en Power BI-bruger.
 
-Hvis du vil omdirigere en bruger til appens downloadlink i Power BI, skal du se følgende kodeeksempel: [GitHub-lager](https://github.com/microsoft/Template-apps-examples/tree/master/src).
+Hvis du vil omdirigere en bruger til appens downloadlink i Power BI, skal du se følgende kodeeksempel: [GitHub-lager](https://github.com/microsoft/Template-apps-examples).
 
 [![Downloadlink til app](media/service-template-apps-tips/service-template-apps-tips-download.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-github)
 

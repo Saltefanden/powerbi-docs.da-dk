@@ -1,20 +1,20 @@
 ---
 title: Trækort i Power BI
 description: Trækort i Power BI
-author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
 ms.date: 05/05/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6331209d40defc4f97a2de670be207e86eaabfef
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 3cc14a9b873d86b3e9d62655d41d152cb3348252
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237400"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93411446"
 ---
 # <a name="treemaps-in-power-bi"></a>Trækort i Power BI
 
@@ -26,7 +26,7 @@ Træstrukturer viser hierarkiske data som et sæt af indlejrede rektangler. Hver
 
 ![Skærmbillede af træstrukturen Count of Product by Category og Manufacturer.](media/power-bi-visualization-treemaps/pbi-nancy-viz-treemap.png)
 
-Hvis du f.eks. analyserer dit salg, har du muligvis grene på øverste niveau for tøjkategorierne: **Urban**, **Rural**, **Youth** og **Mix**. Power BI opdeler dine kategorirektangler i blade for tøjproducenterne inden for den pågældende kategori. Disse blades størrelse tilpasses, og de får skygger ud fra antal solgte styk.
+Hvis du f.eks. analyserer dit salg, har du muligvis grene på øverste niveau for tøjkategorierne: **Urban** , **Rural** , **Youth** og **Mix**. Power BI opdeler dine kategorirektangler i blade for tøjproducenterne inden for den pågældende kategori. Disse blades størrelse tilpasses, og de får skygger ud fra antal solgte styk.
 
 I grenen **Urban** ovenfor blev der solgt meget tøj af mærket **VanArsdel**. Der blev solgt mindre af **Natura** og **Fama**. Der blev kun solgt meget lidt af **Leo**. Så grenen **Urban** i træstrukturen har:
 
@@ -74,7 +74,7 @@ I dette selvstudium bruges [PBIX-filen med eksemplet Detailhandelsanalyse](https
 
 
 
-Når du har hentet datasættet for **Retail Analysis Sample**, kan du komme i gang.
+Når du har hentet datasættet for **Retail Analysis Sample** , kan du komme i gang.
 
 ## <a name="create-a-basic-treemap"></a>Opret en grundlæggende træstruktur
 
@@ -89,13 +89,13 @@ Du opretter en rapport og tilføjer en grundlæggende træstruktur.
 
    ![Skærmbillede af den ikke-konfigurerede træstruktur.](media/power-bi-visualization-treemaps/treemapconvertto-new.png)
 
-1. Vælg **Element** > **Kategori**, så føjes **Kategori** til brønden **Gruppe**.
+1. Vælg **Element** > **Kategori** , så føjes **Kategori** til brønden **Gruppe**.
 
     I Power BI oprettes en træstruktur, hvor størrelsen af rektanglerne er baseret på det samlede salg, og farven repræsenterer kategorien. Egentlig har du oprettet et hierarki, som visuelt beskriver den relative størrelse af det samlede salg efter kategori. Kategorien **Men's** har det højeste salg, og kategorien **Hosiery** har det laveste.
 
     ![Skærmbillede af den konfigurerede træstruktur.](media/power-bi-visualization-treemaps/power-bi-complete.png)
 
-1. Vælg **Butik** > **Kæde**, så føjes **Kæde** til brønden **Detaljer** for at færdiggøre din træstruktur. Nu kan du sammenligne sidste års salg efter kategori og kæde.
+1. Vælg **Butik** > **Kæde** , så føjes **Kæde** til brønden **Detaljer** for at færdiggøre din træstruktur. Nu kan du sammenligne sidste års salg efter kategori og kæde.
 
    ![Skærmbillede af træstrukturen, hvor Store > Chain er føjet til oplysningerne.](media/power-bi-visualization-treemaps/power-bi-details.png)
 
@@ -104,7 +104,7 @@ Du opretter en rapport og tilføjer en grundlæggende træstruktur.
 
 1. Hold markøren over **Chain** for at få vist værktøjstippet til den del af **Category**.
 
-    Når du f.eks. fører musen hen over **Fashions Direct** i rektanglet **090-Home**, vises værktøjstippet for Fashion Directs del af kategorien Home.
+    Når du f.eks. fører musen hen over **Fashions Direct** i rektanglet **090-Home** , vises værktøjstippet for Fashion Directs del af kategorien Home.
 
    ![Skærmbillede af værktøjstippet Hjem, der vises.](media/power-bi-visualization-treemaps/treemaphoverdetail-new.png)
 
@@ -113,7 +113,7 @@ Du opretter en rapport og tilføjer en grundlæggende træstruktur.
 
 Hvis du fremhæver en **Kategori** eller **Detaljer** i en træstruktur, så krydsfremhæves og krydsfiltreres de andre visualiseringer på rapportsiden. For at følge med skal du enten tilføje nogle visualiseringer på denne rapportside eller kopiere træstrukturen til en af de andre sider i denne rapport. Det nedenstående billede, som træstrukturen blev kopieret til, på siden **Oversigt**. 
 
-1. Vælg enten **Kategori** eller **Kæde** i en **Kategori** i træstrukturen. Derved krydsfremhæves de andre visualiseringer på siden. Hvis du f.eks. vælger **050-Shoes**, får du vist sidste års salg af sko, som var **$16,352,432**, hvor **Fashions Direct** stod for **$2,174,185** af dette salg.
+1. Vælg enten **Kategori** eller **Kæde** i en **Kategori** i træstrukturen. Derved krydsfremhæves de andre visualiseringer på siden. Hvis du f.eks. vælger **050-Shoes** , får du vist sidste års salg af sko, som var **$16,352,432** , hvor **Fashions Direct** stod for **$2,174,185** af dette salg.
 
    ![Skærmbillede af rapporten Store Sales Overview, der viser tværgående fremhævning.](media/power-bi-visualization-treemaps/treemaphiliting.png)
 

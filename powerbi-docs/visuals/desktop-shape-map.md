@@ -1,20 +1,20 @@
 ---
 title: Brug Figurkort i Power BI Desktop (prøveversion)
 description: Opret relative sammenligninger mellem områder ved hjælp af Figurkort i Power BI Desktop
-author: mihart
-ms.reviewer: justyna, sujata
+author: msftrien
+ms.reviewer: sujata
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
 ms.date: 03/18/2020
 ms.author: rien
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 52cba9c331014f8e02ae6265adaa7b23daa2b402
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 6ecf39926c759d202c034e5cb196067b9ca378d0
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85233584"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93411308"
 ---
 # <a name="create-shape-map-visualizations-in-power-bi-desktop-preview"></a>Opret visualiseringer af figurkort i Power BI Desktop (eksempelvisning)
 
@@ -24,7 +24,7 @@ ms.locfileid: "85233584"
 
 Opret en visualisering af typen **Figurkort** til at sammenligne områder på et kort ved hjælp af farver. I modsætning til visualiseringen **Kort** kan **Figurkort** ikke vise den nøjagtige geografiske placering af datapunkter på et kort. I stedet er dens primære formål at vise relative sammenligninger mellem områder på et kort ved at give dem forskellige farver.
 
-**Figurkort**-visuals er baseret på TopoJSON-kort, der kan anvendes med brugerdefinerede kort, som du opretter. Eksempler på brugerdefinerede kort er: geografiske kort, kort over siddepladser, kort over etager med mere. Muligheden for at bruge brugerdefinerede kort er ikke tilgængelig i denne evalueringsversion af **Figurkort**.
+**Figurkort** -visuals er baseret på TopoJSON-kort, der kan anvendes med brugerdefinerede kort, som du opretter. Eksempler på brugerdefinerede kort er: geografiske kort, kort over siddepladser, kort over etager med mere. Muligheden for at bruge brugerdefinerede kort er ikke tilgængelig i denne evalueringsversion af **Figurkort**.
 
 > [!NOTE]
 > Når du deler din rapport med en Power BI-kollega, kræves det, at I begge har individuelle Power BI Pro-licenser, eller at rapporten er gemt i en Premium-kapacitet.
@@ -36,7 +36,7 @@ Visualiseringen **Figurkort** er en prøveversion og skal aktiveres i Power BI D
 
 ![aktivér prøveversionsfunktionen Figurkort](media/desktop-shape-map/power-bi-preview-features.png)
 
-Når du har aktiveret **Figurkort**, skal du vælge ikonet **Figurkort** i ruden **Visualiseringer**.
+Når du har aktiveret **Figurkort** , skal du vælge ikonet **Figurkort** i ruden **Visualiseringer**.
 
 ![vælg skabelonen for figurkort](media/desktop-shape-map/power-bi-shape-map-template2.png)
 
@@ -44,7 +44,7 @@ Power BI Desktop opretter et tomt designlærred for **figurkortet**.
 
 ![der vises et tomt figurkort på lærredet](media/desktop-shape-map/shape-map-3.png)
 
-Gør følgende for at oprette et **figurkort**:
+Gør følgende for at oprette et **figurkort** :
 
 1. I ruden **Felter** skal du trække et datafelt med navne på områder (eller forkortelser) til feltet **Placering** og et datamålingsfelt til feltet **Farvemætning** (der vises ikke et kort endnu).
 
@@ -62,12 +62,12 @@ Gør følgende for at oprette et **figurkort**:
    > I afsnittet **Områdenøgler** sidst i denne artikel kan du se en samling af tabeller, som indeholder kortområdenøgler, du kan bruge til at teste visualiseringen **Figurkort**.
    > 
    > 
-3. Du kan derefter redigere kortet ved hjælp af indstillingerne for formatering, f.eks. **Standardfarve**, **Zoom** m.m. Du kan også tilføje en kolonne med kategoridata i bucket'en **Forklaring** og klassificere kortområderne baseret på kategorier.
+3. Du kan derefter redigere kortet ved hjælp af indstillingerne for formatering, f.eks. **Standardfarve** , **Zoom** m.m. Du kan også tilføje en kolonne med kategoridata i bucket'en **Forklaring** og klassificere kortområderne baseret på kategorier.
 
 ## <a name="use-custom-maps"></a>Brug brugerdefinerede kort
-Du kan bruge brugerdefinerede kort med **Figurkort**, hvis de er i formatet **TopoJSON**. Hvis dit kort er i et andet format, kan du bruge onlineværktøjer som [**Map Shaper**](https://mapshaper.org/) til at konvertere dine *figurfiler* eller dine *GeoJSON*-kort til **TopoJSON**-format.
+Du kan bruge brugerdefinerede kort med **Figurkort** , hvis de er i formatet **TopoJSON**. Hvis dit kort er i et andet format, kan du bruge onlineværktøjer som [**Map Shaper**](https://mapshaper.org/) til at konvertere dine *figurfiler* eller dine *GeoJSON* -kort til **TopoJSON** -format.
 
-Hvis du vil bruge kortfilen **TopoJSON**, skal du tilføje visualiseringen Figurkort i din rapport og tilføje nogle data i felterne *Placering* og *Farvemætning*. Derefter skal du i ruden **Visualiseringer** kontrollere, at sektionen **Format** er markeret (som vist på følgende billede som (1)). Udvid dernæst sektionen **Figur**, og vælg **+ Tilføj kort**.
+Hvis du vil bruge kortfilen **TopoJSON** , skal du tilføje visualiseringen Figurkort i din rapport og tilføje nogle data i felterne *Placering* og *Farvemætning*. Derefter skal du i ruden **Visualiseringer** kontrollere, at sektionen **Format** er markeret (som vist på følgende billede som (1)). Udvid dernæst sektionen **Figur** , og vælg **+ Tilføj kort**.
 
 ![åbn ruden Formatering, og vælg Tilføj kort](media/desktop-shape-map/shape-map-6-new.png)
 
@@ -89,7 +89,7 @@ Hvis du ønsker at eksperimentere med dette datasæt og visualiseringen, kan du 
 * [Demo af .PBIX-filen til et brugerdefineret figurkort](https://download.microsoft.com/download/1/2/8/128943FB-9231-42BD-8A5D-5E2362C9D589/DistrictAttorneyFiscalReport.pbix)
 
 ## <a name="getting-map-data"></a>Hent kortdata
-Hvis du hurtigt vil hente data ind i en model, så du kan teste **Figurkort**, kan du kopiere en af tabellerne sidst i denne artikel og derefter vælge **Angiv data** under fanen **Hjem**.
+Hvis du hurtigt vil hente data ind i en model, så du kan teste **Figurkort** , kan du kopiere en af tabellerne sidst i denne artikel og derefter vælge **Angiv data** under fanen **Hjem**.
 
 ![I Desktop skal du vælge Angiv data](media/desktop-shape-map/shape-map-4-new.png)
 
@@ -97,7 +97,7 @@ Hvis der er flere kolonner til dine data, skal du bruge en editor, f.eks. Excel,
 
 ![Ruden Opret tabel](media/desktop-shape-map/shape-map-5.png)
 
-Du kan angive en ny kolonne ved at skrive et nyt kolonnenavn (i den tomme kolonne til højre) og derefter angive værdier i hver celle på samme måde som i Excel. Når du er færdig, skal du vælge **Indlæs**, hvorefter tabellen tilføjes i datamodellen for Power BI Desktop.
+Du kan angive en ny kolonne ved at skrive et nyt kolonnenavn (i den tomme kolonne til højre) og derefter angive værdier i hver celle på samme måde som i Excel. Når du er færdig, skal du vælge **Indlæs** , hvorefter tabellen tilføjes i datamodellen for Power BI Desktop.
 
 > [!NOTE]
 > Når du arbejder med lande eller områder, kan du bruge forkortelsen på tre bogstaver til at sikre, at geokodning fungerer korrekt i kortvisualiseringer. Benyt *ikke* forkortelser på to bogstaver, da nogle lande eller områder muligvis ikke genkendes korrekt.
@@ -107,10 +107,10 @@ Du kan angive en ny kolonne ved at skrive et nyt kolonnenavn (i den tomme kolonn
 > 
 
 ## <a name="preview-behavior-and-requirements"></a>Funktionsmåder og krav i prøveversionen
-Du skal være opmærksom på nogle få ting i forbindelse med denne prøveversion af **Figurkort**:
+Du skal være opmærksom på nogle få ting i forbindelse med denne prøveversion af **Figurkort** :
 
 * Visualiseringen **Figurkort** er en prøveversion og skal aktiveres i Power BI Desktop. Du aktiverer **Figurkort** ved at vælge **Filer > Indstillinger > Indstillinger > Prøveversionsfunktioner** og derefter markere afkrydsningsfeltet **Visualiseringen Figurkort**.
-* I øjeblikket skal du også angive værdier i feltet **Farvemætning**, for at klassificeringen **Forklaring** fungerer korrekt.
+* I øjeblikket skal du også angive værdier i feltet **Farvemætning** , for at klassificeringen **Forklaring** fungerer korrekt.
 * Den sidste udgivne version af **Figurkort** vil have en brugergrænseflade, der viser kortnøgler over det aktuelt valgte kort (der er ikke fastsat nogen dato for den sidste udgivelse, og **Figurkort** er stadig en prøveversion). I denne udgivne prøveversion kan du referere til kortets områdenøgler i tabellerne, som findes i sektionen **Områdenøgler** i denne artikel.
 * Visual'et i **Figurkort** kan maksimalt vise op til 1.500 datapunkter.
 

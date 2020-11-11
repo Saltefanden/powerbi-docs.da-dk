@@ -1,20 +1,20 @@
 ---
 title: Brug bånddiagrammer i Power BI
 description: Opret og brug bånddiagrammer i Power BI Desktop
-author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
 ms.date: 05/05/2019
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0e5687f9bb3f27af7bdfee28cd9753fbda4fa44f
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: e89712dea5d9f932669141d8fe4129727166a342
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91635763"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93413105"
 ---
 # <a name="create-ribbon-charts-in-power-bi"></a>Opret bånddiagrammer i Power BI
 
@@ -49,7 +49,7 @@ I dette selvstudium bruges [PBIX-filen med eksemplet Detailhandelsanalyse](https
 
     Med bånddiagrammer tilknyttes en kategori af data for den visualiserede tidsperiode ved hjælp af bånd, hvilket gør det muligt at se, hvordan en bestemt kategori placeres over hele diagrammets x-akse (normalt tidslinjen).
 
-2. Vælg felter for **Akse**, **Forklaring** og **Værdi**.  I dette eksempel har vi valgt: **Butik** > **OpenDate**, **Vare** > **Kategori** og **Salg** > **Dette års salg** > **Værdi**.  
+2. Vælg felter for **Akse** , **Forklaring** og **Værdi**.  I dette eksempel har vi valgt: **Butik** > **OpenDate** , **Vare** > **Kategori** og **Salg** > **Dette års salg** > **Værdi**.  
 
     ![valgte felter](media/desktop-ribbon-charts/power-bi-ribbon-values.png)
 
@@ -67,7 +67,7 @@ Når du opretter et bånddiagram, er der formateringsindstillinger tilgængelige
 Ved hjælp af disse formateringsindstillinger for bånddiagrammer kan du foretage følgende justeringer.
 
 * **Afstand** gør det muligt at justere, hvor meget plads der vises mellem båndene. Tallet er procentdelen af kolonnens maksimumhøjde.
-* **Match seriens farve** gør det muligt at matche farven på båndene med seriens farve. Når den er slået **fra**, er båndene grå.
+* **Match seriens farve** gør det muligt at matche farven på båndene med seriens farve. Når den er slået **fra** , er båndene grå.
 * **Gennemsigtighed** angiver, hvor gennemsigtige båndene er. Standardværdien er angivet til 30.
 * **Kant** gør det muligt at placere en mørk kant øverst og nederst på båndene. Kanter er som standard slået fra.
 

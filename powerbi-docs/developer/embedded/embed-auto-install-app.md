@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.service: powerbi
 ms.custom: ''
 ms.date: 04/16/2019
-ms.openlocfilehash: eb9476b3f21d1149492982a8dcae3d8ce89e9629
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: f84527a189be0f78f73470cbc475f45206dd8cf1
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91748649"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93412389"
 ---
 # <a name="auto-install-power-bi-apps-when-embedding-for-your-organization"></a>Installér Power BI-apps automatisk, når du integrerer for din organisation
 
@@ -25,7 +25,7 @@ Hvis en bruger har adgang til en app, men appen ikke er installeret, fungerer in
 
 ## <a name="embed-for-power-bi-users-user-owns-data"></a>Integrer for Power BI-brugere (brugeren ejer data)
 
-Hvis du vil tillade automatisk installation af apps for dine brugere, skal du give appen tilladelsen "Opret indhold", når du [registrerer appen](register-app.md#register-with-the-power-bi-application-registration-tool), eller tilføje den, hvis du allerede har registreret appen.
+Hvis du vil tillade automatisk installation af apps for dine brugere, skal du give appen tilladelsen "Opret indhold", når du [registrerer appen](register-app.md#register-an-azure-ad-app), eller tilføje den, hvis du allerede har registreret appen.
 
 ![Indhold oprettes i forbindelse med registrering af app](media/embed-auto-install-app/register-app-create-content.png)
 

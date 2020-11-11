@@ -1,7 +1,7 @@
 ---
 title: Selvstudium med visualiseringer af nøglefaktorer
 description: 'Selvstudium: Opret en visualisering af nøglefaktorer i Power BI'
-author: mihart
+author: msftrien
 ms.reviewer: juluczni
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 01/10/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a8a38790b606fa5f700f2b9389ebad5338919d28
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: ff097de6cd957c5869809d09a23174dea604a07b
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91635280"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93412941"
 ---
 # <a name="create-key-influencers-visualizations"></a>Opret visualiseringer af nøglefaktorer
 
@@ -33,21 +33,21 @@ Det er en fordel at bruge visualiseringen af nøglefaktorer, hvis du vil:
 
 ![Nummererede funktioner](media/power-bi-visualization-influencers/power-bi-ki-numbers-new.png)
 
-1. **Faner**: Vælg en fane for at skifte mellem visninger. **Nøglefaktorer** viser dig de største bidragydere til den valgte metrikværdi. **Øverste segmenter** viser dig de øverste segmenter, der bidrager til den valgte metrikværdi. Et *segment* består af en kombination af værdier. Ét segment kan f.eks. være de forbrugere, som har været kunder i mindst tyve år, og som bor i det vestlige område. 
+1. **Faner** : Vælg en fane for at skifte mellem visninger. **Nøglefaktorer** viser dig de største bidragydere til den valgte metrikværdi. **Øverste segmenter** viser dig de øverste segmenter, der bidrager til den valgte metrikværdi. Et *segment* består af en kombination af værdier. Ét segment kan f.eks. være de forbrugere, som har været kunder i mindst tyve år, og som bor i det vestlige område. 
 
-2. **Rulleliste**: Værdien af den metrikværdi, der undersøges. I dette eksempel kigger vi på metrikværdien **Bedømmelse**. Den valgte værdi er **Lav**.
+2. **Rulleliste** : Værdien af den metrikværdi, der undersøges. I dette eksempel kigger vi på metrikværdien **Bedømmelse**. Den valgte værdi er **Lav**.
 
-3. **Tilpasning**: Hjælper dig med at fortolke visualiseringen i venstre rude.
+3. **Tilpasning** : Hjælper dig med at fortolke visualiseringen i venstre rude.
 
-4. **Venstre rude**: Ruden til venstre indeholder én visualisering. I dette tilfælde vises en liste over de vigtigste nøglefaktorer i venstre rude.
+4. **Venstre rude** : Ruden til venstre indeholder én visualisering. I dette tilfælde vises en liste over de vigtigste nøglefaktorer i venstre rude.
 
-5. **Tilpasning**: Hjælper os med at fortolke visualiseringen i højre rude.
+5. **Tilpasning** : Hjælper os med at fortolke visualiseringen i højre rude.
 
-6. **Højre rude**: Ruden til højre indeholder én visualisering. I dette tilfælde viser søjlediagrammet alle værdierne for nøglefaktoren **Tema**, som er valgt i venstre rude. Den specifikke værdi for **anvendelighed** i venstre rude vises med grønt. Alle de andre værdier for **Tema** vises med sort.
+6. **Højre rude** : Ruden til højre indeholder én visualisering. I dette tilfælde viser søjlediagrammet alle værdierne for nøglefaktoren **Tema** , som er valgt i venstre rude. Den specifikke værdi for **anvendelighed** i venstre rude vises med grønt. Alle de andre værdier for **Tema** vises med sort.
 
-7. **Gennemsnitslinje**: Gennemsnittet beregnes for alle de andre mulige værdier for **Tema**, undtagen **anvendelighed** (som er den valgte nøglefaktor). Så beregningen anvendes på alle sorte værdier. Dette fortæller dig, hvilken procentdel af de andre **temaer** der havde en lav bedømmelse. I dette tilfælde havde 11,35 % en lav bedømmelse (vises med den stiplede linje).
+7. **Gennemsnitslinje** : Gennemsnittet beregnes for alle de andre mulige værdier for **Tema** , undtagen **anvendelighed** (som er den valgte nøglefaktor). Så beregningen anvendes på alle sorte værdier. Dette fortæller dig, hvilken procentdel af de andre **temaer** der havde en lav bedømmelse. I dette tilfælde havde 11,35 % en lav bedømmelse (vises med den stiplede linje).
 
-8. **Afkrydsningsfelt**: Filtrerer det visuelle element i ruden til højre, så der kun vises værdier, der er nøglefaktorer for dette felt. I dette eksempel filtreres visualiseringen til anvendelighed, sikkerhed og navigation.
+8. **Afkrydsningsfelt** : Filtrerer det visuelle element i ruden til højre, så der kun vises værdier, der er nøglefaktorer for dette felt. I dette eksempel filtreres visualiseringen til anvendelighed, sikkerhed og navigation.
 
 ## <a name="analyze-a-metric-that-is-categorical"></a>Analysér en metrikværdi, der er kategorisk
  
@@ -62,7 +62,7 @@ Se denne video for at få mere at vide om, hvordan du opretter en visualisering 
 Din produktchef vil gerne finde ud af, hvilke faktorer der får kunderne til at give vores cloudtjeneste dårlige anmeldelser. Åbn [PBIX-filen Customer Feedback](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Monthly%20Desktop%20Blog%20Samples/2019/customerfeedback.pbix) i Power BI Desktop for at følge med. Du kan også downloade [Excel-filen Customer Feedback til Power BI-tjenesten eller Power BI Desktop](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Monthly%20Desktop%20Blog%20Samples/2019/customerfeedback.xlsx). Vælg et af linkene, og vælg derefter **Download** på den GitHub-side, der åbnes.
 
 > [!NOTE]
-> Kundefeedbackdatasættet er baseret på [Moro et al., 2014] S. Moro, P. Cortez og P. Rita. "A Data-Driven Approach to Predict the Success of Bank Telemarketing". *Decision Support Systems*, Elsevier, 62:22-31, juni 2014. 
+> Kundefeedbackdatasættet er baseret på [Moro et al., 2014] S. Moro, P. Cortez og P. Rita. "A Data-Driven Approach to Predict the Success of Bank Telemarketing". *Decision Support Systems* , Elsevier, 62:22-31, juni 2014. 
 
 1. Åbn rapporten, og vælg ikonet for **nøglefaktorer**. 
 
@@ -70,7 +70,7 @@ Din produktchef vil gerne finde ud af, hvilke faktorer der får kunderne til at 
 
 2. Flyt den metrikværdi, som du vil undersøge, til feltet **Analysér**. Hvis du vil have vist, hvad der får kundernes bedømmelse af tjenesten til at være lav, skal du vælge **Kundetabel** > **Bedømmelse**.
 
-3. Flyt de felter, som du mener kunne påvirke **bedømmelsen**, til feltet **Forklar med**. Du kan flytte lige så mange felter, som du vil. I dette tilfælde skal du starte med:
+3. Flyt de felter, som du mener kunne påvirke **bedømmelsen** , til feltet **Forklar med**. Du kan flytte lige så mange felter, som du vil. I dette tilfælde skal du starte med:
     - Land-område 
     - Rolle i organisationen 
     - Abonnementstype 
@@ -101,7 +101,7 @@ Kunden i dette eksempel har tre roller: forbruger, administrator og udgiver. Det
 ![Vælg Rolle i organisationen er forbruger](media/power-bi-visualization-influencers/power-bi-role-consumer.png)
 
 
-Mere nøjagtigt er der 2,57 gange større sandsynlighed for, at forbrugerne giver din tjeneste en negativ score. Diagrammet over nøglefaktorer angiver **Rolle i organisationen er forbruger** først på listen til venstre. Når du vælger **Rolle i organisationen er forbruger**, viser Power BI flere detaljer i ruden til højre. Den komparative effekt for hver rolle for sandsynligheden for en lav bedømmelse vises.
+Mere nøjagtigt er der 2,57 gange større sandsynlighed for, at forbrugerne giver din tjeneste en negativ score. Diagrammet over nøglefaktorer angiver **Rolle i organisationen er forbruger** først på listen til venstre. Når du vælger **Rolle i organisationen er forbruger** , viser Power BI flere detaljer i ruden til højre. Den komparative effekt for hver rolle for sandsynligheden for en lav bedømmelse vises.
   
 - 14,93 % af forbrugerne giver en lav score. 
 - I gennemsnit giver alle andre roller en lav score 5,78 % af gangene.
@@ -125,7 +125,7 @@ Markér afkrydsningsfeltet **Vis kun de værdier, der er nøglefaktorer** for at
  
 Hver gang du vælger et udsnit, et filter eller andre visualiseringer på canvasset, kører visualiseringen af nøglefaktorerne analysen på de nye dele af dataene. Du kan f.eks. flytte **Firmastørrelse** til rapporten og bruge det som et udsnit. Du kan bruge det for at se, om nøglefaktorerne for dine virksomhedskunder er anderledes end befolkningen som helhed. En virksomhed af enterprisetypen har flere end 50.000 medarbejdere.
  
-Hvis du vælger **>50,000**, køres analysen igen, og du kan se, at nøglefaktorerne har ændret sig. For store virksomhedskunder har den vigtigste nøglefaktor for lave bedømmelser et tema, der relaterer til sikkerhed. Det kan være, at det skal undersøges nærmere for at se, om der er bestemte sikkerhedsfunktioner, som dine store kunder er utilfredse med. 
+Hvis du vælger **>50,000** , køres analysen igen, og du kan se, at nøglefaktorerne har ændret sig. For store virksomhedskunder har den vigtigste nøglefaktor for lave bedømmelser et tema, der relaterer til sikkerhed. Det kan være, at det skal undersøges nærmere for at se, om der er bestemte sikkerhedsfunktioner, som dine store kunder er utilfredse med. 
 
 ![Udsnit efter virksomhedsstørrelse](media/power-bi-visualization-influencers/power-bi-filter.png)
 
@@ -153,7 +153,7 @@ Du kan bruge målinger og aggregeringer som forklarende faktorer i din analyse. 
  
 I dette tilfælde skal vi se, om antallet af supportanmodninger fra en kunde har indflydelse på den score, kunden giver. Hent **id'et for supportanmodningen** fra tabellen Supportanmodning. Eftersom en kunde kan have flere supportanmodninger, skal du samle id'et på kundeniveau. Denne samling er vigtig, da analysen kører på kundeniveau, så alle drivere skal være defineret på dette niveau. 
  
-Lad os se på antallet af id'er. Hver kunderække har et antal supportanmodninger, der er knyttet til rækken. I dette tilfælde kan vi se, at når antallet af supportanmodninger stiger, vil sandsynligheden for en lav bedømmelse stige med 5,51 gange. I visualiseringen i højre side vises det gennemsnitlige antal supportanmodninger for forskellige **bedømmelsesværdier**, som er evalueret på kundeniveau. 
+Lad os se på antallet af id'er. Hver kunderække har et antal supportanmodninger, der er knyttet til rækken. I dette tilfælde kan vi se, at når antallet af supportanmodninger stiger, vil sandsynligheden for en lav bedømmelse stige med 5,51 gange. I visualiseringen i højre side vises det gennemsnitlige antal supportanmodninger for forskellige **bedømmelsesværdier** , som er evalueret på kundeniveau. 
 
 ![Betydningen af id'et for supportanmodningen](media/power-bi-visualization-influencers/power-bi-support-ticket.png)
 
@@ -194,7 +194,7 @@ Hvis der er en hel ring omkring cirklen, betyder det, at nøglefaktoren indehold
 
 ## <a name="analyze-a-metric-that-is-numeric"></a>Analysér en metrikværdi, der er numerisk
 
-Hvis du flytter et ikke-opsummeret numerisk felt til feltet **Analysér**, kan du selv vælge, hvordan du vil håndtere dette scenarie. Du kan ændre funktionsmåden for visualiseringen ved at åbne **ruden Formatering** og skifte mellem **Kategorisk analysetype** og **Fortløbende analysetype**.
+Hvis du flytter et ikke-opsummeret numerisk felt til feltet **Analysér** , kan du selv vælge, hvordan du vil håndtere dette scenarie. Du kan ændre funktionsmåden for visualiseringen ved at åbne **ruden Formatering** og skifte mellem **Kategorisk analysetype** og **Fortløbende analysetype**.
 
 ![Skift fra kategorisk til fortløbende](media/power-bi-visualization-influencers/power-bi-ki-formatting.png)
 
@@ -247,15 +247,15 @@ Hvis der er tale om ikke-opsummerede kolonner, kører analysen altid på tabelni
 
 ![Skærmbillede, der viser analyse på tabelniveau for eksemplet med huspriser.](media/power-bi-visualization-influencers/power-bi-ki-measures-table.png)
 
-I forbindelse med kolonner med målinger og opsummerede kolonner ved vi ikke umiddelbart, hvilket niveau de skal analyseres på. Hvis **Huspris** blev opsummeret som et **gennemsnit**, blev vi nødt til at overveje, hvilket niveau vi ville have denne gennemsnitlige huspris analyseret på. Er det den gennemsnitlige huspris i kvarteret? Eller måske på regionalt niveau?
+I forbindelse med kolonner med målinger og opsummerede kolonner ved vi ikke umiddelbart, hvilket niveau de skal analyseres på. Hvis **Huspris** blev opsummeret som et **gennemsnit** , blev vi nødt til at overveje, hvilket niveau vi ville have denne gennemsnitlige huspris analyseret på. Er det den gennemsnitlige huspris i kvarteret? Eller måske på regionalt niveau?
 
-Målinger og opsummerede kolonner analyseres automatisk på niveauet for de felter af typen **Forklar med**, der bruges. Forestil dig, at vi har tre felter i **Forklar med**, som vi er interesseret i: **Køkkenkvalitet**, **Bygningstype** og **Aircondition**. Den **Gennemsnitlige huspris** ville blive beregnet for hver unikke kombination af disse tre felter. Det er ofte nyttigt at skifte til en tabelvisning for at se, hvordan de data, der evalueres, ser ud.
+Målinger og opsummerede kolonner analyseres automatisk på niveauet for de felter af typen **Forklar med** , der bruges. Forestil dig, at vi har tre felter i **Forklar med** , som vi er interesseret i: **Køkkenkvalitet** , **Bygningstype** og **Aircondition**. Den **Gennemsnitlige huspris** ville blive beregnet for hver unikke kombination af disse tre felter. Det er ofte nyttigt at skifte til en tabelvisning for at se, hvordan de data, der evalueres, ser ud.
 
 ![Skærmbillede, der viser de tre kolonner og den gennemsnitlige huspris.](media/power-bi-visualization-influencers/power-bi-ki-measures-table2.png)
 
 Denne analyse er meget opsummeret, og det vil derfor være svært for regressionsmodellen at finde eventuelle mønstre i dataene, som modellen kan lære af. Vi bør køre analysen på et mere detaljeret niveau for at opnå bedre resultater. Hvis vi ville analysere husprisen på husniveau, skulle vi føje feltet **Id** til analysen. Ikke desto mindre vil vi ikke have, at hus-id'et bliver betragtet som en nøglefaktor. Det er ikke nyttigt at vide, at i takt med at et hus-id stiger, stiger prisen på et hus også. Det er her, feltet **Udvid efter** er virkelig praktisk. Du kan bruge **Forklar med** til at tilføje de felter, du vil bruge til angivelse af niveauet for analysen uden at kigge efter nye nøglefaktorer.
 
-Se, hvordan visualiseringen ser ud, når vi føjer et **Id** til**Forklar med**. Når du har defineret det niveau, som din måling skal evalueres på, fortolkes nøglefaktorer på præcis samme måde som [ikke-opsummerede numeriske kolonner](#analyze-a-metric-that-is-numeric).
+Se, hvordan visualiseringen ser ud, når vi føjer et **Id** til **Forklar med**. Når du har defineret det niveau, som din måling skal evalueres på, fortolkes nøglefaktorer på præcis samme måde som [ikke-opsummerede numeriske kolonner](#analyze-a-metric-that-is-numeric).
 
 ![Skærmbillede, der viser visualiseringen med huspriser, som er afhængig af de tre kolonner, der drøftes i dette afsnit.](media/power-bi-visualization-influencers/power-bi-ki-measures-analysis.png)
 
@@ -284,7 +284,7 @@ Der er nogle begrænsninger for visualiseringen af nøglefaktorerne:
 ![Fejl – der blev ikke fundet nogen nøglefaktorer](media/power-bi-visualization-influencers/power-bi-error1.png)
 
 
-Denne fejl opstår, når du har medtaget felter i **Forklar ved**, men der ikke blev fundet nogen nøglefaktorer. 
+Denne fejl opstår, når du har medtaget felter i **Forklar ved** , men der ikke blev fundet nogen nøglefaktorer. 
 - Du inkluderede den metrikværdi, du analyserede, i både **Analysér** og **Forklar ved**. Fjern den fra **Forklar ved**. 
 - Dine forklarende felter indeholder for mange kategorier med få observationer. Denne situation gør det svært for visualiseringen at bestemme, hvilke faktorer der er nøglefaktorer. Det er svært at generalisere på baggrund af nogle få observationer. Hvis du analyserer et numerisk felt, kan det være en god ide at skifte fra **Kategorisk analyse** til **Fortløbende analyse** i **ruden Formatering** på kortet **Analyse**.
 - Dine forklarende faktorer har et tilstrækkeligt antal observationer til at foretage generaliseringer, men visualiseringen fandt ikke nogen meningsfulde korrelationer.
@@ -348,7 +348,7 @@ Hvis kundetabellen ikke har et entydigt id, kan du ikke evaluere målingen, og d
 
 AI-visualiseringen kan analysere kategorifelter og numeriske felter. Hvis der er tale om kategorifelter, kan et eksempel f.eks. være Kundeafgang er Ja eller Nej, og Kundetilfredshed er Høj, Mellem eller Lav. Hvis du øger antallet af kategorier, der skal analyseres, betyder det, at der er færre observationer pr. kategori. Denne situation gør det sværere for visualiseringen at finde mønstre i dataene. 
 
-Når du analyserer numeriske felter, har du et valg mellem at behandle de numeriske felter som tekst, og i dette tilfælde vil du køre den samme analyse, som du gør for kategoriske data (**Kategorisk analyse**). Hvis du har en masse entydige værdier, anbefaler vi, at du ændrer analysen til **Fortløbende analyse**, da det betyder, at vi kan udlede mønstre, fra når tal øges eller reduceres, i stedet for at behandle dem som entydige værdier. Du kan skifte fra **Kategorisk analyse** til **Fortløbende analyse** i **ruden Formatering** på kortet **Analyse**.
+Når du analyserer numeriske felter, har du et valg mellem at behandle de numeriske felter som tekst, og i dette tilfælde vil du køre den samme analyse, som du gør for kategoriske data ( **Kategorisk analyse** ). Hvis du har en masse entydige værdier, anbefaler vi, at du ændrer analysen til **Fortløbende analyse** , da det betyder, at vi kan udlede mønstre, fra når tal øges eller reduceres, i stedet for at behandle dem som entydige værdier. Du kan skifte fra **Kategorisk analyse** til **Fortløbende analyse** i **ruden Formatering** på kortet **Analyse**.
 
 Hvis du vil finde stærkere nøglefaktorer, anbefales det, at du grupperer ensartede værdier til en enkelt gruppering. Hvis du f.eks. har en metrikværdi for pris, vil du sandsynligvis opnå bedre resultater, hvis du grupperer ensartede priser i kategorierne Høj, Mellem og Lav i stedet for at benytte individuelle prispunkter. 
 
@@ -394,7 +394,7 @@ Når beslutningstræet har foretaget en opdeling, tager det undergruppen af data
 
 Når beslutningstræet er færdigt, tager det alle opdelingerne, f.eks. kommentarer om sikkerhed og store virksomheder, og opretter Power BI-filtre. Denne kombination af filtre vises som et segment i visualiseringen. 
  
-**Hvorfor bliver nogle faktorer nøglefaktorer/stopper med at være nøglefaktorer, når jeg trækker flere felter til *Forklar ved*?**
+**Hvorfor bliver nogle faktorer nøglefaktorer/stopper med at være nøglefaktorer, når jeg trækker flere felter til *Forklar ved* ?**
 
 Visualiseringen evaluerer alle forklarende faktorer samlet. En faktor kan være en nøglefaktor i sig selv, men når den sammenlignes med andre faktorer, er den det muligvis ikke alligevel. Forestil dig, at du vil analysere dig frem til, hvad der medfører en høj pris og bruge antal værelser og husets størrelse som forklarende faktorer:
 

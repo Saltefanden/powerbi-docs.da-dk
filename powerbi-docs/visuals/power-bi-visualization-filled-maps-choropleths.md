@@ -1,8 +1,8 @@
 ---
 title: Kartogrammer (Choropleths) i Power BI
 description: Dokumentation om oprettelse af kartogrammer (Choropleths) i Power BI
-author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.reviewer: mihart
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 12/05/2019
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 45069a4a575659d44e41f1010d9941f21caa1ad1
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: ce0adb6d5115ece1b228690c496d022f8dfc9e56
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90861630"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93412987"
 ---
 # <a name="create-and-use-filled-maps-choropleth-maps-in-power-bi"></a>Opret og brug udfyldte kort (choropleth-kort) i Power BI
 
@@ -28,7 +28,7 @@ Et udfyldt kort bruger skygger eller toner eller mønstre til at vise, hvordan e
 ![USA-kort](media/power-bi-visualization-filled-maps-choropleths/large-map.png)
 
 ## <a name="what-is-sent-to-bing"></a>Hvad sendes til Bing
-Power BI integreres med Bing for at angive standardkortkoordinaterne (en proces, der kaldes geokodning). Når du opretter en kortvisualisering i Power BI-tjenesten eller Power BI Desktop, sendes dataene i feltbeholderne **Location**, **Latitude** og **Longitude** ( der bruges til at oprette den pågældende visualisering) til Bing.
+Power BI integreres med Bing for at angive standardkortkoordinaterne (en proces, der kaldes geokodning). Når du opretter en kortvisualisering i Power BI-tjenesten eller Power BI Desktop, sendes dataene i feltbeholderne **Location** , **Latitude** og **Longitude** ( der bruges til at oprette den pågældende visualisering) til Bing.
 
 Du eller din administrator skal muligvis opdatere firewallen for at tillade adgang til URL-adresser, som Bing bruger til geokodning.  URL-adresserne er:
 - https://dev.virtualearth.net/REST/V1/Locations    
@@ -71,10 +71,10 @@ I dette selvstudium bruges [PBIX-filen med eksemplet til Salg og marketing](http
 
    a.  Til venstre i ruden Visualiseringer skal du finde ruden **Filtre**. Udvid ruden, hvis den er minimeret.
 
-   b.  Hold markøren over **State**, og klik på pilen for at udvide.  
+   b.  Hold markøren over **State** , og klik på pilen for at udvide.  
    ![Filtre på visualiseringsniveau viser Tilstand (Alle)](media/power-bi-visualization-filled-maps-choropleths/img004.png)
 
-   c.  Markér afkrydsningsfeltet ud for **All**, og fjern markeringen ud for **AK**.
+   c.  Markér afkrydsningsfeltet ud for **All** , og fjern markeringen ud for **AK**.
 
    ![Tilstandsrulleliste med Alle og AK ikke valgt](media/power-bi-visualization-filled-maps-choropleths/img005.png)
 4. Vælg ikonet med malerrullen for at åbne ruden Formatering, og vælg **Datafarver**.
@@ -113,7 +113,7 @@ Hvis du fremhæver en placering på et kartogram, krydsfiltreres de andre visual
 
    ![Kartogram tilføjet på siden Synspunkt](media/power-bi-visualization-filled-maps-choropleths/power-bi-map.png)
 
-5. Vælg en stat på det udfyldte kort.  Dette krydsfremhæver og krydsfiltrerer de andre visualiseringer på siden. Hvis du f.eks. vælger **Texas**, krydsfiltreres kortene og det liggende søjlediagram fremhæves. Derudaf kan du se, at synspunktet er 75, og at Texas ligger i det centrale distrikt nr. 23.   
+5. Vælg en stat på det udfyldte kort.  Dette krydsfremhæver og krydsfiltrerer de andre visualiseringer på siden. Hvis du f.eks. vælger **Texas** , krydsfiltreres kortene og det liggende søjlediagram fremhæves. Derudaf kan du se, at synspunktet er 75, og at Texas ligger i det centrale distrikt nr. 23.   
    ![Texas valgt](media/power-bi-visualization-filled-maps-choropleths/power-bi-filter.png)
 2. Vælg et datapunkt i kurvediagrammet VanArsdel – tillid efter måned. Derved filtreres kartogrammet for at vise tillidsdata for VanArsdel og ikke deres konkurrenter.  
    ![ny skygge](media/power-bi-visualization-filled-maps-choropleths/power-bi-vanarsdel.png)

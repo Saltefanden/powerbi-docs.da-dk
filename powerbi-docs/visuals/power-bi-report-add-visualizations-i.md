@@ -1,21 +1,21 @@
 ---
 title: Del 1, Føj visualiseringer til en rapport i Power BI
 description: Del 1, Føj visualiseringer til en rapport i Power BI
-author: mihart
-ms.reviewer: rien
+author: msftrien
+ms.reviewer: mihart
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
 ms.date: 05/06/2020
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 439807717a91a22520969a85a3991b76f8115833
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 3a2002c9f17428c84704d68f621cf18443252557
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85232386"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93411883"
 ---
 # <a name="add-visuals-to-a-power-bi-report-part-1"></a>Føj visualiseringer til en Power BI-rapport (del 1)
 
@@ -68,7 +68,7 @@ I dette selvstudium bruges [PBIX-filen til Salg og marketing](https://download.m
 
    ![Skærmbillede af ruden med visualiseringer, hvor ikonet Stablet søjlediagram er fremhævet.](media/power-bi-report-add-visualizations-i/power-bi-convert.png)
 
-1. Hvis du vil ændre den måde, visualiseringen sorteres på, skal du vælge **Flere handlinger** (...).  Brug sorteringsindstillingerne til at ændre sorteringsrækkefølgen (stigende eller faldende), og rediger den kolonne, der bruges til at sortere (**Sorteret efter**).
+1. Hvis du vil ændre den måde, visualiseringen sorteres på, skal du vælge **Flere handlinger** (...).  Brug sorteringsindstillingerne til at ændre sorteringsrækkefølgen (stigende eller faldende), og rediger den kolonne, der bruges til at sortere ( **Sorteret efter** ).
 
    ![Skærmbillede af rullelisten Flere handlinger.](media/power-bi-report-add-visualizations-i/power-bi-sort.png)
   

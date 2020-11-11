@@ -1,20 +1,20 @@
 ---
 title: Visualiseringstyper i Power BI
 description: Visualiseringstyper i Power BI
-author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 01/14/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e2ad8867117977cb7f53fbd295a2f560d65b0d76
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: 24dce044cdd1c4eaef21f4d744ed672119241970
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91600519"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93412734"
 ---
 # <a name="visualization-types-in-power-bi"></a>Visualiseringstyper i Power BI
 ## <a name="power-bi-visualizations"></a>Visualiseringer i Power BI
@@ -165,7 +165,7 @@ Du kan finde flere oplysninger under [Visualiseringer af Spørgsmål og svar i P
 ![R-visualiseringer](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-r-visuals.png)
 
 >[!TIP]
->Visualiseringer, der er oprettet med R-scripts, også kaldet *R-visualiseringer*, kan vise avanceret dataformatering og analyse, f.eks. prognoser, ved hjælp af styrken i R's omfattende analyse- og visualiseringsfunktioner. R-visualiseringer kan oprettes i Power BI Desktop og publiceres i Power BI-tjenesten.   
+>Visualiseringer, der er oprettet med R-scripts, også kaldet *R-visualiseringer* , kan vise avanceret dataformatering og analyse, f.eks. prognoser, ved hjælp af styrken i R's omfattende analyse- og visualiseringsfunktioner. R-visualiseringer kan oprettes i Power BI Desktop og publiceres i Power BI-tjenesten.   
 
 Du kan finde flere oplysninger under [R-visualiseringer i Power BI](service-r-visuals.md).
 
@@ -230,7 +230,7 @@ Du kan finde flere oplysninger under [Vandfaldsdiagrammer i Power BI](power-bi-v
 ## <a name="tell-qa-which-visualization-to-use"></a>Fortæl Spørgsmål og svar, hvilken visualisering der skal bruges
 Når du skriver forespørgsler i naturligt sprog med Spørgsmål og svar i Power BI, kan du angive visualiseringstypen i din forespørgsel.  Eksempel:
 
-"***salg efter område som trækort***"
+" ***salg efter område som trækort*** "
 
 Hvis dit dashboard ikke har et felt med spørgsmål og svar, er det muligvis blevet deaktiveret af Power BI-administratoren. 
 

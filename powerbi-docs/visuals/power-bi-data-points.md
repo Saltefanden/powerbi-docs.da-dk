@@ -1,7 +1,7 @@
 ---
 title: Store datasæt, datapunktgrænser og datastrategier
 description: Datagrænser for visualiseringer og datareduktionsstrategier
-author: mihart
+author: msftrien
 ms.reviewer: justyna
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 01/10/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 5efe83cfa43c6fcb156501774bbaeae79381ab85
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 89bfba0dc679ddb7a9142c83e863cddaf1400063
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90857720"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93412044"
 ---
 # <a name="apply-data-point-limits-and-strategies-by-visual-type"></a>Anvend datapunktgrænser og strategier efter visualiseringstype
 
@@ -31,9 +31,9 @@ Hver enkelt visualisering styrer parametrene for disse strategier for at påvirk
 For hver strateg er der er standarder, der er baseret på den form og type af data, der skal visualiseres. Men standardindstillingerne kan tilsidesættes i formateringsruden i Power BI for at give den rette brugeroplevelse. 
 
 * **Datavinduer** (segmentering): Tillad, at brugerne må rulle gennem dataene i en visualisering ved gradvist at indlæse fragmenter af det samlede datasæt.
-* **Øverste N**: Vis kun de første N-elementer
-* **Enkelt eksempel**: Vis det første og sidste element samt N-elementer jævnt fordelt ind imellem.
-* **NedersteN**: Vis kun de sidste N-elementer.  Nyttige til overvågning af ofte opdaterede data.
+* **Øverste N** : Vis kun de første N-elementer
+* **Enkelt eksempel** : Vis det første og sidste element samt N-elementer jævnt fordelt ind imellem.
+* **NedersteN** : Vis kun de sidste N-elementer.  Nyttige til overvågning af ofte opdaterede data.
 * **Stikprøvetagning med høj tæthed** – en forbedret stikprøvetagningsalgoritme, der i højere grad respekterer udenforliggende værdier og/eller formen af en kurve.
     * **Stikprøvetagning af grupperede linjer** – eksempeldatapunkter, der er baseret på udenforliggende værdier i grupper på tværs af en akse
     * **Stikprøvetagning af overlappende punkter** – eksempeldatapunkter, der er baseret på overlappende værdier for at bevare udenforliggende værdier
@@ -52,7 +52,7 @@ Dynamiske grænser anvendes automatisk, når serveren er funktionsdygtig som bes
 
 * I Power BI Desktop med SSAS-version 2016 eller nyere i det lokale miljø [ved at udnytte serverens SuperDax-funktioner](/archive/blogs/analysisservices/whats-new-in-microsoft-sql-server-analysis-services-tabular-models-in-sql-server-2016-ctp-2-3)
 
-* I Desktop og Power BI-tjenesten, når der anvendes en importeret model, direkte forespørgsel, direkte forbindelse til tjenesten eller direkte forbindelse til AS PaaS. 
+* I Desktop og Power BI-tjenesten, når der anvendes en importeret model, direkte forespørgsel, direkte forbindelse til tjenesten eller direkte forbindelse til AS PaaS. 
 
 * I Power BI-tjenesten kan vi ikke bruge dynamiske grænser, når der oprettes forbindelse til SSAS i det lokale miljø via en gateway i det lokale miljø. Gatewayen i det lokale miljø understøtter ikke fuldt ud strategien om dynamiske grænser, der returnerer en anden struktur af resultatsæt fra SSAS i det lokale miljø.  
 

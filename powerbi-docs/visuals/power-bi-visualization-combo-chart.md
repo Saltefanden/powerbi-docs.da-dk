@@ -1,8 +1,8 @@
 ---
 title: Kombinationsdiagram i Power BI
 description: Dette selvstudium om kombinationsdiagrammer forklarer, hvornår de bruges, og hvordan de oprettes i Power BI-tjenesten og Desktop.
-author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.reviewer: mihart
 featuredvideoid: lnv66cTZ5ho
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/18/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 90c721f6c2f555bd632d6c8fff56d05994b1444b
-ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
+ms.openlocfilehash: 89fdd0852db9560a6e2b0d43e03b9f89c61dd33e
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85354771"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93411561"
 ---
 # <a name="create-and-use-combo-charts-in-power-bi"></a>Opret og brug kombinationsdiagrammer i Power BI
 
@@ -91,7 +91,7 @@ I denne opgave skal vi sammenligne bruttomargen og salg.
 I januar var BM% på 35 %, den steg til 45 % i april, faldt i juli og steg igen i august. Kan vi se et tilsvarende mønster for salget i dette og sidste år?
 
    ![eksempel på salg i kombinationsdiagram](media/power-bi-visualization-combo-chart/combo1-new.png)
-2. Tilføj **This Year Sales > Value** og **Last Year Sales** i kurvediagrammet. Skalaen for **Gross Margin Last Year %** er meget mindre end skalaen for **Sales**, hvilket gør det svært at sammenligne.      
+2. Tilføj **This Year Sales > Value** og **Last Year Sales** i kurvediagrammet. Skalaen for **Gross Margin Last Year %** er meget mindre end skalaen for **Sales** , hvilket gør det svært at sammenligne.      
 
    ![eksempel på flatline i kombinationsdiagram](media/power-bi-visualization-combo-chart/flatline-new.png)
 3. Hvis du vil gøre det nemmere at læse og fortolke en visual, skal du konvertere kurvediagrammet til et Kurve- og stablet søjlediagram.
@@ -105,13 +105,13 @@ I januar var BM% på 35 %, den steg til 45 % i april, faldt i juli og steg igen 
 ## <a name="add-titles-to-the-axes"></a>Føj titler til akserne
 1. Vælg malerrulleikonet ![malerrulleikon](media/power-bi-visualization-combo-chart/power-bi-paintroller.png) for at åbne formateringsruden.
 1. Udvid indstillingerne for **Y-axis** ved at vælge den nedadvendte pil.
-1. For **Y-aksen (søjle)** skal du angive **Placering** til **Venstre**, angive **Titel** til **Til**, **Type** til **Vis kun titel** og **Vis enheder** som **Millioner**.
+1. For **Y-aksen (søjle)** skal du angive **Placering** til **Venstre** , angive **Titel** til **Til** , **Type** til **Vis kun titel** og **Vis enheder** som **Millioner**.
 
    ![eksempel på kombinationsdiagram med y åben](media/power-bi-visualization-combo-chart/power-bi-open-y.png)
 4. Under **Y-akse (søjle)** skal du rulle ned, indtil du kan se **Vis sekundær**. Da der er så mange muligheder for Y-akserne, skal du muligvis bruge begge rullepaneler. I afsnittet Vis sekundær vises indstillingerne for formatering af kurvediagramdelen af kombinationsdiagrammet.
 
    ![eksempel på sekundær i kombinationsdiagram](media/power-bi-visualization-combo-chart/power-bi-secondary.png)
-5. For **Y-Axis (Line)** skal du lade **Position** forblive **Right**, aktivere **Title** til **On** og indstille **Style** til **Show title only**.
+5. For **Y-Axis (Line)** skal du lade **Position** forblive **Right** , aktivere **Title** til **On** og indstille **Style** til **Show title only**.
 
    Dit kombinationsdiagram viser nu to akser, som begge har en titel.
 

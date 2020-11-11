@@ -1,21 +1,21 @@
 ---
 title: Introduktion til formatering af Power BI-visualiseringer
 description: Tilpas visualiseringens titel, baggrund og forklaring
-author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.reviewer: mihart
 featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
 ms.date: 03/06/2020
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8ef9aec1bf01120c8c7e765fe3c59c23da40ceab
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 0d19d7366dce571e2d89ba5cbc6ffbe936ec50e2
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85235861"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93410986"
 ---
 # <a name="customize-visualization-titles-backgrounds-and-legends"></a>Tilpas visualiseringernes titler, baggrunde og forklaringer
 
@@ -61,7 +61,7 @@ Hvis du vil følge med, skal du logge på Power BI Desktop og åbne rapporten [R
 
 1. Ret **Skriftfarve** til hvid og **Baggrundsfarve** til blå.    
 
-    a. Vælg rullelisten, og vælg en farve fra **Temafarver**, **Seneste farver** eller **Brugerdefineret farve**.
+    a. Vælg rullelisten, og vælg en farve fra **Temafarver** , **Seneste farver** eller **Brugerdefineret farve**.
     
     ![Skærmbillede af indstillinger for skriftfarve og baggrundsfarve.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-color.png)
 
@@ -104,11 +104,11 @@ Hvis du vil genindlæse alle ændringerne, skal du vælge **Vend tilbage til sta
 
 ## <a name="customize-visualization-legends"></a>Tilpas forklaringer i en visualisering
 
-1. Åbn rapportsiden **Overview**, og vælg diagrammet **Total Sales Variance by FiscalMonth and District Manager**.
+1. Åbn rapportsiden **Overview** , og vælg diagrammet **Total Sales Variance by FiscalMonth and District Manager**.
 
 1. Under fanen **Visualiseringer** skal du vælge malerrulleikonet for at åbne ruden Formatering.
 
-1. Udvid indstillingerne under **Forklaring**:
+1. Udvid indstillingerne under **Forklaring** :
 
     ![Skærmbillede af kortet Forklaring.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-legends.png)
 

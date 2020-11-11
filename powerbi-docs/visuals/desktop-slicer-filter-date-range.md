@@ -2,19 +2,19 @@
 title: Brug af et udsnitsværktøj eller filter til relative datoer i Power BI
 description: Få mere at vide om, hvordan du bruger et udsnitsværktøj eller -filter til at begrænse relative datoområder i Power BI Desktop.
 author: maggiesMSFT
-ms.reviewer: ''
+ms.reviewer: rien
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
 ms.date: 09/09/2020
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 26e638e106f7bd11544d1d80dae543f06783bda7
-ms.sourcegitcommit: 92b033ee7a6e36808371b247b7b41536cee6c2f6
+ms.openlocfilehash: 5599c26524ba296b7cd201467c48f124b9843b4d
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "90008790"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93412826"
 ---
 # <a name="creating-a-relative-date-slicer-and-filter-in-power-bi"></a>Oprettelse af et udsnit eller et filter for relativ dato i Power BI
 
@@ -40,7 +40,7 @@ For det relative datoudsnit skal du vælge *Relativ*.
 
 Du kan derefter vælge indstillingerne.
 
-Du har følgende valgmuligheder for den første indstilling i det *relative datoudsnit*:
+Du har følgende valgmuligheder for den første indstilling i det *relative datoudsnit* :
 
 ![Skærmbillede af indstillingsmulighederne for Relativ med den første indstilling fremhævet.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-04.png)
 
@@ -75,7 +75,7 @@ Hvis du til sammenligning har valgt *Måneder (kalender)* , viser de begrænsede
 
 ## <a name="create-the-relative-date-range-filter"></a>Opret filteret for det relative datoområde
 
-Du kan også oprette et relativt datoområdefilter for din rapportside eller hele rapporten. Det kan du gøre ved at trække datofeltet til oversigten **Filtre på sideniveau** eller **Filtre på rapportniveau** i ruden **Felt**:
+Du kan også oprette et relativt datoområdefilter for din rapportside eller hele rapporten. Det kan du gøre ved at trække datofeltet til oversigten **Filtre på sideniveau** eller **Filtre på rapportniveau** i ruden **Felt** :
 
 ![Skærmbillede af feltet Ordredato, der trækkes ind i oversigten med filtre på sideniveau.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-06.png)
 
@@ -83,7 +83,7 @@ Når det er placeret der, kan du ændre det relative datoområde. Dette minder o
 
 ![Skærmbillede, der viser rullelisten Filtertype med musemarkøren på Filtrering af relativ dato.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-07.png)
 
-Når du har valgt **Filtrering af relativ dato**, kan du se tre sektioner, der skal ændres, herunder et numerisk felt i midten, ligesom i udsnitsværktøjet.
+Når du har valgt **Filtrering af relativ dato** , kan du se tre sektioner, der skal ændres, herunder et numerisk felt i midten, ligesom i udsnitsværktøjet.
 
 ![Skærmbillede af Filtre på rapportniveau med pile, der peger på indstillingerne for Vis elementer, når værdien.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-08.png)
 

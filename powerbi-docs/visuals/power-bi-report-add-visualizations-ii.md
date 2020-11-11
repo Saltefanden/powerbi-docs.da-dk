@@ -1,20 +1,20 @@
 ---
 title: Del 2, Føj visualiseringer til en rapport i Power BI
 description: Del 2, Føj visualiseringer til en rapport i Power BI
-author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
 ms.date: 05/06/2020
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0bcfcf9ef84ae8b2d59d1c004e2e00c6cf6b3eef
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 79c613b33ccadacc7ce24d9eb744e66014218b52
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85232192"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93411699"
 ---
 # <a name="add-visuals-to-a-power-bi-report-part-2"></a>Føj visualiseringer til en Power BI-rapport (del 2)
 

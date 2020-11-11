@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: tutorial
 ms.custom: seodec18, devx-track-js
 ms.date: 02/05/2019
-ms.openlocfilehash: faacbe602a8c80dc036583cca599b24b072df315
-ms.sourcegitcommit: 702ababd71c38846303bf49990b51afc73f9ebb8
+ms.openlocfilehash: c831118a14c1dc453acb81b866013dcb085d9f6d
+ms.sourcegitcommit: 1b3a626c5ca612a7f23058f8e5cc0147a94db51c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92795652"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348191"
 ---
 # <a name="tutorial-embed-a-power-bi-content-into-your-application-for-national-clouds"></a>Selvstudium: Integrer Power BI-indhold i dit program for nationale cloudmiljøer
 
@@ -143,7 +143,7 @@ Registrer din app i Azure AD for at foretage REST-API-kald. Du kan finde flere o
 
 * Cloudmiljøet Power BI til Kina – ```https://app.powerbi.cn/apps```
 
-Hvis du har downloadet [eksemplet Integration for din kunde](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/Embed%20for%20your%20customers/PowerBIEmbedded_AppOwnsData), skal du bruge det **program-id** , du får, så eksemplet kan godkendes i Azure AD. Du kan konfigurere prøveappen ved at ændre **program-id** i filen *web.config* .
+Hvis du har downloadet [eksemplet Integration for din kunde](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Core/Embed%20for%20your%20customers/AppOwnsData), skal du bruge det **program-id** , du får, så eksemplet kan godkendes i Azure AD. Du kan konfigurere prøveappen ved at ændre **program-id** i filen *web.config*.
 
 ## <a name="step-2---get-an-access-token-from-azure-ad"></a>Trin 2 – Få et adgangstoken fra Azure AD
 
@@ -159,7 +159,7 @@ I programmet skal du hente et **adgangstoken** fra Azure AD, før du kan foretag
 
 * Cloudmiljøet Power BI til Kina – ```https://login.chinacloudapi.cn```
 
-Du kan se eksempler på disse adgangstokens i de enkelte indholdselementopgaver i filen **Controllers\HomeController.cs** .
+Du kan se eksempler på disse adgangstokens i de enkelte indholdselementopgaver i filen **Controllers\HomeController.cs**.
 
 ## <a name="step-3---get-a-content-item"></a>Trin 3: Hent et indholdselement
 
@@ -167,7 +167,7 @@ Før du integrerer dit Power BI-indhold, er der nogle ting, du skal gøre for at
 
 ### <a name="create-the-power-bi-client-with-your-access-token"></a>Opret Power BI-klienten med dit eget adgangstoken
 
-Brug dit adgangstoken til at oprette dit Power BI-klientobjekt, som gør det muligt for dig at interagere med API'erne til Power BI. Du kan oprette dit Power BI-klientobjekt ved at omgive AccessToken med objektet *Microsoft.Rest.TokenCredentials* .
+Brug dit adgangstoken til at oprette dit Power BI-klientobjekt, som gør det muligt for dig at interagere med API'erne til Power BI. Du kan oprette dit Power BI-klientobjekt ved at omgive AccessToken med objektet *Microsoft.Rest.TokenCredentials*.
 
 ```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -187,7 +187,7 @@ using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 
 Du kan bruge Power BI-klientobjektet til at hente en reference til det element, du vil integrere. Du kan integrere dashboards, felter eller rapporter. Her er et eksempel på, hvordan du henter det første dashboard, det første felt eller den første rapport fra et givent arbejdsområde.
 
-Du kan finde et eksempel i **Controllers\HomeController.cs** i [prøveappen App Owns Data](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/Embed%20for%20your%20customers/PowerBIEmbedded_AppOwnsData).
+Du kan finde et eksempel i **Controllers\HomeController.cs** i [prøveappen App Owns Data](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Core/Embed%20for%20your%20customers/AppOwnsData).
 
 #### <a name="reports"></a>Rapporter
 
@@ -243,9 +243,9 @@ Ved hjælp af JavaScript-API'en kan du generere et integrationstoken. Dette inte
 > [!IMPORTANT]
 > Da integrerede tokens kun er beregnet til udviklingstest, er antallet af integrerede tokens, der kan genereres fra en Power BI-hovedkonto, begrænset. Der [skal købes en kapacitet](./embedded-faq.md#technical) til integrerede produktionsscenarier. Der er ingen grænse for generering af integrerede tokens, når der er købt en kapacitet.
 
-Du kan finde et eksempel i **Controllers\HomeController.cs** i [prøveappen Embedding for your organization](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/Embed%20for%20your%20customers/PowerBIEmbedded_AppOwnsData).
+Du kan finde et eksempel i **Controllers\HomeController.cs** i [prøveappen Embedding for your organization](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Core/Embed%20for%20your%20customers/AppOwnsData).
 
-Der oprettes en klasse for **EmbedConfig** og **TileEmbedConfig** . Du kan finde et eksempel i **Models\EmbedConfig.cs** og **Models\TileEmbedConfig.cs** .
+Der oprettes en klasse for **EmbedConfig** og **TileEmbedConfig**. Du kan finde et eksempel i **Models\EmbedConfig.cs** og **Models\TileEmbedConfig.cs**.
 
 #### <a name="reports"></a>Rapporter
 
@@ -309,7 +309,7 @@ var embedConfig = new TileEmbedConfig()
 
 Du kan bruge JavaScript til at indlæse et dashboard i et div-element på din webside. Modellen EmbedConfig/TileEmbedConfig bruges sammen med visninger for et dashboard, et felt eller en rapport i dette eksempel. Hvis du vi se et komplet eksempel, hvor JavaScript API'en bruges, kan du bruge [prøveappen Microsoft Power BI Embedded](https://microsoft.github.io/PowerBI-JavaScript/demo).
 
-Du kan finde et eksempel på et program i [Eksempel på integrering for din organisation](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/Embed%20for%20your%20customers/PowerBIEmbedded_AppOwnsData).
+Du kan finde et eksempel på et program i [Eksempel på integrering for din organisation](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Core/Embed%20for%20your%20customers/AppOwnsData).
 
 ### <a name="viewshomeembeddashboardcshtml"></a>Views\Home\EmbedDashboard.cshtml
 
@@ -436,7 +436,7 @@ Du kan finde et eksempel på et program i [Eksempel på integrering for din orga
 
 ## <a name="next-steps"></a>Næste trin
 
-* Du kan finde en eksempelapp på GitHub, som du kan gennemse. Ovenstående eksempler er baseret på denne prøveapp. Du kan finde flere oplysninger i [Prøveappen Embedding for your organization](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/Embed%20for%20your%20customers/PowerBIEmbedded_AppOwnsData).
+* Du kan finde en eksempelapp på GitHub, som du kan gennemse. Ovenstående eksempler er baseret på denne prøveapp. Du kan finde flere oplysninger i [Prøveappen Embedding for your organization](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Core/Embed%20for%20your%20customers/AppOwnsData).
 
 * Du kan finde flere oplysninger om JavaScript-API'en i [JavaScript-API til Power BI](https://github.com/Microsoft/PowerBI-JavaScript).
 

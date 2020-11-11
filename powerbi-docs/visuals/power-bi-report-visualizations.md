@@ -1,21 +1,21 @@
 ---
 title: Oversigt over rapportvisualiseringer i Power BI-tjenesten og Desktop
 description: Oversigt over rapportvisualiseringer (visuals) i Microsoft Power BI.
-author: mihart
-ms.author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.author: rien
+ms.reviewer: mihart
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
 ms.date: 05/05/2020
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c94990f3126191cf568c2cc20fb5db0c954a6424
-ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
+ms.openlocfilehash: be7249411f4e90d99dde38a1da3b6a6656674ea0
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92049447"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93411331"
 ---
 # <a name="visualizations-in-power-bi-reports"></a>Visualiseringer i Power BI-rapporter
 
