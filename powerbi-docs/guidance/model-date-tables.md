@@ -8,21 +8,21 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/24/2020
 ms.author: v-pemyer
-ms.openlocfilehash: ad85ad56db907ca19af7dc14681eb34f8c2b9abc
-ms.sourcegitcommit: 46a340937d9f01c6daba86a4ab178743858722ec
+ms.openlocfilehash: 350d4889643556d4e1c6389580415ccba46b55d4
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85398123"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94396627"
 ---
 # <a name="create-date-tables-in-power-bi-desktop"></a>Opret datotabeller i Power BI Desktop
 
 Denne artikel henvender sig til designere af datamodeller, der arbejder med Power BI Desktop. I artiklen beskrives god designpraksis i forbindelse med oprettelse af datotabeller i dine datamodeller.
 
-Hvis du vil arbejde med DAX-[funktioner for tidsintelligens](/dax/time-intelligence-functions-dax) (Data Analysis Expressions), er der følgende krav til modellen: Du skal have mindst én _datotabel_ i din model. En datotabel er en tabel, der overholder følgende krav:
+Hvis du vil arbejde med DAX- [funktioner for tidsintelligens](/dax/time-intelligence-functions-dax) (Data Analysis Expressions), er der følgende krav til modellen: Du skal have mindst én _datotabel_ i din model. En datotabel er en tabel, der overholder følgende krav:
 
 > [!div class="checklist"]
-> - Den skal have en kolonne med datatypen **dato** (eller **dato/klokkeslæt**) – også kaldet en _datokolonne_.
+> - Den skal have en kolonne med datatypen **dato** (eller **dato/klokkeslæt** ) – også kaldet en _datokolonne_.
 > - Datokolonnen må kun indeholde entydige værdier.
 > - Datokolonnen må ikke indeholde TOMME værdier.
 > - Datokolonnen må ikke have nogen manglende datoer.
@@ -60,7 +60,7 @@ Du kan oprette en datotabel ved hjælp af Power Query. Her er to blogindlæg, de
 - [Oprettelse af en datodimensionstabel i Power Query](https://blog.crossjoin.co.uk/2013/11/19/generating-a-date-dimension-table-in-power-query/) af Chris Webb
 
 > [!TIP]
-> Hvis du ikke har et data warehouse eller en anden konsistent definition af tiden i din organisation, kan du overveje at bruge Power Query til at publicere et [dataflow](../transform-model/service-dataflows-overview.md). Derefter kan alle udviklere af datamodeller oprette forbindelse til dataflowet for at føje datotabeller til deres modeller. Dataflowet bliver den eneste På denne måde bruger din model en enkelt kilde til sandhed til datoerne i din organisation.
+> Hvis du ikke har et data warehouse eller en anden konsistent definition af tiden i din organisation, kan du overveje at bruge Power Query til at publicere et [dataflow](../transform-model/dataflows/dataflows-introduction-self-service.md). Derefter kan alle udviklere af datamodeller oprette forbindelse til dataflowet for at føje datotabeller til deres modeller. Dataflowet bliver den eneste På denne måde bruger din model en enkelt kilde til sandhed til datoerne i din organisation.
 
 Hvis du har brug for at oprette en datotabel, kan du overveje at gøre det med DAX. Det kan være nemmere. Derudover er det sandsynligt, at det vil være mere praktisk, da DAX omfatter indbygget intelligens, der forenkler oprettelse og administration af datotabeller.
 
@@ -68,8 +68,8 @@ Hvis du har brug for at oprette en datotabel, kan du overveje at gøre det med D
 
 Du kan oprette en datotabel i din model ved at oprette en beregnet tabel ved hjælp af DAX-funktionerne [CALENDAR](/dax/calendar-function-dax) eller [CALENDARAUTO](/dax/calendarauto-function-dax). Hver funktion returnerer en tabel med en enkelt kolonne med datoer. Du kan derefter udvide den beregnede tabel med beregnede kolonner for at understøtte kravene til filtrering og gruppering af datointervaller.
 
-- Brug funktionen **CALENDAR**, når du vil definere et datointerval. Du overfører to værdier: startdatoen og slutdatoen. Disse værdier kan defineres af andre DAX-funktioner, f. eks. `MIN(Sales[OrderDate])` eller `MAX(Sales[OrderDate])`.
-- Brug funktionen **CALENDARAUTO**, når datointervallet automatisk skal omfatte alle de datoer, der er gemt i modellen. Du kan overføre en enkelt valgfri parameter, som er årets slutmåned (hvis dit år er et kalenderår, der slutter i december, behøver du ikke at overføre en værdi). Det er en nyttig funktion, da den sikrer, at der returneres datoer for komplette år, hvilket er et krav til en markeret datotabel. Derudover behøver ikke at administrere forlængelsen af tabellen til fremtidige år: Når en dataopdatering er fuldført, udløser den genberegningen af tabellen. En genberegning udvider automatisk tabellens datointerval, når datoer for et nyt år indlæses i modellen.
+- Brug funktionen **CALENDAR** , når du vil definere et datointerval. Du overfører to værdier: startdatoen og slutdatoen. Disse værdier kan defineres af andre DAX-funktioner, f. eks. `MIN(Sales[OrderDate])` eller `MAX(Sales[OrderDate])`.
+- Brug funktionen **CALENDARAUTO** , når datointervallet automatisk skal omfatte alle de datoer, der er gemt i modellen. Du kan overføre en enkelt valgfri parameter, som er årets slutmåned (hvis dit år er et kalenderår, der slutter i december, behøver du ikke at overføre en værdi). Det er en nyttig funktion, da den sikrer, at der returneres datoer for komplette år, hvilket er et krav til en markeret datotabel. Derudover behøver ikke at administrere forlængelsen af tabellen til fremtidige år: Når en dataopdatering er fuldført, udløser den genberegningen af tabellen. En genberegning udvider automatisk tabellens datointerval, når datoer for et nyt år indlæses i modellen.
 
 ## <a name="clone-with-dax"></a>Klon med DAX
 
@@ -82,7 +82,7 @@ Du kan finde flere oplysninger, der er relateret til denne artikel, i følgende 
 - [Automatisk dato/klokkeslæt i Power BI Desktop](../transform-model/desktop-auto-date-time.md)
 - [Vejledning til automatisk dato/klokkeslæt i Power BI Desktop](auto-date-time.md)
 - [Angiv og brug datotabeller i Power BI Desktop](../transform-model/desktop-date-tables.md)
-- [Selvbetjent dataforberedelse i Power BI](../transform-model/service-dataflows-overview.md)
+- [Selvbetjent dataforberedelse i Power BI](../transform-model/dataflows/dataflows-introduction-self-service.md)
 - [Funktionen CALENDAR (DAX)](/dax/calendar-function-dax)
 - [Funktionen CALENDARAUTO (DAX)](/dax/calendarauto-function-dax)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

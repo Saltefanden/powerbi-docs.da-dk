@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 10/01/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: b8811d9b869d4aa3592c9ed3531d067701b544a8
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 89de77e65d8eb675d9e80c3b2497f39af7c32d33
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91637907"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94396581"
 ---
 # <a name="dataflows-limitations-and-considerations"></a>Begrænsninger og overvejelser i forbindelse med dataflow
 
@@ -24,7 +24,7 @@ Der er nogle få dataflowbegrænsninger på tværs af oprettelse, opdateringer o
 
 Når brugerne opretter dataflow, skal de være opmærksom på følgende:
 
-* Oprettelse af dataflows finder sted i PQO-miljøet (Power Query Online). Se de begrænsninger, der er beskrevet i [Power Query-begrænsninger](https://docs.microsoft.com/power-query/power-query-online-limits).
+* Oprettelse af dataflows finder sted i PQO-miljøet (Power Query Online). Se de begrænsninger, der er beskrevet i [Power Query-begrænsninger](/power-query/power-query-online-limits).
 Da oprettelse af dataflow finder sted i PQO-miljøet (Power Query Online), påvirker opdateringer, der udføres på konfigurationer af arbejdsbelastninger i dataflow, kun opdateringer og har ikke indflydelse på oprettelsesoplevelsen
 
 * Dataflow kan kun ændres af deres ejere
@@ -37,13 +37,13 @@ Da oprettelse af dataflow finder sted i PQO-miljøet (Power Query Online), påvi
 
 ## <a name="api-considerations"></a>API-overvejelser
 
-Du kan finde flere oplysninger om understøttede dataflow-REST API'er i [Reference til REST API](https://docs.microsoft.com/rest/api/power-bi/dataflows). Her er nogle ting, du skal være opmærksom på:
+Du kan finde flere oplysninger om understøttede dataflow-REST API'er i [Reference til REST API](/rest/api/power-bi/dataflows). Her er nogle ting, du skal være opmærksom på:
 
 * Eksport og import af et dataflow giver det pågældende dataflow et nyt id
 
 * Import af dataflows, der indeholder sammenkædede enheder, retter ikke de eksisterende referencer i dataflowet (disse forespørgsler skal rettes manuelt før import af dataflowet)
 
-* Dataflow kan overskrives med parameteren *CreateOrOverwrite*, hvis de oprindelig er oprettet ved hjælp af import-API'EN
+* Dataflow kan overskrives med parameteren *CreateOrOverwrite* , hvis de oprindelig er oprettet ved hjælp af import-API'EN
 
 ## <a name="dataflows-in-shared"></a>Dataflow i delte
 
@@ -75,7 +75,7 @@ Der er følgende begrænsninger og overvejelser i forbindelse med dataflow, der 
 
 * Et linket objekt kan ikke joinforbindes med et almindeligt objekt, der får sine data fra en datakilde i det lokale miljø
 
-* Når en forespørgsel (f.eks. forespørgsel *A*) bruges i beregningen af en anden forespørgsel (forespørgsel *B*) i dataflows, bliver forespørgsel *B* en beregnet enhed. Beregnede enheder kan ikke referere til kilder i det lokale miljø.
+* Når en forespørgsel (f.eks. forespørgsel *A* ) bruges i beregningen af en anden forespørgsel (forespørgsel *B* ) i dataflows, bliver forespørgsel *B* en beregnet enhed. Beregnede enheder kan ikke referere til kilder i det lokale miljø.
 
 
 **Beregningsprogram:**
@@ -111,4 +111,3 @@ Du kan finde flere oplysninger om dataflow og Power BI i følgende artikler:
 * [Konfiguration af dataflowlager til brug af Azure Data Lake Gen 2](dataflows-azure-data-lake-storage-integration.md)
 * [Premium-funktioner for dataflow](dataflows-premium-features.md)
 * [AI med dataflow](dataflows-machine-learning-integration.md)
-

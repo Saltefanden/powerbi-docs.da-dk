@@ -9,16 +9,16 @@ ms.subservice: powerbi-premium
 ms.topic: how-to
 ms.date: 05/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: c4cf0c4fbdde52181dbc5307a9d97d17344c7c26
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 3454a10269937d6e03151a64bba6695cc37fcd66
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91632842"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94396328"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Konfigurer arbejdsbelastninger i en Premium-kapacitet
 
-I denne artikel beskrives, hvordan du aktiverer og konfigurerer arbejdsbelastninger for Power BI Premium-kapaciteter. Kapaciteter understøtter som standard kun de arbejdsbelastninger, der er tilknyttet kørende Power BI-forespørgsler. Du kan også aktivere og konfigurere yderligere arbejdsbelastninger for **[AI (Cognitive Services)](../transform-model/service-cognitive-services.md)** , **[Dataflow](../transform-model/service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium)** og **[Sideinddelte rapporter](../paginated-reports/paginated-reports-save-to-power-bi-service.md)** .
+I denne artikel beskrives, hvordan du aktiverer og konfigurerer arbejdsbelastninger for Power BI Premium-kapaciteter. Kapaciteter understøtter som standard kun de arbejdsbelastninger, der er tilknyttet kørende Power BI-forespørgsler. Du kan også aktivere og konfigurere yderligere arbejdsbelastninger for **[AI (Cognitive Services)](../transform-model/dataflows/dataflows-machine-learning-integration.md)** , **[Dataflow](../transform-model/dataflows/dataflows-introduction-self-service.md)** og **[Sideinddelte rapporter](../paginated-reports/paginated-reports-save-to-power-bi-service.md)** .
 
 ## <a name="default-memory-settings"></a>Standardindstillinger for hukommelse
 
@@ -41,7 +41,7 @@ AI-arbejdsbelastningen gør det muligt for dig at bruge kognitive tjenester og a
 |---------------------------------|----------------------------------------|
 | **Maks. hukommelse (%)** | Den maksimale procentdel af tilgængelig hukommelse, som AI-processer kan bruge i en kapacitet. |
 | **Tillad brug fra Power BI Desktop** | Denne indstilling er reserveret til fremtidig brug og vises ikke i alle lejere. |
-| **Tillad oprettelse af modeller til maskinel indlæring** | Angiver, om forretningsanalytikere kan oplære, validere og aktivere modeller til maskinel indlæring direkte i Power BI. Du kan få flere oplysninger i [Automatiseret maskinel indlæring i Power BI (prøveversion)](../transform-model/service-machine-learning-automated.md). |
+| **Tillad oprettelse af modeller til maskinel indlæring** | Angiver, om forretningsanalytikere kan oplære, validere og aktivere modeller til maskinel indlæring direkte i Power BI. Du kan få flere oplysninger i [Automatiseret maskinel indlæring i Power BI (prøveversion)](../transform-model/dataflows/dataflows-machine-learning-integration.md). |
 | **Aktivér parallelitet for AI-anmodninger** | Angiver, om AI-anmodninger kan køre parallelt. |
 |  |  |
 
@@ -209,7 +209,7 @@ Arbejdsbelastninger kan aktiveres og tildeles til en kapacitet ved hjælp af RES
 ## <a name="next-steps"></a>Næste trin
 
 [Optimering af Power BI Premium kapaciteter](service-premium-capacity-optimize.md)
-[Dataforberedelse via selvbetjening i Power BI med dataflow](../transform-model/service-dataflows-overview.md)
+[Dataforberedelse via selvbetjening i Power BI med dataflow](../transform-model/dataflows/dataflows-introduction-self-service.md)
 [Hvad er sideinddelte rapporter i Power BI Premium?](../paginated-reports/paginated-reports-report-builder-power-bi.md)
 [Automatisk sideopdatering i Power BI Desktop (prøveversion)](../create-reports/desktop-automatic-page-refresh.md)
 

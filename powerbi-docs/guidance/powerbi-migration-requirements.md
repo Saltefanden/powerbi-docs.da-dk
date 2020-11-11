@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/20/2020
 ms.author: v-pemyer
-ms.openlocfilehash: f96fa15981de8d86007c6e1fa768f95a77921280
-ms.sourcegitcommit: 4e347efd132b48aaef6c21236c3a21e5fce285cc
+ms.openlocfilehash: 21d619c42648f90746af9961475bb531dc24d5ab
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92680964"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94396640"
 ---
 # <a name="gather-requirements-to-migrate-to-power-bi"></a>Indsaml krav til migrering til Power BI
 
@@ -51,12 +51,12 @@ Kompiler grundige og letlæselige oplysninger om rapporter, f. eks.:
 - **Sikkerhedskrav:** Tydeliggør sikkerhedskrav (f. eks. tilladte læsere, tilladte redaktører og eventuelle krav til sikkerhed på rækkeniveau), herunder eventuelle undtagelser i forhold til normal organisationssikkerhed. Dokumenter et niveau for datafølsomhed, beskyttelse af personlige oplysninger og/eller lovmæssige krav.
 - **Beregninger, KPI'er og forretningsregler:** Identificer og dokumenter alle beregninger, KPI'er og forretningsregler, der i øjeblikket er defineret i den eksisterende rapport, så de kan justeres i forhold til datakravene.
 - **Krav til anvendelighed, layout og udseende:** Identificer de specifikke behov i forbindelse med krav til anvendelighed, layout og udseende, der er relateret til datavisualiseringer, gruppering, sortering og betinget synlighed. Medtag eventuelle specifikke overvejelser, der er relateret til levering til mobilenheder.
-- **Behov for udskrivning og eksport:** Find ud af, om der er krav, der er specifikke for udskrivning, eksport eller et pixel – perfekt layout. Disse behov påvirker, hvilke typer rapporter der er mest passende (f. eks. en Power BI- eller Excel-rapport eller en sideinddelt rapport). Vær opmærksom på, at brugerne har tendens til at lægge stor vægt på, hvordan de altid har gjort tingene, så være ikke bange for at udfordre deres måde at tænke på. Husk at fokusere på _forbedringer_ i stedet for _ændringer_ .
+- **Behov for udskrivning og eksport:** Find ud af, om der er krav, der er specifikke for udskrivning, eksport eller et pixel – perfekt layout. Disse behov påvirker, hvilke typer rapporter der er mest passende (f. eks. en Power BI- eller Excel-rapport eller en sideinddelt rapport). Vær opmærksom på, at brugerne har tendens til at lægge stor vægt på, hvordan de altid har gjort tingene, så være ikke bange for at udfordre deres måde at tænke på. Husk at fokusere på _forbedringer_ i stedet for _ændringer_.
 - **Risici eller overvejelser:** Find ud af, om der er andre tekniske eller funktionelle krav til rapporter samt eventuelle risici eller overvejelser vedrørende de oplysninger, der præsenteres i dem.
 - **Åbne problemer og ventende opgaver:** Identificer eventuel fremtidig vedligeholdelse, kendte problemer eller udskudte anmodninger for at føje dem til rækken af aktuelt ventende opgaver.
 
 > [!TIP]
-> Overvej krav til rangering ved at klassificere dem som _skal have_ eller _godt at have_ . Ofte beder kunderne om alt det, de muligvis har brug for, på forhånd, fordi de tror, at det er deres eneste chance for at foretage anmodninger. Når du har adresseret prioriteter i flere gentagelser, kan du også gøre rækken af ventende problemer tilgængelig for interessenter. Det hjælper med kommunikation, beslutningstagning og sporing af ventende forpligtelser.
+> Overvej krav til rangering ved at klassificere dem som _skal have_ eller _godt at have_. Ofte beder kunderne om alt det, de muligvis har brug for, på forhånd, fordi de tror, at det er deres eneste chance for at foretage anmodninger. Når du har adresseret prioriteter i flere gentagelser, kan du også gøre rækken af ventende problemer tilgængelig for interessenter. Det hjælper med kommunikation, beslutningstagning og sporing af ventende forpligtelser.
 
 ### <a name="gather-data-requirements"></a>Indsaml datakrav
 
@@ -74,7 +74,7 @@ Kompiler detaljerede oplysninger vedrørende data, f. eks.:
 - **Åbne problemer og ventende opgaver:** Tilføj eventuelle kendte problemer, kendte problemer med datakvaliteten, fremtidig vedligeholdelse eller udskudte anmodninger på dette tidspunkt.
 
 > [!IMPORTANT]
-> Genbrug af data kan opnås ved hjælp af [delte datasæt](../connect-data/service-datasets-share.md), der eventuelt kan [certificeres](../collaborate-share/service-endorse-content.md) for at angive troværdighed og gøre dem nemmere at finde. Genbrug af dataklargøring kan opnås ved hjælp af [dataflow](../transform-model/service-dataflows-overview.md), der reducerer gentagen logik i flere datasæt. Dataflows kan også reducere belastningen på kildesystemer væsentligt, da dataene hentes mindre hyppigt – flere datasæt kan derefter importere data fra dataflowet.
+> Genbrug af data kan opnås ved hjælp af [delte datasæt](../connect-data/service-datasets-share.md), der eventuelt kan [certificeres](../collaborate-share/service-endorse-content.md) for at angive troværdighed og gøre dem nemmere at finde. Genbrug af dataklargøring kan opnås ved hjælp af [dataflow](../transform-model/dataflows/dataflows-introduction-self-service.md), der reducerer gentagen logik i flere datasæt. Dataflows kan også reducere belastningen på kildesystemer væsentligt, da dataene hentes mindre hyppigt – flere datasæt kan derefter importere data fra dataflowet.
 
 ## <a name="identify-improvement-opportunities"></a>Identificer muligheder for forbedring
 

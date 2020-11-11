@@ -7,12 +7,12 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
 ms.date: 06/30/2018
-ms.openlocfilehash: f3f76bd7c422d07cb2b390c2aebd92a2d7fe4ef3
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 7d4a548ab24e8493cef340026642021a2f923ee1
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91749040"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94397409"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Sådan overfører du indhold fra Power BI Workspace Collection til Power BI Embedded
 
@@ -32,9 +32,9 @@ Den nuværende Power BI Workspace Collection er fortsat tilgængelig i en begræ
 Inden du begynder overførslen til det nye Power BI Embedded, kan du tage en hurtig gennemgang, der hjælper dig med at konfigurere dit nye Power BI Embedded-miljø ved hjælp af [værktøjet til konfiguration af integrering](https://aka.ms/embedsetup).
 
 Vælg den løsning, der er den rette for dig:
-* **Embed for your customers** – når du er interesseret i en løsning, hvor [appen ejer dataene](https://aka.ms/embedsetup/AppOwnsData). [Embedding for your customers](embedding.md#embedding-for-your-customers) giver mulighed for at integrere dashboards og rapporter for de brugere, der ikke har en Power BI-konto. 
+* **Embed for your customers** – når du er interesseret i en løsning, hvor *appen ejer dataene*. [Embedding for your customers](embedding.md#embedding-for-your-customers) giver mulighed for at integrere dashboards og rapporter for de brugere, der ikke har en Power BI-konto. 
 
-* **Embed for your organization** – når du er interesseret i en løsning, hvor [brugeren ejer dataene](https://aka.ms/embedsetup/UserOwnsData). Med [Embedding for your organization](embedding.md#embedding-for-your-organization) kan du udvide Power BI-tjenesten.
+* **Embed for your organization** – når du er interesseret i en løsning, hvor *brugeren ejer dataene*. Med [Embedding for your organization](embedding.md#embedding-for-your-organization) kan du udvide Power BI-tjenesten.
 
 ## <a name="prepare-for-the-migration"></a>Forbered overførslen
 
@@ -66,7 +66,7 @@ Der skal findes følgende konti i din lejer.
 
     Disse brugere skal tildeles til arbejdsområder efter behov.
 
-3. En *master*brugerkonto eller en Embedded-konto.
+3. En *master* brugerkonto eller en Embedded-konto.
 
     Appens backend gemmer legitimationsoplysninger for denne konto og bruger den til at få et Azure AD-token til brug med Power BI REST API'erne. Denne konto bruges til at generere integreringstokenet til appen. Kontoen skal også være administrator for de arbejdsområder, der blev oprettet med henblik på integrering.
 
@@ -81,7 +81,7 @@ Du skal registrere en app i Azure AD og tildele den visse tilladelser.
 
 Du skal registrere din app i Azure AD, før du kan foretage REST-API-kald. Dette omfatter at få til Azure-portalen for at anvende yderligere konfiguration ud over Power BI-appregistreringssiden. Du kan finde flere oplysninger i [Registrer en Azure AD-app for at integrere Power BI-indhold](register-app.md).
 
-Du bør registrere appen med appens **master**konto.
+Du bør registrere appen med appens **master** konto.
 
 ## <a name="create-workspaces-required"></a>Opret arbejdsområder (påkrævet)
 
@@ -93,13 +93,13 @@ Du kan drage fordel af arbejdsområder for at sikre en bedre isolation, hvis din
 Brugeren skal have en Pro-licens, før der kan oprettes et arbejdsområde i Power BI. Den Power BI-bruger, der opretter arbejdsområdet, bliver som standard administrator af det pågældende arbejdsområde.
 
 > [!NOTE]
-> Appens *master*konto skal være administrator for arbejdsområdet.
+> Appens *master* konto skal være administrator for arbejdsområdet.
 
 ## <a name="content-migration"></a>Overførsel af indhold
 
 Du kan overføre indhold fra dine arbejdsområdesamlinger til Power BI Embedded samtidig med din aktuelle løsning, og det medfører ikke nogen nedetid.
 
-Der findes et **overførselsværktøj**, som du kan bruge til at kopiere indhold fra Power BI Workspace Collection til Power BI Embedded. Praktisk, hvis du har en meget indhold. Du kan finde flere oplysninger under [Overførselsværktøjet i Power BI Embedded](migrate-tool.md).
+Der findes et **overførselsværktøj** , som du kan bruge til at kopiere indhold fra Power BI Workspace Collection til Power BI Embedded. Praktisk, hvis du har en meget indhold. Du kan finde flere oplysninger under [Overførselsværktøjet i Power BI Embedded](migrate-tool.md).
 
 Overførsel af indhold er baseret primært på to-API'er.
 
@@ -145,7 +145,7 @@ Dette er de datasæt/rapporter, der er oprettet før oktober 2016. Download PBIX
 
 #### <a name="push-dataset--report"></a>Push datasæt og rapport
 
-Download PBIX understøtter ikke *Push API*-datasæt. Data fra Push API-datasæt kan ikke overføres fra PaaS til SaaS.
+Download PBIX understøtter ikke *Push API* -datasæt. Data fra Push API-datasæt kan ikke overføres fra PaaS til SaaS.
 
 **Flow**
 
@@ -168,12 +168,12 @@ Foruden det indhold, du migrerede fra Power BI-arbejdsområdesamlingen, kan du o
 ## <a name="rebuild-your-application"></a>Byg din app igen
 
 1. Du skal ændre din app til at bruge Power BI REST API'er og rapportplaceringen på powerbi.com.
-2. Byg din AuthN/AuthZ-godkendelse igen ved hjælp af *master*kontoen til din app. Du kan med fordel bruge et [integreringstoken](/rest/api/power-bi/embedtoken) for at give brugeren tilladelse til at agere på vegne af andre brugere.
+2. Byg din AuthN/AuthZ-godkendelse igen ved hjælp af *master* kontoen til din app. Du kan med fordel bruge et [integreringstoken](/rest/api/power-bi/embedtoken) for at give brugeren tilladelse til at agere på vegne af andre brugere.
 3. Integrer dine rapporter fra powerbi.com i din app.
 
 ## <a name="map-your-users-to-a-power-bi-user"></a>Knyt dine brugere til en Power BI-bruger
 
-I din app kan du knytte de brugere, du administrerer i appen, til en *master*bruger med Power BI-legitimationsoplysninger til brug i appen. Legitimationsoplysningerne til denne Power BI-*master*konto gemmes i din app og bruges til at oprette integreringstokens.
+I din app kan du knytte de brugere, du administrerer i appen, til en *master* bruger med Power BI-legitimationsoplysninger til brug i appen. Legitimationsoplysningerne til denne Power BI- *master* konto gemmes i din app og bruges til at oprette integreringstokens.
 
 ## <a name="what-to-do-when-you-are-ready-for-production"></a>Når du er klar til produktionsmiljøet
 

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: tutorial
 ms.subservice: powerbi-custom-visuals
 ms.date: 09/02/2020
-ms.openlocfilehash: 48a9196dbcf5106ed01e55be8285450ecfc7ca77
-ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
+ms.openlocfilehash: 6c4b39fff9513143c946cc2e92294ae4cbe81427
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92050801"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94397455"
 ---
 # <a name="tutorial-develop-a-power-bi-circle-card-visual"></a>Selvstudium: Udvikl en Power BI-cirkelkortvisualisering
 
@@ -35,7 +35,7 @@ Før du begynder at udvikle din Power BI-visualisering, skal du bekræfte, at du
 
 * [Visual Studio Code (VS Code)](https://www.visualstudio.com/). VS Code er et ideelt IDE (integreret udviklingsmiljø) til udvikling af JavaScript- og TypeScript-programmer.
 
-* [Windows PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-windows-powershell) version 4 eller nyere (til Windows). Eller [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) (til OSX).
+* [Windows PowerShell](/powershell/scripting/install/installing-windows-powershell) version 4 eller nyere (til Windows). Eller [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) (til OSX).
 
 * Et miljø, der er klar til udvikling af en Power BI-visualisering. [Konfigurer dit miljø til udvikling af en Power BI-visualisering](environment-setup.md).
 
@@ -65,7 +65,7 @@ I dette afsnit opretter du et projekt til cirkelkortvisualiseringen.
     pbiviz start
     ```
     >[!IMPORTANT]
-    >Luk ikke PowerSell-vinduet indtil slutningen af selvstudiet. Du stopper kørslen af visualiseringen ved at trykke på Ctrl + C, og hvis du bliver bedt om at afslutte batchjobbet, skal du trykke på Y og *Enter* .
+    >Luk ikke PowerSell-vinduet indtil slutningen af selvstudiet. Du stopper kørslen af visualiseringen ved at trykke på Ctrl + C, og hvis du bliver bedt om at afslutte batchjobbet, skal du trykke på Y og *Enter*.
 
 ## <a name="view-the-circle-card-in-power-bi-service"></a>Få vist cirkelkortet i Power BI-tjenesten
 
@@ -78,7 +78,7 @@ Du kan også bruge din egen rapport til at teste cirkelkortvisualiseringen.
 
 1. Log på [PowerBI.com](https://powerbi.microsoft.com/), og åbn **US Sales Analysis** -rapporten.
 
-2. Vælg **Flere indstillinger** > **Rediger** .
+2. Vælg **Flere indstillinger** > **Rediger**.
 
     >[!div class="mx-imgBorder"]
     >![Skærmbillede af redigeringsindstillingen i Power BI-tjenesten.](media/develop-circle-card/edit-report.png)
@@ -88,7 +88,7 @@ Du kan også bruge din egen rapport til at teste cirkelkortvisualiseringen.
     >[!div class="mx-imgBorder"]
     >![Skærmbillede af knappen Ny side i Power BI-tjenesten.](media/develop-circle-card/new-page.png)
 
-4. I ruden **Visualiseringer** skal du markere **Udviklervisualisering** .
+4. I ruden **Visualiseringer** skal du markere **Udviklervisualisering**.
 
     >[!div class="mx-imgBorder"]
     >![Skærmbillede af udviklervisualiseringen i ruden Visualiseringer.](media/develop-circle-card/developer-visual.png)
@@ -103,11 +103,11 @@ Du kan også bruge din egen rapport til at teste cirkelkortvisualiseringen.
     Dette er en simpel visualisering, der viser det antal gange, som metoden update er blevet kaldt. I denne fase henter visualiseringen ingen data.
 
     >[!NOTE]
-    >Hvis der vises en fejlmeddelelse for forbindelsen i visualiseringen, skal du åbne en ny fane i din browser, navigere til [https://localhost:8080/assets/status](https://localhost:8080/assets/status) og give din browser tilladelse til at bruge denne adresse.
+    >Hvis der vises en fejlmeddelelse for forbindelsen i visualiseringen, skal du åbne en ny fane i din browser, navigere til `https://localhost:8080/assets/status` og give din browser tilladelse til at bruge denne adresse.
     >
     >![Skærmbillede af den nye visualisering, hvor der vises en forbindelsesfejl.](media/develop-circle-card/connection-error.png)
 
-6. Med den nye visualisering valgt skal du gå til ruden **Felter** , udvide **Salg** og markere **Mængde** .
+6. Med den nye visualisering valgt skal du gå til ruden **Felter** , udvide **Salg** og markere **Mængde**.
 
     >[!div class="mx-imgBorder"]
     >![Skærmbillede af feltet Mængde i Power BI-tjenesten i tabellen Salg i US Sales Analysis-rapporten.](media/develop-circle-card/fields-sales-quantity.png)
@@ -130,15 +130,15 @@ Konfigurer filen **visual.ts** ved at slette og tilføje nogle få kodelinjer.
 
 1. Åbn dit projekt i VS Code ( **Filer** > **Åbn mappe** ).
 
-2. I **ruden Stifinder** skal du udvide mappen **src** og vælge filen **visual.ts** .
+2. I **ruden Stifinder** skal du udvide mappen **src** og vælge filen **visual.ts**.
 
     >[!div class="mx-imgBorder"]
     >![Skærmbillede af adgang til filen visual.ts file i VS Code.](media/develop-circle-card/visual-file.png)
 
     > [!IMPORTANT]
-    > Læg mærke til kommentarerne øverst i filen **visual.ts** . Tilladelse til at bruge Power BI-visualiseringspakker tildeles gratis i henhold til vilkårene i MIT-licensen (Massachusetts Institute of Technology). Som en del af aftalen skal du lade kommentarerne øverst i filen stå.
+    > Læg mærke til kommentarerne øverst i filen **visual.ts**. Tilladelse til at bruge Power BI-visualiseringspakker tildeles gratis i henhold til vilkårene i MIT-licensen (Massachusetts Institute of Technology). Som en del af aftalen skal du lade kommentarerne øverst i filen stå.
 
-3. Fjern følgende kodelinjer fra filen *visual.ts* .
+3. Fjern følgende kodelinjer fra filen *visual.ts*.
 
     * *VisualSettings* -importen:
         ```typescript
@@ -147,11 +147,11 @@ Konfigurer filen **visual.ts** ved at slette og tilføje nogle få kodelinjer.
 
     * De fire erklæringer om private variabler på klasseniveau.
 
-    * Alle kodelinjer i *konstruktøren* .
+    * Alle kodelinjer i *konstruktøren*.
 
-    * Alle kodelinjer i metoden *update* .
+    * Alle kodelinjer i metoden *update*.
 
-    * Alle resterende kodelinjer under metoden *update* , herunder metoderne *parseSettings* og *enumerateObjectInstances* .
+    * Alle resterende kodelinjer under metoden *update* , herunder metoderne *parseSettings* og *enumerateObjectInstances*.
 
 4. Føj følgende kodelinjer til slutningen af importafsnittet:
 
@@ -186,7 +186,7 @@ Konfigurer filen **visual.ts** ved at slette og tilføje nogle få kodelinjer.
     }
     ```
 
-6. Gem filen **visual.ts** .
+6. Gem filen **visual.ts**.
 
 ### <a name="add-a-circle-and-text-elements"></a>Tilføj en cirkel og tekstelementer
 
@@ -194,7 +194,7 @@ Tilføj D3 Scalable Vector Graphics (SVG). Dette gør det muligt at oprette tre 
 
 1. Åbn **visual.ts** i VS Code.
 
-2. Føj følgende kode til *konstruktøren* .
+2. Føj følgende kode til *konstruktøren*.
 
     ```typescript
     this.svg = d3.select(options.element)
@@ -213,7 +213,7 @@ Tilføj D3 Scalable Vector Graphics (SVG). Dette gør det muligt at oprette tre 
     >[!TIP]
     >Hvis du vil forbedre læsbarheden, anbefales det, at du formaterer dokumentet, hver gang du kopierer kodestykker til dit projekt. Højreklik et vilkårligt sted i VS Code, og vælg *Formatér dokument* (Alt + Skift + F).
 
-3. Gem filen **visual.ts** .
+3. Gem filen **visual.ts**.
 
 ### <a name="set-the-width-and-height"></a>Angiv bredde og højde
 
@@ -221,7 +221,7 @@ Angiv visualiseringens bredde og højde, og initialiser attributterne og typogra
 
 1. Åbn **visual.ts** i VS Code.
 
-2. Føj følgende kode til metoden *update* .
+2. Føj følgende kode til metoden *update*.
 
     ```typescript
     let width: number = options.viewport.width;
@@ -255,7 +255,7 @@ Angiv visualiseringens bredde og højde, og initialiser attributterne og typogra
         .style("font-size", fontSizeLabel + "px");
     ```
 
-3. Gem filen **visual.ts** .
+3. Gem filen **visual.ts**.
 
 ### <a name="optional-review-the-code-in-the-visuals-file"></a>(Valgfri) Gennemse koden i filen visuals
 
@@ -365,20 +365,20 @@ Slet unødvendige kodelinjer fra filen capabilities.
 
 1. Åbn dit projekt i VS Code ( **Filer** > **Åbn mappe** ).
 
-2. Vælg filen **capabilities.json** .
+2. Vælg filen **capabilities.json**.
 
     >[!div class="mx-imgBorder"]
     >![Skærmbillede af adgang til filen capabilities.json i VS Code.](media/develop-circle-card/capabilities-file.png)
 
 3. Fjern alle elementer fra objektet (linje 14-60).
 
-4. Gem filen **capabilities.json** .
+4. Gem filen **capabilities.json**.
 
 ### <a name="restart-the-circle-card-visual"></a>Genstart cirkelkortvisualiseringen
 
 Stop kørslen af visualiseringen, og genstart den.
 
-1. I det PowerShell-vindue, hvor visualiseringen kører, skal du trykke på Ctrl + C, og hvis du bliver bedt om at afslutte batchjobbet, skal du trykke på Y og derefter *Enter* .
+1. I det PowerShell-vindue, hvor visualiseringen kører, skal du trykke på Ctrl + C, og hvis du bliver bedt om at afslutte batchjobbet, skal du trykke på Y og derefter *Enter*.
 
 2. I PowerShell skal du starte visualiseringen.
 
@@ -427,13 +427,13 @@ Rediger filen **capabilities.json** for at definere datarollen og tilknytningern
 
 * **Definition af datarollen**
 
-    Definer matrixen *dataRoles* med en enkelt datarolle for typen *measure* . Denne datarolle kaldes for *measure* og vises som *Måling* . Det muliggør videregivelse af enten feltet measure eller et felt, der opsummeres.
+    Definer matrixen *dataRoles* med en enkelt datarolle for typen *measure*. Denne datarolle kaldes for *measure* og vises som *Måling*. Det muliggør videregivelse af enten feltet measure eller et felt, der opsummeres.
 
     1. Åbn filen **capabilities.json** i VS Code.
 
     2. Fjern alt indhold i matrixen **dataRoles** (linje 3-12).
 
-    3. Indsæt følgende kode i matrixen **dataRoles** .
+    3. Indsæt følgende kode i matrixen **dataRoles**.
 
         ```json
         {
@@ -443,17 +443,17 @@ Rediger filen **capabilities.json** for at definere datarollen og tilknytningern
         }
         ```
 
-    4. Gem filen **capabilities.json** .
+    4. Gem filen **capabilities.json**.
 
 * **Definition af tilknytningen af datavisningen**
 
-    Definer en fil kaldet *measure* i matrixen *dataViewMappings* . Dette felt kan videregives til datarollen.
+    Definer en fil kaldet *measure* i matrixen *dataViewMappings*. Dette felt kan videregives til datarollen.
 
     1. Åbn filen **capabilities.json** i VS Code.
 
     2. Fjern alt indhold i matrixen **dataViewMappings** (linje 10-30).
 
-    3. Indsæt følgende kode i matrixen **dataViewMappings** .
+    3. Indsæt følgende kode i matrixen **dataViewMappings**.
 
         ```json
         {
@@ -466,15 +466,15 @@ Rediger filen **capabilities.json** for at definere datarollen og tilknytningern
         }
         ```
 
-    4. Gem filen **capabilities.json** .
+    4. Gem filen **capabilities.json**.
 
 ### <a name="optional-review-the-capabilities-file-code-changes"></a>(Valgfri) Gennemse kodeændringer i filen capabilities
 
-Bekræft, at feltet *measure* vises i cirkelkortvisualiseringen, og gennemse de ændringer, du foretager, ved hjælp af indstillingen *Vis DataView* . 
+Bekræft, at feltet *measure* vises i cirkelkortvisualiseringen, og gennemse de ændringer, du foretager, ved hjælp af indstillingen *Vis DataView*. 
 
 1. Åbn *Power BI US Sales Analysis* -rapporten i Power BI-tjenesten. Hvis du bruger en anden rapport til at udvikle cirkelkortvisualiseringen, skal du navigere til den pågældende rapport.
 
-2. Bemærk, at cirkelkortvisualiseringen nu kan konfigureres med et felt med titlen *Måling* . Du kan trække og slippe elementer fra ruden **Felter** til feltet *Måling* .
+2. Bemærk, at cirkelkortvisualiseringen nu kan konfigureres med et felt med titlen *Måling*. Du kan trække og slippe elementer fra ruden **Felter** til feltet *Måling*.
 
     >[!div class="mx-imgBorder"]
     >![Skærmbillede af feltet Måling på cirkelkoret i ruden Visualisering i Power BI-tjenesten.](media/develop-circle-card/measure.png)
@@ -492,7 +492,7 @@ Bekræft, at feltet *measure* vises i cirkelkortvisualiseringen, og gennemse de 
     >[!div class="mx-imgBorder"]
     >![Skærmbillede af værdifiguren, som den vises på cirkelkortet under indstillingen Vis datavisning.](media/develop-circle-card/value.png)
 
-5. Udvid **metadata** , derefter matrixen **columns** og gennemse værdierne **format** og **displayName** .
+5. Udvid **metadata** , derefter matrixen **columns** og gennemse værdierne **format** og **displayName**.
 
     >[!div class="mx-imgBorder"]
     >![Skærmbillede af værdierne format og displayname som vist på cirkelkortet under indstillingen Vis datavisning.](media/develop-circle-card/colunms.png)
@@ -531,7 +531,7 @@ Foretag ændringer af filen **visual.ts** , så cirkelkortvisualiseringen kan br
         .text(dataView.metadata.columns[0].displayName)
         ```
 
-4. Gem filen **visual.ts** .
+4. Gem filen **visual.ts**.
 
 5. Gennemse visualiseringen i Power BI-tjenesten. Værdien og det viste navn vises nu i visualiseringen.
 

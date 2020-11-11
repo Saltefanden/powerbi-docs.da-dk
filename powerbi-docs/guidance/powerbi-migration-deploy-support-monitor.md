@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/20/2020
 ms.author: v-pemyer
-ms.openlocfilehash: f9268409977b3aa78e1ebda6f1f6b2e732451455
-ms.sourcegitcommit: 4e347efd132b48aaef6c21236c3a21e5fce285cc
+ms.openlocfilehash: 3e0bb00042b869061b7cb7cebf624e324db7e916
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92681028"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94396121"
 ---
 # <a name="deploy-to-power-bi"></a>Udrul til Power BI
 
@@ -76,7 +76,7 @@ Under udrulningsprocessen skal du måske arbejde sammen med dine Power BI-admini
 - **Vedligeholdelse af gateway:** En [ny datakilde](../connect-data/service-gateway-data-sources.md) skal måske registreres i datagatewayen.
 - **Drivere og connectorer til gateway:** En ny privatejet datakilde kræver måske installation af en ny driver eller en brugerdefineret connector på hver server i gatewayklyngen.
 - **Opret en ny Premium-kapacitet:** Du kan muligvis bruge en eksisterende [Premium-kapacitet](../admin/service-premium-capacity-manage.md). Eller der kan være situationer, hvor der er behov for en ny Premium-kapacitet. Det kan være tilfældet, når du med vilje ønsker at adskille en arbejdsbelastning i en afdeling.
-- **Konfigurer et Power BI-dataflow:** Aktiviteter for dataforberedelse kan konfigureres én gang i et [Power BI-dataflow](../transform-model/service-dataflows-overview.md) ved hjælp af Power Query Online. Det hjælper med at forhindre replikering af dataforberedelse i mange forskellige Power BI Desktop-filer.
+- **Konfigurer et Power BI-dataflow:** Aktiviteter for dataforberedelse kan konfigureres én gang i et [Power BI-dataflow](../transform-model/dataflows/dataflows-introduction-self-service.md) ved hjælp af Power Query Online. Det hjælper med at forhindre replikering af dataforberedelse i mange forskellige Power BI Desktop-filer.
 - **Registrer en ny visualisering til organisationer:** Registrering af [visualiseringer til organisationer](../developer/visuals/power-bi-custom-visuals-organization.md) kan udføres via administrationsportalen for brugerdefinerede visualiseringer, der ikke stammer fra AppSource.
 - **Angiv udvalgt indhold:** Der findes en lejerindstilling, som styrer, hvem der kan angive [udvalgt indhold](https://powerbi.microsoft.com/blog/promote-your-reports-dashboards-and-apps-on-power-bi-home/) på startsiden i Power BI-tjenesten.
 - **Konfigurer følsomhedsmærkater:** Alle [følsomhedsmærkater](../admin/service-security-data-protection-overview.md) er integreret i Microsoft Information Protection.

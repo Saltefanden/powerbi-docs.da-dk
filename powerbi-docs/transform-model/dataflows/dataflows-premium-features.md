@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 10/01/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: ffd11a57267ef69aab7b999a29949c33163e52e8
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: e052816cb3d633ba5c01d0331e00572a9b51a579
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91637931"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94397294"
 ---
 # <a name="premium-features-of-dataflows"></a>Premium-funktioner for dataflow
 
@@ -34,7 +34,7 @@ De følgende afsnit indeholder en detaljeret beskrivelse af disse funktioner.
 
 Det forbedrede beregningsprogram i Power BI gør det muligt for Power BI Premium-abonnenter at bruge deres kapacitet til at optimere brugen af dataflows. Hvis du bruger det forbedrede beregningsprogram, får du følgende fordele:
 
-* Reducerer betydeligt den opdateringstid, der er krævet i forbindelse med langvarige ETL-trin, i forhold til beregnede enheder, som f.eks. udførelse af *joinforbindelser*, *distinct*, *filtre* og *gruppér efter*
+* Reducerer betydeligt den opdateringstid, der er krævet i forbindelse med langvarige ETL-trin, i forhold til beregnede enheder, som f.eks. udførelse af *joinforbindelser* , *distinct* , *filtre* og *gruppér efter*
 * Udfør DirectQuery-forespørgsler over enheder
 
 Aktivering af det forbedrede beregningsprogram er beskrevet i det følgende, hvor du også finder svar på almindelige spørgsmål.
@@ -124,7 +124,7 @@ Der er nogle få kendte begrænsninger for DirectQuery og dataflow:
 
 ## <a name="computed-entities"></a>Beregnede enheder
 
-Du kan udføre **i lager-beregninger**, når du bruger **dataflow** vha. et Power BI Premium-abonnement. Dermed kan du udføre beregninger af dine eksisterende dataflow og få resultater, der giver dig mulighed for at fokusere på oprettelse af rapporter og analyser.
+Du kan udføre **i lager-beregninger** , når du bruger **dataflow** vha. et Power BI Premium-abonnement. Dermed kan du udføre beregninger af dine eksisterende dataflow og få resultater, der giver dig mulighed for at fokusere på oprettelse af rapporter og analyser.
 
 ![Beregnet enhed](media/dataflows-premium-features/computed-entity.png)
 
@@ -146,7 +146,7 @@ Dataflow kan indstilles til trinvis opdatering, så du undgår at skulle trække
 
 ![Trinvis opdatering](media/dataflows-premium-features/incremental-refresh.png)
 
-Hvis du angiver trinvis opdatering, føjes der parametre til dataflowet for at angive datointervallet. Du kan finde flere oplysninger om, hvordan du konfigurerer trinvis opdatering, i artiklen [Trinvis opdatering](https://docs.microsoft.com/power-query/dataflows/incremental-refresh).
+Hvis du angiver trinvis opdatering, føjes der parametre til dataflowet for at angive datointervallet. Du kan finde flere oplysninger om, hvordan du konfigurerer trinvis opdatering, i artiklen [Trinvis opdatering](/power-query/dataflows/incremental-refresh).
 
 ### <a name="considerations-for-when-not-to-set-incremental-refresh"></a>Situationer, hvor du ikke skal angive trinvis opdatering
 

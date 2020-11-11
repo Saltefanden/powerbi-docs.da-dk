@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 10/01/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: cb68cdd0f7ca82c937b1a045055909582c0938d6
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 47b1647732c1977e6e8a3992b617e2a35c803c50
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91637747"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94396377"
 ---
 # <a name="configure-and-consume-a-dataflow"></a>Konfigurer og brug et dataflow
 
@@ -40,12 +40,12 @@ Indstillingerne under **Indstillinger** omfatter mange muligheder for din data f
 
 * **Planlagt opdatering:** Her kan du definere de tidspunkter på dagen, hvor det valgte dataflow opdateres. En dataflow kan opdateres med samme hyppighed som et datasæt.
 
-* **Udvidede indstillinger for beregningsprogram:** Her kan du definere, om dataflowet gemmes i beregningsprogrammet. Beregningsprogrammet tillader efterfølgende dataflow, der refererer til dette dataflow, for at udføre fletninger og joinforbindelser og andre transformationer meget hurtigere, end du ellers ville kunne. Det gør det også muligt for DirectQuery at blive udført via dataflowet. Hvis du vælger **Til**, sikres det, at dataflow altid understøttes i DirectQuery-tilstand, og eventuelle referencer drager fordel af programmet. Hvis du vælger **Optimeret** betyder det, at programmet kun bruges, hvis der er en reference til dette dataflow. Hvis du vælger **Fra**, deaktiveres beregningsprogrammet og DirectQuery-funktionaliteten for dette dataflow.
+* **Udvidede indstillinger for beregningsprogram:** Her kan du definere, om dataflowet gemmes i beregningsprogrammet. Beregningsprogrammet tillader efterfølgende dataflow, der refererer til dette dataflow, for at udføre fletninger og joinforbindelser og andre transformationer meget hurtigere, end du ellers ville kunne. Det gør det også muligt for DirectQuery at blive udført via dataflowet. Hvis du vælger **Til** , sikres det, at dataflow altid understøttes i DirectQuery-tilstand, og eventuelle referencer drager fordel af programmet. Hvis du vælger **Optimeret** betyder det, at programmet kun bruges, hvis der er en reference til dette dataflow. Hvis du vælger **Fra** , deaktiveres beregningsprogrammet og DirectQuery-funktionaliteten for dette dataflow.
 
 * **Godkendelser:** Du kan definere, om dataflowet skal certificeres eller hæves. 
 
 ## <a name="refreshing-a-dataflow"></a>Opdatering af et dataflow
-Dataflow fungerer som byggeblokke oven på hinanden. Lad os antage, at du har et dataflow med navnet *Rådata* , og en sammenkædet enhed med navnet *Transformerede data*, som indeholder en sammenkædet enhed til dataflowet *Rådata*. Når opdateringen af tidsplanen for dataflowet *Rådata* udløses, udløser den alle de dataflow, der refererer til den efter fuldførelsen. Denne funktionalitet opretter en opdateringskædereaktion, så du undgår at skulle planlægge dataflow manuelt. Der er et par små forskelle, du skal være opmærksom på, når du arbejder med opdateringerne af sammenkædede enheder:
+Dataflow fungerer som byggeblokke oven på hinanden. Lad os antage, at du har et dataflow med navnet *Rådata* , og en sammenkædet enhed med navnet *Transformerede data* , som indeholder en sammenkædet enhed til dataflowet *Rådata*. Når opdateringen af tidsplanen for dataflowet *Rådata* udløses, udløser den alle de dataflow, der refererer til den efter fuldførelsen. Denne funktionalitet opretter en opdateringskædereaktion, så du undgår at skulle planlægge dataflow manuelt. Der er et par små forskelle, du skal være opmærksom på, når du arbejder med opdateringerne af sammenkædede enheder:
 
 * En sammenkædet enhed udløses kun af en opdatering, hvis den findes i det samme arbejdsområde
 
@@ -59,7 +59,7 @@ Dataflow fungerer som byggeblokke oven på hinanden. Lad os antage, at du har et
 
 ![trinvis opdatering af dataflow](media/dataflows-configure-consume/dataflow-created-entity.png)
 
-Hvis du angiver trinvis opdatering, føjes der parametre til dataflowet for at angive datointervallet. Du kan finde flere oplysninger om, hvordan du konfigurerer trinvis opdatering, i artiklen [Trinvis opdatering i Power Query](https://docs.microsoft.com/power-query/dataflows/incremental-refresh).
+Hvis du angiver trinvis opdatering, føjes der parametre til dataflowet for at angive datointervallet. Du kan finde flere oplysninger om, hvordan du konfigurerer trinvis opdatering, i artiklen [Trinvis opdatering i Power Query](/power-query/dataflows/incremental-refresh).
 
 Der er nogle tilfælde, hvor du ikke bør angive trinvis opdatering:
 

@@ -8,16 +8,16 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/07/2020
 ms.author: davidi
-ms.openlocfilehash: ae6047950256a783172ef871c2bd58dc15ff033a
-ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
+ms.openlocfilehash: 3cce51ad577c700a0f9595a2b92694e5e1b61cc5
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93297596"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94397386"
 ---
 # <a name="power-bi-data-sources"></a>Power BI-datakilder
 
-Følgende tabel indeholder de datakilder, som Power BI understøtter for datasæt, herunder oplysninger om DirectQuery og datagatewayen i det lokale miljø. Du kan finde oplysninger om dataflow under [Opret forbindelse til datakilder for Power BI-dataflow](../transform-model/service-dataflows-data-sources.md).
+Følgende tabel indeholder de datakilder, som Power BI understøtter for datasæt, herunder oplysninger om DirectQuery og datagatewayen i det lokale miljø. Du kan finde oplysninger om dataflow under [Opret forbindelse til datakilder for Power BI-dataflow](../transform-model/dataflows/dataflows-configure-consume.md).
 
 | Datakilde | Opret forbindelse fra skrivebord | Opret forbindelse og opdater fra tjenesten | DirectQuery/direkte forbindelse | Gateway (understøttes) | Gateway (påkrævet) | Power BI-dataflow |
 |---|---|---|---|---|---|---|---|
@@ -172,9 +172,6 @@ Indstillingen for SSO gælder for alle datasæt, der bruger denne datakilde. Den
 - Spark
 - SQL Server
 - Teradata
-
-> [!Note]
-> Azure MFA (Multi-Factor Authentication) understøttes ikke. Brugere, der gerne vil bruge enkeltlogon med DirectQuery, skal fritages fra multifaktorgodkendelse.
 
 ## <a name="next-steps"></a>Næste trin
 

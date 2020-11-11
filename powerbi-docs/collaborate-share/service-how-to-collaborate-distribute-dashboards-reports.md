@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/18/2020
 ms.custom: contperfq4
 LocalizationGroup: Share your work
-ms.openlocfilehash: 4af8f9edd3d51214aaa766219e4903eb4b26b813
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.openlocfilehash: 93ccb8c02e71165dfd23bcd82b21ae2758e03d43
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87252538"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94396190"
 ---
 # <a name="ways-to-collaborate-and-share-in-power-bi"></a>Måder at samarbejde og dele på i Power BI
 
@@ -33,15 +33,15 @@ Du har oprettet dashboards og rapporter. Måske vil du samarbejde med dine kolle
 **Distribuer eller del dashboards og rapporter**
 
 - *Del dashboards og rapporter* fra Mit arbejdsområde eller et andet arbejdsområde.
-- Anmærk og del fra Power BI-*mobilapps*.
-- Gruppér dashboards og rapporter i arbejdsområder i *apps*, og distribuer dem til en større gruppe eller hele organisationen.
+- Anmærk og del fra Power BI- *mobilapps*.
+- Gruppér dashboards og rapporter i arbejdsområder i *apps* , og distribuer dem til en større gruppe eller hele organisationen.
 - Integrer rapporter i *sikre portaler* eller på *offentlige websteder*.
 - Udskriv rapporter.
-- Opret en *skabelonapp*, som du kan distribuere til eksterne Power BI-brugere via Microsoft AppSource.
+- Opret en *skabelonapp* , som du kan distribuere til eksterne Power BI-brugere via Microsoft AppSource.
  
 **Del data**
 
-- Opret *delte datasæt*, som dine kolleger kan bruge som udgangspunkt for deres egne rapporter i deres egne arbejdsområder.
+- Opret *delte datasæt* , som dine kolleger kan bruge som udgangspunkt for deres egne rapporter i deres egne arbejdsområder.
 - Opret *dataflow* som en måde til deling af en fælles datakilde.
 
 Uanset hvilken indstilling du vælger, skal du bruge en [Power BI Pro-licens](../fundamentals/service-features-license-type.md) for at dele dit indhold, ellers skal indholdet være i en [Premium-kapacitet](../admin/service-premium-what-is.md). Licenskrav varierer alt efter de kolleger, der får vist dine dashboards, afhængigt af den valgte indstilling. De følgende afsnit går længere ned i detaljen. 
@@ -101,7 +101,7 @@ Du kan også [dele et snapshot af et felt](../consumer/mobile/mobile-windows-10-
 
 ## <a name="distribute-insights-in-an-app"></a>Distribuer indsigt i en app
 
-Lad os sige, at du gerne vil distribuere dit dashboard til en bred målgruppe i organisationen. Du og dine kolleger har oprettet et *arbejdsområde*, derefter har I oprettet og forfinet dashboards, rapporter og datasæt i arbejdsområdet. Nu skal du vælge dashboards og rapporter og publicere dem som en *app* enten i en gruppe eller i hele organisationen.
+Lad os sige, at du gerne vil distribuere dit dashboard til en bred målgruppe i organisationen. Du og dine kolleger har oprettet et *arbejdsområde* , derefter har I oprettet og forfinet dashboards, rapporter og datasæt i arbejdsområdet. Nu skal du vælge dashboards og rapporter og publicere dem som en *app* enten i en gruppe eller i hele organisationen.
 
 ![Ikonet Publicer app](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-publish-app.png)
 
@@ -158,7 +158,7 @@ Læs mere om [oprettelse og brug af delte datasæt](../connect-data/service-data
 
 ## <a name="create-dataflows"></a>Opret dataflow
 
-*Dataflow* er en måde, hvorpå du selv kan samle data fra forskellige kilder og forberede dem til modellering. Analytikere opretter dataflow for at indtage, transformere, integrere og forbedre big data. De opretter og administrerer dataflow i arbejdsområder i Power BI-tjenesten. Læs om [selvbetjent dataforberedelse med dataflow](../transform-model/service-dataflows-overview.md).
+*Dataflow* er en måde, hvorpå du selv kan samle data fra forskellige kilder og forberede dem til modellering. Analytikere opretter dataflow for at indtage, transformere, integrere og forbedre big data. De opretter og administrerer dataflow i arbejdsområder i Power BI-tjenesten. Læs om [selvbetjent dataforberedelse med dataflow](../transform-model/dataflows/dataflows-introduction-self-service.md).
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 

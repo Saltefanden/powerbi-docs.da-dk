@@ -10,16 +10,16 @@ ms.date: 10/22/2020
 ms.author: davidi
 ms.custom: references_regions
 LocalizationGroup: Data from files
-ms.openlocfilehash: 4a919c499746711719d679fc5cb9a689731093cc
-ms.sourcegitcommit: 54e571a10b0fdde5cd6036017eac9ef228de5116
+ms.openlocfilehash: f2efd4410af62425f599b1addd0f792f495120e0
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "92502244"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94397248"
 ---
 # <a name="configure-power-bi-premium-dataflow-workloads"></a>Konfigurer dataflowarbejdsbelastninger i Power BI Premium
 
-Du kan oprette dataflowarbejdsbelastninger i dit Power BI Premium-abonnement. I Power BI bruges begrebet *arbejdsbelastninger* til at beskrive Premium-indhold. Arbejdsbelastninger omfatter datasæt, sideinddelte rapporter, dataflow og kunstig intelligens. *Dataflowarbejdsbelastningen* giver dig mulighed for at bruge selvbetjeningsfunktionen til dataforberedelse i dataflow til at indtage, transformere, integrere og forbedre data. Dataflow i Power BI Premium administreres via **Administrationsportalen** .
+Du kan oprette dataflowarbejdsbelastninger i dit Power BI Premium-abonnement. I Power BI bruges begrebet *arbejdsbelastninger* til at beskrive Premium-indhold. Arbejdsbelastninger omfatter datasæt, sideinddelte rapporter, dataflow og kunstig intelligens. *Dataflowarbejdsbelastningen* giver dig mulighed for at bruge selvbetjeningsfunktionen til dataforberedelse i dataflow til at indtage, transformere, integrere og forbedre data. Dataflow i Power BI Premium administreres via **Administrationsportalen**.
 
 ![Administrationsportal til dataflow i Power BI Premium](media/dataflows-premium-workload-configuration/dataflows-premium-workloads-01.png)
 
@@ -45,11 +45,11 @@ Når du har aktiveret dataflow, kan du bruge **Administrationsportalen** til at 
 
     ![Skift størrelsen af en kapacitet](media/dataflows-premium-workload-configuration/dataflows-premium-workloads-03.png)
 
-3. Under Kapacitetsindstillinger kan du konfigurere indstillingerne for dataflow ved at udvide **Arbejdsbelastninger** .
+3. Under Kapacitetsindstillinger kan du konfigurere indstillingerne for dataflow ved at udvide **Arbejdsbelastninger**.
 
     ![Udvid afsnittet Arbejdsbelastninger](media/dataflows-premium-workload-configuration/dataflows-premium-workloads-04.png)
 
-4. Under afsnittet **Arbejdsbelastninger** skal du rulle til området **Dataflow** . På følgende billede vises de indstillinger, du kan bruge til at styre eller tilpasse funktionsmåden af dataflowarbejdsbelastningen for din kapacitet.
+4. Under afsnittet **Arbejdsbelastninger** skal du rulle til området **Dataflow**. På følgende billede vises de indstillinger, du kan bruge til at styre eller tilpasse funktionsmåden af dataflowarbejdsbelastningen for din kapacitet.
 
     ![Indstillinger for dataflowarbejdsbelastning](media/dataflows-premium-workload-configuration/dataflows-premium-workloads-05.png)
 
@@ -69,7 +69,7 @@ I de efterfølgende afsnit gennemgås hver indstilling i detaljer, samt hvordan 
 
 ### <a name="understanding-dataflow-workload-options"></a>Forståelse af indstillinger for dataflowarbejdsbelastning
 
-En nem måde at tænke på indstillinger for dataflowarbejdsbelastningen på er at bruge en analogi. Du kan tænkte på *kapacitetsstørrelsen* eller den type Power BI Premium-instans, du har, som din *restaurant* . I din restaurant har du *arbejdsbelastningshukommelse* , som er dit *køkken* . *Beregningsprogrammet* er din *ovn* . Og endelig repræsenterer *objektbeholderen* kvaliteten af din *kok* . For at evaluere dine dataflowarbejdsbelastninger skal du forestille dig, at du er ved at tilberede et måltid til et meget stort eller meget betydningsfuldt middagsselskab. Der kommer meget vigtige gæster, og middagen skal være klar til at blive serveret, når de ankommer.
+En nem måde at tænke på indstillinger for dataflowarbejdsbelastningen på er at bruge en analogi. Du kan tænkte på *kapacitetsstørrelsen* eller den type Power BI Premium-instans, du har, som din *restaurant*. I din restaurant har du *arbejdsbelastningshukommelse* , som er dit *køkken*. *Beregningsprogrammet* er din *ovn*. Og endelig repræsenterer *objektbeholderen* kvaliteten af din *kok*. For at evaluere dine dataflowarbejdsbelastninger skal du forestille dig, at du er ved at tilberede et måltid til et meget stort eller meget betydningsfuldt middagsselskab. Der kommer meget vigtige gæster, og middagen skal være klar til at blive serveret, når de ankommer.
 
 Denne restaurantanalogi bruges til at give en forklaring af og vejledning til hver enkelt indstilling. Vi starter på det øverste niveau – din Premium-kapacitet – da det er det første valg, du foretager, når du bruger Power BI Premium.
 
@@ -89,7 +89,7 @@ Lad os kigge på indstillingen **Størrelse af objektbeholder (Mb)** . Internt b
 
 Hvis vi vender tilbage til vores analogi, så giver færre, men mere fokuserede kokke i køkkenet, dig mulighed for at tilberede et måltid meget hurtigere, afhængigt af hvilken type bestillinger der afgives og kompleksiteten af måltidet. Byttehandlen her går ud på at have færre kokke, men mere fokuseret tid til tilberedningen. På samme måde kan forøgelse af objektbeholderens størrelse til 1200-1500 MB betyde, at der forekommer en stigning i ydeevnen for et mindre antal mere komplicerede ETL-jobs – aktiviteter såsom sammenlægninger, joinforbindelser, pivotforbindelser, rækker- eller kolonnemanipulationer – da vi leverer mere hukommelse til hver objektbeholder, men når vi gør det, så reduceres antallet af objektbeholdere. Ligesom analogien antyder, så kan for mange bestillinger faktisk forsinke køkkenet, hvilket er sådan, du kan tænke på størrelsen af objektbeholderen. Brug dette, når du skal fuldføre komplicerede enhedshandlinger, og du er villig til at bytte parallellitet med ydeevne, da forøgelse af denne ressource deler den allokerede hukommelse mellem færre objektbeholdere.
 
-For at opsummere: Du vil optimere størrelsen af din objektbeholder, baseret på hvilke forespørgsler der bruges. Hvis du f.eks. blot indlæser data fra en kilde til en enhed, er det ikke nødvendigt at trække data ind og udføre nogen handlinger, og dataene indlæses blot til lageret. I denne situation vil du have så meget parallelitet som muligt, da du vil øge hastigheden af indlæsningen og opdatere handlingerne. Hvis du derimod tilføjer flere transformationshandlinger – komplekse filtre, joinforbindelser, sammenlægninger – kan hukommelsen være meget højere, da vi har brug for at behandle nogle af disse transformationshandlinger i hukommelsen. Hvis du har andre dataflowhandlinger kørende på kapaciteten, skal du være opmærksom på, at det kan sinke disse handlinger og tvinge dem i kø for at have et udførelsestidspunkt. Til dette formål hjælpes overvågning og administration af dataflow, opdatering af ydeevne og hele kapaciteten af appen **Power BI Premium Capacity Metrics** . Du kan bruge appen [Power BI Premium Capacity Metrics](../../admin/service-premium-capacity-optimize.md#what-content-is-using-up-my-capacity) til at filtrere efter kapacitet og gennemse metrikværdier for arbejdsområdeindholdets ydeevne. Det er muligt at gennemse målepunkterne for ydeevnen og ressourceforbruget efter time for de seneste syve dage for alt indhold, der er gemt i en Premium-kapacitet. Så det anbefales at starte med appen for at undersøge ydeevnen af dataflow.
+For at opsummere: Du vil optimere størrelsen af din objektbeholder, baseret på hvilke forespørgsler der bruges. Hvis du f.eks. blot indlæser data fra en kilde til en enhed, er det ikke nødvendigt at trække data ind og udføre nogen handlinger, og dataene indlæses blot til lageret. I denne situation vil du have så meget parallelitet som muligt, da du vil øge hastigheden af indlæsningen og opdatere handlingerne. Hvis du derimod tilføjer flere transformationshandlinger – komplekse filtre, joinforbindelser, sammenlægninger – kan hukommelsen være meget højere, da vi har brug for at behandle nogle af disse transformationshandlinger i hukommelsen. Hvis du har andre dataflowhandlinger kørende på kapaciteten, skal du være opmærksom på, at det kan sinke disse handlinger og tvinge dem i kø for at have et udførelsestidspunkt. Til dette formål hjælpes overvågning og administration af dataflow, opdatering af ydeevne og hele kapaciteten af appen **Power BI Premium Capacity Metrics**. Du kan bruge appen [Power BI Premium Capacity Metrics](../../admin/service-premium-capacity-optimize.md#what-content-is-using-up-my-capacity) til at filtrere efter kapacitet og gennemse metrikværdier for arbejdsområdeindholdets ydeevne. Det er muligt at gennemse målepunkterne for ydeevnen og ressourceforbruget efter time for de seneste syve dage for alt indhold, der er gemt i en Premium-kapacitet. Så det anbefales at starte med appen for at undersøge ydeevnen af dataflow.
 
 #### <a name="enhanced-compute-engine---an-opportunity-to-improve-performance"></a>Forbedret beregningsprogram – en mulighed for at forbedre ydeevnen
 
@@ -106,7 +106,7 @@ Dette afsnit indeholder en vejledning til almindelige scenarier, når du bruger 
 
 Langsomme opdateringstider er normalt et problem med parallelitet. Du bør gennemgå følgende indstillinger i denne rækkefølge:
 
-1. Et vigtigt begreb i forbindelse med langsomme opdateringstider er typen af din dataforberedelse. For at vende tilbage til vores restaurantanalogi beskrevet tidligere i denne artikel kan du forestille dig, at du allerede har tilberedt mad klar til at blive brugt. I dette scenarie kan mades laves færdig meget hurtigere pga. minimal tilberedningstid. Ligeledes bør du optimere langsomme opdateringstider ved at udnytte, at din datakilde faktisk udfører forberedelsen og forespørgselslogikken på forhånd, når du kan. Når du bruger en relationsdatabase såsom SQL som din kilde, skal du især se, om den indledende forespørgsel kan køres på kilden, og bruge denne kildeforespørgsel til din indledende udtrækning af dataflow til datakilden. Hvis du ikke kan bruge en oprindelig forespørgsel i kildesystemet, skal du udføre handlinger, som [dataflowprogrammet kan folde til datakilden](https://docs.microsoft.com/power-query/power-query-folding).
+1. Et vigtigt begreb i forbindelse med langsomme opdateringstider er typen af din dataforberedelse. For at vende tilbage til vores restaurantanalogi beskrevet tidligere i denne artikel kan du forestille dig, at du allerede har tilberedt mad klar til at blive brugt. I dette scenarie kan mades laves færdig meget hurtigere pga. minimal tilberedningstid. Ligeledes bør du optimere langsomme opdateringstider ved at udnytte, at din datakilde faktisk udfører forberedelsen og forespørgselslogikken på forhånd, når du kan. Når du bruger en relationsdatabase såsom SQL som din kilde, skal du især se, om den indledende forespørgsel kan køres på kilden, og bruge denne kildeforespørgsel til din indledende udtrækning af dataflow til datakilden. Hvis du ikke kan bruge en oprindelig forespørgsel i kildesystemet, skal du udføre handlinger, som [dataflowprogrammet kan folde til datakilden](/power-query/power-query-folding).
 
 2. Overvej at brede opdateringstiderne ud på den samme kapacitet. Opdateringshandlinger er en proces, der kræver betydelig beregning. I forhold til vores restaurantanalogi er udbredelse af opdateringstider beslægtet med at begrænse antallet af gæster i restauranten. Ligesom restauranter planlægget antallet af gæster og kapaciteten, kan du også overveje at opdatere handlinger på tidspunkter, hvor brugen ikke er på sit højeste. Dette kan række langt i forhold til at lindre belastningen på kapaciteten.
 
@@ -136,7 +136,7 @@ Udfør følgende trin for at gøre det muligt, at arbejdsbelastningerne udløser
 
 1. I forbindelse med *dataindtagelse* skal du fokusere på at få data ind i lageret så hurtigt, men kun ved hjælp af filtre, hvis de reducerer den overordnede størrelse af datasættet. Det er bedste praksis at bevare din transformationslogik adskilt fra dette trin og give programmet mulighed for at fokusere på den indledende indsamling af ingredienser. Adskil derefter din transformations- og forretningslogik i separate dataflow i det samme arbejdsområde ved hjælp af sammenkædede eller beregnede enheder. Det giver programmet mulighed for at aktivere og sætte fart på dine beregninger. I vores analogi svarer det tilberedningen af mad i køkkenet: Tilberedning er typisk et separat og særskilt trin fra indsamling af råvarer, og det er en forudsætning for at sætte mad i ovnen. På samme måde skal du forberede din logik separat, før den kan udnytte fordelen ved beregningsprogrammet.
 
-2. Sørg for, at du udfører de handlinger, der foldes, f.eks. fletninger, joinforbindelser, konvertering [m.fl.](https://docs.microsoft.com/power-query/power-query-folding#transformations-that-can-achieve-folding)
+2. Sørg for, at du udfører de handlinger, der foldes, f.eks. fletninger, joinforbindelser, konvertering [m.fl.](/power-query/power-query-folding#transformations-that-can-achieve-folding)
 
 3. Oprettelse af dataflow [i publicerede retningslinjer og begrænsninger](dataflows-features-limitations.md#dataflows-in-premium).
 

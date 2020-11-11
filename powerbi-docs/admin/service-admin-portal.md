@@ -10,12 +10,12 @@ ms.date: 10/22/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 464fdce94b41c3dc413088da6395520fea32c601
-ms.sourcegitcommit: fddba666c6ea90d525a1c3188bbd3c4a03410cdc
+ms.openlocfilehash: eb7a2dfeb78e60c78b1b3f17306aec91a8a55330
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92462623"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94397018"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrer Power BI på administrationsportalen
 
@@ -97,17 +97,17 @@ Få mere at vide om selve rapporterne under [Overvåg forbrugsdata for dashboard
 
 ### <a name="usage-metrics-for-content-creators"></a>Forbrugsdata for oprettere af indhold
 
-1. På administrationsportalen skal du vælge **Lejerindstillinger** > **Indstillinger for overvågning og brug** > **Forbrugsdata for oprettere af indhold** .
+1. På administrationsportalen skal du vælge **Lejerindstillinger** > **Indstillinger for overvågning og brug** > **Forbrugsdata for oprettere af indhold**.
 
     ![Forbrugsdata i lejerindstillingerne på administrationsportalen](media/service-admin-portal/power-bi-admin-usage-metrics.png)
 
-1. Aktivér (eller deaktiver) forbrugsdata > **Anvend** .
+1. Aktivér (eller deaktiver) forbrugsdata > **Anvend**.
 
     ![Forbrugsdata er aktiveret](../collaborate-share/media/service-usage-metrics/power-bi-tenant-settings-updated.png)
 
 ### <a name="per-user-data-in-usage-metrics-for-content-creators"></a>Brugerspecifikke data i forbrugsdata for indholdsforfattere
 
-Brugerspecifikke data er som standard aktiveret for forbrugsdata, og kontooplysninger indgår i rapporten med forbrugsdata. Hvis du ikke vil medtage kontooplysninger for nogle eller alle brugere, kan du deaktivere funktionen for nærmere angivne sikkerhedsgrupper eller for en hel organisation. Kontooplysninger vises derefter i rapporten som *Ikke-navngivet* .
+Brugerspecifikke data er som standard aktiveret for forbrugsdata, og kontooplysninger indgår i rapporten med forbrugsdata. Hvis du ikke vil medtage kontooplysninger for nogle eller alle brugere, kan du deaktivere funktionen for nærmere angivne sikkerhedsgrupper eller for en hel organisation. Kontooplysninger vises derefter i rapporten som *Ikke-navngivet*.
 
 ![Brugerspecifikke forbrugsdata](media/service-admin-portal/power-bi-admin-per-user-usage-data.png)
 
@@ -139,7 +139,7 @@ Hvis du vil bruge overvågningslogs, skal du sørge for, at indstillingen [**Opr
 > [!NOTE]
 > Lejerindstillinger, der styrer tilgængeligheden af funktioner i Power BI-brugergrænsefladen, kan hjælpe med at oprette politikker for styring, men de er ikke en sikkerhedsmåling. Indstillingen **Eksport af data** begrænser f.eks. ikke tilladelser for en Power BI-bruger på et datasæt. Power BI-brugere med læseadgang til et datasæt har tilladelse til at forespørge dette datasæt og kan bevare resultaterne uden at bruge funktionen **Eksport af data** i Power BI-brugergrænsefladen.
 
-I følgende afsnit uddybes indstillingerne under fanen **Lejerindstillinger** .
+I følgende afsnit uddybes indstillingerne under fanen **Lejerindstillinger**.
 
 > [!NOTE]
 > Det kan tage op til 15 minutter, før indstillingen træder i kraft for alle i din organisation.
@@ -156,7 +156,7 @@ Mange af disse indstillinger kan have en af tre tilstande:
 
 * **Aktiveret for en del af organisationen** : Specifikke sikkerhedsgrupper i din organisation har tilladelse til at bruge denne funktion.
 
-    Du kan også aktivere en funktion for hele organisationen **med undtagelse af bestemte sikkerhedsgrupper** .
+    Du kan også aktivere en funktion for hele organisationen **med undtagelse af bestemte sikkerhedsgrupper**.
 
     ![Indstilling aktiveret for en delmængde](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except.png)
 
@@ -180,13 +180,13 @@ Når indstillingen **Nyt udseende** er deaktiveret, kan brugerne i denne organis
 
 Administratorer kan angive interne URL-adresser for at tilsidesætte linkdestinationen i menuen Hjælp i Power BI og i forbindelse med opgradering af licenser. Hvis der er angivet brugerdefinerede URL-adresser, kan brugere i organisationen gå til interne hjælp- og supportressourcer i stedet for til standarddestinationerne. Følgende ressourcedestinationer kan tilpasses:
 
-* **Learn** . Dette link i menuen Hjælp viser en [liste over alle vores Power BI-læringsforløb og -moduler](/learn/browse/?products=power-bi). Hvis du vil sende dette link til interne undervisningsressourcer i stedet for, skal du angive en brugerdefineret URL-adresse til **undervisningsdokumentation** .
+* **Learn**. Dette link i menuen Hjælp viser en [liste over alle vores Power BI-læringsforløb og -moduler](/learn/browse/?products=power-bi). Hvis du vil sende dette link til interne undervisningsressourcer i stedet for, skal du angive en brugerdefineret URL-adresse til **undervisningsdokumentation**.
 
-* **Community** . Hvis du vil sende brugerne til et internt forum fra menuen Hjælp i stedet for til [Power BI-community](https://community.powerbi.com/), skal du angive en brugerdefineret URL-adresse til **Diskussionsforum** .
+* **Community**. Hvis du vil sende brugerne til et internt forum fra menuen Hjælp i stedet for til [Power BI-community](https://community.powerbi.com/), skal du angive en brugerdefineret URL-adresse til **Diskussionsforum**.
 
-* **Opgraderinger af licenser** . Brugere med en Power BI (gratis)-licens bliver muligvis præsenteret for muligheden for at opgradere deres konto til Power BI Pro, mens de bruger tjenesten. Hvis du angiver en intern URL-adresse til **Licensanmodninger** , omdirigerer du brugerne til en intern anmodning og et købsflow og forhindrer selvbetjeningskøb. Hvis du vil forhindre brugere i at købe licenser, men ikke har noget i mod, at de starter en Power BI Pro-prøveversion, kan du se [Tillad brugere at prøve Power BI Pro](#allow-users-to-try-power-bi-pro) for at adskille købs-og prøveoplevelsen.
+* **Opgraderinger af licenser**. Brugere med en Power BI (gratis)-licens bliver muligvis præsenteret for muligheden for at opgradere deres konto til Power BI Pro, mens de bruger tjenesten. Hvis du angiver en intern URL-adresse til **Licensanmodninger** , omdirigerer du brugerne til en intern anmodning og et købsflow og forhindrer selvbetjeningskøb. Hvis du vil forhindre brugere i at købe licenser, men ikke har noget i mod, at de starter en Power BI Pro-prøveversion, kan du se [Tillad brugere at prøve Power BI Pro](#allow-users-to-try-power-bi-pro) for at adskille købs-og prøveoplevelsen.
 
-* **Få hjælp** . Hvis du vil sende brugerne til en intern helpdesk fra menuen Hjælp i stedet for til [Power BI-support](https://powerbi.microsoft.com/support/), skal du angive en brugerdefineret URL-adresse til **Helpdesk** .
+* **Få hjælp**. Hvis du vil sende brugerne til en intern helpdesk fra menuen Hjælp i stedet for til [Power BI-support](https://powerbi.microsoft.com/support/), skal du angive en brugerdefineret URL-adresse til **Helpdesk**.
 
 ### <a name="receive-email-notifications-for-service-outages-or-incidents"></a>Modtag mails ved tjenesteafbrydelser eller -hændelser
 
@@ -222,7 +222,7 @@ Administrationsportalen har tre afsnit i **Lejerindstillinger** til at styre arb
 
 Arbejdsområder er steder, hvor brugerne kan samarbejde om dashboards, rapporter og andet indhold. Administratorer bruger indstillingen **Opret arbejdsområder (ny arbejdsområdeoplevelse)** til at angive, hvilke brugere i organisationen der kan oprette arbejdsområder. Administratorer kan give alle eller ingen i en organisation tilladelse til at oprette arbejdsområder i den nye arbejdsområdeoplevelse. De kan også begrænse oprettelse til medlemmer af bestemte sikkerhedsgrupper. Få mere at vide om [arbejdsområder](../collaborate-share/service-new-workspaces.md).
 
-:::image type="content" source="media/service-admin-portal/power-bi-admin-workspace-settings.png" alt-text="Skærmbillede af indstillingen Deaktiver nyt udseende på administrationsportalen.":::
+:::image type="content" source="media/service-admin-portal/power-bi-admin-workspace-settings.png" alt-text="Opret de nye arbejdsområdeoplevelser":::
 
 I forbindelse med klassiske arbejdsområder, der er baseret på Microsoft 365 Grupper, finder administrationen fortsat sted på administrationsportalen og i Azure Active Directory.
 
@@ -241,7 +241,7 @@ I administrationsportalen kan du også styre, hvilke brugere der har tilladelse 
 
 Administratorer kan styre, hvilke brugere i organisationen der kan bruge datasæt på tværs af arbejdsområder. Når denne indstilling er aktiveret, skal brugerne stadig bruge den påkrævede Build-tilladelse til et bestemt datasæt.
 
-:::image type="content" source="media/service-admin-portal/power-bi-admin-datasets-workspaces.png" alt-text="Skærmbillede af indstillingen Deaktiver nyt udseende på administrationsportalen.":::
+:::image type="content" source="media/service-admin-portal/power-bi-admin-datasets-workspaces.png" alt-text="Brug datasæt på tværs af arbejdsområder":::
 
 Du kan få flere oplysninger under [Introduktion til datasæt på tværs af arbejdsområder](../connect-data/service-datasets-across-workspaces.md).
 
@@ -287,17 +287,17 @@ Indstillingen **Publicer på internettet** i administrationsportalen gør det mu
 
 ![Indstillingen Publicer på internettet](media/service-admin-portal/powerbi-admin-publish-to-web-setting.png)
 
-Administratorer kan indstille **Publicer på internettet** til **Aktiveret** og **Vælg, hvordan integreringskoder fungerer** til **Tillad kun eksisterende integreringskoder** . I dette tilfælde kan brugerne oprette integreringskoder, men de skal kontakte Power BI-administratoren for at få tilladelse til at gøre det.
+Administratorer kan indstille **Publicer på internettet** til **Aktiveret** og **Vælg, hvordan integreringskoder fungerer** til **Tillad kun eksisterende integreringskoder**. I dette tilfælde kan brugerne oprette integreringskoder, men de skal kontakte Power BI-administratoren for at få tilladelse til at gøre det.
 
 ![Prompten Publicer på internettet](../collaborate-share/media/service-publish-to-web/publish_to_web_admin_prompt.png)
 
-Brugere kan se forskellige indstillinger på brugergrænsefladen afhængigt af indstillingen **Publicer på internettet** .
+Brugere kan se forskellige indstillinger på brugergrænsefladen afhængigt af indstillingen **Publicer på internettet**.
 
 |Funktion |Aktiveret for hele organisationen |Deaktiveret for hele organisationen |Specifikke sikkerhedsgrupper   |
 |---------|---------|---------|---------|
 |**Publicer på internettet** i menuen **Flere indstillinger (...)** for rapporten|Aktiveret for alle|Ikke synligt for alle|Kun synligt for godkendte brugere eller grupper.|
 |**Håndter integreringskoder** under **Indstillinger**|Aktiveret for alle|Aktiveret for alle|Aktiveret for alle<br><br>Indstillingen * **Slet** er kun synlig for godkendte brugere eller grupper.<br>* **Hent koder** er aktiveret for alle.|
-|**Integrer koder** i administrationsportalen|Status afspejler et af følgende:<br>* Aktiv<br>* Ikke understøttet<br>* Blokeret|Status viser **Deaktiveret**|Status afspejler et af følgende:<br>* Aktiv<br>* Ikke understøttet<br>* Blokeret<br><br>Hvis en bruger ikke er godkendt på grund af indstillingen af lejeren, vises status som **Krænkelse** .|
+|**Integrer koder** i administrationsportalen|Status afspejler et af følgende:<br>* Aktiv<br>* Ikke understøttet<br>* Blokeret|Status viser **Deaktiveret**|Status afspejler et af følgende:<br>* Aktiv<br>* Ikke understøttet<br>* Blokeret<br><br>Hvis en bruger ikke er godkendt på grund af indstillingen af lejeren, vises status som **Krænkelse**.|
 |Eksisterende publicerede rapporter|Alle aktiveret|Alle deaktiveret|Rapporter fortsætter med at gengive for alle.|
 
 ### <a name="export-data"></a>Eksportér data
@@ -362,7 +362,7 @@ Brugere i organisationen kan oprette mailabonnementer. Få mere at vide om [abon
 
 ### <a name="featured-content"></a>Fremhævet indhold
 
-Gør det muligt for nogle af eller alle rapportforfattere i din organisation at fremhæve deres indhold i afsnittet Udvalgte Power BI Start. Nye brugere kan se fremhævet indhold øverst på deres Power BI Start-side. Fremhævet indhold flyttes ned på startsiden, efterhånden som brugerne tilføjer **favoritter** , **ofte viste** og **seneste viste** . 
+Gør det muligt for nogle af eller alle rapportforfattere i din organisation at fremhæve deres indhold i afsnittet Udvalgte Power BI Start. Nye brugere kan se fremhævet indhold øverst på deres Power BI Start-side. Fremhævet indhold flyttes ned på startsiden, efterhånden som brugerne tilføjer **favoritter** , **ofte viste** og **seneste viste**. 
 
 Vi anbefaler, at du starter med et lille antal promotorer. Det kan gøre det svært at holde styr på alt det fremhævede indhold, hvis hele organisationen har mulighed for at fremhæve indhold på startsiden. 
 
@@ -393,7 +393,7 @@ Rapportoprettere kan dele apps direkte med slutbrugere uden at kræve installati
 Brugere i virksomheden kan bruge Excel til at se og interagere med Power BI-datasæt i det lokale miljø. [Få mere at vide](../collaborate-share/service-analyze-in-excel.md)
 
 > [!NOTE]
-> Hvis **Eksportér data** deaktiveres, kan brugere heller ikke anvende funktionen **Analysér i Excel** .
+> Hvis **Eksportér data** deaktiveres, kan brugere heller ikke anvende funktionen **Analysér i Excel**.
 
 ### <a name="use-arcgis-maps-for-power-bi"></a>Brug ArcGIS Maps for Power BI
 
@@ -407,9 +407,9 @@ Brugere i organisationen kan bruge eksterne søgefunktioner, der bruger Azure Se
 
 **Tillad forbindelser til udvalgte tabeller** under **Lejerindstillinger** gør det muligt for Power BI-administratorer at styre, hvem i organisationen der kan bruge udvalgte tabeller i Excel-datatypegalleriet. 
 
-:::image type="content" source="media/service-admin-portal/admin-allow-connections-featured-tables.png" alt-text="Skærmbillede af indstillingen Deaktiver nyt udseende på administrationsportalen.":::
+:::image type="content" source="media/service-admin-portal/admin-allow-connections-featured-tables.png" alt-text="Alle forbindelser til udvalgte tabeller":::
 
-Forbindelser til udvalgte tabeller deaktiveres også, hvis indstillingen **Eksportér data** er angivet til **Deaktiveret** .
+Forbindelser til udvalgte tabeller deaktiveres også, hvis indstillingen **Eksportér data** er angivet til **Deaktiveret**.
 
 Læs mere om [Udvalgte Power BI-tabeller i Excel](../collaborate-share/service-excel-featured-tables.md).
 
@@ -449,7 +449,7 @@ Brugere i organisationen kan se forbrugsdata for dashboards og rapporter, som de
 
 Forbrugsdata for indholdsforfattere viser viste navne og mailadresser for de brugere, der har adgang til indhold. [Få mere at vide](../collaborate-share/service-usage-metrics.md)
 
-Brugerspecifikke data er som standard aktiveret for forbrugsdata, og kontooplysninger om indholdsforfattere indgår i rapporten med forbrugsdata. Hvis du ikke vil indsamle disse oplysninger for alle brugere, kan du deaktivere funktionen for nærmere angivne sikkerhedsgrupper eller for en hel organisation. Kontooplysningerne for de ekskluderede brugere vises derefter i rapporten som *Ikke-navngivet* .
+Brugerspecifikke data er som standard aktiveret for forbrugsdata, og kontooplysninger om indholdsforfattere indgår i rapporten med forbrugsdata. Hvis du ikke vil indsamle disse oplysninger for alle brugere, kan du deaktivere funktionen for nærmere angivne sikkerhedsgrupper eller for en hel organisation. Kontooplysningerne for de ekskluderede brugere vises derefter i rapporten som *Ikke-navngivet*.
 
 ## <a name="dashboard-settings"></a>Indstillinger for dashboard
 
@@ -477,7 +477,7 @@ Webapps, der er registreret i Azure Active Directory (Azure AD), bruger en tilde
 
 ### <a name="create-and-use-dataflows"></a>Opret og brug dataflow
 
-Brugere i organisationen kan oprette og bruge dataflow. Du kan se en oversigt over dataflow i [Selvbetjent dataforberedelse i Power BI](../transform-model/service-dataflows-overview.md). Hvis du vil aktivere dataflow i en Premium-kapacitet, skal du se under [Konfigurer arbejdsbelastninger](service-admin-premium-workloads.md).
+Brugere i organisationen kan oprette og bruge dataflow. Du kan se en oversigt over dataflow i [Selvbetjent dataforberedelse i Power BI](../transform-model/dataflows/dataflows-introduction-self-service.md). Hvis du vil aktivere dataflow i en Premium-kapacitet, skal du se under [Konfigurer arbejdsbelastninger](service-admin-premium-workloads.md).
 
 > [!NOTE]
 > Denne indstilling gælder for hele organisationen og kan ikke begrænses til bestemte grupper.
@@ -516,7 +516,7 @@ Under fanen **Power BI Premium** kan du administrere en hvilken som helst Power 
 
 ### <a name="power-bi-embedded"></a>Power BI Embedded
 
-Under fanen **Power BI Embedded** kan du se dine Power BI Embedded-kapaciteter (A SKU), som du har købt til din kunde. Da du kun kan købe A SKU'er fra Azure, kan du [administrere integrerede kapaciteter i Azure](../developer/embedded/azure-pbie-create-capacity.md) fra **Azure-portalen** .
+Under fanen **Power BI Embedded** kan du se dine Power BI Embedded-kapaciteter (A SKU), som du har købt til din kunde. Da du kun kan købe A SKU'er fra Azure, kan du [administrere integrerede kapaciteter i Azure](../developer/embedded/azure-pbie-create-capacity.md) fra **Azure-portalen**.
 
 Du kan finde flere oplysninger om, hvordan du administrerer indstillinger for Power BI Embedded (A SKU), under [Hvad er Power BI Embedded](../developer/embedded/azure-pbie-what-is-power-bi-embedded.md).
 
@@ -534,7 +534,7 @@ Alle indstillinger for administration af Power BI-visuals, herunder lejerindstil
 
 ### <a name="tenant-level-storage-preview"></a>Lager på lejerniveau (prøveversion)
 
-Som standard gemmes data, der bruges med Power BI, i et internt lager, der leveres af Power BI. Med integrationen af dataflow og Azure Data Lake Storage Gen2 (ADLS Gen2) kan du gemme dine dataflow på din organisations Azure Data Lake Storage Gen2-konto. Du kan finde flere oplysninger under [Integration af dataflow og Azure Data Lake (prøveversion)](../transform-model/service-dataflows-azure-data-lake-integration.md).
+Som standard gemmes data, der bruges med Power BI, i et internt lager, der leveres af Power BI. Med integrationen af dataflow og Azure Data Lake Storage Gen2 (ADLS Gen2) kan du gemme dine dataflow på din organisations Azure Data Lake Storage Gen2-konto. Du kan finde flere oplysninger under [Integration af dataflow og Azure Data Lake (prøveversion)](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md).
 
 ### <a name="workspace-level-storage-permissions-preview"></a>Lagertilladelser på arbejdsområdeniveau (prøveversion)
 
@@ -542,7 +542,7 @@ Administratorer af arbejdsområder kan som standard ikke oprette forbindelse til
 
 ## <a name="workspaces"></a>Arbejdsområder
 
-Som administrator kan du få vist de arbejdsområder, der findes i din lejer, under fanen **Arbejdsområder** . Under denne fane kan du udføre disse handlinger:
+Som administrator kan du få vist de arbejdsområder, der findes i din lejer, under fanen **Arbejdsområder**. Under denne fane kan du udføre disse handlinger:
 
 - Opdater listen over arbejdsområder og deres detaljer.
 - Eksportér dataene for arbejdsområder til en. csv-fil. 
@@ -554,7 +554,7 @@ Som administrator kan du få vist de arbejdsområder, der findes i din lejer, un
 
 Administratorer kan også styre brugernes mulighed for at oprette nye arbejdsområder til arbejdsområdeoplevelser og klassiske arbejdsområder. Se [Indstillinger for arbejdsområde](#workspace-settings) i denne artikel for at få flere oplysninger. 
 
-Tabelkolonnerne under fanen **Arbejdsområder** svarer til de egenskaber, der returneres af [Power BI-REST API'en](/rest/api/power-bi/admin) for arbejdsområder. Personlige arbejdsområder er af typen **Personlig gruppe** , klassiske arbejdsområder er af typen **Gruppe** , og arbejdsområder med den nye arbejdsområdeoplevelse er af typen **Arbejdsområde** . Du kan finde flere oplysninger under [Organiser arbejde i de nye arbejdsområder](../collaborate-share/service-new-workspaces.md).
+Tabelkolonnerne under fanen **Arbejdsområder** svarer til de egenskaber, der returneres af [Power BI-REST API'en](/rest/api/power-bi/admin) for arbejdsområder. Personlige arbejdsområder er af typen **Personlig gruppe** , klassiske arbejdsområder er af typen **Gruppe** , og arbejdsområder med den nye arbejdsområdeoplevelse er af typen **Arbejdsområde**. Du kan finde flere oplysninger under [Organiser arbejde i de nye arbejdsområder](../collaborate-share/service-new-workspaces.md).
 
 På fanen **Arbejdsområder** kan du se *tilstanden* for hvert arbejdsområde. I tabellen nedenfor kan du se flere oplysninger om betydningen af disse tilstande.
 

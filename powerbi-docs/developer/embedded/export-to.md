@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 10/01/2020
-ms.openlocfilehash: f997547bb61bf203f7806dbe68d45beb29c6538b
-ms.sourcegitcommit: 59d07be9c3e4a2067f6d42c3002a194371bc4341
+ms.openlocfilehash: b1d0a94e3dd0ae68231720bc69d2537568efd19f
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92116448"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94396788"
 ---
 # <a name="export-power-bi-report-to-file-preview"></a>Eksportér Power BI-rapport til fil (prøveversion)
 
@@ -52,7 +52,7 @@ Angiv de sider, du vil udskrive i henhold til returværdierne [Hent sider](/rest
 
 ### <a name="bookmarks"></a>Bogmærker
 
-[Bogmærker](../../consumer/end-user-bookmarks.md) kan bruges til at gemme en rapport i en bestemt konfiguration, herunder anvendte filtre og tilstanden for rapportens visualiseringer. Du kan bruge API'en [exportToFile](https://docs.microsoft.com/rest/api/power-bi/reports/exporttofile) til programmeringsmæssigt at eksportere en rapports bogmærke på to måder:
+[Bogmærker](../../consumer/end-user-bookmarks.md) kan bruges til at gemme en rapport i en bestemt konfiguration, herunder anvendte filtre og tilstanden for rapportens visualiseringer. Du kan bruge API'en [exportToFile](/rest/api/power-bi/reports/exporttofile) til programmeringsmæssigt at eksportere en rapports bogmærke på to måder:
 
 * **Eksportér et eksisterende bogmærke**
 

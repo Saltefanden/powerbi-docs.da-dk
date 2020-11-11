@@ -8,16 +8,16 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/20/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 590e28c727cab88b008d7a05e7df22244e8dabf0
-ms.sourcegitcommit: 84e75a2cd92f4ba4e0c08ba296b981b79d6d0e82
+ms.openlocfilehash: fd57d893a0c381c345364306e04d4897597b36f1
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88803168"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94396972"
 ---
-# <a name="plandeploymenttomigratetopowerbi"></a>Planlæg udrulning for at migrere til Power BI
+# <a name="plan-deployment-to-migrate-to-power-bi"></a>Planlæg udrulning for at migrere til Power BI
 
-I denne artikel beskrives **fase 2**, som omhandler planlægning af migrering til en enkelt Power BI-løsning.
+I denne artikel beskrives **fase 2** , som omhandler planlægning af migrering til en enkelt Power BI-løsning.
 
 :::image type="content" source="media/powerbi-migration-planning/migrate-to-powerbi-stage-2.png" alt-text="Billede, der viser faserne i en migrering til Power BI. Der fokuseres på fase 2 i denne artikel.":::
 
@@ -96,7 +96,7 @@ De data, der kræves af en rapport, kan påvirke flere beslutninger. Spørgsmål
 - Skal et eksisterende delt datasæt forstærkes med nye data eller målinger for at imødekomme yderligere behov?
 - Hvilken [lagringstilstand for data](../transform-model/desktop-storage-mode.md) passer bedst? Mulighederne omfatter Import, DirectQuery, sammensat eller direkte forbindelse.
 - Skal der bruges [sammenlægninger](../transform-model/desktop-aggregations.md) for at forbedre forespørgslens ydeevne?
-- Vil det være nyttigt at oprette et [dataflow](../transform-model/service-dataflows-overview.md), og kan det fungere som en kilde til flere datasæt?
+- Vil det være nyttigt at oprette et [dataflow](../transform-model/dataflows/dataflows-introduction-self-service.md), og kan det fungere som en kilde til flere datasæt?
 - Skal der registreres en ny [datakilde for gatewayen](../connect-data/service-gateway-data-sources.md)?
 
 ## <a name="decide-where-original-content-will-be-stored"></a>Beslut, hvor oprindeligt indhold skal gemmes

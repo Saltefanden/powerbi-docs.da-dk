@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/07/2020
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 4118e5c009a8d7372d5cb58d1e1b9d033a70494e
-ms.sourcegitcommit: 154946ece829360cc0ff3be13276cd7a129f3388
+ms.openlocfilehash: 0b4a1275a3b50fbadd37d953b77316d6021c800c
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87988730"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94397087"
 ---
 # <a name="comparing-power-bi-desktop-and-the-power-bi-service"></a>Sammenligning af Power BI Desktop og Power BI-tjenesten
 
@@ -33,7 +33,7 @@ Power BI-tjenesten hoster også *sideinddelte rapporter* i arbejdsområder, der 
 
 ## <a name="editing-power-bi-reports"></a>Redigering af Power BI-rapporter
 
-Du kan oprette og redigere Power BI-*rapporter* i både programmet og tjenesten. En rapport kan have en eller flere sider med visualiseringer og samlinger af visualiseringer. Tilføj bogmærker, knapper, filtre og detaljeadgang for at forbedre navigationen i dine rapporter.
+Du kan oprette og redigere Power BI- *rapporter* i både programmet og tjenesten. En rapport kan have en eller flere sider med visualiseringer og samlinger af visualiseringer. Tilføj bogmærker, knapper, filtre og detaljeadgang for at forbedre navigationen i dine rapporter.
 
 ![Skærmbilleder af Power BI Desktop og Power BI-tjenesten med nummererede afsnit.](media/service-service-vs-desktop/power-bi-editing-desktop-service.png)
 
@@ -41,7 +41,7 @@ Rapporteditorerne i Power BI Desktop og i tjenesten er ens. De består af tre se
 
 1. De øverste navigationsruder, der ikke er de samme i Power BI Desktop og tjenesten    
 2. Rapportcanvasset     
-3. Ruderne **Felter**, **Visualiseringer** og **Filtre**
+3. Ruderne **Felter** , **Visualiseringer** og **Filtre**
 
 Denne video viser rapporteditoren i Power BI Desktop. 
 
@@ -51,11 +51,11 @@ Denne video viser rapporteditoren i Power BI Desktop.
 
 ### <a name="collaborating"></a>Samarbejde
 
-Når du har oprettet dine rapporter, kan du gemme dem i et *arbejdsområde* i **Power BI-tjenesten**, hvor du og dine kolleger kan samarbejde. Du kan bygge *dashboards* oven på disse rapporter. Derefter deler du disse dashboards og rapporter med brugere af rapporter i og uden for din organisation. Brugerne af rapporterne får dem vist i Power BI-tjenesten i en *læsevisning* ikke redigeringsvisning. De har ikke adgang til alle de funktioner, der er tilgængelige for oprettere af rapporter.  Du kan også dele dine datasæt og lade andre bygge deres egne rapporter ud fra dem. Læs mere om [samarbejde i Power BI-tjenesten](../collaborate-share/service-new-workspaces.md).
+Når du har oprettet dine rapporter, kan du gemme dem i et *arbejdsområde* i **Power BI-tjenesten** , hvor du og dine kolleger kan samarbejde. Du kan bygge *dashboards* oven på disse rapporter. Derefter deler du disse dashboards og rapporter med brugere af rapporter i og uden for din organisation. Brugerne af rapporterne får dem vist i Power BI-tjenesten i en *læsevisning* ikke redigeringsvisning. De har ikke adgang til alle de funktioner, der er tilgængelige for oprettere af rapporter.  Du kan også dele dine datasæt og lade andre bygge deres egne rapporter ud fra dem. Læs mere om [samarbejde i Power BI-tjenesten](../collaborate-share/service-new-workspaces.md).
 
 ### <a name="self-service-data-prep-with-dataflows"></a>Selvbetjent dataforberedelse med dataflow
 
-Dataflows hjælper virksomheder med at samle data fra forskellige kilder og forberede dem til modellering. Analytikere kan nemt oprette dataflows ved hjælp af velkendte værktøjer til selvbetjening. Analytikere bruger dataflows til at indsamle, transformere, integrere og forbedre big data ved at definere datakildeforbindelser, ETL-logik, opdatere tidsplaner og meget mere. Læs mere om [selvbetjent dataforberedelse med dataflows](../transform-model/service-dataflows-overview.md).
+Dataflows hjælper virksomheder med at samle data fra forskellige kilder og forberede dem til modellering. Analytikere kan nemt oprette dataflows ved hjælp af velkendte værktøjer til selvbetjening. Analytikere bruger dataflows til at indsamle, transformere, integrere og forbedre big data ved at definere datakildeforbindelser, ETL-logik, opdatere tidsplaner og meget mere. Læs mere om [selvbetjent dataforberedelse med dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md).
 
 ## <a name="next-steps"></a>Næste trin
 

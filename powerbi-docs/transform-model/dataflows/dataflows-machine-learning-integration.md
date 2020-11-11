@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 10/01/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: a2622d2d3da5e4149e93a2b4b6f04dc87b55d9e1
-ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
+ms.openlocfilehash: 5834230a59f6473624e955827dad36cdd75c04e5
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92917021"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94397501"
 ---
 # <a name="ai-with-dataflows"></a>AI med dataflow
 
@@ -28,7 +28,7 @@ I denne artikel diskuterer vi, hvordan du kan bruge kunstig intelligens (AI) sam
 
 Med Cognitive Services i Power BI kan du anvende forskellige algoritmer fra [Azure Cognitive Services](https://azure.microsoft.com/services/cognitive-services/) til forbedre dine data i den selvbetjente dataforberedelse til dataflow.
 
-De tjenester, der understøttes i dag, er [Synspunktsanalyse](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-sentiment-analysis), [Udtrækning af nøglesætninger](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-keyword-extraction), [Registrering af sprog](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-language-detection) og [Billedmarkering](https://docs.microsoft.com/azure/cognitive-services/computer-vision/concept-tagging-images). Transformationerne udføres i Power BI-tjenesten og kræver ikke et Azure Cognitive Services-abonnement. Denne funktion kræver Power BI Premium.
+De tjenester, der understøttes i dag, er [Synspunktsanalyse](/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-sentiment-analysis), [Udtrækning af nøglesætninger](/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-keyword-extraction), [Registrering af sprog](/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-language-detection) og [Billedmarkering](/azure/cognitive-services/computer-vision/concept-tagging-images). Transformationerne udføres i Power BI-tjenesten og kræver ikke et Azure Cognitive Services-abonnement. Denne funktion kræver Power BI Premium.
 
 ### <a name="enabling-ai-features"></a>**Aktivering af AI-funktioner**
 
@@ -72,7 +72,7 @@ I dette afsnit beskrives de tilgængelige funktioner i Cognitive Services i Powe
 
 Funktionen til sprogregistrering evaluerer tekstinput og returnerer sprognavn og ISO-id for hvert felt. Denne funktion er nyttig for datakolonner, der indsamler vilkårlig tekst, hvor sproget er ukendt. Funktionen forventer data i tekstformat som input.
 
-Tekstanalyse genkender op til 120 sprog. Du kan finde flere oplysninger under [understøttede sprog](https://docs.microsoft.com/azure/cognitive-services/text-analytics/text-analytics-supported-languages).
+Tekstanalyse genkender op til 120 sprog. Du kan finde flere oplysninger under [understøttede sprog](/azure/cognitive-services/text-analytics/text-analytics-supported-languages).
 
 #### <a name="extract-key-phrases"></a>**Udtræk af nøgleudtryk**
 
@@ -88,7 +88,7 @@ Tekstanalyse bruger en maskinel indlæringsklassificeringsalgoritme til at gener
 
 Analyser af synspunkter udføres på hele inputfeltet i modsætning til udtræk af synspunkter for et bestemt objekt i teksten. I praksis er der en tendens til, at scoringsnøjagtigheden forbedres, når dokumenter indeholder en eller to sætninger i stedet for en stor tekstmængde. Under objektivitetsvurderingen bestemmer modellen, om et inputfelt som helhed er objektivt eller indeholder et synspunkt. Et inputfelt, der primært er objektivt fortsætter ikke til synspunktsregistreringsfasen, hvilket resulterer i en score på 0,50 uden yderligere behandling. I forbindelse med inputfelter, der fortsætter i pipelinen, genererer den næste fase en score over eller under 0,50, afhængigt af, hvordan synspunktet registreres i inputfeltet.
 
-I øjeblikket understøtter synspunktsanalysen engelsk, tysk, spansk og fransk. Andre sprog er tilgængelig som prøveversion. Du kan få flere oplysninger under [Understøttede sprog](https://docs.microsoft.com/azure/cognitive-services/text-analytics/text-analytics-supported-languages).
+I øjeblikket understøtter synspunktsanalysen engelsk, tysk, spansk og fransk. Andre sprog er tilgængelig som prøveversion. Du kan få flere oplysninger under [Understøttede sprog](/azure/cognitive-services/text-analytics/text-analytics-supported-languages).
 
 #### <a name="tag-images"></a>**Tag billeder**
 
@@ -96,7 +96,7 @@ Funktionen **Tag billeder** returnerer tags baseret på mere end 2.000 genkendel
 
 Når et billede er uploadet, eller en URL-adresse til et billede er angivet, genereres tags af Computer Vision-algoritmer baseret på de objekter, levende væsener og handlinger, der er identificeret på billedet. Tagging er ikke begrænset til det primære emne, f.eks. en person i forgrunden, men det indeholder også omgivelserne (indendørs eller udendørs), møbler, værktøjer, planter, dyr, tilbehør, gadgets og osv.
 
-Denne funktion kræver en URL-adresse til billedet eller et abase 64-felt som input. I øjeblikket understøtter billedtagging engelsk, spansk, japansk, portugisisk og kinesisk (forenklet). Du kan få flere oplysninger under [Understøttede sprog](https://docs.microsoft.com/rest/api/cognitiveservices/computervision/tagimage/tagimage#uri-parameters).
+Denne funktion kræver en URL-adresse til billedet eller et abase 64-felt som input. I øjeblikket understøtter billedtagging engelsk, spansk, japansk, portugisisk og kinesisk (forenklet). Du kan få flere oplysninger under [Understøttede sprog](/rest/api/cognitiveservices/computervision/tagimage/tagimage#uri-parameters).
 
 ## <a name="automated-machine-learning-in-power-bi"></a>Automatiseret Machine Learning i Power BI
 
@@ -114,7 +114,7 @@ AutoML i Power BI gør det muligt for dataanalytikere at bruge dataflows til at 
 
 AutoML understøtter oprettelsen af **modeller til binær forudsigelse** , **klassificering** og **regression** til dataflow. Dette er overvågede tekniktyper til maskinel indlæring, hvilket betyder, at de lærer fra kendte resultater af tidligere observationer for at forudsige resultatet af andre observationer. Inputdatasættet til oplæring af en AutoML-model er et sæt poster, der er **mærket** med de kendte resultater.
 
-AutoML i Power BI integrerer [automatiseret maskinel indlæring](https://docs.microsoft.com/azure/machine-learning/service/concept-automated-ml) fra [Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/service/overview-what-is-azure-ml) for at oprette dine modeller til maskinel indlæring. Du behøver dog ikke et Azure-abonnement for at bruge AutoML i Power BI. Processen til oplæring og hosting af ML-modeller administreres udelukkende af Power BI-tjenesten.
+AutoML i Power BI integrerer [automatiseret maskinel indlæring](/azure/machine-learning/service/concept-automated-ml) fra [Azure Machine Learning](/azure/machine-learning/service/overview-what-is-azure-ml) for at oprette dine modeller til maskinel indlæring. Du behøver dog ikke et Azure-abonnement for at bruge AutoML i Power BI. Processen til oplæring og hosting af ML-modeller administreres udelukkende af Power BI-tjenesten.
 
 Når en ML-model er oplært, genererer AutoML automatisk en Power BI-rapport, der forklarer den sandsynlige ydeevne for din ML-model. AutoML lægger vægt på forklaringsdelen ved at fremhæve nøglefaktorer fra det input, der påvirker de forudsigelser, som returneres af modellen. Rapporten indeholder også vigtige målepunkter for modellen.
 
@@ -374,8 +374,8 @@ Du kan få mere at vide om dataflow under [Introduktion til dataflow og selvbetj
 
 Du kan få mere at vide om Azure Machine Learning i:
 
-- Oversigt:  [Hvad er Azure Machine Learning?](https://docs.microsoft.com/azure/machine-learning/service/overview-what-is-azure-ml)
-- Hurtig start- og selvstudier til Azure Machine Learning:  [Azure Machine Learning-dokumentation](https://docs.microsoft.com/azure/machine-learning/)
+- Oversigt:  [Hvad er Azure Machine Learning?](/azure/machine-learning/service/overview-what-is-azure-ml)
+- Hurtig start- og selvstudier til Azure Machine Learning:  [Azure Machine Learning-dokumentation](/azure/machine-learning/)
 
 > [!NOTE]
 > Der kræves et Power BI Premium-abonnement for at bruge Azure Machine Learning-integration.
@@ -387,7 +387,7 @@ For at få adgang til en Azure Machine Learning-model fra Power BI, skal brugere
 - For modeller af typen Machine Learning Studio (klassisk): adgangen **Læs** til webtjenesten Machine Learning Studio (klassisk)
 - For modeller af typen Machine Learning Studio: adgangen **Læs** til Machine Learning Studio-arbejdsområdet
 
-Trinnene i denne artikel beskriver, hvordan du tildeler en Power BI-bruger adgang til en model, der er hostet i Azure Machine Learning-tjenesten, så brugeren kan få adgang til denne model som en funktion i Power-forespørgsel.  Du kan få flere oplysninger i [Administrer adgang ved hjælp af RBAC og Microsoft Azure-portal](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal).
+Trinnene i denne artikel beskriver, hvordan du tildeler en Power BI-bruger adgang til en model, der er hostet i Azure Machine Learning-tjenesten, så brugeren kan få adgang til denne model som en funktion i Power-forespørgsel.  Du kan få flere oplysninger i [Administrer adgang ved hjælp af RBAC og Microsoft Azure-portal](/azure/role-based-access-control/role-assignments-portal).
 
 1. Log på [Azure Portal](https://portal.azure.com).
 
@@ -415,7 +415,7 @@ Trinnene i denne artikel beskriver, hvordan du tildeler en Power BI-bruger adgan
 
 Dataspecialister bruger primært Python til at udvikle og endda udrulle deres modeller til maskinel indlæring til Machine Learning.  I modsætning til Machine Learning Studio (klassisk), som hjælper med at automatisere oprettelse af en skemafil til modellen, skal dataspecialisterne eksplicit generere skemafilen ved hjælp af Python, når det drejer sig om Machine Learning.
 
-Denne skemafil skal inkluderes i den udrullede webtjeneste for modeller til maskinel indlæring. Hvis du vil generere skemaet for webtjenesten automatisk, skal du angive et eksempel på inputtet/outputtet i postscriptet for den udrullede model. Se underafsnittet om [(Valgfri) Automatisk generering af Swagger-skema i dokumentationen Udrul modeller med Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/how-to-deploy-and-where#optional-define-model-web-service-schema) Service. Linket inkluderer eksemplet på postscriptet med sætninger for generering af skemaet. 
+Denne skemafil skal inkluderes i den udrullede webtjeneste for modeller til maskinel indlæring. Hvis du vil generere skemaet for webtjenesten automatisk, skal du angive et eksempel på inputtet/outputtet i postscriptet for den udrullede model. Se underafsnittet om [(Valgfri) Automatisk generering af Swagger-skema i dokumentationen Udrul modeller med Azure Machine Learning](/azure/machine-learning/how-to-deploy-and-where#optional-define-model-web-service-schema) Service. Linket inkluderer eksemplet på postscriptet med sætninger for generering af skemaet. 
 
 Funktionerne *\@input_schema* og *\@output_schema* i postscriptet refererer specifikt til eksempelformaterne for input og output i variablerne *input_sample* og *output_sample* og bruger disse eksempler til at generere en OpenAPI-specifikation (Swagger) for webtjenesten under udrulningen.
 
@@ -465,4 +465,4 @@ Du kan finde flere oplysninger om dataflow og Power BI i følgende artikler:
 * [Konfigurer og brug et dataflow](dataflows-configure-consume.md)
 * [Konfiguration af dataflowlager til brug af Azure Data Lake Gen 2](dataflows-azure-data-lake-storage-integration.md)
 * [Premium-funktioner for dataflow](dataflows-premium-features.md)
-* [Begrænsninger og overvejelser i forbindelse med dataflow](dataflows-features-limitations.md) 
+* [Begrænsninger og overvejelser i forbindelse med dataflow](dataflows-features-limitations.md)

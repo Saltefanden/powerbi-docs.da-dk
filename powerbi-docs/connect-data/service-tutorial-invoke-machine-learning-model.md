@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 03/12/2019
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 7e2019d3b554bc4e033c7aee36c41216ba910a9f
-ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
+ms.openlocfilehash: 4124799f15bbccd7c82428d1290ae2ae6420311f
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92916837"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94397110"
 ---
 # <a name="tutorial-invoke-a-machine-learning-studio-classic-model-in-power-bi-preview"></a>Selvstudium: Aktivér en model af typen Machine Learning Studio (klassisk) i Power BI (prøveversion)
 
@@ -180,4 +180,4 @@ I dette selvstudium har du oprettet et simpelt eksperiment ved hjælp af Azure M
 - Opret et dataflow
 - Anvend indsigt fra Azure ML-modellen i dataflowet
 
-Du kan finde flere oplysninger om Azure Machine Learning-integration i Power BI i [Azure Machine Learning-integration i Power BI (prøveversion)](../transform-model/service-machine-learning-integration.md).
+Du kan finde flere oplysninger om Azure Machine Learning-integration i Power BI i [Azure Machine Learning-integration i Power BI (prøveversion)](../transform-model/dataflows/dataflows-machine-learning-integration.md).

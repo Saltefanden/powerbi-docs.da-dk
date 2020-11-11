@@ -9,12 +9,12 @@ ms.subservice: powerbi-premium
 ms.topic: how-to
 ms.date: 10/29/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 899dc5092ac86e08d552758e74dfabd8b373f5c0
-ms.sourcegitcommit: a5fa368abad54feb44a267fe26c383a731c7ec0d
+ms.openlocfilehash: 93d982c684014430009a80112da841820e7b0fc9
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93044708"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94396380"
 ---
 # <a name="configure-multi-geo-support-for-power-bi-premium"></a>Konfigurer understøttelse af Multi-Geo til Power BI Premium
 
@@ -98,7 +98,7 @@ Datasæt med store lagerformater bør ikke flyttes fra det område, hvor de blev
 - En cachelagret forespørgsel, der er gemt i et fjernområde, forbliver i dette område som inaktive data. Dog kan andre data under overførsel føres frem og tilbage mellem flere geografiske områder.
 - Når du flytter data fra ét område til et andet i et Multi-Geo-miljø, kan kildedataene forblive i det område, hvorfra dataene blev flyttet, i op til 30 dage. I denne periode har slutbrugere ikke adgang til dem. De fjernes fra det pågældende område og destrueres i løbet perioden på 30 dage.
 - Forespørgselsteksten og forespørgselsresultattrafikken for importerede datamodeller passerer ikke gennem hjemmeområdet. Rapportens metadata kommer stadig fra det eksterne område, og visse DNS-routing-tilstande kan føre trafik ud af området. 
-- Funktionen [Dataflow](../transform-model/service-dataflows-overview.md) understøttes ikke på Multi-GEO i øjeblikket.
+- Funktionen [Dataflow](../transform-model/dataflows/dataflows-introduction-self-service.md) understøttes ikke på Multi-GEO i øjeblikket.
 - Flytning af datasæt i store lagerformater fra det område, hvor de blev oprettet, medfører, at rapporter ikke kan indlæse datasættet. Flyt datasættet med det store lagerformat tilbage til det oprindelige område for at gøre det tilgængeligt. 
 
 ## <a name="next-steps"></a>Næste trin
@@ -107,4 +107,3 @@ Datasæt med store lagerformater bør ikke flyttes fra det område, hvor de blev
 - [Multi-Geo til Power BI Embedded-kapaciteter](../developer/embedded/embedded-multi-geo.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-

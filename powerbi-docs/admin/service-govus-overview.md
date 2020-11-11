@@ -10,12 +10,12 @@ ms.date: 10/30/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Get started
-ms.openlocfilehash: fe4f9c54b45035cc22f2e582a75ba98d648c549d
-ms.sourcegitcommit: 8861dac6724202a5b3be456a6aff8f3584e0cccf
+ms.openlocfilehash: c90d15c20b54a25ccea5865302753e0189359be2
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93132361"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94396098"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI til US Government-kunder
 
@@ -124,8 +124,8 @@ Følgende tabel indeholder en liste over de funktioner, der ikke er tilgængelig
 |[Power Automate-forbindelse til datadrevne underretninger](../connect-data/power-bi-data-sources.md)|![tilgængelig](../media/yes.png)|![tilgængelig](../media/yes.png)|![ikke tilgængelig](../media/no.png)|
 |[Fanen Power BI i Teams](../collaborate-share/service-collaborate-microsoft-teams.md)<sup>2</sup>|![tilgængelig](../media/yes.png)|![ikke tilgængelig](../media/no.png)|![ikke tilgængelig](../media/no.png)|
 |[Store modeller](service-premium-large-models.md) | 4\. kvartal 2020 |4\. kvartal 2020| ![ikke tilgængelig](../media/no.png) |
-|[Dataflow – SQL Compute-programoptimering](../transform-model/service-dataflows-enhanced-compute-engine.md) | 4\. kvartal 2020 |4\. kvartal 2020| ![ikke tilgængelig](../media/no.png) |
-|[Dataflow – -direkte forespørgsel](../transform-model/service-dataflows-directquery.md) | 4\. kvartal 2020 |4\. kvartal 2020|![ikke tilgængelig](../media/no.png)|
+|[Dataflow – SQL Compute-programoptimering](../transform-model/dataflows/dataflows-premium-features.md) | 4\. kvartal 2020 |4\. kvartal 2020| ![ikke tilgængelig](../media/no.png) |
+|[Dataflow – -direkte forespørgsel](../transform-model/dataflows/dataflows-configure-consume.md) | 4\. kvartal 2020 |4\. kvartal 2020|![ikke tilgængelig](../media/no.png)|
 |[Data beskyttelse (MIP-mærkater)](service-security-sensitivity-label-overview.md)|4\. kvartal 2020|4\. kvartal 2020 |4\. kvartal 2020|
 |[Skabelonapps](../connect-data/service-template-apps-overview.md)<sup>3</sup>|4\. kvartal 2020 |4\. kvartal 2020| 4\. kvartal 2020|
 |[Brugerdefinerede visualiseringer](../developer/visuals/power-bi-custom-visuals.md)<sup>3</sup>|4\. kvartal 2020 |4\. kvartal 2020| 4\. kvartal 2020|

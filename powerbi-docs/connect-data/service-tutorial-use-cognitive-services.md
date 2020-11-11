@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 02/20/2020
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 934ffa649885b270dd7f321f45168723f53bc379
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: 406a2aebbf5d043ce74ca189c18b384f6c70e716
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91600349"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94397179"
 ---
 # <a name="tutorial-use-cognitive-services-in-power-bi"></a>Selvstudium: Brug Cognitive Services i Power BI
 
@@ -62,7 +62,7 @@ Vælg **AI Insights** i Power-forespørgselseditor
 
 ![Skærmbillede, der viser Rediger forespørgsler med Alle indsigter valgt.](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_04.png)
 
-Udvid mappen **Cognitive Services**, og vælg den funktion, du vil bruge. I dette eksempel får synspunkterne i kolonnen med kommentarer point, men du kan følge de samme trin for at prøve registrering af sprog og udtrækning af nøglesætninger.
+Udvid mappen **Cognitive Services** , og vælg den funktion, du vil bruge. I dette eksempel får synspunkterne i kolonnen med kommentarer point, men du kan følge de samme trin for at prøve registrering af sprog og udtrækning af nøglesætninger.
 
 ![Skærmbillede, der viser Kald funktion med en funktion valgt.](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_05.png)
 
@@ -76,7 +76,7 @@ Når du er færdig med transformationerne, kan du ændre forespørgselsnavnet ti
 
 ![Skærmbillede, der viser Rediger forespørgsler med Navn fremhævet.](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_07.png)
 
-**Gem** derefter dataflowet, og giv det navnet Fabrikam. Vælg knappen **Opdater nu**, der vises som pop op, når du har gemt dataflowet.
+**Gem** derefter dataflowet, og giv det navnet Fabrikam. Vælg knappen **Opdater nu** , der vises som pop op, når du har gemt dataflowet.
 
 ![Skærmbillede, der viser knappen Gem.](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_08.png)
 
@@ -86,7 +86,7 @@ Når dataflowet er blevet gemt og opdateret, kan du bruge det i en Power BI-rapp
 
 Åbn Power BI Desktop. Vælg **Hent data** på båndet Hjem.
 
-Gå til **Power BI-dataflow (Beta**) i Power BI-afsnittet, og vælg **Opret forbindelse**.
+Gå til **Power BI-dataflow (Beta** ) i Power BI-afsnittet, og vælg **Opret forbindelse**.
 
 ![Skærmbillede, der viser ruden Hent data med Power BI-dataflow valgt.](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_09.png)
 
@@ -164,7 +164,7 @@ Funktionen returnerer en post med koderne i CSV-format og som en json-post. Væl
 
 ![Skærmbillede, der viser knappen Udvid, som har to modsatrettede pile.](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_22.png)
 
-Vælg **Udført**, og gem dataflowet. Når du har opdateret dataflowet én gang, kan du oprette forbindelse til det fra Power BI Desktop ved hjælp af dataflowforbindelserne. (Se trinnene på side 5 i dette dokument).
+Vælg **Udført** , og gem dataflowet. Når du har opdateret dataflowet én gang, kan du oprette forbindelse til det fra Power BI Desktop ved hjælp af dataflowforbindelserne. (Se trinnene på side 5 i dette dokument).
 
 ## <a name="clean-up-resources"></a>Fjern ressourcer
 
@@ -175,11 +175,11 @@ Når forespørgslen ikke længere er nødvendig, kan du slette den ved at højre
 I dette selvstudium anvendte du tildeling af point til synspunkter og funktioner til markering af billeder i et Power BI-dataflow. Du kan få mere at vide om Cognitive Services i Power BI ved at læse følgende artikler.
 
 * [Cognitive Services i Azure](/azure/cognitive-services/)
-* Kom i gang [med selvbetjent dataforberedelse i dataflow](../transform-model/service-dataflows-overview.md)
+* Kom i gang [med selvbetjent dataforberedelse i dataflow](../transform-model/dataflows/dataflows-introduction-self-service.md)
 * Få mere at vide om [Power BI Premium](https://powerbi.microsoft.com/power-bi-premium/)
 
 Du vil måske også være interesseret i følgende artikler.
 
 * [Selvstudium: Aktivér en model af typen Machine Learning Studio (klassisk) i Power BI (prøveversion)](service-tutorial-invoke-machine-learning-model.md)
-* [Azure Machine Learning-integration i Power BI (prøveversion)](../transform-model/service-machine-learning-integration.md)
-* [Cognitive Services i Power BI (prøveversion)](../transform-model/service-cognitive-services.md)
+* [Azure Machine Learning-integration i Power BI (prøveversion)](../transform-model/dataflows/dataflows-machine-learning-integration.md)
+* [Cognitive Services i Power BI (prøveversion)](../transform-model/dataflows/dataflows-machine-learning-integration.md)
