@@ -11,7 +11,7 @@
           href: service-admin-where-is-my-tenant-located.md
         - name: Hvad er Power BI Premium?
           href: service-premium-what-is.md
-    - name: Begreber
+    - name: Koncepter
       expanded: true
       items:
         - name: Administrationsrolle i Microsoft 365
@@ -44,6 +44,8 @@
               href: service-premium-capacity-scenarios.md
             - name: Ofte stillede spørgsmål om Power BI Premium
               href: service-premium-faq.md
+            - name: Ofte stillede spørgsmål om Power BI Premium pr. bruger
+              href: service-premium-per-user-faq.md
     - name: 'Sådan gør du:'
       items:
         - name: Licenser og tilmelding
@@ -106,6 +108,8 @@
               href: service-admin-premium-manage.md
             - name: Konfigurer arbejdsbelastninger
               href: service-admin-premium-workloads.md
+            - name: Køb Power BI Premium til test
+              href: service-admin-premium-testing.md
             - name: Overvåg kapaciteter vha. appen
               href: service-admin-premium-monitor-capacity.md
             - name: Overvåg målepunkter for Premium-arbejdsbelastninger
