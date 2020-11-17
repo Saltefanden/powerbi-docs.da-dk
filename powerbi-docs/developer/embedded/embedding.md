@@ -16,12 +16,12 @@ helpviewer_keywords:
 - Power BI APIs
 ms.custom: seodec18
 ms.date: 05/15/2019
-ms.openlocfilehash: 32fb26faa42f0ce6128a4a4cc0e491f78f270d36
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.openlocfilehash: 4dba33e2ae800198d4840139d43893a7dca77e4f
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91982188"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94396811"
 ---
 # <a name="embedded-analytics-with-power-bi"></a>Integreret analyse med Power BI
 
@@ -31,8 +31,8 @@ Du kan gennemgå [Embedding-konfigurationsværktøjet](https://aka.ms/embedsetup
 
 Vælg den løsning, der er den rette for dig:
 
-* Med [Embedding for your organization](embedding.md#embedding-for-your-organization) kan du udvide Power BI-tjenesten. Implementer løsningen [Integrer for din organisation](https://aka.ms/embedsetup/UserOwnsData) for at gøre det.
-* Med [Integrering for dine kunder](embedding.md#embedding-for-your-customers) kan du integrere dashboards og rapporter for de brugere, der ikke har en Power BI-konto. Implementer løsningen [Integrer for dine kunder](https://aka.ms/embedsetup/AppOwnsData) for at gøre det.
+* Med [Embedding for your organization](embedding.md#embedding-for-your-organization) kan du udvide Power BI-tjenesten. Implementer løsningen i [Integrer indhold for din organisation](https://app.powerbi.com/embedsetup) i *Embedding-konfigurationsværktøj* for at gøre det.
+* Med [Integrering for dine kunder](embedding.md#embedding-for-your-customers) kan du integrere dashboards og rapporter for de brugere, der ikke har en Power BI-konto. Implementer løsningen i [Integrer indhold for dine kunder](https://app.powerbi.com/embedsetup) i *Embedding-konfigurationsværktøj* for at gøre det.
 
 ![PBIE-eksempel](media/embedding/what-can-you-do-02.png)
 
@@ -59,7 +59,7 @@ Hvis du vil integrere for din organisation, skal du se [Selvstudium: Integrer Po
 
 Funktionaliteten i selvbetjeningsportalen, f.eks. rediger, gem og meget mere, er tilgængelig via [JavaScript-API'en](https://github.com/Microsoft/PowerBI-JavaScript) ved integrering i forbindelse med Power BI-brugere.
 
-Du kan gennemgå [værktøjet til konfiguration af integrering](https://aka.ms/embedsetup/UserOwnsData) for at komme i gang og downloade et eksempelprogram, der guider dig gennem integrering af en rapport for din organisation.
+Du kan gennemgå [værktøjet til konfiguration af integrering](https://app.powerbi.com/embedsetup) for at komme i gang og downloade et eksempelprogram, der guider dig gennem integrering af en rapport for din organisation.
 
 ## <a name="embedding-for-your-customers"></a>Integrer for dine kunder
 

@@ -1,7 +1,7 @@
 ---
 title: Eksportér data fra en Power BI-visualisering
 description: Eksportér data fra en rapportvisualisering og en dashboardvisualisering, og få dem vist i Excel.
-author: mihart
+author: msftrien
 manager: kvivek
 ms.reviewer: tessa
 featuredvideoid: jtlLGRKBvXY
@@ -9,14 +9,14 @@ ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
 ms.date: 09/09/2020
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7ab0a093dfd41034aa79d2934ad23cf373fd0474
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: bbeabcd3cbdc04378ea90908703744489371b11f
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90861584"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93412964"
 ---
 # <a name="export-the-data-that-was-used-to-create-a-visualization"></a>Eksportér de data, der blev brugt til at oprette en visualisering
 
@@ -81,8 +81,8 @@ Hvis du vil følge med, skal du åbne [eksempelrapporten med en indkøbsanalyse]
 
 Vi er nu klar til at prøve begge muligheder for eksport af data.
 
-### <a name="export-summarized-data"></a>Eksportér ***opsummerede*** data
-Vælg indstillingen for **Opsummerede data**, hvis du vil eksportere dataene til det, du ser i visualiseringen.  Denne type eksport viser kun de data, (kolonner og målinger), der bruges til at oprette visualiseringen.  Hvis visualiseringen har en aggregering, skal du eksportere aggregerede data. Hvis du f.eks. har et søjlediagram med fire søjler, vises der fire rækker med Excel-data. Opsummerede data er tilgængelige i Power BI-tjenesten som *.xlsx* og *.csv* og i Power BI Desktop som .csv.
+### <a name="export-_summarized__-data"></a>Eksportér **_opsummerede_* _ data
+Vælg indstillingen for _ *Opsummerede data**, hvis du vil eksportere dataene til det, du ser i visualiseringen.  Denne type eksport viser kun de data, (kolonner og målinger), der bruges til at oprette visualiseringen.  Hvis visualiseringen har en aggregering, skal du eksportere aggregerede data. Hvis du f.eks. har et søjlediagram med fire søjler, vises der fire rækker med Excel-data. Opsummerede data er tilgængelige i Power BI-tjenesten som *.xlsx* og *.csv* og i Power BI Desktop som .csv.
 
 1. Vælg ellipsen i øverste højre hjørne af visualiseringen. Vælg **Eksportér data**.
 
@@ -117,9 +117,9 @@ Vælg indstillingen for **Opsummerede data**, hvis du vil eksportere dataene til
 
     - Eftersom du har anvendt filtre på visualiseringen, vil de eksporterede data være filtreret. Bemærk, at den første række viser **Anvendte filtre: By er ikke Atlanta, GA**. 
 
-### <a name="export-underlying-data"></a>Eksportér ***underliggende*** data
+### <a name="export-_underlying__-data"></a>Eksportér **_underliggende_* _ data
 
-Vælg denne indstilling, hvis du vil se dataene i visualiseringen ***og*** yderligere data fra datasættet (se mere i diagrammet nedenfor). Hvis visualiseringen har en aggregering, fjernes det, hvis du vælger **Underliggende data**. I dette eksempel vises der kun én række for hver enkelt By-række i Excel-eksporten samt rabatprocenten for den pågældende post. Power BI flader dataene ud, de samles ikke.  
+Vælg denne indstilling, hvis du vil se dataene i visualiseringen _*_og_*_ yderligere data fra datasættet (se mere i diagrammet nedenfor). Hvis visualiseringen har en samling, fjernes samlingen, hvis du vælger _ *Underliggende data**. I dette eksempel vises der kun én række for hver enkelt By-række i Excel-eksporten samt rabatprocenten for den pågældende post. Power BI flader dataene ud, de samles ikke.  
 
 Når du vælger **Eksportér**, eksporterer Power BI dataene til en *.xlsx*-fil, og i browseren bliver du bedt om at gemme filen. Når du har gemt den, skal du åbne filen i Excel.
 

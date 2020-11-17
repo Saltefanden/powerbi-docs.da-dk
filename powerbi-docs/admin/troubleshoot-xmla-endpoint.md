@@ -1,5 +1,5 @@
 ---
-title: Foretag fejlfinding af XMLA-slutpunktsforbindelse i Power BI Premium (prøveversion)
+title: Foretag fejlfinding af XMLA-slutpunktsforbindelse i Power BI
 description: Beskriver, hvordan du foretager fejlfinding af forbindelsen via XMLA-slutpunktet i Power BI Premium.
 author: minewiskan
 ms.author: owend
@@ -7,15 +7,15 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 10/14/2020
+ms.date: 10/20/2020
 ms.custom: seodec18, css_fy20Q4
 LocalizationGroup: Premium
-ms.openlocfilehash: c8f0683e0789ec29577322424a4187a42ff5679f
-ms.sourcegitcommit: 59d07be9c3e4a2067f6d42c3002a194371bc4341
+ms.openlocfilehash: 5426c91f2ab0c4de1f9f2bc335ac21ea3a90c0e2
+ms.sourcegitcommit: 132b3f6ba6d2b1948ddc15969d64cf629f7fb280
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92116563"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94483667"
 ---
 # <a name="troubleshoot-xmla-endpoint-connectivity"></a>Foretag fejlfinding af XMLA-slutpunktsforbindelse
 
@@ -79,7 +79,7 @@ Hvis Power BI ikke kan binde dit nye datasæt til legitimationsoplysningerne for
 
 Hvis du vil undgå behandlingsfejl, skal du angive **Installationsindstillinger** > **Behandlingsmuligheder** til **Behandl ikke** som vist på følgende billede. Visual Studio udruller derefter kun metadata. Du kan derefter konfigurere legitimationsoplysningerne for datakilden og klikke på **Opdater nu** for datasættet i Power BI-brugergrænsefladen. Du kan finde oplysninger om fejlfinding af behandlingsproblemer i afsnittet [Opdatering af et datasæt](#refreshing-a-dataset) senere i denne artikel.
 
-:::image type="content" source="media/troubleshoot-xmla-endpoint/do-not-process.png" alt-text="Fejl i modeludrulning":::
+:::image type="content" source="media/troubleshoot-xmla-endpoint/do-not-process.png" alt-text="Indstillingen Behandl ikke":::
 
 ### <a name="new-project-from-an-existing-dataset"></a>Nyt projekt ud fra et eksisterende datasæt
 
@@ -128,13 +128,13 @@ Power BI returnerer følgende fejl, hvis du foretager en opdatering via XMLA-slu
 
 Repræsentationsindstillinger, du kan definere for providerdatakilder, er ikke relevante for Power BI. I Power BI bruges der en anden mekanisme, der er baseret på datasætindstillinger, til administration af legitimationsoplysningerne for datakilden. Derfor skal du sikre dig, at du vælger **Tjenestekonto**, hvis du opretter en providerdatakilde.
 
-:::image type="content" source="media/troubleshoot-xmla-endpoint/impersonate-services-account.png" alt-text="Fejl i modeludrulning":::
+:::image type="content" source="media/troubleshoot-xmla-endpoint/impersonate-services-account.png" alt-text="Repræsenter tjenestekonto":::
 
 ### <a name="fine-grained-processing"></a>Detaljeret behandling
 
 Når der udløses en planlagt opdatering eller en opdatering efter behov i Power BI, opdateres hele datasættet normalt i Power BI. I mange tilfælde er det mere effektivt at udføre opdateringer mere selektivt. Du kan udføre detaljerede behandlingsopgaver i SQL Server Management Studio (SSMS) som vist nedenfor eller ved hjælp af værktøjer eller scripts fra tredjepart.
 
-:::image type="content" source="media/troubleshoot-xmla-endpoint/process-tables.png" alt-text="Fejl i modeludrulning":::
+:::image type="content" source="media/troubleshoot-xmla-endpoint/process-tables.png" alt-text="Behandl tabeller i SSMS":::
 
 ### <a name="overrides-in-refresh-tmsl-command"></a>Tilsidesættelser i TMSL-kommandoen Opdater
 
@@ -142,7 +142,7 @@ Tilsidesættelser i [kommandoen Opdater (TMSL)](/analysis-services/tmsl/refresh-
 
 ## <a name="see-also"></a>Se også
 
-[Netværksmulighed for datasæt med XMLA-slutpunktet](service-premium-connect-tools.md)   
-[Automatiser opgaver for arbejdsområder og datasæt i Premium med tjenesteprincipaler](service-premium-service-principal.md)   
-[Fejlfinding af Analysér i Excel](../collaborate-share/desktop-troubleshooting-analyze-in-excel.md)   
-[Udrulning af løsning med tabellarisk model](/analysis-services/deployment/tabular-model-solution-deployment?view=power-bi-premium-current)
+[Netværksmuligheder for datasæt med XMLA-slutpunktet](service-premium-connect-tools.md)  
+[Automatiser opgaver for arbejdsområder og datasæt i Premium med tjenesteprincipaler](service-premium-service-principal.md)  
+[Fejlfinding af Analysér i Excel](../collaborate-share/desktop-troubleshooting-analyze-in-excel.md)  
+[Udrulning af løsning med tabellarisk model](/analysis-services/deployment/tabular-model-solution-deployment?view=power-bi-premium-current&preserve-view=true)

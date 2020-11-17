@@ -2,19 +2,20 @@
 title: Selvstudium i intelligente narrativer
 description: 'Selvstudium: Opret visualiseringer af en oversigt over intelligente narrativer i Power BI'
 author: aphilip94
-ms.reviewer: aphilip94
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 09/14/2020
+ms.date: 11/06/2020
 ms.author: anphil
+ms.custom: video
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 4417d66b4afc3c3848667364bdca47150afdf04a
-ms.sourcegitcommit: 220427415e2fdc9337244b1ee23e734854179d43
+ms.openlocfilehash: 92ebd3015296dc0b6a61f3b7dd2a8b0d163a4383
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862921"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94397202"
 ---
 # <a name="create-smart-narrative-summaries-preview"></a>Opret oversigter over intelligente narrativer (prøveversion)
 
@@ -33,9 +34,12 @@ Brug oversigter over intelligente narrativer i dine rapporter til at belyse vigt
 >
 >![Skærmbillede, der viser Power BI-indstillinger. Indstillingen Visualisering til intelligent narrativ er valgt.](media/power-bi-visualization-smart-narratives/2.png)
 
-For at følge med i dette selvstudium skal du downloade [eksempelfilen](https://github.com/microsoft/powerbi-desktop-samples/blob/master/Monthly%20Desktop%20Blog%20Samples/2020/2020SU09%20Blog%20Demo%20-%20September.pbix) med et onlinesalgsscenarie.
+
 
 ## <a name="get-started"></a>Kom i gang 
+Se Justyna vise dig, hvordan du bruger smarte fortællinger, og prøv derefter selv ved hjælp af selvstudiet under videoen.  For at følge med i dette selvstudium skal du downloade [eksempelfilen](https://github.com/microsoft/powerbi-desktop-samples/blob/master/Monthly%20Desktop%20Blog%20Samples/2020/2020SU09%20Blog%20Demo%20-%20September.pbix) med et onlinesalgsscenarie.
+
+> [!VIDEO https://youtu.be/01UrT-z37sw]
 
 Vælg ikonet **Intelligent narrativ** i ruden **Visualiseringer** for at oprette en oversigt automatisk.
 
@@ -95,9 +99,10 @@ Funktionen for intelligente narrativer understøtter ikke følgende funktionalit
 - Brug af dynamiske værdier og betinget formatering (f.eks. databundet titel)
 - Azure Analysis Services, AS i det lokale miljø
 - KPI'er, kort, kort med flere rækker, tilknytninger, tabeller, matrixer, R-visualiseringer eller Python-visualiseringer, brugerdefinerede visualiseringer 
-- Oversigter over visualiseringer, hvis kolonner er grupperet efter andre kolonner, og for visualiseringer, der er bygget på et datagruppefelt 
+- Oversigter over visualiseringer, hvis kolonner er grupperet efter andre kolonner, og for visualiseringer, der er bygget på et datagruppefelt 
 - Krydsfiltrering ud fra en visualisering
 - Omdøbning af dynamiske værdier eller redigering af automatisk genererede dynamiske værdier
 - Oversigter over visualiseringer, der indeholder løbende beregninger som spørgsmål og svar med aritmetik og procent af samlet beløb 
+- [Beregningsgrupper](/analysis-services/tabular-models/calculation-groups)
    
 

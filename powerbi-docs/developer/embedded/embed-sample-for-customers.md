@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 06/02/2020
-ms.openlocfilehash: 9af0edbe63841f6fb0e0de2e628784c89a5e44f1
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.openlocfilehash: 21f497a7c88134232a86afb9d16142719a6b711e
+ms.sourcegitcommit: 132b3f6ba6d2b1948ddc15969d64cf629f7fb280
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91983361"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94483782"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Selvstudium: Integrer Power BI-indhold i en app til dine kunder
 
@@ -40,7 +40,7 @@ Hvis du ikke er tilmeldt **Power BI Pro**, kan du [tilmelde dig en gratis prøve
 
 Før du begynder at integrere rapporter, dashboards eller felter i dit program, skal du sikre dig, at du kan integrere med Power BI i dit miljø.
 
-Du kan gennemgå [værktøjet til konfiguration af integrering](https://aka.ms/embedsetup/AppOwnsData) for hurtigt at komme i gang med og downloade et eksempelprogram, der hjælper dig med at oprette et miljø og integrere en rapport.
+Du kan gennemgå [værktøjet til konfiguration af integrering](https://app.powerbi.com/embedsetup) for hurtigt at komme i gang med og downloade et eksempelprogram, der hjælper dig med at oprette et miljø og integrere en rapport.
 
 Hvis du vælger at konfigurere miljøet manuelt, kan du dog fortsætte nedenfor.
 
@@ -58,7 +58,7 @@ Hvis du derimod fortsætter med en tjenesteprincipal, skal du registrere et **se
 
 ### <a name="create-a-workspace"></a>Opret et arbejdsområde
 
-Hvis du integrerer rapporter, dashboards eller felter for dine kunder, skal du placere dit indhold i et arbejdsområde. Der er forskellige typer arbejdsområder, som du kan konfigurere: [traditionelle arbejdsområder](../../collaborate-share/service-create-workspaces.md) eller [nye arbejdsområder](../../collaborate-share/service-create-the-new-workspaces.md). Hvis du bruger en *master*konto, er det ligegyldigt, hvilken type arbejdsområde du bruger. Men hvis du bruger en *[tjenesteprincipal](embed-service-principal.md)* til at logge på dit program, skal du bruge de nye arbejdsområder. I begge scenarier skal både *masterkontoen* og *tjenesteprincipalen* være administrator af arbejdsområderne for dit program.
+Hvis du integrerer rapporter, dashboards eller felter for dine kunder, skal du placere dit indhold i et arbejdsområde. Der er forskellige typer arbejdsområder, som du kan konfigurere: [traditionelle arbejdsområder](../../collaborate-share/service-create-workspaces.md) eller [nye arbejdsområder](../../collaborate-share/service-create-the-new-workspaces.md). Hvis du bruger en *master* konto, er det ligegyldigt, hvilken type arbejdsområde du bruger. Men hvis du bruger en *[tjenesteprincipal](embed-service-principal.md)* til at logge på dit program, skal du bruge de nye arbejdsområder. I begge scenarier skal både *masterkontoen* og *tjenesteprincipalen* være administrator af arbejdsområderne for dit program.
 
 ### <a name="create-and-publish-your-reports"></a>Opret og udgiv dine rapporter
 
@@ -228,7 +228,7 @@ Selvom trinnene til at integrere indhold udføres ved hjælp af [REST API'er til
 
 Hvis du integrerer for dine kunder i dit program, skal du have et **adgangstoken** til din masterkonto eller en [tjenesteprincipal](embed-service-principal.md) fra **Azure AD**. Du skal have et [Azure AD-adgangstoken](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) til dit Power BI-program, før du kan foretage kald til [REST API'erne til Power BI](/rest/api/power-bi/).
 
-Hvis du vil oprette Power BI-klienten med dit **adgangstoken**, skal du oprette dit Power BI klientobjekt, som gør det muligt for dig at interagere med [REST API'erne til Power BI](/rest/api/power-bi/). Du kan oprette dit Power BI-klientobjekt ved at omgive **AccessToken** med objektet ***Microsoft.Rest.TokenCredentials***.
+Hvis du vil oprette Power BI-klienten med dit **adgangstoken**, skal du oprette dit Power BI klientobjekt, som gør det muligt for dig at interagere med [REST API'erne til Power BI](/rest/api/power-bi/). Du kan oprette dit Power BI-klientobjekt ved at wrappe **AccessToken** med et **_Microsoft.Rest.TokenCredentials_* _-objekt.
 
 ```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -250,7 +250,7 @@ Du kan bruge Power BI-klientobjektet til at hente en reference til det element, 
 
 Her er et kodeeksempel på, hvordan du henter den første rapport fra et givent arbejdsområde.
 
-*Du kan se et eksempel på, hvordan du henter et indholdselement, uanset om det er en rapport, et dashboard eller et felt, du vil integrere, i filen Services\EmbedService.cs i [eksempelprogrammet](https://github.com/Microsoft/PowerBI-Developer-Samples).*
+_Du kan se et eksempel på, hvordan du henter et indholdselement, uanset om det er en rapport, et dashboard eller et felt, du vil integrere, i filen Services\EmbedService.cs i [prøveprogrammet](https://github.com/Microsoft/PowerBI-Developer-Samples).*
 
 ```csharp
 using Microsoft.PowerBI.Api.V2;

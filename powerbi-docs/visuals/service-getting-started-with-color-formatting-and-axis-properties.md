@@ -1,20 +1,20 @@
 ---
 title: Introduktion til formatering af rapportvisualiseringer
 description: Introduktion til formateringsindstillinger for rapportvisualiseringer
-author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/17/2020
-ms.author: mihart
+ms.date: 11/09/2020
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e4f5007d60f7634b671f1178a7279fe5cc35be89
-ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
+ms.openlocfilehash: 3e61521ec7ac518aaa374cec328639a849b21bd5
+ms.sourcegitcommit: 132b3f6ba6d2b1948ddc15969d64cf629f7fb280
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85354587"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94483818"
 ---
 # <a name="getting-started-with-the-formatting-pane"></a>Introduktion til formateringsruden
 
@@ -41,6 +41,7 @@ Du kan tilpasse mange elementer i hver visualisering. De tilgængelige indstilli
 * Y-akse
 * Datafarver
 * Datamærkater
+* Totalmærkater
 * Figurer
 * Afbildningsområde
 * Titel
@@ -66,6 +67,7 @@ Den bedste måde at få mere at vide om, hvordan du bruger formateringsindstilli
 2. Anvend en typografi    
 3. Skift egenskaber for akse    
 4. Tilføj datamærkater    
+1. Tilføj totalmærkater
 
 
 
@@ -141,7 +143,7 @@ Du kan fjerne mærkaterne på x-aksen helt ved at slå alternativknappen ud for 
 
 ## <a name="adding-data-labels"></a>Tilføjelse af datamærkater    
 
-Et sidste formateringseksempel før du selv går i gang med udforskningen.  Lad os føje datamærkater til et områdediagram. 
+Lad os føje datamærkater til et områdediagram. 
 
 Her er *før*-billedet. 
 
@@ -155,6 +157,27 @@ Og her er *efter*-billedet.
 Vi har valgt visualiseringen for at gøre den aktiv og åbne fanen Formatering.  Vi har valgt **Datamærkater** og slået dem til. Vi har derefter øget skrifttypen til 12, ændret skrifttypefamilien til Arial Black, slået **Vis baggrund** til og angivet baggrundsfarven til hvid med en gennemsigtighed på 5%.
 
 Det er blot nogle få af de mulige formateringsopgaver. Åbn en rapport i redigeringstilstand, og hav det sjovt med at udforske ruden Formatering, der gør det muligt at oprette smukke og informative visualiseringer.
+
+## <a name="adding-total-labels"></a>Tilføjelse af totalmærkater    
+
+Et sidste formateringseksempel før du selv går i gang med udforskningen.  Lad os føje totalmærkater til et stablet søjlediagram. Totalmærkater er tilgængelige for stablede diagrammer, kombinationsdiagrammer og områdediagrammer.
+
+Når du slår totalmærkater til, viser Power BI de samlede data eller datatotalen. Lad os tage et kig på et eksempel. 
+
+Her har vi et stablet søjlediagram med datamærkater, der viser værdien af hver del af hver enkelt fulde stak.  Dette er standardvisningen. 
+
+![søjlediagram med datamærkater](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-column-charts.png)
+
+
+Når du åbner visualiseringen i redigeringsvisning, kan du ændre visningen for datamærkater og totalmærkater. Markér en visual for at aktivere den, og åbn ruden Formatering. Rul ned til **Datamærkater** og **Totalmærkater**. **Datamærkater** er slået til, og **Totalmærkater** er slået fra. 
+
+![ikke-formateret kolonnediagram](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-total-label.png)
+
+Slå **Datamærkater** fra, og slå **Totalmærkater** til. Power BI viser nu samlingen for hver kolonne.    
+![formateret søjlediagram](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-totals.png)
+
+Det er blot nogle få af de mulige formateringsopgaver. Åbn en rapport i redigeringstilstand, og hav det sjovt med at udforske ruden Formatering, der gør det muligt at oprette smukke og informative visualiseringer.
+
 
 ## <a name="next-steps"></a>Næste trin
 Du kan få flere oplysninger i følgende artikel: 

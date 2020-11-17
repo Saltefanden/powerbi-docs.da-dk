@@ -277,6 +277,8 @@
               href: ../visuals/power-bi-visualization-decomposition-tree.md
             - name: Smarte fortællinger
               href: ../visuals/power-bi-visualization-smart-narrative.md
+            - name: Registrering af uregelmæssigheder
+              href: ../visuals/power-bi-visualization-anomaly-detection.md
             - name: Kransediagrammer
               href: ../visuals/power-bi-visualization-doughnut-charts.md
             - name: Kartogrammer (choropleth)

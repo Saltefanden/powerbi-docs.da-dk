@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/14/2020
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 0f4b84067389e93de0e5c5c2b5008b08cd78151f
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: 3052119ed4abd4e752ab14a5eb9a2087148f4997
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91525196"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94397064"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheder i Power BI-tjenesten
 Kontrollér denne side for at læse om kendte problemer og nyudgivne funktioner i **Power BI-tjenesten**. Du kan finde relaterede oplysninger om nyheder under:
@@ -97,7 +97,7 @@ Du kan også få mere at vide om nyheder og funktioner på YouTube-kanalerne.
 * [Kommentering](https://powerbi.microsoft.com/blog/announcing-report-commenting-for-power-bi-service-and-mobile/) til Power BI-rapporter i tjenesten.
 
 ### <a name="april-2019"></a>April 2019
-* Generel tilgængelighed af [dataflows](../transform-model/service-dataflows-overview.md) i Power BI.
+* Generel tilgængelighed af [dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md) i Power BI.
 * Generel tilgængelighed af den nye arbejdsområdeoplevelse.
 * Nye Power BI-områder i Frankrig og Korea.
 * Opdateret oplevelse med Spørgsmål og svar til dashboards.
@@ -120,12 +120,12 @@ Du kan også få mere at vide om nyheder og funktioner på YouTube-kanalerne.
 * Bulkhandlinger i administrationsportalen.
 * Filtreret eksport til PPT og PDF.
 * [Indstillinger for hjælp og support](https://powerbi.microsoft.com/blog/tailoring-help-and-support-for-power-bi-users/) i administrationsportalen.
-* Data-lineage-oplevelse til [dataflows](../transform-model/service-dataflows-overview.md).
+* Data-lineage-oplevelse til [dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md).
 * Indstilling for certificerede Power BI-visuals i administrationsportalen.
 
 ### <a name="january-2019"></a>Januar 2019
 * [Integration af sikre Power BI-rapporter](../collaborate-share/service-embed-report-spo.md) i interne portaler eller på interne websteder.
-* Opdateringer af [dataflow](../transform-model/service-dataflows-overview.md)editor med nye forbindelseskomponenter og understøttelse af oprindelige SQL-forespørgsler og onlinetransformationer i Power-forespørgsel.
+* Opdateringer af [dataflow](../transform-model/dataflows/dataflows-introduction-self-service.md)editor med nye forbindelseskomponenter og understøttelse af oprindelige SQL-forespørgsler og onlinetransformationer i Power-forespørgsel.
 * [Personlige bogmærker](https://powerbi.microsoft.com/blog/announcing-personal-bookmarks-in-the-power-bi-service/) i Power BI-tjenesten.
 * Tidsbaseret planlægning med e-mailabonnementer.
 
@@ -133,11 +133,11 @@ Du kan også få mere at vide om nyheder og funktioner på YouTube-kanalerne.
 ### <a name="december-2018"></a>December 2018
 * AI-drevne [anbefalede apps](https://powerbi.microsoft.com/blog/announcing-ai-powered-app-recommendations-getting-the-right-insights-to-the-right-people/) i Power BI Start.
 * [Administration af arbejdsområde](https://powerbi.microsoft.com/blog/workspace-management-in-the-admin-portal/) i administrationsportalen.
-* Prøveversion af Power BI Dataflows og Azure Data Lake Storage Gen2 Integration i [dataflows](../transform-model/service-dataflows-overview.md).
+* Prøveversion af Power BI Dataflows og Azure Data Lake Storage Gen2 Integration i [dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md).
 * Power BI-løsningsskabeloner blev åben kildekode.
 
 ### <a name="november-2018"></a>November 2018
-* Power BI-dataforberedelse er tilgængelig med offentlig prøveversion af [dataflows](../transform-model/service-dataflows-overview.md).
+* Power BI-dataforberedelse er tilgængelig med offentlig prøveversion af [dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md).
 * Offentlig prøveversion af [sideinddelte rapporter](../paginated-reports/paginated-reports-report-builder-power-bi.md) i Power BI Premium.
 * Datastørrelse og antal datasæt i hukommelsen i den [kapacitetsovervågningsapp](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
 
@@ -283,46 +283,46 @@ Du kan også få mere at vide om nyheder og funktioner på YouTube-kanalerne.
 * Vis [tekstkolonner som værktøjstip](https://powerbi.microsoft.com/blog/tech-tip-thursday-displaying-text-columns-in-tool-tips/).
 
 ### <a name="july-2016"></a>Juli 2016
-***RLS videreføres fra previewversion***
+***RLS videreføres fra prøveversion** _
 
-* Sikkerhed på rækkeniveau (RLS –Row Level Security) gør det muligt at begrænse adgang til datakilder, afhængigt af hvem der har adgang til den. Vi har for nylig strømlinet processen for konfiguration af RLS ved at give adgang til roller og regler i Power BI Desktop. I dag er vi glade for at kunne meddele, at RLS nu er offentligt tilgængeligt for alle Power BI Pro-brugere.
+_Sikkerhed på rækkeniveau (RLS – Row Level Security) gør det muligt at begrænse adgang til datakilder, afhængigt af hvem der har adgang til den. Vi har for nylig strømlinet processen for konfiguration af RLS ved at give adgang til roller og regler i Power BI Desktop. I dag er vi glade for at kunne meddele, at RLS nu er offentligt tilgængeligt for alle Power BI Pro-brugere.
 
-***Dataklassificering***
+***Dataklassificering** _
 
-* Nu kan du tagge dine dashboards med klassificeringer, der er defineret af din virksomheds it-afdeling, for at øge kendskabet til, hvem der får vist dine dashboards og om, hvilket sikkerhedsniveau der skal bruges.
+_Nu kan du tagge dine dashboards med klassificeringer, der er defineret af din virksomheds it-afdeling, for at øge kendskabet til, hvem der får vist dine dashboards og om, hvilket sikkerhedsniveau der skal bruges.
 
-***Analyser dine data i det lokale miljø i Excel***
+***Analyser dine data i det lokale miljø i Excel** _
 
-* Funktionen Analysér i Excel er blevet udvidet til at understøtte datasæt i det lokale miljø. Vi opretter sikker og direkte forbindelse til dine datasæt i det lokale miljø, hvilket giver dig mulighed for at analysere dem i Excel. Vi har også introduceret en indstilling for administratorer til at deaktivere funktionen Analysér i Excel for datakilder i det lokale miljø.  
+_Funktionen Analysér i Excel er blevet udvidet til at understøtte datasæt i det lokale miljø. Vi opretter sikker og direkte forbindelse til dine datasæt i det lokale miljø, hvilket giver dig mulighed for at analysere dem i Excel. Vi har også introduceret en indstilling for administratorer til at deaktivere funktionen Analysér i Excel for datakilder i det lokale miljø.  
 
 Du kan få alle detaljerne ved at [besøge Power BI-teamets blog](https://powerbi.microsoft.com/blog/power-bi-july-update-for-service-and-mobile/)
 
 ### <a name="june-2016"></a>Juni 2016
-***Quick Insights (Hurtig indsigt)***
+***Hurtig indsigt** _
 
-* Hurtigt indsigt fungerer sammen med komplekse filtre: Vi er glade for at kunne meddele, at Hurtig indsigt, som er begrænset til et enkelt felt, nu forstår komplekse filtre.
+_Hurtig indsigt fungerer sammen med komplekse filtre: Vi er glade for at kunne meddele, at Hurtig indsigt, som er begrænset til et enkelt felt, nu forstår komplekse filtre.
 
 Du kan få alle detaljerne ved at [besøge Power BI-teamets blog](https://powerbi.microsoft.com/blog/smarter-auto-generated-insights-with-complex-filters/)
 
 ### <a name="may-2016"></a>Maj 2016
-***Hent data***
+***Hent data** _
 
-* Forøgelse af maksimal filstørrelse til 1 GB: Vi har hævet grænsen for filstørrelser for både Excel-projektmapper og Power BI Desktop-filer til 1 GB.
+_Forøgelse af maksimal filstørrelse til 1 GB: Vi har hævet grænsen for filstørrelser for både Excel-projektmapper og Power BI Desktop-filer til 1 GB.
 * Find SSAS-servere, der er konfigureret med virksomhedsgatewayen og andre gatewayopdateringer: Når du nu konfigurerer en virksomhedsgateway, vil brugere i din virksomhed kunne få adgang til disse servere i Power BI-tjenesten via siden Hent data. Vi har også tilføjet understøttelse af opdatering af datasæt, der indeholder data fra en SAP Business Warehouse-server, ved hjælp af gatewayen og ved at oprette regler for UPN-tilknytning, når du bruger Analysis Services med gatewayen.
 
-***Sikkerhed på rækkeniveau (RLS)***
+***Sikkerhed på rækkeniveau** _
 
-* Gruppesupport af Azure Active Directory (Azure AD): Brugerne kan nu tildele Microsoft Azure AD-grupper (sikkerhedsgrupper) til en rolle. Det gør det lettere at tildele roller til en stor gruppe af brugere på én gang.
+_Understøttelse af Azure Active Directory-grupper: Brugerne kan nu tildele Microsoft Azure AD-grupper (sikkerhedsgrupper) til en rolle. Det gør det lettere at tildele roller til en stor gruppe af brugere på én gang.
 * [Test dine RLS-roller med rapporter, der understøttes af data, der har RLS implementeret](../admin/service-admin-rls.md#validate-the-roles-within-power-bi-desktop): Vi har tilføjet en funktion i vores RLS-prøveversion, som du kan bruge til at teste dit datasæt som en bestemt rolle. Dette sikrer, at rollen fungerer som forventet, før nogen brugere får fingrene i dit dashboard.
 * Definer og anvend RLS på cloudmodeller, der er baseret på direkte forespørgsler: Du kan nu oprette og anvende RLS-regler for datakilder, der er baseret på direkte forespørgsler.
 
-***Dashboards***
+***Dashboards** _
 
-* Foretrukne dashboards: For at hjælpe dig med at finde de dashboards, du bruger mest, har vi tilføjet en metode til at gøre disse dashboards til favoritter og gøre dem let tilgængelige fra alle dine arbejdsområder.
+_Foretrukne dashboards: For at hjælpe dig med at finde de dashboards, du bruger mest, har vi tilføjet en metode til at gøre disse dashboards til favoritter og gøre dem let tilgængelige fra alle dine arbejdsområder.
 
-***Analysér i Excel***
+***Analysér i Excel** _
 
-* Forbedret downloadoplevelse: Du kan nemt downloade opdateringer til funktionen Analysér i Excel via en ny dialogboksoplevelse.
+_Forbedret downloadoplevelse: Du kan nemt downloade opdateringer til funktionen Analysér i Excel via en ny dialogboksoplevelse.
 * Understøttelse af RLS: Når du har konfigureret RLS, afspejles de regler, du anvender på dataene, nu når en bruger analyserer data i Excel.
 * Forbedrede fejlmeddelelser for Analysis Services-databaser i det lokale miljø: Tidligere når du valgte Analysér i Excel for en ikke-understøttet datakilde, ville du ikke få en fejlmeddelelse, før efter du have downloadet ODC-filen og forsøgt at oprette forbindelse til Power BI. Når du nu vælger Analysér i Excel for en datakilde, vi ikke understøtter, vises der straks en meddelelse, hvor der står, at vi endnu ikke understøtter datakilden.
 
@@ -351,49 +351,49 @@ Du kan få alle detaljerne ved at [besøge Power BI-teamets blog](https://powerb
 
 **14. april 2016**
 
-***Enterprise***
+**_Enterprise_* _
 
-* [Understøttelse af RLS i indholdspakker](../admin/service-admin-rls.md) (prøveversion): Hvis RLS er defineret for de dashboards og rapporter, der distribueres som en del af en indholdspakke, overholdes sikkerhedsreglerne for disse indholdspakker.
+_[Understøttelse af RLS i indholdspakker](../admin/service-admin-rls.md) (prøveversion): Hvis RLS er defineret for de dashboards og rapporter, der distribueres som en del af en indholdspakke, overholdes sikkerhedsreglerne for disse indholdspakker.
 
-***Dashboards***
+***Dashboards** _
 
-* [Vimeo-videofelt](../create-reports/service-dashboard-add-widget.md):  Fra dashboardet kan du tilføje et felt, der indeholder en integreret Vimeo-afspiller.
+_[Vimeo-videofelt](../create-reports/service-dashboard-add-widget.md):  Fra dashboardet kan du tilføje et felt, der indeholder en integreret Vimeo-afspiller.
 
-***Analysér i Excel***
+***Analysér i Excel** _
 
-* [Analysér i Excel](../collaborate-share/service-analyze-in-excel.md) tilgængelig for alle brugere: Muligheden for at få adgang til Power BI-datamodeller i Excel er blevet udvidet til alle brugere, uanset hvilken licens de er tildelt.
+_[Analysér i Excel](../collaborate-share/service-analyze-in-excel.md) er tilgængelig for alle brugere: Muligheden for at få adgang til Power BI-datamodeller i Excel er blevet udvidet til alle brugere, uanset hvilken licens de er tildelt.
 * Forbedret oplevelse for konti med flere brugere: Hvis du har mere end én Power BI-brugerkonto, er det nu nemmere at logge på.
 
 Du kan få alle detaljerne ved at [besøge Power BI-teamets blog](https://powerbi.microsoft.com/blog/power-bi-service-april-update-expressroute-for-power-bi/)
 
 **31. marts 2016** Mange opdateringer annonceret på Microsoft Data Insights Summit.
 
-***Dashboards***
+**_Dashboards_* _
 
-* Fremhævet dashboard: gør det lettere at nå det dashboardet, der er vigtigst for dig.
+_Fremhævet dashboard: gør det lettere at nå det dashboard, der er vigtigst for dig.
 * Filtrering af dashboardliste: Vis alt, vis indhold, du har oprettet, vis indhold, der er blevet delt med dig.
 
-***Virksomhedsfunktioner***
+***Virksomhedsfunktioner** _
 
-* Administratorforbrugsrapportering: tilføjet en forbrugsrapport i Power BI Administration.
+_Administratorforbrugsrapportering: Der er føjet en forbrugsrapport til Power BI Administration.
 * Sikkerhed på rækkeniveau: Dette er en previewfunktion, som gør det muligt at angive tilladelser for Power BI-datasæt.
 * Deaktiver eksport af data: Brugerne i din lejer vil ikke længere kunne eksportere felt- og visuelle data til en .csv-fil.
 
-***Spørgsmål og svar***
+***Spørgsmål og svar** _
 
-* Automatisk fuldførelse af "is": Spørgsmål og svar foreslår værdier, hvis du skriver et kolonnenavn efterfulgt af "is".
+_Automatisk fuldførelse af "is": Spørgsmål og svar foreslår værdier, hvis du skriver et kolonnenavn efterfulgt af "is".
 
-***Mobil***
+***Mobil** _
 
-* KPI'er på dit Apple Watch: Overvåg dine KPI- og kortfliser uden at åbne Power BI-appen.
+_KPI'er på dit Apple Watch: Overvåg dine KPI- og kortfelter uden at åbne Power BI-appen.
 
-***Excel***
+***Excel** _
 
-* Analysér i Excel: Opret forbindelse mellem din Power BI-datamodel og Excel, og lav dine analyser i Excel i stedet for Power BI.
+_Analysér i Excel: Opret forbindelse mellem din Power BI-datamodel og Excel, og udfør dine analyser i Excel i stedet for Power BI.
 
-***Andet***
+***Andet** _
 
-* Power BI i Australien: Nu kan alle i Australien – enkeltpersoner eller organisationsbrugere – gå til powerbi.microsoft.com og tilmelde sig Power BI.
+_Power BI i Australien: Nu kan alle i Australien – enkeltpersoner eller organisationsbrugere – gå til powerbi.microsoft.com og tilmelde sig Power BI.
 * Sprogindstillinger: Tilsidesæt den automatiske registrering af sprog, og angive sproget for Power BI.
 
 Du kan få alle detaljerne ved at [besøge Power BI-teamets blog](https://powerbi.microsoft.com/blog/power-bi-service-march-update-part-two/)
@@ -402,19 +402,19 @@ Du kan få alle detaljerne ved at [besøge Power BI-teamets blog](https://powerb
 
 I denne måned har vi foretaget nogle opdateringer af dashboards, Hurtig indsigt og Spørgsmål og svar.
 
-***Dashboards***
+**_Dashboards_* _
 
-* Fuldskærmsvisning: Udskriv uden at skulle lukke fuldskærmsvisning først
+_Fuldskærmsvisning: Udskriv uden at skulle lukke fuldskærmsvisning først
 * Fuldskærmsvisning: Udvid dine felter til at fylde hele lærredet, og fjern overskydende blanktegn ved at vælge **Tilpas til bredde**
 * Brug Feltflow til automatisk at justere dine felter til det øverste venstre hjørne på lærredet.
 
-***Quick Insights (Hurtig indsigt)***
+***Hurtig indsigt** _
 
-* Indsigterne Tendens og Korrelation har nu tendenslinjer, der gør det nemmere at se mønstre i dataene.
+_Indsigterne Tendens og Korrelation har nu tendenslinjer, der gør det nemmere at se mønstre i dataene.
 
-***Spørgsmål og svar***
+***Spørgsmål og svar** _
 
-* Nu kan du angive Måler- og Områdediagram i Spørgsmål og svar
+_Du kan nu angive måler og områdediagrammer i Spørgsmål og svar
 * Forbedret automatisk fuldførelse i Spørgsmål og svar – så snart du skriver nogle få tegn, begynder Spørgsmål og svar automatisk at fuldføre og foreslå visuelle elementer.
 
 Du kan få alle detaljerne ved at [besøge Power BI-teamets blog](https://powerbi.microsoft.com/blog/power-bi-service-march-update/)
@@ -423,31 +423,31 @@ Du kan få alle detaljerne ved at [besøge Power BI-teamets blog](https://powerb
 
 I dag har vi udsendt en lang række af de mest efterspurgte funktioner. [Læs blogindlægget](https://powerbi.microsoft.com/blog/power-bi-february-service-update/).
 
-***Deling***
+**_Deling_* _
 
-* Del med brugere uden for din organisation
+_Del med brugere uden for din organisation
 * Anmod om adgang til et dashboard
 
-***Administrationsportal***
+***Administrationsportal** _
 
-* Nem brugeradministration med et link til Microsoft 365 Administration
+_Nem brugeradministration med et link til Microsoft 365 Administration
 * Mulighed for at deaktivere publicering på internettet
 * Forhindring af brugere i at publicere indholdspakker til hele organisationen
 * Mulighed for at deaktivere deling af indhold med eksterne brugere
 
-***Hurtig indsigt***
+***Hurtig indsigt** _
 
-* Hurtig indsigt når du publicerer Power BI Desktop-filer
+_Hurtig indsigt når du publicerer Power BI Desktop-filer
 
-***Dashboard***
+***Dashboard** _
 
-* Føj webindhold til dit dashboard (via Widget)
+_Føj webindhold til dit dashboard (via Widget)
 * Føj videoindhold til dit dashboard (via Widget)
 * Zoom på dashboards
 
-***Forbindelser***
+***Forbindelser** _
 
-* Opret forbindelse til filer på SharePoint-teamwebstedet via en URL-adresse
+_Opret forbindelse til filer på SharePoint-teamwebstedet via en URL-adresse
 
 Du kan få alle detaljerne ved at [besøge Power BI-teamets blog](https://powerbi.microsoft.com/blog/power-bi-february-service-update/)
 
@@ -466,37 +466,37 @@ Bedre ydeevne for gengivelse af rapporter, tværgående fremhævning med mere.
 
 Power BI-teamet har haft travlt i ferieperioden. Du kan få alle detaljerne ved at [besøge Power BI-teamets blog](https://powerbi.microsoft.com/blog/power-bi-service-update-0106/)
 
-***Dashboards***
+**_Dashboards_* _
 
-* Eksportér feltdata
+_Eksportér feltdata
 * Føj en billed- eller tekstfeltwidget til dashboards
 * Udskriv dashboards
 * Opdateringstider for felter
 * Værktøjstip på dashboardfelter
 
-***Samarbejde***
+***Samarbejde** _
 
-* Meddelelse om delt dashboard
+_Meddelelse om delt dashboard
 * Kontakt ejeren af et delt dashboard eller organisationsdashboard
 
-***Rapporter***
+***Rapporter** _
 
-* Udskriv aktuel rapportside
+_Udskriv aktuel rapportside
 * Eksportér rapportens visuelle data
 
-***Forbindelser***
+***Forbindelser** _
 
-* Opret forbindelse til filer på SharePoint-teamwebsteder
+_Opret forbindelse til filer på SharePoint-teamwebsteder
 
-***Excel-rapporter***
+***Excel-rapporter** _
 
-* Åbn Excel-rapporter i Excel-skrivebordsprogrammet
+_Åbn Excel-rapporter i Excel Desktop
 * Fastgør Excel-diagrammer
 * Forbedret formatering for Excel-felter
 
-***Andet***
+***Andet** _
 
-* Power BI i Brasilien
+_Power BI i Brasilien
 * Understøttelse af hebraisk og arabisk
 
 Du kan få alle detaljerne ved at [besøge Power BI-teamets blog](https://powerbi.microsoft.com/blog/power-bi-service-update-0106/)

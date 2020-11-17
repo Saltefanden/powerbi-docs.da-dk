@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/11/2020
-ms.openlocfilehash: 85622b457d1c2eda0af51e0c7190d2691c259a82
-ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
+ms.openlocfilehash: 1166f51c21e765e5710d33ad45a47057ea773bd8
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92916492"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94397432"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Ofte stillede spørgsmål om Power BI Embedded
 
@@ -176,7 +176,7 @@ Brug PowerBI.com til at tildele/fjerne tildelte arbejdsområder fra Power BI Emb
 
 ### <a name="what-content-pack-data-types-can-you-embed"></a>Hvilke indholdspakke-datatyper kan du integrere?
 
-Du *kan ikke* integrere **Dashboards** og **felter** , der er bygget ud fra indholdspakke-datasæt. Du *kan* imidlertid godt integrere **rapporter** , der er bygget ud fra et indholdspakke-datasæt.
+Du *kan ikke* integrere **Dashboards** og **felter**, der er bygget ud fra indholdspakke-datasæt. Du *kan* imidlertid godt integrere **rapporter**, der er bygget ud fra et indholdspakke-datasæt.
 
 ### <a name="what-is-the-difference-between-using-row-level-security-rls-vs-javascript-filters"></a>Hvad er forskellen mellem at bruge RLS-filtre (Row-level Security – sikkerhed på rækkeniveau) og JavaScript-filtre?
 
@@ -270,30 +270,30 @@ Der er ingen særlige Azure-prissætning for almennyttige organisationer og udda
 
 ### <a name="what-is-power-bi-workspace-collection"></a>Hvad er Power BI Workspace Collection?
 
-**Power BI-arbejdsområdesamling** ( **Power BI Embedded** Version 1) er en løsning, som er baseret på Azure-ressourcen **Power BI Workspace Collection**. Denne løsning gør det muligt at oprette **Power BI Embedded** -programmer til dine kunder ved hjælp af Power BI-indhold under **Power BI Workspace Collection** -løsningen, dedikerede-API'er og nøgler til arbejdsområdesamlinger til godkendelse af programmet til Power BI.
+**Power BI-arbejdsområdesamling** (**Power BI Embedded** Version 1) er en løsning, som er baseret på Azure-ressourcen **Power BI Workspace Collection**. Denne løsning gør det muligt at oprette **Power BI Embedded**-programmer til dine kunder ved hjælp af Power BI-indhold under **Power BI Workspace Collection**-løsningen, dedikerede-API'er og nøgler til arbejdsområdesamlinger til godkendelse af programmet til Power BI.
 
 ### <a name="can-i-migrate-from-power-bi-workspace-collection-to-power-bi-embedded"></a>Kan jeg overføre indhold fra Power BI Workspace Collection til Power BI Embedded?
 
 1. Du kan bruge overførselsværktøjet til at klone indhold fra **Power BI Workspace Collection** til Power BI – https://docs.microsoft.com/power-bi/developer/migrate-from-powerbi-embedded#content-migration.
 
-2. Start med den **Power BI Embedded** -program-POC, der bruger Power BI-indhold.
+2. Start med den **Power BI Embedded**-program-POC, der bruger Power BI-indhold.
 
-3. Når du er klar til produktion, skal du købe en **Power BI Embedded** -kapacitet og tildele dit Power BI-indhold (arbejdsområde) til denne kapacitet.
+3. Når du er klar til produktion, skal du købe en **Power BI Embedded**-kapacitet og tildele dit Power BI-indhold (arbejdsområde) til denne kapacitet.
 
     > [!Note]
-    > Du kan fortsætte med at bruge **Power BI Workspace Collection** , når du opretter parallelt med en **Power BI Embedded** -løsning. Når du er klar, kan du flytte kunden til den nye **Power BI Embedded** -løsning og lade **Power BI Workspace Collection** -løsningen udgå.
+    > Du kan fortsætte med at bruge **Power BI Workspace Collection**, når du opretter parallelt med en **Power BI Embedded**-løsning. Når du er klar, kan du flytte kunden til den nye **Power BI Embedded**-løsning og lade **Power BI Workspace Collection**-løsningen udgå.
 
 Du kan finde flere oplysninger under [Sådan overfører du indhold fra Power BI Workspace Collection til Power BI Embedded](./migrate-from-powerbi-embedded.md)
 
 ### <a name="is-power-bi-workspace-collection-on-a-deprecation-path"></a>Frarådes det senere at bruge Power BI-arbejdsområdesamling?
 
-Ja, men kunder, der allerede bruger løsningen med **Power BI-arbejdsområdesamling** , kan fortsætte med at bruge den, indtil det frarådes. Kunder kan også oprette nye arbejdsområdesamlinger og alle **Power BI Embedded** -programmer, der stadig bruger **Power BI Workspace Collection** -løsningen.
+Ja, men kunder, der allerede bruger løsningen med **Power BI-arbejdsområdesamling**, kan fortsætte med at bruge den, indtil det frarådes. Kunder kan også oprette nye arbejdsområdesamlinger og alle **Power BI Embedded**-programmer, der stadig bruger **Power BI Workspace Collection**-løsningen.
 
-Men det betyder også, at der ikke føjes nye funktioner til løsninger med **Power BI-arbejdsområdesamling**. Vi opfordrer kunder til at planlægge deres migrering til den nye **Power BI Embedded** -løsning.
+Men det betyder også, at der ikke føjes nye funktioner til løsninger med **Power BI-arbejdsområdesamling**. Vi opfordrer kunder til at planlægge deres migrering til den nye **Power BI Embedded**-løsning.
 
 ### <a name="when-is-power-bi-workspace-collection-support-discontinued"></a>Hvornår ophører support til Power BI Workspace Collection?
 
-Kunder, der allerede bruger **Power BI Workspace Collections** -løsningen, kan fortsætte med at bruge den indtil udgangen af juni 2018 eller indtil udgangen af deres supportaftale.
+Kunder, der allerede bruger **Power BI Workspace Collections**-løsningen, kan fortsætte med at bruge den indtil udgangen af juni 2018 eller indtil udgangen af deres supportaftale.
 
 ### <a name="in-what-regions-can-i-create-a-pbi-workspace-collection"></a>I hvilke områder kan jeg oprette en Power BI-arbejdsområdesamling?
 
@@ -301,29 +301,29 @@ De tilgængelige områder er det sydøstlige Australien, det sydlige Brasilien, 
 
 ### <a name="why-should-i-migrate-from-pbi-workspace-collection-to-power-bi-embedded"></a>Hvorfor skal jeg overføre indhold fra PBI Workspace Collection til Power BI Embedded?
 
-Der er nogle nye funktioner og egenskaber i **Power BI Embedded** -løsningen, som du ikke kan bruges sammen med **Power BI-arbejdsområdesamling**.
+Der er nogle nye funktioner og egenskaber i **Power BI Embedded**-løsningen, som du ikke kan bruges sammen med **Power BI-arbejdsområdesamling**.
 
 Nogle af funktionerne er:
-* Alle PBI-datakilderne understøttes. Kun to **Power BI-arbejdsområdesamling** -datakilder understøttes. 
-* Nye funktioner, f.eks. Spørgsmål og svar, opdatering, bogmærker, integrering af dashboards og felter, brugerdefinerede menuer, understøttes kun i **Power BI Embedded** -løsningen.
+* Alle PBI-datakilderne understøttes. Kun to **Power BI-arbejdsområdesamling**-datakilder understøttes. 
+* Nye funktioner, f.eks. Spørgsmål og svar, opdatering, bogmærker, integrering af dashboards og felter, brugerdefinerede menuer, understøttes kun i **Power BI Embedded**-løsningen.
 * Model for fakturering af kapacitet.
 
 ## <a name="embedding-setup-tool"></a>Embedding-konfigurationsværktøj
 
 ### <a name="what-is-the-embedding-setup-tool"></a>Hvad er konfigurationsværktøjet?
 
-Med [Embedding-konfigurationsværktøjet](https://aka.ms/embedsetup) kan du hurtigt komme i gang og downloade en eksempelapp for at komme i gang med at integrere med Power BI.
+Med [Embedding-konfigurationsværktøjet](https://app.powerbi.com/embedsetup) kan du hurtigt komme i gang og downloade en eksempelapp for at komme i gang med at integrere med Power BI.
 
 ### <a name="which-solution-should-i-choose"></a>Hvilken løsning skal jeg vælge?
 
-* [Embedding for your customers](embedding.md#embedding-for-your-customers) giver mulighed for at integrere dashboards og rapporter for de brugere, der ikke har en Power BI-konto. Kør løsningen [Embed for your customers](https://aka.ms/embedsetup/AppOwnsData).
-* Med [Embedding for your organization](embedding.md#embedding-for-your-organization) kan du udvide Power BI-tjenesten. Kør løsningen [Embed for your organization](https://aka.ms/embedsetup/UserOwnsData).
+* [Embedding for your customers](embedding.md#embedding-for-your-customers) giver mulighed for at integrere dashboards og rapporter for de brugere, der ikke har en Power BI-konto. Kør løsningen i [Integrer indhold for dine kunder](https://app.powerbi.com/embedsetup) i *Embedding-konfigurationsværktøj*.
+* Med [Embedding for your organization](embedding.md#embedding-for-your-organization) kan du udvide Power BI-tjenesten. Kør løsningen i [Integrer indhold for din organisation](https://app.powerbi.com/embedsetup) i *Embedding-konfigurationsværktøj*.
 
 ### <a name="ive-downloaded-the-sample-app-which-solution-do-i-choose"></a>Jeg har downloadet eksempelappen. Hvilken løsning skal jeg vælge?
 
-Hvis du arbejder med oplevelsen **Embed for your customers** , skal du gemme og udpakke filen *PowerBI-Developer-Samples.zip*. Derefter skal du åbne mappen *PowerBI-Developer-Samples-master\App Owns Data* og køre filen *PowerBIEmbedded_AppOwnsData.sln*.
+Hvis du arbejder med oplevelsen **Embed for your customers**, skal du gemme og udpakke filen *PowerBI-Developer-Samples.zip*. Derefter skal du åbne mappen *PowerBI-Developer-Samples-master\App Owns Data* og køre filen *PowerBIEmbedded_AppOwnsData.sln*.
 
-Hvis du arbejder med **Embed for your organization** , skal du gemme og udpakke filen *PowerBI-Developer-Samples.zip*. Derefter skal du åbne mappen *PowerBI-Developer-Samples-master\User Owns Data\integrate-report-web-app* og køre filen *pbi-saas-embed-report.sln*.
+Hvis du arbejder med **Embed for your organization**, skal du gemme og udpakke filen *PowerBI-Developer-Samples.zip*. Derefter skal du åbne mappen *PowerBI-Developer-Samples-master\User Owns Data\integrate-report-web-app* og køre filen *pbi-saas-embed-report.sln*.
 
 ### <a name="how-can-i-edit-my-registered-application"></a>Hvordan kan jeg redigere min registrerede app?
 

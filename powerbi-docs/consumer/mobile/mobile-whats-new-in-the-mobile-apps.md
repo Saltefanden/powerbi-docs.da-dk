@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 08/12/2020
+ms.date: 11/01/2020
 ms.author: painbar
-ms.openlocfilehash: d2e229dda05c1761fdaa5c7336c0eca5db538e46
-ms.sourcegitcommit: 383d87841d2509131fac7cc02c5c37c6a868144f
+ms.openlocfilehash: 83a280b94a6db937133e0d7ab1e6d7ad64af06f4
+ms.sourcegitcommit: 29cafa1602efb56cfa8dbd0010dd04ad3fcdd02c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92026042"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93355928"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Hvad er nyt i mobilapps til Power BI
 Du kan finde relaterede oplysninger om nyheder under:
@@ -24,6 +24,10 @@ Du kan finde relaterede oplysninger om nyheder under:
 
 >[!NOTE]
 >Understøttelsen af Power BI-mobilapp til **telefoner, der bruger Windows 10 Mobile**, ophører den 16. marts 2021. [Få mere at vide](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+
+## <a name="november-2020"></a>November 2020
+### <a name="maximize-the-view-with-full-screen-mode-android-tablets"></a>Maksimer visningen med fuldskærmsvisning (Android-tablets)
+Vi har føjet en ny knap til mobilappen til Android-tablets, der gør det muligt for dig at fjerne appsidehoveder og -sidefødder, så du får den maksimale plads til visning af dit indhold. Du skal blot trykke på til/fra-knappen for fuld skærm i øverste højre hjørne af skærmen for at skifte mellem tilstande.
 
 ## <a name="october-2020"></a>Oktober 2020
 ### <a name="automatic-page-refresh-is-now-supported-windows"></a>Automatisk sideopdatering understøttes nu (Windows)

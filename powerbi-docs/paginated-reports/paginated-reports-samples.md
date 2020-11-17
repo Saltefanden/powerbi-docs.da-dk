@@ -7,13 +7,13 @@ ms.reviewer: swgupt
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 11/01/2020
-ms.openlocfilehash: cf0e6a6e7cd40a5b8bb97560caf94b71c1b48e7a
-ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
+ms.date: 11/10/2020
+ms.openlocfilehash: cfa4b46e521079802ec87b63d6323e01213625c3
+ms.sourcegitcommit: 132b3f6ba6d2b1948ddc15969d64cf629f7fb280
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93324004"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94483842"
 ---
 # <a name="sample-power-bi-paginated-reports"></a>Eksempel på sideinddelte rapporter i Power BI
 
@@ -27,8 +27,25 @@ Denne artikel indeholder oplysninger og links til flere eksempler på sideinddel
 - Du kan dele disse rapporter online, som de er, uden at det er muligt at redigere dem. Du skal bruge en licens til Power BI Pro for at gøre det. Du kan tilmelde dig en [gratis prøveversion af Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md#sign-up-for-an-individual-trial-of-power-bi-pro).
 - Du skal også have adgang til et Power BI-arbejdsområde i en [Premium-kapacitet](../admin/service-premium-what-is.md).
 - [Installér Power BI Report Builder](https://aka.ms/pbireportbuilder) fra Microsoft Download Center for at redigere disse rapporter.
-- OK, nu er du klar til at [downloade disse eksempler på sideinddelte rapporter](https://github.com/microsoft/Reporting-Services/tree/master/PaginatedReportSamples) fra GitHub! Du behøver ikke at have en GitHub-konto. 
+- OK, nu er du klar til at downloade disse eksempler på sideinddelte rapporter fra GitHub! Du behøver ikke at have en GitHub-konto. 
 
+## <a name="download-the-reports"></a>Download rapporterne
+
+Hvis du vil downloade rapporterne, skal du downloade lageret som en zip-fil og derefter udtrække dem. Sideinddelte rapporter er .rdl-filer.
+
+1. Åbn [GitHub-lager for Microsoft SQL Server Reporting Services](https://github.com/microsoft/Reporting-Services).
+1. Vælg pilen på den grønne **Kode**-knap > **Download zip**.
+
+    :::image type="content" source="media/paginated-reports-samples/paginated-report-download-zip.png" alt-text="Skærmbillede af GitHub-lager, der indeholder eksemplet på sideinddelte rapporter i Power BI.":::
+    
+1. Åbn filen, vælg **Udtræk alle**, og vælg en placering til filerne. Mappenavnet er som standard **Reporting-Services-master**.
+1. Åbn mappen **Reporting-Services-master**, og åbn derefter mappen **PaginatedReportSamples**.
+
+    >[!NOTE]
+    >Du kan slette alle de andre mapper i mappen **Reporting-Services-master**. De indeholder andre eksempler, du ikke har brug for.
+
+1. Vælg en af. rdl-filerne for at åbne den i Power BI Report Builder.
+1. Nu kan du [publicere den sideinddelte rapport i Power BI-tjenesten](paginated-reports-save-to-power-bi-service.md).
 
 ## <a name="invoice"></a>Faktura
 

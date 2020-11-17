@@ -1,23 +1,23 @@
 ---
-title: Administrer datakilder
-description: Få mere at vide om, hvordan du administrerer datakilder i Power BI.
+title: Tilføj eller fjern en gatewaydatakilde
+description: Få mere at vide om, hvordan du føjer datakilder til en gateway i det lokale miljø i Power BI.
 author: arthiriyer
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 07/22/2020
+ms.date: 11/03/2020
 ms.author: arthii
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: 92c3a65b11435403b61a06324f534e6d82e4b7cb
-ms.sourcegitcommit: efe11c819be75887c4242afa64d32bb0698da569
+ms.openlocfilehash: 58fb6fbe48ef1552052f93fd56b35512b7bf84d7
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87123482"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93412447"
 ---
-# <a name="manage-data-sources"></a>Administrer datakilder
+# <a name="add-or-remove-a-gateway-data-source"></a>Tilføj eller fjern en gatewaydatakilde
 
 [!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
 
@@ -25,25 +25,29 @@ Power BI understøtter mange [datakilder i det lokale miljø](power-bi-data-sour
 
 De fleste handlinger til administration af datakilder kan også udføres vha. API'er. Du kan finde flere oplysninger i [REST API'er (gateways)](/rest/api/power-bi/gateways).
 
+Hvis du endnu ikke har en gateway installeret, kan du se [Installér en datagateway i det lokale miljø](/data-integration/gateway/service-gateway-install) for at komme i gang.
+
 ## <a name="add-a-data-source"></a>Tilføj en datakilde
 
-1. I øverste højre hjørne af Power BI-tjenesten skal du vælge tandhjulsikonet ![tandhjulsikonet for indstillinger](media/service-gateway-data-sources/icon-gear.png) > **Administrer gateways**.
+1. Vælg **Indstillinger** ![tandhjulsikonet Indstillinger](media/service-gateway-data-sources/icon-gear.png) > **Administrer gateways** fra sidehovedet i Power BI-tjenesten.
 
     ![Administrer gateways](media/service-gateway-data-sources/manage-gateways.png)
 
-2. Vælg en gateway, og vælg derefter **Tilføj datakilde**. Eller gå til **Gateways** > **Tilføjdata kilde**.
+2. Vælg en gateway, og vælg derefter **Tilføj datakilde**. Du kan vælge overskriftsteksten **TILFØJ DATAKILDE** eller placere markøren ud for gatewayposten for at få vist menuen Flere indstillinger.
 
     ![Tilføj datakilde](media/service-gateway-data-sources/add-data-source.png)
 
-3. Vælg **Datakildetype**.
+3. Tildel et navn til din datakilde, og vælg derefter **Datakildetype**. I dette eksempel vælger vi SQL Server.
 
     ![Vælg SQL Server](media/service-gateway-data-sources/select-sql-server.png)
 
-4. Angiv oplysninger for datakilden. I dette eksempel er det **Server**, **Database** og andre oplysninger. 
+4. Angiv oplysninger om datakilden. Angiv **server** og **database** for SQL Server.
 
     ![Indstillinger for datakilde](media/service-gateway-data-sources/data-source-settings.png)
 
-5. Du kan vælge **godkendelsesmetoden** **Windows** eller **Basic** (SQL-godkendelse) for SQL Server. Hvis du vælger **Basic**, skal du angive legitimationsoplysningerne for datakilden.
+5. Vælg den **godkendelsesmetode**, der skal bruges, når der oprettes forbindelse til datakilden. Vælg **Windows** eller **Basic** (SQL-godkendelse) for SQL Server. Angive legitimationsoplysningerne for datakilden.
+
+   :::image type="content" source="media/service-gateway-data-sources/basic-auth.png" alt-text="Indstillinger for basisgodkendelse.":::
 
     > [!NOTE]
     > Hvis den valgte godkendelsesmetode er OAuth, vil forespørgsler, der kører længere end politikken for udløb af OAuth-tokenet, muligvis mislykkes.
@@ -52,18 +56,18 @@ De fleste handlinger til administration af datakilder kan også udføres vha. AP
 
     ![avancerede indstillinger](media/service-gateway-data-sources/advanced-settings-02.png)
 
-Du kan enten konfigurere **Brug SSO via Kerberos til DirectQuery-forespørgsler** eller **Brug SSO via Kerberos til DirectQuery- og importforespørgsler** for DirectQuery-baserede rapporter og **Brug SSO via Kerberos til DirectQuery- og importforespørgsler** for opdateringsbaserede rapporter.
+    Du kan enten konfigurere **Brug SSO via Kerberos til DirectQuery-forespørgsler** eller **Brug SSO via Kerberos til DirectQuery- og importforespørgsler** for DirectQuery-baserede rapporter og **Brug SSO via Kerberos til DirectQuery- og importforespørgsler** for opdateringsbaserede rapporter.
 
-Hvis du bruger **Brug SSO via Kerberos til DirectQuery-forespørgsler** og bruger denne datakilde til en DirectQuery-baseret rapport, benyttes den bruger, der er knyttet til den (Azure) Active Directory-bruger, der logger på Power BI-tjenesten. I forbindelse med en opdateret rapport vil den bruge de legitimationsoplysninger, du angiver i felterne **Brugernavn** og **Adgangskode**.
+    Hvis du bruger **Brug SSO via Kerberos til DirectQuery-forespørgsler** og bruger denne datakilde til en DirectQuery-baseret rapport, benyttes legitimationsoplysningerne for den bruger, der logger på Power BI-tjenesten. I forbindelse med en opdateret rapport vil den bruge de legitimationsoplysninger, du angiver i felterne **Brugernavn** og **Adgangskode**.
 
-Hvis du bruger **Brug SSO via Kerberos til DirectQuery- og importforespørgsler**, behøver du ikke at angive legitimationsoplysninger. Hvis denne datakilde bruges til en DirectQuery-baseret rapport, benyttes den bruger, der er knyttet til den (Azure) Active Directory-bruger, der logger på Power BI-tjenesten.  I forbindelse med en opdateret rapport bruges sikkerhedskonteksten for datasættets ejer
+    Hvis du bruger **Brug SSO via Kerberos til DirectQuery- og importforespørgsler**, behøver du ikke at angive legitimationsoplysninger. Hvis denne datakilde bruges til en DirectQuery-baseret rapport, benyttes den bruger, der er knyttet til den (Azure) Active Directory-bruger, der logger på Power BI-tjenesten.  I forbindelse med en opdateret rapport bruges sikkerhedskonteksten for datasættets ejer
 
-> [!NOTE]
->SSO til importforespørgsler er kun tilgængelig for listen over SSO-datakilder, der bruger [Kerberos-begrænset delegering](service-gateway-sso-kerberos.md).
+    > [!NOTE]
+    >SSO til importforespørgsler er kun tilgængelig for listen over SSO-datakilder, der bruger [Kerberos-begrænset delegering](service-gateway-sso-kerberos.md).
 
 7. Under **Avancerede indstillinger** kan du eventuelt konfigurere [niveauet for beskyttelse af personlige oplysninger](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) for din datakilde (gælder ikke for [DirectQuery](desktop-directquery-about.md)).
 
-    ![Avancerede indstillinger](media/service-gateway-data-sources/advanced-settings.png)
+    :::image type="content" source="media/service-gateway-data-sources/privacy-level.png" alt-text="Valg af niveau for beskyttelse af personlige oplysninger.":::
 
 8. Vælg **Tilføj** Du får vist *Forbindelsen er oprettet*, hvis processen lykkes.
 
@@ -75,16 +79,16 @@ Du kan nu bruge denne datakilde til at inkludere data fra SQL Server i dine Powe
 
 Du kan fjerne en datakilde, hvis du ikke længere bruger den. Hvis du fjerner en datakilde, ødelægger det alle dashboards og rapporter, der anvender den pågældende datakilde.
 
-Hvis du vil fjerne en datakilde, skal du gå til datakilden og derefter vælge **Fjern**.
+Hvis du vil fjerne en datakilde, skal du gå til datakilden og derefter vælge **Fjern** i menuen Flere indstillinger. Menuen Flere indstillinger vises, når du holder markøren over navnet på datakilden.
 
 ![Fjern en datakilde](media/service-gateway-data-sources/remove-data-source.png)
 
 ## <a name="use-the-data-source-for-scheduled-refresh-or-directquery"></a>Brug af datakilden til planlagt opdatering eller DirectQuery
 
-Når du opretter datakilden, er den tilgængelig til brug med enten DirectQuery-forbindelser eller via en planlagt opdatering.
+Når du opretter datakilden, er den tilgængelig til brug med enten DirectQuery-forbindelser eller via en planlagt opdatering. Du kan få mere at vide om, hvordan du konfigurerer planlagt opdatering i [Konfigurer planlagt opdatering](refresh-scheduled-refresh.md).
 
 > [!NOTE]
->Server- og databasenavne skal matche mellem Power BI Desktop og datakilden i datagatewayen i det lokale miljø.
+>Server- og databasenavne skal matche mellem Power BI Desktop og den datakilde, der føjes til datagatewayen i det lokale miljø.
 
 Linket mellem dit datasæt og datakilden i gatewayen er baseret på dit servernavn og databasenavn. Disse navne skal være ens. Hvis du f.eks. angiver en IP-adresse for servernavnet i Power BI Desktop, skal du bruge IP-adressen til datakilden i konfigurationen af gatewayen. Hvis du bruger *SERVER\INSTANCE* i Power BI Desktop, skal du bruge det samme i den datakilde, der er konfigureret for gatewayen.
 
@@ -101,7 +105,7 @@ OAuth er kun en understøttet godkendelsesplan for brugerdefinerede connectors m
 
 ## <a name="manage-users"></a>Administrer brugere
 
-Når du har føjet en datakilde til en gateway, giver du brugere og mailaktiverede sikkerhedsgrupper adgang til den specifikke datakilde (ikke hele gatewayen). Brugerlisten for datakilden styrer kun, hvem der har tilladelse til at udgive rapporter, der indeholder data fra datakilden. Rapporternes ejere kan oprette dashboards, indholdspakker og apps og derefter dele disse med andre brugere.
+Når du har føjet en datakilde til en gateway, giver du brugere og mailaktiverede sikkerhedsgrupper adgang til den specifikke datakilde (ikke hele gatewayen). Adgangslisten for datakilden styrer kun, hvem der har tilladelse til at udgive rapporter, der indeholder data fra datakilden. Rapporternes ejere kan oprette dashboards, indholdspakker og apps og derefter dele disse med andre brugere.
 
 Du kan også give brugere og sikkerhedsgrupper administrativ adgang til gatewayen.
 
@@ -110,15 +114,11 @@ Du kan også give brugere og sikkerhedsgrupper administrativ adgang til gatewaye
 
 ### <a name="add-users-to-a-data-source"></a>Føj brugere til en datakilde
 
-1. I øverste højre hjørne af Power BI-tjenesten skal du vælge tandhjulsikonet ![tandhjulsikonet for indstillinger](media/service-gateway-data-sources/icon-gear.png) > **Administrer gateways**.
+1. Vælg **Indstillinger** ![tandhjulsikonet Indstillinger](media/service-gateway-data-sources/icon-gear.png) > **Administrer gateways** fra sidehovedet i Power BI-tjenesten.
 
 2. Vælg den datakilde, hvor du vil tilføje brugere.
 
-3. Vælg **Brugere**, og angiv en bruger fra din organisation, som du vil give adgang til den valgte datakilde. På følgende skærmbillede tilføjer du f.eks. Maggie og Adam.
-
-    ![Fanen Brugere](media/service-gateway-data-sources/users-tab.png)
-
-4. Hvis du vælger **Tilføj**, vises det tilføjede medlems navn i feltet.
+3. Vælg **Brugere**, og angiv de brugere og mailaktiverede sikkerhedsgrupper fra din organisation, der skal have adgang til den valgte datakilde. Vælg **Tilføj**, hvorefter det tilføjede medlems navn føjes til listen over personer, der kan publicere rapporter, som bruger denne datakilde.
 
     ![Tilføj bruger](media/service-gateway-data-sources/add-user.png)
 

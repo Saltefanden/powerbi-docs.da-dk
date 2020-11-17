@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 10/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 4b9573d0a24efdbb4c0b5a4130f973a0dfac0f10
-ms.sourcegitcommit: 8861dac6724202a5b3be456a6aff8f3584e0cccf
+ms.openlocfilehash: 4fcfe4038b8fa14b0c1640680aaf7657e92bb9bb
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93132315"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94397363"
 ---
 # <a name="copy-reports-from-other-workspaces"></a>Kopiér rapporter fra andre arbejdsområder
 
@@ -35,7 +35,7 @@ Når du finder en rapport, du vil bruge i et arbejdsområde eller en app, kan du
 
     ![Gem en kopi af en rapport](media/service-datasets-copy-reports/power-bi-dataset-save-report-copy.png)
 
-    Du kan kun se ikonet **Gem en kopi** , hvis rapporten er i et arbejdsområde med den nye oplevelse, og du har [tilladelsen Opret](service-datasets-build-permissions.md). Selvom du har adgang til arbejdsområdet, skal du have tilladelsen Opret for datasættet.
+    Du kan kun se ikonet **Gem en kopi**, hvis rapporten er i et arbejdsområde med den nye oplevelse, og du har [tilladelsen Opret](service-datasets-build-permissions.md). Selvom du har adgang til arbejdsområdet, skal du have tilladelsen Opret for datasættet.
 
 3. Navngiv rapporten, og vælg destinationsarbejdsområdet under **Gem en kopi af denne rapport**.
 
@@ -60,7 +60,7 @@ Når du finder en rapport, du vil bruge i et arbejdsområde eller en app, kan du
 
     ![Gem en kopi af rapporten](media/service-datasets-copy-reports/power-bi-save-copy.png)
 
-    Du kan kun se indstillingen **Gem en kopi** , hvis rapporten er i et arbejdsområde med den nye oplevelse, og du har [tilladelsen Opret](service-datasets-build-permissions.md).
+    Du kan kun se indstillingen **Gem en kopi**, hvis rapporten er i et arbejdsområde med den nye oplevelse, og du har [tilladelsen Opret](service-datasets-build-permissions.md).
 
 3. Giv din rapport et navn > **Gem**.
 

@@ -1,26 +1,26 @@
 ---
-title: Tip og tricks til farveformatering i rapporter
-description: Tip og tricks til farveformatering i Power BI-rapporter
-author: mihart
-ms.reviewer: ''
+title: Tip og tricks til formatering i rapporter
+description: Tip og tricks til formatering i Power BI-rapporter
+author: msftrien
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/18/2020
-ms.author: mihart
+ms.date: 10/29/2020
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e896b3aeabc6a22c98563d0836984cd2d8a644de
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: bce798e07a3bdac0ba52f56e9ddf7eac72087924
+ms.sourcegitcommit: 132b3f6ba6d2b1948ddc15969d64cf629f7fb280
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91633831"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94483947"
 ---
-# <a name="tips-and-tricks-for-color-formatting-in-power-bi"></a>Tip og tricks til farveformatering i Power BI
+# <a name="tips-and-tricks-for-formatting-in-reports"></a>Tip og tricks til formatering i rapporter
 
 [!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
 
-Power BI indeholder mange forskellige måder at tilpasse dine dashboards og rapporter på. Denne artikel indeholder en samling af tip, som kan gøre dine Power BI-visualiseringer mere overbevisende, interessante og tilpasset efter dine behov.
+Power BI indeholder mange forskellige måder at tilpasse dine rapporter på. Denne artikel indeholder en samling af tip, som kan gøre dine Power BI-visualiseringer mere overbevisende, interessante og tilpasset efter dine behov.
 
 Der findes følgende tip. Har du et andet fantastiske tip? Fantastisk! Send det til os, og vi finder ud af, om det skal føjes til listen.
 
@@ -36,7 +36,7 @@ Der findes følgende tip. Har du et andet fantastiske tip? Fantastisk! Send det 
 
 Hvis du vil foretage ændringer, skal du have redigeringstilladelser til rapporten. Åbn rapporten i **Rapportvisning** i Power BI Desktop. I Power BI-tjenesten betyder det, at du skal åbne rapporten og vælge **Rediger** på menulinjen, som vist på følgende billede.
 
-![her finder du menuen Rediger](media/service-tips-and-tricks-for-color-formatting/power-bi-edit-report.png)
+![her finder du menuen Rediger](media/service-tips-and-tricks-for-color-formatting/power-bi-editing-view.png)
 
 Når ruderne **Filtre** og **Visualiseringer** vises langs højre side af rapportcanvasset, er du klar til at starte tilpasningen. Hvis ruderne ikke vises, skal du vælge pilen i øverste højre hjørne for at åbne dem.
 

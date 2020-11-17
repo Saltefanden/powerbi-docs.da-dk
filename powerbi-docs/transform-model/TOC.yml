@@ -133,5 +133,7 @@
               href: ./dataflows/dataflows-machine-learning-integration.md
     - name: Reference
       items:
+        - name: Brug feltlisten i Power BI Desktop (eksempelvisning)
+          href: desktop-field-list.md
         - name: Genveje til formeleditor
           href: desktop-formula-editor.md

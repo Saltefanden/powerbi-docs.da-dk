@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/04/2020
-ms.openlocfilehash: 9a38533e76fec134d667ae4026258a2a3c07f410
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.openlocfilehash: e4d1c625d86234c97305c705b2feeead8efacb61
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91983108"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94397271"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Selvstudium: Integrer Power BI-indhold i en app til din organisation
 
@@ -44,7 +44,7 @@ Hvis du ikke har et Azure-abonnement, skal du oprette en [gratis konto](https://
 
 Før du begynder at integrere rapporter, dashboards eller felter i dit program, skal du sikre dig, at du kan integrere med Power BI i dit miljø.
 
-Du kan gennemgå [værktøjet til konfiguration af integrering](https://aka.ms/embedsetup/UserOwnsData) for hurtigt at komme i gang med og downloade et eksempelprogram, der hjælper dig med at oprette et miljø og integrere en rapport. Hvis du vil integrere en sideinddelt rapport, skal du som minimum tildele en P1-kapacitet til det oprettede arbejdsområde.
+Du kan gennemgå [værktøjet til konfiguration af integrering](https://app.powerbi.com/embedsetup) for hurtigt at komme i gang med og downloade et eksempelprogram, der hjælper dig med at oprette et miljø og integrere en rapport. Hvis du vil integrere en sideinddelt rapport, skal du som minimum tildele en P1-kapacitet til det oprettede arbejdsområde.
 
 Hvis du vælger at konfigurere miljøet manuelt, kan du fortsætte nedenfor.
 
@@ -52,9 +52,9 @@ Hvis du vælger at konfigurere miljøet manuelt, kan du fortsætte nedenfor.
 
 [Registrer dit program](register-app.md) med Azure Active Directory for at give dit program adgang til [REST API'erne til Power BI](/rest/api/power-bi/). Når du registrerer dit program, får du mulighed for at oprette en identitet for programmet og angive tilladelser til Power BI REST-ressourcer.
 
-Du skal fortsætte med at registrere en app med et **serverbaseret webprogram**. Du registrerer et serverbaseret webprogram for at oprette en programhemmelighed.
-
-Når du har oprettet dit program i Azure, skal du åbne programmet i Azure, navigere til *Godkendelse* og i *URI-adresser for omdirigering* føje **/Redirect** til *URI-adressen for omdirigering*.
+>[!NOTE]
+>Gå til *Godkendelse* i din egen app, og indsæt omdirigeringsadressen i feltet *Omdirigerings-URI'er*.
+Du kan få mere at vide om omdirigering under [Begrænsninger for omdirigerings-URI'er (URL-adresse til svar)](https://docs.microsoft.com/azure/active-directory/develop/reply-url) (findes muligvis kun på engelsk).
 
 ## <a name="set-up-your-power-bi-environment"></a>Konfigurer dit Power BI-miljø
 

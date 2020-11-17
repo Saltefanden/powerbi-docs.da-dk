@@ -1,19 +1,19 @@
 ---
 title: Eksempler på udtryk i Power BI Report Builder
 description: Udtryk bruges ofte i sideinddelte rapporter i Power BI Report Builder til at styre indhold og rapportens udseende.
-ms.date: 10/21/2019
+ms.date: 11/08/2020
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.assetid: 87ddb651-a1d0-4a42-8ea9-04dea3f6afa4
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 042221e3836aae72568df7eadaacfeeeac90d215
-ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
+ms.openlocfilehash: 762949dcce178628d387cd8f88c60080f74c5bae
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93297775"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94397340"
 ---
 # <a name="expression-examples-in-power-bi-report-builder"></a>Eksempler på udtryk i Power BI Report Builder
 
@@ -67,7 +67,7 @@ Du kan finde flere oplysninger om simple og komplekse udtryk, hvor du kan bruge 
     =Today()  
     ```  
   
--   Brug funktionen **DateInterval** til at udtrække en specifik del af en dato. Her er nogle gyldige parametre af typen **DateInterval** :
+-   Brug funktionen **DateInterval** til at udtrække en specifik del af en dato. Her er nogle gyldige parametre af typen **DateInterval**:
 
     -   DateInterval.Second
     -   DateInterval.Minute
@@ -180,7 +180,7 @@ Du kan finde flere oplysninger om simple og komplekse udtryk, hvor du kan bruge 
   
      Hvis tekstfeltet kun indeholder en dato eller et tal, skal du bruge egenskaben Formatér for tekstfeltet til at anvende formatering i stedet for funktionen **Format** i tekstfeltet.  
   
--   Funktionerne **Right** , **Len** og **InStr** er nyttige til at returnere en understreng, f.eks. trimning af *DOMÆNE*\\*brugernavn* til kun brugernavnet. Følgende udtryk returnerer en del af en streng til højre for en omvendt skråstreg (\\) fra en parameter med navnet *Bruger* :  
+-   Funktionerne **Right**, **Len** og **InStr** er nyttige til at returnere en understreng, f.eks. trimning af *DOMÆNE*\\*brugernavn* til kun brugernavnet. Følgende udtryk returnerer en del af en streng til højre for en omvendt skråstreg (\\) fra en parameter med navnet *Bruger*:  
   
     ```  
     =Right(Parameters!User.Value, Len(Parameters!User.Value) - InStr(Parameters!User.Value, "\"))  
@@ -205,7 +205,7 @@ Du kan finde flere oplysninger om simple og komplekse udtryk, hvor du kan bruge 
   
     ```  
   
--   Funktionerne **Regex** fra .NET Framework `xref:System.Text.RegularExpressions` er nyttige til at ændre formatet af eksisterende strenge, f.eks. formatering af et telefonnummer. I følgende udtryk bruges funktionen **Replace** til at ændre formatet af et ticifret telefonnummer i et felt fra " *nnn*-*nnn*-*nnnn* " til "( *nnn* ) *nnn*-*nnnn* ":  
+-   Funktionerne **Regex** fra .NET Framework `xref:System.Text.RegularExpressions` er nyttige til at ændre formatet af eksisterende strenge, f.eks. formatering af et telefonnummer. I følgende udtryk bruges funktionen **Replace** til at ændre formatet af et ticifret telefonnummer i et felt fra "*nnn*-*nnn*-*nnnn*" til "(*nnn*) *nnn*-*nnnn*":  
   
     ```  
     =System.Text.RegularExpressions.Regex.Replace(Fields!Phone.Value, "(\d{3})[ -.]*(\d{3})[ -.]*(\d{4})", "($1) $2-$3")  
@@ -247,13 +247,13 @@ Du kan finde flere oplysninger om simple og komplekse udtryk, hvor du kan bruge 
   
 ###  <a name="decision-functions"></a><a name="DecisionFunctions"></a> Beslutningsfunktioner  
   
--   Med funktionen **Iif** returneres én af to værdier, afhængigt af om udtrykket er sandt eller ej. I følgende udtryk bruges funktionen **Iif** til at returnere den booleske værdi **Sand** , hvis værdien af `LineTotal` overstiger 100. Ellers returneres **Falsk** :  
+-   Med funktionen **Iif** returneres én af to værdier, afhængigt af om udtrykket er sandt eller ej. I følgende udtryk bruges funktionen **Iif** til at returnere den booleske værdi **Sand**, hvis værdien af `LineTotal` overstiger 100. Ellers returneres **Falsk**:  
   
     ```  
     =IIF(Fields!LineTotal.Value > 100, True, False)  
     ```  
   
--   Brug flere **IIF** -funktioner (også kendt som "indlejrede IIF'er") til at returnere én af tre værdier afhængigt af værdien af `PctComplete`. Følgende udtryk kan placeres i fyldfarven for et tekstfelt for at ændre baggrundsfarven afhængigt af værdien i tekstfeltet.  
+-   Brug flere **IIF**-funktioner (også kendt som "indlejrede IIF'er") til at returnere én af tre værdier afhængigt af værdien af `PctComplete`. Følgende udtryk kan placeres i fyldfarven for et tekstfelt for at ændre baggrundsfarven afhængigt af værdien i tekstfeltet.  
   
     ```  
     =IIF(Fields!PctComplete.Value >= 10, "Green", IIF(Fields!PctComplete.Value >= 1, "Blue", "Red"))  
@@ -275,13 +275,13 @@ Du kan finde flere oplysninger om simple og komplekse udtryk, hvor du kan bruge 
     =IIF(DateDiff("d",Fields!ImportantDate.Value, Now())>7,"Red","Blue")  
     ```  
   
--   Test værdien af feltet `PhoneNumber`, og returner "Ingen værdi", hvis den er **null** ( **Intet** i Visual Basic), og returner ellers værdien for telefonnummeret. Dette udtryk kan bruges til at styre værdien af et tekstfelt i et rapportelement.  
+-   Test værdien af feltet `PhoneNumber`, og returner "Ingen værdi", hvis den er **null** (**Intet** i Visual Basic), og returner ellers værdien for telefonnummeret. Dette udtryk kan bruges til at styre værdien af et tekstfelt i et rapportelement.  
   
     ```  
     =IIF(Fields!PhoneNumber.Value Is Nothing,"No Value",Fields!PhoneNumber.Value)  
     ```  
   
--   Test værdien af feltet `Department`, og returner enten navnet på en underrapport eller **null** ( **Intet** i Visual Basic). Dette udtryk kan bruges til betingede underrapporter for detaljeadgang.  
+-   Test værdien af feltet `Department`, og returner enten navnet på en underrapport eller **null** (**Intet** i Visual Basic). Dette udtryk kan bruges til betingede underrapporter for detaljeadgang.  
   
     ```  
     =IIF(Fields!Department.Value = "Development", "EmployeeReport", Nothing)  
@@ -454,6 +454,9 @@ Du kan finde flere oplysninger om simple og komplekse udtryk, hvor du kan bruge 
     =IIF(Parameters!IncludeURLs.Value,"https://adventure-works.com/productcatalog",Nothing)  
     ```  
   
+> [!NOTE]
+>  Sideinddelte rapporter i Power BI understøtter ikke brug af JavaScript i et **Gå til URL-adresse**-udtryk.  
+  
 ##  <a name="report-data"></a><a name="ReportData"></a> Rapportdata  
  Udtryk kan bruges til at håndtere data, der bruges i rapporten. Du kan referere til parametre og andre rapportoplysninger. Du kan tilmed ændre den forespørgsel, der bruges til at hente dataene til rapporten.  
   
@@ -466,13 +469,13 @@ Du kan finde flere oplysninger om simple og komplekse udtryk, hvor du kan bruge 
     =User!UserID  
     ```  
   
--   Brug den globale samling af **parametre** for at referere til en parameter i en forespørgselsparameter, et filterudtryk, et tekstfelt eller andre områder af rapporten. I dette eksempel antages det, at parameteren hedder *Afdeling* :  
+-   Brug den globale samling af **parametre** for at referere til en parameter i en forespørgselsparameter, et filterudtryk, et tekstfelt eller andre områder af rapporten. I dette eksempel antages det, at parameteren hedder *Afdeling*:  
   
     ```  
     =Parameters!Department.Value  
     ```  
   
--   Parametre kan oprettes i en rapport, men angives til at være skjulte. Når rapporten køres på rapportserveren, vises parameteren ikke på værktøjslinjen, og læseren af rapporten kan ikke ændre standardværdien. Du kan bruge en skjult parameter, der er angivet til en standardværdi, som en brugerdefinerede konstant. Du kan bruge denne værdi i et hvilket som helst udtryk, herunder et feltudtryk. Med følgende udtryk identificeres det felt, der er angivet af standardværdien for parameteren med navnet *ParameterField* :  
+-   Parametre kan oprettes i en rapport, men angives til at være skjulte. Når rapporten køres på rapportserveren, vises parameteren ikke på værktøjslinjen, og læseren af rapporten kan ikke ændre standardværdien. Du kan bruge en skjult parameter, der er angivet til en standardværdi, som en brugerdefinerede konstant. Du kan bruge denne værdi i et hvilket som helst udtryk, herunder et feltudtryk. Med følgende udtryk identificeres det felt, der er angivet af standardværdien for parameteren med navnet *ParameterField*:  
   
     ```  
     =Fields(Parameters!ParameterField.Value).Value  
@@ -485,7 +488,7 @@ Du kan finde flere oplysninger om simple og komplekse udtryk, hvor du kan bruge 
  Du kan initialisere værdien for en gruppevariabel, der er lokal for et bestemt gruppeområde, og derefter inkludere en reference til denne variabel i udtryk. En af de måder, du kan bruge gruppevariabler med brugerdefineret kode på, er ved at implementere en brugerdefineret aggregat. 
   
 ## <a name="suppressing-null-or-zero-values-at-run-time"></a>Udeladelse af null- eller nulværdier på kørselstidspunktet  
- Nogle værdier i et udtryk kan evalueres til null eller ikke-defineret på tidspunktet for behandlingen af rapporten. Dette kan resulterer i kørselsfejl, der medfører, at **#Error** vises i tekstfeltet i stedet for det evaluerede udtryk. Funktionen **IIF** er særligt følsom over for denne funktionsmåde, fordi hver del af **IIF** -sætningen evalueres (herunder funktionskald) i modsætning til en If-Then-Else-sætning, før de sendes til den rutine, som undersøger for **sand** eller **falsk**. Sætningen `=IIF(Fields!Sales.Value is NOTHING, 0, Fields!Sales.Value)` genererer **#Error** i den gengivne rapport, hvis `Fields!Sales.Value` er INTET.  
+ Nogle værdier i et udtryk kan evalueres til null eller ikke-defineret på tidspunktet for behandlingen af rapporten. Dette kan resulterer i kørselsfejl, der medfører, at **#Error** vises i tekstfeltet i stedet for det evaluerede udtryk. Funktionen **IIF** er særligt følsom over for denne funktionsmåde, fordi hver del af **IIF**-sætningen evalueres (herunder funktionskald) i modsætning til en If-Then-Else-sætning, før de sendes til den rutine, som undersøger for **sand** eller **falsk**. Sætningen `=IIF(Fields!Sales.Value is NOTHING, 0, Fields!Sales.Value)` genererer **#Error** i den gengivne rapport, hvis `Fields!Sales.Value` er INTET.  
   
  Brug en af følgende strategier for at undgå denne tilstand:  
   
@@ -495,7 +498,7 @@ Du kan finde flere oplysninger om simple og komplekse udtryk, hvor du kan bruge 
     =IIF(Field!B.Value=0, 0, Field!A.Value / IIF(Field!B.Value =0, 1, Field!B.Value))  
     ```  
   
--   Brug en brugerdefineret kodefunktion til at returnere værdien for udtrykket. Følgende eksempel returnerer den procentvise forskel mellem en aktuel værdi og en tidligere værdi. Dette kan bruges til at beregne forskellen mellem de to på hinanden følgende værdier, og det håndterer kanttilfældet for den første sammenligning (når der ikke er nogen tidligere værdi) og sager, hvor enten den forrige værdi eller den aktuelle værdi er **null** ( **Intet** i Visual Basic).  
+-   Brug en brugerdefineret kodefunktion til at returnere værdien for udtrykket. Følgende eksempel returnerer den procentvise forskel mellem en aktuel værdi og en tidligere værdi. Dette kan bruges til at beregne forskellen mellem de to på hinanden følgende værdier, og det håndterer kanttilfældet for den første sammenligning (når der ikke er nogen tidligere værdi) og sager, hvor enten den forrige værdi eller den aktuelle værdi er **null** (**Intet** i Visual Basic).  
   
     ```  
     Public Function GetDeltaPercentage(ByVal PreviousValue, ByVal CurrentValue) As Object  

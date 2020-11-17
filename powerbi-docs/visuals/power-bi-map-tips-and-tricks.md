@@ -1,21 +1,21 @@
 ---
 title: Tip og gode råd til kort (herunder integration af Bing Maps)
 description: 'Tip og tricks til Power BI-kortvisualiseringer, visuelle elementer, steder, længdegrad og breddegrad og hvordan de fungerer med Bing Maps. '
-author: mihart
-ms.reviewer: rien
+author: msftrien
+ms.reviewer: mihart
 featuredvideoid: ajTPGNpthcg
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
 ms.date: 05/05/2020
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0c28d95c5275f5778b1ae646b8e5fb65489eb072
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: ec2e097dd829760c331ff8f045af00176b0c302b
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860112"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93411860"
 ---
 # <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Tips og tricks til Power BI-kortvisualiseringer
 
@@ -31,7 +31,7 @@ Du eller din administrator skal muligvis opdatere firewallen for at tillade adga
 Hvis du vil øge sandsynligheden for en korrekt geokodning, kan du følge disse tip. De første par tip er praktiske, hvis du har adgang til selve datasættet. De næste tip er ting, du kan gøre i Power BI, hvis du ikke har adgang til datasættet. 
 
 ## <a name="what-is-sent-to-bing-maps"></a>Hvad sendes der til Bing Maps?
-Power BI-tjenesten og Power BI Desktop sender de geodata til Bing, der skal bruges til at oprette kortvisualiseringen. Dette kan omfatte dataene i bucket'erne **Placering**, **Breddegrad**og **Længdegrad** i visual'ets feltoversigt. Det er korttypen, som afgør, hvad der sendes. Hvis du vil vide mere, skal du læse om [beskyttelse af personlige oplysninger i Bing Maps](https://go.microsoft.com/fwlink/?LinkID=248686).
+Power BI-tjenesten og Power BI Desktop sender de geodata til Bing, der skal bruges til at oprette kortvisualiseringen. Dette kan omfatte dataene i bucket'erne **Placering**, **Breddegrad** og **Længdegrad** i visual'ets feltoversigt. Det er korttypen, som afgør, hvad der sendes. Hvis du vil vide mere, skal du læse om [beskyttelse af personlige oplysninger i Bing Maps](https://go.microsoft.com/fwlink/?LinkID=248686).
 
 * Hvis der er angivet længdegrad og breddegrad for et kort (boblekort, punktvisningskort og punktplotkort), sendes der ingen data til Bing. Ellers sendes eventuelle data i bucket'en **Placering** til Bing.     
 
@@ -53,13 +53,13 @@ Hvis du har adgang til det datasæt, der bruges til at oprette kortvisualisering
 I Power BI Desktop kan du sikre, at felterne er korrekt geokodede ved at angive *Datakategori* for datafelterne. Vælg den ønskede kolonne i datavisning. Vælg fanen **Modellering** på båndet, og angiv derefter **Datakategori** til **Adresse**, **By**, **Kontinent**, **Land/område**, **Amt**, **Postnummer**, **Stat** eller **Provins**. Bing bruger disse datakategorier til korrekt kodning af dataene. Du kan finde flere oplysninger under [Kategoriser data i Power BI Desktop](../transform-model/desktop-data-categorization.md). Hvis du bruger en dynamisk forbindelse til SQL Server Analysis Services, skal du angive datakategoriseringen uden for Power BI ved hjælp af [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt).
 
 **2. Brug mere end én kolonne for placeringen.**     
- Nogle gange er det ikke tilstrækkeligt at indstille datakategorier, for at Bing kan skabe de rette resultater. Nogle betegnelser er tvetydige, fordi placeringen findes i flere lande eller områder. For eksempel findes der en by med navnet ***Southampton*** i både England, Pennsylvania og New York.
+ Nogle gange er det ikke tilstrækkeligt at indstille datakategorier, for at Bing kan skabe de rette resultater. Nogle betegnelser er tvetydige, fordi placeringen findes i flere lande eller områder. For eksempel findes der en by med navnet **_Southampton_* _ i både England, Pennsylvania og New York.
 
 Power BI bruger Bings [ustrukturerede URL-skabelontjeneste](/bingmaps/rest-services/locations/find-a-location-by-address) til at hente breddegrad- og længdegradkoordinater baseret på adresseværdierne for lande. Hvis dine data ikke indeholder tilstrækkelige placeringsdata, skal du tilføje disse kolonner og kategorisere dem.
 
  Hvis du for eksempel kun har kolonnen City, kan det være svært for Bing at finde den korrekte geokodning. Tilføj flere geokolonner for at gøre placeringen entydig.  Nogle gange kræver det, at du tilføjer en eller flere placeringskolonner i datasættet – i dette filælde stat/provins. Og glem ikke at kategorisere dataene korrekt (se nr. 1 herover).
 
-Sørg for, at hvert felt kun har en enkelt placeringskategori. Feltet for By skal for eksempel være **Southampton** og ikke **Southampton, New York**.  Felterne for Adresse skal være **1 Microsoft Way** og ikke **1 Microsoft Way, Redmond, WA**.
+Sørg for, at hvert felt kun har en enkelt placeringskategori. Feltet for By skal for eksempel være _*Southampton** og ikke **Southampton, New York**.  Felterne for Adresse skal være **1 Microsoft Way** og ikke **1 Microsoft Way, Redmond, WA**.
 
 **3. Brug en specifik breddegrad og længdegrad**
 

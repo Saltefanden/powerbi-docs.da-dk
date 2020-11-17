@@ -1,19 +1,19 @@
 ---
 title: Brug visualiseringen til Spørgsmål og svar i Power BI
 description: Sådan konfigurerer du visualiseringen til Spørgsmål og svar i Power BI
-author: rien
+author: msftrien
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
 ms.date: 11/19/2019
 ms.author: mohaali
-ms.openlocfilehash: 22ce23b408f87c8c792f75a543fd0c29a9d13281
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 96773bc256ba8563147c7dc7c19e2558125b48fc
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85232290"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93412343"
 ---
 # <a name="introduction-to-power-bi-qa-visualizations"></a>Introduktion til visualiseringer til Spørgsmål og svar i Power BI
 
@@ -133,7 +133,7 @@ Vælg ikonet ![tandhjulsikonet](media/power-bi-visualization-q-and-a/power-bi-co
 
 Denne visualisering er ikke længere en visualisering til Spørgsmål og svar, men et standardsøjlediagram. Den kan fastgøres til et dashboard. I rapporten fungerer denne visualisering ligesom andre standardvisualiseringer. Bemærk, at der vises et ikon for et søjlediagram i ruden Visualiseringer i stedet for et ikon for visualiseringen til Spørgsmål og svar.
 
-Hvis du bruger ***Power BI-tjenesten***, kan du nu fastgøre visualiseringen til et dashboard ved at vælge fastgøringsikonet. 
+Hvis du bruger **_Power BI-tjenesten_* _, kan du nu fastgøre visualiseringen til et dashboard ved at vælge tegnestiftikonet. 
 
 
 ![Power BI-tjenesten med fastgøringsikonet fremhævet](media/power-bi-visualization-q-and-a/power-bi-pin.png)
@@ -155,5 +155,5 @@ Visualiseringen til Spørgsmål og svar kan integreres med Office og Bing for at
 
 Du kan integrere et naturligt sprog på flere forskellige måder. Du kan få flere oplysninger i følgende artikler:
 
-* [Værktøjer til Spørgsmål og svar](../natural-language/q-and-a-tooling-intro.md)
+_ [Værktøjer til Spørgsmål og svar](../natural-language/q-and-a-tooling-intro.md)
 * [Bedste praksis for Spørgsmål og svar](../natural-language/q-and-a-best-practices.md)

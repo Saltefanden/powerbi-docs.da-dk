@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/28/2020
 ms.custom: licensing support
 LocalizationGroup: Premium
-ms.openlocfilehash: 6ff1f445172c553116148ffb212129b96f34b1da
-ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
+ms.openlocfilehash: cb8ac0ad558f15219829e9f32111cacf9f27eb25
+ms.sourcegitcommit: 132b3f6ba6d2b1948ddc15969d64cf629f7fb280
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92916009"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94483736"
 ---
 # <a name="what-is-power-bi-premium"></a>Hvad er Power BI Premium?
 
@@ -38,11 +38,11 @@ I denne artikel introduceres vigtige funktioner i Power BI Premium. Hvor det er 
 
 Power BI Premium er et Microsoft 365-abonnement på lejerniveau, der er tilgængeligt i to SKU-serier (lagerenheder):
 
-- **P** -SKU'er (P1-P5) til integrering og virksomhedsfunktioner kræver en månedlig eller årlig forpligtelse, faktureres månedsvis og indeholder en licens til at installere Power BI-rapportserveren i det lokale miljø.
+- **P**-SKU'er (P1-P5) til integrering og virksomhedsfunktioner kræver en månedlig eller årlig forpligtelse, faktureres månedsvis og indeholder en licens til at installere Power BI-rapportserveren i det lokale miljø.
 
-- **EM** -SKU'er (EM1-EM3) til integrering i _organisationer_ kræver en årlig forpligtelse og faktureres månedsvis. EM1- og EM2-SKU'er er kun tilgængelige via volumenlicensplaner. Du kan ikke købe dem direkte.
+- **EM**-SKU'er (EM1-EM3) til integrering i _organisationer_ kræver en årlig forpligtelse og faktureres månedsvis. EM1- og EM2-SKU'er er kun tilgængelige via volumenlicensplaner. Du kan ikke købe dem direkte.
 
-Der er en alternativ metode til at købe et **Power BI Embedded** -abonnement i Azure. Der er et enkelt **A** -SKU (A1-A6) SKU-serie, der ikke kræver nogen forpligtelse, og som faktureres på timebasis for brug af rebrandet Power BI i programmer, på portaler og på websteder eller som en måde at teste P- eller EM-kapaciteter på. Alle SKU'er leverer v-kerner for at oprette kapaciteter, men EM-SKU'erne er begrænset til integrering i mindre størrelsesorden. EM1-, EM2-, A1- og A2-SKU'er med mindre end fire v-kerner kører ikke på dedikeret infrastruktur.
+Der er en alternativ metode til at købe et **Power BI Embedded**-abonnement i Azure. Der er et enkelt **A**-SKU (A1-A6) SKU-serie, der ikke kræver nogen forpligtelse, og som faktureres på timebasis for brug af rebrandet Power BI i programmer, på portaler og på websteder eller som en måde at teste P- eller EM-kapaciteter på. Alle SKU'er leverer v-kerner for at oprette kapaciteter, men EM-SKU'erne er begrænset til integrering i mindre størrelsesorden. EM1-, EM2-, A1- og A2-SKU'er med mindre end fire v-kerner kører ikke på dedikeret infrastruktur.
 
 Selvom denne artikel fokuserer på P-SKU'er, er meget af det, der beskrives, også relevant for A-SKU'er. I modsætning til SKU'erne for Premium-abonnementet kræver Azure-SKU'er ingen tidsmæssig binding og faktureres på timebasis. De leverer fuld elasticitet, hvilket gør det muligt at skalere op og ned, afbryde midlertidigt, genoptage og slette. 
 
@@ -65,7 +65,7 @@ Der er placeret arbejdsområder i kapaciteter. Hver bruger af Power BI har et pe
 
 ### <a name="capacity-nodes"></a>Kapacitetsnoder
 
-Som beskrevet i afsnittet [Abonnementer og licenser](#subscriptions-and-licensing) er der to Power BI Premium SKU-serier: **EM** og **P**. Alle Power BI Premium-SKU'er er tilgængelige som *kapacitetsnoder* , som hver især repræsenterer en bestemt mængde ressourcer, der består af processor, hukommelse og lager. Ud over ressourcer har hver SKU en driftsmæssig begrænsning for antallet af DirectQuery-forbindelser og direkte forbindelser pr. sekund samt antallet af parallelle modelopdateringer.
+Som beskrevet i afsnittet [Abonnementer og licenser](#subscriptions-and-licensing) er der to Power BI Premium SKU-serier: **EM** og **P**. Alle Power BI Premium-SKU'er er tilgængelige som *kapacitetsnoder*, som hver især repræsenterer en bestemt mængde ressourcer, der består af processor, hukommelse og lager. Ud over ressourcer har hver SKU en driftsmæssig begrænsning for antallet af DirectQuery-forbindelser og direkte forbindelser pr. sekund samt antallet af parallelle modelopdateringer.
 
 Behandling opnås ved et angivet antal v-kerner, der er ligeligt fordelt mellem backend og frontend.
 
@@ -96,7 +96,7 @@ Ressourcerne og grænserne for hver Premium-SKU (og A-SKU'er i en tilsvarende st
 
 ### <a name="capacity-workloads"></a>Kapacitetsarbejdsbelastninger
 
-Kapacitetarbejdsbelastninger er tjenester, som gøres tilgængelige for brugere. Som standard understøtter Premium- og Azure-kapaciteter kun den datasætarbejdsbelastning, der er knyttet til kørende Power BI-forespørgsler. Arbejdsbelastningen for datasæt kan ikke deaktiveres. Yderligere arbejdsbelastninger kan aktiveres for [AI (Cognitive Services)](https://powerbi.microsoft.com/blog/easy-access-to-ai-in-power-bi-preview/), [Dataflows](../transform-model/service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium) og [Sideinddelte rapporter](../paginated-reports/paginated-reports-save-to-power-bi-service.md). Disse arbejdsbelastninger understøttes kun i Premium-abonnementer. 
+Kapacitetarbejdsbelastninger er tjenester, som gøres tilgængelige for brugere. Som standard understøtter Premium- og Azure-kapaciteter kun den datasætarbejdsbelastning, der er knyttet til kørende Power BI-forespørgsler. Arbejdsbelastningen for datasæt kan ikke deaktiveres. Yderligere arbejdsbelastninger kan aktiveres for [AI (Cognitive Services)](https://powerbi.microsoft.com/blog/easy-access-to-ai-in-power-bi-preview/), [Dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md) og [Sideinddelte rapporter](../paginated-reports/paginated-reports-save-to-power-bi-service.md). Disse arbejdsbelastninger understøttes kun i Premium-abonnementer. 
 
 Hver ekstra arbejdsbelastning gør det muligt at konfigurere den maksimale hukommelse (som en procentdel af den samlede tilgængelige hukommelse), der kan bruges af arbejdsbelastningen. Standardværdier for maksimumhukommelse bestemmes af SKU. Du kan maksimere din kapacitets tilgængelige ressourcer ved at aktivere disse yderligere arbejdsbelastninger, når de bruges. Og du kan kun ændre hukommelsesindstillinger, når du har bestemt, at standardindstillingerne ikke opfylder dine krav til kapacitetsressourcer. Arbejdsbelastninger kan aktiveres og konfigureres for en kapacitet af kapacitetsadministratorer ved hjælp af **Kapacitetsindstillinger** på [administrationsportalen](service-admin-portal.md) eller ved hjælp af [REST-API'er for kapaciteter](/rest/api/power-bi/capacities).  
 
@@ -235,7 +235,7 @@ Premium muliggør omfattende distribution af indhold for Pro-brugere uden at kr�
 
 Du kan få mere at vide under [Power BI-licenser](service-admin-licensing-organization.md).
 
-## <a name="analysis-services-in-power-bi-premium-preview"></a>Analysis Services i Power BI Premium (prøveversion)
+## <a name="analysis-services-in-power-bi-premium"></a>Analysis Services i Power BI Premium
 
 Under overfladen styres Power BI Premium-arbejdsområder og -datasæt af det gennemtestede Microsoft-program **Analysis Services Vertipaq**. Analysis Services understøtter programmerings- og klientprogrammer og -værktøjer via klientbiblioteker og API'er, der understøtter XMLA-protokollen med åbne standarder. Arbejdsbelastninger for datasæt i en Power BI Premium-kapacitet understøtter som standard *skrivebeskyttede* forbindelser fra klientprogrammer og værktøjer fra Microsoft og tredjeparter via **XMLA-slutpunkter**. Kapacitetsadministratorer kan også vælge at deaktivere eller tillade *læse-/skrive* handlinger via slutpunktet.
 

@@ -8,20 +8,41 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 04/15/2020
-ms.openlocfilehash: 65e00fa5311ea12c9fe0011c6aa7c3e779f33dc5
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 515813aeb98010f838cfff75febbb1ef206bc2cf
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83131131"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94397478"
 ---
 # <a name="submission-testing-of-a-power-bi-visual"></a>Indsendelsestest af en Power BI-visualisering
 
-Før du publicerer din visualisering i [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals), skal den bestå disse testsager. Test din visualisering, før du sender den. Hvis din visualisering ikke opfylder de påkrævede testsager, afvises den.
+Før du publicerer din visualisering i [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals), skal den bestå de tests, der er angivet i denne artikel. Test din visualisering, før du sender den. Hvis din visualisering ikke består de påkrævede testsager, afvises den.
 
 Du kan finde flere oplysninger om udgivelsesprocessen under [Publicer Power BI-visualiseringer til Partnercenter](./office-store.md).
 
+## <a name="testing-a-new-version-of-a-published-visual"></a>Test af en ny version af en publiceret visualisering
+
+Hvis du tester eller foretager fejlfinding af en ny version af en visualisering, der allerede er udgivet, kan du tilsidesætte AppSource-versionen med en lokal filversion ved at aktivere udviklertilstand i Power BI Desktop.
+
+Hvis du vil aktivere udviklertilstand, skal du følge disse trin:
+
+1. Åbn Power BI Desktop.
+
+2.  Vælg **Fil** > **Indstillinger**.
+
+3.  Vælg **indstillinger**.
+
+4. Vælg **Rapportindstillinger** på listen AKTUEL FIL i vinduet Indstillinger.
+
+5. Vælg indstillingen **Aktivér udviklertilstand for denne session** i udviklertilstand.
+
+>[!NOTE]
+>Udviklertilstand er kun gyldig for én session i Power BI Desktop. Hvis du åbner en ny Power BI Desktop-forekomst til test, skal du aktivere udviklertilstand igen.
+
 ## <a name="general-test-cases"></a>Generelle testsager
+
+Kontrollér, at visualiseringen består de generelle testcases.
 
 | Testsag | Forventet resultat
 | --------- | ----------------
@@ -50,7 +71,7 @@ Du kan finde flere oplysninger om udgivelsesprocessen under [Publicer Power BI-v
 | Åbn ruden **Egenskab**. Slå egenskaber til og fra, angiv brugerdefineret tekst, fremhæv de tilgængelige indstillinger, og indtast forkerte data. | Visualiseringen reagerer korrekt. |
 | Gem rapporten, og åbn den igen. | Alle indstillinger for egenskaber bevares. |
 | Skift sider i rapporten, og skift tilbage igen. | Alle indstillinger for egenskaber bevares. |
-| Test al funktionalitet for visualiseringen, herunder forskellige muligheder, som visualiseringen indeholder. | Alle visninger og funktioner fungerer korrekt. |
+| Test al funktionalitet for visualiseringen, herunder forskellige muligheder, som visualiseringen indeholder. | Alle vises, og funktionerne fungerer korrekt. |
 | Test alle numeriske datatyper, datoer og tegn som i følgende test. | Alle data er formateret korrekt. |
 | Gennemse formateringen af værdier for værktøjstip, aksemærkater, datanavne og andre visuelle elementer med formatering. | Alle elementer er formateret korrekt. |
 | Kontrollér, at datanavne bruger formatstrengen. | Alle datanavne er formateret korrekt. |
