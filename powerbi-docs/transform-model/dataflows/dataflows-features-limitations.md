@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 10/01/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 89de77e65d8eb675d9e80c3b2497f39af7c32d33
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: 2d58fe71b7ceb27afe5d52a55ed57ae162622b06
+ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94396581"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94668160"
 ---
 # <a name="dataflows-limitations-and-considerations"></a>Begrænsninger og overvejelser i forbindelse med dataflow
 
@@ -43,7 +43,7 @@ Du kan finde flere oplysninger om understøttede dataflow-REST API'er i [Referen
 
 * Import af dataflows, der indeholder sammenkædede enheder, retter ikke de eksisterende referencer i dataflowet (disse forespørgsler skal rettes manuelt før import af dataflowet)
 
-* Dataflow kan overskrives med parameteren *CreateOrOverwrite* , hvis de oprindelig er oprettet ved hjælp af import-API'EN
+* Dataflow kan overskrives med parameteren *CreateOrOverwrite*, hvis de oprindelig er oprettet ved hjælp af import-API'EN
 
 ## <a name="dataflows-in-shared"></a>Dataflow i delte
 
@@ -75,7 +75,7 @@ Der er følgende begrænsninger og overvejelser i forbindelse med dataflow, der 
 
 * Et linket objekt kan ikke joinforbindes med et almindeligt objekt, der får sine data fra en datakilde i det lokale miljø
 
-* Når en forespørgsel (f.eks. forespørgsel *A* ) bruges i beregningen af en anden forespørgsel (forespørgsel *B* ) i dataflows, bliver forespørgsel *B* en beregnet enhed. Beregnede enheder kan ikke referere til kilder i det lokale miljø.
+* Når en forespørgsel (f.eks. forespørgsel *A*) bruges i beregningen af en anden forespørgsel (forespørgsel *B*) i dataflows, bliver forespørgsel *B* en beregnet enhed. Beregnede enheder kan ikke referere til kilder i det lokale miljø.
 
 
 **Beregningsprogram:**
@@ -111,3 +111,4 @@ Du kan finde flere oplysninger om dataflow og Power BI i følgende artikler:
 * [Konfiguration af dataflowlager til brug af Azure Data Lake Gen 2](dataflows-azure-data-lake-storage-integration.md)
 * [Premium-funktioner for dataflow](dataflows-premium-features.md)
 * [AI med dataflow](dataflows-machine-learning-integration.md)
+* [Bedste praksis i forbindelse med dataflow](dataflows-best-practices.md)
