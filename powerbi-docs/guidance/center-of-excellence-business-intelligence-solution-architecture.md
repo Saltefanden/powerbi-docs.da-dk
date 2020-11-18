@@ -6,14 +6,14 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/19/2020
+ms.date: 11/11/2020
 ms.author: v-pemyer
-ms.openlocfilehash: fe55c789f5af644a802bc5c5f648315744a074be
-ms.sourcegitcommit: f73ea4b9116ad186817ec5cc5d5f487d49cc0cb0
+ms.openlocfilehash: d84f6a4fcf7ff531b76b6e731f165aa6e0df764f
+ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88638639"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94512119"
 ---
 # <a name="bi-solution-architecture-in-the-center-of-excellence"></a>BI-løsningsarkitektur i COE'et
 
@@ -64,7 +64,7 @@ I en BI-cloudplatform kan virksomhedsmodeller udrulles i en [Synapse SQL-gruppe 
 
 Forretningsegenskaber aktiveres ikke kun af data, men af semantiske BI-modeller, der beskriver begreber, relationer, regler og standarder. På denne måde repræsenterer de intuitive og letforståelige strukturer, der definerer datarelationer og indkapsler forretningsregler som beregninger. De kan også gennemtvinge detaljerede datatilladelser og dermed sikre, at de rette personer har adgang til de rette data. Modellerne booster også ydeevnen for forespørgsler, hvilket giver dig meget dynamiske interaktive analyser – også når der er tale om over en terabyte data. På samme måde som virksomhedsmodeller benytter semantiske BI-modeller navngivningskonventioner, hvilke sikrer konsistens.
 
-I en BI-cloudplatform kan BI-udviklere udrulle semantiske BI-modeller til [Azure Analysis Services](/azure/analysis-services/) eller [Power BI Premium-kapaciteter](../admin/service-premium-what-is.md#dedicated-capacities). Vi anbefaler, at du udruller til Power BI, når den bruges som dit rapporterings- og analyselag. Disse produkter understøtter forskellige lagringstilstande, der gør det muligt for datamodeltabeller at cachelagre deres data eller at bruge [DirectQuery](directquery-model-guidance.md), som er en teknologi, der sender forespørgsler til den underliggende datakilde. DirectQuery er en ideel lagringstilstand, når modeltabeller repræsenterer store datamængder, eller der er behov for at levere resultater i næsten realtid. De to lagringstilstande kan kombineres: [Sammensatte modeller](composite-model-guidance.md) kombinerer tabeller, der bruger forskellige lagringstilstande i en enkelt model.
+I en BI-cloudplatform kan BI-udviklere udrulle semantiske BI-modeller til [Azure Analysis Services](/azure/analysis-services/) eller [Power BI Premium-kapaciteter](../admin/service-premium-what-is.md#reserved-capacities). Vi anbefaler, at du udruller til Power BI, når den bruges som dit rapporterings- og analyselag. Disse produkter understøtter forskellige lagringstilstande, der gør det muligt for datamodeltabeller at cachelagre deres data eller at bruge [DirectQuery](directquery-model-guidance.md), som er en teknologi, der sender forespørgsler til den underliggende datakilde. DirectQuery er en ideel lagringstilstand, når modeltabeller repræsenterer store datamængder, eller der er behov for at levere resultater i næsten realtid. De to lagringstilstande kan kombineres: [Sammensatte modeller](composite-model-guidance.md) kombinerer tabeller, der bruger forskellige lagringstilstande i en enkelt model.
 
 I forbindelse med modeller, der hyppigt forespørges, kan [Azure Load Balancer](/azure/load-balancer/load-balancer-overview) bruges til at fordele indlæsningen af forespørgsler ligeligt på tværs af modelreplikaer. Du kan også skalere dine programmer og oprette semantiske BI-modeller med høj tilgængelighed.
 

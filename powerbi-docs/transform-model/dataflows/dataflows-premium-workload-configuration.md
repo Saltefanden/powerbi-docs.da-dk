@@ -6,18 +6,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 10/22/2020
+ms.date: 11/13/2020
 ms.author: davidi
 ms.custom: references_regions
 LocalizationGroup: Data from files
-ms.openlocfilehash: f2efd4410af62425f599b1addd0f792f495120e0
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: e5d2e1f65ef326ac12f15ff14c8d07c22c2950fe
+ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94397248"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94667976"
 ---
-# <a name="configure-power-bi-premium-dataflow-workloads"></a>Konfigurer dataflowarbejdsbelastninger i Power BI Premium
+# <a name="configure-power-bi-premium-dataflow-workloads"></a>Konfigurer arbejdsbelastninger i Power BI Premium-dataflow
 
 Du kan oprette dataflowarbejdsbelastninger i dit Power BI Premium-abonnement. I Power BI bruges begrebet *arbejdsbelastninger* til at beskrive Premium-indhold. Arbejdsbelastninger omfatter datasæt, sideinddelte rapporter, dataflow og kunstig intelligens. *Dataflowarbejdsbelastningen* giver dig mulighed for at bruge selvbetjeningsfunktionen til dataforberedelse i dataflow til at indtage, transformere, integrere og forbedre data. Dataflow i Power BI Premium administreres via **Administrationsportalen**.
 
@@ -27,7 +27,7 @@ Følgende afsnit indeholder en beskrivelse af, hvordan du aktiverer dataflow i d
 
 ## <a name="enabling-dataflows-in-power-bi-premium"></a>Aktivering af dataflow i Power BI Premium
 
-Det første krav i forbindelse med brug af dataflow i dit Power BI Premium-abonnement er at muliggøre oprettelse og brug af dataflow i din organisation. På **Administrationsportalen** skal du vælge **Lejerindstillinger** og skubbe skyderen under **Indstillinger for dataflow** til **Aktiveret** , som vist på følgende billede.
+Det første krav i forbindelse med brug af dataflow i dit Power BI Premium-abonnement er at muliggøre oprettelse og brug af dataflow i din organisation. På **Administrationsportalen** skal du vælge **Lejerindstillinger** og skubbe skyderen under **Indstillinger for dataflow** til **Aktiveret**, som vist på følgende billede.
 
 ![Administrationsportal til dataflow i Power BI Premium](media/dataflows-premium-workload-configuration/dataflows-premium-workloads-01.png)
 
@@ -41,7 +41,7 @@ Når du har aktiveret dataflow, kan du bruge **Administrationsportalen** til at 
 
     ![Vælg en kapacitet for at administrere indstillingerne](media/dataflows-premium-workload-configuration/dataflows-premium-workloads-02.png)
 
-2. Din Power BI Premium-kapacitet afspejler de ressourcer, der er tilgængelige til dine dataflow. Du kan ændre størrelsen af din kapacitet ved at vælge knappen **Skift størrelse** , som vist på følgende billede.
+2. Din Power BI Premium-kapacitet afspejler de ressourcer, der er tilgængelige til dine dataflow. Du kan ændre størrelsen af din kapacitet ved at vælge knappen **Skift størrelse**, som vist på følgende billede.
 
     ![Skift størrelsen af en kapacitet](media/dataflows-premium-workload-configuration/dataflows-premium-workloads-03.png)
 
@@ -69,7 +69,7 @@ I de efterfølgende afsnit gennemgås hver indstilling i detaljer, samt hvordan 
 
 ### <a name="understanding-dataflow-workload-options"></a>Forståelse af indstillinger for dataflowarbejdsbelastning
 
-En nem måde at tænke på indstillinger for dataflowarbejdsbelastningen på er at bruge en analogi. Du kan tænkte på *kapacitetsstørrelsen* eller den type Power BI Premium-instans, du har, som din *restaurant*. I din restaurant har du *arbejdsbelastningshukommelse* , som er dit *køkken*. *Beregningsprogrammet* er din *ovn*. Og endelig repræsenterer *objektbeholderen* kvaliteten af din *kok*. For at evaluere dine dataflowarbejdsbelastninger skal du forestille dig, at du er ved at tilberede et måltid til et meget stort eller meget betydningsfuldt middagsselskab. Der kommer meget vigtige gæster, og middagen skal være klar til at blive serveret, når de ankommer.
+En nem måde at tænke på indstillinger for dataflowarbejdsbelastningen på er at bruge en analogi. Du kan tænkte på *kapacitetsstørrelsen* eller den type Power BI Premium-instans, du har, som din *restaurant*. I din restaurant har du *arbejdsbelastningshukommelse*, som er dit *køkken*. *Beregningsprogrammet* er din *ovn*. Og endelig repræsenterer *objektbeholderen* kvaliteten af din *kok*. For at evaluere dine dataflowarbejdsbelastninger skal du forestille dig, at du er ved at tilberede et måltid til et meget stort eller meget betydningsfuldt middagsselskab. Der kommer meget vigtige gæster, og middagen skal være klar til at blive serveret, når de ankommer.
 
 Denne restaurantanalogi bruges til at give en forklaring af og vejledning til hver enkelt indstilling. Vi starter på det øverste niveau – din Premium-kapacitet – da det er det første valg, du foretager, når du bruger Power BI Premium.
 
@@ -85,7 +85,7 @@ Indstillingen **Maks. hukommelse %** er den procentdel af hukommelse til dataflo
 
 #### <a name="container-size---refresh-or-out-of-memory-issues"></a>Størrelse af objektbeholder – problemer med opdatering eller manglende hukommelse
 
-Lad os kigge på indstillingen **Størrelse af objektbeholder (Mb)** . Internt bruger dataflow en proces kaldet *miks objektbeholdere* til at evaluere dine ETL-processer. Programmet opdeler din forespørgselslogik i disse objektbeholdere, og de kan behandles parallelt. Antallet af objektbeholdere sikrer sideløbende behandling på en effektiv måde og øger ydeevnen. Disse objektbeholdere er først begrænset af **Kapaciteten** , dernæst af indstillingen **Maks. hukommelse %** og til sidst mængden af hukommelse, du allokerer specifikt til dem i indstillingen for objektbeholdere, der som standard er 700 Mb. Så det er muligt at øge mængden af hardwarehukommelse og øge størrelsen af objektbeholderen, men det vil reducere de parallelle handlinger, samtidig med at der dedikeres mere hukommelse til en bestemt ETL-proces i dine objektbeholdere. Antallet af objektbeholdere er begrænset til tre gange antallet af back-end-kerner, hvilket er vigtigt, da du ikke kan gøre objektbeholderen meget lille, og der er mange parallelle objektbeholdere udover dette punkt. Den mindste størrelse, du kan angive for en objektbeholder, er 200 Mb. Størrelsen af objektbeholderen er også begrænset til et forespørgselsniveau, hvilket betyder, at hver forespørgsel udføres i sin egen objektbeholder, når forespørgsler refererer til andre forespørgsler. I dette tilfælde opdateres de som en del af den samme objektbeholder.
+Lad os kigge på indstillingen **Størrelse af objektbeholder (Mb)** . Internt bruger dataflow en proces kaldet *miks objektbeholdere* til at evaluere dine ETL-processer. Programmet opdeler din forespørgselslogik i disse objektbeholdere, og de kan behandles parallelt. Antallet af objektbeholdere sikrer sideløbende behandling på en effektiv måde og øger ydeevnen. Disse objektbeholdere er først begrænset af **Kapaciteten**, dernæst af indstillingen **Maks. hukommelse %** og til sidst mængden af hukommelse, du allokerer specifikt til dem i indstillingen for objektbeholdere, der som standard er 700 Mb. Så det er muligt at øge mængden af hardwarehukommelse og øge størrelsen af objektbeholderen, men det vil reducere de parallelle handlinger, samtidig med at der dedikeres mere hukommelse til en bestemt ETL-proces i dine objektbeholdere. Antallet af objektbeholdere er begrænset til tre gange antallet af back-end-kerner, hvilket er vigtigt, da du ikke kan gøre objektbeholderen meget lille, og der er mange parallelle objektbeholdere udover dette punkt. Den mindste størrelse, du kan angive for en objektbeholder, er 200 Mb. Størrelsen af objektbeholderen er også begrænset til et forespørgselsniveau, hvilket betyder, at hver forespørgsel udføres i sin egen objektbeholder, når forespørgsler refererer til andre forespørgsler. I dette tilfælde opdateres de som en del af den samme objektbeholder.
 
 Hvis vi vender tilbage til vores analogi, så giver færre, men mere fokuserede kokke i køkkenet, dig mulighed for at tilberede et måltid meget hurtigere, afhængigt af hvilken type bestillinger der afgives og kompleksiteten af måltidet. Byttehandlen her går ud på at have færre kokke, men mere fokuseret tid til tilberedningen. På samme måde kan forøgelse af objektbeholderens størrelse til 1200-1500 MB betyde, at der forekommer en stigning i ydeevnen for et mindre antal mere komplicerede ETL-jobs – aktiviteter såsom sammenlægninger, joinforbindelser, pivotforbindelser, rækker- eller kolonnemanipulationer – da vi leverer mere hukommelse til hver objektbeholder, men når vi gør det, så reduceres antallet af objektbeholdere. Ligesom analogien antyder, så kan for mange bestillinger faktisk forsinke køkkenet, hvilket er sådan, du kan tænke på størrelsen af objektbeholderen. Brug dette, når du skal fuldføre komplicerede enhedshandlinger, og du er villig til at bytte parallellitet med ydeevne, da forøgelse af denne ressource deler den allokerede hukommelse mellem færre objektbeholdere.
 
@@ -120,7 +120,7 @@ Langsomme opdateringstider er normalt et problem med parallelitet. Du bør genne
 
 ### <a name="out-of-memory-exceptions"></a>Undtagelser for manglende hukommelse
 
-Når du oplever **undtagelser for manglende hukommelse** , skal du øge ydeevnen af objektbeholderen og hukommelsen. Udfør følgende trin.
+Når du oplever **undtagelser for manglende hukommelse**, skal du øge ydeevnen af objektbeholderen og hukommelsen. Udfør følgende trin.
 
 1. Øg objektbeholderens hukommelse. Dette svarer til at have én stjernekok i forhold til mange kokke, som beskrevet i forrige afsnit.
 
