@@ -99,6 +99,8 @@
           items:
             - name: Opret og brug dataflow
               href: ./dataflows/dataflows-create.md
+            - name: Bedste praksis i forbindelse med dataflow
+              href: ./dataflows/dataflows-best-practices.md
             - name: Brug DirectQuery med dataflow i Power BI (prøveversion)
               href: ./dataflows/dataflows-configure-consume.md
             - name: Brug det forbedrede beregningsprogram med dataflows
