@@ -8,14 +8,14 @@ ms.subservice: ''
 ms.devlang: csharp, javascript
 ms.topic: how-to
 ms.reviewer: zakharb
-ms.custom: subject-armqs
+ms.custom: subject-armqs, devx-track-azurecli
 ms.date: 08/02/2020
-ms.openlocfilehash: 0f7a6c72a393aa398996f7b4e818d6288b746583
-ms.sourcegitcommit: 383d87841d2509131fac7cc02c5c37c6a868144f
+ms.openlocfilehash: 42dfe1a2032c7afe9eff354829fcc564e69e0d36
+ms.sourcegitcommit: 5240990f998851c4854eb565de681099264c5a61
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92025950"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94718931"
 ---
 # <a name="create-power-bi-embedded-capacity-in-the-azure-portal"></a>Opret Power BI Embedded-kapacitet på Azure-portalen
 
@@ -27,9 +27,9 @@ For at følge denne hurtige start skal du have følgende:
 
 * **Azure-abonnement:** Gå til [den gratis prøveversion af Azure](https://azure.microsoft.com/free/) for at oprette en konto.
 
-* **Azure Active Directory:** Abonnementet skal være tilknyttet en AAD-lejer (Microsoft Azure Active Directory). Du skal desuden ***være logget på Azure med en konto i den lejer***. Microsoft-konti understøttes ikke. Du kan finde flere oplysninger under [Godkendelse og brugertilladelser](/azure/analysis-services/analysis-services-manage-users).
+* **Azure Active Directory:** Abonnementet skal være tilknyttet en AAD-lejer (Microsoft Azure Active Directory). * *_Du skal også være logget på Azure med en konto i den pågældende lejer_* _. Microsoft-konti understøttes ikke. Du kan finde flere oplysninger under [Godkendelse og brugertilladelser](/azure/analysis-services/analysis-services-manage-users).
 
-* **Power BI-lejer:** Mindst én konto i din AAD-lejer skal være tilmeldt Power BI.
+_ **Power BI-lejer:** Mindst én konto i din AAD-lejer skal være tilmeldt Power BI.
 
 * **Ressourcegruppe:** Brug en eksisterende ressourcegruppe, eller [opret en ny](/azure/azure-resource-manager/resource-group-overview).
 

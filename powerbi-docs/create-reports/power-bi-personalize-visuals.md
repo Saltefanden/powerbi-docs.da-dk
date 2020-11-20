@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 09/25/2020
+ms.date: 11/13/2020
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 4eae96dbdddae82a7f74f27c835874a19b04a69f
-ms.sourcegitcommit: eab5a02520c421a57019595c03e9ecfdb41d52ad
+ms.openlocfilehash: 624da63259dcb09d0ebbb35079ef0d8e1340b04c
+ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92256806"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94668505"
 ---
 # <a name="let-users-personalize-visuals-in-a-report"></a>Lad brugerne tilpasse visualiseringer i en rapport
 
@@ -96,23 +96,23 @@ Når du har angivet perspektivet for rapportsiden, filtreres oplevelsen Tilpas v
 
 ## <a name="enable-personalization-in-a-report"></a>Aktivér tilpasning i en rapport
 
-Du kan aktivere denne funktion enten i Power BI Desktop eller Power BI-tjenesten.
+Du kan aktivere denne funktion enten i Power BI Desktop eller Power BI-tjenesten. Du kan også aktivere den i integrerede rapporter.
 
 ### <a name="in-power-bi-desktop"></a>I Power BI Desktop
 
 Du aktiverer funktionen i Power BI Desktop ved at gå til **Filer** > **Indstillinger** > **Indstillinger** > **Aktuel fil** > **Rapportindstillinger**. Sørg for, at **Tilpas visualiseringer** er slået til.
 
-:::image type="content" source="media/power-bi-personalize-visuals/personalize-report-setting-desktop.png" alt-text="Tilpas en visualisering":::
+:::image type="content" source="media/power-bi-personalize-visuals/personalize-report-setting-desktop.png" alt-text="Aktivér tilpasning i en rapport":::
 
 ### <a name="in-the-power-bi-service"></a>I Power BI-tjenesten
 
 Du aktiverer funktionen i Power BI-tjenesten ved at gå til **Indstillinger** for din rapport.
 
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-report-service-settings-personalize-visual.png" alt-text="Tilpas en visualisering":::
+:::image type="content" source="media/power-bi-personalize-visuals/power-bi-report-service-settings-personalize-visual.png" alt-text="Rapportindstillinger i Power BI-tjenesten":::
 
 Aktivér **Tilpas visualiseringer** > **Gem**.
 
-:::image type="content" source="media/power-bi-personalize-visuals/personalize-report-setting-service.png" alt-text="Tilpas en visualisering":::
+:::image type="content" source="media/power-bi-personalize-visuals/personalize-report-setting-service.png" alt-text="Slå Tilpas visualiseringer i tjenesten til":::
 
 ## <a name="turn-the-feature-on-or-off-at-a-page-or-visual-level"></a>Slå funktionen til eller fra på et side- eller visualiseringsniveau
 
@@ -122,7 +122,7 @@ Når du aktiverer Tilpas visualiseringer for en given rapport, kan alle visualis
 
 Vælg fanen Side > vælg **Formatér** i ruden **Visualiseringer**.
 
-:::image type="content" source="media/power-bi-personalize-visuals/personalize-page-level-setting.png" alt-text="Tilpas en visualisering":::
+:::image type="content" source="media/power-bi-personalize-visuals/personalize-page-level-setting.png" alt-text="Vælg Tilpas visualisering for en side.":::
  
 Slå skyderen for **Tilpas visualisering** >  **Til** eller **Fra**.
 
@@ -130,11 +130,11 @@ Slå skyderen for **Tilpas visualisering** >  **Til** eller **Fra**.
 
 Vælg visualiseringen > vælg **Formatér** i ruden **Visualiseringer** > udvid **Overskrift i visualisering**.
 
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-format-visual-header-personalize.png" alt-text="Tilpas en visualisering":::
+:::image type="content" source="media/power-bi-personalize-visuals/power-bi-format-visual-header-personalize.png" alt-text="Vælg overskrift i visualisering":::
  
 Slå skyderen for **Tilpas visualisering** >  **Til** eller **Fra**.
 
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-format-visual-personalize-on-off.png" alt-text="Tilpas en visualisering":::
+:::image type="content" source="media/power-bi-personalize-visuals/power-bi-format-visual-personalize-on-off.png" alt-text="Skyder for tilpasning af visualisering til eller fra":::
 
 
 ## <a name="limitations"></a>Begrænsninger
