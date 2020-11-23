@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 03/12/2020
+ms.date: 11/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 0f237efece8403730ea7790d45bca6f5169e53fd
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: ac0935dd6f2239ab96b9e7689a4f8e5bc013efa1
+ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91599539"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94512510"
 ---
 # <a name="restart-a-power-bi-premium-capacity"></a>Genstart en Power BI Premium-kapacitet
 
@@ -28,6 +28,9 @@ Delt kapacitet i Power BI tilbyder beskyttelse mod sådanne situationer ved at a
 
 Power BI forbedrer konstant, hvordan brugere af Premium-kapacitet beskyttes mod sådanne problemer. Vi giver også administratorer værktøjer til at analysere, hvornår kapaciteter er overbelastede og hvorfor. Du kan finde flere oplysninger i vores [korte træningssession](https://www.youtube.com/watch?v=UgsjMbhi_Bk&feature=youtu.be) og [lange træningssession](https://powerbi.tips/2018/07/). Du skal også være i stand til at afhjælpe betydelige problemer, når de opstår. Den hurtigste måde at afhjælpe disse problemer på er ved at genstarte kapaciteten.
 
+> [!NOTE]
+> Power BI Premium har for nylig udgivet en ny version af Premium med navnet **Premium Gen2**, der i øjeblikket er tilgængelig som prøveversion. Prøveversion af Gen2-kapaciteter kræver ikke genstart, så denne funktion er ikke tilgængelig i Premium Gen2.
+
 ## <a name="is-the-restart-process-safe-will-i-lose-any-data"></a>Er det sikkert at genstarte? Mister jeg nogen data?
 
 Alle de gemte data, definitioner, rapporter og dashboards på din kapacitet forbliver intakte efter genstart. Når du genstarter en kapacitet, stoppes igangværende planlagte opdateringer og ad hoc-opdateringer midlertidigt af opdateringsprogrammet i de fleste tilfælde, og derefter genstarter de for at opdatere den logik for nye forsøg, der er indbygget i Power BI. Tjenesten forsøger igen at udføre eventuelle berørte opdateringer, når kapaciteten bliver tilgængelig. Status for opdateringer kan ikke ændres i brugergrænsefladen under genstartsprocessen. 
@@ -40,7 +43,7 @@ Følg denne fremgangsmåde for at genstarte en kapacitet.
 
 1. I Power BI-administrationsportalen skal du på fanen **Kapacitetsindstillinger** gå til din kapacitet. 
 
-1. Føj **funktionsflaget** *CapacityRestart* til kapacitetens URL-adresse: `https://app.powerbi.com/admin-portal/capacities/<YourCapacityId>?capacityRestartButton=true`.
+1. Føj *funktionsflaget* **CapacityRestart** til kapacitetens URL-adresse: `https://app.powerbi.com/admin-portal/capacities/<YourCapacityId>?capacityRestartButton=true`.
 
 1. Under **Avancerede indstillinger** > **CAPACITY RESTART** skal du vælge **Genstart kapacitet**.
 
@@ -56,7 +59,7 @@ Den bedste måde at undgå problemer på er at lære brugerne om effektiv datamo
 
 Vi anbefaler også, at du [overvåger kapaciteterne](service-admin-premium-monitor-capacity.md) jævnligt for tendenser, der indikerer, at der er underliggende problemer. Vi planlægger jævnligt versioner af appen til overvågning og andre værktøjer, så du kan overvåge og administrere kapaciteterne mere effektivt.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 [Hvad er Power BI Premium?](service-premium-what-is.md)
 

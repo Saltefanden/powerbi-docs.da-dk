@@ -6,13 +6,13 @@ ms.author: kesharab
 ms.topic: troubleshooting
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.date: 09/15/2020
-ms.openlocfilehash: 929a79d7e940f729b90d0cdf6d3ebd905a621f6a
-ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
+ms.date: 11/11/2020
+ms.openlocfilehash: 141364664b6608b252fc2be8620226ae8d9ce39b
+ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92916814"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94668620"
 ---
 # <a name="deployment-pipelines-troubleshooting"></a>Fejlfinding af udrulningspipelines
 
@@ -32,17 +32,17 @@ Kom i gang med udrulningspipelines ved hjælp af [Instruktioner i at komme i gan
 
 Hvis følgende betingelser ikke er opfyldt, kan du ikke se knappen til udrulningspipelines.
 
-* Du er en [Pro-bruger](../admin/service-admin-purchasing-power-bi-pro.md) i Power BI
+* Du har en af følgende Premium-licenser:
 
-* Du er medlem af en organisation, der har en Premium-kapacitet
+    * Du er Power BI [Pro-bruger](../admin/service-admin-purchasing-power-bi-pro.md) og er medlem af en organisation, der har Premium-kapacitet.
 
-* Et arbejdsområde kan kun tildeles til en enkelt pipeline
+    * [Premium pr. bruger](../admin/service-premium-per-user-faq.md).
 
-* Du er administrator af et nyt arbejdsområde
+* Du er administrator af [en ny arbejdsområdeoplevelse](../collaborate-share/service-create-the-new-workspaces.md).
 
-### <a name="why-cant-i-see-the-pipeline-stage-tag-in-my-workspace"></a>Hvorfor kan jeg ikke se koden for pipielinefase i mit arbejdsområde?
+### <a name="why-cant-i-see-the-pipeline-stage-tag-in-my-workspace"></a>Hvorfor kan jeg ikke se koden for pipielinefasen i mit arbejdsområde?
 
-Udrulningspipelines viser en kode for pipelinefasen i de arbejdsområder, der er knyttet til en pipeline. Koder for *udviklings-* og *testfaser* er altid synlige. Du kan dog kun se koden for *produktion* , hvis du har [adgang til pipelinen](deployment-pipelines-process.md#user-with-pipeline-access), eller hvis du er [administrator af arbejdsområdet](deployment-pipelines-process.md#workspace-admin).
+Udrulningspipelines viser en kode for pipelinefasen i de arbejdsområder, der er knyttet til en pipeline. Koder for *udviklings-* og *testfaser* er altid synlige. Du kan dog kun se koden for *produktion*, hvis du har [adgang til pipelinen](deployment-pipelines-process.md#user-with-pipeline-access), eller hvis du er [administrator af arbejdsområdet](deployment-pipelines-process.md#workspace-admin).
 
 > [!div class="mx-imgBorder"]
 > ![Et skærmbillede af produktionskoden i et arbejdsområde for en produktionspipeline.](media/deployment-pipelines-troubleshooting/production-tag.png)
@@ -51,15 +51,24 @@ Udrulningspipelines viser en kode for pipelinefasen i de arbejdsområder, der er
 
 ### <a name="what-licenses-are-needed-to-work-with-deployment-pipelines"></a>Hvilke licenser kræves der for at arbejde med udrulningspipelines?
 
-Hvis du vil bruge udrulningspipelines, skal du være [Pro-bruger](../admin/service-admin-purchasing-power-bi-pro.md) med en [Premium-kapacitet](../admin/service-premium-what-is.md). Du kan finde flere oplysninger under [Adgang til udrulningspipelines](deployment-pipelines-get-started.md#accessing-deployment-pipelines).
+Hvis du vil bruge udrulningspipelines, skal du have en af følgende licenser:
+
+* En [Pro-bruger](../admin/service-admin-purchasing-power-bi-pro.md)-licens med et arbejdsområde, der er placeret på en [Premium-kapacitet](../admin/service-premium-what-is.md).
+
+* [Premium pr. bruger](../admin/service-premium-per-user-faq.md).
+
+Du kan finde flere oplysninger under [Adgang til udrulningspipelines](deployment-pipelines-get-started.md#accessing-deployment-pipelines).
 
 ### <a name="what-type-of-capacity-can-i-assign-to-a-workspace-in-a-pipeline"></a>Hvilken type kapacitet kan jeg tildele til et arbejdsområde i en pipeline?
 
 Alle arbejdsområder i en udrulningspipeline skal være placeret inden for en kapacitet, for at pipelinen kan fungere. Du kan dog bruge forskellige kapaciteter til forskellige arbejdsområder i en pipeline. Du kan også bruge forskellige kapacitetstyper til forskellige arbejdsområder i den samme pipeline.
 
-I forbindelse med udvikling og test kan du bruge en A- eller EM-kapacitet sammen med en Power BI Pro-konto til hver bruger.
+I forbindelse med udvikling og test kan du bruge en A- eller EM-kapacitet sammen med en Power BI Pro-konto til hver bruger. Du kan også bruge en Premium pr. bruger til hver bruger i udviklings- og testfasen.
 
-I forbindelse med produktionsarbejdsområder har du brug for en P-kapacitet. Hvis du er en ISV, der distribuerer indhold via integrerede programmer, kan du også bruge en A- eller EM-kapacitet til produktion.
+I forbindelse med produktionsarbejdsområder har du brug for en P-kapacitet. Hvis du er en ISV, der distribuerer indhold via integrerede programmer, kan du også bruge en A- eller EM-kapacitet til produktion. Premium pr. bruger-licenser kan også bruges til produktionsarbejdsområder.
+
+>[!NOTE]
+>Når du opretter et arbejdsområde med en Premium pr. bruger, er det kun andre brugere af Premium pr. bruger, der kan få adgang til arbejdsområdet og bruge indholdet.
 
 ## <a name="technical"></a>Tekniske spørgsmål
 
@@ -87,7 +96,7 @@ Din første udrulning kan være mislykkedes af flere årsager. Nogle af disse å
 
 |Fejl  |Handling  |
 |---------|---------|
-|Du har ikke [Premium-kapacitetstilladelser](deployment-pipelines-process.md#creating-a-premium-capacity-workspace).     |Hvis du vil have Premium-kapacitetstilladelser, skal du bede en kapacitetsadministrator om at føje dit arbejdsområde til en kapacitet eller bede om tildelingstilladelser til kapaciteten. Når arbejdsområdet er i en kapacitet, kan du forsøge igen.        |
+|Du har ikke [Premium-kapacitetstilladelser](deployment-pipelines-process.md#creating-a-premium-capacity-workspace).     |Hvis du arbejder i en organisation, der har en Premium-kapacitet, skal du bede en kapacitetsadministrator om at føje dit arbejdsområde til en kapacitet eller bede om tildelingstilladelser til kapaciteten. Når arbejdsområdet er i en kapacitet, kan du forsøge igen.</br></br>Hvis du ikke arbejder i en organisation med Premium-kapacitet, kan du overveje at købe [Premium pr. bruger](../admin/service-premium-per-user-faq.md).        |
 |Du har ikke tilladelse til arbejdsområdet.     |Hvis du vil udrulle, skal du være medlem af arbejdsområdet. Bed administratoren af arbejdsområdet om at give dig de rette tilladelser.         |
 |Din Power BI-administrator har deaktiveret oprettelsen af arbejdsområder.     |Kontakt din Power BI-administrator for at få hjælp.         |
 |Arbejdsområdet er ikke en [ny arbejdsområdeoplevelse](../collaborate-share/service-create-the-new-workspaces.md).     |Opret dit indhold i den nye arbejdsområdeoplevelse. Hvis du har indhold i et klassisk arbejdsområde, kan du [opgradere](../collaborate-share/service-upgrade-workspaces.md) det til en ny arbejdsområdeoplevelse.         |
@@ -152,9 +161,9 @@ Tilladelsesmodellen for udrulningspipelines er beskrevet i afsnittet om [tillade
 
 Indhold kan udrulles til en tom fase eller til en fase, der indeholder indhold. Indholdet skal være placeret i en [Premium-kapacitet](../admin/service-premium-what-is.md).
 
-* **Udrulning til en tom fase** – en hvilken som helst [Pro-bruger](../admin/service-admin-purchasing-power-bi-pro.md), der er medlem eller administrator i kildearbejdsområdet.
+* **Udrulning til en tom fase** – En hvilken som helst [Pro](../admin/service-admin-purchasing-power-bi-pro.md)- eller [Premium pr. bruger](../admin/service-premium-per-user-faq.md)-bruger, der er medlem eller administrator af kildearbejdsområdet.
 
-* **Udrulning til en fase med indhold** – en hvilken som helst [Pro-bruger](../admin/service-admin-purchasing-power-bi-pro.md), der er medlem eller administrator af begge arbejdsområder i kilde- og destinationsudrulningsfaserne.
+* **Udrulning til en fase med indhold** – En hvilken som helst [Pro](../admin/service-admin-purchasing-power-bi-pro.md)- eller [Premium pr. bruger](../admin/service-premium-per-user-faq.md)-bruger, der er medlem eller administrator af begge arbejdsområder i kilde- og destinationsudrulningsfaserne.
 
 * **Tilsidesættelse af et datasæt** – udrulningen tilsidesætter ethvert datasæt, der er inkluderet i destinationsfasen, også selvom datasættet ikke blev ændret. Brugeren skal være ejer af alle de datasæt i destinationsfasen, der er angivet i udrulningen.
 

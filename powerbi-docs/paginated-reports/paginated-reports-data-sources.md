@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 07/27/2020
-ms.openlocfilehash: d6f436477a8226dec870d039c8fe10491456a325
-ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
+ms.date: 11/12/2020
+ms.openlocfilehash: 263992e760afe01eb44f41b80c2297cbd4b34163
+ms.sourcegitcommit: 7ee9398b30ab4ba40459cbb97e129e7dc853c93c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93298186"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "94575301"
 ---
 # <a name="supported-data-sources-for-power-bi-paginated-reports"></a>Understøttede datakilder for sideinddelte rapporter i Power BI
 
@@ -27,7 +27,7 @@ Følgende liste over datakilder understøttes i det oprindelige miljø i sideind
 
 | Datakilde | Godkendelse | Noter |
 | --- | --- | --- |
-| Azure SQL Database <br>Azure SQL Data Warehouse | Basic, enkeltlogon (SSO), OAuth2 | Du kan bruge en virksomhedsgateway med Azure SQL DB. Du kan dog ikke bruge SSO eller oAuth2 til at godkende i disse scenarier.   |
+| Azure SQL Database <br>Azure SQL Data Warehouse | Basic, enkeltlogon (SSO), OAuth2 | Du kan bruge en virksomhedsgateway sammen med Azure SQL Database. Du kan dog ikke bruge SSO eller oAuth2 til at godkende i disse scenarier.   |
 | Administreret forekomst af Azure SQL | Grundlæggende | via et offentligt eller privat slutpunkt (det private slutpunkt skal routes via Enterprise-gateway)  |
 | Azure Analysis Services | SSO, OAuth2 | AAS-firewallen skal være deaktiveret eller konfigureret til at tillade alle IP-områder i BlackForest-området. Dette gælder kun i BlackForest-området.  SSO fra ekstern lejer understøttes ikke. |
 | Power BI-datasæt | SSO | Power BI Premium-datasæt og datasæt, der ikke er Premium. Kræver læserettigheder |
@@ -40,14 +40,14 @@ Du skal angive flere oplysninger for Azure SQL Database-datakilder, som beskreve
 
 ## <a name="other-data-sources"></a>Andre datakilder
 
-Foruden ovenstående datakilder, der understøttes i det oprindelige miljø, kan følgende datakilder tilgås via en [Power BI-datagateway](../connect-data/service-gateway-onprem.md):
+Foruden ovenstående datakilder, der understøttes i det oprindelige miljø, kan følgende datakilder tilgås via en [Power BI-virksomhedsgateway](../connect-data/service-gateway-onprem.md):
 
 - SQL Server
 - SQL Server Analysis Services
 - Oracle
 - Teradata
 
-Du kan ikke få adgang til Azure SQL Database og Azure Analysis Services via en Power BI-datagateway i forbindelse med sideinddelte rapporter.
+Du kan ikke få adgang til Azure Analysis Services via en Power BI-virksomhedsgateway i forbindelse med sideinddelte rapporter.
 
 ## <a name="azure-sql-database-authentication"></a>Godkendelse i Azure SQL Database
 
@@ -59,7 +59,7 @@ Hvis du ikke angiver nogen legitimationsoplysninger, opstår der en fejl, når d
 
 ![Indstillinger for Azure SQL Database](media/paginated-reports-data-sources/power-bi-paginated-settings-azure-sql.png)
 
-Vælg linket **Rediger legitimationsoplysninger** for en given datakilde for at få vist dialogboksen **Konfigurer** :
+Vælg linket **Rediger legitimationsoplysninger** for en given datakilde for at få vist dialogboksen **Konfigurer**:
 
 ![Konfigurer Azure SQL Database](media/paginated-reports-data-sources/power-bi-paginated-configure-azure-sql.png)
 

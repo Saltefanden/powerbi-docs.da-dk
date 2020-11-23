@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 10/29/2020
+ms.date: 11/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 93d982c684014430009a80112da841820e7b0fc9
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: b0132996be1ed70f228ce96d413c4925dc1a3e48
+ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94396380"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94512763"
 ---
 # <a name="configure-multi-geo-support-for-power-bi-premium"></a>Konfigurer understøttelse af Multi-Geo til Power BI Premium
 
@@ -34,6 +34,9 @@ Multi-Geo er en Power BI Premium-funktion, som hjælper multinationale kunder me
 Multi-Geo fås ikke til Power BI Germany, Power BI China drevet af 21Vianet eller Power BI til myndigheder i USA.
 
 Multi-Geo er nu også tilgængelig i Power BI Embedded. Læs mere i [Multi-Geo-understøttelse i Power BI Embedded](../developer/embedded/embedded-multi-geo.md).
+
+> [!NOTE]
+> Power BI Premium har for nylig udgivet en ny version af Premium med navnet **Premium Gen2**, der i øjeblikket er tilgængelig som prøveversion. Premium Gen2 forenkler administrationen af Premium-kapaciteter og reducerer administrationsomkostningerne. Du kan finde flere oplysninger under [Power BI Premium – Generation 2 (prøveversion)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
 
 ## <a name="enable-and-configure"></a>Aktivér og konfigurer
 
@@ -107,3 +110,13 @@ Datasæt med store lagerformater bør ikke flyttes fra det område, hvor de blev
 - [Multi-Geo til Power BI Embedded-kapaciteter](../developer/embedded/embedded-multi-geo.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+
+Power BI har introduceret Power BI Premium Gen2 som et prøveversionstilbud, der forbedrer Power BI Premium-oplevelsen på følgende områder:
+* Ydeevne
+* Licens pr. bruger
+* Større skalering
+* Forbedrede målepunkter
+* Automatisk skalering
+* Reducerede administrationsomkostninger
+
+Du kan finde flere oplysninger om Power BI Premium Gen2 under [Power BI-Premium – Generation 2 (prøveversion)](service-premium-what-is.md#power-bi-premium-generation-2-preview).

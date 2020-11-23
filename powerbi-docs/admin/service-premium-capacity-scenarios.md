@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 04/09/2019
-ms.custom: seodec18
+ms.date: 11/11/2020
+ms.custom: ''
 LocalizationGroup: Premium
-ms.openlocfilehash: 1bc11d94162ab2c6ed62de0825acd6e94db30291
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: a3835ff26bf86024b827edf69e19d6f603e66c2c
+ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91599385"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94512878"
 ---
 # <a name="premium-capacity-scenarios"></a>Premium-kapacitetsscenarier
 
@@ -28,6 +28,9 @@ I denne artikel beskrives scenarier i den virkelige verden, hvor Power BI Premiu
 - [Sådan fastlægges det, om der er tilstrækkelig CPU](#determining-whether-there-is-enough-cpu)
 
 Fremgangsmåden samt eksemplerne på diagrammer og tabeller er fra **appen Power BI Premium Capacity Metrics**, som en Power BI-administrator har adgang til.
+
+> [!NOTE]
+> Power BI Premium har for nylig udgivet en ny version af Premium med navnet **Premium Gen2**, der i øjeblikket er tilgængelig som prøveversion. Premium Gen2 forenkler administrationen af Premium-kapaciteter og reducerer administrationsomkostningerne. Du kan finde flere oplysninger under [Power BI Premium – Generation 2 (prøveversion)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
 
 ## <a name="keeping-datasets-up-to-date"></a>Sådan holdes datasæt opdateret
 
@@ -123,6 +126,9 @@ Visualiseringen i en sund kapacitet ser ud som følger og viser et mellemrum mel
 
 I en kapacitet, hvor hukommelsen belastes, viser det samme visual tydeligt, at den aktive hukommelse og den samlede hukommelse konvergerer, hvilket betyder, at det er umuligt at indlæse ekstra datasæt i hukommelsen på det pågældende tidspunkt. I dette tilfælde kan Power BI-administratoren klikke på **Genstart af kapacitet** (i **Avancerede indstillinger**  i området med kapacitetsindstillinger i administrationsportalen). Genstart af kapaciteten resulterer i, at alle datasæt trækkes fra hukommelsen og indlæses igen i hukommelsen efter behov (af forespørgsler eller dataopdateringer).
 
+> [!NOTE]
+> Hukommelsesforbruget behøver ikke at blive sporet for Premium Gen2. Den eneste begrænsning i Premium Gen2 er af hukommelsesforbruget for en enkelt artefakt. Forbruget må ikke overstige den hukommelse, der er tilgængelig på kapaciteten. Du kan finde flere oplysninger om Premium Gen2 i [Power BI Premium – Generation 2 (prøveversion)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+
 ![**Aktiv** hukommelse konvergerer med **al** hukommelse](media/service-premium-capacity-scenarios/memory-unhealthy-capacity.png)
 
 ## <a name="determining-whether-there-is-enough-cpu"></a>Sådan fastlægges det, om der er tilstrækkelig CPU
@@ -141,6 +147,9 @@ Denne effekt kan være særligt synlig, når et datasæt forbruges i korte burst
 
 I nogle tilfælde kan Power BI-administratorer anmode datasætejerne om at oprette en mindre svingende forespørgselsarbejdsbelastning ved at oprette et dashboard (som forespørger med jævne mellemrum med datasætopdateringer af cachelagrede felter) i stedet for en rapport. Dette kan forhindre stigninger, når dashboardet indlæses. Denne løsning er ikke altid mulig for det givne forretningsmæssige krav, men det kan være en effektiv måde at undgå CPU-mætning på uden at ændre datasættet.
 
+> [!NOTE]
+> For Premium Gen2 spores CPU-tidsforbruget pr. artefakt, og det er synligt i appen for kapacitetsudnyttelse. Den samlede udnyttelse af CPU-tid i et givent tidsrum vises for hver artefakt. Du kan finde flere oplysninger om Premium Gen2 i [Power BI Premium – Generation 2 (prøveversion)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+
 ## <a name="acknowledgments"></a>Bekræftelser
 
 Denne artikel er skrevet af Peter Myers, som er Data Platform MVP og uafhængig BI-ekspert hos [Bitwise Solutions](https://www.bitwisesolutions.com.au/).
@@ -154,4 +163,13 @@ Denne artikel er skrevet af Peter Myers, som er Data Platform MVP og uafhængig 
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 
-||||||
+Power BI har introduceret Power BI Premium Gen2 som et prøveversionstilbud, der forbedrer Power BI Premium-oplevelsen på følgende områder:
+* Ydeevne
+* Licens pr. bruger
+* Større skalering
+* Forbedrede målepunkter
+* Automatisk skalering
+* Reducerede administrationsomkostninger
+
+Du kan finde flere oplysninger om Power BI Premium Gen2 under [Power BI-Premium – Generation 2 (prøveversion)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+

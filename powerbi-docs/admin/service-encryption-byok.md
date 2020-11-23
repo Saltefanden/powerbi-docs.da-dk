@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 08/13/2020
+ms.date: 11/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 449721a13a126344f3ef8334e63f64579a98ec20
-ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
+ms.openlocfilehash: 9331fe3e207162db0215b62aa89b04f2e4be3d95
+ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92916147"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94512694"
 ---
 # <a name="bring-your-own-encryption-keys-for-power-bi"></a>Medbring dine egne krypteringsnøgler til Power BI
 
@@ -23,6 +23,9 @@ Power BI krypterer _inaktive_ og _igangværende_ data. Power BI bruger som stand
 ## <a name="why-use-byok"></a>Hvorfor bruge BYOK?
 
 BYOK gør det nemmere at imødekomme kravene til overholdelse af angivne standarder, som angiver nøgleordninger med cloudtjenesteudbyderen (i dette tilfælde Microsoft). Med BYOK skal du angive og styre krypteringsnøglerne til dine inaktive Power BI data på programniveau. Du har derfor kontrol over adgangen og kan tilbagekalde din organisations nøgler, hvis du beslutter at afslutte tjenesten. Når nøglerne tilbagekaldes, kan tjenesten ikke læse dataene inden for 30 minutter.
+
+> [!IMPORTANT]
+> Power BI Premium har for nylig udgivet en ny version af Premium med navnet **Premium Gen2**, der i øjeblikket er tilgængelig som prøveversion. Gen2-kapaciteter understøtter **ikke** support BYOK i prøveperioden.
 
 ## <a name="data-source-and-storage-considerations"></a>Overvejelser vedrørende datakilde og -lager
 
@@ -88,7 +91,7 @@ I vejledningen i dette afsnit antages det, at du har grundlæggende viden om Azu
 
 1. Vælg GUID'et for den **aktuelle version** af nøglen.
 
-1. Kontrollér, at **Wrap Key** (Ombryd nøgle) og **Unwrap Key** (Fjern ombrydning af nøgle) begge er markeret. Kopiér den **nøgleidentifikator** , der skal bruges, når du aktiverer BYOK i Power BI.
+1. Kontrollér, at **Wrap Key** (Ombryd nøgle) og **Unwrap Key** (Fjern ombrydning af nøgle) begge er markeret. Kopiér den **nøgleidentifikator**, der skal bruges, når du aktiverer BYOK i Power BI.
 
     ![Egenskaber med nøgle-id og de tilladte handlinger fremhævet](media/service-encryption-byok/key-properties.png)
 
@@ -183,7 +186,7 @@ Power BI omfatter yderligere cmdlet'er, der hjælpe med at administrere BYOK i d
 
     Bemærk, at kryptering er aktiveret på kapacitetsniveau, men du får krypteringsstatus på datasætniveau for det angivne arbejdsområde.
 
-- Brug [`Switch-PowerBIEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/switch-powerbiencryptionkey) at skifte (eller _rotere_ ) versionen af den nøgle, der bruges til kryptering. Cmdlet'en opdaterer blot `-KeyVaultKeyUri` for en nøgle `-Name`:
+- Brug [`Switch-PowerBIEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/switch-powerbiencryptionkey) at skifte (eller _rotere_) versionen af den nøgle, der bruges til kryptering. Cmdlet'en opdaterer blot `-KeyVaultKeyUri` for en nøgle `-Name`:
 
     ```powershell
     Switch-PowerBIEncryptionKey -Name'Contoso Sales' -KeyVaultKeyUri'https://contoso-vault2.vault.azure.net/keys/ContosoKeyVault/b2ab4ba1c7b341eea5ecaaa2wb54c4d2'
@@ -202,3 +205,14 @@ Power BI omfatter yderligere cmdlet'er, der hjælpe med at administrere BYOK i d
 * [Integrer med rapportwebdelen i SharePoint Online](../collaborate-share/service-embed-report-spo.md)
 
 * [Publicer på internettet fra Power BI](../collaborate-share/service-publish-to-web.md)
+
+
+Power BI har introduceret Power BI Premium Gen2 som et prøveversionstilbud, der forbedrer Power BI Premium-oplevelsen på følgende områder:
+* Ydeevne
+* Licens pr. bruger
+* Større skalering
+* Forbedrede målepunkter
+* Automatisk skalering
+* Reducerede administrationsomkostninger
+
+Du kan finde flere oplysninger om Power BI Premium Gen2 under [Power BI-Premium – Generation 2 (prøveversion)](service-premium-what-is.md#power-bi-premium-generation-2-preview).

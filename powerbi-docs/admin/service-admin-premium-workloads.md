@@ -7,18 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 05/11/2020
+ms.date: 11/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 3454a10269937d6e03151a64bba6695cc37fcd66
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: 36bbf9fcc8bcd74c46f15ebcf9bd04e86cc4a2c9
+ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94396328"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94512326"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Konfigurer arbejdsbelastninger i en Premium-kapacitet
 
 I denne artikel beskrives, hvordan du aktiverer og konfigurerer arbejdsbelastninger for Power BI Premium-kapaciteter. Kapaciteter understøtter som standard kun de arbejdsbelastninger, der er tilknyttet kørende Power BI-forespørgsler. Du kan også aktivere og konfigurere yderligere arbejdsbelastninger for **[AI (Cognitive Services)](../transform-model/dataflows/dataflows-machine-learning-integration.md)** , **[Dataflow](../transform-model/dataflows/dataflows-introduction-self-service.md)** og **[Sideinddelte rapporter](../paginated-reports/paginated-reports-save-to-power-bi-service.md)** .
+
+> [!NOTE]
+> Power BI Premium har for nylig udgivet en ny version af Premium med navnet **Premium Gen2**, der i øjeblikket er tilgængelig som prøveversion. Premium Gen2 forenkler administrationen af Premium-kapaciteter og reducerer administrationsomkostningerne. Du kan finde flere oplysninger under [Power BI Premium – Generation 2 (prøveversion)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
 
 ## <a name="default-memory-settings"></a>Standardindstillinger for hukommelse
 
@@ -31,7 +34,13 @@ Arbejdsbelastninger for forespørgsler optimeres til og begrænses af de ressour
 | **Dataflow**         | 40 % som standard, minimum 40 %  | 24 % som standard, minimum 24 %  | 20 % som standard, minimum 12 %  | 20 % som standard, minimum 5 %  | 20 % som standard, minimum 3 %  | 20 % som standard, minimum 2 %   |
 | **Sideinddelte rapporter** | Ikke-understøttet               | Ikke-understøttet               | Ikke-understøttet               | 20 % som standard, minimum 10 % | 20 % som standard, minimum 5 %  | 20 % som standard, minimum 2,5 % |
 
+> [!NOTE]
+> **Premium Gen2-** , der i øjeblikket er tilgængelig som prøveversion, kræver ikke, at hukommelsesindstillingerne ændres. Hukommelse i Premium Gen2 administreres automatisk af det underliggende system. 
+
+
 ## <a name="workload-settings"></a>Indstillinger for arbejdsbelastning
+
+I de følgende afsnit gennemgås detaljer om de indstillinger for arbejdsbelastning, der er beskrevet i den forrige tabel. 
 
 ### <a name="ai-preview"></a>Kunstig intelligens (prøveversion)
 
@@ -214,3 +223,13 @@ Arbejdsbelastninger kan aktiveres og tildeles til en kapacitet ved hjælp af RES
 [Automatisk sideopdatering i Power BI Desktop (prøveversion)](../create-reports/desktop-automatic-page-refresh.md)
 
 Har du flere spørgsmål? [Spørg Power BI-community'et](https://community.powerbi.com/)
+
+Power BI har introduceret Power BI Premium Gen2 som et prøveversionstilbud, der forbedrer Power BI Premium-oplevelsen på følgende områder:
+* Ydeevne
+* Licens pr. bruger
+* Større skalering
+* Forbedrede målepunkter
+* Automatisk skalering
+* Reducerede administrationsomkostninger
+
+Du kan finde flere oplysninger om Power BI Premium Gen2 under [Power BI-Premium – Generation 2 (prøveversion)](service-premium-what-is.md#power-bi-premium-generation-2-preview).

@@ -7,15 +7,15 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 10/22/2020
+ms.date: 11/17/2020
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 8768801f2d704644c888a14caf9b930dcd27f8fa
-ms.sourcegitcommit: 54e571a10b0fdde5cd6036017eac9ef228de5116
+ms.openlocfilehash: 183885336f6f76304ba051599efa48d81111264a
+ms.sourcegitcommit: 5240990f998851c4854eb565de681099264c5a61
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "92501966"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94718954"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Meld dig selv og andre til abonnementer på rapporter og dashboards i Power BI-tjenesten
 
@@ -52,24 +52,24 @@ Det er lidt anderledes at abonnere på sideinddelte rapporter. Du kan finde fler
    
     ![Ikonet Abonner](media/service-report-subscribe/power-bi-subscribe-icon.png)
 
-1. Brug den gule skyder til at slå abonnementet til og fra. Abonnementet slettes ikke, når skyderen sættes til **Fra** . Hvis du vil slette abonnementet, skal du vælge ikonet for papirkurven.
+1. Brug den gule skyder til at slå abonnementet til og fra. Abonnementet slettes ikke, når skyderen sættes til **Fra**. Hvis du vil slette abonnementet, skal du vælge ikonet for papirkurven.
 
-2. Din mailadresse er allerede angivet i feltet **Abonner** . Du kan også føje andre mailadresser i det samme domæne til abonnementet. Hvis rapporten eller dashboardet hostes i en [Premium-kapacitet](../admin/service-premium-what-is.md), kan du oprette abonnementer for andre mailadresser og gruppealiasser, uanset om de er i domænet eller ej. Hvis rapporten eller dashboardet ikke hostes i en Premium-kapacitet, kan du oprette abonnementer for andre, men de skal også have Power BI Pro-licenser. Se flere oplysninger under [Overvejelser og fejlfinding](#considerations-and-troubleshooting) herunder.
+2. Din mailadresse er allerede angivet i feltet **Abonner**. Du kan også føje andre mailadresser i det samme domæne til abonnementet. Hvis rapporten eller dashboardet hostes i en [Premium-kapacitet](../admin/service-premium-what-is.md), kan du oprette abonnementer for andre mailadresser og gruppealiasser, uanset om de er i domænet eller ej. Hvis rapporten eller dashboardet ikke hostes i en Premium-kapacitet, kan du oprette abonnementer for andre, men de skal også have Power BI Pro-licenser. Se flere oplysninger under [Overvejelser og fejlfinding](#considerations-and-troubleshooting) herunder.
 
-3. Udfyld mailoplysningerne **Emne** og **Meddelelse** .
+3. Udfyld mailoplysningerne **Emne** og **Meddelelse**.
 
-4. Vælg en **Hyppighed** for dit abonnement:  **Dagligt** , **Hver time** , **Ugentligt** , **Månedligt** eller **Efter dataopdatering (dagligt)** . Hvis du kun vil modtage abonnementsmailen på bestemte dage, skal du vælge **Timevist** eller **Ugentligt** og vælge, hvilke dage du vil modtage den. Hvis du f.eks. kun vil modtage abonnementsmailen på hverdage, skal du vælge **Ugentligt** og fjerne markeringen af felterne for **lørdag** og **søndag** . Hvis du vælger **Månedligt** , skal du angive den eller de dage på måneden, hvor du vil modtage abonnementsmailen.
+4. Vælg en **Hyppighed** for dit abonnement:  **Dagligt**, **Hver time**, **Ugentligt**, **Månedligt** eller **Efter dataopdatering (dagligt)** . Hvis du kun vil modtage abonnementsmailen på bestemte dage, skal du vælge **Timevist** eller **Ugentligt** og vælge, hvilke dage du vil modtage den. Hvis du f.eks. kun vil modtage abonnementsmailen på hverdage, skal du vælge **Ugentligt** og fjerne markeringen af felterne for **lørdag** og **søndag**. Hvis du vælger **Månedligt**, skal du angive den eller de dage på måneden, hvor du vil modtage abonnementsmailen.
 
-5. Hvis du vælger **Dagligt** , **Hver time** , **Månedligt** eller **Ugentligt** , kan du også vælge et **Planlagt tidspunkt** for abonnementet. Du kører den hver hele time eller 15, 30 eller 45 minutter over. Vælg morgen (AM) eller eftermiddag/aften (PM). Du kan også angive tidszonen. Hvis du vælger **Hver time** , skal du vælge det **planlagte tidspunkt** , hvor abonnementet skal starte, hvorefter det kører hver time.
+5. Hvis du vælger **Dagligt**, **Hver time**, **Månedligt** eller **Ugentligt**, kan du også vælge et **Planlagt tidspunkt** for abonnementet. Du kører den hver hele time eller 15, 30 eller 45 minutter over. Vælg morgen (AM) eller eftermiddag/aften (PM). Du kan også angive tidszonen. Hvis du vælger **Hver time**, skal du vælge det **planlagte tidspunkt**, hvor abonnementet skal starte, hvorefter det kører hver time.
 
 6. Startdatoen for dit abonnement er som standard den dato, du har oprettet det. Du har mulighed for at vælge en slutdato. Hvis du ikke angiver en slutdato, er den automatisk ét år efter startdatoen. Du kan ændre den til en hvilken som helst dato i fremtiden (op til år 9999) når som helst, før abonnementet slutter. Når et abonnement når en slutdato, ophører det, indtil du aktiveret det igen. Du modtager en meddelelse, før den planlagte slutdato, hvor du bliver spurgt, om du vil forlænge det.
 
-    På skærmbilledet nedenfor kan du se, at du rent faktisk abonnerer på en _rapportside_ , når du abonnerer på en rapport. Hvis du vil abonnere på mere end én side i en rapport, skal du vælge **Tilføj et andet abonnement** og vælge en anden side.
+    På skærmbilledet nedenfor kan du se, at du rent faktisk abonnerer på en _rapportside_, når du abonnerer på en rapport. Hvis du vil abonnere på mere end én side i en rapport, skal du vælge **Tilføj et andet abonnement** og vælge en anden side.
      
     ![Ruden Abonner](media/service-report-subscribe/power-bi-subscribe-pane.png)  
 
 1. (Valgfrit) Vælg, om du vil medtage et link til indholdet i Power BI, og om du vil give brugere adgang til det indhold, som du tilmelder dem.  Hvis du vælger at inkludere et link, så du opnår den bedste funktionalitet, skal du sørge for, at alle brugere har adgang til rapporten.
-2. Vælg **Gem og luk** . Dem, der abonnerer, modtager en mail og et snapshot af dashboardet eller rapportsiden med den hyppighed og det tidspunkt, du har valgt. Du kan i alt oprette op til 24 abonnementer pr. rapport eller dashboard, og du kan angive entydige modtagere, tidspunkter og hyppigheder for hvert abonnement. For alle abonnementer, der er angivet til **Efter dataopdatering** for dashboardet eller rapporten, sendes der stadig kun en mail efter den første planlagte opdatering.
+2. Vælg **Gem og luk**. Dem, der abonnerer, modtager en mail og et snapshot af dashboardet eller rapportsiden med den hyppighed og det tidspunkt, du har valgt. Du kan i alt oprette op til 24 abonnementer pr. rapport eller dashboard, og du kan angive entydige modtagere, tidspunkter og hyppigheder for hvert abonnement. For alle abonnementer, der er angivet til **Efter dataopdatering** for dashboardet eller rapporten, sendes der stadig kun en mail efter den første planlagte opdatering.
 
     > [!NOTE]
     > Hvis du redigerer abonnementet, efter at du har gemt og lukket, er valget til at give brugere adgang til det indhold, du abonnerer på, aktiveret, uanset dine tidligere valg.
@@ -81,7 +81,7 @@ Det er lidt anderledes at abonnere på sideinddelte rapporter. Du kan finde fler
 
 ## <a name="manage-your-subscriptions"></a>Administrer dine abonnementer
 
-Det er kun den person, der har oprettet abonnementet, der kan administrere det. Der er to stier til skærmen, hvor du kan administrere dine abonnementer. Den første er at vælge **Administrer alle abonnementer** i dialogboksen **Abonner på mails** (se trin 4 herover). Den anden er at vælge tandhjulsikonet ![tandhjulsikon](media/service-report-subscribe/power-bi-settings-icon.png) i Power BI på den øverste menulinje og vælge **Indstillinger** .
+Det er kun den person, der har oprettet abonnementet, der kan administrere det. Der er to stier til skærmen, hvor du kan administrere dine abonnementer. Den første er at vælge **Administrer alle abonnementer** i dialogboksen **Abonner på mails** (se trin 4 herover). Den anden er at vælge tandhjulsikonet ![tandhjulsikon](media/service-report-subscribe/power-bi-settings-icon.png) i Power BI på den øverste menulinje og vælge **Indstillinger**.
 
 ![vælg Indstillinger](media/service-report-subscribe/power-bi-subscribe-settings.png)
 
@@ -122,6 +122,7 @@ Power BI-administratorer kan bruge Power BI-overvågningslogge til at få vist o
 - Abonnementer understøtter i øjeblikket ikke bogmærker.
 - Indstillingen for at give adgang til rapporten/dashboardet vises altid som aktiveret, når du redigerer et eksisterende abonnement.  Hvis du fjerner markeringen i denne indstilling og gemmer abonnementet, gemmes den pågældende tilstand. Men når du skifter til at redigere rapporten igen, bliver den som standard markeret.
 - Hvis du har en alternativ mailadresse, men ingen primær, bruges den alternative i Power BI til at levere abonnementet.
+- Hvis du giver brugere abonnement på en rapport eller et dashboard, modtager de en meddelelse om deling med det samme, når du har valgt **Gem og luk** i ruden Abonnement. Denne meddelelse sendes kun til eksterne brugere, ikke interne brugere, da det kræver et invitationslink at få vist rapporten eller dashboardet. 
 
 ### <a name="dashboards"></a>Dashboards
 

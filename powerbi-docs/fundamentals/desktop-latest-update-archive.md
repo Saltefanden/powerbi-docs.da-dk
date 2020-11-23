@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/12/2020
+ms.date: 11/11/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 01d7a433650eb8c74ace37b548ba8d7bf2c570ea
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: 216fd30142f76758cbcb9ed2b329f3bbefb7156f
+ms.sourcegitcommit: 029aacd09061a8aa45b57f05d0dc95c93dd16a74
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94396167"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94560074"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Tidligere månedlige opdateringer til Power BI Desktop
 
@@ -34,9 +34,104 @@ Linkene ud for hver opdatering betyder følgende:
 * De fleste funktioner i den månedlige opdatering beskrives i et **[blog]** -indlæg.
 * Nogle af funktionerne er selvforklarende og vil ikke være tilknyttet en artikel eller video.
 
-Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil** -ikonet på videobilledet under listen med opdateringer.
+Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilledet under listen med opdateringer.
 
 I de følgende afsnit beskrives tidligere måneders opdateringer til **Power BI Desktop**.
+
+
+## <a name="october-2020-update-2863210"></a>Opdatering for oktober 2020 (2.86.321.0)
+
+Vores Power BI Desktop-opdateringer i oktober er en krukke fuld af uhyggeligt gode resultater, som du kan bruge til at sortere og nyde i de kommende uger. 
+
+De månedlige blog- og videoopdateringer til Power BI Desktop indeholder nu også nye opdateringer til Power BI – Mobil og Power BI-tjenesten. I denne artikel beskrives opdateringerne til Power BI Desktop. Hvis du vil vide mere om opdateringer til mobilenheder og Power BI-tjenesten, kan du se de tilhørende artikler om nyheder:
+
+* [Nyheder i Power BI-tjenesten](service-whats-new.md)
+* [Nyheder i mobilappsene til Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
+
+Få den nyeste version af Power BI Desktop from [Download Center](https://www.microsoft.com/download/details.aspx?id=58494). Hvis du kører Windows 10, kan du også få Power BI Desktop fra [Microsoft Store](https://aka.ms/pbidesktopstore). De månedlige versioner er de samme, selvom versionsnummeret kan variere mellem de to, uanset hvilken måde du installerer Power BI Desktop på. Du kan finde flere oplysninger om, hvordan du downloader og installerer Power BI Desktop, under [Få Power BI Desktop](desktop-get-the-desktop.md). 
+
+> [!IMPORTANT]
+> Power BI Desktop opdateres og frigives hver måned med kundefeedback og nye funktioner. Det er kun den nyeste version af Power BI Desktop, der understøttes. Kunder, der kontakter support til Power BI Desktop, bliver bedt om at opgradere til den nyeste version. Du kan hente den nyeste version af Power BI Desktop fra [Windows Store](https://aka.ms/pbidesktopstore) eller som en enkelt eksekverbar fil, der indeholder alle understøttede sprog, som du [downloader](https://www.microsoft.com/download/details.aspx?id=58494) og installerer på din computer.
+
+Linkene ud for hver funktion på opdateringslisten i Power BI Desktop fortolkes på følgende måde:
+
+* \[blog\]: De fleste funktioner er forklaret i et afsnit i den månedlige opdatering i blogindlægget.
+* \[video\]: Der er et videoklip til nogle funktioner, hvor funktionen drøftes. Videoklippet afspilles under en ny browserfane.
+* \[artikel\]: Til nogle funktioner findes der en artikel, som indeholder flere detaljer.
+* De resterende funktioner er selvforklarende og er ikke tilknyttet en artikel eller video.
+
+Du kan også se hele [videoen om den månedlige opdatering til Power BI](#power-bi-desktop-monthly-update-video).
+
+> [!IMPORTANT]
+> Power BI Desktop understøttes ikke længere på Windows 7 efter den 31. januar 2021. Efter denne dato understøttes Power BI Desktop i Windows 8-versioner eller nyere versioner af Windows, men kun for den nyeste version af Power BI Desktop. 
+
+Følgende opdateringer er nye i Power BI Desktop i denne måned:
+
+
+
+### <a name="reporting"></a>Rapportering
+* Lærredsvandmærker [[video]](https://youtu.be/LveNuQqV5xk?t=17)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195557) 
+* Tilpasning af visualiseringer er nu generelt tilgængelig [[video]](https://youtu.be/LveNuQqV5xk?t=115)[[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195558) [[artikel]](../create-reports/power-bi-personalize-visuals.md)
+* Valg med rektangel for datapunkter til træstruktur (eksempelvisning) [[video]](https://youtu.be/LveNuQqV5xk?t=292) [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195559) [[artikel]](../create-reports/desktop-multi-select.md#select-multiple-elements-using-rectangle-select-preview)
+
+### <a name="analytics"></a>Analyse
+* Eksportér data fra visualisering til Spørgsmål og svar [[video]](https://youtu.be/LveNuQqV5xk?t=308) [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52270582) 
+
+
+### <a name="modeling"></a>Modellering
+* Forbedringer af ydeevnen til IF- og SWITCH-funktioner  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52270584)
+
+
+### <a name="data-preparation"></a>Dataforberedelse
+* Dynamiske M-forespørgselsparametre (eksempelvisning) [[video]](https://youtu.be/LveNuQqV5xk?t=329) [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc51665421) [[artikel]](../connect-data/desktop-dynamic-m-query-parameters.md)
+* Automatisk tabelregistrering fra Excel-filer [[video]](https://youtu.be/LveNuQqV5xk?t=615) [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195566)
+* Automatisk tabelregistrering fra JSON-filer [[video]](https://youtu.be/LveNuQqV5xk?t=650) [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc51665423)
+
+### <a name="data-connectivity"></a>Dataforbindelse
+* Bredere geografisk support til Power Platform Dataflows-connector [[video]](https://youtu.be/LveNuQqV5xk?t=675) [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52270590)
+* MariaDB understøtter nu DirectQuery [[video]](https://youtu.be/LveNuQqV5xk?t=694) [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195570)
+* Opdateret SharePoint Online List-connector [[video]](https://youtu.be/LveNuQqV5xk?t=707) [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52270592)
+* Nye data-connectors – Spigit og eWay – CRM [[video]](https://youtu.be/LveNuQqV5xk?t=736) [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195572)
+
+
+### <a name="visuals"></a>Visuelle elementer
+* Udvidede funktioner til administratorfunktionalitet er nu offentligt tilgængelige [[video]](https://youtu.be/LveNuQqV5xk?t=997) [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52270604)
+* Nye visualiseringer fra forskellige udbydere [[video]](https://youtu.be/LveNuQqV5xk?t=1039)[[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195582)
+
+
+### <a name="template-apps"></a>Skabelonapps
+* Forenklet installation til skabelonapps [[video]](https://youtu.be/LveNuQqV5xk?t=1127) [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52270613) 
+* Find skabelonapps fra Power BI Desktop [[video]](https://youtu.be/LveNuQqV5xk?t=1164) [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195591) 
+
+### <a name="other"></a>Andet
+* Eksportér datakilde til PBIDS i Power BI Desktop [[video]](https://youtu.be/LveNuQqV5xk?t=1255) [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195594) [[artikel]](../connect-data/desktop-data-sources.md#how-to-create-a-pbids-connection-file)
+* Opdatering af ikon for Power BI [[video]](https://youtu.be/LveNuQqV5xk?t=1295) [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52270618) 
+* Afvisning af Power BI Desktop-velkomstskærm [[video]](https://youtu.be/LveNuQqV5xk?t=1313) [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195596)
+
+
+Du kan finde detaljerede oplysninger om hver af disse nye funktioner i [oversigten over funktioner i Power BI Desktop](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/).
+
+
+> [!NOTE]
+> Se de [datakilder, der er tilgængelige for Power BI Desktop](../connect-data/desktop-data-sources.md). Vores liste vokser hele tiden, så vend tilbage med jævne mellemrum.
+
+
+### <a name="power-bi-desktop-monthly-update-video"></a>Video om månedlig opdatering til Power BI Desktop
+I følgende video beskrives hver af disse opdateringer. Du kan også se videoen fra blogindlægget:
+
+> [!VIDEO https://www.youtube.com/embed/LveNuQqV5xk]
+
+Du kan også hente tidligere versioner af Power BI Desktop, hvis din organisation kræver det. Vi anbefaler altid, at du bruger den nyeste version af Power BI Desktop i stedet for en tidligere version. Der er følgende begrænsninger for alle tidligere versioner:
+
+* Der ydes ikke service til tidligere versioner af Power BI Desktop – du skal altid bruge den nyeste version for at få de nyeste funktioner og opdateringer.
+* Du kan muligvis ikke åbne filer, der er oprettet eller gemt i nyere versioner af Power BI Desktop, med tidligere versioner af Power BI Desktop. 
+* Hvis du får vist en advarsel, når du indlæser en rapport, der er gemt i en nyere version af Power BI Desktop, og derefter gemmer rapporten i den tidligere version, mister du alle oplysninger, der er relateret til nye funktioner.
+* Vi arkiverer kun de engelske versioner af Power BI Desktop.
+
+Vælg følgende links for at downloade denne tidligere version: 
+
+* [Power BI Desktop-version fra oktober 2020 – 32-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-10.exe)
+* [Power BI Desktop-version fra oktober 2020 – 64-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-10_x64.exe)
 
 
 ## <a name="september-2020-update-2852840"></a>Opdatering i september 2020 (2.85.284.0)
@@ -445,8 +540,6 @@ I følgende video beskrives hver af disse opdateringer. Du kan også se videoen 
 
 > [!VIDEO https://www.youtube.com/embed/JtuHIslowxk]
 
-
-
 Du kan også hente tidligere versioner af Power BI Desktop, hvis din organisation kræver det. Vi anbefaler altid, at du bruger den nyeste version af Power BI Desktop i stedet for en tidligere version. Der er følgende begrænsninger for alle tidligere versioner:
 
 * Der ydes ikke service til tidligere versioner af Power BI Desktop – du skal altid bruge den nyeste version for at få de nyeste funktioner og opdateringer.
@@ -537,20 +630,6 @@ Tjek [nyhederne i Power BI-tjenesten](service-whats-new.md) og [nyhederne i mobi
 I følgende video beskrives hver af disse opdateringer. Du kan også se videoen fra blogindlægget:
 
 > [!VIDEO https://www.youtube.com/embed/q2Hfn_Rhb3E]
-
-
-Du kan også hente tidligere versioner af Power BI Desktop, hvis din organisation kræver det. Vi anbefaler altid, at du bruger den nyeste version af Power BI Desktop i stedet for en tidligere version. Der er følgende begrænsninger for alle tidligere versioner:
-
-* Der ydes ikke service til tidligere versioner af Power BI Desktop – du skal altid bruge den nyeste version for at få de nyeste funktioner og opdateringer.
-* Du kan muligvis ikke åbne filer, der er oprettet eller gemt i nyere versioner af Power BI Desktop, med tidligere versioner af Power BI Desktop. 
-* Hvis du får vist en advarsel, når du indlæser en rapport, der er gemt i en nyere version af Power BI Desktop, og derefter gemmer rapporten i den tidligere version, mister du alle oplysninger, der er relateret til nye funktioner.
-* Vi arkiverer kun de engelske versioner af Power BI Desktop.
-
-Vælg følgende links for at downloade denne tidligere version: 
-
-* [Power BI Desktop, version fra april 2020 – 32-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup.exe)
-* [Power BI Desktop, version fra april 2020 – 64-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup_x64.exe)
-
 
 
 
@@ -861,7 +940,7 @@ Linkene ud for hver opdatering betyder følgende:
 * De fleste funktioner i den månedlige opdatering beskrives i et **[blog]** -indlæg.
 * Nogle af funktionerne er selvforklarende og vil ikke være tilknyttet en artikel elle video.
 
-Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil** -ikonet på videobilleder under listen med opdateringer.
+Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilleder under listen med opdateringer.
 
 Følgende opdateringer er nye i **Power BI Desktop** i denne måned:
 
@@ -939,7 +1018,7 @@ Linkene ud for hver opdatering betyder følgende:
 * De fleste funktioner i den månedlige opdatering beskrives i et **[blog]** -indlæg.
 * Nogle af funktionerne er selvforklarende og vil ikke være tilknyttet en artikel elle video.
 
-Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil** -ikonet på videobilleder under listen med opdateringer.
+Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilleder under listen med opdateringer.
 
 Følgende opdateringer er nye i **Power BI Desktop** i denne måned:
 
@@ -1000,7 +1079,7 @@ Linkene ud for hver opdatering betyder følgende:
 * De fleste funktioner i den månedlige opdatering beskrives i et **[blog]** -indlæg.
 * Nogle af funktionerne er selvforklarende og vil ikke være tilknyttet en artikel elle video.
 
-Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil** -ikonet på videobilleder under listen med opdateringer.
+Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilleder under listen med opdateringer.
 
 Følgende opdateringer var nye i **Power BI Desktop** i denne måned:
 
@@ -1063,7 +1142,7 @@ Linkene ud for hver opdatering betyder følgende:
 * De fleste funktioner i den månedlige opdatering beskrives i et **[blog]** -indlæg.
 * Nogle af funktionerne er selvforklarende og vil ikke være tilknyttet en artikel elle video.
 
-Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil** -ikonet på videobilleder under listen med opdateringer.
+Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilleder under listen med opdateringer.
 
 Følgende opdateringer var nye i **Power BI Desktop** i denne måned:
 
@@ -1128,7 +1207,7 @@ Linkene ud for hver opdatering betyder følgende:
 * De fleste funktioner i den månedlige opdatering beskrives i et **[blog]** -indlæg.
 * Nogle af funktionerne er selvforklarende og vil ikke være tilknyttet en artikel elle video.
 
-Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil** -ikonet på videobilleder under listen med opdateringer.
+Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilleder under listen med opdateringer.
 
 Følgende opdateringer var nye i **Power BI Desktop** i denne måned:
 
@@ -1199,7 +1278,7 @@ Linkene ud for hver opdatering betyder følgende:
 * De fleste funktioner i den månedlige opdatering beskrives i et **[blog]** -indlæg.
 * Nogle af funktionerne er selvforklarende og vil ikke være tilknyttet en artikel elle video.
 
-Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil** -ikonet på videobilleder under listen med opdateringer.
+Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilleder under listen med opdateringer.
 
 Følgende opdateringer var nye i **Power BI Desktop** i denne måned:
 
@@ -1264,7 +1343,7 @@ Linkene ud for hver opdatering betyder følgende:
 * De fleste funktioner i den månedlige opdatering beskrives i et **[blog]** -indlæg.
 * Nogle af funktionerne er selvforklarende og vil ikke være tilknyttet en artikel elle video.
 
-Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil** -ikonet på videobilleder under listen med opdateringer.
+Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilleder under listen med opdateringer.
 
 Følgende opdateringer var nye i **Power BI Desktop** i denne måned:
 
@@ -1336,7 +1415,7 @@ Linkene ud for hver opdatering betyder følgende:
 * De fleste funktioner i den månedlige opdatering beskrives i et **[blog]** -indlæg.
 * Nogle af funktionerne er selvforklarende og vil ikke være tilknyttet en artikel elle video.
 
-Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil** -ikonet på videobilledet under listen med opdateringer.
+Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilledet under listen med opdateringer.
 
 Følgende opdateringer var nye i **Power BI Desktop** i marts:
 
@@ -1405,7 +1484,7 @@ Linkene ud for hver opdatering betyder følgende:
 * De fleste funktioner i den månedlige opdatering beskrives i et **[blog]** -indlæg.
 * Nogle af funktionerne er selvforklarende og vil ikke være tilknyttet en artikel elle video.
 
-Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil** -ikonet på videobilleder under listen med opdateringer.
+Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilleder under listen med opdateringer.
 
 Følgende opdateringer er nye i **Power BI Desktop** i denne måned:
 
@@ -1472,7 +1551,7 @@ Linkene ud for hver opdatering betyder følgende:
 * De fleste funktioner i den månedlige opdatering beskrives i et **[blog]** -indlæg.
 * Nogle af funktionerne er selvforklarende og vil ikke være tilknyttet en artikel eller video.
 
-Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil** -ikonet på videobilleder under listen med opdateringer.
+Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilleder under listen med opdateringer.
 
 Følgende opdateringer er nye i **Power BI Desktop** i denne måned:
 
@@ -1873,7 +1952,7 @@ Følgende opdateringer var nye i **Power BI Desktop** i maj:
 
 ### <a name="data-connectivity"></a>Dataforbindelse
 
-* Ny **fra Web** -connector – efter udtræk af eksempeldata (prøveversion) [[video]](https://youtu.be/-_GMCE1TLvQ?t=10m17s)[[artikel]](../connect-data/desktop-connect-to-web-by-example.md)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#FromWebConnector) 
+* Ny **fra Web**-connector – efter udtræk af eksempeldata (prøveversion) [[video]](https://youtu.be/-_GMCE1TLvQ?t=10m17s)[[artikel]](../connect-data/desktop-connect-to-web-by-example.md)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#FromWebConnector) 
 * Common Data Service for Apps-connector (beta) [[video]](https://youtu.be/-_GMCE1TLvQ?t=12m9s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#cdsApps) 
 * Azure KustoDB-connector (beta) [[video]](https://youtu.be/-_GMCE1TLvQ?t=12m9s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#kustoDB) 
 * Google BigQuery- og Azure HDInsight Spark-connectors nu offentligt tilgængelige [[video]](https://youtu.be/-_GMCE1TLvQ?t=12m9s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#googleBigQueryAzureHDInsightSpark) 
@@ -2058,7 +2137,7 @@ I følgende video beskrives og vises hver af disse opdateringer. Du kan også se
 
 ## <a name="january-2018-update-2544970761"></a>Opdatering i januar 2018 (2.54.4970.761)
 
-Vi startede det nye år med en samling af opdateringer til **Power BI Desktop** , og vores nytårsfortsæt er at sørge for, at der kommer flere.
+Vi startede det nye år med en samling af opdateringer til **Power BI Desktop**, og vores nytårsfortsæt er at sørge for, at der kommer flere.
 
 Linkene ud for hver opdatering betyder følgende:
 
@@ -2108,7 +2187,7 @@ I følgende video beskrives og vises hver af disse opdateringer. Du kan også se
 
 ## <a name="december-2017-update-2534954481"></a>Opdatering i december 2017 (2.53.4954.481)
 
-Med december fulgte en julesæk fuld af opdateringer til **Power BI Desktop** , og den var propfyldt med funktioner og gaver til glæde for alle business intelligence-orienterede børn (og voksne).
+Med december fulgte en julesæk fuld af opdateringer til **Power BI Desktop**, og den var propfyldt med funktioner og gaver til glæde for alle business intelligence-orienterede børn (og voksne).
 
 Linkene ud for hver opdatering betyder følgende:
 
@@ -2117,7 +2196,7 @@ Linkene ud for hver opdatering betyder følgende:
 -   De fleste funktioner i den månedlige opdatering beskrives i et **[blog]** -indlæg.
 -   Nogle af funktionerne er selvforklarende og vil ikke være tilknyttet en artikel elle video.
 
-Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil** -ikonet på videobilleder under listen med opdateringer.
+Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilleder under listen med opdateringer.
 
 Følgende opdateringer var nye i **Power BI Desktop** i december:
 
@@ -2172,7 +2251,7 @@ Linkene ud for hver opdatering betyder følgende:
 -   De fleste funktioner i den månedlige opdatering beskrives i et **[blog]** -indlæg.
 -   Nogle af funktionerne er selvforklarende og vil ikke være tilknyttet en artikel elle video.
 
-Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil** -ikonet på videobilledet under listen med opdateringer.
+Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilledet under listen med opdateringer.
 
 Følgende opdateringer var nye i **Power BI Desktop** i november:
 
@@ -2231,7 +2310,7 @@ Linkene ud for hver opdatering betyder følgende:
 -   De fleste funktioner i den månedlige opdatering beskrives i et **[blog]** -indlæg.
 -   Nogle af funktionerne er selvforklarende og vil ikke være tilknyttet en artikel elle video.
 
-Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil** -ikonet på videobilleder under listen med opdateringer.
+Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilleder under listen med opdateringer.
 
 Følgende opdateringer er nye i **Power BI Desktop** i denne måned:
 
@@ -2694,7 +2773,7 @@ Følgende opdateringer var nye i Power BI Desktop i november:
 ### <a name="analytics"></a>Analyse
 
 -   Klynger (prøveversion) [[video]](https://youtu.be/kERJ_WOLuLk?t=8m52s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#clustering)
--   Prognose (nu i **Power BI-tjenesten** ) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#forecasting)
+-   Prognose (nu i **Power BI-tjenesten**) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#forecasting)
 -   Grupper (nu på båndet) [[video]](https://youtu.be/kERJ_WOLuLk?t=13m29s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#groups)
 
 
@@ -2848,7 +2927,7 @@ I august kom der en lang række nye funktioner til Power BI Desktop:
 -   De fleste funktioner i den månedlige opdatering beskrives i et **[blog]** -indlæg.
 -   Nogle af funktionerne er selvforklarende og vil ikke være tilknyttet en artikel elle video.
 
-Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil** -ikonet på videobilleder under listen med opdateringer.
+Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilleder under listen med opdateringer.
 
 Følgende opdateringer er nye i Power BI Desktop i denne måned:
 
@@ -2923,7 +3002,7 @@ I juli kom der igen en række nye funktioner og længe ventede dataconnectors ti
 
 ### <a name="query-editor-improvements"></a>Forbedringer i Forespørgselseditor:
 
--   Brug **R** -script i Forespørgselseditor [[artikel]](../connect-data/desktop-r-in-query-editor.md)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
+-   Brug **R**-script i Forespørgselseditor [[artikel]](../connect-data/desktop-r-in-query-editor.md)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
 -   Forbedringer til forespørgselsparametre:
     -   Vis output fra forespørgsel som *tilladte værdier* for en parameter [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
 -   Overskriv eksisterende brugerdefinerede funktioner [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
@@ -3030,7 +3109,7 @@ Maj måned betød endnu en stor samling praktiske opdateringer til Power BI Desk
 -   Indbyggede inputkontrolelementer til aktivering af funktioner i **Forespørgselseditor**[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
 -   Forespørgselsparametre: [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
     -   Mulighed for at konvertere forespørgsler til parametre (og omvendt)
-    -   Understøttelse af URL-adresseparametre og URL-adresser med flere dele i **Web** -connectoren
+    -   Understøttelse af URL-adresseparametre og URL-adresser med flere dele i **Web**-connectoren
     -   Understøttelse af parametre i dialogboksen **Betingede kolonner**
 -   Brug af **Gem som** med en Power BI-skabelon [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
 -   Understøtter ændring af rækkefølgen af forespørgselstrin ved at hjælp af træk og slip [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
@@ -3075,7 +3154,7 @@ I april fik vores fantastiske Power BI-kunder endnu en række praktiske opdateri
 
 -   Forespørgselsparametre
 -   Power BI-skabelonfiler
--   Ny kategori, *Onlinetjenester* , i dialogboksen Hent data
+-   Ny kategori, *Onlinetjenester*, i dialogboksen Hent data
 -   Alle connectors:
     -   SharePoint-mappe
     -   Webtrends
@@ -3134,7 +3213,7 @@ Marts måned byder på en masse nye og opdateringer funktioner i Power BI Deskto
     -   Bevar dubletter
 -   Understøttelse af mellemrum og linjeskift i eksempelvisning i Forespørgselseditor
 -   Medtag tip til *eksempelinputværdier*  i dialogboksen **Rediger type med landestandard**
--   Forbedringer i vinduet **Navigator** :
+-   Forbedringer i vinduet **Navigator**:
     -   Tilføj skemaoplysninger i navigationshierarkiet for ODBC-kilder
     -   Mulighed for at deaktivere eksempelvisning fra **Navigator**
     -   Understøttelse af teknisk navn
@@ -3163,14 +3242,14 @@ Lad os kaste os ud i flere opdateringer denne måned! Det er skudår, så der er
 
 ### <a name="report-view"></a>Rapportvisning:
 
--   Se de data, der ligger til grund for en visualisering (inklusive *Eksportér data til CSV* )
+-   Se de data, der ligger til grund for en visualisering (inklusive *Eksportér data til CSV*)
 -   Kortforbedringer – afbildning af kort kun med breddegrad/længdegrad
 -   Understøttelse af KPI-forbrug (inklusive navigationshierarki og KPI-tendenser for SSAS MD)
 -   SSAS-udforskningstilstand: Understøttelse af **Vis** mapper i ruden **Felter**
 -   Forbedringer af båndets layout: Fanen til kontekstafhængigt bånd til **Rapportværktøjer**
 -   Ny KPI-visualisering
 -   Få rapporter åbnet på den samme side, som de blev vist på, da de blev gemt
--   Funktionen **Rediger forespørgsel** i genvejsmenuen til tabeller i ruden Felter ( **Rapport** & **Data** )
+-   Funktionen **Rediger forespørgsel** i genvejsmenuen til tabeller i ruden Felter (**Rapport** & **Data**)
 -   **Dupliker side** på båndet
 
 
@@ -3181,8 +3260,8 @@ Lad os kaste os ud i flere opdateringer denne måned! Det er skudår, så der er
 
 ### <a name="data-connectivity"></a>Dataconnectors:
 
--   **DirectQuery** -understøttelse af Oracle og Teradata
--   **DirectQuery** -understøttelse af oprettelse af beregnede kolonner
+-   **DirectQuery**-understøttelse af Oracle og Teradata
+-   **DirectQuery**-understøttelse af oprettelse af beregnede kolonner
 -   Understøttelse af publicering af Analysis Services Live-rapporter
 -   JSON File-connector
 -   SQL Sentry-connector
@@ -3226,7 +3305,7 @@ Vi starter det nye år med endnu en runde forbedringer til Power BI Desktop. Der
 ### <a name="data-connectivity"></a>Dataconnectors:
 
 -   DirectQuery: nu kan du oprette målinger i DirectQuery-tilstand
--   Du kan nu opdatere data for de enkelte tabeller fra feltlisten (i visningerne **Rapport** og **Data** ) i stedet for kun at kunne vælge **Opdater alle** på båndet
+-   Du kan nu opdatere data for de enkelte tabeller fra feltlisten (i visningerne **Rapport** og **Data**) i stedet for kun at kunne vælge **Opdater alle** på båndet
 -   Generel adgang til flerdimensionelle modeller i Exploration-tilstand i SQL Server Analysis Services (ikke længere en prøveversion)
 -   Bedre understøttelse af hierarkier
 -   Generel adgang til SAP HANA-connector (ikke længere en prøveversion)
@@ -3266,7 +3345,7 @@ December måned er gavernes tid, og Power BI-teamet giver dig en gave med flere 
 -   Forbedringer i visualiseringer:
     - Visuelt tip om sorteringstilstanden i visualiseringen **Tabel**
     - Ny visualisering: Diagrammet **Stablet område**
-    - Smarte værktøjstip til **Områdediagram** og **Kurvediagram** , når der peges på dem
+    - Smarte værktøjstip til **Områdediagram** og **Kurvediagram**, når der peges på dem
     - Mulighed for at oprette referencelinje/område for virtualiseringen **Kartesisk**
     - Forbedrede datamærkater for **cirkeldiagrammer** og **punktdiagrammer**
 
@@ -3290,7 +3369,7 @@ December måned er gavernes tid, og Power BI-teamet giver dig en gave med flere 
 -   [Understøttelse af SSAS Multidimensional-med hierarkier](../connect-data/desktop-ssas-multidimensional.md)
 -   Stripe-connector
 -   Smartsheet-connector
--   **Angiv data** : indsæt eller indtast data for at oprette en tabel
+-   **Angiv data**: indsæt eller indtast data for at oprette en tabel
 -   Forbedringer i DirectQuery: understøtter alle datatyper for T-SQL og SAP HANA, hvilket medfører bedre ydeevne
 -   ODBC-connector: understøtter valg af DSN for bruger/system
 -   CSV-connector: mulighed for at angive kolonneafgrænser i dialogboksen Kilde
@@ -3521,11 +3600,11 @@ Se følgende video for at få flere detaljer om denne opdatering:
 
 Følgende funktioner er blevet tilføjet i denne opdatering:
 
--   **Nye dataconnectorer** : appFigures, Quickbooks Online, Zendesk, GitHub, Twilio og SweetIQ.
+-   **Nye dataconnectorer**: appFigures, Quickbooks Online, Zendesk, GitHub, Twilio og SweetIQ.
 
--   **Nye transformationer** : Udtræk de første, sidste eller et interval af tegn fra en tekstkolonne. Mulighed for at vælge joinforbindelsestype i dialogboksen Flet forespørgsler. Mulighed for at tilpasse typen af anførselstegn i dialogboksen Opdel kolonne efter afgrænser.
+-   **Nye transformationer**: Udtræk de første, sidste eller et interval af tegn fra en tekstkolonne. Mulighed for at vælge joinforbindelsestype i dialogboksen Flet forespørgsler. Mulighed for at tilpasse typen af anførselstegn i dialogboksen Opdel kolonne efter afgrænser.
 
--   **Forbedringer af oprettelse af rapporter** : Nye visualiseringer (områdediagram, vandfaldsdiagram, kransediagram og matrix). Nye indstillinger for formatering og tilpasning af visualiseringer (mærkater, titler, baggrund, forklaring, farver osv.). Indsæt tekstfelt og billede i din rapport. Understøttelse af links i rapporter og rapporttabeller. Handlingerne Fortryd og Annuller fortryd.
+-   **Forbedringer af oprettelse af rapporter**: Nye visualiseringer (områdediagram, vandfaldsdiagram, kransediagram og matrix). Nye indstillinger for formatering og tilpasning af visualiseringer (mærkater, titler, baggrund, forklaring, farver osv.). Indsæt tekstfelt og billede i din rapport. Understøttelse af links i rapporter og rapporttabeller. Handlingerne Fortryd og Annuller fortryd.
 
 -   **Udforskning af direkte rapporter** over Analysis Services-tabelmodeller.
 
@@ -3559,9 +3638,9 @@ Følgende funktioner er blevet tilføjet i denne opdatering:
 
 **Hent data og forespørgsel**
 
--   Ny **ODBC Tables** -connector (beta)
+-   Ny **ODBC Tables**-connector (beta)
 
--   Forbedringer til **Excel-projektmappe** -connectoren: bedre registrering af kolonnetype og hurtigere indlæsning af eksempelvisning af data
+-   Forbedringer til **Excel-projektmappe**-connectoren: bedre registrering af kolonnetype og hurtigere indlæsning af eksempelvisning af data
 
 -   Nye tekstkolonnefiltre – **Begynder ikke med** og **Slutter ikke med**
 
@@ -3624,7 +3703,7 @@ Se følgende video for at få flere detaljer:
 
 Følgende funktioner er blevet tilføjet i denne opdatering:
 
--   **Google Analytics** -connector
+-   **Google Analytics**-connector
 
 -   Flere operatorer til **datofiltre i forespørgselsvisning**
 

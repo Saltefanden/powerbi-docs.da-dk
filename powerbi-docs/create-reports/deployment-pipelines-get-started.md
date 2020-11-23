@@ -7,13 +7,13 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.custom: contperfq1
-ms.date: 09/15/2020
-ms.openlocfilehash: 8f486d1f872aec8eaec096bf01d5d36a314c5cef
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.date: 11/11/2020
+ms.openlocfilehash: ca588c50052ed4950b2f283ee8294098dd36a8ef
+ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90855750"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94669126"
 ---
 # <a name="get-started-with-deployment-pipelines"></a>Kom i gang med udrulningspipelines
 
@@ -23,11 +23,13 @@ I denne artikel gennemgås de grundlæggende indstillinger, der kræves for at b
 
 Hvis følgende betingelser er opfyldt, kan du få adgang til udrulningspipelines:
 
-* Du er en [Pro-bruger](../admin/service-admin-purchasing-power-bi-pro.md) i Power BI
+* Du har en af følgende Premium-licenser:
 
-* Du er medlem af en organisation, der har en Premium-kapacitet
+    * Du er Power BI [Pro-bruger](../admin/service-admin-purchasing-power-bi-pro.md) og er medlem af en organisation, der har Premium-kapacitet.
 
-* Du er administrator af [en ny arbejdsområdeoplevelse](../collaborate-share/service-create-the-new-workspaces.md)
+    * [Premium pr. bruger](../admin/service-premium-per-user-faq.md).
+
+* Du er administrator af [en ny arbejdsområdeoplevelse](../collaborate-share/service-create-the-new-workspaces.md).
 
 >[!NOTE]
 > Du kan også se knappen til udrulningspipelines, hvis du tidligere har oprettet en pipeline, eller hvis en pipeline er blevet delt med dig.
@@ -60,7 +62,7 @@ Du kan oprette en pipeline ud fra et eksisterende arbejdsområde, forudsat at du
 2. I dialogboksen *Opret en udrulningspipeline* skal du angive et navn og en beskrivelse for pipelinen og vælge **Opret**.
 
 >[!NOTE]
->Hvis arbejdsområdet ikke er tildelt til din organisations Premium-kapacitet, får du vist en meddelelse om, [at tildele det til en kapacitet](../admin/service-admin-premium-manage.md#assign-a-workspace-to-a-capacity).  
+>Hvis arbejdsområdet ikke er tildelt til din organisations Premium-kapacitet eller din Premium pr. bruger-kapacitet, får du vist en meddelelse om, at du skal [tildele det til en kapacitet](../admin/service-admin-premium-manage.md#assign-a-workspace-to-a-capacity).  
 
 ## <a name="step-2---assign-a-workspace-to-a-deployment-pipeline"></a>2\. trin – tildel et arbejdsområde til en udrulningspipeline
 
@@ -87,7 +89,7 @@ Følg disse trin for at tildele et arbejdsområde i en udrulningspipeline:
 
 * Arbejdsområdet må ikke være tildelt til nogen anden pipeline.
 
-* Arbejdsområdet skal være placeret i en [Premium-kapacitet](../admin/service-premium-what-is.md).
+* Arbejdsområdet skal være placeret i en  [Premium-kapacitet](../admin/service-premium-what-is.md).
 
 * Du kan ikke tildele et arbejdsområde med [Power BI-eksempler](../create-reports/sample-datasets.md) til en pipelinefase.
 
@@ -134,7 +136,7 @@ Når du arbejder i en udrulningspipeline, kan forskellige faser have forskellige
 
 Når du udruller indhold mellem pipelinefaser, kan du konfigurere regler for datasæt, så du kan tillade ændringer af indhold, mens nogle indstillinger forbliver intakte.
 
-Regler for datasæt er defineret for datakilder og parametre i hvert datasæt. De bestemmer værdierne for datakilderne eller parametrene for et bestemt datasæt. Hvis du f.eks. vil have et datasæt i en produktionsfase til at pege på en produktionsdatabase, kan du definere en regel for dette. Reglen defineres i produktionsfasen under det relevante datasæt. Når reglen er defineret, arver indhold, der er udrullet fra test til produktion, den værdi, der er defineret i datasætreglerne, og den vil altid blive anvendt, så længe reglen ikke ændres og er gyldig.
+Regler for datasæt er defineret for datakilder og parametre i hvert datasæt. De bestemmer værdierne for datakilderne eller parametrene for et bestemt datasæt. Hvis du f.eks. vil have et datasæt i en produktionsfase til at pege på en produktionsdatabase, kan du definere en regel for dette. Reglen defineres i produktionsfasen under det relevante datasæt. Når reglen er defineret, arver indhold, der er udrullet fra test til produktion, den værdi, der er defineret i datasætreglen, og den vil altid blive anvendt, så længe reglen ikke ændres og er gyldig.
 
 >[!NOTE]
 > Regler for datasæt fungerer kun, når kilde- og destinationsdatakilden er af samme type.

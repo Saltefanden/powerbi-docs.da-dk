@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 06/22/2020
+ms.date: 11/11/2020
 ms.author: davidi
 LocalizationGroup: Premium
-ms.openlocfilehash: 0e55aa6fbfc1fadb529c6c321d7d97d3f48d569d
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: 6ca4257f73837b68d76734ea503e8f83e0d5ba49
+ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91599059"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94512947"
 ---
 # <a name="incremental-refresh-in-power-bi"></a>Trinvis opdatering i Power BI
 
@@ -27,6 +27,10 @@ En trinvis opdatering gør det muligt at have meget store datasæt i Power BI me
 
 > [!NOTE]
 > Trinvis opdatering er nu tilgængelig for Power BI Pro, Premium og delte abonnementer og datasæt.
+
+> [!NOTE]
+> Power BI Premium har for nylig udgivet en ny version af Premium med navnet **Premium Gen2**, der i øjeblikket er tilgængelig som prøveversion. Premium Gen2 forenkler administrationen af Premium-kapaciteter og reducerer administrationsomkostningerne. Premium Gen2 forbedrer den planlagte opdatering markant ved at aktivere automatisk skalering for at undgå opdateringskonflikter. Du kan finde flere oplysninger under [Power BI Premium – Generation 2 (prøveversion)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+
 
 ## <a name="configure-incremental-refresh"></a>Konfigurer trinvis opdatering
 
@@ -123,7 +127,7 @@ Den *aktuelle dato* er baseret på systemdatoen for opdateringstidspunktet. Hvis
 
 #### <a name="detect-data-changes"></a>Registrer dataændringer
 
-En trinvis opdatering på 10 dage er selvfølgelig meget mere effektiv end en komplet opdatering på 5 år. Det er imidlertid muligt at gøre det på en endnu bedre måde. Hvis du markerer afkrydsningsfeltet**Registrer dataændringer**, kan du vælge en dato/klokkeslæt-kolonne, der bruges til at identificere og kun opdatere de dage, hvor dataene er blevet ændret. Det er en forudsætning, at der findes en sådan kolonne i kildesystemet, der typisk bruges til overvågning. **Det må ikke være den samme kolonne, der bruges til at partitionere dataene med parametrene RangeStart/RangeEnd.** Maksimumværdien for denne kolonne evalueres for hver af perioderne i det trinvise interval. Hvis den ikke er ændret siden den seneste opdatering, er det ikke nødvendigt at opdatere perioden. I eksemplet kan dette yderligere reducere antallet af dage for den trinvise opdatering fra 10 til ca. 2 dage.
+En trinvis opdatering på 10 dage er selvfølgelig meget mere effektiv end en komplet opdatering på 5 år. Det er imidlertid muligt at gøre det på en endnu bedre måde. Hvis du markerer afkrydsningsfeltet **Registrer dataændringer**, kan du vælge en dato/klokkeslæt-kolonne, der bruges til at identificere og kun opdatere de dage, hvor dataene er blevet ændret. Det er en forudsætning, at der findes en sådan kolonne i kildesystemet, der typisk bruges til overvågning. **Det må ikke være den samme kolonne, der bruges til at partitionere dataene med parametrene RangeStart/RangeEnd.** Maksimumværdien for denne kolonne evalueres for hver af perioderne i det trinvise interval. Hvis den ikke er ændret siden den seneste opdatering, er det ikke nødvendigt at opdatere perioden. I eksemplet kan dette yderligere reducere antallet af dage for den trinvise opdatering fra 10 til ca. 2 dage.
 
 ![Registrer ændringer](media/service-premium-incremental-refresh/detect-changes.png)
 
@@ -248,3 +252,14 @@ Hent og installér den nyeste version af ALM Toolkit fra [git-lageret til Analys
 
 [Netværksmulighed for datasæt med XMLA-slutpunktet](service-premium-connect-tools.md)   
 [Fejlfinding i forbindelse med opdatering af scenarier](../connect-data/refresh-troubleshooting-refresh-scenarios.md)
+
+
+Power BI har introduceret Power BI Premium Gen2 som et prøveversionstilbud, der forbedrer Power BI Premium-oplevelsen på følgende områder:
+* Ydeevne
+* Licens pr. bruger
+* Større skalering
+* Forbedrede målepunkter
+* Automatisk skalering
+* Reducerede administrationsomkostninger
+
+Du kan finde flere oplysninger om Power BI Premium Gen2 under [Power BI-Premium – Generation 2 (prøveversion)](service-premium-what-is.md#power-bi-premium-generation-2-preview).

@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 10/01/2020
-ms.openlocfilehash: b1d0a94e3dd0ae68231720bc69d2537568efd19f
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: 8ff1fe1657e22b1e0812bddf6a0842b3c32b8822
+ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94396788"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94668574"
 ---
 # <a name="export-power-bi-report-to-file-preview"></a>Eksportér Power BI-rapport til fil (prøveversion)
 
@@ -93,6 +93,9 @@ Når du bruger `exportToFile`-API'en, kan du overføre din foretrukne landestand
 `exportToFile` understøtter samtidige anmodninger om eksportjob. I nedenstående tabel vises antallet af job, du kan køre samtidigt, afhængigt af hvilken SKU din rapport er placeret på. Samtidige anmodninger refererer til rapportsider. Hvis der f.eks. er 20 sider i én eksportanmodning på en A6 SKU, behandles de samtidigt. Dette tager stort set den samme tid som at sende 20 eksportanmodninger med én side hver.
 
 Et job, der overskrider sit antal af samtidige anmodninger, afsluttes ikke. Hvis du f.eks. eksporterer tre sider i en A1 SKU, udføres det første job, og de sidste to venter på de næste to udførelsescyklusser.
+
+>[!NOTE]
+>Eksport af en Power BI-rapport til en fil ved hjælp af `exporToFile`-API'en understøttes ikke for [Premium pr. bruger](../../admin/service-premium-per-user-faq.md). 
 
 |Azure SKU  |Office SKU  |Maksimalt antal samtidige rapportsider  |
 |-----------|------------|-----------|

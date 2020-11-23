@@ -9,16 +9,16 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 06/25/2020
-ms.openlocfilehash: 41c7ba43d16b6d77ecf6324d3cd175dbbabc51a1
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.openlocfilehash: 447fad076d9d171a2bdcb8e9f5aafe9c63555d79
+ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91983388"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94668666"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-organization"></a>Selvstudium: Integrer sideinddelte Power BI-rapporter i et program til din organisation
 
-I **Power BI**kan du integrere sideinddelte rapporter i et program til din organisation ved hjælp af scenariet *brugeren ejer data*.
+I **Power BI** kan du integrere sideinddelte rapporter i et program til din organisation ved hjælp af scenariet *brugeren ejer data*.
 
 Sideinddelte rapporter er rapporter, der er udviklet til udskrivning i høj kvalitet. Disse rapporter indeholder normalt en masse data, der gengives på en måde, så de passer til sider, der udskrives.
 Hvis du vil vide, hvordan Power BI understøtter sideinddelte rapporter, kan du se [Hvad er sideinddelte rapporter i Power BI Premium?](../../paginated-reports/paginated-reports-report-builder-power-bi.md)
@@ -44,6 +44,9 @@ Du skal have følgende for at komme i gang:
 * Som minimum en P1-kapacitet. Se [Hvilken størrelse Premium-kapacitet for sideinddelte rapporter skal jeg bruge?](../../paginated-reports/paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports)
 
 Hvis du ikke er tilmeldt **Power BI Pro**, kan du [tilmelde dig en gratis prøveversion](https://powerbi.microsoft.com/pricing/), før du begynder.
+
+>[!NOTE]
+>[Premium pr. bruger](../../admin/service-premium-per-user-faq.md) understøttes. Men hvis du bruger Premium pr. bruger, er det kun brugere af Premium pr. bruger i din organisation, der har adgang til din løsning.
 
 ## <a name="set-up-your-power-bi-environment"></a>Konfigurer dit Power BI-miljø
 

@@ -7,32 +7,81 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 07/28/2020
+ms.date: 11/12/2020
 ms.custom: licensing support
 LocalizationGroup: Premium
-ms.openlocfilehash: cb8ac0ad558f15219829e9f32111cacf9f27eb25
-ms.sourcegitcommit: 132b3f6ba6d2b1948ddc15969d64cf629f7fb280
+ms.openlocfilehash: d5879d6a8469b23f6e31e48345ac3ccb5f378cbb
+ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94483736"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94668206"
 ---
 # <a name="what-is-power-bi-premium"></a>Hvad er Power BI Premium?
 
-Du kan bruge Power BI Premium til at hente dedikerede og forbedrede ressourcer til din organisation, så brugerne i din organisation kan bruge Power BI-tjenesten med bedre ydeevne og svartid. Hvis du f. eks. har et Power BI Premium-abonnement, får du og din organisations brugere adgang til:
+Du kan bruge Power BI Premium til at få adgang til funktioner og egenskaber, der kun er tilgængelige i Premium, og som giver større skaleringsmuligheder og ydeevne til Power BI-indhold i din organisation. Power BI Premium gør det muligt for flere brugere i din organisation at få mest muligt ud af Power BI med bedre ydeevne og svartid. Med Power BI Premium får du og din organisations brugere f.eks. adgang til følgende:
 
 > [!div class="checklist"]
-> * Større skalering og ydeevne
+> * Større skaleringsmuligheder og ydeevne for dine Power BI-rapporter
 > * Fleksibilitet til at licensere efter kapacitet
-> * Foren selvbetjenings-BI og virksomhedsmæssig BI
-> * Udvid BI i det lokale miljø med Power BI-rapportserver
-> * Understøttelse af dataopbevaring efter område (Multi-Geo)
-> * Del data med alle uden at købe en licens pr. bruger
+> * De bedste funktioner til datavisualisering og udtræk af indsigt, f. eks. AI-baseret analyse, dataflow, der kan sammensættes og genbruges, samt sideinddelte rapporter
+> * Foren selvbetjenings- og virksomheds-BI med en række Premium-funktioner, der understøtter tungere arbejdsprocesser og kræver skalering på virksomhedsniveau
+> * Indbygget licens, så BI kan udvides i det lokale miljø med Power BI-rapportserver
+> * Understøttelse af dataopbevaring efter område (Multi-Geo) og kundeadministrerede krypteringsnøgler til inaktive data (BYOK)
+> * Mulighed for at dele Power BI indhold med alle (også uden for din organisation) uden at købe en licens pr. bruger
 
 
 ![Skærmbillede, der viser Power BI-administrationsportalen.](media/service-premium-what-is/premium-admin-portal.png) 
 
 I denne artikel introduceres vigtige funktioner i Power BI Premium. Hvor det er nødvendigt, leveres der links til flere artikler med mere detaljerede oplysninger. Du kan finde flere oplysninger om Power BI Pro og Power BI Premium i afsnittet _Sammenligning af Power BI-funktioner_ under [Power BI-priser](https://powerbi.microsoft.com/pricing/).
+
+## <a name="power-bi-premium-generation-2-preview"></a>Power BI Premium Generation 2 (prøveversion)
+
+Power BI Premium har for nylig udgivet en ny version af Power BI Premium, **Power BI Premium Generation 2**, der også kaldes **Premium Gen2**. Premium Gen2 fås i øjeblikket som prøveversion og er tilgængelig for de Premium-abonnenter, der skal bruges i prøveperioden. Du kan vælge at bruge den oprindelige version af Premium eller skifte til at bruge Premium Gen2. Du kan kun bruge én af dem til din Premium-kapacitet. 
+
+Premium Gen2 omfatter følgende opdateringer eller forbedrede oplevelser:
+
+* Mulighed for **Premium pr. bruger**-licens ud over efter kapacitet.
+
+* Forbedret **ydeevne** uanset kapacitetsstørrelse, til enhver tid: Analysehandlinger kører op til 16X hurtigere på Premium Gen2. Handlinger udføres altid med den højeste hastighed og kører ikke langsommere, når belastningen af kapaciteten nærmer sig kapacitetsgrænserne.
+
+* **Større skalering**:
+    * *Ingen grænser* for opdateringssamtidighed, så du behøver ikke længere at spore tidsplaner for datasæt, der opdateres på din kapacitet
+    * Færre hukommelsesbegrænsninger
+    * Komplet adskillelse mellem rapportinteraktion og planlagte opdateringer
+
+* **Forbedrede målepunkter** med tydelige og normaliserede data for kapacitetsudnyttelse, som kun er afhængige af kompleksiten af de analyser, kapaciteten udfører, og ikke af dens størrelse, belastningsniveauet for systemet, mens de udføres osv. De forbedrede målepunkter tydeliggør brugsanalyse, budgetplanlægning, tilbageførsler samt behovet for opgradering med indbygget rapportering. Forbedrede målepunkter gøres tilgængelige og forbedres i hele prøveperioden. 
+
+* **Autoskalering** gør det muligt *automatisk at tilføje* 1 v-kerne ad gangen i 24-timers-perioder, når belastningen af kapaciteten overskrider grænserne, så nedsat ydeevne forårsaget af overbelastning forhindres. V-kerner fjernes automatisk, når der registreres inaktiv tid. Yderligere v-kerner faktureres til dit Azure-abonnement på betalt efter forbrug-basis. Autoskalering er tilgængelig i løbet af prøveperioden. 
+
+* Væsentligt **reducerede administrationsomkostninger** med proaktive og konfigurerbare administratormeddelelser om kapacitetsforbrug og belastningsforøgelser.
+
+
+### <a name="using-premium-gen2"></a>Brug af Premium Gen2
+
+Du skal aktivere Premium Gen2 for at kunne drage fordel af opdateringerne. Benyt følgende fremgangsmåde for at aktivere Premium Gen2:
+
+1. Gå til **Kapacitetsindstillinger** i administrationsportalen.
+2. Vælg **Power BI Premium**.
+3. Der vises et afsnit med titlen **Premium Generation 2 (prøveversion)** , og i dette afsnit er der en skyder, der aktiverer Premium Generation 2 (prøveversion). 
+4. Flyt skyderen for at **Aktiveret**.
+
+På følgende billede kan du se, hvordan du aktiverer Premium Gen2. 
+
+![Aktivering af Premium Generation 2](media/service-premium-what-is/enable-premium-gen2.gif#lightbox) 
+
+### <a name="known-limitations-in-premium-gen2"></a>Kendte begrænsninger i Premium Gen2
+
+Følgende kendte begrænsninger gælder i øjeblikket for Premium Gen2:
+
+1.  Premium Gen2-kapacitetsudnyttelse kan ikke spores i målepunktsappen.
+
+2.  Indstillinger for Premium Gen2-kapacitet for bestemte arbejdsbelastninger er endnu ikke synlige på siden med indstillinger for Premium Gen2-kapacitet i administrationsportalen. Hvis du vil ændre indstillingerne, skal du overføre kapaciteten til den oprindelige version af Premium, ændre indstillingerne og derefter angive kapaciteten til at bruge Premium Gen2 en gang til. Indstillinger for hukommelsesallokering gælder ikke for Premium Gen2-kapaciteter.
+
+3.  Dataflow med ADLS Gen2-datakilder fungerer i øjeblikket ikke på Premium Gen2-kapaciteter.  
+
+4.  Hvis du bruger XMLA på Premium Gen2, skal du sørge for, at du bruger de nyeste versioner af [datamodellerings- og administrationsværktøjer](service-premium-connect-tools.md#data-modeling-and-management-tools). 
+
 
 ## <a name="subscriptions-and-licensing"></a>Abonnementer og licenser
 
@@ -42,19 +91,22 @@ Power BI Premium er et Microsoft 365-abonnement på lejerniveau, der er tilgæng
 
 - **EM**-SKU'er (EM1-EM3) til integrering i _organisationer_ kræver en årlig forpligtelse og faktureres månedsvis. EM1- og EM2-SKU'er er kun tilgængelige via volumenlicensplaner. Du kan ikke købe dem direkte.
 
-Der er en alternativ metode til at købe et **Power BI Embedded**-abonnement i Azure. Der er et enkelt **A**-SKU (A1-A6) SKU-serie, der ikke kræver nogen forpligtelse, og som faktureres på timebasis for brug af rebrandet Power BI i programmer, på portaler og på websteder eller som en måde at teste P- eller EM-kapaciteter på. Alle SKU'er leverer v-kerner for at oprette kapaciteter, men EM-SKU'erne er begrænset til integrering i mindre størrelsesorden. EM1-, EM2-, A1- og A2-SKU'er med mindre end fire v-kerner kører ikke på dedikeret infrastruktur.
+### <a name="updates-for-premium-gen2-preview"></a>Opdateringer til Premium Gen2 (prøveversion)
+Premium-Gen2 er i øjeblikket tilgængelig som en fuldt understøttet prøveversionsfunktion kun til **P**- og **EM**-SKU'er. **En** SKU's kapacitet omfatter endnu ikke alle ekstra fordele, der introduceres i opdateringen til Premium Gen2-prøveversionen.
 
-Selvom denne artikel fokuserer på P-SKU'er, er meget af det, der beskrives, også relevant for A-SKU'er. I modsætning til SKU'erne for Premium-abonnementet kræver Azure-SKU'er ingen tidsmæssig binding og faktureres på timebasis. De leverer fuld elasticitet, hvilket gør det muligt at skalere op og ned, afbryde midlertidigt, genoptage og slette. 
-
-Azure Power BI Embedded ligger ganske vist uden for denne artikels rammer, men er beskrevet i afsnittet [Testmetoder](service-premium-capacity-optimize.md#testing-approaches) i artiklen Optimering af Premium-kapaciteter som en praktisk og økonomisk mulighed for at teste og måle arbejdsbelastninger. Du kan få mere at vide om Azure-SKU'er i [dokumentationen til Azure Power BI Embedded](https://azure.microsoft.com/services/power-bi-embedded/).
 
 ### <a name="purchasing"></a>Indkøb
 
 Power BI Premium-abonnementer købes af administratorer i Microsoft 365 Administration. Kun globale administratorer eller faktureringsadministratorer kan købe SKU'er. Når de er blevet købt, modtager lejeren et tilsvarende antal v-kerner, som kan tildeles til kapaciteter, der kaldes *gruppering af v-kerner*. Køb af en P3-SKU giver f.eks. lejeren 32 v-kerner. Du kan finde flere oplysninger under [Sådan køber du Power BI Premium](service-admin-premium-purchase.md).
 
-## <a name="dedicated-capacities"></a>Dedikerede kapaciteter
+#### <a name="power-bi-premium-per-user-preview"></a>Power BI Premium pr. bruger (prøveversion)
 
-Med Power BI Premium får du *dedikerede kapaciteter*. I modsætning til en delt kapacitet, hvor arbejdsbelastninger kører på databehandlingsressourcer, der deles med andre kunder, er en dedikeret kapacitet udelukkende til brug af en organisation. Den isoleres med dedikerede databehandlingsressourcer, som sikrer en pålidelig og konsekvent ydeevne for det indhold, der hostes. Bemærk, at følgende ressourcer gemmes i en delt kapacitet i stedet for i din dedikerede kapacitet:
+Power BI **Premium pr. bruger** giver organisationer mulighed for at give Premium-funktioner i licens pr. bruger. Premium pr. bruger omfatter alle Power BI Pro-licensfunktioner og tilføjer også funktioner som sideinddelte rapporter, AI og andre egenskaber, der kun er tilgængelige for Premium-abonnenter. Premium pr. bruger er i øjeblikket tilgængelig som prøveversion. Du kan finde flere oplysninger om Premium pr. bruger, herunder en sammenligning af funktioner og andre oplysninger om udgivelsen af prøveversionen, i artiklen [Ofte stillede spørgsmål om Power BI Premium pr. bruger (prøveversion)](service-premium-per-user-faq.md) (artiklen er muligvis kun tilgængelig på engelsk). 
+
+
+## <a name="reserved-capacities"></a>Reserverede kapaciteter
+
+Med Power BI Premium får du *reserverede kapaciteter*. I modsætning til en delt kapacitet, hvor arbejdsbelastninger kører på databehandlingsressourcer, der deles med andre kunder, skal en reserveret kapacitet udelukkende bruges af en organisation. Den er isoleret og har dedikerede databehandlingsressourcer, som sikrer en pålidelig og konsekvent ydeevne for indhold, der hostes. Bemærk, at behandlingen af følgende typer Power BI-indhold gemmes i en delt kapacitet i stedet for din reserverede kapacitet:
 
 * Excel-projektmapper (medmindre data importeres først i Power BI Desktop)
 * [Send datasæt via push](/rest/api/power-bi/pushdatasets)
@@ -62,6 +114,12 @@ Med Power BI Premium får du *dedikerede kapaciteter*. I modsætning til en delt
 * [Spørgsmål og svar](../create-reports/power-bi-tutorial-q-and-a.md)
 
 Der er placeret arbejdsområder i kapaciteter. Hver bruger af Power BI har et personligt arbejdsområde, der er kendt som **Mit arbejdsområde**. Der kan oprettes flere arbejdsområder – kendt som **arbejdsområder** – for at muliggøre samarbejde. Arbejdsområder, herunder personlige arbejdsområder, oprettes som standard i den delte kapacitet. Når du har Premium-kapaciteter, kan både Mine arbejdsområder og arbejdsområder tildeles til Premium-kapaciteter.
+
+Kapacitetsadministratorer får automatisk deres egne arbejdsområder tildelt til Premium-kapaciteter.
+
+### <a name="updates-for-premium-gen2-preview"></a>Opdateringer til Premium Gen2 (prøveversion)
+Premium gen 2-noder bruger ikke længere en reserveret infrastruktur. Tjenesten sørger i stedet for, at der er tilstrækkelig computerkraft til hver arbejdsbelastning, der kører, ved at tildele tilstrækkeligt mange ressourcer til en delt pulje af computernoder med høj kapacitet.
+
 
 ### <a name="capacity-nodes"></a>Kapacitetsnoder
 
@@ -82,17 +140,22 @@ Ressourcerne og grænserne for hver Premium-SKU (og A-SKU'er i en tilsvarende st
 | EM1/A1 | 1 | 0,5 | 3 | 0,5 | 3,75 | 1 |
 | EM2/A2 | 2 | 1 | 5 | 1 | 7,5 | 2 |
 | EM3/A3 | 4 | 2 | 10 | 2 | 15 | 3 |
-| P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
-| P2/A5 | 16 | 8 | 50 | 8 | 60 | 12 |
-| P3/A6 | 32 | 16 | 100 | 16 | 120 | 24 |
-| P4/A7 <sup>[1](#limit)</sup>| 64 | 32 | 200 | 32 | 240 | 48 |
-| P5/A8 <sup>[1](#limit)</sup>| 128 | 64 | 400 | 64 | 480 | 96 |
+| P1 | 8 | 4 | 25 | 4 | 30 | 6 |
+| P2 | 16 | 8 | 50 | 8 | 60 | 12 |
+| P3 | 32 | 16 | 100 | 16 | 120 | 24 |
+| P4 <sup>[1](#limit)</sup>| 64 | 32 | 200 | 32 | 240 | 48 |
+| P5 <sup>[1](#limit)</sup>| 128 | 64 | 400 | 64 | 480 | 96 |
 | | | | | | | |
 
 <a name="limit">1</a> – Kun efter speciel anmodning. For meget store modeller, der er større end 100 GB.
 
 >[!NOTE]
 >Det kan være en fordel at bruge en enkelt større SKU (f.eks. én P2-SKU) til at kombinere mindre SKU'er (f.eks. to P1-SKU'er). Du kan f.eks. bruge større modeller og opnå bedre parallelitet med P2.
+
+#### <a name="updates-for-premium-gen2-preview"></a>Opdateringer til Premium Gen2 (prøveversion)
+
+Med **Premium Gen2** er den mængde hukommelse, der er tilgængelig på hver nodestørrelse, angivet til grænsen for hukommelsesforbrug for en enkelt artefakt og ikke til det akkumulerede hukommelsesforbrug. I Premium Gen2 er det for eksempel kun muligt at have et enkelt DataSet-størrelse, der er begrænset til 25 GB i forhold til den oprindelige Premium, hvor det samlede hukommelsesforbrug for de datasæt, der håndteres på samme tid, er begrænset til 25 GB.
+
 
 ### <a name="capacity-workloads"></a>Kapacitetsarbejdsbelastninger
 
@@ -123,6 +186,10 @@ Det er vigtigt at understrege, at fjernelse af datasæt er en normal og forvente
 Opdateringer af importmodeller er altid hukommelseskrævende, da modeller skal indlæses i hukommelsen. Der kræves ekstra hukommelse til behandling. En fuld opdatering kan bruge ca. dobbelt så meget hukommelse, der kræves af modellen. Dette sikrer, at modellen kan forespørges, selv når den behandles, da forespørgsler sendes til den eksisterende model, indtil opdateringen er fuldført, og de nye modeldata er tilgængelige. En trinvis opdatering kræver mindre hukommelse og kan fuldføres hurtigere og kan derfor i høj grad reducere belastningen af kapacitetsressourcer. Opdateringer kan også være CPU-krævende for modeller, især dem med komplekse Power-transformationer eller beregnede tabeller/kolonner, som er komplekse eller baseret på store tabeller.
 
 Opdateringer af f.eks. forespørgsler kræver, at modellen indlæses i hukommelsen. Hvis der ikke er tilstrækkelig hukommelse, vil Power BI-tjenesten forsøge at udsætte inaktive modeller, og hvis det ikke er muligt (da alle modeller er aktive), sættes opdateringsjobbet i kø. Opdateringer er typisk CPU-krævende, endda endnu mere krævende end forespørgsler. Der er derfor kapacitetsbegrænsninger for antallet af samtidige opdateringer, der er angivet til 1,5 gange antallet af backend-v-kerner, rundet op. Hvis der er for mange samtidige opdateringer, sættes en planlagt opdatering i kø. Når disse situationer opstår, tager det længere tid at fuldføre opdateringen. Opdateringer efter behov, f.eks. dem, der udløses af en brugeranmodning eller et API-kald, forsøger igen tre gange \[[1](#endnote-1)\]. Hvis der stadig ikke er tilstrækkelige ressourcer, mislykkes opdateringen.
+
+#### <a name="updates-for-premium-gen2-preview"></a>Opdateringer til Premium Gen2 (prøveversion)
+Premium Gen2 kræver ikke akkumulerede hukommelsesgrænser, og derfor har opdateringerne altid tilstrækkelig hukommelse. Derudover er der ingen grænse på 1,5 X, der kører pr. v-kerne. Du kan planlægge og køre så mange opdateringer, som det er påkrævet, på et hvilket som helst tidspunkt, og Power BI-tjenesten køre disse opdateringer på det tidspunkt, der er planlagt som det bedste.
+
 
 Afsnitsnoter:   
 <a name="endnote-1"></a>\[1\] Kan ændres.
@@ -157,6 +224,10 @@ Overvågning på portalen giver et hurtigt overordnet overblik over målepunkter
 
 ![Skærmbillede, der viser kapacitetstilstand i Power BI-administrationsportalen.](media/service-premium-what-is/premium-admin-portal-health.png)
 
+> [!NOTE]
+> **Opdateringer til Premium Gen2 (prøveversion)** – Premium-Gen2 kræver kun overvågning af et enkelt aspekt: Hvor meget CPU-tid din kapacitet kræver for at betjene belastningen på et hvilket som helst tidspunkt. Hvis du overstiger din CPU-tid pr. SKU-størrelse, du har købt, skaleres din kapacitet enten automatisk, så den passer til behovet, eller begrænser dine interaktive handlinger baseret på dine konfigurationsindstillinger.
+
+
 Programmet **Power BI Premium Capacity Metrics** giver de mest detaljerede oplysninger om ydeevnen af dine kapaciteter. Programmet indeholder et overordnet dashboard og mere detaljerede rapporter.
 
 ![Appdashboardet Målepunkter](media/service-admin-premium-monitor-capacity/app-dashboard.png)
@@ -166,6 +237,10 @@ I programmets dashboard kan du klikke på en celle med målepunkter for at åbne
 ![Periodiske spidsbelastninger af forespørgselsventetider indikerer en potentiel CPU-mætning](media/service-premium-capacity-scenarios/peak-query-wait-times.png)
 
 Du kan få mere at vide om overvågning af kapaciteter under [Overvågning på Power BI-administrationsportalen](service-admin-premium-monitor-portal.md) og [Overvågning med programmet Power BI Premium Capacity Metrics](service-admin-premium-monitor-capacity.md).
+
+#### <a name="updates-for-premium-gen2-preview"></a>Opdateringer til Premium Gen2 (prøveversion)
+**Premium Gen2**-kapaciteter bruger ikke målepunktsappen, men appen for kapacitetsudnyttelse, som bliver tilgængelig i prøveversionen. Appen for kapacitetsudnyttelse kan åbnes fra siden Kapacitetsstyring i **administrationsportalen** for hver kapacitet.
+
 
 ### <a name="optimizing-capacities"></a>Optimering af kapaciteter
 
@@ -187,9 +262,9 @@ I følgende tabel vises de anbefalede SKU'er for upload af .pbix-filer eller pub
 
    |SKU  |.pbix-størrelse   |
    |---------|---------|
-   |P1/A4    | < 3 GB        |
-   |P2/A5    | < 6 GB        |
-   |P3/A6, P4, P5    | op til 10 GB   |
+   |P1    | < 3 GB        |
+   |P2    | < 6 GB        |
+   |P3, P4, P5    | op til 10 GB   |
 
 Power BI Embedded A4-SKU'en er lig med P1-SKU'en, A5-SKU'en = P2 og A6-SKU'en = P3.
 
@@ -216,6 +291,21 @@ Du kan få mere at vide under [Trinvis opdatering i Power BI Premium](service-pr
 Sideinddelte rapporter, der understøttes på P1-P3- og A4-A6-SKU'er, er baseret på RDL-teknologi (Report Definition Language) i SQL Server Reporting Services. De er baseret på RDL-teknologien, men er ikke det samme som Power BI-rapportserveren, som er en rapporteringsplatform, der kan downloades, og som du kan installere i det lokale miljø. Også inkluderet i Power BI Premium. Sideinddelte rapporter formateres, så de passer til en side, der kan udskrives eller deles. Data vises i en tabel, også selvom tabellen strækker sig over flere sider. Ved hjælp af det gratis Windows-skrivebordsprogram [**Power BI Report Builder**](https://aka.ms/pbireportbuilder) kan brugere oprette sideinddelte rapporter og publicere dem til tjenesten.
 
 I Power BI Premium er sideinddelte rapporter en arbejdsbelastning, der skal aktiveres for en kapacitet ved hjælp af administrationsportalen. Kapacitetsadministratorer kan aktivere og derefter angive mængden af hukommelse som en procentdel af kapacitetens overordnede hukommelsesressourcer. I modsætning til andre typer arbejdsbelastninger kører Power BI Premium sideinddelte rapporter i et afgrænset område i kapaciteten. Den maksimale hukommelse, der angives for dette område, bruges, uanset om arbejdsbelastningen er aktiv eller ej. Standarden er 20 %. 
+
+> [!NOTE]
+> I **Premium Gen2 (prøveversion)** er der ingen hukommelsesadministration for sideinddelte rapporter. Med Premium Gen2 understøttes sideinddelte rapporter på EM1-EM3-SKU'erne.
+
+### <a name="paginated-reports-and-premium-gen2"></a>Sideinddelte rapporter og Premium Gen2
+
+Når du bruger Premium Gen2, drager sideinddelte rapporter i Power BI fordel af de arkitektoniske og tekniske forbedringer, der afspejles i Premium Gen2. I de følgende afsnit beskrives fordelene ved Premium Gen2 for sideinddelte rapporter.
+
+**Bredere SKU-tilgængelighed** – Sideinddelte rapporter, der kører på Premium Gen2, kan køre rapporter på tværs af alle tilgængelige integrerede SKU'er og Premium-SKU'er. Fakturering beregnes pr. CPU-time i løbet af en 24-timers periode. Dette resulterer i en omfattende udvidelse af de SKU'er, der understøtter sideinddelte rapporter.
+
+**Dynamisk skalering** – Med Premium Gen2, kan udfordringer, der er knyttet til stigninger i aktiviteter eller ressourcebehov, håndteres dynamisk, når behovet opstår. 
+
+**Forbedret cachelagring** – Før Premium Gen2 skulle sideinddelte rapporter udføre mange handlinger i forbindelse med den hukommelse, der var allokeret til arbejdsbelastningens kapacitet. Når du nu bruger Premium Gen2, øger reduktioner i den hukommelse, der kræves til mange handlinger, kundernes mulighed for at udføre længerevarende handlinger uden at påvirke andre brugersessioner. 
+
+**Forbedret sikkerhed og kodeisolation** – Med Premium Gen2 kan kodeisolation ske på et pr. bruger-niveau i stedet for pr. kapacitet, som det var tilfældet i det oprindelige Premium-tilbud. 
 
 Du kan få mere at vide under [Sideinddelte rapporter i Power BI Premium](../paginated-reports/paginated-reports-report-builder-power-bi.md). Du kan få mere at vide om aktivering af arbejdsbelastningen for sideinddelte rapporter under [Konfigurer arbejdsbelastninger](service-admin-premium-workloads.md).
 
@@ -250,5 +340,6 @@ Du kan få mere at vide under [Netværksmulighed for datasæt med XMLA-slutpunkt
 
 > [!div class="nextstepaction"]
 > [Administration af Premium-kapaciteter](service-premium-capacity-manage.md)
+> [Dokumentation til Azure Power BI Embedded](https://azure.microsoft.com/services/power-bi-embedded/)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

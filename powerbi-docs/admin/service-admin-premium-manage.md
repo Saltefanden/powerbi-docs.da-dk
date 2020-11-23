@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 05/11/2020
+ms.date: 11/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 8edc24e62524834e74fb8334875cc27a259207d1
-ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
+ms.openlocfilehash: 5cce18c2ec4a24b06f4cf48d5fd2b542109d70c6
+ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92916377"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94512487"
 ---
 # <a name="configure-and-manage-capacities-in-power-bi-premium"></a>Konfigurer og administrer kapaciteter i Power BI Premium
 
@@ -25,6 +25,9 @@ Få mere at vide om, hvordan du administrerer Power BI Premium- og Power BI Embe
 ![Indstillingsskærm for Power BI-kapacitet](media/service-admin-premium-manage/premium-capacity-management.png)
 
 *Kapacitet* er en grundlæggende funktion i Power BI Premium og Power BI Embedded. Det er en række ressourcer, som er reserveret udelukkende til din organisation. Adgang til en kapacitet giver dig mulighed for at publicere dashboards, rapporter og datasæt til brugere i hele organisationen uden at være nødt til at købe licenser til dem. Det garanterer også pålidelig, ensartet ydeevne for det indhold, der hostes i kapacitet. Du kan finde flere oplysninger i [Hvad er Power BI Premium?](service-premium-what-is.md).
+
+> [!NOTE]
+> Power BI Premium har for nylig udgivet en ny version af Premium med navnet **Premium Gen2**, der i øjeblikket er tilgængelig som prøveversion. Premium Gen2 forenkler administrationen af Premium-kapaciteter og reducerer administrationsomkostningerne. Du kan finde flere oplysninger under [Power BI Premium – Generation 2 (prøveversion)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
 
 ## <a name="manage-capacity"></a>Administrer kapacitet
 
@@ -108,7 +111,7 @@ Du kan tildele yderligere kapacitetsadministratorer, og du kan tildele brugere, 
 > [!NOTE]
 > Kapacitetsadministratorer til Power BI Embedded er defineret inden for Microsoft Azure-portalen.
 
-Udvid **Brugere med tildelingstilladelser** under **Brugertilladelser** , og tilføj derefter brugere eller grupper efter behov.
+Udvid **Brugere med tildelingstilladelser** under **Brugertilladelser**, og tilføj derefter brugere eller grupper efter behov.
 
 ![Kapacitetsbrugertilladelser](media/service-admin-premium-manage/capacity-user-permissions2.png)
 
@@ -118,7 +121,7 @@ Der er to måder at tildele et arbejdsområde til en kapacitet på: via administ
 
 ### <a name="assign-from-the-admin-portal"></a>Tildel fra administrationsportalen
 
-Ud over Power BI-administratorer og globale administratorer kan kapacitetsadministratorer massetildele arbejdsområder i afsnittet til administration af Premium-kapacitet på administrationsportalen. Når du administrerer en kapacitet, får du vist et afsnit med **arbejdsområder** , hvor du kan tildele arbejdsområder.
+Ud over Power BI-administratorer og globale administratorer kan kapacitetsadministratorer massetildele arbejdsområder i afsnittet til administration af Premium-kapacitet på administrationsportalen. Når du administrerer en kapacitet, får du vist et afsnit med **arbejdsområder**, hvor du kan tildele arbejdsområder.
 
 ![Afsnit for tildeling af arbejdsområde i kapacitetsadministration](media/service-admin-premium-manage/capacity-manage-workspaces.png)
 
@@ -172,3 +175,13 @@ Du kan finde flere oplysninger under [Installér Power BI-rapportserveren](../re
 [Administration af Premium-kapaciteter](service-premium-capacity-manage.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+
+Power BI har introduceret Power BI Premium Gen2 som et prøveversionstilbud, der forbedrer Power BI Premium-oplevelsen på følgende områder:
+* Ydeevne
+* Licens pr. bruger
+* Større skalering
+* Forbedrede målepunkter
+* Automatisk skalering
+* Reducerede administrationsomkostninger
+
+Du kan finde flere oplysninger om Power BI Premium Gen2 under [Power BI-Premium – Generation 2 (prøveversion)](service-premium-what-is.md#power-bi-premium-generation-2-preview).

@@ -7,19 +7,19 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.author: davidi
-ms.date: 10/21/2020
+ms.date: 11/12/2020
 ms.custom: ''
 LocalizationGroup: Administration
-ms.openlocfilehash: 0166e7a452c01f7b9dbec294d8087fcd035cb586
-ms.sourcegitcommit: 3ddfd9ffe2ba334a6f9d60f17ac7243059cf945b
+ms.openlocfilehash: 7faa8a360a30091c599e8b633fa8f03dc008a3ed
+ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92349431"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94668183"
 ---
 # <a name="private-links-for-accessing-power-bi"></a>Private links, der giver adgang til Power BI
 
-Azure-netværk indeholder to sikkerhedsfunktioner, Azure Private Links og Private Endpoints, der gør det muligt at give sikker adgang til Power BI. Med Azure Private Links og Private Endpoints sendes datatrafik privat ved hjælp af Microsofts basisnet, og dataene krydser derfor ikke internettet. 
+Azure-netværk indeholder funktionen Azure Private Links, der gør det muligt for Power BI at give sikker adgang via private slutpunkter i Azure-netværk. Med Azure Private Links og Private Endpoints sendes datatrafik privat ved hjælp af Microsofts basisnet, og dataene krydser derfor ikke internettet. 
 
 Private Links sikrer, at Power BI-brugere anvender det private Microsoft-basisnet, når der tilgås ressourcer i Power BI-tjenesten.
 
@@ -29,7 +29,7 @@ Du kan få mere at vide om [Azure Private Links](https://azure.microsoft.com/ser
 
 Private Links garanterer, at trafik, der kommer *ind* i din organisations Power BI-artefakter (f.eks. rapporter eller arbejdsområder), altid følger organisationens konfigurerede netværkssti for private links. Brugertrafik til dine Power BI-artefakter skal komme fra det etablerede private link, og du kan konfigurere Power BI til at afvise alle anmodninger, der ikke kommer fra den konfigurerede netværkssti. 
 
-Private Links garanterer *ikke* , at trafik fra Power BI til dine eksterne datakilder er sikret, uanset om det er i cloudmiljøet eller det lokale miljø. Du skal i stedet konfigurere firewallregler og virtuelle netværk, der beskytter dine datakilder yderligere. 
+Private Links garanterer *ikke*, at trafik fra Power BI til dine eksterne datakilder er sikret, uanset om det er i cloudmiljøet eller det lokale miljø. Du skal i stedet konfigurere firewallregler og virtuelle netværk, der beskytter dine datakilder yderligere. 
 
 ### <a name="power-bi-and-private-links-integration"></a>Integration af Power BI og private links
 
@@ -64,7 +64,7 @@ De følgende afsnit indeholder flere oplysninger om hvert trin.
 
 ## <a name="enable-private-links-for-power-bi"></a>Aktivér private links til Power BI
 
-For at komme i gang skal du logge på Power BI på app.powerbi.com som administrator og gå til administrationsportalen. Vælg **Lejerindstillinger** , og rul til **Avanceret netværk** , og slå derefter alternativknappen til/fra for at aktivere **Azure Private Link** som vist på følgende billede. 
+For at komme i gang skal du logge på Power BI på app.powerbi.com som administrator og gå til administrationsportalen. Vælg **Lejerindstillinger**, og rul til **Avanceret netværk**, og slå derefter alternativknappen til/fra for at aktivere **Azure Private Link** som vist på følgende billede. 
 
 Det tager ca. 15 minutter at konfigurere et privat link til din lejer, hvilket omfatter konfiguration af et separat FQDN for lejeren, så det er muligt at kommunikere privat med Power BI-tjenester.
 
@@ -74,7 +74,7 @@ Når du er færdig, kan du gå videre til næste trin.
 
 ## <a name="create-a-power-bi-resource-in-the-azure-portal"></a>Opret en Power BI-ressource i Azure Portal
 
-Log derefter på [Azure Portal](https://portal.azure.com), og opret en Power BI-ressource ved hjælp af en **Azure-skabelon** . Erstat parametrene i eksemplet på ARM-skabelonen, der vises i følgende tabel, for at oprette en Power BI-ressource.
+Log derefter på [Azure Portal](https://portal.azure.com), og opret en Power BI-ressource ved hjælp af en **Azure-skabelon**. Erstat parametrene i eksemplet på ARM-skabelonen, der vises i følgende tabel, for at oprette en Power BI-ressource.
 
 
 |**Parameter**  |**Værdi**  |
@@ -104,7 +104,7 @@ Opret ARM-skabelonen
 }
 ```
 
-I den dialogboks, der vises, skal du markere afkrydsningsfeltet for at acceptere vilkårene og betingelserne og derefter vælge **Køb** .
+I den dialogboks, der vises, skal du markere afkrydsningsfeltet for at acceptere vilkårene og betingelserne og derefter vælge **Køb**.
 
 ![Acceptér vilkår og betingelser, skabelonen Køb](media/service-security-private-links/service-private-links-02.png)
 
@@ -122,24 +122,24 @@ Næste trin er at oprette et virtuelt netværk og undernet. Erstat eksempelparam
 | ```<subnet-name>```   | mySubnet |
 | ```<subnet-address-range>```  | 10.1.0.0/24 |
 
-1. Vælg **Opret en ressource > Netværk > Virtuelt netværk** , eller søg efter **Virtuelt netværk** i søgefeltet.
-2. Angiv eller vælg følgende oplysninger under fanen **Grundlæggende** i **Opret virtuelt netværk** :
+1. Vælg **Opret en ressource > Netværk > Virtuelt netværk**, eller søg efter **Virtuelt netværk** i søgefeltet.
+2. Angiv eller vælg følgende oplysninger under fanen **Grundlæggende** i **Opret virtuelt netværk**:
 
     |Indstillinger | Værdi |
     |-------------------|---------|
     |**Projektdetaljer**|
     |Abonnement | Vælg dit Azure-abonnement |
-    |Ressourcegruppe |   Vælg **Opret ny** , angiv ```<resource-group-name>```, og vælg derefter **OK** , eller vælg en eksisterende ```<resource-group-name>``` på basis af parametre. |
+    |Ressourcegruppe |   Vælg **Opret ny**, angiv ```<resource-group-name>```, og vælg derefter **OK**, eller vælg en eksisterende ```<resource-group-name>``` på basis af parametre. |
     |**Detaljer om forekomst** |
     | Name  | Angiv ```<virtual-network-name>``` |
     |Region | Vælg ```<region-name>``` |
     
-    På følgende billede kan du se fanen **Grundlæggende** .
+    På følgende billede kan du se fanen **Grundlæggende**.
     
     ![Opret et virtuelt netværk, fanen Grundlæggende](media/service-security-private-links/service-private-links-03.png)
 
 
-3. Vælg derefter fanen **IP-adresser** , eller vælg **Næste: Knappen IP-adresser** nederst i formularen. Angiv følgende oplysninger under fanen IP-adresser:
+3. Vælg derefter fanen **IP-adresser**, eller vælg **Næste: Knappen IP-adresser** nederst i formularen. Angiv følgende oplysninger under fanen IP-adresser:
 
     |Indstillinger | Værdi |
     |-------------------|---------|
@@ -148,7 +148,7 @@ Næste trin er at oprette et virtuelt netværk og undernet. Erstat eksempelparam
     ![Opret et virtuelt netværk, fanen IP-adresser](media/service-security-private-links/service-private-links-04.png)
     
 
-4. Vælg ordet *standard* i **Navn på undernet** , og angiv følgende oplysninger i **Rediger undernet** :
+4. Vælg ordet *standard* i **Navn på undernet**, og angiv følgende oplysninger i **Rediger undernet**:
 
     |Indstillinger | Værdi |
     |-------------------|---------|
@@ -158,9 +158,9 @@ Næste trin er at oprette et virtuelt netværk og undernet. Erstat eksempelparam
     
     ![Opret et virtuelt netværk, fanen Rediger undernet](media/service-security-private-links/service-private-links-05.png)
 
-5. Vælg derefter **Gem** , og vælg fanen **Gennemse + Opret** , eller vælg knappen **Gennemse + Opret** . 
+5. Vælg derefter **Gem**, og vælg fanen **Gennemse + Opret**, eller vælg knappen **Gennemse + Opret**. 
 
-6. Vælg derefter **Opret** .
+6. Vælg derefter **Opret**.
 
 Når du har gennemført disse trin, kan du oprette en virtuel maskine (VM) som beskrevet i næste afsnit.
 
@@ -171,13 +171,13 @@ Næste trin er at oprette et virtuelt netværk og det undernet, der skal hoste d
 
 1. Vælg **Opret en ressource > Compute > Virtuel maskine** øverst til venstre på skærmen i Azure Portal.
 
-2. Angiv eller vælg følgende oplysninger i **Opret en virtuel maskine – Grundlæggende** :
+2. Angiv eller vælg følgende oplysninger i **Opret en virtuel maskine – Grundlæggende**:
 
     |Indstillinger | Værdi |
     |-------------------|---------|
     |**Projektdetaljer**||
     |Abonnement | Vælg dit Azure-abonnement |
-    |Ressourcegruppe |   Vælg **myResourceGroup** , som du oprettede i det forrige afsnit. |
+    |Ressourcegruppe |   Vælg **myResourceGroup**, som du oprettede i det forrige afsnit. |
     |**Detaljer om forekomst** ||
     |Name | Angiv **myVm** |
     |Region | Vælg **Det centrale USA** |
@@ -194,8 +194,8 @@ Næste trin er at oprette et virtuelt netværk og det undernet, der skal hoste d
     |Har du allerede en Windows-licens? |  Behold standardindstillingen **Nej** |
 
 3. Vælg derefter **Næste: Disks**
-4. Behold standardindstillingerne i **Opret en virtuel maskine – Disks** , og vælg **Næste: Netværk** .
-5. Vælg følgende oplysninger i **Opret en virtuel maskine – Netværk** :
+4. Behold standardindstillingerne i **Opret en virtuel maskine – Disks**, og vælg **Næste: Netværk**.
+5. Vælg følgende oplysninger i **Opret en virtuel maskine – Netværk**:
 
     |Indstillinger | Værdi |
     |-------------------|---------|
@@ -206,8 +206,8 @@ Næste trin er at oprette et virtuelt netværk og det undernet, der skal hoste d
     |Offentlige indgående porte|  Vælg **Tillad valgte **|
     |Vælg indgående porte|  Vælg **RDP**|
 
-6. Vælg **Gennemse + Opret** . Du overføres til siden **Gennemse + Opret** side, hvor Azure validerer din konfiguration.
-7. Når du ser meddelelsen **Validering bestået** , skal du vælge **Opret** .
+6. Vælg **Gennemse + Opret**. Du overføres til siden **Gennemse + Opret** side, hvor Azure validerer din konfiguration.
+7. Når du ser meddelelsen **Validering bestået**, skal du vælge **Opret**.
 
 
 ## <a name="create-a-private-endpoint"></a>Opret et privat slutpunkt
@@ -215,23 +215,23 @@ Næste trin er at oprette et virtuelt netværk og det undernet, der skal hoste d
 Næste trin, der beskrives i dette afsnit, er at oprette et privat slutpunkt for Power BI.
 
 1. Vælg **Opret en ressource > Netværk > Private Link Center (prøveversion)** øverst til venstre på skærmen i Azure Portal.
-2. Vælg **Opret et privat slutpunkt** under indstillingen **Byg en privat forbindelse til en tjeneste** i **Private Link Center – Oversigt** .
-3. Angiv eller vælg følgende oplysninger i **Opret et privat slutpunkt (prøveversion) – Grundlæggende** :
+2. Vælg **Opret et privat slutpunkt** under indstillingen **Byg en privat forbindelse til en tjeneste** i **Private Link Center – Oversigt**.
+3. Angiv eller vælg følgende oplysninger i **Opret et privat slutpunkt (prøveversion) – Grundlæggende**:
 
     |Indstillinger | Værdi |
     |-------------------|---------|
     |**Projektdetaljer** ||
     |Abonnement|  Vælg dit Azure-abonnement|
-    |Ressourcegruppe|    Vælg **myResourceGroup** . Du har oprettet denne i det forrige afsnit|
+    |Ressourcegruppe|    Vælg **myResourceGroup**. Du har oprettet denne i det forrige afsnit|
     |**Detaljer om forekomst** ||
-    |Name|  Angiv *myPrivateEndpoint* . Hvis dette navn er taget, skal du oprette et entydigt navn|
+    |Name|  Angiv *myPrivateEndpoint*. Hvis dette navn er taget, skal du oprette et entydigt navn|
     |Region|    Vælg **Det centrale USA**|
     
-    På følgende billede kan du se vinduet **Opret et privat slutpunkt – Grundlæggende** .
+    På følgende billede kan du se vinduet **Opret et privat slutpunkt – Grundlæggende**.
     
     ![Opret et privat slutpunkt, Grundlæggende](media/service-security-private-links/service-private-links-06.png)
 
-4. Når de pågældende oplysninger er angivet, skal du vælge **Næste: Ressource** og angive eller vælge følgende oplysninger i **Opret et privat slutpunkt – Ressource** :
+4. Når de pågældende oplysninger er angivet, skal du vælge **Næste: Ressource** og angive eller vælge følgende oplysninger i **Opret et privat slutpunkt – Ressource**:
 
     |Indstillinger | Værdi |
     |-------------------|---------|
@@ -241,11 +241,11 @@ Næste trin, der beskrives i dette afsnit, er at oprette et privat slutpunkt for
     |Ressource|  myPowerBIResource|
     |Underressource for destination|   Lejer|
     
-    På følgende billede kan du se vinduet **Opret et privat slutpunkt – Ressource** .
+    På følgende billede kan du se vinduet **Opret et privat slutpunkt – Ressource**.
     
     ![Opret et privat slutpunkt, Ressource](media/service-security-private-links/service-private-links-07.png)
 
-5. Når de pågældende oplysninger er angivet, skal du vælge **Næste: Konfiguration** og angive eller vælge følgende oplysninger i **Opret et privat slutpunkt (prøveversion) – Konfiguration** :
+5. Når de pågældende oplysninger er angivet, skal du vælge **Næste: Konfiguration** og angive eller vælge følgende oplysninger i **Opret et privat slutpunkt (prøveversion) – Konfiguration**:
 
     |Indstillinger | Værdi |
     |-------------------|---------|
@@ -256,24 +256,24 @@ Næste trin, der beskrives i dette afsnit, er at oprette et privat slutpunkt for
     |Integrer med privat DNS-zone|   Vælg **Ja** |
     |Privat DNS-zone   |Markér <br> *(Ny) privatelink.analysis.windows.net* <br> *(Ny) privatelink.pbidedicated.windows.net* <br> *(Ny) privatelink.tip1.powerquery.microsoft.com* |
     
-    På følgende billede kan du se vinduet **Opret et privat slutpunkt – Konfiguration** .
+    På følgende billede kan du se vinduet **Opret et privat slutpunkt – Konfiguration**.
     
     ![Opret et privat slutpunkt, Konfiguration](media/service-security-private-links/service-private-links-08.png)
     
-    Vælg derefter **Gennemse + Opret** for at få vist siden **Gennemse + Opret** , hvor Azure validerer din konfiguration. Når du ser meddelelsen **Validering bestået** , skal du vælge **Opret** .
+    Vælg derefter **Gennemse + Opret** for at få vist siden **Gennemse + Opret**, hvor Azure validerer din konfiguration. Når du ser meddelelsen **Validering bestået**, skal du vælge **Opret**.
 
 ## <a name="connect-to-a-vm-using-remote-desktop-rdp"></a>Opret forbindelse til en VM ved hjælp af Fjernskrivebord (RDP)
 
-Når du har oprettet din virtuelle maskine med navnet **myVM** , skal du oprette forbindelse til den fra internettet ved hjælp af følgende trin:
+Når du har oprettet din virtuelle maskine med navnet **myVM**, skal du oprette forbindelse til den fra internettet ved hjælp af følgende trin:
 
 1. Angiv *myVm* på portalens søgelinje.
-2. Vælg knappen **Opret forbindelse** . Når du har valgt knappen **Opret forbindelse** , åbnes **Opret forbindelse til virtuel maskine** .
-3. Vælg **Download RDP-fil** . Azure opretter en .rdp-fil (Remote Desktop Protocol – fjernskrivebordsprotokol) og downloader den til din computer.
+2. Vælg knappen **Opret forbindelse**. Når du har valgt knappen **Opret forbindelse**, åbnes **Opret forbindelse til virtuel maskine**.
+3. Vælg **Download RDP-fil**. Azure opretter en .rdp-fil (Remote Desktop Protocol – fjernskrivebordsprotokol) og downloader den til din computer.
 4. Åbn den hentede. rdp-fil.
-5. Hvis du bliver bedt om det, skal du vælge **Opret forbindelse** .
+5. Hvis du bliver bedt om det, skal du vælge **Opret forbindelse**.
 6. Angiv det brugernavn og den adgangskode, du angav, da du oprettede den virtuelle maskine i det forrige trin.
-7. Vælg **OK** .
-8. Du modtager muligvis en certifikatadvarsel under logonprocessen. Hvis du modtager en certifikatadvarsel, skal du vælge **Ja** eller **Fortsæt** .
+7. Vælg **OK**.
+8. Du modtager muligvis en certifikatadvarsel under logonprocessen. Hvis du modtager en certifikatadvarsel, skal du vælge **Ja** eller **Fortsæt**.
 
 ## <a name="access-power-bi-privately-from-the-vm"></a>Opret adgang til Power BI privat fra den virtuelle maskine
 
@@ -298,7 +298,7 @@ Næste trin er at oprette adgang til Power BI privat fra den virtuelle maskine, 
 
 Til sidst skal du deaktivere offentlig adgang for Power BI. 
 
-Log på app.powerbi.com som administrator, og gå til **Administrationsportal** . Vælg **Lejerindstillinger** , og rul ned til afsnittet **Avanceret netværk** . Aktivér til/fra-knappen i afsnittet **Bloker offentlig internetadgang** som vist på følgende billede. Det tager ca. 15 minutter, før systemet kan deaktivere din organisations adgang til Power BI fra det offentlige internet.
+Log på app.powerbi.com som administrator, og gå til **Administrationsportal**. Vælg **Lejerindstillinger**, og rul ned til afsnittet **Avanceret netværk**. Aktivér til/fra-knappen i afsnittet **Bloker offentlig internetadgang** som vist på følgende billede. Det tager ca. 15 minutter, før systemet kan deaktivere din organisations adgang til Power BI fra det offentlige internet.
 
 Og det er det hele – efter at have fulgt disse trin er Power BI kun tilgængelige for dine organisationer via private links og ikke fra det offentlige internet. 
 
@@ -310,6 +310,8 @@ Der er et par overvejelser, du skal gøre dig, når du arbejder med private link
 * Eksporttjenester, f. eks. eksport til PDF og eksport til Excel fra en rapport, og andre eksporttjenester fungerer ikke, når du bruger et miljø med private links
 * SQL Server Reporting Services-rapporter, der ofte kaldes RDL-filer (*filer i . rdl-format), gengives ikke i miljøer med private links
 * Hvis internetadgang er deaktiveret, og hvis datasættet eller dataflowet opretter forbindelse til et Power BI-datasæt eller et dataflow som en datakilde, vil forbindelsen ikke blive oprettet
+* Forbrugsdata fungerer *ikke*, når Private Links er aktiveret
+* Publicer på internettet understøttes ikke (og er nedtonet), når du aktiverer **Bloker offentlig internetadgang** i Power BI
 
 
 ## <a name="next-steps"></a>Næste trin

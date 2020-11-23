@@ -10,12 +10,12 @@ ms.date: 10/22/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: eb7a2dfeb78e60c78b1b3f17306aec91a8a55330
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: 38df6680f2f4d0031ec26a1935e01c849c285909
+ms.sourcegitcommit: 5240990f998851c4854eb565de681099264c5a61
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94397018"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94719069"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrer Power BI på administrationsportalen
 
@@ -146,15 +146,15 @@ I følgende afsnit uddybes indstillingerne under fanen **Lejerindstillinger**.
 
 Mange af disse indstillinger kan have en af tre tilstande:
 
-* **Deaktiveret for hele organisationen** : Ingen i din organisation kan bruge denne funktion.
+* **Deaktiveret for hele organisationen**: Ingen i din organisation kan bruge denne funktion.
 
     ![Indstilling deaktiveret for alle](media/service-admin-portal/powerbi-admin-tenant-settings-disabled.png)
 
-* **Aktiveret for hele organisationen** : Alle i din organisation kan bruge denne funktion.
+* **Aktiveret for hele organisationen**: Alle i din organisation kan bruge denne funktion.
 
     ![Indstilling aktiveret for alle](media/service-admin-portal/powerbi-admin-tenant-settings-enabled.png)
 
-* **Aktiveret for en del af organisationen** : Specifikke sikkerhedsgrupper i din organisation har tilladelse til at bruge denne funktion.
+* **Aktiveret for en del af organisationen**: Specifikke sikkerhedsgrupper i din organisation har tilladelse til at bruge denne funktion.
 
     Du kan også aktivere en funktion for hele organisationen **med undtagelse af bestemte sikkerhedsgrupper**.
 
@@ -168,7 +168,7 @@ De næste par afsnit giver et overblik over de forskellige typer af lejerindstil
 
 ## <a name="tenant-wide-new-look-settings"></a>Indstillingen Nyt udseende i hele lejeren
 
-Når indstillingen **Nyt udseende** er deaktiveret, kan brugerne i denne organisation slå det nye udseende af Power BI til og fra. Når du aktiverer indstillingen **Nyt udseende** , ser *alle* brugerne i denne organisation de moderne kontrolelementer i det nye udseende af Power BI hele tiden. De kan ikke længere slå det nye udseende fra. Indstillingen Nyt udseende er aktiveret som standard.
+Når indstillingen **Nyt udseende** er deaktiveret, kan brugerne i denne organisation slå det nye udseende af Power BI til og fra. Når du aktiverer indstillingen **Nyt udseende**, ser *alle* brugerne i denne organisation de moderne kontrolelementer i det nye udseende af Power BI hele tiden. De kan ikke længere slå det nye udseende fra. Indstillingen Nyt udseende er aktiveret som standard.
 
 :::image type="content" source="media/service-admin-portal/admin-portal-new-look-disable.png" alt-text="Skærmbillede af indstillingen Deaktiver nyt udseende på administrationsportalen.":::
 
@@ -184,7 +184,7 @@ Administratorer kan angive interne URL-adresser for at tilsidesætte linkdestina
 
 * **Community**. Hvis du vil sende brugerne til et internt forum fra menuen Hjælp i stedet for til [Power BI-community](https://community.powerbi.com/), skal du angive en brugerdefineret URL-adresse til **Diskussionsforum**.
 
-* **Opgraderinger af licenser**. Brugere med en Power BI (gratis)-licens bliver muligvis præsenteret for muligheden for at opgradere deres konto til Power BI Pro, mens de bruger tjenesten. Hvis du angiver en intern URL-adresse til **Licensanmodninger** , omdirigerer du brugerne til en intern anmodning og et købsflow og forhindrer selvbetjeningskøb. Hvis du vil forhindre brugere i at købe licenser, men ikke har noget i mod, at de starter en Power BI Pro-prøveversion, kan du se [Tillad brugere at prøve Power BI Pro](#allow-users-to-try-power-bi-pro) for at adskille købs-og prøveoplevelsen.
+* **Opgraderinger af licenser**. Brugere med en Power BI (gratis)-licens bliver muligvis præsenteret for muligheden for at opgradere deres konto til Power BI Pro, mens de bruger tjenesten. Hvis du angiver en intern URL-adresse til **Licensanmodninger**, omdirigerer du brugerne til en intern anmodning og et købsflow og forhindrer selvbetjeningskøb. Hvis du vil forhindre brugere i at købe licenser, men ikke har noget i mod, at de starter en Power BI Pro-prøveversion, kan du se [Tillad brugere at prøve Power BI Pro](#allow-users-to-try-power-bi-pro) for at adskille købs-og prøveoplevelsen.
 
 * **Få hjælp**. Hvis du vil sende brugerne til en intern helpdesk fra menuen Hjælp i stedet for til [Power BI-support](https://powerbi.microsoft.com/support/), skal du angive en brugerdefineret URL-adresse til **Helpdesk**.
 
@@ -323,7 +323,7 @@ Brugere i organisationen kan eksportere dataene fra en visualisering til en Exce
 ![Indstillingen Eksportér til Excel](media/service-admin-portal/powerbi-admin-portal-export-to-excel-setting.png)
 
 >[!IMPORTANT]
-> Før introduktionen af indstillingen Eksportér til Excel styrede indstillingen Eksportér data eksport til en Excel-fil. I de lejere, der fandtes før introduktionen af indstillingen Eksportér to Excel, kan Power BI-administratorer derfor se, at der er *Ikke-anvendte ændringer* , første gang de ser indstillingen Eksportér til Excel. De skal anvende disse ændringer, før den nye indstilling træder i kraft. I modsat fald styres eksporten til en Excel-fil fortsat af indstillingen Eksportér data.
+> Før introduktionen af indstillingen Eksportér til Excel styrede indstillingen Eksportér data eksport til en Excel-fil. I de lejere, der fandtes før introduktionen af indstillingen Eksportér to Excel, kan Power BI-administratorer derfor se, at der er *Ikke-anvendte ændringer*, første gang de ser indstillingen Eksportér til Excel. De skal anvende disse ændringer, før den nye indstilling træder i kraft. I modsat fald styres eksporten til en Excel-fil fortsat af indstillingen Eksportér data.
 
 ### <a name="export-reports-as-powerpoint-presentations-or-pdf-documents"></a>Eksportér rapporter som PowerPoint-præsentationer eller PDF-dokumenter
 
@@ -362,7 +362,7 @@ Brugere i organisationen kan oprette mailabonnementer. Få mere at vide om [abon
 
 ### <a name="featured-content"></a>Fremhævet indhold
 
-Gør det muligt for nogle af eller alle rapportforfattere i din organisation at fremhæve deres indhold i afsnittet Udvalgte Power BI Start. Nye brugere kan se fremhævet indhold øverst på deres Power BI Start-side. Fremhævet indhold flyttes ned på startsiden, efterhånden som brugerne tilføjer **favoritter** , **ofte viste** og **seneste viste**. 
+Gør det muligt for nogle af eller alle rapportforfattere i din organisation at fremhæve deres indhold i afsnittet Udvalgte Power BI Start. Nye brugere kan se fremhævet indhold øverst på deres Power BI Start-side. Fremhævet indhold flyttes ned på startsiden, efterhånden som brugerne tilføjer **favoritter**, **ofte viste** og **seneste viste**. 
 
 Vi anbefaler, at du starter med et lille antal promotorer. Det kan gøre det svært at holde styr på alt det fremhævede indhold, hvis hele organisationen har mulighed for at fremhæve indhold på startsiden. 
 
@@ -374,7 +374,7 @@ Når du har gjort det muligt at fremhæve indhold, kan du også administrere det
 
 Administratorer bruger denne indstilling til at bestemme, hvilke brugere i organisationen der kan publicere indholdspakker og apps til hele organisationen frem for til specifikke grupper. Få mere at vide om [publicering af apps](../collaborate-share/service-create-distribute-apps.md).
 
-På følgende billede vises indstillingen **Hele min organisation** , når du opretter en indholdspakke.
+På følgende billede vises indstillingen **Hele min organisation**, når du opretter en indholdspakke.
 
 ![Publicer indholdspakke til organisation](media/service-admin-portal/powerbi-admin-publish-entire-org.png)
 
@@ -415,7 +415,7 @@ Læs mere om [Udvalgte Power BI-tabeller i Excel](../collaborate-share/service-e
 
 ## <a name="share-to-teams-tenant-setting"></a>Lejerindstillingen Del i Teams
 
-Indstillingen **Del i Teams** findes i sektionen **Lejerindstillinger** på Power BI-administrationsportalen. Indstillingen giver organisationer mulighed for at skjule **Del i Teams** -knapper i Power BI-tjenesten. Når den er angivet til deaktiveret, kan brugerne ikke se **Del i Teams** -knapper på handlingslinjen eller i genvejsmenuer, når de får vist rapporter og dashboards i Power BI-tjenesten.
+Indstillingen **Del i Teams** findes i sektionen **Lejerindstillinger** på Power BI-administrationsportalen. Indstillingen giver organisationer mulighed for at skjule **Del i Teams**-knapper i Power BI-tjenesten. Når den er angivet til deaktiveret, kan brugerne ikke se **Del i Teams**-knapper på handlingslinjen eller i genvejsmenuer, når de får vist rapporter og dashboards i Power BI-tjenesten.
 
 ![Skærmbillede af lejerindstillingen Del i Teams på Power BI-administrationsportalen.](media/service-admin-portal/service-teams-share-to-teams-tenant-setting.png)
 
@@ -459,6 +459,13 @@ Brugere i organisationen kan markere dashboards med klassificeringsangivelser, d
 
 > [!NOTE]
 > Denne indstilling gælder for hele organisationen og kan ikke begrænses til bestemte grupper.
+
+### <a name="web-content-on-dashboard-tiles"></a>Webindhold i dashboardfelter
+
+Brugere i organisationen kan tilføje og få vist felter med webindhold i Power BI-dashboards. [Få mere at vide](../create-reports/service-dashboard-add-widget.md)
+
+> [!NOTE]
+> Dette kan udsætte din organisation for sikkerhedsrisici via ondsindet webindhold.
 
 ## <a name="developer-settings"></a>Indstillinger for udviklere
 
@@ -510,7 +517,7 @@ Styr, hvilke brugere i organisationen der kan downloade og installere skabelonap
 
 ### <a name="power-bi-premium"></a>Power BI Premium
 
-Under fanen **Power BI Premium** kan du administrere en hvilken som helst Power BI Premium-kapacitet (EM eller P SKU), der er købt til din organisation. Alle brugere i organisationen får vist fanen **Power BI Premium** , men de kan kun se indholdet i den, hvis de enten er tildelt rollen som *Kapacitetsadministrator* eller er brugere med tildelingstilladelser. Hvis en bruger ikke har nogen tilladelser, vises følgende meddelelse.
+Under fanen **Power BI Premium** kan du administrere en hvilken som helst Power BI Premium-kapacitet (EM eller P SKU), der er købt til din organisation. Alle brugere i organisationen får vist fanen **Power BI Premium**, men de kan kun se indholdet i den, hvis de enten er tildelt rollen som *Kapacitetsadministrator* eller er brugere med tildelingstilladelser. Hvis en bruger ikke har nogen tilladelser, vises følgende meddelelse.
 
 ![Ingen adgang til Premium-indstillinger](media/service-admin-portal/premium-settings-no-access.png)
 
@@ -554,7 +561,7 @@ Som administrator kan du få vist de arbejdsområder, der findes i din lejer, un
 
 Administratorer kan også styre brugernes mulighed for at oprette nye arbejdsområder til arbejdsområdeoplevelser og klassiske arbejdsområder. Se [Indstillinger for arbejdsområde](#workspace-settings) i denne artikel for at få flere oplysninger. 
 
-Tabelkolonnerne under fanen **Arbejdsområder** svarer til de egenskaber, der returneres af [Power BI-REST API'en](/rest/api/power-bi/admin) for arbejdsområder. Personlige arbejdsområder er af typen **Personlig gruppe** , klassiske arbejdsområder er af typen **Gruppe** , og arbejdsområder med den nye arbejdsområdeoplevelse er af typen **Arbejdsområde**. Du kan finde flere oplysninger under [Organiser arbejde i de nye arbejdsområder](../collaborate-share/service-new-workspaces.md).
+Tabelkolonnerne under fanen **Arbejdsområder** svarer til de egenskaber, der returneres af [Power BI-REST API'en](/rest/api/power-bi/admin) for arbejdsområder. Personlige arbejdsområder er af typen **Personlig gruppe**, klassiske arbejdsområder er af typen **Gruppe**, og arbejdsområder med den nye arbejdsområdeoplevelse er af typen **Arbejdsområde**. Du kan finde flere oplysninger under [Organiser arbejde i de nye arbejdsområder](../collaborate-share/service-new-workspaces.md).
 
 På fanen **Arbejdsområder** kan du se *tilstanden* for hvert arbejdsområde. I tabellen nedenfor kan du se flere oplysninger om betydningen af disse tilstande.
 
@@ -575,11 +582,11 @@ Som administrator kan du tilpasse udseendet af Power BI for hele organisationen.
 
 ![Brugerdefinerede brandingmuligheder](media/service-admin-portal/power-bi-custom-branding.png)
 
-* **Upload logo** : Du opnår de bedste resultater ved at uploade et logo, der er gemt som en .png-fil på 10 KB eller mindre og mindst 200 x 30 pixel.
+* **Upload logo**: Du opnår de bedste resultater ved at uploade et logo, der er gemt som en .png-fil på 10 KB eller mindre og mindst 200 x 30 pixel.
 
-* **Upload forsidebillede** : Du opnår de bedste resultater ved at uploade et forsidebillede, der er gemt som en .jpg- eller .png-fil på 1 MB eller mindre og mindst 1920 x 160 pixel.
+* **Upload forsidebillede**: Du opnår de bedste resultater ved at uploade et forsidebillede, der er gemt som en .jpg- eller .png-fil på 1 MB eller mindre og mindst 1920 x 160 pixel.
 
-* **Vælg temafarve** : Du kan vælge dit tema på baggrund af en hex #, RGB, værdi eller fra den angivne palet.
+* **Vælg temafarve**: Du kan vælge dit tema på baggrund af en hex #, RGB, værdi eller fra den angivne palet.
 
 
 Du kan finde flere oplysninger i [Brugerdefineret branding til din organisation](https://aka.ms/orgBranding).

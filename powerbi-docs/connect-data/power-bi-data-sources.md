@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/07/2020
+ms.date: 11/17/2020
 ms.author: davidi
-ms.openlocfilehash: 3cce51ad577c700a0f9595a2b92694e5e1b61cc5
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: 11f9db0282cd0b302c5293ca59dd44c87dcdb955
+ms.sourcegitcommit: 5240990f998851c4854eb565de681099264c5a61
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94397386"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94719046"
 ---
 # <a name="power-bi-data-sources"></a>Power BI-datakilder
 
@@ -62,7 +62,7 @@ Følgende tabel indeholder de datakilder, som Power BI understøtter for datasæ
 | Mappe | Ja | Ja | Nej | Ja | Ja | Ja |
 | GitHub | Ja | Ja | Nej | Nej | Nej | Nej |
 | Google Analytics | Ja | Ja | Nej | Nej | Nej | Nej |
-| Google BigQuery | Ja | Ja | Ja | Nej | Nej | Ja |
+| Google BigQuery | Ja | Ja | Ja | Ja | Nej | Ja |
 | Hadoop File (HDFS) | Ja | Nej | Nej | Nej | Nej | Nej |
 | Hive LLAP | Ja | Ja | Ja | Ja | Nej | Nej |
 | Interaktiv HDInsight-forespørgsel | Ja | Ja | Ja | Nej | Nej | Nej |
@@ -148,7 +148,7 @@ Følgende tabel indeholder de datakilder, som Power BI understøtter for datasæ
 
 <sup>6</sup> Kræves til HTML, XLS og Access-databaser
 
-<sup>7</sup> Power BI-tjenesten understøtter ikke OData-feeds, der kræver godkendelse.
+<sup>7</sup> Power BI-tjenesten understøtter ikke generisk OAuth2.
 
 <sup>8</sup> Paxata understøttes i den version af Power BI Desktop, der er optimeret til Power BI-rapportserver. Den understøttes ikke i Power BI-rapporter, der er publiceret til Power BI-rapportserver. Du finder listen over understøttede datakilder i [Power BI-rapportdatakilderne på Power BI-rapportserver](../report-server/data-sources.md).
 

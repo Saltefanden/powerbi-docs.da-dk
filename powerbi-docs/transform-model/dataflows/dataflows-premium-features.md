@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 10/01/2020
+ms.date: 11/13/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: e052816cb3d633ba5c01d0331e00572a9b51a579
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: eb5b4b37e59a771d65917df5706a7ebbca488d21
+ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94397294"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94669080"
 ---
 # <a name="premium-features-of-dataflows"></a>Premium-funktioner for dataflow
 
@@ -34,10 +34,10 @@ De følgende afsnit indeholder en detaljeret beskrivelse af disse funktioner.
 
 Det forbedrede beregningsprogram i Power BI gør det muligt for Power BI Premium-abonnenter at bruge deres kapacitet til at optimere brugen af dataflows. Hvis du bruger det forbedrede beregningsprogram, får du følgende fordele:
 
-* Reducerer betydeligt den opdateringstid, der er krævet i forbindelse med langvarige ETL-trin, i forhold til beregnede enheder, som f.eks. udførelse af *joinforbindelser* , *distinct* , *filtre* og *gruppér efter*
+* Reducerer betydeligt den opdateringstid, der er krævet i forbindelse med langvarige ETL-trin, i forhold til beregnede enheder, som f.eks. udførelse af *joinforbindelser*, *distinct*, *filtre* og *gruppér efter*
 * Udfør DirectQuery-forespørgsler over enheder
 
-Aktivering af det forbedrede beregningsprogram er beskrevet i det følgende, hvor du også finder svar på almindelige spørgsmål.
+Det forbedrede beregningsprogram er som standard slået **Til**. Hvis det forbedrede beregningsprogram ikke er slået til, beskrives aktivering af det forbedrede beregningsprogram i det næste afsnit sammen med svar på almindelige spørgsmål.
 
 ### <a name="using-the-enhanced-compute-engine"></a>Brug af det forbedrede beregningsprogram
 
@@ -124,7 +124,7 @@ Der er nogle få kendte begrænsninger for DirectQuery og dataflow:
 
 ## <a name="computed-entities"></a>Beregnede enheder
 
-Du kan udføre **i lager-beregninger** , når du bruger **dataflow** vha. et Power BI Premium-abonnement. Dermed kan du udføre beregninger af dine eksisterende dataflow og få resultater, der giver dig mulighed for at fokusere på oprettelse af rapporter og analyser.
+Du kan udføre **i lager-beregninger**, når du bruger **dataflow** vha. et Power BI Premium-abonnement. Dermed kan du udføre beregninger af dine eksisterende dataflow og få resultater, der giver dig mulighed for at fokusere på oprettelse af rapporter og analyser.
 
 ![Beregnet enhed](media/dataflows-premium-features/computed-entity.png)
 
@@ -158,6 +158,8 @@ Undlad at angive et dataflow til trinvis opdatering i følgende situationer:
 ## <a name="next-steps"></a>Næste trin
 Du kan finde flere oplysninger om dataflow og Power BI i følgende artikler:
 
+* [Bedste praksis i forbindelse med dataflow](dataflows-best-practices.md)
+* [Konfigurer arbejdsbelastninger i Power BI Premium-dataflow](dataflows-premium-workload-configuration.md)
 * [Introduktion til dataflow og selvbetjent dataforberedelse](dataflows-introduction-self-service.md)
 * [Oprettelse af et dataflow](dataflows-create.md)
 * [Konfigurer og brug et dataflow](dataflows-configure-consume.md)

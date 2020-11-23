@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 04/09/2019
-ms.custom: seodec18
+ms.date: 11/11/2020
+ms.custom: ''
 LocalizationGroup: Premium
-ms.openlocfilehash: 21aa643c82887ec9beaca659d9e2e97a0f1cdcc9
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: ec9ef81a4a8f4da0ffdf651d08b307e13212635a
+ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91599310"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94512832"
 ---
 # <a name="optimizing-premium-capacities"></a>Optimering af Premium-kapaciteter
 
@@ -27,6 +27,11 @@ Når der kræves ekstra Premium-kapacitet, er der to muligheder, som beskrives i
 - Tilføjelse af en ny Premium-kapacitet
 
 Til sidst i denne artikel gennemgår vi testmetoder og tilpasning af størrelsen på Premium-kapacitet.
+
+> [!NOTE]
+> Power BI Premium har for nylig udgivet en ny version af Premium med navnet **Premium Gen2**, der i øjeblikket er tilgængelig som prøveversion. Premium Gen2 forenkler administrationen af Premium-kapaciteter og reducerer administrationsomkostningerne. Du kan finde flere oplysninger under [Power BI Premium – Generation 2 (prøveversion)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+
+De anbefalinger og bedste fremgangsmåder, der anbefales i denne artikel, sikrer, at CPU-forbruget for hvert datasæt og andre Power BI-artefakter optimeres.
 
 ## <a name="best-practices"></a>Bedste praksis
 
@@ -258,13 +263,23 @@ Hvis du allerede har en kapacitet og de rapporter, du vil udføre en belastnings
 
 Hvis du vil generere en mere kompleks test, bør du overveje at udvikle et program til belastningstest for at simulere en realistisk arbejdsbelastning. Du kan finde flere oplysninger i webinaret om [belastningstest af Power BI-programmer med Visual Studio-belastningstest](https://powerbi.microsoft.com/blog/week-4-11-webinars-load-testing-power-bi-applications-with-visual-studio-load-test-and-getting-started-with-cds-for-apps-based-model-driven-apps/).
 
-## <a name="acknowledgements"></a>Referencer
+## <a name="acknowledgments"></a>Bekræftelser
 
 Denne artikel er skrevet af Peter Myers, som er Data Platform MVP og uafhængig BI-ekspert hos [Bitwise Solutions](https://www.bitwisesolutions.com.au/).
 
 ## <a name="next-steps"></a>Næste trin
 
 > [!div class="nextstepaction"]
-> [Scenarier med Premium-kapacitet](service-premium-capacity-scenarios.md)   
+> [Premium-kapacitetsscenarier](service-premium-capacity-scenarios.md)   
   
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+
+Power BI har introduceret Power BI Premium Gen2 som et prøveversionstilbud, der forbedrer Power BI Premium-oplevelsen på følgende områder:
+* Ydeevne
+* Licens pr. bruger
+* Større skalering
+* Forbedrede målepunkter
+* Automatisk skalering
+* Reducerede administrationsomkostninger
+
+Du kan finde flere oplysninger om Power BI Premium Gen2 under [Power BI-Premium – Generation 2 (prøveversion)](service-premium-what-is.md#power-bi-premium-generation-2-preview).

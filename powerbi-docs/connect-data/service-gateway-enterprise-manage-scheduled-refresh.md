@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 07/15/2019
+ms.date: 11/17/2020
 ms.author: arthii
 LocalizationGroup: Gateways
-ms.openlocfilehash: b3f3dd39953ad382ab934bf87021123b949733fd
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: bb61f752891205a0e8997592d522efb2022a562b
+ms.sourcegitcommit: 5240990f998851c4854eb565de681099264c5a61
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237049"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94719023"
 ---
 # <a name="manage-your-data-source---importscheduled-refresh"></a>Administrer din datakilde – Import/planlagt opdatering
 
@@ -62,14 +62,13 @@ Hvis du er angivet under fanen **Brugere** i den datakilde, der er konfigureret 
 
 ![Visning af brugerne](media/service-gateway-enterprise-manage-scheduled-refresh/powerbi-gateway-enterprise-schedule-refresh.png)
 
+> [!IMPORTANT]
+> Efter genpublicering skal ejeren af datasættet knytte datasættet til en gatweay og den tilsvarende datakilde igen. Den forrige tilknytning vedligeholdes ikke ved genpublicering. 
+
 > [!WARNING]
 > Hvis dit datasæt indeholder flere datakilder, skal hver enkelt datakilde tilføjes i gatewayen. Hvis en eller flere datakilder ikke er føjet til gatewayen, kan du ikke se gatewayen som tilgængelig i forbindelse med en planlagt opdatering.
 
-## <a name="limitations"></a>Begrænsninger
-
-OAuth er ikke en understøttet godkendelsesplan for datagatewayen i det lokale miljø. Du kan ikke tilføje datakilder, der kræver OAuth. Hvis dit datasæt har en datakilde, der kræver OAuth, kan du ikke bruge gatewayen til planlagt opdatering.
-
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 * [Fejlfinding af datagateway i lokalt miljø](/data-integration/gateway/service-gateway-tshoot)
 * [Foretag fejlfinding af gateways – Power BI](service-gateway-onprem-tshoot.md)

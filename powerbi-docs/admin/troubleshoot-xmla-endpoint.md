@@ -7,15 +7,15 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 10/20/2020
+ms.date: 11/16/2020
 ms.custom: seodec18, css_fy20Q4
 LocalizationGroup: Premium
-ms.openlocfilehash: 5426c91f2ab0c4de1f9f2bc335ac21ea3a90c0e2
-ms.sourcegitcommit: 132b3f6ba6d2b1948ddc15969d64cf629f7fb280
+ms.openlocfilehash: 5100a2a693bbabacd5659c6e805031339d188555
+ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94483667"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94668114"
 ---
 # <a name="troubleshoot-xmla-endpoint-connectivity"></a>Foretag fejlfinding af XMLA-slutpunktsforbindelse
 
@@ -139,6 +139,36 @@ Når der udløses en planlagt opdatering eller en opdatering efter behov i Power
 ### <a name="overrides-in-refresh-tmsl-command"></a>Tilsidesættelser i TMSL-kommandoen Opdater
 
 Tilsidesættelser i [kommandoen Opdater (TMSL)](/analysis-services/tmsl/refresh-command-tmsl) giver brugere mulighed for at vælge en anden definition af partitionsforespørgsel eller en anden definition af datakilde for opdateringshandlingen. I øjeblikket **understøttes tilsidesættelser ikke** i Power BI Premium. Fejlen "Binding uden for linje er ikke tilladt i Power BI Premium. Du kan finde flere oplysninger i afsnittet "XMLA read/write support" i produktdokumentationen. returneres.
+
+## <a name="errors-in-ssms---premium-gen-2"></a>Fejl i SQL Server Management Studio – Premium Gen 2
+
+### <a name="query-execution"></a>Udførelse af forespørgsler
+
+Når du har oprettet forbindelse til et arbejdsområde i en [Premium Gen2](service-premium-what-is.md#power-bi-premium-generation-2-preview)-kapacitet, kan SQL Server Management Studio vise følgende fejl:
+
+```
+Executing the query ...
+Error -1052311437:
+```
+
+Dette skyldes, at klientbiblioteker, der er installeret med SQL Server Management Studio v 18.7.1, ikke understøtter sessionssporing. Problemet løses i en kommende version af SQL Server Management Studio.
+
+### <a name="refresh-operations"></a>Opdateringshandlinger
+
+Når du bruger SQL Server Management Studio v 18.7.1 eller tidligere til at udføre en langvarig opdateringshandling (> 1 min) på et datasæt i en Premium Gen2-kapacitet, kan SQL Server Management Studio vise en fejl som den følgende, selvom opdateringshandlingen lykkes:
+
+```
+Executing the query ...
+Error -1052311437:
+The remote server returned an error: (400) Bad Request.
+
+Technical Details:
+RootActivityId: 3716c0f7-3d01-4595-8061-e6b2bd9f3428
+Date (UTC): 11/13/2020 7:57:16 PM
+Run complete
+```
+
+Dette skyldes et kendt problem i de klientbiblioteker, hvor statussen for opdateringsanmodningen er sporet forkert. Problemet løses i en kommende version af SQL Server Management Studio.
 
 ## <a name="see-also"></a>Se også
 

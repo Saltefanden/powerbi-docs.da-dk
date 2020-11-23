@@ -7,13 +7,13 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.custom: contperfq1
-ms.date: 09/22/2020
-ms.openlocfilehash: a364d3dd2d2175e4509d05f4c34eec31a1a371b6
-ms.sourcegitcommit: 37ec0e9e356b6d773d7d56133fb8ed6c06b65fd3
+ms.date: 10/21/2020
+ms.openlocfilehash: 6c1e4212cb991ff7eb3d0f8a5e336010499bcd1c
+ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91024029"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94668597"
 ---
 # <a name="understand-the-deployment-process"></a>Om udrulningsprocessen
 
@@ -38,6 +38,8 @@ Under udrulningen den første gang kontrollerer udrulningspipelinene, om du har 
 Hvis du har kapacitetstilladelser, kopieres indholdet af arbejdsområdet til den fase, du udruller til, og der oprettes et nyt arbejdsområde for den pågældende fase i Premium-kapaciteten.
 
 Hvis du ikke har kapacitetstilladelser, oprettes arbejdsområdet, men indholdet kopieres ikke. Du kan bede en kapacitetsadministrator om at føje dit arbejdsområde til en kapacitet eller bede om tildelingstilladelser til kapaciteten. Når arbejdsområdet tildeles en kapacitet på et senere tidspunkt, kan du udrulle indhold til det pågældende arbejdsområde.
+
+Hvis du bruger [Premium pr. bruger](../admin/service-premium-per-user-faq.md), oprettes dit arbejdsområde automatisk i den kapacitet, der er knyttet til din Premium pr. bruger. I sådanne tilfælde er der ikke behov for kapacitetstilladelser. Arbejdsområder, der er oprettet af en bruger af Premium pr. bruger, kan dog kun åbnes af andre brugere af Premium pr. bruger. Desuden kan indhold, der er oprettet i sådanne arbejdsområder, kun forbruges af brugere af Premium pr. bruger.
 
 ### <a name="workspace-and-content-ownership"></a>Ejerskab for arbejdsområde og indhold
 
@@ -67,7 +69,7 @@ Power BI bevarer de oprindelige data med små ændringer, f.eks. tilføjelse af 
 
 Så længe det udrullede indhold er placeret i en [Premium-kapacitet](../admin/service-premium-what-is.md), kan en bruger, der opfylder følgende betingelser, udrulle det til en fase med et eksisterende arbejdsområde:
 
-* En [Pro-bruger](../admin/service-admin-purchasing-power-bi-pro.md), der er medlem af begge arbejdsområder i kilde- og destinationsudrulningsfaserne.
+* En bruger med en [Pro-licens](../admin/service-admin-purchasing-power-bi-pro.md) eller en bruger af [Premium pr. bruger](../admin/service-premium-per-user-faq.md), der er medlem af begge arbejdsområder i kilde- og destinationsudrulningsfaserne.
 
 * En ejer af alle datasæt i det destinationsarbejdsområde, der er ved at blive udrullet.
 

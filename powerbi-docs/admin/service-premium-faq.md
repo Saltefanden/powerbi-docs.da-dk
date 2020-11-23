@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 09/16/2019
+ms.date: 11/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 82237286fa4d6ac3713ca6674a541b7d59c20a49
-ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
+ms.openlocfilehash: 41db895494c32918fedba7c27664354e45ae2f1c
+ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92915894"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94511958"
 ---
 # <a name="power-bi-premium-faq"></a>Ofte stillede spørgsmål om Power BI Premium
 
@@ -30,6 +30,11 @@ Power BI Premium er et nyt kapacitetsbaseret tilbud, der omfatter:
 * Større skala og ydeevne end delt kapacitet i Power BI-tjenesten.
 * Muligheden for at have BI-aktiver i det lokale miljø med Power BI Report Server.
 * En API-brugergrænseflade, en konsistent række funktioner og adgang til de nyeste funktioner for integrerede analytics.
+
+**Hvad er Power BI Premium Generation 2?**
+
+Power BI Premium har for nylig udgivet en ny version af Power BI Premium med navnet **Premium Gen2**, som i øjeblikket er tilgængelig som prøveversion. Premium Gen2 forenkler administrationen af Premium-kapaciteter og reducerer administrationsomkostningerne. Du kan finde flere oplysninger om Premium Gen2 i [Power BI Premium – Generation 2 (prøveversion)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+
 
 **Hvad gør Power BI Premium? Hvordan fungerer det?**  
 Power BI Premium består af kapacitet i Power BI-tjenesten, der udelukkende er allokeret til den enkelte organisation. Kapaciteten understøttes af dedikeret hardware, der administreres fuldt ud af Microsoft. Organisationer kan vælge at anvende deres kapacitet bredt eller tildele den til arbejdsområder, afhængigt af antallet af brugere, arbejdsbelastningsbehov eller andre faktorer, samt skalere op eller ned, i takt med at kravene ændres.
@@ -59,7 +64,7 @@ I følgende eksempler beskrives, hvordan kunder kan imødekomme deres BI-behov v
 Du kan købe Power BI Premium baseret på antallet af virtuelle kerner. Du kan se priser på [siden med Power BI-priser](https://powerbi.microsoft.com/pricing/). Du kan få flere oplysninger om noder og v-kerner i [Microsoft Power BI Premium-hvidbogen](https://aka.ms/pbipremiumwhitepaper). Du kan også bruge denne [beregning](https://powerbi.microsoft.com/calculator/) til at få et estimat over, hvor meget Premium-kapacitet du kan få brug for.
 
 **Hvad menes der med "kapacitet"?**  
-En kapacitet er en gruppering af en eller flere noder, der klargøres af en administrator via portalen til administration af kapacitet til Power BI Premium. Du kan få flere oplysninger i [Microsoft Power BI Premium-hvidbogen](https://aka.ms/pbipremiumwhitepaper).
+En kapacitet er en mængde databehandlingskapacitet, der er reserveret til din organisation i forbindelse med dens brug af Power BI. Den er klargjort af en tjenesteadministrator via Power BI Premium-administrationsportalen på siden **Kapacitetsadministration**.
 
 **Hvordan faktureres Power BI Premium?**  
 Power BI Premium faktureres månedligt med en årlig binding.

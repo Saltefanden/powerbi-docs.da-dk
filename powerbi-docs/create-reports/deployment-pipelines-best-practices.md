@@ -6,13 +6,13 @@ ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.date: 09/15/2020
-ms.openlocfilehash: 01cb4c5de2863250f083320e7005c0d589a2da0b
-ms.sourcegitcommit: 59d07be9c3e4a2067f6d42c3002a194371bc4341
+ms.date: 10/21/2020
+ms.openlocfilehash: 9d78a4cd8beb84402a4b3b586df6998810d1c8f7
+ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92116471"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94512993"
 ---
 # <a name="deployment-pipelines-best-practices"></a>Bedste praksis for udrulningspipelines
 
@@ -112,7 +112,7 @@ Hvis du vil administrere versionshistorikken for dine rapporter og datasæt, ska
 
 I forbindelse med udrulninger i store virksomheder anbefales det at opdele udvikling af datasæt og udvikling af rapporter og dashboards. Hvis du kun vil opdatere ændringer i en rapport eller et datasæt, skal du bruge indstillingen til valg af udrulningspipelines.  
 
-Denne fremgangsmåde skal igangsættes fra Power BI Desktop ved at oprette en separat PBIX-fil til datasæt og rapporter. Du kan f.eks. oprette en PBIX-fil til datasættet og uploade den i udviklingsfasen. Senere kan rapportforfatterne oprette en ny PBIX kun for rapporten, og [knytte den til det udgivne datasæt](../connect-data/service-datasets-discover-across-workspaces.md) ved hjælp af en direkte forbindelse. Denne teknik gør det muligt for forskellige forfattere at arbejde separat med modellering og visualiseringer og udrulle dem til produktion uafhængigt af hinanden.
+Denne fremgangsmåde skal igangsættes fra Power BI Desktop ved at oprette en separat PBIX-fil til datasæt og rapporter. Du kan f.eks. oprette en PBIX-fil til datasættet og uploade den i udviklingsfasen. Senere kan rapportforfatterne oprette en ny PBIX-fil kun til rapporten, og [knytte den til det udgivne datasæt](../connect-data/service-datasets-discover-across-workspaces.md) ved hjælp af en direkte forbindelse. Denne teknik gør det muligt for forskellige forfattere at arbejde separat med modellering og visualiseringer og udrulle dem til produktion uafhængigt af hinanden.
 
 I forbindelse med [delte datasæt](../connect-data/service-datasets-share.md) kan du også bruge denne metode på tværs af arbejdsområder.
 

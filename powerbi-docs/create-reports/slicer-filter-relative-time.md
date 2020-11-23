@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/06/2020
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: f1a792c7ad25600f04ca9834b1e5019d4e27efb4
-ms.sourcegitcommit: 11deeccf596e9bb8f22615276a152614f7579f35
+ms.openlocfilehash: a8268af76472c91474f2f67bc256fcc0ddcc9768
+ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "86409507"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94669218"
 ---
 # <a name="use-a-relative-time-slicer-and-filter-in-power-bi"></a>Brug et udsnit og filter for relativ tid i Power BI
 
@@ -90,10 +90,7 @@ Når der anvendes et filter på side- eller rapportniveau, synkroniseres alle vi
 Følgende begrænsninger og overvejelser gælder i øjeblikket for udsnittet og filteret for relativ tid.
 
 - **Overvejelser i forbindelse med tidszone**: Datamodeller i Power BI indeholder ikke oplysninger om tidszone. Modeller kan gemme tider, men der er ingen angivelse af den tidszone, de er i. Udsnittet og filteret er altid baseret på tidspunktet i UTC-tid. Hvis du konfigurerer et filter i en rapport og sender det til en kollega i en anden tidszone, ser I begge de samme data. Medmindre I befinder jer i UTC-tidszonen, skal I begge tage højde for den tidsforskydning, der gælder for jer. Brug Forespørgselseditoren til at konvertere data, der registreres i en lokal tidszone, til UTC.
-- Denne nye filtertype understøttes i Power BI Desktop, Power BI-tjenesten, Power BI Embedded og Power BI-mobilapps. Der er dog nogle kendte supportbegrænsninger:
-
-    - Den understøttes ikke via API'en til integrering.
-    - Den understøttes ikke for Publicer på internettet.
+- Denne nye filtertype understøttes i Power BI Desktop, Power BI-tjenesten, Power BI Embedded og Power BI-mobilapps. Den understøttes imidlertid ikke for Publicer på internettet.
 
 - **Cachelagring af forespørgsel**: Vi bruger klientcachen. Lad os sige, at du angiver "sidste 1 minut", derefter "sidste 5 minutter" og derefter går tilbage til "sidste 1 minut". På dette tidspunkt ser du de samme resultater, som da den kørte første gang, medmindre du opdaterer siden, eller siden opdateres automatisk.
 

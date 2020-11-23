@@ -7,18 +7,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 05/11/2020
+ms.date: 11/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: b74c381bfddc638c1371d571492eedfc7cf82a65
-ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
+ms.openlocfilehash: 50c10343487765f4f42c895ba605618b852415fd
+ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92916400"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94512234"
 ---
 # <a name="power-bi-premium-metrics-app"></a>Appen Power BI Premium Metrics
 
-Du kan bruge appen **Power BI Premium Metrics** til at administrere dit Power BI Premium-abonnements tilstand og kapacitet. Administratorer kan bruge appens **Capacity Health Center** til at se og interagere med indikatorer, der overvåger tilstanden af deres Premium-kapacitet. Metrics-appen består af landingssiden, der kaldes **Capacity Health Center** , og detaljer om tre vigtige målepunkter:
+Du kan bruge appen **Power BI Premium Metrics** til at administrere dit Power BI Premium-abonnements tilstand og kapacitet. Administratorer kan bruge appens **Capacity Health Center** til at se og interagere med indikatorer, der overvåger tilstanden af deres Premium-kapacitet. Metrics-appen består af landingssiden, der kaldes **Capacity Health Center**, og detaljer om tre vigtige målepunkter:
 
 * Aktiv hukommelse
 * Forespørgselsventetider
@@ -31,11 +31,13 @@ I de følgende afsnit beskrives landingssiden og de tre målepunktssider i en ra
 > [!IMPORTANT]
 > Hvis der er et højt forbrug af ressourcer i din Power BI Premium-kapacitet, hvilket medfører problemer med ydeevne eller pålidelighed, kan du modtage notifikationer via mail for at identificere og løse problemet. Dette kan være en strømlinet metode til fejlfinding af overbelastede kapaciteter. Se [notifikationer om kapacitet og pålidelighed](service-interruption-notifications.md#capacity-and-reliability-notifications) for at få flere oplysninger.
 
+> [!NOTE]
+> Power BI Premium har for nylig udgivet en ny version af Premium med navnet **Premium Gen2**, der i øjeblikket er tilgængelig som prøveversion. Premium Gen2 forenkler administrationen af Premium-kapaciteter og reducerer administrationsomkostningerne. Det kan især reducere de målepunkter, administratorer skal overvåge (kun CPU'en), for at sikre ydeevnen og brugeroplevelsen. Du kan finde flere oplysninger under [Power BI Premium – Generation 2 (prøveversion)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
 
 
 ## <a name="premium-capacity-health-center"></a>Premium Capacity Health Center
 
-Når du åbner **Power BI Premium Metrics-appen** , får du vist **Capacity Health Center** , der giver en oversigt over din Power BI Premium-kapacitets tilstand.
+Når du åbner **Power BI Premium Metrics-appen**, får du vist **Capacity Health Center**, der giver en oversigt over din Power BI Premium-kapacitets tilstand.
 
 ![Capacity Health Center i Premium Metrics-appen](media/service-premium-metrics-app/premium-metrics-app-01.png)
 
@@ -69,7 +71,7 @@ Disse to scenarier er beskrevet i følgende afsnit.
 
 ### <a name="scenario-one---current-load-is-too-high"></a>1\. scenarie – den aktuelle belastning er for høj 
 
-Du kan finde ud af, om der er tilstrækkelig hukommelse til kapaciteten til at fuldføre dens arbejdsbelastninger, i den første visualisering på siden: **A: Procentdel af forbrugt hukommelse** , som viser den hukommelse, der bruges af datasæt, der behandles aktivt, og som derfor ikke kan fjernes.
+Du kan finde ud af, om der er tilstrækkelig hukommelse til kapaciteten til at fuldføre dens arbejdsbelastninger, i den første visualisering på siden: **A: Procentdel af forbrugt hukommelse**, som viser den hukommelse, der bruges af datasæt, der behandles aktivt, og som derfor ikke kan fjernes.
 
 Alarmtærsklen, som er den røde stiplede linje, markerer hændelser med et hukommelsesforbrug på 90 %.
 
@@ -161,10 +163,10 @@ Du kan undersøge, om dårlig rapportydeevne skyldes en overbelastet kapacitet e
 
 På rapportsiden vises følgende visualiseringer: 
 
-* Den øverste tabel, der hedder **A: Lange ventetider** , viser datasæt med forespørgsler, der venter. 
+* Den øverste tabel, der hedder **A: Lange ventetider**, viser datasæt med forespørgsler, der venter. 
 * **B: Distribution af lange ventetider pr. time** viser fordelingen af lange ventetider. 
 * Diagrammet med titlen **C: Antallet af langvarige forespørgsler pr. time** viser antallet af langvarige forespørgsler, der blev udført, opdelt pr. time.
-* Den sidste visualisering, tabel **D: Langvarige forespørgsler** , viser en liste over de langvarige forespørgsler og deres statistik.
+* Den sidste visualisering, tabel **D: Langvarige forespørgsler**, viser en liste over de langvarige forespørgsler og deres statistik.
 
 ![Detaljeside om forespørgselsventetider](media/service-premium-metrics-app/premium-metrics-app-10.png)
 
@@ -176,7 +178,7 @@ Først kan du se, om langvarige forespørgsler finder sted, når dine forespørg
 
 ![Tabel over lange ventetider](media/service-premium-metrics-app/premium-metrics-app-11.png)
 
-Se **Diagram B** , der viser antallet af forespørgsler, der venter mere end 100 ms. Vælg en af kolonnerne, der viser et højt antal af forespørgselsventetider.
+Se **Diagram B**, der viser antallet af forespørgsler, der venter mere end 100 ms. Vælg en af kolonnerne, der viser et højt antal af forespørgselsventetider.
 
 ![Distribution af lang ventetid](media/service-premium-metrics-app/premium-metrics-app-12.png)
 
@@ -242,7 +244,7 @@ Målepunktet for **opdateringsventetider** giver indsigt i, hvornår brugerne ka
 
 Denne måler viser, at i de seneste syv dage fra den seneste opdateringsrapport ventede 3,18 % af opdateringerne mere end 10 minutter. 
 
-Du kan få flere detaljer om KPI'en **Opdateringsventetider** ved at klikke på knappen **Udforsk** , der viser en side med målepunkter og en fejlfindingsvejledning i den højre kolonne på rapportsiden. Vejledningen indeholder detaljerede forklaringer af de målepunkter, der er på siden, og hjælper dig med at forstå kapacitetens tilstand, og hvad du kan gøre for at afhjælpe eventuelle problemer.
+Du kan få flere detaljer om KPI'en **Opdateringsventetider** ved at klikke på knappen **Udforsk**, der viser en side med målepunkter og en fejlfindingsvejledning i den højre kolonne på rapportsiden. Vejledningen indeholder detaljerede forklaringer af de målepunkter, der er på siden, og hjælper dig med at forstå kapacitetens tilstand, og hvad du kan gøre for at afhjælpe eventuelle problemer.
 
 ![Udforskning af målepunkterne for opdateringsventetider](media/service-premium-metrics-app/premium-metrics-app-21.png)
 
@@ -271,17 +273,17 @@ Du diagnosticerer det første scenarie ved først at finde ud af, om begrænsnin
 
     ![Tabel A](media/service-premium-metrics-app/premium-metrics-app-22.png)
 
-    a. Når et datasæt vælges i **tabel A** , filtreres **diagram B** for at vise, hvornår ventetiden fandt sted.
+    a. Når et datasæt vælges i **tabel A**, filtreres **diagram B** for at vise, hvornår ventetiden fandt sted.
 
     ![Diagram B](media/service-premium-metrics-app/premium-metrics-app-23.png)
 
     b. **Diagram C** filtreres derefter for at vise eventuelle begrænsninger, hvilket forklares i næste trin. 
 
-2. Kig på resultaterne i **diagram C** , som nu er filtreret. Hvis diagrammet viser, at der er opstået en hukommelsesbegrænsning på de tidspunkter, hvor datasættet ventede, ventede datasættet på grund af problemer med manglende hukommelse.
+2. Kig på resultaterne i **diagram C**, som nu er filtreret. Hvis diagrammet viser, at der er opstået en hukommelsesbegrænsning på de tidspunkter, hvor datasættet ventede, ventede datasættet på grund af problemer med manglende hukommelse.
 
     ![Diagram C](media/service-premium-metrics-app/premium-metrics-app-24.png)
 
-3. Til sidst skal du tjekke **diagram D** , som viser de typer opdateringer, der fandt sted, planlagt i forhold til efter behov. Eventuelle opdateringer efter behov, der udføres samtidig, kan være årsagen til begrænsningen.
+3. Til sidst skal du tjekke **diagram D**, som viser de typer opdateringer, der fandt sted, planlagt i forhold til efter behov. Eventuelle opdateringer efter behov, der udføres samtidig, kan være årsagen til begrænsningen.
 
     ![Diagram D](media/service-premium-metrics-app/premium-metrics-app-25.png)
 
@@ -314,17 +316,17 @@ Når du skal diagnosticere det andet scenarie, skal du først afgøre, om begræ
 
     ![Tabel A](media/service-premium-metrics-app/premium-metrics-app-22.png)
 
-    a. Når et datasæt vælges i **tabel A** , filtreres **diagram B** for at vise, hvornår ventetiden fandt sted.
+    a. Når et datasæt vælges i **tabel A**, filtreres **diagram B** for at vise, hvornår ventetiden fandt sted.
 
     ![Diagram B](media/service-premium-metrics-app/premium-metrics-app-23.png)
 
     b. **Diagram C** filtreres derefter for at vise eventuelle begrænsninger, hvilket forklares i næste trin. 
 
-2. Kig på resultaterne i **diagram C** , som nu er filtreret. Hvis diagrammet viser *maksimal samtidighed* på de tidspunkter, hvor datasættet ventede, ventede datasættet på grund af problemer med utilstrækkelig CPU.
+2. Kig på resultaterne i **diagram C**, som nu er filtreret. Hvis diagrammet viser *maksimal samtidighed* på de tidspunkter, hvor datasættet ventede, ventede datasættet på grund af problemer med utilstrækkelig CPU.
 
     ![Diagram C](media/service-premium-metrics-app/premium-metrics-app-24.png)
 
-3. Til sidst skal du tjekke **diagram D** , som viser de typer opdateringer, der fandt sted, planlagt i forhold til efter behov. Eventuelle opdateringer efter behov, der udføres samtidig, kan være årsagen til begrænsningen.
+3. Til sidst skal du tjekke **diagram D**, som viser de typer opdateringer, der fandt sted, planlagt i forhold til efter behov. Eventuelle opdateringer efter behov, der udføres samtidig, kan være årsagen til begrænsningen.
 
     ![Diagram D](media/service-premium-metrics-app/premium-metrics-app-25.png)
 
@@ -348,3 +350,13 @@ Når du skal diagnosticere det andet scenarie, skal du først afgøre, om begræ
 * [Ofte stillede spørgsmål om Power BI Embedded](../developer/embedded/embedded-faq.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+
+Power BI har introduceret Power BI Premium Gen2 som et prøveversionstilbud, der forbedrer Power BI Premium-oplevelsen på følgende områder:
+* Ydeevne
+* Licens pr. bruger
+* Større skalering
+* Forbedrede målepunkter
+* Automatisk skalering
+* Reducerede administrationsomkostninger
+
+Du kan finde flere oplysninger om Power BI Premium Gen2 under [Power BI-Premium – Generation 2 (prøveversion)](service-premium-what-is.md#power-bi-premium-generation-2-preview).

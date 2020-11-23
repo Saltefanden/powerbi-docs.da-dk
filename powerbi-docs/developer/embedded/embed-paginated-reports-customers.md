@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 01/04/2019
-ms.openlocfilehash: 2c06464999192e71c2d398f41b7b96e8fa4a169b
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.openlocfilehash: 58d1112dfccda798a32b2a3cb95d72c37b7a16ec
+ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91983476"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94668390"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-customers"></a>Selvstudium: Integrer sideinddelte Power BI-rapporter i et program til dine kunder
 
@@ -40,6 +40,7 @@ Hvis du ikke har et Azure-abonnement, skal du oprette en [gratis konto](https://
 
 > [!IMPORTANT]
 > * Du skal bruge en **tjenesteprincipal**. Masterbruger understøttes ikke.
+>* [Premium pr. bruger](../../admin/service-premium-per-user-faq.md) understøttes ikke. Du kan bruge Premium pr. bruger til at eksperimentere med løsningen, men du kan ikke [flytte til produktion](embed-sample-for-customers.md#move-to-production).
 > * Datakilder, der kræver enkeltlogon (SSO), understøttes ikke. Du kan finde en liste over understøttede datasæt og deres godkendelsesmetoder under [Understøttede datakilder til sideinddelte rapporter i Power BI](../../paginated-reports/paginated-reports-data-sources.md). 
 > * Power BI-datasæt understøttes ikke som en [datakilde](../../connect-data/service-get-data.md).
 
@@ -205,7 +206,7 @@ Selvom trinnene til at integrere dine sideinddelte Power BI-rapporter udføres v
 
 Når du integrerer sideinddelte Power BI-rapporter for kunderne i dit program, kræver det, at du har en **Azure AD**-[tjenesteprincipal](embed-service-principal.md) og får et [Azure AD-adgangstoken](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) til dit Power BI-program, før du foretager kald til [REST API'erne til Power BI](/rest/api/power-bi/).
 
-Hvis du vil oprette Power BI-klienten med dit **adgangstoken**, skal du oprette dit Power BI klientobjekt, som gør det muligt for dig at interagere med [REST API'erne til Power BI](/rest/api/power-bi/). Du kan oprette dit Power BI-klientobjekt ved at omgive **AccessToken** med objektet ***Microsoft.Rest.TokenCredentials***.
+Hvis du vil oprette Power BI-klienten med dit **adgangstoken**, skal du oprette dit Power BI klientobjekt, som gør det muligt for dig at interagere med [REST API'erne til Power BI](/rest/api/power-bi/). Du kan oprette dit Power BI-klientobjekt ved at wrappe **AccessToken** med et **_Microsoft.Rest.TokenCredentials_* _-objekt.
 
 ```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -227,7 +228,7 @@ Du kan bruge Power BI-klientobjektet til at hente en reference til det element, 
 
 Her er et kodeeksempel på, hvordan du henter den første rapport fra et givent arbejdsområde.
 
-*Du kan se et eksempel på, hvordan du henter et indholdselement, uanset om det er en rapport, et dashboard eller et felt, du vil integrere, i filen Services\EmbedService.cs i [eksempelprogrammet](https://github.com/Microsoft/PowerBI-Developer-Samples).*
+_Du kan se et eksempel på, hvordan du henter et indholdselement, uanset om det er en rapport, et dashboard eller et felt, du vil integrere, i filen Services\EmbedService.cs i [prøveprogrammet](https://github.com/Microsoft/PowerBI-Developer-Samples).*
 
 ```csharp
 using Microsoft.PowerBI.Api.V2;
@@ -244,7 +245,7 @@ Report report = reports.Value.FirstOrDefault();
 
 Generér et integreringstoken, som kan bruges fra JavaScript-API'en. Hvis du vil oprette et integreringstoken til integrering af sideinddelte Power BI-rapporter, skal du bruge API'en [Reports GenerateTokenInGroup](/rest/api/power-bi/embedtoken/reports_generatetokeningroup).
 
-Du kan se et eksempel på, hvordan du opretter et integreringstoken, i filen  *Services\EmbedService.cs* i [eksempelprogrammet](https://github.com/Microsoft/PowerBI-Developer-Samples).
+Du kan se et eksempel på, hvordan du opretter et integreringstoken, i filen *Services\EmbedService.cs* i [prøveprogrammet](https://github.com/Microsoft/PowerBI-Developer-Samples).
 
 ```csharp
 using Microsoft.PowerBI.Api.V2;

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 04/10/2019
-ms.custom: seodec18
+ms.date: 11/11/2020
+ms.custom: ''
 LocalizationGroup: Premium
-ms.openlocfilehash: def44a5cc7847d64daab466346f85f0b369d3634
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: cfde7ab3fb40885b298afeb8751525e417b487ea
+ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91599407"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94512855"
 ---
 # <a name="managing-premium-capacities"></a>Administration af Premium-kapaciteter
 
@@ -24,6 +24,9 @@ Administration af Power BI Premium omfatter oprettelse, administration og overv�
 ## <a name="creating-and-managing-capacities"></a>Oprettelse og administration af kapaciteter
 
 På siden **Kapacitetsindstillinger** på Power BI-administrationsportalen vises antallet af købte v-kerner og tilgængelige Premium-kapaciteter. På siden kan globale administratorer eller administratorer af Power BI-tjenesten oprette Premium-kapaciteter fra tilgængelige v-kerner eller redigere eksisterende Premium-kapaciteter.
+
+> [!NOTE]
+> Power BI Premium har for nylig udgivet en ny version af Premium med navnet **Premium Gen2**, der i øjeblikket er tilgængelig som prøveversion. Premium Gen2 forenkler administrationen af Premium-kapaciteter og reducerer administrationsomkostningerne. Du kan finde flere oplysninger under [Power BI-Premium – Generation 2 (prøveversion)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
 
 Når en Premium-kapacitet oprettes, skal administratoren definere:
 
@@ -148,7 +151,7 @@ Langsomme rapporter kan generelt være en indikation af en overbebyrdet kapacite
 
 Du kan få en mere detaljeret beskrivelse af, hvordan du bruger målepunkter, i artiklen [Optimering af Premium-kapaciteter](service-premium-capacity-optimize.md).
 
-## <a name="acknowledgements"></a>Referencer
+## <a name="acknowledgments"></a>Bekræftelser
 
 Denne artikel er skrevet af Peter Myers, som er Data Platform MVP og uafhængig BI-ekspert hos [Bitwise Solutions](https://www.bitwisesolutions.com.au/).
 
@@ -161,3 +164,12 @@ Denne artikel er skrevet af Peter Myers, som er Data Platform MVP og uafhængig 
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 
+Power BI har introduceret Power BI Premium Gen2 som et prøveversionstilbud, der forbedrer Power BI Premium-oplevelsen på følgende områder:
+* Ydeevne
+* Licens pr. bruger
+* Større skalering
+* Forbedrede målepunkter
+* Automatisk skalering
+* Reducerede administrationsomkostninger
+
+Du kan finde flere oplysninger om Power BI Premium Gen2 under [Power BI-Premium – Generation 2 (prøveversion)](service-premium-what-is.md#power-bi-premium-generation-2-preview).

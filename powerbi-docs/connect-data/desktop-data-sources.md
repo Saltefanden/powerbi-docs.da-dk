@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 10/12/2020
+ms.date: 11/11/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 8565f6ef18192110688d01127129dcc19919cb0f
-ms.sourcegitcommit: eab5a02520c421a57019595c03e9ecfdb41d52ad
+ms.openlocfilehash: 143d4a51a403563b337c753055fa56e9c25edc26
+ms.sourcegitcommit: 029aacd09061a8aa45b57f05d0dc95c93dd16a74
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92256542"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94560028"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Datakilder i Power BI Desktop
 
@@ -90,7 +90,6 @@ Kategorien **Database** indeholder følgende dataforbindelser:
 * Snowflake
 * Essbase
 * AtScale-kuber
-* BI Connector 
 * Data Virtuality LDW (beta)
 * Denodo
 * Dremio
@@ -100,8 +99,10 @@ Kategorien **Database** indeholder følgende dataforbindelser:
 * Jethro (beta)
 * Kyligence
 * Linkar PICK Style/MultiValue Databases (beta)
-* MarkLogic
 * MariaDB (Beta)
+* MarkLogic
+* BI Connector
+* Actian (Beta)
 
 > [!NOTE]
 > Nogle databaseforbindelser kræver, at du aktiverer dem ved at vælge **Filer > Indstillinger > Indstillinger** og derefter vælger **Funktioner til eksempelvisning** og aktiverer forbindelsen. Hvis du ikke kan se nogle af de forbindelser, der er nævnt ovenfor, og du vil bruge dem, skal du kontrollere dine indstillinger for **Funktioner til eksempelvisning**. Bemærk også, at alle datakilder, der er markeret som *Beta* eller *Preview*, har begrænset support og funktionalitet og skal ikke bruges i produktionsmiljøer.
@@ -141,8 +142,8 @@ Kategorien **Azure** indeholder følgende dataforbindelser:
 * Azure HDInsight Spark
 * Interaktiv HDInsight-forespørgsel
 * Azure Cost Management
-* Azure Time Series Insights (beta)
 * Azure Databricks
+* Azure Time Series Insights (beta)
 
 
 På følgende billede vises vinduet **Hent data** for **Azure**.
@@ -185,21 +186,21 @@ Kategorien **Onlinetjenester** indeholder følgende dataforbindelser:
 * Emigo-datakilde
 * Entersoft Business Suite (beta)
 * FactSet-analyse
-* Hexagon PPM Smart API
+* Palantir Foundry
+* Industrial App Store
 * Intune Data Warehouse (beta)
 * Microsoft Graph Security (beta)
+* Projectplace til Power BI
 * Product Insights (beta)
 * Quick Base
+* Spigit (Beta)
 * TeamDesk (beta)
 * Webtrends Analytics (beta)
 * Witivio (beta)
 * Workplace Analytics (beta)
 * Zoho Creator (beta)
-* Palantir Foundry
-* Industrial App Store
-* Projectplace til Power BI
 * eWay-CRM (Beta)
-* Spigit (Beta)
+* Hexagon PPM Smart API
 
 
 På følgende billede vises vinduet **Hent data** for **Onlinetjenester**.
@@ -217,7 +218,7 @@ Kategorien **Andet** indeholder følgende dataforbindelser:
 * Microsoft Exchange
 * Hadoop-fil (HDFS)
 * Spark
-* Hive LLAP (beta)
+* Hive LLAP
 * R-script
 * Python-script
 * ODBC
@@ -242,6 +243,8 @@ Kategorien **Andet** indeholder følgende dataforbindelser:
 * Vena (beta)
 * Vessel Insight (beta)
 * Zucchetti HR Infinity (beta)
+* Anaplan Connector v1.0 (Beta)
+* Starburst Enterprise Presto (Beta)
 * Tom forespørgsel
 
 

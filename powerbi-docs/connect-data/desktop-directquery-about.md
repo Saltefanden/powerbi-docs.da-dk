@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/27/2020
+ms.date: 11/17/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 05df39b58334b33046fde0f95b9f1ca596c1eec1
-ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
+ms.openlocfilehash: 0f6f4cdb221773218c945e7f800d569c73a9a130
+ms.sourcegitcommit: 5240990f998851c4854eb565de681099264c5a61
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84120565"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94718977"
 ---
 # <a name="about-using-directquery-in-power-bi"></a>Om brug af DirectQuery i Power BI
 
@@ -150,7 +150,7 @@ Udtrykket *udformning* betyder i denne kontekst den måde, du kan finjustere og 
 
 Når du bruger DirectQuery, kan mange af disse modelforbedringer stadig foretages, og der er stadig et princip om, at rådataene kan forbedres, hvilket også forbedrer den senere brug. Der er dog nogle udformningsegenskaber, der ikke er tilgængelige, eller som er begrænset, når du bruger DirectQuery. Begrænsningerne anvendes generelt for at undgå problemer med ydeevnen. Sættet af begrænsninger, der er fælles for alle DirectQuery-kilder, er angivet her. Der kan gælde yderligere begrænsninger for individuelle kilder som beskrevet i [Næste trin](#next-steps).
 
-* **Intet indbygget datohierarki:** Når du importerer data, vil der også være et indbygget datahierarki tilgængeligt for hver enkelt dato/dato-klokkeslætskolonne. Hvis import af en tabel med salgsordrer f.eks. inkluderer en kolonne af typen **OrderDate**, vil det være muligt at vælge det relevante anvendelsesniveau (year, month, day), når du bruger **OrderDate** i en visualisering. Dette indbyggede datohierarki er ikke tilgængeligt, når du bruger DirectQuery. Hvis en **dato**tabel er tilgængelig i den underliggende kilde, hvilket er almindeligt i mange data warehouses, kan DAX Time Intelligence-funktionerne bruges som normalt.
+* **Intet indbygget datohierarki:** Når du importerer data, vil der også være et indbygget datahierarki tilgængeligt for hver enkelt dato/dato-klokkeslætskolonne. Hvis import af en tabel med salgsordrer f.eks. inkluderer en kolonne af typen **OrderDate**, vil det være muligt at vælge det relevante anvendelsesniveau (year, month, day), når du bruger **OrderDate** i en visualisering. Dette indbyggede datohierarki er ikke tilgængeligt, når du bruger DirectQuery. Hvis en **dato** tabel er tilgængelig i den underliggende kilde, hvilket er almindeligt i mange data warehouses, kan DAX Time Intelligence-funktionerne bruges som normalt.
 * **Kun understøttelse af dato/klokkeslæt med sekundnøjagtighed:** Når du bruger tidskolonner i dit datasæt, sender Power BI kun forespørgsler til den underliggende kilde på detaljeniveauet med sekunder. Forespørgsler sendes ikke til DirectQuery-kilden for millisekunder. Fjern denne del af klokkeslættene fra kildekolonnerne.
 * **Begrænsninger i beregnede kolonner:** Beregnede kolonner er begrænset til samme række, dvs. de kan kun referere til andre kolonner i samme tabel uden at bruge samlingsfunktioner. Derudover er DAX-skalarfunktioner, f.eks. `LEFT()`, der er tilladt, begrænset til de funktioner, der kan skubbes til den underliggende kilde. Funktionerne varierer, afhængigt af kildens nøjagtige egenskaber. Funktioner, der ikke understøttes, vises ikke under autofuldførelse, når DAX godkendes for en beregnet kolonne, og det vil medføre en fejl, hvis de bruges.
 * **Ingen understøttelse af overordnede/underordnede DAX-funktioner:** I DirectQuery-modellen er det ikke muligt at bruge serien af `DAX PATH()`-funktioner, som normalt håndterer overordnet/underordnet-strukturer, som f.eks. diagram over konti eller medarbejderhierarkier.
@@ -165,6 +165,7 @@ Næsten alle rapporteringsegenskaber understøttes for DirectQuery-modeller. Så
 * **Hurtig indsigt understøttes ikke:** Hurtig indsigt i Power BI søger gennem forskellige undersæt i datasættet og anvender samtidig et sæt avancerede algoritmer for at finde indsigt, der kan være interessant. På grund af behovet for forespørgsler med meget høj ydeevne er denne funktion ikke tilgængelig for datasæt, der bruger DirectQuery.
 * **Spørgsmål og svar understøttes ikke:** Spørgsmål og svar i Power BI gør det muligt for dig at udforske dine data vha. intuitive egenskaber for naturligt sprog og modtage svar i form af diagrammer og grafer. Det understøttes dog ikke i øjeblikket for datasæt, der bruger DirectQuery.
 * **Brug af Udforsk i Excel vil sandsynligvis resultere i dårligere ydeevne:** Du kan udforske dine data vha. egenskaben Udforsk i Excel i et datasæt. Denne fremgangsmåde vil gøre det muligt at oprette pivottabeller og pivotdiagrammer i Excel. Selvom denne egenskab understøttes i forbindelse med datasæt, der bruger DirectQuery, vil ydeevnen normalt være langsommere end oprettelsen af visualiseringer i Power BI. Hvis brugen af Excel er vigtige for dine scenarier, skal der derfor tages højde for dette faktum, når du beslutter dig for at bruge DirectQuery.
+* **Maksimal længde for tekstkolonner:** Den maksimale længde af dataene i en tekstkolonne for datasæt, der bruger DirectQuery, er 32.764 tegn. Rapportering for længere tekster end det, resulterer i en fejl.
 
 ### <a name="security"></a>Sikkerhed
 

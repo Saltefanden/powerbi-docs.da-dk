@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/29/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: bce798e07a3bdac0ba52f56e9ddf7eac72087924
-ms.sourcegitcommit: 132b3f6ba6d2b1948ddc15969d64cf629f7fb280
+ms.openlocfilehash: 6f64db7be452cf5873a862f378f558bc4f177c56
+ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 11/11/2020
-ms.locfileid: "94483947"
+ms.locfileid: "94513035"
 ---
 # <a name="tips-and-tricks-for-formatting-in-reports"></a>Tip og tricks til formatering i rapporter
 
@@ -40,12 +40,12 @@ Hvis du vil foretage ændringer, skal du have redigeringstilladelser til rapport
 
 Når ruderne **Filtre** og **Visualiseringer** vises langs højre side af rapportcanvasset, er du klar til at starte tilpasningen. Hvis ruderne ikke vises, skal du vælge pilen i øverste højre hjørne for at åbne dem.
 
-![rapportcanvas i redigeringsvisning](media/service-tips-and-tricks-for-color-formatting/power-bi-edit.png)
+![rapportcanvas i redigeringsvisning](media/service-tips-and-tricks-for-color-formatting/power-bi-edit-filter.png)
 
 ## <a name="apply-a-theme"></a>Anvend et tema
 Med rapporttemaer kan du anvende designændringer på hele rapporten, f.eks. bruge virksomhedsfarver, ændre ikonsæt eller anvende ny standardformatering af visualiseringer. Når du anvender et rapporttema, anvendes farver og formatering fra det valgte tema på alle visualiseringer i rapporten. Du kan få mere at vide under [Brug rapporttemaer](../create-reports/desktop-report-themes.md)
 
-![Ikonet Skift tema på menulinjen](media/service-tips-and-tricks-for-color-formatting/power-bi-theme.png)
+![Ikonet Skift tema på menulinjen](media/service-tips-and-tricks-for-color-formatting/power-bi-themes.png)
 
 Her har vi anvendt temaet **Innovativt** på rapporten Salg og marketing.
 
@@ -56,13 +56,13 @@ Nogle gange kan du få brug for at fremhæve ét bestemt datapunkt. Måske er de
 
 Følgende visualisering rangordner solgte enheder efter produktsegment. 
 
-![Skift af datafarver til grå](media/service-tips-and-tricks-for-color-formatting/power-bi-data.png)
+![Skift af datafarver til grå](media/service-tips-and-tricks-for-color-formatting/power-bi-format.png)
 
 Forestil dig nu, at du vil fremhæve segmentet **Convenience** for at vise, hvor godt dette nye segment præsterer, ved hjælp af farve. Her er trinnene:
 
 Udvid kortet **Datafarver**, og slå skyderen Til for **Vis alle**. Farverne vises nu for hvert dataelement i visualiseringen. Du kan nu redigere et hvilket som helst datapunkt.
 
-![Formatrude med Vis alle indstillet til Til](media/service-tips-and-tricks-for-color-formatting/power-bi-show.png)
+![Formatrude med Vis alle indstillet til Til](media/service-tips-and-tricks-for-color-formatting/power-bi-show-all.png)
 
 Angiv **Convenience** til orange. 
 
@@ -84,9 +84,9 @@ Visualiseringer drager ofte fordel af en dynamisk farveindstilling baseret på d
 Følgende afsnit viser forskellige metoder til at basere farve på en numerisk værdi.
 
 ### <a name="base-the-color-of-data-points-on-a-value"></a>Basér farven på datapunkter på en værdi
-Hvis du vil ændre farven på basis af en værdi, skal du vælge en visualisering for at aktivere den. Åbn ruden Formatering ved at vælge ikonet med malerullen, og åbn derefter kortet **Datafarver**. Hold markøren over kortet, klik på de tre lodrette prikker, der vises, og vælg **Betinget formatering**.  
+Hvis du vil ændre farven på basis af en værdi, skal du vælge en visualisering for at aktivere den. Åbn ruden Formatering ved at vælge malerulleikonet og derefter vælge kortet **Datafarver**. Vælg fx-ikonet under **Standardfarve**.  
 
-![vælg indstillingen Betinget formatering ved at klikke på de tre lodrette prikker](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-formatting.gif)
+![vælg indstillingen Betinget formatering ved at klikke på de tre lodrette prikker](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional.png)
 
 Brug rullemenuerne i ruden **Standardfarve** til at identificere de felter, der skal bruges til betinget formatering. I dette eksempel har vi valgt feltet **Salgsfakta** > **Enheder i alt** og valgt lyseblå for den **laveste værdi** og mørkeblå for den **højeste værdi**. 
 
