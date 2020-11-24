@@ -13,12 +13,12 @@ metadata:
   author: KesemSharabi
   ms.author: kesharab
   ms.date: 31/03/2020
-  ms.openlocfilehash: 3ed27c97169c1b4a579dadb001555445fe8fc43f
-  ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
+  ms.openlocfilehash: 9ef1261357bc5a41820fd4ad2e9eacd17d725bf8
+  ms.sourcegitcommit: 9d033abd9c01a01bba132972497dda428d7d5c12
   ms.translationtype: HT
   ms.contentlocale: da-DK
-  ms.lasthandoff: 10/29/2020
-  ms.locfileid: "92916768"
+  ms.lasthandoff: 11/24/2020
+  ms.locfileid: "95513751"
 highlightedContent:
   items:
   - title: Integreret analyse med Power BI
@@ -30,9 +30,9 @@ highlightedContent:
   - title: Visualiseringer i Power BI
     itemType: overview
     url: visuals/power-bi-custom-visuals.md
-  - title: Hvad kan udviklere bruge Power BI-API'en til?
-    itemType: overview
-    url: automation/overview-of-power-bi-rest-api.md
+  - title: Automatiseret konfiguration af skabelonapp
+    itemType: concept
+    url: template-apps/template-apps-auto-install.md
 conceptualContent:
   items:
   - title: Integreret analyse
@@ -97,7 +97,7 @@ additionalContent:
       summary: En samling af Power BI-eksempler og deres kodebiblioteker.
       url: visuals/samples.md
     - title: Power BI-biblioteker
-      summary: Power BI-biblioteker (NuGets).
+      summary: Power BI-biblioteker (NuGet).
       url: https://www.nuget.org/profiles/powerbi
     - title: Embedding-konfigurationsværktøj
       summary: Konfigurer dit Power BI-integrationsmiljø.

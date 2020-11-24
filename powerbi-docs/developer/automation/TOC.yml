@@ -20,6 +20,8 @@
           href: walkthrough-push-data-get-datasets.md
         - name: Føj rækker til en tabel
           href: walkthrough-push-data-add-rows.md
+        - name: Automatiser konfiguration af skabelonapp
+          href: ../template-apps/template-apps-auto-install-tutorial.md
     - name: Begreber
       items:
         - name: Politik for automatisk opbevaring for data i realtid
@@ -32,10 +34,14 @@
               href: api-dataset-properties.md
             - name: Versionering af datamodel
               href: api-data-model-versioning.md
+        - name: Automatiseret konfiguration af skabelonapp
+          href: ../template-apps/template-apps-auto-install.md
     - name: 'Sådan gør du:'
       items:
         - name: Konfigurer legitimationsoplysninger
           href: configure-credentials.md
+        - name: Automatiser konfiguration af skabelonapp
+          href: ../template-apps/template-apps-auto-install.md
     - name: Reference
       items:
         - name: REST API'er
