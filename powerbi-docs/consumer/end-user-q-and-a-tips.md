@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 09/23/2020
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 9a8486a24ab7daa23e35f762c6830e400392963f
-ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
+ms.openlocfilehash: a4ef051f4e4a24901599036c80a52bf200348df1
+ms.sourcegitcommit: b2693047fce6a4e0c3ea07013404e99fc9cc1901
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "91375275"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94893677"
 ---
 # <a name="tips-for-asking-questions-in-power-bi-qa"></a>Tip til at stille spørgsmål med Spørgsmål og svar i Power BI
 
@@ -30,7 +30,7 @@ Listen nedenfor bruger nutid, men alle tider genkendes i de fleste tilfælde. "e
 >  
 
 
-|Kategori  |Nøgleord  |Kolonne3  |
+|Kategori  |Nøgleord  |
 |---------|---------|---------|
 |**Samlinger**     | total, sum, beløb, tal, mængde, antal, gennemsnit, mest, mindst, færrest, størst, højest, maksimum, max, maks., lavest, minimum, min.          |
 |     |         |         

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/17/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d7fcef8294d1e4ba4b3336d4a2456e0ccac787fb
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: de9e2004d7802b5f3eb7684678984a84a077ce89
+ms.sourcegitcommit: b2693047fce6a4e0c3ea07013404e99fc9cc1901
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93412320"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94893723"
 ---
 # <a name="radial-gauge-charts-in-power-bi"></a>Radiale målerdiagrammer i Power BI
 
@@ -23,7 +23,7 @@ ms.locfileid: "93412320"
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
-Et radialt målerdiagram har en cirkulær bue og viser en enkelt værdis status i forhold til et mål eller en KPI (Key Performance Indicator). Linjen (eller *nålen* ) repræsenterer målet eller målværdien. Skyggen repræsenterer status i forhold til målet. Værdien i buen repræsenterer statusværdien. Power BI spreder alle de mulige værdier langs buen fra minimumværdien (længst til venstre) til maksimumværdien (længst til højre).
+Et radialt målerdiagram har en cirkulær bue og viser en enkelt værdis status i forhold til et mål eller en KPI (Key Performance Indicator). Linjen (eller *nålen*) repræsenterer målet eller målværdien. Skyggen repræsenterer status i forhold til målet. Værdien i buen repræsenterer statusværdien. Power BI spreder alle de mulige værdier langs buen fra minimumværdien (længst til venstre) til maksimumværdien (længst til højre).
 
 ![Skærmbillede af radial måler.](media/power-bi-visualization-radial-gauge-charts/gauge-m.png)
 
@@ -46,7 +46,7 @@ Radiale målere er fantastiske til:
 
 ## <a name="prerequisites"></a>Forudsætninger
 
-I dette selvstudium bruges [Excel-filen med eksemplet Økonomisk](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+I dette selvstudium bruges [Excel-filen med eksemplet Økonomisk](https://go.microsoft.com/fwlink/?LinkID=521962).
 
 1. Vælg **Hent data** > **Excel** i øverste venstre afsnit af menulinjen
    
@@ -80,10 +80,10 @@ I dette selvstudium bruges [Excel-filen med eksemplet Økonomisk](https://downlo
 
     ![Skærmbillede af målerdiagrammet.](media/power-bi-visualization-radial-gauge-charts/gauge-no-target.png)
 
-    Afhængigt af, hvornår du henter filen **Financial Sample** , får du muligvis vist tal, der ikke stemmer overens med disse tal.
+    Afhængigt af, hvornår du henter filen **Financial Sample**, får du muligvis vist tal, der ikke stemmer overens med disse tal.
 
     > [!TIP]
-    > Som standard opretter Power BI et målerdiagram, hvor det antages, at den aktuelle værdi (i dette tilfælde **Gennemsnit af Gross Sales** ) er midtvejspunktet for måleren. Da værdien i **Gennemsnit af Gross Sales** er 182,76tusind, er startværdien (Minimum) indstillet til 0, og slutværdien (Maksimum) er indstillet til det dobbelte af den aktuelle værdi.
+    > Som standard opretter Power BI et målerdiagram, hvor det antages, at den aktuelle værdi (i dette tilfælde **Gennemsnit af Gross Sales**) er midtvejspunktet for måleren. Da værdien i **Gennemsnit af Gross Sales** er 182,76tusind, er startværdien (Minimum) indstillet til 0, og slutværdien (Maksimum) er indstillet til det dobbelte af den aktuelle værdi.
 
 ### <a name="step-3-set-a-target-value"></a>Trin 3: Indstil en målværdi
 
@@ -126,7 +126,7 @@ I trin 2 brugte Power BI feltet **Værdi** til automatisk at angive minimum- og 
 
    ![Skærmbillede af målerdiagrammet og ruden Formatér, hvor malerrulleikonet er fremhævet.](media/power-bi-visualization-radial-gauge-charts/power-bi-roller.png)
 
-1. Udvid **Målerakse** , og angiv værdier for **Min.** og **Maks.**
+1. Udvid **Målerakse**, og angiv værdier for **Min.** og **Maks.**
 
     ![Skærmbillede af indstillingerne for måleraksen.](media/power-bi-visualization-radial-gauge-charts/power-bi-gauge-axis.png)
 
@@ -134,7 +134,7 @@ I trin 2 brugte Power BI feltet **Værdi** til automatisk at angive minimum- og 
 
     ![Skærmbillede af indstillingen COGS, hvor markeringen er fjernet.](media/power-bi-visualization-radial-gauge-charts/pbi-remove-target.png)
 
-1. Når feltet **Mål** vises under **Målerakse** , skal du angive en værdi.
+1. Når feltet **Mål** vises under **Målerakse**, skal du angive en værdi.
 
      ![Skærmbillede af indstillingerne for måleraksen, hvor Mål er fremhævet.](media/power-bi-visualization-radial-gauge-charts/power-bi-gauge-target.png)
 

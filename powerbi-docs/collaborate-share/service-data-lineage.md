@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 06/15/2020
 ms.author: painbar
 LocalizationGroup: ''
-ms.openlocfilehash: d08ddeddc0a0feee82b02549db819a901f944c2d
-ms.sourcegitcommit: 1b79577006a2f6583a0a249f1920ae1e2b6b0ace
+ms.openlocfilehash: 76dd059d59daed5916e9d28692ef018dd7465749
+ms.sourcegitcommit: 5bbe7725918a72919ba069c5f8a59e95453ec14c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94529022"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94946972"
 ---
 # <a name="data-lineage"></a>Dataafstamning
 I moderne BI-projekter (Business Intelligence) kan det være en udfordring for mange kunder at forstå flowet af data fra datakilden til destinationen. Udfordringen er endnu større, hvis du har oprettet avancerede analyseprojekter, der strækker sig over flere datakilder, artefakter og afhængigheder. Spørgsmål som "Hvad sker der, hvis jeg ændrer disse data?" eller "Hvorfor er denne rapport ikke ajourført?" kan være vanskelige at besvare. Det kan være nødvendigt med et team af eksperter eller en grundig undersøgelse for at forstå dem. Vi har designet en dataafstamningsvisning for at hjælpe dig med at besvare disse spørgsmål.
@@ -24,6 +24,10 @@ I moderne BI-projekter (Business Intelligence) kan det være en udfordring for m
 Power BI har flere artefakttyper, f.eks. dashboards, rapporter, datasæt og dataflows. Mange datasæt og dataflows har forbindelse til eksterne datakilder, f.eks. SQL Server, og til eksterne datasæt i andre arbejdsområder. Når et datasæt er eksternt for et arbejdsområde, som du ejer, kan det være i et arbejdsområde, der ejes af en person i it-afdelingen eller en anden analytiker. Eksterne datakilder og datasæt gør det i sidste ende svært at vide, hvor dataene kommer fra. I forbindelse med mere eller mindre komplekse projekter introducerer vi afstamningsvisningen.
 
 I afstamningsvisningen kan du få vist afstamningsrelationer mellem alle artefakterne i et arbejdsområde og alle dens eksterne afhængigheder. Den viser forbindelser mellem alle arbejdsområdeartefakter, herunder forbindelser til dataflows, både upstream og downstream.    
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rUj06dqB98g" frameborder="0" allowfullscreen></iframe>
+
+
 
 > [!VIDEO https://youtu.be/rUj06dqB98g]
 
