@@ -1,18 +1,18 @@
 ---
 title: Opret en sideinddelt rapport med et delt datasæt i Power BI – Power BI Report Builder
 description: Opret en sideinddelt rapport i Power BI Report Builder baseret på et delt datasæt i Power BI.
-ms.date: 07/08/2020
+ms.date: 11/18/2020
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 44f1c1280e176d99ab909402a77804074e7d8cbd
-ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
+ms.openlocfilehash: 9b8e7ac37b42e74835cde120ad1465df586a8fe3
+ms.sourcegitcommit: b2693047fce6a4e0c3ea07013404e99fc9cc1901
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93298112"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94893700"
 ---
 # <a name="create-a-paginated-report-based-on-a-power-bi-shared-dataset"></a>Opret en sideinddelt rapport baseret på et delt datasæt i Power BI
 
@@ -95,7 +95,7 @@ Her kan du se trinnene til hentning af forespørgslen.
 ## <a name="create-the-dataset-with-the-query"></a>Opret datasættet med forespørgslen
 
 1. Gå tilbage til Power BI Report Builder.
-1. Højreklik på datasættet under **Datakilder** , og vælg **Tilføj datasæt**.
+1. Højreklik på datasættet under **Datakilder**, og vælg **Tilføj datasæt**.
 
     ![Tilføj datasæt](media/report-builder-shared-datasets/power-bi-report-builder-add-dataset.png)
 
@@ -157,7 +157,7 @@ En hurtig måde at oprette en tabel på er at bruge guiden Tabel.
 
     ![Visningen Reportdesign](media/report-builder-shared-datasets/power-bi-report-builder-design-view.png)
 
-1. Vælg **Klik for at tilføje en titel** , og tilføj en titel.
+1. Vælg **Klik for at tilføje en titel**, og tilføj en titel.
 
 1. Vælg **Kør** for at få vist rapporten.
 
@@ -194,7 +194,7 @@ Du har flere formateringsmuligheder, så du kan få tabellen til at passe på é
 
     ![Angiv talformat](media/report-builder-shared-datasets/power-bi-report-builder-number-format.png)
 
-1. Skift typen af **Pladsholder** til **Eksempelværdier** , så du kan se formateringen i cellen. 
+1. Skift typen af **Pladsholder** til **Eksempelværdier**, så du kan se formateringen i cellen. 
 
     ![Se eksempelværdier](media/report-builder-shared-datasets/power-bi-report-builder-sample-values.png)
 
@@ -204,7 +204,7 @@ Du har flere formateringsmuligheder, så du kan få tabellen til at passe på é
 
 Selvom du har gjort margenerne og tabelkolonnerne smallere, kan du stadig komme ud for, at hver anden side er tom. Hvorfor? På grund af matematikken. 
 
-Når du tilføjer de sidemargener, du angiver, plus bredden af rapportens *brødtekst* , skal den være mindre end bredden af rapportformatet.
+Når du tilføjer de sidemargener, du angiver, plus bredden af rapportens *brødtekst*, skal den være mindre end bredden af rapportformatet.
 
 Antag f.eks., at din rapport har et format på 8,5" x 11", og du har angivet, at sidemargenerne skal være på 0,75" hver. De to margener udgør tilsammen 1,5", så brødteksten skal have en bredde på mindre end 7".
 
@@ -222,6 +222,7 @@ Antag f.eks., at din rapport har et format på 8,5" x 11", og du har angivet, at
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser 
 
 - For de datasæt, der bruger en direkte forbindelse til Analysis Services, kan du oprette forbindelse direkte ved hjælp af den indbyggede Analysis Services-forbindelse i stedet for et delt datasæt.
+- Hvis du vil bruge et Power BI-datasæt, der bruger DirectQuery i Power BI Report Builder, skal datasættet indeholde en måling, også selvom du ikke planlægger at vise målingen i din rapport. Uden målingen returnerer datasættet ikke korrekte dataresultater.
 - Datasæt med hævede eller certificerede påtegninger vises på listen over tilgængelige datasæt, men de er ikke markeret som sådanne. 
 - Du kan ikke integrere sideinddelte rapporter, som er baseret på delte Power BI-datasæt i scenariet "App Owns Data".
 

@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.date: 03/25/2020
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: d218a0cfb66e57e6f52301f8c10bef5cfb137b4b
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 340a4739065716e67f9fd1a7d7b78f875805f12b
+ms.sourcegitcommit: 5bbe7725918a72919ba069c5f8a59e95453ec14c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83361859"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94946903"
 ---
 # <a name="supported-browsers-for-power-bi"></a>Understøttede browsere til Power BI
 
-Power BI er designet til at kunne bruges sammen med en hvilken som helst af disse understøttede browsere, men ydeevnen varierer afhængigt af dit valg af browser. Især hvis du bruger Internet Explorer, kan du opleve en dårlig ydeevne. Det anbefales på det kraftigste, at du skifter fra Internet Explorer til en moderne browser, herunder Microsoft Edge, for at opnå en bedre ydeevne. Vi forventer, at Microsoft Edge-ydeevnen bliver stadig bedre med Edge Chromium. Hvis du stadig oplever en uacceptabel ydeevne, kan du teste andre understøttede moderne browsere for at se, om de fungerer bedre til din Power BI-løsning.
+Power BI er designet til at kunne bruges sammen med en hvilken som helst af disse understøttede browsere, men ydeevnen varierer afhængigt af dit valg af browser. Især hvis du bruger Internet Explorer, kan du opleve en dårlig ydeevne. Det anbefales på det kraftigste, at du skifter fra Internet Explorer til en moderne browser, herunder Microsoft Edge. Hvis du stadig oplever en uacceptabel ydeevne, kan du teste andre understøttede moderne browsere for at se, om de fungerer bedre til din Power BI-løsning.
 
 Power BI understøtter disse browsere på alle platforme, hvor de er tilgængelige.
 
@@ -31,7 +31,7 @@ Power BI understøtter disse browsere på alle platforme, hvor de er tilgængeli
 > [!NOTE]
 > Power BI kører ikke i nogen browsere i iOS10 eller tidligere versioner.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 * [Hvad er Power BI?](power-bi-overview.md)
 * Prøv at spørge [Power BI-community'et](https://community.powerbi.com/)
 * Har du stadig problemer? Gå til [supportsiden for Power BI](https://powerbi.microsoft.com/support/)

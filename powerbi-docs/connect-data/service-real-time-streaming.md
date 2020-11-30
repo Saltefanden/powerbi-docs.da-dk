@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/16/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 8ec7b228f17fc87dcaac6ae5e278dd2c99ab036d
-ms.sourcegitcommit: 59d07be9c3e4a2067f6d42c3002a194371bc4341
+ms.openlocfilehash: 6543f1246a3462f02aaae7d22b11ba35d3725c01
+ms.sourcegitcommit: 8afdd3601209636c9ab92d75f967d4ee0a2cab26
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92116632"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95012046"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Streaming i realtid i Power BI
 Power BI med streaming i realtid gør dig i stand til at streame data og opdatere dashboards i realtid. Alle visuelle elementer eller dashboards, der er oprettet i Power BI, kan også vise og opdatere data og visuelle elementer i realtid. Enhederne og kilderne til streamingdata kan være sensorer på fabrikker, sociale medier, forbrugsdata for tjenester eller mange andre tidsfølsomme dataindsamlere eller dataafsendere.
@@ -101,7 +101,7 @@ Når du opretter det nye streamingdatasæt, kan du vælge at aktivere **Analyse 
 Når **Analyse af historikdata** er deaktiveret (hvilket den er som standard), opretter du et **streamingdatasæt** som beskrevet tidligere i denne artikel. Når **Analyse af historikdata** er *aktiveret*, bliver det oprettede datasæt både et **streamingdatasæt** og et **pushdatasæt**. Dette er det samme som at bruge Power BI REST API'er til at oprette et datasæt med dens *Standardtilstand* indstillet til *pushStreaming*, som beskrevet tidligere i denne artikel.
 
 > [!NOTE]
-> For streamingdatasæt, der er oprettet ved hjælp af Power BI-tjenestens UI, som beskrevet i det foregående afsnit, er Azure AD-godkendelse ikke påkrævet. I sådanne datasæt modtager datasættets ejer en URL-adresse med en rowkey, som giver anmoderen tilladedelse til at pushoverføre data til datasættet uden brug af et Azure AD OAuth-ihændehavertoken. Azure AD (AAD)-tilgangen virker dog stadig til at pushoverføre data til datasættet.
+> For streamingdatasæt, der er oprettet ved hjælp af Power BI-tjenestens UI, som beskrevet i det foregående afsnit, er Azure AD-godkendelse ikke påkrævet. I sådanne datasæt modtager datasættets ejer en URL-adresse med en rowkey, som giver anmoderen tilladedelse til at pushoverføre data til datasættet uden brug af et Azure AD OAuth-ihændehavertoken. Bemærk dog, at Azure AD-tilgangen (AAD) stadig virker til at overføre data via push til datasættet.
 > 
 > 
 

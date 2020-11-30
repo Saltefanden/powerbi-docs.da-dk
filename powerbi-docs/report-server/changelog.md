@@ -7,13 +7,13 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/29/2020
-ms.openlocfilehash: 3173108abe6082c199cbf6ff1229ca57fde31064
-ms.sourcegitcommit: a5fa368abad54feb44a267fe26c383a731c7ec0d
+ms.date: 11/18/2020
+ms.openlocfilehash: 2989436c2a501447cab2d95e0ac1d3fad1fd99b6
+ms.sourcegitcommit: 5bbe7725918a72919ba069c5f8a59e95453ec14c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93044773"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94947018"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Ændringslog for Power BI-rapportserver
 
@@ -23,6 +23,12 @@ Se [Nyheder i Power BI-rapportserver](whats-new.md) for at få flere oplysninger
 
 ## <a name="october-2020"></a>Oktober 2020
 - **Power BI-rapportserver**
+    - *Version: 1.9.7627.11028 (build 15.0.1104.264), udgivet: 18. november 2020*
+        - Fejlrettelser
+            - Løste et problem, hvor brugerne blev forhindret i af ændre felter under webstedsindstillingerne via portalen.
+            - Løste et problem med opdatering af Power BI-rapporter under brug af datakilden "EnterData".
+            - Løste et problem med opdatering af nogle modeller, der bruger forbedrede datasæt med metadata.
+            - Løste et problem, hvor nogle Power BI-rapporter ikke kunne publiceres på rapportserveren.
     - *Version: 1.9.7604.41261 (Build 15.0.1104.239), udgivet: 27. oktober 2020*
          - Funktioner
             - Aktiveret understøttelse af udvidet metadata for datasæt i Power BI-rapportserver.

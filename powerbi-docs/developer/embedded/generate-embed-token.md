@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/15/2020
-ms.openlocfilehash: 24442f20a0c713deb489cd2461839f2b5da39a30
-ms.sourcegitcommit: 1428acb6334649fc2d3d8ae4c42cfbc17e8f7476
+ms.openlocfilehash: cea97f16cf06e80b7b16ef7740fcf3103b2f1eb4
+ms.sourcegitcommit: 9d033abd9c01a01bba132972497dda428d7d5c12
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92197696"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95513774"
 ---
 # <a name="considerations-when-generating-an-embed-token"></a>Overvejelser i forbindelse med generering af et integreringstoken
 
@@ -131,4 +131,4 @@ Tabellen viser også de overvejelser og den begrænsning, der gælder for de enk
 >[Sikkerhed på rækkeniveau ved hjælp af datagateway i det lokale miljø med tjenesteprincipal](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)
 
 >[!div class="nextstepaction"]
->[Integrer Power BI-indhold med tjenesteprincipal og et certifikat](embed-service-principal-certificate.md)
+>[Integrer Power BI-indhold med tjenesteprincipal](embed-service-principal.md)

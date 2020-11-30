@@ -10,12 +10,12 @@ ms.date: 08/20/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 330f844e9c97a3a59ff854ac14612c328b7cb9b6
-ms.sourcegitcommit: 4e347efd132b48aaef6c21236c3a21e5fce285cc
+ms.openlocfilehash: 178b79ba4ae76288794f7bb67afba11c0595de7f
+ms.sourcegitcommit: 9d033abd9c01a01bba132972497dda428d7d5c12
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92680992"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95513843"
 ---
 # <a name="track-user-activities-in-power-bi"></a>Spor brugeraktiviteter i Power BI
 
@@ -81,7 +81,7 @@ Du kan finde flere oplysninger om REST API til Power BI, herunder eksempler på,
 
 ### <a name="get-powerbiactivityevent-cmdlet"></a>Cmdlet'en Get-PowerBIActivityEvent
 
-Download aktivitetshændelser ved hjælp af Power BI Management-cmdlet'er til PowerShell. Cmdlet'en **Get-PowerBIActivityEvent** håndterer automatisk fortsættelsestokenet for dig. Cmdlet'en **Get-PowerBIActivityEvent** bruger en parameter af typen StartDateTime og EndDateTime med de samme begrænsninger som REST API'en **ActivityEvents** . Det vil sige, at startdato og slutdato skal referere til den samme datoværdi, da du kun kan hente aktivitetsdataene for én dag ad gangen.
+Download aktivitetshændelser ved hjælp af Power BI Management-cmdlet'er til PowerShell. Cmdlet'en **Get-PowerBIActivityEvent** håndterer automatisk fortsættelsestokenet for dig. Cmdlet'en **Get-PowerBIActivityEvent** bruger en parameter af typen StartDateTime og EndDateTime med de samme begrænsninger som REST API'en **ActivityEvents**. Det vil sige, at startdato og slutdato skal referere til den samme datoværdi, da du kun kan hente aktivitetsdataene for én dag ad gangen.
 
 Følgende script viser, hvordan du downloader alle Power BI-aktiviteter. Kommandoen konverterer resultaterne fra JSON til .NET-objekter, så der opnås direkte adgang til separate aktivitetsegenskaber. Disse eksempler viser det mindste mulige og det største mulige tidsstempel for en dag for at sikre, at ingen hændelser springes over.
 
@@ -97,7 +97,7 @@ $activities[0]
 
 ### <a name="filter-activity-data"></a>Filtrer aktivitetsdata
 
-Du kan filtrere aktivitetshændelser efter aktivitetstype og bruger-id. Følgende script viser, hvordan du kun downloader hændelsesdata for aktiviteten **ViewDashboard** . Du kan finde flere oplysninger om understøttede parametre ved at bruge kommandoen `Get-Help Get-PowerBIActivityEvent`.
+Du kan filtrere aktivitetshændelser efter aktivitetstype og bruger-id. Følgende script viser, hvordan du kun downloader hændelsesdata for aktiviteten **ViewDashboard**. Du kan finde flere oplysninger om understøttede parametre ved at bruge kommandoen `Get-Help Get-PowerBIActivityEvent`.
 
 ```powershell
 Login-PowerBI
@@ -136,13 +136,13 @@ For at tilgå loggene skal du først sørge for at aktivere logføring i Power B
 
 Power BI-overvågningslogs er tilgængelige direkte via [Office 365 Security & Compliance Center](https://sip.protection.office.com/#/unifiedauditlog). Der er også et link fra Power BI-administrationsportalen:
 
-1. Vælg **tandhjulsikonet** i øverste højre hjørne i Power BI, og vælg derefter **Administrationsportal** .
+1. Vælg **tandhjulsikonet** i øverste højre hjørne i Power BI, og vælg derefter **Administrationsportal**.
 
    ![Skærmbillede af rullemenuen ved tandhjulsikonet, hvor administrationsportalen er markeret.](media/service-admin-auditing/powerbi-admin.png)
 
-1. Vælg **Overvågningslogger** .
+1. Vælg **Overvågningslogger**.
 
-1. Vælg **Gå til Microsoft 365 Administration** .
+1. Vælg **Gå til Microsoft 365 Administration**.
 
    ![Skærmbillede af administrationsportalen, hvor indstillingerne Overvågningslogge og Gå til Microsoft 365 Administration er markeret.](media/service-admin-auditing/audit-log-o365-admin-center.png)
 
@@ -150,9 +150,9 @@ Power BI-overvågningslogs er tilgængelige direkte via [Office 365 Security & C
 
 Begræns resultaterne til aktiviteter, der kun er for Power BI, ved at følge disse trin. Se listen over [aktiviteter, der overvåges af Power BI](#operations-available-in-the-audit-and-activity-logs) senere i denne artikel for at få et overblik.
 
-1. På siden **Søgning i overvågningslog** under **Søg** skal du vælge rullelisten for **Aktiviteter** .
+1. På siden **Søgning i overvågningslog** under **Søg** skal du vælge rullelisten for **Aktiviteter**.
 
-2. Vælg **Power BI-aktiviteter** .
+2. Vælg **Power BI-aktiviteter**.
 
    ![Skærmbillede af Søgning i overvågningslog, hvor Power BI-aktiviteter er fremhævet.](media/service-admin-auditing/audit-log-search-filter-by-powerbi.png)
 
@@ -162,21 +162,21 @@ Dine søgninger returnerer kun Power BI-aktiviteter.
 
 ### <a name="search-the-audit-logs-by-date"></a>Søg i overvågningslogfilerne efter dato
 
-Du kan søge i logfilerne efter datointerval ved hjælp af felterne **Startdato** og **Slutdato** . Standardvalget er de seneste syv dage. Datoen og klokkeslættet vises i UTC-format (Coordinated Universal Time). Det maksimale datointerval, du kan angive, er 90 dage. 
+Du kan søge i logfilerne efter datointerval ved hjælp af felterne **Startdato** og **Slutdato**. Standardvalget er de seneste syv dage. Datoen og klokkeslættet vises i UTC-format (Coordinated Universal Time). Det maksimale datointerval, du kan angive, er 90 dage. 
 
-Du får vist en fejlmeddelelse, hvis det valgte datointerval er mere end 90 dage. Hvis du bruger det maksimale datointerval på 90 dage, skal du vælge det aktuelle klokkeslæt som **Startdato** . Ellers får du vist en fejlmeddelelse om, at startdatoen ligger tidligere end slutdatoen. Hvis du har slået overvågning til inden for de sidste 90 dage, kan datointervallet ikke starte før den dato, hvor overvågning blev slået til.
+Du får vist en fejlmeddelelse, hvis det valgte datointerval er mere end 90 dage. Hvis du bruger det maksimale datointerval på 90 dage, skal du vælge det aktuelle klokkeslæt som **Startdato**. Ellers får du vist en fejlmeddelelse om, at startdatoen ligger tidligere end slutdatoen. Hvis du har slået overvågning til inden for de sidste 90 dage, kan datointervallet ikke starte før den dato, hvor overvågning blev slået til.
 
 ![Skærmbillede af Søgning i overvågningslog, hvor indstillingerne Startdato og Slutdato er fremhævet.](media/service-admin-auditing/search-audit-log-by-date.png)
 
 ### <a name="search-the-audit-logs-by-users"></a>Søg i overvågningslogfilerne efter brugere
 
-Du kan søge efter overvågningslogposter for aktiviteter, der er udført af bestemte brugere. Angiv et eller flere brugernavne i feltet **Brugere** . Brugernavnet ligner en mailadresse. Det er den konto, som brugerne logger på Power BI med. Lad dette felt være tomt for at returnere poster for alle brugere (og tjenestekonti) i din organisation.
+Du kan søge efter overvågningslogposter for aktiviteter, der er udført af bestemte brugere. Angiv et eller flere brugernavne i feltet **Brugere**. Brugernavnet ligner en mailadresse. Det er den konto, som brugerne logger på Power BI med. Lad dette felt være tomt for at returnere poster for alle brugere (og tjenestekonti) i din organisation.
 
 ![Skærmbillede af Søgning i overvågningslog, hvor Brugere er fremhævet.](media/service-admin-auditing/search-audit-log-by-user.png)
 
 ### <a name="view-search-results"></a>Få vist søgeresultaterne
 
-Når du har valgt **Søg** , indlæses søgeresultaterne. Efter et øjeblik vises de under **Resultater** . Når søgningen er fuldført, vises antallet af fundne resultater. Der vises maksimalt 1000 hændelser i forbindelse med **Søgning i overvågningslog** . Hvis mere end 1000 hændelser opfylder søgekriterierne, viser appen de nyeste 1000 hændelser.
+Når du har valgt **Søg**, indlæses søgeresultaterne. Efter et øjeblik vises de under **Resultater**. Når søgningen er fuldført, vises antallet af fundne resultater. Der vises maksimalt 1000 hændelser i forbindelse med **Søgning i overvågningslog**. Hvis mere end 1000 hændelser opfylder søgekriterierne, viser appen de nyeste 1000 hændelser.
 
 #### <a name="view-the-main-results"></a>Få vist de vigtigste resultater
 
@@ -187,7 +187,7 @@ Området **Resultater** indeholder følgende oplysninger om hver hændelse, der 
 | Dato |Den dato og det klokkeslæt (i UTC-format), da hændelsen fandt sted. |
 | IP-adresse |IP-adressen for den enhed, der bruges til den logførte aktivitet. Appen viser IP-adressen enten i et IPv4- eller IPv6-adresseformat. |
 | Bruger |Brugeren (eller tjenestekontoen), som udførte den handling, der udløste hændelsen. |
-| Aktivitet |Den aktivitet, der blev udført af brugeren. Denne værdi svarer til de aktiviteter, som du har valgt på rullelisten **Aktiviteter** . For en hændelse fra Exchange-administratorens overvågningslogfil er værdien i denne kolonne en Exchange-cmdlet . |
+| Aktivitet |Den aktivitet, der blev udført af brugeren. Denne værdi svarer til de aktiviteter, som du har valgt på rullelisten **Aktiviteter**. For en hændelse fra Exchange-administratorens overvågningslogfil er værdien i denne kolonne en Exchange-cmdlet . |
 | Element |Det objekt, der blev oprettet eller ændret som følge af den tilsvarende aktivitet. For eksempel den viste eller ændrede fil eller den opdaterede brugerkonto. Ikke alle aktiviteter har en værdi i denne kolonne. |
 | Detaljer |Yderligere oplysninger om en aktivitet. Igen er det ikke alle aktiviteter, der har en værdi. |
 
@@ -203,9 +203,9 @@ Vælg **Flere oplysninger** for at få vist disse detaljer. Alle poster i Power 
 
 Følg disse trin for at eksportere Power BI-overvågningsloggen til en csv-fil.
 
-1. Vælg **Eksportér resultater** .
+1. Vælg **Eksportér resultater**.
 
-1. Vælg enten **Gem indlæste resultater** eller **Download alle resultater** .
+1. Vælg enten **Gem indlæste resultater** eller **Download alle resultater**.
 
     ![Skærmbillede af indstillingen Eksportér resultater, hvor Download alle resultater er fremhævet.](media/service-admin-auditing/export-auditing-results.png)
 
@@ -248,121 +248,132 @@ Følgende handlinger er tilgængelige både i overvågnings- og aktivitetslogge.
 
 | Brugervenligt navn                                     | Handlingsnavn                              | Noter                                  |
 |---------------------------------------------------|---------------------------------------------|------------------------------------------|
-| Udvalgte Power BI-tabeller i Excel, der er blevet tilgået | AnalyzedByExternalApplication |    |
-| Datakilde er føjet til Power BI-gateway             | AddDatasourceToGateway                      |                                          |
-| Adgang til Power BI-mapper er tilføjet                      | AddFolderAccess                             | Anvendes ikke i øjeblikket                       |
-| Power BI-gruppemedlemmer er tilføjet                      | AddGroupMembers                             |                                          |
+| Tilgik udvalgte Power BI-tabeller i Excel | AnalyzedByExternalApplication |    |
+| Føjede datakilde til Power BI-gateway             | AddDatasourceToGateway                      |                                          |
+| Tilføjede adgang til Power BI-mapper                      | AddFolderAccess                             | Anvendes ikke i øjeblikket                       |
+| Tilføjede Power BI-gruppemedlemmer                      | AddGroupMembers                             |                                          |
 | Administratoren har knyttet dataflowlagerkontoen til lejer | AdminAttachedDataflowStorageAccountToTenant | Anvendes ikke i øjeblikket                       |
 | Analyseret Power BI-datasæt                         | AnalyzedByExternalApplication               | Genereres, når brugerne interagerer med tjenesten                                         |
-| Power BI-rapport er analyseret                          | AnalyzeInExcel                              |                                          |
+| Analyserede Power BI-rapport                          | AnalyzeInExcel                              |                                          |
 | Tildelt et arbejdsområde til en udrulningspipeline                          | AssignWorkspaceToPipeline                              |                                          |
 | Tilknyttet lagerkonto for dataflow                 | AttachedDataflowStorageAccount              |                                          |
 | Bundne Power BI-datasæt til gateway                | BindToGateway                               |                                          |
 | Annulleret opdatering af dataflow                        | CancelDataflowRefresh                       |                                          |
-| Kapacitetstilstand er ændret                            | ChangeCapacityState                         |                                          |
-| Kapacitet for brugertildeling er ændret                  | UpdateCapacityUsersAssignment               |                                          |
-| Power BI-datasætforbindelser er ændret              | SetAllConnections                           |                                          |
+| Ændrede kapacitetstilstand                            | ChangeCapacityState                         |                                          |
+| Ændrede kapacitet for brugertildeling                  | UpdateCapacityUsersAssignment               |                                          |
+| Ændrede Power BI-datasætforbindelser              | SetAllConnections                           |                                          |
 | Ændrede administratorer af Power BI-gateway                   | ChangeGatewayAdministrators                 |                                          |
 | Ændrede brugere af datakilde fra Power BI-gateway        | ChangeGatewayDatasourceUsers                |                                          |
 | Oprettede en brugerdefineret visualisering til virksomheder                          | InsertOrganizationalGalleryItem                                |                                          |
-| Power BI organisationsindholdspakke er oprettet      | CreateOrgApp                                |                                          |
-| Opret installationspipeline      | CreateAlmPipeline                                |                                          |
-| Power BI-app er oprettet                              | CreateApp                                   |                                          |
-| Power BI-dashboard er oprettet                        | CreateDashboard                             |                                          |
-| Power BI-dataflow er oprettet                         | CreateDataflow                              |                                          |
-| Power BI-datasæt er oprettet                          | CreateDataset                               |                                          |
-| Power BI-mailabonnement er oprettet               | CreateEmailSubscription                     |                                          |
-| Power BI-mappe er oprettet                           | CreateFolder                                |                                          |
-| Oprettet Power BI-gateway                          | CreateGateway                               |                                          |
-| Power BI-gruppe er oprettet                            | CreateGroup                                 |                                          |
-| Power BI-rapport er oprettet                           | CreateReport <sup>1</sup>                                |                                          |
+| Oprettede Power BI-indholdspakke til organisationer      | CreateOrgApp                                |                                          |
+| Oprettede installationspipeline      | CreateAlmPipeline                                |                                          |
+| Oprettede Power BI-app                              | CreateApp                                   |                                          |
+| Oprettede Power BI-dashboard                        | CreateDashboard                             |                                          |
+| Oprettede Power BI-dataflow                         | CreateDataflow                              |                                          |
+| Oprettede Power BI-datasæt                          | CreateDataset                               |                                          |
+| Oprettede Power BI-mailabonnement               | CreateEmailSubscription                     |                                          |
+| Oprettede Power BI-mappe                           | CreateFolder                                |                                          |
+| Oprettede Power BI-gateway                          | CreateGateway                               |                                          |
+| Oprettede Power BI-gruppe                            | CreateGroup                                 |                                          |
+| Oprettede Power BI-rapport                           | CreateReport <sup>1</sup>                                |                                          |
+| Opret arbejdsområde for Power BI-skabelonprogram | CreateTemplateApp   |
+| Opret installationsanmodning for Power BI-skabelonprogram | CreateTemplateAppInstallTicket |
+| Opret pakke til Power BI-skabelonprogram | CreateTemplateAppPackage |
 | Brugerdefineret visuelt element anmodede om Azure AD-adgangstoken                           | GenerateCustomVisualAADAccessToken                                |                                          |
 | Brugerdefineret visualisering anmodede om adgang til Office Web Apps                           | GenerateCustomVisualWACAccessToken                                |                                          |
-| Dataflowet er overført til ekstern lagerkonto     | DataflowMigratedToExternalStorageAccount    | Anvendes ikke i øjeblikket                       |
-| Dataflowtilladelser er tilføjet                        | DataflowPermissionsAdded                    | Anvendes ikke i øjeblikket                       |
-| Dataflowtilladelser er fjernet                      | DataflowPermissionsRemoved                  | Anvendes ikke i øjeblikket                       |
-| Slettede en brugerdefineret visualisering til virksomheder     | DeleteOrganizationalGalleryItem                                |                                          |
+| Migrerede dataflowet til ekstern lagerkonto     | DataflowMigratedToExternalStorageAccount    | Anvendes ikke i øjeblikket                       |
+| Tilføjede dataflowtilladelser                        | DataflowPermissionsAdded                    | Anvendes ikke i øjeblikket                       |
+| Fjernede dataflowtilladelser                      | DataflowPermissionsRemoved                  | Anvendes ikke i øjeblikket                       |
+| Slettede en brugerdefineret visualisering til organisationer     | DeleteOrganizationalGalleryItem                                |                                          |
 | Slettede en installationspipeline      | DeleteAlmPipeline                                |                                          |
-| Power BI-organisationsindholdspakke er slettet      | DeleteOrgApp                                |                                          |
-| Power BI-kommentar er slettet                          | DeleteComment                               |                                          |
-| Power BI-dashboard er slettet                        | DeleteDashboard                             | Anvendes ikke i øjeblikket                       |
-| Power BI-dataflow er slettet                         | DeleteDataflow                              | Anvendes ikke i øjeblikket                       |
-| Power BI-datasæt er slettet                          | DeleteDataset                               |                                          |
-| Power BI-mailabonnement er slettet               | DeleteEmailSubscription                     |                                          |
-| Power BI-mappe er slettet                           | DeleteFolder                                |                                          |
-| Adgang til Power BI-mapper er slettet                    | DeleteFolderAccess                          | Anvendes ikke i øjeblikket                       |
-| Slettet Power BI-gateway                          | DeleteGateway                               |                                          |
-| Power BI-gruppe er slettet                            | DeleteGroup                                 |                                          |
-| Power BI-rapport er slettet                           | DeleteReport                                |                                          |
+| Slettede Power BI-indholdspakke til organisationer      | DeleteOrgApp                                |                                          |
+| Slettede Power BI-kommentar                          | DeleteComment                               |                                          |
+| Slettede Power BI-dashboard                        | DeleteDashboard                             | Anvendes ikke i øjeblikket                       |
+| Slettede Power BI-dataflow                         | DeleteDataflow                              | Anvendes ikke i øjeblikket                       |
+| Slettede Power BI-datasæt                          | DeleteDataset                               |                                          |
+| Slettede Power BI-mailabonnement               | DeleteEmailSubscription                     |                                          |
+| Slettede Power BI-mappe                           | DeleteFolder                                |                                          |
+| Slettede adgang til Power BI-mapper                    | DeleteFolderAccess                          | Anvendes ikke i øjeblikket                       |
+| Slettede Power BI-gateway                          | DeleteGateway                               |                                          |
+| Slettede Power BI-gruppe                            | DeleteGroup                                 |                                          |
+| Slettede Power BI-rapport                           | DeleteReport                                |                                          |
+| Slettede arbejdsområde for Power BI-skabelonprogram | DeleteTemplateApp |
+| Slettede pakke til Power BI-skabelonprogram | DeleteTemplateAppPackage |
 | Udrullede til en pipelinefase                           | DeployAlmPipeline                                |                                          |
-| Datakilder til Power BI-datasæt er fundet          | GetDatasources                              |                                          |
+| Fandt datakilder til Power BI-datasæt          | GetDatasources                              |                                          |
 | Downloadet Power BI-rapport                        | DownloadReport                              |                                          |
 | Redigerede egenskaber for dataflow                        | EditDataflowProperties                      |                                          |
 | Power BI-certificeringstilladelse blev redigeret          | EditCertificationPermission                 | Anvendes ikke i øjeblikket                       |
-| Power BI-dashboard er redigeret                         | EditDashboard                               | Anvendes ikke i øjeblikket                       |
-| Power BI-datasæt er redigeret                           | EditDataset                                 |                                          |
-| Egenskaber for Power BI-datasæt er redigeret                | EditDatasetProperties                       | Anvendes ikke i øjeblikket                       |
-| Power BI-rapport er redigeret                            | EditReport                                  |                                          |
-| Power BI-dataflow er eksporteret                        | ExportDataflow                              |                                          |
-| Visualiseringsdata for Power BI-rapporten er eksporteret              | ExportReport                                |                                          |
-| Power BI-feltdata er eksporteret                       | ExportTile                                  |                                          |
+| Redigerede Power BI-dashboard                         | EditDashboard                               | Anvendes ikke i øjeblikket                       |
+| Redigerede Power BI-datasæt                           | EditDataset                                 |                                          |
+| Redigerede egenskaber for Power BI-datasæt                | EditDatasetProperties                       | Anvendes ikke i øjeblikket                       |
+| Redigerede Power BI-rapport                            | EditReport                                  |                                          |
+| Eksporterede Power BI-dataflow                        | ExportDataflow                              |                                          |
+| Eksporterede visualiseringsdata for Power BI-rapporten              | ExportReport                                |                                          |
+| Eksporterede Power BI-feltdata                       | ExportTile                                  |                                          |
+| Udpakkede pakke til Power BI-skabelonprogram til arbejdsområde | ExtractTemplateAppPackage |
 | Dataflowtilladelser blev ikke tilføjet                | FailedToAddDataflowPermissions              | Anvendes ikke i øjeblikket                       |
 | Dataflowtilladelser blev ikke fjernet             | FailedToRemoveDataflowPermissions           | Anvendes ikke i øjeblikket                       |
-| SAS-token til Power BI dataflow er oprettet             | GenerateDataflowSasToken                    |                                          |
-| Integrationstoken til Power BI er oprettet                    | GenerateEmbedToken                          |                                          |
+| Genererede SAS-token til Power BI-dataflow             | GenerateDataflowSasToken                    |                                          |
+| Genererede integrationstoken til Power BI                    | GenerateEmbedToken                          |                                          |
 | Generér skærmbillede                       | GenerateScreenshot |                     |
-| Fil er importeret i Power BI                         | Importér                                      |                                          |
-| Power BI-app er installeret                            | InstallApp                                  |                                          |
-| Arbejdsområde er overført til en kapacitet                  | MigrateWorkspaceIntoCapacity                |                                          |
-| Power BI-kommentar er postet                           | PostComment                                 |                                          |
-| Power BI-dashboard er udskrevet                        | PrintDashboard                              |                                          |
-| Power BI-rapportside er udskrevet                      | PrintReport                                 |                                          |
-| Power BI-rapport er publiceret på internettet                  | PublishToWebReport <sup>2</sup>                         |                                          |
+| Importerede fil i Power BI                         | Importér                                      |                                          |
+| Installerede Power BI-app                            | InstallApp                                  |                                          |
+| Installerede Power BI-skabelonprogram | InstallTemplateApp |
+| Migrerede arbejdsområde til en kapacitet                  | MigrateWorkspaceIntoCapacity                |                                          |
+| Postede Power BI-kommentar                           | PostComment                                 |                                          |
+| Udskrev Power BI-dashboard                        | PrintDashboard                              |                                          |
+| Udskrev Power BI-rapportside                      | PrintReport                                 |                                          |
+| Fremhævede pakke til Power BI-skabelonprogram | PromoteTemplateAppPackage |
+| Publicerede Power BI-rapport på internettet                  | PublishToWebReport <sup>2</sup>                         |                                          |
 | Udvalgte udgivne eller opdaterede tabeller | UpdateFeaturedTables <sup>3</sup>   | |
-| Power BI-dataflowhemmelighed er modtaget fra Key Vault  | ReceiveDataflowSecretFromKeyVault           |                                          |
+| Modtiog Power BI-dataflowhemmelighed fra Key Vault  | ReceiveDataflowSecretFromKeyVault           |                                          |
 | Fjernede et arbejdsområde fra en udrulningspipeline         | UnassignWorkspaceFromPipeline                 |                                          |
 | Datakilde fjernet fra Power BI-gateway         | RemoveDatasourceFromGateway                 |                                          |
-| Power BI-gruppemedlemmer er fjernet                    | DeleteGroupMembers                          |                                          |
-| Arbejdsområde er fjernet fra en kapacitet                 | RemoveWorkspacesFromCapacity                |                                          |
-| Power BI-dashboard er omdøbt                        | RenameDashboard                             |                                          |
-| Der er anmodet om opdatering af Power BI-dataflowet               | RequestDataflowRefresh                      | Anvendes ikke i øjeblikket                       |
-| Der er anmodet om opdatering af Power BI-datasættet                | RefreshDataset                              |                                          |
-| Power BI-arbejdsområder er hentet                     | GetWorkspaces                               |                                          |
-| Følsomhedsmærkat er anvendt                         | SensitivityLabelApplied                     |                                          |
-| Følsomhedsmærkat er ændret                         | SensitivityLabelChanged                     |                                          |
-| Følsomhedsmærkat er fjernet                         | SensitivityLabelRemoved                     |                                          |
+| Fjernede Power BI-gruppemedlemmer                    | DeleteGroupMembers                          |                                          |
+| Fjernede arbejdsområde fra en kapacitet                 | RemoveWorkspacesFromCapacity                |                                          |
+| Omdøbte Power BI-dashboard                        | RenameDashboard                             |                                          |
+| Anmodede om opdatering af Power BI-dataflowet               | RequestDataflowRefresh                      | Anvendes ikke i øjeblikket                       |
+| Anmodede om opdatering af Power BI-datasættet                | RefreshDataset                              |                                          |
+| Hentede Power BI-arbejdsområder                     | GetWorkspaces                               |                                          |
+| Følsomhedsmærkat blev anvendt                         | SensitivityLabelApplied                     |                                          |
+| Følsomhedsmærkat blev ændret                         | SensitivityLabelChanged                     |                                          |
+| Følsomhedsmærkat blev fjernet                         | SensitivityLabelRemoved                     |                                          |
 | Angiv lagringsplacering for et arbejdsområdes dataflow     | SetDataflowStorageLocationForWorkspace      |                                          |
 | Angiv planlagt opdatering af Power BI-dataflow        | SetScheduledRefreshOnDataflow               |                                          |
 | Angiv planlagt opdatering af Power BI-datasæt         | SetScheduledRefresh                         |                                          |
-| Power BI-dashboard er delt                         | ShareDashboard                              |                                          |
-| Power BI-rapport er delt                            | ShareReport                                 |                                          |
+| Delte Power BI-dashboard                         | ShareDashboard                              |                                          |
+| Delte Power BI-rapport                            | ShareReport                                 |                                          |
 | Påbegyndt udvidet prøveperiode med Power BI                   | OptInForExtendedProTrial                    | Anvendes ikke i øjeblikket                       |
-| Power BI-prøveperiode er startet                            | OptInForProTrial                            |                                          |
-| Power BI-datakilde er overtaget                   | TakeOverDatasource                          |                                          |
-| Power BI-datasæt er overtaget                        | TakeOverDataset                             |                                          |
+| Startede Power BI-prøveperiode                            | OptInForProTrial                            |                                          |
+| Overtog Power BI-datakilde                   | TakeOverDatasource                          |                                          |
+| Overtog Power BI-datasæt                        | TakeOverDataset                             |                                          |
 | Overtog et Power BI-dataflow                     | TookOverDataflow                             |                                          |
-| Publicering af Power BI-app er fjernet                          | UnpublishApp                                |                                          |
+| Fjernede publicering af Power BI-app                          | UnpublishApp                                |                                          |
 | Opdater indstillinger for ressourcestyring af kapacitet      | UpdateCapacityResourceGovernanceSettings    | Findes i øjeblikket ikke i Microsoft 365 Administration |
-| Opdaterede en brugerdefineret visualisering til virksomheder                     | UpdateOrganizationalGalleryItem                   |                                          |
-| Kapacitetsadministrator er opdateret                            | UpdateCapacityAdmins                        |                                          |
-| Vist navn for kapacitet er opdateret                     | UpdateCapacityDisplayName                   |                                          |
+| Opdaterede en brugerdefineret visualisering til organisationer                     | UpdateOrganizationalGalleryItem                   |                                          |
+| Opdaterede kapacitetsadministrator                            | UpdateCapacityAdmins                        |                                          |
+| Opdaterede vist navn for kapacitet                     | UpdateCapacityDisplayName                   |                                          |
 | Opdaterede tilladelser for tildeling af dataflowlager   | UpdatedDataflowStorageAssignmentPermissions |                                          |
 | Opdaterede adgang til installationspipeline   | UpdateAlmPipelineAccess |                                          |
+| Opdaterede installerede parametre for Power BI-skabelonprogram | UpdateInstalledTemplateAppParameters |
 | Opdaterede konfiguration for installationspipeline   | SetConfigurationAlmPipeline |                                          |
-| Power BI-indstillinger for organisation er opdateret          | UpdatedAdminFeatureSwitch                   |                                          |
-| Power BI-appen er opdateret                              | UpdateApp                                   |                                          |
-| Power BI-dataflowet er opdateret                         | UpdateDataflow                              |                                          |
-| Datakilder til Power BI-datasæt er opdateret             | UpdateDatasources                           |                                          |
-| Parametre for Power BI-datasæt er opdateret               | UpdateDatasetParameters                     |                                          |
-| Power BI-mailabonnement er opdateret               | UpdateEmailSubscription                     |                                          |
-| Power BI-mappe er opdateret                           | UpdateFolder                                |                                          |
-| Adgang til Power BI-mappe er opdateret                    | UpdateFolderAccess                          |                                          |
-| Legitimationsoplysninger for Power BI-gatewaydatakilde er opdateret  | UpdateDatasourceCredentials                 |                                          |
-| Power BI-dashboard er vist                         | ViewDashboard                               |                                          |
-| Power BI-dataflow er vist                          | ViewDataflow                                |                                          |
-| Power BI-rapport er vist                            | ViewReport                                  |                                          |
-| Power BI-felt er vist                              | ViewTile                                    |                                          |
-| Power BI-forbrugsdata er vist                     | ViewUsageMetrics                            |                                          |
+| Opdaterede organisationens Power BI-indstillinger          | UpdatedAdminFeatureSwitch                   |                                          |
+| Opdaterede Power BI-appen                              | UpdateApp                                   |                                          |
+| Opdaterede Power BI-dataflowet                         | UpdateDataflow                              |                                          |
+| Opdaterede datakilder til Power BI-datasæt             | UpdateDatasources                           |                                          |
+| Opdaterede parametre for Power BI-datasæt               | UpdateDatasetParameters                     |                                          |
+| Opdaterede Power BI-mailabonnement               | UpdateEmailSubscription                     |                                          |
+| Opdaterede Power BI-mappe                           | UpdateFolder                                |                                          |
+| Opdaterede adgang til Power BI-mappe                    | UpdateFolderAccess                          |                                          |
+| Opdaterede legitimationsoplysninger for Power BI-gatewaydatakilde  | UpdateDatasourceCredentials                 |                                          |
+| Opdaterede indstillinger for Power BI-skabelonprogram | UpdateTemplateAppSettings |
+| Opdaterede adgangstilladelser til test af Power BI-skabelonprogram | UpdateTemplateAppTestPackagePermissions |
+| Fik vist Power BI-dashboard                         | ViewDashboard                               |                                          |
+| Fik vist Power BI-dataflow                          | ViewDataflow                                |                                          |
+| Fik vist Power BI-rapport                            | ViewReport                                  |                                          |
+| Fik vist Power BI-felt                              | ViewTile                                    |                                          |
+| Fik vist Power BI-forbrugsdata                     | ViewUsageMetrics                            |                                          |
 |                                                   |                                             |                                          |
 
 <sup>1</sup> Publicering fra Power BI Desktop til tjenesten er en CreateReport-hændelse i tjenesten.

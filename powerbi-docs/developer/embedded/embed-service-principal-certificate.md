@@ -3,29 +3,22 @@ title: Integrer Power BI-indhold med tjenesteprincipal og et certifikat
 description: Få mere at vide om, hvordan du godkender for integreret analyse ved hjælp af et tjenesteprincipal i et Azure Active Director-program og et certifikat.
 author: KesemSharabi
 ms.author: kesharab
-ms.reviewer: nishalit
+ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: ''
-ms.date: 10/15/2020
-ms.openlocfilehash: 3d25fe925b98dbdd74d61fd70320bd4275db35e3
-ms.sourcegitcommit: 1428acb6334649fc2d3d8ae4c42cfbc17e8f7476
+ms.date: 11/23/2020
+ms.openlocfilehash: 990e3787927cb483b37d7bc456a46201876fcbed
+ms.sourcegitcommit: 9d033abd9c01a01bba132972497dda428d7d5c12
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92197765"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95514418"
 ---
 # <a name="embed-power-bi-content-with-service-principal-and-a-certificate"></a>Integrer Power BI-indhold med tjenesteprincipal og et certifikat
 
-[!INCLUDE[service principal overview](../../includes/service-principal-overview.md)]
-
->[!NOTE]
->Vi anbefaler, at du sikrer dine backend-tjenester ved hjælp af certifikater i stedet for hemmelige nøgler. [Få mere at vide om at hente adgangstoken fra Azure AD ved hjælp af hemmelige nøgler eller certifikater](/azure/architecture/multitenant-identity/client-assertion).
-
-## <a name="certificate-based-authentication"></a>Certifikatbaseret godkendelse
-
-Certifikatbaseret godkendelse gør det muligt for dig at blive godkendt af Azure Active Directory (Azure AD) med et klientcertifikat på en Windows-, Android- eller iOS-enhed eller opbevaret i en [Azure Key Vault](/azure/key-vault/basic-concepts).
+Certifikatbaseret godkendelse gør det muligt for dig at blive godkendt af Azure Active Directory (Azure AD) med et klientcertifikat på en Windows-, Android- eller iOS-enhed eller opbevaret i en [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/basic-concepts).
 
 Ved hjælp af denne godkendelsesmetode kan du administrere certifikater fra et centralt sted ved hjælp af nøglecentret, til rotation eller tilbagekaldelse.
 
@@ -33,50 +26,24 @@ Du kan få mere at vide om certifikater i Azure AD på GitHub-siden [Klientens l
 
 ## <a name="method"></a>Metode
 
-Hvis du vil bruge tjenesteprincipalen og et certifikat med integreret analyse, skal du følge disse trin:
+1. [Integrer dit indhold med tjenesteprincipal](embed-service-principal.md).
 
-1. Opret en Azure AD-app.
+2. [Opret et certifikat](embed-service-principal-certificate.md#step-2---create-a-certificate).
 
-2. Opret en Microsoft Azure AD-sikkerhedsgruppe.
+3. [Konfigurer certifikatgodkendelse](embed-service-principal-certificate.md#step-3---set-up-certificate-authentication).
 
-3. Aktivér indstillingerne for Power BI-tjenesteadministration.
+4. [Hent certifikatet fra Azure Key Vault](embed-service-principal-certificate.md#step-4---get-the-certificate-from-azure-key-vault).
 
-4. Føj tjenesteprincipalen til dit arbejdsområde.
+5. [Godkend ved hjælp af en tjenesteprincipal og et certifikat](embed-service-principal-certificate.md#step-5---authenticate-using-service-principal-and-a-certificate).
 
-5. Opret et certifikat.
+## <a name="step-1---embed-your-content-with-service-principal"></a>Trin 1 – Integrer dit indhold med tjenesteprincipal
 
-6. Konfigurer certifikatgodkendelse.
+Du integrerer dit indhold med en tjenesteprincipal ved at følge instruktionerne i [Integrer Power BI-indhold med tjenesteprincipal og en programhemmelighed](embed-service-principal.md).
 
-7. Hent certifikatet fra Azure Key Vault.
+>[!NOTE]
+>Hvis du allerede har indhold, der er integreret ved hjælp af en tjenesteprincipal, skal du springe dette trin over og fortsætte med [Trin 2](embed-service-principal-certificate.md#step-2---create-a-certificate).
 
-8. Godkend ved hjælp af en tjenesteprincipal og et certifikat.
-
-## <a name="step-1---create-an-azure-ad-application"></a>Trin 1 – Opret et Microsoft Azure AD-program
-
-[!INCLUDE[service principal create app](../../includes/service-principal-create-app.md)]
-
-### <a name="creating-an-azure-ad-app-using-powershell"></a>Oprettelse af en Microsoft Azure AD-app ved hjælp af PowerShell
-
-Dette afsnit indeholder et eksempelscript til oprettelse af en ny Microsoft Azure AD-app ved hjælp af [PowerShell](/powershell/azure/create-azure-service-principal-azureps).
-
-```powershell
-# The app ID - $app.appid
-# The service principal object ID - $sp.objectId
-# The app key - $key.value
-
-# Sign in as a user that's allowed to create an app
-Connect-AzureAD
-
-# Create a new Azure AD web application
-$app = New-AzureADApplication -DisplayName "testApp1" -Homepage "https://localhost:44322" -ReplyUrls "https://localhost:44322"
-
-# Creates a service principal
-$sp = New-AzureADServicePrincipal -AppId $app.AppId
-```
-
-[!INCLUDE[service create steps two, three and four](../../includes/service-principal-create-steps.md)]
-
-## <a name="step-5---create-a-certificate"></a>Trin 5 – Opret et certifikat
+## <a name="step-2---create-a-certificate"></a>Trin 2 – Opret et certifikat
 
 Du kan oprette et certifikat fra et *nøglecenter*, der er tillid til, eller du kan selv oprette et certifikat.
 
@@ -130,15 +97,15 @@ I dette afsnit beskrives det, hvordan du opretter et certifikat ved hjælp af [A
 
     ![Et skærmbillede, der viser knappen download i cer-format.](media/embed-service-principal-certificate/download-cer.png)
 
-## <a name="step-6---set-up-certificate-authentication"></a>Trin 6 – Konfigurer certifikatgodkendelse
+## <a name="step-3---set-up-certificate-authentication"></a>Trin 3 – Konfigurer certifikatgodkendelse
 
 1. I dit Azure AD-program skal du klikke på fanen **Certifikater og hemmeligheder**.
 
      ![Et skærmbillede, der viser ruden Certifikater og hemmeligheder for en app på Microsoft Azure-portalen.](media/embed-service-principal/certificates-and-secrets.png)
 
-2. Klik på **Upload certifikat**, og upload den *.cer-* -fil, du har oprettet og downloadet, i [første trin](#step-5---create-a-certificate) i dette selvstudium. *.cer*-filen indeholder den offentlige nøgle.
+2. Klik på **Upload certifikat**, og upload den *.cer*-fil, du oprettede og downloadede i [Trin 2](#step-2---create-a-certificate) i dette selvstudium. *.cer*-filen indeholder den offentlige nøgle.
 
-## <a name="step-7---get-the-certificate-from-azure-key-vault"></a>Trin 7 – Hent certifikatet fra Azure Key Vault
+## <a name="step-4---get-the-certificate-from-azure-key-vault"></a>Trin 4 – Hent certifikatet fra Azure Key Vault
 
 Brug Managed Service Identity (MSI) til at hente certifikatet fra Azure Key Vault. Denne proces omfatter hentning af det *.pfx*-certifikat, der indeholder både offentlige og private nøgler.
 
@@ -165,7 +132,7 @@ private X509Certificate2 ReadCertificateFromVault(string certName)
 }
 ```
 
-## <a name="step-8---authenticate-using-service-principal-and-a-certificate"></a>Trin 8 – Godkend ved hjælp af en tjenesteprincipal og et certifikat
+## <a name="step-5---authenticate-using-service-principal-and-a-certificate"></a>Trin 5 – Godkend ved hjælp af en tjenesteprincipal og et certifikat
 
 Du kan godkende din app ved hjælp af tjenesteprincipalen og et certifikat, der er gemt i Azure Key Vault, ved at oprette forbindelse til Azure Key Vault.
 
@@ -216,14 +183,12 @@ Når du opretter din integrerede løsning, kan det være en god ide at konfigure
 
 4. Tilføj den konto, der har adgang til din Azure Key Vault.
 
-[!INCLUDE[service principal limitations](../../includes/service-principal-limitations.md)]
-
 ## <a name="next-steps"></a>Næste trin
 
 >[!div class="nextstepaction"]
 >[Registrer et program](register-app.md)
 
->[!div class="nextstepaction"]
+> [!div class="nextstepaction"]
 >[Power BI Embedded til dine kunder](embed-sample-for-customers.md)
 
 >[!div class="nextstepaction"]
@@ -231,6 +196,3 @@ Når du opretter din integrerede løsning, kan det være en god ide at konfigure
 
 >[!div class="nextstepaction"]
 >[Sikkerhed på rækkeniveau ved hjælp af datagateway i det lokale miljø med tjenesteprincipal](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)
-
->[!div class="nextstepaction"]
->[Integrer Power BI-indhold med tjenesteprincipal og en programhemmelighed](embed-service-principal.md)

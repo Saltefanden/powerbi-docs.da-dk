@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 11/12/2020
+ms.date: 11/20/2020
 ms.custom: licensing support
 LocalizationGroup: Premium
-ms.openlocfilehash: d5879d6a8469b23f6e31e48345ac3ccb5f378cbb
-ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
+ms.openlocfilehash: fe1714fd0249bba429c705b70e9eb157bffae44b
+ms.sourcegitcommit: 8afdd3601209636c9ab92d75f967d4ee0a2cab26
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94668206"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95012025"
 ---
 # <a name="what-is-power-bi-premium"></a>Hvad er Power BI Premium?
 
-Du kan bruge Power BI Premium til at få adgang til funktioner og egenskaber, der kun er tilgængelige i Premium, og som giver større skaleringsmuligheder og ydeevne til Power BI-indhold i din organisation. Power BI Premium gør det muligt for flere brugere i din organisation at få mest muligt ud af Power BI med bedre ydeevne og svartid. Med Power BI Premium får du og din organisations brugere f.eks. adgang til følgende:
+Du kan bruge Power BI Premium til at få adgang til funktioner og egenskaber, der kun er tilgængelige i Premium, og som giver større skaleringsmuligheder og ydeevne til Power BI-indhold i din organisation. Power BI Premium gør det muligt for flere brugere i din organisation at få mest muligt ud af Power BI med bedre ydeevne og svartid. Med Power BI Premium får du og din organisations brugere f.eks. adgang til følgende funktionalitet:
 
 > [!div class="checklist"]
 > * Større skaleringsmuligheder og ydeevne for dine Power BI-rapporter
@@ -43,23 +43,23 @@ Premium Gen2 omfatter følgende opdateringer eller forbedrede oplevelser:
 
 * Mulighed for **Premium pr. bruger**-licens ud over efter kapacitet.
 
-* Forbedret **ydeevne** uanset kapacitetsstørrelse, til enhver tid: Analysehandlinger kører op til 16X hurtigere på Premium Gen2. Handlinger udføres altid med den højeste hastighed og kører ikke langsommere, når belastningen af kapaciteten nærmer sig kapacitetsgrænserne.
+* Forbedret **ydeevne** på en hvilken som helst kapacitetsstørrelse når som helst: Analysehandlinger kører op til 16X hurtigere på Premium Gen2. Handlinger udføres altid med den højeste hastighed og kører ikke langsommere, når belastningen af kapaciteten nærmer sig kapacitetsgrænserne.
 
 * **Større skalering**:
     * *Ingen grænser* for opdateringssamtidighed, så du behøver ikke længere at spore tidsplaner for datasæt, der opdateres på din kapacitet
     * Færre hukommelsesbegrænsninger
     * Komplet adskillelse mellem rapportinteraktion og planlagte opdateringer
 
-* **Forbedrede målepunkter** med tydelige og normaliserede data for kapacitetsudnyttelse, som kun er afhængige af kompleksiten af de analyser, kapaciteten udfører, og ikke af dens størrelse, belastningsniveauet for systemet, mens de udføres osv. De forbedrede målepunkter tydeliggør brugsanalyse, budgetplanlægning, tilbageførsler samt behovet for opgradering med indbygget rapportering. Forbedrede målepunkter gøres tilgængelige og forbedres i hele prøveperioden. 
+* **Forbedrede målepunkter** med tydelige og normaliserede data for kapacitetsudnyttelse, som kun er afhængige af kompleksiteten af de analyser, kapaciteten udfører, og ikke af dens størrelse, belastningsniveauet på systemet, mens de udfører analyse eller andre faktorer. De forbedrede målepunkter tydeliggør brugsanalyse, budgetplanlægning, tilbageførsler samt behovet for opgradering med indbygget rapportering. Forbedrede målepunkter gøres tilgængelige og forbedres i hele prøveperioden.
 
-* **Autoskalering** gør det muligt *automatisk at tilføje* 1 v-kerne ad gangen i 24-timers-perioder, når belastningen af kapaciteten overskrider grænserne, så nedsat ydeevne forårsaget af overbelastning forhindres. V-kerner fjernes automatisk, når der registreres inaktiv tid. Yderligere v-kerner faktureres til dit Azure-abonnement på betalt efter forbrug-basis. Autoskalering er tilgængelig i løbet af prøveperioden. 
+* **Autoskalering** muliggør *automatisk tilføjelse* af én v-kerne ad gangen i 24 timers-perioder, når belastningen på kapaciteten overskrider grænserne, hvilket forhindrer forsinkelser. V-kerner fjernes automatisk, når der registreres inaktiv tid. Yderligere v-kerner faktureres til dit Azure-abonnement på betalt efter forbrug-basis. Autoskalering er tilgængelig i løbet af prøveperioden. 
 
-* Væsentligt **reducerede administrationsomkostninger** med proaktive og konfigurerbare administratormeddelelser om kapacitetsforbrug og belastningsforøgelser.
+* **Reducerede administrationsomkostninger** med proaktive og konfigurerbare administratormeddelelser om kapacitetsforbrug og belastningsforøgelser.
 
 
 ### <a name="using-premium-gen2"></a>Brug af Premium Gen2
 
-Du skal aktivere Premium Gen2 for at kunne drage fordel af opdateringerne. Benyt følgende fremgangsmåde for at aktivere Premium Gen2:
+Aktivér Premium Gen2 for at drage fordel af opdateringerne. Benyt følgende fremgangsmåde for at aktivere Premium Gen2:
 
 1. Gå til **Kapacitetsindstillinger** i administrationsportalen.
 2. Vælg **Power BI Premium**.
@@ -76,12 +76,17 @@ Følgende kendte begrænsninger gælder i øjeblikket for Premium Gen2:
 
 1.  Premium Gen2-kapacitetsudnyttelse kan ikke spores i målepunktsappen.
 
-2.  Indstillinger for Premium Gen2-kapacitet for bestemte arbejdsbelastninger er endnu ikke synlige på siden med indstillinger for Premium Gen2-kapacitet i administrationsportalen. Hvis du vil ændre indstillingerne, skal du overføre kapaciteten til den oprindelige version af Premium, ændre indstillingerne og derefter angive kapaciteten til at bruge Premium Gen2 en gang til. Indstillinger for hukommelsesallokering gælder ikke for Premium Gen2-kapaciteter.
+2.  Indstillinger for Premium Gen2-kapacitet for bestemte arbejdsbelastninger er endnu ikke synlige på siden med indstillinger for Premium Gen2-kapacitet på administrationsportalen. Hvis du vil ændre indstillingerne, skal du overføre kapaciteten til den oprindelige version af Premium, ændre indstillingerne og derefter angive kapaciteten til at bruge Premium Gen2 en gang til. Indstillinger for allokering af hukommelse gælder ikke for Premium Gen2-kapaciteter.
 
-3.  Dataflow med ADLS Gen2-datakilder fungerer i øjeblikket ikke på Premium Gen2-kapaciteter.  
+3.  Hvis du bruger XMLA på Premium Gen2, skal du sørge for, at du bruger de nyeste versioner af [datamodellerings- og administrationsværktøjer](service-premium-connect-tools.md#data-modeling-and-management-tools). 
 
-4.  Hvis du bruger XMLA på Premium Gen2, skal du sørge for, at du bruger de nyeste versioner af [datamodellerings- og administrationsværktøjer](service-premium-connect-tools.md#data-modeling-and-management-tools). 
+4.  Funktioner til analysetjenester i Premium Gen2 understøttes kun på de nyeste klientbiblioteker. Anslåede udgivelsesdatoer for afhængige værktøjer, der understøtter dette krav, er:
 
+    |Værktøj|Påkrævet minimumversion|Anslået udgivelsesdato|
+    |---|---|---|
+    |SQL Server Management Studio (SSMS)|18.8|8\. december 2020|
+    |SQL Server Data Tools (SSDT)|2.9.15|Generel tilgængelighed – 30. november 2020|
+    | AS PowerShell| Større end 21.1.18229|26. november 2020|
 
 ## <a name="subscriptions-and-licensing"></a>Abonnementer og licenser
 
@@ -92,7 +97,7 @@ Power BI Premium er et Microsoft 365-abonnement på lejerniveau, der er tilgæng
 - **EM**-SKU'er (EM1-EM3) til integrering i _organisationer_ kræver en årlig forpligtelse og faktureres månedsvis. EM1- og EM2-SKU'er er kun tilgængelige via volumenlicensplaner. Du kan ikke købe dem direkte.
 
 ### <a name="updates-for-premium-gen2-preview"></a>Opdateringer til Premium Gen2 (prøveversion)
-Premium-Gen2 er i øjeblikket tilgængelig som en fuldt understøttet prøveversionsfunktion kun til **P**- og **EM**-SKU'er. **En** SKU's kapacitet omfatter endnu ikke alle ekstra fordele, der introduceres i opdateringen til Premium Gen2-prøveversionen.
+Premium Gen2 er i øjeblikket tilgængelig som en fuldt understøttet prøveversionsfunktion kun til **P**- og **EM**-SKU'er. **En** SKU's kapacitet omfatter endnu ikke alle ekstra fordele, der introduceres i opdateringen til Premium Gen2-prøveversionen.
 
 
 ### <a name="purchasing"></a>Indkøb
@@ -101,7 +106,7 @@ Power BI Premium-abonnementer købes af administratorer i Microsoft 365 Administ
 
 #### <a name="power-bi-premium-per-user-preview"></a>Power BI Premium pr. bruger (prøveversion)
 
-Power BI **Premium pr. bruger** giver organisationer mulighed for at give Premium-funktioner i licens pr. bruger. Premium pr. bruger omfatter alle Power BI Pro-licensfunktioner og tilføjer også funktioner som sideinddelte rapporter, AI og andre egenskaber, der kun er tilgængelige for Premium-abonnenter. Premium pr. bruger er i øjeblikket tilgængelig som prøveversion. Du kan finde flere oplysninger om Premium pr. bruger, herunder en sammenligning af funktioner og andre oplysninger om udgivelsen af prøveversionen, i artiklen [Ofte stillede spørgsmål om Power BI Premium pr. bruger (prøveversion)](service-premium-per-user-faq.md) (artiklen er muligvis kun tilgængelig på engelsk). 
+Power BI **Premium pr. bruger** giver organisationer mulighed for at give Premium-funktioner i licens pr. bruger. Premium pr. bruger omfatter alle Power BI Pro-licensfunktioner og tilføjer funktioner som sideinddelte rapporter, kunstig intelligens og anden funktionalitet, der kun er tilgængelig til Premium-abonnenter. Premium pr. bruger er i øjeblikket tilgængelig som prøveversion. Du kan finde flere oplysninger om Premium pr. bruger, herunder en sammenligning af funktioner og andre oplysninger om udgivelsen af prøveversionen, i artiklen [Ofte stillede spørgsmål om Power BI Premium pr. bruger (prøveversion)](service-premium-per-user-faq.md) (artiklen er muligvis kun tilgængelig på engelsk). 
 
 
 ## <a name="reserved-capacities"></a>Reserverede kapaciteter

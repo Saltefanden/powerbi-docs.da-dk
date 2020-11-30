@@ -10,12 +10,12 @@ ms.date: 10/22/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 38df6680f2f4d0031ec26a1935e01c849c285909
-ms.sourcegitcommit: 5240990f998851c4854eb565de681099264c5a61
+ms.openlocfilehash: 0abdaab48516b91624a0945d32c4f81ed024a468
+ms.sourcegitcommit: 5bbe7725918a72919ba069c5f8a59e95453ec14c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94719069"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94947147"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrer Power BI på administrationsportalen
 
@@ -272,6 +272,16 @@ Indstillingen **Inviter eksterne brugere til din organisation** hjælper organis
 
 Hvis du vil invitere eksterne brugere til din organisation, skal en bruger også have rollen for invitation af gæster til Azure Active Directory. Denne indstilling styrer kun muligheden for at invitere via Power BI. 
 
+### <a name="allow-external-guest-users-to-edit-and-manage-content-in-the-organization"></a>Tillad, at eksterne brugere kan redigere og administrere indhold i organisationen
+
+Azure AD B2B-gæstebrugere kan redigere og administrere indhold i organisationen. [Få mere at vide](service-admin-azure-ad-b2b.md)
+
+På følgende billede vises indstillingen Tillad, at eksterne brugere kan redigere og administrere indhold i organisationen.
+
+![Tillad, at eksterne brugere kan redigere og administrere indhold i organisationen](media/service-admin-portal/powerbi-admin-tenant-settings-b2b-guest-edit-manage.png)
+
+I administrationsportalen kan du også styre, hvilke brugere der har tilladelse til at invitere eksterne brugere til organisationen. Se [Del indhold med eksterne brugere](#export-and-sharing-settings) i denne artikel for at få flere oplysninger.
+
 ### <a name="publish-to-web"></a>Publicer på internettet
 
 Som Power BI-administrator får du med indstillingen **Publicer på internettet** mulighed for at vælge, hvilke brugere der kan oprette integreringskoder til udgivelse af rapporter på internettet. Denne funktion gør rapporten og de data, den indeholder, tilgængelige for alle på internettet. Få mere at vide om [publicering på internettet](../collaborate-share/service-publish-to-web.md).
@@ -300,60 +310,73 @@ Brugere kan se forskellige indstillinger på brugergrænsefladen afhængigt af i
 |**Integrer koder** i administrationsportalen|Status afspejler et af følgende:<br>* Aktiv<br>* Ikke understøttet<br>* Blokeret|Status viser **Deaktiveret**|Status afspejler et af følgende:<br>* Aktiv<br>* Ikke understøttet<br>* Blokeret<br><br>Hvis en bruger ikke er godkendt på grund af indstillingen af lejeren, vises status som **Krænkelse**.|
 |Eksisterende publicerede rapporter|Alle aktiveret|Alle deaktiveret|Rapporter fortsætter med at gengive for alle.|
 
-### <a name="export-data"></a>Eksportér data
+### <a name="copy-and-paste-visuals"></a>Kopiér og indsæt visualiseringer
 
-Brugere i virksomheden kan eksportere data fra et felt eller en visualisering. Denne indstilling styrer Analysér i Excel, eksport til CSV, overførsler af datasæt (PBIX) og funktionerne i Power BI Service Live Connect. Få mere at vide om [eksport af data fra et felt eller en visualisering](../visuals/power-bi-visualization-export-data.md).
+Brugere i organisationen kan kopiere visualiseringer fra et felt eller en rapportvisualisering og indsætte dem som statiske billeder i eksterne programmer.
 
->[!NOTE]
-> Før introduktionen af indstillingen Eksportér til Excel styrede denne indstilling også eksport af data til Excel-filer. Du finder flere oplysninger i [noten under Eksportér til Excel](#export-to-excel).
-
-![Indstillingen Eksportér data](media/service-admin-portal/powerbi-admin-portal-export-data-setting.png)
-
-På følgende billede ses indstillingen for at eksportere data fra et felt.
-
-![Eksportér data fra et felt](media/service-admin-portal/powerbi-admin-export-data.png)
-
-> [!NOTE]
-> Hvis **Eksportér data** deaktiveres, kan brugere ikke anvende funktionen [Analysér i Excel](../collaborate-share/service-analyze-in-excel.md) og heller ikke bruge Power BI-tjenestens direkte forbindelse.
+![Skærmbillede af aktivering af knappen til kopiering og indsættelse af visualiseringer.](media/service-admin-portal/powerbi-admin-portal-copy-paste-visuals-setting.png)
 
 ### <a name="export-to-excel"></a>Eksportér til Excel
 
 Brugere i organisationen kan eksportere dataene fra en visualisering til en Excel-fil.
 
-![Indstillingen Eksportér til Excel](media/service-admin-portal/powerbi-admin-portal-export-to-excel-setting.png)
+![Skærmbillede af indstillingen for eksport til Excel](media/service-admin-portal/powerbi-admin-portal-export-to-excel-setting.png)
 
->[!IMPORTANT]
-> Før introduktionen af indstillingen Eksportér til Excel styrede indstillingen Eksportér data eksport til en Excel-fil. I de lejere, der fandtes før introduktionen af indstillingen Eksportér to Excel, kan Power BI-administratorer derfor se, at der er *Ikke-anvendte ændringer*, første gang de ser indstillingen Eksportér til Excel. De skal anvende disse ændringer, før den nye indstilling træder i kraft. I modsat fald styres eksporten til en Excel-fil fortsat af indstillingen Eksportér data.
+### <a name="export-to-csv"></a>Eksportér til .csv
+
+Brugere i organisationen kan eksportere data fra et felt, en visualisering eller en sideinddelt rapport til en .csv-fil.
+
+![Skærmbillede af indstillingen for eksport til .csv](media/service-admin-portal/powerbi-admin-portal-export-to-csv-setting.png)
+
+### <a name="download-reports"></a>Download rapporter
+
+Brugere i organisationen kan downloade .pbix-filer og sideinddelte rapporter.
+
+![Skærmbillede af indstillingen til download af rapporter.](media/service-admin-portal/powerbi-admin-portal-download-reports-setting.png)
+
+### <a name="allow-live-connections"></a>Tillad direkte forbindelser
+
+Brugere i organisationen kan bruge Power BI-tjenesten Live Connect. Dette omfatter Analysér i Excel.
+
+![Skærmbillede af indstillingen for tilladelse af direkte forbindelser.](media/service-admin-portal/powerbi-admin-portal-allow-live-connections-setting.png)
 
 ### <a name="export-reports-as-powerpoint-presentations-or-pdf-documents"></a>Eksportér rapporter som PowerPoint-præsentationer eller PDF-dokumenter
 
-Brugere i organisationen kan eksportere Power BI-rapporter som PowerPoint-filer eller PDF-dokumenter. [Få mere at vide](../consumer/end-user-powerpoint.md)
+Brugere i organisationen kan eksportere rapporter som PowerPoint-filer eller PDF-dokumenter.
 
-På følgende billede ses menuen **Filer** for en rapport, når indstillingen **Eksportér rapporter som PowerPoint-præsentationer eller PDF-dokumenter** er aktiveret.
+![Skærmbillede af eksport af rapporter som PowerPoint- eller PDF-dokumenter.](media/service-admin-portal/powerbi-admin-portal-export-pptx-pdf-setting.png)
 
-![Eksportér rapporter som PowerPoint-præsentationer](media/service-admin-portal/powerbi-admin-powerpoint.png)
+### <a name="export-reports-as-mhtml-documents"></a>Eksportér rapporter som MHTML-dokumenter
+
+Brugere i virksomheden kan eksportere sideinddelte rapporter som MHTML-dokumenter.
+
+![Skærmbillede af indstillingen for eksport til MHTML.](media/service-admin-portal/powerbi-admin-portal-export-mhtml-setting.png)
+
+### <a name="export-reports-as-word-documents"></a>Eksportér rapporter som Word-dokumenter
+
+Brugere i virksomheden kan eksportere sideinddelte rapporter som Word-dokumenter.
+
+![Skærmbillede af indstillingen for eksport til Word.](media/service-admin-portal/powerbi-admin-portal-export-word-setting.png)
+
+### <a name="export-reports-as-xml-documents"></a>Eksportér rapporter som XML-dokumenter
+
+Brugere i virksomheden kan eksportere sideinddelte rapporter som XML-dokumenter.
+
+![Skærmbillede af indstillingen for eksport til XML.](media/service-admin-portal/powerbi-admin-portal-export-xml-setting.png)
+
+### <a name="export-reports-as-image-files-preview"></a>Eksportér rapporter som billedfiler (prøveversion)
+
+Brugere i organisationen kan bruge API'en for eksport af rapport til fil til at eksportere rapporter som billedfiler.
+
+![Skærmbillede af indstillingen for eksport som billede.](media/service-admin-portal/powerbi-admin-portal-export-as-image-setting.png)
 
 ### <a name="print-dashboards-and-reports"></a>Udskriv dashboards og rapporter
 
-Brugere i virksomheden kan udskrive dashboards og rapporter. [Få mere at vide](../consumer/end-user-print.md)
 
-På følgende billede ses indstillingen for at udskrive et dashboard.
+![Skærmbillede af indstillingen for udskrivning af dashboards og rapporter.](media/service-admin-portal/powerbi-admin-portal-print-dashboards-reports-setting.png)
 
-![Udskriv dashboard](media/service-admin-portal/powerbi-admin-print-dashboard.png)
-
-På følgende billede ses menuen **Filer** for en rapport, når indstillingen **Udskriv dashboards og rapporter** er aktiveret.
-
-![Udskriv rapport](media/service-admin-portal/powerbi-admin-print-report.png)
-
-### <a name="allow-external-guest-users-to-edit-and-manage-content-in-the-organization"></a>Tillad, at eksterne brugere kan redigere og administrere indhold i organisationen
-
-Azure AD B2B-gæstebrugere kan redigere og administrere indhold i organisationen. [Få mere at vide](service-admin-azure-ad-b2b.md)
-
-På følgende billede vises indstillingen Tillad, at eksterne brugere kan redigere og administrere indhold i organisationen.
-
-![Tillad, at eksterne brugere kan redigere og administrere indhold i organisationen](media/service-admin-portal/powerbi-admin-tenant-settings-b2b-guest-edit-manage.png)
-
-I administrationsportalen kan du også styre, hvilke brugere der har tilladelse til at invitere eksterne brugere til organisationen. Se [Del indhold med eksterne brugere](#export-and-sharing-settings) i denne artikel for at få flere oplysninger.
+### <a name="certification"></a>Certificering
+Giv brugere i denne organisation tilladelse til at certificere datasæt, dataflow, rapporter og programmer. Du kan finde flere oplysninger under [Aktivér certificering af indhold](service-admin-setup-certification.md).
 
 ### <a name="email-subscriptions"></a>Mailabonnementer
 Brugere i organisationen kan oprette mailabonnementer. Få mere at vide om [abonnementer](../collaborate-share/service-publish-to-web.md).
@@ -367,6 +390,25 @@ Gør det muligt for nogle af eller alle rapportforfattere i din organisation at 
 Vi anbefaler, at du starter med et lille antal promotorer. Det kan gøre det svært at holde styr på alt det fremhævede indhold, hvis hele organisationen har mulighed for at fremhæve indhold på startsiden. 
 
 Når du har gjort det muligt at fremhæve indhold, kan du også administrere det i administrationsportalen. Se [Administrer fremhævet indhold](#manage-featured-content) i denne artikel for at få mere at vide om, hvordan du styrer fremhævet indhold i dit domæne.
+
+### <a name="allow-connections-to-featured-tables"></a>Tillad forbindelser til udvalgte tabeller
+
+Denne indstilling giver Power BI-administratorer mulighed for at styre, hvem i organisationen der kan bruge udvalgte tabeller i Excel-datatypegalleriet. 
+
+![Skærmbillede af indstillingen for tilladelse af forbindelser til udvalgte tabeller.](media/service-admin-portal/powerbi-admin-portal-allow-connections-featured-tables-setting.png)
+
+>[!NOTE]
+>Forbindelser til udvalgte tabeller deaktiveres også, hvis indstillingen [Tillad direkte forbindelser](#allow-live-connections) er angivet til Deaktiveret.
+
+Læs mere om [Udvalgte Power BI-tabeller i Excel](../collaborate-share/service-excel-featured-tables.md).
+
+### <a name="share-to-teams"></a>Del i Teams
+
+Denne indstilling giver organisationer mulighed for at skjule **Del i Teams**-knapper i Power BI-tjenesten. Når den er angivet til deaktiveret, kan brugerne ikke se **Del i Teams**-knapper på handlingslinjen eller i genvejsmenuer, når de får vist rapporter og dashboards i Power BI-tjenesten.
+
+![Skærmbillede af lejerindstillingen Del i Teams på Power BI-administrationsportalen.](media/service-admin-portal/service-teams-share-to-teams-tenant-setting.png)
+
+Læs mere om, hvordan du [deler Power BI-indhold i Teams](../collaborate-share/service-share-report-teams.md).
 
 ## <a name="content-pack-and-app-settings"></a>Indholdspakke og appindstillinger
 
@@ -388,12 +430,9 @@ Rapportoprettere kan dele apps direkte med slutbrugere uden at kræve installati
 
 ## <a name="integration-settings"></a>Integrationsindstillinger
 
-### <a name="use-analyze-in-excel-with-on-premises-datasets"></a>Brug Analysér i Excel med datasæt i det lokale miljø
+### <a name="allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets"></a>Tillad XMLA-slutpunkter og Analysér i Excel med datasæt i det lokale miljø
 
-Brugere i virksomheden kan bruge Excel til at se og interagere med Power BI-datasæt i det lokale miljø. [Få mere at vide](../collaborate-share/service-analyze-in-excel.md)
-
-> [!NOTE]
-> Hvis **Eksportér data** deaktiveres, kan brugere heller ikke anvende funktionen **Analysér i Excel**.
+Brugere i virksomheden kan bruge Excel til at se og interagere med Power BI-datasæt i det lokale miljø. Dette tillader også forbindelser til XMLA-slutpunkter. [Få mere at vide](../collaborate-share/service-analyze-in-excel.md)
 
 ### <a name="use-arcgis-maps-for-power-bi"></a>Brug ArcGIS Maps for Power BI
 
@@ -402,24 +441,6 @@ Brugere i organisationen kan anvende ArcGIS Maps for Power BI-visualiseringen fr
 ### <a name="use-global-search-for-power-bi-preview"></a>Brug global søgning til Power BI (prøveversion)
 
 Brugere i organisationen kan bruge eksterne søgefunktioner, der bruger Azure Search.
-
-## <a name="featured-tables-settings"></a>Udvalgte tabelindstillinger
-
-**Tillad forbindelser til udvalgte tabeller** under **Lejerindstillinger** gør det muligt for Power BI-administratorer at styre, hvem i organisationen der kan bruge udvalgte tabeller i Excel-datatypegalleriet. 
-
-:::image type="content" source="media/service-admin-portal/admin-allow-connections-featured-tables.png" alt-text="Alle forbindelser til udvalgte tabeller":::
-
-Forbindelser til udvalgte tabeller deaktiveres også, hvis indstillingen **Eksportér data** er angivet til **Deaktiveret**.
-
-Læs mere om [Udvalgte Power BI-tabeller i Excel](../collaborate-share/service-excel-featured-tables.md).
-
-## <a name="share-to-teams-tenant-setting"></a>Lejerindstillingen Del i Teams
-
-Indstillingen **Del i Teams** findes i sektionen **Lejerindstillinger** på Power BI-administrationsportalen. Indstillingen giver organisationer mulighed for at skjule **Del i Teams**-knapper i Power BI-tjenesten. Når den er angivet til deaktiveret, kan brugerne ikke se **Del i Teams**-knapper på handlingslinjen eller i genvejsmenuer, når de får vist rapporter og dashboards i Power BI-tjenesten.
-
-![Skærmbillede af lejerindstillingen Del i Teams på Power BI-administrationsportalen.](media/service-admin-portal/service-teams-share-to-teams-tenant-setting.png)
-
-Læs mere om, hvordan du [deler Power BI-indhold i Teams](../collaborate-share/service-share-report-teams.md).
 
 ## <a name="r-visuals-settings"></a>R visuals – indstillinger
 

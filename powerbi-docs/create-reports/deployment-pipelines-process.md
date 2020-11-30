@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.custom: contperfq1
 ms.date: 10/21/2020
-ms.openlocfilehash: 6c1e4212cb991ff7eb3d0f8a5e336010499bcd1c
-ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
+ms.openlocfilehash: 5799b0367c903eea55357969a2d4383a5f4c0c7b
+ms.sourcegitcommit: 9d033abd9c01a01bba132972497dda428d7d5c12
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94668597"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95514326"
 ---
 # <a name="understand-the-deployment-process"></a>Om udrulningsprocessen
 
@@ -286,6 +286,8 @@ I dette afsnit vises de fleste af begrænsningerne i udrulningspipelines.
 * Power BI-elementer som f.eks. rapporter og dashboards, der har Power BI-[følsomhedsmærkater](../admin/service-security-sensitivity-label-overview.md), kan ikke udrulles.
 
 * Det maksimale antal Power BI-elementer, der kan udrulles i en enkelt installation, er 300.
+
+* Downloader en PBIX-fil, efter udrulningen ikke understøttes.
 
 * Du kan finde en liste over begrænsninger for arbejdsområdet under [begrænsninger for tildeling af arbejdsområder](deployment-pipelines-get-started.md#workspace-assignment-limitations).
 

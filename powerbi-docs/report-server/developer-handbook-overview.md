@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
-ms.openlocfilehash: 1f7a04ca8920ef56e0e7de4efad47afa894e76d7
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: d485c7ab7583d2604cd9da9e4c122c6cceeeb4fe
+ms.sourcegitcommit: 8afdd3601209636c9ab92d75f967d4ee0a2cab26
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90861170"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95011996"
 ---
 # <a name="developer-handbook-overview-power-bi-report-server"></a>Oversigt over udviklerhåndbog, Power BI-rapportserver
 
@@ -42,7 +42,13 @@ Du har flere API-indstillinger, som du kan bruge til at interagere med Power BI-
 Du kan også bruge [PowerShell-hjælpeprogrammerne](https://github.com/Microsoft/ReportingServicesTools) i åben kildekode til at administrere din rapportserver.
 
 > [!NOTE]
-> PowerShell-hjælpeprogrammerne understøtter i øjeblikket ikke Power BI Desktop-filer (.pbix).
+> PowerShell-hjælpeprogrammerne understøtter Power BI Desktop-filer (.pbix) via kommandoerne -RsRest*.
+
+Kør følgende kommando for at finde ud af, hvilke kommandoer i ReportingServicesTools PowerShell-modulet der understøtter Power BI Desktop filer (.pbix).
+
+```powershell
+Get-Command -Module ReportingServicesTools -Noun RsRest*
+```
 
 ## <a name="custom-extensions"></a>Brugerdefinerede udvidelser
 
@@ -57,7 +63,7 @@ Der findes flere typer udvidelser, som du kan oprette.
 
 Du kan finde flere oplysninger under [Udvidelsesbibliotek](/sql/reporting-services/extensions/reporting-services-extension-library).
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 [Introduktion til kontrolelementet Rapportfremviser](/sql/reporting-services/application-integration/integrating-reporting-services-using-reportviewer-controls-get-started)  
 [Oprettelse af programmer ved hjælp af webtjenesten og .NET Framework](/sql/reporting-services/report-server-web-service/net-framework/building-applications-using-the-web-service-and-the-net-framework)  
