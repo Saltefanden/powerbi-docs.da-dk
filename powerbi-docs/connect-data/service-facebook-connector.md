@@ -2,19 +2,19 @@
 title: 'Tjeneste fra tredjepart: Facebook-connector til Power BI Desktop'
 description: 'Tjeneste fra tredjepart: Facebook-connector til Power BI Desktop'
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 02/20/2020
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 4dfdd21eebe0f8a66aea9dd3d30c38318e975daf
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 4f1faf585643c593e194e965dff2bb29988e27d4
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236593"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96402564"
 ---
 # <a name="use-the-facebook-connector-for-power-bi-desktop"></a>Brug Facebook-connectoren til Power BI Desktop
 Facebook-connectoren i **Power BI Desktop** er afhængig af Facebook Graph API'en. Som sådan kan funktioner og tilgængelighed variere over tid.

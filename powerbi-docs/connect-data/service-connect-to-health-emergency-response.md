@@ -2,18 +2,18 @@
 title: Opret forbindelse til Dashboard til understøttelse af beslutninger i forbindelse med hospitalernes akutberedskab
 description: Sådan henter og installerer du skabelonappen Dashboard til understøttelse af beslutninger i forbindelse med COVID-19, og sådan opretter du forbindelse til data
 author: paulinbar
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 05/13/2020
-ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 4455a8da0af7ff928b81baf83245e66cdee578ea
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 823c8429c95a0b4d858540b2cf1183ca1c7caac7
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90854224"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96403139"
 ---
 # <a name="connect-to-the-hospital-emergency-response-decision-support-dashboard"></a>Opret forbindelse til Dashboard til understøttelse af beslutninger i forbindelse med hospitalernes akutberedskab
 Skabelonappen Dashboard til understøttelse af beslutninger i forbindelse med hospitalernes akutberedskab er rapporteringskomponenten i [Microsoft Power Platform-løsningen til akutberedskab](https://powerapps.microsoft.com/blog/emergency-response-solution-a-microsoft-power-platform-solution-for-healthcare-emergency-response/). Dashboardet viser beredskabschefers samlede data på tværs af sundhedssystemet for at hjælpe dem med at træffe rettidige og korrekte beslutninger.

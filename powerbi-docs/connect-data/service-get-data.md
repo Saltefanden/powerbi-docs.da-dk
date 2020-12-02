@@ -2,19 +2,19 @@
 title: Datakilder til Power BI
 description: Datakilder til Power BI
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: conceptual
 ms.date: 08/29/2019
-ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: bd3ab4a1c6f702ad866211339a3d3a386c4981fa
-ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
+ms.openlocfilehash: 427fb322a9f9226bd85da2ae1fc0657c77ca1cf5
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "86264412"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96402219"
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Datakilder til Power BI-tjenesten
 Dataene er i hjertet af Power BI. Lad os antage, at du er i gang med at udforske data. Det kan du gøre ved at oprette diagrammer og dashboards eller stille spørgsmål i **Spørgsmål og svar**. De visualiseringer og svar, du ser, får deres underliggende data fra et datasæt. Men hvor kommer dette datasæt fra? Det kommer fra en datakilde.
@@ -71,7 +71,7 @@ Forbindelser fra Power BI til disse databaser er dynamiske. Lad os antage, at du
 I forbindelse med andre databasetyper i din organisation skal du bruge Power BI Desktop eller Excel til at oprette forbindelse til, forespørge på og indlæse data i en datamodel. Du kan derefter importere din fil til Power BI, hvor der findes et datasæt. Hvis du konfigurerer en planlagt opdatering, bruger Power BI den pågældende konfiguration og forbindelsesoplysningerne fra filen til at oprette direkte forbindelse til datakilden og forespørge på opdateringer. Power BI indlæser derefter disse opdateringer i datasættet. Du kan finde flere oplysninger i [Opret forbindelse til data i Power BI Desktop](desktop-connect-to-data.md).
 
 ## <a name="what-if-my-data-comes-from-a-different-source"></a>Hvad nu, hvis mine data kommer fra en anden kilde?
-Der er bogstaveligt talt hundredvis af forskellige datakilder, som du kan bruge sammen med Power BI. Uanset hvor du henter dine data, skal disse data være i et format, der kan forbruges af Power BI-tjenesten. Med data, der forbruges, Power BI-tjenesten kan oprette rapporter og dashboards, besvare spørgsmål med **spørgsmål og svar**osv.
+Der er bogstaveligt talt hundredvis af forskellige datakilder, som du kan bruge sammen med Power BI. Uanset hvor du henter dine data, skal disse data være i et format, der kan forbruges af Power BI-tjenesten. Med data, der forbruges, Power BI-tjenesten kan oprette rapporter og dashboards, besvare spørgsmål med **spørgsmål og svar** osv.
 
 Nogle datakilder har allerede data, der er formateret til Power BI-tjenesten. Disse kilder er som indholdspakker fra tjenesteudbydere, som Google Analytics og Twilio. SQL Server Analysis Services-tabelmodeldatabaser er også klar til brug. Du kan også oprette direkte forbindelse til databaser i cloudmiljøet, f.eks. Azure SQL Database og Spark på HDInsight.
 

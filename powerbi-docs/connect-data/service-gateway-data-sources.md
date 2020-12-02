@@ -2,20 +2,20 @@
 title: Tilføj eller fjern en gatewaydatakilde
 description: Få mere at vide om, hvordan du føjer datakilder til en gateway i det lokale miljø i Power BI.
 author: arthiriyer
+ms.author: arthii
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
 ms.date: 11/03/2020
-ms.author: arthii
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: 58fb6fbe48ef1552052f93fd56b35512b7bf84d7
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: 55cdbfbe0572986de455ddb05c342af9e019de42
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93412447"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96402840"
 ---
 # <a name="add-or-remove-a-gateway-data-source"></a>Tilføj eller fjern en gatewaydatakilde
 
