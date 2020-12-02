@@ -2,20 +2,20 @@
 title: Føj kommentarer til dashboards og rapporter
 description: I dette dokument kan du se, hvordan du føjer kommentarer til et dashboard, en rapport eller en visualisering, og hvordan du bruger kommentarer til at føre samtaler med samarbejdspartnere.
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 09/25/2020
-ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: 6f7e640669b53d67a635083d3ae48e23720c9e61
-ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
+ms.openlocfilehash: ee053fe000ad85b768ce3d451984f987e3c79e6f
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "91375044"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96400747"
 ---
 # <a name="add-comments-to-a-dashboard-or-report"></a>Føj kommentarer til et dashboard eller en rapport
 
@@ -23,7 +23,7 @@ ms.locfileid: "91375044"
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Tilføj en personlig kommentar, eller start en samtale om et dashboard eller en rapport med dine kolleger. **Kommentar**funktionen er bare én af de måder, en *erhvervsbruger* kan samarbejde med sine kolleger på. 
+Tilføj en personlig kommentar, eller start en samtale om et dashboard eller en rapport med dine kolleger. **Kommentar** funktionen er bare én af de måder, en *erhvervsbruger* kan samarbejde med sine kolleger på. 
 
 ![video om kommentarer](media/end-user-comment/comment.gif)
 
@@ -96,7 +96,7 @@ Ud over at du kan føje kommentarer til et helt dashboard eller en hel rapport, 
 ### <a name="get-your-colleagues-attention-by-using-the--sign"></a>Få dine kollegers opmærksomhed ved hjælp af @-tegnet
 Uanset om du opretter en kommentar til et dashboard, en rapport, et felt eller en visualisering, kan du få dine kollegers opmærksomhed ved at bruge "\@"-symbolet.  Når du skriver "\@"-symbolet, åbnes der en rulleliste i Power BI, hvor du kan søge efter og vælge personer i din organisation. Bekræftede navne med "\@"-symbolet foran vises med blå skrift. @mentioned-personerne modtager straks en mail i deres indbakke, og hvis de bruger en Power BI-mobilapp, modtager de en pushmeddelelse på deres enhed. De kan åbne kommentaren direkte fra meddelelsen, få vist dataene og svare i overensstemmelse hermed.
 
-Her er en samtale, jeg har med visualiserings*designeren*. De bruger @-symbolet til at sikre, at jeg ser kommentaren. Jeg modtager en meddelelse og vælger linket for at åbne dette dashboard og den relevante samtale.  
+Her er en samtale, jeg har med visualiserings *designeren*. De bruger @-symbolet til at sikre, at jeg ser kommentaren. Jeg modtager en meddelelse og vælger linket for at åbne dette dashboard og den relevante samtale.  
 
 ![Tilføj en kommentaromtale](media/end-user-comment/power-bi-comment-conversation.png)  
 

@@ -1,21 +1,21 @@
 ---
 title: Ordliste til virksomhedsbrugere af Power BI
 description: Power BI introducerer mange nye begreber og nye måder at bruge velkendte begreber på. Brug vores ordliste til at blive fortrolig med terminologien i Power BI-tjenesten.
-services: power-bi
 author: mihart
+ms.author: mihart
+services: power-bi
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: reference
 ms.date: 11/21/2020
 ms.custom: contperfq1
-ms.author: mihart
-ms.openlocfilehash: c2da54406a01d5216355b8e0abc30ea63a6b2f5e
-ms.sourcegitcommit: 9d033abd9c01a01bba132972497dda428d7d5c12
+ms.openlocfilehash: 197ebcd029dbe6a6e87b1858da8f35325772237e
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95514257"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96400011"
 ---
 # <a name="glossary-for-business-users-of-the-power-bi-service"></a>Ordliste til virksomhedsbrugere af Power BI-tjenesten    
 Power BI-tjenesten kan introducere terminologi, som er ukendt eller forvirrende. Ordlisten er et godt sted at søge efter terminologi, og du kan endda markere den med et bogmærke. En anden fantastisk ressource, hvor du kan få mere at vide om de komponenter, der udgør Power BI-tjenesten, er [Grundlæggende begreber](end-user-basic-concepts.md). Grundlæggende begreber giver et godt overblik over Power BI-*enheder*, og hvordan de er forbundet.

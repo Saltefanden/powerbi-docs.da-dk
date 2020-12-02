@@ -2,20 +2,20 @@
 title: 'Selvstudium: Brug Cognitive Services i Power BI (prøveversion)'
 description: I dette selvstudium bruger du Cognitive Services og dataflow i Power BI.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: SarinaJoan
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.custom: connect-to-services
 ms.topic: tutorial
 ms.date: 02/20/2020
-ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 406a2aebbf5d043ce74ca189c18b384f6c70e716
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: f647bcafe035515a1d5d1438ed580cabea579134
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94397179"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96401483"
 ---
 # <a name="tutorial-use-cognitive-services-in-power-bi"></a>Selvstudium: Brug Cognitive Services i Power BI
 
@@ -62,7 +62,7 @@ Vælg **AI Insights** i Power-forespørgselseditor
 
 ![Skærmbillede, der viser Rediger forespørgsler med Alle indsigter valgt.](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_04.png)
 
-Udvid mappen **Cognitive Services** , og vælg den funktion, du vil bruge. I dette eksempel får synspunkterne i kolonnen med kommentarer point, men du kan følge de samme trin for at prøve registrering af sprog og udtrækning af nøglesætninger.
+Udvid mappen **Cognitive Services**, og vælg den funktion, du vil bruge. I dette eksempel får synspunkterne i kolonnen med kommentarer point, men du kan følge de samme trin for at prøve registrering af sprog og udtrækning af nøglesætninger.
 
 ![Skærmbillede, der viser Kald funktion med en funktion valgt.](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_05.png)
 
@@ -76,7 +76,7 @@ Når du er færdig med transformationerne, kan du ændre forespørgselsnavnet ti
 
 ![Skærmbillede, der viser Rediger forespørgsler med Navn fremhævet.](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_07.png)
 
-**Gem** derefter dataflowet, og giv det navnet Fabrikam. Vælg knappen **Opdater nu** , der vises som pop op, når du har gemt dataflowet.
+**Gem** derefter dataflowet, og giv det navnet Fabrikam. Vælg knappen **Opdater nu**, der vises som pop op, når du har gemt dataflowet.
 
 ![Skærmbillede, der viser knappen Gem.](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_08.png)
 
@@ -86,7 +86,7 @@ Når dataflowet er blevet gemt og opdateret, kan du bruge det i en Power BI-rapp
 
 Åbn Power BI Desktop. Vælg **Hent data** på båndet Hjem.
 
-Gå til **Power BI-dataflow (Beta** ) i Power BI-afsnittet, og vælg **Opret forbindelse**.
+Gå til **Power BI-dataflow (Beta**) i Power BI-afsnittet, og vælg **Opret forbindelse**.
 
 ![Skærmbillede, der viser ruden Hent data med Power BI-dataflow valgt.](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_09.png)
 
@@ -164,7 +164,7 @@ Funktionen returnerer en post med koderne i CSV-format og som en json-post. Væl
 
 ![Skærmbillede, der viser knappen Udvid, som har to modsatrettede pile.](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_22.png)
 
-Vælg **Udført** , og gem dataflowet. Når du har opdateret dataflowet én gang, kan du oprette forbindelse til det fra Power BI Desktop ved hjælp af dataflowforbindelserne. (Se trinnene på side 5 i dette dokument).
+Vælg **Udført**, og gem dataflowet. Når du har opdateret dataflowet én gang, kan du oprette forbindelse til det fra Power BI Desktop ved hjælp af dataflowforbindelserne. (Se trinnene på side 5 i dette dokument).
 
 ## <a name="clean-up-resources"></a>Fjern ressourcer
 

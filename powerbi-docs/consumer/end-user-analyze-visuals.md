@@ -2,19 +2,19 @@
 title: Brug funktionen Analysér til at forklare udsving i rapportvisuals
 description: Du kan let få indsigt i forøgelser eller reduktioner i Power BI-tjenesten
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: conceptual
 ms.date: 08/12/2020
-ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: f5b930ade7e0ae4e58977ba33dc725c6f1e34695
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 9d66ec405ebec8c2da59a37cd986098444979c4b
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91635878"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96401391"
 ---
 # <a name="use-the-analyze-feature-to-explain-fluctuations-in-report-visuals"></a>Brug funktionen Analysér til at forklare udsving i rapportvisuals
 
@@ -101,7 +101,7 @@ I det visual, der består af et bånddiagrammet kan du se værdien af målingen 
 
 ![Lille skærmbillede, der viser ikonet Vandfaldsdiagram](media/end-user-analyze-visuals/power-bi-waterfall-icon.png)
 
-Det fjerde visual er et vandfaldsdiagram, som viser de faktiske stigninger eller fald mellem perioderne. I visual'et vises én stor bidragyder til faldet i juni 2014 – i dette tilfælde **State**. Og detaljerne om **State**s indflydelse på det samlede antal enheder viser, at fald i Louisiana, Texas og Colorado spiller den største rolle.      
+Det fjerde visual er et vandfaldsdiagram, som viser de faktiske stigninger eller fald mellem perioderne. I visual'et vises én stor bidragyder til faldet i juni 2014 – i dette tilfælde **State**. Og detaljerne om **State** s indflydelse på det samlede antal enheder viser, at fald i Louisiana, Texas og Colorado spiller den største rolle.      
 
 ![vandfaldsdiagram](media/end-user-analyze-visuals/power-bi-insight.png)
 

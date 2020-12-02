@@ -1,21 +1,21 @@
 ---
 title: 'Selvstudium: Opret forbindelse til et GitHub-lager med Power BI'
 description: I dette selvstudium opretter du forbindelse til virkelige data i GitHub-tjenesten med Power BI, og Power BI opretter automatisk dashboards og rapporter.
-author: maggiesMSFT
+author: paulinbar
+ms.author: painbar
 ms.reviewer: SarinaJoan
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.custom: connect-to-services
 ms.topic: tutorial
 ms.date: 10/30/2020
-ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 805b7805d932468e973805d9496a5b25d4391fdd
-ms.sourcegitcommit: 8861dac6724202a5b3be456a6aff8f3584e0cccf
+ms.openlocfilehash: d8b6277c64f2f6c55f1ab622d129556fdfc4c600
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93132614"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96401621"
 ---
 # <a name="tutorial-connect-to-a-github-repo-with-power-bi"></a>Selvstudium: Opret forbindelse til et GitHub-lager med Power BI
 I dette selvstudium opretter du forbindelse til rigtige data: offentligt *lager* med Power BI-indhold i GitHub-tjenesten. Power BI opretter automatisk et dashboard og en rapport med dataene. Du kan se svar på spørgsmål som f.eks.: Hvor mange bidrager til det offentlige lager med Power BI-indhold? Hvem der bidrager mest? På hvilken ugedag er der flest bidrag? Og andre spørgsmål. 
@@ -50,7 +50,7 @@ Hvis du vil gennemføre dette selvstudium, skal du oprette en GitHub-konto, hvis
    
    ![Hent apps i Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial.png) 
 
-3. Vælg **Apps** , og skriv **GitHub** i søgefeltet > **Hent det nu**.
+3. Vælg **Apps**, og skriv **GitHub** i søgefeltet > **Hent det nu**.
    
    ![Hent GitHub i Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-app-source.png) 
 
@@ -60,7 +60,7 @@ Hvis du vil gennemføre dette selvstudium, skal du oprette en GitHub-konto, hvis
 
     ![Kom i gang med din nye app](media/service-tutorial-connect-to-github/power-bi-new-app-connect-get-started.png)
 
-7. Angiv lagernavnet og lagerejeren. URL-adressen til dette lager er https://github.com/MicrosoftDocs/powerbi-docs, så **Lagerejer** er **MicrosoftDocs** , og **Lager** er **powerbi-docs**. 
+7. Angiv lagernavnet og lagerejeren. URL-adressen til dette lager er https://github.com/MicrosoftDocs/powerbi-docs, så **Lagerejer** er **MicrosoftDocs**, og **Lager** er **powerbi-docs**. 
    
     ![Navn på GitHub-lager i Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-connect.png)
 
@@ -124,7 +124,7 @@ Hvis du vil gennemføre dette selvstudium, skal du oprette en GitHub-konto, hvis
  
     ![Hulkort for GitHub-rapport i Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-tues-3pm.png)
 
-    Det ser ud til, at tirsdag kl. 15 er det mest almindelige tidspunkt og den mest almindelige dag i ugen til *bekræftelser* , når medarbejdere tjekker deres arbejde ind.
+    Det ser ud til, at tirsdag kl. 15 er det mest almindelige tidspunkt og den mest almindelige dag i ugen til *bekræftelser*, når medarbejdere tjekker deres arbejde ind.
 
 ## <a name="clean-up-resources"></a>Fjern ressourcer
 

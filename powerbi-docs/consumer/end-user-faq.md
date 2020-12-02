@@ -2,20 +2,20 @@
 title: Ofte stillede spørgsmål fra slutbrugeren i Power BI
 description: Gennemse en liste over ofte stillede spørgsmål og svar om Power BI-tjenesten og Power BI-mobilappene.
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: conceptual
 ms.date: 09/02/2020
-ms.author: mihart
 ms.custom: licensing support
 LocalizationGroup: Get started
-ms.openlocfilehash: c604bec5213b14f91e514c9a1552acb99ac5d0aa
-ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
+ms.openlocfilehash: b872c42a9e8551b0750899632deb763a6446656f
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92916791"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96400379"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Ofte stillede spørgsmål om Power BI
 
@@ -49,7 +49,7 @@ For spørgsmål knyttet til Power BI Premium henvises til [Power BI Premium – 
 
 Power BI Desktop er et gratis program, du kan installere direkte på dine egne computere. Power BI Desktop fungerer i sammenhæng med Power BI-tjenesten.  Datateknikere, rapportdesignere, administratorer og udviklere arbejder med Power BI Desktop for at oprette rapporter og gøre dem tilgængelige for *virksomhedsbrugere* af Power BI-tjenesten. Læs mere om [Hvad er Power BI Desktop](../fundamentals/desktop-what-is-desktop.md).
 
-## <a name="as-a-business-user-what-do-i-need-to-use-the-power-bi-service"></a>Hvad kræves der, for at jeg kan bruge Power BI-tjenesten som *virksomhedsbruger* ?
+## <a name="as-a-business-user-what-do-i-need-to-use-the-power-bi-service"></a>Hvad kræves der, for at jeg kan bruge Power BI-tjenesten som *virksomhedsbruger*?
 
 Hvis din virksomhed har købt Power BI-licenser eller en Premium-kapacitetskonto, skal du bare have en webbrowser og legitimationsoplysninger. Du logger på med din arbejdsmailadresse og en adgangskode (angivet af din Power BI-administrator).  
 

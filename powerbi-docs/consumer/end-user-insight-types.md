@@ -2,19 +2,19 @@
 title: Indsigtstyper, der understøttes af Power BI
 description: Hurtige indsigter og Vis indsigter i Power BI.
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: conceptual
 ms.date: 10/12/2020
-ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 53074b44457abcf4cae6ffc3cffab2be6e8b95bb
-ms.sourcegitcommit: a5fa368abad54feb44a267fe26c383a731c7ec0d
+ms.openlocfilehash: 2487c8215d4c1f2c3bc905457d6b5d08c5955c0c
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045270"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96400126"
 ---
 # <a name="types-of-insights-supported-by-power-bi"></a>Indsigtstyper, der understøttes af Power BI
 
@@ -27,7 +27,7 @@ Se [Power BI-indsigt](end-user-insights.md) for at få mere at vide om, hvordan 
 ![et sæt indsigter](media/end-user-insight-types/power-bi-insight.png)
 
 ## <a name="how-does-insights-work"></a>Hvordan fungerer indsigter?
-Power BI søger hurtigt i forskellige undersæt af dit datasæt. I takt med at Power BI søger, anvendes et sæt avancerede algoritmer for at finde indsigt, der kan være interessant. Power BI- *virksomhedsbrugere* kan køre indsigter på dashboardfelter.
+Power BI søger hurtigt i forskellige undersæt af dit datasæt. I takt med at Power BI søger, anvendes et sæt avancerede algoritmer for at finde indsigt, der kan være interessant. Power BI-*virksomhedsbrugere* kan køre indsigter på dashboardfelter.
 
 ## <a name="some-terminology"></a>Terminologi
 Power BI bruger statistiske algoritmer til at afdække indsigt. Algoritmerne er angivet og beskrevet i næste afsnit i denne artikel. Før vi går videre med algoritmerne, er der her nogle definitioner for nogle af de ord, som du muligvis ikke kender. 
