@@ -2,19 +2,19 @@
 title: 'Opret en rapport fra en Excel-fil i Power BI-tjenesten '
 description: Opret en Power BI-rapport fra en Excel-fil i Power BI-tjenesten.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 10/14/2020
-ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: d6a52fd72ab96541eee621d6be6cb50005f293e2
-ms.sourcegitcommit: fddba666c6ea90d525a1c3188bbd3c4a03410cdc
+ms.openlocfilehash: 806198b783785a06562411b53f7bd6f644b16918
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92462685"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96388189"
 ---
 # <a name="create-a-report-from-an-excel-file-in-the-power-bi-service"></a>Opret en rapport fra en Excel-fil i Power BI-tjenesten
 Du har læst [Rapporter i Power BI](../consumer/end-user-reports.md), og nu vil du oprette din egen. Der er forskellige måder at oprette en rapport på. I denne artikel starter vi med at oprette en grundlæggende rapport i Power BI-tjenesten fra en Excel-fil. Når du har forstået de grundlæggende ting i forbindelse med at oprette en rapport, skal du se de [Næste trin](#next-steps) nederst for at se mere avancerede rapportemner.  
@@ -32,19 +32,19 @@ Denne metode til oprettelse af en rapport starter med en fil og et tomt rapportl
 2. Vælg **Hent data** nederst i navigationsruden.
    
    ![Hent data](media/service-report-create-new/power-bi-get-data3.png)
-3. Vælg **Filer** , og naviger til den placering, hvor du har gemt Retail Analysis-eksemplet.
+3. Vælg **Filer**, og naviger til den placering, hvor du har gemt Retail Analysis-eksemplet.
    
     ![vælg Filer](media/service-report-create-new/power-bi-select-files.png)
-4. Til denne øvelse skal du vælge **Importér** .
+4. Til denne øvelse skal du vælge **Importér**.
    
    ![vælg Importér](media/service-report-create-new/power-bi-import.png)
-5. Vælg **Åbn** .
+5. Vælg **Åbn**.
 
    Når Excel-filen er importeret, angives den som et *datasæt* på listen i arbejdsområdet.
 
-1. Vælg **Flere indstillinger (...)** ud for datasættet, og vælg **Opret rapport** .
+1. Vælg **Flere indstillinger (...)** ud for datasættet, og vælg **Opret rapport**.
    
-   :::image type="content" source="media/service-report-create-new/power-bi-dataset-create-report.png" alt-text="Skærmbillede af valg af Mit arbejdsområde.":::
+   :::image type="content" source="media/service-report-create-new/power-bi-dataset-create-report.png" alt-text="Skærmbillede af valg af Opret rapport.":::
 6. Rapporteditoren åbnes. 
    
    ![Skærmbillede af rapporteditoren.](media/service-report-create-new/power-bi-blank-report.png)
@@ -52,19 +52,19 @@ Denne metode til oprettelse af en rapport starter med en fil og et tomt rapportl
 > [!TIP]
 > Vælg menuikonet for at skjule navigationsruden, så du får mere plads.
 > 
-> :::image type="content" source="../media/power-bi-hide-navigation-pane.png" alt-text="Skærmbillede af valg af Mit arbejdsområde.":::
+> :::image type="content" source="../media/power-bi-hide-navigation-pane.png" alt-text="Skærmbillede af Vælg menuikonet for at skjule navigationsruden.":::
 
 
 ## <a name="add-a-radial-gauge-to-the-report"></a>Føj en radial måler til rapporten
 Nu hvor vores datasæt er blevet importeret, så lad os komme i gang med at besvare nogle spørgsmål.  Vores marketingchef (CMO) vil vide, hvor tæt vi er på at nå dette års salgsmål. En måler er et [godt visualiseringsvalg](../visuals/power-bi-report-visualizations.md) til at vise denne type oplysninger.
 
-1. I ruden Fields skal du vælge **Sales** > **This Year Sales** > **Værdi** .
+1. I ruden Fields skal du vælge **Sales** > **This Year Sales** > **Værdi**.
    
     ![liggende søjlediagram i rapporteditor](media/service-report-create-new/power-bi-report-step1.png)
-2. Konvertér din visual til en måler ved at vælge skabelonen Gauge ![ målerikon](media/service-report-create-new/powerbi-gauge-icon.png) i ruden **Visualiseringer** .
+2. Konvertér din visual til en måler ved at vælge skabelonen Gauge ![ målerikon](media/service-report-create-new/powerbi-gauge-icon.png) i ruden **Visualiseringer**.
    
     ![Målervisualisering i rapporteditor](media/service-report-create-new/power-bi-report-step2.png)
-3. Træk **Sales** > **This Year Sales** > **Goal** til feltet **Target value** . Det ser ud til, at vi er meget tæt på vores mål.
+3. Træk **Sales** > **This Year Sales** > **Goal** til feltet **Target value**. Det ser ud til, at vi er meget tæt på vores mål.
    
     ![Målervisualiseringer med Mål som Målværdi](media/service-report-create-new/power-bi-report-step3.png)
 4. Det er nu en god idé at gemme rapporten.
@@ -75,14 +75,14 @@ Nu hvor vores datasæt er blevet importeret, så lad os komme i gang med at besv
 Vores marketingchef har nogle yderligere spørgsmål, vi skal besvare. Vedkommende vil gerne vide, hvordan salget i år er sammenlignet med sidste år. Og vedkommende vil gerne have vist resultaterne efter område.
 
 1. Vi starter med at lave plads på vores lærred. Markér måleren, og flyt den til øverste højre hjørne. Træk derefter i hjørnerne for at gøre den mindre.
-2. Fjern markeringen af måleren. I ruden Felter skal du vælge **Sales** > **This Year Sales** > **Value** og vælge **Sales** > **Last Year Sales** .
+2. Fjern markeringen af måleren. I ruden Felter skal du vælge **Sales** > **This Year Sales** > **Value** og vælge **Sales** > **Last Year Sales**.
    
     ![rapporteditor med Måler og liggende søjlediagram](media/service-report-create-new/power-bi-report-step4.png)
-3. Konvertér din visualisering til et områdediagram ved at vælge skabelonen Area chart ![diagramikon](media/service-report-create-new/power-bi-areachart-icon.png) i ruden **Visualiseringer** .
-4. Vælg **Time** > **Period** for at føje den til feltet **Axis** .
+3. Konvertér din visualisering til et områdediagram ved at vælge skabelonen Area chart ![diagramikon](media/service-report-create-new/power-bi-areachart-icon.png) i ruden **Visualiseringer**.
+4. Vælg **Time** > **Period** for at føje den til feltet **Axis**.
    
     ![rapporteditor med aktivt områdediagram](media/service-report-create-new/power-bi-report-step5.png)
-5. Hvis du vil sortere visualiseringen efter tidsperiode, skal du vælge ellipsen og vælge **Sortér efter periode** .
+5. Hvis du vil sortere visualiseringen efter tidsperiode, skal du vælge ellipsen og vælge **Sortér efter periode**.
 6. Nu vil vi tilføje udsnittet. Markér et tomt område på lærredet, og vælg skabelonen Udsnit ![Udsnit-ikon](media/service-report-create-new/power-bi-slicer-icon.png) . Vi har nu et tomt udsnit på vores lærred.
    
     ![rapportcanvas](media/service-report-create-new/power-bi-report-step6.png)    

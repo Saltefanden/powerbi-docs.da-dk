@@ -2,19 +2,19 @@
 title: Download en rapport fra Power BI-tjenesten til Power BI Desktop (prøveversion)
 description: Download en rapport fra Power BI-tjenesten til en Power BI Desktop-fil
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 07/14/2020
-ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: cd9295e26de50714a15afb672814893317fb8e3b
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: c83b7d1e52a0d443c52348bec91f935e288830d4
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90861400"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96388672"
 ---
 # <a name="download-a-report-from-the-power-bi-service-to-power-bi-desktop-preview"></a>Download en rapport fra Power BI-tjenesten til Power BI Desktop (prøveversion)
       

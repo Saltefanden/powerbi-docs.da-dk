@@ -2,19 +2,19 @@
 title: Slet et dashboard, en rapport, en projektmappe, et datasæt eller et arbejdsområde
 description: Få mere at vide om, hvordan du sletter næsten alt fra Power BI-tjenesten.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 10/29/2020
-ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 1e1cc55f21f43b7029a68670d9a7af9215f5b62c
-ms.sourcegitcommit: 8861dac6724202a5b3be456a6aff8f3584e0cccf
+ms.openlocfilehash: 9d6310daf5c9e3d658edec6a7949661ad171b102
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93132442"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96388764"
 ---
 # <a name="delete-almost-anything-in-the-power-bi-service"></a>Slet næsten alt i Power BI-tjenesten
 I denne artikel får du mere at vide om, hvordan du sletter et dashboard, en rapport, en projektmappe, et datasæt, en app eller et arbejdsområde i Power BI-tjenesten. Du kan slette næsten alt i Power BI-tjenesten med nogle få undtagelser. 
@@ -57,7 +57,7 @@ Det er kun arbejdsområdeadministratorer, der kan fjerne personer fra et nyt arb
 
 ### <a name="delete-a-new-workspace"></a>Slet et nyt arbejdsområde
 
-Når du opretter et af de *nye arbejdsområder* , opretter du ikke en tilknyttet Microsoft 365-gruppe. Hvis du er administrator af arbejdsområdet, kan du slette et nyt arbejdsområde uden at påvirke Microsoft 365-grupper. Læs mere om [nye og klassiske arbejdsområder](../collaborate-share/service-new-workspaces.md).
+Når du opretter et af de *nye arbejdsområder*, opretter du ikke en tilknyttet Microsoft 365-gruppe. Hvis du er administrator af arbejdsområdet, kan du slette et nyt arbejdsområde uden at påvirke Microsoft 365-grupper. Læs mere om [nye og klassiske arbejdsområder](../collaborate-share/service-new-workspaces.md).
 
 Som administrator for et arbejdsområde kan du slette det eller fjerne andre fra det. Når du sletter det, slettes den tilknyttede app også for alle gruppemedlemmer, og appen fjernes fra AppSource. 
 
@@ -71,7 +71,7 @@ Som administrator for et arbejdsområde kan du slette det eller fjerne andre fra
 
 ### <a name="remove-a-classic-workspace-from-your-list"></a>Fjern et klassisk arbejdsområde fra din liste
 
-Hvis du ikke længere vil være medlem af et klassisk arbejdsområde, kan du * *_forlade_* _ det, hvorefter det fjernes fra din liste. Selvom du forlader et arbejdsområde, har alle andre medlemmer af arbejdsområdet det stadig.  
+Hvis du ikke længere vil være medlem af et klassisk arbejdsområde, kan du **_forlade_* _ det, hvorefter det fjernes fra din liste. Selvom du forlader et arbejdsområde, har alle andre medlemmer af arbejdsområdet det stadig.  
 
 > [!NOTE]
 > Hvis du er den eneste administrator af arbejdsområdet, tillader Power BI ikke, at du forlader det.
@@ -79,7 +79,7 @@ Hvis du ikke længere vil være medlem af et klassisk arbejdsområde, kan du * *
 
 1. Start i det arbejdsområde, du vil fjerne.
 
-2. Vælg _ *Flere indstillinger* * (...) i øverste højre hjørne, og vælg **Forlad arbejdsområde** > **Forlad**.
+2. Vælg _ *Flere indstillinger** (...) i øverste højre hjørne, og vælg **Forlad arbejdsområde** > **Forlad**.
 
       :::image type="content" source="media/service-delete/power-bi-leave-workspace.png" alt-text="Skærmbillede af Flere indstillinger, Forlad arbejdsområde.":::
 
@@ -101,16 +101,16 @@ Det er ikke det samme at slette et arbejdsområde som at forlade et arbejdsområ
 
     ![Skærmbillede af indstillinger for arbejdsområde.](media/service-delete/power-bi-workspace-settings-classic.png)
 
-3. Vælg **Slet arbejdsområde** i vinduet **Indstillinger** , og bekræft derefter **sletningen**.
+3. Vælg **Slet arbejdsområde** i vinduet **Indstillinger**, og bekræft derefter **sletningen**.
 
     ![Skærmbillede af Slet arbejdsområde.](media/service-delete/power-bi-delete-classic-workspace.png)
 
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 
-- Når du fjerner et *dashboard* , sletter du ikke det underliggende datasæt eller de rapporter, der er knyttet til dette dashboard.
-- Hvis du er *ejer af et dashboard eller en rapport* , kan du fjerne det. Hvis du har delt dashboardet med kolleger, fjernes det også fra deres arbejdsområder i Power BI, hvis du fjerner det fra dit eget arbejdsområde i Power BI.
-- Hvis et *dashboard eller en rapport er delt med dig* , kan du ikke fjerne dashboardet.
+- Når du fjerner et *dashboard*, sletter du ikke det underliggende datasæt eller de rapporter, der er knyttet til dette dashboard.
+- Hvis du er *ejer af et dashboard eller en rapport*, kan du fjerne det. Hvis du har delt dashboardet med kolleger, fjernes det også fra deres arbejdsområder i Power BI, hvis du fjerner det fra dit eget arbejdsområde i Power BI.
+- Hvis et *dashboard eller en rapport er delt med dig*, kan du ikke fjerne dashboardet.
 - Når du sletter en rapport, bliver det datasæt, som rapporten er baseret på, ikke slettet.  Alle visualiseringer, som du har fastgjort til et dashboard fra rapporten, er også sikre. De forbliver på dashboardet, indtil du sletter dem individuelt.
 - Du kan slette et *datasæt*. Når du sletter et datasæt, sletter du dog også alle rapporter og dashboardfelter, der indeholder data fra det pågældende datasæt.
 - Du kan fjerne *projektmapper*. Men når du fjerner en projektmappe, fjerner du også alle rapporter og dashboardfelter, der indeholder data fra denne projektmappe. Hvis en projektmappe er gemt på OneDrive for Business, bliver den ikke slettet fra OneDrive, når du sletter den fra Power BI.

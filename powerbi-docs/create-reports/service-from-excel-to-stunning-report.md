@@ -2,19 +2,19 @@
 title: 'Selvstudium: Fra Excel-projektmappe til Power BI-tjenesten til Teams'
 description: I denne artikel kan du se, hvordan du hurtigt kan oprette en imponerende rapport fra en Excel-projektmappe i Power BI-tjenesten og dele den i Teams.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
 ms.date: 07/30/2020
-ms.author: maggies
 LocalizationGroup: Data from files
-ms.openlocfilehash: ccf8b5fa8f1c4d18a25767ff11f035304b339de0
-ms.sourcegitcommit: d9d67ee47954379c2df8db8d0dc8302de4c9f1e5
+ms.openlocfilehash: 99f562ee315a74c9de6765308272e5e33153c4f0
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87478124"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96388856"
 ---
 # <a name="tutorial-from-excel-workbook-to-a-report-in-the-power-bi-service-to-microsoft-teams"></a>Selvstudium: Fra Excel-projektmappe til en rapport i Power BI-tjenesten til Microsoft Teams
 Din chef vil gerne se en rapport over dine seneste salgs- og avancetal sidst på dagen. Men de seneste data ligger i forskellige tredjepartssystemer og filer på din bærbare computer. Tidligere har det taget timer at oprette visuelle elementer og formatere en rapport, og du er ved at være lidt nervøs.

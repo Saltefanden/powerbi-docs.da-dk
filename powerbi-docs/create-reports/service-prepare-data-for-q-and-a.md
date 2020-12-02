@@ -2,19 +2,19 @@
 title: Få dine Excel-data til at fungere godt med Spørgsmål og svar i Power BI
 description: Sådan får du dine data til at fungere godt med Spørgsmål og svar i Power BI
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 05/13/2019
-ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: f7760021966673b93313809a806473b94c7750d3
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 41672fa809544198a053ae41f935e890d83cfa72
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85218694"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96388097"
 ---
 # <a name="make-excel-data-work-well-with-qa-in-power-bi"></a>Få dine Excel-data til at fungere godt med Spørgsmål og svar i Power BI
 Hvis du opretter datamodeller eller opbygger Excel-projektmapper, der skal bruges med Power BI, skal du læse videre...
