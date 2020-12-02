@@ -6,16 +6,16 @@ ms.author: maggies
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 07/16/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: 5d5647216caee4eae648d0be0ebf3f453cd17d71
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 7015eb1298649534a6e93cb9d6671250c6c77b94
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91632995"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96406359"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrer en rapport ved hjælp af parametre for forespørgselsstrengen i URL-adressen
 
@@ -172,11 +172,11 @@ Eksempel:
 
 - `?filter=Table/Name eq 'Lee''s Summit'` bliver:
 
-    :::image type="content" source="media/service-url-filters/power-bi-url-filter-lees.png" alt-text="Navnet er O'Brien":::
+    :::image type="content" source="media/service-url-filters/power-bi-url-filter-lees.png" alt-text="Lees møde":::
 
 - `in`-operatoren understøtter også denne angivelse af "escape": `?filter=Table/Name in ('Lee''s Summit', 'O''Brien')` bliver:
 
-    :::image type="content" source="media/service-url-filters/power-bi-url-filter-in.png" alt-text="Navnet er O'Brien":::
+    :::image type="content" source="media/service-url-filters/power-bi-url-filter-in.png" alt-text="Lees møde eller O'Brien":::
 
 ## <a name="use-dax-to-filter-on-multiple-values"></a>Brug DAX til at filtrere efter flere værdier
 

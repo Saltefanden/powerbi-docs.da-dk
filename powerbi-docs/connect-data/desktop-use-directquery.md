@@ -2,19 +2,19 @@
 title: Brug DirectQuery i Power BI Desktop
 description: Brug DirectQuery, der også kaldes en dynamisk forbindelse, i Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 08/28/2020
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b31ddb3e3881f9002affcae9106b9e14bf85a964
-ms.sourcegitcommit: 70a892df1a0c196db58bf9165b3aa31b26bbe149
+ms.openlocfilehash: 4619219705a80b53883a9b0578791a60a853125e
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "89092308"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96404220"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>Brug DirectQuery i Power BI Desktop
 Når du opretter forbindelse til din datakilde i *Power BI Desktop*, er det altid muligt at importere en kopi af dataene til Power BI Desktop. For nogle datakilder findes der en anden mulighed: Du kan oprette direkte forbindelse til datakilden med DirectQuery.

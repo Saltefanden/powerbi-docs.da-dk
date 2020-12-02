@@ -2,19 +2,19 @@
 title: Brug af SAP BW Connector (Business Warehouse) i Power BI Desktop
 description: Brug af SAP BW Connector i Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 01/13/2020
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 1b3250124fa813f3da96e63455d483cf05f01cb6
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: 1808638ad0ccaa2adc57d56bf1677dea0ca24440
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91598845"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96404657"
 ---
 # <a name="use-the-sap-business-warehouse-connector-in-power-bi-desktop"></a>Brug af SAP BW Connector (Business Warehouse) i Power BI Desktop
 

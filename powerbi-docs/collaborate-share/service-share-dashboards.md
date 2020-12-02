@@ -2,20 +2,20 @@
 title: Del Power BI-dashboards og -rapporter med kolleger og andre
 description: Sådan deler du Power BI-dashboards og -rapporter med kolleger i og uden for din organisation, og det du skal vide om at dele.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukaszp
 ms.custom: contperfq4
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 06/26/2020
-ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 68d6a399a5ecccf07aaa71f74b18fd4ddd6082f5
-ms.sourcegitcommit: a7227f6d3236e6e0a7bc1f83ff6099b5cd58bff3
+ms.openlocfilehash: 221211b06e3e9a72dd3c5ee812083b8013002405
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87768495"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96406566"
 ---
 # <a name="share-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Del Power BI-dashboards og -rapporter med kolleger og andre
 *Deling* er den nemmeste måde, når du vil brugerne adgang til dine dashboards og rapporter i Power BI-tjenesten. Du kan dele med brugere i og uden for din organisation.
@@ -56,7 +56,7 @@ Du kan ikke *dele* direkte fra Power BI Desktop. Du kan [publicere rapporter fra
    
    ![Vælg knappen Del](media/service-share-dashboards/power-bi-share-dialog-share.png)  
    
-   Power BI sender en mailinvitation til enkeltpersoner, men ikke til grupper, med et link til det delte indhold. Du kan se meddelelse om, at handlingen**blev udført**. 
+   Power BI sender en mailinvitation til enkeltpersoner, men ikke til grupper, med et link til det delte indhold. Du kan se meddelelse om, at handlingen **blev udført**. 
    
    Når modtagere i din organisation klikker på linket, føjer Power BI dashboardet eller rapporten til siden med listen **Delt med mig**. De kan vælge dit navn for at få vist alt det indhold, du har delt med dem. 
    

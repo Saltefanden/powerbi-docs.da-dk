@@ -2,29 +2,29 @@
 title: Opret forbindelse til en Google BigQuery-database i Power BI Desktop
 description: Opret nemt forbindelse til og brug Google BigQuery i Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 05/08/2019
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 68698d51b074102a8d8e556101fcfaf6a39c2c62
-ms.sourcegitcommit: 3ddfd9ffe2ba334a6f9d60f17ac7243059cf945b
+ms.openlocfilehash: 7cffba9178d4eec0bfd468040b7551768aab7f1d
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92349408"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96405876"
 ---
 # <a name="connect-to-a-google-bigquery-database-in-power-bi-desktop"></a>Opret forbindelse til en Google BigQuery-database i Power BI Desktop
-I Power BI Desktop kan du oprette forbindelse til en Google **BigQuery** -database og bruge de underliggende data på samme måde som enhver anden datakilde i Power BI Desktop.
+I Power BI Desktop kan du oprette forbindelse til en Google **BigQuery**-database og bruge de underliggende data på samme måde som enhver anden datakilde i Power BI Desktop.
 
 ## <a name="connect-to-google-bigquery"></a>Opret forbindelse til Google BigQuery
-Hvis du vil oprette forbindelse til en Google **BigQuery** -database, skal du vælge **Hent data** på båndet **Hjem** i Power BI Desktop. Vælg **Database** blandt kategorierne til venstre, hvorefter du kan se **Impala** .
+Hvis du vil oprette forbindelse til en Google **BigQuery**-database, skal du vælge **Hent data** på båndet **Hjem** i Power BI Desktop. Vælg **Database** blandt kategorierne til venstre, hvorefter du kan se **Impala**.
 
 ![Dialogboksen Hent data for Google BigQuery](media/desktop-connect-bigquery/connect_bigquery_01.png)
 
-I vinduet **Google BigQuery** , der vises, skal du logge på din Google BigQuery-konto, og vælge **Opret forbindelse** .
+I vinduet **Google BigQuery**, der vises, skal du logge på din Google BigQuery-konto, og vælge **Opret forbindelse**.
 
 ![Log på Google BigQuery](media/desktop-connect-bigquery/connect_bigquery_02.png)
 
@@ -32,12 +32,12 @@ Når du er logget på, kan du se følgende vindue, der angiver, at du er blevet 
 
 ![Logget på Google](media/desktop-connect-bigquery/connect_bigquery_02b.png)
 
-Når du har oprettet forbindelse, vises et vindue af typen **Navigator** , hvor de data, der er tilgængelige på serveren, vises. Her kan du vælge et eller flere elementer, der skal importeres og bruges i **Power BI Desktop** .
+Når du har oprettet forbindelse, vises et vindue af typen **Navigator**, hvor de data, der er tilgængelige på serveren, vises. Her kan du vælge et eller flere elementer, der skal importeres og bruges i **Power BI Desktop**.
 
 ![Data fra Google BigQuery](media/desktop-connect-bigquery/connect_bigquery_03.png)
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
-Der er et par begrænsninger og overvejelser, du skal være opmærksom på i forbindelse med Google **BigQuery** -forbindelsen:
+Der er et par begrænsninger og overvejelser, du skal være opmærksom på i forbindelse med Google **BigQuery**-forbindelsen:
 
 * Google BigQuery-forbindelsen er tilgængelig i Power BI Desktop og Power BI-tjenesten. I Power BI-tjenesten kan du få adgang til forbindelsen ved hjælp af cloud til cloud-forbindelsen fra Power BI til Google BigQuery.
 

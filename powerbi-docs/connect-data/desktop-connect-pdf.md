@@ -2,19 +2,19 @@
 title: Opret forbindelse til en PDF-fil i Power BI Desktop
 description: Opret nemt forbindelse til og brug data fra PDF-filer i Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 07/16/2020
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 785ad7b7d10a164f8257f8aacab177116c0b553b
-ms.sourcegitcommit: cfcde5ff2421be35dc1efc9e71ce2013f55ec78f
+ms.openlocfilehash: ba0c1c6babe63c02ef0cd96a7cb5695e2c916c68
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/18/2020
-ms.locfileid: "86459617"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96405761"
 ---
 # <a name="connect-to-pdf-files-in-power-bi-desktop"></a>Opret forbindelse til PDF-filer i Power BI Desktop
 I Power BI Desktop kan du oprette forbindelse til en **PDF-fil** og bruge dataene fra filen på samme måde som enhver anden datakilde i Power BI Desktop.

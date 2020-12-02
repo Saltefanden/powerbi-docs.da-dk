@@ -2,19 +2,19 @@
 title: Kør R-scripts i Power BI Desktop
 description: Kør R-scripts i Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 01/14/2020
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 69b56323e3c7864cf4adae09bb32493cf1acc852
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 604e90cf2f2c1010559c70df67a6cd54ac08fa36
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85222987"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96404542"
 ---
 # <a name="run-r-scripts-in-power-bi-desktop"></a>Kør R-scripts i Power BI Desktop
 
@@ -57,7 +57,7 @@ Nu kan du køre dit R-script for at importere data til Power BI Desktop:
 
 3. Vælg **OK** for at køre R-scriptet. Når scriptet køres, kan du vælge de resulterende datarammer, der skal føjes til Power BI-modellen.
 
-Du kan styre, hvilken R-installation der skal bruges til at køre dit script. Du angiver indstillingerne for R-installationen ved at vælge **Fil** > **Indstillinger** > **Indstillinger** og derefter vælge **R-script**. Under **R-scriptindstillinger** vises de aktuelle valg for R-installationen på rullelisten **Registrerede R-startmapper**. Hvis den ønskede R-installation ikke er angivet, skal du vælge **Andet**og derefter gå til eller angive din foretrukne R-installationsmappe i **Angiv en startmappe for R**.
+Du kan styre, hvilken R-installation der skal bruges til at køre dit script. Du angiver indstillingerne for R-installationen ved at vælge **Fil** > **Indstillinger** > **Indstillinger** og derefter vælge **R-script**. Under **R-scriptindstillinger** vises de aktuelle valg for R-installationen på rullelisten **Registrerede R-startmapper**. Hvis den ønskede R-installation ikke er angivet, skal du vælge **Andet** og derefter gå til eller angive din foretrukne R-installationsmappe i **Angiv en startmappe for R**.
 
 ![Indstillinger for R-script, dialogboksen Indstillinger, Power BI Desktop](media/desktop-r-scripts/r-scripts-4.png)
 

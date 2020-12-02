@@ -2,20 +2,20 @@
 title: Anmod om eller giv adgang til dashboards eller rapporter
 description: Hvis nogen sender dig et link til et dashboard eller en rapport, men ikke deler det med dig, kan du anmode om adgang.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukaszp
 featuredvideoid: 0tUwn8DHo3s
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 06/23/2020
-ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e55e5557d6cb262131a4d44f7d5f937d388fb737
-ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
+ms.openlocfilehash: b1b7408657dbf48fdee68518a885d5503a9d28da
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85486721"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96406451"
 ---
 # <a name="request-or-grant-access-to-shared-dashboards-or-reports"></a>Anmod om eller giv adgang til delte dashboards eller rapporter
 

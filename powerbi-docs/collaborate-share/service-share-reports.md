@@ -2,20 +2,20 @@
 title: Filtrer og del en Power BI-rapport
 description: Få mere at vide om, hvordan du filtrerer Power BI-rapporter og deler dem med kolleger i din organisation.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukaszp
 featuredvideoid: 0tUwn8DHo3s
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 01/29/2020
-ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 2988f02b8207eafe5155073af9acc60dcb0a81cf
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 0e086b6ab5ce3411697607bfbda25bb0b82c6dca
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85225317"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96406612"
 ---
 # <a name="filter-and-share-a-power-bi-report"></a>Filtrer og del en Power BI-rapport
 *Deling* er velegnet til at give nogle få personer adgang til dine dashboards og rapporter. Hvad nu hvis du vil dele en filtreret version af en rapport? Måske vil du have, at der kun vises data for en bestemt by eller sælger eller et bestemt år, i rapporten. I denne artikel forklares det, hvordan du filtrerer en rapport og deler den filtrerede version af rapporten. En anden måde at dele en filtreret rapport på er at [føje forespørgselsparametre til rapportens URL-adresse](service-url-filters.md). I begge tilfælde filtrers rapporten, når modtagerne åbner den. De kan rydde filtervalgene i rapporten.

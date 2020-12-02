@@ -2,19 +2,19 @@
 title: Indstillingen Antag referentiel integritet i Power BI Desktop
 description: Via DirectQuery kan du lære, hvordan du kan få Power BI Desktop til at antage referentiel integritet
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 05/07/2019
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 698abf814b9b93635ba425b2c9d1d30a292714ab
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: 1b078f837efe0637a4ac7769ceb868af23c7a298
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91599891"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96405922"
 ---
 # <a name="apply-the-assume-referential-integrity-setting-in-power-bi-desktop"></a>Anvend indstillingen Antag referentiel integritet i Power BI Desktop
 Når der oprettes forbindelse til en datakilde, der bruger **DirectQuery**, kan du bruge indstillingen **Antag referentiel integritet** for at gøre det muligt at køre mere effektive forespørgsler i forhold til datakilden. Denne funktion har et par krav til de underliggende data, og den er kun tilgængelig, når du bruger **DirectQuery**.
@@ -32,7 +32,7 @@ Det er en avanceret indstilling, og den er kun aktiveret, når der oprettes forb
 I denne kontekst er kolonnen **From** *mange*-siden i en *en til mange*-relation, eller det er kolonnen i den første tabel i en *en til en*-relation.
 
 ## <a name="example-of-using-assume-referential-integrity"></a>Eksempel på brug af Antag referentiel integritet
-I følgende eksempel vises, hvordan **Antag referentiel integritet** fungerer, når det bruges i dataforbindelser. I eksemplet oprettes der forbindelse til en datakilde, der indeholder tabellen**Orders**, tabellen **Products** og tabellen **Depots**.
+I følgende eksempel vises, hvordan **Antag referentiel integritet** fungerer, når det bruges i dataforbindelser. I eksemplet oprettes der forbindelse til en datakilde, der indeholder tabellen **Orders**, tabellen **Products** og tabellen **Depots**.
 
 1. På følgende billede, der viser tabellen **Orders** og tabellen **Products**, skal du lægge mærke til, at der findes en referentiel integritet mellem **Orders[ProductID]** og **Products[ProductID]** . Kolonnen **[ProductID]** i tabellen **Orders** er aldrig *Null*, og alle værdier vises også i tabellen **Products**. Derfor skal **Antag referentiel integritet**  angives for at få mere effektive forespørgsler (brug af denne indstilling ændrer ikke de værdier, der vises i visuelle elementer).
    

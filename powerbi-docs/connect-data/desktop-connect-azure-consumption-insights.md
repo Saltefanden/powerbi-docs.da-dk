@@ -2,20 +2,20 @@
 title: Opret forbindelse til Azure Consumption Insights-data i Power BI Desktop
 description: Du kan nemt oprette forbindelse til Azure og få indsigt i forbrugs- og brugsdata ved hjælp af Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 10/14/2019
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 7d036af591ae9c5fc44370085480c9266e328745
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: d400684358e5992d9c29e2c5838ca777e3695cf5
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91632589"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96406083"
 ---
 # <a name="connect-to-azure-consumption-insights-data-in-power-bi-desktop"></a>Opret forbindelse til Azure Consumption Insights-data i Power BI Desktop
 
@@ -175,7 +175,7 @@ Mange dashboards indeholder flere tabeller, der bruges til opslag eller filtreri
 På nuværende tidspunk burde de fleste af dine oprindelige visualiseringer, tabeller og detailudledninger fungere som forventet. Nogle små finjusteringer kan være nødvendige, før du kan formatere udseende og funktionalitet præcist. Brug lidt tid på at gennemse dine dashboards og visualiseringer for at sikre, at de ser ud som ønsket.
 
 ## <a name="using-the-azure-consumption-and-insights-aci-api-to-get-consumption-data"></a>Brug ACI-API'en (Azure Consumption and Insights) til at hente forbrugsdata
-Azure leverer også [**ACI-API'en (Azure Consumption and Insights)** ](https://azure.microsoft.com/blog/announcing-general-availability-of-consumption-and-charge-apis-for-enterprise-azure-customers/). Du kan oprette dine egne brugerdefinerede løsninger til indsamling, rapportering og visualisering af oplysninger om Azure-forbrug ved hjælp af ACI-API'en.
+Azure leverer også [**ACI-API'en (Azure Consumption and Insights)**](https://azure.microsoft.com/blog/announcing-general-availability-of-consumption-and-charge-apis-for-enterprise-azure-customers/). Du kan oprette dine egne brugerdefinerede løsninger til indsamling, rapportering og visualisering af oplysninger om Azure-forbrug ved hjælp af ACI-API'en.
 
 ### <a name="mapping-names-and-usage-details-between-the-portal-the-connector-and-the-api"></a>Tilknyt navne og brugsoplysninger mellem portalen, connectoren og API'en
 Kolonnerne og navnene på oplysninger på Azure Portal svarer til dem i API'en og connectoren, selvom de ikke altid er identiske. Som en hjælp til at afklare dette indeholder følgende tabel en oversigt. Det angives også, om kolonnen er forældet. Du kan finde flere oplysninger om og definitioner på disse vilkår i [ordbog over Azure-faktureringsdata](/azure/billing/billing-enterprise-api-usage-detail).

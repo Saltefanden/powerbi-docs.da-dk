@@ -2,19 +2,19 @@
 title: Opret forbindelse til Snowflake-databehandlingswarehouse i Power BI Desktop
 description: Opret let forbindelse til og brug Snowflake-databehandlingswarehouse i Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 05/08/2019
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: d6de937f4be3c503c146c31a32c56b67ee97a8c4
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: 115fba44c69fceb3a4f309cd92358ef5bc2eff42
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86214802"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96405738"
 ---
 # <a name="connect-to-a-snowflake-computing-warehouse-in-power-bi-desktop"></a>Opret forbindelse til et Snowflake-databehandlingswarehouse i Power BI Desktop
 I Power BI Desktop kan du oprette forbindelse til et **Snowflake**-databehandlingswarehouse og bruge de underliggende data på samme måde som enhver anden datakilde i Power BI Desktop. 
