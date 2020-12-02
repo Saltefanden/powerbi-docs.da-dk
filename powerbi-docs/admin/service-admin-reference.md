@@ -2,19 +2,19 @@
 title: PowerShell-cmdlet'er, REST-API'er og .NET-klientbiblioteker til administratorer
 description: Få mere at vide om de måder, hvorpå du kan administrere Power BI via scripts og programmerings-API'er.
 author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
-ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: c26d169a4c8ef876d1fe92e4967b07c982f510db
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 6afc49e0d2fe67c89d906d4715959892868b0027
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90856869"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96408084"
 ---
 # <a name="powershell-cmdlets-rest-apis-and-net-client-library-for-power-bi-administration"></a>PowerShell-cmdlet'er, REST-API'er og .NET-klientbiblioteker til Power BI-administration
 Power BI gør det muligt for administratorer at scripte almindelige opgaver med PowerShell-cmdlet'er. Den eksponerer også REST API'er og giver et .NET-klientbibliotek til udvikling af administrative løsninger. Dette emne viser en liste over cmdlet'er og de tilsvarende API'er og REST API-slutpunktet. Her finder du flere oplysninger:

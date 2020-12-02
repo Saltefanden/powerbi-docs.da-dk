@@ -2,19 +2,19 @@
 title: Effektanalyse af datasæt
 description: Visualiser og analysér downstream-effekten af at foretage ændringer af datasæt.
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
 ms.date: 06/15/2020
-ms.author: painbar
 LocalizationGroup: ''
-ms.openlocfilehash: 01d67262ed06d230b389d2122f8a5e12fb6343d1
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: cb68ce937218555292bc8f175510c5e14f4b02f6
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85226309"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96407210"
 ---
 # <a name="dataset-impact-analysis"></a>Effektanalyse af datasæt
 

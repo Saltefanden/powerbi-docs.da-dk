@@ -2,19 +2,19 @@
 title: Luk din Power BI-konto
 description: Hvis du ikke vil bruge Power BI længere, kan du lukke din Power BI-konto.
 author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 09/25/2020
-ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 076a1a65e275d58b54e340e30083d1c2a19ebbbf
-ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
+ms.openlocfilehash: f35ba99cfab26f346c9565ef9e92afa4cc004d68
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "91374399"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96409119"
 ---
 # <a name="close-your-power-bi-account"></a>Luk din Power BI-konto
 

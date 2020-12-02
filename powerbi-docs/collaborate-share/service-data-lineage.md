@@ -2,19 +2,19 @@
 title: Dataafstamning
 description: I moderne BI-projekter (Business Intelligence) er det en vigtig udfordring for mange kunder at forstå flowet af data fra datakilden til destinationen.
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
 ms.date: 06/15/2020
-ms.author: painbar
 LocalizationGroup: ''
-ms.openlocfilehash: 76dd059d59daed5916e9d28692ef018dd7465749
-ms.sourcegitcommit: 5bbe7725918a72919ba069c5f8a59e95453ec14c
+ms.openlocfilehash: d2cd60a62d321910e280ebd8b38411b393d96bca
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94946972"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96407394"
 ---
 # <a name="data-lineage"></a>Dataafstamning
 I moderne BI-projekter (Business Intelligence) kan det være en udfordring for mange kunder at forstå flowet af data fra datakilden til destinationen. Udfordringen er endnu større, hvis du har oprettet avancerede analyseprojekter, der strækker sig over flere datakilder, artefakter og afhængigheder. Spørgsmål som "Hvad sker der, hvis jeg ændrer disse data?" eller "Hvorfor er denne rapport ikke ajourført?" kan være vanskelige at besvare. Det kan være nødvendigt med et team af eksperter eller en grundig undersøgelse for at forstå dem. Vi har designet en dataafstamningsvisning for at hjælpe dig med at besvare disse spørgsmål.

@@ -2,19 +2,19 @@
 title: Samarbejd i et klassisk arbejdsområde
 description: Læs om, hvordan du samarbejder om Power BI Desktop-filer i dit arbejdsområde og med Microsoft 365-tjenester såsom deling af filer på OneDrive for Business, samtaler i Exchange, kalender og opgaver.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 07/25/2019
-ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3fdfe212825cc522aa7965f46d112ece4a1db35c
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 9017d5c938ec0382e2fb27b00e7fe08945e10a5b
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85226802"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96407624"
 ---
 # <a name="collaborate-in-a-classic-workspace"></a>Samarbejd i et klassisk arbejdsområde
 Power BI-arbejdsområder er fantastiske steder, hvor du kan samarbejde med dine kolleger om dashboards, rapporter og datasæt for at oprette *apps*. Denne artikel omhandler de oprindelige, *klassiske* arbejdsområder.  

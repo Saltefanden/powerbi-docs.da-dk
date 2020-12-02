@@ -2,20 +2,20 @@
 title: Ofte stillede spørgsmål for offentlige myndigheder i Tyskland
 description: For offentlige myndigheder i Tyskland, svar på almindelige spørgsmål til Power BI-tjenesten for tyske offentlige myndigheder
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 08/20/2020
-ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 97164fe1db72cac28096b1fde5130cfccec29be2
-ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
+ms.openlocfilehash: 4c8eb2766a234287e79497eba4f46e9adcac224d
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "91374794"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96407946"
 ---
 # <a name="frequently-asked-questions-for-power-bi-for-germany-cloud-customers"></a>Ofte stillede spørgsmål om Power BI til Germany Cloud-kunder
 **Power BI-tjenesten** har en version, der er tilgængelig for EU/EFTA-kunder, ofte kaldet Microsoft Cloud Deutschland (MCD). Versionen af **Power BI-tjenesten**, der er beskrevet i denne artikel, er udviklet specielt til EU/EFTA-kunder og er separat og adskiller sig fra den kommercielle version af **Power BI-tjenesten** eller Power BI-tjenester, der leveres til regeringskunder.

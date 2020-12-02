@@ -2,19 +2,19 @@
 title: Administrer dit arbejdsområde i Power BI og Microsoft 365
 description: Arbejdsområder i Power BI er en samarbejdsbaseret oplevelse baseret på Microsoft 365-grupper. Administrer dine arbejdsområder i både Power BI og Microsoft 365.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukasz
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 03/02/2020
-ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: c05cb79d0996ad1819f0145193760ab16a031ffb
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: bd1a5b0aaf694f41fdbfe4764e77c1138a57b082
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91526714"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96407026"
 ---
 # <a name="manage-your-workspace-in-power-bi-and-microsoft-365"></a>Administrer dit arbejdsområde i Power BI og Microsoft 365
 
