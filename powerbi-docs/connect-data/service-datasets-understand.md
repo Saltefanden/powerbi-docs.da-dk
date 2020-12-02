@@ -1,19 +1,19 @@
 ---
 title: Datasæt i Power BI-tjenesten
 description: Om Power BI-tjenestens datasæt, der repræsenterer en datakilde, der er klar til rapportering og visualisering.
-author: peter-myers
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: conceptual
 ms.date: 11/09/2019
-ms.author: v-pemyer
-ms.openlocfilehash: ecd683cf55b6198aed1bbc76f87646846bbf222f
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: bff238fa0845c28f508a9abdda21b24f73dfb99f
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83284767"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96392421"
 ---
 # <a name="datasets-in-the-power-bi-service"></a>Datasæt i Power BI-tjenesten
 

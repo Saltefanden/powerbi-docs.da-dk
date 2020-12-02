@@ -2,20 +2,20 @@
 title: Hvad er en Power BI-app?
 description: I Power BI samler apps relaterede dashboards og rapporter på ét sted.
 author: mihart
+ms.author: mihart
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 10/09/2020
-ms.author: mihart
 ms.custom: licensing support, css_fy20Q4
 LocalizationGroup: Share your work
-ms.openlocfilehash: 15345c8ca7249c3a6bf4018a322a8ce3d78b9de3
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.openlocfilehash: 3cf504d1df824840f8f3af134ac3e6e3cd8a3fca
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91982076"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96391547"
 ---
 # <a name="apps-in-power-bi"></a>Apps i Power BI
 
@@ -27,7 +27,7 @@ ms.locfileid: "91982076"
 En *app* er en Power BI-indholdstype, der kombinerer relaterede dashboards og rapporter på ét sted. En app kan have et eller flere dashboards og en eller flere rapporter, der alle er samlet. Apps oprettes af Power BI-*designere*, der distribuerer og deler apps med deres kolleger. Der er mange forskellige måder, en *designer* kan dele indhold på. Du kan få mere at vide i afsnittet **Hent en ny app** nedenfor. 
 
 
-## <a name="app-designers-and-app-users"></a>App*designere* og app*brugere*
+## <a name="app-designers-and-app-users"></a>App *designere* og app *brugere*
 Afhængigt af din rolle kan du være en person, der opretter apps (*designer*) til eget brug eller til at dele med kolleger. Eller du kan være en person, der modtager og downloader apps (*virksomhedsbruger*), der er oprettet af andre. Denne artikel er målrettet *virksomhedsbrugere*.
 
 Hvis du vil se og åbne en app, er det nødvendigt med visse tilladelser. Modtageren skal enten have en Power BI Pro-licens, eller appen skal deles med modtageren i en bestemt type cloudlager, der kaldes **Premium-kapacitet**. Du kan få mere at vide om licenser og Premium-kapacitet i [Licenser til Power BI-tjenesten](end-user-license.md).

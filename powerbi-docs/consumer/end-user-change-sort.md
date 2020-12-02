@@ -2,19 +2,19 @@
 title: Rediger, hvordan et diagram sorteres i en rapport
 description: Rediger, hvordan et diagram sorteres i en rapport i Power BI
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 08/25/2020
-ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 6147bc0ee725eb7adc7e1edb637a22bb7dc66558
-ms.sourcegitcommit: 1aaa742c239a3119cdaad698be5a7553b68801fa
+ms.openlocfilehash: 44bdb454bbe22082a20182002e817fead561d8da
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "89040280"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96391409"
 ---
 # <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Rediger, hvordan et diagram sorteres i en rapport i Power BI
 
@@ -22,7 +22,7 @@ ms.locfileid: "89040280"
 
 
 > [!IMPORTANT]
-> **Denne artikel er beregnet til Power BI-brugere, der ikke har redigeringstilladelser til rapporten eller datasættet, og som kun arbejder i onlineversionen af Power BI (Power BI-tjenesten). Hvis du er rapport*designer*eller *administrator* eller *ejer*, indeholder denne artikel muligvis ikke alle de oplysninger, du har brug for. Du kan få mere at vide under [Sorter efter kolonne i Power BI Desktop](../create-reports/desktop-sort-by-column.md)** .
+> **Denne artikel er beregnet til Power BI-brugere, der ikke har redigeringstilladelser til rapporten eller datasættet, og som kun arbejder i onlineversionen af Power BI (Power BI-tjenesten). Hvis du er rapport *designer* eller *administrator* eller *ejer*, indeholder denne artikel muligvis ikke alle de oplysninger, du har brug for. Du kan få mere at vide under [Sorter efter kolonne i Power BI Desktop](../create-reports/desktop-sort-by-column.md)** .
 
 I Power BI-tjenesten kan du ændre, hvordan en visualisering ser ud, ved at sortere den efter forskellige datafelter. Hvis du ændrer, hvordan du sorterer en visualisering, kan du fremhæve de oplysninger, du vil formidle. Du kan sortere dine visualiseringer efter behov, uanset om du bruger numeriske data (f.eks. salgstal) eller tekstdata (f.eks. navne på stater). Power BI indeholder mange sorteringsmuligheder og genvejsmenuer, som du kan bruge. 
 

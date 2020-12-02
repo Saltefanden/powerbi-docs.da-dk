@@ -1,20 +1,20 @@
 ---
 title: Sideinddelte rapporter i Power BI-tjenesten
 description: Dokumentation, der beskriver sideinddelte rapporter, og hvordan du får dem vist ie Power BI-tjenesten
-author: mihart
+author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: christopher.finlan
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 10/11/2020
-ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 15482b575d7fc923059964ea47a173fda6c7f600
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.openlocfilehash: 2be1c325d876c944c31d62a67771308d80dca69d
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91983163"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96390489"
 ---
 # <a name="paginated-reports-in-the-power-bi-service"></a>Sideinddelte rapporter i Power BI-tjenesten
 
@@ -26,7 +26,7 @@ Der er dog en anden type rapport, som kaldes en *sideinddelt rapport*. Modtagels
 
 ## <a name="identify-a-paginated-report"></a>Identificer en sideinddelt rapport
 
-På indholdslister og på landingssiden for startsiden kan sideinddelte rapporter identificeres via deres ikon ![ikon for sideinddelt rapport](media/end-user-paginated-report/power-bi-report-icon.png).  En sideinddelt rapport kan deles med dig direkte eller som en del af en [Power BI-app](end-user-apps.md). Hvis rapport*designeren* har givet dig tilladelser, kan du dele den sideinddelte rapport igen og oprette abonnement til dig selv og andre.
+På indholdslister og på landingssiden for startsiden kan sideinddelte rapporter identificeres via deres ikon ![ikon for sideinddelt rapport](media/end-user-paginated-report/power-bi-report-icon.png).  En sideinddelt rapport kan deles med dig direkte eller som en del af en [Power BI-app](end-user-apps.md). Hvis rapport *designeren* har givet dig tilladelser, kan du dele den sideinddelte rapport igen og oprette abonnement til dig selv og andre.
 
 
 ![Rapportliste med én standardrapport og én sideinddelt rapport.](./media/end-user-paginated-report/power-bi-report-lists.png)
@@ -39,7 +39,7 @@ Sideinddelte rapporter er bedst til scenarier, hvor der kræves megen formaterin
 
 ## <a name="how-do-paginated-reports-work"></a>Hvordan fungerer sideinddelte rapporter?
 
-Når rapport*designere* opretter en sideinddelt rapport, opretter de faktisk en *rapportdefinition*. Den indeholder ikke dataene. Den angiver, hvor dataene skal hentes, hvilke data der skal hentes, og hvordan dataene skal vises. Når du kører rapporten, bruger rapportbehandleren den rapportdefinitionen, henter dataene og kombinerer det med rapportlayoutet for at generere rapporten. Nogle gange viser rapporten standarddata. Andre gange skal du angive parametre, før rapporten kan vise nogen data. 
+Når rapport *designere* opretter en sideinddelt rapport, opretter de faktisk en *rapportdefinition*. Den indeholder ikke dataene. Den angiver, hvor dataene skal hentes, hvilke data der skal hentes, og hvordan dataene skal vises. Når du kører rapporten, bruger rapportbehandleren den rapportdefinitionen, henter dataene og kombinerer det med rapportlayoutet for at generere rapporten. Nogle gange viser rapporten standarddata. Andre gange skal du angive parametre, før rapporten kan vise nogen data. 
 
 Vælg en sideinddelt rapport for at åbne den i Power BI-tjenesten. Hvis den indeholder parametre, skal du vælge dem, før du kan få vist rapporten.
 

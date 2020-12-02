@@ -2,19 +2,19 @@
 title: Tilpas visualiseringer i en rapport
 description: Opret din egen visning af en rapport uden at redigere den.
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 10/13/2020
-ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 718363da3bd1f66de199db8d854d8d23d6de3eb5
-ms.sourcegitcommit: eab5a02520c421a57019595c03e9ecfdb41d52ad
+ms.openlocfilehash: aa94908c8601052c9cb8ac7cd4a6c0e895afeff6
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92256733"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96390144"
 ---
 # <a name="personalize-visuals-in-a-report"></a>Tilpas visualiseringer i en rapport
 
@@ -59,67 +59,67 @@ Når en visualisering tilpasses, kan du udforske dine data på mange måder uden
 
 Synes du, at dataene vil give bedre mening som et stablet søjlediagram? Skift **visualiseringstypen**.
 
-:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-change-visual-type.png" alt-text="Tilpas en visualisering":::
+:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-change-visual-type.png" alt-text="Skift visualiseringstype":::
  
 ### <a name="swap-out-a-measure-or-dimension"></a>Udskift en måling eller dimension
 Erstat det felt, der bruges til X-aksen, ved at vælge det felt, du vil erstatte, og vælg derefter et andet felt.
 
-:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-change-axis.png" alt-text="Tilpas en visualisering":::
+:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-change-axis.png" alt-text="Skift akse":::
  
 ### <a name="add-or-remove-a-legend"></a>Tilføj eller fjern en forklaring
 Når du tilføjer en forklaring, kan du farvekode en visualisering baseret på en kategori. I dette eksempel farvekoder vi på baggrund af virksomhedens navn. 
 
-:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-change-legend.png" alt-text="Tilpas en visualisering":::
+:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-change-legend.png" alt-text="Tilføj eller fjern forklaringen":::
 
 ### <a name="change-the-placement-of-fields"></a>Skift placering af felterne
 
 Ved hjælp af træk og slip kan du ændre placeringen af felterne i samme visuelle egenskab eller også på tværs af forskellige visuelle egenskaber. Du kan f.eks. hurtigt flytte et felt i forklaringen til aksen i en visualisering.
 
-:::image type="content" source="media/end-user-personalize-visuals/personalize-drag-and-drop.png" alt-text="Tilpas en visualisering":::
+:::image type="content" source="media/end-user-personalize-visuals/personalize-drag-and-drop.png" alt-text="Skærmbillede, der viser, hvordan du trækker et felt i en visualisering.":::
 
 Du kan også hurtigt ændre rækkefølgen af kolonnerne i en tabel eller matrix.
 
-:::image type="content" source="media/end-user-personalize-visuals/personalize-reorder-columns.png" alt-text="Tilpas en visualisering":::
+:::image type="content" source="media/end-user-personalize-visuals/personalize-reorder-columns.png" alt-text="Skærmbillede, der viser omrokerede kolonner i en tabel.":::
 
 ### <a name="compare-two-or-more-different-measures"></a>Sammenlign to eller flere forskellige målinger
 Du kan sammenligne værdier for forskellige målinger ved hjælp af ikonet + for at tilføje flere målinger for en visualisering. Hvis du vil fjerne en måling, skal du vælge **Flere indstillinger (...)** og vælge **Fjern felt**.
 
-:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-compare-measures.png" alt-text="Tilpas en visualisering":::
+:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-compare-measures.png" alt-text="Sammenlign målinger":::
 
 ### <a name="change-aggregations"></a>Skift sammenlægninger
 Du kan ændre, hvordan en måling beregnes, ved at ændre sammenlægningerne i ruden **Tilpas**. Vælg **Flere indstillinger (...)** , og vælg den aggregering, du vil bruge.
 
-:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-change-aggregation.png" alt-text="Tilpas en visualisering":::
+:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-change-aggregation.png" alt-text="Skift sammenlægninger":::
 
 ### <a name="capture-changes"></a>Registrer ændringer 
 Ved hjælp af personlige bogmærker kan du registrere dine ændringer, så du kan vende tilbage til din tilpassede visning. Vælg **Bogmærker** > **Personlige bogmærker**, og giv bogmærket et navn. 
 
-:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-bookmark.png" alt-text="Tilpas en visualisering":::
+:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-bookmark.png" alt-text="Opret et bogmærke":::
  
 Du kan også gøre bogmærket til din standardvisning.
 
 ### <a name="share-changes"></a>Del ændringer 
 Hvis du har tilladelse til at læse og dele igen, kan du vælge at inkludere dine ændringer, når du deler rapporten.
 
-:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-share-changes.png" alt-text="Tilpas en visualisering":::
+:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-share-changes.png" alt-text="Del ændringer":::
  
 ### <a name="reset-all-your-changes-to-a-report"></a>Nulstil alle dine ændringer af en rapport
 
 I øverste højre hjørne af dit rapportlærred skal du vælge **Nulstil til standard**. Herved fjernes alle dine ændringer af rapporten, og der vendes tilbage til forfatterens seneste gemte visning af rapporten.
 
-:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-reset-all.png" alt-text="Tilpas en visualisering":::
+:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-reset-all.png" alt-text="Nulstil alle ændringer":::
  
 ### <a name="reset-all-your-changes-to-a-visual"></a>Nulstil alle dine ændringer af en visualisering
 
 I menulinjen for visualiseringen skal du vælge **Nulstil denne visualisering** for at fjerne alle dine ændringer af en bestemt visualisering og vende tilbage til forfatterens seneste gemte visning af den pågældende visualisering.
 
-:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-reset-visual.png" alt-text="Tilpas en visualisering":::
+:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-reset-visual.png" alt-text="Nulstil alle ændringer af visualiseringer":::
  
 ### <a name="clear-recent-changes"></a>Ryd seneste ændringer
 
 Vælg viskelæderikonet for at rydde alle seneste ændringer, du har foretaget, siden du åbnede ruden **Tilpas**.  
 
-:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-revert-changes.png" alt-text="Tilpas en visualisering":::
+:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-revert-changes.png" alt-text="Omdan seneste ændringer":::
 
 ## <a name="limitations"></a>Begrænsninger
 

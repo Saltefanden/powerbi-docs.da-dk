@@ -2,19 +2,19 @@
 title: Få vist et Power BI-dashboard
 description: Dashboards er en vigtig funktion i Power BI-tjenesten. Få mere at vide om, hvordan du åbner og får vist et dashboard.
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 08/27/2020
-ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: f447856ac387bdabdbd29e1d1ebf47caef22677a
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 7e431b6a94b7cd881adba27597aa9cbfa6a54425
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91633946"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96391202"
 ---
 # <a name="view-a-dashboard"></a>Få vist et dashboard
 

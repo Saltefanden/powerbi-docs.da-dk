@@ -2,19 +2,19 @@
 title: Datagateway i det lokale miljø – detaljeret
 description: Denne artikel ser detaljeret på gatewayen i det lokale miljø. Vi ser på, hvordan tjenesten fungerer sammen med Azure Active Directory og dit lokale Active Directory, når du arbejder med Analysis Services
 author: arthiriyer
+ms.author: arthii
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
 ms.date: 07/15/2019
-ms.author: arthii
 LocalizationGroup: Gateways
-ms.openlocfilehash: 34cf796db212112baa8083f5b4cbf1796b465cba
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 0964ad3e391c8e066c31ea7bb53f67e97f254422
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237565"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96392348"
 ---
 # <a name="on-premises-data-gateway-in-depth"></a>Datagateway i det lokale miljø – detaljeret
 

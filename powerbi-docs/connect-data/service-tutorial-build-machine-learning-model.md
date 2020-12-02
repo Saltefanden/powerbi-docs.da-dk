@@ -2,20 +2,20 @@
 title: 'Selvstudium: Skab en model til maskinel indlæring i Power BI'
 description: I dette selvstudium skal du bygge en model til maskinel indlæring i Power BI.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.custom: connect-to-services
 ms.topic: tutorial
 ms.date: 08/03/2020
-ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 49f1b46e89fd05d05928de631b0ea42832801a05
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: 31b56f4888393c12f94eb4e6d8f819d992a04029
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94397225"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96392329"
 ---
 # <a name="tutorial-build-a-machine-learning-model-in-power-bi"></a>Selvstudium: Skab en model til maskinel indlæring i Power BI
 
@@ -66,7 +66,7 @@ Vælg **Tekst/CSV-fil** som en datakilde, som vist på følgende billede.
 
 ![Tekst/CSV-fil er valgt](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-05.png)
 
-På siden **Opret forbindelse til en datakilde** , der vises herefter, skal du indsætte følgende link til _online_shoppers_intention.csv_ i feltet **Filsti eller URL-adresse** og derefter vælge  **Næste**.
+På siden **Opret forbindelse til en datakilde**, der vises herefter, skal du indsætte følgende link til _online_shoppers_intention.csv_ i feltet **Filsti eller URL-adresse** og derefter vælge  **Næste**.
 
 `https://raw.githubusercontent.com/santoshc1/PowerBI-AI-samples/master/Tutorial_AutomatedML/online_shoppers_intention.csv`
 
@@ -145,7 +145,7 @@ Vælg knappen **Anvend model** øverst i rapporten for at aktivere denne model. 
 
 Du skal **opdatere** dataflowet for at få vist et eksempel på resultatet af din model, når du bliver bedt om det.
 
-Anvendelse af modellen vil oprette to nye enheder med suffikset **enriched <model_name>** og **enriched <model_name> explanations**. Anvendelse af modellen i enheden **Online Visitors** vil i vores tilfælde oprette **Online Visitors enriched Purchase Intent Prediction** , som omfatter det forudsagte output fra modellen, og **Online Visitors enriched Purchase Intent Prediction explanations** , som indeholder de vigtigste postspecifikke influencere for forudsigelsen. 
+Anvendelse af modellen vil oprette to nye enheder med suffikset **enriched <model_name>** og **enriched <model_name> explanations**. Anvendelse af modellen i enheden **Online Visitors** vil i vores tilfælde oprette **Online Visitors enriched Purchase Intent Prediction**, som omfatter det forudsagte output fra modellen, og **Online Visitors enriched Purchase Intent Prediction explanations**, som indeholder de vigtigste postspecifikke influencere for forudsigelsen. 
 
 Hvis du anvender en model til binær forudsigelse, tilføjes der fire kolonner med et forudsagt resultat, en sandsynlighedsscore, de vigtigste postspecifikke influencere for forudsigelsen og et forklaringsindeks, der hver især har det angivne kolonnenavn som præfiks.  
 

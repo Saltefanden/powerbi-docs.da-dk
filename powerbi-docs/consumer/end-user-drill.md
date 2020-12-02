@@ -2,19 +2,19 @@
 title: Visning af flere eller færre detaljer i en visualisering
 description: I denne artikel gennemgår vi, hvordan man foretager detailudledning i en visualisering i Microsoft Power BI-tjenesten.
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 10/10/2020
-ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2b7d0d281c706673cb23ec4bd0e7ed9f6722f329
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.openlocfilehash: 3456fe1b1c719d5ce085adc3eba32b32de86e883
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91982773"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96391340"
 ---
 # <a name="drill-mode-in-a-visual-in-power-bi"></a>Analysetilstand i en visualisering i Power BI
 
@@ -28,7 +28,7 @@ I denne artikel gennemgår vi, hvordan man foretager detailudledning i en visual
 
 Når et visuelt element har et hierarki, kan du foretage detailudledning for at finde flere detaljer. Du har f.eks. en visualisering, der kigger på optælling af olympiske medaljer ud fra et hierarki, der består af sport, disciplin og begivenhed. Som standard viser visualiseringen medaljeoptælling ud fra sportsgren – gymnastik, skiløb, vandsport osv. Men eftersom den har et hierarki, vises et stadigt mere detaljeret billede, når der vælges visuelle elementer (f.eks. et liggende søjlediagram, linjediagram eller boblediagram). Vælg elementet **vandsport** for at få vist data for svømning, udspring og vandpolo.  Vælg elementet **udspring** for at få vist detaljer for vippe, platform og discipliner med synkronudspring.
 
-Datoer er en unik type i hierarkiet.  Rapport*designere* tilføjer ofte datohierarkier i visualiseringer. Et almindeligt datohierarki er et, der indeholder år, kvartal, måned og dag. 
+Datoer er en unik type i hierarkiet.  Rapport *designere* tilføjer ofte datohierarkier i visualiseringer. Et almindeligt datohierarki er et, der indeholder år, kvartal, måned og dag. 
 
 ## <a name="figure-out-which-visuals-can-be-drilled"></a>Find ud af, hvilke visualiseringer der kan analyseres
 Ved du, hvilke Power BI-visualiseringer der indeholder et hierarki? Peg på en visualisering. Hvis du får vist en kombination af disse analysekontrolelementer øverst, har visualiseringen et hierarki.

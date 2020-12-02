@@ -1,25 +1,25 @@
 ---
 title: Egenskaber for Power BI-forbrugere i Power BI-tjenesten
 description: I denne hurtige introduktion får **forbrugerne** mere at vide om Power BI, apps, rapporter og dashboards.
+author: mihart
+ms.author: mihart
 services: powerbi
 documentationcenter: ''
-author: mihart
 ms.reviewer: mihart
 editor: ''
 tags: ''
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: quickstart
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 09/30/2020
-ms.author: mihart
-ms.openlocfilehash: fbff6f202d6bdd3a4bffc031f23399869f08bc5c
-ms.sourcegitcommit: 6ba33e5a500928163e02e007f5ccd52dd2227610
+ms.openlocfilehash: ff5ffe959372952841cc41d92624b27f2d958f62
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780532"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96390167"
 ---
 # <a name="quickstart-learn-about-the-power-bi-capabilities-for-business-users"></a>Hurtig start: Få mere at vide om Power BI-funktionalitet til *virksomhedsbrugere*
 
@@ -74,7 +74,7 @@ Hvis du vil vide, hvordan du får vist rapporter, skal du se [Power BI-rapporter
 
 Et Power BI-dashboard er en enkelt side, der ofte kaldes et lærred, hvor der bruges visualiseringer til at fortælle en historie. Da det er begrænset til én side, indeholder et dashboard, der er godt designet, kun de vigtigste elementer fra historien.
 
-De visualiseringer, du kan se på dashboardet, kaldes felter og er fastgjort til dashboardet af rapport*designerne*. I de fleste tilfælde kommer du til den rapportside, hvor visualiseringen blev oprettet, når du vælger et felt. 
+De visualiseringer, du kan se på dashboardet, kaldes felter og er fastgjort til dashboardet af rapport *designerne*. I de fleste tilfælde kommer du til den rapportside, hvor visualiseringen blev oprettet, når du vælger et felt. 
 
 ![Illustration, der viser det samme dashboard på en mobiltelefon og i en browser på en computerskærm.](./media/end-user-reading-view/power-bi-dashboard-phone.png)
 
