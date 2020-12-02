@@ -1,21 +1,21 @@
 ---
 title: Tilpas egenskaberne for x- og y-aksen
 description: Tilpas egenskaberne for x- og y-aksen
-author: msftrien
+author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: 9DeAKM4SNJM
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 05/06/2020
-ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b327ca5f4c19638f4afe72abce763601e68fc943
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: 24c10880d76fbe2bbdbf5e20d24f6f52e1262eb5
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93413148"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96393916"
 ---
 # <a name="customize-x-axis-and-y-axis-properties"></a>Tilpas egenskaberne for x- og y-aksen
 
@@ -77,17 +77,17 @@ Navnene på X-aksen vises under kolonnerne i diagrammet. Lige nu er de så lyseg
 
     ![Skærmbillede af skyderen slået til for X-aksen.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-slider-on.png)
 
-    Nogle af årsagerne til, at du vil angive X-aksen til **Fra** , kan være, at visualiseringen er selvforklarende uden navne, eller hvis du har en rapportside, der er overfyldt, og du har brug for mere plads for at få vist flere data.
+    Nogle af årsagerne til, at du vil angive X-aksen til **Fra**, kan være, at visualiseringen er selvforklarende uden navne, eller hvis du har en rapportside, der er overfyldt, og du har brug for mere plads for at få vist flere data.
 
 4. Formatér tekstfarven, tekststørrelsen og skrifttypen:
 
-    - **Farve** : Vælg sort
+    - **Farve**: Vælg sort
 
-    - **Tekststørrelse** : Skriv *14*
+    - **Tekststørrelse**: Skriv *14*
 
-    - **Skrifttypefamilie** : Vælg **Arial Black**
+    - **Skrifttypefamilie**: Vælg **Arial Black**
 
-    - **Indre margen** : Indtast *40 %*
+    - **Indre margen**: Indtast *40 %*
 
         ![Skærmbillede med navne, der står skævt](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-formatting-x.png)
     
@@ -101,7 +101,7 @@ Navnene på X-aksen vises under kolonnerne i diagrammet. Lige nu er de så lyseg
    ![Diagram- og formateringsrude med vandrette navne](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-stretch.png)
 
 ### <a name="customize-the-x-axis-title"></a>Tilpas titlen på X-aksen
-Når titlen på X-aksen er **slået til** , vises titlen på X-aksen under navnene på X-aksen. 
+Når titlen på X-aksen er **slået til**, vises titlen på X-aksen under navnene på X-aksen. 
 
 1. Start med at slå titlen for X-aksen **til**.  
 
@@ -113,11 +113,11 @@ Når titlen på X-aksen er **slået til** , vises titlen på X-aksen under navne
 
 1. Formatér tekstfarven, tekststørrelsen og skrifttypen:
 
-    - **Titelfarve** : Vælg orange
+    - **Titelfarve**: Vælg orange
 
-    - **Aksetitel** : Skriv *Fiscal Month* (med et mellemrum)
+    - **Aksetitel**: Skriv *Fiscal Month* (med et mellemrum)
 
-    - **Tekststørrelse på titel** : Indtast *18*
+    - **Tekststørrelse på titel**: Indtast *18*
 
     Når du er færdig med tilpasningerne, ser dit stablede søjlediagram nogenlunde sådan ud:
 
@@ -145,23 +145,23 @@ Navnene på Y-aksen vises som standard til venstre. Lige nu er de så lysegrå, 
 
 1. Formatér tekstfarven, tekststørrelsen og skrifttypen:
 
-    - **Farve** : Vælg sort
+    - **Farve**: Vælg sort
 
-    - **Tekststørrelse** : Indtast *10*
+    - **Tekststørrelse**: Indtast *10*
 
-    - **Visningsenheder** : Vælg **Millioner**
+    - **Visningsenheder**: Vælg **Millioner**
 
     ![Diagram efter formatering af Y-akse](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-formatting-y.png)
 
 ### <a name="customize-the-y-axis-title"></a>Tilpas titlen på Y-aksen
-Når titlen på Y-aksen er **slået til** , vises titlen på Y-aksen ud for navnene på Y-aksen. Denne visualisering bliver ikke bedre, hvis du viser titlen på Y-aksen, så lad **Titel** være slået **Fra**. Senere i dette selvstudium føjer vi titler på Y-aksen til et visuelt element med to akser. 
+Når titlen på Y-aksen er **slået til**, vises titlen på Y-aksen ud for navnene på Y-aksen. Denne visualisering bliver ikke bedre, hvis du viser titlen på Y-aksen, så lad **Titel** være slået **Fra**. Senere i dette selvstudium føjer vi titler på Y-aksen til et visuelt element med to akser. 
 
 ### <a name="customize-the-gridlines"></a>Tilpas gitterlinjerne
 Lad os få gitterlinjerne til at skille sig mere ud ved at ændre farven og øge penselstrøgsbredden:
 
-- **Farve** : Vælg orange
+- **Farve**: Vælg orange
 
-- **Penselstrøgsbredde** : Skriv *2*
+- **Penselstrøgsbredde**: Skriv *2*
 
 Efter alle disse tilpasninger bør dit kolonnediagram se ud som følgende:
 

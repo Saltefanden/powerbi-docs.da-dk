@@ -2,20 +2,20 @@
 title: Føj billeder, videoer og mere til dit dashboard
 description: Dokumentation om, hvordan du kan bruge widget'en Tilføj felt til at føje et billede, en video, et tekstfelt, en webkode og et streamingdatafelt til et dashboard.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 featuredvideoid: e2PD8m1Q0vU
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 10/28/2020
-ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 72306a6269df91a75b750628e3534bf5891fe6b0
-ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
+ms.openlocfilehash: 27c5dba205ee396a2415259163e5dbfb8df11037
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92916906"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96395434"
 ---
 # <a name="add-images-videos-and-more-to-your-dashboard"></a>Føj billeder, videoer og mere til dit dashboard
 
@@ -96,13 +96,13 @@ Du kan tilføje en dashboardoverskrift ved at skrive overskriften i tekstfeltet 
 Når du føjer et YouTube- eller Vimeo-videofelt til dit dashboard, afspilles videoen direkte på dashboardet.
 
 1. I vinduet **Tilføj felt** skal du vælge **Video** > **Næste**.
-2. Føj videooplysninger til vinduet **Tilføj videofelt** :   
+2. Føj videooplysninger til vinduet **Tilføj videofelt**:   
    
    a. Hvis du vil have vist en titel og undertitel øverst i videofeltet, skal du vælge **Vis titel og undertitel** og skrive en **titel** og evt. en **undertitel**. I dette eksempel tilføjer vi en **undertitel** og konverterer den derefter til et link til hele YouTube-afspilningslisten.
 
    b. Angiv **URL-adressen til videoen**.
 
-   c. Føj et link til **titlen** og **undertitlen** , så dine kolleger kan få vist hele afspilningslisten på YouTube, efter de har set den integrerede video. Det gør du på følgende måde: Under **Funktionalitet** skal du vælge **Angiv brugerdefineret link** og derefter angive **URL-adressen** til afspilningslisten.
+   c. Føj et link til **titlen** og **undertitlen**, så dine kolleger kan få vist hele afspilningslisten på YouTube, efter de har set den integrerede video. Det gør du på følgende måde: Under **Funktionalitet** skal du vælge **Angiv brugerdefineret link** og derefter angive **URL-adressen** til afspilningslisten.
 
    d. Vælg **Anvend**.  
 
@@ -123,7 +123,7 @@ Du kan bruge PubNub til at føje streamingdata, f.eks. Twitter-feeds eller senso
 1. I vinduet **Tilføj felt** skal du vælge **Brugerdefinerede streamingdata** > **Næste**.
 2. Vælg **Tilføj streamingdatasæt**.
 3. Opret et **nyt streamingdatasæt** ved hjælp af Power BI-API eller PubNub.
-4. Udfyld felterne **Navn på datasæt** , **Abonnementsnøgle** og **Kanalnavn**. Hvis det er en sikker forbindelse, har den også en autorisationsnøgle. Du kan bruge eksempelværdierne fra PubNub til at prøve det.
+4. Udfyld felterne **Navn på datasæt**, **Abonnementsnøgle** og **Kanalnavn**. Hvis det er en sikker forbindelse, har den også en autorisationsnøgle. Du kan bruge eksempelværdierne fra PubNub til at prøve det.
 5. Vælg **Næste**.
     Du kan se de felter, der er tilgængelige i datasættet, med deres datatyper og JSON-format.
 6. Vælg **Connect**.
@@ -131,10 +131,10 @@ Du kan bruge PubNub til at føje streamingdata, f.eks. Twitter-feeds eller senso
 7. Gå tilbage til dashboardet, og vælg **Tilføj felt** > **Brugerdefinerede streamingdata** > **Næste** igen.
 8. Vælg det datasæt for sensordata, du oprettede > **Næste**.
 9. Vælg den ønskede visualiseringstype. En kurvediagram fungerer ofte godt for denne type data.
-10. Vælg **Akse** , **Forklaring** og **Værdier**.
+10. Vælg **Akse**, **Forklaring** og **Værdier**.
 11. Vælg den tid, du vil vise, enten i sekunder, minutter eller timer.
 12. Vælg **Næste**.
-13. Angiv en **titel** og en **undertitel** , hvis du vil.
+13. Angiv en **titel** og en **undertitel**, hvis du vil.
 14. Fastgør det til dit dashboard.
 
 
@@ -144,7 +144,7 @@ Du kan bruge PubNub til at føje streamingdata, f.eks. Twitter-feeds eller senso
 
 3. Opret et **nyt streamingdatasæt** ved hjælp af Power BI-API eller PubNub.
 
-4. Udfyld felterne **Navn på datasæt** , **Abonnementsnøgle** og **Kanalnavn**. Hvis det er en sikker forbindelse, har den også en autorisationsnøgle. Du kan bruge eksempelværdierne fra PubNub til at prøve det.
+4. Udfyld felterne **Navn på datasæt**, **Abonnementsnøgle** og **Kanalnavn**. Hvis det er en sikker forbindelse, har den også en autorisationsnøgle. Du kan bruge eksempelværdierne fra PubNub til at prøve det.
 
 5. Vælg **Næste**.
 
@@ -160,7 +160,7 @@ Du kan bruge PubNub til at føje streamingdata, f.eks. Twitter-feeds eller senso
 
 9. Vælg den ønskede visualiseringstype. En kurvediagram fungerer ofte godt for denne type data.
 
-10. Vælg **Akse** , **Forklaring** og **Værdier**.
+10. Vælg **Akse**, **Forklaring** og **Værdier**.
 
 11. Vælg den tid, du vil vise, enten i sekunder, minutter eller timer.
 
@@ -175,7 +175,7 @@ Du kan indsætte eller skrive HTML-indhold som et felt i din rapport eller på d
 
 1. I vinduet **Tilføj felt** skal du vælge **Webindhold** > **Næste**.
 
-2. Føj oplysninger til vinduet **Tilføj felt til webindhold** :
+2. Føj oplysninger til vinduet **Tilføj felt til webindhold**:
    
    a. Hvis du vil have vist en titel over feltet, skal du vælge **Vis titel og undertitel** og skrive en **titel** og evt. en **undertitel**.
 
@@ -232,7 +232,7 @@ Sådan foretager du ændringer af et eksisterende felt:
 1. Hold over det øverste højre hjørne af feltet, og vælg **Flere indstillinger** (...).
    
     ![Vælg feltellipse](media/service-dashboard-add-widget/pbi_ellipses.png)
-2. Vælg **Rediger oplysninger** for at få vinduet **Feltoplysninger** , og foretag ændringer.
+2. Vælg **Rediger oplysninger** for at få vinduet **Feltoplysninger**, og foretag ændringer.
    
     ![Rediger detaljer](media/service-dashboard-add-widget/pbi-edit.png)
 

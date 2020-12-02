@@ -2,18 +2,18 @@
 title: DAX-eksempelmodel
 description: DAX-eksempelmodel til understøttelse af referenceartikler.
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 06/25/2020
-ms.author: v-pemyer
-ms.openlocfilehash: 0efa26a6ef3e47272d1434fab453a17ad9823c8c
-ms.sourcegitcommit: cff93e604e2c5f24e0f03d6dbdcd10c2332aa487
+ms.openlocfilehash: b2930003da1593ef5d5888c611af6700e00d3d07
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90965437"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96394054"
 ---
 # <a name="dax-sample-model"></a>DAX-eksempelmodel
 
