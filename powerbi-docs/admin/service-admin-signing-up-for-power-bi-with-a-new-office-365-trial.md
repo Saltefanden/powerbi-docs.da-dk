@@ -1,21 +1,21 @@
 ---
 title: Tilmelding til Power BI med en ny prøveversion af Microsoft 365
 description: Tilmelding til Power BI med en ny prøveversion af Microsoft 365
-author: kfollis
+author: mihart
+ms.author: mihart
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 05/17/2020
-ms.author: mihart
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 29dad4db6843f0895ea9de791992b3f70ce57e66
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: 2ac2ed0a50c231aba4d4c849ef0544e126170d44
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91524736"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96412408"
 ---
 # <a name="signing-up-for-power-bi-with-a-new-microsoft-365-trial"></a>Tilmelding til Power BI med en ny prøveversion af Microsoft 365
 

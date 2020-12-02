@@ -2,18 +2,19 @@
 title: Opret forbindelse til filer i OneDrive for et Power BI-arbejdsområde
 description: Læs om at gemme og oprette forbindelse til dine Excel-, CSV- og Power BI Desktop-filer på OneDrive for dit Power BI-arbejdsområde.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukasz
 ms.service: powerbi
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 10/15/2020
-ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 738ef62811ff510b20be60851cb6bd8225b1ad34
-ms.sourcegitcommit: 59d07be9c3e4a2067f6d42c3002a194371bc4341
+ms.openlocfilehash: 6c3c43d8aad26249ac1b8afab09bdcbf1414f0cf
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92116889"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411971"
 ---
 # <a name="connect-to-files-stored-in-onedrive-for-your-power-bi-workspace"></a>Opret forbindelse til filer, der gemmes i OneDrive for dit Power BI-arbejdsområde
 Når du [opretter et arbejdsområde i Power BI](service-create-workspaces.md), opretter du også en Microsoft 365-gruppe med en tilknyttet OneDrive for Business. I denne artikel forklares det, hvordan du gemmer og opdaterer dine Excel-, CSV- og Power BI Desktop-filer på den pågældende OneDrive for Business. Disse opdateringer afspejles automatisk i dine Power BI-rapporter og på dine Power BI-dashboards, som er baseret på filerne.

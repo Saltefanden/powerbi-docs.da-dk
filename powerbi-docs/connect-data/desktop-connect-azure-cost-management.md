@@ -2,20 +2,20 @@
 title: Opret forbindelse til Azure Cost Management-data i Power BI Desktop
 description: Du kan nemt oprette forbindelse til Azure og få indsigt i dine omkostninger og forbrug af Azure ved hjælp af Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.custom: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 09/30/2020
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: eae8afc9db44b703ade1a9a4fcc28c24c3d72641
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: fa06b1d561c770c3b9e0535e94789931a74bd9df
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91599881"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411465"
 ---
 # <a name="create-visuals-and-reports-with-the-azure-cost-management-connector-in-power-bi-desktop"></a>Opret visualiseringer og rapporter med Azure Cost Management-connectoren i Power BI Desktop
 
@@ -52,7 +52,7 @@ Hvis du vil oprette forbindelse til en **Microsoft-kundeaftalekonto**, kan du he
 3.  Under **Indstillinger** i menuen skal du vælge **Egenskaber** i sidepanelet.
 4.  Kopiér **id'et** under **Faktureringsprofil**. 
 5.  I **Vælg omfang** skal du vælge **Faktureringsprofil-id** og indsætte faktureringsprofil-id'et fra det forrige trin. 
-6.  Angiv antallet af måneder, og vælg **OK **.
+6.  Angiv antallet af måneder, og vælg **OK**.
 
     ![Skærmbillede, der viser Azure Cost Management-egenskaber med området Faktureringsprofil-id.](media/desktop-connect-azure-cost-management/azure-cost-management-01a.png)
 
@@ -67,7 +67,7 @@ Hvis du vil oprette forbindelse til en Enterprise-aftalekonto (EA), kan du hente
 2.  Vælg din faktureringskonto.
 3.  Kopiér **Faktureringskonto-id** i menuen **Oversigt**.
 4.  I **Vælg omfang** skal du vælge **Registreringsnummer** og indsætte faktureringskonto-id'et fra det forrige trin. 
-5.  Angiv antallet af måneder, og vælg derefter **OK **.
+5.  Angiv antallet af måneder, og vælg derefter **OK**.
 
     ![Skærmbillede viser Azure Cost Management egenskaber med området Tilmeldingsnummer.](media/desktop-connect-azure-cost-management/azure-cost-management-01b.png)
 

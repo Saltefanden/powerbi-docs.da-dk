@@ -2,20 +2,20 @@
 title: Aktivér kryptering for SAP HANA
 description: Få mere at vide om, hvordan du krypterer forbindelsen, når du opretter forbindelse til en HANA-server fra Power BI ved hjælp af SAML-enkeltlogon.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 10/22/2020
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 9aaa89db53e22fcefe55a53ec7a5414a8835255b
-ms.sourcegitcommit: 54e571a10b0fdde5cd6036017eac9ef228de5116
+ms.openlocfilehash: b6d3362f75a0267dc680e3e54d2f92e44a98598a
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "92501897"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96410936"
 ---
 # <a name="enable-encryption-for-sap-hana"></a>Aktivér kryptering for SAP HANA
 
@@ -43,7 +43,7 @@ Opret en anmodning om signering af et X509-certifikat for HANA-serveren.
 
 1. Brug SSH til at oprette forbindelse til den Linux-maskine, hvorpå HANA-serveren kører som \<sid\>administrator.
 
-1. Gå til startmappen _/_ _usr/sap/\<sid\>/home_ .
+1. Gå til startmappen _/_ _usr/sap/\<sid\>/home_.
 
 1. Opret en skjult mappe med navnet _. __ssl_, hvis der ikke allerede findes en.
 
@@ -85,7 +85,7 @@ Hent certifikatet, der er signeret af et nøglecenter (CA), som de klienter, der
 
     Klienten skal have tillid til det nøglecenter, der bruges til at signere HANA-serverens X509-certifikat, før der kan etableres en krypteret forbindelse til HANA-serveren fra klientens maskine.
 
-    Der findes forskellige metoder til at sikre, at denne tillidsrelation eksisterer, ved hjælp af Microsoft Management Console (MMC) eller kommandolinjen. Du kan importere nøglecentrets X509-certifikat (trust.pem) til mappen **Rodnøglecentre, der er tillid til** , for den bruger, der skal etablere forbindelsen, eller til den samme mappe for selve klientmaskinen, hvis dette ønskes.
+    Der findes forskellige metoder til at sikre, at denne tillidsrelation eksisterer, ved hjælp af Microsoft Management Console (MMC) eller kommandolinjen. Du kan importere nøglecentrets X509-certifikat (trust.pem) til mappen **Rodnøglecentre, der er tillid til**, for den bruger, der skal etablere forbindelsen, eller til den samme mappe for selve klientmaskinen, hvis dette ønskes.
 
     ![Mappen Rodnøglecentre, der er tillid til](media/desktop-sap-hana-encryption/trusted-root-certification.png)
 

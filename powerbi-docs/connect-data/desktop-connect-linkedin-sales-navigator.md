@@ -2,23 +2,23 @@
 title: Opret forbindelse til LinkedIn Sales Navigator i Power BI Desktop
 description: Opret nemt forbindelse til og brug data fra LinkedIn i Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 11/11/2019
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: dd8e453a0cec6c404cad077a85f68044fa57ba1f
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: 9baa0d6f05f62efcc453983d53f50335db2bc4b9
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91600238"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411442"
 ---
 # <a name="connect-to-linkedin-sales-navigator-in-power-bi-desktop"></a>Opret forbindelse til LinkedIn Sales Navigator i Power BI Desktop
 
-I **Power BI Desktop**kan du oprette forbindelse til **LinkedIn Sales Navigator** for nemmere at finde og oprette relationer på samme måde som enhver anden datakilde i Power BI Desktop og oprette færdiglavede rapporter om dine fremskridt.
+I **Power BI Desktop** kan du oprette forbindelse til **LinkedIn Sales Navigator** for nemmere at finde og oprette relationer på samme måde som enhver anden datakilde i Power BI Desktop og oprette færdiglavede rapporter om dine fremskridt.
 
 ![Fanen Brug i LinkedIn Sales Navigator](media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-01.png)
 

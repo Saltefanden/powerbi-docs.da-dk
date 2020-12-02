@@ -2,19 +2,19 @@
 title: Fremhæv indhold på kollegaers Power BI Start-side
 description: Sådan fremhæver du Power BI-dashboards og -rapporter på siden Power BI Start for kollegaer i din organisation.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: nikhilga
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 10/14/2020
-ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: eef0ba24347bd46cc86325cac494937e3f95086a
-ms.sourcegitcommit: fddba666c6ea90d525a1c3188bbd3c4a03410cdc
+ms.openlocfilehash: c45eb2afdf028f9e3a4b213333a0028924858a09
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92462440"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411810"
 ---
 # <a name="feature-content-on-colleagues-power-bi-home-page"></a>Fremhæv indhold på kollegaers Power BI Start-side
 
@@ -40,23 +40,23 @@ Fremgangsmåden til fremhævning af et dashboard og en rapport er den samme.
 
 1. Vælg ikonet **Indstillinger** på listen **Dashboards** eller **Rapporter** for et arbejdsområde.
 
-    :::image type="content" source="media/service-featured-content/power-bi-settings-icon.png" alt-text="Fremhævet Power BI-indhold på startside":::
+    :::image type="content" source="media/service-featured-content/power-bi-settings-icon.png" alt-text="Ikonet Rapportindstillinger":::
 
-2. Kontrollér eller rediger navnet i ruden **Indstillinger** . Tilføj en **beskrivelse** og upload et **snapshot** , hvis du vil. Det er nyttigt, fordi det hjælper dine brugere med at finde dit indhold.
+2. Kontrollér eller rediger navnet i ruden **Indstillinger**. Tilføj en **beskrivelse** og upload et **snapshot**, hvis du vil. Det er nyttigt, fordi det hjælper dine brugere med at finde dit indhold.
 
-3. Vælg **Fremhævet** .
+3. Vælg **Fremhævet**.
 
-    :::image type="content" source="media/service-featured-content/power-bi-featured-content-settings.png" alt-text="Fremhævet Power BI-indhold på startside":::
+    :::image type="content" source="media/service-featured-content/power-bi-featured-content-settings.png" alt-text="Indstillinger for fremhævet indhold":::
 
-4. Vælg **Gem** .
+4. Vælg **Gem**.
 
-    Nu kan alle brugere, der har adgang til dette dashboard eller denne rapport, se det/den i afsnittet **Udvalgte** på **startsiden** .
+    Nu kan alle brugere, der har adgang til dette dashboard eller denne rapport, se det/den i afsnittet **Udvalgte** på **startsiden**.
 
 ## <a name="feature-an-app"></a>Fremhæv en app
 
-- Hvis du vil fremhæve en app, skal du åbne arbejdsområdet for appen, vælge menuen **Indstillinger** ( **...** ) > **Fremhæv denne app på forsiden** .
+- Hvis du vil fremhæve en app, skal du åbne arbejdsområdet for appen, vælge menuen **Indstillinger** ( **...** ) > **Fremhæv denne app på forsiden**.
 
-Nu kan alle, der har adgang til denne app, også se den i afsnittet **Udvalgte** på **startsiden** .
+Nu kan alle, der har adgang til denne app, også se den i afsnittet **Udvalgte** på **startsiden**.
 
 ## <a name="next-steps"></a>Næste trin
 

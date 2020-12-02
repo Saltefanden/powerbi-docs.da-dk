@@ -1,20 +1,20 @@
 ---
 title: Forbindelsesudvidelse i Power BI
 description: Forbindelsesudvidelse, funktioner, sikkerhedsindstillinger og certificerede forbindelser
-author: cpopell
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: conceptual
 ms.date: 01/02/2020
-ms.author: gepopell
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b604ade56335e65b25501eb9fe3d3c2fd185a6f0
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 6b78309ad17446aabacd39006968b6d397a51037
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83293507"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411235"
 ---
 # <a name="connector-extensibility-in-power-bi"></a>Forbindelsesudvidelse i Power BI
 

@@ -2,19 +2,19 @@
 title: Opret forbindelse til Adobe Analytics i Power BI Desktop
 description: Opret nemt forbindelse til og brug Adobe Analytics i Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 05/07/2019
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: bc6b40754e12531c57dfcab2923fdf999aee5481
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 89376902f1c37526ddf9376461871bcf27c2566d
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85224808"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411488"
 ---
 # <a name="connect-to-adobe-analytics-in-power-bi-desktop"></a>Opret forbindelse til Adobe Analytics i Power BI Desktop 
 I **Power BI Desktop** kan du oprette forbindelse til **Adobe Analytics** og bruge de underliggende data på samme måde som enhver anden datakilde i Power BI Desktop. 

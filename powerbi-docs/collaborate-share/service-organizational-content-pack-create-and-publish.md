@@ -2,19 +2,19 @@
 title: Opret og publicer en organisationsindholdspakke – PowerBi
 description: I dette selvstudium opretter du en organisationsindholdspakke, begrænser adgangen til en bestemt gruppe og publicerer den i biblioteket til din organisationsindholdspakke i Power BI.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 08/06/2019
-ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 9bb424e2e7f9e8bd32769813958d14a808339aa8
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 0a72582a54903c97dd9594f6a4a1c5980aea8e16
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85225930"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411718"
 ---
 # <a name="tutorial-create-and-publish-a-power-bi-organizational-content-pack"></a>Selvstudium: Opret og publicer en organisationsindholdspakke til Power BI
 

@@ -2,20 +2,20 @@
 title: Opret forbindelse til data i Power BI Desktop
 description: Opret forbindelse til data i Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 01/21/2020
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 3319c2d3d739c1f67e5b8477de385e9dfa71e25a
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: a9fdb4e2ebd71d652c66220ad4a70473ef6dd764
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85224100"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411281"
 ---
 # <a name="connect-to-data-sources-in-power-bi-desktop"></a>Opret forbindelse til datakilderne i Power BI Desktop
 
@@ -39,7 +39,7 @@ Vælg **Hent data** > **Andet** > **Web**. I **Fra web** skal du angive adressen
 
 ![Angiv en adresse på en webkilde](media/desktop-connect-to-data/connecttodata_3.png)
 
-Når du vælger **OK**, begynder *forespørgsel*sfunktionen i Power BI Desktop at arbejde. Power BI Desktop kontakter webressourcen, og i **navigatorvinduet** returneres resultaterne af det, der blev fundet på den pågældende webside. I dette tilfælde blev der fundet en tabel og det generelle dokument. Vi er interesseret i tabellen, så vi vælger den på listen. I **navigatorvinduet** vises der et eksempel.
+Når du vælger **OK**, begynder *forespørgsel* sfunktionen i Power BI Desktop at arbejde. Power BI Desktop kontakter webressourcen, og i **navigatorvinduet** returneres resultaterne af det, der blev fundet på den pågældende webside. I dette tilfælde blev der fundet en tabel og det generelle dokument. Vi er interesseret i tabellen, så vi vælger den på listen. I **navigatorvinduet** vises der et eksempel.
 
 ![Eksempelvisning af data i Navigator](media/desktop-connect-to-data/datasources_fromnavigatordialog.png)
 

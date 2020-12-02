@@ -2,19 +2,19 @@
 title: Angiv fremhævede tabeller i Power BI Desktop (prøveversion)
 description: Opret fremhævede tabeller i Power BI Desktop, så de vises i datatypegalleriet i Excel.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 09/17/2020
-ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 20a81ed4675f6392f28a20f7b741d0c0ad1076eb
-ms.sourcegitcommit: 4e347efd132b48aaef6c21236c3a21e5fce285cc
+ms.openlocfilehash: d2d87f16b8100424b47277360354d79ee834d467
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92680760"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411925"
 ---
 # <a name="set-featured-tables-in-power-bi-desktop-preview"></a>Angiv fremhævede tabeller i Power BI Desktop (prøveversion)
 
@@ -25,12 +25,12 @@ I datatypegalleriet i Excel kan dine brugere finde data fra *fremhævede tabelle
 1. Resten af organisationen kan oprette forbindelse til disse fremhævede tabeller, der kaldes *datatyper* i Excel, for relevante data, der kan opdateres. I artiklen [Få adgang til Power BI-tabeller i Excel (prøveversion)](service-excel-featured-tables.md) beskrives, hvordan du bruger disse fremhævede tabeller i Excel.
 
 > [!NOTE]
-> Du kan [fremhæve eller certificere datasæt i Power BI](../collaborate-share/service-endorse-content.md). Det kaldes *godkendelse* . Excel prioriterer tabeller i godkendte datasæt i Datatypegalleriet. Excel viser først udvalgte tabeller i certificerede datasæt og derefter tabeller i promoverede datasæt. Derefter viser Excel udvalgte tabeller i ikke-godkendte datasæt. 
+> Du kan [fremhæve eller certificere datasæt i Power BI](../collaborate-share/service-endorse-content.md). Det kaldes *godkendelse*. Excel prioriterer tabeller i godkendte datasæt i Datatypegalleriet. Excel viser først udvalgte tabeller i certificerede datasæt og derefter tabeller i promoverede datasæt. Derefter viser Excel udvalgte tabeller i ikke-godkendte datasæt. 
 
 ## <a name="turn-on-the-featured-table-preview"></a>Slå eksempelvisning af udvalgte tabeller til
 
 1. Vælg **Filer** > **Indstillinger** > **Indstillinger** > **Funktioner til eksempelvisning** i Power BI Desktop.
-2. Markér afkrydsningsfeltet **Fremhævede tabeller** .
+2. Markér afkrydsningsfeltet **Fremhævede tabeller**.
 
     :::image type="content" source="media/service-excel-featured-tables/power-bi-preview-featured-tables.png" alt-text="Indstillingen Vis fremhævede tabeller":::
 
@@ -40,15 +40,21 @@ I datatypegalleriet i Excel kan dine brugere finde data fra *fremhævede tabelle
 
 1. Gå til Modelvisning i Power BI Desktop.
 
-    :::image type="content" source="media/service-excel-featured-tables/power-bi-model-view.png" alt-text="Indstillingen Vis fremhævede tabeller":::
+    :::image type="content" source="media/service-excel-featured-tables/power-bi-model-view.png" alt-text="Modelvisning":::
  
-2. Vælg en tabel, og sæt **Er en fremhævet tabel** til **Ja** .
+2. Vælg en tabel, og sæt **Er en fremhævet tabel** til **Ja**.
 
-    :::image type="content" source="media/service-excel-featured-tables/power-bi-featured-table-yes.png" alt-text="Indstillingen Vis fremhævede tabeller" for at hjælpe forfattere af Power BI-rapporter med et identificere den.
-    - Feltværdien **Rækkeetiket** bruges i Excel, så brugerne nemt kan identificere rækken. Den vises som celleværdien for en sammenkædet celle i ruden **Datavælger** og på kortet **Oplysninger** . 
+    :::image type="content" source="media/service-excel-featured-tables/power-bi-featured-table-yes.png" alt-text="Sæt Er en fremhævet tabel til Ja":::
+
+4. I **Konfigurer denne tabel** skal du udfylde de påkrævede felter:
+
+    - En **beskrivelse**. 
+        > [!TIP]
+        > Start beskrivelsen med "Fremhævet tabel" for at hjælpe forfattere af Power BI-rapporter med et identificere den.
+    - Feltværdien **Rækkeetiket** bruges i Excel, så brugerne nemt kan identificere rækken. Den vises som celleværdien for en sammenkædet celle i ruden **Datavælger** og på kortet **Oplysninger**. 
     - Feltværdien **Nøglekolonne** indeholder det entydige id for rækken. Denne værdi gør det muligt for Excel at sammenkæde en celle med en bestemt række i tabellen.
 
-    :::image type="content" source="media/service-excel-featured-tables/power-bi-set-up-featured-table.png" alt-text="Indstillingen Vis fremhævede tabeller":::
+    :::image type="content" source="media/service-excel-featured-tables/power-bi-set-up-featured-table.png" alt-text="Opsæt fremhævet tabel":::
 
 1. Når du har udgivet eller importeret datasættet til Power BI-tjenesten, vises den fremhævede tabel i Excel-datatypegalleriet. Du og andre forfattere af rapporter kan også oprette rapporter, der er bygget ud fra dette datasæt.
 

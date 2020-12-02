@@ -2,20 +2,20 @@
 title: Organiser arbejde i nye arbejdsområder i Power BI
 description: Få mere at vide om de nye arbejdsområder, der er samlinger af dashboards og rapporter, som er udviklet til at levere vigtige målepunkter for din organisation.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 ms.date: 10/21/2020
-ms.author: maggies
 ms.custom: contperfq4
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1ea5e7633fb81b2792459c3a428c9c43827a5137
-ms.sourcegitcommit: fddba666c6ea90d525a1c3188bbd3c4a03410cdc
+ms.openlocfilehash: 43af5a2ea924ababdba7b328b814045b75be5316
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92462210"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411741"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organiser arbejde i nye arbejdsområder i Power BI
 
@@ -33,11 +33,11 @@ Vi har givet nogle af funktionerne i de nye arbejdsområder et nyt design. Her e
 
 - **Oprettelse af de nye arbejdsområder opretter ikke Microsoft 365-grupper** på samme måde som klassiske arbejdsområder. Al administration af nye arbejdsområder sker i Power BI, ikke i Office 365. Du kan fortsætte med at administrere brugeradgang til indhold via Microsoft 365-grupper, hvis du vil det. Du skal blot tilføje en Microsoft 365-gruppe på adgangslisten for arbejdsområdet.
 - **Brug mere detaljerede arbejdsområderoller** til administration af mere fleksible tilladelser i et arbejdsområde.  I de klassiske arbejdsområder kan du kun føje enkeltpersoner til medlems- og administratorlisterne. 
-- **Tildel brugergrupper til arbejdsområderoller** : I de nye arbejdsområder kan du føje flere Active Directory-sikkerhedsgrupper, distributionslister eller Microsoft 365-grupper til disse roller for at lette administrationen af brugere. 
-- **Kontaktliste** : I de nye arbejdsområder kan du angive, hvem der modtager besked om aktiviteten i arbejdsområdet.
-- **Opret skabelonapps** : Du kan kun oprette *skabelonapps* i de nye arbejdsområder. Skabelonapps er apps, du kan distribuere til kunder uden for din organisation. Disse kunder kan derefter oprette forbindelse til deres egne data med din skabelonapp. Få mere at vide om [skabelonapps](../connect-data/service-template-apps-overview.md).
-- **Del datasæt** : Hvis du vil dele et datasæt uden for et bestemt arbejdsområde, skal du gemme den rapport, der indeholder datasættet, i et af de nye arbejdsområder. Du kan ikke dele datasæt fra klassiske arbejdsområder. Læs mere om [delte datasæt](../connect-data/service-datasets-across-workspaces.md).
-- **Organisationsindholdspakker** : Du opretter og bruger organisationsindholdspakker i klassiske arbejdsområder. Du kan ikke oprette eller forbruge dem i de nye arbejdsområder. Apps- og skabelonapps erstatter organisationsindholdspakker i de nye arbejdsområder.
+- **Tildel brugergrupper til arbejdsområderoller**: I de nye arbejdsområder kan du føje flere Active Directory-sikkerhedsgrupper, distributionslister eller Microsoft 365-grupper til disse roller for at lette administrationen af brugere. 
+- **Kontaktliste**: I de nye arbejdsområder kan du angive, hvem der modtager besked om aktiviteten i arbejdsområdet.
+- **Opret skabelonapps**: Du kan kun oprette *skabelonapps* i de nye arbejdsområder. Skabelonapps er apps, du kan distribuere til kunder uden for din organisation. Disse kunder kan derefter oprette forbindelse til deres egne data med din skabelonapp. Få mere at vide om [skabelonapps](../connect-data/service-template-apps-overview.md).
+- **Del datasæt**: Hvis du vil dele et datasæt uden for et bestemt arbejdsområde, skal du gemme den rapport, der indeholder datasættet, i et af de nye arbejdsområder. Du kan ikke dele datasæt fra klassiske arbejdsområder. Læs mere om [delte datasæt](../connect-data/service-datasets-across-workspaces.md).
+- **Organisationsindholdspakker**: Du opretter og bruger organisationsindholdspakker i klassiske arbejdsområder. Du kan ikke oprette eller forbruge dem i de nye arbejdsområder. Apps- og skabelonapps erstatter organisationsindholdspakker i de nye arbejdsområder.
 
 I denne artikel forklares disse funktioner mere detaljeret.
 
@@ -48,11 +48,11 @@ I denne artikel forklares disse funktioner mere detaljeret.
 
 I de nye arbejdsområder fungerer visse funktioner anderledes. Disse forskelle er bevidst og er baseret på den feedback, vi har modtaget fra kunder. De giver mulighed for en mere fleksibel tilgang til samarbejde i arbejdsområder.
 
-- **Håndhævelse af licenser** : Publicering af rapporter til den nye arbejdsområdeoplevelse sker på baggrund af de eksisterende licensregler. Brugere, der samarbejder i nye arbejdsområder eller deler indhold med andre i Power BI-tjenesten, skal bruge en Power BI Pro-licens. Brugere uden en Pro-licens får vist fejlmeddelelsen "Kun brugere med Power BI Pro-licenser kan publicere til dette arbejdsområde".
-- **Indstillingen Medlemmer må dele igen** : Rollen som bidragyder i de nye arbejdsområder erstatter indstillingen Medlemmer må dele igen i de klassiske arbejdsområder.
-- **Skrivebeskyttede arbejdsområder** : Rollen som læser i de nye arbejdsområder erstatter tildelingen af læseadgang til et klassisk arbejdsområde. Rollen som læser giver tilsvarende skrivebeskyttet adgang til indholdet i et nyt arbejdsområde.
+- **Håndhævelse af licenser**: Publicering af rapporter til den nye arbejdsområdeoplevelse sker på baggrund af de eksisterende licensregler. Brugere, der samarbejder i nye arbejdsområder eller deler indhold med andre i Power BI-tjenesten, skal bruge en Power BI Pro-licens. Brugere uden en Pro-licens får vist fejlmeddelelsen "Kun brugere med Power BI Pro-licenser kan publicere til dette arbejdsområde".
+- **Indstillingen Medlemmer må dele igen**: Rollen som bidragyder i de nye arbejdsområder erstatter indstillingen Medlemmer må dele igen i de klassiske arbejdsområder.
+- **Skrivebeskyttede arbejdsområder**: Rollen som læser i de nye arbejdsområder erstatter tildelingen af læseadgang til et klassisk arbejdsområde. Rollen som læser giver tilsvarende skrivebeskyttet adgang til indholdet i et nyt arbejdsområde.
 - **Brugere uden en Pro-licens** kan få adgang til et nyt arbejdsområde, hvis det er i en Power BI Premium-kapacitet, men kun hvis de har rollen som læser.
-- **Tillad brugere at eksportere data** : Brugere med rollen som læser i det nye arbejdsområde kan eksportere data, hvis de har tilladelse til at oprette for datasættene i arbejdsområdet. Læs mere om [tilladelsen Opret for datasæt](../connect-data/service-datasets-build-permissions.md).
+- **Tillad brugere at eksportere data**: Brugere med rollen som læser i det nye arbejdsområde kan eksportere data, hvis de har tilladelse til at oprette for datasættene i arbejdsområdet. Læs mere om [tilladelsen Opret for datasæt](../connect-data/service-datasets-build-permissions.md).
 - Der er ingen knap af typen **Forlad arbejdsområde** i de nye arbejdsområder.
 
 ### <a name="workspace-contact-list"></a>Liste over arbejdsområdekontakter

@@ -1,20 +1,20 @@
 ---
 title: Store datasæt, datapunktgrænser og datastrategier
 description: Datagrænser for visualiseringer og datareduktionsstrategier
-author: msftrien
+author: mihart
+ms.author: mihart
 ms.reviewer: justyna
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 01/10/2020
-ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 89bfba0dc679ddb7a9142c83e863cddaf1400063
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: 0feef179fddba93f192559c7ac7bed10c6fa5328
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93412044"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96412523"
 ---
 # <a name="apply-data-point-limits-and-strategies-by-visual-type"></a>Anvend datapunktgrænser og strategier efter visualiseringstype
 
@@ -31,9 +31,9 @@ Hver enkelt visualisering styrer parametrene for disse strategier for at påvirk
 For hver strateg er der er standarder, der er baseret på den form og type af data, der skal visualiseres. Men standardindstillingerne kan tilsidesættes i formateringsruden i Power BI for at give den rette brugeroplevelse. 
 
 * **Datavinduer** (segmentering): Tillad, at brugerne må rulle gennem dataene i en visualisering ved gradvist at indlæse fragmenter af det samlede datasæt.
-* **Øverste N** : Vis kun de første N-elementer
-* **Enkelt eksempel** : Vis det første og sidste element samt N-elementer jævnt fordelt ind imellem.
-* **NedersteN** : Vis kun de sidste N-elementer.  Nyttige til overvågning af ofte opdaterede data.
+* **Øverste N**: Vis kun de første N-elementer
+* **Enkelt eksempel**: Vis det første og sidste element samt N-elementer jævnt fordelt ind imellem.
+* **NedersteN**: Vis kun de sidste N-elementer.  Nyttige til overvågning af ofte opdaterede data.
 * **Stikprøvetagning med høj tæthed** – en forbedret stikprøvetagningsalgoritme, der i højere grad respekterer udenforliggende værdier og/eller formen af en kurve.
     * **Stikprøvetagning af grupperede linjer** – eksempeldatapunkter, der er baseret på udenforliggende værdier i grupper på tværs af en akse
     * **Stikprøvetagning af overlappende punkter** – eksempeldatapunkter, der er baseret på overlappende værdier for at bevare udenforliggende værdier

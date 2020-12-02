@@ -2,19 +2,19 @@
 title: Opret forbindelse til en Oracle-database med Power BI Desktop
 description: Trin og downloads, der er nødvendige for at oprette forbindelse mellem Oracle og Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 08/11/2020
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b77543a7601cf4f8522c333137802e71ce41a41c
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 2e25ab87d042fdc2f0e88ee00a0b0f8f9dbd83a0
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90858364"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411396"
 ---
 # <a name="connect-to-an-oracle-database-with-power-bi-desktop"></a>Opret forbindelse til en Oracle-database med Power BI Desktop
 Hvis du vil oprette forbindelse til en Oracle-database med Power BI Desktop, skal den korrekte Oracle-klientsoftware være installeret på den computer, der kører Power BI Desktop. Den Oracle-klientsoftware, du bruger, afhænger af, hvilken version af Power BI Desktop du har installeret: 32-bit eller 64-bit. Det afhænger også af din version af Oracle-serveren.
@@ -47,7 +47,7 @@ Når den rette Oracle-klientdriver er installeret, kan du oprette forbindelse ti
 
 1. Vælg **Hent data** under fanen **Hjem**. 
 
-2. I vinduet **Hent data**, der vises, skal du vælge **flere** (om nødvendigt), vælge **Database** > **Oracle database**og derefter vælge **Opret forbindelse**.
+2. I vinduet **Hent data**, der vises, skal du vælge **flere** (om nødvendigt), vælge **Database** > **Oracle database** og derefter vælge **Opret forbindelse**.
    
    ![Opret forbindelse til Oracle-databasen](media/desktop-connect-oracle-database/connect-oracle-database_2.png)
 3. I dialogboksen **Oracle-database**, der åbnes, skal du angive navnet på **serveren** og vælge **OK**. Hvis der kræves et SID, skal du angive det i formatet: *Servernavn/SID*, hvor *SID* er det entydige navn på databasen. Hvis formatet *Servernavn/SID* ikke virker, kan du prøve at bruge *Servernavn/Tjenestenavn*, hvor *Tjenestenavn* er det alias, du bruger, når du opretter forbindelse.

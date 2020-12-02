@@ -2,23 +2,23 @@
 title: Opret klassiske arbejdsområder i Power BI
 description: 'Få mere at vide om, hvordan du opretter klassiske arbejdsområder: Samlinger af dashboards, rapporter og sideinddelte rapporter, der er udviklet til at levere vigtige målepunkter for din organisation.'
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 10/29/2020
-ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5a5aced331ff8f66fdd0cb58fd7625a68acf9331
-ms.sourcegitcommit: 8861dac6724202a5b3be456a6aff8f3584e0cccf
+ms.openlocfilehash: 024696aa69fc1c6e95b103a679b11de4fe468169
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93132384"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411948"
 ---
 # <a name="create-classic-workspaces-in-power-bi"></a>Opret klassiske arbejdsområder i Power BI
 
-I Power BI kan du oprette *arbejdsområder* , som er steder, hvor du kan samarbejde med kolleger om at oprette og tilpasse samlinger af dashboards, rapporter og sideinddelte rapporter. Power BI har de originale eller *klassiske* arbejdsområder og de nye arbejdsområder. Denne artikel omhandler oprettelsen af klassiske arbejdsområder.
+I Power BI kan du oprette *arbejdsområder*, som er steder, hvor du kan samarbejde med kolleger om at oprette og tilpasse samlinger af dashboards, rapporter og sideinddelte rapporter. Power BI har de originale eller *klassiske* arbejdsområder og de nye arbejdsområder. Denne artikel omhandler oprettelsen af klassiske arbejdsområder.
 
 **Vidste du det?** Power BI tilbyder en ny arbejdsområdeoplevelse, som nu er standard. Læs [Organiser arbejde i de nye arbejdsområder](service-new-workspaces.md) for at få oplysninger om de nye arbejdsområder. Er du klar til at overføre dit klassiske arbejdsområde? Se [Opgrader klassiske arbejdsområder til de nye arbejdsområder i Power BI](service-upgrade-workspaces.md) for at få flere oplysninger.
 
@@ -38,7 +38,7 @@ Du skal måske en vente en times tid, første gang du opretter arbejdsområdet, 
 ### <a name="add-an-image-to-your-microsoft-365-workspace-optional"></a>Føj et billede til dit Microsoft 365-arbejdsområde (valgfrit)
 Power BI opretter som standard en lille farvet cirkel for din app med appens forbogstaver. Det kan også være, at du vil tilpasse den med et billede. Hvis du vil tilføje et billede, skal du have en Exchange Online-licens.
 
-1. Vælg **Arbejdsområder** , vælg **Flere indstillinger** (...) ud for navnet på arbejdsområdet og derefter **Medlemmer**. 
+1. Vælg **Arbejdsområder**, vælg **Flere indstillinger** (...) ud for navnet på arbejdsområdet og derefter **Medlemmer**. 
    
      ![Vælg medlemmer af arbejdsområdet](media/service-create-workspaces/power-bi-workspace-old-members.png)
    

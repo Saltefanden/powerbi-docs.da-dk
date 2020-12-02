@@ -2,18 +2,18 @@
 title: Anbefaling – fremhævning og certificering af Power BI-indhold
 description: Få mere at vide om, hvordan du gør kvalitetsindhold nemmere at finde via fremhævning eller certificering
 author: paulinbar
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.date: 10/26/2020
-ms.author: painbar
 LocalizationGroup: Share your work
-ms.openlocfilehash: af222d1ebedf8e9afa2529d3d433da5d003a8059
-ms.sourcegitcommit: 4e347efd132b48aaef6c21236c3a21e5fce285cc
+ms.openlocfilehash: 65a83bf0e91d4f3004445ffcd8cd6f78d5a77fc3
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92681840"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411833"
 ---
 # <a name="endorsement---promoting-and-certifying-power-bi-content"></a>Anbefaling – fremhævning og certificering af Power BI-indhold
 
@@ -21,17 +21,17 @@ ms.locfileid: "92681840"
 
 Organisationer har ofte store mængder Power BI-indhold tilgængeligt, som deres Power BI-brugere kan dele og genbruge, og det kan være svært at identificere pålideligt, autoritativt indhold. Anbefaling er en metode til at gøre det nemmere for brugerne at finde det indhold af høj kvalitet, de har brug for. Anbefalet indhold er tydeligt markeret både i Power BI og andre steder, hvor brugerne kigger efter Power BI-indhold (f.eks. Excel). Det prioriteres også i nogle søgninger, og du kan sortere efter det på nogle lister.
 
-Der er to typer anbefalinger: **fremhævning** og **certificering** .
+Der er to typer anbefalinger: **fremhævning** og **certificering**.
 
-* **Fremhævning** : Fremhævning giver brugerne mulighed for at fremhæve indhold, som de mener er værdifuldt, værd at bruge og klar til brug for andre. Det opfordrer til samarbejdsmæssig spredning af indhold i en organisation.
+* **Fremhævning**: Fremhævning giver brugerne mulighed for at fremhæve indhold, som de mener er værdifuldt, værd at bruge og klar til brug for andre. Det opfordrer til samarbejdsmæssig spredning af indhold i en organisation.
 
     Enhver ejer af indhold eller et hvilket som helst medlem med skriverettigheder til det arbejdsområde, hvor indholdet er placeret, kan blot fremhæve indholdet, når de mener, at det er godt nok til deling.
 
-* **Certificering** : Certificering betyder, at indholdet opfylder organisationens kvalitetsstandarder og kan anses for at være pålideligt, autoritativt indhold, der er klar til brug i hele organisationen.
+* **Certificering**: Certificering betyder, at indholdet opfylder organisationens kvalitetsstandarder og kan anses for at være pålideligt, autoritativt indhold, der er klar til brug i hele organisationen.
 
     Det er kun en udvalgt gruppe validatorer (defineret af Power BI-administratoren), der er autoriseret til at certificere indhold. Ejere af indhold, der gerne vil have deres indhold certificeret, men som ikke er autoriseret til at certificere det selv, skal følge deres organisations retningslinjer for at få deres indhold certificeret.
 
-    **Certificering er kun tilgængelig, hvis en Power BI-administrator har aktiveret og konfigureret det for din organisation** .
+    **Certificering er kun tilgængelig, hvis en Power BI-administrator har aktiveret og konfigureret det for din organisation**.
 
 Nedenstående billede viser, hvordan anbefalet indhold (fremhævet og certificeret) er tydeligt markeret, når du søger efter et datasæt at basere en rapport på.
 

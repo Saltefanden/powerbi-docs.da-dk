@@ -1,20 +1,20 @@
 ---
 title: Fejlfinding af Analysér i Excel i Power BI Desktop
 description: Løsninger på almindelige problemer med Analysér i Excel
-author: davidiseminger
+author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: troubleshooting
 ms.date: 05/27/2020
-ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 3c36a2725748e2c701c65f1737c39f4d56128962
-ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
+ms.openlocfilehash: ae152a99557f86ef82718efdbe3ee767893d15b8
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86034376"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96412063"
 ---
 # <a name="troubleshooting-analyze-in-excel"></a>Fejlfinding af Analysér i Excel
 
@@ -65,7 +65,7 @@ Eller hvis den nye version, du er ved at installere, er nyere end versionen på 
 Hvis du ser dialogboksen, hvor du bliver bedt om at opgradere, skal du fortsætte med installationen for at få den nyeste version af OLE DB-provideren installeret på computeren.
 
 ## <a name="connection-cannot-be-made-error"></a>Fejlen Der kan ikke oprettes forbindelse
-Den primære årsag til, at der *ikke kan oprettes forbindelse*, er, at klientbibliotekerne til OLE DB-provideren på din computer ikke er opdateret. Du kan finde oplysninger om, hvordan du finder den korrekte opdatering og downloadlinks, under**Opdater Excel-biblioteker for OLE DB-provideren** tidligere i denne artikel.
+Den primære årsag til, at der *ikke kan oprettes forbindelse*, er, at klientbibliotekerne til OLE DB-provideren på din computer ikke er opdateret. Du kan finde oplysninger om, hvordan du finder den korrekte opdatering og downloadlinks, under **Opdater Excel-biblioteker for OLE DB-provideren** tidligere i denne artikel.
 
 ## <a name="forbidden-error"></a>Fejlen Forbudt
 Nogle brugere har mere end én Power BI-konto, og når Excel forsøger at oprette forbindelse til Power BI ved hjælp af eksisterende legitimationsoplysninger, bruges der måske legitimationsoplysninger, der ikke har adgang til det datasæt eller den rapport, som du vil have adgang til.

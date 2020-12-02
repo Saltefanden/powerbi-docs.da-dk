@@ -2,19 +2,19 @@
 title: Brug af DirectQuery i Power BI
 description: Om brug af DirectQuery med Power BI og bedste fremgangsmåder for, hvordan og hvornår du skal bruge DirectQuery eller andre indstillinger
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: conceptual
 ms.date: 11/17/2020
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 0f6f4cdb221773218c945e7f800d569c73a9a130
-ms.sourcegitcommit: 5240990f998851c4854eb565de681099264c5a61
+ms.openlocfilehash: 39b6a95a9a5140e1013d3eaa400c968c40b3063c
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94718977"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411304"
 ---
 # <a name="about-using-directquery-in-power-bi"></a>Om brug af DirectQuery i Power BI
 

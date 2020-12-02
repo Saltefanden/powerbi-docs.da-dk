@@ -2,19 +2,19 @@
 title: DirectQuery til SAP HANA i Power BI
 description: Overvejelser ved brug af DirectQuery med SAP HANA
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 04/10/2019
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 4d2c48f39fff9cd55243848b2ee62d05f9d5db00
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: f6cb4fa1ee35754d8ffe468ddb845089f26045a9
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86216398"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411166"
 ---
 # <a name="connect-to-sap-hana-data-sources-by-using-directquery-in-power-bi"></a>Opret forbindelse til SAP HANA-datakilder ved hjælp af DirectQuery i Power BI
 Du kan oprette forbindelse til **SAP HANA**-datakilder direkte ved hjælp af **DirectQuery**. Der er to muligheder, når du opretter forbindelse til SAP HANA:
@@ -89,7 +89,7 @@ Det er en god idé at starte med at præcisere funktionsmåden af en relationel 
 Hvis dataene importeres til Power BI (i modsætning til at bruge DirectQuery), vil følgende ske:
 
 * Dataene importeres på det aggregeringsniveau, der er defineret i den forespørgsel, som er oprettet i **Forespørgselseditor**. Eksempelvis gennemsnitspris efter produkt. Dette giver en tabel med to kolonner, *ProductID* og *AveragePrice*, som kan bruges i visuelle gengivelser.
-* I en visuel gengivelse udføres alle efterfølgende aggregeringer, f.eks. *Sum*, *Average*, *Min* og andre, på de importerede data. Hvis du f.eks. inkluderer *AveragePrice* i en visualisering, bruges funktionen *Sum* som standard, og summen af *AveragePrice* for hvert *ProductID* returneres – som i dette tilfælde vil være 13,67. Det samme gælder for alle alternative aggregeringsfunktioner, som f.eks. *Min*, *Average*osv., der bruges på den visuelle gengivelse. *Average* af *AveragePrice* returnerer f.eks. gennemsnittet 6,66, 4 og 3, som giver 4,56 og ikke gennemsnittet af *Price* for de seks poster i den underliggende tabel, som er 5,17.
+* I en visuel gengivelse udføres alle efterfølgende aggregeringer, f.eks. *Sum*, *Average*, *Min* og andre, på de importerede data. Hvis du f.eks. inkluderer *AveragePrice* i en visualisering, bruges funktionen *Sum* som standard, og summen af *AveragePrice* for hvert *ProductID* returneres – som i dette tilfælde vil være 13,67. Det samme gælder for alle alternative aggregeringsfunktioner, som f.eks. *Min*, *Average* osv., der bruges på den visuelle gengivelse. *Average* af *AveragePrice* returnerer f.eks. gennemsnittet 6,66, 4 og 3, som giver 4,56 og ikke gennemsnittet af *Price* for de seks poster i den underliggende tabel, som er 5,17.
   
 Hvis du bruger **DirectQuery** (via den samme relationelle kilde) i stedet for funktionen Import, gælder den samme semantik, og resultaterne vil være nøjagtigt de samme:  
 

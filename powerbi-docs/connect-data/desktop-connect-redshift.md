@@ -2,19 +2,19 @@
 title: Opret forbindelse til en Amazon Redshift-database i Power BI Desktop
 description: Opret nemt forbindelse til og brug en Amazon Redshift-database i Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 05/08/2019
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b832e96b795b38133939296a15dcab6ece3996be
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: 60bf73e4500785c766a485fffc92a25bd8f2c852
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86214892"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411350"
 ---
 # <a name="connect-to-an-amazon-redshift-database-in-power-bi-desktop"></a>Opret forbindelse til en Amazon Redshift-database i Power BI Desktop
 I **Power BI Desktop** kan du oprette forbindelse til en **Amazon Redshift**-database og bruge de underliggende data på samme måde som enhver anden datakilde i Power BI Desktop.
