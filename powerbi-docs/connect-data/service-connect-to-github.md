@@ -2,18 +2,18 @@
 title: Opret forbindelse til GitHub med Power BI
 description: GitHub til Power BI
 author: paulinbar
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 05/19/2020
-ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 2e482c6efd60352721e1788a7929128af1b8cf89
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: e92afdbad41f212ac93245583430ae44fe0abaf9
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91633624"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96410637"
 ---
 # <a name="connect-to-github-with-power-bi"></a>Opret forbindelse til GitHub med Power BI
 I denne artikel gennemgår vi, hvordan du trækker data fra din GitHub-konto med en skabelonapp i Power BI. Med skabelonappen oprettes et arbejdsområde med et dashboard, et sæt rapporter og et datasæt, der giver dig mulighed for at udforske dine GitHub-data. Med GitHub-appen til Power BI kan du få indsigt i dit GitHub-lager med data om bidrag, problemer, pullanmodninger og aktive brugere.

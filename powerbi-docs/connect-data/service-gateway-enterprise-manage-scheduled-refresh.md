@@ -2,19 +2,19 @@
 title: Administrer din datakilde – Import/planlagt opdatering
 description: Sådan administrerer du en datagateway i det lokale miljø samt de datakilder, der hører til denne gateway. Denne artikel gælder kun for de datakilder, der kan bruges med import/planlagt opdatering.
 author: arthiriyer
+ms.author: arthii
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
 ms.date: 11/17/2020
-ms.author: arthii
 LocalizationGroup: Gateways
-ms.openlocfilehash: bb61f752891205a0e8997592d522efb2022a562b
-ms.sourcegitcommit: 5240990f998851c4854eb565de681099264c5a61
+ms.openlocfilehash: b6f7e3719678d0617f40b9a33f2de20a6b5010c0
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94719023"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96410292"
 ---
 # <a name="manage-your-data-source---importscheduled-refresh"></a>Administrer din datakilde – Import/planlagt opdatering
 

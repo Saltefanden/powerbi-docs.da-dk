@@ -1,19 +1,19 @@
 ---
 title: Opret forbindelse til Microsoft Sustainability Calculator
 description: Microsoft Sustainability Calculator til Power BI
-author: joshthor3222
+author: paulinbar
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 01/06/2020
-ms.author: v-tikid
 LocalizationGroup: Connect to services
-ms.openlocfilehash: cffb7ecc195f5ce803ec2dfc81c794bac75c9448
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 00c8ee0ff77d2253b1240c943261ab053f29765a
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85230021"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96410522"
 ---
 # <a name="connect-the-microsoft-sustainability-calculator"></a>Opret forbindelse til Microsoft Sustainability Calculator
 Få indsigt i kulstofemissionerne i din it-infrastruktur, så du kan træffe flere bæredygtige beregningsbeslutninger

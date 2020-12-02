@@ -1,20 +1,20 @@
 ---
 title: Introduktion til datasæt på tværs af arbejdsområder
 description: Få mere at vide om deling af datasæt og registrering for arbejdsområder. Brugerne kan derefter oprette rapporter baseret på dit datasæt i deres egne arbejdsområder på tværs af organisationen.
-author: maggiesMSFT
+author: paulinbar
+ms.author: painbar
 ms.reviewer: kayu
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 04/30/2020
-ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 23d520815c47c9ff9f1ec045ec67921141e8eb7a
-ms.sourcegitcommit: 4e347efd132b48aaef6c21236c3a21e5fce285cc
+ms.openlocfilehash: 0569bf40728f0c1300ded9c9656cca639105e981
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92681150"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96410430"
 ---
 # <a name="intro-to-datasets-across-workspaces"></a>Introduktion til datasæt på tværs af arbejdsområder
 

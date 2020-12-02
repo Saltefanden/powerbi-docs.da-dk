@@ -2,18 +2,18 @@
 title: Opret forbindelse til den amerikanske sporingsrapport for COVID-19
 description: Sådan henter og installerer du skabelonappen Tilfælde af COVID-19 i USA og opretter forbindelse til dataene.
 author: paulinbar
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 04/05/2020
-ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 01dab6cad6142b455a0d61a0011e43cea6da23e1
-ms.sourcegitcommit: 3ddfd9ffe2ba334a6f9d60f17ac7243059cf945b
+ms.openlocfilehash: 19dc9f5c5adfa5853d98cd6b0ef427c8bccebada
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92349493"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96410614"
 ---
 # <a name="connect-to-the-covid-19-us-tracking-report"></a>Opret forbindelse til den amerikanske sporingsrapport for COVID-19
 I denne artikel får du oplysninger om, hvordan du installerer skabelonappen til den amerikanske sporingsrapport for COVID-19, og hvordan du opretter forbindelse til datakilderne.
@@ -32,7 +32,7 @@ Når du har installeret skabelonappen og oprettet forbindelse til datakilderne, 
 
     [![Amerikansk sporingsrapport for Covid-19 i Appsource](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-appsource-icon.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.covid19ms)
 
-1. Klik på **Installer** , når du bliver bedt om det. Når appen er installeret, kan du se den på siden med dine apps.
+1. Klik på **Installer**, når du bliver bedt om det. Når appen er installeret, kan du se den på siden med dine apps.
 
    ![Amerikansk sporingsrapport for COVID-19 på appsiden](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-apps-page-icon.png)
 
@@ -44,17 +44,17 @@ Når du har installeret skabelonappen og oprettet forbindelse til datakilderne, 
 
    ![Velkomstskærmbilledet for skabelonappen](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-splash-screen.png)
 
-1. Dialogboksen for parametre vises. Der er ingen påkrævede parametre. Klik på **Next** .
+1. Dialogboksen for parametre vises. Der er ingen påkrævede parametre. Klik på **Next**.
 
    ![Skærmbillede af dialogboksen for parameteren i forbindelse med Sporingsrapport for Covid-19 i USA.](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-parameters-dialog.png)
 
 1. Dialogboksen for godkendelsesmetode vises. De anbefalede værdier er udfyldt på forhånd. Undlad at ændre disse, medmindre du har specifik viden om forskellige værdier.
 
-    Klik på **Next** .
+    Klik på **Next**.
 
    ![Skærmbillede af dialogboksen for godkendelse i forbindelse med Sporingsrapport for Covid-19 i USA.](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-authentication-dialog.png)
 
-1. Klik på **Log på** .
+1. Klik på **Log på**.
 
    ![Skærmbillede af dialogboksen for logon i forbindelse med Sporingsrapport for Covid-19 i USA.](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-signin-dialog.png)
  

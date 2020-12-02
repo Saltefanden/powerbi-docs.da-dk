@@ -2,18 +2,18 @@
 title: Opret forbindelse til det områderelaterede dashboard til akutberedskab
 description: Sådan henter og installerer du skabelonappen Dashboard til områderelateret akutberedskab i forbindelse med COVID-19, og sådan opretter du forbindelse til data
 author: paulinbar
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 04/24/2020
-ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: a6cb38d17a84ab41acda96f0564b12188c719254
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: b8cb2be15d084bba3fc2a70152165ce3b2909dab
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860733"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96410545"
 ---
 # <a name="connect-to-the-regional-emergency-response-dashboard"></a>Opret forbindelse til det områderelaterede dashboard til akutberedskab
 Det områderelaterede dashboard til akutberedskab er komponenten til rapportering i [Microsoft Power Platform-løsningen til områderelateret akutberedskab](/powerapps/sample-apps/regional-emergency-response/overview). Administratorer af regionale organisationer kan få vist dashboardet i deres Power BI-lejer, så de hurtigt kan få vist vigtige data og målepunkter, der kan hjælpe dem med at træffe effektive beslutninger.

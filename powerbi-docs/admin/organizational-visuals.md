@@ -5,15 +5,15 @@ author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
-ms.subservice: powerbi-custom-visuals
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 08/11/2020
-ms.openlocfilehash: 4725db331269bc9a2f41abf4c432e0bdf427bae6
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.openlocfilehash: c5b14cb4e979bcd0e69617e6ecf5949856dc9693
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91981682"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96409510"
 ---
 # <a name="manage-power-bi-visuals-admin-settings"></a>Administrationsindstillinger til administration af Power BI-visualiseringer
 

@@ -1,20 +1,20 @@
 ---
 title: Kopiér og indsæt en visualisering i Power BI
 description: Kopiér og indsæt en visualisering i Power BI
-author: msftrien
+author: mihart
+ms.author: mihart
 ms.reviewer: maggie tsang
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 09/18/2020
-ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: fd5fc361431268c37639a336923a4067176f1761
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: fda66910ac073421d4b17706dec70d6aa6e86499
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93411055"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96409878"
 ---
 # <a name="copy-and-paste-a-report-visualization"></a>Kopiér og indsæt en rapportvisualisering
 
@@ -99,11 +99,11 @@ Hvis du ikke vil have, at brugerne skal kunne kopiere en bestemt visualisering, 
 1. Vælg ikonet med malerrullen for at åbne fanen Formatering. 
 
 1. Åbn kortet **Formatering af visualisering**.
-1. Rul ned til **Overskrift i visualisering** , udvid kortet, og slå **ikonet Kopiér** fra.
+1. Rul ned til **Overskrift i visualisering**, udvid kortet, og slå **ikonet Kopiér** fra.
 
     ![malerrulle og ikon for kopiering er valgt](media/power-bi-visualization-copy-paste/power-bi-visual-header.png)
 
-1. Hvis du ikke kan finde indstillingen **Overskrift i visualisering** , skal du slå indstillingen for moderne overskrift i visualisering til under **Rapportindstillinger**. 
+1. Hvis du ikke kan finde indstillingen **Overskrift i visualisering**, skal du slå indstillingen for moderne overskrift i visualisering til under **Rapportindstillinger**. 
 
     ![aktivering af den moderne overskrift i visualisering er valgt](media/power-bi-visualization-copy-paste/power-bi-use-modern.png)
 

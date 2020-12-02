@@ -1,27 +1,27 @@
 ---
 title: Vis de data, der blev brugt til at oprette Power BI-visualiseringen
 description: I dette dokument forklares det, hvordan du får vist de data, der bruges til at oprette en visualisering i Power BI, og hvordan de pågældende data eksporteres til en .csv-fil.
-author: msftrien
+author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 12/4/2019
-ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c3e996da62b71c008f4f7a5929cc8b91d38cc26e
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: 960a3dec2276acba994190e73de671f2b071bc50
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93412780"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96409717"
 ---
 # <a name="display-a-visualizations-underlying-data"></a>Vis en visualiserings underliggende data
 
 [!INCLUDE[consumer-appliesto-yyyn](../includes/consumer-appliesto-nyyn.md)]    
 
 ## <a name="show-data"></a>Vis data
-En Power BI-visualisering er oprettet vha. data fra dine datasæt. Hvis du vil se bag kulisserne, kan du i Power BI *få vist* de data, der bruges til at oprette visualiseringen. Når du vælger **Vis data** , vises dataene under (eller ud for) visualiseringen i Power BI.
+En Power BI-visualisering er oprettet vha. data fra dine datasæt. Hvis du vil se bag kulisserne, kan du i Power BI *få vist* de data, der bruges til at oprette visualiseringen. Når du vælger **Vis data**, vises dataene under (eller ud for) visualiseringen i Power BI.
 
 Du kan også eksportere de data, der bruges til at oprette visualiseringen som en .xlsx- eller .csv-fil og få den vist i Excel. Du kan finde flere oplysninger under [Eksportér data fra Power BI-visualiseringer](power-bi-visualization-export-data.md).
 
@@ -54,7 +54,7 @@ Du kan også eksportere de data, der bruges til at oprette visualiseringen som e
 ## <a name="using-show-records"></a>Brug af Vis poster
 Du kan også fokusere på ét dataelement i en visualisering og analysere de underliggende data. 
 
-1. Hvis du vil bruge **Se poster** , skal du vælge en visualisering for at aktivere den. 
+1. Hvis du vil bruge **Se poster**, skal du vælge en visualisering for at aktivere den. 
 
 2. På Desktop-båndet skal du vælge fanen for **Visualiseringsværktøjer** > **Data/detailudledning** > **Se poster**. 
 

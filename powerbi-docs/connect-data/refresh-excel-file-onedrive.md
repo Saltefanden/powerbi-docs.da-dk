@@ -2,19 +2,19 @@
 title: Opdater et datasæt, der er baseret på en Excel-projektmappe - cloud
 description: Opdater et datasæt baseret på en Excel-arbejdsmappe på OneDrive eller SharePoint Online
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: kayu
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 06/06/2019
-ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: c550cace73cff4b37da4e68693c0b46175156890
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: ed4ba65da4c4b027d5e789844a86e57c2a9c478c
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85222386"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96410798"
 ---
 # <a name="refresh-a-dataset-created-from-an-excel-workbook-on-onedrive-or-sharepoint-online"></a>Opdater et datasæt baseret på en Excel-arbejdsmappe på OneDrive eller SharePoint Online
 

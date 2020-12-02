@@ -2,19 +2,19 @@
 title: Distribuer indhold til eksterne gæstebrugere med Azure AD B2B
 description: Power BI gør det muligt at dele indhold med eksterne gæstebrugere gennem Azure Active Directory Business-to-business (Azure AD B2B).
 author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 07/02/2020
-ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: c78be4dbd32d243dfaa392a1ac5ebd4d46c23d94
-ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
+ms.openlocfilehash: 4831921ad7dff0264d606acfecf2434ddcaee882
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92916170"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96409257"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Distribuer Power BI-indhold til eksterne gæstebrugere med Azure AD B2B
 

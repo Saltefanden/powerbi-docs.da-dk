@@ -1,25 +1,25 @@
 ---
 title: Sikkerhed på rækkeniveau (RLS) med Power BI Desktop
 description: Vejledning til gennemtvingelse af sikkerhed på rækkeniveau (RLS) i dine datamodeller med Power BI Desktop.
-author: peter-myers
+author: paulinbar
+ms.author: painbar
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 06/18/2020
-ms.author: v-pemyer
-ms.openlocfilehash: 644e4499a335f18febadf33c371bd15e01499701
-ms.sourcegitcommit: 3ddfd9ffe2ba334a6f9d60f17ac7243059cf945b
+ms.openlocfilehash: 3c8290391d549f4510b4f6ea6ee0fd596500045e
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92349615"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96410085"
 ---
 # <a name="row-level-security-rls-guidance-in-power-bi-desktop"></a>Sikkerhed på rækkeniveau (RLS) i Power BI Desktop
 
 Denne artikel henvender sig til designere af datamodeller, der arbejder med Power BI Desktop. Den beskriver god designpraksis for at gennemtvingelse af sikkerhed på rækkeniveau (RLS) i dine datamodeller.
 
-Det er vigtigt at forstå RLS-filtres _tabelrækker_ . De kan ikke konfigureres til at begrænse adgangen til modelobjekter, herunder tabeller, kolonner og målinger.
+Det er vigtigt at forstå RLS-filtres _tabelrækker_. De kan ikke konfigureres til at begrænse adgangen til modelobjekter, herunder tabeller, kolonner og målinger.
 
 > [!NOTE]
 > Denne artikel beskriver ikke RLS, eller hvordan du konfigurerer det. Du kan finde flere oplysninger under [Begræns dataadgang med sikkerhed på rækkeniveau (RLS) for Power BI Desktop](../create-reports/desktop-rls.md).
@@ -39,7 +39,7 @@ FALSE()
 ```
 
 > [!NOTE]
-> En regel returnerer ingen tabelrækker, når udtrykket evalueres til **falsk** .
+> En regel returnerer ingen tabelrækker, når udtrykket evalueres til **falsk**.
 
 Men en anden rolle med navnet **Ledere** giver adgang til alle rækker i tabellen **Løn** ved hjælp af følgende regeludtryk:
 
@@ -47,7 +47,7 @@ Men en anden rolle med navnet **Ledere** giver adgang til alle rækker i tabelle
 TRUE()
 ```
 
-Vær forsigtig: Hvis en rapportbruger vil tilknytte begge roller, vil de se alle tabelrækkerne for **løn** .
+Vær forsigtig: Hvis en rapportbruger vil tilknytte begge roller, vil de se alle tabelrækkerne for **løn**.
 
 ## <a name="optimize-rls"></a>Optimer RLS
 
@@ -72,7 +72,7 @@ Medlemmer kan være brugerkonti eller sikkerhedsgrupper. Når det er muligt, anb
 
 ## <a name="validate-roles"></a>Valider roller
 
-Test de enkelte roller for at sikre, at de filtreres korrekt i modellen. Det gøres nemt ved hjælp af kommandoen **Vis som** under båndfanen **Modellering** .
+Test de enkelte roller for at sikre, at de filtreres korrekt i modellen. Det gøres nemt ved hjælp af kommandoen **Vis som** under båndfanen **Modellering**.
 
 Når modellen har dynamiske regler, der bruger DAX-funktionen [USERNAME](/dax/username-function-dax), skal du sørge for at teste, om de forventede værdier er der, og om der er _og uventede_ værdier. Når du integrerer Power BI-indhold – især ved hjælp af scenariet [Appen ejer data](../developer/embedded/embedding.md#embedding-for-your-customers) – kan applogik videresende en hvilken som helst værdi som et effektivt identitetsbrugernavn. Når det er muligt, kan du sikre, at utilsigtede eller skadelige værdier resulterer i filtre, der ikke returnerer nogen rækker.
 
@@ -88,7 +88,7 @@ IF(
 )
 ```
 
-Problemet med dette regeludtryk er, at alle værdier undtagen "Medarbejder" returnerer _alle tabelrækker_ . Derfor returnerer en utilsigtet værdi som "Mdarbejder" ved en fejl alle tabelrækker. Det betyder, at det er mere sikkert at skrive et udtryk, der tester, om alle de forventede værdier findes. I det følgende forbedrede regeludtryk vil en uventet værdi resultere i, at tabellen ikke returnerer nogen rækker.
+Problemet med dette regeludtryk er, at alle værdier undtagen "Medarbejder" returnerer _alle tabelrækker_. Derfor returnerer en utilsigtet værdi som "Mdarbejder" ved en fejl alle tabelrækker. Det betyder, at det er mere sikkert at skrive et udtryk, der tester, om alle de forventede værdier findes. I det følgende forbedrede regeludtryk vil en uventet værdi resultere i, at tabellen ikke returnerer nogen rækker.
 
 ```dax
 IF(
@@ -104,7 +104,7 @@ IF(
 
 ## <a name="design-partial-rls"></a>Design delvis RLS
 
-Nogle gange skal beregninger bruge værdier, der ikke er begrænset af RLS-filtre. En rapport kan f. eks. være nødt til at vise forholdet mellem indtægter for rapportbrugerens salgsområde og _alle indtægter_ .
+Nogle gange skal beregninger bruge værdier, der ikke er begrænset af RLS-filtre. En rapport kan f. eks. være nødt til at vise forholdet mellem indtægter for rapportbrugerens salgsområde og _alle indtægter_.
 
 Det er ikke muligt for et DAX-udtryk at tilsidesætte RLS – faktisk kan det ikke engang bestemmes, at RLS skal gennemtvinges, men du kan bruge en oversigtsmodeltabel. Der sendes en forespørgsel til oversigtsmodeltabellen for at hente indtægten for "alle områder", og den er ikke begrænset af nogen RLS-filtre.
 
@@ -114,12 +114,12 @@ Lad os se, hvordan du kan implementere dette designkrav. Forestil dig først fø
 
 Modellen består af fire tabeller:
 
-- I tabellen **Salesperson** gemmes der én række pr. sælger. Den indeholder kolonnen **EmailAddress** , hvor de enkelte sælgeres mailadresser gemmes. Denne tabel er skjult.
-- I tabellen **Sales** gemmes der én række pr. ordre. Den omfatter målingen **Revenue % All Region** , der er designet til at returnere forholdet mellem indtægten for rapportbrugerens område og indtægten for alle områder.
+- I tabellen **Salesperson** gemmes der én række pr. sælger. Den indeholder kolonnen **EmailAddress**, hvor de enkelte sælgeres mailadresser gemmes. Denne tabel er skjult.
+- I tabellen **Sales** gemmes der én række pr. ordre. Den omfatter målingen **Revenue % All Region**, der er designet til at returnere forholdet mellem indtægten for rapportbrugerens område og indtægten for alle områder.
 - I tabellen **Date** gemmes der én række pr. dato, og der er mulighed for filtrering og gruppering af år og måned.
 - **SalesRevenueSummary** er en beregnet tabel. Det indeholder den samlede indtægt for hver ordredato. Denne tabel er skjult.
 
-Følgende udtryk definerer den beregnede tabel **SalesRevenueSummary** :
+Følgende udtryk definerer den beregnede tabel **SalesRevenueSummary**:
 
 ```dax
 SalesRevenueSummary =
@@ -132,7 +132,7 @@ SUMMARIZECOLUMNS(
 > [!NOTE]
 > En [sammenlægningstabel](../transform-model/desktop-aggregations.md) kan opnå samme designkrav.
 
-Følgende RLS-regel anvendes på tabellen **Salesperson** :
+Følgende RLS-regel anvendes på tabellen **Salesperson**:
 
 ```dax
 [EmailAddress] = USERNAME()
@@ -142,11 +142,11 @@ Hver af de tre modelrelationer er beskrevet i følgende tabel:
 
 |Relation|Beskrivelse|
 |---------|---------|
-|![Afslutning 1 i rutediagrammet.](media/common/icon-01-red-30x30.png)|Der er en mange til mange-relation mellem tabellerne **Salesperson** og **Sales** . RLS-reglen filtrerer kolonnen **EmailAddress** for den skjulte tabel **Salesperson** ved hjælp af DAX-funktionen [USERNAME](/dax/username-function-dax). Værdien for kolonnen **Region** (for rapportbrugeren) overføres til tabellen **Sales** .|
-|![Afslutning 2 i rutediagrammet.](media/common/icon-02-red-30x30.png)|Der er en en til mange-relation mellem tabellerne **Date** og **Sales** .|
-|![Afslutning 3 i rutediagrammet.](media/common/icon-03-red-30x30.png)|Der er en en til mange-relation mellem tabellerne **Date** og **SalesRevenueSummary** .|
+|![Afslutning 1 i rutediagrammet.](media/common/icon-01-red-30x30.png)|Der er en mange til mange-relation mellem tabellerne **Salesperson** og **Sales**. RLS-reglen filtrerer kolonnen **EmailAddress** for den skjulte tabel **Salesperson** ved hjælp af DAX-funktionen [USERNAME](/dax/username-function-dax). Værdien for kolonnen **Region** (for rapportbrugeren) overføres til tabellen **Sales**.|
+|![Afslutning 2 i rutediagrammet.](media/common/icon-02-red-30x30.png)|Der er en en til mange-relation mellem tabellerne **Date** og **Sales**.|
+|![Afslutning 3 i rutediagrammet.](media/common/icon-03-red-30x30.png)|Der er en en til mange-relation mellem tabellerne **Date** og **SalesRevenueSummary**.|
 
-Følgende udtryk definerer målingen **Revenue % All Region** :
+Følgende udtryk definerer målingen **Revenue % All Region**:
 
 ```dax
 Revenue % All Region =
@@ -167,7 +167,7 @@ En virksomhed, der kun har to salgsområder, beslutter f. eks. at publicere et d
 
 Der er flere fordele ved at undgå RLS:
 
-- **Forbedret ydeevne for forespørgsler** : Det kan resultere i en forbedret ydeevne pga. færre filtre.
+- **Forbedret ydeevne for forespørgsler**: Det kan resultere i en forbedret ydeevne pga. færre filtre.
 - **Mindre modeller:** Selvom det resulterer i flere modeller, er de mindre. Mindre modeller kan forbedre svartiden for forespørgsels- og dataopdatering, især hvis hostingkapaciteten oplever, at der er tryk på ressourcerne. Det er også nemmere at holde modelstørrelser under de størrelsesbegrænsninger, der pålægges af din kapacitet. Endelig er det nemmere at afbalancere arbejdsbelastninger på tværs af forskellige kapaciteter, da du kan oprette arbejdsområder på – eller flytte arbejdsområder til – forskellige kapaciteter.
 - **Yderligere funktioner:** Power BI-funktioner, der ikke fungerer sammen med RLS, f. eks [Publicer på internettet](../collaborate-share/service-publish-to-web.md), kan bruges.
 

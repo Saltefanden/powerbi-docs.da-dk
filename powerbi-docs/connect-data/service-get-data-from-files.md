@@ -2,20 +2,20 @@
 title: Hent data fra filer til Power BI
 description: Få mere at vide om, hvordan du kan hente data fra Excel, Power BI Desktop og CSC-filer til Power BI
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 05/08/2019
-ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: b7b886b5e0c21c77e0a5a6aca83fa0ae0751f435
-ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
+ms.openlocfilehash: 7807968bad989895fa60df122c0e31ba4b823aa2
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "86264116"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96410154"
 ---
 # <a name="get-data-from-files-for-power-bi"></a>Hent data fra filer til Power BI
 ![Ikon for Excel, Power BI Desktop og CSV](media/service-get-data-from-files/file_icons.png)

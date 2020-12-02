@@ -2,20 +2,20 @@
 title: Opdater et datasæt fra OneDrive eller SharePoint Online
 description: Opdater et datasæt, der er oprettet ud fra en Power BI Desktop-fil på OneDrive eller SharePoint Online
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: kayu
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 01/15/2020
-ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: e2144cc7460ea2eff84bbcc1e93f02c99d650b35
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: 317b879e8e9d70019aa60b60a6586ac747dcc185
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86216365"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96410821"
 ---
 # <a name="refresh-a-dataset-stored-on-onedrive-or-sharepoint-online"></a>Opdater et datasæt, der er gemt på OneDrive eller SharePoint Online
 Hvis du importerer filer fra OneDrive eller SharePoint Online til Power BI-tjenesten, kan du nemt sikre, at dit arbejde i Power BI Desktop altid er synkroniseret med Power BI-tjenesten.

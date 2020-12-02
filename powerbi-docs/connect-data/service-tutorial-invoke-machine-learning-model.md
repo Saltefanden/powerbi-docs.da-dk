@@ -2,20 +2,20 @@
 title: 'Selvstudium: Aktivér en model af typen Machine Learning Studio (klassisk) i Power BI (prøveversion)'
 description: I dette selvstudium skal du aktivere en model af typen Machine Learning Studio (klassisk) i Power BI.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: SarinaJoan
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.custom: connect-to-services
 ms.topic: tutorial
 ms.date: 03/12/2019
-ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 4124799f15bbccd7c82428d1290ae2ae6420311f
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: c59e0fff95f611fbe84586af64db7a532285d72b
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94397110"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96410200"
 ---
 # <a name="tutorial-invoke-a-machine-learning-studio-classic-model-in-power-bi-preview"></a>Selvstudium: Aktivér en model af typen Machine Learning Studio (klassisk) i Power BI (prøveversion)
 
@@ -31,7 +31,7 @@ I selvstudiet kommer du gennem følgende trin:
 
 ## <a name="create-and-publish-an-azure-ml-model"></a>Opret og publicer en Azure ML-model
 
-Følg instruktionerne i [trin 1 i gennemgangen: Opret et arbejdsområde af typen Machine Learning Studio (klassisk)](/azure/machine-learning/studio/walkthrough-1-create-ml-workspace) for at oprette et **Machine Learning** -arbejdsområde.
+Følg instruktionerne i [trin 1 i gennemgangen: Opret et arbejdsområde af typen Machine Learning Studio (klassisk)](/azure/machine-learning/studio/walkthrough-1-create-ml-workspace) for at oprette et **Machine Learning**-arbejdsområde.
 
 Du kan bruge disse trin, hvis du allerede har en Azure ML-model eller et datasæt. Hvis du ikke har en publiceret model, kan du oprette en model på få minutter ved at referere til [Opret dit første datavidenskabseksperiment i Azure Machine Learning Studio (klassisk)](/azure/machine-learning/studio/create-experiment), hvorved en Azure Machine Learning-model konfigureres til forudsigelse af bilpriser.
 
@@ -43,11 +43,11 @@ Hvis du vil have adgang til en Azure Machine Learning-model fra Power BI, skal d
 
 Følgende trin forudsætter, at du er medadministrator af Azure-abonnementet og den ressourcegruppe, som modellen blev publiceret i.
 
-Log på [Azure Portal](https://portal.azure.com), og naviger til siden **Abonnementer** , som du finder ved hjælp af listen **Alle tjenester** i menuen i navigationsruden.
+Log på [Azure Portal](https://portal.azure.com), og naviger til siden **Abonnementer**, som du finder ved hjælp af listen **Alle tjenester** i menuen i navigationsruden.
 
 ![Skærmbillede, der viser Azure Portal, hvor Abonnementer er valgt.](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_01.png)
 
-Vælg det Azure-abonnement, som du brugte til publicering af modellen, og vælg **Access Control (IAM)** . Vælg derefter **Tilføj rolletildeling** , rollen **Læser** , og vælg Power BI-brugeren. Vælg **Gem** , når du er færdig. På følgende billede vises disse valg.
+Vælg det Azure-abonnement, som du brugte til publicering af modellen, og vælg **Access Control (IAM)** . Vælg derefter **Tilføj rolletildeling**, rollen **Læser**, og vælg Power BI-brugeren. Vælg **Gem**, når du er færdig. På følgende billede vises disse valg.
 
 ![Access Control i Azure Portal](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_02.png)
 
@@ -79,7 +79,7 @@ Vælg fanen **Dataflow (prøveversion)** , vælg knappen **Opret** øverst til h
 
 ![Dataflow (prøveversion)](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_05.png)
 
-Vælg **Tilføj nye enheder** , hvilket starter **Power-forespørgselseditor** i browseren.
+Vælg **Tilføj nye enheder**, hvilket starter **Power-forespørgselseditor** i browseren.
 
 ![Tilføj ny enhed](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_06.png)
 
@@ -87,28 +87,28 @@ Vælg **Tekst/CSV-fil** som en datakilde.
 
 ![Vælg datakilde](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_07.png)
 
-Du bliver bedt om at oprette forbindelse til en datakilde på det næste skærmbillede. Indsæt linket til de data, du brugte til at oprette din Azure ML-model. Hvis du har brugt dataene om _bilpriser_ , kan du indsætte følgende link i feltet **Filsti eller URL-adresse** og derefter vælge **Næste**.
+Du bliver bedt om at oprette forbindelse til en datakilde på det næste skærmbillede. Indsæt linket til de data, du brugte til at oprette din Azure ML-model. Hvis du har brugt dataene om _bilpriser_, kan du indsætte følgende link i feltet **Filsti eller URL-adresse** og derefter vælge **Næste**.
 
 `https://raw.githubusercontent.com/MicrosoftLearning/Principles-of-Machine-Learning-Python/master/Module7/Automobile%20price%20data%20_Raw_.csv`
 
 ![Opret forbindelse til datakilde](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_08.png)
 
-I Power-Forespørgselseditor vises et eksempel på dataene fra CSV-filen. Vælg **Transformér tabel** på kommandobåndet, og vælg derefter **Brug den første række som overskrifter**.  Herefter føjes forespørgselstrinnet _Hævede overskrifter_ til ruden **Anvendte trin** til højre. Du kan også omdøbe forespørgslen til et mere brugervenligt navn, f.eks _Bilpriser_ , ved hjælp af ruden til højre.
+I Power-Forespørgselseditor vises et eksempel på dataene fra CSV-filen. Vælg **Transformér tabel** på kommandobåndet, og vælg derefter **Brug den første række som overskrifter**.  Herefter føjes forespørgselstrinnet _Hævede overskrifter_ til ruden **Anvendte trin** til højre. Du kan også omdøbe forespørgslen til et mere brugervenligt navn, f.eks _Bilpriser_, ved hjælp af ruden til højre.
 
 ![Skærmbillede af Power Query-editor, der viser et eksempel på dataene.](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_09.png)
 
-Vores kildedatasæt har ukendte værdier, der er angivet til "?".  Hvis du vil rydde disse værdier, kan du for nemheds skyld erstatte "?" med "0" for at undgå fejl på et senere tidspunkt.  Det gør du ved at vælge kolonnerne *normalized-losses* , *bore* , *stroke* , *compression-ratio* , *horsepower* , *peak-rpm* og *price* ved at klikke på kolonnernes navn i kolonneoverskrifterne, og derefter klikke på "Transformér kolonner" og vælge "Erstat værdier".  Erstat "?" med "0".
+Vores kildedatasæt har ukendte værdier, der er angivet til "?".  Hvis du vil rydde disse værdier, kan du for nemheds skyld erstatte "?" med "0" for at undgå fejl på et senere tidspunkt.  Det gør du ved at vælge kolonnerne *normalized-losses*, *bore*, *stroke*, *compression-ratio*, *horsepower*, *peak-rpm* og *price* ved at klikke på kolonnernes navn i kolonneoverskrifterne, og derefter klikke på "Transformér kolonner" og vælge "Erstat værdier".  Erstat "?" med "0".
 
 ![Erstat værdier](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_10.png)
 
 Alle kolonnerne i tabellen fra en tekst-/CSV-kilde behandles som tekstkolonner.  Vi skal nu ændre de numeriske kolonner til deres korrekte datatyper.  Du kan gøre dette i Power-forespørgslen ved at klikke på datatypesymbolet i kolonneoverskriften.  Sørg for, at kolonnerne får typerne nedenfor:
 
-- **Heltal** : symboling, normalized-losses, curb-weight, engine-size, horsepower, peak-rpm, city-mpg, highway-mpg, price
-- **Decimaltal** :  wheel-base, length, width, height, bore, stroke, compression-ratio
+- **Heltal**: symboling, normalized-losses, curb-weight, engine-size, horsepower, peak-rpm, city-mpg, highway-mpg, price
+- **Decimaltal**:  wheel-base, length, width, height, bore, stroke, compression-ratio
 
 ![Rediger kolonner](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_11.png)
 
-Vælg **Udført** for at lukke Power-forespørgselseditor. Du får nu vist listen over enheder med de _bilprisdata_ , som vi har tilføjet. Vælg **Gem** i øverste højre hjørne, angiv et navn til dataflowet, og vælg derefter **Gem**.
+Vælg **Udført** for at lukke Power-forespørgselseditor. Du får nu vist listen over enheder med de _bilprisdata_, som vi har tilføjet. Vælg **Gem** i øverste højre hjørne, angiv et navn til dataflowet, og vælg derefter **Gem**.
 
 ![Gem dataflow](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_12.png)
 
@@ -126,17 +126,17 @@ Du kan også opdatere dataflowet ved hjælp af kommandoen **Handlinger**. I data
 
 ## <a name="apply-insights-from-your-azure-ml-model"></a>Anvend indsigt fra din Azure ML-model
 
-Hvis du vil have adgang til Azure ML-modellen for _Forudsigelse af bilpriser_ , kan du redigere enheden _Bilpriser_ , som den estimerede pris skal føjes til.
+Hvis du vil have adgang til Azure ML-modellen for _Forudsigelse af bilpriser_, kan du redigere enheden _Bilpriser_, som den estimerede pris skal føjes til.
 
 ![Rediger enhed](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_15.png)
 
-Når du vælger ikonet **Rediger** , åbnes Power-forespørgselseditoren for enhederne i dit dataflow.
+Når du vælger ikonet **Rediger**, åbnes Power-forespørgselseditoren for enhederne i dit dataflow.
 
 ![Rediger](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_16.png)
 
 Vælg knappen **AI-indsigt** på båndet, og vælg derefter mappen _Azure Machine Learning-modeller_ i navigationsruden.
 
-De Azure ML-modeller, som du har fået adgang til, er angivet som Power-forespørgselsfunktioner med præfikset *AzureML*.  Når du klikker på den funktion, der svarer til modellen _AutomobilePricePrediction_ , vises parametrene for modellens webtjeneste som funktionsparametre.
+De Azure ML-modeller, som du har fået adgang til, er angivet som Power-forespørgselsfunktioner med præfikset *AzureML*.  Når du klikker på den funktion, der svarer til modellen _AutomobilePricePrediction_, vises parametrene for modellens webtjeneste som funktionsparametre.
 
 Du aktiverer en Azure ML-model ved at angive en af den valgte enheds kolonner som input på rullelisten. Du kan også angive en konstant værdi, der skal bruges som input, ved at slå kolonneikonet til venstre for inputdialogboksen til og fra. Når et kolonnenavn svarer til et af navnene på funktionsparametrene, foreslås den pågældende kolonne automatisk som input.  Hvis navnet på en kolonne ikke har noget match, kan du vælge det på rullelisten.
 
@@ -156,7 +156,7 @@ Da vores tabel stemmer overens med det oprindelige datasæt, der blev brugt til 
 
 Vælg **Aktivér** for at få vist Azure ML-modellens output som en ny kolonne i enhedstabellen. Du får også vist modelaktiveringen som et anvendt trin for forespørgslen.
 
-Outputtet fra modellen vises som en post i outputkolonnen. Du kan udvide kolonnen for at oprette individuelle outputparametre i separate kolonner. I dette tilfælde er vi kun interesseret i _Scored Labels_ , der indeholder den estimerede pris på bilen.  Så vi fjerner markeringen af resten og vælger **OK**.
+Outputtet fra modellen vises som en post i outputkolonnen. Du kan udvide kolonnen for at oprette individuelle outputparametre i separate kolonner. I dette tilfælde er vi kun interesseret i _Scored Labels_, der indeholder den estimerede pris på bilen.  Så vi fjerner markeringen af resten og vælger **OK**.
 
 ![Modeloutput](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_18.png)
 

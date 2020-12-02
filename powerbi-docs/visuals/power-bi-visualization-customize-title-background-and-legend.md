@@ -1,21 +1,21 @@
 ---
 title: Introduktion til formatering af Power BI-visualiseringer
 description: Tilpas visualiseringens titel, baggrund og forklaring
-author: msftrien
+author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 03/06/2020
-ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0d19d7366dce571e2d89ba5cbc6ffbe936ec50e2
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: c974161e4cc7d52bf412ea14800bf720a297cd25
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93410986"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96409809"
 ---
 # <a name="customize-visualization-titles-backgrounds-and-legends"></a>Tilpas visualiseringernes titler, baggrunde og forklaringer
 
@@ -61,7 +61,7 @@ Hvis du vil følge med, skal du logge på Power BI Desktop og åbne rapporten [R
 
 1. Ret **Skriftfarve** til hvid og **Baggrundsfarve** til blå.    
 
-    a. Vælg rullelisten, og vælg en farve fra **Temafarver** , **Seneste farver** eller **Brugerdefineret farve**.
+    a. Vælg rullelisten, og vælg en farve fra **Temafarver**, **Seneste farver** eller **Brugerdefineret farve**.
     
     ![Skærmbillede af indstillinger for skriftfarve og baggrundsfarve.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-color.png)
 
@@ -104,11 +104,11 @@ Hvis du vil genindlæse alle ændringerne, skal du vælge **Vend tilbage til sta
 
 ## <a name="customize-visualization-legends"></a>Tilpas forklaringer i en visualisering
 
-1. Åbn rapportsiden **Overview** , og vælg diagrammet **Total Sales Variance by FiscalMonth and District Manager**.
+1. Åbn rapportsiden **Overview**, og vælg diagrammet **Total Sales Variance by FiscalMonth and District Manager**.
 
 1. Under fanen **Visualiseringer** skal du vælge malerrulleikonet for at åbne ruden Formatering.
 
-1. Udvid indstillingerne under **Forklaring** :
+1. Udvid indstillingerne under **Forklaring**:
 
     ![Skærmbillede af kortet Forklaring.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-legends.png)
 

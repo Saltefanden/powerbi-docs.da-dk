@@ -2,16 +2,16 @@
 title: Læringskatalog til dataanalytikere
 description: Find alle træningsmuligheder til Power BI for dataanalytikere – lige fra de mest basale til de mest avancerede
 author: margoc
+ms.author: margoc
 ms.prod: powerbi
 ms.topic: article
 ms.date: 03/25/2020
-ms.author: margoc
-ms.openlocfilehash: 711cb902eed3eee22eb117f9c2fe1f772291671b
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: c7d0d57fe0c4184a529a6c8e30b0bcb9b187059e
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91746556"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96410062"
 ---
 # <a name="data-analyst-learning-catalog"></a>Læringskatalog til dataanalytikere
 
