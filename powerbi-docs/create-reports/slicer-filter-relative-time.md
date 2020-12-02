@@ -2,19 +2,19 @@
 title: Brug et udsnit eller filter for relativ tid i Power BI
 description: Få mere at vide om, hvordan du bruger et udsnit eller et filter til at begrænse relative tidsintervaller i Power BI.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 07/06/2020
-ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: a8268af76472c91474f2f67bc256fcc0ddcc9768
-ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
+ms.openlocfilehash: 4b12760584df2471bf02029be0fb428d1ab21e4c
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94669218"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96387545"
 ---
 # <a name="use-a-relative-time-slicer-and-filter-in-power-bi"></a>Brug et udsnit og filter for relativ tid i Power BI
 

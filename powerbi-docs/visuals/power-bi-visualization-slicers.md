@@ -2,19 +2,19 @@
 title: Udsnitsværktøjer i Power BI
 description: Et Power BI-udsnit er en alternativ metode til filtrering, som begrænser den del af datasættet, der vises i andre visualiseringer i en rapport, du designer.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 07/07/2020
-ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 75ecc28c703b083355646e1caa5a457cf60cc341
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: d3e0c75a50fb103414a874c4455de775bc20e1a9
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93412757"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96387568"
 ---
 # <a name="slicers-in-power-bi"></a>Udsnitsværktøjer i Power BI
 
@@ -53,7 +53,7 @@ Dette udsnitsværktøj filtrerer data efter distriktschef. Hvis du vil følge me
 
 1. Åbn Power BI Desktop, og vælg **Filer** > **Åbn**.
    
-1. Gå til filen **Retail Analysis sample PBIX.pbix** , og vælg derefter **Åbn**.
+1. Gå til filen **Retail Analysis sample PBIX.pbix**, og vælg derefter **Åbn**.
 
 1. I ruden til venstre skal du vælge ikonet **Rapport** ![Skærmbillede af rapportikonet.](media/power-bi-visualization-kpi/power-bi-report-view.png) for at åbne filen i rapportvisning.
 
@@ -83,15 +83,15 @@ Som standard påvirker udsnit på rapportsider alle andre visualiseringer på de
 
 Brug visuelle interaktioner til at forhindre, at nogle visualiseringer på siden bliver påvirket. På siden **Oversigt** viser diagrammet **Total Sales Variance by FiscalMonth and District Manager** de overordnede sammenlignelige data for distriktschefer efter måned, som du vil vise hele tiden. Brug visuelle interaktioner for at forhindre, at valg i udsnit filtrerer dette diagram. 
 
-1. Gå til siden **Oversigt** i rapporten, og vælg derefter det **DM** -udsnit, du har oprettet tidligere.
+1. Gå til siden **Oversigt** i rapporten, og vælg derefter det **DM**-udsnit, du har oprettet tidligere.
 
 1. I Power BI Desktop-menuen skal du vælge **Formatér** under **Visuelle værktøjer** og derefter vælge **Rediger interaktioner**.
    
-   Kontrolelementer til filtrering ![Skærmbillede af kontrolelementer til filtrering](media/power-bi-visualization-slicers/filter-controls.png), der hver især har et **filter** og indstillingen **Ingen** , vises over alle de visuelle elementer på siden. Indstillingen **Filter** er valgt på forhånd for alle kontrolelementerne.
+   Kontrolelementer til filtrering ![Skærmbillede af kontrolelementer til filtrering](media/power-bi-visualization-slicers/filter-controls.png), der hver især har et **filter** og indstillingen **Ingen**, vises over alle de visuelle elementer på siden. Indstillingen **Filter** er valgt på forhånd for alle kontrolelementerne.
    
-1. Vælg indstillingen **Ingen** i kontrolelementet til filtrering over diagrammet **Total Sales Variance by FiscalMonth and District Manager** for at forhindre, at **DM** -udsnittet filtrerer diagrammet. 
+1. Vælg indstillingen **Ingen** i kontrolelementet til filtrering over diagrammet **Total Sales Variance by FiscalMonth and District Manager** for at forhindre, at **DM**-udsnittet filtrerer diagrammet. 
 
-1. Vælg udsnittet **OpenDate** , og vælg derefter **Ingen** over diagrammet **Total Sales Variance by FiscalMonth and District Manager** for at forhindre, at dette udsnit filtrerer diagrammet. 
+1. Vælg udsnittet **OpenDate**, og vælg derefter **Ingen** over diagrammet **Total Sales Variance by FiscalMonth and District Manager** for at forhindre, at dette udsnit filtrerer diagrammet. 
 
    Når du vælger navne og datoområder i udsnittet, vil diagrammet **Total Sales Variance by FiscalMonth and District Manager** nu forblive uændret.
 
@@ -100,7 +100,7 @@ Du kan finde flere oplysninger om redigering af interaktioner under [Rediger, hv
 ## <a name="sync-and-use-slicers-on-other-pages"></a>Synkroniser og brug udsnit på andre sider
 Du kan synkronisere et udsnitsværktøj og bruge det på enhver side eller alle sider i en rapport. 
 
-I den aktuelle rapport på siden **Månedligt salg for distrikt** er der et udsnit af typen **District Manager** , men hvad nu hvis vi også gerne vil have dette udsnit på siden **Nye butikker** ? Siden **Nye butikker** har et udsnit, men det indeholder kun oplysninger om **Butiksnavn**. Ved hjælp af ruden **Synkroniser udsnit** kan du synkronisere udsnittet **District Manager** med disse sider, så markeringer af udsnit på en hvilken som helst side påvirker visualiseringerne på alle tre sider.
+I den aktuelle rapport på siden **Månedligt salg for distrikt** er der et udsnit af typen **District Manager**, men hvad nu hvis vi også gerne vil have dette udsnit på siden **Nye butikker**? Siden **Nye butikker** har et udsnit, men det indeholder kun oplysninger om **Butiksnavn**. Ved hjælp af ruden **Synkroniser udsnit** kan du synkronisere udsnittet **District Manager** med disse sider, så markeringer af udsnit på en hvilken som helst side påvirker visualiseringerne på alle tre sider.
 
 1. I menuen **Vis** i Power BI Desktop skal du vælge **Synkroniser udsnit**.
 
@@ -112,11 +112,11 @@ I den aktuelle rapport på siden **Månedligt salg for distrikt** er der et udsn
 
 1. På siden **Månedligt salg for distrikt** i rapporten skal du vælge udsnittet **District Manager**. 
 
-    Da du allerede har oprettet udsnittet **District Manager** ( **DM** ) på siden **Oversigt** , vises ruden **Synkroniser udsnit** på følgende måde:
+    Da du allerede har oprettet udsnittet **District Manager** (**DM**) på siden **Oversigt**, vises ruden **Synkroniser udsnit** på følgende måde:
     
     ![Skærmbillede af udsnittet Synkroniser månedligt salg pr. distrikt.](media/power-bi-visualization-slicers/9-sync-slicers.png)
     
-1. I kolonnen **Synkroniser** i ruden **Synkroniser udsnit** skal du vælge siderne **Oversigt** , **Månedligt salg pr. distrikt** og **Nye butikker**. 
+1. I kolonnen **Synkroniser** i ruden **Synkroniser udsnit** skal du vælge siderne **Oversigt**, **Månedligt salg pr. distrikt** og **Nye butikker**. 
 
     Dette valg medfører, at udsnittet **Månedligt salg pr. distrikt** synkroniseres på tværs af disse tre sider. 
     
@@ -135,12 +135,12 @@ I den aktuelle rapport på siden **Månedligt salg for distrikt** er der et udsn
     >Hvis du synkroniserer et udsnit med en side, men ikke gør det synligt på siden, vil udsnitsvalgene på de andre sider stadig filtrere dataene på siden.
  
 ## <a name="filtering-slicers"></a>Filtrering af udsnitsværktøjer
-Du kan anvende filtre på visualiseringsniveau på udsnit for at reducere listen over værdier, der vises i udsnittet. Du kan f.eks. filtrere tomme værdier fra et listeudsnit eller filtrere bestemte datoer fra et intervaludsnit. Når du gør det, påvirker det kun *de værdier, der vises i udsnittet* og ikke *det filter, udsnittet anvender for andre visualiseringer* , når du foretager et valg. Lad os f.eks. sige, at du anvender et filter på et intervaludsnit, så det kun er bestemte datoer, der vises. Valget for udsnittet viser kun de første og sidste datoer fra området, men du vil stadig kunne se andre datoer i dine andre visualiseringer. Når du har ændret det valgte område i udsnittet, kan du se, at de andre visualiseringer opdateres. Hvis du rydder udsnittet, vises alle datoer igen.
+Du kan anvende filtre på visualiseringsniveau på udsnit for at reducere listen over værdier, der vises i udsnittet. Du kan f.eks. filtrere tomme værdier fra et listeudsnit eller filtrere bestemte datoer fra et intervaludsnit. Når du gør det, påvirker det kun *de værdier, der vises i udsnittet* og ikke *det filter, udsnittet anvender for andre visualiseringer*, når du foretager et valg. Lad os f.eks. sige, at du anvender et filter på et intervaludsnit, så det kun er bestemte datoer, der vises. Valget for udsnittet viser kun de første og sidste datoer fra området, men du vil stadig kunne se andre datoer i dine andre visualiseringer. Når du har ændret det valgte område i udsnittet, kan du se, at de andre visualiseringer opdateres. Hvis du rydder udsnittet, vises alle datoer igen.
 
 Se [Filtertyper](../create-reports/power-bi-report-filter-types.md) for at få flere oplysninger om filtre på visualiseringsniveau.
 
 ## <a name="format-slicers"></a>Formatér udsnit
-Der findes forskellige indstillinger til formatering afhængigt af udsnitstypen. Hvis du bruger retningen **Vandret** , layoutet **Dynamisk** og **elementfarver** , kan du oprette knapper eller felter i stedet for almindelige listeelementer og få elementer i udsnit til at tilpasse størrelse, så de passer til forskellige skærmstørrelser og layout.  
+Der findes forskellige indstillinger til formatering afhængigt af udsnitstypen. Hvis du bruger retningen **Vandret**, layoutet **Dynamisk** og **elementfarver**, kan du oprette knapper eller felter i stedet for almindelige listeelementer og få elementer i udsnit til at tilpasse størrelse, så de passer til forskellige skærmstørrelser og layout.  
 
 1. Med udsnittet **District Manager** valgt på en af siderne skal du vælge ikonet **Formatér** i ruden **Visualiseringer** ![Skærmbillede af ikonet Formatér.](media/power-bi-visualization-slicers/power-bi-paintroller.png) for at få vist kontrolelementerne til formatering. 
     
@@ -149,7 +149,7 @@ Der findes forskellige indstillinger til formatering afhængigt af udsnitstypen.
 1. Klik på pilene i rullelisten ud for hver kategori for at få vist og redigere indstillingerne. 
 
 ### <a name="general-options"></a>Generelle indstillinger
-1. Under **Format** skal du vælge **Generelt** , vælge en rød farve under **Konturfarve** og derefter ændre **Konturtykkelse** til *2*. 
+1. Under **Format** skal du vælge **Generelt**, vælge en rød farve under **Konturfarve** og derefter ændre **Konturtykkelse** til *2*. 
 
     Denne indstilling ændrer konturens farve og tykkelse eller understregning for overskrifter og elementer.
 
@@ -166,7 +166,7 @@ Der findes forskellige indstillinger til formatering afhængigt af udsnitstypen.
     >[!NOTE]
     >Ændringer af dynamisk layout kan tilsidesætte særlig formatering af overskrifter og elementer, som du har angivet. 
     
-1. Under **X-placering** , **Y-placering** , **Bredde** og **Højde** skal du angive skyderens placering og størrelse med tal eller flytte og tilpasse størrelsen på udsnittet direkte på lærredet. 
+1. Under **X-placering**, **Y-placering**, **Bredde** og **Højde** skal du angive skyderens placering og størrelse med tal eller flytte og tilpasse størrelsen på udsnittet direkte på lærredet. 
 
     Afprøv forskellige størrelser på og placering af elementer, og se, hvordan dynamisk formatering ændres derefter. Disse indstillinger er kun tilgængelige, når du vælger vandrette retninger. 
 
@@ -175,7 +175,7 @@ Der findes forskellige indstillinger til formatering afhængigt af udsnitstypen.
 Du kan finde flere oplysninger om vandrette retninger og dynamisk layout under [Opret et dynamisk udsnitsværktøj, som du kan ændre størrelsen på i Power BI](../create-reports/power-bi-slicer-filter-responsive.md).
 
 ### <a name="selection-controls-options-list-slicers-only"></a>Indstillinger for Kontrolelementer til markering (angiv kun udsnit)
-1. Under **Kontrolelementer til markering** skal du slå **Vis indstillingen "Vælg alle"** **til** for at føje et **Vælg alle** -element til udsnittet. 
+1. Under **Kontrolelementer til markering** skal du slå **Vis indstillingen "Vælg alle"** **til** for at føje et **Vælg alle**-element til udsnittet. 
 
     **Vis indstillingen "Vælg alle"** er som standard slået **fra**. Når denne indstilling er aktiveret, vælges eller fravælges alle elementer, når den slås til eller fra. Hvis du vælger alle elementer og fravælger et element, fravælges det og gør det muligt at anvende et filter af typen *is-not*.
     
@@ -189,10 +189,10 @@ Du kan finde flere oplysninger om vandrette retninger og dynamisk layout under [
 **Titel** er som standard slået **til**. Dette valg viser datafeltets navn øverst i udsnittet. Du kan også redigere titlen, hvilket især er nyttigt til hierarki-udsnitsværktøjer. Se [Rediger titlen](../create-reports/power-bi-slicer-hierarchy-multiple-fields.md#change-the-title) i artiklen "Føj flere felter til et hierarki-udsnitsværktøj" for at få flere oplysninger.
 
 - I denne artikel skal du formatere titelteksten på følgende måde: 
-   - **Skriftfarve** : rød
-   - **Tekststørrelse** : **14 pt**
-   - **Justering** : **Centrer**
-   - **Skrifttypefamilie** : **Arial Black**
+   - **Skriftfarve**: rød
+   - **Tekststørrelse**: **14 pt**
+   - **Justering**: **Centrer**
+   - **Skrifttypefamilie**: **Arial Black**
 
 
 ### <a name="items-options"></a>Indstillinger for elementer
@@ -200,10 +200,10 @@ Du kan finde flere oplysninger om vandrette retninger og dynamisk layout under [
 Indstillinger for elementer er kun tilgængelige for listeudsnit.
 
 1. Formater indstillingerne **Elementer** på følgende måde:
-    - **Skriftfarve** : sort
-    - **Baggrund** : lys rød
-    - **Tekststørrelse** : **10 pt**
-    - **Skrifttypefamilie** : **Arial**
+    - **Skriftfarve**: sort
+    - **Baggrund**: lys rød
+    - **Tekststørrelse**: **10 pt**
+    - **Skrifttypefamilie**: **Arial**
  
 1. Vælg **Ramme** under **Kontur** for at tegne en kant omkring hvert element med den størrelse og farve, som du har angivet under **Generelle indstillinger**. 
     
@@ -217,16 +217,16 @@ Indstillinger for elementer er kun tilgængelige for listeudsnit.
 
 Indstillingerne for dato/numerisk input og skyder er kun tilgængelige for udsnit med intervalskyder.
 
-- For listeudsnit er indstillingerne for dato/numerisk input de samme som indstillingerne for **Element** , men der er ingen indstillinger for kontur eller understregning.
+- For listeudsnit er indstillingerne for dato/numerisk input de samme som indstillingerne for **Element**, men der er ingen indstillinger for kontur eller understregning.
 - Med indstillingerne for **skyderen** kan du angive farven på intervalskyderen, eller du kan slå skyderen **fra** og kun bruge numerisk input.
 
 ### <a name="other-formatting-options"></a>Andre formateringsindstillinger
 De andre formateringsindstillinger er som standard slået **fra**. Slå disse indstillinger **til** for at styre dem: 
 
-- **Baggrund** : Føj en baggrundsfarve til udsnittet, og angiv gennemsigtigheden.
-- **Lås højde-bredde-forhold** : Bevar den relative højde og bredde på udsnittet, hvis størrelsen ændres.
-- **Kant** : Tilføjer en kant rundt om udsnittet og angiver farven på den. Denne udsnitskant er særskilt og ikke påvirket af indstillingerne under **Generelt**.
-- **Skygge** : Føj en baggrundsskygge til skyderen.
+- **Baggrund**: Føj en baggrundsfarve til udsnittet, og angiv gennemsigtigheden.
+- **Lås højde-bredde-forhold**: Bevar den relative højde og bredde på udsnittet, hvis størrelsen ændres.
+- **Kant**: Tilføjer en kant rundt om udsnittet og angiver farven på den. Denne udsnitskant er særskilt og ikke påvirket af indstillingerne under **Generelt**.
+- **Skygge**: Føj en baggrundsskygge til skyderen.
 
 ## <a name="next-steps"></a>Næste trin
 Du kan få flere oplysninger om udsnitsværktøjer i følgende artikler:

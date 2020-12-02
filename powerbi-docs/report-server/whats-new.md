@@ -9,11 +9,11 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 10/30/2020
 ms.openlocfilehash: 14b629eed17eca2d1e016913dcfffb5858d4ddc3
-ms.sourcegitcommit: 8861dac6724202a5b3be456a6aff8f3584e0cccf
+ms.sourcegitcommit: 9d033abd9c01a01bba132972497dda428d7d5c12
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93132407"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96120750"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nyheder i Power BI-rapportserver
 
@@ -37,7 +37,7 @@ Det moderne bånd fås nu i Power BI Desktop optimeret til Power BI-rapportserve
 
 **Hierarki-udsnitsværktøjer**
 
-Du kan oprette det, der kaldes et *hierarki-udsnitsværktøj* , til at filtrere flere relaterede felter i et enkelt udsnit. Nu hvor det er offentligt tilgængelig, er der blevet tilføjet yderligere funktioner:
+Du kan oprette det, der kaldes et *hierarki-udsnitsværktøj*, til at filtrere flere relaterede felter i et enkelt udsnit. Nu hvor det er offentligt tilgængelig, er der blevet tilføjet yderligere funktioner:
 
 - Nye indstillinger for ikonerne for udvid/skjul.
 - Ikonerne skaleres nu med skriftstørrelsen.
@@ -473,7 +473,7 @@ Vi har tilføjet understøttelse af visualiseringer, der er tillid til, i Power 
 
 #### <a name="improved-security-features"></a>Forbedrede sikkerhedsfunktioner
 
-**RestrictedResourceMimeTypeForUpload** , som administratorer kan bruge til at angive en kommasepareret liste over forbudte MIME-typer, f.eks. text/html.
+**RestrictedResourceMimeTypeForUpload**, som administratorer kan bruge til at angive en kommasepareret liste over forbudte MIME-typer, f.eks. text/html.
 
 ## <a name="january-2019"></a>Januar 2019
 
@@ -786,7 +786,7 @@ Power BI-rapportserver understøtter nu de nye Power BI-tabel- og matrixvisuals.
 - Prøveversion af Power BI-rapportserver gjort tilgængelig
 - Mulighed for at publicere Power BI-rapporter i det lokale miljø
   - understøttelse af Power BI-visuals
-  - Kun understøttelse af * *Analysis Services-liveforbindelser* , men med flere datakilder på vej.
+  - Kun understøttelse af **Analysis Services-liveforbindelser*, men med flere datakilder på vej.
   - Appen Power BI - Mobil er blevet opdateret til at vise Power BI-rapporter, der hostes i Power BI-rapportserver
 - Forbedret samarbejde i rapporter med kommentarer
 

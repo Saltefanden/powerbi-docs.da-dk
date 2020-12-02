@@ -1,21 +1,21 @@
 ---
 title: Rediger, hvordan visualiseringer interagerer i en rapport
 description: Dokumentation til, hvordan visuelle interaktioner indstilles i en rapport i Microsoft Power BI-tjenesten og i en Power BI Desktop-rapport.
-author: mihart
+author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 featuredvideoid: N_xYsCbyHPw
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 02/04/2020
-ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 3646518cdf9575d73ccfc39a859b9c7211db8678
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 0070e8e997178a07c93bef4b80403f55aff9ae1d
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85218671"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96387614"
 ---
 # <a name="change-how-visuals-interact-in-a-power-bi-report"></a>Rediger, hvordan visualiseringer interagerer i en Power BI-rapport
 Hvis du har redigeringsrettigheder til en rapport, kan du bruge **Visuelle interaktioner** til at ændre, hvor visualiseringer på en rapportside påvirker hinanden. 

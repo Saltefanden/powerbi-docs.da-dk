@@ -2,19 +2,19 @@
 title: Tip til forbedring af analyse med former, billeder og ikoner i Power BI-rapporter
 description: Fire tip til, hvordan du forbedrer analyser med former, billeder og ikoner i Power BI-rapportvisuals, i Power BI Desktop eller i Power BI-tjenesten.
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 featuredvideoid: -gLwXonWNsI
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 03/25/2020
-ms.author: v-pemyer
-ms.openlocfilehash: 863f5f55eb4fb5d2427585bd2d792097ac1c6630
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: c9587fdbf7154bf61f174d1d193b93ca7f991ae0
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83278922"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96386011"
 ---
 # <a name="tips-to-improve-analysis-with-shapes-images-and-icons-in-power-bi-reports"></a>Tip til forbedring af analyse med former, billeder og ikoner i Power BI-rapporter
 

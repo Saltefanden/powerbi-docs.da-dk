@@ -1,20 +1,20 @@
 ---
 title: Kransediagrammer i Power BI
 description: Kransediagrammer i Power BI
-author: msftrien
+author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 05/05/2020
-ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 24788b16718e1223bdd2040d42a67e4f175b8371
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: 3ebd618011f8c7a5fefb1187283702a85dee407c
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93413056"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96386148"
 ---
 # <a name="create-and-use-doughnut-charts-in-power-bi"></a>Opret og brug kransediagrammer i Power BI
 
@@ -44,7 +44,7 @@ I dette selvstudium bruges [PBIX-filen med eksemplet Detailhandelsanalyse](https
 
 1. Start på en tom rapportside, og vælg **Sales** \> **Last Year Sales** i ruden Felter.  
    
-3. Vælg ikonet for kransediagram ![ikon for kransediagram](media/power-bi-visualization-doughnut-charts/power-bi-icon.png) i ruden Visualiseringer for at konvertere dit liggende søjlediagram til et kransediagram. Hvis **Last Year Sales** ikke findes i området **Værdier** , skal du trække det derhen.
+3. Vælg ikonet for kransediagram ![ikon for kransediagram](media/power-bi-visualization-doughnut-charts/power-bi-icon.png) i ruden Visualiseringer for at konvertere dit liggende søjlediagram til et kransediagram. Hvis **Last Year Sales** ikke findes i området **Værdier**, skal du trække det derhen.
      
    ![Visualiseringsrude med kransediagram valgt](media/power-bi-visualization-doughnut-charts/power-bi-doughnut-chart.png)
 

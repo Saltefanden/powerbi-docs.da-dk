@@ -2,19 +2,19 @@
 title: Om niveauer for beskyttelse af personlige oplysninger i Power BI Desktop
 description: Niveauer for beskyttelse af personlige oplysninger i Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi-admin
 ms.topic: reference
 ms.date: 09/09/2019
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 19189529637fe5511ebd6f736c17b8a10a1d2ef9
-ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
+ms.openlocfilehash: 7dc5554844bafac1f8877ef7e2e8627d8078e981
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86033778"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96386806"
 ---
 # <a name="power-bi-desktop-privacy-levels"></a>Niveauer for beskyttelse af personlige oplysninger i Power BI Desktop
 I **Power BI Desktop** angiver niveauerne for beskyttelse af personlige oplysninger et isolationsniveau, der definerer, i hvilket omfang én datakilde isoleres fra andre datakilder. Et begrænsende isolationsniveau blokerer oplysninger, så de ikke udveksles mellem datakilder, men det kan reducere funktionaliteten og have indflydelse på ydeevnen.
