@@ -2,18 +2,18 @@
 title: Brug Spørgsmål og svar i Power BI til at udforske og oprette visuelle elementer
 description: Sådan bruger du Spørgsmål og svar i Power BI til at oprette nye visualiseringer på dashboards og i rapporter.
 author: maggiesMSFT
+ms.author: maggies
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 05/13/2019
-ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: c1dc3da67cf6160360833e8702fdc492fa97b803
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 01ab8e63785680ea4fcd30cee170297f1cf1d674
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91633486"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96396124"
 ---
 # <a name="use-power-bi-qa-to-explore-your-data-and-create-visuals"></a>Brug Spørgsmål og svar i Power BI til at udforske dine data og oprette visuelle elementer
 
@@ -75,7 +75,7 @@ Brug Spørgsmål og svar til at udforske dine datasæt og føje visualiseringer 
 
 ![Få vist relaterede datasæt](media/power-bi-tutorial-q-and-a/power-bi-view-related.png)
 
-Hvis du vil bruge Spørgsmål og svar i rapporter, skal du have redigeringstilladelser til rapporten og det underliggende datasæt. I artiklen [Spørgsmål og svar til forbrugere](../consumer/end-user-q-and-a.md) refererer vi til dette som et *opretter*scenarie. Hvis du i stedet *forbruger* en rapport, der er blevet delt med dig, er Spørgsmål og svar ikke tilgængelig.
+Hvis du vil bruge Spørgsmål og svar i rapporter, skal du have redigeringstilladelser til rapporten og det underliggende datasæt. I artiklen [Spørgsmål og svar til forbrugere](../consumer/end-user-q-and-a.md) refererer vi til dette som et *opretter* scenarie. Hvis du i stedet *forbruger* en rapport, der er blevet delt med dig, er Spørgsmål og svar ikke tilgængelig.
 
 1. Åbn en rapport i Redigeringsvisning (Power BI-tjenesten) eller Rapportvisning (Power BI Desktop), og vælg **Stil et spørgsmål** på menulinjen.
 

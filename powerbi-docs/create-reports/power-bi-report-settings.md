@@ -2,19 +2,19 @@
 title: Skift indstillinger for Power BI-rapporter
 description: Skift indstillinger for rapporter i Power BI-tjenesten
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 10/14/2020
-ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: dd87501a6865b9ea450e3154ee2ac56e0710a067
-ms.sourcegitcommit: fddba666c6ea90d525a1c3188bbd3c4a03410cdc
+ms.openlocfilehash: dbb173c65ecfc5d1ca464387ed43ae615cdcbca1
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92463035"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96396170"
 ---
 # <a name="change-settings-for-power-bi-reports"></a>Skift indstillinger for Power BI-rapporter
 
@@ -40,10 +40,10 @@ Det kan være nyttigt at læse disse artikler først:
 
 ## <a name="open-the-settings-pane-in-power-bi-desktop"></a>Åbn ruden Indstillinger i Power BI Desktop
 
-1. Vælg **Fil** > **Indstillinger** > **Indstillinger** .
-1. Under **Aktuel fil** skal du vælge **Rapportindstillinger** .
+1. Vælg **Fil** > **Indstillinger** > **Indstillinger**.
+1. Under **Aktuel fil** skal du vælge **Rapportindstillinger**.
 
-    :::image type="content" source="media/power-bi-report-settings/desktop-report-settings-pane.png" alt-text="Skærmbillede af ruden Indstillinger for rapporten i Power BI-tjenesten.":::
+    :::image type="content" source="media/power-bi-report-settings/desktop-report-settings-pane.png" alt-text="Skærmbillede af ruden Indstillinger for rapporten i Power BI Desktop":::
 
     Resten af denne artikel omhandler nogle af de specifikke rapportindstillinger.
 
@@ -51,7 +51,7 @@ Det kan være nyttigt at læse disse artikler først:
 
 1. Vælg **Filer** > **Indstillinger** i Læsevisning i rapporten.
 
-    :::image type="content" source="media/power-bi-report-settings/service-report-file-settings.png" alt-text="Skærmbillede af ruden Indstillinger for rapporten i Power BI-tjenesten.":::
+    :::image type="content" source="media/power-bi-report-settings/service-report-file-settings.png" alt-text="Skærmbillede af menuen Filer til Indstillinger.":::
 
 1. I ruden **Indstillinger** kan du se et antal til/fra-knapper, som du kan angive, kun for denne rapport. Resten af denne artikel omhandler nogle af dem.
 
@@ -63,7 +63,7 @@ Du kan udvælge dashboards, rapporter og apps, så de vises i afsnittet Udvalgte
 
 I øjeblikket kan du kun ændre indstillingen for ruden Sider i Power BI-tjenesten. Når du slår **ruden Sider** til, ser læserne af rapporten faner med rapportsider nederst i rapporten i Læsevisning i stedet for ude i siden. I Redigeringsvisning er fanerne med rapportsiderne allerede nederst i rapporten.
 
-:::image type="content" source="media/power-bi-report-settings/report-settings-pages-pane.png" alt-text="Skærmbillede af ruden Indstillinger for rapporten i Power BI-tjenesten.":::
+:::image type="content" source="media/power-bi-report-settings/report-settings-pages-pane.png" alt-text="Skærmbillede af indstilling af ruden Sider.":::
 
 ## <a name="control-filters"></a>Styring af filtre
 

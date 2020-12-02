@@ -2,19 +2,19 @@
 title: Stikprøvetagning af linjer med høj tæthed i Power BI
 description: Stikprøvetagning af linjer med høj tæthed i Power BI
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 05/08/2019
-ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: a41af59873aa8e0504e7ee808a2e87dba1af1121
-ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
+ms.openlocfilehash: 5ece102d2facb0957e62fbfc0d679089a58c34e6
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "86262882"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96396837"
 ---
 # <a name="high-density-line-sampling-in-power-bi"></a>Stikprøvetagning af linjer med høj tæthed i Power BI
 Fra og med udgivelsen af **Power BI Desktop** fra juni 2017 og opdateringerne til **Power BI-tjenesten** findes der en ny algoritme til stikprøvetagning, som forbedrer visuelle elementer, der bruger stikprøver af data med høj tæthed. Du kan f.eks. oprette et kurvediagram ud fra dine detailbutikkers salgsresultater, hvor hver butik har mere end ti tusinde salgskvitteringer hvert år. I et kurvediagram med disse salgsoplysninger tages der en datastikprøve (der vælges en relevant repræsentation af disse data for at illustrere, hvordan salget varierer over tid) af dataene for hver enkelt butik, og der oprettes et kurvediagram med flere serier, som dermed repræsenterer de underliggende data. Dette er almindelig praksis ved visualisering af data med høj tæthed. Stikprøvetagning af data med høj tæthed er blevet forbedret i Power BI Desktop. Der er flere oplysninger om dette i denne artikel.

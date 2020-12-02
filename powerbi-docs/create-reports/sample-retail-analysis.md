@@ -2,19 +2,19 @@
 title: 'Eksempel på detailhandelsanalyse til Power BI: Få en introduktion'
 description: 'Eksempel på detailhandelsanalyse til Power BI: Få en introduktion'
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: amac
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 07/02/2019
-ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 373e5bfe3d52bf319ad68d766f268518a167012f
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 1a3a4bc467299f7baeb12ca68af1d2730d5839f0
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349074"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96395986"
 ---
 # <a name="retail-analysis-sample-for-power-bi-take-a-tour"></a>Eksempel på detailhandelsanalyse til Power BI: Få en introduktion
 
@@ -62,7 +62,7 @@ Hvis du vil have vist datakilden for dette eksempel, er den også tilgængelig s
 ## <a name="start-on-the-dashboard-and-open-the-report"></a>Start på dashboardet, og åbn rapporten
 
 1. I det arbejdsområde, hvor du har gemt eksemplet, skal du åbne fanen **Dashboards** og derefter finde og vælge dashboardet **Eksempel på detailhandelsanalyse**. 
-2. På dashboardet skal du vælge feltet **Butikker i alt for nye og eksisterende butikker**t, som åbner siden **Oversigt over butikssalg** i rapporten Eksempel på detailhandelsanalyse. 
+2. På dashboardet skal du vælge feltet **Butikker i alt for nye og eksisterende butikker** t, som åbner siden **Oversigt over butikssalg** i rapporten Eksempel på detailhandelsanalyse. 
 
    ![Feltet Butikker i alt](media/sample-retail-analysis/retail-analysis-7.png)  
 

@@ -2,20 +2,20 @@
 title: Hent eksempler til Power BI
 description: Eksempelindholdspakker, .pbix-filer og Excel-datasæt til Power BI
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.custom: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 03/27/2020
-ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: a268247d13fdfe71e17e5c0a6fafeeb635b96984
-ms.sourcegitcommit: e9cd61eaa66eda01cc159251d7936a455c55bd84
+ms.openlocfilehash: 2e14a81c6ae04048f85fae417b354a110436fc50
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86953047"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96396194"
 ---
 # <a name="get-samples-for-power-bi"></a>Hent eksempler til Power BI
 Lad os antage, at du ikke kender Power BI og vil afprøve det, men ikke har nogen data.  Eller måske vil du se rapporter, der illustrerer nogle af funktionerne i Power BI. Du kan få nogen af os.

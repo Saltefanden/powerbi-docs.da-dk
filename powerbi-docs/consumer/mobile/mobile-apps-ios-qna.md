@@ -2,18 +2,18 @@
 title: Virtuel Spørgsmål og svar-analytiker i iOS-apps – Power BI
 description: Stil spørgsmål om eksempeldata med dine egne ord ved hjælp af den virtuelle Spørgsmål og svar-analytiker i Power BI-mobilappen på din iOS-enhed.
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 03/11/2020
-ms.author: painbar
-ms.openlocfilehash: 323ea88f3a8843dd663985abac5552be1de71584
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 2422e747fc47f9e9b51f723f5e7beeeceaf91baa
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91634406"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96397320"
 ---
 # <a name="qa-virtual-analyst-in-ios-apps---power-bi"></a>Virtuel Spørgsmål og svar-analytiker i iOS-apps – Power BI
 
