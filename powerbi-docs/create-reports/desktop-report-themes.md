@@ -2,20 +2,20 @@
 title: Brug af rapporttemaer i Power BI Desktop
 description: Få mere at vide om, hvordan du bruger en brugerdefineret farvepalet og anvender den for en hel rapport i Power BI Desktop.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.custom: contperfq4
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 07/28/2020
-ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: ed8d93ef905cca6e934ac2100093475136595c9a
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 1efc83ac18b2d2cf44aae05003e533f45ae11864
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91634728"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96413029"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Brug af rapporttemaer i Power BI Desktop
 
@@ -271,7 +271,7 @@ Sådan eksporterer du det tema, der aktuelt anvendes, fra Power BI Desktop:
 
 1. Vælg **Fil** > **Indstillinger** > **Indstillinger**.
 
-2. I afsnittet **Funktioner i prøveversionen** skal du vælge **Tilpas det aktuelle tema**og derefter vælge **OK**.
+2. I afsnittet **Funktioner i prøveversionen** skal du vælge **Tilpas det aktuelle tema** og derefter vælge **OK**.
 
    Du bliver muligvis bedt om at genstarte Power BI Desktop, før prøveversionsfunktionen aktiveres. Når du har genstartet, kan du begynde at eksportere det tema, der er anvendt i øjeblikket.
 

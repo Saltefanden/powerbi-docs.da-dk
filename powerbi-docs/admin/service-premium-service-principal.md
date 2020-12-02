@@ -1,20 +1,20 @@
 ---
 title: Automatiser opgaver for arbejdsområder og datasæt i Power BI Premium med tjenesteprincipaler | Microsoft Docs
 description: Få mere at vide om, hvordan tjenesteprincipaler kan bruges til at automatisere administrationsopgaver for arbejdsområder og datasæt i Power BI Premium.
-author: minewiskan
-ms.author: owend
+author: Minewiskan
+ms.author: davidi
 ms.reviewer: kayu
 ms.service: powerbi
-ms.subservice: powerbi-admin
+ms.subservice: powerbi-premium
 ms.topic: how-to
 ms.date: 10/20/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 406b526f9e2dd146ee99629ed913c60b95989cb0
-ms.sourcegitcommit: 132b3f6ba6d2b1948ddc15969d64cf629f7fb280
+ms.openlocfilehash: 7ffd2d2673a4efb827110c04e5e466e143c36022
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94483713"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96413420"
 ---
 # <a name="automate-premium-workspace-and-dataset-tasks-with-service-principals"></a>Automatiser opgaver for arbejdsområder og datasæt i Premium med tjenesteprincipaler
 
@@ -50,7 +50,7 @@ Hvis du vil begrænse tjenesteprincipalens adgang til specifikke lejerindstillin
 
 Før du bruger tjenesteprincipaler i Power BI, skal en administrator først aktivere adgang til tjenesteprincipaler på Power BI-administrationsportalen.
 
-På Power BI- **administrationsportal** > **Lejerindstillinger** skal du udvide **Tillad, at tjenesteprincipaler bruger Power BI-API'er** og derefter klikke på **Aktiveret**. Du anvender tilladelser for en sikkerhedsgruppe ved at føje gruppenavnet til **Specifikke sikkerhedsgrupper**.
+På Power BI-**administrationsportal** > **Lejerindstillinger** skal du udvide **Tillad, at tjenesteprincipaler bruger Power BI-API'er** og derefter klikke på **Aktiveret**. Du anvender tilladelser for en sikkerhedsgruppe ved at føje gruppenavnet til **Specifikke sikkerhedsgrupper**.
 
 ![Indstillinger for arbejdsområde](media/service-premium-service-principal/admin-portal.png)
 

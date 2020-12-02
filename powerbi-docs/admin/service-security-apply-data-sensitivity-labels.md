@@ -2,18 +2,18 @@
 title: Sådan anvendes følsomhedsmærkater i Power BI
 description: Få mere at vide om,hvordan du anvender følsomhedsmærkater i Power BI
 author: paulinbar
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
 ms.date: 08/16/2020
-ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: 9c623e180c41d60a35052ffef29e958dde79235d
-ms.sourcegitcommit: cb606d3ae95300683caf1853e229d8981302a8e2
+ms.openlocfilehash: 07b9ae9522437500da1386974548f420dc0cc1c5
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90763683"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96413374"
 ---
 # <a name="how-to-apply-sensitivity-labels-in-power-bi"></a>Sådan anvendes følsomhedsmærkater i Power BI
 

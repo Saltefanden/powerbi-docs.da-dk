@@ -2,19 +2,19 @@
 title: Visuel tabel og poster i visualiseringer i Power BI Desktop
 description: Brug funktionerne Visuel tabel og Datapunkttabel i Power BI Desktop til at få vist detaljer
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 05/21/2020
-ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: f9fa3ee1c1e0f757eb3b464785c8cb3fe3ab6e78
-ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
+ms.openlocfilehash: 05dcd5f0d7ca1681ee1e82762ea1557c79c5bc24
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "86264724"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96412799"
 ---
 # <a name="use-visual-table-and-data-point-table-in-power-bi-desktop"></a>Brug den visuelle tabel og datapunkttabellen i Power BI Desktop
 I **Power BI Desktop** kan du analysere alle visualiseringers detaljer og få vist en tekstrepræsentation af de underliggende data eller enkelte dataposter for den valgte visual. Disse funktioner kaldes nogle gange for *klikfrekvens*, *detaljeadgang* eller *detaljeadgang til oplysninger*.

@@ -2,19 +2,19 @@
 title: Sorter efter kolonne i Power BI Desktop
 description: I Power BI kan du ændre, hvordan en visualisering ser ud, ved at sortere den efter forskellige datafelter.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 01/30/2020
-ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: d8aea8cf850a2f44ed9786701c33fbf35e8e6e6f
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 06cd73aa86fdef58ea77b54305af300b1adb62d7
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238558"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96412753"
 ---
 # <a name="sort-by-column-in-power-bi-desktop"></a>Sorter efter kolonne i Power BI Desktop
 I Power BI Desktop og Power BI-tjenesten kan du ændre, hvordan en visuel gengivelse ser ud, ved at sortere den efter forskellige datafelter. Hvis du ændrer, hvordan du sorterer en visualisering, kan du fremhæve de oplysninger, du vil formidle, og sikre, at visualiseringen afspejler eller fremhæver den tendens.

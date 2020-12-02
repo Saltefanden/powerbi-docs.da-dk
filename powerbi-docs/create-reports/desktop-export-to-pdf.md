@@ -2,19 +2,19 @@
 title: Eksportér dine rapporter til PDF-format fra Power BI Desktop
 description: Eksportér nemt til PDF-format fra Power BI Desktop, og udskriv derefter PDF-rapporterne
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 02/28/2019
-ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 7fc8b9bff06188a02914083705f7f9aed7862ab1
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 815b8557b640de70690dcb90570f7764ff8c47a0
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85234146"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96412983"
 ---
 # <a name="export-reports-to-pdf-from-power-bi-desktop"></a>Eksportér rapporter til PDF-format fra Power BI Desktop
 I **Power BI Desktop** eller Power BI-tjenesten kan du eksportere rapporter til en PDF-fil, så det er nemt at dele eller udskrive dine rapporter fra PDF.

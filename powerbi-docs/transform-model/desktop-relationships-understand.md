@@ -2,18 +2,18 @@
 title: Modelrelationer i Power BI Desktop
 description: Introducer teori om modelrelationer i Power BI Desktop
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: conceptual
 ms.date: 10/15/2019
-ms.author: v-pemyer
-ms.openlocfilehash: d162f4c4bb481eadc01fc1fac09c8b25e084fdbf
-ms.sourcegitcommit: 5bbe7725918a72919ba069c5f8a59e95453ec14c
+ms.openlocfilehash: 32e6cccf738d85ed58922c199c3a6093a54019db
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94946931"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96413788"
 ---
 # <a name="model-relationships-in-power-bi-desktop"></a>Modelrelationer i Power BI Desktop
 

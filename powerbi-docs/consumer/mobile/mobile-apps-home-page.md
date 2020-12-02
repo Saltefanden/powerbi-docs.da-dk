@@ -2,18 +2,18 @@
 title: Et hurtigt kig på startsiden for mobilappen
 description: I denne artikel får du en introduktion til de vigtigste funktioner på startsiden for mobilappen.
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: quickstart
 ms.date: 12/16/2019
-ms.author: painbar
-ms.openlocfilehash: d06478acf53ead63b48afcf58cb2316ff4c5a3bc
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: ee4b4d3537fc0bdb77a451a0b32159ae3d703833
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91635303"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96413213"
 ---
 # <a name="a-quick-tour-of-the-mobile-app-home-page"></a>En hurtig rundvisning af startsiden for mobilappen
 I denne rundvisning bliver du bekendt med startsiden for Power BI-mobilappen og den navigationshjælp, du får, så du kan komme hurtigt til det, du har brug for.

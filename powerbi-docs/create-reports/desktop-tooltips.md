@@ -2,19 +2,19 @@
 title: Brug af værktøjstipsider i rapporter i Power BI
 description: Med værktøjstipsider i Power BI Desktop kan du oprette omfattende værktøjstip for visualiseringer, som vises, når du holder over dem, i dine rapporter
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 07/26/2019
-ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8e794ecc67f7873efb1ee5750f55aefb3d93b40b
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: 60eb647c6910a50512669c6b18f8a9010ab89867
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91600316"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96412661"
 ---
 # <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop"></a>Opret værktøjstip baseret på rapportsider i Power BI Desktop
 Du kan oprette visuelt omfattende **værktøjstip til rapporter**, som vises, når du holder over visualiseringer, på baggrund af rapportsider, du opretter i **Power BI Desktop**. Ved at oprette en rapportside, der fungerer som et værktøjstip, kan dine brugerdefinerede værktøjstip{1}{2}indeholde visualiseringer, billeder og mange andre samlinger af elementer, du opretter på en rapportside. 

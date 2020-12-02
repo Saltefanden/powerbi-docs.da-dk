@@ -2,18 +2,18 @@
 title: Aktivér certificering af indhold
 description: Få mere at vide om, hvordan du aktiverer certificering for datasæt, dataflow, rapporter og apps.
 author: paulinbar
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
 ms.date: 10/26/2020
-ms.author: painbar
 LocalizationGroup: Share your work
-ms.openlocfilehash: 4961f5f2b6364e06488baf32478b1f6e9338675e
-ms.sourcegitcommit: 4e347efd132b48aaef6c21236c3a21e5fce285cc
+ms.openlocfilehash: 17fc02131f13fe7fe7d8fb17af4380f6a013b9e7
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92680846"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96413512"
 ---
 # <a name="enable-content-certification"></a>Aktivér certificering af indhold
 
@@ -42,7 +42,7 @@ Certificering er en del af funktionen til *anbefalinger* i Power BI. Se [Anbefal
 1. Angiv en eller flere sikkerhedsgrupper, hvis medlemmer vil være autoriseret til at certificere indhold. Disse autoriserede certificeringseksperter kan bruge knappen Certificering under certificeringsafsnittet i [dialogboksen med indstillinger for anbefalinger](../collaborate-share/service-endorse-content.md#certify-content).
     
     Hvis en sikkerhedsgruppe indeholder undersikkerhedsgrupper, som du ikke vil give certificeringsrettigheder til, kan du markere afkrydsningsfeltet **Undtagen bestemte sikkerhedsgrupper** og angive navnene på disse grupper i det tekstfelt, der vises.
-1. Klik på **Anvend** .
+1. Klik på **Anvend**.
 
 ## <a name="next-steps"></a>Næste trin
 * [Promover eller certificer indhold](../collaborate-share/service-endorse-content.md)

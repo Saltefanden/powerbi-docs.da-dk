@@ -2,20 +2,20 @@
 title: Brug gitterlinjer og fastgørelse til gitter i Power BI Desktop-rapporter
 description: Brug gitterlinjer, fastgørelse til gitter, z-rækkefølge, justering og fordeling i Power BI Desktop-rapporter
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 05/08/2019
-ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8323cc04726fa1e29b3c6858bda3f848af34ebc5
-ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
+ms.openlocfilehash: 745b89efc76c179c0393e4dccd29d5bee6910676
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "86263337"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96412937"
 ---
 # <a name="use-gridlines-and-snap-to-grid-in-power-bi-desktop-reports"></a>Brug gitterlinjer og fastgørelse til gitter i Power BI Desktop-rapporter
 **Power BI Desktop**-rapportlærredet indeholder gitterlinjer, som du kan bruge til at justere visuelle elementer på en rapportside, så det ser pænt ud, og bruge funktionen for fastgørelse til gitter, så de visuelle elementer i dine rapporter ser jævne ud, er justeret og har lige stor afstand.

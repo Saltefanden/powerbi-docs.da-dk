@@ -2,17 +2,17 @@
 title: Vis rapporter og KPI'er i det lokale miljø i Power BI Windows-appen
 description: Power BI-mobilappen til Windows 10 tilbyder live, touchaktiveret mobiladgang til dine vigtige firmaoplysningerne i det lokale miljø.
 author: paulinbar
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 05/19/2020
-ms.author: painbar
-ms.openlocfilehash: 98f528e13bd92692bd76afc42aaac43828f7f586
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: eb6b86b2810609c0ad795190afc91c40677f5e70
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860894"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96413305"
 ---
 # <a name="view-on-premises-reports-and-kpis-in-the-power-bi-windows-app"></a>Vis rapporter og KPI'er i det lokale miljø i Power BI Windows-appen
 Power BI-appen til Windows 10 tilbyder live, touchaktiveret mobiladgang til dine vigtige firmaoplysninger i det lokale miljø via SQL Server 2016 Reporting Services. 
