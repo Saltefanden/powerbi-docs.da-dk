@@ -2,19 +2,19 @@
 title: Opret et dynamisk udsnitsværktøj, som du kan ændre størrelsen på i Power BI
 description: Få mere at vide om, hvordan du opretter et dynamisk udsnitsværktøj, du kan ændre størrelsen på, så det passer til din rapport
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 04/06/2020
-ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 94d55f92a6be47d6a53cbdaad4d9ff657d572957
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 5fde91f2cfabd1f5a7727d3ec8a80d8ecddc7fc6
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85235873"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96393433"
 ---
 # <a name="create-a-responsive-slicer-you-can-resize-in-power-bi"></a>Opret et dynamisk udsnitsværktøj, som du kan ændre størrelsen på i Power BI
 
@@ -48,7 +48,7 @@ Det første trin i at oprette et dynamisk udsnitsværktøj er at oprette et grun
 
 Dette trin er let. 
 
-1. Direkte under **Retning** i sektionen **Generelt** på fanen **Format** skal du skyde**Dynamisk** over på **Til**.  
+1. Direkte under **Retning** i sektionen **Generelt** på fanen **Format** skal du skyde **Dynamisk** over på **Til**.  
 
     ![Udsnitsværktøjet er nu dynamisk](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-4-responsive-on.png)
 

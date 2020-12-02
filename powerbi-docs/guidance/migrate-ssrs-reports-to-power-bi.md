@@ -1,19 +1,19 @@
 ---
 title: Overfør SQL Server Reporting Services-rapporter til Power BI
 description: Vejledning til, hvordan du kan overføre dine SSRS-rapporter (SQL Server Reporting Services) til Power BI.
-author: peter-myers
+author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-admin
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 01/03/2020
-ms.author: v-pemyer
-ms.openlocfilehash: 06bff0a199db9955f11487a05ba78268bb8a942d
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: f1b9b710c9f9e4ade80866026f728ddbe3ae6971
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83561587"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96393180"
 ---
 # <a name="migrate-sql-server-reporting-services-reports-to-power-bi"></a>Overfør SQL Server Reporting Services-rapporter til Power BI
 
