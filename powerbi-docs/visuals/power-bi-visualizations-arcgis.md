@@ -1,21 +1,21 @@
 ---
 title: Interaktion med et ArcGIS-kort, som er blevet delt med dig
 description: Brug af ArcGIS Map til Power BI-visualisering i læsevisning som rapportbruger
-author: msftrien
+author: mihart
+ms.author: mihart
 ms.reviewer: willt, lukasz
 featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 09/30/2020
-ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7b81ecbc23418fec4bd264e5cb20126f871c7e52
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: 33065a518f99cf7be6c8ea494088440e7ab45474
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93413108"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96397941"
 ---
 # <a name="create-arcgis-maps-in-power-bi"></a>Opret ArcGIS-kort i Power BI
 
@@ -50,7 +50,7 @@ ArcGIS Maps for Power BI leveres af Esri ([https://www.esri.com](https://www.esr
 I dette selvstudium bruges Power BI Desktop og PBIX-filen med [eksemplet på detailhandelsanalyse](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix). ArcGIS Maps for Power BI kan også oprettes ved hjælp af Power BI-tjenesten.
 
 1. Vælg **Fil** > **Åbn rapport** øverst til venstre på menulinjen.
-2. Find **PBIX-filen med eksemplet Retail Analysis** , som er gemt på din lokale maskine.
+2. Find **PBIX-filen med eksemplet Retail Analysis**, som er gemt på din lokale maskine.
 3. Åbn **Retail Analysis Sample** i rapportvisning ![ikonet Rapportvisning](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-01.png).
 4. Markér ![Ikonet Tilføj ny side](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-02.png) for at føje en ny side til rapporten.
 
@@ -62,7 +62,7 @@ Hvis du vil føje et kort til en rapport, skal du følge disse trin:
 
     ![Ikonet ArcGIS Maps i ruden Visualiseringer](media/power-bi-visualizations-arcgis/arcgis-tutorial-02.png)
 
-2. I Power BI føjes der en tom skabelon til rapportlærredet. I denne oversigt bruger vi den **Standard** -version, der er inkluderet i Power BI. Hvis du logger på en gyldig ArcGIS-konto med den korrekte licens, har du adgang til flere funktioner. Du kan finde flere oplysninger i [onlinehjælpen til ArcGIS Maps for Power BI](https://doc.arcgis.com/en/maps-for-powerbi/get-started/account-types.htm).
+2. I Power BI føjes der en tom skabelon til rapportlærredet. I denne oversigt bruger vi den **Standard**-version, der er inkluderet i Power BI. Hvis du logger på en gyldig ArcGIS-konto med den korrekte licens, har du adgang til flere funktioner. Du kan finde flere oplysninger i [onlinehjælpen til ArcGIS Maps for Power BI](https://doc.arcgis.com/en/maps-for-powerbi/get-started/account-types.htm).
 
     ![ArcGIS-logon](media/power-bi-visualizations-arcgis/arcgis-tutorial-03.png)
 
@@ -81,7 +81,7 @@ Du har oprettet dit første kort af typen ArcGIS Maps for Power BI. Nu kan du fi
 
 ## <a name="format-the-arcgis-maps-for-power-bi-visualization"></a>Formatér ArcGIS Maps for Power BI-visualiseringen
 
-Sådan får du adgang til formateringsfunktionerne i **ArcGIS Maps for Power BI** :
+Sådan får du adgang til formateringsfunktionerne i **ArcGIS Maps for Power BI**:
 
 1. Klik på fanen **Formatér** i ruden Visualiseringer for at få vist formateringsindstillingerne.
 
@@ -99,7 +99,7 @@ Sådan får du adgang til formateringsfunktionerne i **ArcGIS Maps for Power BI*
 Når du har føjet data til kortvisualiseringen, bliver kortværktøjerne tilgængelige.
 
 > [!NOTE]
-> Dette selvstudium viser kun de funktioner og indstillinger, der er tilgængelige i **Standard** -versionen af ArcGIS Maps for Power BI. Hvis du er logget på en gyldig [ArcGIS-konto](https://doc.arcgis.com/en/maps-for-powerbi/get-started/account-types.htm) med den korrekte licensering, har du adgang til flere funktioner.
+> Dette selvstudium viser kun de funktioner og indstillinger, der er tilgængelige i **Standard**-versionen af ArcGIS Maps for Power BI. Hvis du er logget på en gyldig [ArcGIS-konto](https://doc.arcgis.com/en/maps-for-powerbi/get-started/account-types.htm) med den korrekte licensering, har du adgang til flere funktioner.
 
 Sådan udvider du kortværktøjerne:
 
@@ -114,11 +114,11 @@ Kortværktøjerne udvides, så de tilgængelige funktioner vises. Der åbnes en 
 
 #### <a name="change-the-base-map"></a>Rediger basiskortet
 
-Et grundkort udgør en baggrund eller en visuel kontekst for dataene i et kort. Et grundkort med gader udgør f.eks. en kontekst for dine adressedata. Når du bruger **Standard** -kontoen, er der fire basiskort: Dark Gray Canvas, Light Gray Canvas, OpenStreetMap og Streets.
+Et grundkort udgør en baggrund eller en visuel kontekst for dataene i et kort. Et grundkort med gader udgør f.eks. en kontekst for dine adressedata. Når du bruger **Standard**-kontoen, er der fire basiskort: Dark Gray Canvas, Light Gray Canvas, OpenStreetMap og Streets.
 
 Hvis du vil ændre grundkort, skal du følge disse trin:
 
-1. Klik på knappen **Grundkort** , ![ikonet Grundkort](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-05.png) for at få vist galleriet.
+1. Klik på knappen **Grundkort**, ![ikonet Grundkort](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-05.png) for at få vist galleriet.
 2. Vælg grundkortet **Dark Gray Canvas**.
 
     ![Valg af grundkort](media/power-bi-visualizations-arcgis/arcgis-tutorial-08.png)
@@ -133,7 +133,7 @@ I ArcGIS Maps for Power BI arbejder du med geografiske data via lag. Lag er logi
 
 Hvis du vil have vist listen Lag, skal du klikke på **Lag** ![ikonet Lag](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-06.png) i kortværktøjerne.
 
-Listen Lag viser hvert lag, der udgør kortet, og hvert lag har sit eget sæt indstillinger, der kan hjælpe dig med at tilpasse og arbejde med kortet. Der vises forskellige indstillinger i menuen, afhængigt af den valgte type lag. Du kan f. eks. ændre symbologi og placeringstype for et lag, der er oprettet ved hjælp af Power BI-data – f. eks. laget **City** , som du har oprettet for dette eksempel, men disse indstillinger er ikke tilgængelige for reference- eller kørselstidslag.
+Listen Lag viser hvert lag, der udgør kortet, og hvert lag har sit eget sæt indstillinger, der kan hjælpe dig med at tilpasse og arbejde med kortet. Der vises forskellige indstillinger i menuen, afhængigt af den valgte type lag. Du kan f. eks. ændre symbologi og placeringstype for et lag, der er oprettet ved hjælp af Power BI-data – f. eks. laget **City**, som du har oprettet for dette eksempel, men disse indstillinger er ikke tilgængelige for reference- eller kørselstidslag.
 
 ![Knappen ArcGIS-lag](media/power-bi-visualizations-arcgis/arcgis-tutorial-09.png)
 
@@ -150,7 +150,7 @@ Den komplette funktion **Placeringstype** er tilgængelig via menuen Lagindstill
 Følg disse trin for at ændre dataens placeringstype:
 
 1. Vælg det data lag, du vil arbejde med, på listen Lag.
-2. Klik på knappen **Lagindstillinger** , og vælg **Placeringstype**.
+2. Klik på knappen **Lagindstillinger**, og vælg **Placeringstype**.
 
     ![Valg af placeringstype](media/power-bi-visualizations-arcgis/arcgis-tutorial-10.png)
 
@@ -168,13 +168,13 @@ Hvis du vil ændre et lags Symbology, skal du følge disse trin:
 
 1. Vælg det data lag, du vil arbejde med, på listen Lag.
 
-2. Klik på knappen **Lagindstillinger** , og vælg **Symbologi**.
+2. Klik på knappen **Lagindstillinger**, og vælg **Symbologi**.
 
 Ruden Symbologi vises med kategorien Korttema udvidet.
 
 ##### <a name="change-the-map-theme"></a>Rediger korttemaet
 
-Da vi i dette eksempel har føjet værdier til både feltet **Placering** og feltet **Størrelse** , bruger kortet som standard temaet **Størrelse**.
+Da vi i dette eksempel har føjet værdier til både feltet **Placering** og feltet **Størrelse**, bruger kortet som standard temaet **Størrelse**.
 
 Hvis du vil ændre korttemaet, skal du følge disse trin:
 
@@ -206,7 +206,7 @@ Hvis du vil ændre symboltypografien, skal du følge disse trin:
 
 2. Rediger symbolindstillingerne efter behov. Vælg en form, farve, gennemsigtighed og konturfarve, tykkelse og gennemsigtighed for symbolet. Udvid kategorien Symbolstørrelse for at ændre disse indstillinger. Der vises forskellige indstillinger, afhængigt af dataenes art og det valgte korttema.
 
-    I nedenstående eksempel vises korttypen **Størrelse** , og flere justeringer af symboltypografien, herunder gennemsigtighed, typografi og størrelse.
+    I nedenstående eksempel vises korttypen **Størrelse**, og flere justeringer af symboltypografien, herunder gennemsigtighed, typografi og størrelse.
 
     ![Kortstørrelse og symboler](media/power-bi-visualizations-arcgis/arcgis-tutorial-13.png)
 
@@ -232,7 +232,7 @@ Følg disse trin for at få vist markeringsværktøjerne:
 
 1. Klik på knappen **Markeringsværktøjer** ![markeringsværktøjer](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-07.png) for at udvide værktøjssættet.
 
-    Der er fire tilgængelige markeringsværktøjer. Der kan vises forskellige værktøjer i menuen **Markeringsværktøjer** , afhængigt af typen af det aktuelt aktive lag. Da kortet i dette eksempel kun indeholder et datalag, er det kun værktøjerne **Ét valg** og **Flere valg** , der vises.
+    Der er fire tilgængelige markeringsværktøjer. Der kan vises forskellige værktøjer i menuen **Markeringsværktøjer**, afhængigt af typen af det aktuelt aktive lag. Da kortet i dette eksempel kun indeholder et datalag, er det kun værktøjerne **Ét valg** og **Flere valg**, der vises.
     
     | **Værktøj** | **Beskrivelse** |
     | --- | --- |
@@ -327,7 +327,7 @@ Hvis du vil finde placeringer inden for en bestemt kørselsafstand fra oprindels
     Ruden **Kørselstid** vises.
 
 3. Klik på værktøjet Ét valg, og vælg placeringen **Pittsburgh International Airport** på kortet, som du fastgjorde tidligere.
-4. Vælg **Radius** i rullemenuen **Søgeområde** , og angiv en afstand på **160** kilometer.
+4. Vælg **Radius** i rullemenuen **Søgeområde**, og angiv en afstand på **160** kilometer.
 5. Klik på **OK**.
 
     Kortet viser en cirkel omkring den fastgjorte lufthavns placering. Ruden Kørselstid udvides, så der vises formateringsindstillinger for kørselsafstandens område.
@@ -369,7 +369,7 @@ Power BI giver designere, Power BI-administratorer og brugeradministratorer muli
 
 #### <a name="designer-options"></a>Muligheder for designere
 
-I Power BI Desktop kan designere deaktivere ArcGIS Maps for Power BI under fanen Sikkerhed. Vælg **Filer**  >  **Indstillinger** , og vælg derefter **Indstillinger**  >  **Sikkerhed**. Når ArcGIS Maps er deaktiveret, indlæses den ikke som standard.
+I Power BI Desktop kan designere deaktivere ArcGIS Maps for Power BI under fanen Sikkerhed. Vælg **Filer**  >  **Indstillinger**, og vælg derefter **Indstillinger**  >  **Sikkerhed**. Når ArcGIS Maps er deaktiveret, indlæses den ikke som standard.
 
 ![Muligheder for designere](media/power-bi-visualizations-arcgis/arcgis-tutorial-17.png)
 

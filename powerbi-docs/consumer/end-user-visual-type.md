@@ -2,20 +2,20 @@
 title: Visualiseringstyper i Power BI til virksomhedsbrugere
 description: Visualiseringstyper i Power BI-tjeneste
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 10/07/2020
-ms.author: mihart
 ms.custom: contperfq4
 LocalizationGroup: Consumer
-ms.openlocfilehash: 6d2ded8060ebe663989fd4f91fc22e4163f60c93
-ms.sourcegitcommit: d2f633b4bfa271051ba1d2ef0e6e8da7dcf42818
+ms.openlocfilehash: e944cabc72e60825f286fd86e96257a780b121b6
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91830650"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96399206"
 ---
 # <a name="visual-types-in-power-bi"></a>Visualiseringstyper i Power BI
 

@@ -2,20 +2,20 @@
 title: Udskriv fra Power BI-tjenesten
 description: Udskriv et dashboard, et felt eller en rapportside fra Power BI-tjenesten.
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 09/19/2020
-ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 600b8d1447d50a1647097d94df9077299f00cccf
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: d861bbc32584ccbc95d7bcc13701938f671f0c73
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860371"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96399551"
 ---
 # <a name="printing-from-the-power-bi-service"></a>Udskriv fra Power BI-tjenesten
 
@@ -27,7 +27,7 @@ Udskriv et helt dashboard, et dashboardfelt, en rapportside eller en rapportvisu
 
 ## <a name="printing-considerations"></a>Overvejelser i forbindelse med udskrivning
 
-De fleste Power BI-dashboards og -rapporter oprettes af rapport*designere* for at blive brugt online og se fantastiske ud, når de vises på forskellige enheder. Når du udskriver en rapport, kan du styre, hvordan indholdet vises på papir, i din browser. 
+De fleste Power BI-dashboards og -rapporter oprettes af rapport *designere* for at blive brugt online og se fantastiske ud, når de vises på forskellige enheder. Når du udskriver en rapport, kan du styre, hvordan indholdet vises på papir, i din browser. 
 
 Der findes browserindstillinger, som du kan bruge til at justere udskriften, men det kan stadigvæk ske, at du ikke opnår det ønskede resultat. Overvej at [eksportere til PDF](end-user-pdf.md) først og udskrive PDF-filen i stedet for. 
 
@@ -90,7 +90,7 @@ Rapporter kan udskrives med én side ad gangen.
     ![Power BI-filmenu](./media/end-user-print/power-bi-print-report.png)
 2. Vinduet Udskriv til browseren åbnes.
 
-3. Følg udskrivnings trinnene fra **Udskriv et dashboard**ovenfor.
+3. Følg udskrivnings trinnene fra **Udskriv et dashboard** ovenfor.
    
 
 
@@ -105,7 +105,7 @@ Rapporter kan udskrives med én side ad gangen.
     ![Skærmbillede af menuen Filer i Power BI](./media/end-user-print/power-bi-visual-print.png)
 
 
-3. Følg udskrivnings trinnene fra **Udskriv et dashboard**ovenfor.
+3. Følg udskrivnings trinnene fra **Udskriv et dashboard** ovenfor.
 
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
 
