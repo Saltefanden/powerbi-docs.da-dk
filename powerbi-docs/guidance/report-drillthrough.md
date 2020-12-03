@@ -2,18 +2,18 @@
 title: Anvend detaljeadgang på rapportsiden
 description: Vejledning til arbejde med detaljeadgang på rapportsider.
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 11/28/2019
-ms.author: v-pemyer
-ms.openlocfilehash: 853f6d7f5cd6696be55edeea101bc0ca51922ad3
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 4aa7c3992183dad6fad30e31e31e935fbaa29c32
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83278071"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96418480"
 ---
 # <a name="use-report-page-drillthrough"></a>Anvend detaljeadgang på rapportsiden
 
@@ -59,7 +59,7 @@ Vi anbefaler følgende fremgangsmåder på tidspunktet for oprettelse af rapport
 - **Yderligere funktioner:** En detaljeadgangsside er som enhver anden rapportside. Du kan endda forbedre den med yderligere interaktive funktioner, herunder udsnitsværktøjer og filtre.
 - **Tomme:** Undgå at tilføje visuals, der kan vises som BLANK eller producere fejl, når der anvendes detaljeadgangsfiltre.
 - **Sidesynlighed:** Overvej at skjule detaljeadgangssider. Hvis du beslutter at beholde en detaljeadgangsside, skal du sørge for at tilføje en knap, der gør det muligt for brugerne at rydde alle tidligere angivne detaljeadgangsfiltre. Tildel et [bogmærke](../create-reports/desktop-bookmarks.md) til knappen. Bogmærket skal være konfigureret til at fjerne alle filtre.
-- **Knappen Tilbage:** Der tilføjes automatisk en tilbage[knap](../create-reports/desktop-buttons.md), når du tildeler et detaljeadgangsfilter. Det er en god idé at beholde den. På denne måde kan dine rapportbrugere nemt vende tilbage til kildesiden.
+- **Knappen Tilbage:** Der tilføjes automatisk en tilbage [knap](../create-reports/desktop-buttons.md), når du tildeler et detaljeadgangsfilter. Det er en god idé at beholde den. På denne måde kan dine rapportbrugere nemt vende tilbage til kildesiden.
 - **Søgning:** Vær med til at fremme kendskabet til en detaljeadgangsside ved at angive teksten til ikonet for visualheaderen eller føje instruktioner til et tekstfelt. Du kan også designe en overlejring som beskrevet i [dette blogindlæg-](https://alluringbi.com/2019/10/23/overlays-for-true-self-serve-reporting/).
 
 > [!TIP]

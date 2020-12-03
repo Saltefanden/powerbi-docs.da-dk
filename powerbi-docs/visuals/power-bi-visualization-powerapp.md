@@ -2,20 +2,20 @@
 title: Integrer en ny Power App i en Power BI-rapport
 description: Integrer en app, der bruger den samme datakilde, og som kan filtreres som andre rapportelementer
 author: mihart
+ms.author: mihart
 manager: kvivek
 ms.reviewer: tapan maniar
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 06/01/2020
-ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c46410caff373eb8474a4b687e834b822f2da8ac
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: 1c4086d6ab71bd96ba7ac6c6985161d28a4dcb8b
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94397524"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96418871"
 ---
 # <a name="tutorial-embed-a-power-apps-visual-in-a-power-bi-report"></a>Selvstudium: Integrer en Power Apps-visualisering i en Power BI-rapport
 
@@ -51,7 +51,7 @@ Når du føjer Power Apps-visualiseringen til din rapport, starter den Power App
 
     ![Ruden Visualisering med ikonet for Power Apps valgt](media/power-bi-visualization-powerapp/power-bi-powerapps-icon.jpg)
 
-3. I ruden **Felter** skal du vælge **Name** , **Product Code** og **Sales Stage**. 
+3. I ruden **Felter** skal du vælge **Name**, **Product Code** og **Sales Stage**. 
 
     ![vælg felter](media/power-bi-visualization-powerapp/power-bi-fields.png)
 
@@ -59,7 +59,7 @@ Når du føjer Power Apps-visualiseringen til din rapport, starter den Power App
 
     ![Opret ny app](media/power-bi-visualization-powerapp/power-bi-create-new-powerapp.png)
 
-    I Power Apps Studio kan du se, at der oprettes en grundlæggende app med et *galleri* , hvor der vises et af de felter, du valgte i Power BI.
+    I Power Apps Studio kan du se, at der oprettes en grundlæggende app med et *galleri*, hvor der vises et af de felter, du valgte i Power BI.
 
     ![Power Apps åbnes](media/power-bi-visualization-powerapp/power-bi-power-app.png)
 
@@ -94,7 +94,7 @@ Appen er nu tilgængelig i Power BI-rapporten, og den interagerer med de øvrige
 
 ![App i Power BI-rapport](media/power-bi-visualization-powerapp/power-bi-powerapps-visual.png)
 
-I Power BI-rapporten skal du vælge udsnittet **Jan** , som filtrerer hele rapporten inklusive dataene i appen.
+I Power BI-rapporten skal du vælge udsnittet **Jan**, som filtrerer hele rapporten inklusive dataene i appen.
 
 ![filtreret rapport](media/power-bi-visualization-powerapp/power-bi-last.png)
 

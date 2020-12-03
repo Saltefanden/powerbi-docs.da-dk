@@ -2,22 +2,22 @@
 title: Indsaml krav til migrering til Power BI
 description: Vejledning i indsamling og prioritering af krav ved migrering til Power BI.
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 08/20/2020
-ms.author: v-pemyer
-ms.openlocfilehash: 21d619c42648f90746af9961475bb531dc24d5ab
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: 2aee1be1d5e221f8feaeae05f8284f0388b4b8af
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94396640"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96418549"
 ---
 # <a name="gather-requirements-to-migrate-to-power-bi"></a>Indsaml krav til migrering til Power BI
 
-I denne artikel beskrives **fase 1** , der omhandler indsamling og prioritering af krav ved migrering til Power BI.
+I denne artikel beskrives **fase 1**, der omhandler indsamling og prioritering af krav ved migrering til Power BI.
 
 :::image type="content" source="media/powerbi-migration-requirements/migrate-to-powerbi-stage-1.png" alt-text="Billede, der viser faserne i en migrering til Power BI. Der fokuseres på fase 1 i denne artikel.":::
 
@@ -46,7 +46,7 @@ Kompiler grundige og letlæselige oplysninger om rapporter, f. eks.:
 - **Den måde forbrugerne bruger rapporten på:** Overvej at iagttage forbrugere af den eksisterende rapport for at forstå, præcis hvordan de bruger den. Du finder måske ud af, at visse elementer i rapporten kan fjernes eller forbedres i den nye Power BI-version. Denne proces omfatter en ekstra tidsinvestering, men den er værdifuld for kritiske rapporter eller rapporter, der bruges ofte.
 - **Ejer og ekspert inden for emnet:** Identificer rapport ejeren og eventuelle eksperter inden for emnet, der er knyttet til rapporten eller datadomænet. De kan fremover blive ejerne af den nye Power BI-rapport. Medtag eventuelle specifikke krav til ændringsstyring (som typisk er forskellige for henholdsvis it-administrerede og virksomhedsadministrerede løsninger) samt godkendelser, der er nødvendige, når der foretages ændringer fremover.
 - **Metode til levering af indhold:** Tydeliggør rapportforbrugernes forventninger til levering af indhold. Det kan være levering i form af interaktiv udførelse efter behov, levering, der er integreret i et brugerdefineret program, eller levering efter en tidsplan ved hjælp af et mailabonnement. Der kan også være krav til udløsning af beskeder.
-- **Behov i forbindelse med interaktivitet:** Fastlæg krav til _skal have_ - og _godt at have_ -interaktivitet, f. eks. filtre, detailudledning eller detailadgang.
+- **Behov i forbindelse med interaktivitet:** Fastlæg krav til _skal have_- og _godt at have_-interaktivitet, f. eks. filtre, detailudledning eller detailadgang.
 - **Datakilder:** Sørg for, at alle datakilder, der kræves af rapporten, er fundet, og at behov i forbindelse med dataventetid (dataopdatering) er forstået. Identificer krav til historiske data, tendenser og datasnapshot for hver rapport, så de kan justeres i forhold til datakravene. Dokumentation af datakilden kan også være nyttig på et senere tidspunkt, når du udfører datavalidering af en ny rapport med dens kildedata.
 - **Sikkerhedskrav:** Tydeliggør sikkerhedskrav (f. eks. tilladte læsere, tilladte redaktører og eventuelle krav til sikkerhed på rækkeniveau), herunder eventuelle undtagelser i forhold til normal organisationssikkerhed. Dokumenter et niveau for datafølsomhed, beskyttelse af personlige oplysninger og/eller lovmæssige krav.
 - **Beregninger, KPI'er og forretningsregler:** Identificer og dokumenter alle beregninger, KPI'er og forretningsregler, der i øjeblikket er defineret i den eksisterende rapport, så de kan justeres i forhold til datakravene.

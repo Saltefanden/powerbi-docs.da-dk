@@ -2,18 +2,18 @@
 title: Introduktion til Power BI-mobilappen på Android-enheder
 description: Få mere at vide om, hvordan Android-mobilappen til Microsoft Power BI giver dig Power BI med mobiladgang til oplysninger lokalt i virksomheden og i skyen.
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 06/06/2020
-ms.author: painbar
-ms.openlocfilehash: 941bd2adc63a06089ddf4fb79752557b8c688f71
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: d731651e85f8468038089f5d88e3e418f1a3c868
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90856800"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96417767"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-android-devices"></a>Introduktion til Power BI-mobilappen på Android-enheder
 Android-appen til Microsoft Power BI leverer BI-mobiloplevelsen til Power BI, Power BI Report Server og Reporting Services. Få vist og interager med dit firmas dashboards lokalt og i skyen overalt – med direkte, berøringsfølsom mobiladgang. Udforsk dataene i dashboards, og del dem med dine kollegaer i mails eller tekstmeddelelser. 

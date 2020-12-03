@@ -2,19 +2,19 @@
 title: Brug af rapporter i Power BI med tilgængelighedsværktøjer
 description: Værktøjer, der gør brug af rapporter i Power BI tilgængelig
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 10/28/2019
-ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: ca04a5404f0868f85a9c7ed840109efe6d213760
-ms.sourcegitcommit: e9cd61eaa66eda01cc159251d7936a455c55bd84
+ms.openlocfilehash: 13d7ae31e5fdd8acfd463c104d48d01b4b0d7533
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86952633"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96417698"
 ---
 # <a name="consume-power-bi-reports-by-using-accessibility-features"></a>Forbrug Power BI-rapporter ved hjælp af tilgængelighedsværktøjer
 Power BI indeholder mange indbyggede funktioner, der gør det nemmere for personer med et handicap at bruge og interagere med Power BI-rapporter. Disse værktøjer hjælper brugerne med at få de samme oplysninger ud af en rapport som personer, der ikke bruger hjælpeteknologi.

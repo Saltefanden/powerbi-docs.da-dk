@@ -1,21 +1,21 @@
 ---
 title: Tabelvisualiseringer i Power BI-rapporter og -dashboards
 description: Selvstudium til at arbejde med tabelvisualiseringer i Power BI-rapporter og dashboards, herunder, hvordan du tilpasser kolonnebredder.
-author: msftrien
+author: mihart
+ms.author: mihart
 ms.reviewer: willt
 featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 02/10/2020
-ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 127e8b7033e60c70a4d541cfc4725e7340a514e6
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: aa99cd4efed9239d6685d53f2515d16549a0ae72
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93412857"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96418802"
 ---
 # <a name="tables-in-power-bi-reports-and-dashboards"></a>Tabeller i Power BI-rapporter og -dashboards
 
@@ -68,9 +68,9 @@ Du opretter den tabel, der vises i starten af artiklen, for at få vist salgsvæ
 
 1. Vælg **Sales > Average Unit Price** og **Sales > Last Year Sales**
 
-1. Vælg derefter **Sales > This Year Sales** , og vælg alle tre indstillinger: **Værdi** , **Mål** og **Status**.
+1. Vælg derefter **Sales > This Year Sales**, og vælg alle tre indstillinger: **Værdi**, **Mål** og **Status**.
 
-1. I ruden **Visualiseringer** skal du finde brønden **Værdier** og vælge værdier, indtil rækkefølgen af dine diagramsøjler matcher det første billede på denne side. Træk værdierne i brønden, om nødvendigt. Du kan nu se følgende under **Værdier** :
+1. I ruden **Visualiseringer** skal du finde brønden **Værdier** og vælge værdier, indtil rækkefølgen af dine diagramsøjler matcher det første billede på denne side. Træk værdierne i brønden, om nødvendigt. Du kan nu se følgende under **Værdier**:
 
     ![Værdibrønd](media/power-bi-visualization-tables/power-bi-table2.png)
 
@@ -91,7 +91,7 @@ Du kan formatere en tabel på mange måder. Kun et par af dem beskrives her. Hvi
 
     ![overskriftsformatering i tabel](media/power-bi-visualization-tables/power-bi-table-column2.png)
 
-* Du kan også formatere enkelte kolonner og kolonneoverskrifter. Start ved at udvide **feltformateringen** , og vælg den kolonne, der skal formateres, på rullelisten. Afhængigt af kolonneværdierne kan du bruge **feltformatering** til at angive oplysninger som: visningsenheder, skriftfarve, antal decimaler, baggrund, justering med mere. Når du har valgt de ønskede indstillinger, kan du beslutte, om du også vil anvende disse indstillinger til sidehovedet og rækken Totaler.
+* Du kan også formatere enkelte kolonner og kolonneoverskrifter. Start ved at udvide **feltformateringen**, og vælg den kolonne, der skal formateres, på rullelisten. Afhængigt af kolonneværdierne kan du bruge **feltformatering** til at angive oplysninger som: visningsenheder, skriftfarve, antal decimaler, baggrund, justering med mere. Når du har valgt de ønskede indstillinger, kan du beslutte, om du også vil anvende disse indstillinger til sidehovedet og rækken Totaler.
 
     ![Feltformatering for This year sales](media/power-bi-visualization-tables/power-bi-field-formatting.png)
 
@@ -115,11 +115,11 @@ Med betinget formatering af tabeller kan du angive ikoner, URL-adresser, baggrun
 
 1. Vælg et felt, der skal formateres, og slå skyderen for **Baggrundsfarve** til. I Power BI anvendes en graduering baseret på værdierne i kolonnen. Hvis du vil ændre standardfarverne, skal du vælge **Avancerede kontrolelementer**.
 
-    Hvis du vælger indstillingen **Divergerende** , kan du også konfigurere en valgfri værdi af typen **Centreret**.
+    Hvis du vælger indstillingen **Divergerende**, kan du også konfigurere en valgfri værdi af typen **Centreret**.
 
     ![skærmen Baggrundsfarveskalaer](media/power-bi-visualization-tables/power-bi-conditional-formatting-background2.png)
 
-    Jeg vil prøve at anvende brugerdefineret formatering til Average Unit Price-værdierne. Vælg **Divergerende** , tilføj nogle farver, og vælg **OK**.
+    Jeg vil prøve at anvende brugerdefineret formatering til Average Unit Price-værdierne. Vælg **Divergerende**, tilføj nogle farver, og vælg **OK**.
 
     ![tabel, der viser divergerende farver](media/power-bi-visualization-tables/power-bi-conditional-formatting-data-background.png)
 1. Tilføj et nyt felt i tabellen, der har både positive og negative værdier. Vælg **Sales > Total Sales Variance**.
@@ -130,7 +130,7 @@ Med betinget formatering af tabeller kan du angive ikoner, URL-adresser, baggrun
 
     ![Kortet Betinget formatering af datalinjer er slået til](media/power-bi-visualization-tables/power-bi-data-bar-matrix.png)
 
-1. Hvis du vil tilpasse datalinjerne, skal du vælge **Avancerede kontrolelementer**. I den viste dialogboks kan du angive farver for **Positiv streg** og **Negativ streg** , markere afkrydsningsfeltet **Vis kun streg** og foretage eventuelle andre ændringer.
+1. Hvis du vil tilpasse datalinjerne, skal du vælge **Avancerede kontrolelementer**. I den viste dialogboks kan du angive farver for **Positiv streg** og **Negativ streg**, markere afkrydsningsfeltet **Vis kun streg** og foretage eventuelle andre ændringer.
 
     ![afkrydsning af Vis kun streg](media/power-bi-visualization-tables/power-bi-data-bar.png)
 
@@ -180,7 +180,7 @@ Nogle gange kan Power BI afskære en kolonneoverskrift i en rapport og på et da
 
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
 
-* Når du anvender kolonneformatering, kan du kun vælge én indstilling for justering pr. kolonne: **Automatisk** , **Venstre** , **Centreret** , **Højre**. En kolonne indeholder som regel enten tekst eller tal og ikke en blanding. Hvis en kolonne indeholder både tal og tekst, vil indstillingen **Automatisk** venstrejustere tekst og højrejustere tal. Denne funktionalitet understøtter de sprog, der læses fra venstre mod højre.
+* Når du anvender kolonneformatering, kan du kun vælge én indstilling for justering pr. kolonne: **Automatisk**, **Venstre**, **Centreret**, **Højre**. En kolonne indeholder som regel enten tekst eller tal og ikke en blanding. Hvis en kolonne indeholder både tal og tekst, vil indstillingen **Automatisk** venstrejustere tekst og højrejustere tal. Denne funktionalitet understøtter de sprog, der læses fra venstre mod højre.
 
 * Hvis tekstdataene i cellerne eller overskrifterne i tabellen indeholder nye linjetegn, ignoreres disse tegn, medmindre du slår indstillingen Tekstombrydning til på elementets tilknyttede formateringsrudekort. 
 

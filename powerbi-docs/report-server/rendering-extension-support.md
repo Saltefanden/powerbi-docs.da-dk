@@ -2,18 +2,18 @@
 title: Overensstemmelse med ISO 14289-1 for udvidelsen til PDF-gengivelse – Power BI-rapportserver og SSRS
 description: I dette dokument beskrives overensstemmelse med specifikationerne i ISO 14289-1 (PDF/UA) for udvidelsen til PDF-gengivelse til Power BI-rapportserver og SQL Server Reporting Services.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/04/2019
-ms.author: maggies
-ms.openlocfilehash: bfefcef18b8cd92a5c3b15c2dcbd4653a6c7c9cd
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: eb2e3e599afad20401bfba0563041f8a7e442041
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "76819508"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96418296"
 ---
 # <a name="pdf-rendering-extension-conformance-to-iso-14289-1---power-bi-report-server--ssrs"></a>Overensstemmelse med ISO 14289-1 for udvidelsen til PDF-gengivelse – Power BI-rapportserver og SSRS
 

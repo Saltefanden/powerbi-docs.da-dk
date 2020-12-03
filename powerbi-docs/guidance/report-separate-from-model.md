@@ -2,18 +2,18 @@
 title: Adskil rapporter fra modeller i Power BI Desktop
 description: Vejledning til adskillelse af rapporter fra modeller i Power BI Desktop.
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 04/11/2020
-ms.author: v-pemyer
-ms.openlocfilehash: f2b9ee2093889fc9a60d621ad09b3b52d2e90474
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: a45299015883615b4773fe5db1c9864e01a47c4b
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91525932"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96418346"
 ---
 # <a name="separate-reports-from-models-in-power-bi-desktop"></a>Adskil rapporter fra modeller i Power BI Desktop
 
@@ -37,7 +37,7 @@ Det giver mening at adskille model- og rapportudvikling i separate Power BI Desk
 - Datadesignere og rapportforfattere er forskellige personer.
 - Det er forstået, at en model vil være kilden til flere rapporter, nu eller i fremtiden.
 
-:::image type="content" source="media/report-separate-from-model/separate-report-files.png" alt-text="En enkelt fil indeholder en model og en rapport, der er udviklet af samme person." border="true":::
+:::image type="content" source="media/report-separate-from-model/separate-report-files.png" alt-text="Der er tre PBIX-filer. Den første indeholder kun en model. De andre to indeholder kun rapporter, og de har direkte forbindelse til den model, der hostes i Power BI-tjenesten. Rapporterne er udviklet af forskellige personer." border="true":::
 
 Datadesignere kan stadig bruge oplevelsen til rapportskrivning i Power BI Desktop til at teste og validere deres modeldesign. Men så snart de har udgivet deres fil i Power BI-tjenesten, bør de fjerne rapporten fra arbejdsområdet. Og de skal huske at fjerne rapporten, hver gang de genudgiver og overskriver datasættet.
 

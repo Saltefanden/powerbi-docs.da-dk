@@ -2,18 +2,18 @@
 title: Udforsk felter i Power BI-mobilappsene
 description: Felter er dynamiske øjebliksbilleder af dine data, der er fastgjort til et dashboard. Få mere at vide om, hvordan du interagerer med felter i Power BI-mobilappsene.
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 03/11/2020
-ms.author: painbar
-ms.openlocfilehash: 1afde236dd4fc9698efe4391cb2d9e095ade37a4
-ms.sourcegitcommit: 5fdb45736ca0c8070124279fed4dab1ced8b7b27
+ms.openlocfilehash: 74823845c73f02468d012c4518cdf111e84824c9
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92683353"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96417928"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Udforsk felter i Power BI-mobilappsene
 Kan anvendes med:
@@ -35,12 +35,12 @@ Derefter åbner du felter i fokustilstand i Power BI-mobilappsene og interagerer
    
     ![Skærmbillede af et kurvediagram, der viser de valgte værdier for Dette års salg og Sidste års salg.](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-line-tile-values.png)
    
-   *For eksempel er de valgte værdier i dette kurvediagram **Dette års salg** og **Sidste års salg** i **August** .*  
+   *For eksempel er de valgte værdier i dette kurvediagram **Dette års salg** og **Sidste års salg** i **August**.*  
    
    Tryk på en cirkeludsnit i et cirkeldiagram for at få vist dets værdi øverst i diagrammet.  
    
    ![Skærmbillede af et cirkeldiagram, der viser værdien af Optælling af salgsmulighed.](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-tile-pie.png)
-3. Tryk på **Centrer kort** -ikonet ![Ikonet Centrer kort](media/mobile-tiles-in-the-mobile-apps/power-bi-center-map-icon.png) for at centrere kortet til din aktuelle placering.
+3. Tryk på **Centrer kort**-ikonet ![Ikonet Centrer kort](media/mobile-tiles-in-the-mobile-apps/power-bi-center-map-icon.png) for at centrere kortet til din aktuelle placering.
 
    ![Skærmbillede af et kort, der viser din aktuelle placering i Alabama centreret på kortet.](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-center-map.png)
 
@@ -58,7 +58,7 @@ Derefter åbner du felter i fokustilstand i Power BI-mobilappsene og interagerer
    
     Når du har åbnet linket i Power BI-appen, kan du kopiere linket og åbne det i et browservindue i stedet for.
 7. [Åbn rapporten](mobile-reports-in-the-mobile-apps.md) ![Åbn rapportikonet i iOS,](././media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png) som feltet er baseret på.
-8. Hvis du vil forlade fokustilstanden, skal du trykke på feltets navn og derefter trykke på dashboardets navn eller **Mit arbejdsområde** .
+8. Hvis du vil forlade fokustilstanden, skal du trykke på feltets navn og derefter trykke på dashboardets navn eller **Mit arbejdsområde**.
    
     ![Skærmbillede af et dashboard, der viser pile, som peger på Mit arbejdsområde og Eksempel på analyse af salgsmuligheder.](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-tile-breadcrumb.png)
 
@@ -87,7 +87,7 @@ Derefter åbner du felter i fokustilstand i Power BI-mobilappsene og interagerer
 ## <a name="tiles-in-the-windows-10-mobile-app"></a>Felter i mobilappen til Windows 10
 
 >[!NOTE]
->Understøttelse af Power BI-mobilapp til **telefoner, der bruger Windows 10 mobile** , ophører den 16. marts 2021. [Få mere at vide](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+>Understøttelse af Power BI-mobilapp til **telefoner, der bruger Windows 10 mobile**, ophører den 16. marts 2021. [Få mere at vide](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 1. Åbn et [dashboard i Power BI-mobilappen](mobile-apps-view-dashboard.md) til Windows 10.
 2. Tryk på den lodrette ellipse på feltet. Herfra kan du: 
@@ -118,7 +118,7 @@ Derefter åbner du felter i fokustilstand i Power BI-mobilappsene og interagerer
    > 
    > 
    
-   Tryk på **Centrer kort** -ikonet ![Ikonet Centrer kort](media/mobile-tiles-in-the-mobile-apps/power-bi-center-map-icon.png) for at centrere kortet til din aktuelle placering.
+   Tryk på **Centrer kort**-ikonet ![Ikonet Centrer kort](media/mobile-tiles-in-the-mobile-apps/power-bi-center-map-icon.png) for at centrere kortet til din aktuelle placering.
    
    ![Skærmbillede af et kort, der viser din aktuelle placering i Kentucky centreret på kortet.](media/mobile-tiles-in-the-mobile-apps/power-bi-windows-10-center-map.png)
    

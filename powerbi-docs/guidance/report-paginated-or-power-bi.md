@@ -2,18 +2,18 @@
 title: Her skal du bruge sideinddelte rapporter i Power BI
 description: Vejledning til, hvornår du skal bruge sideinddelte rapporter i Power BI.
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: report-builder
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 01/04/2020
-ms.author: v-pemyer
-ms.openlocfilehash: 169a94beab8cb5b4c44105aba4c1cdf02e902c06
-ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
+ms.openlocfilehash: 2a13e5d697d4e0bda32068a3b6eb908959ce0643
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92916860"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96418986"
 ---
 # <a name="when-to-use-paginated-reports-in-power-bi"></a>Her skal du bruge sideinddelte rapporter i Power BI
 
@@ -44,27 +44,27 @@ Du kan overveje at udvikle SSRS-rapporter i stedet for at overføre dem. Det er 
 
 Der er mange overbevisende scenarier, når du kan få fordel af at udvikle en sideinddelt rapport i Power BI. Mange er funktioner eller egenskaber, der ikke understøttes af Power BI-rapporter.
 
-- **Klar til udskrivning** : Sideinddelte rapporter er optimeret til udskrivning eller generering af PDF. Når det er nødvendigt, kan dataområder udvides og overskrides til flere sider på en kontrolleret måde. Dine rapportlayout kan definere margener og sidehoveder samt sidefødder.
-- **Gengivelsesformater** : Power BI kan gengive sideinddelte rapporter i forskellige formater. Formater omfatter Microsoft Excel, Microsoft Word, Microsoft PowerPoint, PDF, CSV, XML og MHTML. (MHTML-formatet bruges af Power BI-tjenesten til at gengive rapporter). Dine rapportbrugere kan vælge at eksportere i det format, der passer til dem.
-- **Præcisionslayout** : Du kan designe layout med megen formatering og med perfekt pixel – til den nøjagtige størrelse og placering, der er konfigureret i brøkdele af tommer eller centimeter.
-- **Dynamisk layout** : Du kan fremstille meget dynamiske layout ved at angive mange rapportegenskaber, der skal bruge VB.NET-udtryk. Udtryk har adgang til mange kerne .NET Framework-biblioteker.
-- **Gengivelsesspecifikt layout** : Du kan bruge udtryk til at redigere rapportlayoutet på baggrund af det anvendte gengivelsesformat. Du kan f.eks. designe rapporten til at deaktivere skiftende synlighed (for at opnå detailudledning og færre detaljer), når den gengives ved hjælp af et ikke-interaktivt format, f.eks. PDF.
-- **Oprindelige forespørgsler** : Du behøver ikke først at udvikle et Power BI-datasæt. Det er muligt at oprette oprindelige forespørgsler (eller bruge gemte procedurer) til alle [understøttede datakilder](../paginated-reports/paginated-reports-data-sources.md). Forespørgsler kan indeholde parametre.
-- **Grafiske forespørgselsdesignere** : Power BI Report Builder indeholder grafiske forespørgselsdesignere, der kan hjælpe dig med at skrive og teste dine forespørgsler på datasæt.
-- **Statiske datasæt** : Du kan definere et datasæt og angive data direkte i din rapportdefinition. Denne funktion er især nyttig til at understøtte en demo eller til levering af en blåstempling.
-- **Dataintegration** : Du kan kombinere data fra forskellige datakilder eller med statiske datasæt. Det gøres ved at oprette brugerdefinerede felter ved hjælp af VB.NET-udtryk.
-- **Parametre** : Du kan designe meget tilpassede oplevelser med parametre, herunder datadrevne og overlappende parametre. Det er også muligt at definere parameterstandarder. Disse oplevelser kan designes, så brugerne hurtigt kan angive relevante filtre. Parametre behøver desuden ikke at filtrere rapportdata. De kan bruges til at understøtte "what if"-scenarier eller dynamisk filtrering eller formatering.
-- **Billeddata** : Din rapport kan gengive billeder, når de er gemt i binært format i en datakilde.
-- **Brugerdefineret kode** : Du kan udvikle kodeblokke af VB.NET-funktioner i din rapport og bruge dem i et rapportudtryk.
-- **Underrapporter** : Du kan integrere andre sideinddelte rapporter i Power BI (fra det samme arbejdsområde) i din rapport.
-- **Fleksible datagitre** : Du har detaljeret kontrol over gitterlayout ved hjælp af tablix-dataområdet. Det understøtter også komplekse layout, herunder indlejrede og tilstødende grupper. Og det kan konfigureres til at gentage overskrifter, når de udskrives over flere sider. Det kan også integrere en underrapport eller andre visualiseringer, herunder datalinjer, minidiagrammer og indikatorer.
-- **Afstandsdatatyper** : Kortdataområdet kan visualisere [SQL Server-afstandsdatatyper](/sql/relational-databases/spatial/spatial-data-sql-server). Derfor kan datatyperne GEOGRAFI og GEOMETRI bruges til at visualisere punkter, linjer eller polygoner. Det er også muligt at visualisere polygoner, der er defineret i ESRI-formfiler.
-- **Moderne målere** : Radiale og lineære målere kan bruges til at få vist KPI-værdier og status. De kan også integreres i gitterdataområder, der gentages i grupper.
-- **HTML-gengivelse** : Du kan få vist formateret tekst, når den gemmes som HTML.
-- **Brevfletning** : Du kan bruge pladsholdere til tekstfelter til at indsætte dataværdier i tekst. På denne måde kan du oprette en brevfletningsrapport.
-- **Interaktivitetsfunktioner** : Interaktive funktioner omfatter skift af synlighed (for at opnå detailudledning og færre detaljer), links, interaktiv sortering og værktøjstip. Du kan også tilføje links, der indeholder detaljeadgang til Power BI-rapporter eller andre sideinddelte rapporter i Power BI. Links kan også springe til en anden placering i samme rapport.
-- **Abonnementer** : Power BI kan levere sideinddelte rapporter efter en tidsplan som mails med vedhæftede filer af rapporter i ethvert format, der understøttes.
-- **Pr. bruger-layout** : Du kan oprette dynamiske rapportlayout på baggrund af den godkendte bruger, der åbner rapporten. Du kan designe rapporten, så du kan filtrere data anderledes, skjule dataområder eller visualiseringer, anvende forskellige formater eller angive brugerspecifikke parameterstandarder.
+- **Klar til udskrivning**: Sideinddelte rapporter er optimeret til udskrivning eller generering af PDF. Når det er nødvendigt, kan dataområder udvides og overskrides til flere sider på en kontrolleret måde. Dine rapportlayout kan definere margener og sidehoveder samt sidefødder.
+- **Gengivelsesformater**: Power BI kan gengive sideinddelte rapporter i forskellige formater. Formater omfatter Microsoft Excel, Microsoft Word, Microsoft PowerPoint, PDF, CSV, XML og MHTML. (MHTML-formatet bruges af Power BI-tjenesten til at gengive rapporter). Dine rapportbrugere kan vælge at eksportere i det format, der passer til dem.
+- **Præcisionslayout**: Du kan designe layout med megen formatering og med perfekt pixel – til den nøjagtige størrelse og placering, der er konfigureret i brøkdele af tommer eller centimeter.
+- **Dynamisk layout**: Du kan fremstille meget dynamiske layout ved at angive mange rapportegenskaber, der skal bruge VB.NET-udtryk. Udtryk har adgang til mange kerne .NET Framework-biblioteker.
+- **Gengivelsesspecifikt layout**: Du kan bruge udtryk til at redigere rapportlayoutet på baggrund af det anvendte gengivelsesformat. Du kan f.eks. designe rapporten til at deaktivere skiftende synlighed (for at opnå detailudledning og færre detaljer), når den gengives ved hjælp af et ikke-interaktivt format, f.eks. PDF.
+- **Oprindelige forespørgsler**: Du behøver ikke først at udvikle et Power BI-datasæt. Det er muligt at oprette oprindelige forespørgsler (eller bruge gemte procedurer) til alle [understøttede datakilder](../paginated-reports/paginated-reports-data-sources.md). Forespørgsler kan indeholde parametre.
+- **Grafiske forespørgselsdesignere**: Power BI Report Builder indeholder grafiske forespørgselsdesignere, der kan hjælpe dig med at skrive og teste dine forespørgsler på datasæt.
+- **Statiske datasæt**: Du kan definere et datasæt og angive data direkte i din rapportdefinition. Denne funktion er især nyttig til at understøtte en demo eller til levering af en blåstempling.
+- **Dataintegration**: Du kan kombinere data fra forskellige datakilder eller med statiske datasæt. Det gøres ved at oprette brugerdefinerede felter ved hjælp af VB.NET-udtryk.
+- **Parametre**: Du kan designe meget tilpassede oplevelser med parametre, herunder datadrevne og overlappende parametre. Det er også muligt at definere parameterstandarder. Disse oplevelser kan designes, så brugerne hurtigt kan angive relevante filtre. Parametre behøver desuden ikke at filtrere rapportdata. De kan bruges til at understøtte "what if"-scenarier eller dynamisk filtrering eller formatering.
+- **Billeddata**: Din rapport kan gengive billeder, når de er gemt i binært format i en datakilde.
+- **Brugerdefineret kode**: Du kan udvikle kodeblokke af VB.NET-funktioner i din rapport og bruge dem i et rapportudtryk.
+- **Underrapporter**: Du kan integrere andre sideinddelte rapporter i Power BI (fra det samme arbejdsområde) i din rapport.
+- **Fleksible datagitre**: Du har detaljeret kontrol over gitterlayout ved hjælp af tablix-dataområdet. Det understøtter også komplekse layout, herunder indlejrede og tilstødende grupper. Og det kan konfigureres til at gentage overskrifter, når de udskrives over flere sider. Det kan også integrere en underrapport eller andre visualiseringer, herunder datalinjer, minidiagrammer og indikatorer.
+- **Afstandsdatatyper**: Kortdataområdet kan visualisere [SQL Server-afstandsdatatyper](/sql/relational-databases/spatial/spatial-data-sql-server). Derfor kan datatyperne GEOGRAFI og GEOMETRI bruges til at visualisere punkter, linjer eller polygoner. Det er også muligt at visualisere polygoner, der er defineret i ESRI-formfiler.
+- **Moderne målere**: Radiale og lineære målere kan bruges til at få vist KPI-værdier og status. De kan også integreres i gitterdataområder, der gentages i grupper.
+- **HTML-gengivelse**: Du kan få vist formateret tekst, når den gemmes som HTML.
+- **Brevfletning**: Du kan bruge pladsholdere til tekstfelter til at indsætte dataværdier i tekst. På denne måde kan du oprette en brevfletningsrapport.
+- **Interaktivitetsfunktioner**: Interaktive funktioner omfatter skift af synlighed (for at opnå detailudledning og færre detaljer), links, interaktiv sortering og værktøjstip. Du kan også tilføje links, der indeholder detaljeadgang til Power BI-rapporter eller andre sideinddelte rapporter i Power BI. Links kan også springe til en anden placering i samme rapport.
+- **Abonnementer**: Power BI kan levere sideinddelte rapporter efter en tidsplan som mails med vedhæftede filer af rapporter i ethvert format, der understøttes.
+- **Pr. bruger-layout**: Du kan oprette dynamiske rapportlayout på baggrund af den godkendte bruger, der åbner rapporten. Du kan designe rapporten, så du kan filtrere data anderledes, skjule dataområder eller visualiseringer, anvende forskellige formater eller angive brugerspecifikke parameterstandarder.
 
 ## <a name="next-steps"></a>Næste trin
 

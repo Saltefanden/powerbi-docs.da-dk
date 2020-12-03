@@ -2,18 +2,18 @@
 title: Vejledning til mange-til-mange-relation
 description: Vejledning til udvikling af modeller med mange til mange-relationer.
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 03/02/2020
-ms.author: v-pemyer
-ms.openlocfilehash: 3c94c25f5f1ba717f68a0c2a5ec661be10f70135
-ms.sourcegitcommit: 7e99e8af9caf9340958c4607a94728d43e8c3811
+ms.openlocfilehash: 95383581a258374f2757581e82fa0f2044dcae84
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91668522"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96418618"
 ---
 # <a name="many-to-many-relationship-guidance"></a>Vejledning til mange-til-mange-relation
 
@@ -171,7 +171,7 @@ Lad os se på en bedre løsning.
 
 Bemærk følgende designændringer:
 
-- Modellen indeholder nu fire ekstra tabeller: **Ordrelinje**, **Ordredato**, **Produkt**og **Opfyldelsesdato**
+- Modellen indeholder nu fire ekstra tabeller: **Ordrelinje**, **Ordredato**, **Produkt** og **Opfyldelsesdato**
 - De fire ekstra tabeller er tabeller af dimensionstypen, og disse tabeller er relateret til tabeller af faktatypen ved hjælp af én til mange-relationer
 - Tabellen **Ordrelinje** indeholder kolonnen **Ordrelinje-id**, der repræsenterer værdien **Ordre-id** ganget med 100 samt værdien **Ordrelinje** – et entydigt id for hver ordrelinje
 - Tabellerne **Ordre** og **Opfyldelse** indeholder nu kolonnen **Ordrelinje-id**, og de indeholder ikke længere kolonnerne **Ordre-id** og **Ordrelinje**
@@ -194,7 +194,7 @@ Lad os kigge på et eksempel med fire tabeller: **Dato**, **Salg**, **Produkt** 
 
 ![Diagram, der viser en model, som indeholder fire tabeller: Dato, Salg, Produkt og Mål.](media/relationships-many-to-many/sales-targets-model-example.png)
 
-Tabellen **Mål** indeholder tre kolonner: **Kategori**, **Målantal**og **Målår**. Tabelrækkerne viser en granularitet på år og produktkategori. Det vil sige, at mål, der bruges til at måle salgspræstation, angives hvert år for hver produktkategori.
+Tabellen **Mål** indeholder tre kolonner: **Kategori**, **Målantal** og **Målår**. Tabelrækkerne viser en granularitet på år og produktkategori. Det vil sige, at mål, der bruges til at måle salgspræstation, angives hvert år for hver produktkategori.
 
 ![Diagram, der viser, at tabellen Mål har tre kolonner: Målår, Kategori og Målantal.](media/relationships-many-to-many/sales-targets-model-target-rows.png)
 

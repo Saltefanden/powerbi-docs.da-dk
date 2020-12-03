@@ -2,19 +2,19 @@
 title: Hent Power BI Desktop
 description: Download og installér Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-fundamentals
 ms.topic: how-to
 ms.date: 10/12/2020
-ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: d53e7a3205d8e1915f8dd0969fe35d5c32d25cf5
-ms.sourcegitcommit: eab5a02520c421a57019595c03e9ecfdb41d52ad
+ms.openlocfilehash: 9c46188318ca5659f109ba8483c552d9ab43f932
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92256365"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96418664"
 ---
 # <a name="get-power-bi-desktop"></a>Hent Power BI Desktop
 Med Power BI Desktop kan du oprette avancerede forespørgsler, modeller og rapporter, som visualiserer data. Med Power BI Desktop kan du skabe datamodeller, oprette rapporter og dele dit arbejde ved at publicere det i Power BI-tjenesten. Power BI Desktop kan downloades gratis.

@@ -1,21 +1,21 @@
 ---
 title: KPI-visualiseringer (Key Performance Indicator)
 description: Opret KPI-visualiseringer (Key Performance Indicator) i Power BI
-author: msftrien
+author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 01/30/2020
-ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f272a760c016fa0d5fcfc9849eaa2a01fc77b9f9
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: 448115ea6cde6c85a7bd3386890f483d71882ad5
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93412850"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96418917"
 ---
 # <a name="create-key-performance-indicator-kpi-visualizations"></a>Opret KPI-visualiseringer (Key Performance Indicator)
 
@@ -36,7 +36,7 @@ KPI'er er et godt valg:
 
 ## <a name="kpi-requirements"></a>KPI-krav
 
-En designer baserer KPI-visualiseringer på et bestemt mål. Formålet med KPI'en er at hjælpe dig med at evaluere den aktuelle værdi og status for en metrikværdi i forhold til et angivet mål. En KPI-visualisering kræver en *udgangsmåling* , som evalueres til en værdi, en *destinationsmåling* eller -værdi og en *tærskel* eller et *mål*.
+En designer baserer KPI-visualiseringer på et bestemt mål. Formålet med KPI'en er at hjælpe dig med at evaluere den aktuelle værdi og status for en metrikværdi i forhold til et angivet mål. En KPI-visualisering kræver en *udgangsmåling*, som evalueres til en værdi, en *destinationsmåling* eller -værdi og en *tærskel* eller et *mål*.
 
 Et KPI-datasæt skal indeholde målværdier for en KPI. Hvis dit datasæt ikke indeholder målværdier, kan du oprette dem ved at føje et Excel-ark med mål til din datamodel eller PBIX-fil.
 
@@ -86,17 +86,17 @@ I dette eksempel skal du oprette en KPI, der måler status i forhold til et defi
 
     * **Indicator** – -styrer indikatorens visningsenheder og decimalpladser.
 
-    * **Trend axis** – når det er slået **Til** , viser visualiseringen tendensaksen som baggrund i KPI-visualiseringen.  
+    * **Trend axis** – når det er slået **Til**, viser visualiseringen tendensaksen som baggrund i KPI-visualiseringen.  
 
-    * **Goals** – når det er slået **Til** , viser visualiseringen målet og afstanden til målet som en procentdel.
+    * **Goals** – når det er slået **Til**, viser visualiseringen målet og afstanden til målet som en procentdel.
 
-    * **Color coding > Direction** – nogle KPI'er anses som bedre for *højere* værdier, og nogle anses som bedre for *lavere* værdier. For eksempel indtægter i forhold til ventetid. En højere værdi for indtjening er typisk bedre i forhold til en højere værdi for ventetid. Vælg **Høj er godt** , og rediger eventuelt farveindstillingerne.
+    * **Color coding > Direction** – nogle KPI'er anses som bedre for *højere* værdier, og nogle anses som bedre for *lavere* værdier. For eksempel indtægter i forhold til ventetid. En højere værdi for indtjening er typisk bedre i forhold til en højere værdi for ventetid. Vælg **Høj er godt**, og rediger eventuelt farveindstillingerne.
 
 KPI'er er også tilgængelige i Power BI-tjenesten og på dine mobilenheder. Det giver dig mulighed for altid at have fingeren på pulsen i virksomheden.
 
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
 
-Hvis KPI'en ikke ligner det ovenfor, kan det skyldes, at du ikke har sorteret efter **FiscalMonth**. KPI'er har ikke en sorteringsindstilling. Du skal starte igen og sortere efter **FiscalMonth** , *før* du konverterer din visualisering til en KPI.
+Hvis KPI'en ikke ligner det ovenfor, kan det skyldes, at du ikke har sorteret efter **FiscalMonth**. KPI'er har ikke en sorteringsindstilling. Du skal starte igen og sortere efter **FiscalMonth**, *før* du konverterer din visualisering til en KPI.
 
 ## <a name="next-steps"></a>Næste trin
 

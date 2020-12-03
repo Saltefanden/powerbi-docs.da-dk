@@ -2,19 +2,19 @@
 title: Optimer et dashboard til mobiltelefoner – Power BI
 description: Lær at oprette en tilpasset visning af et dashboard i Power BI-tjenesten, der er specialdesignet til visning på mobiltelefoner.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 04/18/2019
-ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: bc1c9987205e86ee9a123bf8ba9afd567c59ff52
-ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
+ms.openlocfilehash: b0bf14ec5229aae40ee4e3f43c65b6bef4a505ba
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "86264710"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96417468"
 ---
 # <a name="optimize-a-dashboard-for-mobile-phones---power-bi"></a>Optimer et dashboard til mobiltelefoner – Power BI 
 Når du får vist dashboards i stående retning på en telefon, vil du opdage, at dashboardfelterne har den samme størrelse og er placeret efter hinanden et ad gangen. I Power BI-tjenesten kan du oprette en tilpasset visning af et dashboard specifikt til stående retning på telefoner. Selvom du opretter en telefonvisning, vil du se dashboardet, som det ser ud i tjenesten, når du vender telefonen om på siden.

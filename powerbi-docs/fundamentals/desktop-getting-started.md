@@ -2,20 +2,20 @@
 title: Kom i gang med Power BI Desktop
 description: Kom i gang med Power BI Desktop.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.custom: contperfq1
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-fundamentals
 ms.topic: tutorial
 ms.date: 08/19/2020
-ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: ec18bb94d7329d4b918f16465dd839a69c3fd973
-ms.sourcegitcommit: f73ea4b9116ad186817ec5cc5d5f487d49cc0cb0
+ms.openlocfilehash: a1fb3a76cc22bf4f22fc080bcde46ec40a3720bb
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88638836"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96418503"
 ---
 # <a name="get-started-with-power-bi-desktop"></a>Kom i gang med Power BI Desktop
 Velkommen til Introduktionsvejledning til Power BI Desktop. I denne præsentation kan du se, hvordan Power BI Desktop fungerer, hvad det kan gøre, og hvordan du bygger robuste datamodeller og fantastiske rapporter for at styrke din business intelligence.
@@ -72,7 +72,7 @@ Visningen **Rapport** er standardvisningen.
 Power BI Desktop indeholder også **Power Query-editor**, som åbnes i et separat vindue. I **Power Query-editor** kan du oprette forespørgsler og transformere data. Derefter indlæser du denne tilpassede datamodel i Power BI Desktop og opretter rapporter.
 
 ## <a name="connect-to-data"></a>Opret forbindelse til data
-Når Power BI Desktop er installeret, er du klar til at oprette forbindelse til en verden af data, der konstant udvides. Hvis du vil se de mange typer datakilder, der er tilgængelige, skal du vælge **Hent data** > **Mere** under fanen **Hjem** i Power BI Desktop og rulle gennem listen over **alle** datakilder i vinduet **Hent data**. Som en del af denne hurtige præsentation opretter vi forbindelse til et par forskellige **web**datakilder.
+Når Power BI Desktop er installeret, er du klar til at oprette forbindelse til en verden af data, der konstant udvides. Hvis du vil se de mange typer datakilder, der er tilgængelige, skal du vælge **Hent data** > **Mere** under fanen **Hjem** i Power BI Desktop og rulle gennem listen over **alle** datakilder i vinduet **Hent data**. Som en del af denne hurtige præsentation opretter vi forbindelse til et par forskellige **web** datakilder.
 
 ![Skærmbillede af Power BI Desktop, der viser værktøjet Hent data.](media/desktop-getting-started/getdataweb.png)
 
@@ -168,7 +168,7 @@ I dialogboksen **Fra web** skal du angive URL-adressen til webstedet med forkort
 
 I vinduet **Navigator** skal du vælge tabellen **Codes and abbreviations for U.S. states, federal district, territories, and other regions** og derefter vælge **OK**. Tabellen åbnes i Power Query-editor.
 
-Fjern alle kolonner med undtagelse af **Name and status of region**, **Name and status of region2** og **ANSI**. Hvis du kun vil beholde disse kolonner, skal du holde **Ctrl** nede og vælge kolonnerne. Derefter skal du enten højreklikke på en af kolonneoverskrifterne og vælge **Fjern andre kolonner**eller vælge **Fjern andre kolonner** i gruppen **Administrer kolonner** under fanen **Hjem**. 
+Fjern alle kolonner med undtagelse af **Name and status of region**, **Name and status of region2** og **ANSI**. Hvis du kun vil beholde disse kolonner, skal du holde **Ctrl** nede og vælge kolonnerne. Derefter skal du enten højreklikke på en af kolonneoverskrifterne og vælge **Fjern andre kolonner** eller vælge **Fjern andre kolonner** i gruppen **Administrer kolonner** under fanen **Hjem**. 
 
 Klik på rullepilen ud for kolonneoverskriften **Name and status of region2**, og vælg **Filtre** > **er lig med**. I dialogboksen **Filtrer rækker** skal du klikke på rullepilen ud for feltet **Angiv eller vælg en værdi** ved siden af **er lig med** og vælge **Stat**. 
 
@@ -190,7 +190,7 @@ Nu, hvor tabellen **Statskoder** er formet, kan du *kombinere* disse to tabeller
 
 Når du har en eller flere kolonner, som du vil føje til en anden forespørgsel, skal du *flette* forespørgslerne. Når du har flere rækker med data, som du vil føje til en eksisterende forespørgsel, skal du *tilføje* forespørgslen.
 
-I dette tilfælde skal du *flette* forespørgslen **Statskoder** til forespørgslen **De bedste stater til salg af solbriller**. Hvis du vil flette forespørgslerne, skal du skifte til forespørgslen **De bedste stater til salg af solbriller** ved at vælge den i ruden **Forespørgsler** i venstre side af Power Query-editor. Vælg derefter **Flet forespørgsler** i gruppen**Kombiner** på fanen **Hjem** på båndet.
+I dette tilfælde skal du *flette* forespørgslen **Statskoder** til forespørgslen **De bedste stater til salg af solbriller**. Hvis du vil flette forespørgslerne, skal du skifte til forespørgslen **De bedste stater til salg af solbriller** ved at vælge den i ruden **Forespørgsler** i venstre side af Power Query-editor. Vælg derefter **Flet forespørgsler** i gruppen **Kombiner** på fanen **Hjem** på båndet.
 
 I vinduet **Flet** skal du klikke på rullepilen for at vælge **Statskoder** fra de andre tilgængelige forespørgsler. Vælg den kolonne, der skal sammenlignes, fra hver tabel, i dette tilfælde **Stat** fra forespørgslen **De bedste stater til salg af solbriller** og **Navn på stat** fra forespørgslen **Statskoder**. 
 
@@ -285,7 +285,7 @@ Du kan oprette lignende eller andre visualiseringer for felterne **Prisbillighed
 
 ![Skærmbillede af Power BI Desktop, der viser visualiseringerne Tabel samt Kurve og Grupperet søjle.](media/desktop-getting-started/designer_gsg_report2costofliving.png)
 
-Du kan få vist forskellige visualiseringer på forskellige rapportsider. Hvis du vil tilføje en ny side, skal du vælge symbolet **+** ud for de eksisterende sider på sidepanelet eller vælge **Indsæt** > **Ny side** på fanen **Hjem** på båndet. Hvis du vil omdøbe en side, skal du dobbeltklikke på sidens navn på sidepanelet eller højreklikke på siden og vælge **Omdøb side**og derefter skrive det nye navn. Du går til en anden side i rapporten ved at vælge siden i sidepanelet. 
+Du kan få vist forskellige visualiseringer på forskellige rapportsider. Hvis du vil tilføje en ny side, skal du vælge symbolet **+** ud for de eksisterende sider på sidepanelet eller vælge **Indsæt** > **Ny side** på fanen **Hjem** på båndet. Hvis du vil omdøbe en side, skal du dobbeltklikke på sidens navn på sidepanelet eller højreklikke på siden og vælge **Omdøb side** og derefter skrive det nye navn. Du går til en anden side i rapporten ved at vælge siden i sidepanelet. 
 
 ![Skærmbillede af Power BI Desktop, der viser linjen Sider.](media/desktop-getting-started/pages.png)
 

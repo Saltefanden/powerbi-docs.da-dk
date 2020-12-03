@@ -5,15 +5,15 @@ author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
-ms.topic: tutorial
 ms.subservice: powerbi-custom-visuals
+ms.topic: tutorial
 ms.date: 11/21/2018
-ms.openlocfilehash: 2a557f1e84e8102df6b22121c7f0b79d761ce49e
-ms.sourcegitcommit: a07fa723bb459494c60cf6d749b4554af723482a
+ms.openlocfilehash: ec3ba601eb6cd5db4fbc19298d76ce0cd7346f53
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "84739316"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96418733"
 ---
 # <a name="tutorial-adding-formatting-options-to-a-power-bi-visual"></a>Selvstudium: Føj formateringsindstillinger til en visualisering i Power BI
 
@@ -142,7 +142,7 @@ Du kan tilføje brugerdefinerede egenskaber for at gøre det muligt at konfigure
 
     ![Tilføj klasse med visuals](media/custom-visual-develop-tutorial-format-options/visual-class-add-on.png)
 
-9. I klassen **Visual** skal du tilføje følgende metode før **opdaterings**metoden. Denne metode bruges til at udfylde formateringsindstillingerne.
+9. I klassen **Visual** skal du tilføje følgende metode før **opdaterings** metoden. Denne metode bruges til at udfylde formateringsindstillingerne.
 
     ```typescript
     public enumerateObjectInstances(options: EnumerateVisualObjectInstancesOptions): VisualObjectInstanceEnumeration {
@@ -155,7 +155,7 @@ Du kan tilføje brugerdefinerede egenskaber for at gøre det muligt at konfigure
 
     ![Objekt for visualindstillinger](media/custom-visual-develop-tutorial-format-options/visual-settings-object.png)
 
-10. I **opdaterings**metoden skal du tilføje følgende kode efter angivelsen af variablen **radius**.
+10. I **opdaterings** metoden skal du tilføje følgende kode efter angivelsen af variablen **radius**.
 
     ```typescript
     this.visualSettings = VisualSettings.parse<VisualSettings>(dataView);

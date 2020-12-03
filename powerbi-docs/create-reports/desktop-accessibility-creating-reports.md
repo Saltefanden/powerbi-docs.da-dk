@@ -2,19 +2,19 @@
 title: Oprettelse af tilgængelige rapporter i Power BI
 description: Sådan opretter du tilgængelige Power BI Desktop-rapporter
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 10/30/2019
-ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 13223b2ba9d5b50654c952da6b2517717103a724
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: d8ca43556cd01c5658574e8b42084c9db15d9206
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91600220"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96417721"
 ---
 # <a name="design-power-bi-reports-for-accessibility"></a>Design tilgængelige Power BI-rapporter
 Du kan designe og oprette flotte rapporter og samtidig have øje for tilgængelighed. Når du opbygger en rapport, bør du oprette den, så den kan bruges af så mange personer som muligt, uanset hvem din målgruppe er, uden at det er nødvendigt at tilpasse den til en slags specialdesign.

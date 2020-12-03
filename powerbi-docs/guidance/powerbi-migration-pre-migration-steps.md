@@ -2,18 +2,18 @@
 title: Forbered migrering til Power BI
 description: Vejledning til trin forud for migrering til Power BI.
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 08/20/2020
-ms.author: v-pemyer
-ms.openlocfilehash: 01d1e48537b2d373be3897259f8ac6e97886f268
-ms.sourcegitcommit: 4e347efd132b48aaef6c21236c3a21e5fce285cc
+ms.openlocfilehash: 33bee844aced23973bd033cf0d9ae9d8caa4d267
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92680965"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96418572"
 ---
 # <a name="prepare-to-migrate-to-power-bi"></a>Forbered migrering til Power BI
 
@@ -123,7 +123,7 @@ Den første opgave er at forstå, hvordan en vellykket migrering af en enkelt l�
 Forberedelse af en oversigt over eksisterende rapporter på den tidligere BI-platform er et vigtigt skridt mod at forstå, hvad der allerede findes. Resultatet af dette trin bruges som input til at vurdere indsatsniveauet for migrering. Aktiviteter, der er relateret til forberedelse af en oversigt, kan omfatte:
 
 1. **Oversigt over rapporter:** Udarbejd en liste over rapporter og dashboards, der er kandidater til migrering.
-2. **Oversigt over datakilder:** Udarbejd en liste over alle datakilder, som eksisterende rapporter tilgår. Den bør omfatte både datakilder for virksomheden og afdelinger samt personlige datakilder. I forbindelse med denne proces kan der afdækkes datakilder, som it-afdelingen ikke havde kendskab til tidligere, hvilket ofte omtales som _skygge-it_ .
+2. **Oversigt over datakilder:** Udarbejd en liste over alle datakilder, som eksisterende rapporter tilgår. Den bør omfatte både datakilder for virksomheden og afdelinger samt personlige datakilder. I forbindelse med denne proces kan der afdækkes datakilder, som it-afdelingen ikke havde kendskab til tidligere, hvilket ofte omtales som _skygge-it_.
 3. **Overvågningslog:** Hent data fra overvågningsloggen for den tidligere BI-platform for at forstå forbrugsmønstre og hjælpe med prioriteringen. Vigtige oplysninger, der skal hentes fra overvågningsloggen, omfatter:
     - Det gennemsnitlige antal gange, hver rapport blev udført pr. uge/måned/kvartal.
     - Det gennemsnitlige antal forbrugere pr. rapport pr. uge/måned/kvartal.

@@ -2,19 +2,19 @@
 title: 'Eksempel på analyse af leveringskvalitet til Power BI: Få en introduktion'
 description: 'Eksempel på analyse af leveringskvalitet til Power BI: Få en introduktion'
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: amac
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 07/19/2019
-ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 18827ef29282e33a1527be0812b3c0a6971201df
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 4b4cfa78a01ec628f5d396ea6a267abe7598998c
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348706"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96417606"
 ---
 # <a name="supplier-quality-analysis-sample-for-power-bi-take-a-tour"></a>Eksempel på analyse af leveringskvalitet til Power BI: Få en introduktion
 

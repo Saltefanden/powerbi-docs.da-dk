@@ -2,27 +2,27 @@
 title: Opret datotabeller i Power BI Desktop
 description: Teknikker og vejledning til oprettelse af datotabeller i Power BI Desktop.
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 06/24/2020
-ms.author: v-pemyer
-ms.openlocfilehash: 350d4889643556d4e1c6389580415ccba46b55d4
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: 9040fb54e51dfeecad853e5ba980f423ab48e908
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94396627"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96417836"
 ---
 # <a name="create-date-tables-in-power-bi-desktop"></a>Opret datotabeller i Power BI Desktop
 
 Denne artikel henvender sig til designere af datamodeller, der arbejder med Power BI Desktop. I artiklen beskrives god designpraksis i forbindelse med oprettelse af datotabeller i dine datamodeller.
 
-Hvis du vil arbejde med DAX- [funktioner for tidsintelligens](/dax/time-intelligence-functions-dax) (Data Analysis Expressions), er der følgende krav til modellen: Du skal have mindst én _datotabel_ i din model. En datotabel er en tabel, der overholder følgende krav:
+Hvis du vil arbejde med DAX-[funktioner for tidsintelligens](/dax/time-intelligence-functions-dax) (Data Analysis Expressions), er der følgende krav til modellen: Du skal have mindst én _datotabel_ i din model. En datotabel er en tabel, der overholder følgende krav:
 
 > [!div class="checklist"]
-> - Den skal have en kolonne med datatypen **dato** (eller **dato/klokkeslæt** ) – også kaldet en _datokolonne_.
+> - Den skal have en kolonne med datatypen **dato** (eller **dato/klokkeslæt**) – også kaldet en _datokolonne_.
 > - Datokolonnen må kun indeholde entydige værdier.
 > - Datokolonnen må ikke indeholde TOMME værdier.
 > - Datokolonnen må ikke have nogen manglende datoer.
@@ -68,8 +68,8 @@ Hvis du har brug for at oprette en datotabel, kan du overveje at gøre det med D
 
 Du kan oprette en datotabel i din model ved at oprette en beregnet tabel ved hjælp af DAX-funktionerne [CALENDAR](/dax/calendar-function-dax) eller [CALENDARAUTO](/dax/calendarauto-function-dax). Hver funktion returnerer en tabel med en enkelt kolonne med datoer. Du kan derefter udvide den beregnede tabel med beregnede kolonner for at understøtte kravene til filtrering og gruppering af datointervaller.
 
-- Brug funktionen **CALENDAR** , når du vil definere et datointerval. Du overfører to værdier: startdatoen og slutdatoen. Disse værdier kan defineres af andre DAX-funktioner, f. eks. `MIN(Sales[OrderDate])` eller `MAX(Sales[OrderDate])`.
-- Brug funktionen **CALENDARAUTO** , når datointervallet automatisk skal omfatte alle de datoer, der er gemt i modellen. Du kan overføre en enkelt valgfri parameter, som er årets slutmåned (hvis dit år er et kalenderår, der slutter i december, behøver du ikke at overføre en værdi). Det er en nyttig funktion, da den sikrer, at der returneres datoer for komplette år, hvilket er et krav til en markeret datotabel. Derudover behøver ikke at administrere forlængelsen af tabellen til fremtidige år: Når en dataopdatering er fuldført, udløser den genberegningen af tabellen. En genberegning udvider automatisk tabellens datointerval, når datoer for et nyt år indlæses i modellen.
+- Brug funktionen **CALENDAR**, når du vil definere et datointerval. Du overfører to værdier: startdatoen og slutdatoen. Disse værdier kan defineres af andre DAX-funktioner, f. eks. `MIN(Sales[OrderDate])` eller `MAX(Sales[OrderDate])`.
+- Brug funktionen **CALENDARAUTO**, når datointervallet automatisk skal omfatte alle de datoer, der er gemt i modellen. Du kan overføre en enkelt valgfri parameter, som er årets slutmåned (hvis dit år er et kalenderår, der slutter i december, behøver du ikke at overføre en værdi). Det er en nyttig funktion, da den sikrer, at der returneres datoer for komplette år, hvilket er et krav til en markeret datotabel. Derudover behøver ikke at administrere forlængelsen af tabellen til fremtidige år: Når en dataopdatering er fuldført, udløser den genberegningen af tabellen. En genberegning udvider automatisk tabellens datointerval, når datoer for et nyt år indlæses i modellen.
 
 ## <a name="clone-with-dax"></a>Klon med DAX
 
