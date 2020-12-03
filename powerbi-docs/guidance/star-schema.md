@@ -2,18 +2,18 @@
 title: Forstå, hvad et stjerneskema er, og hvorfor det er vigtigt for Power BI
 description: Forstå, hvad et stjerneskema er, og hvilken relevans det har for udvikling af Power BI-datamodeller, der er optimeret til ydeevne og anvendelighed.
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 09/09/2019
-ms.author: v-pemyer
-ms.openlocfilehash: 193247aaf610d1712b7986394e08d3c21055d2fa
-ms.sourcegitcommit: cff93e604e2c5f24e0f03d6dbdcd10c2332aa487
+ms.openlocfilehash: 4d54a0d27ed7cbf0c464a6c4d770e39b99e8b384
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90965474"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96419101"
 ---
 # <a name="understand-star-schema-and-the-importance-for-power-bi"></a>Forstå, hvad et stjerneskema er, og hvorfor det er vigtigt for Power BI
 
