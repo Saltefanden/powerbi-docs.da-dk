@@ -2,19 +2,19 @@
 title: Tip og gode råd til oprettelse af rapporter i Power BI
 description: Få mer at vide om de bedste fremgangsmåder til oprettelse af rapporter i Power BI-tjenesten og Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: willthom
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 05/07/2020
-ms.author: davidi
-ms.openlocfilehash: 336dbad3ac77fb333b52cd3f4c4c0b104573314a
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 2684d5e29015e5fccd6eb75f0a4acf5f45542991
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91633532"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96412684"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop"></a>Tips og tricks til oprettelse af rapporter i Power BI Desktop
 For at få mest muligt ud af dine data skal du nogle gange have lidt ekstra hjælp. Vi har samlet nogle tip og tricks, som du kan bruge, når du opretter rapporter i Microsoft Power BI Desktop *og* i Microsoft Excel 2016 eller Excel 2013 Pro-Plus-udgaver, hvor tilføjelsesprogrammet Power Pivot er aktiveret, og Power-forespørgsel er installeret og aktiveret. 
@@ -205,8 +205,8 @@ Undgå at variere visualiseringerne bare for variationens skyld.  Visualiseringe
 * Sørg for, at kode kvantitative data pænt. Brug ikke mere end tre eller fire tal ved visning af tal. Vis måleenheder for et eller to tal til venstre for decimalkommaet og skala for tusindtals- eller millionseparatorer, dvs. 3,4 millioner og ikke 3.400.000.    
 * Undgå at blande præcisions- og tidsniveauer. Sørg for, at tidsrammerne forstås korrekt.  Undgå at have et diagram, der har sidste måned ud for filtrerede diagrammer fra en bestemt måned i året.    
 * Undgå også at blande store og små målinger på samme skala, f.eks. på en linje eller et liggende søjlediagram.  F.eks. kan én måling være i millioner og en anden måling i tusinder.  Med sådan en stor skalainddeling vil det være vanskeligt at se forskellene i den måling, som er i tusinder.  Hvis du er nødt til at blande, skal du vælge en visualisering som et kombinationsdiagram, der tillader brug af en akse mere.    
-* Undgå at gøre dine diagrammer rodede med datamærkater, der ikke er nødvendige. Værdierne i liggende søjlediagrammer forstås normalt uden at vise det faktiske tal, ***hvis de er tilstrækkeligt store***.   
-* Vær opmærksom på, hvordan [diagrammer sorteres](../consumer/end-user-change-sort.md). Hvis du vil fremhæve det højeste eller laveste tal, skal du sortere efter målingen. Hvis du ønsker, at modtagerne hurtigt skal kunne finde en bestemt kategori blandt mange andre kategorier, skal du sortere efter aksen.  
+* Undgå at gøre dine diagrammer rodede med datamærkater, der ikke er nødvendige. Værdierne i liggende søjlediagrammer forstås normalt uden at vise det faktiske tal, ***hvis de er tilstrækkeligt store** _.   
+_ Vær opmærksom på, hvordan [diagrammer sorteres](../consumer/end-user-change-sort.md). Hvis du vil fremhæve det højeste eller laveste tal, skal du sortere efter målingen. Hvis du ønsker, at modtagerne hurtigt skal kunne finde en bestemt kategori blandt mange andre kategorier, skal du sortere efter aksen.  
 * Cirkeldiagrammer er bedst, hvis de har mindre end otte kategorier. Eftersom du ikke kan sammenligne værdier ved siden af hinanden, er det vanskeligere at sammenligne værdier i et cirkeldiagram end i liggende søjlediagrammer og stående søjlediagrammer. Cirkeldiagrammer kan være gode til visning af dele i forhold til helheder i stedet for at sammenligne delene. Og målerdiagrammer er gode til visning af den aktuelle status i forbindelse med et mål.    
 
 Se [Visualiseringstyper i Power BI](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md) for at få en mere visualiseringsspecifik vejledning.  

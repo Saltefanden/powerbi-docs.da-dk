@@ -2,25 +2,25 @@
 title: Sådan arbejder du med visualiseringer (visuelle elementer) som virksomhedsbruger
 description: Power BI-begreber og -terminologi – visualiseringer, visuelle elementer. Hvad er en visualisering/et visuelt element i Power BI?
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 10/7/2020
-ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f463e9a065ddfa550cdab6929393cfb71ce30158
-ms.sourcegitcommit: d2f633b4bfa271051ba1d2ef0e6e8da7dcf42818
+ms.openlocfilehash: dfa030b487e1e4d9f6f4d1bfd39cfab8baa72c71
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91830298"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96389178"
 ---
 # <a name="interact-with-visuals-in-reports-dashboards-and-apps"></a>Interager med visualiseringer i rapporter, på dashboards og i apps
 
 [!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
-Helt grundlæggende er en ***visualisering*** (eller et *visuelt element*) en form for diagram, der er udarbejdet af Power BI-*designere* ved hjælp af dataene i rapporter og datasæt. 
+Helt grundlæggende er en ***visualisering** _ (eller en visual*) en form for diagram, der er udarbejdet af Power BI-*designere* ved hjælp af dataene i rapporter og datasæt. 
 
 Der findes visualiseringer på dashboards, i rapporter, og de kan oprettes ved hjælp af Spørgsmål og svar i Power BI. Når en designer opretter en visualisering i en rapport, er det muligt at *fastgøre* den pågældende visualisering til et dashboard. En [visualisering i et dashboard kaldes et *felt*](end-user-tiles.md). Dette dashboard indeholder otte felter. 
 
@@ -55,7 +55,7 @@ I forbindelse med mange af disse indstillinger kan din administrator eller *desi
 |[Bed Power BI om at søge efter interessante fakta eller tendenser](end-user-insights.md) i visualiseringens data for dig.  Disse automatisk genererede visuelle elementer kaldes *indsigt*.     |    ja, for felter    |  nej       | nej   |
 |[Få kun vist én visualisering ad gangen ved hjælp af *fokustilstand*](end-user-focus.md).     | ja, for felter        |   ja, for visuals      | i/t  |
 |[Undersøg, hvornår visualiseringen sidst blev opdateret](end-user-fresh.md).     |  ja       |    ja     | i/t  |
-|[Få kun vist én visualisering ad gangen uden kanter eller navigationsruder ved hjælp af *fuldskærms*tilstand](end-user-focus.md).     |   ja      |  ja       | Standard  |
+|[Få kun vist én visualisering ad gangen uden kanter eller navigationsruder ved hjælp af *fuldskærms* tilstand](end-user-focus.md).     |   ja      |  ja       | Standard  |
 |[Udskriv](end-user-print.md).     |  ja       |   ja      | nej  |
 |[Se nærmere på visualiseringen ved at tilføje og redigere visualiseringsfiltre.](end-user-report-filter.md)     |    nej     |   ja      | nej  |
 |Hold over en visualisering for at få vist flere oplysninger og værktøjstip.     |    ja     |   ja      | ja  |

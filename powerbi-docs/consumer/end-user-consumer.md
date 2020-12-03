@@ -2,19 +2,19 @@
 title: Hvad er en virksomhedsbruger af Power BI?
 description: Oversigt over Power BI til virksomhedsbrugere (også kaldet slutbrugere eller forretningsbrugere).
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: overview
 ms.date: 10/11/2020
-ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 7616d84ca93c336e606b3a96e7a362a1b57e6a96
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.openlocfilehash: 133ffefd32008a138c736094dadcfe154211e98c
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91982050"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96391225"
 ---
 # <a name="the-power-bi-service-for-business-users"></a>Power BI-tjenesten til virksomhedsbrugere
 
@@ -28,7 +28,7 @@ De sender dig alle typer rapporter, regneark, mails med diagrammer og endda tryk
 
 ## <a name="the-power-bi-service-for-business-users"></a>Power BI-tjenesten til *virksomhedsbrugere*
 
-Power BI gør dit arbejde både lettere og mere virkningsfuldt. Alle disse data bliver til diagrammer og grafer, der kan visualisere dine data for dig. I stedet for lange lister eller tabeller med tal og ord er din dataindsigt ***smukke*** , farverige og overbevisende visuelle elementer, der fortæller historier om indsigten i dine data. 
+Power BI gør dit arbejde både lettere og mere virkningsfuldt. Alle disse data bliver til diagrammer og grafer, der kan visualisere dine data for dig. I stedet for lange lister eller tabeller med tal og ord er din dataindsigt ***smukke** _, farverige og overbevisende visuelle elementer, der fortæller historier om indsigten i dine data. 
 
 ![Skærmbillede, der viser en Power BI-rapport med forskellige slags diagrammer.](media/end-user-consumer/power-bi-consumer-examples.png)
  
@@ -38,7 +38,7 @@ Du skal blot åbne Power BI-tjenesten i en browser eller på en mobilenhed. Du o
 
 Da indholdet ikke er statisk, kan du se nærmere på dataene, lede efter tendenser, indsigt og anden business intelligence. Opdel indholdet, og stil selv spørgsmål til det med dine egne ord. Eller læn dig tilbage, og lad dine data finde interessant indsigt for dig: Give dig besked, når data ændres, og sende rapporter til dig via mail efter en tidsplan, som du har angivet. Alle dine data, når som helst, i cloudmiljøet eller i det lokale miljø og fra alle enheder. Det er kun begyndelsen på det, Power BI kan gøre. 
 
-## <a name="am-i-a-power-bi-business-user"></a>Er jeg en *forretningsbruger* i Power BI?
+## <a name="am-i-a-power-bi-_business-user"></a>Er jeg en Power BI-_virksomhedsbruger*?
 
 Den måde, du interagerer med Power BI på, afhænger af din jobfunktion. Som forbruger eller *virksomhedsbruger* er du den person, der modtager indhold (dashboards, rapporter og apps) fra kollegaer. Du arbejder i online- eller mobilversionen af Power BI, som kaldes Power BI-tjenesten, og gennemgår og interagerer med dette indhold, så du kan træffe forretningsbeslutninger. 
    

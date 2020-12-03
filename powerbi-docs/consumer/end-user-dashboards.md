@@ -2,19 +2,19 @@
 title: Hvad er et dashboard, og hvordan åbner jeg det?
 description: Et dashboard er en vigtig funktion i Power BI-tjenesten.
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: conceptual
 ms.date: 08/30/2020
-ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 2e2c4656c5436691df96b86f145e255153ff9f96
-ms.sourcegitcommit: 89ce1777a85b9fc476f077cbe22978c6cf923603
+ms.openlocfilehash: 518310c6b4b0d45f02049c91a493b6394a4a50d2
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89286680"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96400540"
 ---
 # <a name="dashboards-for-business-users-of-the-power-bi-service"></a>Dashboards til virksomhedsbrugere af Power BI-tjenesten
 
@@ -22,11 +22,11 @@ ms.locfileid: "89286680"
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Et Power BI-***dashboard*** er en enkelt side, der ofte kaldes et canvas, hvor der bruges visualiseringer til at fortælle en historie. Da det er begrænset til én side, indeholder et dashboard, der er godt designet, kun de vigtigste elementer fra historien.
+Et Power BI-***dashboard** _ er en enkelt side, der ofte kaldes et lærred, hvor der bruges visualiseringer til at fortælle en historie. Da det er begrænset til én side, indeholder et dashboard, der er godt designet, kun de vigtigste elementer fra historien.
 
 ![skærmbillede med et dashboard](media/end-user-dashboards/power-bi-dashboard.png)
 
-De visualiseringer, du kan se på dashboardet, kaldes *felter* og er *fastgjort* til dashboardet af *rapportdesignerne*. I de fleste tilfælde kommer du til den rapportside, hvor visualiseringen blev oprettet, når du vælger et felt. Hvis du ikke har arbejdet med Power BI før, kan du få et godt overblik ved at læse [Power BI – Grundlæggende begreber](end-user-basic-concepts.md).
+De visualiseringer, du kan se på dashboardet, kaldes _felter* og er *fastgjort* til dashboardet af *rapportdesignerne*. I de fleste tilfælde kommer du til den rapportside, hvor visualiseringen blev oprettet, når du vælger et felt. Hvis du ikke har arbejdet med Power BI før, kan du få et godt overblik ved at læse [Power BI – Grundlæggende begreber](end-user-basic-concepts.md).
 
 > [!NOTE]
 > Dashboards kan [vises og deles på mobilenheder](mobile/mobile-apps-view-dashboard.md).
@@ -42,8 +42,8 @@ Dashboards er en fantastisk måde at holde øje med din virksomhed, søge efter 
 
 Et dashboard er ikke kun et flot billede. Det er interaktivt, og felterne opdateres, når de underliggende data ændres.
 
-## <a name="dashboards-versus-reports-for-power-bi-business-users"></a>Forskellen mellem dashboards og rapporter til Power BI ***-virksomhedsbrugere***
-Rapporter forveksles ofte med dashboards, da de også er lærreder med visualiseringer. Men der er nogle væsentlige forskelle set fra en Power BI-*virksomhedsbrugers* synspunkt.
+## <a name="dashboards-versus-reports-for-power-bi-business-users_"></a>Forskellen mellem dashboards og rapporter til Power BI-***virksomhedsbrugere** _
+Rapporter forveksles ofte med dashboards, da de også er lærreder med visualiseringer. Men der er nogle væsentlige forskelle set fra en Power BI-virksomhedsbrugers* synspunkt.
 
 | **Egenskab** | **Dashboards** | **Rapporter** |
 | --- | --- | --- |
@@ -57,7 +57,7 @@ Rapporter forveksles ofte med dashboards, da de også er lærreder med visualise
 
 
 ## <a name="dashboard-designers-and-dashboard-business-users"></a>Dashboarddesignere og dashboardvirksomhedsbrugere
-Som Power BI-***virksomhedsbruger*** modtager du dashboards fra *designere*. Fortsæt med at få mere at vide om dashboards med disse emner:
+Som Power BI-**_virksomhedsbruger_* _, modtager du dashboards fra _designere*. Fortsæt med at få mere at vide om dashboards med disse emner:
 
 * [Få vist et dashboard](end-user-dashboard-open.md)
 * Få mere at vide om [dashboardfelter](end-user-tiles.md), og hvad der sker, når du vælger et.

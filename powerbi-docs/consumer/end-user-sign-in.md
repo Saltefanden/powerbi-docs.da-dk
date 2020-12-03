@@ -2,20 +2,20 @@
 title: Log på, og log af
 description: Få mere at vide om, hvordan du logger på Power BI-tjenesten på internettet, og hvordan du logger af.
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 Ms.custom: css_fy20Q4
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: conceptual
 ms.date: 10/06/2020
-ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: bea5b36c98ab8a62b444bfc731b5d54df6550f0f
-ms.sourcegitcommit: 6ba33e5a500928163e02e007f5ccd52dd2227610
+ms.openlocfilehash: 18fe7dc1c2d1b064d28e32782dc58fcbcf92341d
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780508"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96389615"
 ---
 # <a name="sign-in-to-power-bi-service"></a>Log på Power BI-tjenesten
 
@@ -68,7 +68,7 @@ Du kan se alt det indhold, du har tilladelse til at bruge, på siden Hjem. I fø
 Hvis du ikke vil have Power BI til at åbne siden Hjem, kan du [angive et **udvalgt** dashboard eller en udvalgt rapport](end-user-featured.md), der åbnes i stedet. 
 
 ## <a name="safely-interact-with-content"></a>Sikker interaktion med indhold
-Som ***virksomhedsbruger*** vil andre dele indhold med dig, og du interagerer med dette indhold for at udforske dataene og træffe forretningsbeslutninger.  Du behøver ikke bekymre dig, når du filtrerer, laver udsnit, abonnerer, eksporter og tilpasser størrelsen – dit arbejde påvirker ikke det underliggende datasæt eller det oprindelige delte indhold (dashboards og rapporter). Power BI er et sikkert område til at udforske og eksperimentere. Det betyder ikke, at du ikke kan gemme dine ændringer. Det kan du. Men disse ændringer påvirker kun **din** visning af indholdet. Og det er lige så let som at klikke på en knap at vende tilbage til den oprindelige standardvisning.
+Som **_virksomhedsbruger_ *_ vil andre dele indhold med dig, og du interagerer med dette indhold for at udforske dataene og træffe forretningsbeslutninger.  Du behøver ikke bekymre dig, når du filtrerer, laver udsnit, abonnerer, eksporter og tilpasser størrelsen – dit arbejde påvirker ikke det underliggende datasæt eller det oprindelige delte indhold (dashboards og rapporter). Power BI er et sikkert område til at udforske og eksperimentere. Det betyder ikke, at du ikke kan gemme dine ændringer. Det kan du. Men disse ændringer påvirker kun _* din** visning af indholdet. Og det er lige så let som at klikke på en knap at vende tilbage til den oprindelige standardvisning.
 
 ![Knappen Nulstil til standard](media/end-user-sign-in/power-bi-reset.png)
 

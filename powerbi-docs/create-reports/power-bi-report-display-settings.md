@@ -2,25 +2,25 @@
 title: Indstillinger for sidevisning i en Power BI-rapport
 description: Indstillinger for sidevisning og indstillinger for sidelayout for en rapport
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 05/29/2019
-ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: c08d4959b8e3958651282ac0fd52e6ed80a6b345
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 9452a4a6340480bcb6c8b646c16125fe73f68235
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237266"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96393479"
 ---
 # <a name="apply-page-display-settings-in-a-power-bi-report"></a>Anvend indstillingerne for sidevisning i en Power BI-rapport
 Vi forstår, at det er yderst vigtigt, at dit rapportlayout altid er helt perfekt. Det kan nogle gange være udfordrende, fordi du og dine kolleger kan få vist disse rapporter på skærme med forskellige højde-bredde-forhold og størrelser. 
 
-Standardskærmvisningen er **Tilpas til siden**, og standardskærmstørrelsen er **16:9**. Hvis du vil fastlåse i et andet højde-bredde-forhold eller tilpasse rapporten på anden vis, er der to værktøjer til at hjælpe dig: Indstillinger for ***sidevisning*** og ***sidestørrelse***.
+Standardskærmvisningen er **Tilpas til siden**, og standardskærmstørrelsen er **16:9**. Hvis du vil fastlåse i et andet højde-bredde-forhold eller tilpasse rapporten på anden vis, er der to værktøjer til at hjælpe dig: indstillinger for **_Sidevisning_* _ og _*_Sidestørrelse_*_.
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5tg-OXzxe2g" frameborder="0" allowfullscreen></iframe>
@@ -30,7 +30,7 @@ Standardskærmvisningen er **Tilpas til siden**, og standardskærmstørrelsen er
 Indstillinger for sidevisning findes både i Power BI-tjenesten og Power BI Desktop, men grænsefladen er lidt forskellig. I følgende afsnit beskrives, hvor du kan finde indstillingerne for visning i hvert Power BI-værktøj.
 
 ### <a name="in-power-bi-desktop"></a>I Power BI Desktop
-Vælg fanen **Vis** i Rapportvisning for at åbne indstillingerne for Sidevisning samt indstillingerne for Telefonlayout.
+Vælg fanen _ *Vis** i Rapportvisning for at åbne indstillingerne for Sidevisning samt indstillingerne for Telefonlayout.
 
   ![Indstillinger for sidevisning i Desktop](media/power-bi-report-display-settings/power-bi-desktop-view-settings.png)
 

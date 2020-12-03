@@ -2,17 +2,17 @@
 title: Søg efter og få adgang til indhold med Google-søgning
 description: Få mere at vide om at søge efter og få adgang til indhold med Google-søgning.
 author: paulinbar
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 04/06/2020
-ms.author: painbar
-ms.openlocfilehash: cb6d2d1474ffaeddc98b5019830920f3064e3df2
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 2bd49b9578c8c0ba2d24bd74d77251bc663cf7fa
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85235146"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414616"
 ---
 # <a name="find-and-access-your-content-with-google-search"></a>Søg efter og få adgang til indhold med Google-søgning
 
@@ -28,7 +28,7 @@ Hvis du vil åbne et bestemt element, og du ikke er sikker på, hvor du skal sø
 
 ## <a name="search-using-google-search"></a>Søg ved hjælp af Google-søgning
 
-I søgefeltet i Google skal du søge ved hjælp af formularen ***søg efter &lt;søgeelement&gt; i Power BI***. For eksempel **søg efter salg i Power BI**.
+I søgefeltet i Google skal du søge ved hjælp af formularen **søg efter &lt;søgeelement&gt; i Power BI** _. For eksempel _*søg efter salg i power bi**.
 
 * Hvis der kun findes én forekomst, åbnes det element, du søgte efter, i Power BI-mobilappen.
 * Hvis der findes mere end én forekomst, åbnes Power BI med søgeskærmen, der er filtreret efter din anmodning.

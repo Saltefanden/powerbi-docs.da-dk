@@ -2,20 +2,20 @@
 title: Fokustilstand og fuldskærmsvisning – Sådan zoomer du ind for at få vist flere detaljer
 description: Dokumentation for visning af et Power BI-dashboard, et dashboardfelt, en rapport eller en rapportvisualisering i fokustilstand eller fuldskærmsvisning
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: dtdLul6otYE
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 09/09/2020
-ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 7ab2500a393751c3013c1f3427173b57b3b5cf07
-ms.sourcegitcommit: 002c140d0eae3137a137e9a855486af6c55ad957
+ms.openlocfilehash: 6385d263c47bde156a7dae941fefb101b9b30d18
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89642717"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96400448"
 ---
 # <a name="display-content-in-more-detail-focus-mode-and-full-screen-mode"></a>Vis indhold i flere detaljer: fokustilstand og fuldskærmstilstand
 
@@ -56,11 +56,11 @@ Nogle situationer, hvor det giver mening at bruge fuldskærmstilstand, er følge
 
 ## <a name="when-to-use-focus-mode"></a>Hvornår skal du bruge fokustilstand?
 
-***Fokustilstand*** gør det muligt at udvide en visualisering eller et felt for at få vist flere detaljer.  Måske har du et dashboard eller en rapport, der er en smule overfyldt, og du ønsker at zoome ind på kun én visualisering.  Dette er en perfekt brug af fokustilstand.  
+***Fokustilstand** _ gør det muligt at udvide en visualisering eller et felt for at få vist flere detaljer.  Måske har du et dashboard eller en rapport, der er en smule overfyldt, og du ønsker at zoome ind på kun én visualisering.  Dette er en perfekt brug af fokustilstand.  
 
 ![fokustilstand for dashboardfelt før og efter](media/end-user-focus/power-bi-compare-dash.png)
 
-I fokustilstand kan en Power BI-*virksomhedsforbruger* interagere med de filtre, der blev anvendt, da visualiseringen blev oprettet.  I Power BI-tjenesten kan du anvende fokustilstand på et dashboardfelt eller en rapportvisualisering.
+I fokustilstand kan en Power BI-_virksomhedsbruger* interagere med de filtre, der blev anvendt, da visualiseringen blev oprettet.  I Power BI-tjenesten kan du anvende fokustilstand på et dashboardfelt eller en rapportvisualisering.
 
 ## <a name="working-in-full-screen-mode"></a>Arbejde i fuldskærmstilstand
 

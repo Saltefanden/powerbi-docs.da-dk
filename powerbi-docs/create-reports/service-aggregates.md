@@ -2,20 +2,20 @@
 title: Arbejde med aggregeringer (sum, gennemsnit osv.) i Power BI-tjenesten
 description: Få mere at vide om, hvordan du tilpasser aggregeringen i et diagram (sum, gennemsnit, maksimum osv.) i Power BI-tjenesten.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 06/16/2020
-ms.author: maggies
 ms.custom: seodec18
 LocalizationGroup: Reports
-ms.openlocfilehash: 4addd87085eb4321253bcf34842ca135f536f981
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 4ed1d6c68549e621f42b23d05a061e7fe1c9e230
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238109"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96395411"
 ---
 # <a name="work-with-aggregates-sum-average-and-so-on-in-the-power-bi-service"></a>Arbejde med aggregeringer (sum, gennemsnit osv.) i Power BI-tjenesten
 
@@ -39,7 +39,7 @@ I eksemplet nedenfor:
 
    ![Skærmbillede af et eksempel på et datasæt.](media/service-aggregates/power-bi-aggregate-chart.png)
 
-Når du opretter en visualisering i Power BI, aggregerer tjenesten numeriske felter (standarden er *sum*) over nogle kategorifelter.  For eksempel "Solgte enheder ***efter produkt***", "Solgte enheder ***efter måned***" og "Produktionspris ***efter segment***". Power BI refererer til nogle numeriske felter som **målinger**. Det er nemt at identificere målinger i Power BI-rapporteditoren – listen **Felter** viser målinger med symbolet ∑ ud for dem. Du kan finde flere oplysninger under [Rapporteditoren... få en introduktion](service-the-report-editor-take-a-tour.md).
+Når du opretter en visualisering i Power BI, aggregerer tjenesten numeriske felter (standarden er *sum*) over nogle kategorifelter.  For eksempel "Solgte enheder ***efter produkt** _", "Solgte enheder _*_efter måned_*_" og "Produktionspris _*_efter segment_*_". Power BI refererer til nogle numeriske felter som _*målinger**. Det er nemt at identificere målinger i Power BI-rapporteditoren – listen **Felter** viser målinger med symbolet ∑ ud for dem. Du kan finde flere oplysninger under [Rapporteditoren... få en introduktion](service-the-report-editor-take-a-tour.md).
 
 ![Skærmbillede af Power BI, hvor listen Felter er kaldt.](media/service-aggregates/power-bi-aggregate-fields.png)
 
