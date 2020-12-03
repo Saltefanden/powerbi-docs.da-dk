@@ -1,20 +1,20 @@
 ---
 title: Tilstande for datasæt i Power BI-tjenesten
 description: 'Om tilstande for datasæt i Power BI-tjenesten: Import, DirectQuery og Sammensat.'
-author: peter-myers
+author: davidiseminger
+ms.author: davidi
 manager: asaxton
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 11/09/2019
-ms.author: v-pemyer
-ms.openlocfilehash: 4ec73f3dd09d1c83b07d1419256cd627a71ae2d4
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.date: 12/01/2020
+ms.openlocfilehash: 5b4c32296c7121fa3d161461af7e86caba617ee1
+ms.sourcegitcommit: 2fd64f96b5bfbc14ff47e5c892171e5c921fb525
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83332837"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96501943"
 ---
 # <a name="dataset-modes-in-the-power-bi-service"></a>Tilstande for datasæt i Power BI-tjenesten
 
@@ -101,9 +101,7 @@ Sammensatte modeller har til formål at levere det bedste fra tilstandene Import
 
 Udviklere, der udvikler sammensatte modeller, konfigurerer sandsynligvis tabeller af dimensionstypen i lagringstilstanden Importér eller Dobbelt og faktatypetabeller i tilstanden DirectQuery. Du kan finde flere oplysninger om modeltabelroller i [Forstå, hvad et stjerneskema er, og hvorfor det er vigtigt for Power BI](../guidance/star-schema.md).
 
-Lad os f.eks. tage en model med en **Produkt**-dimensionstypetabel i tilstanden Dobbelt og en **Salg**-faktatypetabel i tilstanden DirectQuery. **Produkt**tabellen kan forespørges hurtigt og effektivt fra hukommelsen for at gengive et rapportudsnit. **Salgs**tabellen kan også forespørges i tilstanden DirectQuery med den relaterede **Produkt**tabel. Den sidste forespørgsel kan muliggøre genereringen af en enkelt effektiv oprindelig SQL-forespørgsel for at forbinde **Produkt** og **Salg**-tabellerne og filtrere efter udsnitsværdierne.
-
-Generelt gælder de fordele og ulemper, der er forbundet med Importér og DirectQuery, for sammensatte modeller, afhængigt af hvordan hver tabel er konfigureret.
+Lad os f.eks. tage en model med en **Produkt**-dimensionstypetabel i tilstanden Dobbelt og en **Salg**-faktatypetabel i tilstanden DirectQuery. **Produkt** tabellen kan forespørges hurtigt og effektivt fra hukommelsen for at gengive et rapportudsnit. **Salgs** tabellen kan også forespørges i tilstanden DirectQuery med den relaterede **Produkt** tabel. Den sidste forespørgsel kan muliggøre genereringen af en enkelt effektiv oprindelig SQL-forespørgsel for at forbinde **Produkt** og **Salg**-tabellerne og filtrere efter udsnitsværdierne.
 
 Du kan finde flere oplysninger under [Brug sammensatte modeller i Power BI Desktop](../transform-model/desktop-composite-models.md).
 

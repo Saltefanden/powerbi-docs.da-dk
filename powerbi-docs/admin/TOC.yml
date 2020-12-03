@@ -11,7 +11,7 @@
           href: service-admin-where-is-my-tenant-located.md
         - name: Hvad er Power BI Premium?
           href: service-premium-what-is.md
-    - name: Koncepter
+    - name: Begreber
       expanded: true
       items:
         - name: Administrationsrolle i Microsoft 365
@@ -74,6 +74,8 @@
           href: service-admin-auditing.md
         - name: Spor tjenestetilstand
           href: service-admin-health.md
+        - name: Aktivér godkendelse af tjenesteprincip for skrivebeskyttede administrator-API'er
+          href: read-only-apis-service-principal-authentication.md
         - name: Lukning af din konto
           href: service-admin-closing-your-account.md
         - name: Brug af Azure AD B2B

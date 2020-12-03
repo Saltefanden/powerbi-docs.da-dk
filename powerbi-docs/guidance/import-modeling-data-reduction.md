@@ -2,18 +2,18 @@
 title: Teknikker til datareduktion i forbindelse med importmodeller
 description: Forstå de forskellige teknikker, der hjælper med at reducere de data, der indlæses i importmodellerne.
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 08/05/2019
-ms.author: v-pemyer
-ms.openlocfilehash: 396c760a97911a35d7fdc0c608fc35de1cf6586d
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: 5476a87d21f7a5e49850078e490b25c3d8a4f5d8
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86216799"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96419354"
 ---
 # <a name="data-reduction-techniques-for-import-modeling"></a>Teknikker til datareduktion i forbindelse med importmodeller
 

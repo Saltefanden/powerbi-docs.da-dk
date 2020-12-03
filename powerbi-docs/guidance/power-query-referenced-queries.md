@@ -2,18 +2,18 @@
 title: Henvisning til Power Query-forespørgsler
 description: Vejledning i reference til Power Query-forespørgsler.
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 11/30/2019
-ms.author: v-pemyer
-ms.openlocfilehash: 9e3ae90363ade08d7600a4ebbd032ef5778257e2
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: f7756c53799838182be9288f297c0d01a7c6cca3
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94396995"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96419285"
 ---
 # <a name="referencing-power-query-queries"></a>Henvisning til Power Query-forespørgsler
 
@@ -21,11 +21,11 @@ Denne artikel henvender sig til designere af datamodeller, der arbejder med Powe
 
 Det betyder helt konkret: _Når en forespørgsel referer til en anden forespørgsel, er det som om, at trinnene i den anden forespørgsel kombineres med og kører før trinnene i den første forespørgsel._
 
-Tænk på flere forespørgsler: **Forespørgsel1** henter data fra en webtjeneste, og dens indlæsning er deaktiveret. **Forespørgsel2** , **Forespørgsel3** og **Forespørgsel4** refererer alle til **Forespørgsel1** , og deres output indlæses i datamodellen.
+Tænk på flere forespørgsler: **Forespørgsel1** henter data fra en webtjeneste, og dens indlæsning er deaktiveret. **Forespørgsel2**, **Forespørgsel3** og **Forespørgsel4** refererer alle til **Forespørgsel1**, og deres output indlæses i datamodellen.
 
 ![Diagram, der viser visningen Forespørgselsafhængigheder med forespørgsler, der er beskrevet i forrige afsnit.](media/power-query-referenced-queries/query-dependencies-web-service.png)
 
-Når datamodellen opdateres, antages det ofte, at Power Query henter resultatet for **Forespørgsel1** , og at det genbruges i refererede forespørgsler. Denne antagelse er forkert. Faktisk udfører Power Query **Forespørgsel2** , **Forespørgsel3** og **Forespørgsel4** separat.
+Når datamodellen opdateres, antages det ofte, at Power Query henter resultatet for **Forespørgsel1**, og at det genbruges i refererede forespørgsler. Denne antagelse er forkert. Faktisk udfører Power Query **Forespørgsel2**, **Forespørgsel3** og **Forespørgsel4** separat.
 
 Du kan tænke på det, som at **Forespørgsel2** har trinnene fra **Forespørgsel1** integreret. Det er også tilfældet for **Forespørgsel3** og **Forespørgsel4**. I følgende diagram vises et tydeligere billede af, hvordan forespørgslerne udføres.
 
@@ -46,7 +46,7 @@ Det anbefales, at du i stedet opretter et [dataflow](../transform-model/dataflow
 
 Du kan designe dataflow for at sammenfatte kildedataene og transformationerne. Da dataflow er et permanent lager med data i Power BI-tjenesten, sker datahentningen hurtigt. Så selv når reference til forespørgsler resulterer i flere anmodninger til dataflowet, kan opdateringstiden for data forbedres.
 
-Hvis **Forespørgsel1** i eksemplet redesignes som en dataflowenhed, kan **Forespørgsel2** , **Forespørgsel3** og **Forespørgsel4** bruge den som en datakilde. Med dette design evalueres den enhed, der hentes af **Forespørgsel1** , kun én gang.
+Hvis **Forespørgsel1** i eksemplet redesignes som en dataflowenhed, kan **Forespørgsel2**, **Forespørgsel3** og **Forespørgsel4** bruge den som en datakilde. Med dette design evalueres den enhed, der hentes af **Forespørgsel1**, kun én gang.
 
 ## <a name="next-steps"></a>Næste trin
 

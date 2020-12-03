@@ -74,6 +74,8 @@
               href: mobile-apps-scan-barcode-iphone.md
             - name: Konfigurer indstillinger for interaktion
               href: mobile-app-interaction-settings.md
+            - name: Mørk tilstand
+              href: mobile-apps-dark-mode.md
             - name: Konfigurer ved hjælp af administration af mobilenheder
               href: mobile-app-configuration.md
         - name: iOS
@@ -86,8 +88,6 @@
               href: mobile-apps-iOS-siri-Shortcuts.md
             - name: Integration af iOS-enhedssøgning
               href: mobile-apps-iOS-search-integration.md
-            - name: Mørk tilstand
-              href: mobile-apps-dark-mode.md
             - name: Power BI-app til Apple Watch
               href: mobile-apple-watch.md
         - name: Android-enheder

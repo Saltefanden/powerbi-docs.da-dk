@@ -2,18 +2,18 @@
 title: Vejledning til forespørgselsdelegering i Power BI Desktop
 description: Vejledning til opnåelse af Power Query-forespørgselsdelegering i Power BI Desktop.
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 11/09/2019
-ms.author: v-pemyer
-ms.openlocfilehash: 271ccd9abcba8fe75f0ad66a88cb970584855a35
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 5e2ec32f3eeaff224256f0a84d2a5c23d3e882a5
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83149186"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96419308"
 ---
 # <a name="query-folding-guidance-in-power-bi-desktop"></a>Vejledning til forespørgselsdelegering i Power BI Desktop
 
@@ -25,9 +25,9 @@ _Forespørgselsdelegering_ er muligheden for, at en Power Query-forespørgsel ge
 
 Vejledningen til forespørgselsdelegering varierer afhængigt af modeltilstanden.
 
-Power Query-forespørgslen skal opnå forespørgselsdelegering for en **DirectQuery-** tabel eller en tabel med**dobbelt** lagringstilstand.
+Power Query-forespørgslen skal opnå forespørgselsdelegering for en **DirectQuery-** tabel eller en tabel med **dobbelt** lagringstilstand.
 
-Der kan muligvis opnås forespørgselsdelegering for en **import**tabel. Hvis forespørgslen er baseret på en relationskilde – og når en enkelt SELECT-sætning kan konstrueres – opnås den _bedste ydeevne for dataopdatering_ ved at sikre, at der sker forespørgselsdelegering. Hvis Power Query-miksprogrammet stadig er påkrævet til at behandle transformationer, skal du bestræbe dig på at minimere det arbejde, der skal udføres, især for store datasæt.
+Der kan muligvis opnås forespørgselsdelegering for en **import** tabel. Hvis forespørgslen er baseret på en relationskilde – og når en enkelt SELECT-sætning kan konstrueres – opnås den _bedste ydeevne for dataopdatering_ ved at sikre, at der sker forespørgselsdelegering. Hvis Power Query-miksprogrammet stadig er påkrævet til at behandle transformationer, skal du bestræbe dig på at minimere det arbejde, der skal udføres, især for store datasæt.
 
 Følgende punktopstilling indeholder en specifik vejledning.
 

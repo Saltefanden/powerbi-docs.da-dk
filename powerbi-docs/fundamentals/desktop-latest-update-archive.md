@@ -2,19 +2,19 @@
 title: Tidligere månedlige opdateringer til Power BI Desktop
 description: Opdateringer til funktioner fra tidligere udgaver af Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-fundamentals
 ms.topic: conceptual
 ms.date: 11/11/2020
-ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 216fd30142f76758cbcb9ed2b329f3bbefb7156f
-ms.sourcegitcommit: 029aacd09061a8aa45b57f05d0dc95c93dd16a74
+ms.openlocfilehash: c6bdb2c2de06e82c844e454fa1981619ad65bd33
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94560074"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96419515"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Tidligere månedlige opdateringer til Power BI Desktop
 

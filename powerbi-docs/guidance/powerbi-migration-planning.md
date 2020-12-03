@@ -2,22 +2,22 @@
 title: Planlæg udrulning for at migrere til Power BI
 description: Vejledning i planlægning af udrulning, når der migreres til Power BI.
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 08/20/2020
-ms.author: v-pemyer
-ms.openlocfilehash: fd57d893a0c381c345364306e04d4897597b36f1
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: f161819b6e26c197bacc5534b5abfb426d612624
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94396972"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96419216"
 ---
 # <a name="plan-deployment-to-migrate-to-power-bi"></a>Planlæg udrulning for at migrere til Power BI
 
-I denne artikel beskrives **fase 2** , som omhandler planlægning af migrering til en enkelt Power BI-løsning.
+I denne artikel beskrives **fase 2**, som omhandler planlægning af migrering til en enkelt Power BI-løsning.
 
 :::image type="content" source="media/powerbi-migration-planning/migrate-to-powerbi-stage-2.png" alt-text="Billede, der viser faserne i en migrering til Power BI. Der fokuseres på fase 2 i denne artikel.":::
 
