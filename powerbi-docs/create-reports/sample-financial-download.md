@@ -2,19 +2,19 @@
 title: Download Excel-projektmappen Financial Sample til Power BI
 description: Download projektmappen Financial Sample til Power BI
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: amac
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: sample
 ms.date: 10/13/2020
-ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 46f6179edc63b0a865043674b22ffe88e813a3b4
-ms.sourcegitcommit: eab5a02520c421a57019595c03e9ecfdb41d52ad
+ms.openlocfilehash: fdad1975c35591267c9fa22b1d5c84dc9892be74
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92255947"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414938"
 ---
 # <a name="download-the-financial-sample-excel-workbook-for-power-bi"></a>Download Excel-projektmappen Financial Sample til Power BI
 Mangler du nogle data for at teste Power BI-tjenesten? Vi har en simpel Excel-projektmappe med økonomiske eksempeldata. Projektmappen indeholder en tabel med data for salg og overskud sorteret efter markedssegment og land. 

@@ -1,26 +1,26 @@
 ---
 title: Power BI-tjenestens nye udseende
 description: Power BI-tjenesten (app.powerbi.com) har fået et nyt udseende. I denne artikel beskrives, hvordan du navigerer til rapporter ved hjælp af det nye udseende.
-author: maggiesMSFT
+author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: conceptual
 ms.date: 10/22/2020
-ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: f398b0b3331d5677419c824646108f8d04815338
-ms.sourcegitcommit: fddba666c6ea90d525a1c3188bbd3c4a03410cdc
+ms.openlocfilehash: ec7b24a4d8f2a94680444b4b9adf4612f1f1f474
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92462277"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96415145"
 ---
 # <a name="the-new-look-of-the-power-bi-service"></a>Power BI-tjenestens nye udseende
 
 Power BI-tjenesten (app.powerbi.com) har fået et nyt udseende, der gør det lettere at få vist og interagere med dine rapporter. Det nye udseende er enklere og bygger på dit kendskab til andre Microsoft-produkter. På tværs af Power BI-tjenesten har vi sat rapportindhold i fokus ved at skifte til et lysere farvetema og opdatere ikoner. 
 
-Leder du efter oplysninger om det nye udseende af **Power BI Desktop** ? Se [Brug det opdaterede bånd i Power BI Desktop](../create-reports/desktop-ribbon.md).
+Leder du efter oplysninger om det nye udseende af **Power BI Desktop**? Se [Brug det opdaterede bånd i Power BI Desktop](../create-reports/desktop-ribbon.md).
 
 Her er en oversigt over, hvad der er ændret i det nye udseende. Du kan finde flere oplysninger i de nummererede afsnit:
 

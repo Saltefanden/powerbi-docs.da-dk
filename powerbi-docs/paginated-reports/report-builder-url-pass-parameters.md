@@ -1,20 +1,20 @@
 ---
 title: Videregiv en rapportparameter i en URL-adresse til en sideinddelt rapport i Power BI Report Builder
 description: I dette emne beskrives det, hvordan du videregiver rapportparametre til en rapport ved at inkludere dem i en URL-adresse til en sideinddelt rapport.
+author: maggiesMSFT
+ms.author: maggies
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-author: maggiesMSFT
-ms.author: maggies
 ms.reviewer: cfinlan
 ms.custom: ''
 ms.date: 05/01/2020
-ms.openlocfilehash: f103f29c61d1a4e4a5340d97598d80a86c708701
-ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
+ms.openlocfilehash: ac3cd10ec4c356da92aca6983292ff57b16f58b3
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93298033"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96415582"
 ---
 # <a name="pass-a-report-parameter-in-a-url-for-a-paginated-report-in-power-bi"></a>Videregiv en rapportparameter i en URL-adresse til en sideinddelt rapport i Power BI 
 

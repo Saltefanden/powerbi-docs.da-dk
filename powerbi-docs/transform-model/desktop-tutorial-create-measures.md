@@ -2,19 +2,19 @@
 title: 'Selvstudium: Opret dine egne målinger i Power BI Desktop'
 description: Målinger i Power BI Desktop hjælper dig med at udføre beregninger på dine data, når du arbejder med dine rapporter.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: tutorial
 ms.date: 11/08/2019
-ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 61eb4fc54966545858a7ebc85044696064027acd
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 16ce255f22d6242a1b8e78d34b27519d22fb5489
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90858387"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96413903"
 ---
 # <a name="tutorial-create-your-own-measures-in-power-bi-desktop"></a>Selvstudium: Opret dine egne målinger i Power BI Desktop
 Ved hjælp af målinger kan du oprette nogle af de mest effektive løsninger til dataanalyse i Power BI Desktop. Målinger hjælper dig med at udføre beregninger på dine data, når du arbejder med dine rapporter. I dette selvstudium lærer du, hvordan du skal forstå målinger, og hvordan du opretter dine egne grundlæggende målinger i Power BI Desktop.
@@ -65,7 +65,7 @@ I de fleste tilfælde beregner og returnerer Power BI Desktop automatisk værdie
 
 I DAX-formler bruges der mange af de samme funktioner og operatorer samt den samme syntaks som i Excel-formler. DAX-funktionerne er dog designet til at arbejde med relationelle data og udføre mere dynamiske beregninger, når du interagerer med dine rapporter. Der er mere end 200 DAX-funktioner, som kan udføre alt lige fra enkle sammenlægninger, som Sum og Gennemsnit, til mere komplekse statistik- og filtreringsfunktioner. Der findes mange ressourcer, hvor du kan få mere at vide om DAX. Når du er færdig med dette selvstudium, kan du gå til [Grundlæggende DAX i Power BI Desktop](desktop-quickstart-learn-dax-basics.md).
 
-Når du har oprettet din egen måling, kaldes det en *model*måling, og den føjes til listen **Felter** for den tabel, du vælger. Nogle af fordelene ved modelmålinger er, at du kan navngive dem, ligesom du vil, hvilket gør det nemmere at identificere dem. Du kan også bruge dem som argumenter i andre DAX-udtryk, og du kan få dem til at udføre komplekse beregninger hurtigt.
+Når du har oprettet din egen måling, kaldes det en *model* måling, og den føjes til listen **Felter** for den tabel, du vælger. Nogle af fordelene ved modelmålinger er, at du kan navngive dem, ligesom du vil, hvilket gør det nemmere at identificere dem. Du kan også bruge dem som argumenter i andre DAX-udtryk, og du kan få dem til at udføre komplekse beregninger hurtigt.
 
 ### <a name="quick-measures"></a>Hurtigmålinger
 

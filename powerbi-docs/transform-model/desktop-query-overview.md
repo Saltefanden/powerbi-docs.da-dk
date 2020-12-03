@@ -2,19 +2,19 @@
 title: Oversigt over forespørgsler i Power BI Desktop
 description: Oversigt over forespørgsler i Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: conceptual
 ms.date: 01/11/2020
-ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: abd12abf852a220399847bee7903ea83cff1386b
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 9202b94808624ca9e3332ba7acdca29a3ce759ca
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90853603"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96413986"
 ---
 # <a name="query-overview-in-power-bi-desktop"></a>Oversigt over forespørgsler i Power BI Desktop
 Med Power BI Desktop kan du oprette forbindelse til alverdens data, oprette overbevisende og grundlæggende rapporter og dele dit arbejde med andre – der derefter kan bygge videre på dit arbejde og udvide deres business intelligence.

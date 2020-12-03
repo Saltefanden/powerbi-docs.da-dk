@@ -2,20 +2,20 @@
 title: Brug What if-parametre til at visualisere variabler
 description: Opret din egen what if-variabel for at forestille dig og visualisere variabler i Power BI-rapporter
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: how-to
 ms.date: 01/21/2020
-ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 649e9198e5fe88d19f001a2e601e24535132d90e
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 2286edc16995e8fecc3b6ff65a53e2c4007ac470
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239229"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96415421"
 ---
 # <a name="create-and-use-what-if-parameters-to-visualize-variables-in-power-bi-desktop"></a>Opret og brug What if-parametre til at visualisere variabler i Power BI Desktop
 
@@ -27,7 +27,7 @@ Opret *what if*-parameteren under fanen **Modellering** i Power BI Desktop. Når
 
 ## <a name="creating-a-what-if-parameter"></a>Opret en what if-parameter
 
-Hvis du vil oprette en what if-parameter, skal du vælge **Ny parameter** under fanen **Modellering** i Power BI Desktop. På følgende billede har vi oprettet en parameter, der kaldes *Discount percentage* og angivet datatypen til **decimaltal**. **Minimum**værdien er nul. **Maksimum**værdien er 0,50 (50 procent). Vi har også angivet **Forøgelse** til 0,05 eller fem procent. Det angiver, hvor meget parameteren justeres, når der arbejdes med den i en rapport.
+Hvis du vil oprette en what if-parameter, skal du vælge **Ny parameter** under fanen **Modellering** i Power BI Desktop. På følgende billede har vi oprettet en parameter, der kaldes *Discount percentage* og angivet datatypen til **decimaltal**. **Minimum** værdien er nul. **Maksimum** værdien er 0,50 (50 procent). Vi har også angivet **Forøgelse** til 0,05 eller fem procent. Det angiver, hvor meget parameteren justeres, når der arbejdes med den i en rapport.
 
 ![Værdier for what if-parametre](media/desktop-what-if/what-if_02.png)
 

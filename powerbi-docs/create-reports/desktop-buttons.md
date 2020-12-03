@@ -2,19 +2,19 @@
 title: Brug knapper i Power BI
 description: Du kan tilføje knapper i Power BI-rapporter, der får dine rapporter til at fungere som apps, og sørge for, at brugerne bliver mere involveret.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 05/21/2020
-ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 7597d135bc05783d0d43bb481e24fc197abd9d4b
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 77f16bedb45b0730a7007da19a427b1832bc9969
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85222399"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414455"
 ---
 # <a name="use-buttons-in-power-bi"></a>Brug knapper i Power BI
 Ved hjælp af **knapper** i Power BI kan du oprette rapporter, der fungerer på samme måde som apps, og dermed skabe et indtagende miljø, så brugerne kan holde over, klikke og yderligere interagere med Power BI-indhold. Du kan føje knapper til rapporter i **Power BI Desktop** og i **Power BI-tjenesten**. Når du deler dine rapporter i Power BI-tjeneste, får brugerne en applignende visning.
@@ -76,9 +76,9 @@ Du kan prøve eller teste de knapper, du opretter for din rapport, ved hjælp af
 
 ## <a name="create-page-navigation"></a>Opret sidenavigation
 
-Med **handlingstypen** **Sidenavigation**kan du hurtigt oprette en hel navigationsoplevelse uden at skulle gemme eller administrere bogmærker.
+Med **handlingstypen** **Sidenavigation** kan du hurtigt oprette en hel navigationsoplevelse uden at skulle gemme eller administrere bogmærker.
 
-Hvis du vil konfigurere en sidenavigationsknap, skal du oprette en knap med **Sidenavigation** som handlingstype og vælge **destination**ssiden.
+Hvis du vil konfigurere en sidenavigationsknap, skal du oprette en knap med **Sidenavigation** som handlingstype og vælge **destination** ssiden.
 
 ![Handlingen Sidenavigation](media/desktop-buttons/power-bi-page-navigation.png)
 

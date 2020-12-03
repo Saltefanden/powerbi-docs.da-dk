@@ -2,18 +2,18 @@
 title: 'Selvstudium: Stil spørgsmål med den virtuelle Spørgsmål og svar-analytiker i iOS-apps'
 description: I dette selvstudium kan du stille spørgsmål om eksempeldata med dine egne ord ved hjælp af den virtuelle analytiker Spørgsmål og svar i Power BI-mobilappen på din iOS-enhed.
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: tutorial
 ms.date: 11/26/2019
-ms.author: painbar
-ms.openlocfilehash: 3b84cf4969df05d4e9570b12a80436bca3e280be
-ms.sourcegitcommit: 7e99e8af9caf9340958c4607a94728d43e8c3811
+ms.openlocfilehash: 6d69f4527b838136b54ccfbad43d27fa247804d9
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91668315"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96415283"
 ---
 # <a name="tutorial-ask-questions-about-your-data-with-the-qa-virtual-analyst-in-the-power-bi-ios-apps"></a>Selvstudium: Stil spørgsmål om dine data ved hjælp af den virtuelle Spørgsmål og svar-analytiker i iOS-apps med Power BI
 

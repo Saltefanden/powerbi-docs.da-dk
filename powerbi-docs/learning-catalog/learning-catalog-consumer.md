@@ -2,16 +2,16 @@
 title: Læringskatalog til forbrugere
 description: Find alle træningsmuligheder til Power BI for forbrugere, der bruger rapporter og dashboards – lige fra det mest basale til det mest avancerede.
 author: margoc
+ms.author: margoc
 ms.prod: powerbi
 ms.topic: article
 ms.date: 03/25/2020
-ms.author: margoc
-ms.openlocfilehash: 4a4190dd8a1f17c1a49eca09e6c673a102ae0924
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 8a40d11c9bf2a8ee09e879912d2bd2de0da327ee
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91749408"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414800"
 ---
 # <a name="consumers-learning-catalog"></a>Læringskatalog til forbrugere
 

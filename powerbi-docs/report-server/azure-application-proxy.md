@@ -2,18 +2,18 @@
 title: Konfigurer en Power BI-rapportserver med Azure-proxyprogram
 description: Få mere at vide om, hvordan du konfigurerer Power BI-rapportserver med proxyprogram til Azure Active Directory.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 07/28/2020
-ms.author: maggies
-ms.openlocfilehash: 60287bfde79c918250037ccc03781e7cb47d6320
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 795b2e7e1b9ef0c705f7240e9a20a5c2da2f81a3
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91634222"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414915"
 ---
 # <a name="configure-power-bi-report-server-with-azure-application-proxy"></a>Konfigurer en Power BI-rapportserver med Azure-proxyprogram
 

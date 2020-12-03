@@ -1,25 +1,25 @@
 ---
 title: Tabeller, matrixer og lister i Power BI Report Builder
 description: I Power BI Report Builder er tabeller, matrixer og lister dataområder, som viser sideinddelte rapportdata i celler, der er organiseret i rækker og kolonner.
+author: maggiesMSFT
+ms.author: maggies
 ms.date: 06/06/2019
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.assetid: 9dcf3fc8-bf9c-4a14-a03d-e78254aa4098
-author: maggiesMSFT
-ms.author: maggies
-ms.openlocfilehash: 3d22696168d8ae550238fab243110db357b39c22
-ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
+ms.openlocfilehash: 4b678bf3a11ab243aea8c2cc00fbf58c4ca8ffae
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93297690"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96415605"
 ---
 # <a name="tables-matrixes-and-lists-in-power-bi-report-builder"></a>Tabeller, matrixer og lister i Power BI Report Builder
 
 [!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
-I Report Builder er tabeller, matrixer og lister *dataområder* , som viser sideinddelte rapportdata i celler, der er organiseret i rækker og kolonner. Cellerne indeholder typisk tekstdata, f.eks. tekst, datoer og tal, men de kan også indeholde målere, diagrammer eller rapportelementer, f.eks. billeder. Der refereres ofte samlet til tabeller, matrixer og lister som *tablixdataområder*.  
+I Report Builder er tabeller, matrixer og lister *dataområder*, som viser sideinddelte rapportdata i celler, der er organiseret i rækker og kolonner. Cellerne indeholder typisk tekstdata, f.eks. tekst, datoer og tal, men de kan også indeholde målere, diagrammer eller rapportelementer, f.eks. billeder. Der refereres ofte samlet til tabeller, matrixer og lister som *tablixdataområder*.  
   
  Tabel-, matrix- og listeskabelonerne er baseret på tablixdataområdet, som er et fleksibelt gitter, der kan vises data i celler. I tabel- og matrixskabelonerne er cellerne organiseret i rækker og kolonner. Da skabeloner er variationer af det underliggende generiske tablixdataområdet, kan du få vist data i en kombination af skabelonformater og ændre tabellen, matrixen eller listen for at inkludere funktionerne fra et andet dataområde, i takt med at du udvikler din rapport. Hvis du f.eks. tilføjer en tabel og opdager, at den ikke opfylder dine behov, kan du tilføje kolonnegrupper for at lave tabellen om til en matrix.  
   
@@ -36,7 +36,7 @@ I Report Builder er tabeller, matrixer og lister *dataområder* , som viser side
 
 ![Tabelskabelon i designområdet i Report Builder, valgt](media/report-builder-tables-matrices-lists/report-builder-new-table.png)
   
- Du kan gruppere data efter et enkelt felt, efter flere felter eller ved at skrive dit eget udtryk. Du kan oprette indlejrede grupper eller uafhængige, tilstødende grupper og vise aggregerede værdier for grupperede data eller føje totaler til grupper. Hvis din tabel f.eks. har en rækkegruppe med navnet **Kategori** , kan du tilføje en subtotal for hver gruppe samt en samlet total for rapporten. Du kan forbedre udseendet af tabellen og fremhæve data, du vil lægge vægt på, ved at flette celler og anvende formatering på data- og tabeloverskrifter.  
+ Du kan gruppere data efter et enkelt felt, efter flere felter eller ved at skrive dit eget udtryk. Du kan oprette indlejrede grupper eller uafhængige, tilstødende grupper og vise aggregerede værdier for grupperede data eller føje totaler til grupper. Hvis din tabel f.eks. har en rækkegruppe med navnet **Kategori**, kan du tilføje en subtotal for hver gruppe samt en samlet total for rapporten. Du kan forbedre udseendet af tabellen og fremhæve data, du vil lægge vægt på, ved at flette celler og anvende formatering på data- og tabeloverskrifter.  
   
  Du kan starte med skjule detaljer eller grupperede data og inkludere håndtag til at zoome ind på detaljeniveauet for at give brugeren mulighed for interaktivt at vælge, hvor mange data der skal vises.  
   

@@ -2,17 +2,17 @@
 title: Konfigurationsindstillinger i Power BI-appen
 description: Sådan tilpasser du funktionsmåden for Power BI ved hjælp af MDM-værktøjet
 author: paulinbar
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 07/14/2020
-ms.author: painbar
-ms.openlocfilehash: f9b6efd07aad3d2058e49f81ae21095b618123ee
-ms.sourcegitcommit: d8acf2fb0318708a3e8e1e259cb3747b0312b312
+ms.openlocfilehash: a867c0480e9c0762d1594016fb807cab8261c14c
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86385923"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414593"
 ---
 # <a name="remotely-configure-power-bi-app-using-mobile-device-management-mdm-tool"></a>Du kan fjernkonfigurere Power BI-appen ved hjælp af MDM-værktøjet (Mobile Device Management)
 

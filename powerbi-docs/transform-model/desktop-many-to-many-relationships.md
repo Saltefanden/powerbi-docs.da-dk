@@ -2,19 +2,19 @@
 title: Mange til mange-relationer i Power BI Desktop
 description: Du kan bruge relationer med en mange til mange-kardinalitet i Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: conceptual
 ms.date: 12/19/2019
-ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 17006405a495798618bf7562e6b94864b795a224
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: 5f64a9a896fbb5ea3e080e1d07f6cc7d980430b8
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91528039"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96415697"
 ---
 # <a name="apply-many-many-relationships-in-power-bi-desktop"></a>Anvend mange til mange-relationer i Power BI Desktop
 
@@ -118,7 +118,7 @@ Hvis du f.eks. opretter en relation direkte mellem CityData og Sales,&mdash;hvor
 
 ![Dialogboksen Rediger relation, Power BI Desktop](media/desktop-many-to-many-relationships/many-to-many-relationships_01.png)
 
-Den resulterende **Relationsvisning** vil derefter indeholde den direkte mange til mange-relation mellem de to tabeller. Tabellernes udseende på listen **Felter** og deres senere funktionsmåde, når der oprettes visualiseringer, ligner den samme, som da vi anvendte den midlertidige løsning. I den midlertidige løsning er den ekstra tabel, som viser de enkelte State-data, ikke synlig. Som beskrevet tidligere vises en visualisering, der viser data fra **State**, **Population**og **Sales**:
+Den resulterende **Relationsvisning** vil derefter indeholde den direkte mange til mange-relation mellem de to tabeller. Tabellernes udseende på listen **Felter** og deres senere funktionsmåde, når der oprettes visualiseringer, ligner den samme, som da vi anvendte den midlertidige løsning. I den midlertidige løsning er den ekstra tabel, som viser de enkelte State-data, ikke synlig. Som beskrevet tidligere vises en visualisering, der viser data fra **State**, **Population** og **Sales**:
 
 ![Tabellerne State, Population og Sales, Power BI Desktop](media/desktop-many-to-many-relationships/many-to-many-relationships_12.png)
 

@@ -2,20 +2,20 @@
 title: Funktioner i Power BI-tjenesten efter licenstype
 description: I Power BI-tjenesten har brugere defineret egenskaber baseret på den type licens pr. bruger, de har (Free eller Pro), og om det indhold, de interagerer med, befinder sig i et arbejdsområde, der er tildelt en Power BI Premium-kapacitet.
 author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-fundamentals
 ms.topic: conceptual
 ms.date: 11/11/2020
-ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Get started
-ms.openlocfilehash: 48e382db2866187f4394cf8a60789604f3d900b7
-ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
+ms.openlocfilehash: 4c1b5256a411594521dcfe030af3490cd2e4780c
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94512786"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414156"
 ---
 # <a name="power-bi-service-features-by-license-type"></a>Funktioner i Power BI-tjenesten efter licenstype
 

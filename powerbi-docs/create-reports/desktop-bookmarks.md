@@ -2,19 +2,19 @@
 title: Brug bogmærker i Power BI Desktop til at dele indsigt og oprette tekstenheder
 description: Du kan bruge bogmærker i Power BI Desktop til at gemme visninger og indstillinger i dine rapporter og oprette præsentationer med tekstenheder
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 05/06/2020
-ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 110abfd3ac8d258a6f4e800d218c08af9dc3c983
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: b1d9be5515680a199a2ae74c59aa1baeb30ef1f1
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239304"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414478"
 ---
 # <a name="create-bookmarks-in-power-bi-desktop-to-share-insights-and-build-stories"></a>Opret bogmærker i Power BI Desktop for at dele indsigt og oprette tekstenheder
 Med *bogmærker* i Power BI Desktop kan du registrere den aktuelt konfigurerede visning af en rapportside, herunder filtreringen af og tilstanden for visualiseringerne. Du kan vende tilbage til denne tilstand senere ved at vælge det gemte bogmærke. 
@@ -54,7 +54,7 @@ Power BI Desktop opretter et bogmærke og giver det et standardnavn. Du kan nemt
 
 Når du har oprettet et bogmærke, kan du få det vist ved at vælge det i ruden **Bogmærker**. 
 
-Du kan også vælge, om de enkelte bogmærker skal anvende **data**egenskaber, f.eks. filtre og udsnit, **visnings**egenskaber, f.eks. spotlight og synlighed, og ændringer af **aktuel side**, der viser den side, som kunne ses, da bogmærket blev tilføjet. Disse funktioner er nyttige, når du bruger bogmærker til at skifte mellem rapportvisninger eller valg af visualiseringer – i så fald vil du sandsynligvis deaktivere dataegenskaber, så filtre ikke nulstilles, når brugerne skifter visning ved at vælge et bogmærke. 
+Du kan også vælge, om de enkelte bogmærker skal anvende **data** egenskaber, f.eks. filtre og udsnit, **visnings** egenskaber, f.eks. spotlight og synlighed, og ændringer af **aktuel side**, der viser den side, som kunne ses, da bogmærket blev tilføjet. Disse funktioner er nyttige, når du bruger bogmærker til at skifte mellem rapportvisninger eller valg af visualiseringer – i så fald vil du sandsynligvis deaktivere dataegenskaber, så filtre ikke nulstilles, når brugerne skifter visning ved at vælge et bogmærke. 
 
 Du kan foretage sådanne ændringer ved at vælge ellipsen ud for bogmærkets navn og derefter markere eller fjerne markeringen i afkrydsningsfeltet ud for **Data**, **Visning** og andre objekter. 
 

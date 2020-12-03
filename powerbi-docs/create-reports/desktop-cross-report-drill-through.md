@@ -2,19 +2,19 @@
 title: Brug tværgående detaljeadgang i Power BI Desktop
 description: Få mere at vide om, hvordan du kan få detaljeadgang fra én rapport til en anden i Power BI Desktop
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 07/27/2020
-ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: a22610ea8ca3b7a26763a435b98bf7c114e1bfa0
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.openlocfilehash: 5cf1ed76f47eba9dc989b26fbb5dcc52f92ddd18
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87252814"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414271"
 ---
 # <a name="use-cross-report-drill-through-in-power-bi"></a>Brug tværgående detaljeadgang i Power BI
 

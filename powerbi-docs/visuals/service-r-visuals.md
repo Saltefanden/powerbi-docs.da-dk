@@ -1,20 +1,20 @@
 ---
 title: Opret avancerede analyser og visualiseringer med R-scripts
 description: Brug R-scripts i Power BI Desktop til at oprette avancerede analyser og avancerede visualiseringer
-author: msftrien
+author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 11/14/2019
-ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 3b43d644a0bb7ecd2800b99d3ffb5d7c7d26bf96
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: 60a4edac34e98170d0499f3480f01b366a512ddc
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93412090"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96415651"
 ---
 # <a name="create-and-use-r-visuals-in-power-bi"></a>Opret og brug R-visuals i Power BI
 
@@ -23,7 +23,7 @@ ms.locfileid: "93412090"
 Visuelle R-elementer kan i øjeblikket kun oprettes i **Power BI Desktop** og derefter publiceres på Power BI-tjenesten. Du kan finde flere oplysninger om oprettelse af R-visuals under [Opret i Power BI-visuals ved hjælp af R](../create-reports/desktop-r-visuals.md).
 
 ## <a name="viewing-r-visuals-in-the-power-bi-service"></a>Opret R-visuals i Power BI-tjenesten
-Power BI-tjenesten understøtter visning og interaktion med visuelle elementer, der er oprettet med R-scripts. Visuelle elementer, der er oprettet med R-scripts, også kaldet *R-visuals* , kan vise avanceret dataformatering og analyse, f.eks. prognoser, ved hjælp af styrken i R's omfattende analyse- og visualiseringsfunktioner.
+Power BI-tjenesten understøtter visning og interaktion med visuelle elementer, der er oprettet med R-scripts. Visuelle elementer, der er oprettet med R-scripts, også kaldet *R-visuals*, kan vise avanceret dataformatering og analyse, f.eks. prognoser, ved hjælp af styrken i R's omfattende analyse- og visualiseringsfunktioner.
 
 > [!NOTE]
 > [R-programmeringssproget](https://www.r-project.org/) er blandt de mest anvendte programmeringssprog af statistikere, dataloger og erhvervsanalytikere. R-sproget har et community med åben kildekode, der indeholder mere end 7.000 tilføjelsespakker, samt gængse R-brugergrupper. Den version af R, som er installeret i Power BI-tjenesten, er *Microsoft R 3.4.4.*
@@ -38,13 +38,13 @@ Visuelle R-elementer oprettes i en [Power BI Desktop-rapport](../fundamentals/de
 
 ![Desktop-rapport med to visuals](media/service-r-visuals/power-bi-r-visual-desktop.png)
 
-Når rapporten er oprettet i **Power BI Desktop** , kan du udgive rapporten på Power BI-tjenesten med et eller flere visuelle R-elementer. 
+Når rapporten er oprettet i **Power BI Desktop**, kan du udgive rapporten på Power BI-tjenesten med et eller flere visuelle R-elementer. 
 
  Ikke alle R-pakkerne understøttes i tjenesten. Se de understøttede pakker sidst i denne artikel for at få vist listen over pakker, der understøttes i øjeblikket på Power BI-tjenesten.
 
 Du kan downloade denne [Power BI Desktop-eksempelfil](https://download.microsoft.com/download/D/9/A/D9A65269-D1FC-49F8-8EC3-1217E3A4390F/RVisual_correlation_plot_sample%20SL.pbix) (.pbix-fil), der indeholder nogle visuelle R-elementer, for at se, hvordan det fungerer, og for at eksperimentere.
 
-Visuelle R-elementer, der er oprettet i **Power BI Desktop** , og derefter publiceres på Power BI-tjenesten, fungerer i de fleste tilfælde som andre visuelle elementer på Power BI-tjenesten. Du kan arbejde med, filtrere, oprette udsnit af og fastgøre dem til et dashboard eller dele dem med andre. Du kan finde flere oplysninger om at dele dashboards og visuelle elementer under [Del et dashboard med kolleger og andre](../collaborate-share/service-share-dashboards.md). Én forskel fra andre visuelle elementer er, at visuelle R-elementer ikke kan vise værktøjstip og ikke kan bruges til at filtrere andre visuelle elementer.
+Visuelle R-elementer, der er oprettet i **Power BI Desktop**, og derefter publiceres på Power BI-tjenesten, fungerer i de fleste tilfælde som andre visuelle elementer på Power BI-tjenesten. Du kan arbejde med, filtrere, oprette udsnit af og fastgøre dem til et dashboard eller dele dem med andre. Du kan finde flere oplysninger om at dele dashboards og visuelle elementer under [Del et dashboard med kolleger og andre](../collaborate-share/service-share-dashboards.md). Én forskel fra andre visuelle elementer er, at visuelle R-elementer ikke kan vise værktøjstip og ikke kan bruges til at filtrere andre visuelle elementer.
 
 Som du kan se på billedet nedenfor, vises og fungerer visuelle R-elementer på Power BI-tjenesten, enten i dashboards eller rapporter, stort set som et hvilken som helst andet visuelt element, og brugerne behøver ikke at være opmærksomme på det underliggende R-script, der oprettede det visuelle element.
 

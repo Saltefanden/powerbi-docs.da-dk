@@ -2,19 +2,19 @@
 title: Premium-funktioner for dataflow
 description: Oversigt over de Premium-funktioner, der er tilgængelige i Power BI-dataflows
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-dataflows
 ms.topic: how-to
 ms.date: 11/13/2020
-ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: eb5b4b37e59a771d65917df5706a7ebbca488d21
-ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
+ms.openlocfilehash: 2c8a5646f4831c77ac0f8fabed0d74f2a2cfba1f
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94669080"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414064"
 ---
 # <a name="premium-features-of-dataflows"></a>Premium-funktioner for dataflow
 

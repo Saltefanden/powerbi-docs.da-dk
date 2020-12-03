@@ -1,20 +1,20 @@
 ---
 title: Punktdiagrammer med høj tæthed i Power BI
 description: Punktdiagrammer med høj tæthed i Power BI
-author: msftrien
+author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 09/11/2018
-ms.author: rien
 LocalizationGroup: Create reports
-ms.openlocfilehash: 850c59e682d0368b592b71c4cf5d11bdd8806848
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: 48856dcee2745eb948bfb7beb6b5bc8d94d0df4b
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93412918"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96415674"
 ---
 # <a name="high-density-sampling-in-power-bi-scatter-charts"></a>Stikprøvetagning med høj tæthed i Power BI-punktdiagrammer
 
@@ -29,12 +29,12 @@ Du kan f.eks. oprette et punktdiagram på baggrund af organisationens salgsaktiv
 ## <a name="how-high-density-scatter-charts-work"></a>Sådan fungerer punktdiagrammer med høj tæthed
 Tidligere valgte **Power BI** et udsnit af eksempeldatapunkter i alle de underliggende data på en deterministisk måde for at oprette et punktdiagram. Power BI ville specifikt vælge de første og sidste rækker med data i serien af punktdiagrammer, og derefter ville de resterende rækker blive jævnt fordelt, så 3.500 datapunkter i alt ville blive afbilledet i punktdiagrammet. Hvis udsnittet f.eks. havde 35.000 rækker, ville de første og sidste rækker blive valgt til afbildning, og derefter ville hver 10. række også blive afbildet (35.000/10 = hver 10 række = 3.500 datapunkter). Tidligere blev null-værdier eller punkter, der ikke kunne afbildes (f.eks. tekstværdier) i dataserierne, ikke vist, og derfor blev de ikke taget i betragtning, når visualiseringen skulle genereres. Med denne type udsnit var den viste tæthed i punktdiagrammet også baseret på de repræsentative datapunkter. Den visuelle tæthed, der blev antydet, gjaldt dermed for udsnittet af punkter, ikke for de fuldstændige underliggende data.
 
-Når du aktiverer **Udsnit med høj tæthed** , implementeres en algoritme i Power BI, der fjerner overlappende punkter og sikrer, at punkterne i visualiseringen kan nås, når der interageres med visualiseringen. Algoritmen sikrer også, at alle punkter i datasættet er repræsenteret i visualiseringen Det giver en kontekst for betydningen af de udvalgte punkter i stedet for bare at afbilde et repræsentativt udsnit.
+Når du aktiverer **Udsnit med høj tæthed**, implementeres en algoritme i Power BI, der fjerner overlappende punkter og sikrer, at punkterne i visualiseringen kan nås, når der interageres med visualiseringen. Algoritmen sikrer også, at alle punkter i datasættet er repræsenteret i visualiseringen Det giver en kontekst for betydningen af de udvalgte punkter i stedet for bare at afbilde et repræsentativt udsnit.
 
 Udsnit af data med høj tæthed tages pr. definition for at kunne oprette visualiseringer forholdsvist hurtigt og bruge disse visualiseringer interaktivt. For mange datapunkter i et visuelt element kan gøre det for tungt og gøre tendenserne mindre synlige. Udsnitsalgoritmen er derfor udviklet for at udvælge data, så man opnår den bedste visualisering og sikrer, at alle data er repræsenteret. I Power BI er algoritmen nu blevet forbedret for at opnå den bedste kombination af svartid, repræsentation og tydelig bevarelse af vigtige punkter i det samlede datasæt.
 
 > [!NOTE]
-> Punktdiagrammer, der bruger algoritmen **Udsnit med høj tæthed** , afbildes bedst i firkantede visualiseringer, som det er tilfældet med alle punktdiagrammer.
+> Punktdiagrammer, der bruger algoritmen **Udsnit med høj tæthed**, afbildes bedst i firkantede visualiseringer, som det er tilfældet med alle punktdiagrammer.
 > 
 > 
 
@@ -65,12 +65,12 @@ Der er omstændigheder, som gør, at **Udsnit med høj tæthed** ikke kan anvend
   ![brug af et eksempel på et forhold mellem linjer](media/desktop-high-density-scatter-charts/high-density-scatter-charts-03.png)
 
 ## <a name="how-to-turn-on-high-density-sampling-for-a-scatter-chart"></a>Sådan aktiveres udsnit med høj tæthed for et punktdiagram
-Du kan slå **Udsnit med høj tæthed** til ved at vælge et punktdiagram, gå til ruden **Formatering** , udvide kortet **Generelt** og flytte skyderen **Udsnit med høj tæthed** i bunden af kortet til indstillingen **Til**.
+Du kan slå **Udsnit med høj tæthed** til ved at vælge et punktdiagram, gå til ruden **Formatering**, udvide kortet **Generelt** og flytte skyderen **Udsnit med høj tæthed** i bunden af kortet til indstillingen **Til**.
 
 ![eksempel på stikprøvetagning med høj tæthed](media/desktop-high-density-scatter-charts/high-density-scatter-charts-04.png)
 
 > [!NOTE]
-> Når skyderen er slået til, forsøger Power BI at bruge algoritmen **Udsnit med høj tæthed** , når det er muligt. Når algoritmen ikke kan bruges (hvis du f.eks. anbringer en værdi på aksen *Afspil* ), forbliver skyderen i placeringen **Til** , selvom diagrammet er returneret til standardalgoritmen. Hvis du senere fjerner en værdi fra aksen *Afspil* (eller betingelserne ændres, så det er muligt at bruge algoritmen Udsnit med høj tæthed), bruges udsnit med høj tæthed automatisk til diagrammet, fordi funktionen er aktiveret.
+> Når skyderen er slået til, forsøger Power BI at bruge algoritmen **Udsnit med høj tæthed**, når det er muligt. Når algoritmen ikke kan bruges (hvis du f.eks. anbringer en værdi på aksen *Afspil*), forbliver skyderen i placeringen **Til**, selvom diagrammet er returneret til standardalgoritmen. Hvis du senere fjerner en værdi fra aksen *Afspil* (eller betingelserne ændres, så det er muligt at bruge algoritmen Udsnit med høj tæthed), bruges udsnit med høj tæthed automatisk til diagrammet, fordi funktionen er aktiveret.
 > 
 
 > 

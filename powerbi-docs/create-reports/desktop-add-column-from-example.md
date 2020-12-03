@@ -2,19 +2,19 @@
 title: Tilføj en kolonne ud fra et eksempel i Power BI Desktop
 description: Opret hurtigt en ny kolonne i Power BI Desktop ved hjælp af eksisterende kolonner som eksempler.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 01/16/2019
-ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 68f2dc14b713345796ba0472fc3d55f6baedf819
-ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
+ms.openlocfilehash: f33a9f5656875825b70c7e51202431ba268fe86a
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "86263197"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414501"
 ---
 # <a name="add-a-column-from-examples-in-power-bi-desktop"></a>Tilføj en kolonne ud fra eksempler i Power BI Desktop
 Med *tilføj kolonne fra eksempler* i Power-forespørgselseditor kan du føje nye kolonner til din datamodel ved at angive en eller flere eksempelværdier for de nye kolonner. Du kan oprette de nye kolonneeksempler fra et valg eller angive input baseret på alle eksisterende kolonner i tabellen.

@@ -1,26 +1,26 @@
 ---
 title: 'Det "nye udseende": Hvor blev handlingerne af?'
 description: Power BI-tjenesten (app.powerbi.com) har fået et nyt udseende, og mange handlinger er blevet flyttet. Denne artikel indeholder tabeller, der knytter de gamle placeringer til den nye.
-author: maggiesMSFT
+author: mihart
+ms.author: mihart
 ms.reviewer: maggies
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: conceptual
 ms.date: 10/22/2020
-ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 572943a437ebf0380b254e8b659699d676e9001f
-ms.sourcegitcommit: fddba666c6ea90d525a1c3188bbd3c4a03410cdc
+ms.openlocfilehash: 1c16405ff211620580f739facda8556e81774935
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92462159"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96415122"
 ---
 # <a name="the-new-look-where-did-the-actions-go"></a>Det "nye udseende": Hvor blev handlingerne af?
 
 Power BI-tjenesten (app.powerbi.com) har fået et nyt udseende, der gør det lettere at få vist og interagere med dine rapporter. Derfor er mange af menuhandlingerne blevet flyttet. Tabellerne i denne artikel knytter den gamle placering til den nye. Hvis du vil have flere oplysninger om baggrunden, skal du se [det "nye udseende" af Power BI-tjenesten](service-new-look.md).
 
-Leder du efter oplysninger om det nye udseende af **Power BI Desktop** ? Se [Brug det opdaterede bånd i Power BI Desktop](../create-reports/desktop-ribbon.md).
+Leder du efter oplysninger om det nye udseende af **Power BI Desktop**? Se [Brug det opdaterede bånd i Power BI Desktop](../create-reports/desktop-ribbon.md).
 
 ## <a name="report-actions-in-the-new-look"></a>Rapporthandlinger i det nye udseende
 

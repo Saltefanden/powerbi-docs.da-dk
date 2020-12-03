@@ -2,18 +2,18 @@
 title: Vis præsentationstilstand på Surface Hub og Windows 10 – Power BI
 description: Læs om visning af Power BI-rapporter i Surface Hub og visning af Power BI-dashboards, -rapporter og -felter i præsentationstilstand på Windows 10-enheder.
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 08/12/2020
-ms.author: painbar
-ms.openlocfilehash: a982374bbf713d4e0c970da601fdca3249120cbe
-ms.sourcegitcommit: 5fdb45736ca0c8070124279fed4dab1ced8b7b27
+ms.openlocfilehash: 797b00210154e577275f486194f7e36f2cd0077e
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92683307"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96415444"
 ---
 # <a name="view-reports-and-dashboards-in-presentation-mode-on-surface-hub-and-windows-10-devices"></a>Få vist rapporter og dashboards i præsentationstilstand på Surface Hub og Windows 10-enheder
 Du kan bruge præsentationstilstand til at vise rapporter og dashboards i fuld skærm på Windows 10-enheder og Surface Hub. Præsentationstilstand er praktisk til at vise Power BI på møder eller konferencer eller på en dedikeret projektor på kontoret. Du kan også bruge det for at se mest muligt på en lille skærm.
@@ -26,7 +26,7 @@ I præsentationstilstand:
 * Du kan afspille et slideshow, der automatisk skifter mellem sider, bogmærker eller både sider og bogmærker.
 
 >[!NOTE]
->Understøttelse af Power BI-mobilapp til **telefoner, der bruger Windows 10 mobile** , ophører den 16. marts 2021. [Få mere at vide](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+>Understøttelse af Power BI-mobilapp til **telefoner, der bruger Windows 10 mobile**, ophører den 16. marts 2021. [Få mere at vide](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 ## <a name="use-presentation-mode"></a>Brug præsentationstilstand
 Tryk på ikonet **Skift til præsentationstilstand** i Power BI-mobilappen.
@@ -39,10 +39,10 @@ Fra værktøjslinjen kan du udføre følgende handlinger:
 | Ikon | Handling |
 |------|--------|
 |![ikonet Tilbage](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-back-icon.png)|**Gå tilbage** til forrige side. Hvis du trykker på ikonet, og holder det nede, åbnes brødkrummevinduerne, hvilket giver dig mulighed for at navigere til mappen med din rapport eller til dit dashboard.|
-|![Ikonet Sideinddeling](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-pages-icon.png)|**Skift sider** , og få vist en anden side af rapporten i din præsentation.|
+|![Ikonet Sideinddeling](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-pages-icon.png)|**Skift sider**, og få vist en anden side af rapporten i din præsentation.|
 |![Ikonet Bogmærker](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-bookmarks-icon.png)|**Anvend et bogmærke** for at præsentere den specifikke visning af dine data, som bogmærket henter. Du kan anvende både personlige bogmærker og rapportbogmærker.|
-|![Ikonet Håndskrift](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-ink-icon.png)|**Vælg en farve til håndskrift** , når du bruger Surface-pennen til at tegne på og anmærke din rapportside.|
-|![Ikonet Viskelæder](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-eraser-icon.png)|**Slet håndskriftsmærker** , du eventuelt har angivet med Surface-pennen for at tegne på og anmærke din rapportside.          |
+|![Ikonet Håndskrift](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-ink-icon.png)|**Vælg en farve til håndskrift**, når du bruger Surface-pennen til at tegne på og anmærke din rapportside.|
+|![Ikonet Viskelæder](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-eraser-icon.png)|**Slet håndskriftsmærker**, du eventuelt har angivet med Surface-pennen for at tegne på og anmærke din rapportside.          |
 |![Ikonet Nulstil](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-reset-icon.png)|**Nulstil til standardvisning** og ryd eventuelle filtre, udsnitsværktøjer eller andre ændringer af datavisning, som du eventuelt har foretaget under præsentationen.|
 |![Delingsikon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-share-icon.png)|**Del** et billede af præsentationsvisningen med dine kolleger. Billedet indeholder alle annotationer, du har angivet med Surface-pennen under præsentationen.|
 |![Ikonet Opdater](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-refresh-icon.png)|**Opdater** rapporten.|
@@ -62,7 +62,7 @@ Når du vælger knappen **Afspil** på handlingsværktøjslinjen, begynder slide
 
 ![Skærmbillede af slideshowvælger](././media/mobile-windows-10-app-presentation-mode//power-bi-windows-10-slideshow-selector.png)
 
- Navnet på den aktuelt viste visning (side eller bogmærke og side) vises i controlleren. På billedet ovenfor kan du se, at bogmærket **Asien og Stillehavsområdet** aktuelt vises på siden **Sales Performance** i rapporten **Sales** .
+ Navnet på den aktuelt viste visning (side eller bogmærke og side) vises i controlleren. På billedet ovenfor kan du se, at bogmærket **Asien og Stillehavsområdet** aktuelt vises på siden **Sales Performance** i rapporten **Sales**.
 
 Et slideshow bevæger sig som standard kun gennem sider med et sideskift hvert 30. sekund. Du kan ændre standardfunktionsmåden under [Indstillinger for slideshow](#slideshow-settings).
 
@@ -81,7 +81,7 @@ Et slideshow bevæger sig som standard kun gennem sider med et sideskift hvert 3
 
 1. Du kan evt. ændre standardindstillingerne for, hvad slideshowet overføres fra (sider, bogmærker eller begge dele), og hvor ofte slidesene skal overføres.
 
-1. Hvis du ønsker, at din rapport automatisk skal gå i gang med at blive afspillet, når appen startes, skal du slå til/fra-knappen til og vælge **Vælg rapport** . Du kan søge efter rapporter, du har adgang til.
+1. Hvis du ønsker, at din rapport automatisk skal gå i gang med at blive afspillet, når appen startes, skal du slå til/fra-knappen til og vælge **Vælg rapport**. Du kan søge efter rapporter, du har adgang til.
 
 ![Skærmbillede af slideshowindstillinger](././media/mobile-windows-10-app-presentation-mode//power-bi-windows-10-slideshow-settings.png)
 

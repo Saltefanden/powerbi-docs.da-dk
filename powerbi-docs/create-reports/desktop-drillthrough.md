@@ -2,19 +2,19 @@
 title: Konfigurer detaljeadgang i Power BI-rapporter
 description: Lær, hvordan du bruger detaljeadgang til at analysere data på en ny rapportside i Power BI-rapporter
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 03/12/2020
-ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 7ba75bf5bce05f7a2614dc27d5ff8245ec1a31ef
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: cec22acab7cc44b96f3137df04777671964707a8
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239162"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414225"
 ---
 # <a name="set-up-drill-through-in-power-bi-reports"></a>Konfigurer detaljeadgang i Power BI-rapporter
 Med *detaljeadgang* i Power BI-rapporter kan du oprette en side i rapporten, som fokuserer på et bestemt objekt, f.eks. en leverandør, en kunde eller en producent. Når dine rapportlæsere bruger detaljeadgang, højreklikker de på et datapunkt på andre rapportsider og går videre ned til siden med fokus for at få de oplysninger, der er filtreret i forhold til konteksten. Du kan også [oprette en knap, der giver adgang](desktop-drill-through-buttons.md) til detaljer, når de klikker på den.

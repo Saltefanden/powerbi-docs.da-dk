@@ -2,19 +2,19 @@
 title: Betinget formatering af tabeller i Power BI Desktop
 description: Anvend brugerdefineret formatering på tabeller
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 05/06/2020
-ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1273030bc1fd8664e854eb2b59939cf271b017fa
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 421ccbe08435e03fe43cf6f0e7f2b71c99ec6901
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860020"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414386"
 ---
 # <a name="use-conditional-formatting-in-tables"></a>Brug betinget formatering på tabeller 
 
@@ -141,7 +141,7 @@ Hvis du vil have vist ikoner, der er baseret på celleværdier, skal du vælge *
 
 I dialogboksen **Ikoner** under **Formatér efter** skal du vælge enten **Regler** eller **Feltværdi**. 
 
-Hvis du vil formatere efter regler, skal du vælge **feltet Baseret på**, metoden **Opsummering**, **Ikonets layout**, **Ikonets justering**, ikonets **Typografi** og en eller flere **Regler**. Under **Regler**skal du angive en eller flere regler med en betingelse af typen *Hvis værdi* og en *og*-værdi og vælge et ikon, der skal anvendes på hver enkelt regel. 
+Hvis du vil formatere efter regler, skal du vælge **feltet Baseret på**, metoden **Opsummering**, **Ikonets layout**, **Ikonets justering**, ikonets **Typografi** og en eller flere **Regler**. Under **Regler** skal du angive en eller flere regler med en betingelse af typen *Hvis værdi* og en *og*-værdi og vælge et ikon, der skal anvendes på hver enkelt regel. 
 
 Hvis du vil formatere efter feltværdier, skal du vælge **feltet Baseret på**, metoden **Opsummering**, **Ikonets layout** og **Ikonets justering**.
 
@@ -159,7 +159,7 @@ Hvis du har en kolonne eller måling, der indeholder webadresser, kan du bruge b
 
 ![Tabel med kolonne til webadresse](media/desktop-conditional-table-formatting/table-formatting-1-diverging.png)
 
-Hvis du vil have vist hver enkelt delstats navn som et dynamisk link til webstedet, skal du vælge **Betinget formatering** for feltet **State** og derefter vælge **URL-adresse til websted**. I dialogboksen **URL-adresse til websted** skal du under **feltet Baseret på**vælge **Websted**og derefter vælge **OK**. 
+Hvis du vil have vist hver enkelt delstats navn som et dynamisk link til webstedet, skal du vælge **Betinget formatering** for feltet **State** og derefter vælge **URL-adresse til websted**. I dialogboksen **URL-adresse til websted** skal du under **feltet Baseret på** vælge **Websted** og derefter vælge **OK**. 
 
 Med formatering for **URL-adresse til websted** anvendt på feltet **State** er hvert navn på en delstat et aktivt link til sit websted. Følgende eksempeltabel har formatering for **URL-adresse til websted** anvendt på kolonnen **State** og betingede **Datalinjer** og **Baggrundsformatering** anvendt på kolonnen **Prisbillighed**. 
 

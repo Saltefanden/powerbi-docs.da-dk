@@ -2,18 +2,18 @@
 title: Always Encrypted på Microsoft Power BI-rapportserveren
 description: Denne artikel indeholder en detaljeret beskrivelse af Always Encrypted-understøttelse på Power BI-rapportserveren, når du brugerdatakildetyperne Microsoft SQL Server og Microsoft Azure SQL Database.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: cfinlan
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/22/2020
-ms.author: maggies
-ms.openlocfilehash: f921d9dbeb16d1b960e22f228f7833c8fbf184b4
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 4851a20ecd406ffe2a460ba52833cca420b517da
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90861239"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96415536"
 ---
 # <a name="always-encrypted-in-power-bi-report-server"></a>Always Encrypted på Microsoft Power BI-rapportserveren
 

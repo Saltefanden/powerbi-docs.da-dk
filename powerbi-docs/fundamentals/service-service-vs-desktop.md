@@ -1,21 +1,21 @@
 ---
 title: Sammenligning af Power BI Desktop og Power BI-tjenesten
 description: Power BI Desktop er et komplet værktøj til dataanalyse og oprettelse af rapporter. Power BI-tjenesten er en cloudbaseret onlinetjeneste til let redigering af rapporter og samarbejde mellem teams og virksomheder.
-author: maggiesMSFT
+author: mihart
+ms.author: mihart
 ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-fundamentals
 ms.topic: conceptual
 ms.date: 08/07/2020
-ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 0b4a1275a3b50fbadd37d953b77316d6021c800c
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: 41d3ebc8980dabcce4c104bca318770ecf482d3d
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94397087"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414087"
 ---
 # <a name="comparing-power-bi-desktop-and-the-power-bi-service"></a>Sammenligning af Power BI Desktop og Power BI-tjenesten
 
@@ -33,7 +33,7 @@ Power BI-tjenesten hoster også *sideinddelte rapporter* i arbejdsområder, der 
 
 ## <a name="editing-power-bi-reports"></a>Redigering af Power BI-rapporter
 
-Du kan oprette og redigere Power BI- *rapporter* i både programmet og tjenesten. En rapport kan have en eller flere sider med visualiseringer og samlinger af visualiseringer. Tilføj bogmærker, knapper, filtre og detaljeadgang for at forbedre navigationen i dine rapporter.
+Du kan oprette og redigere Power BI-*rapporter* i både programmet og tjenesten. En rapport kan have en eller flere sider med visualiseringer og samlinger af visualiseringer. Tilføj bogmærker, knapper, filtre og detaljeadgang for at forbedre navigationen i dine rapporter.
 
 ![Skærmbilleder af Power BI Desktop og Power BI-tjenesten med nummererede afsnit.](media/service-service-vs-desktop/power-bi-editing-desktop-service.png)
 
@@ -41,7 +41,7 @@ Rapporteditorerne i Power BI Desktop og i tjenesten er ens. De består af tre se
 
 1. De øverste navigationsruder, der ikke er de samme i Power BI Desktop og tjenesten    
 2. Rapportcanvasset     
-3. Ruderne **Felter** , **Visualiseringer** og **Filtre**
+3. Ruderne **Felter**, **Visualiseringer** og **Filtre**
 
 Denne video viser rapporteditoren i Power BI Desktop. 
 
@@ -51,7 +51,7 @@ Denne video viser rapporteditoren i Power BI Desktop.
 
 ### <a name="collaborating"></a>Samarbejde
 
-Når du har oprettet dine rapporter, kan du gemme dem i et *arbejdsområde* i **Power BI-tjenesten** , hvor du og dine kolleger kan samarbejde. Du kan bygge *dashboards* oven på disse rapporter. Derefter deler du disse dashboards og rapporter med brugere af rapporter i og uden for din organisation. Brugerne af rapporterne får dem vist i Power BI-tjenesten i en *læsevisning* ikke redigeringsvisning. De har ikke adgang til alle de funktioner, der er tilgængelige for oprettere af rapporter.  Du kan også dele dine datasæt og lade andre bygge deres egne rapporter ud fra dem. Læs mere om [samarbejde i Power BI-tjenesten](../collaborate-share/service-new-workspaces.md).
+Når du har oprettet dine rapporter, kan du gemme dem i et *arbejdsområde* i **Power BI-tjenesten**, hvor du og dine kolleger kan samarbejde. Du kan bygge *dashboards* oven på disse rapporter. Derefter deler du disse dashboards og rapporter med brugere af rapporter i og uden for din organisation. Brugerne af rapporterne får dem vist i Power BI-tjenesten i en *læsevisning* ikke redigeringsvisning. De har ikke adgang til alle de funktioner, der er tilgængelige for oprettere af rapporter.  Du kan også dele dine datasæt og lade andre bygge deres egne rapporter ud fra dem. Læs mere om [samarbejde i Power BI-tjenesten](../collaborate-share/service-new-workspaces.md).
 
 ### <a name="self-service-data-prep-with-dataflows"></a>Selvbetjent dataforberedelse med dataflow
 

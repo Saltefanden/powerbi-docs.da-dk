@@ -2,19 +2,19 @@
 title: Datakategorisering i Power BI Desktop
 description: Datakategorisering i Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: how-to
 ms.date: 01/15/2020
-ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 414f58338a53ce9ff24f193acd3cee0da2c30658
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: d99eb0355d414a9e1627da0b5629eaf45cbaf18d
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86215323"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96415789"
 ---
 # <a name="specify-data-categories-in-power-bi-desktop"></a>Angiv datakategorier i Power BI Desktop
 I Power BI Desktop kan du angive *datakategorien* for en kolonne, så Power BI Desktop ved, hvordan dens værdier skal behandles i en visualisering.
