@@ -2,19 +2,19 @@
 title: Kurset Sideinddelte Power BI-rapporter på én dag
 description: Dette videobaserede kursus har til formål at gøre dig i stand til at skrive rapporter med den tekniske viden, der kræves for at oprette, udgive og distribuere sideinddelte Power BI-rapporter.
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: maggies
 featuredvideoid: DN1t5p9aui0
 ms.service: powerbi
-ms.subservice: report-builder
+ms.subservice: powerbi
 ms.topic: tutorial
 ms.date: 11/11/2020
-ms.author: v-pemyer
-ms.openlocfilehash: 44ca1f021001161a978875377a1315dc14e5245d
-ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
+ms.openlocfilehash: e05078bf51cd33fb565dc783386258fe9ea305d1
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94512970"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96416364"
 ---
 # <a name="power-bi-paginated-reports-in-a-day-course"></a>Kurset Sideinddelte Power BI-rapporter på én dag
 

@@ -1,21 +1,21 @@
 ---
 title: Vandfaldsdiagrammer i Power BI
 description: Vandfaldsdiagrammer i Power BI
-author: msftrien
+author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: maTzOJSRB3g
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 12/5/2019
-ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: ce3c52774326bd9fc66fecde7496fefb1cf6888c
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: 1a651afd0aee0777f8f4c945f208eec8c46db047
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93412113"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96416663"
 ---
 # <a name="waterfall-charts-in-power-bi"></a>Vandfaldsdiagrammer i Power BI
 
@@ -94,7 +94,7 @@ Du opretter et vandfaldsdiagram, der viser afvigelsen i salg (anslået salg i fo
 
 Se lidt nærmere på, hvad der bidrager mest til ændringerne måned for måned.
 
-1.  Vælg **Butik** > **Distrikt** , hvorved **Distrikt** føjes til bucket'en **Opdeling**.
+1.  Vælg **Butik** > **Distrikt**, hvorved **Distrikt** føjes til bucket'en **Opdeling**.
 
     ![Skærmbillede, der viser tilføjelse af Distrikt til området Opdeling.](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown.png)
 

@@ -2,20 +2,20 @@
 title: Sådan fastgør du et felt til et Power BI-dashboard fra Excel
 description: Fastgør et felt til et Power BI-dashboard fra Excel på OneDrive for Business. Fastgør intervaller, diagrammer, tabeller
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 featuredvideoid: l8JoB7w0zJA
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 05/02/2018
-ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e2e47a09437bacfc905258bd6e23e82ff5554225
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: b62a780bc504c0b2fc90aa368d8dc30ac745867e
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85219292"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96417399"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-excel"></a>Fastgør et felt til et Power BI-dashboard fra Excel
 Før du kan fastgøre et felt fra din Excel-projektmappe, skal du oprette forbindelse mellem denne projektmappe og Power BI-tjenesten (app.powerbi.com). Når der oprettes forbindelse til en projektmappe, overføres der grundlæggende set en sammenkædet skrivebeskyttet version af denne projektmappe til Power BI-tjenesten, så du kan fastgøre intervaller til dashboards. Du kan endda fastgøre et helt regneark til et dashboard.  

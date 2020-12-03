@@ -1,20 +1,20 @@
 ---
 title: 'Selvstudium: Kom i gang med at oprette i Power BI-tjenesten'
 description: Kom i gang med Power BI-onlinetjenesten (app.powerbi.com)
-author: maggiesMSFT
+author: mihart
+ms.author: mihart
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-fundamentals
 ms.topic: tutorial
 ms.date: 07/08/2020
-ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: eeda30e5a075166af3718084c2c9f7737f876cbe
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 4e74bec243faad281c457caaa15a6edacf2b10cb
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90861101"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96417123"
 ---
 # <a name="tutorial-get-started-creating-in-the-power-bi-service"></a>Selvstudium: Kom i gang med at oprette i Power BI-tjenesten
 Dette selvstudium er en introduktion til nogle af funktionerne i *Power BI-tjenesten.* I selvstudiet lærer du, hvordan du opretter forbindelse til data, opretter en rapport og et dashboard samt stiller spørgsmål til dine data. Du kan udføre mange flere opgaver i Power BI-tjenesten, og dette selvstudium er kun ment som en appetitvækker. Hvis du vil have en forståelse af, hvordan Power BI-tjenesten passer sammen med de andre Power BI-tilbud, anbefaler vi, at du læser artiklen [Hvad er Power BI](power-bi-overview.md).

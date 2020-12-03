@@ -1,20 +1,21 @@
 ---
 title: Stands din Power BI Embedded-kapacitet midlertidigt, og start den igen på Azure-portalen | Microsoft Docs
 description: I denne artikel beskriver vi, hvordan du standser og starter en Power BI Embedded-kapacitet i Microsoft Azure.
-services: power-bi-embedded
 author: KesemSharabi
 ms.author: kesharab
+services: power-bi-embedded
 editor: ''
 tags: ''
-ms.service: power-bi-embedded
-ms.topic: conceptual
+ms.service: powerbi
+ms.subservice: powerbi-developer
+ms.topic: how-to
 ms.date: 09/28/2017
-ms.openlocfilehash: 07c9c12366b100936e03fe07358ee180e026dfc5
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 71d3536cdcda5c1b2970385887388ea60b4290af
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80114744"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96417307"
 ---
 # <a name="pause-and-start-your-power-bi-embedded-capacity-in-the-azure-portal"></a>Stands og start din Power BI Embedded-kapacitet på Azure-portalen
 

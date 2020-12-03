@@ -1,19 +1,19 @@
 ---
 title: Hvad er Power BI?
 description: Oversigt over Power BI, og hvordan de forskellige dele passer sammen – Power BI Desktop, Power BI-tjeneste, Power BI Mobil, rapportserver og Power BI Embedded.
-author: maggiesMSFT
+author: mihart
+ms.author: mihart
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-fundamentals
 ms.topic: overview
 ms.date: 09/23/2020
-ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 2c793cf0b7af6f6a7fdbc6196052ac357b6ddd12
-ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
+ms.openlocfilehash: acbd0761b481ec4884ab94d50de219a2d753b574
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "91375325"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96416525"
 ---
 # <a name="what-is-power-bi"></a>Hvad er Power BI?
 **Power BI** er en samling af softwaretjenester, apps og forbindelser, der arbejder sammen for at forvandle usammenhængende data til faste, visuelt fordybende og interaktive indsigter. Dine data kan være et Excel-regneark eller en samling cloudbaserede hybride data warehouses og hybride data warehouses i det lokale miljø. Med Power BI kan du nemt oprette forbindelse til dine datakilder, visualisere og finde vigtigt indhold samt dele det med alle, du vil.

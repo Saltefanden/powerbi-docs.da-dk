@@ -1,19 +1,19 @@
 ---
 title: Installér Power BI-apps automatisk, når du integrerer for din organisation
 description: Få mere at vide om, hvordan du installerer Power BI-apps automatisk, når du integrerer for din organisation.
-ms.subservice: powerbi-developer
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: how-to
 ms.service: powerbi
+ms.subservice: powerbi-developer
 ms.custom: ''
 ms.date: 04/16/2019
-ms.openlocfilehash: f84527a189be0f78f73470cbc475f45206dd8cf1
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: c9f9a09d659a047ff7342dd0c90f0effe03ce6a1
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93412389"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96417215"
 ---
 # <a name="auto-install-power-bi-apps-when-embedding-for-your-organization"></a>Installér Power BI-apps automatisk, når du integrerer for din organisation
 

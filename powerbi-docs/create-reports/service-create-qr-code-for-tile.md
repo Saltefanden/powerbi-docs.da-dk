@@ -1,20 +1,20 @@
 ---
 title: Opret en QR-kode for et felt, der skal bruges i Power BI-mobilapps
 description: QR-koder i Power BI-felter kan forbinde noget i den virkelige verden direkte med relaterede BI-oplysninger i Power BI-mobilappen, uden at det er nødvendigt at søge.
-author: maggiesMSFT
+author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 03/07/2018
-ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 95e966a7056926c70802a4502be497c2d2b268e5
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 85d33d5e1088a4bd47b6bfbcade6a6a1a4e14bbb
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91746763"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96417445"
 ---
 # <a name="create-a-qr-code-for-a-tile-in-power-bi-to-use-in-the-mobile-apps"></a>Opret en QR-kode for et felt i Power BI, som skal bruges i mobilappsene
 QR-koder i Power BI kan forbinde noget i den virkelige verden direkte med relaterede BI-oplysninger &#151; du behøver ikke at navigere eller søge.

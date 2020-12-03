@@ -2,23 +2,23 @@
 title: Opret forbindelse til AI-indsigter i Power BI Desktop
 description: Opret nemt forbindelse til og brug data fra AI-indsigt i Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: how-to
 ms.date: 06/10/2020
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 8de033c673d9d08833fdc5a935b92490db369104
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: a3654bc77ebdbd41ef608378157bf0d24bb94c88
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94396742"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96416111"
 ---
 # <a name="use-ai-insights-in-power-bi-desktop"></a>Brug AI-indsigter i Power BI Desktop
 
-I Power BI kan du bruge AI-indsigter til at få adgang til en samling af forudoplærte modeller til maskinel indlæring, der forbedrer din dataforberedelse. Der er adgang til AI-indsigt i **Power Query Editor** , og der er adgang til de tilhørende funktioner via fanerne **Hjem** og **Tilføj kolonne** i **Power Query Editor**. 
+I Power BI kan du bruge AI-indsigter til at få adgang til en samling af forudoplærte modeller til maskinel indlæring, der forbedrer din dataforberedelse. Der er adgang til AI-indsigt i **Power Query Editor**, og der er adgang til de tilhørende funktioner via fanerne **Hjem** og **Tilføj kolonne** i **Power Query Editor**. 
 
 ![Placering af AI-indsigter på båndet](media/desktop-ai-insights/ai-insights-00.png)
 
@@ -83,7 +83,7 @@ I øjeblikket understøtter synspunktsanalysen engelsk, tysk, spansk og fransk. 
 
 #### <a name="tag-images"></a>Tag billeder
 
-Funktionen **Tag billeder** returnerer tags baseret på mere end 2.000 genkendelige objekter, levende væsener, landskaber og handlinger. Når tags er tvetydige eller ikke er almen viden, giver outputtet *tip* , der tydeliggør betydningen af tagget i forbindelse med en kendt kontekst. Tags ikke er organiseret som en taksonomi, og der findes ingen nedarvningshierarkier. En samling af indholdstags udgør fundamentet for en *billedbeskrivelse* , der vises som sprog i hele sætninger, der kan læses af mennesker.
+Funktionen **Tag billeder** returnerer tags baseret på mere end 2.000 genkendelige objekter, levende væsener, landskaber og handlinger. Når tags er tvetydige eller ikke er almen viden, giver outputtet *tip*, der tydeliggør betydningen af tagget i forbindelse med en kendt kontekst. Tags ikke er organiseret som en taksonomi, og der findes ingen nedarvningshierarkier. En samling af indholdstags udgør fundamentet for en *billedbeskrivelse*, der vises som sprog i hele sætninger, der kan læses af mennesker.
 
 Når et billede er uploadet, eller en URL-adresse til et billede er angivet, genereres tags af Computer Vision-algoritmer baseret på de objekter, levende væsener og handlinger, der er identificeret på billedet. Tagging er ikke begrænset til det primære emne, f.eks. en person i forgrunden, men det indeholder også omgivelserne (indendørs eller udendørs), møbler, værktøjer, planter, dyr, tilbehør, gadgets og osv.
 
@@ -152,7 +152,7 @@ Der er nogle få overvejelser og begrænsninger, du skal huske på, når du arbe
 
 ## <a name="using-azure-ml"></a>Brug af Azure Machine Learning
 
-Mange organisationer bruger **Machine Learning** -modeller for at få større indsigt i deres virksomhed og dens fremtidige udvikling. Muligheden for at visualisere og aktivere indsigt fra disse modeller i dine rapporter og dashboards og andre analyser kan hjælpe med at udbrede denne indsigt til de forretningsbrugere, der har størst behov for den. Power BI gør det nemt at integrere indsigt fra modeller, der hostes i Azure Machine Learning, ved hjælp af enkle peg og klik-håndbevægelser.
+Mange organisationer bruger **Machine Learning**-modeller for at få større indsigt i deres virksomhed og dens fremtidige udvikling. Muligheden for at visualisere og aktivere indsigt fra disse modeller i dine rapporter og dashboards og andre analyser kan hjælpe med at udbrede denne indsigt til de forretningsbrugere, der har størst behov for den. Power BI gør det nemt at integrere indsigt fra modeller, der hostes i Azure Machine Learning, ved hjælp af enkle peg og klik-håndbevægelser.
 
 For at gøre det muligt at bruge denne funktion kan en dataspecialist ganske enkelt give BI analytikeren adgang til Azure Machine Learning-modellen ved hjælp af Microsoft Azure-portal. I starten af hver session finder Power-forespørgsel derefter alle de Azure Machine Learning-modeller, brugeren har adgang til, og viser dem som dynamiske funktioner i Power-forespørgsel. Brugeren kan derefter aktivere disse funktioner ved at oprette adgang til dem på båndet i Power Query Editor eller ved at aktivere funktionen M direkte. For at opnå en bedre ydeevne samler Power BI også automatisk anmodninger om adgang i bundter, når Azure Machine Learning-modellen aktiveres for et sæt af rækker.
 

@@ -1,19 +1,19 @@
 ---
 title: Planlægning af en rapport i Power BI Report Builder
 description: Med Power BI Report Builder kan du oprette mange slags sideinddelte rapporter. Hvis du vil oprette en nyttig rapport, der er let at forstå, er det en god idé at planlægge den først.
+author: maggiesMSFT
+ms.author: maggies
 ms.date: 07/25/2019
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.assetid: 79113505-1ce8-4f8c-9260-d861838f7813
-author: maggiesMSFT
-ms.author: maggies
-ms.openlocfilehash: 3f075372436723cd8952decd68ecc764bd6e92a0
-ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
+ms.openlocfilehash: 2ed8dfd07cf5d7d04869b3bf2253bca09adbc0ba
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93297727"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96416226"
 ---
 # <a name="planning-a-report-in-power-bi-report-builder"></a>Planlægning af en rapport i Power BI Report Builder
 

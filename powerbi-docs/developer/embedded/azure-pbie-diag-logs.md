@@ -4,15 +4,16 @@ description: Få mere at vide om konfiguration af logføring af diagnosticering 
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
-ms.service: power-bi-embedded
+ms.service: powerbi
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/13/2018
-ms.openlocfilehash: cc64338ed40fcdc6433fdcf231004b4946335c72
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 4ab6a0d6135fcd2428df03e84596eebf6bba6704
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91748787"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96417353"
 ---
 # <a name="diagnostic-logging-for-power-bi-embedded-in-azure"></a>Logføring af diagnosticering for Power BI Embedded på Azure
 
@@ -40,7 +41,7 @@ Ved hjælp af diagnosticering kan du får svar på nogle få scenarier, f.eks.:
     * **Stream til en hændelseshub** – Hvis du vil bruge denne indstilling, skal du oprette forbindelse til et eksisterende Event Hub-navneområde og en eksisterende hændelseshub. Du kan få mere at vide under [Opret et Event Hubs-navneområde og en hændelseshub ved hjælp af Azure Portal](/azure/event-hubs/event-hubs-create).
     * **Send til Log Analytics** – Hvis du vil bruge denne indstilling, skal du enten bruge et eksisterende arbejdsområde eller oprette et nyt Log Analytics-arbejdsområde ved at følge trinnene for at [oprette et nyt arbejdsområde](/azure/log-analytics/log-analytics-quick-collect-azurevm#create-a-workspace) på portalen. Dermed udnyttes [Azure Log Analytics](/azure/log-analytics/log-analytics-overview), som indeholder indbyggede funktioner til analyse, dashboarding og meddelelser. Du kan bruge Log Analytics til at forbinde flere data fra andre ressourcer og få en enkelt og komplet visning af data på tværs af alle dit programressourcer. Du kan også oprette forbindelse til [Power BI med et enkelt klik](/azure/log-analytics/log-analytics-powerbi).
     Du kan få flere oplysninger om visning af dine logge i Log Analytics under [Få vist logge i Log Analytics](/azure/log-analytics/log-analytics-activity).
-    * **Program** – Vælg denne indstilling for at logføre angivelsen af program[hændelser, der er angivet](#whats-logged) nedenfor.
+    * **Program** – Vælg denne indstilling for at logføre angivelsen af program [hændelser, der er angivet](#whats-logged) nedenfor.
     * **Alle målepunkter** – Vælg denne indstilling til at gemme detaljerede data i [Målepunkter](/azure/analysis-services/analysis-services-monitor#server-metrics). Hvis du arkivering til en lagerkonto, kan du vælge opbevaringsperioden for diagnosticeringslogge. Logfiler slettes automatisk, når opbevaringsperioden udløber.
 
 3. Vælg **Gem**.

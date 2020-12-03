@@ -2,24 +2,24 @@
 title: Brug af beregnede kolonner i Power BI Desktop
 description: Beregnede kolonner i Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: how-to
 ms.date: 05/07/2019
-ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 0d8510e1ef76ba07623e135f51eb0ce21ceac4c4
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: 9c7285f90b963166c643c2bb20f9323eddb7ce85
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86214381"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96415927"
 ---
 # <a name="create-calculated-columns-in-power-bi-desktop"></a>Opret beregnede kolonner i Power BI Desktop
 Med beregnede kolonner kan du føje nye data til en tabel, der allerede findes i din model. Men i stedet for at forespørge efter og indlæse værdier i din nye kolonne fra en datakilde kan du oprette en DAX-formel (Data Analysis Expressions), der definerer værdierne i kolonnen. I Power BI Desktop oprettes der beregnede kolonner ved hjælp af funktionen Ny kolonne i visningen **Rapport**.
 
-I modsætning til brugerdefinerede kolonner, der oprettes som en del af en forespørgsel ved hjælp af **Tilføj brugerdefineret kolonne** i forespørgselseditoren, er beregnede kolonner, der oprettes i visningen**Rapport** eller **Data** baseret på data, du allerede har indlæst i modellen. Du kan f.eks. vælge at sammenkæde værdier fra to forskellige kolonner i to forskellige men relaterede tabeller, udføre addition eller udtrække understrenge.
+I modsætning til brugerdefinerede kolonner, der oprettes som en del af en forespørgsel ved hjælp af **Tilføj brugerdefineret kolonne** i forespørgselseditoren, er beregnede kolonner, der oprettes i visningen **Rapport** eller **Data** baseret på data, du allerede har indlæst i modellen. Du kan f.eks. vælge at sammenkæde værdier fra to forskellige kolonner i to forskellige men relaterede tabeller, udføre addition eller udtrække understrenge.
 
 Beregnede kolonner, du opretter, vises på listen **Felter** på samme måde som alle andre felter, men de har et særligt ikon, der viser, at værdierne er et resultat af en formel. Du kan navngive kolonnerne, som du vil, og føje dem til en rapportvisualisering på samme måde som alle andre felter.
 

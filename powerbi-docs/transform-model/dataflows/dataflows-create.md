@@ -2,19 +2,19 @@
 title: Oprettelse af et dataflow
 description: Oversigt over de forskellige muligheder for oprettelse af et dataflow
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-dataflows
 ms.topic: how-to
 ms.date: 10/01/2020
-ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 5a75965bb236a1515274343e58668809f91cef7b
-ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
+ms.openlocfilehash: c98044303e46af46d36b98f0a1bdc8c7df29d94f
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94669195"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96416157"
 ---
 # <a name="creating-a-dataflow"></a>Oprettelse af et dataflow
 Et **dataflow** er en samling af objekter (objekter er ligesom tabeller), der oprettes og administreres i arbejdsområder i Power BI-tjenesten. En **enhed/tabel** er et sæt felter, der bruges til at lagre data på samme måde som en tabel i en database. Du kan tilføje og redigere enheder/tabeller i dataflowet samt administrere tidsplaner for opdatering af data direkte fra det arbejdsområde, hvor dataflowet er oprettet.

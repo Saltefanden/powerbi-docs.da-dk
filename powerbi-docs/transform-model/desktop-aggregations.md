@@ -2,19 +2,19 @@
 title: Brug og administrer sammenlægninger i Power BI Desktop
 description: Brug sammenlægninger til at udføre interaktiv analyse af big data i Power BI Desktop.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: conceptual
 ms.date: 02/14/2020
-ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 3ffa26c0999857df1b249d2866eb5f327e600a82
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: a6adf2136cbff1df6e673de16fd1673127df0192
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91600344"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96416293"
 ---
 # <a name="use-aggregations-in-power-bi-desktop"></a>Brug sammenlægninger i Power BI Desktop
 
@@ -63,9 +63,9 @@ Når du har defineret de ønskede sammenlægninger, skal du vælge **Anvend alle
 
 Dialogboksen **Administrer sammenlægninger** gennemtvinger følgende nævneværdige valideringer:
 
-- **Detaljekolonnen** skal have samme datatype som **sammenlægningskolonnen** med undtagelse af **opsummering**sfunktionerne Optæl og Optæl tabelrækker. Optæl og Optæl tabelrækker er kun tilgængelige for kolonner til sammenlægning af heltal og kræver ikke en tilsvarende datatype.
+- **Detaljekolonnen** skal have samme datatype som **sammenlægningskolonnen** med undtagelse af **opsummering** sfunktionerne Optæl og Optæl tabelrækker. Optæl og Optæl tabelrækker er kun tilgængelige for kolonner til sammenlægning af heltal og kræver ikke en tilsvarende datatype.
 - Sammenkædede sammenlægninger, der dækker tre eller flere tabeller, er ikke tilladt. Sammenlægninger i **Tabel A** kan f.eks. ikke referere til en **Tabel B**, som har sammenlægninger, der refererer til en **Tabel C**.
-- Duplikerede sammenlægninger, hvor to poster bruger samme **opsummering**sfunktion og refererer til den samme **detaljetabel** og **detaljekolonne**, er ikke tilladt.
+- Duplikerede sammenlægninger, hvor to poster bruger samme **opsummering** sfunktion og refererer til den samme **detaljetabel** og **detaljekolonne**, er ikke tilladt.
 - **Detaljetabellen** skal bruge DirectQuery-lagringstilstanden, ikke Import.
 - Gruppering efter en fremmed nøglekolonne, der bruges af en inaktiv relation, og som er afhængig af funktionen USERELATIONSHIP til sammenlægning af hits, understøttes ikke.
 
@@ -228,7 +228,7 @@ Især til modeller, der indeholder filterattributter i faktatabeller, er det en 
 
 Du kan kombinere metoderne for relationer og GroupBy-kolonner for sammenlægninger. Sammenlægninger baseret på relationer kan kræve, at denormaliserede dimensionstabeller opdeles i flere tabeller. Hvis dette er dyrt eller upraktisk for visse dimensionstabeller, kan du replikere de nødvendige attributter i sammenlægningstabellen for disse dimensioner og bruge relationer til andre.
 
-Følgende model replikerer f.eks. **Måned**, **Kvartal**, **Semester** og **År** i tabellen**Sales Agg**. Der er ingen relation mellem tabellen **Sales Agg** og **Date**, men der er relationer til **Customer** og **Product Subcategory**. Lagringstilstanden for **Sales Agg** er Import.
+Følgende model replikerer f.eks. **Måned**, **Kvartal**, **Semester** og **År** i tabellen **Sales Agg**. Der er ingen relation mellem tabellen **Sales Agg** og **Date**, men der er relationer til **Customer** og **Product Subcategory**. Lagringstilstanden for **Sales Agg** er Import.
 
 ![Kombinerede sammenlægningsteknikker](media/desktop-aggregations/aggregations_15.jpg)
 

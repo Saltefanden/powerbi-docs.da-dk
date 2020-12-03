@@ -5,16 +5,16 @@ author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18, devx-track-js
 ms.date: 02/05/2019
-ms.openlocfilehash: 0ef66f847485e066d6596c65b277f2d74699614d
-ms.sourcegitcommit: 029aacd09061a8aa45b57f05d0dc95c93dd16a74
+ms.openlocfilehash: 9b5382510fe69b998855071dbcfe654629e73820
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94559775"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96417192"
 ---
 # <a name="tutorial-embed-a-power-bi-content-into-your-application-for-national-clouds"></a>Selvstudium: Integrer Power BI-indhold i dit program for nationale cloudmiljøer
 

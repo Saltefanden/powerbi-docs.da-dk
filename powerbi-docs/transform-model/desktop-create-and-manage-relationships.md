@@ -2,19 +2,19 @@
 title: Opret og administrer relationer i Power BI Desktop
 description: Opret og administrer relationer i Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: how-to
 ms.date: 05/28/2020
-ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 5b2e9cc5cb07eebf3befebd1be1686fdbb0f653b
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: f843d2642228c7fbf1394174fe4334a58f169e2f
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90861814"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96415881"
 ---
 # <a name="create-and-manage-relationships-in-power-bi-desktop"></a>Opret og administrer relationer i Power BI Desktop
 Når du importerer flere tabeller, er det muligt, at du skal udføre analyser ved hjælp af data fra alle disse tabeller. Der skal være relationer mellem disse tabeller, før du kan beregne præcise resultater og vise korrekte oplysninger i dine rapporter. I Power BI Desktop er det nemt at oprette disse relationer. I de fleste tilfælde behøver du faktisk ikke at foretage dig noget – funktionen Registrer automatisk gør det for dig. Men nogle gange skal du muligvis selv oprette relationer, eller du skal muligvis foretage ændringer i en relation. I begge tilfælde er det vigtigt at forstå relationer i Power BI Desktop, og hvordan du opretter og redigerer dem.

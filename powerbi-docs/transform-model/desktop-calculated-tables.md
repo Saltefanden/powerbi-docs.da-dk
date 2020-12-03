@@ -2,19 +2,19 @@
 title: Brug af beregnede tabeller i Power BI Desktop
 description: Beregnede tabeller i Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: how-to
 ms.date: 05/06/2020
-ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 8c22b040a1767d616ce1f4d0e4e7fa26e55bfe19
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: de919d5dc72ec4c9f1939d844a1cd287728f1ac8
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86214290"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96415904"
 ---
 # <a name="create-calculated-tables-in-power-bi-desktop"></a>Opret beregnede tabeller i Power BI Desktop
 I de fleste tilfælde opretter du tabeller ved at importere data til din model fra en ekstern datakilde. Men med *beregnede tabeller* kan du tilføje nye tabeller, der er baseret på data, du allerede har indlæst i modellen. I stedet for at forespørge efter og indlæse værdier i din nye tabels kolonner fra en datakilde kan du oprette en [DAX-formel (Data Analysis Expressions)](/dax/index), der definerer værdierne i tabellen.

@@ -2,25 +2,25 @@
 title: Rediger et dashboardfelt
 description: Dette selvstudium fører dig gennem oprettelse af et felt og fastgørelse af det til et dashboard til redigering af det pågældende dashboardfelt – tilpasse størrelsen, flytte, omdøbe, fastgøre, slette, tilføje link.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 featuredvideoid: lJKgWnvl6bQ
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 03/02/2018
-ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: fd6117e3f5de4e8e82535c2594eec53d71117301
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 4e217b0e75e8d2fadd2eff927ba3ef3c04e40e27
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85219361"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96417422"
 ---
 # <a name="edit-or-remove-a-dashboard-tile"></a>Rediger eller fjern et dashboard-felt
 
 ## <a name="dashboard-owners-versus-dashboard-consumers"></a>Dashboardets *ejere* versus dashboardets *forbrugere*
-Når du opretter eller ejer et dashboard, har du mange muligheder for at ændre felternes udseende og standardfunktion på det pågældende dashboard. Brug indstillingerne og strategierne nedenfor til at designe dashboardets *forbruger*oplevelse til dine kollegaer.  Vil valget af et felt åbne den underliggende rapport, en tilpasset URL-adresse eller et andet dashboard? Måske vil du [indsætte et felt, der viser en video eller streamer data](service-dashboard-add-widget.md)? Og du kan endda vælge at [oprette et felt, der har interaktive udsnitsværktøjer](service-dashboard-pin-live-tile-from-report.md). Som *forfatter* har du mange muligheder. 
+Når du opretter eller ejer et dashboard, har du mange muligheder for at ændre felternes udseende og standardfunktion på det pågældende dashboard. Brug indstillingerne og strategierne nedenfor til at designe dashboardets *forbruger* oplevelse til dine kollegaer.  Vil valget af et felt åbne den underliggende rapport, en tilpasset URL-adresse eller et andet dashboard? Måske vil du [indsætte et felt, der viser en video eller streamer data](service-dashboard-add-widget.md)? Og du kan endda vælge at [oprette et felt, der har interaktive udsnitsværktøjer](service-dashboard-pin-live-tile-from-report.md). Som *forfatter* har du mange muligheder. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lJKgWnvl6bQ" frameborder="0" allowfullscreen></iframe>
 

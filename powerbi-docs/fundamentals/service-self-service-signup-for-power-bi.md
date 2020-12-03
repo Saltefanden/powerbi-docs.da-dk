@@ -2,20 +2,20 @@
 title: Tilmeld dig Power BI-tjenesten som enkeltperson
 description: Få mere at vide om, hvordan du tilmelder dig Power BI-tjenesten og begynder at bruge den til at analysere data og til dine visualiseringsbehov.
 author: mihart
+ms.author: mihart
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-fundamentals
 ms.topic: conceptual
 ms.date: 06/24/2020
-ms.author: mihart
 ms.custom: licensing support
 LocalizationGroup: Get started
-ms.openlocfilehash: db77d7f94665df7711f7b49dd2cc6d10a7c694df
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: 4aa768aa6c041f4653a0bd7bf1ef873b3bc4a63b
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86216626"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96416640"
 ---
 # <a name="sign-up-for-the-power-bi-service-as-an-individual"></a>Tilmeld dig Power BI-tjenesten som enkeltperson
 

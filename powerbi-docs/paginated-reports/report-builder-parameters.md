@@ -1,20 +1,20 @@
 ---
 title: Rapportparametre i Power BI Report Builder
 description: I dette emne beskrives den almindelige brug af rapportparametre i Power BI Report Builder, hvilke egenskaber du kan angive og meget mere.
+author: maggiesMSFT
+ms.author: maggies
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-author: maggiesMSFT
-ms.author: maggies
 ms.reviewer: ''
 ms.custom: ''
 ms.date: 06/06/2019
-ms.openlocfilehash: 6c0a891257ae4e768c3952398eb8303906bf2ce4
-ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
+ms.openlocfilehash: 77388e138451242ae54f4d1f0630599bbd9de829
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93297803"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96416272"
 ---
 # <a name="report-parameters-in-power-bi-report-builder"></a>Rapportparametre i Power BI Report Builder
 
@@ -52,7 +52,7 @@ Når du får vist en rapport, der indeholder parametre, viser værktøjslinjen f
   
 4. **Vis eller skjul håndtaget til parameterområde** På værktøjslinjen i rapportfremviseren skal du klikke på pilen for at vise eller skjule parameterruden.  
   
-5. **@CategoryQuota parameteren** Parameteren @CategoryQuota er af datatypen **Flydende** , så den skal have en numerisk værdi.  @CategoryQuota er angivet til at tillade flere værdier.  
+5. **@CategoryQuota parameteren** Parameteren @CategoryQuota er af datatypen **Flydende**, så den skal have en numerisk værdi.  @CategoryQuota er angivet til at tillade flere værdier.  
   
 6. **Få vist rapport** Når du har angivet parameterværdier, skal du klikke på **Vis rapport** for at køre rapporten. Hvis alle parametre har standardværdier, køres rapporten automatisk ved første visning.  
   
@@ -114,9 +114,9 @@ Opret en parameter manuelt via ruden Rapportdata. Du kan konfigurere rapportpara
 |Synlig|Vælg denne indstilling for at vise rapportparameteren øverst i rapporten, når den køres. Denne indstilling giver brugerne mulighed for at vælge parameterværdier på kørselstidspunktet.|  
 |Skjult|Vælg denne indstilling for at skjule rapportparameteren i den publicerede rapport. Værdierne for rapportparametre kan stadig angives i en URL-adresse for rapporten, i en definitionen for et abonnement eller på rapportserveren.|  
 |Intern|Vælg denne indstilling for at skjule rapportparameteren. I den publicerede rapport kan rapportparameteren kun blive vist i rapportdefinitionen.|  
-|Tilgængelige værdier|Hvis du har angivet tilgængelige værdier for en parameter, vises de gyldige værdier altid på en rulleliste. Hvis du f.eks. angiver tilgængelige værdier for parameteren **DateTime** , vises der en rulleliste med datoer i parameterruden i stedet for et kalenderkontrolelement.<br /><br /> Hvis du vil sikre, at en liste over værdier er ensartet mellem en rapport og underrapporter, kan du angive en indstilling på datakilden for at bruge en enkelt transaktion for alle forespørgsler i de datasæt, der er knyttet til en datakilde.<br /><br /> **Sikkerhedsbemærkning** I alle rapporter, der indeholder en parameter af datatypen **Tekst** , skal du sørge for, at du bruger en liste over tilgængelige værdier (også kendt som en liste med gyldige værdier), og sikre, at alle brugere, der kører rapporten, kun har de tilladelser, som er nødvendige for at få vist dataene i rapporten.|  
+|Tilgængelige værdier|Hvis du har angivet tilgængelige værdier for en parameter, vises de gyldige værdier altid på en rulleliste. Hvis du f.eks. angiver tilgængelige værdier for parameteren **DateTime**, vises der en rulleliste med datoer i parameterruden i stedet for et kalenderkontrolelement.<br /><br /> Hvis du vil sikre, at en liste over værdier er ensartet mellem en rapport og underrapporter, kan du angive en indstilling på datakilden for at bruge en enkelt transaktion for alle forespørgsler i de datasæt, der er knyttet til en datakilde.<br /><br /> **Sikkerhedsbemærkning** I alle rapporter, der indeholder en parameter af datatypen **Tekst**, skal du sørge for, at du bruger en liste over tilgængelige værdier (også kendt som en liste med gyldige værdier), og sikre, at alle brugere, der kører rapporten, kun har de tilladelser, som er nødvendige for at få vist dataene i rapporten.|  
 |Standardværdier|Angiv standardværdier fra en forespørgsel eller fra en statisk liste.<br /><br /> Når hver parameter har en standardværdi, køres rapporten automatisk ved første visning.|  
-|Erfaren|Angiv attributten **UsedInQuery** for rapportdefinitionen, som er en værdi, der indikerer, om denne parameter direkte eller indirekte påvirker dataene i en rapport.<br /><br /> **Bestem automatisk, hvornår der skal opdateres**<br /> Vælg denne indstilling, når rapportbehandleren skal fastsætte en indstilling for denne værdi. Værdien er **Sand** , hvis rapportbehandleren registrerer en forespørgsel for datasæt med en direkte eller indirekte reference til denne parameter, eller hvis rapporten indeholder underrapporter.<br /><br /> **Opdater altid**<br /> Vælg denne indstilling, når rapportparameteren bruges direkte eller indirekte i en forespørgsel for datasæt eller et parameterudtryk. Denne indstilling angiver **UsedInQuery** til Sand.<br /><br /> **Opdater aldrig**<br /> Vælg denne indstilling, når rapportparameteren ikke bruges direkte eller indirekte i en forespørgsel for datasæt eller et parameterudtryk. Denne indstilling angiver **UsedInQuery** til Falsk.<br /><br /> **Forsigtig!** Brug **Opdater aldrig** med forsigtighed. På rapportserveren bruges **UsedInQuery** til at hjælpe med at styre cacheindstillinger for rapportdata og gengivne rapporter og parameterindstillinger for snapshotrapporter. Hvis du angiver **Opdater aldrig** forkert, kan du være skyld i, at forkerte rapportdata eller rapporter cachelagres, eller at der er uensartede data i en snapshotrapport. |  
+|Erfaren|Angiv attributten **UsedInQuery** for rapportdefinitionen, som er en værdi, der indikerer, om denne parameter direkte eller indirekte påvirker dataene i en rapport.<br /><br /> **Bestem automatisk, hvornår der skal opdateres**<br /> Vælg denne indstilling, når rapportbehandleren skal fastsætte en indstilling for denne værdi. Værdien er **Sand**, hvis rapportbehandleren registrerer en forespørgsel for datasæt med en direkte eller indirekte reference til denne parameter, eller hvis rapporten indeholder underrapporter.<br /><br /> **Opdater altid**<br /> Vælg denne indstilling, når rapportparameteren bruges direkte eller indirekte i en forespørgsel for datasæt eller et parameterudtryk. Denne indstilling angiver **UsedInQuery** til Sand.<br /><br /> **Opdater aldrig**<br /> Vælg denne indstilling, når rapportparameteren ikke bruges direkte eller indirekte i en forespørgsel for datasæt eller et parameterudtryk. Denne indstilling angiver **UsedInQuery** til Falsk.<br /><br /> **Forsigtig!** Brug **Opdater aldrig** med forsigtighed. På rapportserveren bruges **UsedInQuery** til at hjælpe med at styre cacheindstillinger for rapportdata og gengivne rapporter og parameterindstillinger for snapshotrapporter. Hvis du angiver **Opdater aldrig** forkert, kan du være skyld i, at forkerte rapportdata eller rapporter cachelagres, eller at der er uensartede data i en snapshotrapport. |  
   
 ##  <a name="dataset-query"></a><a name="bkmk_Dataset_Parameters"></a> Forespørgsel for datasæt  
  Hvis du vil filtrere dataene i forespørgslen for datasættet, kan du inkludere en delsætning som begrænsning, der begrænser de hentede data ved at angive værdier for at inkludere eller udelade resultater i resultatsættet.  
@@ -145,7 +145,7 @@ Opret en parameter manuelt via ruden Rapportdata. Du kan konfigurere rapportpara
 ##  <a name="parameters-for-a-subscription"></a><a name="bkmk_Parameters_Subscription"></a> Parametre for et abonnement  
  Du kan definere et abonnement til at være efter behov eller til et snapshot og angive parameterværdier, der skal bruges under behandlingen af abonnementet.  
   
--   **Rapport on-demand.**  For en rapport af typen on-demand kan du angive en anden parameterværdi end den publicerede værdi for hver parameter, der er angivet for rapporten. Lad os f.eks. antage, at du har en Opkaldsservice-rapport, der bruger parameteren *Tidsperiode* til at returnere kundeserviceanmodninger for den aktuelle dag, uge eller måned. Hvis standardparameterværdien for rapporten er angivet til **i dag** , kan dit abonnement bruge en anden parameterværdi (f.eks. **uge** eller **måned** ) til at skabe en rapport, der indeholder ugentlige eller månedlige tal.  
+-   **Rapport on-demand.**  For en rapport af typen on-demand kan du angive en anden parameterværdi end den publicerede værdi for hver parameter, der er angivet for rapporten. Lad os f.eks. antage, at du har en Opkaldsservice-rapport, der bruger parameteren *Tidsperiode* til at returnere kundeserviceanmodninger for den aktuelle dag, uge eller måned. Hvis standardparameterværdien for rapporten er angivet til **i dag**, kan dit abonnement bruge en anden parameterværdi (f.eks. **uge** eller **måned**) til at skabe en rapport, der indeholder ugentlige eller månedlige tal.  
   
 ## <a name="next-steps"></a>Næste trin
 

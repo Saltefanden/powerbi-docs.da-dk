@@ -4,15 +4,15 @@ description: Se, hvordan du overfører fra Power BI Workspace Collection til Pow
 author: KesemSharabi
 ms.author: kesharab
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 06/30/2018
-ms.openlocfilehash: 7d4a548ab24e8493cef340026642021a2f923ee1
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: afff3023942352a25ff89fbed5f4a855b23d724d
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94397409"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96416548"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Sådan overfører du indhold fra Power BI Workspace Collection til Power BI Embedded
 
@@ -99,7 +99,7 @@ Brugeren skal have en Pro-licens, før der kan oprettes et arbejdsområde i Powe
 
 Du kan overføre indhold fra dine arbejdsområdesamlinger til Power BI Embedded samtidig med din aktuelle løsning, og det medfører ikke nogen nedetid.
 
-Der findes et **overførselsværktøj** , som du kan bruge til at kopiere indhold fra Power BI Workspace Collection til Power BI Embedded. Praktisk, hvis du har en meget indhold. Du kan finde flere oplysninger under [Overførselsværktøjet i Power BI Embedded](migrate-tool.md).
+Der findes et **overførselsværktøj**, som du kan bruge til at kopiere indhold fra Power BI Workspace Collection til Power BI Embedded. Praktisk, hvis du har en meget indhold. Du kan finde flere oplysninger under [Overførselsværktøjet i Power BI Embedded](migrate-tool.md).
 
 Overførsel af indhold er baseret primært på to-API'er.
 
@@ -145,7 +145,7 @@ Dette er de datasæt/rapporter, der er oprettet før oktober 2016. Download PBIX
 
 #### <a name="push-dataset--report"></a>Push datasæt og rapport
 
-Download PBIX understøtter ikke *Push API* -datasæt. Data fra Push API-datasæt kan ikke overføres fra PaaS til SaaS.
+Download PBIX understøtter ikke *Push API*-datasæt. Data fra Push API-datasæt kan ikke overføres fra PaaS til SaaS.
 
 **Flow**
 
@@ -173,7 +173,7 @@ Foruden det indhold, du migrerede fra Power BI-arbejdsområdesamlingen, kan du o
 
 ## <a name="map-your-users-to-a-power-bi-user"></a>Knyt dine brugere til en Power BI-bruger
 
-I din app kan du knytte de brugere, du administrerer i appen, til en *master* bruger med Power BI-legitimationsoplysninger til brug i appen. Legitimationsoplysningerne til denne Power BI- *master* konto gemmes i din app og bruges til at oprette integreringstokens.
+I din app kan du knytte de brugere, du administrerer i appen, til en *master* bruger med Power BI-legitimationsoplysninger til brug i appen. Legitimationsoplysningerne til denne Power BI-*master* konto gemmes i din app og bruges til at oprette integreringstokens.
 
 ## <a name="what-to-do-when-you-are-ready-for-production"></a>Når du er klar til produktionsmiljøet
 
