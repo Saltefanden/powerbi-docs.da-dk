@@ -96,8 +96,6 @@
               href: /rest/api/power-bi/
         - name: Power BI-biblioteker
           href: 'https://go.microsoft.com/fwlink/?linkid=848274'
-        - name: Indlejr brugerdefinerede layout i en app
-          href: embedded-custom-layout.md
         - name: Azure-kommandolinjegrænseflade
           href: /cli/azure/ext/powerbidedicated/powerbi
     - name: Ressourcer
