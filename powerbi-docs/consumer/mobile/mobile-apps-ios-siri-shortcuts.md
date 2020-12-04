@@ -2,25 +2,28 @@
 title: Integration af Power BI-mobilapp med Siri-genveje
 description: Sådan bruger du Siri-genveje til at få direkte adgang til det Power BI-indhold, du har brug for.
 author: paulinbar
+ms.author: painbar
 manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 01/15/2020
-ms.author: painbar
-ms.openlocfilehash: 8a0bafb505412db8d2126ba86df3c256d1b7d1c7
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.date: 12/01/2020
+ms.openlocfilehash: 0bf1fb3f921b195be430e21f6f0b0bf2b0eeb473
+ms.sourcegitcommit: 2fd64f96b5bfbc14ff47e5c892171e5c921fb525
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85220235"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96501966"
 ---
 # <a name="using-siri-shortcuts-in-power-bi-mobile-ios-app"></a>Brug af Siri-genveje i Power BI-mobilappen til iOS
 
 Brug Siri genveje til at oprette direkte adgang til det Power BI-indhold, du har brug for.
 
-Brug integrationen af Siri-genveje for at få nem og hurtig adgang til dine ofte benyttede rapporter eller dashboards. Opret en genvej til dit element, og bed derefter Siri om at starte det, når du har brug for at kigge på dataene.
+Hvis du vil have nem og hurtig adgang til dine ofte anvendte rapporter eller dashboards, kan du oprette en Siri-genvej for at få direkte adgang til det Power BI-indhold, du har brug for. Med en Siri-genvej skal du blot bede Siri om at åbne det, når du har brug for at se dataene.
+
+> [!NOTE]
+> Integrationen af Siri-genveje med Power BI-mobilappen er tilgængelig til iPhone og iPad med iOS12 og nyere.
 
 ## <a name="create-siri-shortcut-for-a-report-or-dashboard"></a>Opret en Siri-genvejen til en rapport eller dashboard
 
@@ -55,13 +58,11 @@ For en Power BI-rapport får du vist den side, der blev registreret, da du opret
 ## <a name="edit-siri-shortcut-phrase"></a>Rediger sætningen for Siri-genvejen 
 Du kan redigere genvejsætningen ved hjælp af knappen **Siri-genvej** i handlingsmenuen (...) **Rapport** eller **Dashboard**. Siden med Siri-genvejen åbnes med mulighed for at **optage sætningen igen**. 
 
+## <a name="create-a-home-screen-shortcut-from-your-siri-shortcut"></a>Opret en genvej på startskærmen fra din Siri-genvej 
+Når du har oprettet en Siri-genvej til noget Power BI-indhold, kan du også føje den til din enheds startskærm, så du kan åbne indholdet direkte fra startskærmen med et enkelt tryk. Følg instruktionerne på https://support.apple.com/guide/shortcuts/apd735880972/ios.
+
 ## <a name="delete-siri-shortcut"></a>Slet Siri-genven 
 Hvis du vil slette en genvej, skal du gå til elementet og trykke på den **Siri-genvej** i handlingsmenuen (...). Siden **Siri genvej** åbnes. Vælg **Slet genvej**.
-
-
-> [!NOTE]
-> Integrationen af Siri-genveje med Power BI-appen er tilgængelig til iPhone og iPad, der kører på iOS12 og nyere.
-> 
 
 ## <a name="next-steps"></a>Næste trin
 Få mere at vide om Power BI-mobilappen ved at gøre følgende: 
@@ -69,4 +70,3 @@ Få mere at vide om Power BI-mobilappen ved at gøre følgende:
 * Downloade [Power BI-mobilappen til iPhone](https://go.microsoft.com/fwlink/?LinkId=522062)
 * Følge [@MSPowerBI på Twitter](https://twitter.com/MSPowerBI)
 * Deltage i samtalen i [Power BI-communityet](https://community.powerbi.com/)
-

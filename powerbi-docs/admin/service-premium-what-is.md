@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/20/2020
 ms.custom: licensing support
 LocalizationGroup: Premium
-ms.openlocfilehash: fe1714fd0249bba429c705b70e9eb157bffae44b
-ms.sourcegitcommit: 8afdd3601209636c9ab92d75f967d4ee0a2cab26
+ms.openlocfilehash: 6fcbdeef8c7c02656e5637f6103fda76faeb26c9
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95012025"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96412270"
 ---
 # <a name="what-is-power-bi-premium"></a>Hvad er Power BI Premium?
 
@@ -123,7 +123,8 @@ Der er placeret arbejdsområder i kapaciteter. Hver bruger af Power BI har et pe
 Kapacitetsadministratorer får automatisk deres egne arbejdsområder tildelt til Premium-kapaciteter.
 
 ### <a name="updates-for-premium-gen2-preview"></a>Opdateringer til Premium Gen2 (prøveversion)
-Premium gen 2-noder bruger ikke længere en reserveret infrastruktur. Tjenesten sørger i stedet for, at der er tilstrækkelig computerkraft til hver arbejdsbelastning, der kører, ved at tildele tilstrækkeligt mange ressourcer til en delt pulje af computernoder med høj kapacitet.
+
+Premium gen 2-noder bruger ikke længere en reserveret infrastruktur. Tjenesten sørger i stedet for, at der er tilstrækkelig beregningskraft til hver kørende arbejdsbelastning ved at tildele tilstrækkeligt mange ressourcer til en delt pulje af beregningsnoder med høj kapacitet.
 
 
 ### <a name="capacity-nodes"></a>Kapacitetsnoder
@@ -159,14 +160,14 @@ Ressourcerne og grænserne for hver Premium-SKU (og A-SKU'er i en tilsvarende st
 
 #### <a name="updates-for-premium-gen2-preview"></a>Opdateringer til Premium Gen2 (prøveversion)
 
-Med **Premium Gen2** er den mængde hukommelse, der er tilgængelig på hver nodestørrelse, angivet til grænsen for hukommelsesforbrug for en enkelt artefakt og ikke til det akkumulerede hukommelsesforbrug. I Premium Gen2 er det for eksempel kun muligt at have et enkelt DataSet-størrelse, der er begrænset til 25 GB i forhold til den oprindelige Premium, hvor det samlede hukommelsesforbrug for de datasæt, der håndteres på samme tid, er begrænset til 25 GB.
+Med **Premium Gen2** er den mængde hukommelse, der er tilgængelig på hver nodestørrelse, angivet til grænsen for hukommelsesforbrug for en enkelt artefakt og ikke for det samlede hukommelsesforbrug. I Premium Gen2 er størrelsesgrænsen for et enkelt datasæt f.eks. 25 GB i forhold til det oprindelige Premium, hvor det samlede hukommelsesforbrug for de datasæt, der håndteres på samme tid, er begrænset til 25 GB.
 
 
 ### <a name="capacity-workloads"></a>Kapacitetsarbejdsbelastninger
 
 Kapacitetarbejdsbelastninger er tjenester, som gøres tilgængelige for brugere. Som standard understøtter Premium- og Azure-kapaciteter kun den datasætarbejdsbelastning, der er knyttet til kørende Power BI-forespørgsler. Arbejdsbelastningen for datasæt kan ikke deaktiveres. Yderligere arbejdsbelastninger kan aktiveres for [AI (Cognitive Services)](https://powerbi.microsoft.com/blog/easy-access-to-ai-in-power-bi-preview/), [Dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md) og [Sideinddelte rapporter](../paginated-reports/paginated-reports-save-to-power-bi-service.md). Disse arbejdsbelastninger understøttes kun i Premium-abonnementer. 
 
-Hver ekstra arbejdsbelastning gør det muligt at konfigurere den maksimale hukommelse (som en procentdel af den samlede tilgængelige hukommelse), der kan bruges af arbejdsbelastningen. Standardværdier for maksimumhukommelse bestemmes af SKU. Du kan maksimere din kapacitets tilgængelige ressourcer ved at aktivere disse yderligere arbejdsbelastninger, når de bruges. Og du kan kun ændre hukommelsesindstillinger, når du har bestemt, at standardindstillingerne ikke opfylder dine krav til kapacitetsressourcer. Arbejdsbelastninger kan aktiveres og konfigureres for en kapacitet af kapacitetsadministratorer ved hjælp af **Kapacitetsindstillinger** på [administrationsportalen](service-admin-portal.md) eller ved hjælp af [REST-API'er for kapaciteter](/rest/api/power-bi/capacities).  
+Hver ekstra arbejdsbelastning gør det muligt at konfigurere den maksimale hukommelse (som en procentdel af den samlede kapacitetshukommelse), der kan bruges af arbejdsbelastningen. Standardværdier for maksimumhukommelse bestemmes af SKU. Du kan maksimere din kapacitets tilgængelige ressourcer ved at aktivere disse yderligere arbejdsbelastninger, når de bruges. Og du kan kun ændre hukommelsesindstillinger, når du har bestemt, at standardindstillingerne ikke opfylder dine krav til kapacitetsressourcer. Arbejdsbelastninger kan aktiveres og konfigureres for en kapacitet af kapacitetsadministratorer ved hjælp af **Kapacitetsindstillinger** på [administrationsportalen](service-admin-portal.md) eller ved hjælp af [REST-API'er for kapaciteter](/rest/api/power-bi/capacities).  
 
 ![Aktivér arbejdsbelastninger](media/service-admin-premium-workloads/admin-portal-workloads.png)
 
@@ -176,32 +177,34 @@ Du kan få mere at vide under [Konfigurer arbejdsbelastninger i en Premium-kapac
 
 Power BI-tjenesten udnytter hele tiden kapacitetsressourcerne bedst muligt uden at overskride de grænser, der er pålagt kapaciteten.
 
-Kapacitetshandlinger er klassificeret som enten *interaktive* eller *baggrundshandlinger*. Interaktive handlinger omfatter gengivelse af anmodninger og svare på Brugerinteraktioner (filtrering, spørgsmål og svar-forespørgsel, osv.). Som hovedregel er importmodelforespørgsler meget krævende for hukommelsesressourcerne, mens modelforespørgsler om DirectQuery og direkte forbindelser er krævende for CPU'en. Handlinger i baggrunden omfatter opdateringer af dataflows og importmodeller samt cachelagring af dashboardforespørgsler.
+Kapacitetshandlinger er klassificeret som enten *interaktive* eller *baggrundshandlinger*. Interaktive handlinger omfatter gengivelse af anmodninger og svare på Brugerinteraktioner (filtrering, spørgsmål og svar-forespørgsel, osv.). Handlinger i baggrunden omfatter opdateringer af dataflows og importmodeller samt cachelagring af dashboardforespørgsler.
 
-Det er vigtigt at forstå, at interaktive handlinger altid går forud for handlinger i baggrunden for at sikre den bedst mulige brugeroplevelse. Hvis der ikke er tilstrækkelige ressourcer, føjes handlinger i baggrunden til en kø for at blive behandlet, når ressourcerne frigøres. Handlinger i baggrunden, f.eks. datasætopdateringer, kan stoppes midt i processen af Power BI-tjenesten og føjes til en kø.
+Det er vigtigt at forstå, at interaktive handlinger altid går forud for handlinger i baggrunden for at sikre den bedst mulige brugeroplevelse. Hvis der ikke er tilstrækkelige ressourcer, føjes handlinger i baggrunden til en ventende kø, indtil ressourcerne frigøres. Handlinger i baggrunden, f.eks. opdateringer af datasæt, kan afbrydes midt i processen af Power BI-tjenesten, føjes til en kø og prøves igen senere.
 
-Importmodeller skal være fuldt indlæst i hukommelsen, så de kan forespørges eller opdateres. Power BI-tjenesten administrerer hukommelsesforbrug ved hjælp af avancerede algoritmer for at sikre maksimal anvendelse af den tilgængelige hukommelse, og det kan medføre overallokering af kapaciteten: Selvom det er muligt for en kapacitet at lagre mange importmodeller (op til 100 TB pr. Premium-kapacitet), når deres kombinerede disklager overskrider den understøttede hukommelse (og ekstra hukommelse kræves til forespørgsler og opdateringer), kan de ikke alle indlæses i hukommelsen på samme tid.
+Importmodeller skal være fuldt indlæst i hukommelsen, så de kan forespørges eller opdateres. Power BI-tjenesten bruger avancerede algoritmer til at administrere hukommelsesforbruget forholdsvist, men i sjældne tilfælde kan kapaciteten blive overbelastet, hvis der ikke er tilstrækkelige ressourcer til at opfylde kundernes krav i realtid. Selvom det er muligt for en kapacitet at gemme mange vigtige modeller på et fast lager (op til 100 TB pr. Premium-kapacitet), er alle modeller ikke nødvendigvis placeret i hukommelsen samtidigt, ellers ville størrelsen af datasættet i hukommelsen hurtigt overstige grænsen for kapacitetshukommelsen. Ud over den hukommelse, der kræves for at indlæse datasættene, er der behov for ekstra hukommelse til at udføre forespørgsler og opdateringshandlinger.
 
-Importmodeller indlæses derfor i og fjernes fra hukommelsen i henhold til forbrug. En importmodel indlæses, når den forespørges (interaktiv handling) og endnu ikke er i hukommelsen, eller når den skal opdateres (handling i baggrunden).
+Importmodeller indlæses derfor i hukommelsen og fjernes derfra i henhold til brugen. En importmodel indlæses, når den forespørges (interaktiv handling), eller hvis den skal opdateres (handling i baggrunden).
 
-Sletning af en model fra hukommelsen kaldes *fjernelse*. Det er en handling, som Power BI kan udføre hurtigt afhængigt af størrelsen på modellerne. Hvis kapaciteten ikke oplever noget pres på hukommelsen, indlæses modellerne i hukommelsen og forbliver der. Men hvis der ikke er tilstrækkelig hukommelse til at indlæse en model, skal Power BI-tjenesten først frigøre hukommelse. Den frigør hukommelse ved at registrere modeller, der er blevet inaktive, ved at søge efter modeller, som ikke har været anvendt i de sidste tre minutter \[[1](#endnote-1)\], og fjerner dem derefter. Hvis der ikke er nogen inaktive modeller at fjerne, forsøger Power BI-tjenesten at fjerne modeller, der er indlæst til handlinger i baggrunden. En sidste udvej efter 30 sekunder med mislykkede forsøg \[[1](#endnote-1)\] er at afbryde den interaktive handling. I dette tilfælde får rapportbrugeren besked om fejlen med et forslag om at prøve igen om et øjeblik. I nogle tilfælde fjernes modeller fra hukommelsen pga. servicehandlinger.
+Sletning af en model fra hukommelsen kaldes *fjernelse*. Det er en handling, som Power BI kan udføre hurtigt afhængigt af størrelsen på modellerne. Hvis kapaciteten ikke oplever noget hukommelsespres, og modellen ikke er inaktiv (dvs. den bruges aktivt), kan modellen være placeret i hukommelsen uden at blive fjernet. Når Power BI fastslår, at der ikke er tilstrækkelig hukommelse til at indlæse en model, forsøger Power BI-tjenesten at frigøre hukommelse ved at fjerne inaktive modeller, der typisk er defineret som modeller, der er indlæst til interaktive handlinger, som ikke er blevet brugt inden for de sidste tre minutter \[[1](#endnote-1)\]. Hvis der ikke er nogen inaktive modeller at fjerne, forsøger Power BI-tjenesten at fjerne modeller, der er indlæst til handlinger i baggrunden. En sidste udvej efter 30 sekunder med mislykkede forsøg \[[1](#endnote-1)\] er at afbryde den interaktive handling. I dette tilfælde får rapportbrugeren besked om fejlen med et forslag om at prøve igen om et øjeblik. I nogle tilfælde fjernes modeller fra hukommelsen pga. servicehandlinger.
 
-Det er vigtigt at understrege, at fjernelse af datasæt er en normal og forventet funktionsmåde. Den har til formål at maksimere forbruget af hukommelse ved at indlæse og fjerne modeller, hvis størrelse tilsammen kan overskride den tilgængelige hukommelse. Dette er tilsigtet og åbenlyst for rapportbrugerne. Høje fjernelsesrater betyder ikke nødvendigvis, at kapaciteten har fået tildelt utilstrækkelige ressourcer. De kan dog blive et problem, hvis svartiden for forespørgsler eller opdateringer bliver påvirket af de høje fjernelsesrater.
+Det er vigtigt at understrege, at fjernelse af datasæt er en normal funktionsmåde i kapaciteten. Kapaciteten bestræber sig på at balancere hukommelsesforbruget ved at administrere levetiden af modeller i hukommelsen på en måde, der er gennemskuelig for brugerne. En høj fjernelsesrate betyder ikke nødvendigvis, at kapaciteten har fået tildelt utilstrækkelige ressourcer. Det kan dog være et problem, hvis ydeevnen af forespørgsler eller opdateringer forringes på grund af den belastning, der er ved at indlæse og fjerne modeller gentagne gange inden for et kort tidsrum.
 
-Opdateringer af importmodeller er altid hukommelseskrævende, da modeller skal indlæses i hukommelsen. Der kræves ekstra hukommelse til behandling. En fuld opdatering kan bruge ca. dobbelt så meget hukommelse, der kræves af modellen. Dette sikrer, at modellen kan forespørges, selv når den behandles, da forespørgsler sendes til den eksisterende model, indtil opdateringen er fuldført, og de nye modeldata er tilgængelige. En trinvis opdatering kræver mindre hukommelse og kan fuldføres hurtigere og kan derfor i høj grad reducere belastningen af kapacitetsressourcer. Opdateringer kan også være CPU-krævende for modeller, især dem med komplekse Power-transformationer eller beregnede tabeller/kolonner, som er komplekse eller baseret på store tabeller.
+Opdateringer af importmodeller er altid hukommelseskrævende, da modeller skal indlæses i hukommelsen. Der kræves også yderligere mellemliggende hukommelse til behandling. En fuld opdatering kan bruge ca. dobbelt så meget hukommelse, som kræves af modellen, fordi Power BI bevarer et eksisterende snapshot af modellen i hukommelsen, indtil behandlingen er fuldført. Det gør det muligt for modellen at blive forespurgt, selv når den behandles. Forespørgsler kan sendes til det eksisterende snapshot af modellen, indtil opdateringen er fuldført, og de nye modeldata er tilgængelige.
 
-Opdateringer af f.eks. forespørgsler kræver, at modellen indlæses i hukommelsen. Hvis der ikke er tilstrækkelig hukommelse, vil Power BI-tjenesten forsøge at udsætte inaktive modeller, og hvis det ikke er muligt (da alle modeller er aktive), sættes opdateringsjobbet i kø. Opdateringer er typisk CPU-krævende, endda endnu mere krævende end forespørgsler. Der er derfor kapacitetsbegrænsninger for antallet af samtidige opdateringer, der er angivet til 1,5 gange antallet af backend-v-kerner, rundet op. Hvis der er for mange samtidige opdateringer, sættes en planlagt opdatering i kø. Når disse situationer opstår, tager det længere tid at fuldføre opdateringen. Opdateringer efter behov, f.eks. dem, der udløses af en brugeranmodning eller et API-kald, forsøger igen tre gange \[[1](#endnote-1)\]. Hvis der stadig ikke er tilstrækkelige ressourcer, mislykkes opdateringen.
+Ved trinvis opdatering opdateres partitionen i stedet for en fuld opdatering af modellen, og det vil typisk være hurtigere og kræve mindre hukommelse, hvilket kan reducere ressourceforbruget for kapaciteten markant. Opdateringer kan også være CPU-krævende for modeller, især dem med komplekse Power Query-transformationer eller beregnede tabeller eller kolonner, som er komplekse eller baseret på store mængder data.
+
+Opdateringer af f.eks. forespørgsler kræver, at modellen indlæses i hukommelsen. Hvis der ikke er tilstrækkelig hukommelse, vil Power BI-tjenesten forsøge at fjerne inaktive modeller, og hvis det ikke er muligt (da alle modeller er aktive), sættes opdateringsjobbet i kø. Opdateringer er typisk CPU-krævende, endda endnu mere krævende end forespørgsler. Derfor pålægges der en grænse for antallet af samtidige opdateringer beregnet som loftet for 1,5 x antallet af vCores. Hvis der er for mange samtidige opdateringer, sættes den planlagte opdatering i kø, indtil der er en opdateringsplads tilgængelig, hvilket medfører, at handlingen tager længere tid at fuldføre. Opdateringer efter behov, f.eks. dem, der udløses af en brugeranmodning eller et API-kald, forsøger igen tre gange \[[1](#endnote-1)\]. Hvis der stadig ikke er tilstrækkelige ressourcer, mislykkes opdateringen.
 
 #### <a name="updates-for-premium-gen2-preview"></a>Opdateringer til Premium Gen2 (prøveversion)
-Premium Gen2 kræver ikke akkumulerede hukommelsesgrænser, og derfor har opdateringerne altid tilstrækkelig hukommelse. Derudover er der ingen grænse på 1,5 X, der kører pr. v-kerne. Du kan planlægge og køre så mange opdateringer, som det er påkrævet, på et hvilket som helst tidspunkt, og Power BI-tjenesten køre disse opdateringer på det tidspunkt, der er planlagt som det bedste.
 
+Premium Gen2 kræver ikke samlede hukommelsesgrænser, og derfor bidrager samtidige opdateringer af datasæt ikke til ressourcebegrænsninger. Der er ingen grænse for antallet af opdateringer, der kører pr. vCore. Opdateringen af individuelle datasæt styres dog fortsat af eksisterende grænser for kapacitetshukommelse og CPU. Du kan planlægge og køre så mange opdateringer, som det er påkrævet, på et hvilket som helst tidspunkt, og Power BI-tjenesten køre disse opdateringer på det tidspunkt, der er planlagt som det bedste.
 
 Afsnitsnoter:   
 <a name="endnote-1"></a>\[1\] Kan ændres.
 
 ### <a name="regional-support"></a>Områdesupport
 
-Når du opretter en ny kapacitet, kan globale administratorer og administratorer af Power BI-tjenesten angive et område, hvor arbejdsområder, der er tildelt til kapaciteten, placeres. Dette kaldes **Multi-Geo**. Med Multi-Geo kan organisationer opfylde krav til dataplacering ved at implementere indhold i datacentre i et bestemt område, også selvom det er forskelligt fra det område, som Microsoft 365-abonnementet gælder for. Du kan få mere at vide under [Multi-Geo-understøttelse i Power BI Premium](service-admin-premium-multi-geo.md).
+Når du opretter en ny kapacitet, kan globale administratorer og administratorer af Power BI-tjenesten angive et område, hvor arbejdsområder, der er tildelt til kapaciteten, placeres. Dette kaldes **Multi-Geo**. Med Multi-Geo kan organisationer overholde krav til dataopbevaring ved at udrulle indhold i datacentre i et bestemt område, også selvom det er forskelligt fra det område, som Microsoft 365-abonnementet er placeret i. Du kan få mere at vide under [Multi-Geo-understøttelse i Power BI Premium](service-admin-premium-multi-geo.md).
 
 ### <a name="capacity-management"></a>Kapacitetsadministration
 
@@ -213,7 +216,7 @@ Når der oprettes kapaciteter, udføres de fleste administrative opgaver på [ad
 
 ![Skærmbillede, der viser Power BI-administrationsportalen med Mit arbejdsområde valgt.](media/service-premium-what-is/premium-admin-portal.png)
 
-Kapacitetsadministratorer kan tildele arbejdsområder til kapaciteten, administrere brugertilladelser og tildele andre administratorer. Kapacitetsadministratorer kan også konfigurere arbejdsbelastninger, justere hukommelsesallokeringer og om nødvendigt genstarte en kapacitet, hvilket medfører nulstilling af handlinger, hvis en kapacitet overbelastes.
+Kapacitetsadministratorer kan tildele arbejdsområder til kapaciteten, administrere brugertilladelser og tildele andre administratorer. Kapacitetsadministratorer kan også konfigurere arbejdsbelastninger, justere fordelinger af hukommelse og om nødvendigt genstarte en kapacitet, hvilket medfører nulstilling af handlinger, hvis en kapacitet overbelastes.
 
 ![Skærmbillede, der viser kapacitetsstyring på Power BI-administrationsportalen.](media/service-premium-what-is/premium-admin-portal-mgmt.png)
 
@@ -230,7 +233,7 @@ Overvågning på portalen giver et hurtigt overordnet overblik over målepunkter
 ![Skærmbillede, der viser kapacitetstilstand i Power BI-administrationsportalen.](media/service-premium-what-is/premium-admin-portal-health.png)
 
 > [!NOTE]
-> **Opdateringer til Premium Gen2 (prøveversion)** – Premium-Gen2 kræver kun overvågning af et enkelt aspekt: Hvor meget CPU-tid din kapacitet kræver for at betjene belastningen på et hvilket som helst tidspunkt. Hvis du overstiger din CPU-tid pr. SKU-størrelse, du har købt, skaleres din kapacitet enten automatisk, så den passer til behovet, eller begrænser dine interaktive handlinger baseret på dine konfigurationsindstillinger.
+> **Opdateringer til Premium Gen2 (prøveversion)** – Premium-Gen2 kræver kun overvågning af et enkelt aspekt: Hvor meget CPU-tid din kapacitet kræver for at betjene belastningen på et hvilket som helst tidspunkt. Hvis du overstiger din købte CPU-tid pr. SKU-størrelse, skaleres din kapacitet enten automatisk, så den passer til behovet, eller dine interaktive handlinger begrænses, baseret på dine konfigurationsindstillinger.
 
 
 Programmet **Power BI Premium Capacity Metrics** giver de mest detaljerede oplysninger om ydeevnen af dine kapaciteter. Programmet indeholder et overordnet dashboard og mere detaljerede rapporter.
@@ -244,7 +247,7 @@ I programmets dashboard kan du klikke på en celle med målepunkter for at åbne
 Du kan få mere at vide om overvågning af kapaciteter under [Overvågning på Power BI-administrationsportalen](service-admin-premium-monitor-portal.md) og [Overvågning med programmet Power BI Premium Capacity Metrics](service-admin-premium-monitor-capacity.md).
 
 #### <a name="updates-for-premium-gen2-preview"></a>Opdateringer til Premium Gen2 (prøveversion)
-**Premium Gen2**-kapaciteter bruger ikke målepunktsappen, men appen for kapacitetsudnyttelse, som bliver tilgængelig i prøveversionen. Appen for kapacitetsudnyttelse kan åbnes fra siden Kapacitetsstyring i **administrationsportalen** for hver kapacitet.
+**Premium Gen2**-kapaciteter bruger ikke Metrics-programmet. De bruger Capacity Utilization-programmet, som bliver tilgængelig i forbindelse med prøveversionen. Appen for kapacitetsudnyttelse kan åbnes fra siden Kapacitetsstyring i **administrationsportalen** for hver kapacitet.
 
 
 ### <a name="optimizing-capacities"></a>Optimering af kapaciteter

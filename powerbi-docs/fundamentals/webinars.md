@@ -2,18 +2,18 @@
 title: Power BI-webinarer
 description: Power BI-webinarer
 author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 09/22/2020
-ms.author: kfollis
-ms.openlocfilehash: 76f0963da1a7cecec6f97fc7e0ab534f7d4bcb8a
-ms.sourcegitcommit: ff981839e805f523748b7e71474acccf7bdcb04f
+ms.date: 12/01/2020
+ms.openlocfilehash: 1c0c572072fd085feab1533eb346d745b56f66b0
+ms.sourcegitcommit: 2fd64f96b5bfbc14ff47e5c892171e5c921fb525
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91020015"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96502012"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webinarer
 [//]: # "Tatevik Tatero (tatevik.teroyan@simple-concepts.com) er en leverandør, der arbejder med Chauncy Freels og hjælper med at vedligeholde listen over webinarer"
@@ -22,19 +22,30 @@ Tilmeld dig vores kommende livewebinarer, eller se vores optagne sessioner, når
 
 ## <a name="upcoming-webinars"></a>Kommende webinarer
 
-**Kom hurtigt i gang med Power BI**  
-ved Miguel Martinez, Microsoft  
-[Tilmeld dig for at se med d. 5. november 2020 kl. 10:00-11:00 PDT](https://info.microsoft.com/ww-landing-get-up-and-running-quickly-with-power-bi.html?lcid=en-us)
-
 [Kommende webinarer fra Power BI-community'et](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
 ## <a name="featured-webinars"></a>Udvalgte webinarer
 
-Kom i gang med disse populære webinarer, når det passer dig
+Kom i gang med disse populære webinarer, når det passer dig:
+
+**Kom hurtigt i gang med Power BI**  
+ved Miguel Martinez, Microsoft  
+[Tilmeld dig for at se med d. 5. november 2020 kl. 10:00-11:00 PDT](https://info.microsoft.com/ww-landing-get-up-and-running-quickly-with-power-bi.html?lcid=en-us)
+
+**Driv en kultur med fjerndata med Power BI og Microsoft Teams**  
+ved Lukasz Pawlowski  
+[Se nu](https://info.microsoft.com/ww-Landing-RemoteDataCulturePowerBIandMicrosoftTeams.html?LCID=EN-US)
+
+**Bedre sammen: Fem fordele Excel-brugere får ved at bruge Power BI**  
+ved Miguel Martinez og Carlos Otero  
+[Se nu](https://info.microsoft.com/ww-Landing-FiveBenefitsExcelUsersWillGetFromUsingPowerBI-Webinar.html?LCID=EN-US)
 
 **Overvåg dine data i realtid med Microsoft Power BI**  
 ved Miguel Martinez og Peter Myers  
 [Se nu](https://info.microsoft.com/ww-landing-Monitor-Your-Data-in-Real-time-with-Microsoft-Power-BI.html?lcid=en-us)
+
+**Sæt fart på Power BI på Azure Data Lake Storage med Dremio**  
+ved Chris Webb og Tomer Shiran [Se nu]( https://info.microsoft.com/ww-landing-Accelerate-Power-BI-on-Azure-Data-Lake-Storage-with-Dremio.html?lcid=en-us)
 
 **Byg skalerbare BI-løsninger ved hjælp af Power BI og Snowflake**  
 ved Chris Webb, Craig Colliers og Chris Holliday  

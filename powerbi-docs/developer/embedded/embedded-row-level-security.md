@@ -9,11 +9,11 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/10/2019
 ms.openlocfilehash: 09489c3dbb33e1c5fb289cc1cc132eae0083a95f
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.sourcegitcommit: 9d033abd9c01a01bba132972497dda428d7d5c12
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91981729"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96120797"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Sikkerhed på rækkeniveau med Power BI Embedded
 
@@ -88,9 +88,9 @@ API'en accepterer en liste over identiteter med angivelse af de relevante datas�
 
 Du kan oprette integreringstokenet ved hjælp af metoden **GenerateTokenInGroup** på **PowerBIClient.Reports**.
 
-Du kan f.eks. ændre *[PowerBI-Developer-Samples](https://github.com/Microsoft/PowerBI-Developer-Samples) > .NET Framework > Integrer for dine kunder > **PowerBIEmbedded_AppOwnsData***-eksempel.
+Du kan f.eks. ændre *[PowerBI-Developer-Samples](https://github.com/Microsoft/PowerBI-Developer-Samples) > .NET Framework > Integrer for dine kunder > **PowerBIEmbedded_AppOwnsData** _ sample.
 
-**Før ændringen**
+_ *Før ændringen**
 
 ```csharp
 // Generate Embed Token with effective identities.
@@ -146,7 +146,7 @@ Roller kan angives med identiteten i et integreringstoken. Hvis der ikke angives
 
 ### <a name="using-the-customdata-feature"></a>Brug af funktionen CustomData
 
-Funktionen CustomData fungerer kun for modeller, der findes i **Azure Analysis Services**, og den fungerer kun i **Connect-live**tilstand. Til forskel fra brugere og roller kan CustomData-funktionen ikke angives i en PBIX-fil. Når et token genereres med funktionen CustomData, skal du have et brugernavn.
+Funktionen CustomData fungerer kun for modeller, der findes i **Azure Analysis Services**, og den fungerer kun i **Connect-live** tilstand. Til forskel fra brugere og roller kan CustomData-funktionen ikke angives i en PBIX-fil. Når et token genereres med funktionen CustomData, skal du have et brugernavn.
 
 >[!NOTE]
 >CustomData-brugernavnet må kun være på 256 tegn.
@@ -213,7 +213,7 @@ Her er trinnene, så du kan begynde at konfigurere funktionen CustomData() med d
 
     ![Opret rolle – angiv indstillinger for medlemskab](media/embedded-row-level-security/azure-analysis-services-database-create-role-membership.png)
 
-5. Angiv din DAX-forespørgsel for **rækkefiltre** ved hjælp af funktionen*CUSTOMDATA()* .
+5. Angiv din DAX-forespørgsel for **rækkefiltre** ved hjælp af funktionen *CUSTOMDATA()* .
 
     ![Opret rolle – angiv rækkefiltre](media/embedded-row-level-security/azure-analysis-services-database-create-role-row-filters.png)
 

@@ -2,18 +2,18 @@
 title: Hvad er nyt i mobilapps til Power BI
 description: Hvad er nyt i mobilapps til Power BI
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 11/01/2020
-ms.author: painbar
-ms.openlocfilehash: 83a280b94a6db937133e0d7ab1e6d7ad64af06f4
-ms.sourcegitcommit: 29cafa1602efb56cfa8dbd0010dd04ad3fcdd02c
+ms.date: 12/01/2020
+ms.openlocfilehash: 81a387d2f87e857cb56dcbc1fb22c8da72bbd27e
+ms.sourcegitcommit: 2fd64f96b5bfbc14ff47e5c892171e5c921fb525
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93355928"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96502045"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Hvad er nyt i mobilapps til Power BI
 Du kan finde relaterede oplysninger om nyheder under:
@@ -25,9 +25,19 @@ Du kan finde relaterede oplysninger om nyheder under:
 >[!NOTE]
 >Understøttelsen af Power BI-mobilapp til **telefoner, der bruger Windows 10 Mobile**, ophører den 16. marts 2021. [Få mere at vide](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
+## <a name="december-2020"></a>December 2020
+### <a name="weve-added-dark-mode-to-power-bi-mobile-android"></a>Vi har føjet mørk tilstand til Power BI - Mobil (Android)
+
+Prøv den nye mørke tilstand i Power BI-mobilappen til Android-enheder. I mørk tilstand kan du se lys tekst på en mørk baggrund, hvilket reducerer skærmens lysstyrke og gør den nemmere at se dit indhold. Du kan skifte mellem temaer i indstillingerne for appens udseende. [Få mere at vide](mobile-apps-dark-mode.md)
+
+![Skærmbillede af mørk tilstand i Power BI-mobilappen til Android.](media/mobile-whats-new-in-the-mobile-apps/mobile-apps-dark-mode-android.png)
+
+### <a name="maximize-the-view-with-full-screen-mode-ipads"></a>Maksimer visningen med fuldskærmsvisning (iPads)
+Vi har nu føjet en ny knap til mobilappen til iPads, der gør det muligt for dig at fjerne appsidehoveder og -sidefødder, så du får den maksimale plads til at vise dit indhold. Tryk blot på knappen for at slå fuld skærm til og fra ![Skærmbillede af ikonet for fuldskærmstilstand.](media/mobile-whats-new-in-the-mobile-apps/power-bi-full-screen-icon.png) i øverste højre hjørne af skærmen for at skifte mellem tilstande.
+
 ## <a name="november-2020"></a>November 2020
 ### <a name="maximize-the-view-with-full-screen-mode-android-tablets"></a>Maksimer visningen med fuldskærmsvisning (Android-tablets)
-Vi har føjet en ny knap til mobilappen til Android-tablets, der gør det muligt for dig at fjerne appsidehoveder og -sidefødder, så du får den maksimale plads til visning af dit indhold. Du skal blot trykke på til/fra-knappen for fuld skærm i øverste højre hjørne af skærmen for at skifte mellem tilstande.
+Vi har føjet en ny knap til mobilappen til Android-tablets, der gør det muligt for dig at fjerne appsidehoveder og -sidefødder, så du får den maksimale plads til visning af dit indhold. Tryk blot på knappen for at slå fuld skærm til og fra ![Skærmbillede af ikonet for fuldskærmstilstand.](media/mobile-whats-new-in-the-mobile-apps/power-bi-full-screen-icon.png) i øverste højre hjørne af skærmen for at skifte mellem tilstande.
 
 ## <a name="october-2020"></a>Oktober 2020
 ### <a name="automatic-page-refresh-is-now-supported-windows"></a>Automatisk sideopdatering understøttes nu (Windows)
