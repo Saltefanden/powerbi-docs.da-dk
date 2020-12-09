@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/11/2019
-ms.openlocfilehash: ed8f44e7dd1a7e713a9b2bd75dc33f259cb52f2a
-ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
+ms.openlocfilehash: 377f509248dbd2368b74bb9645f001ff7c6a97c0
+ms.sourcegitcommit: 30d0668434283c633bda9ae03bc2aca75401ab94
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92916331"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96907273"
 ---
 # <a name="manage-multi-tenancy-with-power-bi-embedded-analytics"></a>Administrer flere lejere med Power BI Embedded-analyse
 
@@ -135,7 +135,7 @@ Hvis SaaS-programlageret bruger en database med flere lejere for alle lejere, er
 
 ### <a name="data-isolation"></a>Dataisolation
 
-Dataene i denne lejermodel er adskilt på arbejdsområdeniveau. En enkel tilknytning mellem et arbejdsområde og en lejer forhindrer, at brugere fra én lejer får vist indhold fra en anden lejer. Hvis du bruger en enkelt *masterbruger* , skal du have adgang til alle de forskellige arbejdsområder. Konfigurationen af, hvilke data der skal vises en slutbruger, defineres i løbet af [genereringen af indlejringstokenet](/rest/api/power-bi/embedtoken), en back end-proces, som slutbrugerne ikke kan se eller ændre.
+Dataene i denne lejermodel er adskilt på arbejdsområdeniveau. En enkel tilknytning mellem et arbejdsområde og en lejer forhindrer, at brugere fra én lejer får vist indhold fra en anden lejer. Hvis du bruger en enkelt *masterbruger*, skal du have adgang til alle de forskellige arbejdsområder. Konfigurationen af, hvilke data der skal vises en slutbruger, defineres i løbet af [genereringen af indlejringstokenet](/rest/api/power-bi/embedtoken), en back end-proces, som slutbrugerne ikke kan se eller ændre.
 
 Hvis du vil tilføje yderligere isolation, kan en programudvikler definere en *masterbruger* eller et program pr. arbejdsområde i stedet for en enkelt *masterbruger* eller program med adgang til flere arbejdsområder. På den måde kan du sikre, at alle menneskelige fejl eller læk af legitimationsoplysninger ikke medfører, at flere kunders data blotlægges.
 
@@ -163,7 +163,7 @@ Multi-Geo involverer køb af kapacitet i de ønskede områder og tildeling af et
 
 ### <a name="cost"></a>Omkostning
 
-Programudviklere, der bruger Power BI Embedded, skal [købe Power BI Embedded-kapacitet for at kunne gå i produktion](embed-sample-for-customers.md#move-to-production).  Det er vigtigt at forstå indvirkningen af modellen med arbejdsområdebaseret isolation og effekten på kapaciteter.
+Programudviklere, der bruger Power BI Embedded, skal [købe Power BI Embedded-kapacitet for at kunne gå i produktion](move-to-production.md).  Det er vigtigt at forstå indvirkningen af modellen med arbejdsområdebaseret isolation og effekten på kapaciteter.
 
 Modellen med arbejdsområdebaseret isolation fungerer godt sammen med kapaciteter af følgende årsager:
 
@@ -240,7 +240,7 @@ Når slutbrugere redigerer eller opretter rapporter, kan de bruge produktionsdat
 * Det antal V2-arbejdsområder (mapper), som en enkelt bruger/et enkelt program kan være medlem af/administrator for, er 1000.
 * Antallet af datasæt i et enkelt arbejdsområde er 1000.
 * Antallet af rapporter/dashboards, der er tilknyttet et enkelt datasæt, er 1000.
-* Størrelsesgrænsen for datasæthukommelsen ved upload af en *PBIX* -fil er 10 GB.
+* Størrelsesgrænsen for datasæthukommelsen ved upload af en *PBIX*-fil er 10 GB.
 
 **Overvejelser og begrænsninger i forbindelse med Power BI-kapacitet:**
 

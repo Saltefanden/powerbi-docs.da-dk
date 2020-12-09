@@ -6,12 +6,12 @@ ms.author: margoc
 ms.prod: powerbi
 ms.topic: article
 ms.date: 03/25/2020
-ms.openlocfilehash: 01aa3579fd837b36562dbed27f557d5efdf07c20
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: de460437225dd32c0e6db673a06006a711feb413
+ms.sourcegitcommit: 30d0668434283c633bda9ae03bc2aca75401ab94
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96414823"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96906745"
 ---
 # <a name="developer-learning-catalog"></a>Læringskatalog til udviklere
 
@@ -31,7 +31,7 @@ Følgende katalog er organiseret fra kerneviden til bestemte domæner og fra gru
 | [Få mere at vide om Power BI Embedded på 20 minutter](https://info.microsoft.com/ww-ondemand-power-bi-embedded-in-20-min.html) (webinaret er på engelsk)  | Vi præsenterer dette webinar for at give dig en introduktion til Power BI Embedded. Efter dette webinar har brugerne en forståelse af, hvad Power BI Embedded er, de næste trin for at komme i gang med produktet, og hvor de kan finde hjælp/ressourcer. | Webinar       |                |
 | [Udvikling med Power BI Embedding ved Ted Pattison – opdatering fra april 2018](https://www.youtube.com/watch?v=swnGlrRy588) (webinaret er på engelsk)  | I dette webinar, der henvender sig til udviklere, diskuterer Ted Pattison de seneste forbedringer af Power BI Embedded-platformen, og hvordan de kan udnyttes af ISV'er og virksomhedsudviklere. | YouTube-video | 59 min. 49 sek.  |
 | [Power BI Embedding, version 2 – hele historien](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Power-BI-Embedding-Version-2-The-Full-Story/td-p/229527) (webinaret er på engelsk)    | Webinaret blev præsenteret den 10. august 2017 af Power BI MVP Ted Pattison fra Critical Path Training. Webinaret dækker, hvordan du udvikler ved hjælp af de nye funktioner til integrering af Power BI, der er tilgængelige via Power BI Premium.  | Webinar       | 1 t. 7 min. 23 sek. |
-| [Selvstudium: Integrer Power BI-indhold i en applikation for dine kunder](../developer/embedded/embed-sample-for-customers.md#set-up-your-embedded-analytics-development-environment) | Med Power BI Embedded i Azure eller Power BI-integration i Office kan du integrere rapporter, dashboards eller felter i et program ved hjælp af "appen ejer dataene".  | Dokumentation |                |
+| [Selvstudium: Integrer Power BI-indhold i en applikation for dine kunder](../developer/embedded/embed-sample-for-customers.md) | Med Power BI Embedded i Azure eller Power BI-integration i Office kan du integrere rapporter, dashboards eller felter i et program ved hjælp af "appen ejer dataene".  | Dokumentation |                |
 | [Få mere at vide om Power BI Embedded på 20 minutter](https://info.microsoft.com/ww-ondemand-power-bi-embedded-in-20-min.html) (webinaret er på engelsk)  | Vi præsenterer dette webinar for at give dig en introduktion til Power BI Embedded. Efter dette webinar har brugerne en forståelse af, hvad Power BI Embedded er, de næste trin for at komme i gang med produktet, og hvor de kan finde hjælp/ressourcer. | Webinar       |                |
 ## <a name="dax"></a>DAX<a name="dax"></a>
 | Indhold | Beskrivelse | Formatér  | Længde      |

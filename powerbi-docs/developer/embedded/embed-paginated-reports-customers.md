@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 01/04/2019
-ms.openlocfilehash: 58d1112dfccda798a32b2a3cb95d72c37b7a16ec
-ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
+ms.openlocfilehash: 02d73a2eb36636091ff6059fd6543bb950082c2a
+ms.sourcegitcommit: 30d0668434283c633bda9ae03bc2aca75401ab94
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94668390"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96907296"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-customers"></a>Selvstudium: Integrer sideinddelte Power BI-rapporter i et program til dine kunder
 
@@ -40,7 +40,7 @@ Hvis du ikke har et Azure-abonnement, skal du oprette en [gratis konto](https://
 
 > [!IMPORTANT]
 > * Du skal bruge en **tjenesteprincipal**. Masterbruger understøttes ikke.
->* [Premium pr. bruger](../../admin/service-premium-per-user-faq.md) understøttes ikke. Du kan bruge Premium pr. bruger til at eksperimentere med løsningen, men du kan ikke [flytte til produktion](embed-sample-for-customers.md#move-to-production).
+>* [Premium pr. bruger](../../admin/service-premium-per-user-faq.md) understøttes ikke. Du kan bruge Premium pr. bruger til at eksperimentere med løsningen, men du kan ikke [flytte til produktion](move-to-production.md).
 > * Datakilder, der kræver enkeltlogon (SSO), understøttes ikke. Du kan finde en liste over understøttede datasæt og deres godkendelsesmetoder under [Understøttede datakilder til sideinddelte rapporter i Power BI](../../paginated-reports/paginated-reports-data-sources.md). 
 > * Power BI-datasæt understøttes ikke som en [datakilde](../../connect-data/service-get-data.md).
 
@@ -184,7 +184,7 @@ Hvis du vil hente **ApplicationSecret**, skal du følge disse trin:
 
 ### <a name="tenant"></a>Lejer
 
-Udfyld oplysningerne om **tenant** med dit lejer-id til Azure. Du kan få disse oplysninger fra [Azure AD Administration](/onedrive/find-your-office-365-tenant-id), når du er logget på Power BI-tjenesten, eller ved hjælp af PowerShell.
+Udfyld oplysningerne om **lejeren** med dit lejer-id til Azure. Du kan få disse oplysninger fra [Azure AD Administration](/onedrive/find-your-office-365-tenant-id), når du er logget på Power BI-tjenesten, eller ved hjælp af PowerShell.
 
 ### <a name="run-the-application"></a>Kør programmet
 
