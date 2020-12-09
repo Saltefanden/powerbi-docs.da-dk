@@ -118,7 +118,7 @@
               href: service-premium-metrics-app.md
             - name: Overvåg kapaciteter på administrationsportalen
               href: service-admin-premium-monitor-portal.md
-            - name: Konfigurer store modeller (prøveversion)
+            - name: Konfigurer store datasæt
               href: service-premium-large-models.md
             - name: Konfigurer multigeografisk område
               href: service-admin-premium-multi-geo.md
