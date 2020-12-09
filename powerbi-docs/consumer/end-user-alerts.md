@@ -8,20 +8,19 @@ featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 08/05/2020
+ms.date: 12/03/2020
 LocalizationGroup: Dashboards
-ms.openlocfilehash: be3ed6d8a836b626ba26e5e9acce7f0f2df3c6ea
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 369eb05795262ad628b9dd89c23ac59269e6f6c3
+ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96391984"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96577595"
 ---
 # <a name="tutorial-set-alerts-on-power-bi-dashboards"></a>Selvstudium: Angiv beskeder i dashboards i Power BI
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 Angiv beskeder i Power BI-tjenesten, så du får besked, når dataene i dashboards ændres ud over de grænser, du har angivet. Der kan kun angives beskeder på felter, der er fastgjort via rapportvisualiseringer, og kun på målere, KPI'er og kort. 
 
@@ -47,7 +46,7 @@ Det er kun dig, der kan se de angivne beskeder, selvom du deler dashboardet. Dat
 Denne artikel omhandler følgende:
 > [!div class="checklist"]
 > * Hvem kan indstille beskeder
-> * Hvilke visualiseringer understøtter beskeder
+> * Hvilke visuals understøtter beskeder
 > * Hvem kan indstille beskeder
 > * Virker beskeder i Power BI Desktop og Mobil
 > * Sådan opretter du en besked

@@ -9,12 +9,12 @@ ms.subservice: pbi-explore
 ms.topic: conceptual
 ms.date: 10/12/2020
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 2487c8215d4c1f2c3bc905457d6b5d08c5955c0c
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: a5a3029a3afe3d48981338934090ad6b9719d6bb
+ms.sourcegitcommit: 513c4b884a58e1da2680579339c24c46091bbfb2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96400126"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96613415"
 ---
 # <a name="types-of-insights-supported-by-power-bi"></a>Indsigtstyper, der understøttes af Power BI
 
@@ -24,7 +24,7 @@ Du kan bede Power BI om at se nærmere på dine data og finde interessante tende
 
 Se [Power BI-indsigt](end-user-insights.md) for at få mere at vide om, hvordan du bruger indsigter
 
-![et sæt indsigter](media/end-user-insight-types/power-bi-insight.png)
+![et sæt indsigter](media/end-user-insight-types/power-bi-insight-line.png)
 
 ## <a name="how-does-insights-work"></a>Hvordan fungerer indsigter?
 Power BI søger hurtigt i forskellige undersæt af dit datasæt. I takt med at Power BI søger, anvendes et sæt avancerede algoritmer for at finde indsigt, der kan være interessant. Power BI-*virksomhedsbrugere* kan køre indsigter på dashboardfelter.

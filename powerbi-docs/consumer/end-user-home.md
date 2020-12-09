@@ -7,14 +7,14 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 11/13/2020
+ms.date: 12/03/2020
 LocalizationGroup: Get started
-ms.openlocfilehash: 6c2be9c2c266c489dbb93f5e3f93c3c120cae5c3
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 9df90a41143ddb6d0657aa0d61dc83f25ecbae1a
+ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96390604"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96578040"
 ---
 # <a name="find-your-dashboards-reports-and-apps"></a>Find dine dashboards, rapporter og apps
 
@@ -42,13 +42,13 @@ I følgende emner gennemgås de enkelte muligheder for at søge efter og få vis
 ## <a name="home-canvas"></a>Lærred på startsiden
 Du kan se alt det indhold, du har tilladelse til at bruge, på lærredet for startsiden. Dit lærred for startsiden opdateres også med de anbefalede indholds- og læringsressourcer. I begyndelsen har du måske ikke så meget indhold på lærredet på startsiden, men det ændrer sig, i takt med at du begynder at bruge Power BI sammen med dine kolleger.
 
-![Et skærmbillede af velkomstskærmen en ny bruger af Power BI-tjenesten.](media/end-user-home/power-bi-home-new-user.png)
+![Et skærmbillede af velkomstskærmen en ny bruger af Power BI-tjenesten.](media/end-user-home/power-bi-home-new-users.png)
 
 
  
 Når du arbejder i Power BI-tjenesten, modtager du dashboards, rapporter og apps fra kolleger, og Power BI Start bliver efterhånden fyldt ud. Med tiden kan den komme til at ligne nedenstående startside.
 
-![Et skærmbillede af velkomstskærmen for Power BI-tjenesten.](media/end-user-home/power-bi-experienced-user.png)
+![Et skærmbillede af velkomstskærmen for Power BI-tjenesten.](media/end-user-home/power-bi-experienced-users.png)
 
  
 I de næste par emner ser vi nærmere på startsiden for en erfaren bruger oppefra og ned.

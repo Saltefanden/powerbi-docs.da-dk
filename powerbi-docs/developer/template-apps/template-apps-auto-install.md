@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 11/23/2020
-ms.openlocfilehash: ca5db6ed7a07d5a6fb10133285378e8318527464
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 671fcbabf10666c03f39bc4582e00fa0adbdbd5e
+ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96386086"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96578354"
 ---
 # <a name="automated-configuration-of-a-template-app-installation"></a>Automatiseret konfiguration af installationen af et skabelonprogram
 
@@ -55,7 +55,7 @@ Følgende forudsætninger er påkrævet for at levere en forudkonfigureret insta
 
 * En **tjenesteprincipal (token kun til programmer)** registreret i ovennævnte lejer. Se [Integrer Power BI-indhold med en tjenesteprincipal og en programhemmelighed](https://docs.microsoft.com/power-bi/developer/embedded/embed-service-principal) for at få flere oplysninger. Sørg for at registrere programmet som et **serverbaseret webprogram**. Du registrerer et serverbaseret webprogram for at oprette en programhemmelighed. Fra denne proces skal du gemme *program-id'et* (klient-id) og *programhemmeligheden* (klienthemmelighed) til senere trin.
 
-* Et **parameteriseret skabelonprogram**, der er klar til installation. Skabelonprogrammet skal være oprettet i den samme lejer, som du registrerer programmet i Azure Active Directory (Azure AD) i. Se [tip til skabelonprogram](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-tips.md) eller [Opret et skabelonprogram i Power BI](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-create) for at få flere oplysninger. Fra skabelonprogrammet skal du notere følgende oplysninger til de næste trin:
+* Et **parameteriseret skabelonprogram**, der er klar til installation. Skabelonprogrammet skal være oprettet i den samme lejer, som du registrerer programmet i Azure Active Directory (Azure AD) i. Se [tip til skabelonprogram](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-tips) eller [Opret et skabelonprogram i Power BI](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-create) for at få flere oplysninger. Fra skabelonprogrammet skal du notere følgende oplysninger til de næste trin:
      * *App-id*, *pakkenøgle* og *ejer-id*, som de vises i URL-adressen til installation i slutningen af processen [Definer egenskaber for skabelonprogrammet](../../connect-data/service-template-apps-create.md#define-the-properties-of-the-template-app), da programmet blev oprettet. Du kan også få det samme link ved at klikke på **Hent link** i [Udgivelsesadministration](../../connect-data/service-template-apps-create.md#manage-the-template-app-release) for skabelonprogrammet.
 
     * *Parameternavne*, som defineret i datasættet for skabelonprogrammet. Der skelnes mellem store og små bogstaver i parameternavne, og de kan også hentes via fanen **Parameterindstillinger**, når du [definerer egenskaberne for skabelonprogrammet](../../connect-data/service-template-apps-create.md#define-the-properties-of-the-template-app) eller fra indstillingerne for datasæt i Power BI.

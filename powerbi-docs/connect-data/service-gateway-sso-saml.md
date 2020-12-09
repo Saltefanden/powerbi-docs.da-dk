@@ -9,12 +9,12 @@ ms.subservice: powerbi-gateways
 ms.topic: how-to
 ms.date: 10/22/2020
 LocalizationGroup: Gateways
-ms.openlocfilehash: 1879dbd53f08b3dff7dac2f4050be078ed44ead8
-ms.sourcegitcommit: 54e571a10b0fdde5cd6036017eac9ef228de5116
+ms.openlocfilehash: 0f971013d5f57174a26d92281cafe673f1487329
+ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "92502016"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96577549"
 ---
 # <a name="use-security-assertion-markup-language-saml-for-sso-from-power-bi-to-on-premises-data-sources"></a>Brug SAML (Security Assertion Markup Language) til SSO fra Power BI til datakilder i det lokale miljø
 
@@ -22,7 +22,7 @@ Aktivering af SSO gør det nemt for Power BI-rapporter og -dashboards at opdater
 
 ## <a name="supported-data-sources"></a>Understøttede datakilder
 
-Vi understøtter i øjeblikket SAP HANA med SAML. Få flere oplysninger om konfiguration af enkeltlogon til SAP HANA ved hjælp af SAML i [SAML SSO på BI-platformen til HANA](https://wiki.scn.sap.com/wiki/display/SAPHANA/SAML+SSO+for+BI+Platform+to+HANA).
+Vi understøtter i øjeblikket SAP HANA med SAML. Få flere oplysninger om konfiguration af enkeltlogon til SAP HANA ved hjælp af SAML i [SAML SSO på BI-platformen til HANA](https://blogs.sap.com/2020/03/22/sap-bi-platform-saml-sso-to-hana-database/).
 
 Vi understøtter flere datakilder med [Kerberos](service-gateway-sso-kerberos.md) (herunder SAP HANA).
 
@@ -65,13 +65,13 @@ Udfør følgende trin for at oprette certifikaterne:
     openssl x509 -req -days 365 -in IdP_Req.pem -sha256 -extensions usr_cert -CA CA_Cert.pem -CAkey CA_Key.pem -CAcreateserial -out IdP_Cert.pem
     ```
     Du bør se, at *CA_Cert.srl* og *IdP_Cert.pem* bliver oprettet.
-    Følgende omhandler kun *IdP_Cert.pem* .    
+    Følgende omhandler kun *IdP_Cert.pem*.    
 
 ### <a name="create-saml-identity-provider-certificate-mapping"></a>Opret tilknytning af certifikat for SAML-identitetsudbyder
 
 Opret tilknytning af certifikat for SAML-identitetsudbyder ved hjælp af følgende trin.
 
-1. I **SAP HANA Studio** skal du højreklikke på navnet på din SAP HANA-server og derefter navigere til **Sikkerhed > Åbn sikkerhedskonsol > SAML-identitetsudbyder** .
+1. I **SAP HANA Studio** skal du højreklikke på navnet på din SAP HANA-server og derefter navigere til **Sikkerhed > Åbn sikkerhedskonsol > SAML-identitetsudbyder**.
 2. Hvis Kryptografisk SAP-bibliotek ikke er valgt, skal du vælge det. Brug *ikke* Kryptografisk OpenSSL-bibliotek (valget til venstre på følgende billede). Det frarådes af SAP.
 
     ![Vælg Kryptografisk SAP-bibliotek](media/service-gateway-sso-saml/service-gateway-sso-saml-01.png)
@@ -86,7 +86,7 @@ Husk at give din *identitetsudbyder* et navn.
 
 Derefter skal du importere og oprette de signerede certifikater i HANA. Følg disse trin:
 
-1. Kør følgende forespørgsel i **HANA Studio** :
+1. Kør følgende forespørgsel i **HANA Studio**:
 
     ```
     CREATE CERTIFICATE FROM '<idp_cert_pem_certificate_content>'
@@ -102,7 +102,7 @@ Derefter skal du importere og oprette de signerede certifikater i HANA. Følg di
     '
     ```
 
-2. Hvis der ikke er nogen PSE med SAML Purpose, skal du oprette en ved at køre følgende forespørgsel i **HANA Studio** :
+2. Hvis der ikke er nogen PSE med SAML Purpose, skal du oprette en ved at køre følgende forespørgsel i **HANA Studio**:
     
     ```
     CREATE PSE SAMLCOLLECTION;<br>set pse SAMLCOLLECTION purpose SAML;<br>
@@ -133,27 +133,27 @@ Derefter skal du importere og oprette de signerede certifikater i HANA. Følg di
 
 Følg disse trin for at tilknytte brugeren:
 
-1. I **SAP HANA Studio** skal du vælge mappen **Sikkerhed** :
+1. I **SAP HANA Studio** skal du vælge mappen **Sikkerhed**:
 
     ![Vælg mappen Sikkerhed](media/service-gateway-sso-saml/service-gateway-sso-saml-03.png)
 
-2. Udvid **Brugere** , og vælg derefter den bruger, du vil knytte din Power BI-bruger til.
+2. Udvid **Brugere**, og vælg derefter den bruger, du vil knytte din Power BI-bruger til.
 
-3. Markér afkrydsningsfeltet **SAML** , og vælg derefter **Konfigurer** , der vises fremhævet på følgende billede.
+3. Markér afkrydsningsfeltet **SAML**, og vælg derefter **Konfigurer**, der vises fremhævet på følgende billede.
 
     ![Vælg SAML og derefter linket Konfigurer](media/service-gateway-sso-saml/service-gateway-sso-saml-04.png)
 
-4. Vælg den identitetsudbyder, du oprettede under afsnittet [Opret tilknytning af certifikat for SAML-identitetsudbyder](#create-saml-identity-provider-certificate-mapping) tidligere i denne artikel. Angiv Power BI-brugerens UPN (typisk den mailadresse, som brugeren logger på Power BI med) som Ekstern identitet, og vælg derefter **Tilføj** .  På følgende billede vises disse indstillinger og valg.
+4. Vælg den identitetsudbyder, du oprettede under afsnittet [Opret tilknytning af certifikat for SAML-identitetsudbyder](#create-saml-identity-provider-certificate-mapping) tidligere i denne artikel. Angiv Power BI-brugerens UPN (typisk den mailadresse, som brugeren logger på Power BI med) som Ekstern identitet, og vælg derefter **Tilføj**.  På følgende billede vises disse indstillinger og valg.
 
     ![Vinduet Konfigurer SAML-identiteter](media/service-gateway-sso-saml/service-gateway-sso-saml-05.png)
 
-    Hvis du har konfigureret din gateway til at bruge konfigurationsindstillingen *ADUserNameReplacementProperty* , skal du angive den værdi, der skal erstatte Power BI-brugerens oprindelige UPN. Hvis du f.eks. angiver *ADUserNameReplacementProperty* til *SAMAccountName* , skal du angive brugerens *SAMAccountName* .
+    Hvis du har konfigureret din gateway til at bruge konfigurationsindstillingen *ADUserNameReplacementProperty*, skal du angive den værdi, der skal erstatte Power BI-brugerens oprindelige UPN. Hvis du f.eks. angiver *ADUserNameReplacementProperty* til *SAMAccountName*, skal du angive brugerens *SAMAccountName*.
 
 ### <a name="configure-the-gateway"></a>Konfigurer gatewayen
 
 Nu, hvor du har konfigureret certifikatet og identiteten for gatewayen, skal du konvertere certifikatet til et pfx-format og konfigurere gatewayen til at bruge certifikatet ved hjælp af følgende trin.
 
-1. Konvertér certifikatet til pfx-formatet ved at køre følgende kommando. Med denne kommando navngives den resulterende .pfx-fil samlcert.pfx og angiver adgangskoden til *root* :
+1. Konvertér certifikatet til pfx-formatet ved at køre følgende kommando. Med denne kommando navngives den resulterende .pfx-fil samlcert.pfx og angiver adgangskoden til *root*:
 
     ```
     openssl pkcs12 -export -out samltest.pfx -in IdP_Cert.pem -inkey IdP_Key.pem -passin pass:root -passout pass:root
@@ -161,13 +161,13 @@ Nu, hvor du har konfigureret certifikatet og identiteten for gatewayen, skal du 
 
 2. Kopiér pfx-filen til gatewaycomputeren:
 
-    1. Dobbeltklik på *samltest.pfx* , og vælg derefter **Lokal maskine** > **Næste** .
+    1. Dobbeltklik på *samltest.pfx*, og vælg derefter **Lokal maskine** > **Næste**.
 
-    2. Angiv adgangskoden, og vælg derefter **Næste** .
+    2. Angiv adgangskoden, og vælg derefter **Næste**.
 
-    3. Vælg **Placer alle certifikater i følgende lager,** og vælg derefter **Gennemse** > **Personlig** > **OK** .
+    3. Vælg **Placer alle certifikater i følgende lager,** og vælg derefter **Gennemse** > **Personlig** > **OK**.
 
-    4. Vælg **Næste** og derefter **Udfør** .
+    4. Vælg **Næste** og derefter **Udfør**.
 
        ![Importér certifikat](media/service-gateway-sso-saml/service-gateway-sso-saml-06.png)
 
@@ -177,21 +177,21 @@ Nu, hvor du har konfigureret certifikatet og identiteten for gatewayen, skal du 
 
         ![Kør MMC](media/service-gateway-sso-saml/run-mmc.png)
 
-    2. Under **Filer** skal du vælge **Tilføj/fjern snap-in** .
+    2. Under **Filer** skal du vælge **Tilføj/fjern snap-in**.
 
         ![Tilføj snap-in](media/service-gateway-sso-saml/add-snap-in.png)
 
-    3. Vælg **Certifikater** > **Tilføj** , og vælg derefter **Computerkonto** > **Næste** .
+    3. Vælg **Certifikater** > **Tilføj**, og vælg derefter **Computerkonto** > **Næste**.
 
-    4. Vælg **Lokal computer** > **Afslut** > **OK** .
+    4. Vælg **Lokal computer** > **Afslut** > **OK**.
 
-    5. Udvid **Certifikater** > **Personlig** > **Certifikater** , og find certifikatet.
+    5. Udvid **Certifikater** > **Personlig** > **Certifikater**, og find certifikatet.
 
-    6. Højreklik på certifikatet, og naviger til **Alle opgaver** &gt; **Administrer private nøgler** .
+    6. Højreklik på certifikatet, og naviger til **Alle opgaver** &gt; **Administrer private nøgler**.
 
         ![Administrer private nøgler](media/service-gateway-sso-saml/manage-private-keys.png)
 
-    1. Føj kontoen for gatewaytjenesten til listen. Kontoen er som standard **NT SERVICE\PBIEgwService** . Du kan finde ud af, hvilken konto der kører gatewaytjenesten ved at køre **services.msc** og finde **Datagatewaytjeneste i det lokale miljø** .
+    1. Føj kontoen for gatewaytjenesten til listen. Kontoen er som standard **NT SERVICE\PBIEgwService**. Du kan finde ud af, hvilken konto der kører gatewaytjenesten ved at køre **services.msc** og finde **Datagatewaytjeneste i det lokale miljø**.
 
         ![Gatewaytjeneste](media/service-gateway-sso-saml/gateway-service.png)
 
@@ -205,15 +205,15 @@ Følg til sidst disse trin for at føje certifikataftrykket til konfigurationen 
 
 2. Kopiér aftrykket for det certifikat, du har oprettet.
 
-3. Naviger til gatewaymappen, der som standard ligger her *C:\Program Files\On-premises data gateway* .
+3. Naviger til gatewaymappen, der som standard ligger her *C:\Program Files\On-premises data gateway*.
 
-4. Åbn *PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* , og find afsnittet *SapHanaSAMLCertThumbprint* . Indsæt det aftryk, du har kopieret.
+4. Åbn *PowerBI.DataMovement.Pipeline.GatewayCore.dll.config*, og find afsnittet *SapHanaSAMLCertThumbprint*. Indsæt det aftryk, du har kopieret.
 
 5. Genstart gatewaytjenesten.
 
 ## <a name="running-a-power-bi-report"></a>Kørsel af en Power BI-rapport
 
-Nu kan du bruge siden **Administrer gateway** i Power BI til at konfigurere SAP HANA-datakilden. Aktivér SSO via SAML under **Avancerede indstillinger** . Når du gør det, kan du publicere rapporter og datasæt med binding til den pågældende datakilde.
+Nu kan du bruge siden **Administrer gateway** i Power BI til at konfigurere SAP HANA-datakilden. Aktivér SSO via SAML under **Avancerede indstillinger**. Når du gør det, kan du publicere rapporter og datasæt med binding til den pågældende datakilde.
 
    ![Avancerede indstillinger](media/service-gateway-sso-saml/advanced-settings.png)
 
@@ -231,9 +231,9 @@ Godkendelsessporinger på serversiden indeholder detaljerede oplysninger om fejl
 
 1. Genskab problemet.
 
-1. Åbn administrationskonsollen i HANA Studio, og vælg fanen **Diagnosticeringsfiler** .
+1. Åbn administrationskonsollen i HANA Studio, og vælg fanen **Diagnosticeringsfiler**.
 
-1. Åbn den nyeste indeksserversporing, og søg efter *SAMLAuthenticator.cpp* .
+1. Åbn den nyeste indeksserversporing, og søg efter *SAMLAuthenticator.cpp*.
 
     Du bør finde en detaljeret fejlmeddelelse, der angiver rodårsagen, f.eks.:
 

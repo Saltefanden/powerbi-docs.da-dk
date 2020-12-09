@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 09/17/2020
+ms.date: 12/03/2020
 LocalizationGroup: Get started
-ms.openlocfilehash: c650b7ea282d928af512ce7948902bc4fd72613f
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 3a1fa1e137cc66fad48102d60869ee8ecd0cba61
+ms.sourcegitcommit: 513c4b884a58e1da2680579339c24c46091bbfb2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96389960"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96613848"
 ---
 # <a name="opt-in-for-power-bi-service-preview-features"></a>Tilmeld dig prøveversionsfunktioner i Power BI-tjenesten
 
@@ -24,11 +24,7 @@ ms.locfileid: "96389960"
 ## <a name="what-are-preview-features"></a>Hvad er *prøveversionsfunktioner*?
 I takt med at vi foretager forbedringer af Power BI-tjenesten, frigiver vi nogle nye funktioner som *prøveversionsfunktioner*. Prøveversionsfunktioner kan slås til og fra, hvilket giver dig mulighed for at prøve dem.
 
-Nogle prøveversionsfunktioner kan slås til og fra via dit Power BI-dashboard, din startside eller selve rapporten. Prøveversionsfunktionen **Nyt udseende** kan slås til og fra på Power BI-menulinjen, der vises over Hjem, rapporter og dashboards. 
-
-   ![Til/fra-knappen Nyt udseende](./media/end-user-preview-features/power-bi-toggle.png)
-
-Mens andre prøveversionsfunktioner bliver tilgængelige i menuen *Indstillinger*. I denne artikel kan du se, hvordan du får adgang til prøveversionsfunktioner via menuen Indstillinger.
+Nogle prøveversionsfunktioner kan slås til og fra via dit Power BI-dashboard, din startside eller selve rapporten. Mens andre prøveversionsfunktioner bliver tilgængelige i menuen *Indstillinger*. I denne artikel kan du se, hvordan du får adgang til prøveversionsfunktioner via menuen Indstillinger.
 
 ## <a name="find-previews-and-turn-them-on-and-off"></a>Find prøveversioner, og aktivér (deaktiver) dem
 1. Åbn menuen Indstillinger ved at vælge tandhjulsikonet i øverste højre hjørne af Power BI-skærmen, og vælg **Indstillinger**.

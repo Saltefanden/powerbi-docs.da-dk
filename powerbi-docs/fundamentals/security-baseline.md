@@ -8,12 +8,12 @@ ms.subservice: pbi-security
 ms.topic: conceptual
 ms.date: 11/20/2020
 ms.custom: subject-security-benchmark
-ms.openlocfilehash: 9e7aefba7a2e47fbf5249feaab3ac56057ac867c
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: ef74b3bcddd981c9f63172fa2e641335a081836d
+ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96386257"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96577710"
 ---
 # <a name="azure-security-baseline-for-power-bi"></a>Azure-sikkerhedsbaseline til Power BI
 
@@ -344,7 +344,7 @@ Sådan oprettes forespørgsler med Azure
 
 ## <a name="logging-and-threat-detection"></a>Logføring og trusselsregistrering
 
-*Du kan finde flere oplysninger i [Azure Security Benchmark: Logføring og trusselsregistrering](/azure/security/benchmarks/security-controls-v2-logging-threat-protection).*
+*Du kan finde flere oplysninger i [Azure Security Benchmark: Logføring og trusselsregistrering](/azure/security/benchmarks/security-controls-v2-logging-threat-detection).*
 
 ### <a name="lt-2-enable-threat-detection-for-azure-identity-and-access-management"></a>LT-2: Aktivér trusselsregistrering for identitets- og adgangsstyring i Azure
 
@@ -553,7 +553,7 @@ Brug funktioner til automatisering af arbejdsprocesser i Microsoft Threat Protec
 
 ## <a name="posture-and-vulnerability-management"></a>Administration af niveau og sårbarhed
 
-*Du kan finde flere oplysninger i [Azure Security Benchmark: Administration af niveau og sårbarhed](/azure/security/benchmarks/security-controls-v2-vulnerability-management).*
+*Du kan finde flere oplysninger i [Azure Security Benchmark: Administration af niveau og sårbarhed](/azure/security/benchmarks/security-controls-v2-posture-vulnerability-management).*
 
 ### <a name="pv-1-establish-secure-configurations-for-azure-services"></a>PV-1: Etabler sikre konfigurationer til Azure-tjenester 
 
@@ -656,9 +656,9 @@ Du kan finde flere oplysninger i følgende referencer:
 
 - [Cloud Adoption Framework – bedste praksis for kryptering og sikkerhed af data i Azure](https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices?toc=/azure/cloud-adoption-framework/toc.json&amp;bc=/azure/cloud-adoption-framework/_bread/toc.json)
 
-- [Azure Security Benchmark – ressourcestyring](https://docs.microsoft.com/azure/security/benchmarks/security-benchmark-v2-asset-management)
+- [Azure Security Benchmark – ressourcestyring](https://docs.microsoft.com/azure/security/benchmarks/security-controls-v2-asset-management)
 
-- [Azure Security Benchmark – databeskyttelse](https://docs.microsoft.com/azure/security/benchmarks/security-benchmark-v2-data-protection)
+- [Azure Security Benchmark – databeskyttelse](/azure/security/benchmarks/security-controls-v2-data-protection)
 
 **Overvågning af Azure Security Center**: Ikke tilgængelig
 
@@ -686,7 +686,7 @@ Sørg for, at segmenteringsstrategien er implementeret på tværs af kontroltype
 
 **Vejledning**: Mål og afhjælp løbende risici for dine individuelle ressourcer og de miljø, de hostes i. Prioriter ressourcer med høj værdi og angrebsoverflader, der er meget eksponeret, f.eks. publicerede programmer, punkter for indgående data og udgående data på netværk, slutpunkter for bruger og administrator osv.
 
-- [Azure Security Benchmark – administration af niveau og sårbarhed](https://docs.microsoft.com/azure/security/benchmarks/security-benchmark-v2-posture-vulnerability-management)
+- [Azure Security Benchmark – administration af niveau og sårbarhed](https://docs.microsoft.com/azure/security/benchmarks/security-controls-v2-posture-vulnerability-management)
 
 **Overvågning af Azure Security Center**: Ikke tilgængelig
 
@@ -727,7 +727,7 @@ Denne strategi bør omfatte dokumenteret vejledning, politik og standarder for f
 Du kan finde flere oplysninger i følgende referencer:
 - [Bedste praksis for sikkerhed i Azure 11 – arkitektur. Enkelt samlet sikkerhedsstrategi](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#11-architecture-establish-a-single-unified-security-strategy)
 
-- [Azure Security Benchmark – netværkssikkerhed](https://docs.microsoft.com/azure/security/benchmarks/security-benchmark-v2-network-security)
+- [Azure Security Benchmark – netværkssikkerhed](/azure/security/benchmarks/security-controls-v2-network-security)
 
 - [Oversigt over netværkssikkerhed i Azure](https://docs.microsoft.com/azure/security/fundamentals/network-overview)
 
@@ -755,9 +755,9 @@ Denne strategi bør omfatte dokumenteret vejledning, politik og standarder for f
 
 Du kan finde flere oplysninger i følgende referencer:
 
-- [Azure Security Benchmark – identitetsstyring](https://docs.microsoft.com/azure/security/benchmarks/security-benchmark-v2-identity-management)
+- [Azure Security Benchmark – identitetsstyring](https://docs.microsoft.com/azure/security/benchmarks/security-controls-v2-identity-management)
 
-- [Azure Security Benchmark – privilegeret adgang](https://docs.microsoft.com/azure/security/benchmarks/security-benchmark-v2-privileged-access)
+- [Azure Security Benchmark – privilegeret adgang](/azure/security/benchmarks/security-controls-v2-privileged-access)
 
 - [Bedste praksis for sikkerhed i Azure 11 – arkitektur. Enkelt samlet sikkerhedsstrategi](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#11-architecture-establish-a-single-unified-security-strategy)
 
@@ -789,9 +789,9 @@ Denne strategi bør omfatte dokumenteret vejledning, politik og standarder for f
 
 Du kan finde flere oplysninger i følgende referencer:
 
-- [Azure Security Benchmark – logføring og trusselsregistrering](https://docs.microsoft.com/azure/security/benchmarks/security-benchmark-v2-logging-threat-detection)
+- [Azure Security Benchmark – logføring og trusselsregistrering](/azure/security/benchmarks/security-controls-v2-logging-threat-detection)
 
-- [Azure Security Benchmark – svar på hændelser](https://docs.microsoft.com/azure/security/benchmarks/security-benchmark-v2-incident-response)
+- [Azure Security Benchmark – svar på hændelser](/azure/security/benchmarks/security-controls-v2-incident-response)
 
 - [Bedste praksis for sikkerhed i Azure 4 – processer. Opdater processer for svar på hændelser i cloudmiljøet](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#4-process-update-incident-response-ir-processes-for-cloud)
 

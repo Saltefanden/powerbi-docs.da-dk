@@ -7,12 +7,12 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 11/23/2020
-ms.openlocfilehash: 0bb2e0c249df668378d62f62184dc044d174ce81
-ms.sourcegitcommit: 9d033abd9c01a01bba132972497dda428d7d5c12
+ms.openlocfilehash: 0ddcf3c54a5bb3cf9259f6c0d18d0001b838df60
+ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95550430"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96577848"
 ---
 # <a name="tutorial-automate-configuration-of-template-app-installation-using-an-azure-function"></a>Selvstudium: Automatiser konfigurationen af installationen af skabelonprogrammer ved hjælp af en Azure-funktion
 
@@ -57,7 +57,7 @@ Før du starter, skal du have:
 
 * En [tjenesteprincipal (token kun til programmer)](https://docs.microsoft.com/power-bi/developer/embedded/embed-service-principal) registreret i ovennævnte lejer.
 
-* Et parameteriseret [skabelonprogram](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-overview), der er klar til installation. Skabelonprogrammet skal være oprettet i den samme lejer, som du registrerer programmet i Azure Active Directory (Azure AD) i. Se [tip til skabelonprogram](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-tips.md) eller [Opret et skabelonprogram i Power BI](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-create) for at få flere oplysninger.
+* Et parameteriseret [skabelonprogram](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-overview), der er klar til installation. Skabelonprogrammet skal være oprettet i den samme lejer, som du registrerer programmet i Azure Active Directory (Azure AD) i. Se [tip til skabelonprogram](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-tips) eller [Opret et skabelonprogram i Power BI](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-create) for at få flere oplysninger.
 
 * En **Power BI Pro-licens**. Hvis du ikke er tilmeldt Power BI Pro, kan du [tilmelde dig en gratis prøveversion](https://powerbi.microsoft.com/pricing/), før du begynder.
 

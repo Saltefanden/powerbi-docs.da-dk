@@ -9,12 +9,12 @@ ms.subservice: pbi-fundamentals
 ms.topic: conceptual
 ms.date: 11/11/2020
 LocalizationGroup: Get started
-ms.openlocfilehash: c6bdb2c2de06e82c844e454fa1981619ad65bd33
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 9bf482f14b197acda93b6411525a98e865706721
+ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96419515"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96578512"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Tidligere månedlige opdateringer til Power BI Desktop
 
@@ -94,7 +94,7 @@ Følgende opdateringer er nye i Power BI Desktop i denne måned:
 * Nye data-connectors – Spigit og eWay – CRM [[video]](https://youtu.be/LveNuQqV5xk?t=736) [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195572)
 
 
-### <a name="visuals"></a>Visuelle elementer
+### <a name="visuals"></a>Visualiseringer
 * Udvidede funktioner til administratorfunktionalitet er nu offentligt tilgængelige [[video]](https://youtu.be/LveNuQqV5xk?t=997) [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52270604)
 * Nye visualiseringer fra forskellige udbydere [[video]](https://youtu.be/LveNuQqV5xk?t=1039)[[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195582)
 
@@ -549,8 +549,8 @@ Du kan også hente tidligere versioner af Power BI Desktop, hvis din organisatio
 
 Vælg følgende links for at downloade denne tidligere version: 
 
-* [Power BI Desktop-version fra maj 2020 – 32-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-05.exe)
-* [Power BI Desktop-version fra maj 2020 – 64-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-05_x64.exe)
+* [Power BI Desktop-version fra maj 2020 – 32-bit](https://download.microsoft.com/download/9/0/3/903DCAE8-44D9-4A7E-856C-40C0754723ED/PBIDesktopRS.msi)
+* [Power BI Desktop-version fra maj 2020 – 64-bit](https://download.microsoft.com/download/9/0/3/903DCAE8-44D9-4A7E-856C-40C0754723ED/PBIDesktopRS_x64.msi)
 
 
 
