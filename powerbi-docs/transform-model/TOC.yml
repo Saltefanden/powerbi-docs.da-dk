@@ -51,6 +51,8 @@
           href: dataflows/dataflows-premium-features.md
         - name: Brug Machine Learning og Cognitive Services med dataflow
           href: dataflows/dataflows-machine-learning-integration.md
+        - name: Bedste praksis i forbindelse med dataflow
+          href: ./dataflows/dataflows-best-practices.md
         - name: Begrænsninger og overvejelser i forbindelse med dataflow
           href: dataflows/dataflows-features-limitations.md
     - name: Vejledninger
@@ -95,44 +97,6 @@
               href: desktop-import-and-display-kpis.md
             - name: Anvend automatisk dato og klokkeslæt
               href: desktop-auto-date-time.md
-        - name: Selvbetjent dataforberedelse
-          items:
-            - name: Opret og brug dataflow
-              href: ./dataflows/dataflows-create.md
-            - name: Bedste praksis i forbindelse med dataflow
-              href: ./dataflows/dataflows-best-practices.md
-            - name: Brug DirectQuery med dataflow i Power BI (prøveversion)
-              href: ./dataflows/dataflows-configure-consume.md
-            - name: Brug det forbedrede beregningsprogram med dataflows
-              href: ./dataflows/dataflows-premium-features.md
-            - name: Beregnede enheder med Power BI Premium
-              href: ./dataflows/dataflows-premium-features.md
-            - name: Opret forbindelse til datakilder med dataflow
-              href: ./dataflows/dataflows-configure-consume.md
-            - name: Brug dataflow med datakilder i det lokale miljø
-              href: ./dataflows/dataflows-configure-consume.md
-            - name: Link enheder mellem dataflow
-              href: ./dataflows/dataflows-premium-features.md
-            - name: Brug gradvis opdatering med dataflow
-              href: ./dataflows/dataflows-premium-features.md
-            - name: Udviklerressourcer til dataflow
-              href: ./dataflows/dataflows-configure-consume.md
-            - name: Opret forbindelse til dataflow i Power BI Desktop
-              href: desktop-connect-dataflows.md
-            - name: Integration af dataflow og Azure Data Lake (prøveversion)
-              href: ./dataflows/dataflows-azure-data-lake-storage-integration.md
-            - name: Opret forbindelse til Azure Data Lake Storage Gen2 for dataflowlager
-              href: ./dataflows/dataflows-azure-data-lake-storage-integration.md
-            - name: Konfigurer indstillinger for dataflow for arbejdsområder (prøveversion)
-              href: ./dataflows/dataflows-configure-consume.md
-            - name: Føj en CDM-mappe til Power BI som et dataflow (eksempelvisning)
-              href: ./dataflows/dataflows-machine-learning-integration.md
-            - name: Integrer Machine Learning i Power BI
-              href: ./dataflows/dataflows-machine-learning-integration.md
-            - name: Brug Cognitive Services i Power BI
-              href: ./dataflows/dataflows-machine-learning-integration.md
-            - name: Automatiseret Machine Learning i Power BI
-              href: ./dataflows/dataflows-machine-learning-integration.md
     - name: Reference
       items:
         - name: Brug feltlisten i Power BI Desktop (eksempelvisning)
