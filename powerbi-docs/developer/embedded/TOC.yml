@@ -48,6 +48,8 @@
           href: embed-service-principal.md
         - name: Integrer ved hjælp af en tjenesteprincipal og et certifikat
           href: embed-service-principal-certificate.md
+        - name: Flyt en integreret app til produktion
+          href: move-to-production.md
         - name: Integrer fra en app
           href: embed-from-apps.md
         - name: Eksportér rapport til fil
