@@ -10,14 +10,14 @@ ms.date: 12/01/2020
 ms.author: painbar
 ms.custom: ''
 LocalizationGroup: Administration
-ms.openlocfilehash: fb2d25b4cc000f0a7b9c659f25264ffd1ab936d7
-ms.sourcegitcommit: 2fd64f96b5bfbc14ff47e5c892171e5c921fb525
+ms.openlocfilehash: ec3cd60916630fe355b9ea4f54d5a025788800bf
+ms.sourcegitcommit: 30d0668434283c633bda9ae03bc2aca75401ab94
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96506704"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96906813"
 ---
-# <a name="enable-service-principle-authentication-for-read-only-admin-apis-preview"></a>Aktivér godkendelse med tjenesteprincipal for skrivebeskyttede administrator-API'er (prøveversion)
+# <a name="enable-service-principal-authentication-for-read-only-admin-apis-preview"></a>Aktivér godkendelse med tjenesteprincipal for skrivebeskyttede administrator-API'er (prøveversion)
 
 Tjenesteprincipal er en godkendelsesmetode, som kan bruges til at give et Azure AD-program (Azure Active Directory) adgang til Power BI-tjenesteindhold og API'er.
 Når du opretter et Azure AD-program, oprettes der et [objekt for en tjenesteprincipal](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object). Objektet for tjenesteprincipalen, der også ganske enkelt er kendt som tjenesteprincipal, giver Azure AD mulighed for at godkende dit program. Når appen er godkendt, kan den få adgang til Microsoft Azure AD-lejerressourcer.
@@ -63,7 +63,7 @@ Følg disse trin for at aktivere godkendelse med tjenesteprincipal for skrivebes
     * [GetDataflowUpstreamDataflowsAsAdmin](https://docs.microsoft.com/rest/api/power-bi/admin/dataflows_getupstreamdataflowsingroupasadmin) 
     * [GetCapacitiesAsAdmin](https://docs.microsoft.com/rest/api/power-bi/admin/getcapacitiesasadmin)
     * [GetActivityLog](https://docs.microsoft.com/rest/api/power-bi/admin/getactivityevents)
-    * GetModifiedWorkspaces
-    * WorkspaceGetInfo
-    * WorkspaceScanStatus
-    * WorkspaceScanResult
+    * [GetModifiedWorkspaces](https://docs.microsoft.com/rest/api/power-bi/admin/workspaceinfo_getmodifiedworkspaces)
+    * [WorkspaceGetInfo](https://docs.microsoft.com/rest/api/power-bi/admin/workspaceinfo_postworkspaceinfo)
+    * [WorkspaceScanStatus](https://docs.microsoft.com/rest/api/power-bi/admin/workspaceinfo_getscanstatus)
+    * [WorkspaceScanResult](https://docs.microsoft.com/rest/api/power-bi/admin/workspaceinfo_getscanresult)

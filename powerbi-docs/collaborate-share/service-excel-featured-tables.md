@@ -1,22 +1,22 @@
 ---
-title: Få adgang til Power BI-tabeller i Excel (prøveversion)
-description: I Excel kan du finde data fra udvalgte tabeller i Power BI-datasæt i datatypegalleriet.
+title: Få adgang til Power BI-tabeller i Excel
+description: I Excel kan du finde data fra udvalgte tabeller i Power BI-datasæt i datatypegalleriet for organisationen.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 08/04/2020
+ms.date: 12/07/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 95ccc80a37ad9703c60c82ce928d35b5e301947b
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: b5f84f67231393dfed78bd9f90142fbd1b4f6c91
+ms.sourcegitcommit: 30d0668434283c633bda9ae03bc2aca75401ab94
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96407302"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96907025"
 ---
-# <a name="access-power-bi-featured-tables-in-excel-preview"></a>Få adgang til Power BI-tabeller i Excel (prøveversion)
+# <a name="access-power-bi-featured-tables-in-excel-organization-data-types"></a>Få adgang til udvalgte Power BI-tabeller i Excel-datatyper for organisationen
 
 *Udvalgte tabeller* er en måde at sammenkæde dine data i Excel med data i Power BI på. De gør det nemmere at føje virksomhedsdata til dine Excel-ark. I datatypegalleriet i Excel finder du data fra udvalgte tabeller i Power BI-datasæt. Dette er forklaret i denne artikel.
 
@@ -41,11 +41,11 @@ Hvis du vil søge efter data i en udvalgt Power BI-tabel, skal du vælge en cell
 
 :::image type="content" source="media/service-excel-featured-tables/excel-data-types-more.png" alt-text="Skærmbillede af ikonet Mere i Excel-datatypegalleri.":::
 
-Hvis du kan se den tabel, du søger efter, kan du vælge den. Ellers skal du vælge **Mere fra din organisation**. Excel søger efter et match i alle de udvalgte tabeller, som du har adgang til.
+Hvis du kan se den tabel, du søger efter, kan du vælge den. Ellers skal du vælge **Mere fra din organisation**. Excel viser alle de udvalgte tabeller, du har adgang til i ruden.
 
 :::image type="content" source="media/service-excel-featured-tables/excel-more-your-organization.png" alt-text="Skærmbillede af valg fra din organisation (eksempel).":::
  
-Excel viser alle de mulige tabeller. I ruden **Datavælger** skal du markere afkrydsningsfeltet **Filter** for at indsnævre mulighederne. Vælg den tilsvarende tabel.
+Excel viser alle de udvalgte tabeller, du har adgang til. I ruden **Datavælger** skal du markere afkrydsningsfeltet **Filter** for at indsnævre mulighederne. Vælg den tabel, du vil bruge.
 
 :::image type="content" source="media/service-excel-featured-tables/excel-data-selector-store.png" alt-text="Skærmbillede af Excel-organisationsdata, datatypetabellen Leverandører.":::
  
@@ -120,15 +120,13 @@ Du kan også opdatere enkelte celler. Højreklik på cellen, og vælg **Datatype
 
 ## <a name="licensing"></a>Licensering
 
-Excel-datatypegalleriet og de forbundne oplevelser til Power BI-tabeller er kun tilgængelige for Excel E5- og G5-kunder. 
+Excel-datatypegalleriet og forbundne oplevelser til udvalgte Power BI-tabeller er tilgængelige til Excel-abonnenter med en Power BI Pro-tjenesteplan. 
 
 ## <a name="security"></a>Sikkerhed
 
 Du kan kun se udvalgte tabeller fra datasæt, som du har tilladelse til, i Power BI. Når du opdaterer data, skal du have adgangstilladelse til datasættet i Power BI for at hente rækkerne. Du skal have tilladelsen [Build eller Skriv til datasættet](../connect-data/service-datasets-build-permissions.md) i Power BI.
  
 Excel cachelagrer de data, der returneres for hele rækken. Alle, du deler Excel-filen med, kan se dataene for alle felterne i alle de sammenkædede celler.
-
-Hvis et Power BI-datasæt har sikkerhed på rækkeniveau, eller hvis der er anvendt et navn på en Microsoft Information Protection-følsomhedsetiket, medtages de fremhævede tabeller fra det pågældende datasæt ikke i Excel-datatypegalleriet. Dette er en begrænsning af den oprindelige prøveversion.
 
 ## <a name="administrative-control"></a>Administrativ kontrol
 
@@ -145,28 +143,25 @@ Du kan finde en komplet liste over hændelser i overvågningsloggen under [Spori
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 
-Her er begrænsningerne for den oprindelige prøveversion:
+Her er de aktuelle begrænsninger:
 
-- Integrationen er tilgængelig i Excel Insiders Builds.
-- Excel-datatypegalleriet indeholder udvalgte tabeller til brugere med den relevante licens i Power BI Desktop og Power BI-tjenesten. Understøttelse af Power BI-tjenesten er muligvis ikke tilgængelig ved lanceringen af prøveversionen, men vil blive tilføjet.
+- Integrationen er tilgængelig i Excel i den aktuelle kanal.
 - Udvalgte tabeller i Power BI-datasæt, der bruger følgende funktioner, vises ikke i Excel: 
 
-    - Sikkerhedsdatasæt på rækkeniveau.
-    - Microsoft Information Protection-aktiverede datasæt.
     - DirectQuery-datasæt.
     - Datasæt med en direkte forbindelse.
 
-- Der vises kun data i kolonner og beregnede kolonner i den udvalgte tabel i Excel. Følgende er ikke angivet i den oprindelige prøveversion:
+- Excel viser kun data i kolonner, beregnede kolonner og målinger, der er defineret i den udvalgte tabel. Følgende er ikke angivet:
+   
+    - Målinger, der er defineret for relaterede tabeller.
+    - Implicitte målinger, der er beregnet på baggrund af relationer.
 
-    - De målinger, der er defineret i funktionstabellen.
-    - De målinger, der defineres for relaterede tabeller, og implicitte målinger beregnet ud fra relationer.
-
-- Excel viser kun udvalgte tabeller (*datatyper*), der er gemt i de nye Power BI-arbejdsområder. Udvalgte tabeller, der er gemt i de klassiske arbejdsområder eller Mit arbejdsområde, vises ikke som datatyper i Excel. Du kan [opgradere klassiske arbejdsområder til de nye arbejdsområder](service-upgrade-workspaces.md) i Power BI.
+- Excel viser kun udvalgte tabeller (*datatyper*), der er gemt i de nye Power BI-arbejdsområder. Udvalgte tabeller, der er gemt i de klassiske arbejdsområder, vises ikke som datatyper i Excel. Du kan [opgradere klassiske arbejdsområder til de nye arbejdsområder](service-upgrade-workspaces.md) i Power BI.
 
 Datatyperne i Excel svarer til en opslagsfunktion. Det kræver en celleværdi, der er angivet i Excel-arket, og der søges efter tilsvarende rækker i udvalgte Power BI-tabeller. Søgeoplevelsen har følgende funktionsmåder:
 
-- Når du bruger knappen **Organisationsdata** til at søge, søger Excel kun i udvalgte tabeller i Power BI-datasæt.
-- Rækkematchning er baseret på tekstkolonner i den udvalgte tabel. Den bruger den samme indeksering som Power BI Q&A-funktionen, som er optimeret til engelsksprogede søgninger. Søgning på andre sprog resulterer muligvis ikke i præcise matches. Der søges ikke efter matches i numeriske kolonner.
+- Rækkematchning er baseret på tekstkolonner i den udvalgte tabel. Den bruger den samme indeksering som Power BI Q&A-funktionen, som er optimeret til engelsksprogede søgninger. Søgning på andre sprog resulterer muligvis ikke i præcise matches. 
+- Der søges ikke efter matches i de fleste numeriske kolonner. Hvis Rækkemærkat eller Nøglekolonne er numeriske, søges der efter matches i dem.
 - Matchning er baseret på præcise og præfiksbaserede matches til individuelle søgeord. En celles værdi opdeles på baggrund af mellemrum eller andre mellemrumstegn, f.eks. faner. Derefter betragtes hvert ord som et søgeord. Værdier i en rækkes tekstfelt sammenlignes med hvert søgeord for at finde nøjagtige og præfiksbaserede forekomster. Der returneres en præfiksforekomst, hvis rækkens tekstfelt starter med søgeordet. Hvis en celle f.eks. indeholder "Orange County", så er "Orange" og "County" separate søgetermer. 
 
     - Rækker med tekstkolonner, hvis værdier svarer nøjagtigt til "Orange" eller "County", returneres. 
@@ -174,10 +169,11 @@ Datatyperne i Excel svarer til en opslagsfunktion. Det kræver en celleværdi, d
     - Det er vigtigt, at de rækker, der indeholder "Orange" eller "County", men ikke starter med dem, ikke returneres.
 
 - Power BI returnerer maksimalt 100 rækkeforslag for hver celle.
-- Indstilling eller opdatering af den udvalgte tabel understøttes ikke i XMLA-slutpunktet
+- Nogle symboler understøttes ikke.
+- Angivelse eller opdatering af den udvalgte tabel understøttes ikke for XMLA-slutpunktet
 - Excel-filer med en datamodel kan bruges til at publicere udvalgte tabeller. Indlæs dataene i Power BI Desktop, og udgiv derefter den udvalgte tabel.
 - Ved ændring af tabelnavn, rækkeetiket eller nøglekolonne kan den udvalgte tabel påvirke Excel-brugere med sammenkædede celler til rækker i tabellen. 
-- Excel viser, hvornår dataene blev hentet fra Power BI-datasættet. Dette tidspunkt er ikke nødvendigvis det tidspunkt, hvor dataene blev opdateret i Power BI, eller tidspunktet for det seneste datapunkt i et datasæt. Antag f.eks., at et datasæt i Power BI blev opdateret for en uge siden, men de underliggende kildedata var en uge gammel, da opdateringen fandt sted. De faktiske data ville være to uger gamle, men Excel viser data, der hentes, som den dato og det klokkeslæt, hvor dataene blev indlæst i Excel.
+- Excel viser, hvornår dataene blev hentet fra Power BI-datasættet. Dette tidspunkt er ikke nødvendigvis det tidspunkt, hvor dataene blev opdateret i Power BI, eller tidspunktet for det seneste datapunkt i et datasæt. Antag f.eks., at et datasæt i Power BI blev opdateret for en uge siden, men de underliggende kildedata var en uge gammel, da opdateringen fandt sted. De faktiske data ville være to uger gamle, men Excel viser data, der hentes, som den dato og det klokkeslæt, hvor dataene blev indlæst i Excel. 
 
 ## <a name="next-steps"></a>Næste trin
 

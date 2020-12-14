@@ -8,14 +8,14 @@ featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 08/14/2019
+ms.date: 12/01/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: 26a98609481ce45a6e432c8006d80f9becdd9f3b
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 560c03865519d1c5d2435dc333954f284ee726e6
+ms.sourcegitcommit: 8993400b32a44f4e7ce9a2db998ddebda18c7698
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96387775"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96536501"
 ---
 # <a name="tour-the-report-editor-in-power-bi"></a>Præsentation af rapporteditor i Power BI
 
@@ -33,14 +33,14 @@ I Power BI-tjenesten er rapporteditoren kun tilgængelig i redigeringsvisning. H
 
 Power BI-rapporteditor er inddelt i flere hovedafsnit:  
 
-1. Øverste navigationsrude
+1. Båndet
 1. Rapportlærred
 1. Ruden Filtre
 1. Ruden Visualiseringer
 1. Ruden Felter
 
-## <a name="1-the-top-nav-pane"></a>1. Den øverste navigationsrude
-Der er mange handlinger tilgængelige i den øverste navigationsrude, og der tilføjes hele tiden nye handlinger. Brug indholdsfortegnelsen eller søgefeltet i dokumentationen til Power BI for at få oplysninger om en bestemt handling.
+## <a name="1-the-ribbon"></a>1. Båndet
+Der er mange handlinger tilgængelige på båndet, og der tilføjes hele tiden nye handlinger. Brug indholdsfortegnelsen eller søgefeltet i dokumentationen til Power BI for at få oplysninger om en bestemt handling.
 
 
 ## <a name="2-the-report-canvas"></a>2. Rapportcanvasset
@@ -135,23 +135,7 @@ I Power BI Desktop har du også mulighed for at vise/skjule felter, tilføje ber
 
 ## <a name="the-field-icons"></a>Feltikonerne
 
-Power BI bruger en række forskellige ikoner til at angive typerne af felter i en rapport. Når du genkender dem, forstår du bedre, hvordan de fungerer i forskellige visualiseringer. Her er nogle af de mere almindelige.
-
-
-|Ikon  |Betydning  |
-|---------|---------|
-| ![Mappe](media/service-the-report-editor-take-a-tour/power-bi-field-list-folder.png) | Mappe på listen Felter |
-|![Numerisk felt](media/service-the-report-editor-take-a-tour/power-bi-field-list-numeric.png) | Numerisk felt: Numeriske felter er samlinger, der f.eks. kan sammenlægges eller beregnes som gennemsnit. Samlinger importeres med dataene og defineres i den datamodel, som din rapport er baseret på. Du kan finde flere oplysninger i [Aggregeringer i Power BI-rapporter](service-aggregates.md). |
-|![Ikke-numerisk beregnet kolonne](media/service-the-report-editor-take-a-tour/power-bi-field-list-calculated-column.png) | Beregnet kolonne med en datatype, der ikke er numerisk: En ny ikke-numerisk kolonne, du opretter, med en DAX-formel (Data Analysis Expressions), der definerer kolonnens værdier. Læs mere om [beregnede kolonner](../transform-model/desktop-calculated-columns.md). |
-|![Numerisk beregnet kolonne](media/service-the-report-editor-take-a-tour/power-bi-field-list-numeric-calculated-column.png)     |   Numerisk beregnet kolonne: En ny kolonne, du opretter, med en DAX-formel (Data Analysis Expressions), der definerer kolonnens værdier. Læs mere om [beregnede kolonner](../transform-model/desktop-calculated-columns.md). |
-|![Måling](media/service-the-report-editor-take-a-tour/power-bi-field-list-measure.png) |  Måling: Hver måling har sin egen hårdt kodede formel. Du kan ikke ændre beregningen – hvis det f.eks. er en sum, kan det kun være en sum. Værdierne gemmes ikke i en kolonne. De beregnes løbende, udelukkende afhængigt af hvordan de er placeret i en visualisering. Du kan finde flere oplysninger i [Forstå målinger](../transform-model/desktop-measures.md). |
-|![Målegruppe](media/service-the-report-editor-take-a-tour/power-bi-field-list-measure-group.png)     | Målegruppe  |
-|![KPI-ikon](media/service-the-report-editor-take-a-tour/power-bi-field-list-kpi.png) |      KPI: Et visuelt tip, der viser statussen mod et målbart mål. Læs mere om [KPI-visualiseringer (Key Performance Indicator)](../visuals/power-bi-visualization-kpi.md) |
-|![Ikon for hierarki](media/service-the-report-editor-take-a-tour/power-bi-field-list-hierarchy.png)     |  Felthierarki: Vælg pilen for at se de felter, der udgør hierarkiet.  Du kan få flere oplysninger ved at se denne Power BI-video på YouTube om, [hvordan du opretter og arbejder med hierarkier](https://www.youtube.com/watch?v=q8WDUAiTGeU). |
-|![Geo-data](media/service-the-report-editor-take-a-tour/power-bi-field-list-geo-data.png)     | Geo-data: Disse placeringsfelter kan bruges til at oprette kortvisualiseringer. |
-| ![Id-felt](media/service-the-report-editor-take-a-tour/power-bi-field-list-identity.png)     | Id-felt: Felter med dette ikon er *entydige felter*, som er angivet til at vise alle værdier, også selvom der er dubletter. Dine data kan f.eks. have poster for to forskellige personer med navnet "Robin Smith", og hver enkelt behandles som entydig. De opsummeres ikke.   |
-|![Parameter](media/service-the-report-editor-take-a-tour/power-bi-field-list-parameter.png)   | Parameter: Angiv parametre for at gøre dele af dine rapporter og datamodeller (f.eks. et forespørgselsfilter, en datakildereference, en målingsdefinition osv.) afhængige af en eller flere parameterværdier. Du kan finde flere oplysninger i dette Power BI-blogindlæg om [forespørgselsparametre](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/). |
-| ![Kalender](media/service-the-report-editor-take-a-tour/power-bi-field-list-calendar.png) | Kalenderdatofelt med en indbygget datotabel |
+Power BI bruger en række forskellige ikoner til at angive typerne af felter i en rapport. Når du genkender dem, forstår du bedre, hvordan de fungerer i forskellige visualiseringer. Se [afsnittet med ikoner for feltlisten i Brug af feltliste i Power BI Desktop](../transform-model/desktop-field-list.md#field-list-changes) for at se en komplet liste.
 
 ## <a name="next-steps"></a>Næste trin
 [Opret en rapport](service-report-create-new.md)

@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: ''
 ms.date: 11/23/2020
-ms.openlocfilehash: 17c0a4d0809aa87f50225e0c59ca3962776bd2b1
-ms.sourcegitcommit: 9d033abd9c01a01bba132972497dda428d7d5c12
+ms.openlocfilehash: 41b8cfe8515efbf3cc42794afcb2562f7d0c171a
+ms.sourcegitcommit: 30d0668434283c633bda9ae03bc2aca75401ab94
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95514455"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96907089"
 ---
 # <a name="embed-power-bi-content-with-service-principal-and-an-application-secret"></a>Integrer Power BI-indhold med tjenesteprincipal og en programhemmelighed
 
@@ -170,7 +170,7 @@ Føj den sikkerhedsgruppe, du oprettede i Microsoft Azure AD, til det specifikke
 >Hvis du vil begrænse tjenesteprincipalers adgang til specifikke lejerindstillinger, skal du kun give adgang til specifikke sikkerhedsgrupper. Du kan også oprette en dedikeret sikkerhedsgruppe til tjenesteprincipaler og udelukke den fra de ønskede lejerindstillinger.
 
 >[!div class="mx-imgBorder"]
->:::image type="content" source="media/embed-service-principal/admin-portal.png" alt-text="Skærmbillede, der viser indstillinger for udviklere i administratorindstillingerne i Power BI-portalen.":::
+>:::image type="content" source="media/embed-service-principal/admin-portal.png" alt-text="Skærmbillede, der viser indstillinger for udviklere i administratorindstillingerne i Power BI-tjenesten.":::
 
 ## <a name="step-4---add-the-service-principal-to-your-workspace"></a>Trin 4 – Føj tjenesteprincipalen til dit arbejdsområde
 
@@ -195,12 +195,9 @@ Hvis du vil aktivere adgangsartefakter til din Azure AD-app, f.eks. rapporter, d
 
 ## <a name="step-5---embed-your-content"></a>Trin 5 – Integrer dit indhold
 
-Du kan integrere dit indhold i et eksempelprogram eller i dit eget program.
+Du kan [integrere dit indhold i et eksempelprogram](embed-sample-for-customers.md) eller i dit eget program.
 
-* [Integrer indhold ved hjælp af eksempelprogrammet](embed-sample-for-customers.md#embed-content-using-the-sample-application)
-* [Integrer indhold i dit program](embed-sample-for-customers.md#embed-content-within-your-application)
-
-Når dit indhold er integreret, er du klar til at [gå videre til produktionen](embed-sample-for-customers.md#move-to-production).
+Når dit indhold er integreret, er du klar til at [gå videre til produktionen](move-to-production.md).
 
 >[!NOTE]
 >Du beskytter dit indhold ved hjælp af et certifikat ved at fuldføre de trin, der er beskrevet i [Integrer Power BI-indhold med tjenesteprincipal og et certifikat](embed-service-principal-certificate.md).

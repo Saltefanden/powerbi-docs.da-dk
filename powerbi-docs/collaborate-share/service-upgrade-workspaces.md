@@ -9,12 +9,12 @@ ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 09/30/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: d8e53e997aeef24d531cb733adc0b276a8395e57
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: f5a76783d91da610a447667a9ea648bbcebbdc8b
+ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96411603"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96577618"
 ---
 # <a name="upgrade-classic-workspaces-to-the-new-workspaces-in-power-bi"></a>Opgrader klassiske arbejdsområder til de nye arbejdsområder i Power BI
 
@@ -22,6 +22,10 @@ I denne artikel forklares det, hvordan du opgraderer eller *overfører* et klass
 
 >[!NOTE]
 >Opgradering af et arbejdsområde er tilgængelig som en offentlig prøveversion. 
+
+>[!NOTE]
+>Opgradering af et arbejdsområde kan startes af en Power BI-administrator. Administratorer af arbejdsområder modtager en mail, efter deres arbejdsområde er blevet opgraderet af deres Power BI-administrator. [Få mere at vide](../admin/service-admin-portal.md#workspaces) 
+
 
 ![Vellykket opgradering](media/service-upgrade-workspaces/power-bi-upgrade-success.png)
 
@@ -68,6 +72,7 @@ Brugere, der aktivt bruger arbejdsområdet, bliver bedt om at opdatere deres bro
 - Microsoft 365-gruppen til dit klassiske arbejdsområde påvirkes ikke af opgraderingen af arbejdsområdet i Power BI. Alle teams, SharePoint-websteder, postkasser og andre ressourcer, der administreres af Microsoft 365, ændres ikke. De forbliver intakte, når du opgraderer dit Power BI-arbejdsområde. Microsoft 365-gruppen findes som før.
 - Den måde, dit arbejdsområde sikres på efter opgraderingen, er ændret. Se afsnittet [Tilladelser efter opgradering](#permissions-after-upgrade) for at få flere oplysninger.
 - Der er mulighed for at **gå tilbage til et klassisk arbejdsområde**, hvis du har brug for det. Der er dog visse aspekter af dit arbejdsområde, der ikke gendannes helt, som de var, før de blev opgraderet. Hvis du begynder at bruge funktioner, der kun fungerer i den nye arbejdsområdeoplevelse, kan du ikke gå tilbage. Muligheden for at gå tilbage er tilgængelig i 30 dage, efter at du har opgraderet.
+- Power BI-administratorer kan starte en opgradering af et arbejdsområde. Administratorer af arbejdsområder modtager en mail, efter deres arbejdsområde er blevet opgraderet af deres Power BI-administrator.
 
 ## <a name="permissions-after-upgrade"></a>Tilladelser efter opgradering
 
@@ -193,12 +198,14 @@ Når du skifter tilbage til et klassisk arbejdsområde, gendanner du ikke en nø
 
 ## <a name="manage-migration-to-the-new-workspaces-for-your-tenant"></a>Administrer overførsel til de nye arbejdsområder for din lejer 
 
-Nogle organisationer ønsker at flytte mange eller alle arbejdsområder til den nye arbejdsområdeoplevelse. Værktøjet til opgradering af arbejdsområde gør det muligt for arbejdsområdeadministratorer at opgradere. For organisationer, der vil administrere denne, kan de udføre følgende trin.
+Organisationer, der gerne proaktivt vil migrere til den nye arbejdsområdeoplevelse, kan gøre det via Power BI-administrationsportalen. Power BI-administratoren kan vælge et eller flere arbejdsområder, der skal opgraderes. Opgraderinger af arbejdsområder, der er igangsat af Power BI-administratorer, deler de samme overvejelser og begrænsninger som for opgraderinger af arbejdsområder, der er igangsat af administratorer af arbejdsområder. [Få mere at vide](../admin/service-admin-portal.md#workspaces) 
+
+Vi anbefaler, at organisationer, der gerne vil administrere sådan en proces, udfører følgende trin for at sikre tydelig kommunikation med administratorer af berørte arbejdsområder.
 
 1. Listen over arbejdsområder i Power BI-administrationsportalen og den tilsvarende API indeholder en liste over alle arbejdsområder i Power BI. Klassiske arbejdsområder vises som typen Gruppe på listen.
-2. Du skal samarbejde med de enkelte gruppeejere eller din administrator i Microsoft 365 for at få dem til at opgradere arbejdsområdet. Hvis du vil opgradere arbejdsområdet, skal du være ejer af gruppen.
+2. Arbejd sammen med enkelte gruppeejere eller din administrator i Microsoft 365 for at give dem besked om dine planer for at opgradere deres klassiske arbejdsområder.
 
-Funktionen til opgradering af arbejdsområdet indeholder ikke værktøjer til masseopgradering eller programmatisk opgradering. Derudover vises nye Microsoft 365-grupper, der er oprettet i din organisation, stadig i Power BI.
+Funktionaliteten til opgradering af arbejdsområdet indeholder ikke værktøjer til programmatisk opgradering. Derudover vises nye Microsoft 365-grupper, der er oprettet i din organisation, stadig i Power BI.
    
    
 ## <a name="known-issues"></a>Kendte problemer
@@ -213,4 +220,5 @@ Der er flere kendte problemer, som kan opstå efter opgraderingen:
 * [Organiser arbejde i de nye arbejdsområdeoplevelser](service-new-workspaces.md)
 * [Opret de nye arbejdsområder](service-create-the-new-workspaces.md)
 * [Opret klassiske arbejdsområder](service-create-workspaces.md)
+* [Start en opgradering af et arbejdsområde, som en Power BI-administrator har igangsat](../admin/service-admin-portal.md#workspaces)
 * Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

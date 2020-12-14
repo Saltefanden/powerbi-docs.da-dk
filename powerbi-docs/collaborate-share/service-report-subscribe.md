@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 11/17/2020
+ms.date: 12/01/2020
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 384ce5efc28355ea238d5782dd1553901097e0f2
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 9d9d628ea2d478eb6a09ae8ca53b98837349a224
+ms.sourcegitcommit: 513c4b884a58e1da2680579339c24c46091bbfb2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96411672"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96613806"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Meld dig selv og andre til abonnementer på rapporter og dashboards i Power BI-tjenesten
 
@@ -28,14 +28,14 @@ Du kan melde dig selv og dine kolleger til abonnementer på de rapportsider, das
 - Medtage en vedhæftet fil med hele rapporten, hvis du abonnerer på en sideinddelt rapport.
 - Sende mail til brugere uden for lejeren, hvis Power BI-indholdet er hostet i en Premium-kapacitet.  Administratorer kan styre adgangen til, hvem der kan sende mailabonnementer til eksterne brugere, ved at udnytte indstillingerne for den eksisterende eksterne delingskontrol i Power BI Administration.
 
-![mail snapshot af dashboard](media/service-report-subscribe/power-bi-dashboard-email-new.jpg) 
+![mail snapshot af dashboard](media/service-report-subscribe/power-bi-dashboard-email-new.jpg)
 
 ## <a name="requirements"></a>Krav
 
 **Oprettelse** af et abonnement kan udføres af:
 
-- Brugere med en Power BI Pro-licens 
-- Brugere, der ser indhold i et Premium-arbejdsområde eller i en Premium-app, kan også abonnere på indhold, der findes der, selv uden en Power BI Pro-licens. 
+- Brugere med en Power BI Pro-licens
+- Brugere, der ser indhold i et Premium-arbejdsområde eller i en Premium-app, kan også abonnere på indhold, der findes der, selv uden en Power BI Pro-licens.
 
 Du behøver ikke at have redigeringstilladelser til indholdet (dashboard eller rapport) for at oprette et abonnement til dig selv, men du skal have redigeringstilladerlser for at oprette et for andre.
 
@@ -44,12 +44,12 @@ Du behøver ikke at have redigeringstilladelser til indholdet (dashboard eller r
 Uanset om du abonnerer på et dashboard, en rapport eller en sideinddelt rapport, er processen den samme. Du bruger den samme knap til at abonnere på dashboards og rapporter i Power BI-tjenesten.
 
 Det er lidt anderledes at abonnere på sideinddelte rapporter. Du kan finde flere oplysninger i [Meld dig selv og andre til et abonnement på en sideinddelt rapport i Power BI-tjenesten](../consumer/paginated-reports-subscriptions.md).
- 
+
 ![vælg ikonet Abonner](media/service-report-subscribe/power-bi-subscribe-orientation.png).
 
 1. Åbn dashboardet eller rapporten.
 2. Vælg **Abonner** på den øverste menulinje, eller vælg konvolutikonet :::image type="icon" source="media/service-report-subscribe/power-bi-icon-envelope.png" border="false":::.
-   
+
     ![Ikonet Abonner](media/service-report-subscribe/power-bi-subscribe-icon.png)
 
 1. Brug den gule skyder til at slå abonnementet til og fra. Abonnementet slettes ikke, når skyderen sættes til **Fra**. Hvis du vil slette abonnementet, skal du vælge ikonet for papirkurven.
@@ -65,8 +65,8 @@ Det er lidt anderledes at abonnere på sideinddelte rapporter. Du kan finde fler
 6. Startdatoen for dit abonnement er som standard den dato, du har oprettet det. Du har mulighed for at vælge en slutdato. Hvis du ikke angiver en slutdato, er den automatisk ét år efter startdatoen. Du kan ændre den til en hvilken som helst dato i fremtiden (op til år 9999) når som helst, før abonnementet slutter. Når et abonnement når en slutdato, ophører det, indtil du aktiveret det igen. Du modtager en meddelelse, før den planlagte slutdato, hvor du bliver spurgt, om du vil forlænge det.
 
     På skærmbilledet nedenfor kan du se, at du rent faktisk abonnerer på en _rapportside_, når du abonnerer på en rapport. Hvis du vil abonnere på mere end én side i en rapport, skal du vælge **Tilføj et andet abonnement** og vælge en anden side.
-     
-    ![Ruden Abonner](media/service-report-subscribe/power-bi-subscribe-pane.png)  
+
+    ![Ruden Abonner](media/service-report-subscribe/power-bi-subscribe-pane.png)
 
 1. (Valgfrit) Vælg, om du vil medtage et link til indholdet i Power BI, og om du vil give brugere adgang til det indhold, som du tilmelder dem.  Hvis du vælger at inkludere et link, så du opnår den bedste funktionalitet, skal du sørge for, at alle brugere har adgang til rapporten.
 2. Vælg **Gem og luk**. Dem, der abonnerer, modtager en mail og et snapshot af dashboardet eller rapportsiden med den hyppighed og det tidspunkt, du har valgt. Du kan i alt oprette op til 24 abonnementer pr. rapport eller dashboard, og du kan angive entydige modtagere, tidspunkter og hyppigheder for hvert abonnement. For alle abonnementer, der er angivet til **Efter dataopdatering** for dashboardet eller rapporten, sendes der stadig kun en mail efter den første planlagte opdatering.
@@ -102,7 +102,7 @@ Power BI-administratorer kan bruge Power BI-overvågningslogge til at få vist o
 - Indhold, der abonneres på
 - Modtagere
 - Hyppighed
-- Ændret af/
+- Ændret af
 - Dato for ændring
 
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
@@ -118,7 +118,7 @@ Power BI-administratorer kan bruge Power BI-overvågningslogge til at få vist o
     - Selvom du har en Power BI Pro-licens, har du muligvis ikke en Microsoft Exchange-licens. Hvis det ikke er tilfældet, er der måske ikke angivet en mail eller alternativ mailadresse for din Azure Active Directory-konto. Selvom det ser ud til, at abonnementet sendes, så modtager du i dette tilfælde aldrig en kopi.  Hvis din Power BI-administrator tildeler en mailadresse, synkroniseres opdateringen med Power BI, næste gang du logger på, og den mailadresse, der er knyttet til abonnementet, bruges.
 
 - Hvis dit dashboard eller din rapport er i Premium-kapacitet, kan du bruge mailaliasser for grupper til abonnementer i stedet for at oprette abonnementer for kollegaer én mailadresse ad gangen. Aliasserne er baseret på det aktuelle Active Directory.
-- Hvis dit indhold ikke er i Premium-kapacitet, er det kun Power BI Pro-brugere, der kan modtage mailabonnementer. 
+- Hvis dit indhold ikke er i Premium-kapacitet, er det kun Power BI Pro-brugere, der kan modtage mailabonnementer.
 - Abonnementer understøtter i øjeblikket ikke bogmærker.
 - Indstillingen for at give adgang til rapporten/dashboardet vises altid som aktiveret, når du redigerer et eksisterende abonnement.  Hvis du fjerner markeringen i denne indstilling og gemmer abonnementet, gemmes den pågældende tilstand. Men når du skifter til at redigere rapporten igen, bliver den som standard markeret.
 - Hvis du har en alternativ mailadresse, men ingen primær, bruges den alternative i Power BI til at levere abonnementet.
@@ -141,9 +141,18 @@ Power BI-administratorer kan bruge Power BI-overvågningslogge til at få vist o
 - Mailabonnementer understøtter ikke R-drevne brugerdefinerede visualiseringer på nuværende tidspunkt.
 - Mailabonnementer sendes med rapportens tilstande for standardfilter og -udsnit. Hvis du ændrer standardværdierne, efter du har oprettet abonnementet, vises de ikke i mailen. Sideinddelte rapporter understøtter denne egenskab og giver dig mulighed for at angive de specifikke parameterværdier pr. abonnement.
 - Lad os sige, at du har en rapport med en direkte forbindelse til Analysis Services, og du har det abonnementssæt, der skal køres, efter opdateringen af dataene. Det køres, første gang Power BI-tjenesten registrerer en ændring i modellen i det lokale miljø, når den forespørger Analysis Services-forekomsten.  Power BI kontrollerer hver time, om der er ændringer i Analysis Services-datamodellen for at bestemme, hvornår abonnementet skal sendes.
+- Funktionen til vedhæftning af fulde rapporter er tilgængelig til rapporter, der opfylder disse tre betingelser:
+
+    - De er i et opgraderet arbejdsområde med [Power BI Premium eller Premium Per User](../admin/service-premium-what-is.md). 
+    - Den vedhæftede fil er under 25 MB.
+    - Rapporten har færre end 20 sider. 
+    
+    Hvis rapporten ikke opfylder disse tre betingelser, kan du ikke oprette abonnementer med fulde rapporter som vedhæftede filer. Alle eksisterende abonnementer med fulde rapporter som vedhæftede filer er deaktiveret, og du modtager en mail med en forklaring på fejlen:
+    
+    :::image type="content" source="media/service-report-subscribe/full-report-attachment-error-email.png" alt-text="Mail med fejl i forbindelse med en fuld rapport som vedhæftet fil.":::
 
 ## <a name="next-steps"></a>Næste trin
 
-- [Meld dig selv og andre til et abonnement på en sideinddelt rapport i Power BI-tjenesten](../consumer/paginated-reports-subscriptions.md)
-- Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)    
-- [Læs blogindlægget](https://powerbi.microsoft.com/blog/introducing-dashboard-email-subscriptions-a-360-degree-view-of-your-business-in-your-inbox-every-day/)
+- [Sideinddelte rapporter i Power BI-tjenesten: Tilmeld dig selv og andre](../consumer/paginated-reports-subscriptions.md)
+- Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+- Læs [Power BI-blogindlægget om mailabonnementer på dashboards](https://powerbi.microsoft.com/blog/introducing-dashboard-email-subscriptions-a-360-degree-view-of-your-business-in-your-inbox-every-day/)

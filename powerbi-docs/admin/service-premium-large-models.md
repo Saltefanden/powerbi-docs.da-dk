@@ -1,42 +1,59 @@
 ---
-title: Store modeller i Power BI Premium (prøveversion)
-description: Funktionen Store modeller gør det muligt at øge størrelsen på datasæt i Power BI Premium til mere end 10 GB.
+title: Store datasæt i Power BI Premium
+description: Med Lagerformat af store datasæt kan størrelsen af datasæt i Power BI Premium øges til mere end 10 GB.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 11/11/2020
+ms.date: 12/04/2020
+ms.custom: references_regions
 LocalizationGroup: Premium
-ms.openlocfilehash: 0bb6f7bf46875e0af7c09d221c73ae5e4b70b2df
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 1f9a34b68f465eda5b8921e48576c9bef5d17f36
+ms.sourcegitcommit: 0bf42b6393cab7a37d21a52b934539cf300a08e2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96412224"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96781684"
 ---
-# <a name="large-models-in-power-bi-premium-preview"></a>Store modeller i Power BI Premium (prøveversion)
+# <a name="large-datasets-in-power-bi-premium"></a>Store datasæt i Power BI Premium
 
-I Power BI-datasæt kan der gemmes data i en højkomprimeret cache i hukommelsen for at optimere forespørgselsydeevnen og muliggøre hurtig brugerinteraktivitet på tværs af store datasæt. Funktionen Store modeller gør det muligt at øge størrelsen på datasæt i Power BI Premium til mere end 10 GB. Datasættets størrelse er i stedet begrænset af Power BI Premium-kapacitetens størrelse, som minder om, hvordan Azure Analysis Services fungerer i forbindelse med begrænsninger for modelstørrelser. Du kan finde flere oplysninger om kapacitetsstørrelser i Power BI Premium under Kapacitetsnoder. Du kan konfigurere store modeller for alle Premium P-SKU'er og integrerede A-SKU'er, men de fungerer kun sammen med [nye arbejdsområder](../collaborate-share/service-create-the-new-workspaces.md).
+Power BI-datasæt kan gemme data i en yderst komprimeret cache i hukommelsen, hvilket sikrer en optimeret forespørgselsydeevne og muliggør hurtig brugerinteraktivitet. Med Premium-kapaciteter muliggøres store datasæt over standardgrænsen på 10 GB via indstillingen **Lagerformat af store datasæt**. Når indstillingen er aktiveret, begrænses størrelsen af datasættet til størrelsen af Premium-*kapaciteten*.
 
-Store modeller påvirker ikke PBIX-uploadstørrelsen, der stadig er begrænset til 10 GB. I stedet øges datasæt til mere end 10 GB i tjenesten ved opdatering. Du kan bruge trinvis opdatering til at konfigurere et datasæt, så det bliver større end 10 GB.
+Store datasæt er mulige for alle Premium P SKU'er og integrerede A SKU'er. Grænsen for størrelsen af store datasæt i Premium kan sammenlignes med Azure Analysis Services, hvad angår begrænsninger for størrelsen af datamodellen.
 
-## <a name="enable-large-models"></a>Aktivér store modeller
+Indstillingen Lagerformat af store datasæt kræves, før størrelsen af datasæt kan øges til mere end 10 GB, men den giver også yderligere fordele. Hvis du har planer om at bruge værktøjer, der er baseret på XMLA-slutpunkter, til skrivehandlinger for datasættet, skal du sørge for at aktivere indstillingen, selv for datasæt, som du ikke nødvendigvis ville karakterisere som et *stort* datasæt. Når indstillingen er aktiveret, kan Lagerformat af store datasæt forbedre ydeevnen af XMLA-skrivehandlinger.
 
-Følg disse trin for at oprette et datasæt, der øges til mere end 10 GB:
+Store datasæt i tjenesten påvirker ikke størrelsen af upload af Power BI Desktop-modeller, som stadig er begrænset til 10 GB. Datasæt kan i stedet øges til mere end 10 GB i tjenesten i forbindelse med opdatering.
 
-1. Opret et datasæt i Power BI Desktop, og konfigurer en [trinvis opdatering](service-premium-incremental-refresh.md).
+## <a name="enable-large-datasets"></a>Muliggør store datasæt
 
-1. Publicer datasættet til Power BI Premium-tjenesten.
+Disse trin indeholder en beskrivelse af, hvordan du muliggør store datasæt for en ny model, der er publiceret i tjenesten. Det er kun trin tre, der er nødvendig til eksisterende datasæt.
 
-1. Aktivér datasættet til store modeller ved at køre PowerShell-cmdlet'er nedenfor. Disse cmdlet'er får Power BI til at gemme datasættet i Azure Premium-filer og ikke gennemtvinge grænsen på 10 GB.
+1. Opret en model i Power BI Desktop. Hvis dit datasæt bliver større og gradvist bruger mere hukommelse, skal du konfigurere [Trinvis opdatering](service-premium-incremental-refresh.md).
 
-1. Kald en opdatering for at indlæse historiske data baseret på politikken for trinvis opdatering. Det kan tage et stykke tid at indlæse historikken ved den første opdatering. Efterfølgende opdateringer bør være hurtigere, da de er trinvise.
+1. Publicer modellen til tjenesten som et datasæt.
 
-### <a name="powershell-cmdlets"></a>PowerShell-cmdlet'er
+1. I tjenesten > datasæt > **Indstillinger** skal du udvide **Lagerformat af store datasæt**, sætte skyderen til **On** og derefter klikke på **Anvend**.
 
-Aktivér datasættet til lagring i Premium-filer ved hjælp af PowerShell-cmdlet'er i den aktuelle version af store modeller. Du skal have administratorrettigheder til kapacitet og arbejdsområde for at køre PowerShell-cmdlet'er.
+    :::image type="content" source="media/service-premium-large-models/enable-large-dataset.png" alt-text="Skyder til muliggørelse af store datasæt":::
+
+1. Kald en opdatering for at indlæse historiske data baseret på politikken for trinvis opdatering. Det kan tage et stykke tid at indlæse historikken ved den første opdatering. Efterfølgende opdateringer bør være hurtigere, afhængigt af din politik for trinvis opdatering.
+
+## <a name="set-default-storage-format"></a>Angiv standardlagerformat
+
+Alle nye datasæt, der oprettes i et arbejdsområde, som er tildelt en Premium-kapacitet, kan som standard have indstillingen Lagerformat af store datasæt aktiveret.
+
+1. Klik på **Indstillinger** > **Premium** i arbejdsområdet.
+
+1. Under **Standardlagerformat** skal du vælge **Lagerformat af store datasæt** og derefter klikke på **Gem**.
+
+    :::image type="content" source="media/service-premium-large-models/default-storage-format.png" alt-text="Aktivér standardlagerformat":::
+
+### <a name="enable-with-powershell"></a>Aktivér med PowerShell
+
+Du kan også aktivere indstillingen Lagerformat af store datasæt ved hjælp af PowerShell. Du skal have administratorrettigheder til kapacitet og arbejdsområde for at køre PowerShell-cmdlet'er.
 
 1. Find datasæt-id’et (GUID). Du kan se id'et i URL'en under datasætindstillingerne under fanen **Datasæt** for arbejdsområdet.
 
@@ -66,7 +83,7 @@ Aktivér datasættet til lagring i Premium-filer ved hjælp af PowerShell-cmdlet
     <Dataset ID>         Abf
     ```
 
-1. Kør følgende cmdlet'er for at indstille lagringstilstanden til Premium-filer og kontrollere den. Det kan tage et par sekunder at konvertere til Premium-filer.
+1. Kør følgende cmdletter for at angive lagertilstanden. Det kan tage et par sekunder at konvertere til Premium-filer.
 
     ```powershell
     Set-PowerBIDataset -Id <Dataset ID> -TargetStorageMode PremiumFiles
@@ -112,20 +129,18 @@ SELECT * FROM SYSTEMRESTRICTSCHEMA
 
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
 
-Vær opmærksom på følgende begrænsninger, når du bruger store modeller:
+Vær opmærksom på følgende begrænsninger, når du bruger store datasæt:
 
-- **Multi-Geo-understøttelse**: Datasæt, der er aktiveret til Premium-filer, mislykkes på kapaciteter, hvor [Multi-Geo](service-admin-premium-multi-geo.md) også er aktiveret.
+- **Nye arbejdsområder er påkrævet**: Store datasæt fungerer kun sammen med [Nye arbejdsområder](../collaborate-share/service-create-the-new-workspaces.md).
 
 - **Download Power BI Desktop**: Hvis et datasæt er gemt i Premium-filer, mislykkes [download som en. pbix](../create-reports/service-export-to-pbix.md)-fil.
-- **Understøttede områder**: Store modeller understøttes i alle Azure-områder, der understøtter Premium files Storage. Hvis du vil vide mere, skal du se [Produkter, der er tilgængelige efter område](https://azure.microsoft.com/global-infrastructure/services/?products=storage), og se tabellen i det følgende afsnit.
+- **Understøttede områder**: Store datasæt understøttes i alle Azure-områder, der understøtter Premium File Storage. Hvis du vil vide mere, skal du se [Produkter, der er tilgængelige efter område](https://azure.microsoft.com/global-infrastructure/services/?products=storage), og se tabellen i det følgende afsnit.
 
+## <a name="region-availability"></a>Områdetilgængelighed
 
-## <a name="availability-in-regions"></a>Tilgængelighed efter område
+Store datasæt i Power BI er kun tilgængelige i bestemte Azure-områder, der understøtter [Azure Premium File Storage](/azure/storage/files/storage-files-planning#storage-tiers).
 
-Store modeller i Power BI er kun tilgængelige i visse Azure-områder, der understøtter [Azure Premium File Storage](/azure/storage/files/storage-files-planning#storage-tiers).
-
-Følgende liste indeholder områder, hvor store modeller i Power BI er tilgængelige. Det er kun de områder, der er på følgende liste, hvor store modeller understøttes:
-
+Følgende liste indeholder områder, hvor store datasæt i Power BI er tilgængelige. Det er kun de områder, der er på følgende liste, hvor store modeller understøttes:
 
 |Azure-område  |Forkortelse for Azure-område  |
 |---------|---------|
@@ -149,8 +164,6 @@ Følgende liste indeholder områder, hvor store modeller i Power BI er tilgænge
 |Det vestlige USA     | westus        |
 |Det vestlige USA 2     | Det vestlige USA 2        |
 
-
-
 ## <a name="next-steps"></a>Næste trin
 
 Følgende links indeholder oplysninger, der kan være nyttige til at arbejde med store modeller:
@@ -160,7 +173,6 @@ Følgende links indeholder oplysninger, der kan være nyttige til at arbejde med
 * [Medbring dine egne krypteringsnøgler til Power BI](service-encryption-byok.md)
 * [Sådan fungerer kapaciteter](service-premium-what-is.md#how-capacities-function)
 * [Trinvis opdatering](service-premium-incremental-refresh.md)
-
 
 Power BI har introduceret Power BI Premium Gen2 som et prøveversionstilbud, der forbedrer Power BI Premium-oplevelsen på følgende områder:
 * Ydeevne

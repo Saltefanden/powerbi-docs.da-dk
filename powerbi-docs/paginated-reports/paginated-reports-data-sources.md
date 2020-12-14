@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 11/12/2020
-ms.openlocfilehash: e26e273ff16d67defb9299c226a8435a75b93661
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.date: 12/07/2020
+ms.openlocfilehash: 4368230812d90031d1f7cf83d426fc1508382412
+ms.sourcegitcommit: 0bf42b6393cab7a37d21a52b934539cf300a08e2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96398332"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96781928"
 ---
 # <a name="supported-data-sources-for-power-bi-paginated-reports"></a>Understøttede datakilder for sideinddelte rapporter i Power BI
 
@@ -30,7 +30,7 @@ Følgende liste over datakilder understøttes i det oprindelige miljø i sideind
 | Azure SQL Database <br>Azure SQL Data Warehouse | Basic, enkeltlogon (SSO), OAuth2 | Du kan bruge en virksomhedsgateway sammen med Azure SQL Database. Du kan dog ikke bruge SSO eller oAuth2 til at godkende i disse scenarier.   |
 | Administreret forekomst af Azure SQL | Grundlæggende | via et offentligt eller privat slutpunkt (det private slutpunkt skal routes via Enterprise-gateway)  |
 | Azure Analysis Services | SSO, OAuth2 | AAS-firewallen skal være deaktiveret eller konfigureret til at tillade alle IP-områder i BlackForest-området. Dette gælder kun i BlackForest-området.  SSO fra ekstern lejer understøttes ikke. |
-| Power BI-datasæt | SSO | Power BI Premium-datasæt og datasæt, der ikke er Premium. Kræver læserettigheder |
+| Power BI-datasæt | SSO | Power BI Premium-datasæt og datasæt, der ikke er Premium. Kræver læserettigheder. Det er kun Importtilstand og DirectQuery Power BI-datasæt, der understøttes. |
 | Power BI Premium-datasæt (XMLA) | SSO | Power BI-datasæt understøttes ikke som en datakilde for integrerede sideinddelte rapporter i "app ejer data"-scenarier.  Hvis du vil sikre korrekt forbindelse til Power BI Report Builder, skal du sørge for, at indstillingen "Brug ikke legitimationsoplysninger" er valgt, når du angiver din datakilde.   |
 | Angiv data | I/T | Data er integreret i rapporten. |
 

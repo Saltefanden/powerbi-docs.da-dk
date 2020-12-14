@@ -7,15 +7,15 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 11/05/2020
+ms.date: 12/01/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 4e71580857827a370676c4d05274c4c57b1d56c5
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: b238daa82bc2ae039c137c259ca8f63044281e6f
+ms.sourcegitcommit: 513c4b884a58e1da2680579339c24c46091bbfb2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96413489"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96613710"
 ---
 # <a name="dataset-connectivity-with-the-xmla-endpoint"></a>Netværksmulighed for datasæt med XMLA-slutpunktet
 
@@ -23,7 +23,7 @@ Power BI Premium-arbejdsområder og -datasæt på kompatibilitetsniveau 1500 og 
 
 ## <a name="whats-an-xmla-endpoint"></a>Hvad er et XMLA-slutpunkt?
 
-I Power BI Premium bruges [XMLA](/analysis-services/xmla/xml-for-analysis-xmla-reference?view=power-bi-premium-current&preserve-view=true)-protokollen (XML for Analysis) til kommunikation mellem klientprogrammer og det program, som administrerer dine Power BI-arbejdsområder og datasæt. Denne kommunikation sker via det, der ofte kaldes XMLA-slutpunkter. XMLA er den samme kommunikationsprotokol, der bruges af Microsoft Analysis Services-programmet, som under overfladen udfører semantisk modellering, styring, livscyklus og dataadministration i Power BI.
+I Power BI Premium bruges [XMLA](/analysis-services/xmla/xml-for-analysis-xmla-reference?view=power-bi-premium-current&preserve-view=true)-protokollen (XML for Analysis) til kommunikation mellem klientprogrammer og det program, som administrerer dine Power BI-arbejdsområder og datasæt. Denne kommunikation sker via det, der ofte kaldes XMLA-slutpunkter. XMLA er den samme kommunikationsprotokol, der bruges af Microsoft Analysis Services-programmet, som under overfladen udfører semantisk modellering, styring, livscyklus og dataadministration i Power BI. Data, der sendes via XMLA-protokollen, er fuldt krypteret.
 
 Som standard er *skrivebeskyttet* netværksmulighed ved hjælp af slutpunktet aktiveret for **arbejdsbelastningen for datasæt** i en kapacitet. Med skrivebeskyttet netværksmulighed kan datavisualiseringsprogrammer og -værktøjer forespørge datasætmodeldata, metadata, hændelser og skemaer. *Læse-/skrive* handlinger, der bruger slutpunktet, kan aktiveres, hvilket giver yderligere administration af datasæt, styring, avanceret semantisk modellering, fejlfinding og overvågning. Når læse-/skrive-handlinger er aktiveret, har Power BI Premium-datasæt mere paritet med Azure Analysis Services' og SQL Server Analysis Services' tabellariske modelleringsværktøjer og -processer i virksomhedsklasse.
 
@@ -32,7 +32,7 @@ Som standard er *skrivebeskyttet* netværksmulighed ved hjælp af slutpunktet ak
 
 ## <a name="data-modeling-and-management-tools"></a>Datamodellerings- og administrationsværktøjer
 
-Dette er nogle af de mest almindelige værktøjer, der bruges sammen med Azure Analysis Services og SQL Server Analysis Services og understøttes nu af Power BI Premium-datasæt:
+Nedenfor er nogle af de mest almindelige værktøjer, der bruges sammen med Azure Analysis Services og SQL Server Analysis Services, og som nu understøttes af Power BI Premium-datasæt:
 
 **Visual Studio med Analysis Services-projekter** – også kendt som SQL Server Data Tools eller blot **SSDT**, er et modeloprettelsesværktøj i virksomhedsklasse til oprettelse af tabellariske Analysis Services-modeller. Analysis Services-projektudvidelser understøttes i alle Visual Studio 2017-udgaver og nyere udgaver, herunder den gratis Community-udgave. Udvidelsesversion 2.9.6 eller nyere er påkrævet for at udrulle tabellariske modeller i et Premium-arbejdsområde. Når du udruller til et Premium-arbejdsområde, skal modellen have et kompatibilitetsniveau på 1500 eller derover. Læse-/skriveadgang til XMLA er påkrævet til arbejdsbelastningen for datasæt. Du kan få mere at vide under [Værktøjer til Analysis Services](/analysis-services/tools-and-applications-used-in-analysis-services?view=power-bi-premium-current&preserve-view=true).
 
@@ -50,7 +50,7 @@ Dette er nogle af de mest almindelige værktøjer, der bruges sammen med Azure A
 
 **DAX Studio** – Et værktøj med åben kildekode til DAX-oprettelse, -diagnosticering, -justering af ydeevne og analyse. Funktionerne omfatter objektgennemsyn, integreret sporing, udspecificering af udførelse af forespørgsler med detaljeret statistik, fremhævning og formatering af DAX-syntaks. Skrivebeskyttet adgang til XMLA er påkrævet til forespørgselshandlinger. Du kan få mere at vide under  [daxstudio.org](https://daxstudio.org/).
 
-**ALM Toolkit** – Et værktøj til skemasammenligning med åben kildekode til Power BI-datasæt, der oftest bruges til ALM-scenarier (Application Lifecycle Management). Udfør udrulning på tværs af miljøer, og bevar historiske data med trinvis opdatering. Sammenlig og flet metadatafiler, forgreninger og lagre. Genbrug fælles definitioner på datasæt. Skrivebeskyttet adgang er påkrævet til forespørgselshandlinger. Læse-/skriveadgang er påkrævet til metadatahandlinger. Du kan få mere at vide under [alm-toolkit.com](http://alm-toolkit.com/).
+**ALM Toolkit** – Et værktøj til skemasammenligning med åben kildekode til Power BI-datasæt, der oftest bruges til ALM-scenarier (Application Lifecycle Management). Udfør udrulning på tværs af miljøer, og bevar historiske data med trinvis opdatering. Sammenlign og flet metadatafiler, forgreninger og lagre. Genbrug fælles definitioner på datasæt. Skrivebeskyttet adgang er påkrævet til forespørgselshandlinger. Læse-/skriveadgang er påkrævet til metadatahandlinger. Du kan få mere at vide under [alm-toolkit.com](http://alm-toolkit.com/).
 
 **Microsoft Excel** – Excel-pivottabeller er et af de mest almindelige værktøjer, der bruges til at opsummere, analysere, udforske og præsentere oversigtsdata fra Power BI-datasæt. Skrivebeskyttet adgang er påkrævet til forespørgselshandlinger. Klik og Kør-versionen af Office 16.0.11326.10000 eller nyere er påkrævet.
 
@@ -58,7 +58,7 @@ Dette er nogle af de mest almindelige værktøjer, der bruges sammen med Azure A
 
 ### <a name="client-libraries"></a>Klientbiblioteker
 
-Klientprogrammer kommunikerer ikke direkte med XMLA-slutpunktet. De bruger i stedet *klient biblioteker* som abstraktionslag. Dette er de samme klientbiblioteksprogrammer, der bruges til at oprette forbindelse til Azure Analysis Services og SQL Server Analysis Services. Microsoft-programmer, f.eks. Excel, SSMS (SQL Server Management Studio) og Analysis Services-projektudvidelse til Visual Studio, installerer alle tre klientbiblioteker og opdaterer dem sammen med regelmæssige opdateringer af programmer og udvidelser. Udviklere kan også bruge klientbibliotekerne til at bygge brugerdefinerede programmer. I nogle tilfælde og især i forbindelse med tredjepartsprogrammer kan det være nødvendigt at installere nyere versioner af klientbibliotekerne, hvis de ikke installeres sammen med programmet. Klientbiblioteker opdateres hver måned. Du kan få mere at vide under  [Klientbiblioteker for oprettelse af forbindelse til Analysis Services](/azure/analysis-services/analysis-services-data-providers).
+Klientprogrammer kommunikerer ikke direkte med XMLA-slutpunktet. De bruger i stedet *klient biblioteker* som abstraktionslag. Dette er de samme klientbiblioteker, som programmer bruger til at oprette forbindelse til Azure Analysis Services og SQL Server Analysis Services. Microsoft-programmer, f.eks. Excel, SSMS (SQL Server Management Studio) og Analysis Services-projektudvidelse til Visual Studio, installerer alle tre klientbiblioteker og opdaterer dem sammen med regelmæssige opdateringer af programmer og udvidelser. Udviklere kan også bruge klientbibliotekerne til at bygge brugerdefinerede programmer. I nogle tilfælde og især i forbindelse med tredjepartsprogrammer kan det være nødvendigt at installere nyere versioner af klientbibliotekerne, hvis de ikke installeres sammen med programmet. Klientbiblioteker opdateres hver måned. Du kan få mere at vide under  [Klientbiblioteker for oprettelse af forbindelse til Analysis Services](/azure/analysis-services/analysis-services-data-providers).
 
 ## <a name="optimize-datasets-for-write-operations-by-enabling-large-models"></a>Optimer datasæt for skrivehandlinger ved at aktivere store modeller
 
@@ -70,7 +70,7 @@ Som standard er XMLA-slutpunktets egenskabsindstilling aktiveret til skrivebesky
 
 ### <a name="to-enable-read-write-for-a-capacity"></a>Sådan aktiverer du læse/skrive-adgang for en kapacitet
 
-1. Klik på **Kapacitetsindstillinger** > **Power BI Premium** > kapacitetsnavn i administrationsportalen.
+1. Vælg **Kapacitetsindstillinger** > **Power BI Premium** > kapacitetsnavn på administrationsportalen.
 2. Udvid **Arbejdsbelastninger**. Vælg **Læsning og skrivning** i indstillingen **XMLA-slutpunkt**.
 
     ![Aktivér XMLA-slutpunkt](media/service-premium-connect-tools/xmla-endpoint-enable.png)
@@ -91,7 +91,7 @@ B2B-brugere skal angive deres organisations UPN i lejernavnet. F.eks.
 
 ### <a name="to-get-the-workspace-connection-url"></a>Sådan henter du URL-adressen til arbejdsområdet
 
-Klik på **Kopiér** i arbejdsområdet **Indstillinger** > **Premium** > **Arbejdsområdeforbindelse**.
+Under **Indstillinger** > **Premium** > **Forbindelse til arbejdsområde** i arbejdsområdet skal du vælge **Kopiér**.
 
 ![Forbindelsesstreng for arbejdsområde](media/service-premium-connect-tools/xmla-endpoint-workspace-connection.png)
 
@@ -99,11 +99,11 @@ Klik på **Kopiér** i arbejdsområdet **Indstillinger** > **Premium** > **Arbej
 
 ### <a name="initial-catalog"></a>Oprindeligt katalog
 
-For nogle funktioner, f.eks. SQL Server Profiler, skal du muligvis angive et *oprindeligt katalog*. Angiv et datasæt (en database) i dit arbejdsområde. Klik på **Indstillinger** > **Egenskaber for forbindelse** > **Opret forbindelse til database** i dialogboksen **Opret forbindelse til server**, og angiv datasættets navn.
+For nogle funktioner, f.eks. SQL Server Profiler, skal du muligvis angive et *oprindeligt katalog*. Angiv et datasæt (en database) i dit arbejdsområde. I dialogboksen **Opret forbindelse til server** skal du vælge **Indstillinger** > **Egenskaber for forbindelse** > **Opret forbindelse til database** og angive navnet på datasættet.
 
 ### <a name="duplicate-workspace-names"></a>Identiske navne på arbejdsområder
 
-[Nye arbejdsområder](../collaborate-share/service-new-workspaces.md) (oprettet ved hjælp af den nye arbejdsområdeoplevelse) i Power BI pålægger validering for ikke at tillade oprettelse eller omdøbning af arbejdsområder med identiske navne. Arbejdsområder, der ikke er overført, kan resultere i identiske navne. Når du opretter forbindelse til et arbejdsområde med det samme navn som et andet arbejdsområde, kan du få følgende fejl:
+[Nye arbejdsområder](../collaborate-share/service-new-workspaces.md) (oprettet ved hjælp af den nye arbejdsområdeoplevelse) i Power BI pålægger validering for ikke at tillade oprettelse eller omdøbning af arbejdsområder med identiske navne. Arbejdsområder, der ikke er migreret, kan resultere i identiske navne. Når du opretter forbindelse til et arbejdsområde med det samme navn som et andet arbejdsområde, kan du få følgende fejl:
 
 **Der kan ikke oprettes forbindelse til powerbi://api.powerbi.com/v1.0/ [lejernavn]/[navn på arbejdsområde].**
 
@@ -120,7 +120,7 @@ Når du opretter forbindelse til et arbejdsområde, kan der gå nogle minutter, 
 
 ### <a name="unsupported-datasets"></a>Ikke-understøttede datasæt
 
-Følgende datasæt er ikke tilgængelige for XMLA-slutpunkter. Disse datasæt vises ikke under arbejdsområdet i SSMS eller i andre værktøjer:
+Følgende datasæt er ikke tilgængelige for XMLA-slutpunkter. Disse datasæt vises ikke under arbejdsområdet i SQL Server Management Studio eller i andre værktøjer:
 
 - Datasæt, der er baseret på en direkte forbindelse til Azure Analysis Services eller SQL Server Analysis Services. 
 - Datasæt, der er baseret på en direkte forbindelse til et Power BI-datasæt i et andet arbejdsområde. Du kan få mere at vide under [Introduktion til datasæt på tværs af arbejdsområder](../connect-data/service-datasets-across-workspaces.md).
@@ -129,9 +129,15 @@ Følgende datasæt er ikke tilgængelige for XMLA-slutpunkter. Disse datasæt vi
 
 ## <a name="security"></a>Sikkerhed
 
-Ud over den egenskab for XMLA-slutpunktet, der aktiveres til læse-/skrivetilstand af kapacitetsadministratoren, skal indstillingen **Eksportér data** på lejerniveau i Power BI-administrationsportalen, som også er påkrævet for Analysér i Excel, være aktiveret.
+Ud over den egenskab for XMLA-slutpunktet, der aktiveres til læse-/skrivetilstand af kapacitetsadministratoren, skal indstillingen **Tillad XMLA-slutpunkter og Analysér i Excel med datasæt i det lokale miljø** på lejerniveau være aktiveret på administrationsportalen. Hvis du har brug for at generere AIXL-filer, der opretter forbindelse til XMLA-slutpunktet, skal indstillingen **Tillad direkte forbindelser** på lejerniveau også aktiveres. Disse indstillinger er begge aktiveret som standard.
 
-![Aktivér Eksportér data](media/service-premium-connect-tools/xmla-endpoint-export-data.png)
+**Tillad XMLA-slutpunkter og Analysér i Excel med datasæt i det lokale miljø** er en indstilling for integration.
+
+:::image type="content" source="media/service-premium-connect-tools/allow-xmla-endpoints.png" alt-text="Indstillinger for integration tillader XMLA-slutpunkter.":::
+
+**Tillad direkte forbindelser** er en indstilling for eksport og deling.
+
+:::image type="content" source="media/service-premium-connect-tools/allow-live-connections.png" alt-text="Indstillinger for eksport og deling tillader direkte forbindelser.":::
 
 Adgang via XMLA-slutpunktet overholder det medlemskab af sikkerhedsgrupper, der er angivet på arbejdsområde-/appniveau.
 
@@ -184,7 +190,7 @@ Når egenskaben Installationsserver er angivet, kan projektet udrulles.
 
 **Når et projektet er udrullet første gang**, oprettes der et datasæt i arbejdsområdet ved hjælp af metadata fra model.bim. Som en del af udrulningshandlingen, kan behandling med henblik på indlæsning af data i datasættet fra datakilder ikke udføres, efter at datasættet er blevet oprettet i arbejdsområdet fra modelmetadata.
 
-Behandlingen mislykkes, eftersom legitimationsoplysninger ikke kan angives som en del af udrulninghandlingen, når der udrulles til en Premium-arbejdsområdedatakilde. Dette er ikke tilfældet, når der udrulles til en Azure- eller SQL Server Analysis Server-instans, hvor der anmodes om legitimationsoplysninger som en del af udrulningshandlingen. I stedet angives legitimationsoplysninger for datakilden i Power BI Service i datasætindstillingerne, efter at metadataene er udrullet, og datasættet er oprettet. Klik på **Datasæt** > **Indstillinger** > **Legitimationsoplysninger for datakilde** > **Rediger legitimationsoplysninger** i arbejdsområdet.
+Behandlingen mislykkes, eftersom legitimationsoplysninger ikke kan angives som en del af udrulninghandlingen, når der udrulles til en Premium-arbejdsområdedatakilde. Dette er ikke tilfældet, når der udrulles til en Azure- eller SQL Server Analysis Server-instans, hvor der anmodes om legitimationsoplysninger som en del af udrulningshandlingen. I stedet angives legitimationsoplysninger for datakilden i Power BI Service i datasætindstillingerne, efter at metadataene er udrullet, og datasættet er oprettet. Vælg **Datasæt** > **Indstillinger** > **Legitimationsoplysninger for datakilde** > **Rediger legitimationsoplysninger** i arbejdsområdet.
 
 ![Legitimationsoplysninger for datakilde](media/service-premium-connect-tools/xmla-endpoint-datasource-credentials.png)
 
@@ -198,7 +204,7 @@ Brug af SSMS til at oprette forbindelse til et arbejdsområde svarer til at opre
 
 ### <a name="connect-to-a-workspace-by-using-ssms"></a>Opret forbindelse til et arbejdsområde ved hjælp af SSMS
 
-1. Klik på **Opret forbindelse** > **Opret forbindelse til server** i SQL Server Management Studio.
+1. Vælg **Opret forbindelse** > **Opret forbindelse til server** i SQL Server Management Studio.
 
 2. Vælg **Analysis Services** i **Servertype**. Angiv URL-adressen til arbejdsområdet i **Servernavn**. Vælg **Active Directory - Universal with MFA Support** under **Godkendelse**, og angiv derefter dit organisationsbruger-id i **Brugernavn**.
 

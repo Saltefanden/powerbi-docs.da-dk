@@ -1,6 +1,6 @@
 ---
-title: Integrer indhold i en applikation for dine kunder
-description: Få mere at vide om, hvordan du integrerer en rapport, et dashboard eller et felt i et program ved hjælp af Power BI-API'er for at bruge integreret analyse for dine kunder. Få mere at vide om, hvordan du integrerer Power BI i dit program ved hjælp af software til integreret analyse, integrerede analyseværktøjer eller integrerede værktøjer til business intelligence.
+title: Integrer indhold i et program for dine kunder
+description: Lær, hvordan du integrerer en rapport, et dashboard eller et felt i et integreret Power BI-analyseeksempel.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: rkarlin
@@ -8,463 +8,593 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
-ms.date: 06/02/2020
-ms.openlocfilehash: dab16218406a4b97c9e2aa01974380ba09dde003
-ms.sourcegitcommit: 5240990f998851c4854eb565de681099264c5a61
+ms.date: 12/02/2020
+ms.openlocfilehash: 7bc825992f5c7382e1c0a24783f732957913c588
+ms.sourcegitcommit: 30d0668434283c633bda9ae03bc2aca75401ab94
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94719000"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96907145"
 ---
-# <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Selvstudium: Integrer Power BI-indhold i en app til dine kunder
+# <a name="tutorial-embed-power-bi-content-using-a-sample-embed-for-your-customers-application"></a>Selvstudium: Integrer Power BI-indhold ved hjælp af et eksempelprogram til *integrering for dine kunder*
 
-Med **Power BI Embedded i Azure** eller **Power BI-integration i Office** kan du integrere rapporter, dashboards eller felter i et program ved hjælp af "appen ejer dataene". **App owns data** handler om at have et program, der bruger Power BI som sin integrerede analyseplatform. Som **ISV** eller **udvikler** kan du oprette Power BI-indhold, der viser rapporter, dashboards eller felter i et program, som er fuldt integreret og interaktivt, uden at brugerne skal have en Power BI-licens. I dette selvstudium kan du se, hvordan du integrerer en rapport i et program ved hjælp af Power BI .NET SDK med Power BI JavaScript-API'en.
+Med **integreret analyse** og **Power BI Embedded** (Azure-tilbuddet) kan du integrere Power BI-indhold såsom rapporter, dashboards og felter i dit program.
 
-![Integrer Power BI-rapport](media/embed-sample-for-customers/embed-sample-for-customers-035.png)
+I dette selvstudium lærer du, hvordan du:
+>[!div class="checklist"]
+>* Konfigurer dit integrerede miljø.
+>* Konfigurer et eksempelprogram til *integrering for dine kunder* (også kendt som *programmet ejer data*).
 
-I dette selvstudium lærer du, hvordan du kan:
-> [!div class="checklist"]
-> * Registrere en app i Azure.
-> * Integrer en Power BI-rapport i et program.
+Brugerne behøver ikke at logge på Power BI eller have en Power BI-licens for at bruge dit program.
+
+Vi anbefaler, at du bruger metoden til *integrering for dine kunder* til at integrere dit Power BI-indhold, hvis du er en uafhængig softwareproducent eller en udvikler, der gerne vil oprette programmer til tredjeparter.
+
+## <a name="code-sample-specifications"></a>Specifikationer for kodeeksempel
+
+Dette selvstudium indeholder instruktioner til, hvordan du konfigurerer et eksempelprogram til *integrering for dine kunder* på et af følgende sprog:
+
+* .NET Framework
+* .NET Core
+* Java
+* Node JS
+* Python
+
+Kodeeksemplerne understøtter følgende browsere:
+
+* Google Chrome
+
+* Microsoft Edge
+
+* Mozilla Firefox
 
 ## <a name="prerequisites"></a>Forudsætninger
 
-Du skal have følgende for at komme i gang:
+Før du starter dette selvstudium, skal du bekræfte, at du har både de Power BI- og kodeafhængigheder, der er angivet nedenfor:
 
-* En [Power BI Pro-konto](../../fundamentals/service-self-service-signup-for-power-bi.md) (en masterkonto med et brugernavn og en adgangskode, som bruges til at logge på Power BI Pro-kontoen) eller en [tjenesteprincipal (kun program-token)](embed-service-principal.md).
-* Du skal have din egen konfiguration af [Azure Active Directory-lejer](create-an-azure-active-directory-tenant.md).
+* **Power BI-afhængigheder**
 
-Hvis du ikke er tilmeldt **Power BI Pro**, kan du [tilmelde dig en gratis prøveversion](https://powerbi.microsoft.com/pricing/), før du begynder.
+    * Din egen [Azure Active Directory-lejer](create-an-azure-active-directory-tenant.md).
+
+    * Du skal have en af følgende for at godkende dit program i Power BI:
+
+        * [Tjenesteprincipal](embed-service-principal.md) – Et objekt for en Azure Active Directory-[tjenesteprincipal](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) (Azure AD), der giver Azure AD mulighed for at godkende dit program.
+
+        * [Power BI Pro](../../admin/service-admin-purchasing-power-bi-pro.md)-licens – Dette vil være din **masterbruger**, og dit program bruger den til at godkende i Power BI.
+
+        * En [Premium Per User-licens (PPU)](../../admin/service-premium-per-user-faq.md) til Power BI – Dette vil være din **masterbruger**, og dit program bruger den til at godkende i Power BI.
+
+    >[!NOTE]
+    >Hvis du vil [flytte til produktion](move-to-production.md), skal du bruge en [kapacitet](embedded-capacity.md).
+
+* **Kodeafhængigheder**
+
+    # <a name="net-framework"></a>[.NET Framework](#tab/net-framework)
+    
+    * [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/)
+    
+    * [Visual Studio](https://visualstudio.microsoft.com/)
+    
+    
+    # <a name="net-core"></a>[.NET Core](#tab/net-core)
+    
+    * [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) (eller nyere)
+    
+    * Et integreret udviklingsmiljø (IDE). Vi anbefaler, at du bruger en af følgende:
+    
+        * [Visual Studio](https://visualstudio.microsoft.com/)
+    
+        * [Visual Studio Code](https://code.visualstudio.com/)
+
+    # <a name="java"></a>[Java](#tab/java)
+    
+    * [JDK (eller JRE)](https://www.oracle.com/java/technologies/)
+    
+    * [Eclipse IDE](https://www.eclipse.org/downloads/packages/) – Bekræft, at du har *Eclipse for Java EE Developers* (Enterprise Edition)
+    
+    * [Binære Apache Tomcat-distributioner](https://tomcat.apache.org/)
+    
+    # <a name="node-js"></a>[Node JS](#tab/node-js)
+    
+    * [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/)
+    
+    * Et integreret udviklingsmiljø (IDE). Vi anbefaler, at du bruger en af følgende:
+    
+        * [Visual Studio](https://visualstudio.microsoft.com/)
+    
+        * [Visual Studio Code](https://code.visualstudio.com/)
+    
+    # <a name="python"></a>[Python](#tab/python)
+    
+    * [Python 3](https://www.python.org/downloads/) (eller nyere)
+    
+        >[!NOTE]
+        >* Hvis det er første gang, du installerer *Python*, skal du vælge indstillingen **Føj Python til PATH** for at føje installationen til variablen `PATH`.
+        >* Hvis du allerede har installeret *Python*, skal du bekræfte, at variablen `PATH` indeholder installationsstien. Du kan finde flere oplysninger i [Excursus: Setting environment variables](https://docs.python.org/3/using/windows.html#excursus-setting-environment-variables) (Excursus: Angivelse af miljøvariabler) i dokumentationen til Python (dette link refererer til Python 3).
+    
+    * Et integreret udviklingsmiljø (IDE). Vi anbefaler, at du bruger en af følgende:
+    
+        * [Visual Studio](https://visualstudio.microsoft.com/)
+    
+        * [Visual Studio Code](https://code.visualstudio.com/)
+    
+    ---
+
+## <a name="method"></a>Metode
+
+Følg disse trin for at oprette et eksempelprogram til *integrering for din kunder*:
+
+1. [Vælg en godkendelsesmetode](#step-1---select-your-authentication-method).
+
+2. [Registrer et Azure AD-program](#step-2---register-an-azure-ad-application).
+
+3. [Opret et Power BI-arbejdsområde](#step-3---create-a-power-bi-workspace).
+
+4. [Opret og publicer en Power BI-rapport](#step-4---create-and-publish-a-power-bi-report).
+
+5. [Hent de integrerede parameterværdier](#step-5---get-the-embedding-parameter-values).
+
+6. [API-adgang til tjenesteprincipal](#step-6---service-principal-api-access)
+ 
+7. [Giv adgang til arbejdsområde](#step-7---enable-workspace-access).
+
+8. [Integrer dit indhold](#step-8---embed-your-content).
+
+## <a name="step-1---select-your-authentication-method"></a>Trin 1 – Vælg en godkendelsesmetode
+
+Din integrerede løsning varierer, afhængigt af den valgte godkendelsesmetode. Det er derfor vigtigt at forstå forskellene mellem godkendelsesmetoderne og beslutte, hvilken metode der passer bedst til din løsning.
+
+I nedenstående tabel beskrives nogle få vigtige forskelle mellem godkendelsesmetoderne [tjenesteprincipal](embed-service-principal.md) og **masterbruger**.
+
+|Overvejelse  |Tjenesteprincipal  |Masterbruger  |
+|---------|---------|---------|
+|Mekanisme     |[Objektet for din tjenesteprincipal](/azure/active-directory/develop/app-objects-and-service-principals.md#service-principal-object) for dit Azure AD-program giver Azure AD mulighed for at godkende dit integrerede løsningsprogram i Power BI.        |Azure AD-programmet bruger legitimationsoplysningerne (brugernavn og adgangskode) for en Power BI-bruger til at godkende i Power BI.         |
+|Sikkerhed     |*Tjenesteprincipal* er den anbefalede godkendelsesmetode for Azure AD. Hvis du bruger en tjenesteprincipal*, kan du godkende ved hjælp af enten en *programhemmelighed* eller et *certifikat*.</br></br>Dette selvstudium indeholder kun en beskrivelse af brug af en *tjenesteprincipal* med en *programhemmelighed*. Hvis du vil integrere ved hjælp af en *tjenesteprincipal* og et *certifikat*, skal du se artiklen om [tjenesteprincipal med et certifikat](embed-service-principal-certificate.md).         |Denne godkendelsesmetode anses ikke for at være lige så sikker som brug af en *tjenesteprincipal*. Det skyldes, at du skal være påpasselig med legitimationsoplysningerne for *masterbrugeren* (brugernavn og adgangskode). Du må f.eks. ikke fremvise dem i dit integreringsprogram, og du bør ændre adgangskoden ofte.         |
+|Delegerede tilladelser i Azure AD |Ikke påkrævet. |Din *masterbruger* eller en administrator skal give deres samtykke til, at dit program kan få adgang til REST API-[tilladelser](/azure/active-directory/develop/v2-permissions-and-consent) til Power BI (også kendt som områder). For eksempel *Report.ReadWrite.All*. |
+|Adgang til Power BI-tjenesten |Du kan ikke få adgang til Power BI-tjenesten med en *tjenesteprincipal*.|Du kan få adgang til Power BI-tjenesten med legitimationsoplysningerne for din *masterbruger*.|
+|Licens     |Kræver ikke en Pro-licens. Du kan bruge indhold fra alle arbejdsområder, som du er medlem eller administrator af.         |Kræver en [Power BI Pro](../../admin/service-admin-purchasing-power-bi-pro.md)-licens.         |
+
+## <a name="step-2---register-an-azure-ad-application"></a>Trin 2 – Registrer et Azure AD-program
+
+Når du registrerer dit program med Azure AD, kan du:
+> [!div class="checklist"]
+>* Etablere en identitet for dit program
+>* Give dit program adgang til [REST API'erne til Power BI](/rest/api/power-bi/)
+>* Angive [REST-tilladelser til Power BI](/azure/active-directory/develop/v2-permissions-and-consent) for programmet – hvis du bruger en *masterbruger*
+
+Hvis du vil registrere dit program i Azure AD, skal du følge vejledningen under [Registrer dit program](register-app.md).
 
 >[!NOTE]
->[Premium pr. bruger](../../admin/service-premium-per-user-faq.md) understøttes ikke. Du kan bruge Premium pr. bruger til at eksperimentere med løsningen *Integrer indhold for dine kunder*, men du kan ikke [flytte til produktion](embed-sample-for-customers.md#move-to-production).
+>Før du registrerer dit program, skal du beslutte, hvilken godkendelsesmetode du vil bruge, *tjenesteprincipal* eller *masterbruger*.
 
-## <a name="set-up-your-embedded-analytics-development-environment"></a>Konfigurer dit integrerede analyseudviklingsmiljø
+## <a name="step-3---create-a-power-bi-workspace"></a>Trin 3 – Opret et Power BI-arbejdsområde
 
-Før du begynder at integrere rapporter, dashboards eller felter i dit program, skal du sikre dig, at du kan integrere med Power BI i dit miljø.
+Power BI opbevarer dine rapporter, dashboards og felter i et arbejdsområde. Hvis du vil integrere disse elementer, skal du oprette dem og uploade dem til et arbejdsområde.
 
-Du kan gennemgå [værktøjet til konfiguration af integrering](https://app.powerbi.com/embedsetup) for hurtigt at komme i gang med og downloade et eksempelprogram, der hjælper dig med at oprette et miljø og integrere en rapport.
+>[!TIP]
+>Hvis du allerede har et arbejdsområde, kan du springe dette trin over.
 
-Hvis du vælger at konfigurere miljøet manuelt, kan du dog fortsætte nedenfor.
+Gør følgende for at oprette et arbejdsområde:
 
-### <a name="register-an-application-in-azure-active-directory-azure-ad"></a>Registrer et program i Azure Active Directory (Azure AD)
+1. Log på Power BI.
 
-[Registrer dit program](register-app.md) med Azure Active Directory for at give dit program adgang til [REST API'erne til Power BI](/rest/api/power-bi/). Når du registrerer dit program, får du mulighed for at oprette en identitet for programmet og angive [tilladelser til Power BI REST-ressourcer](/azure/active-directory/develop/v2-permissions-and-consent). Den måde, du kommer i gang med at registrere et program på, afhænger af, om du vil bruge en masterkonto eller en [tjenesteprincipal](embed-service-principal.md).
+2. Vælg **Arbejdsområder**.
 
-Den valgte metode påvirker, hvilken programtype du registrerer i Azure.
+3. Vælg **Opret et arbejdsområde**.
 
-Hvis du fortsætter med en masterkonto, skal du registrere et **oprindeligt** program. Du bruger et oprindeligt program, fordi du arbejder med et logon, der ikke er interaktivt.
+4. Navngiv dit arbejdsområde, og vælg **Gem**.
 
-Hvis du derimod fortsætter med en tjenesteprincipal, skal du registrere et **serverbaseret webprogram**. Du registrerer et serverbaseret webprogram for at oprette en programhemmelighed.
+## <a name="step-4---create-and-publish-a-power-bi-report"></a>Trin 4 – Opret og publicer en Power BI-rapport
 
-## <a name="set-up-your-power-bi-environment"></a>Konfigurer dit Power BI-miljø
+Det næste trin er at oprette en rapport og uploade den til dit arbejdsområde. Du kan [oprette din egen rapport](/powerbi-docs/fundamentals/desktop-getting-started#build-reports) ved hjælp af Power BI Desktop og derefter [publicere](/powerbi-docs/fundamentals/desktop-getting-started#share-your-work) den til dit arbejdsområde. Eller du kan uploade en eksempelrapport til dit arbejdsområde.
 
-### <a name="create-a-workspace"></a>Opret et arbejdsområde
+>[!Tip]
+>Hvis du allerede har et arbejdsområde med en rapport, kan du springe dette trin over.
 
-Hvis du integrerer rapporter, dashboards eller felter for dine kunder, skal du placere dit indhold i et arbejdsområde. Der er forskellige typer arbejdsområder, som du kan konfigurere: [traditionelle arbejdsområder](../../collaborate-share/service-create-workspaces.md) eller [nye arbejdsområder](../../collaborate-share/service-create-the-new-workspaces.md). Hvis du bruger en *master* konto, er det ligegyldigt, hvilken type arbejdsområde du bruger. Men hvis du bruger en *[tjenesteprincipal](embed-service-principal.md)* til at logge på dit program, skal du bruge de nye arbejdsområder. I begge scenarier skal både *masterkontoen* og *tjenesteprincipalen* være administrator af arbejdsområderne for dit program.
+Hvis du vil downloade en eksempelrapport og publicere den i dit arbejdsområde, skal du følge disse trin:
 
-### <a name="create-and-publish-your-reports"></a>Opret og udgiv dine rapporter
+1. Åbn GitHub-mappen [Power BI Desktop-eksempler](https://github.com/microsoft/PowerBI-Developer-Samples).
 
-Du kan oprette rapporter og datasæt ved hjælp af Power BI Desktop og derefter publicere disse rapporter i et arbejdsområde. Du kan opnå dette på to måder: Som slutbruger kan du publicere rapporter i et traditionelt arbejdsområde med en masterkonto (Power BI Pro-licens). Hvis du bruger en tjenesteprincipal, kan du publicere rapporter i de nye arbejdsområder ved hjælp af [REST API'erne til Power BI](/rest/api/power-bi/imports/postimportingroup).
+2. Vælg **Kode**, og vælg derefter **Download zip**.
 
-Nedenstående trin viser, hvordan man publicerer en PBIX-rapport i et Power BI-arbejdsområde.
+    :::image type="content" source="media/embed-sample-for-customers/download-sample-report.png" alt-text="Et skærmbillede af indstillingen til download af ZIP i GitHub med Power BI Desktop-eksempler":::
 
-1. Download eksemplet [Blogdemo](https://github.com/Microsoft/powerbi-desktop-samples) fra GitHub.
+3. Udpak den downloadede ZIP, og naviger til mappen **Eksempelrapporter**.
 
-    ![eksempelrapport](media/embed-sample-for-customers/embed-sample-for-customers-026-1.png)
+4. Vælg en rapport, der skal integreres, og [publicer](/powerbi-docs/fundamentals/desktop-getting-started#share-your-work) den i dit arbejdsområde.
 
-2. Åbn PBIX-eksempelrapporten i **Power BI Desktop**.
+## <a name="step-5---get-the-embedding-parameter-values"></a>Trin 5 – Hent de integrerede parameterværdier
 
-   ![PBI-skrivebordsrapport](media/embed-sample-for-customers/embed-sample-for-customers-027.png)
+Hvis du vil integrere dit indhold, skal du hente bestemte parameterværdier. Nedenstående tabel viser de påkrævede værdier og angiver, om de gælder for godkendelsesmetoden med *tjenesteprincipal*, godkendelsesmetoden *masterbruger* eller begge.
 
-3. Publicer i **arbejdsområder**. Denne proces varierer, afhængigt af om du bruger en masterkonto (Power Pro-licens) eller en tjenesteprincipal. Hvis du bruger en masterkonto, kan du publicere din rapport via Power BI Desktop.  Hvis du bruger en tjenesteprincipal, skal du bruge REST API'erne til Power BI.
+Før du integrerer dit indhold, skal du sørge for, at du har alle de værdier, der er angivet nedenfor. Nogle af værdierne vil variere, afhængigt af den valgte godkendelsesmetode.
 
-## <a name="embed-content-using-the-sample-application"></a>Integrer indhold ved hjælp af eksempelprogrammet
+|Parameter   |Tjenesteprincipal   |Masterbruger  |
+|-------------------|---|---|
+|[Klient-id](#client-id) |![Gælder for.](../../media/yes.png) |![Gælder for.](../../media/yes.png) |
+|[Arbejdsområde-id](#workspace-id)     |![Gælder for.](../../media/yes.png) |![Gælder for.](../../media/yes.png) |
+|[Rapport-id](#report-id)           |![Gælder for.](../../media/yes.png) |![Gælder for.](../../media/yes.png) |
+|[Klienthemmelighed](#client-secret) |![Gælder for.](../../media/yes.png) |![Gælder ikke for.](../../media/no.png) |
+|[Lejer-id](#tenant-id)                 |![Gælder for.](../../media/yes.png) |![Gælder ikke for.](../../media/no.png) |
+|[Power BI-brugernavn](#power-bi-username-and-password)   |![Gælder ikke for.](../../media/no.png) |![Gælder for.](../../media/yes.png) |
+|[Power BI-adgangskode](#power-bi-username-and-password)   |![Gælder ikke for.](../../media/no.png) |![Gælder for.](../../media/yes.png) |
 
-Dette eksempel er med vilje enkelt, da det kun skal bruges til demonstrationen. Det er op til dig eller dine udviklere at beskytte programhemmeligheden eller legitimationsoplysningerne til masterkontoen.
+### <a name="client-id"></a>Klient-id
 
-Følg nedenstående trin for at begynde at integrere indhold ved hjælp af eksempelprogrammet.
+>[!TIP]
+>**Gælder for:** ![Gælder for.](../../media/yes.png)Tjenesteprincipal ![Gælder for.](../../media/yes.png)Masterbruger
 
-1. Download [Visual Studio](https://www.visualstudio.com/) (version 2013 eller nyere). Sørg for at downloade den nyeste [NuGet-pakke](https://www.nuget.org/profiles/powerbi).
+Følg disse trin for at hente GUID for klient-id'et (også kaldet *program-id*):
 
-2. Download [eksemplet, hvor appen ejer data,](https://github.com/Microsoft/PowerBI-Developer-Samples) fra GitHub for at komme i gang.
+1. Log på [Microsoft Azure](https://ms.portal.azure.com/#allservices).
 
-    ![Appen ejer data-programeksempel](media/embed-sample-for-customers/embed-sample-for-customers-026.png)
+2. Søg efter **Programregistreringer**, og vælg linket **Programregistreringer**.
 
-3. Åbn filen **Web.config** i eksempelprogrammet. Der er nogle felter, du skal udfylde, for at køre programmet. Du kan vælge **MasterUser** eller **ServicePrincipal** som **AuthenticationType**. Du skal udfylde forskellige felter, afhængigt af hvilken type godkendelsesmetode du vælger.
+3. Vælg det Azure AD-program, du bruger til at integrere dit Power BI-indhold.
 
-    > [!Note]
-    > **Standardgodkendelsestypen** i dette eksempel er MasterUser.
-
-    <center>
-
-    | **MasterUser** <br> (Power BI Pro-licenser) | **ServicePrincipal** <br> (kun program-token)|
-    |---------------|-------------------|
-    | [applicationId](#application-id) | [applicationId](#application-id) |
-    | [workspaceId](#workspace-id) | [workspaceId](#workspace-id) |
-    | [reportId](#report-id) | [reportId](#report-id) |
-    | [pbiUsername](#power-bi-username-and-password) |  |
-    | [pbiPassword](#power-bi-username-and-password) |  |
-    |  | [applicationsecret](#application-secret) |
-    |  | [tenant](#tenant) |
-
-   </center>
-
-    ![Web Config-fil](media/embed-sample-for-customers/embed-sample-for-customers-030.png)
-
-### <a name="application-id"></a>Program-id
-
-Denne attribut er påkrævet for begge AuthenticationTypes (masterkonto og [tjenesteprincipal](embed-service-principal.md)).
-
-Udfyld oplysningerne om **applicationId** med **program-id'et** fra **Azure**. **Program-id'et** bruges af programmet til at identificere sig selv over for de brugere, du anmoder om tilladelser fra.
-
-Hvis du vil hente **applicationId**, skal du følge disse trin:
-
-1. Log på [Azure-portalen](https://portal.azure.com).
-
-2. Vælg **Alle tjenester** i navigationsruden til venstre, og vælg **Appregistreringer**.
-
-    ![Søg efter programregistrering](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
-
-3. Vælg programmet, der skal bruge **applicationId**.
-
-    ![Vælg app](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
-
-4. Der er angivet et **program-id** som GUID. Brug dette **Program-id** som **applicationId** for programmet.
-
-    ![applicationId](media/embed-sample-for-customers/embed-sample-for-customers-007.png)
+4. I afsnittet **Oversigt** skal du kopiere GUID for **program-id'et (klient)** .
 
 ### <a name="workspace-id"></a>Id for arbejdsområde
 
-Denne attribut er påkrævet for begge AuthenticationTypes (masterkonto og [tjenesteprincipal](embed-service-principal.md)).
+>[!TIP]
+>**Gælder for:** ![Gælder for.](../../media/yes.png)Tjenesteprincipal ![Gælder for.](../../media/yes.png)Masterbruger
 
-Udfyld oplysningerne for **workspaceId** med GUID for arbejdsområdet fra Power BI. Du kan få disse oplysninger enten fra URL-adressen, når du er logget på Power BI-tjenesten, eller ved hjælp af PowerShell.
+Følg disse trin for at hente GUID for arbejdsområde-id'et:
 
-URL-adresse <br>
+1. Log på Power BI-tjenesten.
 
-![workspaceId](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
+2. Åbn den rapport, du vil integrere.
 
-PowerShell <br>
+3. Kopiér GUID'et fra URL-adressen. GUID'et er tallet mellem **/groups/** og **/reports/** .
 
-```powershell
-Get-PowerBIworkspace -name "App Owns Embed Test"
-```
-
-   ![workspaceId fra PowerShell](media/embed-sample-for-customers/embed-sample-for-customers-031-ps.png)
+    :::image type="content" source="media/embed-sample-for-customers/workspace-id.png" alt-text="Et skærmbillede, der viser GUID for arbejdsområde-id'et i for URL-adressen til Power BI-tjenesten":::
 
 ### <a name="report-id"></a>Rapport-id
 
-Denne attribut er påkrævet for begge AuthenticationTypes (masterkonto og [tjenesteprincipal](embed-service-principal.md)).
+>[!TIP]
+>**Gælder for:** ![Gælder for.](../../media/yes.png)Tjenesteprincipal ![Gælder for.](../../media/yes.png)Masterbruger
 
-Udfyld **reportId** med GUID for rapporten fra Power BI. Du kan få disse oplysninger enten fra URL-adressen, når du er logget på Power BI-tjenesten, eller ved hjælp af PowerShell.
+1. Log på Power BI-tjenesten.
 
-URL-adresse<br>
+2. Åbn den rapport, du vil integrere.
 
-![reportId](media/embed-sample-for-customers/embed-sample-for-customers-032.png)
+3. Kopiér GUID'et fra URL-adressen. GUID'et er tallet mellem **/reports/** og **/ReportSection**.
 
-PowerShell <br>
+    :::image type="content" source="media/embed-sample-for-customers/report-id.png" alt-text="Et skærmbillede, der viser GUID for rapport-id'et i for URL-adressen til Power BI-tjenesten":::
 
-```powershell
-Get-PowerBIworkspace -name "App Owns Embed Test" | Get-PowerBIReport
-```
+### <a name="client-secret"></a>Klienthemmelighed
 
-![reportId fra PowerShell](media/embed-sample-for-customers/embed-sample-for-customers-032-ps.png)
+>[!TIP]
+>**Gælder for:** ![Gælder for.](../../media/yes.png)Tjenesteprincipal ![Gælder ikke for.](../../media/no.png)Masterbruger
+
+Følg disse trin for at hente klienthemmeligheden:
+
+1. Log på [Microsoft Azure](https://ms.portal.azure.com/#allservices).
+
+2. Søg efter **Programregistreringer**, og vælg linket **Programregistreringer**.
+
+3. Vælg det Azure AD-program, du bruger til at integrere dit Power BI-indhold.
+
+4. Under **Administrer** skal du vælge **Certifikater og hemmeligheder**.
+
+5. Under **Klienthemmeligheder** skal du vælge **Ny klienthemmelighed**.
+
+6. I pop op-vinduet **Tilføj en klienthemmelighed** skal du angive en beskrivelse af din programhemmelighed, vælge, hvornår programhemmeligheden udløber, og vælge **Tilføj**.
+
+7. I afsnittet **Klienthemmeligheder** skal du kopiere strengen i kolonnen **Værdi** i den nyoprettede programhemmelighed. Værdien for klienthemmeligheden er dit *klient-id*.
+
+### <a name="tenant-id"></a>Lejer-id
+
+>[!TIP]
+>**Gælder for:** ![Gælder for.](../../media/yes.png)Tjenesteprincipal ![Gælder ikke for.](../../media/no.png)Masterbruger
+
+Følg disse trin for at hente GUID for lejer-id'et:
+
+1. Log på [Microsoft Azure](https://ms.portal.azure.com/#allservices).
+
+2. Søg efter **Programregistreringer**, og vælg linket **Programregistreringer**.
+
+3. Vælg det Azure AD-program, du bruger til at integrere dit Power BI-indhold.
+
+4. I afsnittet **Oversigt** skal du kopiere GUID for **mappe-id'et (lejer)** .
 
 ### <a name="power-bi-username-and-password"></a>Brugernavn og adgangskode til Power BI
 
-Disse attributter er kun påkrævet til masterkontoen som AuthenticationType.
+>[!TIP]
+>**Gælder for:** ![Gælder ikke for.](../../media/no.png)Tjenesteprincipal ![Gælder for.](../../media/yes.png)Masterbruger
 
-Hvis du bruger en [tjenesteprincipal](embed-service-principal.md) til at godkende, behøver du ikke udfylde attributterne for brugernavn og adgangskode.
+Hent *brugernavnet* og *adgangskoden* for den Power BI-bruger, du bruger som **masterbruger**. Det er den samme bruger, som du brugte til at oprette et arbejdsområde og uploade en rapport til, i Power BI-tjenesten.
 
-* Udfyld **pbiUsername** med masterkontoen til Power BI.
-* Udfyld **pbiPassword** med adgangskoden til masterkontoen til Power BI.
+## <a name="step-6---service-principal-api-access"></a>Trin 6 – API-adgang til tjenesteprincipal
 
-### <a name="application-secret"></a>Programhemmelighed
+>[!TIP]
+>**Gælder for:** ![Gælder for.](../../media/yes.png)Tjenesteprincipal ![Gælder ikke for.](../../media/no.png)Masterbruger
+>
+>Dette trin er kun relevant, hvis du bruger godkendelsesmetoden *tjenesteprincipal*. Hvis du bruger en *masterbruger*, kan du springe dette trin over og fortsætte med [Trin 7 – Giv adgang til arbejdsområdet](#step-7---enable-workspace-access).
 
-Denne attribut bruges kun til [tjenesteprincipalen](embed-service-principal.md) som AuthenticationType.
+Hvis et Microsoft Azure AD-program skal kunne få adgang til Power BI-indholdet og API'erne, skal en Power BI-administrator have mulighed for at aktivere adgangen til tjenesteprincipalen i Power BI-administrationsportalen. Hvis du ikke er administrator af din lejer, kan du få lejerens administrator til at aktivere *Lejerindstillingerne* for dig.
+        
+1. I *Power BI-tjenesten* skal du vælge **Indstillinger** > **Indstillinger** > **Administrationsportal**.
+        
+    :::image type="content" source="media/embed-sample-for-customers/admin-settings.png" alt-text="Et skærmbillede, der viser menuen for administratorindstillinger i menuen Indstillinger for Power BI-tjenesten":::
+        
+2. Vælg **Lejerindstillinger**, og rul derefter ned til afsnittet **Udviklerindstillinger**.
+        
+3. Udvid **Giv tjenesteprincipaler tilladelse til at bruge API'er til Power BI**, og aktivér denne indstilling.
+        
+    :::image type="content" source="media/embed-sample-for-customers/developer-settings.png" alt-text="Et skærmbillede, der viser, hvordan du aktiverer udviklerindstillinger i menuen for lejerindstillinger i Power BI-tjenesten":::
+        
+>[!NOTE]
+>Når du bruger en *tjenesteprincipal*, anbefales det at begrænse adgangen til lejerindstillingerne ved hjælp af en *sikkerhedsgruppe*. Du kan få mere at vide om denne funktion ved at se disse afsnit i artiklen [Tjenesteprincipal](embed-service-principal.md):
+> * [Opret en Azure AD-sikkerhedsgruppe](embed-service-principal.md#step-2---create-an-azure-ad-security-group)
+>* [Aktivér administrationsindstillingerne for Power BI-tjenesten](embed-service-principal.md#step-3---enable-the-power-bi-service-admin-settings)
 
-Udfyld oplysningerne for **ApplicationSecret** ud fra sektionen **Nøgler** i sektionen **Appregistreringer** i **Azure**.  Denne attribut fungerer, når du bruger [tjenesteprincipal](embed-service-principal.md).
+## <a name="step-7---enable-workspace-access"></a>Trin 7 – Giv adgang til arbejdsområde
 
-Hvis du vil hente **ApplicationSecret**, skal du følge disse trin:
+Hvis du vil aktivere artefakterne for adgang til dit Azure AD-program, f.eks. rapporter, dashboards og datasæt i Power BI-tjenesten, skal du tilføje *tjenesteprincipalen* eller *masterbrugeren* som et *medlem* eller *administrator* til dit arbejdsområde.
 
-1. Log på [Azure Portal](https://portal.azure.com).
+1. Log på Power BI-tjenesten.
 
-2. Vælg **Alle tjenester** i navigationsruden til venstre, og vælg derefter **Appregistreringer**.
+2. Rul til det arbejdsområde, du vil aktivere adgang til, og vælg **Adgang til arbejdsområde** i menuen **Mere**.
 
-    ![Søg efter programregistrering](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
+    :::image type="content" source="media/embed-service-principal/workspace-access.png" alt-text="Skærmbillede, der viser arbejdsområdets adgangsknap i menuen Mere i et Power BI-arbejdsområde.":::
 
-3. Vælg programmet, der skal bruge **ApplicationSecret**.
+3. Afhængigt af hvilken godkendelsesmetode du bruger, skal du i ruden **Adgang** kopiere *tjenesteprincipalen* eller *masterbrugeren* til tekstfeltet **Angiv mailadresse**.
 
-    ![Vælg en app](media/embed-sample-for-customers/embed-sample-for-customers-0038.png)
+    >[!NOTE]
+    >Hvis du bruger en *tjenesteprincipal*, er dens navn det navn, du gav dit Azure AD-program.
 
-4. Vælg **Certifikater og hemmeligheder** under **Administrer**.
+5. Vælg **Tilføj**
 
-5. Vælg **Nye kundehemmeligheder**.
+## <a name="step-8---embed-your-content"></a>Trin 8 – Integrer dit indhold
 
-6. Angiv et navn i feltet **Beskrivelse**, og vælg en varighed. Vælg derefter **Gem** for at hente **værdien** til dit program. Når du lukker ruden **Nøgler** efter at have gemt nøgleværdien, vises feltet med værdien kun som skjult. På det tidspunkt kan du ikke hente nøgleværdien. Hvis du mister nøgleværdien, skal du oprette en ny i Azure Portal.
+Det integrerede Power BI-eksempelprogram giver dig mulighed for at oprette et Power BI-program til *integrering for dine kunder*.
 
-    ![Nøgleværdi](media/embed-sample-for-customers/embed-sample-for-customers-042.png)
+Følg disse trin for at ændre eksempelprogrammet til *integrering for dine kunder*, så du kan integrere din Power BI-rapport.  
 
-### <a name="tenant"></a>Lejer
+1. Åbn mappen [Power BI-udviklereksempler](https://github.com/microsoft/PowerBI-Developer-Samples).
 
-Denne attribut bruges kun til [tjenesteprincipalen](embed-service-principal.md) som AuthenticationType.
+2. Vælg **Kode**, og vælg derefter **Download zip**.
 
-Udfyld oplysningerne om **lejeren** med dit lejer-id til Azure. Du kan få disse oplysninger fra [Azure AD Administration](/onedrive/find-your-office-365-tenant-id), når du er logget på Power BI-tjenesten, eller ved hjælp af PowerShell.
+    :::image type="content" source="media/embed-sample-for-customers/developer-samples.png" alt-text="Et skærmbillede af indstillingen til download af ZIP i GitHub med Power BI-udviklereksempler":::
 
-### <a name="run-the-application"></a>Kør programmet
+3. Udpak den downloadede ZIP, og naviger til mappen **PowerBI-Developer-Samples-master**.
 
-1. Vælg **Kør** i **Visual Studio**.
+4. Afhængigt af det sprog du vil have, at dit program skal bruge, skal du åbne en af disse mapper:
 
-    ![Kør programmet](media/embed-sample-for-customers/embed-sample-for-customers-033.png)
+* .NET Core
+* .NET Framework
+* Java
+* Node JS
+* Python
+    >[!NOTE]
+    >Eksempelprogrammerne til *integrering for dine kunder* understøtter kun de sprog, der er angivet ovenfor. Eksempelprogrammet *React TS* understøtter kun løsningen til *[integrering for din organisation](embed-sample-for-your-organization.md)* .
 
-2. Vælg derefter **Integrer rapport**. Afhængigt af hvilket indhold du vælger at udføre test med – rapporter, dashboards eller felter – skal du vælge den pågældende indstilling i programmet.
+5. Åbn mappen **Integrer for dine kunder**.
 
-    ![Vælg indhold](media/embed-sample-for-customers/embed-sample-for-customers-034.png)
+# <a name="net-core"></a>[.NET Core](#tab/net-core)
 
-3. Du kan nu se rapporten i eksempelprogrammet.
+6. Åbn *eksempelprogrammet til integrering for dine kunder* ved hjælp af en af disse metoder:
 
-    ![Se program](media/embed-sample-for-customers/embed-sample-for-customers-035.png)
+    * Hvis du bruger [Visual Studio](https://visualstudio.microsoft.com/), skal du åbne filen **AppOwnsData.sln**.
 
-## <a name="embed-content-within-your-application"></a>Integrer indhold i dit program
+    * Hvis du bruger [Visual Studio Code](https://code.visualstudio.com/), skal du åbne mappen **Programmet ejer data**.
 
-Selvom trinnene til at integrere indhold udføres ved hjælp af [REST API'er til Power BI](/rest/api/power-bi/), oprettes de eksempelkoder, der er beskrevet i denne artikel, med **.NET-SDK'en**.
+7. Åbn **appsettings.json**.
 
-Hvis du integrerer for dine kunder i dit program, skal du have et **adgangstoken** til din masterkonto eller en [tjenesteprincipal](embed-service-principal.md) fra **Azure AD**. Du skal have et [Azure AD-adgangstoken](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) til dit Power BI-program, før du kan foretage kald til [REST API'erne til Power BI](/rest/api/power-bi/).
+8. Afhængigt af din godkendelsesmetode skal du udfylde følgende parameterværdier:
 
-Hvis du vil oprette Power BI-klienten med dit **adgangstoken**, skal du oprette dit Power BI klientobjekt, som gør det muligt for dig at interagere med [REST API'erne til Power BI](/rest/api/power-bi/). Du kan oprette dit Power BI-klientobjekt ved at wrappe **AccessToken** med et **_Microsoft.Rest.TokenCredentials_* _-objekt.
+    |Parameter            |Tjenesteprincipal  |Masterbruger  |
+    |---------------------|---------|---------|
+    |`AuthenticationMode` |ServicePrincipal         |MasterUser         |
+    |`ClientId`           |[Klient-id'et](#client-id) for dit Azure AD-program         |[Klient-id'et](#client-id) for dit Azure AD-program         |
+    |`TenantId`           |[Lejer-id'et](#tenant-id) for dit Azure AD         |I/T         |
+    |`PbiUsername`        |I/T         |Brugernavnet for din *masterbruger* – se [brugernavn og adgangskode til Power BI](#power-bi-username-and-password)         |
+    |`PbiPassword`        |I/T         |Adgangskoden for din *masterbruger* – se [brugernavn og adgangskode til Power BI](#power-bi-username-and-password)         |
+    |`ClientSecret`       |[Klienthemmeligheden](#client-secret) for dit Azure AD         |I/T         |
+    |`WorkspaceId`        |Id'et for arbejdsområdet med din integrerede rapport – se [arbejdsområde-id](#workspace-id)          |Id'et for arbejdsområdet med din integrerede rapport – se [arbejdsområde-id](#workspace-id)         |
+    |`ReportId`           |Id'et for den rapport du integrerer – se [rapport-id](#report-id)            |Id'et for den rapport du integrerer – se [rapport-id](#report-id)         |
 
-```csharp
-using Microsoft.IdentityModel.Clients.ActiveDirectory;
-using Microsoft.Rest;
-using Microsoft.PowerBI.Api.V2;
+9. Kør projektet ved at vælge den relevante indstilling:
 
-var tokenCredentials = new TokenCredentials(authenticationResult.AccessToken, "Bearer");
+    * Hvis du bruger **Visual Studio**, skal du vælge **IIS Express** (afspil).
 
-// Create a Power BI Client object. it's used to call Power BI APIs.
-using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
-{
-    // Your code to embed items.
-}
-```
+    * Hvis du bruger **Visual Studio Code**, skal du vælge **Kør > Start fejlfinding**.
 
-### <a name="get-the-content-item-you-want-to-embed"></a>Hent det indholdselementet, du vil integrere
+# <a name="net-framework"></a>[.NET Framework](#tab/net-framework)
 
-Du kan bruge Power BI-klientobjektet til at hente en reference til det element, du vil integrere.
+6. Åbn filen **AppOwnsData.sln** ved hjælp af [Visual Studio](https://visualstudio.microsoft.com/).
 
-Her er et kodeeksempel på, hvordan du henter den første rapport fra et givent arbejdsområde.
+7. Åbn **Web.config**.
 
-_Du kan se et eksempel på, hvordan du henter et indholdselement, uanset om det er en rapport, et dashboard eller et felt, du vil integrere, i filen Services\EmbedService.cs i [prøveprogrammet](https://github.com/Microsoft/PowerBI-Developer-Samples).*
+8. Afhængigt af din godkendelsesmetode skal du udfylde følgende parameterværdier:
 
-```csharp
-using Microsoft.PowerBI.Api.V2;
-using Microsoft.PowerBI.Api.V2.Models;
+    |Parameter            |Tjenesteprincipal  |Masterbruger  |
+    |---------------------|---------|---------|
+    |`authenticationType` |ServicePrincipal         |MasterUser         |
+    |`applicationId`           |[Klient-id'et](#client-id) for dit Azure AD-program         |[Klient-id'et](#client-id) for dit Azure AD-program         |
+    |`workspaceId`        |Id'et for arbejdsområdet med din integrerede rapport – se [arbejdsområde-id](#workspace-id)          |Id'et for arbejdsområdet med din integrerede rapport – se [arbejdsområde-id](#workspace-id)         |
+    |`reportId`           |Id'et for den rapport du integrerer – se [rapport-id](#report-id)            |Id'et for den rapport du integrerer – se [rapport-id](#report-id)         |
+    |`pbiUsername`        |I/T         |Brugernavnet for din *masterbruger* – se [brugernavn og adgangskode til Power BI](#power-bi-username-and-password)         |
+    |`pbiPassword`        |I/T         |Adgangskoden for din *masterbruger* – se [brugernavn og adgangskode til Power BI](#power-bi-username-and-password)         |
+    |`applicationSecret`       |[Klienthemmeligheden](#client-secret) for dit Azure AD         |I/T         |
+    |`tenant`           |[Lejer-id'et](#tenant-id) for dit Azure AD         |I/T         |
 
-// You need to provide the workspaceId where the dashboard resides.
-ODataResponseListReport reports = await client.Reports.GetReportsInGroupAsync(workspaceId);
+9. Kør projektet ved at vælge **IIS Express** (afspil).
 
-// Get the first report in the group.
-Report report = reports.Value.FirstOrDefault();
-```
+>[!NOTE]
+>Hvis du ikke kan se den integrerede rapport, når du kører eksempelprogrammet, skal du opdatere Power BI-pakkerne ved at følge disse trin:
+>1. Højreklik på projektnavnet (AppOwnesData), og vælg **Administrer NuGet-pakker**.
+>2. Søg efter **Power BI JavaScript**, og geninstaller derefter pakken.
+>
+>Du kan finde flere oplysninger under [Sådan geninstallerer og opdaterer du pakker](/nuget/consume-packages/reinstalling-and-updating-packages).
 
-### <a name="create-the-embed-token"></a>Opret integrationstokenet
-Generér et integreringstoken, som kan bruges fra JavaScript-API'en. Der findes to typer API'er. Den første gruppe indeholder fem API'er, der hver især genererer et integreringstoken for et bestemt element. Den anden gruppe, som kun indeholder én API, genererer et token, der kan bruges til at integrere flere elementer.
+# <a name="java"></a>[Java](#tab/java)
 
-**API'er til generering af et integreringstoken for et bestemt element**
+6. Åbn **Eclipse**, og følg nedenstående vejledning.
 
-Det integreringstoken, som oprettes med disse API'er, er specifikt for det element, du integrerer. Når du integrerer et Power BI element (f.eks. en rapport, et dashboard eller et felt) med disse API'er, skal du oprette et nyt integreringstoken til det.
-* [GenerateTokenInGroup for dashboards](/rest/api/power-bi/embedtoken/dashboards_generatetokeningroup)
-* [GenerateTokenInGroup for datasæt](/rest/api/power-bi/embedtoken/datasets_generatetokeningroup)
-* [GenerateTokenForCreateInGroup for rapporter](/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup)
-* [GenerateTokenInGroup for rapporter](/rest/api/power-bi/embedtoken/reports_generatetokeningroup)
-* [GenerateTokenInGroup for felter](/rest/api/power-bi/embedtoken/tiles_generatetokeningroup)
-
-Prøver på oprettelse af et integreringstoken for en rapport, et dashboard eller et felt er tilgængelige fra følgende filer i [prøveprogrammet](https://github.com/Microsoft/PowerBI-Developer-Samples).
-* Services\EmbedService.cs
-* Models\EmbedConfig.cs
-* Models\TileEmbedConfig.cs
-
-Nedenfor er et kodeeksempel, so kan bruges sammen med API'en for integreringstokenet GenerateTokenInGroup for rapporter.
-```csharp
-using Microsoft.PowerBI.Api.V2;
-using Microsoft.PowerBI.Api.V2.Models;
-
-// Generate Embed Token.
-var generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view");
-EmbedToken tokenResponse = client.Reports.GenerateTokenInGroup(workspaceId, report.Id, generateTokenRequestParameters);
-
-// Generate Embed Configuration.
-var embedConfig = new EmbedConfig()
-{
-    EmbedToken = tokenResponse,
-    EmbedUrl = report.EmbedUrl,
-    Id = report.Id
-};
-```
-
-**API til generering af et integreringstoken for flere elementer**<a id="multiEmbedToken"></a>
-
-API'en til integrering, [Generér token](/rest/api/power-bi/embedtoken/generatetoken), genererer et token, der kan bruges til at integrere flere elementer.
-
-Det kan også bruges til at vælge et datasæt på en dynamisk måde, mens en rapport integreres. Du kan finde flere oplysninger om denne brug af API'en under [dynamisk binding](embed-dynamic-binding.md).
-
-
-Nedenfor er et eksempel på brug af denne API.
- 
-```csharp
-using Microsoft.PowerBI.Api.V2;
-using Microsoft.PowerBI.Api.V2.Models;
-
-var reports = new List<GenerateTokenRequestV2Report>()
-{ 
-    new GenerateTokenRequestV2Report()
-    {
-        AllowEdit = false,
-        Id = report1.Id
-    },
-    new GenerateTokenRequestV2Report()
-    {
-        AllowEdit = true,
-        Id = report2.Id
-    }
-};
-
-var datasets= new List<GenerateTokenRequestV2Dataset>()
-{
-    new GenerateTokenRequestV2Dataset(dataset1.Id),
-    new GenerateTokenRequestV2Dataset(dataset2.Id),
-    new GenerateTokenRequestV2Dataset(dataset3.Id),
-};
-
-var targetWorkspaces = new List<GenerateTokenRequestV2TargetWorkspace>()
-{
-    new GenerateTokenRequestV2TargetWorkspace(workspace1.Id),
-    new GenerateTokenRequestV2TargetWorkspace(workspace2.Id),
-};
-
-var request = new GenerateTokenRequestV2()
-{
-    Datasets = datasets,
-    Reports = reports,
-    TargetWorkspaces = targetWorkspaces,
-};
-
-var token = client.GetClient().EmbedToken.GenerateToken(request);
-```
+    >[!NOTE]
+    >Du finder vejledningerne til Java-*eksempelprogrammet til integrering for dine kunder* i [Eclipse IDE til Java EE-udviklere](https://www.eclipse.org/downloads/packages/) (Enterprise Edition). Hvis du bruger et andet program, skal du selv konfigurere det.
 
-### <a name="load-an-item-using-javascript"></a>Indlæs et element ved hjælp af JavaScript
+7. Føj Tomcat-serveren til Eclipse:
 
-Du kan bruge JavaScript til at indlæse en rapport i et div-element på din webside.
+    a. Vælg **Vindue** > **Vis visning** > **Servere**.
 
-Hvis du vil se et komplet eksempel, hvor JavaScript API'en bruges, kan du bruge [værktøjet Playground](https://microsoft.github.io/PowerBI-JavaScript/demo). Med værktøjet Playground kan du hurtigt prøve dig frem med forskellige typer af eksempler på Power BI Embedded. Du kan også få flere oplysninger om JavaScript-API'en ved at gå til siden [Wiki for PowerBI-JavaScript](https://github.com/Microsoft/powerbi-javascript/wiki).
+    b. Under fanen Servere skal du vælge **Ingen servere er tilgængelige. Klik på dette link for at oprette en ny server**.
 
-Her er et eksempel, der anvender modellen **EmbedConfig** og modellen **TileEmbedConfig** sammen med visninger for en rapport.
+    c. I vinduet **Definer en ny server** skal du udvide **Apache** og vælge den Tomcat-server, du kører på maskinen. For eksempel *Tomcat v9.0 Server*.
 
-*Et eksempel på tilføjelse af en visning for en rapport, et dashboard eller et felt er tilgængeligt i Views\Home\EmbedReport.cshtml, Views\Home\EmbedDashboard.cshtml eller Views\Home\Embedtile.cshtml filer i [eksempelprogrammet](#embed-content-using-the-sample-application).*
+    d. Vælg **Næste**.
 
-```javascript
-<script src="~/scripts/powerbi.js"></script>
-<div id="reportContainer"></div>
-<script>
-    // Read embed application token from Model
-    var accessToken = "@Model.EmbedToken.Token";
+    e. I vinduet **Tomcat Server** skal du vælge **Gennemse** og navigere til den mappe, der indeholder Tomcat-serveren.
 
-    // Read embed URL from Model
-    var embedUrl = "@Html.Raw(Model.EmbedUrl)";
+    f. I vinduet **Tomcat Server** skal du vælge **Installerede JRE'er**.
 
-    // Read report Id from Model
-    var embedReportId = "@Model.Id";
+    eks. I vinduet **Installerede JRE'er** skal du vælge den tilgængelige *jre* og vælge **Anvend og luk**.
 
-    // Get models. models contains enums that can be used.
-    var models = window['powerbi-client'].models;
+    h. I vinduet **Tomcat Server** skal du vælge **Udfør**. Du kan se Tomcat-serveren under fanen *Servere*.
 
-    // Embed configuration used to describe what and how to embed.
-    // This object is used when calling powerbi.embed.
-    // This also includes settings and options such as filters.
-    // You can find more information at https://github.com/Microsoft/PowerBI-JavaScript/wiki/Embed-Configuration-Details.
-    var config = {
-        type: 'report',
-        tokenType: models.TokenType.Embed,
-        accessToken: accessToken,
-        embedUrl: embedUrl,
-        id: embedReportId,
-        permissions: models.Permissions.All,
-        settings: {
-            filterPaneEnabled: true,
-            navContentPaneEnabled: true
-        }
-    };
+8. Åbn projektet i Eclipse:
 
-    // Get a reference to the embedded report HTML element
-    var reportContainer = $('#reportContainer')[0];
+    >[!IMPORTANT]
+    >Der kan opstå problemer i Eclipse, hvis navnet på stien er for lang. Hvis du vil undgå dette problem, skal du bekræfte, at mappen til dit eksempelprogram ikke er indlejret for dybt i computerens mappestruktur.
 
-    // Embed the report and display it within the div container.
-    var report = powerbi.embed(reportContainer, config);
-</script>
-```
+    a. Vælg **Filer**, og vælg derefter **Åbn projekter fra filsystem**.
 
-## <a name="move-to-production"></a>Flyt til produktion
+    b. I vinduet **Importér projekter fra filsystem eller arkiv** skal du vælge **Mappe** og åbne mappen **AppOwnsData**.
 
-Nu, hvor du er færdig med at udvikle dit program, er tiden kommet til at underbygge dit arbejdsområde med en kapacitet.
+    c. Vælg **Udfør**.
 
-> [!Important]
-> En kapacitet er påkrævet for at flytte til produktionen. Alle arbejdsområder (dem, der indeholder rapporter eller dashboards, og dem, der indeholder datasættene) skal være tildelt en kapacitet.
+9. Føj Tomcat-serveren til projektet:
 
-### <a name="create-a-capacity"></a>Opret kapacitet
+    a. I ruden **Package Explorer** skal du højreklikke på **AppOwnsData** og vælge **Egenskaber**.
 
-Når du opretter en kapacitet, kan du drage fordel af at have en ressource for din kunde. Du kan vælge mellem to kapacitetstyper:
-* **Power BI Premium** – Et Office 356-abonnement på lejerniveau, der er tilgængeligt i to SKU-serier, *EM* og *P*. Når du integrerer Power BI-indhold, kaldes denne løsning for *integrering i Power BI*. Du kan finde flere oplysninger om dette abonnement under [Hvad er Power BI Premium?](../../admin/service-premium-what-is.md)
-* **Azure Power BI Embedded** – Du kan købe en kapacitet på [Microsoft Azure-portalen](https://portal.azure.com). Dette abonnement bruger *A*-SKU'erne. Du kan finde flere oplysninger om, hvordan du opretter en kapacitet til Power BI Embedded, under [Opret kapacitet til Power BI Embedded på Azure-portalen](azure-pbie-create-capacity.md).
-> [!NOTE]
-> Med A-SKU'er kan du ikke få adgang til Power BI-indhold med en GRATIS Power BI-licens.
+    b. I vinduet **Egenskaber for AppOwnesData** skal du vælge **Målrettede kørsler** og derefter vælge **Apache Tomcat**. Dette valg omfatter den version af *Apache Tomcat*, du bruger, f.eks. *Apache Tomact v9.0*.
 
-I nedenstående tabel beskrives ressourcerne og begrænsningerne for hver SKU. Hvis du vil finde ud af, hvilken kapacitet der passer bedst til dine behov, skal du se tabellen [Hvilken SKU skal jeg købe til mit scenarie?](./embedded-faq.md#which-solution-should-i-choose)
+    c. Vælg **Anvend og luk**.
 
-| Kapacitetsnoder | V-kerner i alt | Backend-v-kerner | RAM (GB) | Frontend-v-kerner | DirectQuery/direkte forbindelser (pr. sek.) | Parallel opdatering af modeller |
-| --- | --- | --- | --- | --- | --- | --- |
-| EM1/A1 | 1 | 0,5 | 2.5 | 0,5 | 3,75 | 1 |
-| EM2/A2 | 2 | 1 | 5 | 1 | 7,5 | 2 |
-| EM3/A3 | 4 | 2 | 10 | 2 | 15 | 3 |
-| P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
-| P2/A5 | 16 | 8 | 50 | 8 | 60 | 12 |
-| P3/A6 | 32 | 16 | 100 | 16 | 120 | 24 |
-| | | | | | | |
+10. Udfyld de påkrævede parametre
 
-### <a name="development-testing"></a>Udviklingstest
+    a. I **Package Explorer** skal du udvide projektet **AppOwnsData**.
 
-I forbindelse med udviklingstest kan du bruge integrerede prøveversionstokens med en Pro-licens. Brug en kapacitet for at integrere i et produktionsmiljø.
+    b. Udvid **Java-ressourcer**.
 
-Det antal prøveversionstokens til integrering, som en Power BI-tjenesteprincipal eller hovedkonto kan generere, er begrænset. Brug API'en [Tilgængelige funktioner](/rest/api/power-bi/availablefeatures/getavailablefeatures) til at kontrollere procentdelen af dit aktuelle integrerede forbrug. Forbrugsmængden vises pr. tjenesteprincipal eller hovedkonto.
+    c. Udvid **src**.
 
-Hvis du løber tør for integreringstokens under test, skal du købe en Power BI Embedded- eller Premium-[kapacitet](embedded-capacity.md). Der er ingen grænse for, hvor mange integreringstokens du kan generere med en kapacitet.
+    d. Udvid **com.embedsample.appoensdata.config**.
 
+    e. Åbn **Config.java**.
 
-### <a name="assign-a-workspace-to-a-capacity"></a>Tildel et arbejdsområde til en kapacitet
+    f. Afhængigt af din godkendelsesmetode skal du udfylde følgende parameterværdier:
 
-Når du har oprettet en kapacitet, kan du tildele dit arbejdsområde til kapaciteten.
+    |Parameter            |Tjenesteprincipal  |Masterbruger  |
+    |---------------------|---------|---------|
+    |`authenticationType` |ServicePrincipal         |MasterUser         |
+    |`workspaceId`        |Id'et for arbejdsområdet med din integrerede rapport – se [arbejdsområde-id](#workspace-id)          |Id'et for arbejdsområdet med din integrerede rapport – se [arbejdsområde-id](#workspace-id)         |
+    |`reportId`           |Id'et for den rapport du integrerer – se [rapport-id](#report-id)            |Id'et for den rapport du integrerer – se [rapport-id](#report-id)         | 
+    |`clientId`           |[Klient-id'et](#client-id) for dit Azure AD-program         |[Klient-id'et](#client-id) for dit Azure AD-program         |
+    |`pbiUsername`        |I/T         |Brugernavnet for din *masterbruger* – se [brugernavn og adgangskode til Power BI](#power-bi-username-and-password)         |
+    |`pbiPassword`        |I/T         |Adgangskoden for din *masterbruger* – se [brugernavn og adgangskode til Power BI](#power-bi-username-and-password)         |
+    |`tenantId`           |[Lejer-id'et](#tenant-id) for dit Azure AD         |I/T         |
+    |`appSecret`       |[Klienthemmeligheden](#client-secret) for dit Azure AD         |I/T         |
 
-Alle arbejdsområder, der indeholder Power BI-ressourcer, som er relateret til det integrerede indhold (herunder datasæt, rapporter og dashboards), skal tildeles til kapaciteter. Hvis en integreret rapport og det datasæt, der er bundet til det, f.eks. er placeret i forskellige arbejdsområder, skal begge arbejdsområder tildeles til kapaciteter.
+11. Kør projektet
 
-Hvis du vil tildele en kapacitet til et arbejdsområde ved hjælp af en [tjenesteprincipal](embed-service-principal.md), skal du bruge [REST API'en til Power BI](/rest/api/power-bi/capacities/groups_assigntocapacity). Når du bruger REST API'er til Power BI, skal du sørge for at bruge [objekt-id'et for tjenesteprincipalen](embed-service-principal.md).
+    a. I **Package Explorer** skal du højreklikke på **AppOwnesData**.
 
-Følg nedenstående trin for at tildele en kapacitet til et arbejdsområde ved hjælp af en **masterkonto**.
+    b. Vælg **Kør som**  > **Kør på server**.
 
-1. I **Power BI-tjenesten** skal du udvide arbejdsområder og vælge ellipsen for det arbejdsområde, du bruger til at integrere dit indhold i. Vælg derefter **Rediger arbejdsområder**.
+    c. I vinduet **Kør på server** skal du vælge **Vælg en eksisterende server** og vælge *Tomcat*-serveren.
 
-    ![Rediger arbejdsområde](media/embed-sample-for-customers/embed-sample-for-customers-036.png)
+    d. Vælg **Udfør**.
 
-2. Udvid **Avanceret**, aktivér derefter **Kapacitet**, og vælg derefter den kapacitet, du har oprettet. Vælg derefter **Gem**.
+# <a name="node-js"></a>[Node JS](#tab/node-js)
 
-    ![Tildel kapacitet](media/embed-sample-for-customers/embed-sample-for-customers-024.png)
+6. Åbn mappen **Programmet ejer data** ved hjælp af dine foretrukne IDE. Vi anbefaler, at du bruger en af følgende:
 
-3. Når du har valgt **Gem**, kan du se en **rombe** ud for navnet på arbejdsområdet.
+    * [Visual Studio](https://visualstudio.microsoft.com/)
 
-    ![arbejdsområde knyttet til en kapacitet](media/embed-sample-for-customers/embed-sample-for-customers-037.png)
+    * [Visual Studio Code](https://code.visualstudio.com/)
+
+7. Åbn en terminal, og installér de påkrævede afhængigheder ved at udføre: `npm install`.
+
+8. Udvid mappen **Config**, og åbn **config.json**.
+
+9. Afhængigt af din godkendelsesmetode skal du udfylde følgende parameterværdier:
+
+    |Parameter            |Tjenesteprincipal  |Masterbruger  |
+    |---------------------|---------|---------|
+    |`authenticationMode` |ServicePrincipal         |MasterUser         |
+    |`clientId`           |[Klient-id'et](#client-id) for dit Azure AD-program         |[Klient-id'et](#client-id) for dit Azure AD-program         |
+    |`workspaceId`        |Id'et for arbejdsområdet med din integrerede rapport – se [arbejdsområde-id](#workspace-id)          |Id'et for arbejdsområdet med din integrerede rapport – se [arbejdsområde-id](#workspace-id)         |
+    |`reportId`           |Id'et for den rapport du integrerer – se [rapport-id](#report-id)            |Id'et for den rapport du integrerer – se [rapport-id](#report-id)         |
+    |`pbiUsername`        |I/T         |Brugernavnet for din *masterbruger* – se [brugernavn og adgangskode til Power BI](#power-bi-username-and-password)         |
+    |`pbiPassword`        |I/T         |Adgangskoden for din *masterbruger* – se [brugernavn og adgangskode til Power BI](#power-bi-username-and-password)         |
+    |`clientSecret`       |[Klienthemmeligheden](#client-secret) for dit Azure AD         |I/T         |
+    |`tenantId`           |[Lejer-id'et](#tenant-id) for dit Azure AD         |I/T         |
+
+10. Kør projektet ved at gøre følgende:
+
+    a. På IDE-terminalen skal du udføre `npm start`.
+
+    b. Åbn en ny fane i browseren, og naviger til [http://localhost:5300](http://localhost:5300).
+
+# <a name="python"></a>[Python](#tab/python)
+
+6. Åbn **PowerShell** eller **Kommandoprompt**.
+
+7. Bekræft, at du er i **Python** > mappen **Integrer for dine kunder**, at filen **requirements.txt** er i mappen, og kør `pip3 install -r requirements.txt`.
+
+8. Åbn mappen **Programmet ejer data** ved hjælp af dine foretrukne IDE. Vi anbefaler, at du bruger en af følgende:
+
+    * [Visual Studio](https://visualstudio.microsoft.com/)
+
+    * [Visual Studio Code](https://code.visualstudio.com/)
+
+9. Åbn **config.py**.
+
+10. Afhængigt af din godkendelsesmetode skal du udfylde følgende parameterværdier:
+
+    |Parameter            |Tjenesteprincipal  |Masterbruger  |
+    |---------------------|---------|---------|
+    |`AUTHENTICATION_MODE` |ServicePrincipal         |MasterUser         |
+    |`WORKSPACE_ID`        |Id'et for arbejdsområdet med din integrerede rapport – se [arbejdsområde-id](#workspace-id)          |Id'et for arbejdsområdet med din integrerede rapport – se [arbejdsområde-id](#workspace-id)         |
+    |`REPORT_ID`           |Id'et for den rapport du integrerer – se [rapport-id](#report-id)            |Id'et for den rapport du integrerer – se [rapport-id](#report-id)         |
+    |`TENANT_ID`           |[Lejer-id'et](#tenant-id) for dit Azure AD         |I/T         |
+    |`CLIENT_ID`           |[Klient-id'et](#client-id) for dit Azure AD-program         |[Klient-id'et](#client-id) for dit Azure AD-program         |
+    |`CLIENT_SECRET`       |[Klienthemmeligheden](#client-secret) for dit Azure AD         |I/T         |
+    |`POWER_BI_USER`        |I/T         |Brugernavnet for din *masterbruger* – se [brugernavn og adgangskode til Power BI](#power-bi-username-and-password)         |
+    |`POWER_BI_PASS`        |I/T         |Adgangskoden for din *masterbruger* – se [brugernavn og adgangskode til Power BI](#power-bi-username-and-password)         |
+
+11. Gem filen.
+
+12. Kør projektet ved at gøre følgende:
+
+    a. I **PowerShell** eller **Kommandoprompt** skal du navigere til **Python** > **Integrer for dine kunder** > mappen **AppOwnesData** og udføre `flask run`.
+
+    b. Åbn en ny fane i browseren, og naviger til [http://localhost:5300](http://localhost:5300).
+
+---
+
+## <a name="developing-your-application"></a>Udvikling af dit program
+
+Når du har konfigureret og kørt eksempelprogrammet til *integrering for dine kunder*, kan du begynde at udvikle dit program.
+
+Når du er klar, kan du gennemse kravene til [flyt til produktion](move-to-production.md). Du har også brug for en [kapacitet](embedded-capacity.md), og du bør gennemse artiklen [Kapacitetsplanlægning](embedded-capacity-planning.md) for at etablere, hvilken SKU der passer bedst til dine behov.
+
 
 ## <a name="next-steps"></a>Næste trin
 
-I dette selvstudium har du lært, hvordan du integrerer Power BI-indhold i en app for dine kunder. Du kan også prøve at integrere Power BI-indhold til din organisation.
-
 > [!div class="nextstepaction"]
+>[Flyt til produktion](move-to-production.md)
+
+>[!div class="nextstepaction"]
 >[Integrer til din organisation](embed-sample-for-your-organization.md)
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+> [!div class="nextstepaction"]
+>[Integrer sideinddelte rapporter for dine kunder](embed-paginated-reports-customers.md)
+
+> [!div class="nextstepaction"]
+>[Integrer sideinddelte rapporter for din organisation](embed-paginated-reports-organization.md)
+
+>[!div class="nextstepaction"]
+>[Spørg Power BI-community'et](https://community.powerbi.com/)

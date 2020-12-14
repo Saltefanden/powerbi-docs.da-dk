@@ -10,14 +10,14 @@ ms.topic: reference
 ms.date: 11/16/2020
 ms.custom: licensing support
 LocalizationGroup: consumers
-ms.openlocfilehash: 8e3a32402b3eff202a8e35a2e34fa52271650a64
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: e2bd6a752d94bd2a549d0149512707fbd7832319
+ms.sourcegitcommit: 513c4b884a58e1da2680579339c24c46091bbfb2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96390719"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96613779"
 ---
-# <a name="power-bi-feature-list-for-consumers-and-others-with-free-licenses"></a>Liste over Power BI-funktioner til *forbrugere* og andre med gratis licenser
+# <a name="power-bi-feature-list-for-business-users-and-others-with-free-licenses"></a>Liste over Power BI-funktioner til *erhvervsbrugere* og andre med gratis licenser
 
 [!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
@@ -58,7 +58,7 @@ Hver Power BI-tjenestebruger har enten en gratis licens eller en Pro-licens. *Fo
 
    
 
-## <a name="power-bi-feature-list-for-consumers-and-free-users"></a>Liste over Power BI-funktioner til *forbrugere* og gratis brugere
+## <a name="power-bi-feature-list-for-business-users-and-free-users"></a>Liste over Power BI-funktioner til *erhvervsbrugere* og gratis brugere
 Følgende diagram viser, hvilke opgaver der kan udføres af en *forretningsbruger*, som interagerer med indhold i en Premium-kapacitet.    
 
 Den første kolonne repræsenterer en gratis bruger, der arbejder med indhold i **Mit arbejdsområde**. Denne bruger kan ikke samarbejde med kolleger i Power BI-tjenesten. Kolleger kan ikke dele indhold direkte med denne bruger, og denne bruger kan ikke dele fra **Mit arbejdsområde**. 

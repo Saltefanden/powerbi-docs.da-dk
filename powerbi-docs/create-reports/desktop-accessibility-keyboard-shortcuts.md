@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 10/28/2019
+ms.date: 12/04/2020
 LocalizationGroup: Create reports
-ms.openlocfilehash: 9cfd5f80ac18c05b520fc417c6336dda360b8737
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 5b2439af22e32f1e0a8cbd3ce326252d6b28fab1
+ms.sourcegitcommit: 513c4b884a58e1da2680579339c24c46091bbfb2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96417583"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96613917"
 ---
 # <a name="keyboard-shortcuts-in-power-bi-desktop"></a>Tastaturgenveje i Power BI Desktop
 
@@ -92,7 +92,7 @@ Idet vi løbende forbedrer tilgængeligheden, omfatter ovenstående liste også 
 | :------------------- | :------------------- |
 | Flyt linje op/ned | **Alt + Pil op** / **Pil ned** |
 | Kopiér linjen op/ned | **Skift + Alt + Pil op** / **Pil ned** |
-| Indsæt linje nedenfor | **Ctrl + Enter** |
+| Indsæt linje nedenfor | **Skift + Enter** |
 | Indsæt linje ovenfor | **Ctrl + Skift + Enter** |
 | Gå til matchende parentes | **Ctrl + Skift +**  \ |
 | Indryk streg/udvid linje til margenen | **Ctrl + ]**  /  **[** |
@@ -100,6 +100,10 @@ Idet vi løbende forbedrer tilgængeligheden, omfatter ovenstående liste også 
 | Vælg den aktuelle linje | **Ctrl + I** |
 | Vælg alle forekomster af det aktuelle valg | **Ctrl + Skift + L** |
 | Vælg alle forekomster af det aktuelle ord | **Ctrl + F2** |
+| Kommenter en linje | **Ctrl + /** eller **Ctrl + K + C** |
+| Fjern kommentar fra en linje | **Ctrl + /** eller **Ctrl + K + U** |
+| Forøg skriftstørrelse | **Ctrl + +** eller **Rul op** |
+| Formindsk skriftstørrelse | **Ctrl + -** eller **Rul ned** |
 
 ## <a name="enter-data"></a>Angiv data
 | For at udføre denne handling           | Tryk på                |

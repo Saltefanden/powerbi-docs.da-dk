@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 11/02/2020
+ms.date: 12/03/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 004546a941426f602bfb5cacaf938bd55cec452d
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 76f45ac7aee01cb907e727bc8cb12a69bd234d72
+ms.sourcegitcommit: 513c4b884a58e1da2680579339c24c46091bbfb2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96406773"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96613871"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publicer på internettet fra Power BI
 
@@ -198,6 +198,7 @@ Du skal [finde en af disse personer](/office365/admin/admin-overview/admin-overv
 - Forespørgselsmodeller for enkeltlogon til data.
 - Fortrolige eller beskyttede oplysninger.
 - Muligheden for automatisk godkendelse, der er tilgængelig med indstillingen **Integrer** fungerer ikke sammen med Power BI JavaScript API. Til Power BI JavaScript API kan du bruge den strategi til integreringen, at [brugeren ejer dataene](../developer/embedded/embed-sample-for-your-organization.md).
+- Administratorer kan blokere for offentlig internetadgang, som beskrevet i [Private links, der giver adgang til Power BI](../admin/service-security-private-links.md). Hvis det er tilfældet, er indstillingen **Publicer på internettet** nedtonet for din lejer på Power BI-administrationsportalen. 
 
 ## <a name="next-steps"></a>Næste trin
 

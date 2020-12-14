@@ -8,14 +8,14 @@ featuredvideoid: lJKgWnvl6bQ
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 07/23/2019
+ms.date: 12/03/2020
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 5aa34834df49d54be885d94a1a1c06e13891ead1
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: ad3a38fa8aef4f5404196213ebd3c7b26d3fc3b8
+ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96417330"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96578400"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-a-report"></a>Fastgør et felt til et Power BI-dashboard fra en rapport
 
@@ -58,10 +58,12 @@ En anden mulighed er at fastgøre en hel rapportside til et dashboard, som er en
 
 Du kan få mere at vide under [Fastgør en hel rapportside](service-dashboard-pin-live-tile-from-report.md).
 
-> [!NOTE]
-> Nogle formateringsindstillinger anvendes ikke på visuelle elementer, når de er fastgjort til et dashboard. Indstillinger for kant, skygge og baggrund vil blive ignoreret i den fastgjorte del. For kortvisualiseringer vises den tekst, der bruges til værdien, altid i dashboards ved hjælp af skrifttypefamilien 'DIN'. 
-> 
->
+## <a name="limitations"></a>Begrænsninger
+Nogle af formateringsindstillingerne eller temaerne for rapporten anvendes ikke på visualiseringer, når du fastgør dem til et dashboard.
+- Indstillinger for kant, skygge og baggrund ignoreres i det fastgjorte felt.
+- For kortvisualiseringer vises den tekst, der bruges til værdien, i dashboards ved hjælp af "DIN"-skrifttypefamilien med sort tekst. Du kan ændre tekstfarven for alle felterne på et dashboard ved [at oprette et brugerdefineret dashboardtema](service-dashboard-themes.md).
+- Betinget formatering anvendes ikke.
+- Størrelsen af visualiseringer tilpasses, så den passer til størrelsen af feltet. Det kan resultere i forskelle i layoutet, ligesom hvis størrelsen af visualiseringen var blevet tilpasset i rapporten.
 
 ## <a name="next-steps"></a>Næste trin
 - [Dashboards til brugere af Power BI-tjenesten](../consumer/end-user-dashboards.md)

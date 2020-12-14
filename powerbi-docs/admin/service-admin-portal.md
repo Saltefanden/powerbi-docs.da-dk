@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 10/22/2020
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: c83efa55cc1c35bb7e6fa8e62de3bca228553fe3
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 9cbb6bb03d9add4324c3fc57a6426435850a001c
+ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96409395"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96578170"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrer Power BI på administrationsportalen
 
@@ -307,7 +307,7 @@ Brugere kan se forskellige indstillinger på brugergrænsefladen afhængigt af i
 |---------|---------|---------|---------|
 |**Publicer på internettet** i menuen **Flere indstillinger (...)** for rapporten|Aktiveret for alle|Ikke synligt for alle|Kun synligt for godkendte brugere eller grupper.|
 |**Håndter integreringskoder** under **Indstillinger**|Aktiveret for alle|Aktiveret for alle|Aktiveret for alle<br><br>Indstillingen * **Slet** er kun synlig for godkendte brugere eller grupper.<br>* **Hent koder** er aktiveret for alle.|
-|**Integrer koder** i administrationsportalen|Status afspejler et af følgende:<br>* Aktiv<br>* Ikke understøttet<br>* Blokeret|Status viser **Deaktiveret**|Status afspejler et af følgende:<br>* Aktiv<br>* Ikke understøttet<br>* Blokeret<br><br>Hvis en bruger ikke er godkendt på grund af indstillingen af lejeren, vises status som **Krænkelse**.|
+|**Integrer koder** i administrationsportalen|Der er en af følgende værdier for statussen:<br>* Aktiv<br>* Ikke understøttet<br>* Blokeret|Status viser **Deaktiveret**|Der er en af følgende værdier for statussen:<br>* Aktiv<br>* Ikke understøttet<br>* Blokeret<br><br>Hvis en bruger ikke er godkendt på grund af indstillingen af lejeren, vises status som **Krænkelse**.|
 |Eksisterende publicerede rapporter|Alle aktiveret|Alle deaktiveret|Rapporter fortsætter med at gengive for alle.|
 
 ### <a name="copy-and-paste-visuals"></a>Kopiér og indsæt visualiseringer
@@ -336,7 +336,7 @@ Brugere i organisationen kan downloade .pbix-filer og sideinddelte rapporter.
 
 ### <a name="allow-live-connections"></a>Tillad direkte forbindelser
 
-Brugere i organisationen kan bruge Power BI-tjenesten Live Connect. Dette omfatter Analysér i Excel.
+Brugere i organisationen kan bruge Power BI-tjenesten Live Connect. Hvis du tillader direkte forbindelser, kan brugerne også analysere i Excel.
 
 ![Skærmbillede af indstillingen for tilladelse af direkte forbindelser.](media/service-admin-portal/powerbi-admin-portal-allow-live-connections-setting.png)
 
@@ -383,7 +383,7 @@ Brugere i organisationen kan oprette mailabonnementer. Få mere at vide om [abon
 
 ![Aktivér mailabonnementer](media/service-admin-portal/power-bi-manage-email-subscriptions.png)
 
-### <a name="featured-content"></a>Fremhævet indhold
+### <a name="featured-content"></a>Udvalgt indhold
 
 Gør det muligt for nogle af eller alle rapportforfattere i din organisation at fremhæve deres indhold i afsnittet Udvalgte Power BI Start. Nye brugere kan se fremhævet indhold øverst på deres Power BI Start-side. Fremhævet indhold flyttes ned på startsiden, efterhånden som brugerne tilføjer **favoritter**, **ofte viste** og **seneste viste**. 
 
@@ -457,7 +457,7 @@ Brugere i virksomheden kan interagere med og dele visuelle elementer oprettet me
 
 Brugere i virksomheden kan overvåge handlinger, der udføres i Power BI af andre brugere i virksomheden. [Få mere at vide](service-admin-auditing.md)
 
-Denne indstilling skal være aktiveret, for at overvågningslogposter bliver registreret. Der kan være op til 48 timers forsinkelse, fra at du aktiverer overvågning, til at du får vist data i overvågningsloggen. Hvis du ikke får vist data med det samme, skal du tjekke overvågningsloggene senere. Der kan være en lignende forsinkelse mellem at få tilladelse til at få vist overvågningslogge og til at kunne åbne logfilerne.
+Denne indstilling skal være aktiveret, for at overvågningslogposter bliver registreret. Der kan være en forsinkelse på op til 48 timer mellem aktivering af overvågning og muligheden for at få vist overvågningsdata. Hvis du ikke får vist data med det samme, skal du tjekke overvågningsloggene senere. Der kan være en lignende forsinkelse mellem at få tilladelse til at få vist overvågningslogge og til at kunne åbne logfilerne.
 
 > [!NOTE]
 > Denne indstilling gælder for hele organisationen og kan ikke begrænses til bestemte grupper.
@@ -577,10 +577,11 @@ Som administrator kan du få vist de arbejdsområder, der findes i din lejer, un
 - Se detaljer om et arbejdsområde, herunder id'et, brugerne og deres roller samt dashboards, rapporter og datasæt.
 - Rediger listen over personer, der har adgang. Det betyder, at du kan slette arbejdsområdet. Du kan føje dig selv til et arbejdsområde som administrator og derefter åbne arbejdsområdet og slette det.
 - Rediger felterne Navn og Beskrivelse.
+- Opgrader klassiske arbejdsområder til den nye arbejdsområdeoplevelse
 
 ![Liste over arbejdsområder](media/service-admin-portal/workspaces-list.png)
 
-Administratorer kan også styre brugernes mulighed for at oprette nye arbejdsområder til arbejdsområdeoplevelser og klassiske arbejdsområder. Se [Indstillinger for arbejdsområde](#workspace-settings) i denne artikel for at få flere oplysninger. 
+Administratorer kan også styre brugernes mulighed for at oprette nye arbejdsområder til arbejdsområdeoplevelser og klassiske arbejdsområder. Se [Indstillinger for arbejdsområde](#workspace-settings) i denne artikel for at få flere oplysninger.
 
 Tabelkolonnerne under fanen **Arbejdsområder** svarer til de egenskaber, der returneres af [Power BI-REST API'en](/rest/api/power-bi/admin) for arbejdsområder. Personlige arbejdsområder er af typen **Personlig gruppe**, klassiske arbejdsområder er af typen **Gruppe**, og arbejdsområder med den nye arbejdsområdeoplevelse er af typen **Arbejdsområde**. Du kan finde flere oplysninger under [Organiser arbejde i de nye arbejdsområder](../collaborate-share/service-new-workspaces.md).
 
@@ -596,6 +597,18 @@ På fanen **Arbejdsområder** kan du se *tilstanden* for hvert arbejdsområde. I
 Administratorer kan også administrere og genoprette arbejdsområder ved hjælp af enten administrationsportalen eller PowerShell-cmdlet'er. 
 
 ![Liste over arbejdsområder](media/service-admin-portal/workspaces-list.png)
+
+Administratorer kan opgradere klassiske arbejdsområder til den nye arbejdsområdeoplevelse. Administratorer kan vælge at opgradere et eller flere arbejdsområder af typen **Gruppe**. Opgraderinger sættes i kø og udføres asynkront. Det kan tage flere minutter at fuldføre alle **afventende** opgraderinger, da det samlede antal opgraderinger, der er igangsat af administratoren, er begrænset for at holde tjenesten kørende problemfrit. Kolonnen **Status for opgradering af arbejdsområde** hjælper administratorer med at spore statussen af opgraderinger, der er igangsat af administratoren. Administratorer kan annullere opgraderinger, der er igangsat af administratoren, når de er **afventende**. Hvis du vil opgradere et arbejdsområde med det samme, skal du kontakte administratoren af arbejdsområdet og få vedkommende til at starte opgraderingen via ruden med indstillinger for arbejdsområde. [Få mere at vide om opgradering af arbejdsområdet, før du starter opgraderingen, der er igangsat af Power BI-administratoren](../collaborate-share/service-upgrade-workspaces.md).
+
+I tabellen nedenfor kan du se flere oplysninger om statussen af opgraderingen.
+
+|Status  |Beskrivelse  |
+|---------|---------|
+| **(Tom)** | Arbejdsområdet opgraderes ikke af en Power BI-administrator. |
+| **Afventer** | Arbejdsområdet er sat i kø for at blive opgraderet. Opgraderingen kan annulleres. |
+| **I gang** | Arbejdsområdet opgraderes aktivt. Opgraderingen kan ikke annulleres. |
+| **Fuldført** | Arbejdsområdet blev opgraderet inden for de seneste 30 dage af en Power BI-administrator. En administrator af arbejdsområdet kan gå tilbage til den klassiske visning inden for en periode på 30 dage, efter arbejdsområdet blev opgraderet, hvis det er nødvendigt. |
+
 
 ## <a name="custom-branding"></a>Brugerdefineret branding
 

@@ -1,5 +1,5 @@
 ---
-title: Registrer en app for at integrere Power BI-indhold
+title: Registrer et program for at integrere Power BI-indhold
 description: Få mere at vide om, hvordan du registrerer et program i Azure Active Directory, som skal bruges til at integrere Power BI-indhold.
 author: KesemSharabi
 ms.author: kesharab
@@ -8,52 +8,52 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 04/02/2019
-ms.openlocfilehash: c8d756a80cf6d748f3ff33298b3a243f82197734
-ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
+ms.openlocfilehash: 845499bc236489932bf1347c43f7a5ba71c21a6b
+ms.sourcegitcommit: 30d0668434283c633bda9ae03bc2aca75401ab94
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94668643"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96907319"
 ---
 # <a name="register-an-azure-ad-application-to-use-with-power-bi"></a>Registrer et Azure AD-program, som skal bruges sammen med Power BI
 
-Hvis du vil bruge Power BI Embedded-analyse, skal du registrere en Azure Active Directory-app i Azure. Azure Active Directory-appen opretter tilladelser til Power BI-REST-ressourcer og giver adgang til [Power BI-REST-API'er](/rest/api/power-bi/).
+Hvis du vil bruge Power BI Embedded-analyse, skal du registrere et Azure Active Directory-program i Azure. Azure Active Directory-programmet opretter tilladelser til Power BI-REST-ressourcer og giver adgang til [Power BI-REST-API'er](/rest/api/power-bi/).
 
 ## <a name="determine-your-embedding-solution"></a>Fastlæg din integreringsløsning
 
-Før du registrerer din app, skal du beslutte, hvilke af følgende løsninger der passer bedst til dig:
+Før du registrerer dit program, skal du beslutte, hvilke af følgende løsninger der passer bedst til dig:
 
 * Integrer indhold for dine kunder
 * Integrer indhold for din organisation
 
 ### <a name="embed-for-your-customers"></a>Integrer indhold for dine kunder
 
-Brug løsningen [Integrer indhold for dine kunder](embed-sample-for-customers.md), der også kaldes *Appen ejer data*, hvis du planlægger at oprette en app, der er designet til dine kunder. Brugerne behøver ikke at logge på Power BI eller have en Power BI-licens, for at du kan bruge din app. Din app bruger en af følgende metoder til at godkende i forhold til Power BI:
+Brug løsningen [Integrer indhold for dine kunder](embed-sample-for-customers.md), der også kaldes *Programmet ejer data*, hvis du planlægger at oprette et program, der er designet til dine kunder. Brugerne behøver ikke at logge på Power BI eller have en Power BI-licens, for at du kan bruge dit program. Dit program bruger en af følgende metoder til at godkende i forhold til Power BI:
 
 * **Masterbruger**-konto (en Power BI Pro-licens, der bruges til at logge på Power BI)
 
-*  [Tjenesteprincipal](embed-service-principal.md)
+* [Tjenesteprincipal](embed-service-principal.md)
 
 Løsningen Integrer indhold for dine kunder bruges normalt af uafhængige softwareleverandører (ISV'er) og udviklere, der opretter programmer til tredjepart.
 
 ### <a name="embed-for-your-organization"></a>Integrer indhold for din organisation
 
-Brug løsningen [Integrer indhold for din organisation](embed-sample-for-your-organization.md), der også kaldes *Bruger ejer data*, hvis du planlægger at oprette en app, der kræver, at brugerne skal bruge deres legitimationsoplysninger til at godkende i forhold til Power BI.
+Brug løsningen [Integrer indhold for din organisation](embed-sample-for-your-organization.md), der også kaldes *Bruger ejer data*, hvis du planlægger at oprette et program, der kræver, at brugerne skal bruge deres legitimationsoplysninger til at godkende i forhold til Power BI.
 
 Løsningen Integrer indhold for din organisation bruges normalt af virksomheder og store organisationer og er beregnet til interne brugere.
 
-## <a name="register-an-azure-ad-app"></a>Registrer en Microsoft Azure Active Directory-app
+## <a name="register-an-azure-ad-app"></a>Registrer et Microsoft Azure Active Directory-program
 
-Den nemmeste måde at registrere en Microsoft Azure Active Directory-app på er ved hjælp af [installationsværktøjet til  Power BI-integrering](https://app.powerbi.com/embedsetup). Med værktøjet får du en hurtig registreringsproces til begge integreringsløsninger ved hjælp af en simpel grafisk grænseflade.
+Den nemmeste måde at registrere et Microsoft Azure Active Directory-program på er ved hjælp af [installationsværktøjet til Power BI-integrering](https://app.powerbi.com/embedsetup). Med værktøjet får du en hurtig registreringsproces til begge integreringsløsninger ved hjælp af en simpel grafisk grænseflade.
 
-Hvis du opretter en *Integrer indhold for din organisation*-app og gerne vil have mere kontrol over din Microsoft Azure Active Directory-app, kan du registrere det manuelt i Azure Portal.
+Hvis du opretter en program til *integrering i din organisation* og gerne vil have mere kontrol over dit Microsoft Azure Active Directory-program, kan du registrere det manuelt på Azure Portal.
 
 > [!IMPORTANT]
-> Før du kan registrere et Power BI-app, skal du have en [Azure Active Directory-lejer og en organisationsbruger](create-an-azure-active-directory-tenant.md).
+> Før du kan registrere et Power BI-program, skal du have en [Azure Active Directory-lejer og en organisationsbruger](create-an-azure-active-directory-tenant.md).
 
 # <a name="embed-for-your-customers"></a>[Integrer indhold for dine kunder](#tab/customers)
 
-I disse trin beskrives det, hvordan du registrerer en Microsoft Azure Active Directory-app til løsningen [Integrer indhold for dine kunder](embed-sample-for-customers.md) i Power BI.
+I disse trin beskrives det, hvordan du registrerer et Microsoft Azure Active Directory-program til løsningen [integrering for dine kunder](embed-sample-for-customers.md) i Power BI.
 
 [!INCLUDE[registration tool step 1](../../includes/register-tool-step-1.md)]
 
@@ -61,11 +61,11 @@ I disse trin beskrives det, hvordan du registrerer en Microsoft Azure Active Dir
 
 [!INCLUDE[registration tool step 3](../../includes/register-tool-step-3.md)]
 
-4. Udfyld følgende felter i *Trin 2 – Registrer din app*:
+4. Udfyld følgende felter i *Trin 2 – Registrer dit program*:
 
-    * **Programnavn** – Angiv et navn til appen.
+    * **Programnavn** – Angiv et navn på programmet.
 
-    * **API-adgang** – Vælg de Power BI-API'er (også kaldet områder), din app har brug for. Du kan bruge *Vælg alle* for at vælge alle API'erne. Du kan få flere oplysninger om Power BI-adgangstilladelser i [Tilladelser og indhold i slutpunktet for Microsoft-identitetsplatformen](/azure/active-directory/develop/v2-permissions-and-consent).
+    * **API-adgang** – Vælg de Power BI-API'er (også kaldet områder), dit program har brug for. Du kan bruge *Vælg alle* for at vælge alle API'erne. Du kan få flere oplysninger om Power BI-adgangstilladelser i [Tilladelser og indhold i slutpunktet for Microsoft-identitetsplatformen](/azure/active-directory/develop/v2-permissions-and-consent).
 
 5. Vælg **Registrer**.
 
@@ -73,7 +73,7 @@ I disse trin beskrives det, hvordan du registrerer en Microsoft Azure Active Dir
 
 [!INCLUDE[registration tool steps 6-7](../../includes/register-tool-steps-6-7.md)]
 
-8. Vælg **Giv tilladelser**, og vælg **Accepter** i pop op-vinduet i *Trin 5 – Giv tilladelser*. Dette gør det muligt for din Microsoft Azure Active Directory-app at få adgang til de API'er, du har valgt (også kaldet områder) med den bruger, der er logget på. Denne bruger kaldes også **masterbruger**.
+8. Vælg **Giv tilladelser**, og vælg **Accepter** i pop op-vinduet i *Trin 5 – Giv tilladelser*. Dette gør det muligt for dit Microsoft Azure Active Directory-program at få adgang til de API'er, du har valgt (også kaldet områder) med den bruger, der er logget på. Denne bruger kaldes også **masterbruger**.
 
 9. (Valgfrit) Hvis du har oprettet et Power BI-arbejdsområde og overført indhold til det ved hjælp af værktøjet, kan du nu vælge **Hent prøveprogram**. Sørg for at kopiere alle oplysningerne i feltet *Oversigt*.
 
@@ -115,19 +115,28 @@ I disse trin beskrives det, hvordan du registrerer en Microsoft Azure Active Dir
 
 # <a name="manual-registration"></a>[Manuel registrering](#tab/manual)
 
-Brug kun registrering af Microsoft Azure Active Directory-appen, hvis du opretter løsningen *Integrer indhold for din organisation*. Du kan finde flere oplysninger om, hvordan du registrerer programmer i Microsoft Azure Active Directory i [Registrer en app med Azure Active Directory](/azure/active-directory/develop/quickstart-v2-register-an-app).
+Brug kun manuel registrering af Azure AD-programmet, hvis du opretter en af følgende løsninger:
 
-1. Log på [Azure-portalen](https://portal.azure.com).
+* Et program til *integrering for din organisation*.
+
+* Et program til *integrering for dine kunder* med en *tjenesteprincipal*.
+
+    >[!NOTE]
+    >Hvis du vælger denne mulighed, skal du [føje Power BI-tilladelser](#change-your-azure-ad-apps-permissions) til det, efter du har registreret dit Azure AD-program.
+
+Du kan finde flere oplysninger om, hvordan du registrerer programmer i Microsoft Azure Active Directory i [Registrer et program med Azure Active Directory](/azure/active-directory/develop/quickstart-v2-register-an-app).
+
+1. Log på [Azure Portal](https://portal.azure.com).
 
 2. Vælg din Microsoft Azure Active Directory-lejer ved at vælge din konto i øverste højre hjørne af siden.
 
-3. Vælg **Appregistreringer**. Hvis du ikke kan se denne indstilling, skal du søge efter den.
+3. Vælg **Programregistreringer**. Hvis du ikke kan se denne indstilling, skal du søge efter den.
  
-4. Vælg *Ny registrering* i **Appregistreringer**.
+4. Vælg *Ny registrering* i **Programregistreringer**.
 
 5. Udfyld følgende felter:
 
-    * **Navn** – Angiv et navn til appen.
+    * **Navn** – Angiv et navn på programmet.
 
     * **Understøttet kontotype** – Vælg, hvem der kan bruge programmet.
 
@@ -137,21 +146,24 @@ Brug kun registrering af Microsoft Azure Active Directory-appen, hvis du oprette
 
 ---
 
-## <a name="change-your-azure-ad-apps-permissions"></a>Skift tilladelser for din Microsoft Azure Active Directory-app
+## <a name="change-your-azure-ad-apps-permissions"></a>Skift tilladelser for dit Microsoft Azure Active Directory-program
 
-Når du har registreret appen, kan du ændre dens tilladelser. Ændringer af tilladelser kan foretages via programmering eller i Azure Portal.
+Når du har registreret programmet, kan du ændre dets tilladelser. Ændringer af tilladelser kan foretages via programmering eller i Azure Portal.
+
+>[!NOTE]
+>Tilladelser til Azure AD-programmet gælder kun for løsningen til *integrering for dine kunder* med godkendelsesmetoden *masterbruger*.
 
 # <a name="azure"></a>[Azure](#tab/Azure)
 
 I Azure Portal kan du få vist din app og foretage ændringer af dens tilladelser.
 
-1. Log på [Azure-portalen](https://portal.azure.com).
+1. Log på [Azure Portal](https://portal.azure.com).
 
 2. Vælg din Microsoft Azure Active Directory-lejer ved at vælge din konto i øverste højre hjørne af siden.
 
-3. Vælg **Appregistreringer**. Hvis du ikke kan se denne indstilling, skal du søge efter den.
+3. Vælg **Programregistreringer**. Hvis du ikke kan se denne indstilling, skal du søge efter den.
 
-4. Vælg din app på fanen **Ejede programmer**. Appen åbnes under fanen *Oversigt*, hvor du kan gennemse *program-id'et*.
+4. Vælg dit program på fanen **Ejede programmer**. Programmet åbnes under fanen *Oversigt*, hvor du kan gennemse *program-id'et*.
 
 5. Vælg fanen **API-tilladelser**.
 

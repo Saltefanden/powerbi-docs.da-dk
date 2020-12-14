@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/11/2020
-ms.openlocfilehash: 1166f51c21e765e5710d33ad45a47057ea773bd8
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: 348032345a56d538e1e5ffbb6036d411e42b2954
+ms.sourcegitcommit: 30d0668434283c633bda9ae03bc2aca75401ab94
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94397432"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96907066"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Ofte stillede spørgsmål om Power BI Embedded
 
@@ -112,14 +112,14 @@ Power BI kræver, at du tilmelder dig med en organisationskonto. Forsøg på at 
 
 ### <a name="can-i-use-apis-to-create-and-manage-azure-capacities"></a>Kan jeg bruge API'er til at oprette og administrere Azure-kapaciteter?
 
-Ja. Der er Powershell-cmdlet'er og Azure Resource Manager-REST-API'er, du kan bruge til at oprette og administrere PBIE ressourcer.
+Ja. Der er PowerShell-cmdlet'er og REST API'er til Azure Resource Manager, som du kan bruge til at oprette og administrere PBIE-ressourcer.
 
 * [REST-API'er](/rest/api/power-bi-embedded/) 
 * [PowerShell-cmdlet'er](/powershell/module/azurerm.powerbiembedded/)
 
 ### <a name="what-is-the-pbi-embedded-capacity-role-in-a-pbi-embedded-solution"></a>Hvilken rolle har PBI's integrerede kapacitet i en PBI-integreret løsning?
 
-Hvis du vil [gøre din løsning produktionsklar](embed-sample-for-customers.md#move-to-production), skal du tildele det Power BI-indhold (arbejdsområde), dit program bruger, til en Power BI Embedded-kapacitet (A SKU).
+Hvis du vil [gøre din løsning produktionsklar](move-to-production.md), skal du tildele det Power BI-indhold (arbejdsområde), dit program bruger, til en Power BI Embedded-kapacitet (A SKU).
 
 ### <a name="in-what-azure-regions-is-pbi-embedded-available"></a>I hvilke Azure-områder er PBI Embedded tilgængelig?
 
@@ -198,7 +198,7 @@ Dette er vigtigt, når du tilføjer tjenesteprincipalen som **administrator** ti
 
 ### <a name="when-to-use-an-application-id-vs-a-service-principal-object-id"></a>Hvornår skal jeg bruge et program-id i forhold til et objekt-id for en tjenesteprincipal?
 
-**[Program-id'et](embed-sample-for-customers.md#application-id)** bruges til at oprette adgangstokenet, når program-id'et vedtages som godkendelse.
+**[Program-id'et](embed-sample-for-customers.md#client-id)** , der også er kendt som *klient-id*, bruges til at oprette adgangstokenet, når program-id'et vedtages som godkendelse.
 
 Hvis du vil henvise til en tjenesteprincipal for at udføre handlinger eller foretage ændringer, skal du bruge **[objekt-id'et for tjenesteprincipalen](embed-service-principal.md)** , f.eks. ved anvendelse af en tjenesteprincipal som administrator i et arbejdsområde.
 

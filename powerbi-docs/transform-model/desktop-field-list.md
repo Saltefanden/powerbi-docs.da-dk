@@ -9,12 +9,12 @@ ms.subservice: pbi-transform-model
 ms.topic: conceptual
 ms.date: 11/11/2020
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 834df274d4cc75af1087ab4fa7d24c2fd7dd4fec
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: ced861f0d229153866c1d52616494f8b444220ae
+ms.sourcegitcommit: 8993400b32a44f4e7ce9a2db998ddebda18c7698
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96415996"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96536478"
 ---
 # <a name="using-the-field-list-in-power-bi-desktop-preview"></a>Brug af feltlisten i Power BI Desktop (prøveversion)
 
@@ -55,6 +55,8 @@ Opdateringerne af feltlisten vises i følgende tabeller:
 |![oprindelig genvejsmenu for tabel](media/desktop-field-list/field-list-03a.png)     |![ny genvejsmenu for tabel](media/desktop-field-list/field-list-03b.png)    |
 |**Værktøjstip**       ||
 |![oprindeligt værktøjstip](media/desktop-field-list/field-list-04a.png)     |![nyt værktøjstip](media/desktop-field-list/field-list-04b.png)    |
+
+## <a name="field-list-icons"></a>Ikoner for feltliste
 
 Der er også nye feltlisteikoner. I følgende tabel vises de oprindelige ikoner og den nye version, og der er en kort beskrivelse af hver enkelt. 
 

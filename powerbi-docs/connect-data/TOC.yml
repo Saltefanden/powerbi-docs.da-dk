@@ -30,13 +30,13 @@
           href: service-tutorial-connect-to-github.md
         - name: Brug Cognitive Services
           href: service-tutorial-use-cognitive-services.md
-        - name: Integration af Machine Learning
-          href: service-tutorial-invoke-machine-learning-model.md
-        - name: Byg en Machine Learning-model
+        - name: Byg en model til maskinel indlæring
           href: service-tutorial-build-machine-learning-model.md
+        - name: Brug en model til maskinel indlæring i en rapport
+          href: service-aml-integrate.md
         - name: Opdater data fra SQL Server
           href: service-gateway-sql-tutorial.md
-    - name: Koncepter
+    - name: Begreber
       items:
         - name: Power BI-datakilder
           href: power-bi-data-sources.md
