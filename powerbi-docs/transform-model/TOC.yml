@@ -7,8 +7,6 @@
       items:
         - name: Oversigt over forespørgselseditor
           href: desktop-query-overview.md
-        - name: Selvbetjent dataforberedelse med dataflow
-          href: ./dataflows/dataflows-introduction-self-service.md
     - name: Selvstudier
       expanded: true
       items:
