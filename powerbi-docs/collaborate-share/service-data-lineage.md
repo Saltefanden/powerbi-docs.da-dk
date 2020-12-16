@@ -9,12 +9,12 @@ ms.subservice: powerbi-eim
 ms.topic: how-to
 ms.date: 06/15/2020
 LocalizationGroup: ''
-ms.openlocfilehash: d2cd60a62d321910e280ebd8b38411b393d96bca
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 8b119f5134fdaf4e251f9a8da560a2a3f7f3a4eb
+ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96407394"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97492098"
 ---
 # <a name="data-lineage"></a>Dataafstamning
 I moderne BI-projekter (Business Intelligence) kan det være en udfordring for mange kunder at forstå flowet af data fra datakilden til destinationen. Udfordringen er endnu større, hvis du har oprettet avancerede analyseprojekter, der strækker sig over flere datakilder, artefakter og afhængigheder. Spørgsmål som "Hvad sker der, hvis jeg ændrer disse data?" eller "Hvorfor er denne rapport ikke ajourført?" kan være vanskelige at besvare. Det kan være nødvendigt med et team af eksperter eller en grundig undersøgelse for at forstå dem. Vi har designet en dataafstamningsvisning for at hjælpe dig med at besvare disse spørgsmål.
@@ -26,10 +26,6 @@ Power BI har flere artefakttyper, f.eks. dashboards, rapporter, datasæt og data
 I afstamningsvisningen kan du få vist afstamningsrelationer mellem alle artefakterne i et arbejdsområde og alle dens eksterne afhængigheder. Den viser forbindelser mellem alle arbejdsområdeartefakter, herunder forbindelser til dataflows, både upstream og downstream.    
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rUj06dqB98g" frameborder="0" allowfullscreen></iframe>
-
-
-
-> [!VIDEO https://youtu.be/rUj06dqB98g]
 
 ## <a name="explore-lineage-view"></a>Udforsk afstamningsvisningen
 

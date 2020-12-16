@@ -9,6 +9,8 @@
           href: service-get-data.md
         - name: Hvad er en datagateway i det lokale miljø?
           href: service-gateway-onprem.md
+        - name: Gennemgang af datasæt i Power BI-tjenesten
+          href: service-datasets-hub.md
     - name: Hurtige introduktioner
       expanded: true
       items:
