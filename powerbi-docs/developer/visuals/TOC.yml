@@ -82,6 +82,8 @@
           href: drill-down-support.md
         - name: Føj farver til din visualisering
           href: add-colors-power-bi-visual.md
+        - name: Tilføj betinget formatering
+          href: conditional-format.md
         - name: Fremhæv data i visualiseringer
           href: highlight.md
         - name: Tilføj understøttelse af tilstand med høj kontrast
