@@ -9,12 +9,12 @@ ms.subservice: powerbi-premium
 ms.topic: how-to
 ms.date: 11/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: d4f9ba18a036c7416689a05476bd1cba6fec72e4
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 04340be9c7e3700630657306093e3d96e3e9e693
+ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96408337"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97491408"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Konfigurer arbejdsbelastninger i en Premium-kapacitet
 
@@ -25,7 +25,8 @@ I denne artikel beskrives, hvordan du aktiverer og konfigurerer arbejdsbelastnin
 
 ## <a name="default-memory-settings"></a>Standardindstillinger for hukommelse
 
-Arbejdsbelastninger for forespørgsler optimeres til og begrænses af de ressourcer, som er fastlagt af din SKU for Premium-kapacitet. Premium-kapaciteter understøtter også yderligere arbejdsbelastninger, der kan bruge din kapacitets ressourcer. Standardværdier for hukommelse for disse arbejdsbelastninger er baseret på de kapacitetsnoder, der er tilgængelige for din SKU. Det maksimale antal hukommelsesindstillinger kan ikke akkumuleres. Hukommelse op til den angivne maksimale værdi tildeles dynamisk for AI og dataflow, men tildeles statisk for sideinddelte rapporter.
+Arbejdsbelastninger for forespørgsler optimeres til og begrænses af de ressourcer, som er fastlagt af din SKU for Premium-kapacitet. Premium-kapaciteter understøtter også yderligere arbejdsbelastninger, der kan bruge din kapacitets ressourcer. Standardværdier for hukommelse for disse arbejdsbelastninger er baseret på de kapacitetsnoder, der er tilgængelige for din SKU. Det maksimale antal hukommelsesindstillinger kan ikke akkumuleres. 
+
 
 |                       | EM1/A1                  | EM2/A2                  | EM3/A3                  | P1/A4                  | P2/A5                  | P3/A6                   |
 |-----------------------|---------------------------|---------------------------|---------------------------|--------------------------|--------------------------|---------------------------|

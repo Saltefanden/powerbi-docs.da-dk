@@ -4,18 +4,18 @@ description: Vandfaldsdiagrammer i Power BI
 author: mihart
 ms.author: mihart
 ms.reviewer: mihart
-featuredvideoid: maTzOJSRB3g
+featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 12/5/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 1a651afd0aee0777f8f4c945f208eec8c46db047
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 6c358c2e12ee3526445efeab1e45b5f193f8b654
+ms.sourcegitcommit: 8250187368d3de48663eb516a816ff701119b579
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96416663"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96997926"
 ---
 # <a name="waterfall-charts-in-power-bi"></a>Vandfaldsdiagrammer i Power BI
 
@@ -94,19 +94,19 @@ Du opretter et vandfaldsdiagram, der viser afvigelsen i salg (anslået salg i fo
 
 Se lidt nærmere på, hvad der bidrager mest til ændringerne måned for måned.
 
-1.  Vælg **Butik** > **Distrikt**, hvorved **Distrikt** føjes til bucket'en **Opdeling**.
+1.  Vælg **Butik** > **Område**, hvorved **Område** føjes til bucket'en **Opdeling**.
 
     ![Skærmbillede, der viser tilføjelse af Distrikt til området Opdeling.](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown.png)
 
     Power BI bruger værdien i **Opdeling** til at føje yderligere data til visualiseringen. De fem største bidragydere føjes til stigninger eller fald for hver regnskabsmåned. Det betyder f. eks., at der nu er seks datapunkter i stedet for kun én i februar.  
 
-    ![Viser Store i bucket'en Opdeling](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-default.png)
+    ![Viser Store i opdelingsbucket](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-default.png)
 
     Lad os antage, at du kun er interesseret i de to største bidragydere.
 
-1. I ruden **Formatér** skal du vælge **Breakdown** og angive **Maks. opdelinger** til **2**.
+1. I ruden **Formatér** skal du vælge **Breakdown** og angive **Max breakdowns** til **2**.
 
-    ![Formatér > Opdeling](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-two.png)
+    ![Formatér > Breakdown](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-two.png)
 
     En hurtig gennemgang viser, at områderne Ohio og Pennsylvania er de største bidragydere til bevægelser, både negative og positive, i vandfaldsdiagrammet.
 

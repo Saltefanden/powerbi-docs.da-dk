@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 04/15/2019
-ms.openlocfilehash: 633d71326009881b22b7b7d235316b4ebe5c132f
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.date: 12/14/2020
+ms.openlocfilehash: 44cb8d3f646b0bd8e673c8ef3c1743b58bcbcaba
+ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96386875"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97491178"
 ---
 # <a name="administrators-manage-the-power-bi-desktop-sign-in-form"></a>Administratorer: Administrer logonformularen til Power BI Desktop
 Første gang Power BI Desktop startes, vises der en logon-formular. Du kan udfylde oplysninger, eller du kan logge på Power BI for at fortsætte. Administratorer kan administrere denne formular ved brug af en registreringsnøgle. 

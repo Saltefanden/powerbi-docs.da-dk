@@ -7,14 +7,14 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 10/22/2020
+ms.date: 12/09/2020
 LocalizationGroup: Get started
-ms.openlocfilehash: ec7b24a4d8f2a94680444b4b9adf4612f1f1f474
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 5e357b275cd6648721b021f68a9b8496e266e003
+ms.sourcegitcommit: 8250187368d3de48663eb516a816ff701119b579
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96415145"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96999080"
 ---
 # <a name="the-new-look-of-the-power-bi-service"></a>Power BI-tjenestens nye udseende
 
@@ -65,7 +65,7 @@ Vi har bibeholdt den samme oprettelsesoplevelse som den i Desktop. Ændringerne 
 
 Der er også en forenklet handlingslinje på dashboards. For at skabe en ensartet oplevelse er det ligesom rapporter og apps, men de funktionelle forskelle bevares. Her er en gennemgang af handlinger i et dashboard.
  
-![Skærmbillede af handlingslinje på dashboardet i det nye udseende.](media/service-new-look/power-bi-dashboard-action-bar-new-look.png)
+![Skærmbillede af handlingslinje på dashboardet i det nye udseende.](media/service-new-look/power-bi-dashboard-action-bar-new.png)
 
 ## <a name="next-steps"></a>Næste trin
 

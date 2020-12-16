@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 11/11/2020
+ms.date: 12/09/2020
 LocalizationGroup: Get started
-ms.openlocfilehash: 9bf482f14b197acda93b6411525a98e865706721
-ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
+ms.openlocfilehash: da9a143921c640f6933af572a7ac14fc04c96c47
+ms.sourcegitcommit: 8250187368d3de48663eb516a816ff701119b579
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96578512"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96998501"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Tidligere månedlige opdateringer til Power BI Desktop
 
@@ -546,13 +546,6 @@ Du kan også hente tidligere versioner af Power BI Desktop, hvis din organisatio
 * Du kan muligvis ikke åbne filer, der er oprettet eller gemt i nyere versioner af Power BI Desktop, med tidligere versioner af Power BI Desktop. 
 * Hvis du får vist en advarsel, når du indlæser en rapport, der er gemt i en nyere version af Power BI Desktop, og derefter gemmer rapporten i den tidligere version, mister du alle oplysninger, der er relateret til nye funktioner.
 * Vi arkiverer kun de engelske versioner af Power BI Desktop.
-
-Vælg følgende links for at downloade denne tidligere version: 
-
-* [Power BI Desktop-version fra maj 2020 – 32-bit](https://download.microsoft.com/download/9/0/3/903DCAE8-44D9-4A7E-856C-40C0754723ED/PBIDesktopRS.msi)
-* [Power BI Desktop-version fra maj 2020 – 64-bit](https://download.microsoft.com/download/9/0/3/903DCAE8-44D9-4A7E-856C-40C0754723ED/PBIDesktopRS_x64.msi)
-
-
 
 
 

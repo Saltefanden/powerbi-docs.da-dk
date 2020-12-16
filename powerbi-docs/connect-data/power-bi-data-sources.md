@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 11/17/2020
-ms.openlocfilehash: 18b7e55d409dc6562fab7cf1f36b83e7edac994b
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.date: 12/14/2020
+ms.openlocfilehash: 67a0577c906e23fc51182120f1445814bdcd8028
+ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96392858"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97491822"
 ---
 # <a name="power-bi-data-sources"></a>Power BI-datakilder
 
@@ -34,6 +34,7 @@ Følgende tabel indeholder de datakilder, som Power BI understøtter for datasæ
 | Azure Data Explorer (kusto) | Ja | Ja | Ja | Ja | Nej | Ja |
 | Azure Data Lake Storage Gen1 | Ja | Ja | Nej | Nej | Nej | Nej |
 | Azure Data Lake Storage Gen2 | Ja | Ja | Nej | Ja | Nej | Ja |
+| Azure Databricks | Ja | Ja | Ja | Ja | Nej | Nej |
 | Azure DevOps | Ja | Ja | Nej | Nej | Nej | Nej |
 | Azure DevOps Server | Ja | Ja | Nej | Ja | Ja | Nej |
 | Azure HDInsight (HDFS) | Ja | Ja | Nej | Nej | Nej | Nej |
@@ -43,7 +44,7 @@ Følgende tabel indeholder de datakilder, som Power BI understøtter for datasæ
 | Azure Table Storage | Ja | Ja | Nej | Ja | Nej | Ja |
 | BI Connector | Ja | Ja | Ja | Ja | Ja | Nej |
 | BI360 – Budgeting & Financial Reporting | Ja | Ja | Nej | Nej | Nej | Nej |
-| Common Data Service | Ja | Ja | Nej | Nej | Nej | Ja |
+| Microsoft Dataverse | Ja | Ja | Nej | Nej | Nej | Ja |
 | Data.World – Hent datasæt | Ja | Ja | Nej | Nej | Nej | Nej |
 | Denodo | Ja | Ja | Ja | Ja | Ja | Nej |
 | Dremio | Ja | Ja | Ja | Ja | Ja | Nej |
@@ -56,7 +57,7 @@ Følgende tabel indeholder de datakilder, som Power BI understøtter for datasæ
 | Entersoft Business Suite | Ja | Ja | Nej | Nej | Nej | Nej |
 | Essbase | Ja | Ja | Ja | Ja | Ja | Nej |
 | Exasol | Ja | Ja | Ja | Ja | Ja | Nej |
-| Excel | Ja <sup>3</sup> | Ja <sup>3</sup> | Nej | Ja <sup>3</sup> | Nej <sup>4</sup> | Yes |
+| Excel | Ja <sup>3</sup> | Ja <sup>3</sup> | Nej | Ja <sup>3</sup> | Nej <sup>4</sup> | Ja |
 | Facebook | Ja | Ja | Nej | Nej | Nej | Nej |
 | Fil | Ja | Ja | Nej | Ja | Ja | Ja |
 | Mappe | Ja | Ja | Nej | Ja | Ja | Ja |
@@ -92,7 +93,7 @@ Følgende tabel indeholder de datakilder, som Power BI understøtter for datasæ
 | OleDb | Ja | Ja | Nej | Ja | Ja | Nej |
 | Oracle | Ja | Ja | Ja | Ja | Ja | Ja |
 | Paxata <sup>8</sup> | Ja | Ja | Nej | Ja | Nej | Nej |
-| PDF | Ja | Ja | Nej | Ja | Nej <sup>4</sup> | Yes |
+| PDF | Ja | Ja | Nej | Ja | Nej <sup>4</sup> | Ja |
 | Planview Enterprise One – CTM | Ja | Ja | Nej | Nej | Nej | Nej |
 | Planview Enterprise One – PRM | Ja | Ja | Nej | Nej | Nej | Nej |
 | Planview Projectplace | Ja | Ja | Nej | Nej | Nej | Nej |
@@ -110,7 +111,7 @@ Følgende tabel indeholder de datakilder, som Power BI understøtter for datasæ
 | Salesforce-rapporter | Ja | Ja | Nej | Nej | Nej | Ja |
 | SAP Business Warehouse-meddelelsesserver | Ja | Ja | Ja | Ja | Ja | Ja |
 | SAP Business Warehouse-server | Ja | Ja | Ja | Ja | Ja | Ja |
-| SAP HANA | Ja | Ja | Ja | Ja | Ja | Yes |
+| SAP HANA | Ja | Ja | Ja | Ja | Ja | Ja |
 | SharePoint-mappe | Ja | Ja | Nej | Ja | Nej <sup>4</sup> | Ja |
 | SharePoint-liste | Ja | Ja | Nej | Ja | Nej <sup>4</sup> | Ja |
 | SharePoint Online-liste | Ja | Ja | Nej | Ja | Nej | Ja |

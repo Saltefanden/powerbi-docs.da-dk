@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/08/2019
+ms.date: 09/30/2020
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 7cffba9178d4eec0bfd468040b7551768aab7f1d
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: f3c38b545cfec5c836356db6c4d42d524af129e6
+ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96405876"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97491914"
 ---
 # <a name="connect-to-a-google-bigquery-database-in-power-bi-desktop"></a>Opret forbindelse til en Google BigQuery-database i Power BI Desktop
 I Power BI Desktop kan du oprette forbindelse til en Google **BigQuery**-database og bruge de underliggende data på samme måde som enhver anden datakilde i Power BI Desktop.
@@ -71,7 +71,7 @@ Der er et par begrænsninger og overvejelser, du skal være opmærksom på i for
   ```
 
 ## <a name="next-steps"></a>Næste trin
-Du kan oprette forbindelse til mange forskellige typer data ved hjælp af Power BI Desktop. Hvis du vil have mere at vide om datakilder, kan du se følgende ressourcer:
+Du kan oprette forbindelse til mange forskellige typer data ved hjælp af Power BI Desktop. Du kan finde flere oplysninger om datakilder i følgende ressourcer:
 
 * [Hvad er Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
 * [Datakilder i Power BI Desktop](desktop-data-sources.md)
