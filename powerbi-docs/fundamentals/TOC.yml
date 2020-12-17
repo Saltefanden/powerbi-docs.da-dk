@@ -14,12 +14,14 @@
         - name: Sammenligning af Power BI Desktop og tjenesten
           href: service-service-vs-desktop.md
     - name: Selvstudier
+      expanded: true
       items:
         - name: Kom i gang med Power BI Desktop
           href: desktop-getting-started.md
         - name: Kom i gang med Power BI-tjenesten
           href: service-get-started.md
     - name: Koncepter
+      expanded: true
       items:
         - name: Hvad er nyt i den nyeste opdatering af Power BI Desktop?
           href: desktop-latest-update.md
@@ -44,6 +46,7 @@
             - name: Sikkerhedsgrundlinje
               href: security-baseline.md
     - name: Vejledninger
+      expanded: true
       items:
         - name: Hent Power BI Desktop
           href: desktop-get-the-desktop.md

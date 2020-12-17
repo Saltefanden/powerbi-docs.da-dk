@@ -46,7 +46,7 @@
           href: sample-supplier-quality.md
         - name: Download projektmappen Økonomisk eksempel
           href: sample-financial-download.md
-    - name: Koncepter
+    - name: Begreber
       expanded: true
       items:
         - name: Power BI-rapporter
@@ -120,6 +120,7 @@
             - name: Bedste praksis
               href: deployment-pipelines-best-practices.md
     - name: Vejledninger
+      expanded: true
       items:
         - name: Power BI-rapporter
           items:
