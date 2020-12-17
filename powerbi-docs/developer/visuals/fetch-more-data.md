@@ -7,17 +7,19 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 06/18/2019
-ms.openlocfilehash: b8be5b68603f818e26e7f731e4f163bc626b5053
-ms.sourcegitcommit: 132b3f6ba6d2b1948ddc15969d64cf629f7fb280
+ms.date: 12/13/2020
+ms.openlocfilehash: 3dc94a24e5e6a84992745775b1639b7a186ed19d
+ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94483690"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97492075"
 ---
 # <a name="fetch-more-data-from-power-bi"></a>Hent flere data fra Power BI
 
-I denne artikel beskrives det, hvordan du indlæser flere data for at overskride den faste grænse for et datapunkt på 30 KB ved hjælp af metoden `fetchMoreData`. Denne fremgangsmåde omfatter data i segmenter. Hvis du vil forbedre ydeevnen, kan du konfigurere segmentstørrelsen, så den passer til din use case.
+API'en for `fetchMoreData` gør det muligt for Power BI-visualiseringer at omgå den hårde grænse på datavisning af 30.000 rækker. Med den nye 3.4 API-version udvides funktionaliteten af API'en for `fetchMoreData` til at understøtte en ny tilgang til indlæsning af datasegmenter. Ud over den eksisterende tilgang, der samler alle de anmodede segmenter, understøtter API'en kun indlæsning af trinvise datasegmenter.
+
+Den nye tilgang giver større fleksibilitet i den måde, som yderligere datasegmenter indlæses i visualiseringen på. Hvis du vil forbedre ydeevnen, kan du konfigurere segmentstørrelsen, så den passer til din use case.
 
 ## <a name="limitations-of-fetchmoredata"></a>Begrænsninger i fetchMoreData
 
@@ -109,7 +111,7 @@ btn_click(){
 }
 ```
 
-Som svar på kald af metoden `this.host.fetchMoreData` kalder Power BI metoden `update` for det visuelle element med et nyt datasegment.
+Som svar på kald af metoden `this.host.fetchMoreData` kalder Power BI metoden `update` for visualiseringen med et nyt datasegment.
 
 > [!NOTE]
 > Power BI begrænser i øjeblikket det samlede antal hentede data til 100 MB for at undgå begrænsninger af klientens hukommelse. Du kan se, at grænsen er nået, når `fetchMoreData()` returnerer `false`.
@@ -177,7 +179,7 @@ btn_click(){
 }
 ```
 
-Som svar på kald af metoden `this.host.fetchMoreData` kalder Power BI metoden `update` for det visuelle element med et nyt datasegment.
+Som svar på kald af metoden `this.host.fetchMoreData` kalder Power BI metoden `update` for visualiseringen med et nyt datasegment.
 
 > [!NOTE]
 > Selvom dataene fra datavisningen mellem de forskellige opdateringer overvejende er entydige, er der nogen overlapning mellem efterfølgende datavisninger.

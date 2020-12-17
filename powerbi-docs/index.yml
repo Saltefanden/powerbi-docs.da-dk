@@ -7,29 +7,29 @@ metadata:
   description: Power BI forstærker din indsigt og værdien af dine data. Her kan du finde eksperternes oplysninger og svar, uanset hvordan du bruger Power BI.
   services: service
   ms.service: powerbi
-  ms.subservice: subservice
+  ms.subservice: powerbi-service
   ms.topic: hub-page
   ms.collection: collection
   author: maggiesMSFT
   ms.author: maggies
-  ms.date: 09/09/2020
-  ms.openlocfilehash: a21230b02654b6335dd8631fb0df1db6bb4e830a
-  ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+  ms.date: 12/16/2020
+  ms.openlocfilehash: be6ec499d78d3ba5f3899fcb8556296568a40319
+  ms.sourcegitcommit: 7bf09116163afaae312eb2b232eb7967baee2c92
   ms.translationtype: HT
   ms.contentlocale: da-DK
-  ms.lasthandoff: 09/22/2020
-  ms.locfileid: "90857927"
+  ms.lasthandoff: 12/17/2020
+  ms.locfileid: "97621849"
 highlightedContent:
   items:
   - title: Kom i gang med Power BI Desktop
     itemType: get-started
     url: fundamentals/desktop-getting-started.md
-  - title: Samarbejd med Power BI i Microsoft Teams
+  - title: DirectQuery til Power BI-datasæt og Azure Analysis
     itemType: concept
-    url: collaborate-share/service-collaborate-microsoft-teams.md
-  - title: Integrer Power BI-indhold i en applikation
+    url: connect-data/desktop-directquery-datasets-azure-analysis-services.md
+  - title: Brug Azure Machine Learning-modeller i Power BI
     itemType: tutorial
-    url: developer/embedded/embed-sample-for-customers.md
+    url: connect-data/service-aml-integrate.md
   - title: Power BI på Microsoft Learn
     itemType: learn
     url: /learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link
@@ -99,9 +99,9 @@ conceptualContent:
     - url: connect-data/service-gateway-onprem.md
       itemType: concept
       text: Datagateways i det lokale miljø
-    - url: connect-data/refresh-data.md
+    - url: connect-data/service-datasets-hub.md
       itemType: concept
-      text: Opdatering af data
+      text: Se data i datasæthubben
     footerLink:
       url: connect-data/index.yml
       text: Vis mere
@@ -155,9 +155,9 @@ conceptualContent:
     - url: collaborate-share/service-create-the-new-workspaces.md
       itemType: how-to-guide
       text: Opret de nye arbejdsområder
-    - url: connect-data/service-datasets-across-workspaces.md
+    - url: collaborate-share/service-collaborate-microsoft-teams.md
       itemType: concept
-      text: Introduktion til delte datasæt
+      text: Samarbejd i Microsoft Teams
     footerLink:
       url: collaborate-share/index.yml
       text: Vis mere
@@ -169,9 +169,9 @@ conceptualContent:
     - url: collaborate-share/service-analyze-in-excel.md
       itemType: concept
       text: Analysér i Excel
-    - url: collaborate-share/service-embed-report-spo.md
+    - url: collaborate-share/service-automate-power-bi-report-export.md
       itemType: concept
-      text: Integrer i SharePoint Online
+      text: Eksportér og send mails via Power Automate
     footerLink:
       url: collaborate-share/index.yml
       text: Vis mere

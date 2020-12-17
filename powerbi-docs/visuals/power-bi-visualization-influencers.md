@@ -6,15 +6,16 @@ ms.author: mihart
 ms.reviewer: juluczni
 ms.service: powerbi
 ms.subservice: pbi-visuals
+ms.custom: video-fDb5zZ3xmxU
 ms.topic: how-to
 ms.date: 01/10/2020
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 598865676a4cb5ea5378937cebe75f76cc460ce3
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: f76203e00bb691abe9a4d212c930595d180798d8
+ms.sourcegitcommit: 8250187368d3de48663eb516a816ff701119b579
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96419078"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96999122"
 ---
 # <a name="create-key-influencers-visualizations"></a>Opret visualiseringer af nøglefaktorer
 
@@ -145,7 +146,7 @@ Punktdiagrammet i ruden til højre viser den gennemsnitlige procentdel af lave b
 
 I nogle tilfælde kan du opleve, at dine fortløbende faktorer automatisk blev konverteret til kategorier. Det skyldes, at vi har indset, at relationen mellem variablerne ikke er lineær, så vi kan ikke beskrive relationen som blot værende forøget eller formindsket (som vi gjorde i eksemplet ovenfor).
 
-Vi kører korrelationstest for at bestemme, hvor lineær faktoren er med hensyn til målet. Hvis målet er fortløbende, kører vi Pearson-korrelationen, og hvis målet er en kategori, kører vi Point Biserial-korrelationstest. Hvis vi registrerer, at relationen ikke er tilstrækkelig lineær, foretager vi overvåget kassering og genererer maksimalt 5 beholdere. For at finde ud af, hvilke beholdere der giver mest mening, bruger vi en metode med overvåget kassering, hvor der kigges på relationen mellem den forklarende faktor og det mål, der analyseres.
+Vi kører korrelationstest for at bestemme, hvor lineær influenceren er med hensyn til målet. Hvis målet er fortløbende, kører vi Pearson-korrelationen, og hvis målet er en kategori, kører vi Point Biserial-korrelationstest. Hvis vi registrerer, at relationen ikke er tilstrækkelig lineær, foretager vi overvåget kassering og genererer maksimalt 5 beholdere. For at finde ud af, hvilke beholdere der giver mest mening, bruger vi en metode med overvåget kassering, hvor der kigges på relationen mellem den forklarende faktor og det mål, der analyseres.
 
 ## <a name="interpret-measures-and-aggregates-as-key-influencers"></a>Fortolkning af målinger og aggregeringer som nøglefaktorer 
  

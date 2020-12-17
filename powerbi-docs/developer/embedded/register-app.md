@@ -1,5 +1,5 @@
 ---
-title: Registrer et program for at integrere Power BI-indhold
+title: Registrer en applikation for at integrere Power BI-indhold i et program til integreret analyse
 description: Få mere at vide om, hvordan du registrerer et program i Azure Active Directory, som skal bruges til at integrere Power BI-indhold.
 author: KesemSharabi
 ms.author: kesharab
@@ -8,16 +8,16 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 04/02/2019
-ms.openlocfilehash: 845499bc236489932bf1347c43f7a5ba71c21a6b
-ms.sourcegitcommit: 30d0668434283c633bda9ae03bc2aca75401ab94
+ms.openlocfilehash: 98956beb3e5a106b885ecbca187521f85917f25e
+ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96907319"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97098208"
 ---
 # <a name="register-an-azure-ad-application-to-use-with-power-bi"></a>Registrer et Azure AD-program, som skal bruges sammen med Power BI
 
-Hvis du vil bruge Power BI Embedded-analyse, skal du registrere et Azure Active Directory-program i Azure. Azure Active Directory-programmet opretter tilladelser til Power BI-REST-ressourcer og giver adgang til [Power BI-REST-API'er](/rest/api/power-bi/).
+Hvis du vil bruge integreret analyse i Power BI, skal du registrere et Azure Active Directory-program i Azure. Azure Active Directory-programmet opretter tilladelser til Power BI-REST-ressourcer og giver adgang til [Power BI-REST-API'er](/rest/api/power-bi/).
 
 ## <a name="determine-your-embedding-solution"></a>Fastlæg din integreringsløsning
 
@@ -99,7 +99,7 @@ I disse trin beskrives det, hvordan du registrerer en Microsoft Azure Active Dir
 
         * **Brug en standard-URL-adresse** – Denne indstilling vil automatisk oprette og downloade et prøveprogram til integreret analyse. Standard-URL-adressen er http://localhost:13526/.
 
-        * **Brug en brugerdefineret URL-adresse** – Vælg denne indstilling, hvis du allerede har et program til integreret analyse, og du ved, hvad du vil bruge som omdirigerings-URL-adresse.
+        * **Brug en brugerdefineret URL-adresse** – Vælg denne indstilling, hvis du allerede har et program til integreret analyse, og du ved, hvad du vil bruge som URL-adresse til omdirigering.
 
     * **API-adgang** – Vælg de Power BI-API'er (også kaldet områder), din app har brug for. Du kan bruge *Vælg alle* for at vælge alle API'erne. Du kan få flere oplysninger om Power BI-adgangstilladelser i [Tilladelser og indhold i slutpunktet for Microsoft-identitetsplatformen](/azure/active-directory/develop/v2-permissions-and-consent).
 

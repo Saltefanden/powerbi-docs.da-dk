@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 11/17/2020
+ms.date: 12/14/2020
 LocalizationGroup: Get started
-ms.openlocfilehash: 2689597e35801d6829b29790309ea53ad410ff47
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 5c69abe925751e8b065f262e151bfee65c487238
+ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96412017"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97492052"
 ---
 # <a name="export-power-bi-paginated-reports-with-power-automate"></a>Eksportér sideinddelte Power BI-rapporter med Power Automate
 
@@ -40,7 +40,7 @@ Vælg en skabelon på listen for at komme i gang med en trinvis gennemgang.
 
 - [Gem en sideinddelt Power BI-rapport i OneDrive for Business eller SharePoint Online-mappe](service-automate-paginated-onedrive-sharepoint.md).  
 - [Eksportér en sideinddelt Power BI-rapport for elementer på en SharePoint Online-liste eller for hver række i en Excel Online-tabel](service-automate-paginated-excel-sharepoint-list.md).
-- Gem en sideinddelt Power BI-rapport i en lokal systemmappe.
+- [Gem en sideinddelt Power BI-rapport i en lokal systemmappe](service-automate-paginated-local-file.md).
 
 ## <a name="next-steps"></a>Næste trin
 

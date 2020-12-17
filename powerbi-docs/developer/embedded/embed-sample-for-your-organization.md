@@ -1,5 +1,5 @@
 ---
-title: Integrer indhold i en applikation for din organisation
+title: Integreret indhold i dit program til integreret analyse i Power BI for din organisation
 description: Få mere at vide om, hvordan du integrerer en rapport (Power BI eller sideinddelt), et dashboard eller et felt i et program ved hjælp af Power BI-API'er til integreret analyse for din organisation. Få mere at vide om, hvordan du integrerer Power BI i dit program ved hjælp af software til integreret analyse, integrerede analyseværktøjer eller integrerede værktøjer til business intelligence.
 author: KesemSharabi
 ms.author: kesharab
@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/04/2020
-ms.openlocfilehash: f84270d76265da2877ae5d2e16289373235271b6
-ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
+ms.openlocfilehash: 223495b68f160b637f5bcf40b37f1f1a1365fffd
+ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94668689"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97098162"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Selvstudium: Integrer Power BI-indhold i en app til din organisation
 
@@ -43,7 +43,7 @@ Hvis du ikke har et Azure-abonnement, skal du oprette en [gratis konto](https://
 >[!NOTE]
 >[Premium pr. bruger](../../admin/service-premium-per-user-faq.md) understøttes. Men hvis du bruger Premium pr. bruger, er det kun brugere af Premium pr. bruger i din organisation, der har adgang til din løsning.
 
-## <a name="set-up-your-embedded-analytics-development-environment"></a>Konfigurer dit integrerede analyseudviklingsmiljø
+## <a name="set-up-your-embedded-analytics-development-environment"></a>Konfigurer dit udviklingsmiljø for integreret analyse
 
 Før du begynder at integrere rapporter, dashboards eller felter i dit program, skal du sikre dig, at du kan integrere med Power BI i dit miljø.
 

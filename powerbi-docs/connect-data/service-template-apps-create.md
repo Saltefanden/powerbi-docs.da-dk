@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 09/15/2020
-ms.openlocfilehash: fc62d291b890d840b89997cd5d5253572f91bf3e
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.date: 12/14/2020
+ms.openlocfilehash: cfd9302c9c64760298eb78be10affad8be510a65
+ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96410223"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97491753"
 ---
 # <a name="create-a-template-app-in-power-bi"></a>Opret en skabelonapp i Power BI
 
 Med Power BI-*skabelonappsene* kan Power BI-partnere udarbejde programmer i Power BI med kun lidt eller ingen kode og udrulle dem til Power BI-kunder.  Denne artikel indeholder en trinvis vejledning i oprettelse af en Power BI-skabelonapp.
 
-Hvis du kan oprette Power BI-rapporter og -dashboards, kan du blive *udvikler af skabelonapps* og udarbejde og pakke analytisk indhold i en *app*. Du kan udrulle dit program til andre Power BI-lejere via alle tilgængelige platforme, f.eks. AppSource, eller ved at bruge den i din egen webtjeneste. Som udvikler kan du oprette en beskyttet analysepakke, som du kan distribuere.
+Hvis du kan oprette Power BI-rapporter og -dashboards, kan du blive *udvikler af skabelonapps* og udarbejde og pakke analytisk indhold i en *app*. Du kan derefter udrulle dit program til andre Power BI-lejere via enhver tilgængelig platform, f.eks. AppSource eller din egen webtjeneste. Hvis du distribuerer dit skabelonprogram via din egen webtjeneste, kan du tilmed [automatisere en del af installationsprocessen](../developer/template-apps/template-apps-auto-install.md) for at gøre det hele nemmere for dine kunder.
 
 Power BI-administratorer styrer, hvem der kan oprette skabelonprogrammer i organisationen, og hvem der kan installere dem. Godkendte brugere kan installere dit skabelonprogram og derefter redigere det og distribuere det til Power BI-brugerne i deres organisation.
 
@@ -178,12 +178,10 @@ Lad os gennemgå faserne:
     Når installationen er fuldført, får du vist en meddelelse om, at det nye program er klar.
 
 6. Vælg **Gå til program**.
-7. Under **Kom i gang med dit nye program** kan du se programmet, som dine kunder vil se det.
 
-    ![Kom i gang med dit program](media/service-template-apps-create/power-bi-template-app-get-started.png)
-8. Vælg **Udforsk program** for at bekræfte testprogrammet sammen med eksempeldataene.
-9. Hvis du vil foretage ændringer, skal du vende tilbage til programmet i det oprindelige arbejdsområde. Opdater testprogrammet, indtil du er tilfreds.
-10. Når du er klar til at hæve dit program til præproduktion med henblik på yderligere test uden for din lejer, skal du gå tilbage til ruden **Udgivelsesadministration** og vælge **Hæv program**.
+    Kontrollér, at testprogrammet har eksempeldataene. Hvis du vil foretage ændringer, skal du vende tilbage til programmet i det oprindelige arbejdsområde. Opdater testprogrammet, indtil du er tilfreds.
+
+1. Når du er klar til at hæve dit program til præproduktion med henblik på yderligere test uden for din lejer, skal du gå tilbage til ruden **Udgivelsesadministration** og vælge **Hæv program**.
 
     ![Hæv programmet til præproduktion](media/service-template-apps-create/power-bi-template-app-promote.png)
     >[!NOTE]
@@ -200,6 +198,10 @@ Lad os gennemgå faserne:
     ![Program i produktion](media/service-template-apps-create/power-bi-template-app-production.png)
 
 Hvis du vil gøre dit program tilgængeligt for tusindvis af Power BI-brugere i hele verden, opfordrer vi dig til at sende det til AppSource. Du kan se yderligere oplysninger under [Power BI-programtilbud](/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
+
+## <a name="automate-parameter-configuration-during-installation"></a>Automatiser parameterkonfiguration under installationen
+
+Hvis du er en uafhængig softwareproducent og distribuerer dit program via din webtjeneste, kan du oprette automatisering, der automatisk konfigurerer parametre for skabelonprogrammet, når dine kunder installerer programmet på deres Power BI-konto. Det gør det hele nemmere for dine kunder og øger sandsynligheden for en vellykket installation, da de ikke skal levere oplysninger, som de måske ikke kender. Se [Automatiseret konfiguration af installationen af et skabelonprogram](../developer/template-apps/template-apps-auto-install.md) for at få flere oplysninger.
 
 ## <a name="next-steps"></a>Næste trin
 

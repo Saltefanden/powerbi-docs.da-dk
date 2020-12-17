@@ -8,12 +8,12 @@ ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 05/19/2020
 LocalizationGroup: Connect to services
-ms.openlocfilehash: e92afdbad41f212ac93245583430ae44fe0abaf9
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: f0d756b7909043a644ab8220cd71a9fca9b1c0e0
+ms.sourcegitcommit: 8250187368d3de48663eb516a816ff701119b579
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96410637"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96998693"
 ---
 # <a name="connect-to-github-with-power-bi"></a>Opret forbindelse til GitHub med Power BI
 I denne artikel gennemgår vi, hvordan du trækker data fra din GitHub-konto med en skabelonapp i Power BI. Med skabelonappen oprettes et arbejdsområde med et dashboard, et sæt rapporter og et datasæt, der giver dig mulighed for at udforske dine GitHub-data. Med GitHub-appen til Power BI kan du få indsigt i dit GitHub-lager med data om bidrag, problemer, pullanmodninger og aktive brugere.
@@ -41,7 +41,7 @@ Du kan også prøve [GitHub-selvstudiet](service-tutorial-connect-to-github.md).
 
 1. Vælg **Installér**. 
 
-    ![Installér GitHub-skabelonappen](media/service-connect-to-github/service-regional-emergency-response-select-install.png)
+    ![Installér GitHub-skabelonappen](media/service-connect-to-github/power-bi-github-install-dialog.png)
 
     Når appen er installeret, kan du se den på siden med dine apps.
 
@@ -51,30 +51,23 @@ Du kan også prøve [GitHub-selvstudiet](service-tutorial-connect-to-github.md).
 
 1. Vælg ikonet på siden med apps for at åbne appen.
 
-1. På velkomstskærmen skal du vælge **Udforsk app**.
-
-   ![Velkomstskærmbilledet for skabelonappen](media/service-connect-to-github/service-github-app-splash-screen.png)
-
    Appen åbnes, og der vises eksempeldata.
 
 1. Vælg linket **Opret forbindelse til dine data** på banneret øverst på siden.
 
    ![GitHub-appen opretter forbindelse til dit datalink](media/service-connect-to-github/service-github-app-connect-data.png)
 
-1. Angiv navnet på og ejeren af lageret i den dialogboks, der vises. Herunder kan du se detaljer om, hvordan du [finder de pågældende parametre](#FindingParams). Klik på **Næste**, når du er færdig.
+1. Dette åbner dialogboksen Parametre, hvor du kan ændre datakilden fra eksempeldataene til din egen datakilde (se [kendte begrænsninger](service-template-apps-overview.md#known-limitations)) efterfulgt af dialogboksen med godkendelsesmetoden. Det kan være nødvendigt at omdefinere værdierne i disse dialogbokse.
 
-   ![Navn på GitHub-lager i Power BI](media/service-connect-to-github/power-bi-github-app-tutorial-connect.png)
+   ![Skærmbillede af oprettelsen af forbindelse til data.](media/service-connect-to-github/power-bi-template-app-connect-to-data-dialogs.png)
 
-1. I den næste dialogboks, der vises, skal du kontrollere, at godkendelsesmetoden er angivet til **OAuth2**. Du behøver ikke at foretage dig andet med indstillingen for beskyttelse af personlige oplysninger. Når du er klar, skal du klikke på **Log på**.
-
-   ![GitHub-godkendelsesmetode i Power BI](media/service-connect-to-github/power-bi-github-authentication.png)
 
 1. Angiv dine GitHub-legitimationsoplysninger, og følg GitHub-godkendelsesprocessen. Dette trin kan springes over, hvis du allerede er logget på med din browser.
 
    ![GitHub-godkendelsesprocessen i Power BI](media/service-connect-to-github/power-bi-github-authenticate-process.png)
 
 
-Når du har logget på, opretter rapporten forbindelse til datakilderne og udfyldes med opdaterede data. Aktivitetsovervågningen aktiveres i dette tidsrum.
+Når du er færdig med at udfylde forbindelsesdialogboksene og logget på GitHub, starter processen til oprettelse af forbindelse. Et banner informerer dig om, at dataene opdateres, og at du i mellemtiden får vist eksempeldata.
 
 ![Igangværende opdatering af Power BI GitHub-appen](media/service-connect-to-github/service-github-app-refresh-monitor.png)
 

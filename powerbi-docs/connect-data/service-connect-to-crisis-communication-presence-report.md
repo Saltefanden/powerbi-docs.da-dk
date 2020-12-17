@@ -8,12 +8,12 @@ ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 04/06/2020
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 7cce4f9e78fce27fedf795a4a0016593580f061a
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: e9fd1179dc15776cef701476d38b18823f3a8deb
+ms.sourcegitcommit: 8250187368d3de48663eb516a816ff701119b579
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96403162"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96998785"
 ---
 # <a name="connect-to-the-crisis-communication-presence-report"></a>Opret forbindelse til rapport om eksisterende krisekommunikation
 
@@ -57,9 +57,6 @@ Når du installerer krisekommunikationseksemplet, skal du notere [stien til mapp
 
 1. Vælg ikonet på siden med apps for at åbne appen.
 
-1. På velkomstskærmen skal du vælge **Udforsk**.
-
-   ![Velkomstskærmbilledet for skabelonappen](media/service-connect-to-crisis-communication-presence-report/service-crisis-communication-presence-report-app-splash-screen.png)
 
    Appen åbnes, og der vises eksempeldata.
 

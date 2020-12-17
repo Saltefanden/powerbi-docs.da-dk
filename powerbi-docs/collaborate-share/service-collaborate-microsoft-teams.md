@@ -9,13 +9,13 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 09/15/2020
-ms.openlocfilehash: bcd7d94e4fd3d50277ddd2a33c1d10407b9400de
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.date: 12/14/2020
+ms.openlocfilehash: 80aa8097ce38a9b1bac228ea61dcc959e4aba60d
+ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96411994"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97492006"
 ---
 # <a name="collaborate-in-microsoft-teams-with-power-bi"></a>Samarbejd i Microsoft Teams med Power BI
 
@@ -23,7 +23,7 @@ I takt med at en distribueret og ekstern arbejdsstyrke bliver normen, anvender s
 
 - Med den opdaterede **Power BI**-fane til Microsoft Teams kan du [integrere interaktive rapporter i Microsoft Teams](service-embed-report-microsoft-teams.md)-kanaler og -chats. Fanen Power BI hjælper dine kolleger med at finde dit teams data og drøfte dataene i dit teams kanaler. 
 - Vi opretter et [linkeksempel](service-teams-link-preview.md), når du indsætter et link til dine rapporter, dashboards og apps i Microsoft Teams-meddelelsesfeltet. Linkeksemplet viser oplysninger om linket. 
-- Brug [Del i Microsoft Teams](service-share-report-teams.md), når du får vist rapporter og dashboards i Power BI-tjenesten, til hurtigt at starte samtaler i Microsoft Teams.
+- Brug [Chat i Microsoft Teams](service-share-report-teams.md), når du får vist rapporter og dashboards i Power BI-tjenesten, til hurtigt at starte samtaler i Microsoft Teams.
 - Brug [Power BI-appen i Microsoft Teams](service-microsoft-teams-app.md) for at få adgang til hele den grundlæggende funktionalitet i Power BI-tjenesten i Microsoft Teams.
  
 :::image type="content" source="media/service-collaborate-microsoft-teams/power-bi-embed-teams-report.png" alt-text="Skærmbillede af en Power BI-rapport, der er integreret i en Microsoft Teams-kanal.":::
@@ -70,6 +70,6 @@ De øvrige Microsoft Power Platform-apps kan også integreres med Microsoft Team
 
 - [Integrer Power BI-indhold i Microsoft Teams](service-embed-report-microsoft-teams.md)
 - [Få vist et eksempel på et Power BI-link i Microsoft Teams](service-teams-link-preview.md)
-- [Del direkte i Microsoft Teams fra Power BI-tjenesten](service-share-report-teams.md)
+- [Chat i Microsoft Teams direkte fra Power BI-tjenesten](service-share-report-teams.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/).

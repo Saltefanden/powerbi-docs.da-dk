@@ -1,5 +1,5 @@
 ---
-title: Brug af sikkerhed på rækkeniveau med integreret Power BI-indhold
+title: Brug af sikkerhed på rækkeniveau med integreret indhold i integreret analyse i Power BI
 description: Få mere at vide om, hvordan du integrerer Power BI-indhold i din app
 author: KesemSharabi
 ms.author: kesharab
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/10/2019
-ms.openlocfilehash: 09489c3dbb33e1c5fb289cc1cc132eae0083a95f
-ms.sourcegitcommit: 9d033abd9c01a01bba132972497dda428d7d5c12
+ms.openlocfilehash: 6f65bf5b430c5435936acbd3a7cdfbe4c57d1dec
+ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96120797"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97098001"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Sikkerhed på rækkeniveau med Power BI Embedded
 

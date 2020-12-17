@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 09/17/2020
-ms.openlocfilehash: b60728978a3429249d7376fdfe1477bf67ef293a
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: e6499d9e4547f1bd2b8cf4ac29fbc375af871f8a
+ms.sourcegitcommit: 8250187368d3de48663eb516a816ff701119b579
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96401989"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96998626"
 ---
 # <a name="install-and-distribute-template-apps-in-your-organization"></a>Installér og distribuer skabelonapps i din organisation
 
@@ -64,10 +64,6 @@ Hvis du vil installere, tilpasse og distribuere en skabelonapp, skal du have fø
 ## <a name="connect-to-data"></a>Opret forbindelse til data
 
 1. Vælg **Gå til program**.
-
-1. I vinduet **Kom i gang med din nye app** skal du vælge **Udforsk**.
-
-   ![Velkomstskærmbilledet for skabelonappen](media/service-template-apps-install-distribute/power-bi-template-app-get-started.png)
 
    Appen åbnes, og der vises eksempeldata.
 
@@ -138,6 +134,20 @@ Hvis du oprindeligt har downloadet appen fra AppSource, får du besked på to m�
 
 >[!IMPORTANT]
 >Husk, at [opdatere appen](#customize-and-share-the-app) efter overskrivning for at anvende ændringerne af rapporten og dashboardet for brugerne af din organisationsapp.
+
+## <a name="delete-a-template-app"></a>Slet et skabelonprogram
+
+Et installeret skabelonprogram består af programmet og dets tilknyttede arbejdsområde. Hvis du vil fjerne skabelonprogrammet, har du to muligheder:
+* **Fjern programmet og dets tilknyttede arbejdsområde helt**: Hvis du vil fjerne skabelonprogrammet og det tilknyttede arbejdsområde helt, skal du gå til programfeltet på siden Programmer, vælge ikonet Papirkurv og derefter klikke på **Slet** i den viste dialogboks.
+* **Annuller publicering af programmet**: Med denne indstilling fjernes programmet, men dets tilknyttede arbejdsområde bevares. Denne indstilling er nyttig, hvis der f.eks. foretages tilpasninger, som du vil beholde.
+
+    Sådan annullerer du publiceringen af programmet:
+    1. Åbn programmet.
+    1. Klik på blyantsikonet for redigering af programmet for at åbne arbejdsområdet for skabelonprogrammet.
+    1. I arbejdsområdet for skabelonprogrammet skal du vælge **Flere indstillinger (...)** og derefter vælge **Annuller publicering af program**.
+
+        ![Skærmbillede af indstillingen til annullering af publiceringen af programmet.](media/service-template-apps-install-distribute/power-bi-template-app-unpublish.png)
+
 
 ## <a name="next-steps"></a>Næste trin
 

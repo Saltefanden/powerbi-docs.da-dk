@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 06/23/2020
-ms.openlocfilehash: df5e82af012f4d85fd81399d6e31fde3b7539ce6
-ms.sourcegitcommit: 9d033abd9c01a01bba132972497dda428d7d5c12
+ms.openlocfilehash: 902fb0534eee307a84b24fe30496a32cccadb147
+ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95513820"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97097978"
 ---
 # <a name="configure-credentials-programmatically-for-power-bi"></a>Konfigurer legitimationsoplysninger programmatisk for Power BI
 
@@ -80,7 +80,7 @@ Følg trinene i denne artikel for at konfigurere legitimationsoplysninger progra
 
     # <a name="net-sdk-v3"></a>[.NET SDK v3](#tab/sdk3)
 
-    Brug AssymetricKeyEncriptor-klassen med den offentlige nøgle, som blev hentet i **Trin 3**.
+    Brug AssymetricKeyEncryptor-klassen med den offentlige nøgle, som blev hentet i **Trin 3**.
 
     ```csharp
     var credentialDetails = new CredentialDetails(

@@ -1,6 +1,6 @@
 ---
-title: Overvåg forbrugsdata for dashboards og rapporter
-description: Sådan får du vist, gemmer og bruger forbrugsdata for Power BI-dashboards og -rapporter.
+title: Overvåg forbrugsdata i klassiske arbejdsområder
+description: Sådan får du vist, gemmer og bruger forbrugsdata for Power BI-dashboards og -rapporter i klassiske arbejdsområder.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -8,18 +8,18 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 10/21/2019
+ms.date: 12/15/2020
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e9247e16704ccbbee466a5f85f3a2814bdfc521f
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: b7184f00af46ce5f49df2510ea5e676c89a37a7a
+ms.sourcegitcommit: fef29a5c5bf1e0dae663c42c9ce5ae50e29ae9be
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96411626"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97558487"
 ---
-# <a name="monitor-usage-metrics-for-power-bi-dashboards-and-reports"></a>Overvåg forbrugsdata for Power BI-dashboards og -rapporter
+# <a name="monitor-usage-metrics-in-classic-workspaces"></a>Overvåg forbrugsdata i klassiske arbejdsområder
 
-Hvis du opretter dashboards og rapporter, kan forbrugsdata hjælpe dig med at forestå deres indvirkning. Når du kører enten forbrugsdata for dashboards eller rapporter, opdager du, hvordan disse dashboards og rapporter anvendes i hele organisationen: Hvem bruger dem og til hvilket formål.  
+Forbrugsdata hjælper dig med at forestå indvirkningen af dashboards og rapporter. Når du kører enten forbrugsdata for dashboards eller rapporter, opdager du, hvordan disse dashboards og rapporter anvendes i hele organisationen: Hvem bruger dem og til hvilket formål. I denne artikel beskrives rapporter om forbrugsdata for [klassiske arbejdsområder](service-create-workspaces.md). Hvis dine rapporter er i et af de nye arbejdsområder, skal du se artiklen [Overvåg forbrugsdata i den nye arbejdsområdeoplevelse](service-usage-metrics.md)  
 
 Forbrugsdatarapporter er skrivebeskyttede. Du kan dog kopiere en forbrugsdatarapport. Når du kopierer den, oprettes en almindelig Power BI-rapport, som du kan redigere. Du kan også udarbejde dine egne rapporter i Power BI Desktop, der er baseret på det underliggende datasæt, der indeholder forbrugsdata for alle dashboards eller alle rapporter i et arbejdsområde. Som udgangspunkt viser den kopierede rapport kun forbrugsdata for det valgte dashboard eller den valgte rapport. Du kan fjerne standardfilteret og få adgang til det underliggende datasæt med alle forbrugsdata for det valgte arbejdsområde. Du kan se endda se navnene på specifikke brugere, hvis din administrator har tilladt dette.
 
@@ -87,7 +87,7 @@ Hvis du vil grave dybere ned i rapportdataene eller udarbejde dine egne rapporte
 | --- | --- | --- | --- |
 | Udsnit for distributionsmetode |ja |ja |Hvordan brugerne fik adgang til indholdet. Der er tre mulige metoder: Brugere kan få adgang til dashboardet eller rapporten ved at være medlem af et [arbejdsområde](../consumer/end-user-experience.md), ved at få indholdet [delt med dem](service-share-dashboards.md) eller ved at installere en indholdspakke/app.  Bemærk, at visninger via en app tælles som "indholdspakke". |
 | Platformsudsnit |ja |ja |Blev dashboardet eller rapporten tilgået via Power BI-tjenesten (powerbi.com) eller en mobilenhed? Mobil omfatter alle vores iOS-, Android- og Windows-apps. |
-| Udsnit for rapportside |nej |ja |Hvis rapporten indeholder mere end 1 side, skal du opdele rapporten efter de sider, der blev vist. Hvis du får vist en listeindstilling for "Tom", betyder det, at en rapportside blev tilføjet for nylig (inden for 24 timer vises det faktiske navn på den nye side på listen over udsnit), og/eller at rapportsider er blevet slettet. "Tom" henter disse typer situationer. |
+| Udsnit for rapportside |nej |ja |Hvis rapporten indeholder mere end 1 side, skal du opdele rapporten efter de sider, der blev vist. "Tom" betyder, at en rapportside blev tilføjet for nylig (inden for 24 timer vises det faktiske navn på den nye side på listen over udsnit), eller at rapportsider er blevet slettet. "Tom" henter disse typer situationer. |
 | Visninger pr. dag |ja |ja |Det samlede antal visninger pr. dag – en visning er defineret som en bruger, der indlæser en rapportside eller et dashboard. |
 | Entydige seere pr. dag |ja |ja |Antallet af *forskellige* brugere, som så dashboardet eller rapporten (baseret på AAD-brugerkontoen). |
 | Visninger pr. bruger |ja |ja |Antallet af visninger i de seneste 90 dage opdelt efter individuelle brugere. |
@@ -95,7 +95,7 @@ Hvis du vil grave dybere ned i rapportdataene eller udarbejde dine egne rapporte
 | Samlet antal visninger |ja |ja |Antallet af visninger i løbet af de sidste 90 dage. |
 | Samlet antal seere |ja |ja |Antallet af entydige seere i løbet af de sidste 90 dage. |
 | Samlet antal delinger |ja |nej |Antallet af gange, dashboardet eller rapporten blev delt i løbet af de sidste 90 dage. |
-| Samlet antal i organisation |ja |ja |Antallet af alle dashboards og rapporter i hele organisationen, som havde mindst én visning i løbet af de sidste 90 dage.  Bruges til at beregne rangering. |
+| Samlet antal i organisation |ja |ja |Antallet af alle dashboards eller rapporter i hele organisationen, som havde mindst én visning i løbet af de sidste 90 dage.  Bruges til at beregne rangering. |
 | Rangering: Samlet antal visninger |ja |ja |Hvor rangeres dette dashboard eller denne rapport for samlet antal visninger af alle dashboards eller rapporter i organisationen i løbet af de seneste 90 dage. |
 | Rangering: Samlet antal delinger |ja |nej |Hvor rangeres dette dashboard eller denne rapport for samlet antal delinger af alle dashboards i organisationen i løbet af de seneste 90 dage. |
 
@@ -103,7 +103,7 @@ Hvis du vil grave dybere ned i rapportdataene eller udarbejde dine egne rapporte
 
 Brug **Gem som** til at konvertere forbrugsdatarapporten til en almindelig Power BI-rapport, som du kan tilpasse specifikt til dine behov. Du kan også bruge Power BI Desktop til at udarbejde tilpassede forbrugsdatarapporter, der er baseret på det underliggende datasæt. Få mere at vide under [Opret forbindelse til et publiceret datasæt](../connect-data/desktop-report-lifecycle-datasets.md#establish-a-power-bi-service-live-connection-to-the-published-dataset).
 
-Men endnu bedre, så indeholder det underliggende datasæt forbrugsoplysninger for alle dashboards og rapporter i arbejdsområdet. Dette åbner op for flere muligheder. Du kan f.eks. oprette en rapport, der sammenligner alle dashboards i arbejdsområdet baseret på forbrug. Eller du kan oprette et dashboard med forbrugsdata til din Power BI-app ved at samle forbrugsdata på tværs af alt det indhold, der er distribueret i denne app.  Se, hvordan du fjerner filteret og [får vist alle forbrugsdata for arbejdsområdet](#see-all-workspace-usage-metrics) senere i denne artikel.
+Men endnu bedre, så indeholder det underliggende datasæt forbrugsoplysninger for alle dashboards og rapporter i arbejdsområdet. Dette åbner op for flere muligheder. Du kan f.eks. oprette en rapport, der sammenligner dashboards i dit arbejdsområde baseret på forbrug. Eller du kan oprette et dashboard med forbrugsdata til din Power BI-app ved at samle forbrugsdata på tværs af alt det indhold, der er distribueret i denne app.  Se, hvordan du fjerner filteret og [får vist alle forbrugsdata for arbejdsområdet](#see-all-workspace-usage-metrics) senere i denne artikel.
 
 ### <a name="create-a-copy-of-the-usage-report"></a>Opret en kopi af forbrugsrapporten
 
@@ -112,7 +112,7 @@ Når du opretter en kopi af den skrivebeskyttede, færdigbyggede forbrugsrapport
 1. Vælg **Filer > Gem som** fra den allerede opbyggede rapport med forbrugsdata. Power BI opretter en redigerbar Power BI-rapport, der gemmes i det aktuelle arbejdsområde.
 
     ![Gem som](media/service-usage-metrics/power-bi-save-as.png)
-2. Åbn rapporten i redigeringsvisning, og [arbejd med den som med enhver anden Power BI-rapport](../create-reports/service-interact-with-a-report-in-editing-view.md). Du kan for eksempel tilføje nye sider og oprette nye visualiseringer, tilføje filtre, formatere skrifttyper og farver osv.
+2. Åbn rapporten i redigeringsvisning, og [arbejd med den som med enhver anden Power BI-rapport](../create-reports/service-interact-with-a-report-in-editing-view.md). Tilføj f.eks. nye sider, og opret nye visualiseringer, tilføj filtre, formatér skrifttyper og farver osv.
 
     ![Åbn rapporten i redigeringsvisning](media/service-usage-metrics/power-vi-editing-view.png)
 3. Den nye rapport gemmes under fanen **Rapporter** i det aktuelle arbejdsområde og føjes til indholdslisten **Seneste**.
@@ -141,24 +141,28 @@ Rapporter med forbrugsdata er en funktion, som den global administrator eller Po
 
 Brugerspecifikke data er som standard aktiveret for forbrugsdata, og kontooplysninger om forbrugere af indhold indgår i rapporten med forbrugsdata. Hvis administratorer ikke vil vise disse oplysninger for nogle eller alle brugere, kan de deaktivere funktionen for angivne sikkerhedsgrupper eller for en hel organisation. Kontooplysninger vises derefter i rapporten som *Ikke-navngivet*.
 
-Når administratorer deaktiverer forbrugsdata for hele organisationen, kan de bruge indstillingen **Slet alt eksisterende forbrugsdataindhold** til at slette alle eksisterende rapporter og dashboardfelter, der blev oprettet ved hjælp af forbrugsdatarapporter. Denne indstilling fjerner al adgang til forbrugsdata for alle brugere i organisationen, som muligvis allerede anvender dem. Sletning af eksisterende forbrugsdataindhold kan ikke fortrydes.
+Når administratorer deaktiverer forbrugsdata for hele organisationen, kan de bruge indstillingen **Slet alt eksisterende forbrugsdataindhold** til at slette alle eksisterende rapporter og dashboardfelter, der blev oprettet ved hjælp af forbrugsdatarapporter. Denne indstilling fjerner adgang til forbrugsdata for brugere i organisationen, som muligvis allerede anvender dem. Sletning af eksisterende forbrugsdataindhold kan ikke fortrydes.
 
 Få mere at vide om disse indstillinger under [Kontrollér forbrugsdata](../admin/service-admin-portal.md#control-usage-metrics) i artiklen om administrationsportalen. 
 
 ## <a name="usage-metrics-in-national-clouds"></a>Forbrugsværdier i nationale cloudmiljøer
 
-Power BI fås med forskellige nationale cloudmiljøer. Disse cloudmiljøer giver samme sikkerhedsniveau, beskyttelse af personlige oplysninger, overholdelse af angivne standarder og gennemsigtighed som den globale version af Power BI, kombineret med en unik model for lokale bestemmelser om levering af tjenester, dataopbevaring, adgang og kontrol. På grund af denne unikke model til opfyldelse af lokale lovkrav er forbrugsdata er ikke tilgængelige i nationale cloudmiljøer. Du kan få flere oplysninger under [nationale cloudmiljøer](https://powerbi.microsoft.com/clouds/).
+Power BI fås med forskellige nationale cloudmiljøer. Disse cloudmiljøer giver samme sikkerhedsniveau, beskyttelse af personlige oplysninger, overholdelse af angivne standarder og gennemsigtighed som den globale version af Power BI kombineret med en unik model for lokale bestemmelser om levering af tjenester, dataopbevaring, adgang og kontrol. På grund af denne unikke model til opfyldelse af lokale bestemmelser er forbrugsdata ikke tilgængelige i nationale cloudmiljøer. Du kan få flere oplysninger under [nationale cloudmiljøer](https://powerbi.microsoft.com/clouds/).
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 
 ### <a name="discrepancies-between-audit-logs-and-usage-metrics"></a>Uoverensstemmelser mellem overvågningslogge og forbrugsdata
 
-Det er vigtigt at forstå, at der kan opstå forskelle, når du sammenligner forbrugsdata og overvågningslogge, og hvorfor de kan opstå. *Overvågningslogge* indsamles ved hjælp af data fra Power BI-tjenesten, og *forbrugsdata* indsamles på klienten. Det samlede antal aktiviteter i overvågningslogge stemmer muligvis ikke altid overens med forbrugsdata på grund af følgende:
+Det er vigtigt at forstå, at der kan opstå forskelle, når du sammenligner forbrugsdata og overvågningslogge, og hvorfor de kan opstå. *Overvågningslogge* indsamles ved hjælp af data fra Power BI-tjenesten, og *forbrugsdata* indsamles på klienten. Det samlede antal aktiviteter i overvågningslogge stemmer muligvis ikke altid overens med forbrugsdata på grund af følgende forskelle:
 
 * Forbrugsdata kan nogle gange tælle et lavere antal aktiviteter på grund af uensartede netværksforbindelser, programmer til blokering af annoncer eller andre problemer, der kan afbryde afsendelse af hændelserne fra klienten.
 * Visse typer af visninger er ikke inkluderet i forbrugsdata, som det er beskrevet tidligere i denne artikel.
 * Forbrugsdata kan nogle gange tælle et højere antal aktiviteter i situationer, hvor klienten opdateres, uden at der er behov for at sende en anmodning tilbage til Power BI-tjenesten.
 * Deling er deaktiveret for rapporten med forbrugsmålepunkter. Hvis du vil give personer læseadgang til rapporten, skal du først give dem adgang til arbejdsområdet.
+
+### <a name="discrepancies-between-rest-apis-and-usage-metrics"></a>Uoverensstemmelser mellem REST API'er og forbrugsdata
+
+[REST API'er for rapporter](https://docs.microsoft.com/rest/api/power-bi/reports) i Power BI og [REST API'er for administratorer](https://docs.microsoft.com/rest/api/power-bi/admin) bruger også data fra Power BI-tjenesten. Af de årsager, der er beskrevet i forrige afsnit, kan antallet af rapporter fra API'erne være forskellig fra antallet af rapport i forbrugsdata. Antallet af rapporter, der udledes af API'er, påvirkes ikke af klientproblemer og kan anses for at være nøjagtige.
 
 ### <a name="other-considerations"></a>Andre overvejelser
 
@@ -183,7 +187,7 @@ Ud over eventuelle forskelle mellem forbrugsdata og overvågningslogge kan følg
 
 **Svar 2:**    Forbrugsdata er en Power BI Pro-funktion.
 
-**Spørgsmål:**    Dataene ser ikke ud til at være opdateret. For eksempel vises distributionsmetoder ikke, rapportsider mangler osv.
+**Spørgsmål:**    Dataene ser ikke ud til at være opdateret. Distributionsmetoder vises f.eks. ikke, der mangler rapportsider osv.
 
 **Svar:**    Det kan tage op til 24 timer, før dataene er opdateret.
 

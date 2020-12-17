@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-security
 ms.topic: how-to
-ms.date: 11/12/2020
+ms.date: 12/14/2020
 ms.custom: ''
 LocalizationGroup: Administration
-ms.openlocfilehash: 446c3620cf3b2a7435897108cfcd9c8972ad8bb4
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: da5ee837345b6f26dd6636bc93f6b38c1e0f5ea7
+ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96412155"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97491845"
 ---
 # <a name="private-links-for-accessing-power-bi"></a>Private links, der giver adgang til Power BI
 
@@ -118,9 +118,9 @@ Næste trin er at oprette et virtuelt netværk og undernet. Erstat eksempelparam
 | ```<resource-group-name>```   | MyResourceGroup |
 | ```<virtual-network-name>```  | myVirtualNetwork |
 | ```<region-name>```   | Det centrale USA  |
-| ```<IPv4-address-space>```    | 10.1.0.0/16 |
+| ```<IPv4-address-space>```    | 10.5.0.0/16 |
 | ```<subnet-name>```   | mySubnet |
-| ```<subnet-address-range>```  | 10.1.0.0/24 |
+| ```<subnet-address-range>```  | 10.5.0.0/24 |
 
 1. Vælg **Opret en ressource > Netværk > Virtuelt netværk**, eller søg efter **Virtuelt netværk** i søgefeltet.
 2. Angiv eller vælg følgende oplysninger under fanen **Grundlæggende** i **Opret virtuelt netværk**:
@@ -166,7 +166,6 @@ Når du har gennemført disse trin, kan du oprette en virtuel maskine (VM) som b
 
 ## <a name="create-a-virtual-machine-vm"></a>Opret en virtuel maskine (VM)
 
-
 Næste trin er at oprette et virtuelt netværk og det undernet, der skal hoste den virtuelle maskine (VM).
 
 1. Vælg **Opret en ressource > Compute > Virtuel maskine** øverst til venstre på skærmen i Azure Portal.
@@ -200,8 +199,8 @@ Næste trin er at oprette et virtuelt netværk og det undernet, der skal hoste d
     |Indstillinger | Værdi |
     |-------------------|---------|
     |Virtuelt netværk|   Behold standardindstillingen **MyVirtualNetwork**|
-    |Adresseområde| Behold standardindstillingen **10.1.0.0/24**|
-    |Undernet |Behold standardindstillingen **mySubnet (10.1.0.0/24)**|
+    |Adresseområde| Behold standardindstillingen **10.5.0.0/24**|
+    |Undernet |Behold standarden **mySubnet (10.5.0.0/24)**|
     |Offentlig IP| Behold standardindstillingen **(ny) myVm-ip**|
     |Offentlige indgående porte|  Vælg **Tillad valgte **|
     |Vælg indgående porte|  Vælg **RDP**|
@@ -289,7 +288,7 @@ Næste trin er at oprette adgang til Power BI privat fra den virtuelle maskine, 
     
     Non-authoritative answer:
     Name:    52d40f65ad6d48c3906f1ccf598612d4-api.privatelink.analysis.windows.net
-    Address:  10.1.0.4
+    Address:  10.5.0.4
     ```
 
 4. Åbn browseren, og gå til app.powerbi.com for at få adgang til Power BI privat.
@@ -306,12 +305,10 @@ Og det er det hele – efter at have fulgt disse trin er Power BI kun tilgængel
 
 Der er et par overvejelser, du skal gøre dig, når du arbejder med private links i Power BI:
 
-* Enhver brug af eksterne billeder eller temaer er ikke tilgængelige, når du bruger et miljø med private links, og det kan påvirke brugerdefinerede visualiseringer
-* Eksporttjenester, f. eks. eksport til PDF og eksport til Excel fra en rapport, og andre eksporttjenester fungerer ikke, når du bruger et miljø med private links
-* SQL Server Reporting Services-rapporter, der ofte kaldes RDL-filer (*filer i . rdl-format), gengives ikke i miljøer med private links
-* Hvis internetadgang er deaktiveret, og hvis datasættet eller dataflowet opretter forbindelse til et Power BI-datasæt eller et dataflow som en datakilde, vil forbindelsen ikke blive oprettet
-* Forbrugsdata fungerer *ikke*, når Private Links er aktiveret
-* Publicer på internettet understøttes ikke (og er nedtonet), når du aktiverer **Bloker offentlig internetadgang** i Power BI
+* Enhver brug af eksterne billeder eller temaer er ikke tilgængelige, når du bruger et miljø med private links, og det kan påvirke brugerdefinerede visualiseringer.
+* Hvis internetadgang er deaktiveret, og hvis datasættet eller dataflowet opretter forbindelse til et Power BI-datasæt eller et dataflow som en datakilde, vil forbindelsen ikke blive oprettet.
+* Forbrugsdata fungerer *ikke*, når Private Links er aktiveret.
+* Publicer på internettet understøttes ikke (og er nedtonet), når du aktiverer **Bloker offentlig internetadgang** i Power BI.
 
 
 ## <a name="next-steps"></a>Næste trin

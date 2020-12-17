@@ -1,5 +1,5 @@
 ---
-title: Fejlfinding af det integrerede program
+title: Fejlfinding af dit program til integreret analyse i Power BI
 description: Denne artikel beskriver nogle almindelige problemer, som kan opstå under integrationen af indhold fra Power BI.
 author: KesemSharabi
 ms.author: kesharab
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: troubleshooting
 ms.date: 02/05/2019
-ms.openlocfilehash: 3016cce1e4dd8fb1be5b5ab95ebcc73bdcb56ac1
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: f46bdf5aec254763257fa4b121b4b8c135a0d58a
+ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91749063"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97098070"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Foretag fejlfinding af dit integrerede program
 
@@ -101,7 +101,7 @@ HTTP/1.1 403 Forbidden
 
 ### <a name="authentication-failed-with-aadsts90002-tenant-authorize-not-found"></a>Godkendelse mislykkedes med AADSTS90002: Lejeren "godkend" blev ikke fundet
 
- Hvis du modtager meddelelseslogge, såsom ***fejl: invalid_request, error_description: AADSTS90002: Lejeren "godkend" blev ikke fundet***, er det fordi, ADAL 4.x ikke understøtter "https://login.microsoftonline.com/{Tenant}/oauth2/authorize/" som en URL-adresse for autoritet.
+ Hvis du modtager meddelelser, når du logger på, f.eks. ***fejl: ugyldig_anmodning, fejl_beskrivelse: AADSTS90002: Lejeren "godkend" blev ikke fundet** _, skyldes det, at ADAL 4.x ikke understøtter "https://login.microsoftonline.com/{Tenant}/oauth2/authorize/" som en URL-adresse som autoritet.
  
 Hvis du vil løse dette problem, skal du fjerne "oauth2/authorize/" fra slutningen af din URL-adresse for autoritet. Du kan se flere oplysninger under [Eksempler på Power BI Developer](https://github.com/Microsoft/PowerBI-Developer-Samples).
 
@@ -109,15 +109,15 @@ Hvis du vil løse dette problem, skal du fjerne "oauth2/authorize/" fra slutning
 
 ### <a name="authentication-failed-with-aadsts70002-or-aadsts50053"></a>Godkendelsen mislykkedes med AADSTS70002 eller AADSTS50053
 
-**_(AADSTS70002: Der opstod en fejl under validering af legitimationsoplysningerne. AADSTS50053: Du har forsøgt at logge på for mange gange med et forkert bruger-id eller en forkert adgangskode)_**
+_*_ (AADSTS70002: Der opstod en fejl under validering af legitimationsoplysningerne. AADSTS50053: Du har forsøgt at logge på for mange gange med et forkert bruger-id eller en forkert adgangskode)_**
 
-Hvis du bruger Power BI Embedded og Azure AD Direkte-godkendelse, og du modtager meddelelser, når du logger på, f.eks. ***fejl: uautoriseret_klient, fejlbeskrivelse:AADSTS70002: Der opstod en fejl under validering af legitimationsoplysningerne. AADSTS50053: Du har forsøgt at logge på for mange gange med et forkert bruger-id eller en forkert adgangskode***, fordi direkte godkendelse som standard ikke har været i brug siden d. 14. juni 2018.
+Hvis du bruger Power BI Embedded og Azure AD Direct-godkendelse, og du modtager meddelelser, når du logger på, f.eks. **_fejl:uautoriseret_klient, fejl_beskrivelse:AADSTS70002: Der opstod en fejl under validering af legitimationsoplysningerne. AADSTS50053: Du har forsøgt at logge på for mange gange med et forkert bruger-id eller en forkert adgangskode_* _, skyldes det, at direkte godkendelse som standard ikke har været i brug siden den 14. juni 2018.
 
 Dette kan aktiveres igen ved hjælp af en [Azure AD-politik](/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications), der er begrænset til organisationen eller en [tjenesteprincipal](/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
 
 Vi anbefaler, at du kun aktiverer denne politik for ét program ad gangen.
 
-Hvis du vil oprette denne politik, skal du være **Global Administrator** for den mappe, hvor du opretter politikken og tildelingen. Her er et eksempel på et script til oprettelse af politikken og tildeling af den til SP for dette program:
+Hvis du vil oprette denne politik, skal du være en _ *Global administrator** for den mappe, hvor du opretter politikken og tildelingen. Her er et eksempel på et script til oprettelse af politikken og tildeling af den til SP for dette program:
 
 1. Installér [Azure AD PowerShell-modulet som prøveversion](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
 
@@ -197,7 +197,7 @@ En datakilde kan have et enkelt sæt legitimationsoplysninger til én overordnet
 
 ## <a name="troubleshoot-your-embedded-application-with-the-ierror-object"></a>Foretag fejlfinding af det integrerede program med IError-objektet
 
-Brug det [**IError-objekt**, der returneres af *fejl*hændelsen fra **JavaScript-SDK'en**](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Troubleshooting-and-debugging-of-embedded-parts), til at foretage fejlfinding af din app, så du bedre kan forstå årsagen til dine fejl.
+Brug det [**IError-objekt**, der returneres af *fejl* hændelsen fra **JavaScript-SDK'en**](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Troubleshooting-and-debugging-of-embedded-parts), til at foretage fejlfinding af din app, så du bedre kan forstå årsagen til dine fejl.
 
 Når du har modtaget IError-objektet, skal du kigge i den relevante tabel over almindelige fejl, der svarer til den integreringstype, du bruger. Sammenlign **IError-egenskaberne** med dem i tabellen, og find mulige årsager til fejlen.
 

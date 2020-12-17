@@ -8,14 +8,14 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 09/30/2020
+ms.date: 12/10/2020
 LocalizationGroup: Connect to data
-ms.openlocfilehash: fa06b1d561c770c3b9e0535e94789931a74bd9df
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 6d99e91657d0c5f0bbd1e9c665f00d16c34ba24f
+ms.sourcegitcommit: 772c65b7b440ab082510bf3f64b871d19139d451
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96411465"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97353237"
 ---
 # <a name="create-visuals-and-reports-with-the-azure-cost-management-connector-in-power-bi-desktop"></a>Opret visualiseringer og rapporter med Azure Cost Management-connectoren i Power BI Desktop
 
@@ -56,7 +56,7 @@ Hvis du vil oprette forbindelse til en **Microsoft-kundeaftalekonto**, kan du he
 
     ![Skærmbillede, der viser Azure Cost Management-egenskaber med området Faktureringsprofil-id.](media/desktop-connect-azure-cost-management/azure-cost-management-01a.png)
 
-7.  Når du bliver bedt om det, skal du logge på med din Azure-brugerkonto og din adgangskode. 
+7.  Når du bliver bedt om det, skal du logge på med din Azure-brugerkonto og din adgangskode. Du skal bruge en ejer af en faktureringskonto for at sikre vellykket adgang. 
 
 
 ## <a name="connect-to-an-enterprise-agreement-account"></a>Opret forbindelse til en Enterprise-aftalekonto
@@ -71,13 +71,11 @@ Hvis du vil oprette forbindelse til en Enterprise-aftalekonto (EA), kan du hente
 
     ![Skærmbillede viser Azure Cost Management egenskaber med området Tilmeldingsnummer.](media/desktop-connect-azure-cost-management/azure-cost-management-01b.png)
 
-6.  Når du bliver bedt om det, skal du logge på med din Azure-brugerkonto og din adgangskode. 
+6.  Når du bliver bedt om det, skal du logge på med din Azure-brugerkonto og din adgangskode. Du skal bruge en administratorkonto i en virksomhed til Enterprise Aftaler.
 
 ## <a name="data-available-through-the-connector"></a>Data, der er tilgængelige via connectoren
 
 Når du er blevet godkendt, vises vinduet **Navigator** med følgende tilgængelige datatabeller:
-
-
 
 | **Tabel** | **Beskrivelse** |
 | --- | --- |

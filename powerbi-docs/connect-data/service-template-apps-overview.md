@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 05/04/2020
-ms.openlocfilehash: 5c897909d9fe31e4b22743a77058caba4767a579
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.date: 12/14/2020
+ms.openlocfilehash: a11ac8edb9abab29f58c3e4eda15ae204d105b26
+ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96410131"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97491730"
 ---
 # <a name="what-are-power-bi-template-apps"></a>Hvad er Power BI-skabelonprogrammer?
 
@@ -98,6 +98,7 @@ Hvis du vil udgive et skabelonprogram i Power BI-tjenesten og AppSource, skal du
 - Brug AppSource som din onlinebutik til at hoste dit program. På denne måde kan alle, der bruger Power BI, finde dit program. 
 - Overvej at tilbyde mere end ét skabelonprogram til de enkelte unikke scenarier. 
 - Aktivér datatilpasning, f.eks. understøttelse af brugerdefineret forbindelse og konfiguration af parametre af installationsprogrammet.
+- Hvis du er en uafhængig softwareproducent og distribuerer dit program via din webtjeneste, kan du overveje at automatisere parameterkonfiguration under installationen for at gøre det hele nemmere for dine kunder og øge sandsynligheden for en vellykket installation. Se [Automatiseret konfiguration af installationen af et skabelonprogram](../developer/template-apps/template-apps-auto-install.md) for at få flere oplysninger.
 
 Du kan finde flere forslag under [Tip til udarbejdelse af skabelonprogrammer i Power BI](service-template-apps-tips.md).
 

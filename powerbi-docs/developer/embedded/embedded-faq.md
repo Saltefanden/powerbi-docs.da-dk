@@ -1,5 +1,5 @@
 ---
-title: Ofte stillede spørgsmål om Power BI Embedded
+title: Ofte stillede spørgsmål om integreret analyse i Power BI
 description: Gennemse en liste med ofte stillede spørgsmål og svar om Power BI Embedded.
 author: KesemSharabi
 ms.author: kesharab
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/11/2020
-ms.openlocfilehash: 348032345a56d538e1e5ffbb6036d411e42b2954
-ms.sourcegitcommit: 30d0668434283c633bda9ae03bc2aca75401ab94
+ms.openlocfilehash: 5d402a32571f70f3a5a3b5686e3fc40ef07126c9
+ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96907066"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97098323"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Ofte stillede spørgsmål om Power BI Embedded
 
@@ -45,7 +45,7 @@ Power BI Embedded er til ISV'er, der vil integrere visuals i deres programmer. P
 
 ### <a name="what-is-the-microsoft-recommendation-for-when-a-customer-should-buy-power-bi-premium-vs-power-bi-embedded"></a>Hvad anbefaler Microsoft, når en kunde står over for valget mellem Power BI Premium og Power BI Embedded?
 
-Microsoft anbefaler, at virksomheder køber Power BI Premium, som er en selvbetjent cloudbaseret BI-løsning i virksomhedsklassen. Vi anbefaler, at ISV'er køber Power BI Embedded, som er cloudbaserede integrerede analysekomponenter. En kunde kan dog købe et hvilket som helst produkt.
+Microsoft anbefaler, at virksomheder køber Power BI Premium, som er en selvbetjent cloudbaseret BI-løsning i virksomhedsklassen. Vi anbefaler, at ISV'er køber Power BI Embedded til deres cloudbaserede komponenter til integreret analyse. En kunde kan dog købe et hvilket som helst produkt.
 
 Der kan være situationer, hvor en ISV (typisk en større) ud over integration af apps ønsker at bruge en P SKU for at få adgang til yderligere fordele i den færdigpakkede Power BI-tjenesten i virksomheden. Nogle virksomheder beslutter måske at bruge A SKU'er i Azure, hvis de kun er interesserede i at producere line-of-business-programmer og integrere analyser i dem uden at have interesse i at bruge den færdigpakkede Power BI-tjeneste.
 
@@ -55,9 +55,9 @@ Integrationstokens med en PRO-licens er beregnet til udviklingstest, så en Powe
 
 ## <a name="technical"></a>Tekniske spørgsmål
 
-### <a name="where-can-i-learn-more-about-capacity-and-skus-in-power-bi-embedded-analytics"></a>Hvor kan jeg få mere at vide om kapacitet og SKU'er i integrerede Power BI-analyser?
+### <a name="where-can-i-learn-more-about-capacity-and-skus-in-power-bi-embedded-analytics"></a>Hvor kan jeg få mere at vide om kapacitet og SKU'er i integreret analyse i Power BI?
 
-Se artiklen [Kapacitet og SKU'er i integrerede Power BI-analyser](embedded-capacity.md).
+Se artiklen [Kapacitet og SKU'er i integreret analyse i Power BI](embedded-capacity.md).
 
 ### <a name="what-are-the-prerequisites-for-creating-a-pbie-capacity-in-azure"></a>Hvad er forudsætningerne for at oprette en PBIE-kapacitet på Azure?
 

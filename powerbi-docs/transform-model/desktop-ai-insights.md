@@ -9,12 +9,12 @@ ms.subservice: pbi-transform-model
 ms.topic: how-to
 ms.date: 06/10/2020
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a3654bc77ebdbd41ef608378157bf0d24bb94c88
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: f4128939bd90f0b6514a792a60d583b830bea0d2
+ms.sourcegitcommit: 772c65b7b440ab082510bf3f64b871d19139d451
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96416111"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97353444"
 ---
 # <a name="use-ai-insights-in-power-bi-desktop"></a>Brug AI-indsigter i Power BI Desktop
 
@@ -223,7 +223,7 @@ Følgende overvejelser og begrænsninger gælder for Azure Machine Learning i Po
 
 Denne artikel omfatter en oversigt over integration af Machine Learning i Power BI Desktop. Følgende artikler kan også være interessante eller nyttige.
 
-- [Selvstudium: Aktivér en model af typen Machine Learning Studio (klassisk) i Power BI](../connect-data/service-tutorial-invoke-machine-learning-model.md)
+- [Selvstudium: Brug Azure Machine Learning-modeller i Power BI](../connect-data/service-aml-integrate.md)
 - [Selvstudium: Brug af Cognitive Services i Power BI](../connect-data/service-tutorial-use-cognitive-services.md)
 - [Cognitive Services i Power BI](./dataflows/dataflows-machine-learning-integration.md)
 - [Integration af Azure Machine Learning i Power BI](./dataflows/dataflows-machine-learning-integration.md)

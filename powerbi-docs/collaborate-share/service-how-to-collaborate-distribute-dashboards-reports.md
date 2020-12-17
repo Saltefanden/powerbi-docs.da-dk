@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 06/18/2020
+ms.date: 12/14/2020
 ms.custom: contperfq4
 LocalizationGroup: Share your work
-ms.openlocfilehash: 424f3cc7412813cb9ea9f401d6edd22257e8d14a
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 5b26f8fe04c7aaf6847de50398c54db6a3870844
+ms.sourcegitcommit: b5365df7fc32b7c49f8a2bf2cf75b5edd6bda9b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96411787"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97513775"
 ---
 # <a name="ways-to-collaborate-and-share-in-power-bi"></a>Måder at samarbejde og dele på i Power BI
 
@@ -27,22 +27,22 @@ Du har oprettet dashboards og rapporter. Måske vil du samarbejde med dine kolle
 
 **Samarbejd**
 
-- Samarbejd med kolleger i *arbejdsområder* om at oprette relevante rapporter og dashboards.
-- Samarbejd i *Microsoft Teams*.
+- [Samarbejd med kolleger i *arbejdsområder*](#collaborate-in-a-workspace) for at oprette meningsfulde rapporter og dashboards.
+- [Samarbejd i *Microsoft Teams*](#collaborate-in-microsoft-teams).
 
 **Distribuer eller del dashboards og rapporter**
 
-- *Del dashboards og rapporter* fra Mit arbejdsområde eller et andet arbejdsområde.
-- Anmærk og del fra Power BI-*mobilapps*.
-- Gruppér dashboards og rapporter i arbejdsområder i *apps*, og distribuer dem til en større gruppe eller hele organisationen.
-- Integrer rapporter i *sikre portaler* eller på *offentlige websteder*.
-- Udskriv rapporter.
-- Opret en *skabelonapp*, som du kan distribuere til eksterne Power BI-brugere via Microsoft AppSource.
+- [*Del dashboards eller rapporter*](#share-dashboards-and-reports) fra Mit arbejdsområde eller et andet arbejdsområde.
+- Anmærk og [del fra Power BI-*mobilapps*](#annotate-and-share-from-the-power-bi-mobile-apps).
+- Gruppér dashboards og rapporter i arbejdsområder i *apps*, og [distribuer dem](#distribute-insights-in-an-app) til en større gruppe eller hele organisationen.
+- [Integrer rapporter](#embed-reports-in-secure-portals-or-public-web-sites) på *sikre portaler* eller *offentlige websteder*.
+- [Udskriv rapporter](#print-or-save-as-pdf-or-other-static-file).
+- [Opret et *skabelonprogram*](#create-and-deploy-template-apps), som du kan distribuere til eksterne Power BI-brugere via Microsoft AppSource.
  
 **Del data**
 
-- Opret *delte datasæt*, som dine kolleger kan bruge som udgangspunkt for deres egne rapporter i deres egne arbejdsområder.
-- Opret *dataflow* som en måde til deling af en fælles datakilde.
+- [Opret *delte datasæt*](#share-a-dataset), som kolleger kan bruge som udgangspunkt for deres egne rapporter i deres egne arbejdsområder.
+- [Opret *dataflow*](#create-dataflows) som en måde at dele en fælles datakilde på.
 
 Uanset hvilken indstilling du vælger, skal du bruge en [Power BI Pro-licens](../fundamentals/service-features-license-type.md) for at dele dit indhold, ellers skal indholdet være i en [Premium-kapacitet](../admin/service-premium-what-is.md). Licenskrav varierer alt efter de kolleger, der får vist dine dashboards, afhængigt af den valgte indstilling. De følgende afsnit går længere ned i detaljen. 
 
@@ -67,7 +67,7 @@ Læs om, hvordan du [opretter det nye arbejdsområde](service-create-the-new-wor
 
 ## <a name="collaborate-in-microsoft-teams"></a>Samarbejd i Microsoft Teams
 
-Øg det databaserede samarbejde i din organisation ved at integrere dine Power BI-rapporter og sideinddelte Power BI-rapporter i Microsoft Teams. Power BI-tjenesten omfatter knappen **Del i teams** til rapporter. Du kan tilføje separate Power BI-faner for hver enkelt rapport og give hver fane rapportens navn eller et andet navn. 
+Øg det databaserede samarbejde i din organisation ved at integrere dine Power BI-rapporter og sideinddelte Power BI-rapporter i Microsoft Teams. Power BI-tjenesten indeholder knappen **Chat i teams** for rapporter. Du kan tilføje separate Power BI-faner for hver enkelt rapport og give hver fane rapportens navn eller et andet navn. 
 
 Når du føjer en Power BI-rapportfane til Microsoft Teams, opretter Teams automatisk en fanesamtale til rapporten. Alle i den pågældende Microsoft Teams-kanal kan se og diskutere rapporten i samtalen. 
 
@@ -77,7 +77,7 @@ Læs mere om [samarbejde i Microsoft Teams med Power BI](service-collaborate-mic
 
 ## <a name="share-dashboards-and-reports"></a>Del dashboards og rapporter
 
-Lad os sige, at du har færdiggjort en rapport i Power BI Desktop, og at andre skal have adgang til den. En måde at give andre adgang til den på er ved at *dele* den i Power BI-tjenesten. Du publicerer den i dit eget Mit arbejdsområde eller et andet arbejdsområde. Måske opretter du et dashboard, der følger med, og du er klar.
+Lad os sige, at din rapport i Power BI Desktop er klar, og du gerne vil have, at andre får adgang til den. En måde at give andre adgang til den på er ved at *dele* den i Power BI-tjenesten. Du publicerer den i dit eget Mit arbejdsområde eller et andet arbejdsområde. Måske opretter du et dashboard, der følger med, og du er klar.
 
 ![Del en rapport](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-share-report.png)
 
@@ -118,14 +118,14 @@ Du kan også publicere apps til personer uden for organisationen. De kan få vis
 ### <a name="embed-in-secure-portals"></a>Integrer i sikre portaler
 
 Du kan integrere Power BI-rapporter i portaler eller på websteder, hvor dine brugere forventer at se dem.  
-Med indstillingerne **Integrer i SharePoint Online** og **Integrer** i Power BI-tjenesten kan du integrere rapporter for dine interne brugere på en sikker måde. Uanset hvilken indstilling du vælger, gennemtvinger Power BI alle tilladelser og al datasikkerhed, før brugerne kan få vist indholdet. Den person, der får vist rapporten, skal have den rette licens.  
+Med indstillingerne **Integrer i SharePoint Online** og **Integrer** i Power BI-tjenesten kan du integrere rapporter for dine interne brugere på en sikker måde. Uanset hvilken indstilling du vælger, håndhæver Power BI alle tilladelser og al datasikkerhed, før brugerne ser indhold. Den person, der får vist rapporten, skal have den rette licens.  
 
 - **Integrer i SharePoint Online** fungerer sammen med Power BI-webdelen til SharePoint Online. Indstillingen giver en enkeltlogon-oplevelse med kontrol over, hvordan rapporten er integreret. Læs mere om [integrering i SharePoint Online](service-embed-report-spo.md).
 - Indstillingen **Integrer** fungerer sammen med en hvilken som helst portal eller et hvilket som helst websted, der understøtter integrering af indhold ved hjælp af en URL-adresse eller en iFrame. Læs mere om indstillingen [Integrer](service-embed-secure.md).
 
 ### <a name="publish-to-public-web-sites"></a>Publicer på offentlige websteder
 
-Med **Publicer på internettet** kan du publicere Power BI-rapporter på hele internettet ved at integrere visualiseringer i blogindlæg, på websteder, på sociale medier og andre steder til onlinekommunikation. Alle på internettet kan få vist dine rapporter, og du har ingen kontrol over, hvem der kan se, hvad du har publiceret. Modtagerne skal ikke bruge en Power BI-licens. Publicering til internettet er kun tilgængeligt for rapporter, som du kan redigere. Du kan ikke publicere rapporter til internettet, hvis de er delt med dig, eller hvis de er i en app. Læs om, hvordan du [publicerer på internettet](service-publish-to-web.md).
+**Publicer på internettet** giver dig mulighed for at publicere Power BI-rapporter på hele internettet ved at integrere visualiseringer i blogindlæg, på websteder, på sociale medier og andre steder til onlinekommunikation. Alle på internettet kan få vist dine rapporter, og du har ingen kontrol over, hvem der ser, hvad du har publiceret. Modtagerne skal ikke bruge en Power BI-licens. Publicering til internettet er kun tilgængeligt for rapporter, som du kan redigere. Du kan ikke publicere rapporter til internettet, hvis de er delt med dig, eller hvis de er i en app. Læs om, hvordan du [publicerer på internettet](service-publish-to-web.md).
 
 >[!Warning]
 >Brug kun [Publicer på internettet](service-publish-to-web.md), hvis du vil dele indhold offentligt, ikke til deling internt.

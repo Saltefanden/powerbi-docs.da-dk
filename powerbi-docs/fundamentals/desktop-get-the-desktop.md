@@ -9,12 +9,12 @@ ms.subservice: pbi-fundamentals
 ms.topic: how-to
 ms.date: 10/12/2020
 LocalizationGroup: Get started
-ms.openlocfilehash: 9c46188318ca5659f109ba8483c552d9ab43f932
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 3d233736c55ea736da1ecc561c2936a0a9f42a09
+ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96418664"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97492167"
 ---
 # <a name="get-power-bi-desktop"></a>Hent Power BI Desktop
 Med Power BI Desktop kan du oprette avancerede forespørgsler, modeller og rapporter, som visualiserer data. Med Power BI Desktop kan du skabe datamodeller, oprette rapporter og dele dit arbejde ved at publicere det i Power BI-tjenesten. Power BI Desktop kan downloades gratis.
@@ -102,7 +102,7 @@ Følgende liste indeholder minimumkravene til at køre Power BI Desktop:
 > Power BI Desktop understøttes ikke længere på Windows 7 efter den 31. januar 2021. Efter denne dato understøttes Power BI Desktop i Windows 8-versioner eller nyere versioner af Windows, men kun for den nyeste version af Power BI Desktop. 
 
 * Windows 7/Windows Server 2008 R2 eller nyere
-* .NET 4.5
+* .NET 4.6.2
 * Internet Explorer 10 eller nyere
 * Hukommelse (RAM): Mindst 1 GB ledig hukommelse, 1,5 GB eller mere anbefales.
 * Skærm: Mindst 1440 x 900 eller 1600 x 900 (16:9) er påkrævet. En lavere opløsning, f.eks. 1024 x 768 eller 1280 x 800 understøttes ikke, da visse kontrolelementer (f.eks. lukning af startskærmen) vises over disse opløsninger.

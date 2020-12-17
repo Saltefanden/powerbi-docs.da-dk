@@ -17,6 +17,7 @@
         - name: Opret forbindelse til data i Power BI Desktop
           href: desktop-quickstart-connect-to-data.md
     - name: Selvstudier
+      expanded: true
       items:
         - name: Form og kombiner flere datakilder
           href: desktop-shape-and-combine-data.md
@@ -39,6 +40,7 @@
         - name: Opdater data fra SQL Server
           href: service-gateway-sql-tutorial.md
     - name: Begreber
+      expanded: true
       items:
         - name: Power BI-datakilder
           href: power-bi-data-sources.md
@@ -50,6 +52,8 @@
           href: desktop-default-member-multidimensional-models.md
         - name: Om brug af DirectQuery i Power BI
           href: desktop-directquery-about.md
+        - name: Brug af DirectQuery til Power BI-datasæt og Azure Analysis Services (eksempelvisning)
+          href: desktop-directquery-datasets-azure-analysis-services.md
         - name: Gateways
           items:
             - name: Vejledning til installation af en datagateway
@@ -57,6 +61,7 @@
             - name: Ofte stillede spørgsmål vedrørende datagateway i lokalt miljø
               href: service-gateway-power-bi-faq.md
     - name: Vejledninger
+      expanded: true
       items:
         - name: Opret forbindelse til datakilder
           href: desktop-connect-to-data.md

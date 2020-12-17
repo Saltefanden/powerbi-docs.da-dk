@@ -8,12 +8,12 @@ ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 04/05/2020
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 19dc9f5c5adfa5853d98cd6b0ef427c8bccebada
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: fc421f7635a3d6e3b2336d5bce081d7914c0fad5
+ms.sourcegitcommit: 8250187368d3de48663eb516a816ff701119b579
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96410614"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96998850"
 ---
 # <a name="connect-to-the-covid-19-us-tracking-report"></a>Opret forbindelse til den amerikanske sporingsrapport for COVID-19
 I denne artikel får du oplysninger om, hvordan du installerer skabelonappen til den amerikanske sporingsrapport for COVID-19, og hvordan du opretter forbindelse til datakilderne.
@@ -28,9 +28,9 @@ Når du har installeret skabelonappen og oprettet forbindelse til datakilderne, 
 
 1. Klik på følgende link for at få adgang til appen: [Skabelonappen Amerikansk sporingsrapport for COVID-19](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.covid19ms)
 
-1. Når du er på appens Appsource-side, skal du klikke på [**Hent den nu**](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.covid19ms).
+1. Når du er på appens AppSource-side, skal du klikke på [**HENT DEN NU**](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.covid19ms).
 
-    [![Amerikansk sporingsrapport for Covid-19 i Appsource](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-appsource-icon.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.covid19ms)
+    [![Amerikansk sporingsrapport for Covid-19 i AppSource](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-appsource-icon.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.covid19ms)
 
 1. Klik på **Installer**, når du bliver bedt om det. Når appen er installeret, kan du se den på siden med dine apps.
 
@@ -38,11 +38,11 @@ Når du har installeret skabelonappen og oprettet forbindelse til datakilderne, 
 
 ## <a name="connect-to-data-sources"></a>Opret forbindelse til datakilder
 
-1. Klik på ikonet på appsiden for at åbne appen.
+1. Klik på ikonet på appsiden for at åbne appen. Appen åbnes, og der vises eksempeldata.
 
-1. Vælg **Opret forbindelse** på den velkomstskærm, der vises.
+1. Vælg linket **Opret forbindelse til dine data** på banneret øverst på siden.
 
-   ![Velkomstskærmbilledet for skabelonappen](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-splash-screen.png)
+   ![GitHub-appen opretter forbindelse til dit datalink](media/service-connect-to-covid-19-tracking/power-bi-covid-19-connect-data.png)
 
 1. Dialogboksen for parametre vises. Der er ingen påkrævede parametre. Klik på **Next**.
 

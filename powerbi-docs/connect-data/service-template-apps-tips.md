@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 05/04/2020
-ms.openlocfilehash: bb48b92df81a49ee687376ee9f53428c10171b80
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: b20bb007c55f7d7d618b70690475d34d9f53fc06
+ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96410108"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97491707"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi"></a>Tip til udarbejdelse af skabelonapps i Power BI
 
@@ -144,6 +144,10 @@ Når du har publiceret skabelonappen på AppSource, kan du overveje at oprette e
 Hvis du vil omdirigere en bruger til appens downloadlink i Power BI, skal du se følgende kodeeksempel: [GitHub-lager](https://github.com/microsoft/Template-apps-examples).
 
 [![Downloadlink til app](media/service-template-apps-tips/service-template-apps-tips-download.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-github)
+
+## <a name="automate-parameter-configuration-during-installation"></a>Automatiser parameterkonfiguration under installationen
+
+Hvis du er en uafhængig softwareproducent og distribuerer dit program via din webtjeneste, kan du oprette automatisering, der automatisk konfigurerer parametre for skabelonprogrammet, når dine kunder installerer programmet på deres Power BI-konto. Det gør det hele nemmere for dine kunder og øger sandsynligheden for en vellykket installation, da de ikke skal levere oplysninger, som de måske ikke kender. Se [Automatiseret konfiguration af installationen af et skabelonprogram](../developer/template-apps/template-apps-auto-install.md) for at få flere oplysninger.
 
 ## <a name="next-steps"></a>Næste trin
 

@@ -8,20 +8,20 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 08/31/2020
+ms.date: 12/15/2020
 LocalizationGroup: Dashboards
-ms.openlocfilehash: c5690492d3a54ae244e0104d0134414f1b6d9c96
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: bf55abf06bf1429776e3d0fd0432e459f91de0a7
+ms.sourcegitcommit: fef29a5c5bf1e0dae663c42c9ce5ae50e29ae9be
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96407325"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97558510"
 ---
 # <a name="monitor-usage-metrics-in-the-new-workspace-experience-preview"></a>Overvåg forbrugsdata i den nye arbejdsområdeoplevelse (prøveversion)
 
-At vide, hvordan dit indhold bruges, hjælper dig med at demonstrere din indvirkning og prioritere din indsats. Dine forbrugsdata kan vise, at en af dine rapporter bruges dagligt af en meget stor del af organisationen, og de kan vise, at et dashboard, du oprettede, slet ikke bruges. Denne type feedback er uvurderlig til styring af din arbejdsindsats.
+At vide, hvordan dit indhold bruges, hjælper dig med at demonstrere din indvirkning og prioritere din indsats. Dine forbrugsdata viser måske, at en af dine rapporter bruges dagligt af en stor del af organisationen. Den viser måske, at ingen får vist et dashboard, du har oprettet. Denne type feedback er uvurderlig til styring af din arbejdsindsats.
 
-Hvis du opretter rapporter i moderne arbejdsområder, har du adgang til forbedrede rapporter med forbrugsdata, der giver dig mulighed for at finde ud af, hvordan disse rapporter bruges i hele organisationen, og hvem der bruger dem. Du kan også identificere problemer med ydeevnen på højt niveau. De forbedrede forbrugsrapporter i den moderne arbejdsområdeoplevelse erstatter eksisterende rapporter med forbrugsdata, som dokumenteret i [Overvåg forbrugsdata for Power BI-dashboards og -rapporter](service-usage-metrics.md).
+Hvis du opretter rapporter i moderne arbejdsområder, har du adgang til forbedrede rapporter med forbrugsdata. De gør det muligt for dig at finde ud af, hvem der bruger disse rapporter i hele organisationen, og hvordan de bruger dem. Du kan også identificere problemer med ydeevnen på højt niveau. De forbedrede forbrugsrapporter i den moderne arbejdsområdeoplevelse erstatter eksisterende rapporter med forbrugsdata, som dokumenteret i [Overvåg forbrugsdata for Power BI-dashboards og -rapporter](service-usage-metrics.md).
 
 ![Ny rapport med forbrugsdata](media/service-modern-usage-metrics/power-bi-modern-usage-metrics.png)
 
@@ -57,14 +57,14 @@ Det er kun brugere med rettigheder som administrator, medlem eller bidragyder, d
 
 ## <a name="about-the-improved-usage-metrics-report"></a>Om den forbedrede rapport med forbrugsdata
 
-Når du får vist den forbedrede rapport med forbrugsdata ved at følge ovenstående procedure, genererer Power BI en færdigbygget rapport med forbrugsdata for det pågældende indhold for de sidste 30 dage. Rapporten ligner de Power BI-rapporter, du allerede kender. Du kan oprette udsnit baseret på, hvordan dine slutbrugere fik adgang, om de fik adgang via internettet eller mobilapp osv. Rapporten med forbrugsdata udvikler sig, i takt med at din rapport udvikler sig, og den opdateres hver dag med nye data.
+Når du viser denne forbedrede rapport med forbrugsdata, genererer Power BI en færdigbygget rapport. Den indeholder forbrugsdata for dette indhold for de sidste 30 dage. Rapporten ligner de Power BI-rapporter, du allerede kender. Du kan oprette udsnit baseret på, hvordan dine slutbrugere fik adgang, om de fik adgang via internettet eller mobilapp osv. Rapporten med forbrugsdata udvikler sig, og det vil rapporten med forbrugsdata også. Den opdateres hver dag med nye data.
 
 > [!NOTE]
 > Rapporter med forbrugsdata vises ikke i Seneste, Arbejdsområder, Favoritter eller på andre indholdslister. De kan ikke føjes til en app. Hvis du fastgør et felt fra en forbrugsdatarapport til et dashboard, kan du ikke føje det pågældende dashboard til en app.
 
 ### <a name="usage-metrics-report-dataset"></a>Datasæt til rapport med forbrugsdata
 
-Den forbedrede rapport med forbrugsdata er afhængig af datasæt til rapporten med forbrugsdata, som Power BI opretter automatisk, når du starter den forbedrede rapport med forbrugsdata første gang. Power BI opdaterer derefter dette datasæt dagligt. Selvom du ikke kan ændre opdateringsplanen, kan du opdatere de legitimationsoplysninger, som Power BI bruger til at opdatere forbrugsdataene. Dette kan være nødvendigt for at genoptage den planlagte opdatering, hvis legitimationsoplysningerne udløb, eller hvis du fjernede den bruger, som startede rapporten med forbrugsdata første gang fra arbejdsområdet, hvor datasættet er placeret.
+Første gang, du starter den forbedrede rapport med forbrugsdata, opretter Power BI automatisk et datasæt af typen rapport med forbrugsdata. Den forbedrede rapport med forbrugsdata er afhængig af dette datasæt. Power BI opdaterer derefter dette datasæt dagligt. Selvom du ikke kan ændre opdateringsplanen, kan du opdatere de legitimationsoplysninger, som Power BI bruger til at opdatere forbrugsdataene. Du skal måske genoptage den planlagte opdatering, hvis legitimationsoplysningerne udløb, eller hvis du fjernede den bruger, som startede rapporten med forbrugsdata første gang fra det arbejdsområde, hvor datasættet er placeret.
 
 > [!NOTE]
 > I prøveversionen kan der foretages mindre ændringer af datasættet for forbrugsdata, hvilket påvirker brugerdefinerede rapporter.  
@@ -79,26 +79,49 @@ Den forbedrede rapport med forbrugsdata indeholder følgende rapportsider:
 
 ### <a name="which-metrics-are-reported"></a>Hvilke forbrugsdata rapporteres?
 
-| **Side** | **Målepunkt** | **Beskrivelse** |
+| **Side** | **Metrikværdi** | **Beskrivelse** |
 | --- | --- | --- |
-| Rapportanvendelse | Rapportvisninger | Der registreres en rapportvisning, hver gang en person åbner en rapport. Bemærk, at definitionen af en visning adskiller sig fra tidligere rapporter med forbrugsdata. Ændring af rapportsider anses ikke længere for at være en yderligere visning. Aktiviteter som deling og fastgørelse medtages ikke længere i forbrugsdata.|
+| Rapportanvendelse | Rapportvisninger/Rapportåbninger | Der registreres en Rapportvisning, hver gang nogen åbner en rapport, og denne visning angiver unikke visninger af rapporten. Den besvarer spørgsmålet: "Hvor ofte tilgås rapporten?" Definitionen af en Rapportvisning adskiller sig fra tidligere rapporter med forbrugsdata. Ændring af rapportsider anses ikke længere for at være en yderligere Rapportvisning. Ændring af rapportsider tælles i stedet med i den næste metrikværdi, Rapportsidevisninger. Aktiviteter som deling og fastgørelse medtages ikke længere i forbrugsdata. |
+| Rapportanvendelse | Rapportsidevisninger | Der registreres en Rapportsidevisning, hver gang nogen får vist en rapportside. Den angiver det samlede antal visninger på tværs af en hvilken som helst side. Den besvarer spørgsmålet: "Hvor ofte tilgås rapportsider?" Så ændring af rapportsider tælles som Rapportsidevisninger. Se [Overvejelser og begrænsninger](#considerations-and-limitations) for at få vigtige oplysninger. |
 | Rapportanvendelse | Unikke seere | En seer er en person, der har åbnet rapporten mindst én gang i tidsperioden (baseret på AAD-brugerkontoen). |
 | Rapportanvendelse | Visningstendens | Visningstendensen afspejler ændringer i antallet af visninger over tid. Den første halvdel af den valgte tidsperiode sammenlignes med den anden halvdel. |
 | Rapportanvendelse | Datoudsnit | Du kan ændre tidsperioden for siden Rapportanvendelse, f.eks. for at beregne ugentlige tendenser eller tendenser for hver anden uge. I nederste venstre hjørne af siden Rapportanvendelse kan du bestemme den tidligste og seneste dato, hvor forbrugsdata er tilgængelige for den valgte rapport. |
 | Rapportanvendelse | Rangering | På baggrund af antallet af visninger viser rangeringen rapportens popularitet sammenlignet med alle andre rapporter i organisationen. En rangering på 1 medfører, at rapporten har flest visninger af alle rapporter i organisationen.   |
-| Rapportanvendelse | Rapportvisninger pr. dag | Samlet antal visninger pr. dag. |
+| Rapportanvendelse | Rapportvisninger pr. dag | Samlet antal rapportvisninger pr. dag. Tælles på rapportniveau – inkluderer ikke Rapportsidevisninger. |
 | Rapportanvendelse | Rapportseere pr. dag | Samlet antal forskellige brugere, der fik vist rapporten (baseret på AAD-brugerkontoen). |
 | Rapportanvendelse | Distributionsmetode | Hvordan brugerne fik adgang til rapporten, f.eks. ved at være medlem af et arbejdsområde, ved at få rapporten delt med dem eller ved at installere en app. |
 | Rapportanvendelse | Platformudsnit | Om rapporten blev tilgået via Power BI-tjenesten (powerbi.com), Power BI Embedded eller en mobilenhed. |
 | Rapportanvendelse | Brugere med rapportvisninger | Viser listen over brugere, der åbnede rapporten, sorteret efter antal visninger. |
-| Rapportanvendelse | Sider | Hvis rapporten indeholder mere end 1 side, skal du opdele rapporten efter de sider, der blev vist. Hvis du får vist en listeindstilling for "Tom", betyder det, at en rapportside blev tilføjet for nylig (inden for 24 timer vises det faktiske navn på den nye side på listen over udsnit), og/eller at rapportsider er blevet slettet. "Tom" henter disse typer situationer. |
-| Rapportydeevne | Typisk åbningstid | Den typiske åbningstid for rapporten svarer til 50. fraktil af den tid, det tager at åbne rapporten. Med andre ord, så er det den tid nedenfor, hvor 50 % af handlingerne for åbning af rapporten blev udført. Siden Rapportydeevne opdeler også den typiske åbningstid for rapporten efter forbrugsmetode og browsertype. På dette tidspunkt måler vi ydeevnen for den indledende rapportindlæsning, og den første side blev vist. Målingen starter, når der anmodes om en rapport, og slutter, når den seneste visualisering er færdig med gengivelse. Rapportinteraktioner, f.eks. udsnit, filtrering eller ændring af sider, er ikke inkluderet i målingerne for ydeevnen.  |
+| Rapportanvendelse | Sider | Hvis rapporten indeholder mere end 1 side, skal du opdele rapporten efter de sider, der blev vist. "Tom" betyder enten, at en rapportside blev tilføjet inden for 24 timer efter, at den nye side blev vist på listen over udsnit, eller at rapportsider er blevet slettet. "Tom" henter disse typer situationer. |
+| Rapportydeevne | Typisk åbningstid | Den typiske åbningstid for rapporten svarer til 50. fraktil af den tid, det tager at åbne rapporten. Med andre ord, så er det den tid nedenfor, hvor 50 % af handlingerne for åbning af rapporten blev udført. Siden Rapportydeevne opdeler også den typiske åbningstid for rapporten efter forbrugsmetode og browsertype. Vi måler i øjeblikket ydeevnen for den indledende rapportindlæsning og den første side, der blev vist. Målingen starter, når der anmodes om en rapport, og slutter, når den seneste visualisering er færdig med gengivelse. Rapportinteraktioner, f.eks. udsnit, filtrering eller ændring af sider, er ikke inkluderet i metrikværdierne for ydeevnen.  |
 | Rapportydeevne | Tendens for åbningstid | Tendens for åbningstid afspejler ændringer i ydeevnen for åbning af rapporten over tid. Åbningstiderne for rapporten for den første halvdel af den valgte tidsperiode sammenlignes med åbningstiderne for den anden halvdel. |
 | Rapportydeevne | Datoudsnit | Du kan ændre tidsperioden på siden Rapportydeevne, f.eks. for at beregne ugentlige tendenser eller tendenser for hver anden uge. I nederste venstre hjørne af siden Rapportydeevne kan du bestemme den tidligste og seneste dato, hvor forbrugsdata er tilgængelige for den valgte rapport. |
 | Rapportydeevne | Daglig ydeevne | Ydeevnen for 10 %, 50 % og 90 % af handlingerne for åbning af rapporten beregnet for hver enkelt dag. |
-| Rapportydeevne | 7-dages ydeevne | Ydeevnen for 10 %, 50 % og 90 % af handlingerne for åbning af rapporten beregnet for de sidste 7 dage for hver dato. |
+| Rapportydeevne | ydeevne i syv dage | Ydeevnen for 10 %, 50 % og 90 % af handlingerne for rapportåbning beregnet for de sidste syv dage for hver dato. |
 | Rapportydeevne | Forbrugsmetode | Hvordan brugerne åbnede rapporten, f.eks. via Power BI-tjenesten (powerbi.com), Power BI Embedded eller en mobilenhed. |
 | Rapportydeevne | Browsere | Hvilken browser brugerne brugte til at åbne rapporten, f.eks. Firefox, Edge og Chrome. |
+
+### <a name="worked-example-of-view-and-viewer-metrics"></a>Arbejdseksempel på metrikværdier for Visning og Seere
+
+Hvis vi nu har fire rapporter, der er blevet tilgået af tre brugere på følgende måde:
+
+| **Navn på rapport** | **Brugsmønster** |
+| --- | --- |
+| KPI-rapport | <ul><li>Bruger A åbner rapporten på side 1. |
+| HR-rapporter | <ul><li>Bruger A åbner rapporten på side 1, ser derefter side 2, side 3 og side 4. Derefter ser vedkommende side 1 igen. |
+| Økonomirapport | <ul><li>Bruger A åbner rapporten på side 1 og ser derefter side 2.</li><li>Bruger B åbner rapporten på side 1.</li><li>Bruger C åbner rapporten på side 1 og ser derefter side 3.</li></ul> |
+| Salgsrapport | <ul><li>Bruger A åbner rapporten på side 1 og ser derefter side 2</li><li>Bruger C åbner rapporten på side 2 (f.eks. via bogmærke)</li><li>Senere på dagen åbner Bruger C rapporten på side 1 </li></ul> |
+
+Hvis det antages, at alle klienttelemetri når Power BI, vil de resulterende metrikværdier være:
+
+| **Navn på rapport** | **Rapportvisninger** | **Rapportsidevisninger** | **Seere** |
+| --- | --- | --- | --- |
+| KPI-rapport | 1 | 1 | 1 |
+| HR-rapporter | 1 | 5 | 1 | 
+| Økonomirapport | 3 | 5 | 3 |
+| Salgsrapport | 3 | 3 | 2 |
+
+
 
 ## <a name="update-usage-metrics-report-credentials"></a>Opdater legitimationsoplysningerne for rapporten med forbrugsdata
 
@@ -142,11 +165,11 @@ Rapporter med forbrugsdata er en funktion, som Power BI- eller den globale admin
 
 ## <a name="exclude-user-information-from-usage-metrics-reports"></a>Udelad brugeroplysninger fra rapporter med forbrugsdata
 
-Brugerspecifikke data er som standard aktiveret for forbrugsdata, og kontooplysninger om forbrugere af indhold indgår i rapporten med forbrugsdata. Hvis administratorerne ikke vil afsløre disse oplysninger for nogle eller alle brugere, kan de udelade brugeroplysningerne fra rapporten med forbrugsdata ved at deaktivere Brugerspecifikke data i forbrugsdata for indholdsforfattere under indstillingerne på Power BI-administrationsportalen for specifikke sikkerhedsgrupper eller for hele organisationen.
+Som standard er data pr. bruger aktiveret for forbrugsdata. Kontooplysninger for indholdsforbruger er inkluderet i rapporten med metrikværdier. Hvis administratorer ikke ønsker at fremvise disse oplysninger for nogle af eller alle brugere, kan de udelade brugeroplysningerne fra forbrugsrapporten. I lejerindstillingerne for Power BI-administrationsportalen kan de deaktivere data pr. bruger i forbrugsdata for angivne sikkerhedsgrupper eller for hele organisationen.
 
 1. Under fanen **Lejerindstillinger** på administrationsportalen under **Indstillinger for overvågning og forbrug** skal du udvide **Brugerspecifikke data under metrikværdier for indholdsforfattere** og vælge **Deaktiveret**.
 
-2. Bestem, om du vil bruge indstillingen **Slet alle eksisterende brugerspecifikke data i indhold for aktuelle forbrugsdata**, og vælg **Anvend**.
+2. Bestem, om du vil bruge indstillingen **Slet alle eksisterende data pr. bruger i det aktuelle indhold for forbrugsdata**. Vælg **Anvend**.
 
     ![Deaktiver brugerspecifikke data](media/service-modern-usage-metrics/power-bi-admin-disable-per-user-metrics.png)
 
@@ -163,7 +186,7 @@ Du har adskillige muligheder for at grave ned i rapporten eller skabe dine egne 
 
 - **[Opret en kopi af rapporten](#create-a-copy-of-the-usage-report) i Power BI-tjenesten.**   Brug **Gem en kopi** til at oprette en separat forekomst af rapporten med forbrugsdata, som du kan tilpasse, så den passer til dine specifikke behov.
 - **[Opret forbindelse til datasættet](#create-a-new-usage-report-in-power-bi-desktop) med en ny rapport.**   For hvert arbejdsområde har datasættet navnet "Rapport med forbrugsdata", som forklaret tidligere i afsnittet [Datasæt til rapport med forbrugsdata](#usage-metrics-report-dataset). Du kan bruge Power BI Desktop til at skabe tilpassede rapporter med forbrugsdata baseret på det underliggende datasæt.
-- **[Brug Analysér i Excel](#analyze-usage-data-in-excel).**   Du kan også benytte funktioner til pivottabeller, diagrammer og udsnit i Microsoft Excel 2010 SP1 eller nyere til at analysere Power BI-forbrugsdata. Læs mere om funktionen [Analysér i Excel](service-analyze-in-excel.md).
+- **[Brug Analysér i Excel](#analyze-usage-data-in-excel).**   Du kan også analysere Power BI-forbrugsdata i PivotTables, diagrammer og udsnitsfunktioner i Microsoft Excel. Læs mere om funktionen [Analysér i Excel](service-analyze-in-excel.md).
 
 ### <a name="create-a-copy-of-the-usage-report"></a>Opret en kopi af forbrugsrapporten
 
@@ -225,7 +248,7 @@ Når du opretter forbindelse til forbrugsdata i Excel, kan du oprette pivottabel
 
     ![Analysér i Excel](media/service-modern-usage-metrics/power-bi-export-excel.png)
 
-1. Hvis du ser dialogboksen **Først skal du bruge nogle Excel-opdateringer**, skal du vælge **Download** og installere de nyeste opdateringer til Power BI-forbindelsen eller vælge **Jeg har allerede installeret disse opdateringer**.
+1. Hvis du ser dialogboksen **Først skal du bruge nogle Excel-opdateringer**, skal du vælge **Download** og installere de nyeste opdateringer til Power BI-forbindelsen. Ellers skal du vælge **Jeg har allerede installeret disse opdateringer**.
 
     ![Excel-opdateringer](media/service-modern-usage-metrics/power-bi-excel-updates.png)
 
@@ -246,7 +269,7 @@ Når du opretter forbindelse til forbrugsdata i Excel, kan du oprette pivottabel
 
 ## <a name="usage-metrics-in-national-clouds"></a>Forbrugsværdier i nationale cloudmiljøer
 
-Power BI fås med forskellige nationale cloudmiljøer. Disse cloudmiljøer giver samme sikkerhedsniveau, beskyttelse af personlige oplysninger, overholdelse af angivne standarder og gennemsigtighed som den globale version af Power BI, kombineret med en unik model for lokale bestemmelser om levering af tjenester, dataopbevaring, adgang og kontrol. Moderne forbrugsdata er tilgængelige i følgende nationale clouds: 
+Power BI fås med forskellige nationale cloudmiljøer. Disse cloudmiljøer giver samme sikkerhedsniveau, beskyttelse af personlige oplysninger, overholdelse af angivne standarder og gennemsigtighed som den globale version af Power BI kombineret med en unik model for lokale bestemmelser om levering af tjenester, dataopbevaring, adgang og kontrol. Moderne forbrugsdata er tilgængelige i følgende nationale clouds: 
 
 - US Government Community Cloud
 - US Government Community Cloud High
@@ -257,90 +280,76 @@ Du kan få flere oplysninger under [nationale cloudmiljøer](https://powerbi.mic
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 
-Det er vigtigt at forstå, at der kan opstå forskelle, når du sammenligner den forbedrede rapport med forbrugsdata med den forrige. Især at forbrugsdataene for rapporten nu er baseret på aktivitetsdata, der indsamles fra Power BI-tjenesten. Tidligere versioner af rapporten med forbrugsdata var afhængige af telemetri, som ikke altid matcher de forbrugsdata, der indsamles fra tjenesten. Desuden bruges der en anden definition for en "visning" i den forbedrede rapport med forbrugsdata. En visning er en hændelse, hvor rapporten åbnes, som registreres i tjenesten, hver gang nogen åbner en rapport. Ændring af rapportsider anses ikke længere for at være en yderligere visning.
+Det er vigtigt at forstå, at der kan opstå forskelle, når du sammenligner den forbedrede rapport med forbrugsdata med den forrige. Metrikværdier for Rapportvisninger er nu især baseret på aktivitetsdata, der er indsamlet fra Power BI-tjenesten. Tidligere versioner af rapporten med forbrugsdata var kun afhængige af telemetri, som ikke altid matcher de forbrugsdata, der indsamles fra tjenesten. Desuden bruges der en anden definition for en "Rapportvisning" i den forbedrede rapport med forbrugsdata. En Rapportvisning er en hændelse, hvor rapporten åbnes, som registreres i tjenesten, hver gang nogen åbner en rapport. Ændring af rapportsider anses ikke længere for at være en yderligere Rapportvisning. Vi inkluderer nu en metrikværdi for Rapportsidevisning, der specifikt tæller alle sidevisninger.
 
 > [!NOTE]
-> Da den forbedrede rapport med forbrugsdata er afhængig af aktivitetsdata, der indsamles fra Power BI-tjenesten, matcher forbrugsdataene nu det sammenlagte antal aktiviteter i overvågningslogge og aktivitetslogge. For mange eller for få optællinger af aktiviteter pga. uensartede netværksforbindelser, programmer til blokering af annoncer eller andre problemer på klientsiden forvrænger ikke længere optællingerne af seere og visninger.
+> Da den forbedrede rapport med forbrugsdata er afhængig af aktivitetsdata, der indsamles fra Power BI-tjenesten, matcher metrikværdierne for Rapportvisning nu det samlede antal aktiviteter i overvågningslogge og aktivitetslogge. For mange eller for få optællinger af aktiviteter pga. uensartede netværksforbindelser, programmer til blokering af annoncer eller andre problemer på klientsiden forvrænger ikke længere optællingerne af Seere og Rapportvisninger. Rapportsidevisninger er dog stadig afhængige af klienttelemetri og kan påvirkes.
 
 Foruden ovenstående forskelle mellem tidligere og forbedrede rapporter med forbrugsdata skal du bemærke følgende begrænsninger for udgivelsen af prøveversionen:
 
-- Forbrugsdata for dashboardet er stadig afhængig af den tidligere version af rapporterne med forbrugsdata.
+- Forbrugsdata for dashboardet er stadig afhængig af den tidligere version af rapporterne med forbrugsdata og er endnu ikke tilgængelige i moderne forbrugsdata.
 - Forbedrede rapporter med forbrugsdata er kun tilgængelige for rapporter i moderne arbejdsområder. Rapporter i ældre arbejdsområder understøtter kun den tidligere version af rapporter med forbrugsdata.
-- Metrikværdier for rapportydeevne er baseret på klienttelemetri. Visse typer visninger er ikke inkluderet i målingerne af ydeevne. Når en bruger f.eks. vælger et link til en rapport i en mail, er der taget højde for visningen i rapportforbruget, men der er ingen hændelse i metrikværdierne for ydeevnen.
+- Data for ydeevnen og metrikværdier for Rapportsidevisning er afhængige af, at klienten/enheden sender data til Power BI. Disse data når muligvis aldrig frem til Power BI afhængigt af netværksventetid, programmer til blokering af annoncer, firewalls og netværksregler angivet af din organisation. Derfor omfatter dataene for ydeevne og Rapportsidevisning ikke alle visninger eller alle brugere.
+- Visse typer visninger er ikke inkluderet i målingerne af ydeevne. Når en bruger f.eks. vælger et link til en rapport i en mail, er der taget højde for Rapportvisningen i rapportforbruget, men der er ingen hændelse i metrikværdierne for ydeevnen.
 - Metrikværdier for rapportydeevne er ikke tilgængelige for sideinddelte rapporter. Der vises ikke data for disse typer rapporter under fanen Sider på siden Rapportforbrug samt diagrammerne på siden Rapportydeevne.
 - Brugermaskering fungerer ikke som forventet, når der bruges indlejrede grupper. Hvis organisationen har deaktiveret Brugerspecifikke data i forbrugsdata for indholdsforfattere under lejerindstillingerne på Power BI-administrationsportalen, er det kun medlemmerne på det øverste niveau, som maskeres. Medlemmer af undergrupper er stadig synlige.
 - Det kan tage nogle få minutter at initialisere datasættet til rapporten med forbrugsdata, hvilket resulterer i visning af en tom rapport med forbrugsdata, fordi Power BI-brugergrænsefladen ikke venter på, at opdateringen fuldføres. Kontrollér opdateringshistorikken under indstillingerne for datasættet til rapporten med forbrugsdata for at bekræfte, at opdateringshandlingen lykkedes.
 - Initialiseringen af datasættet til rapporten med forbrugsdata mislykkes muligvis, hvis der opstår timeout under opdateringen. Se afsnittet Fejlfinding herunder for at løse dette problem.
-- Deling er deaktiveret for rapporten med forbrugsmålepunkter. Hvis du vil give personer læseadgang til rapporten, skal du først give dem adgang til arbejdsområdet.
-- I nogle scenarier kan du opleve, at ydelsesdataene mangler. Det kan ske, hvis en bruger åbner en rapport og interagerer med den, før den er helt indlæst, eller hvis der opstod en fejl under indlæsningen af rapporten.
-- Ydelsesdata afhænger af, at klienten/enheden sender data til Power BI. Ydelsesdataene når muligvis Power BI afhængigt af netværksventetid, programmer til blokering af annoncer, firewalls og netværksregler angivet af din organisation. Derfor kan ydelsesdataene kun vise et eksempel og kan ikke inkludere eller vise alle brugere. 
+- Deling er deaktiveret for rapporten med forbrugsdata. Hvis du vil give personer læseadgang til rapporten, skal du først give dem adgang til arbejdsområdet.
+- I nogle scenarier kan du opleve, at der mangler data for ydeevne. Det kan ske, hvis en bruger åbner en rapport og interagerer med den, før den er helt indlæst, eller hvis der opstod en fejl under indlæsningen af rapporten. 
 
 ## <a name="frequently-asked-questions"></a>Ofte stillede spørgsmål
 
 Ud over ovenstående overvejelser og begrænsninger kan følgende spørgsmål og svar om forbrugsdata være nyttige for brugere og administratorer:
 
-**Spørgsmål:** Jeg kan ikke køre forbrugsdata for en rapport.
+**Spørgsmål:** Hvorfor kan jeg se færre Rapportsidevisninger end Rapportvisninger. Burde de ikke som minimum være det samme? 
+**Svar:** Rapportvisninger er afhængige af en servertelemetri, der genereres, første gang rapporten åbnes. Når en rapport er åben, er dens sidedefinitioner allerede indlæst på brugerens enhed. Rapportsidevisninger er afhængige af de brugsoplysninger fra brugerens enhed, der når frem til Power BI. De kan nogle gange være blokeret, som beskrevet under [Overvejelser og begrænsninger](#considerations-and-limitations).
 
+**Spørgsmål:** Jeg kan ikke køre forbrugsdata for en rapport.
 **Svar:** Du kan kun se forbrugsdata for rapporter, som du ejer eller har tilladelser til at redigere.
 
 **Spørgsmål:** Hvorfor kan jeg ikke se til/fra-knappen Ny forbrugsrapport i øverste højre hjørne i min eksisterende rapport med forbrugsrapport?
-
 **Svar:** Den forbedrede rapport med forbrugsdata er kun tilgængelig for rapporter i moderne arbejdsområder.
 
 **Spørgsmål:** Hvilken tidsperiode dækkes af rapporten?
-
 **Svar:** Forbrugsrapporten er baseret på aktivitetsdata for de sidste 30 dage, eksklusive aktiviteter for den aktuelle dag. Du kan indsnævre tidsperioden ved hjælp af Datoudsnit på siden Rapportanvendelse, f.eks. for kun at analysere sidste uges data.
 
 **Spørgsmål:** Hvornår kan jeg se de nyeste aktivitetsdata?
-
 **Svar:** Forbrugsrapporten indeholder aktivitetsdata frem til den sidste hele dag baseret på UTC-tidszonen. De data, der vises i rapporten, afhænger også af opdateringstiden for datasættet. Power BI opdaterer datasættet én gang om dagen.
 
 **Spørgsmål:** Dataene ser ikke ud til at være opdateret.
-
 **Svar:** Bemærk, at det kan tage op til 24 timer, før de nye aktivitetsdata vises i forbrugsrapporten.
 
 **Spørgsmål:** Hvad er datakilden til forbrugsdataene?
-
 **Svar:** Datasættet til rapporten med forbrugsdata importerer data fra interne forbrugsdata i Power BI ved hjælp af en brugerdefineret connector til forbrugsdata. Du kan opdatere legitimationsoplysningerne for connectoren til forbrugsdata på siden med indstillinger for rapporten med forbrugsdata.
 
 **Spørgsmål:** Hvordan opretter jeg forbindelse til data? Eller ændrer standardrapporten?
-
 **Svar:** Du kan oprette en kopi af den skrivebeskyttede, færdigbyggede forbrugsrapport. Kopien af rapporten opretter forbindelse til det samme datasæt til rapporten med forbrugsdata og giver dig mulighed for at redigere rapportoplysningerne.
 
 **Spørgsmål:** Hvad er en "seer", og hvad er en "visning"?
-
 **Svar:** En seer er en person, der har åbnet rapporten mindst én gang i tidsperioden. En visning er en hændelse, hvor rapporten åbnes. Der registreres en rapportvisning, hver gang en person åbner en rapport.
-
 Bemærk, at definitionen af en visning adskiller sig fra tidligere rapporter med forbrugsdata. Ændring af rapportsider anses ikke længere for at være en yderligere visning.
 
 **Spørgsmål:** Hvordan beregnes "visningstendensen"?
-
 **Svar:** Visningstendensen afspejler ændringer i antallet af visninger over tid. Den første halvdel af den valgte tidsperiode sammenlignes med den anden halvdel. Du kan ændre tidsperioden ved hjælp af Datoudsnit på siden Rapportanvendelse, f.eks. for at beregne ugentlige tendenser eller tendenser for hver anden uge.
 
 **Spørgsmål:** Hvad betyder "distribution" og "platform"?
-
 **Svar:** Distribution viser, hvordan seerne fik adgang til en rapport: om den blev delt direkte, om adgangen skete via et arbejdsområde eller via en app.
-
 Platformen angiver den teknologi, som en seer brugte til at åbne rapporten: via PowerBI.com, en mobilenhed eller Embedded.
 
 **Spørgsmål:** Hvordan fungerer rapportrangering?
-
 **Svar:** På baggrund af antallet af visninger viser rangeringen rapportens popularitet sammenlignet med alle andre rapporter i organisationen. En rangering på 1 medfører, at rapporten har flest visninger af alle rapporter i organisationen.
 
 **Spørgsmål:** Hvad er "unavngivne brugere"?
-
 **Svar:** Din organisation kan beslutte, om brugeroplysninger skal udelades fra din forbrugsrapport. Hvis de udelades, henviser forbrugsrapporten til brugerne som Unavngivne.
 
 **Spørgsmål:** Hvad er "den typiske åbningstid for rapporten"?
-
 **Svar:** Den typiske åbningstid for rapporten svarer til 50. fraktil af den tid, det tager at åbne rapporten. Med andre ord, så er det den tid nedenfor, hvor 50 % af handlingerne for åbning af rapporten blev udført. Siden Rapportydeevne opdeler også den typiske åbningstid for rapporten efter forbrugsmetode og browsertype.
 
 **Spørgsmål:** Hvordan beregnes "tendens for åbningstid"?
-
 **Svar:** Tendens for åbningstid afspejler ændringer i ydeevnen for åbning af rapporten over tid. Åbningstiderne for rapporten for den første halvdel af den valgte tidsperiode sammenlignes med åbningstiderne for den anden halvdel. Du kan ændre tidsperioden ved hjælp af Datoudsnit på siden Rapportydeevne, f.eks. for at beregne ugentlige tendenser eller tendenser for hver anden uge.
 
 **Spørgsmål:**  Der er fire rapporter i den tidligere version af rapporten med forbrugsdata, men der vises kun tre i den forbedrede version.
-
 **Svar:**  Den forbedrede rapport med forbrugsdata indeholder kun rapporter, der er blevet åbnet inden for de sidste 30 dage, mens den tidligere version dækker de sidste 90 dage. Hvis en rapport ikke inkluderes i den forbedrede rapport med forbrugsdata, har den sandsynligvis ikke været brugt i mere end 30 dage.
 
 ## <a name="troubleshoot-delete-the-dataset"></a>Foretag fejlfinding: Slet datasættet

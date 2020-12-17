@@ -9,12 +9,12 @@ ms.subservice: pbi-dataflows
 ms.topic: how-to
 ms.date: 10/01/2020
 LocalizationGroup: Data from files
-ms.openlocfilehash: 60214c16cbd287a30631e7ad9fbab274cb8f4cb0
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 22fa980230b01132c8cb4faa6e7e959409f19f1b
+ms.sourcegitcommit: 772c65b7b440ab082510bf3f64b871d19139d451
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96414294"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97353122"
 ---
 # <a name="ai-with-dataflows"></a>AI med dataflow
 
@@ -454,9 +454,9 @@ Når du gemmer dit dataflow, aktiveres modellen automatisk, når dataflowet opfr
 
 Denne artikel indeholder en oversigt over automatiseret maskinel indlæring til dataflows i Power BI-tjenesten. Følgende artikler kan også være nyttige.
 
-- [Selvstudium: Skab en model til maskinel indlæring i Power BI ](../../connect-data/service-tutorial-build-machine-learning-model.md)
+- [Selvstudium: Skab en model til maskinel indlæring i Power BI](../../connect-data/service-tutorial-build-machine-learning-model.md)
 - [Selvstudium: Brug af Cognitive Services i Power BI](../../connect-data/service-tutorial-use-cognitive-services.md)
-- [Selvstudium: Aktivér en model af typen Machine Learning Studio (klassisk) i Power BI (prøveversion)](../../connect-data/service-tutorial-invoke-machine-learning-model.md)
+- [Selvstudium: Brug Azure Machine Learning-modeller i Power BI](../../connect-data/service-aml-integrate.md)
 
 Du kan finde flere oplysninger om dataflow og Power BI i følgende artikler:
 

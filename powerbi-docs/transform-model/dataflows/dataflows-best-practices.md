@@ -7,18 +7,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 11/13/2020
+ms.date: 12/10/2020
 LocalizationGroup: Data from files
-ms.openlocfilehash: 53a8573138a87f8be65183e0571077a02ac0715d
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 116458c094159cbeeadaf2e955744759e4648220
+ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96418181"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97097955"
 ---
 # <a name="dataflows-best-practices"></a>Bedste praksis i forbindelse med dataflow
 
 Power BI-**dataflow** er en løsning til dataforberedelse i virksomheden, som gør det muligt at aktivere et økosystem af data, der er klar til forbrug, genbrug og integration. Denne artikel indeholder en liste over den bedste praksis med links til artikler og andre oplysninger, der kan hjælpe dig med at forstå og få mest muligt ud af dataflow.
+
+## <a name="dataflows-across-the-power-platform"></a>Dataflow på tværs af Power Platform
+
+Dataflow kan bruges på tværs af forskellige Power Platform-teknologier, f.eks. Power Query, Microsoft Dynamics 365 og andre Microsoft-tilbud. Du kan finde flere oplysninger om, hvordan dataflow kan fungere på tværs af Power Platform, under [brug af dataflow på tværs af Microsoft-produkter](https://docs.microsoft.com/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365).
 
 
 ## <a name="dataflows-best-practices-table-and-links"></a>Tabel over links til bedste praksis i forbindelse med dataflow
@@ -29,7 +33,7 @@ Følgende tabel indeholder en samling links til artikler, der beskriver den beds
 |**Emne**  |**Vejledningsområde**  |**Link til artikel eller indhold**  |
 |---------|---------|---------|
 |Power-forespørgsel     | Tip og tricks til at få mest muligt ud af din data-wrangling-oplevelse        |[Bedste praksis i Power Query](https://docs.microsoft.com/power-query/best-practices)        |
-|Brug af beregnede enheder     |Der er ydeevnefordele ved at bruge beregnede enheder i et dataflow         |[Scenarie med beregnede enheder](https://docs.microsoft.com/power-query/dataflows/computed-entities-scenarios)         |
+|Brug af beregnede enheder     |Der er ydeevnefordele ved at bruge beregnede enheder i et dataflow         |[Scenarier med beregnede enheder](https://docs.microsoft.com/power-query/dataflows/computed-entities-scenarios)         |
 |Udvikling af komplekse dataflow     |Mønstre til udvikling af dataflow i stor skala med høj ydeevne         |[Komplekse dataflow](https://docs.microsoft.com/power-query/dataflows/best-practices-developing-complex-dataflows)         |
 |Genbrug af dataflow     |Mønstre, vejledning og use cases         |[Genbrug af dataflow](https://docs.microsoft.com/power-query/dataflows/best-practices-reusing-dataflows)         |
 |Implementeringer i stor skala     |Brug i stor skala og vejledning til, hvordan virksomhedsarkitekturen suppleres         |[Data warehousing ved hjælp af dataflow](https://docs.microsoft.com/power-query/dataflows/best-practices-for-data-warehouse-using-dataflows)         |
@@ -40,6 +44,8 @@ Følgende tabel indeholder en samling links til artikler, der beskriver den beds
 |Brug af dataprofilering     |Om kolonnekvalitet, -distribution og -profil         |[Værktøjer til dataprofilering](https://docs.microsoft.com/power-query/data-profiling-tools)         |
 |Implementering af fejlhåndtering     |Udvikling af robuste dataflow, der er modstandsdygtige over for opdateringsfejl, med forslag         |[Mønstre for almindelige fejl](https://docs.microsoft.com/power-query/dealing-with-errors)  </br> [Kompleks fejlhåndtering](https://docs.microsoft.com/power-query/error-handling)      |
 |Brug skemavisning      |Få bedre oprettelsesmuligheder, når du arbejder med en bred tabel og udfører handlinger på skemaniveau         |[Skemavisning](https://docs.microsoft.com/power-query/schema-view)         |
+|Sammenkædede enheder      |Genbrug og reference til transformationer         |[Sammenkædede enheder](https://docs.microsoft.com/power-query/dataflows/linked-entities)         |
+|Trinvis opdatering      |Indlæs de nyeste eller ændrede data i forhold til en fuld genindlæsning         |[Trinvis opdatering](https://docs.microsoft.com/power-query/dataflows/incremental-refresh)         |
 |||
 
 

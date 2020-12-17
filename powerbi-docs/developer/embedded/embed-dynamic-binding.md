@@ -1,5 +1,5 @@
 ---
-title: Forbind en rapport til et datasæt ved hjælp af dynamisk binding
+title: Forbind en rapport til et datasæt ved hjælp af dynamisk binding i integreret analyse i Power BI
 description: Få mere at vide om, hvordan du integrerer en rapport ved hjælp af dynamisk binding.
 author: KesemSharabi
 ms.author: kesharab
@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 11/07/2019
-ms.openlocfilehash: 5b386800c37f80e7b33dc55bb691eed6606c04a1
-ms.sourcegitcommit: 30d0668434283c633bda9ae03bc2aca75401ab94
+ms.openlocfilehash: d8a460f68838faab11cdab6d39f0e757a9789899
+ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96906789"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97098369"
 ---
 # <a name="connect-a-report-to-a-dataset-using-dynamic-binding"></a>Forbind en rapport til et datasæt ved hjælp af dynamisk binding 
 

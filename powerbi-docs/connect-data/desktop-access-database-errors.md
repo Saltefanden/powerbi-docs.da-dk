@@ -8,14 +8,14 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 10/21/2019
+ms.date: 12/09/2020
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: f8d24c672fa3e9d5cda007e061eac8c4ea9c6d4c
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: b144412ee322aa9bec0a35bb3876a949abcd3f13
+ms.sourcegitcommit: 8250187368d3de48663eb516a816ff701119b579
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96406037"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96998892"
 ---
 # <a name="troubleshoot-importing-access-and-excel-xls-files-in-power-bi-desktop"></a>Fejlfind import af .xls-filer i Access og Excel i Power BI Desktop
 
@@ -24,6 +24,8 @@ I Power BI Desktop bruger både Access-databaser og tidligere versioner af Excel
 ## <a name="situation-1-no-access-database-engine-is-installed"></a>Situation 1: Der er ikke installeret noget Access-databaseprogram
 
 Hvis der i fejlmeddelelsen i Power BI Desktop står, at Access-databaseprogrammet ikke er installeret, skal du installere den version af Access-databaseprogrammet, enten 32-bit eller 64-bit, der svarer til din version af Power BI Desktop. Du kan installere Access-databaseprogrammet fra [downloadsiden](https://www.microsoft.com/download/details.aspx?id=13255).
+
+Hvis du arbejder med dataflow og bruger en gateway til at oprette forbindelse til dataene, skal du installere Access-databaseprogrammet på den computer, hvor gatewayen kører. 
 
 >[!NOTE]
 >Hvis den installerede version af Access-databaseprogrammet har en anden bit-version end din installation af Microsoft Office, kan Office-programmerne ikke bruge Access-databaseprogrammet.

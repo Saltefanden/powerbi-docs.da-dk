@@ -1,6 +1,6 @@
 ---
-title: Hvidbog om planlægning af analysekapacitet til Embedded
-description: Planlægning af kapacitet i Power BI Embedded-analyser.
+title: Kapacitetsplanlægning af integreret analyse i Power BI
+description: Kapacitetsplanlægning af integreret analyse i Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,16 +8,16 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 03/03/2020
-ms.openlocfilehash: 23f58c047eeb47fce24ad38ae54d8f4d7a1c57e7
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.openlocfilehash: b172b48517ccc8c55821fa8e8217d5e2df398b2d
+ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91983039"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97098346"
 ---
-# <a name="capacity-planning-in-power-bi-embedded-analytics"></a>Kapacitetsplanlægning i Power BI Embedded-analyser
+# <a name="capacity-planning-in-power-bi-embedded-analytics"></a>Kapacitetsplanlægning af integreret analyse i Power BI
 
-Det kan være kompliceret at beregne, hvilken type kapacitet der kræves for udrulningen af en Power BI Embedded-analyse. Det skyldes, at denne beregning er baseret på flere parametre, hvoraf nogle af dem er vanskelige at forudsige.
+Det kan være kompliceret at beregne, hvilken type kapacitet der kræves for en udrulning af integreret analyse i Power BI. Det skyldes, at denne beregning er baseret på flere parametre, hvoraf nogle af dem er vanskelige at forudsige.
 
 Nogle af de ting, du skal tage højde for, når du planlægger din kapacitet, er:
 
@@ -27,7 +27,7 @@ Nogle af de ting, du skal tage højde for, når du planlægger din kapacitet, er
 * Dataopdateringshastigheder.
 * Yderligere forbrugsmønstre, der er vanskelige at forudsige.
 
-Denne artikel har til formål at lette kapacitetsplanlægningen i forbindelse med Power BI Embedded-analyser ved at introducere [værktøj til evaluering af arbejdsbelastning for kapaciteter i Power BI](https://github.com/microsoft/PowerBI-Tools-For-Capacities/tree/master/LoadTestingPowerShellTool/), der er udviklet til automatisering af belastningstest for kapaciteter til Power BI Embedded-analyser (*A-* , *EM-* eller *P*-SKU'er).
+Denne artikel har til formål at lette kapacitetsplanlægningen i forbindelse med integreret analyse i Power BI ved at introducere [værktøj til evaluering af arbejdsbelastning for kapaciteter i Power BI](https://github.com/microsoft/PowerBI-Tools-For-Capacities/tree/master/LoadTestingPowerShellTool/), der er udviklet til automatisering af belastningstest for kapaciteter til integreret analyse i Power BI (*A-*, *EM-* eller *P*-SKU'er).
 
 ## <a name="planning-tool"></a>Planlægningsværktøj
 
@@ -65,7 +65,7 @@ Lageret har åben kildekode, og brugerne opfordres til at bidrage og tilføje yd
 ## <a name="next-steps"></a>Næste trin
 
 > [!div class="nextstepaction"]
->[Kapacitet og SKU'er i Power BI Embedded-analyser](embedded-capacity.md)
+>[Kapacitet og SKU'er i integreret analyse i Power BI](embedded-capacity.md)
 
 > [!div class="nextstepaction"]
 >[Bedste praksis for ydeevnen i Power BI Embedded](embedded-performance-best-practices.md)

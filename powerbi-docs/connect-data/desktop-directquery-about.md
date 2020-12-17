@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 12/03/2020
+ms.date: 12/14/2020
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 01ba6c2e01b3e17a3ef9c878890877e0a0b976ea
-ms.sourcegitcommit: 513c4b884a58e1da2680579339c24c46091bbfb2
+ms.openlocfilehash: 84d60fce95172b419663ed7889d69e22ae1947cd
+ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96613733"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97491983"
 ---
 # <a name="about-using-directquery-in-power-bi"></a>Om brug af DirectQuery i Power BI
 
@@ -81,7 +81,7 @@ Når du opretter forbindelse til SQL Server Analysis Services, er det muligt ent
 Den situation, der er beskrevet i den foregående sektion, gælder også i forbindelse med oprettelse af forbindelse til følgende kilder, bortset fra at det ikke er muligt at importere dataene:
 
 * Power BI-datasæt, når der f.eks. oprettes forbindelse til et Power BI-datasæt, der tidligere er blevet oprettet og publiceret til tjenesten, for at oprette en ny rapport for det.
-* Common Data Services.
+* Microsoft Dataverse.
 
 Funktionsmåden for rapporter i forbindelse med SQL Server Analysis Services ved publicering til Power BI-tjenesten svarer til DirectQuery-rapporter på følgende måde:
 
@@ -334,6 +334,9 @@ Denne indstilling er kun aktiveret, når der er mindst én DirectQuery-datakilde
 Hvis **Maksimale antal forbindelser pr. datakilde** øges, sikrer det, at der er flere forespørgsler, men op til det maksimalt angivne antal, der kan sendes til den underliggende datakilde. Denne fremgangsmåde er nyttig, når mange visualiseringer er på en enkelt side, eller fordi mange brugere har adgang til en rapport på samme tid. Når det maksimale antal forbindelser er nået, sættes yderligere forespørgsler i kø, indtil en forbindelse bliver tilgængelig. En forøgelse af denne grænse resulterer i en større belastning af den underliggende kilde, så indstillingen garanterer ikke, at den overordnede ydeevne forbedres.
 
 Når en rapport publiceres, afhænger det maksimale antal forespørgsler, der sendes samtidigt til den underliggende datakilde, også af faste grænser. Grænserne afhænger af det destinationsmiljø, som rapporten udgives til. Forskellige miljøer, som f.eks Power BI, Power BI Premium eller Power BI-rapportserver, kan fastsætte forskellige grænser.
+
+> [!NOTE]
+> Indstillingen for det maksimale antal DirectQuery-forbindelser gælder for alle DirectQuery-kilder, når [udvidede metadata](desktop-enhanced-dataset-metadata.md) er aktiveret, hvilket er standardindstillingen for alle modeller, der er oprettet i Power BI Desktop, fra og med oktober 2020. 
 
 ### <a name="diagnosing-performance-issues"></a>Diagnosticering af problemer med ydeevnen
 

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 12/04/2020
+ms.date: 12/09/2020
 ms.custom: licensing support
 LocalizationGroup: Premium
-ms.openlocfilehash: 1ab5fb15f910b420781564da8f26cf5cd7ccd7df
-ms.sourcegitcommit: 0bf42b6393cab7a37d21a52b934539cf300a08e2
+ms.openlocfilehash: 62df55257864069a1e3a03f8378869fe76052120
+ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96781813"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97491960"
 ---
 # <a name="what-is-power-bi-premium"></a>Hvad er Power BI Premium?
 
@@ -50,7 +50,7 @@ Premium Gen2 omfatter følgende opdateringer eller forbedrede oplevelser:
     * Færre hukommelsesbegrænsninger
     * Komplet adskillelse mellem rapportinteraktion og planlagte opdateringer
 
-* **Forbedrede målepunkter** med tydelige og normaliserede data for kapacitetsudnyttelse, som kun er afhængige af kompleksiteten af de analyser, som kapaciteten udfører, og ikke af dens størrelse, belastningsniveauet på systemet under udførelse af analyse eller andre faktorer. De forbedrede målepunkter tydeliggør brugsanalyse, budgetplanlægning, tilbageførsler samt behovet for opgradering med indbygget rapportering. Forbedrede målepunkter gøres tilgængelige og forbedres i hele prøveperioden.
+* **Forbedrede målepunkter** med tydelige og normaliserede data for kapacitetsudnyttelse, som kun er afhængige af kompleksiteten af de analyser, som kapaciteten udfører, og ikke af dens størrelse, belastningsniveauet på systemet under udførelse af analyse eller andre faktorer. De forbedrede målepunkter tydeliggør brugsanalyse, budgetplanlægning, tilbageførsler samt behovet for opgradering med indbygget rapportering. Forbedrede metrikværdier bliver tilgængelige senere i prøveperioden. Kunder, der ønsker adgang til metrikværdier for udnyttelse inden for de sidste 7 dage, kan gøre dette ved at kontakte kundesupport. 
 
 * **Autoskalering** muliggør *automatisk tilføjelse* af én v-kerne ad gangen i 24 timers-perioder, når belastningen på kapaciteten overskrider grænserne, hvilket forhindrer forsinkelser. V-kerner fjernes automatisk, når der registreres inaktiv tid. Yderligere v-kerner faktureres til dit Azure-abonnement på betalt efter forbrug-basis. Autoskalering er tilgængelig i løbet af prøveperioden. 
 
@@ -247,7 +247,8 @@ I programmets dashboard kan du klikke på en celle med målepunkter for at åbne
 Du kan få mere at vide om overvågning af kapaciteter under [Overvågning på Power BI-administrationsportalen](service-admin-premium-monitor-portal.md) og [Overvågning med programmet Power BI Premium Capacity Metrics](service-admin-premium-monitor-capacity.md).
 
 #### <a name="updates-for-premium-gen2-preview"></a>Opdateringer til Premium Gen2 (prøveversion)
-**Premium Gen2**-kapaciteter bruger ikke Metrics-programmet. De bruger Capacity Utilization-programmet, som bliver tilgængelig i forbindelse med prøveversionen. Appen for kapacitetsudnyttelse kan åbnes fra siden Kapacitetsstyring i **administrationsportalen** for hver kapacitet.
+**Premium Gen2**-kapaciteter bruger ikke Metrics-programmet. De bruger Capacity Utilization-programmet, som bliver tilgængelig i forbindelse med prøveversionen. Kunder, der ønsker at gennemse deres udnyttelse, kan modtage en kopi af deres udnyttelsesrapport for de sidste 7 dage ved at anmode om én fra kundesupport. Rapporten leveres i løbet af 72 timer efter anmodningen. Programmet Kapacitetsudnyttelse startes fra siden til kapacitetsstyring på **administrationsportalen** for hver kapacitet og muliggør analyse af data m.m. i 30 dage.
+
 
 
 ### <a name="optimizing-capacities"></a>Optimering af kapaciteter
@@ -279,6 +280,8 @@ Power BI Embedded A4-SKU'en er lig med P1-SKU'en, A5-SKU'en = P2 og A6-SKU'en = 
 ### <a name="large-dataset-storage-format"></a>Lagerformat af store datasæt
 
 Hvis du aktiverer indstillingen [Lagerformat af store datasæt](service-premium-large-models.md) for et datasæt, gælder begrænsningerne for størrelsen af .pbix-filen stadig for upload eller publicering af filer. Grænsen for størrelsen på upload påvirkes ikke af lagerformatet af store datasæt. Når det publiceres til tjenesten, kan datasættene dog blive meget større end disse grænser ved trinvis opdatering med indstillingen Lagerformat af store datasæt aktiveret. I forbindelse med lagerformat af store datasæt er størrelsen af datasættet kun begrænset af størrelsen på Power BI Premium-kapaciteten.
+
+I Power BI-datasæt kan der gemmes data i en yderst komprimeret cache i hukommelsen for at optimere forespørgselsydeevnen og muliggøre hurtig brugerinteraktivitet på tværs af store datasæt. Tidligere har datasæt i Power BI Premium været begrænset til 10 GB efter komprimering. Med store modeller fjernes begrænsningen, og størrelsen af datasæt begrænses kun af størrelsen af kapaciteten eller den maksimale størrelse, som administratoren har angivet. Aktivering af sådanne størrelser af store datasæt gør det muligt at justere størrelsen af Power BI-datasæt bedre i forhold til størrelserne af Azure Analysis Services-modeller.
 
 Dine .pbix-filer repræsenterer data i en *stærkt komprimeret tilstand*. Dataene udvides sandsynligvis, når de indlæses i hukommelsen, og herfra udvides de måske gentagne gange under dataopdatering.
 

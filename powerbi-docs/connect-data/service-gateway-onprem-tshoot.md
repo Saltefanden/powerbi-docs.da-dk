@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: troubleshooting
-ms.date: 09/25/2020
+ms.date: 12/10/2020
 LocalizationGroup: Gateways
-ms.openlocfilehash: 045d7df36deefae5c323e88d0ddf3053ea56682e
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: de8d24af0dbaa0ed4b27efca140cf29acda9df76
+ms.sourcegitcommit: 772c65b7b440ab082510bf3f64b871d19139d451
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91634636"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97353402"
 ---
 # <a name="troubleshoot-gateways---power-bi"></a>Foretag fejlfinding af gateways – Power BI
 
@@ -238,6 +238,37 @@ Du får vist meddelelsen "-10709 Connection failed", hvis din delegering ikke er
 * Sørg for, at SAP Hana-serveren findes under fanen Delegering i Active Directory for gatewaytjenestekontoen.
 
    ![Fanen Delegering](media/service-gateway-onprem-tshoot/delegation-in-AD.png)
+
+## <a name="export-logs-for-a-support-ticket"></a>Eksportér logge for en supportanmodning
+
+Gatewaylogge er påkrævet for at kunne foretage fejlfinding og oprette en supportanmodning. Brug følgende trin til at udtrække disse logge.
+
+1. Identificer gatewayklyngen.
+
+    Hvis du er ejer af et datasæt, skal du først kontrollere navnet på den gatewayklynge, der er knyttet til dit datasæt. På følgende billede er *IgniteGateway* gatewayklyngen.
+
+    ![Gatewayklynge](media/service-gateway-onprem-tshoot/gateway-cluster.png)
+
+2. Se egenskaberne for gatewayen.
+
+    Gatewayadministratoren skal derefter kontrollere antallet af gatewaymedlemmer i klyngen, og om justering af belastning er aktiveret.
+
+    Hvis justering af belastning er aktiveret, skal trin 3 gentages for alle gatewaymedlemmer. Hvis det ikke er aktiveret, er eksport af logge på den primære gateway tilstrækkelig.
+
+3. Hent og eksportér gatewayloggene.
+
+    Derefter skal gatewayadministratoren, som også er administrator af gatewaysystemet, udføre følgende trin:
+
+    a. Log på gatewaycomputeren, og start derefter [programmet for datagatewayen i det lokale miljø](https://review.docs.microsoft.com/data-integration/gateway/service-gateway-app) for at logge på gatewayen.
+    
+    b. Aktivér [yderligere logføring](https://review.docs.microsoft.com/data-integration/gateway/service-gateway-performance#slow-performing-queries).
+    
+    c. Du kan også [aktivere funktionerne til overvågning af ydeevne](https://review.docs.microsoft.com/data-integration/gateway/service-gateway-performance#enable-performance-logging) og inkludere logge for ydeevne for at levere flere oplysninger til fejlfinding.
+    
+    d. Kør det scenarie, som du forsøger at registrere gatewaylogge for.
+    
+    e. [Eksportér gatewaylogge](https://review.docs.microsoft.com/data-integration/gateway/service-gateway-tshoot#collect-logs-from-the-on-premises-data-gateway-app).
+
 
 ## <a name="refresh-history"></a>Opdater historik
 

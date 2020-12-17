@@ -9,16 +9,17 @@ ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 11/17/2020
 LocalizationGroup: Get started
-ms.openlocfilehash: 4a0a504db15d78bec112aaafd2a972f066e88193
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 6aaad48fb3e97aa6c1b4fc51834ee593a49a8192
+ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96407670"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97097725"
 ---
 # <a name="save-a-paginated-report-to-onedrive-for-business-or-sharepoint-online"></a>Gem en sideinddelt rapport i OneDrive for Business eller SharePoint Online
 
 Med [Power Automate](/power-automate/getting-started) kan du automatisere eksport og distribution af sideinddelte Power BI-rapporter til en række understøttede formater og scenarier. I denne artikel bruger du Power Automate til at automatisere lagring af en sideinddelt Power BI-rapport til OneDrive for Business eller en SharePoint Online-mappe.
+
 
 :::image type="content" source="media/service-automate-paginated-onedrive-sharepoint/paginated-onedrive-flow.png" alt-text="Skærmbillede af Power Automate-flowet til lagring af en sideinddelt rapport i OneDrive eller SharePoint Online":::
 
@@ -28,7 +29,7 @@ Leder du efter andre Power Automate-skabeloner til sideinddelte Power BI-rapport
 
 Hvis du vil følge med, skal du sørge for, at du har:
 
-- Mindst ét arbejdsområde i din Power BI-lejer skal understøttes af en reserveret kapacitet. Denne kapacitet kan være en hvilken som helst af SKU'erne A4/P1-A6/P3. Læs mere om [reserverede kapaciteter i Power BI Premium](../admin/service-premium-what-is.md).
+- Mindst ét arbejdsområde i din Power BI-lejer skal understøttes af en reserveret kapacitet. Denne kapacitet kan være en hvilken som helst af SKU'erne A4/P1-A6/P3. Læs mere om [reserverede kapaciteter til sideinddelte rapporter i Power BI Premium](../admin/service-premium-what-is.md#paginated-reports)
 - Få adgang til standardforbindelser i Power Automate, som medfølger ethvert Office 365-abonnement.
 
 ## <a name="save-a-paginated-report-to-onedrive-for-business-or-a-sharepoint-online-folder"></a>Gem en sideinddelt rapport i OneDrive for Business eller en SharePoint Online-mappe 

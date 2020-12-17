@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 06/18/2019
-ms.openlocfilehash: 80c53b183f37dc09ee83ff20bd97f944bdcbc9b4
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: fc0ebf3d315b10bc14190a5ae01e8d389e2be0cc
+ms.sourcegitcommit: b5365df7fc32b7c49f8a2bf2cf75b5edd6bda9b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79379323"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97513729"
 ---
 # <a name="dataviewutils"></a>DataViewUtils
 
@@ -25,6 +25,22 @@ ms.locfileid: "79379323"
 Hvis du vil installere pakken, skal du køre følgende kommando i mappen med din aktuelle brugerdefinerede visual:
 
 npm install powerbi-visuals-utils-dataviewutils --save Denne kommando installerer pakken og føjer en pakke til package.json som en afhængighed
+
+## <a name="dataviewwildcard"></a>DataViewWildcard
+
+`DataViewWildcard` leverer funktionen `createDataViewWildcardSelector` for at understøtte en egenskabs [betinget formatering](conditional-format.md#define-how-conditional-formatting-behaves).
+
+`createDataViewWildcardSelector` returnerer en vælger, der er påkrævet for at definere, hvordan posten for betinget formatering i formateringsruden skal anvendes, baseret på `dataviewWildcardMatchingOption (InstancesAndTotals (default), InstancesOnly, TotalsOnly)`.
+
+Eksempel:
+
+ ```typescript
+import { dataViewWildcard } from "powerbi-visuals-utils-dataviewutils";
+
+let selector = dataViewWildcard.createDataViewWildcardSelector(dataViewWildcard.DataViewWildcardMatchingOption.InstancesAndTotals);
+// returns {data: [{dataViewWildcard:{matchingOption: 0}}]};
+
+```
 
 ## <a name="datarolehelper"></a>DataRoleHelper
 

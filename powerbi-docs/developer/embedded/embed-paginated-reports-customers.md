@@ -1,5 +1,5 @@
 ---
-title: Integrer sideinddelte rapporter i dit program for dine kunder
+title: Integrer sideinddelte rapporter i dit program til integreret analyse i Power BI for dine kunder
 description: Få mere at vide om, hvordan du integrerer en sideinddelt Power BI-rapport i et program ved hjælp af Power BI-API'er.
 author: KesemSharabi
 ms.author: kesharab
@@ -9,16 +9,16 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 01/04/2019
-ms.openlocfilehash: 02d73a2eb36636091ff6059fd6543bb950082c2a
-ms.sourcegitcommit: 30d0668434283c633bda9ae03bc2aca75401ab94
+ms.openlocfilehash: 3aecfa7e00528217dc5b6fa27b03a5ac4302d9dd
+ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96907296"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97098231"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-customers"></a>Selvstudium: Integrer sideinddelte Power BI-rapporter i et program til dine kunder
 
-Med **Power BI Embedded i Azure** eller **Power BI-integration i Office** kan du integrere sideinddelte rapporter i et program ved hjælp af "appen ejer dataene". **App owns data** handler om at have et program, der bruger Power BI som sin integrerede analyseplatform. Som **ISV** eller **udvikler** kan du oprette Power BI-indhold, der viser sideinddelte rapporter i et program, som er fuldt integreret og interaktivt, uden at brugerne skal have en Power BI-licens. I dette selvstudium kan du se, hvordan du integrerer en sideinddelt rapport i et program ved hjælp af Power BI .NET SDK med Power BI JavaScript-API'en.
+Med **Power BI Embedded i Azure** eller **Power BI-integration i Office** kan du integrere sideinddelte rapporter i et program ved hjælp af "appen ejer dataene". **Programmet ejer data** handler om at have et program, der bruger Power BI som sin platform til integreret analyse. Som **ISV** eller **udvikler** kan du oprette Power BI-indhold, der viser sideinddelte rapporter i et program, som er fuldt integreret og interaktivt, uden at brugerne skal have en Power BI-licens. I dette selvstudium kan du se, hvordan du integrerer en sideinddelt rapport i et program ved hjælp af Power BI .NET SDK med Power BI JavaScript-API'en.
 
 ![Integrer Power BI-rapport](media/embed-paginated-reports-for-customers/embedded-paginated-report.png)
 

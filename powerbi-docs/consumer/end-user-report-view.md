@@ -9,12 +9,12 @@ ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 09/27/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: ea537e19eb7c3ab2a155f417af92e45841031f89
-ms.sourcegitcommit: 0bf42b6393cab7a37d21a52b934539cf300a08e2
+ms.openlocfilehash: 79658c2296ac2ae189680c9d8c778046778a882e
+ms.sourcegitcommit: 8250187368d3de48663eb516a816ff701119b579
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96781629"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96998547"
 ---
 # <a name="change-the-display-of-a-report-page"></a>Skift visningen af en rapportside
 
@@ -58,7 +58,7 @@ Når du lukker rapporten, gemmes indstillingerne i **Vis** ikke, men nulstilles 
 
 Zoomkontrolelementerne i din browser øger og reducerer det tilgængelige lærredsområde. Reduktion af zoom medfører, at det tilgængelige lærredsområde udvides og omvendt. 
 
-![kort video, der viser browserens zoomkontrolelementer](media/end-user-report-view/power-bi-zoom.png)
+![kontrolelementer til browserzoom](media/end-user-report-view/power-bi-zoom.png)
 
 Tilpasning af størrelsen af hele browseren er en anden måde at ændre rapportens visningsstørrelse på. 
 

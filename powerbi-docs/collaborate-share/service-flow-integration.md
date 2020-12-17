@@ -1,5 +1,5 @@
 ---
-title: Integrer databeskeder med Power Automate
+title: Integrer Power BI-databeskeder med Power Automate
 description: Få mere at vide om, hvordan du opretter Power Automate-flow, der udløses af databeskeder i Power BI.
 author: maggiesMSFT
 ms.author: maggies
@@ -7,16 +7,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 11/09/2020
+ms.date: 12/08/2020
 LocalizationGroup: Get started
-ms.openlocfilehash: 65c7c00a705ed95c26c32a4fc5bcb9e0c18c13bf
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 8f73bd959691ea8359a8584966e0b83f439d8652
+ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96407164"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97097633"
 ---
-# <a name="integrate-data-alerts-with-power-automate"></a>Integrer databeskeder med Power Automate
+# <a name="integrate-power-bi-data-alerts-with-power-automate"></a>Integrer Power BI-databeskeder med Power Automate
 
 Brug [Power Automate](/power-automate/getting-started) til at integrere Power BI med dine foretrukne programmer og tjenester. Med Power Automate opretter du automatiserede arbejdsprocesser for at få meddelelser, synkronisere filer, indsamle data og meget mere. I denne artikel beskrives det hvordan du automatiserer oprettelse af en mail fra en Power BI- databesked.
 
@@ -90,6 +90,5 @@ I denne opgave skal vi oprette et enkelt flow fra bunden, der udløses af en dat
 
 ## <a name="next-steps"></a>Næste trin
 * [Kom godt i gang med Power Automate](/power-automate/getting-started/)
-* [Indstil databeskeder i Power BI-tjenesten](../create-reports/service-set-data-alerts.md)
-* [Indstil databeskeder på din iPhone](../consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
+* [Eksportér og send en Power BI-rapport via mail med Power Automate](service-automate-power-bi-report-export.md)
 * Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

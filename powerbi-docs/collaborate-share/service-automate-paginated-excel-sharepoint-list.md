@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 11/17/2020
+ms.date: 12/08/2020
 LocalizationGroup: Get started
-ms.openlocfilehash: 74d61d40c4447f2649f5cce5fbcdcba68cd31afe
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 7a48a9a594364de4261aa66de48c1a4262392364
+ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96407992"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97097840"
 ---
 # <a name="export-a-paginated-report-for-each-row-in-an-excel-online-table-or-sharepoint-list"></a>Eksportér en sideinddelt rapport for hver række i en Excel Online-tabel eller på en SharePoint-liste
 
@@ -30,7 +30,7 @@ Leder du efter andre Power Automate-skabeloner til sideinddelte Power BI-rapport
 
 Hvis du vil følge med, skal du sørge for, at du har:
 
-- Mindst ét arbejdsområde i din Power BI-lejer skal understøttes af en reserveret kapacitet. Denne kapacitet kan være en hvilken som helst af SKU'erne A4/P1-A6/P3. Læs mere om [reserverede kapaciteter i Power BI Premium](../admin/service-premium-what-is.md).
+- Mindst ét arbejdsområde i din Power BI-lejer skal understøttes af en reserveret kapacitet. Denne kapacitet kan være en hvilken som helst af SKU'erne A4/P1-A6/P3. Læs mere om [reserverede kapaciteter til sideinddelte rapporter i Power BI Premium](../admin/service-premium-what-is.md#paginated-reports).
 - Få adgang til standardforbindelser i Power Automate, som medfølger ethvert Office 365-abonnement.
 - Hvis du bruger en Excel Online-tabel, skal den være formateret som en tabel i Excel. Se [Opret en tabel](https://support.microsoft.com/office/create-a-table-in-excel-bf0ce08b-d012-42ec-8ecf-a2259c9faf3f) for at få vide, hvordan du gør det.
 
@@ -73,7 +73,7 @@ Hvis du vil følge med, skal du sørge for, at du har:
 
 1. Under **Anvend på hver** er feltet **Vælg output fra forrige trin** som standard angivet til **værdi**. Denne indstilling gentager de handlinger, der er indeholdt i **Anvend på hver** for hver række i din Excel Online-tabel eller på din SharePoint Online-liste.  
 
-1. I feltet **Arbejdsområde** skal du vælge et arbejdsområde i en dedikeret kapacitet. I feltet **Rapport** skal du vælge den sideinddelte rapport i det valgte arbejdsområde, du vil eksportere. Hvis du konfigurerer **Angiv en brugerdefineret værdi** på rullelisten, kan du konfigurere **Arbejdsområde** og **Rapport** til at svare til en kolonne i din Excel Online-tabel eller på din SharePoint Online-liste. Disse kolonner bør indeholde hhv. id'er for arbejdsområde og id'er for rapport.  
+1. I feltet **Arbejdsområde** skal du vælge et arbejdsområde i en reserveret kapacitet. I feltet **Rapport** skal du vælge den sideinddelte rapport i det valgte arbejdsområde, du vil eksportere. Hvis du konfigurerer **Angiv en brugerdefineret værdi** på rullelisten, kan du konfigurere **Arbejdsområde** og **Rapport** til at svare til en kolonne i din Excel Online-tabel eller på din SharePoint Online-liste. Disse kolonner bør indeholde hhv. id'er for arbejdsområde og id'er for rapport.  
 
 1. Vælg et **Eksportformat** på rullelisten, eller konfigurer det til at svare til en kolonne i din Excel Online-tabel, som indeholder de ønskede eksportformater. F.eks. PDF, DOCX eller PPTX. Alternativt kan du angive parametre for den sideinddelte rapport. Find detaljerede beskrivelser af parametrene i [connectorreferencen til REST-API til Power BI](/connectors/powerbi/#export-to-file-for-paginated-reports).
 
