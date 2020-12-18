@@ -1,5 +1,5 @@
 ---
-title: Flyt dit integrerede Power BI-program til produktion
+title: Flyt dit integrerede Power BI-analyseprogram til produktion
 description: Få mere at vide om, hvilke trin der kræves for at flytte dit Power BI-program til produktion.
 author: KesemSharabi
 ms.author: kesharab
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 06/02/2020
-ms.openlocfilehash: 6132066f9b724cf5658d3e66ccb835bb23b93d39
-ms.sourcegitcommit: 30d0668434283c633bda9ae03bc2aca75401ab94
+ms.openlocfilehash: 188974531f7b78e04c2cf0f8072dcef7efe3b888
+ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96907678"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97098185"
 ---
 # <a name="move-your-embedded-app-to-production"></a>Flyt et integreret program til produktion
 
