@@ -10,12 +10,12 @@ ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 12/05/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 748e13a509bc3689122c8622f9ce26536f850a68
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: bfcd684e4899edb5555a784c7148a7abc9b0f29c
+ms.sourcegitcommit: 5c09d121d3205e65fb33a2eca0e60bc30e777773
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96418319"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97675298"
 ---
 # <a name="create-and-use-filled-maps-choropleth-maps-in-power-bi"></a>Opret og brug udfyldte kort (choropleth-kort) i Power BI
 
@@ -125,7 +125,6 @@ Kortdata kan være tvetydige.  Der er f.eks. en by, der hedder Paris i Frankrig,
 
 Hvis du har rettigheder til at redigere datasættet i Power BI Desktop, kan du se denne video for at få hjælp til at korrigere tvetydighed på kortet.
 
-> [VIDEO https://www.youtube.com/embed/Co2z9b-s_yM ]
 
 Hvis du ikke har adgang til data om breddegrad og længdegrad, men du har redigeringsadgang til datasættet, [skal du følge disse instruktioner for at opdatere datasættet](https://support.office.com/article/Maps-in-Power-View-8A9B2AF3-A055-4131-A327-85CC835271F7).
 

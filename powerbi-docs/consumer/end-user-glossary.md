@@ -9,13 +9,13 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: reference
 ms.date: 11/21/2020
-ms.custom: contperfq1
-ms.openlocfilehash: 197ebcd029dbe6a6e87b1858da8f35325772237e
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.custom: contperf-fy21q1
+ms.openlocfilehash: 758d663f758a3d43f4621cb735f30e34bee4a590
+ms.sourcegitcommit: 7bf09116163afaae312eb2b232eb7967baee2c92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96400011"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97621918"
 ---
 # <a name="glossary-for-business-users-of-the-power-bi-service"></a>Ordliste til virksomhedsbrugere af Power BI-tjenesten    
 Power BI-tjenesten kan introducere terminologi, som er ukendt eller forvirrende. Ordlisten er et godt sted at søge efter terminologi, og du kan endda markere den med et bogmærke. En anden fantastisk ressource, hvor du kan få mere at vide om de komponenter, der udgør Power BI-tjenesten, er [Grundlæggende begreber](end-user-basic-concepts.md). Grundlæggende begreber giver et godt overblik over Power BI-*enheder*, og hvordan de er forbundet.

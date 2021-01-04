@@ -28,7 +28,7 @@
           href: embedded-capacity.md
         - name: Kapacitetsplanlægning
           href: embedded-capacity-planning.md
-        - name: Overvejelser i forbindelse med genereringen af et integreringstoken
+        - name: Overvejelser i forbindelse med generering af et integreringstoken
           href: generate-embed-token.md
         - name: Bedste fremgangsmåder for ydelse
           href: embedded-performance-best-practices.md
@@ -50,8 +50,6 @@
           href: embed-service-principal-certificate.md
         - name: Flyt en integreret app til produktion
           href: move-to-production.md
-        - name: Integrer fra en app
-          href: embed-from-apps.md
         - name: Eksportér rapport til fil
           href: export-to.md
         - name: Eksportér den sideinddelte rapport til fil
