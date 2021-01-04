@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 04/02/2020
-ms.openlocfilehash: 5df13baf295745f86c89ce75d2890ca2c13894ee
-ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
+ms.openlocfilehash: 7ef9b75f01dedaf55be77312f07217593d886ef0
+ms.sourcegitcommit: 5c09d121d3205e65fb33a2eca0e60bc30e777773
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92049332"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97675275"
 ---
 # <a name="tutorial-build-a-funnel-plot-from-r-script-to-r-visual"></a>Selvstudium: Byg en tragtformet afbildning fra R-script til R-visualisering
 I denne artikel beskrives det, hvordan du opretter en tragtformet afbildning ved hjælp af R-script i R-visualisering trin for trin.
@@ -150,7 +150,7 @@ Det visuelle element er endnu ikke brugervenligt, fordi brugeren skal kende ræk
    > #RVIZ_IN_PBI_GUIDE:END:Removed to enable user parameters
    > ```
 
-   ![script før og efter](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/script_r_before_after_1.png)
+   ![script før og efter](https://raw.githubusercontent.com/microsoft/PowerBI-visuals/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/script_r_before_after_1.png)
 
    Du kan beslutte ikke at fremvise parametrene til brugergrænsefladen, som vi gjorde.  
 
@@ -196,9 +196,9 @@ Da det resulterende visuelle element i PNG-format ikke reagerer på musemarkøre
 
 1. Flet den nyeste version af *script.r* med scriptet *.r* fra skabelonen, eller hent [script.r](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01/script.r).
 
-   Det nye script bruger `plotly`-pakken til at konvertere **ggplot**-objektet til et **afbildnings**objekt og derefter `htmlWidgets`-pakken til at gemme den i en HTML-fil. 
+   Det nye script bruger `plotly`-pakken til at konvertere **ggplot**-objektet til et **afbildnings** objekt og derefter `htmlWidgets`-pakken til at gemme den i en HTML-fil. 
 
-   De fleste funktioner i værktøjet flyttes til [_r_files/utils.r_](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01/r_files/utils.r) og funktionen `generateNiceTooltips` tilføjes for udseendet af **afbildnings**objektet.
+   De fleste funktioner i værktøjet flyttes til [_r_files/utils.r_](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01/r_files/utils.r) og funktionen `generateNiceTooltips` tilføjes for udseendet af **afbildnings** objektet.
 
    ![1](./samples/funnel-plot/chapter-4/RHTML-v01/script-before-after-1.PNG)
    

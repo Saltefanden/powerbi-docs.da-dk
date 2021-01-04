@@ -8,13 +8,13 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
-ms.date: 12/02/2020
-ms.openlocfilehash: e79a73880b50a0edb5e507726cb0c995ba13cd77
-ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
+ms.date: 12/22/2020
+ms.openlocfilehash: 5417266658a493bc81da882761431aa3db072dbe
+ms.sourcegitcommit: 1691ce556ab5b22e6f9d06086a054d165d482809
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97098415"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97745110"
 ---
 # <a name="tutorial-embed-power-bi-content-using-a-sample-embed-for-your-customers-application"></a>Selvstudium: Integrer Power BI-indhold ved hjælp af et eksempelprogram til *integrering for dine kunder*
 
@@ -192,7 +192,7 @@ Det næste trin er at oprette en rapport og uploade den til dit arbejdsområde. 
 
 Hvis du vil downloade en eksempelrapport og publicere den i dit arbejdsområde, skal du følge disse trin:
 
-1. Åbn GitHub-mappen [Power BI Desktop-eksempler](https://github.com/microsoft/PowerBI-Developer-Samples).
+1. Åbn GitHub-mappen [Power BI Desktop-eksempler](https://github.com/Microsoft/PowerBI-Desktop-Samples).
 
 2. Vælg **Kode**, og vælg derefter **Download zip**.
 

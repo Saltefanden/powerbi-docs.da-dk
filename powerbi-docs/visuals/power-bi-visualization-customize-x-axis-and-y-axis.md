@@ -5,17 +5,18 @@ author: mihart
 ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: 9DeAKM4SNJM
+ms.custom: 9DeAKM4SNJM
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 05/06/2020
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 24c10880d76fbe2bbdbf5e20d24f6f52e1262eb5
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 625c2102ca5c8c030dbe2fca10ee030e1ac4c16d
+ms.sourcegitcommit: 5c09d121d3205e65fb33a2eca0e60bc30e777773
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96393916"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97675252"
 ---
 # <a name="customize-x-axis-and-y-axis-properties"></a>Tilpas egenskaberne for x- og y-aksen
 
@@ -173,7 +174,7 @@ I nogle visualiseringer kan du med fordel bruge to Y-akser. Kombinationsdiagramm
 
 ### <a name="create-a-chart-with-two-y-axes"></a>Opret et diagram med to Y-akser
 
-1. Vælg søjlediagrammet, og skift det til et *kurvediagram og stablet søjlediagram*. Denne type visualisering understøtter en enkelt kurvediagramværdi og flere værdier for kolonner, der kan stables. 
+1. Vælg søjlediagrammet, og skift det til et *kurvediagram og stablet søjlediagram*. Denne type visuals understøtter en enkelt kurvediagramværdi og flere værdier for kolonner, der kan stables. 
 
     ![Skærmbillede af ruden Visualiseringer, hvor ikonet for kurvediagram og stablet søjlediagram er fremhævet.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-combo.png)
    

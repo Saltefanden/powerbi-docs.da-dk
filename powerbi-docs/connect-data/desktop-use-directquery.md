@@ -9,12 +9,12 @@ ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 12/14/2020
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a3ab606733e47dec06837cfc1840da09732f7019
-ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
+ms.openlocfilehash: 60805ba0977b3b603ace0d50f7b080bd62d54ec7
+ms.sourcegitcommit: b472236df99b490db30f0168bd7284ae6e6095fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97491224"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97600294"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>Brug DirectQuery i Power BI Desktop
 Når du opretter forbindelse til din datakilde i *Power BI Desktop*, er det altid muligt at importere en kopi af dataene til Power BI Desktop. For nogle datakilder findes der en anden mulighed: Du kan oprette direkte forbindelse til datakilden med DirectQuery.
@@ -108,3 +108,4 @@ Du kan finde flere oplysninger om DirectQuery i følgende ressourcer:
 - [DirectQuery og SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md)
 - [DirectQuery og SAP HANA](desktop-directquery-sap-hana.md)
 - [Hvad er en datagateway i det lokale miljø?](service-gateway-onprem.md)
+- [Brug af DirectQuery til Power BI-datasæt og Azure Analysis Services (eksempelvisning)](../connect-data/desktop-directquery-datasets-azure-analysis-services.md)

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 01/15/2020
+ms.date: 12/16/2020
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 078596c91f86f635cb69f543ee0ea828e5cef62d
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: c29728641560502e19486f47e3ec06e370399640
+ms.sourcegitcommit: b472236df99b490db30f0168bd7284ae6e6095fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96415858"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97600524"
 ---
 # <a name="use-composite-models-in-power-bi-desktop"></a>Brug af sammensatte modeller i Power BI Desktop
 
@@ -188,3 +188,4 @@ Du kan finde flere oplysninger om sammensatte modeller og DirectQuery i følgend
 * [Lagringstilstand i Power BI Desktop](desktop-storage-mode.md)
 * [Brug DirectQuery i Power BI](../connect-data/desktop-directquery-about.md)
 * [Understøttede datakilder i forbindelse med DirectQuery i Power BI](../connect-data/power-bi-data-sources.md)
+* [Brug af DirectQuery til Power BI-datasæt og Azure Analysis Services (eksempelvisning)](../connect-data/desktop-directquery-datasets-azure-analysis-services.md)
