@@ -124,7 +124,9 @@
       items:
         - name: Power BI-rapporter
           items:
-            - name: Opret en rapport in tjenesten
+            - name: Opret hurtigt rapporter i tjenesten
+              href: service-quick-create-report.md
+            - name: Opret en rapport fra Excel i tjenesten
               href: service-report-create-new.md
             - name: Aktivér automatisk sideopdatering
               href: desktop-automatic-page-refresh.md

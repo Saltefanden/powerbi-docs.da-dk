@@ -26,7 +26,7 @@
       items:
         - name: Projektstruktur i Power BI-visualiseringer
           href: visual-project-structure.md
-        - name: ' Systemintegration af Power BI-visualiseringer'
+        - name: Systemintegration af Power BI-visualiseringer
           href: power-bi-visuals-concept.md
         - name: Visualiseringer til organisationer i Power BI
           href: power-bi-custom-visuals-organization.md
@@ -104,9 +104,9 @@
           href: landing-page.md
         - name: Start-URL-adresse
           href: launch-url.md
-        - name: Visualiserings-API
+        - name: API til visualisering
           href: visual-api.md
-        - name: Lokalt lager-API
+        - name: API til lokalt lager
           href: local-storage.md
         - name: Gengivelse af hændelser
           href: event-service.md
