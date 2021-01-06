@@ -8,16 +8,16 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/08/2019
+ms.date: 01/04/2021
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f6092e6324a0fa400458b8da0be8f41c366f85e0
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 7ba25ff8b4462d2cf50f9285b3d9ac92b98373cf
+ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96405899"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97927026"
 ---
-# <a name="connect-to-excel-workbooks-in-power-bi-desktop"></a>Opret forbindelse til Excel-projektmapper i Power BI Desktop
+# <a name="connect-to-excel-in-power-bi-desktop"></a>Opret forbindelse til Excel i Power BI Desktop
 Det er nemt at oprette forbindelse til en Excel-projektmappe fra Power BI Desktop, og i denne artikel gennemgås trinnene.
 
 Vælg **Hent data > Excel** på båndet **Hjem** i Power BI Desktop.
