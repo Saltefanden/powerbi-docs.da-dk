@@ -9,12 +9,12 @@ ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 12/4/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 960a3dec2276acba994190e73de671f2b071bc50
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 7aa15bae7ab94619a9f652aa20da9222e3d4af41
+ms.sourcegitcommit: 0711972326521944fdd8572403c0b15f31b916da
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96409717"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97721633"
 ---
 # <a name="display-a-visualizations-underlying-data"></a>Vis en visualiserings underliggende data
 
@@ -52,7 +52,7 @@ Du kan også eksportere de data, der bruges til at oprette visualiseringen som e
 6. Hvis du vil skjule dataene, skal du fjerne markeringen af **Udforsk** > **Få vist data**.
 
 ## <a name="using-show-records"></a>Brug af Vis poster
-Du kan også fokusere på ét dataelement i en visualisering og analysere de underliggende data. 
+Du kan også fokusere på ét dataelement i en visualisering og zoome ind på detaljeniveauet i de underliggende data. 
 
 1. Hvis du vil bruge **Se poster**, skal du vælge en visualisering for at aktivere den. 
 

@@ -1,28 +1,28 @@
 ---
 title: Introduktion til formatering af Power BI-visualiseringer
-description: Tilpas visualiseringens titel, baggrund og forklaring
+description: Tilpas titler, baggrunde, mærkater og signaturforklaringer i visualiseringer
 author: mihart
 ms.author: mihart
 ms.reviewer: mihart
-featuredvideoid: IkJda4O7oGs
+featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 03/06/2020
+ms.date: 12/18/2020
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c974161e4cc7d52bf412ea14800bf720a297cd25
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 2a8c125a37e0d70ea735d9f1962f64deb69061c8
+ms.sourcegitcommit: 1691ce556ab5b22e6f9d06086a054d165d482809
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96409809"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97745133"
 ---
-# <a name="customize-visualization-titles-backgrounds-and-legends"></a>Tilpas visualiseringernes titler, baggrunde og forklaringer
+# <a name="customize-visualization-titles-backgrounds-labels-and-legends"></a>Tilpas titler, baggrunde, mærkater og signaturforklaringer i visualiseringer
 
 [!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
 
 
-I dette selvstudium lærer du, hvordan du kan tilpasse dine visualiseringer, på flere måder. Du har mange muligheder for at tilpasse dine visualiseringer. Den bedste måde, du kan lære om dem alle på, er at udforske ruden **Format** (vælg malerrulleikonet). I denne artikel kan du se, hvordan du tilpasser en visualiseringstitel, en forklaring og en baggrund samt tilføjer et tema.
+I dette selvstudium lærer du, hvordan du kan tilpasse dine visualiseringer, på flere måder. Du har mange muligheder for at tilpasse dine visualiseringer. Den bedste måde, du kan lære om dem alle på, er at udforske ruden **Format** (vælg malerrulleikonet). For at hjælpe dig i gang kan du i denne artikel se, hvordan du tilpasser en titel, en signaturforklaring, en baggrund og en mærkat samt tilføjer et tema i en visualisering.
 
 Du kan ikke tilpasse alle visualiseringer. Se den [komplette liste](#visualization-types-that-you-can-customize) over visualiseringer for at få flere oplysninger.
 
@@ -126,6 +126,29 @@ Gem de ændringer, du har foretaget, og gå til næste sektion.
 
 Hvis du vil genindlæse alle ændringerne, skal du vælge **Vend tilbage til standard** nederst i tilpasningsruden **Forklaring**.
 
+## <a name="customize-total-labels-for-stacked-visuals"></a>Tilpas totalmærkater for stablede visualiseringer
+Der kan vises datamærkater og totalmærkater i stablede visualiseringer. I et stablet søjlediagram identificerer datamærkater værdien for hver del af en søjle. Totalmærkater viser totalværdien for hele den samlede søjle. 
+
+Se, hvordan Rien føjer totalmærkater til et stablet diagram, og følg derefter trinnene herunder for at prøve det selv.
+
+> [!VIDEO https://www.youtube.com/embed/OgjX-pFGgfM]
+
+1. Åbn rapportsiden **Oversigt**, og vælg det liggende søjlediagram **Gennemsnitlig størrelse af salgsområde efter kæde og butikstype**.
+
+1. Under fanen **Visualisering** skal du vælge ![ikonet for det stablede liggende søjlediagram](media/power-bi-visualization-customize-title-background-and-legend/power-bi-stacked-bar.png) for at konvertere dette liggende søjlediagram til et stablet liggende søjlediagram. Bemærk, at visualiseringen bevarer sine datamærkater. 
+
+    ![Skærmbillede af det nye stablede liggende søjlediagram.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-stacked-chart.png)
+
+1. Under fanen **Visualiseringer** skal du vælge malerrulleikonet for at åbne ruden Formatering.
+
+1. Flyt skyderen **Totalmærkater** til **Til**. 
+
+    ![Skærmbillede, der viser skyderen Totalmærkater angivet som Til.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-totals.png)
+
+1. Alternativt kan du formatere totalmærkaterne. I dette eksempel har vi ændret farven til sort, øget skriftstørrelsen og valgt at vise værdierne som **tusinder**.
+
+    ![Skærmbillede af det nye stablede liggende søjlediagram med totalmærkater.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-bar-totals.png)
+
 ## <a name="customize-colors-using-a-theme"></a>Tilpas farver ved hjælp af et tema
 
 Med rapporttemaer kan du anvende designændringer på hele rapporten, f.eks. bruge virksomhedsfarver, ændre ikonsæt eller anvende ny visualstandardformatering. Når du anvender et rapporttema, anvendes farver og formatering fra det valgte tema på alle visuals i rapporten.
@@ -139,32 +162,32 @@ Hvis du vil anvende et tema på din rapport, skal du vælge **Skift tema** fra m
 
 Her er en liste over de visualiseringer og tilpasningsindstillinger, der er tilgængelige for de enkelte:
 
-| Visualisering | Titel | Baggrund | Forklaring |
-|:--- |:--- |:--- |:--- |
-| Område | ja | ja |ja |
-| Liggende søjle | ja | ja |ja |
-| Kort | ja | ja |i/t |
-| Kort med flere rækker | ja | ja | i/t |
-| Kolonne | ja | ja | ja |
-| Kombinationsdiagram | ja | ja | ja |
-| Krans | ja | ja | ja |
-| Kartogram | ja | ja | ja |
-| Tragt | ja | ja | i/t |
-| Måler | ja | ja | i/t |
-| Nøgleinfluencer | ja | ja | i/t |
-| KPI | ja | ja | i/t |
-| Linje | ja | ja | ja |
-| Kort | ja | ja | ja |
-| Matrix | ja | ja | i/t |
-| Cirkel | ja | ja | ja |
-| Spørgsmål og svar | ja | ja | i/t |
-| Punktdiagram | ja | ja | ja |
-| Form | ja | ja | ja |
-| Udsnit | ja | ja | i/t |
-| Tabel | ja | ja | i/t |
-| Tekstfelt | nej | ja | i/t |
-| Træstruktur | ja | ja | ja |
-| Vandfaldsdiagram | ja | ja | ja |
+| Visualisering | Titel | Baggrund | Forklaring | Totalmærkater
+|:--- |:--- |:--- |:--- |:--- |
+| Område | ja | ja |ja | ja  |
+| Liggende søjle | ja | ja |ja | ja |
+| Kort | ja | ja |i/t | i/t |
+| Kort med flere rækker | ja | ja | i/t | i/t |
+| Kolonne | ja | ja | ja |  ja |
+| Kombinationsdiagram | ja | ja | ja | ja |
+| Krans | ja | ja | ja | i/t |
+| Kartogram | ja | ja | ja |i/t |
+| Tragt | ja | ja | i/t |i/t |
+| Måler | ja | ja | i/t |i/t |
+| Nøgleinfluencer | ja | ja | i/t |i/t |
+| KPI | ja | ja | i/t |i/t |
+| Linje | ja | ja | ja |i/t |
+| Kort | ja | ja | ja |i/t |
+| Matrix | ja | ja | i/t |ja |
+| Cirkel | ja | ja | ja |i/t |
+| Spørgsmål og svar | ja | ja | i/t |i/t |
+| Punktdiagram | ja | ja | ja |i/t |
+| Form | ja | ja | ja |i/t |
+| Udsnit | ja | ja | i/t |i/t |
+| Tabel | ja | ja | i/t |ja |
+| Tekstfelt | nej | ja | i/t |i/t |
+| Træstruktur | ja | ja | ja |i/t |
+| Vandfaldsdiagram | ja | ja | ja |i/t |
 
 ## <a name="next-steps"></a>Næste trin
 

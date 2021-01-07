@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 09/30/2020
+ms.date: 12/16/2020
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 33065a518f99cf7be6c8ea494088440e7ab45474
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 879c52166d3a4c57c3638466e7f85e6faaccd3c5
+ms.sourcegitcommit: b472236df99b490db30f0168bd7284ae6e6095fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96397941"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97600708"
 ---
 # <a name="create-arcgis-maps-in-power-bi"></a>Opret ArcGIS-kort i Power BI
 
@@ -24,52 +24,52 @@ ms.locfileid: "96397941"
 > [!NOTE]
 > Disse visualiseringer kan oprettes og vises både i Power BI Desktop og Power BI-tjenesten. Trinnene og illustrationerne i denne artikel er fra Power BI Desktop.
 
-Denne oversigt ses ud fra synspunktet for en person, der opretter et kort af typen ArcGIS Maps for Power BI. Når en _designer_ deler et kort af typen ArcGIS Maps for Power BI med en kollega, kan denne kollega få vist og interagere med kortet, men ikke gemme nogen ændringer. Du kan finde flere oplysninger om visning af et ArcGIS-kort i [Udforsk ArcGIS Maps for Power BI](https://doc.arcgis.com/en/maps-for-powerbi/use/explore-maps.htm).
+Denne oversigt ses ud fra synspunktet for en person, der opretter et ArcGIS for Power BI-kort. Når en _designer_ deler et ArcGIS for Power BI-kort med en kollega, kan denne kollega få vist og interagere med kortet, men ikke gemme nogen ændringer. Du kan finde flere oplysninger om visning af et ArcGIS-kort i [Udforsk ArcGIS for Power BI](https://doc.arcgis.com/en/power-bi/use/explore-maps.htm).
 
-Kombinationen af ArcGIS-kort og Power BI tager kort til et helt nyt niveau, som involverer mere end præsentation af punkter på et kort. Du kan vælge mellem grundlæggende kort, placeringstyper, temaer, symboltypografier og referencelag til at oprette fantastiske informative kortvisualiseringer. Kombinationen af autoritative datalag på et kort med rumlige analyser giver en bedre forståelse af dataene i visualiseringen. Selvom du ikke kan oprette et kort af typen ArcGIS Maps for Power BI på en mobilenhed, kan du godt få det vist og interagere med det.
+Kombinationen af ArcGIS-kort og Power BI tager kort til et helt nyt niveau, som involverer mere end præsentation af punkter på et kort. Du kan vælge mellem grundlæggende kort, placeringstyper, temaer, symboltypografier og referencelag til at oprette fantastiske informative kortvisualiseringer. Kombinationen af autoritative datalag på et kort med rumlige analyser giver en bedre forståelse af dataene i visualiseringen. Selvom du ikke kan oprette et ArcGIS for Power BI-kort på en mobilenhed, kan du godt få det vist og interagere med det.
 
 > [!NOTE]
-> ArcGIS Maps for Power BI er i øjeblikket ikke tilgængelig for Power BI-rapportserver.
+> ArcGIS for Power BI understøtter kun Power BI-rapportserver i onlinemiljøer. Det understøttes ikke i et offlinemiljø.
 
 > [!TIP]
 > GIS står for Geographic Information Systems.
 
-Nedenstående eksempel bruger et mørkegråt canvas til at vise det regionale salg som et termisk kort i forhold til et demografisk lag for medianen for den disponible indtægt i 2016. Som du kan se, hvis du læser videre, har du forbedrede kortmuligheder, demografiske data og endnu mere overbevisende kortvisualiseringer, når du bruger ArcGIS Maps for Power BI, så du kan fortælle din historie på den bedst mulige måde.
+Nedenstående eksempel bruger et mørkegråt canvas til at vise det regionale salg som et termisk kort i forhold til et demografisk lag for medianen for den disponible indtægt i 2016. Som du kan se, hvis du læser videre, har du forbedrede kortmuligheder, demografiske data og endnu mere overbevisende kortvisualiseringer, når du bruger ArcGIS for Power BI, så du kan fortælle din historie på den bedst mulige måde.
 
 ![ArcGIS-åbningsbillede](media/power-bi-visualizations-arcgis/arcgis-tutorial-01.png)
 
 > [!TIP]
-> På [**Esris side om ArcGIS Maps for Power BI**](https://www.esri.com/powerbi) kan du se mange eksempler og læse anbefalinger. Du kan også se Esris **[onlinehjælp til ArcGIS Maps for Power BI](https://doc.arcgis.com/en/maps-for-powerbi/get-started/about-maps-for-power-bi.htm)** .
+> På [**Esris side om ArcGIS for Power BI**](https://www.esri.com/powerbi) kan du se mange eksempler og læse anbefalinger. Du kan også se Esris **[onlinehjælp til ArcGIS Maps for Power BI](https://doc.arcgis.com/en/power-bi/get-started/about-maps-for-power-bi.htm)** .
 
 ## <a name="user-consent"></a>Brugerens samtykke
 
-ArcGIS Maps for Power BI leveres af Esri ([https://www.esri.com](https://www.esri.com/)). Din brug af ArcGIS Maps til Power BI er omfattet af Esris [vilkår](https://go.microsoft.com/fwlink/?LinkID=826322) og [politik om beskyttelse af personlige oplysninger](https://go.microsoft.com/fwlink/?LinkID=826323). Power BI-brugere, der gerne vil bruge ArcGIS-kort til Power BI-visualiseringer, skal acceptere i dialogboksen til samtykke. Denne dialogboks vises kun første gang, du bruger ArcGIS Maps for Power BI.
+ArcGIS for Power BI leveres af Esri ([https://www.esri.com](https://www.esri.com/)). Din brug af ArcGIS for Power BI er omfattet af Esris [vilkår](https://go.microsoft.com/fwlink/?LinkID=826322) og [politik om beskyttelse af personlige oplysninger](https://go.microsoft.com/fwlink/?LinkID=826323). Power BI-brugere, der gerne vil bruge ArcGIS for Power BI-visualiseringer, skal acceptere i dialogboksen til samtykke. Denne dialogboks vises kun første gang, du bruger ArcGIS for Power BI.
 
 ## <a name="prerequisites"></a>Forudsætninger
 
-I dette selvstudium bruges Power BI Desktop og PBIX-filen med [eksemplet på detailhandelsanalyse](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix). ArcGIS Maps for Power BI kan også oprettes ved hjælp af Power BI-tjenesten.
+I dette selvstudium bruges Power BI Desktop og PBIX-filen med [eksemplet på detailhandelsanalyse](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix). Kort af typen ArcGIS for Power BI kan også oprettes ved hjælp af Power BI-tjenesten.
 
 1. Vælg **Fil** > **Åbn rapport** øverst til venstre på menulinjen.
 2. Find **PBIX-filen med eksemplet Retail Analysis**, som er gemt på din lokale maskine.
 3. Åbn **Retail Analysis Sample** i rapportvisning ![ikonet Rapportvisning](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-01.png).
 4. Markér ![Ikonet Tilføj ny side](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-02.png) for at føje en ny side til rapporten.
 
-## <a name="create-an-arcgis-maps-for-power-bi-map-visualization"></a>Opret en visualisering med et kort af typen ArcGIS Maps for Power BI
+## <a name="create-an-arcgis-for-power-bi-map-visualization"></a>Opret en visualisering med et kort af typen ArcGIS for Power BI
 
 Hvis du vil føje et kort til en rapport, skal du følge disse trin:
 
-1. Vælg ikonet for ArcGIS Maps for Power BI i ruden Visualiseringer.
+1. Vælg ikonet for ArcGIS for Power BI i ruden Visualiseringer.
 
     ![Ikonet ArcGIS Maps i ruden Visualiseringer](media/power-bi-visualizations-arcgis/arcgis-tutorial-02.png)
 
-2. I Power BI føjes der en tom skabelon til rapportlærredet. I denne oversigt bruger vi den **Standard**-version, der er inkluderet i Power BI. Hvis du logger på en gyldig ArcGIS-konto med den korrekte licens, har du adgang til flere funktioner. Du kan finde flere oplysninger i [onlinehjælpen til ArcGIS Maps for Power BI](https://doc.arcgis.com/en/maps-for-powerbi/get-started/account-types.htm).
+2. I Power BI føjes der en tom skabelon til rapportlærredet. I denne oversigt bruger vi den **Standard**-version, der er inkluderet i Power BI. Hvis du logger på en gyldig ArcGIS-konto med den korrekte licens, har du adgang til flere funktioner. Du kan finde flere oplysninger i [onlinehjælpen til ArcGIS for Power BI](https://doc.arcgis.com/en/power-bi/get-started/account-types.htm).
 
     ![ArcGIS-logon](media/power-bi-visualizations-arcgis/arcgis-tutorial-03.png)
 
 3. Træk et datafelt fra ruden **Field** s (Felter) til feltet **Location** (Placering), eller træk koordinater til de relevante buckets for **Latitude** (Breddegrad) og/eller **Longitude** (Længdegrad). I dette eksempel bruger vi **Butik > By**.
 
     > [!NOTE]
-    > ArcGIS Maps for Power BI registrerer automatisk, hvis de felter, du har valgt, bedst kan ses som en figur eller et punkt på et kort. Du kan justere standarden i indstillingerne (Se [Formatér ArcGIS Maps for Power BI-visualiseringen](#format-the-arcgis-maps-for-power-bi-visualization)).
+    > ArcGIS for Power BI registrerer automatisk, om de valgte felter bedst kan ses som en figur eller et punkt på et kort. Du kan justere standarden under indstillingerne (se [Formatér ArcGIS for Power BI-visualiseringen](#format-the-arcgis-for-power-bi-visualization)).
 
     ![Feltet ArcGIS – by](media/power-bi-visualizations-arcgis/arcgis-tutorial-04.png)
 
@@ -77,29 +77,29 @@ Hvis du vil føje et kort til en rapport, skal du følge disse trin:
 
     ![Feltet ArcGIS – størrelse](media/power-bi-visualizations-arcgis/arcgis-tutorial-05.png)
 
-Du har oprettet dit første kort af typen ArcGIS Maps for Power BI. Nu kan du finpudse og formatere kortet ved hjælp af grundlæggende kort, placeringstyper, temaer og meget mere.
+Du har oprettet dit første kort af typen ArcGIS for Power BI. Nu kan du finpudse og formatere kortet ved hjælp af grundlæggende kort, placeringstyper, temaer og meget mere.
 
-## <a name="format-the-arcgis-maps-for-power-bi-visualization"></a>Formatér ArcGIS Maps for Power BI-visualiseringen
+## <a name="format-the-arcgis-for-power-bi-visualization"></a>Formatér ArcGIS for Power BI-visualiseringen
 
-Sådan får du adgang til formateringsfunktionerne i **ArcGIS Maps for Power BI**:
+Sådan får du adgang til formateringsfunktionerne i **ArcGIS for Power BI**:
 
 1. Klik på fanen **Formatér** i ruden Visualiseringer for at få vist formateringsindstillingerne.
 
     ![Fanen Formatér](media/power-bi-visualizations-arcgis/arcgis-tutorial-06.png)
 
-    ArcGIS Maps-formateringsindstillingerne omfatter:
+    Formateringsindstillingerne for ArcGIS-kort omfatter:
 
     * **Lag:** Rediger titlen på listen Lag (ToC), slå listen Lag til eller fra, gør listen forankret over kortet, definer placeringen af den forankrede liste. Listen Lag er som standard slået til og er tilgængelig i de udvidede kortværktøjer ![ikonet Kort](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-03.png).
     * **Kortværktøjer:** Slå navigationsværktøjer til eller fra, lås kortet på dens aktuelle placering, definer placeringen af infografiske kort på kortet. Knapperne Zoom ind og Zoom ud er som standard slået fra.
     * **Placeringstype:** Angivelse af det land/område, hvor dine data er placeret, hjælper med at forbedre nøjagtigheden af placeringer på dit kort. Hvis dine data er i et enkelt land/område, skal du vælge landet/området på rullelisten. Hvis dine data er globale, skal du vælge Verden.
     * **Søg:** Slå funktionen Søg til eller fra, skift pinkodens standardfarve. Søg er som standard slået til og er tilgængelig i de udvidede kortværktøjer ![ikonet Søg](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-04.png).
 
-### <a name="edit-an-arcgis-maps-for-power-bi-map"></a>Rediger et ArcGIS Maps for Power BI-kort
+### <a name="edit-an-arcgis-for-power-bi-map"></a>Rediger et ArcGIS for Power BI-kort
 
 Når du har føjet data til kortvisualiseringen, bliver kortværktøjerne tilgængelige.
 
 > [!NOTE]
-> Dette selvstudium viser kun de funktioner og indstillinger, der er tilgængelige i **Standard**-versionen af ArcGIS Maps for Power BI. Hvis du er logget på en gyldig [ArcGIS-konto](https://doc.arcgis.com/en/maps-for-powerbi/get-started/account-types.htm) med den korrekte licensering, har du adgang til flere funktioner.
+> Dette selvstudium viser kun de funktioner og indstillinger, der er tilgængelige i **Standard**-versionen af ArcGIS for Power BI. Hvis du er logget på en gyldig [ArcGIS-konto](https://doc.arcgis.com/en/power-bi/get-started/account-types.htm) med den korrekte licensering, har du adgang til flere funktioner.
 
 Sådan udvider du kortværktøjerne:
 
@@ -110,7 +110,7 @@ Sådan udvider du kortværktøjerne:
 Kortværktøjerne udvides, så de tilgængelige funktioner vises. Der åbnes en opgaverude for hver funktion, når den er blevet valgt, med mere detaljerede indstillinger.
 
 > [!TIP]
-> Esri leverer [omfattende dokumentation](https://go.microsoft.com/fwlink/?LinkID=828772) om brug af ArcGIS Maps for Power BI.
+> Esri leverer [omfattende dokumentation](https://go.microsoft.com/fwlink/?LinkID=828772) til brug af ArcGIS for Power BI.
 
 #### <a name="change-the-base-map"></a>Rediger basiskortet
 
@@ -125,11 +125,11 @@ Hvis du vil ændre grundkort, skal du følge disse trin:
 
     Kortet opdateres ved hjælp af det nye grundkort.
 
-Du kan finde flere oplysninger under [Redigere grundkortet](https://doc.arcgis.com/en/maps-for-powerbi/design/change-the-basemap.htm) i onlinehjælpen til ArcGIS Maps for Power BI.
+Du kan finde flere oplysninger under [Rediger grundkortet](https://doc.arcgis.com/en/power-bi/design/change-the-basemap.htm) i onlinehjælpen til ArcGIS for Power BI.
 
 #### <a name="show-map-layers"></a>Vis kortlag
 
-I ArcGIS Maps for Power BI arbejder du med geografiske data via lag. Lag er logiske samlinger af geografiske data, der bruges til at oprette kort. De er også grundlaget for geografisk analyse.
+I ArcGIS for Power BI arbejder du med geografiske data via lag. Lag er logiske samlinger af geografiske data, der bruges til at oprette kort. De er også grundlaget for geografisk analyse.
 
 Hvis du vil have vist listen Lag, skal du klikke på **Lag** ![ikonet Lag](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-06.png) i kortværktøjerne.
 
@@ -137,11 +137,11 @@ Listen Lag viser hvert lag, der udgør kortet, og hvert lag har sit eget sæt in
 
 ![Knappen ArcGIS-lag](media/power-bi-visualizations-arcgis/arcgis-tutorial-09.png)
 
-Du kan finde flere oplysninger under [Arbejde med lag](https://doc.arcgis.com/en/maps-for-powerbi/design/work-with-layers.htm) i onlinehjælpen til ArcGIS Maps for Power BI.
+Du kan finde flere oplysninger under [Arbejde med lag](https://doc.arcgis.com/en/power-bi/design/work-with-layers.htm) i onlinehjælpen til ArcGIS for Power BI.
 
 #### <a name="specify-the-location-type"></a>Angiv placeringstypen
 
-ArcGIS Maps for Power BI bruger en effektiv geoteknologi til at placere positionsdata nøjagtigt på kortet og gengiver automatisk elementer som f. eks. punkter eller grænser, baseret på typen af data. En koordinat for længdegraden gengives f.eks. som et punkt på kortet, mens et delstatsfelt gengives som en grænse eller et polygon. Du kan ændre den måde, placeringer gengives på, ved at angive placeringstypen.
+ArcGIS for Power BI bruger en effektiv geoteknologi til at placere lokationsdata nøjagtigt på kortet og gengiver som standard automatisk elementer såsom punkter eller grænser baseret på typen af data. En koordinat for længdegraden gengives f.eks. som et punkt på kortet, mens et delstatsfelt gengives som en grænse eller et polygon. Du kan ændre den måde, placeringer gengives på, ved at angive placeringstypen.
 
 Brug funktionen Placeringstype til at forbedre nøjagtigheden af placeringerne på dit kort. Du kan hurtigt gøre dette ved at vælge et land/område i ruden Formatér i visualiseringen (udvid kategorien Placeringstype, og vælg det relevante land/område), eller få adgang til flere indstillinger ved hjælp af den komplette funktion Placeringstype i ruden Lagindstillinger.
 
@@ -158,11 +158,11 @@ Følg disse trin for at ændre dataens placeringstype:
 
     ![Valgfri værdier for placeringstype](media/power-bi-visualizations-arcgis/arcgis-tutorial-11.png)
 
-Du kan finde flere oplysninger under [Angive placeringstypen ](https://doc.arcgis.com/en/maps-for-powerbi/design/specify-location-type.htm) i onlinehjælpen til ArcGIS Maps for Power BI.
+Du kan finde flere oplysninger under [Angiv placeringstypen](https://doc.arcgis.com/en/power-bi/design/specify-location-type.htm) i onlinehjælpen til ArcGIS for Power BI.
 
 #### <a name="customize-the-maps-symbology"></a>Tilpas kortets symbologi
 
-ArcGIS Maps for Power BI bruger værdier i ruden Felter til at finde ud af, hvordan placeringer skal gengives på kortet. Funktionen **Symbologi** giver dig mulighed for at ændre standardformateringen, så du bedre kan fortælle din historie. Du kan vælge et andet korttema og tilpasse de anvendte symboler og farver, der bruges til at repræsentere placeringer på kortet. Der er forskellige indstillinger for korttemaer og funktioner tilgængelige, afhængigt af de værdier, du har føjet til ruden Felter i kortvisualiseringen.
+ArcGIS for Power BI bruger værdier i ruden Felter til at finde ud af, hvordan placeringer skal gengives på kortet. Funktionen **Symbologi** giver dig mulighed for at ændre standardformateringen, så du bedre kan fortælle din historie. Du kan vælge et andet korttema og tilpasse de anvendte symboler og farver, der bruges til at repræsentere placeringer på kortet. Der er forskellige indstillinger for korttemaer og funktioner tilgængelige, afhængigt af de værdier, du har føjet til ruden Felter i kortvisualiseringen.
 
 Hvis du vil ændre et lags Symbology, skal du følge disse trin:
 
@@ -184,7 +184,7 @@ Hvis du vil ændre korttemaet, skal du følge disse trin:
 
 2. Vælg temaet **Størrelse**.
 
-Du kan finde flere oplysninger under [Redigere grundkortet](https://doc.arcgis.com/en/maps-for-powerbi/design/change-the-map-theme.htm) i onlinehjælpen til ArcGIS Maps for Power BI.
+Du kan finde flere oplysninger under [Rediger korttemaet](https://doc.arcgis.com/en/power-bi/design/change-the-map-theme.htm) i onlinehjælpen til ArcGIS for Power BI.
 
 ##### <a name="layer-transparency"></a>Gennemsigtighed for lag
 
@@ -214,7 +214,7 @@ Hvis du vil ændre symboltypografien, skal du følge disse trin:
 
 ### <a name="analyze-your-data"></a>Analysér dine data
 
-ArcGIS Maps for Power BI indeholder flere værktøjer, der gør det muligt for dig at udforske mønstre i dine data og fortælle en overbevisende historie med et kort.
+ArcGIS for Power BI indeholder flere værktøjer, der giver dig mulighed for at udforske mønstre i dine data og fortælle en betagende historie med et kort.
 
 Analysefunktionerne omfatter:
 
@@ -226,7 +226,7 @@ Analysefunktionerne omfatter:
 
 #### <a name="select-locations"></a>Vælg placeringer
 
-ArcGIS Maps for Power BI indeholder flere forskellige markeringsværktøjer, der kan hjælpe dig med at vælge placeringer på kortet. Der vises forskellige værktøjer, afhængigt af hvilken type lag der aktuelt er valgt på listen Lag.
+ArcGIS for Power BI indeholder flere forskellige markeringsværktøjer, der kan hjælpe dig med at vælge placeringer på kortet. Der vises forskellige værktøjer, afhængigt af hvilken type lag der aktuelt er valgt på listen Lag.
 
 Følg disse trin for at få vist markeringsværktøjerne:
 
@@ -243,7 +243,7 @@ Følg disse trin for at få vist markeringsværktøjerne:
     
 2. Vælg en eller flere placeringer på kortet. Du kan højst vælge 250 datapunkter ad gangen.
 
-Du kan finde flere oplysninger under [Angive placeringer på et kort ](https://doc.arcgis.com/en/maps-for-powerbi/design/select-features-on-the-map.htm) i onlinehjælpen til ArcGIS Maps for Power BI.
+Du kan finde flere oplysninger under [Angiv placeringer på et kort ](https://doc.arcgis.com/en/power-bi/design/select-features-on-the-map.htm) i onlinehjælpen til ArcGIS for Power BI.
 
 #### <a name="pin-a-location"></a>Fastgør en placering
 
@@ -263,9 +263,9 @@ Følg disse trin for at fastgøre en placering:
 4. Hvis du vil ændre tegnestiftens farve, skal du udvide kategorien **Søg** i ruden **Formatér** i kortvisualiseringen og vælge en ny farve.
 
 > [!NOTE]
-> Funktionen **Søg** erstatter funktionen Nåle, der tidligere var tilgængelig i ArcGIS Maps for Power BI.
+> Funktionen **Søg** erstatter funktionen Nåle, der tidligere var tilgængelig i ArcGIS for Power BI.
 
-Du kan finde flere oplysninger under [Fastgøre en placering](https://doc.arcgis.com/en/maps-for-powerbi/design/pin-locations.htm) i onlinehjælpen til ArcGIS Maps for Power BI.
+Du kan finde flere oplysninger under [Fastgør en placering](https://doc.arcgis.com/en/power-bi/design/pin-locations.htm) i onlinehjælpen til ArcGIS for Power BI.
 
 #### <a name="add-a-reference-layer"></a>Tilføj et referencelag
 
@@ -273,7 +273,7 @@ Referencelag indeholder kontekst for de Power BI-data, du allerede får vist på
 
 ##### <a name="add-a-demographic-layer"></a>Tilføj et demografisk lag
 
-ArcGIS Maps for Power BI-standardkontoen indeholder en række udvalgte demografiske lag, der hjælper med at kontekstualisere data fra Power BI.
+Standard-kontoen til ArcGIS for Power BI indeholder en række organiserede demografiske lag, der hjælper med at kontekstualisere data fra Power BI.
 
 Hvis du vil tilføje et demografi lag, skal du følge disse trin:
 
@@ -290,11 +290,11 @@ Hvis du vil tilføje et demografi lag, skal du følge disse trin:
     
     ![Demografisk lag](media/power-bi-visualizations-arcgis/arcgis-tutorial-14.png)
     
-Demografiske referencelag er interaktive. Klik på et område for at få vist et værktøjstip, der indeholder flere oplysninger. Du kan også bruge værktøjet **Vælg reference** for at [vælge områder på kortet](https://doc.arcgis.com/en/maps-for-powerbi/design/select-features-on-the-map.htm), der falder inden for et område i referencelaget.
+Demografiske referencelag er interaktive. Klik på et område for at få vist et værktøjstip, der indeholder flere oplysninger. Du kan også bruge værktøjet **Vælg reference** for at [vælge områder på kortet](https://doc.arcgis.com/en/power-bi/design/select-features-on-the-map.htm), der falder inden for et område i referencelaget.
 
 ##### <a name="add-a-reference-layer-from-arcgis"></a>Tilføj et referencelag fra ArcGIS
 
-ArcGIS Maps for Power BI gør det muligt for dig at søge efter offentligt delte funktionsniveauer på ArcGIS, så du får adgang til tusindvis af referencelag, som giver oplysninger om de områder, der omgiver placeringerne i dit datalag. Når du logger på ArcGIS Maps for Power BI bruger en gyldig ArcGIS-konto, kan du søge efter indhold i din organisation, organisationens grupper eller offentligt indhold. I dette eksempel vises der kun offentligt delt indhold i søgeresultaterne, fordi du bruger Standard-kontoen.
+ArcGIS for Power BI giver dig mulighed for at søge efter offentligt delte funktionslag på ArcGIS, så du får adgang til tusindvis af referencelag, som giver oplysninger om de områder, der omgiver placeringerne i dit datalag. Når du logger på ArcGIS for Power BI med en gyldig ArcGIS-konto, kan du søge efter indhold i din organisation, organisationens grupper eller offentligt indhold. I dette eksempel vises der kun offentligt delt indhold i søgeresultaterne, fordi du bruger Standard-kontoen.
 
 Hvis du vil tilføje et ArcGIS-referencelag, skal du følge disse trin:
 
@@ -310,7 +310,7 @@ Hvis du vil tilføje et ArcGIS-referencelag, skal du følge disse trin:
     
     ![Referencelag](media/power-bi-visualizations-arcgis/arcgis-tutorial-15.png)
     
-ArcGIS-referencelag er interaktive. Klik på et område for at få vist et værktøjstip, der indeholder flere oplysninger. Du kan også bruge værktøjet **Vælg reference** for at [vælge områder på kortet](https://doc.arcgis.com/en/maps-for-powerbi/design/select-features-on-the-map.htm), der falder inden for et område i referencelaget.
+ArcGIS-referencelag er interaktive. Klik på et område for at få vist et værktøjstip, der indeholder flere oplysninger. Du kan også bruge værktøjet **Vælg reference** for at [vælge områder på kortet](https://doc.arcgis.com/en/power-bi/design/select-features-on-the-map.htm), der falder inden for et område i referencelaget.
 
 #### <a name="find-nearby-locations"></a>Find placeringer i nærheden
 
@@ -340,75 +340,75 @@ Hvis du vil finde placeringer inden for en bestemt kørselsafstand fra oprindels
 
     Placeringer, der falder inden for søgeområdet, markeres, ikke-markerede placeringer på kortet vises som mindre eller bliver mere gennemsigtige. Andre visualiseringer opdateres for at afspejle de markerede placeringer.
 
-Du kan finde flere oplysninger under [Finde placeringer i nærheden](https://doc.arcgis.com/en/maps-for-powerbi/design/find-nearby-locations.htm) i onlinehjælpen til ArcGIS Maps for Power BI.
+Du kan finde flere oplysninger under [Find placeringer i nærheden](https://doc.arcgis.com/en/power-bi/design/find-nearby-locations.htm) i onlinehjælpen til ArcGIS for Power BI.
 
 #### <a name="add-infographics-cards"></a>Tilføj infografikkort
 
-Infografikkort indeholder yderligere detaljer om områder på kortet på samme måde som referencelag. Infografikkort vises øverst på kortet og viser bestemte demografiske oplysninger om området umiddelbart omkring det valgte sted, eller om det generelle område, der vises på det aktuelle kort. Du kan finde flere oplysninger under [Tilføje infografikkort](https://doc.arcgis.com/en/maps-for-powerbi/design/add-infographics.htm) i onlinehjælpen til ArcGIS Maps for Power BI.
+Infografikkort indeholder yderligere detaljer om områder på kortet på samme måde som referencelag. Infografikkort vises øverst på kortet og viser bestemte demografiske oplysninger om området umiddelbart omkring det valgte sted, eller om det generelle område, der vises på det aktuelle kort. Du kan finde flere oplysninger under [Tilføj infografikkort](https://doc.arcgis.com/en/power-bi/design/add-infographics.htm) i onlinehjælpen til ArcGIS for Power BI.
 
 ### <a name="get-help"></a>Få hjælp
 
-Esri leverer omfattende dokumentation om brug af ArcGIS Maps for Power BI.
+Esri leverer omfattende onlinedokumentation til ArcGIS for Power BI.
 
-Hvis du vil have adgang til onlinehjælpen til ArcGIS Maps for Power BI fra visualiseringen, skal du følge disse trin:
+Hvis du vil have adgang til onlinehjælpen til ArcGIS for Power BI fra visualiseringen, skal du følge disse trin:
 
 1. Klik på knappen **Indstillinger** ![ikonet Indstillinger](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-15.png) i kortværktøjerne.
 
 2. Klik på knappen **Hjælp** i ruden **Indstillinger**.
 3. Klik på **OK** i det bekræftelsesvindue, der vises.
 
-    Onlinehjælpen til ArcGIS Maps for Power BI åbnes i et browservindue.
+    Onlinehjælpen til ArcGIS for Power BI åbnes i et browservindue.
     
-    - Få svar på [Ofte stillede spørgsmål](https://doc.arcgis.com/en/maps-for-powerbi/get-started/pbi-faq.htm#anchor5) i onlinehjælpen til ArcGIS Maps for Power BI.
-    - Du kan stille spørgsmål, finde de seneste oplysninger, rapportere problemer og finde svar i Power BI [community'ets tråd om **ArcGIS Maps for Power BI**](https://go.microsoft.com/fwlink/?LinkID=828771).
+    - Få svar på [ofte stillede spørgsmål](https://doc.arcgis.com/en/power-bi/get-started/pbi-faq.htm#anchor5) i onlinehjælpen til ArcGIS for Power BI.
+    - Du kan stille spørgsmål, finde de seneste oplysninger, rapportere problemer og finde svar i Power BI [community'ets tråd om **ArcGIS for Power BI**](https://go.microsoft.com/fwlink/?LinkID=828771).
     - Hvis du har et forslag til en forbedring, kan du sende den til [Power BI's ideliste](https://ideas.powerbi.com/).
     
-### <a name="manage-the-use-of-arcgis-maps-for-power-bi-within-your-organization"></a>Administrer brugen af ArcGIS Maps for Power BI i din organisation
+### <a name="manage-the-use-of-arcgis-for-power-bi-within-your-organization"></a>Administrer brugen af ArcGIS for Power BI i din organisation
 
-Power BI giver designere, Power BI-administratorer og brugeradministratorer mulighed for at administrere brugen af ArcGIS Maps for Power BI. I afsnittene nedenfor gennemgås handlingerne for hver rolle.
+Power BI giver designere, Power BI-administratorer og brugeradministratorer mulighed for at administrere brugen af ArcGIS for Power BI. I afsnittene nedenfor gennemgås handlingerne for hver rolle.
 
 #### <a name="designer-options"></a>Muligheder for designere
 
-I Power BI Desktop kan designere deaktivere ArcGIS Maps for Power BI under fanen Sikkerhed. Vælg **Filer**  >  **Indstillinger**, og vælg derefter **Indstillinger**  >  **Sikkerhed**. Når ArcGIS Maps er deaktiveret, indlæses den ikke som standard.
+I Power BI Desktop kan designere deaktivere ArcGIS for Power BI under fanen Sikkerhed. Vælg **Filer**  >  **Indstillinger**, og vælg derefter **Indstillinger**  >  **Sikkerhed**. Når ArcGIS er deaktiveret, indlæses det ikke som standard.
 
-![Muligheder for designere](media/power-bi-visualizations-arcgis/arcgis-tutorial-17.png)
+![Muligheder for designere](media/power-bi-visualizations-arcgis/arcgis-tutorial-17a.png)
 
 #### <a name="administrator-options"></a>Administratorindstillinger
 
-Administratorer kan slå ArcGIS Maps for Power BI fra for alle brugere i Power BI-tjenesten. Vælg **Indstillinger** > **Administrationsportal** > **Lejerindstillinger**. Når ArcGIS Maps for Power BI er deaktiveret, vises ikonet ikke længere i ruden med visualiseringer i Power BI.
+Administratorer kan slå ArcGIS for Power BI fra for alle brugere i Power BI-tjenesten. Vælg **Indstillinger** > **Administrationsportal** > **Lejerindstillinger**. Når ArcGIS for Power BI er deaktiveret, vises ikonet ikke længere i ruden med visualiseringer i Power BI.
 
-![Administratorindstillinger](media/power-bi-visualizations-arcgis/arcgis-tutorial-18.png)
+![Administratorindstillinger](media/power-bi-visualizations-arcgis/arcgis-tutorial-18a.png)
 
 #### <a name="user-administrator-options"></a>Indstillinger for brugeradministratorer
 
-Power BI Desktop understøtter brug af **Gruppepolitik** til at deaktivere ArcGIS Maps for Power BI på tværs af de computere, der er udrullet i en organisation.
+Power BI Desktop understøtter brug af **Gruppepolitik** til at deaktivere ArcGIS for Power BI på tværs af de computere, der er udrullet i en organisation.
 
 | **Attribut** | **Værdi** |
 | --- | --- |
 | Nøgle | Software\Policies\Microsoft\Power BI Desktop |
 | valueName | EnableArcGISMaps |
 
-En værdi på 1 (decimal) aktiverer ArcGIS Maps for Power BI.
+En værdi på 1 (decimal) aktiverer ArcGIS for Power BI.
 
-En værdi på 0 (decimal) deaktiverer ArcGIS Maps for Power BI.
+En værdi på 0 (decimal) deaktiverer ArcGIS for Power BI.
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 
-ArcGIS-kort til Power BI er tilgængeligt i følgende tjenester og programmer:
+ArcGIS for Power BI er tilgængeligt i følgende tjenester og programmer:
 
 | Tjeneste/program | Tilgængelighed |
 | --- | --- |
 | Power BI Desktop | Ja |
 | Power BI-tjeneste (powerbi.com) | Yes |
 | Power BI-mobilapps\* | Ja |
-| Power BI publiceret til internettet | Nej |
-| Power BI Embedded | Nej |
+| Power BI publiceret til internettet | Ja, for designere, der er logget på en gyldig ArcGIS-konto med den relevante licens som tilføjelsesprogram. Forbrugerne behøver ikke at have licensen som tilføjelsesprogram for at se publiceret indhold. |
+| Power BI Embedded | Ja, for designere, der er logget på en gyldig ArcGIS-konto med den relevante licens som tilføjelsesprogram. Forbrugerne behøver ikke at have licensen som tilføjelsesprogram for at se publiceret indhold. |
 | Integration af Power BI-tjenesten (powerbi.com) | No |
-| Power BI-rapportserver | No |
+| Power BI-rapportserver | Ja, men kun i onlinemiljøer. Det understøttes ikke i miljøer uden internetforbindelse. |
 
-\*I mobilmiljøer kan du få vist kort, der er oprettet ved hjælp af den ArcGIS Maps for Power BI-visualisering, der er inkluderet i Power BI ([Standard-konto](https://doc.arcgis.com/en/maps-for-powerbi/get-started/account-types.htm)). Kort, der indeholder Premium-indhold fra ArcGIS, understøttes ikke i mobilmiljøer.
+\*I mobilmiljøer kan du få vist kort, der er oprettet ved hjælp af den ArcGIS for Power BI-visualisering, der er inkluderet i Power BI ([Standard-konto](https://doc.arcgis.com/en/maps-for-powerbi/get-started/account-types.htm)). Kort, der indeholder Premium-indhold fra ArcGIS, understøttes ikke i mobilmiljøer.
 
-I tjenester eller programmer, hvor ArcGIS Maps for Power BI ikke er tilgængelig, vises visualiseringen som en tom visualisering med Power BI-logoet.
+I tjenester eller programmer, hvor ArcGIS for Power BI ikke er tilgængeligt, vises visualiseringen som en tom visualisering med Power BI-logoet.
 
 I følgende tabel sammenlignes de standardfunktioner, der er tilgængelige for alle Power BI-brugere, med dem, der er tilgængelige for ArcGIS-brugere, der er logget på:
 
@@ -429,6 +429,6 @@ I følgende tabel sammenlignes de standardfunktioner, der er tilgængelige for a
 
 ## <a name="next-steps"></a>Næste trin
 
-- [Interaktion med ArcGIS-kort, som er blevet delt med dig](https://doc.arcgis.com/en/maps-for-powerbi/use/explore-maps.htm)
-- [Blogindlæg med meddelelse om opdateringer af ArcGIS Maps for Power BI](https://www.esri.com/arcgis-blog/?s=#ArcGIS%20Maps%20for%20Power%20BI)
+- [Interaktion med ArcGIS-kort, som er blevet delt med dig](https://doc.arcgis.com/en/power-bi/use/explore-maps.htm)
+- [Blogindlæg med meddelelse om opdateringer af ArcGIS for Power BI](https://www.esri.com/arcgis-blog/?s=#ArcGIS%20for%20Power%20BI)
 - Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

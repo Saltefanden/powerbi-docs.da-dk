@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/13/2020
+ms.date: 12/16/2020
 LocalizationGroup: Connect to data
-ms.openlocfilehash: e177eb9e124a26e62d392b7dd97562c11c8f9d5a
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 432db58636866afe0dfda9e77e989f8469b66e34
+ms.sourcegitcommit: b472236df99b490db30f0168bd7284ae6e6095fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96411028"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97600409"
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Opret forbindelse til datasæt i Power BI-tjenesten fra Power BI Desktop
 
@@ -107,7 +107,7 @@ Når du bruger funktionen Direkte forbindelse til Power BI-tjenesten, er der et 
 
 * Det er kun brugere med tilladelsen Opret for et datasæt, der kan oprette forbindelse til et publiceret datasæt ved hjælp af den direkte forbindelse til Power BI-tjenesten.
 * Gratis brugere kan kun se datasæt i deres **Mit arbejdsområde** og i Premium-baserede arbejdsområder.
-* Da denne forbindelse er en direkte forbindelse, deaktiveres navigationen til venstre og modellering. Du kan kun oprette forbindelse til ét datasæt i hver rapport. Denne funktionsmåde svarer til samme funktionsmåde, når der oprettes forbindelse til *SQL Server Analysis Services*.
+* Da denne forbindelse er en direkte forbindelse, deaktiveres navigationen til venstre og modellering. Du kan kun oprette forbindelse til ét datasæt i hver rapport. Denne funktionsmåde svarer til samme funktionsmåde, når der oprettes forbindelse til *SQL Server Analysis Services*. Følgende artikel indeholder dog en beskrivelse af, hvordan en ny funktion i Power BI nu gør dette muligt: Se [Brug af DirectQuery til Power BI-datasæt og Azure Analysis Services (prøveversion)](../connect-data/desktop-directquery-datasets-azure-analysis-services.md)
 * Eftersom denne forbindelse er en direkte forbindelse, gennemtvinges sikkerhed på rækkeniveau (RLS) og andre forbindelsesfunktioner. Det er det samme, som når du har oprettet forbindelse til SQL Server Analysis Services.
 * Hvis ejeren ændrer den originale delte *PBIX-fil*, overskrives datasættet og rapporten, der er delt i Power BI-tjenesten. Rapporter baseret på dette datasæt overskrives ikke, men alle ændringer af datasættet afspejles i rapporten.
 * Medlemmer af et arbejdsområde kan ikke erstatte den oprindeligt delte rapport. Forsøg på at gøre dette resulterer i en advarsel, der beder dig om at omdøbe filen og udgive den.
@@ -116,3 +116,18 @@ Når du bruger funktionen Direkte forbindelse til Power BI-tjenesten, er der et 
 * Hvad angår indholdspakker fra *Min organisation*, kan du, når de er kopieret, ikke erstatte rapporten, der er oprettet på tjenesten, og/eller en rapport, der er oprettet som en del af kopiering af en indholdspakke med en direkte forbindelse. Forsøg på at gøre dette resulterer i en advarsel, der beder dig om at omdøbe filen og udgive den. I denne situation kan du kun erstatte udgivne rapporter, der er direkte forbundne.
 * Sletning af et delt datasæt i Power BI-tjenesten betyder, at ingen længere kan få adgang til det pågældende datasæt fra Power BI Desktop.
 * Rapporter, der deler et datasæt i Power BI-tjenesten, understøtter ikke automatiserede udrulninger ved hjælp af Power BI REST API'en.
+
+## <a name="next-steps"></a>Næste trin
+Du kan finde flere oplysninger om DirectQuery og andre funktioner for Power BI-dataforbindelser i følgende ressourcer:
+
+- [Brug af DirectQuery in Power BI](desktop-directquery-about.md)
+- [Datakilder, der understøttes af DirectQuery](power-bi-data-sources.md)
+- [Brug af DirectQuery til Power BI-datasæt og Azure Analysis Services (eksempelvisning)](../connect-data/desktop-directquery-datasets-azure-analysis-services.md)
+
+Her er nogle flere links til, hvor du kan finde flere oplysninger om Power BI:
+
+* [Hvad er Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
+* [Oversigt over forespørgsler i Power BI Desktop](../transform-model/desktop-query-overview.md)
+* [Datatyper i Power BI Desktop](desktop-data-types.md)
+* [Udform og kombiner data med Power BI Desktop](desktop-shape-and-combine-data.md)
+* [Almindelige forespørgselsopgaver i Power BI Desktop](../transform-model/desktop-common-query-tasks.md)

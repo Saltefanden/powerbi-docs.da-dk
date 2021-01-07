@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/09/2020
 ms.custom: licensing support
 LocalizationGroup: Premium
-ms.openlocfilehash: 62df55257864069a1e3a03f8378869fe76052120
-ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
+ms.openlocfilehash: 2265559b9b978681b2f7b210a15f7200fbba7971
+ms.sourcegitcommit: 0711972326521944fdd8572403c0b15f31b916da
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97491960"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97721449"
 ---
 # <a name="what-is-power-bi-premium"></a>Hvad er Power BI Premium?
 
@@ -240,7 +240,7 @@ Programmet **Power BI Premium Capacity Metrics** giver de mest detaljerede oplys
 
 ![Appdashboardet Målepunkter](media/service-admin-premium-monitor-capacity/app-dashboard.png)
 
-I programmets dashboard kan du klikke på en celle med målepunkter for at åbne en detaljeret rapport. Rapporter indeholder detaljerede målepunkter og en filterfunktion til detailudledning af de vigtigste oplysninger, du skal bruge for at sikre, at dine kapaciteter kører, som de skal.
+I programmets dashboard kan du klikke på en celle med målepunkter for at åbne en detaljeret rapport. Rapporter giver detaljerede målepunkter og en filterfunktion til detailudledning af de vigtigste oplysninger, du skal bruge for at sikre, at dine kapaciteter kører, som de skal.
 
 ![Periodiske spidsbelastninger af forespørgselsventetider indikerer en potentiel CPU-mætning](media/service-premium-capacity-scenarios/peak-query-wait-times.png)
 

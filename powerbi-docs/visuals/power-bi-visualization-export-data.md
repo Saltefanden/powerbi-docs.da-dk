@@ -6,17 +6,18 @@ ms.author: mihart
 manager: kvivek
 ms.reviewer: tessa
 featuredvideoid: jtlLGRKBvXY
+ms.custom: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 09/09/2020
+ms.date: 12/21/2020
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b7aae0e05c74209e66503612d3c89bb430cb5185
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: bf388f28b83ad67fd246d23ba7113e74f0630a0e
+ms.sourcegitcommit: 0711972326521944fdd8572403c0b15f31b916da
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96414777"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97721472"
 ---
 # <a name="export-the-data-that-was-used-to-create-a-visualization"></a>Eksportér de data, der blev brugt til at oprette en visualisering
 
@@ -105,7 +106,7 @@ Vælg indstillingen for _ *Opsummerede data**, hvis du vil eksportere dataene ti
 
     ![Skærmbillede af Eksportér data, hvor indstillingerne Opsummerede data, xlsx og Eksportér vises.](media/power-bi-visualization-export-data/power-bi-export-data5.png)
 
-1. Når du vælger **Eksportér**, bliver du i browseren bedt om at gemme filen. Når du har gemt den, skal du åbne filen i Excel.
+1. Når du vælger **Eksportér**, bliver du i browseren bedt om at gemme filen. Når du har gemt den, skal du åbne filen i Excel. Hvis du bruger Power BI-appen i Microsoft Teams, modtager du måske ikke de samme prompter. Den eksporterede fil gemmes i din lokale Downloads-mappe. 
 
     ![Skærmbillede af Excel-output.](media/power-bi-visualization-export-data/power-bi-export-data9.png)
 
@@ -144,7 +145,7 @@ Når du vælger **Eksportér**, eksporterer Power BI dataene til en *.xlsx*-fil,
 
     ![Skærmbillede af skærmbilledet Eksportér data med de underliggende data fremhævet.](media/power-bi-visualization-export-data/power-bi-underlying.png)
 
-1. Når du vælger **Eksportér**, bliver du i browseren bedt om at gemme filen. Når du har gemt den, skal du åbne filen i Excel.
+1. Når du vælger **Eksportér**, bliver du i browseren bedt om at gemme filen. Når du har gemt den, skal du åbne filen i Excel.  Hvis du bruger Power BI-appen i Microsoft Teams, modtager du måske ikke de samme prompter. Den eksporterede fil gemmes i din lokale Downloads-mappe. 
 
     ![Skærmbillede af .xlsx-filen, hvor de eksporterede data vises.](media/power-bi-visualization-export-data/power-bi-excel.png)
     

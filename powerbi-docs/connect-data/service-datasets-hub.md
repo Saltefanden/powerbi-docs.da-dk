@@ -1,5 +1,5 @@
 ---
-title: Sådan finder du et datasæt ved hjælp af datasæthubben
+title: Sådan finder du datasæt ved hjælp af datasæthubben (prøveversion)
 description: Få mere at vide om, hvordan du kan finde, udforske og bruge datasæt og de relaterede rapporter i din organisation.
 author: paulinbar
 ms.author: painbar
@@ -8,14 +8,14 @@ ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 12/14/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: c6b7170df78b6d544f7eb97ec62516577f9267b6
-ms.sourcegitcommit: b5365df7fc32b7c49f8a2bf2cf75b5edd6bda9b6
+ms.openlocfilehash: 4e09eb9e0b44fbddf8787f474fe1a93b0b4c2d71
+ms.sourcegitcommit: a92a3570eb14793a758a32e8fa1a756ec5d83f8c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97513798"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97707967"
 ---
-# <a name="datasets-discovery-using-the-datasets-hub"></a>Sådan finder du et datasæt ved hjælp af datasæthubben
+# <a name="datasets-discovery-using-the-datasets-hub-preview"></a>Sådan finder du datasæt ved hjælp af datasæthubben (prøveversion)
 
 Med en datasæthub er det nemt at finde, udforske og bruge datasæt i din organisation. Hubben indeholder oplysninger om datasæt samt indgangspunkter til oprettelse af rapporter oven på disse datasæt eller til brug af disse datasæt med Analysér i Excel.
 

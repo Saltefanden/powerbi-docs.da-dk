@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 12/01/2020
+ms.date: 12/18/2020
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 9d9d628ea2d478eb6a09ae8ca53b98837349a224
-ms.sourcegitcommit: 513c4b884a58e1da2680579339c24c46091bbfb2
+ms.openlocfilehash: 4a8234176dd44fd265ff2d4a6af8e1b5568a642c
+ms.sourcegitcommit: b8e4dd67c59db079fdfa82a8a01c2a28fd1673ca
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96613806"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97699300"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Meld dig selv og andre til abonnementer på rapporter og dashboards i Power BI-tjenesten
 
@@ -25,10 +25,10 @@ Du kan melde dig selv og dine kolleger til abonnementer på de rapportsider, das
 - Vælge det tidspunkt, hvor du vil modtage mailen, hvis du vælger dagligt, ugentligt, pr. time eller månedligt.
 - Konfigurere 24 forskellige abonnementer pr. Power BI-rapport eller -dashboard.  Der er ingen grænse for, hvor mange abonnementer du kan oprette for sideinddelte rapporter.
 - Få sendt en mail med et billede af rapporten og oprette link til rapporten i tjenesten.  På mobilenheder med Power BI-apps installeret startes Power BI-appen i stedet for at åbne rapporten eller dashboardet på Power BI-webstedet, når dette link vælges.
-- Medtage en vedhæftet fil med hele rapporten, hvis du abonnerer på en sideinddelt rapport.
+- Inkluder en vedhæftet fil med den fulde rapport.
 - Sende mail til brugere uden for lejeren, hvis Power BI-indholdet er hostet i en Premium-kapacitet.  Administratorer kan styre adgangen til, hvem der kan sende mailabonnementer til eksterne brugere, ved at udnytte indstillingerne for den eksisterende eksterne delingskontrol i Power BI Administration.
 
-![mail snapshot af dashboard](media/service-report-subscribe/power-bi-dashboard-email-new.jpg)
+![mail snapshot af dashboard](media/service-report-subscribe/power-bi-subscriptions-email.png)
 
 ## <a name="requirements"></a>Krav
 
@@ -64,16 +64,21 @@ Det er lidt anderledes at abonnere på sideinddelte rapporter. Du kan finde fler
 
 6. Startdatoen for dit abonnement er som standard den dato, du har oprettet det. Du har mulighed for at vælge en slutdato. Hvis du ikke angiver en slutdato, er den automatisk ét år efter startdatoen. Du kan ændre den til en hvilken som helst dato i fremtiden (op til år 9999) når som helst, før abonnementet slutter. Når et abonnement når en slutdato, ophører det, indtil du aktiveret det igen. Du modtager en meddelelse, før den planlagte slutdato, hvor du bliver spurgt, om du vil forlænge det.
 
-    På skærmbilledet nedenfor kan du se, at du rent faktisk abonnerer på en _rapportside_, når du abonnerer på en rapport. Hvis du vil abonnere på mere end én side i en rapport, skal du vælge **Tilføj et andet abonnement** og vælge en anden side.
+    På skærmbilledet nedenfor kan du se, at du rent faktisk abonnerer på en _rapportside_, når du abonnerer på en rapport. Hvis du vil abonnere på mere end én side i en rapport, kan du enten vælge **Vedhæftning af fuld rapport som** eller oprette et nyt abonnement ved at vælge **Tilføj endnu et abonnement**.
 
-    ![Ruden Abonner](media/service-report-subscribe/power-bi-subscribe-pane.png)
+    ![Ruden Abonner](media/service-report-subscribe/power-bi-email.png)
 
 1. (Valgfrit) Vælg, om du vil medtage et link til indholdet i Power BI, og om du vil give brugere adgang til det indhold, som du tilmelder dem.  Hvis du vælger at inkludere et link, så du opnår den bedste funktionalitet, skal du sørge for, at alle brugere har adgang til rapporten.
-2. Vælg **Gem og luk**. Dem, der abonnerer, modtager en mail og et snapshot af dashboardet eller rapportsiden med den hyppighed og det tidspunkt, du har valgt. Du kan i alt oprette op til 24 abonnementer pr. rapport eller dashboard, og du kan angive entydige modtagere, tidspunkter og hyppigheder for hvert abonnement. For alle abonnementer, der er angivet til **Efter dataopdatering** for dashboardet eller rapporten, sendes der stadig kun en mail efter den første planlagte opdatering.
+
+1. (Valgfri) Vælg, om du vil tilføje den _fulde rapport_ som en vedhæftet fil i stedet for kun en enkelt rapportside. Vælg enten PDF eller PowerPoint. Størrelsen af den vedhæftede fil er begrænset til højst 20 sider og mindre end 25 MB. Den vedhæftede fil respekterer alle mærkater for beskyttelse af personlige oplysninger for rapporten.
+
+1. Vælg **Gem og luk**. Dem, der abonnerer, modtager en mail og et snapshot af dashboardet eller rapportsiden med den hyppighed og det tidspunkt, du har valgt. Du kan i alt oprette op til 24 abonnementer pr. rapport eller dashboard, og du kan angive entydige modtagere, tidspunkter og hyppigheder for hvert abonnement. For alle abonnementer, der er angivet til **Efter dataopdatering** for dashboardet eller rapporten, sendes der stadig kun en mail efter den første planlagte opdatering.
 
     > [!NOTE]
     > Hvis du redigerer abonnementet, efter at du har gemt og lukket, er valget til at give brugere adgang til det indhold, du abonnerer på, aktiveret, uanset dine tidligere valg.
     >
+
+
 
     > [!TIP]
     > Vil du sende mailen fra et abonnement med det samme eller on-demand når som helst? Vælg **Kør nu** for abonnementerne for det dashboard eller den rapport, du vil sende. Du får vist en meddelelse om, at en mail er på vej til alle med det pågældende abonnement. Denne handling tæller ikke i forhold til grænsen på 24 planlagte abonnementskørsler pr. dag pr. rapport eller dashboard. Dette udløser IKKE en opdatering af data i det underliggende datasæt.
@@ -147,10 +152,8 @@ Power BI-administratorer kan bruge Power BI-overvågningslogge til at få vist o
     - Den vedhæftede fil er under 25 MB.
     - Rapporten har færre end 20 sider. 
     
-    Hvis rapporten ikke opfylder disse tre betingelser, kan du ikke oprette abonnementer med fulde rapporter som vedhæftede filer. Alle eksisterende abonnementer med fulde rapporter som vedhæftede filer er deaktiveret, og du modtager en mail med en forklaring på fejlen:
+    Hvis rapporten ikke opfylder disse tre betingelser, kan du ikke oprette abonnementer med fulde rapporter som vedhæftede filer. Alle eksisterende abonnementer med fulde rapporter som vedhæftede filer er deaktiveret, og du modtager en mail med en forklaring på fejlen.
     
-    :::image type="content" source="media/service-report-subscribe/full-report-attachment-error-email.png" alt-text="Mail med fejl i forbindelse med en fuld rapport som vedhæftet fil.":::
-
 ## <a name="next-steps"></a>Næste trin
 
 - [Sideinddelte rapporter i Power BI-tjenesten: Tilmeld dig selv og andre](../consumer/paginated-reports-subscriptions.md)

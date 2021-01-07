@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 09/02/2020
-ms.openlocfilehash: 58ec11935e74131c17dc4c0755598c3c3341e259
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: e5b176ac9e8d334b6dec9af70c189d2767bace1c
+ms.sourcegitcommit: a465a0c80ffc0f24ba6b8331f88420a0d21ac0b2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96418687"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "97805228"
 ---
 # <a name="set-up-your-environment-for-developing-a-power-bi-visual"></a>Konfigurer dit miljø for at udvikle en Power BI-visualisering
 
@@ -198,7 +198,7 @@ npm i powerbi-visuals-api --save-dev
 
 ### <a name="optional-verify-that-the-d3-library-is-installed"></a>(Valgfrit) Kontrollér, at D3-biblioteket er installeret
 
-[Visual Studio Code](https://code.visualstudio.com/) (VS Code) er et ideelt IDE (integreret udviklingsmiljø) til udvikling af TypeScript-programmer. I dette afsnit bruger vi VS Code til at kontrollere, at det D3-bibliotek, du skal bruge til at udvikle din Power BI-visualisering, er installeret korrekt.
+[Visual Studio Code](https://code.visualstudio.com/) (VS Code) er et ideelt IDE (integreret udviklingsmiljø) til udvikling af TypeScript-programmer. I dette afsnit bruger vi VS Code til at bekræfte, at det D3-bibliotek, du skal bruge til at udvikle din Power BI-visualisering, er installeret korrekt.
 
 >[!NOTE]
 >Den kontrolproces, der er beskrevet i dette afsnit, forudsætter, at du allerede har et Power BI-visualiseringsprojekt. Hvis du ikke har et Power BI-visualiseringsprojekt, kan du oprette et ved at følge vejledningen på [cirkelkortet til oprettelse af projekter](develop-circle-card.md#create-a-development-project).

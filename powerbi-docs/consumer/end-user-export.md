@@ -4,18 +4,18 @@ description: Eksportér data fra en rapportvisualisering og en dashboardvisualis
 author: mihart
 ms.author: mihart
 ms.reviewer: cmfinlan
-featuredvideoid: jtlLGRKBvXY
+featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/03/2020
+ms.date: 12/21/2020
 LocalizationGroup: Consumers
-ms.openlocfilehash: d8b9f11abe639d2892bc199a9f65400e5488dedc
-ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
+ms.openlocfilehash: cd07004149afd2525c5830e04e5c2490eeebcb3c
+ms.sourcegitcommit: 0711972326521944fdd8572403c0b15f31b916da
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96578105"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97721380"
 ---
 # <a name="export-data-from-a-visual"></a>Eksportér data fra et visuelt element
 
@@ -40,7 +40,7 @@ Eksport af data kræver en Power BI Pro-licens, eller at dashboardet er delt med
 
 3. Vælg **Eksportér til .csv**.
 
-4. Den næste handling afhænger af, hvilken browser du bruger. Du bliver muligvis bedt om at gemme filen, eller du kan måske se et link til den eksporterede fil nederst i browseren. 
+4. Den næste handling afhænger af, hvilken browser du bruger. Du bliver muligvis bedt om at gemme filen, eller du kan måske se et link til den eksporterede fil nederst i browseren. Eksporten gemmes som standard i din lokale Downloads-mappe. 
 
     ![Chrome-browser med link til den eksporterede fil](media/end-user-export/power-bi-dashboards-export.png)
 
@@ -79,7 +79,7 @@ Du kan eksportere data fra en visualisering i en rapport i .csv- eller .xlsx-for
 
     ![Menu, hvor du vælger underliggende eller opsummerede data](media/end-user-export/power-bi-export-underlying.png)
 
-5. Den næste handling afhænger af, hvilken browser du bruger. Du bliver muligvis bedt om at gemme filen, eller du kan måske se et link til den eksporterede fil nederst i browseren. 
+5. Den næste handling afhænger af, hvilken browser du bruger. Du bliver muligvis bedt om at gemme filen, eller du kan måske se et link til den eksporterede fil nederst i browseren. Hvis du bruger Power BI-appen i Microsoft Teams, gemmes den eksporterede fil i din lokale Downloads-mappe. 
 
     ![Eksporteret fil vist i Microsoft Edge-browseren](media/end-user-export/power-bi-export-edge-screen.png)
 

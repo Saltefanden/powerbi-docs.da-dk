@@ -7,20 +7,30 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 01/14/2020
+ms.date: 11/14/2020
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 8d33973f1a11050d104399c98866fdae0ffb1f8a
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 62b3c9bb10cb47df0d21eb05e381c5c4784b3106
+ms.sourcegitcommit: b472236df99b490db30f0168bd7284ae6e6095fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96404887"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97600225"
 ---
 # <a name="troubleshoot-opening-power-bi-desktop"></a>Fejlfind åbning af Power BI Desktop
 
-I Power BI Desktop kan brugere, der har installeret og kører tidligere versioner af *Power BI-datagatewayen i det lokale miljø*, blive blokeret, så de ikke kan starte Power BI Desktop. Det skyldes administrative politikbegrænsninger, som Power BI gatewayen i det lokale miljø har angivet for navngivne pipes på den lokale computer.
+Denne artikel indeholder en beskrivelse og afhjælpning af en række situationer, hvor Power BI ikke åbner. 
+
+## <a name="resolve-issues-with-opening-encrypted-pbix-files"></a>Løs problemer med at åbne krypterede PBIX-filer
+
+Du kan ikke åbne krypterede .pbix-filer ved hjælp af en Power BI Desktop-version, der ikke understøtter Information Protection.
+
+Hvis du fortsat har brug for at bruge Power BI Desktop, anbefales det, at du opdaterer det til en version, der understøtter Information Protection. Du kan downloade den [nyeste version af Power BI Desktop](https://www.microsoft.com/download/confirmation.aspx?id=58494) (dette link er et direkte downloadlink til det eksekverbare installationsprogram). Den nyeste version af Power BI Desktop understøtter Information Protection og kan dekryptere og åbne en krypteret PBIX-fil.
+
+###
 
 ## <a name="resolve-issues-with-the-on-premises-data-gateway-and-power-bi-desktop"></a>Løs problemer med datagatewayen i det lokale miljø og Power BI Desktop
+
+I Power BI Desktop kan brugere, der har installeret og kører tidligere versioner af *Power BI-datagatewayen i det lokale miljø*, blive blokeret, så de ikke kan starte Power BI Desktop. Det skyldes administrative politikbegrænsninger, som Power BI gatewayen i det lokale miljø har angivet for navngivne pipes på den lokale computer.
 
 Du har tre muligheder for at løse det problem, der er knyttet til datagatewayen i det lokale miljø, og gøre det muligt at starte Power BI Desktop:
 

@@ -10,12 +10,12 @@ ms.custom: video-fDb5zZ3xmxU
 ms.topic: how-to
 ms.date: 01/10/2020
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f76203e00bb691abe9a4d212c930595d180798d8
-ms.sourcegitcommit: 8250187368d3de48663eb516a816ff701119b579
+ms.openlocfilehash: 4b41ea6310cb644aeae92db17f52680734f68803
+ms.sourcegitcommit: 0711972326521944fdd8572403c0b15f31b916da
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96999122"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97721564"
 ---
 # <a name="create-key-influencers-visualizations"></a>Opret visualiseringer af nøglefaktorer
 
@@ -167,7 +167,7 @@ I de øverste segmenter vises der en oversigt over alle de segmenter, der er ble
 
 ![Vælg fanen Øverste segmenter](media/power-bi-visualization-influencers/power-bi-top-segments-tab.png)
 
-Når du vælger en boble, får du vist flere detaljer for segmentet. Hvis du f.eks. vælger Segment 1, kan du se, at det består af relativt etablerede kunder. De har været kunder i mere end 29 måneder og har mere end fire supportanmodninger. De er ikke udgivere, så de er enten forbrugere eller administratorer. 
+Når en boble vælges, vises oplysningerne om det pågældende segment. Hvis du f.eks. vælger Segment 1, kan du se, at det består af relativt etablerede kunder. De har været kunder i mere end 29 måneder og har mere end fire supportanmodninger. De er ikke udgivere, så de er enten forbrugere eller administratorer. 
  
 I denne gruppe gav 74,3 % af kunderne en lav bedømmelse. Den gennemsnitlige kunde gav en lav bedømmelse 11,7 % af gangene, så dette segment har en væsentligt større andel af lave bedømmelser. Hele 63 procentpoint højere. Segment 1 indeholder også ca. 2,2 % af dataene, så det repræsenterer en adresserbar del af stikprøven. 
 
@@ -260,7 +260,7 @@ Se, hvordan visualiseringen ser ud, når vi føjer et **Id** til **Forklar med**
 
 ![Skærmbillede, der viser visualiseringen med huspriser, som er afhængig af de tre kolonner, der drøftes i dette afsnit.](media/power-bi-visualization-influencers/power-bi-ki-measures-analysis.png)
 
-Hvis du vil vide mere om, hvordan du kan analysere målinger med visualiseringen af nøglefaktorer, skal du se følgende selvstudium.
+Hvis du vil vide mere om, hvordan du kan analysere målinger med visualiseringen af nøglefaktorer, skal du se følgende video. Hvis du vil vide mere om, hvordan Power BI bruger ML.NET i kulissen til at konkludere noget om dataene og vise indsigt på en naturlig måde, skal du se [Power BI identificerer nøglefaktorer ved hjælp af ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet/customers/power-bi).
 
 <iframe width="1167" height="631" src="https://www.youtube.com/embed/2X1cW8oPtc8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -410,3 +410,4 @@ Når du deler din rapport med en Power BI-kollega, kræves det, at I begge har i
 ## <a name="next-steps"></a>Næste trin
 - [Kombinationsdiagrammer i Power BI](power-bi-visualization-combo-chart.md)
 - [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+- [Hvordan Power BI bruger ML.NET til at identificere nøglefaktorer](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet/customers/power-bi)

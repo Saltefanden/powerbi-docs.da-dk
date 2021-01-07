@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 08/12/2020
-ms.openlocfilehash: 5d361a749f947f8d45b052a8a2b6455007745d20
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.date: 12/17/2020
+ms.openlocfilehash: 944f840133fd2ae8fee558e26d44fa31456bd565
+ms.sourcegitcommit: 5c09d121d3205e65fb33a2eca0e60bc30e777773
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96413075"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97675379"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Udforsk rapporter i Power BI-mobilappsene
 Gælder for:
@@ -155,6 +155,29 @@ Når en bogmærkevisning af en rapport er åben, vises navnet på bogmærket øv
 ![bogmærkevisning](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-title.png)
 
 [Få mere at vide om bogmærker i Power BI-tjenesten](../end-user-bookmarks.md).
+
+## <a name="investigate-anomalies-in-time-series-data"></a>Undersøg uregelmæssigheder i tidsseriedata
+
+[Registrering af uregelmæssigheder](https://powerbi.microsoft.com/blog/anomaly-detection-preview/) er en funktion i Power BI, der automatisk registrerer uregelmæssigheder (dvs. værdier, der er uden for de forventede områder) i kurvediagrammer med tidsseriedata. Desuden giver den mulige forklaringer af årsagen til de uregelmæssige værdier rangeret efter deres forklarende styrke. Registrering af uregelmæssigheder er tilgængelig, hvis funktionen er blevet aktiveret i diagrammet af rapportens forfatter. 
+
+Når du får vist en rapport, hvor registrering af uregelmæssigheder er aktiveret i et diagram med tidsseriedata, kan du se uregelmæssighederne angivet i diagrammet, på samme måde som du ville i Power BI-tjenesten og Power BI Desktop. 
+
+![Skærmbillede af kurvediagram, der indeholder uregelmæssigheder.](media/mobile-reports-in-the-mobile-apps/mobile-detected-anomalies.png)
+
+Hvis du vil se yderligere oplysninger og forklaringer, skal du åbne panelet Uregelmæssigheder. Det kan du gøre på flere måder:
+* Tryk på uregelmæssigheden i diagrammet. 
+* Tryk på **Flere indstillinger (...)** , og vælg **Vis uregelmæssigheder** i den menu, der vises.    
+* Tryk på datapunktet for at få vist et værktøjstip, og vælg **Uregelmæssigheder**.
+
+Billedet nedenfor viser de tre måder, hvorpå du kan åbne panelet Uregelmæssigheder.
+
+![Skærmbilleder, der viser, hvordan du åbner panelet Uregelmæssigheder.](media/mobile-reports-in-the-mobile-apps/mobile-opening-anomalies-panel.png)
+
+I panelet Uregelmæssigheder kan du se en forklaring på et naturligt sprog af den registrerede uregelmæssighed samt de tilknyttede faktorer sorteret efter deres forklarende styrke. Stryg fra højre mod venstre for at få vist alle relevante faktorer og deres styrker.
+
+![Skærmbillede, der viser stryg fra højre mod venstre for at få vist forklaringer af uregelmæssigheder.](media/mobile-reports-in-the-mobile-apps/mobile-swipe-to-see-explanations.png)
+
+Mens panelet Uregelmæssigheder er synligt, kan der stadig rulles i mobilrapporten under det, så du kan fortsætte med at interagere med din rapport og se nærmere på de enkelte dele for bedre at forstå uregelmæssighederne i dine data. For hver interaktion kører Power BI registreringen af uregelmæssigheder igen for at registrere uregelmæssigheder i de aktuelle data. 
 
 ## <a name="refresh-your-data"></a>Opdater dine data
 

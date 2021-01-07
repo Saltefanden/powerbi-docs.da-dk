@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 10/09/2020
+ms.date: 12/14/2020
 ms.custom: licensing support
 LocalizationGroup: Consumers
-ms.openlocfilehash: 2341306672da4c1923dc5bc97f0d1537604a1a7c
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: bc8c3147efc9037fef7207f62856f3f9a0b1b5a8
+ms.sourcegitcommit: 5c09d121d3205e65fb33a2eca0e60bc30e777773
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96398700"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97674930"
 ---
 # <a name="collaborate-in-workspaces"></a>Samarbejd i et arbejdsområde
 
@@ -49,7 +49,7 @@ Du kan finde en detaljeret liste over, hvad du kan foretage dig som *erhvervsbru
 
 ### <a name="workspace-permissions-and-roles"></a>Tilladelser til og roller i arbejdsområde
 
-Her er funktionerne for de fire roller: Administratorer, medlemmer, bidragydere og fremvisere. Al denne funktionalitet, undtagen visning og interaktion, kræver en Power BI Pro-licens.
+Her er funktionerne for de fire roller: Administratorer, medlemmer, bidragydere og fremvisere. Al denne funktionalitet med undtagelse af *visning af og interaktion med et element* kræver en Power BI Pro-licens.
 
 [!INCLUDE[power-bi-workspace-roles-table](../includes/power-bi-workspace-roles-table.md)]
 

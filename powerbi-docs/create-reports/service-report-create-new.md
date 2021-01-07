@@ -9,19 +9,19 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 10/14/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: 806198b783785a06562411b53f7bd6f644b16918
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: a971e0d0b35b0a3988a1c10ea2b7b801830229d6
+ms.sourcegitcommit: 0711972326521944fdd8572403c0b15f31b916da
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96388189"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97721541"
 ---
 # <a name="create-a-report-from-an-excel-file-in-the-power-bi-service"></a>Opret en rapport fra en Excel-fil i Power BI-tjenesten
 Du har læst [Rapporter i Power BI](../consumer/end-user-reports.md), og nu vil du oprette din egen. Der er forskellige måder at oprette en rapport på. I denne artikel starter vi med at oprette en grundlæggende rapport i Power BI-tjenesten fra en Excel-fil. Når du har forstået de grundlæggende ting i forbindelse med at oprette en rapport, skal du se de [Næste trin](#next-steps) nederst for at se mere avancerede rapportemner.  
 
 ## <a name="prerequisites"></a>Forudsætninger
 - [Tilmeld dig Power BI-tjenesten](../fundamentals/service-self-service-signup-for-power-bi.md). 
-- [Download Excel-filen med Retail Analysis-eksemplet](https://go.microsoft.com/fwlink/?LinkId=529778), og gem den i OneDrive for Business eller lokalt.
+- [Download Excel-filen med Retail Analysis-eksemplet](https://go.microsoft.com/fwlink/?LinkId=529778), og gem den på din computer eller i OneDrive for Business.
 
 ## <a name="import-the-excel-file"></a>Importér Excel-filen
 Denne metode til oprettelse af en rapport starter med en fil og et tomt rapportlærred. Du kan følge med ved at se Excel-filen med Retail Analysis-eksemplet.

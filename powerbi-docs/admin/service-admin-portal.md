@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 10/22/2020
+ms.date: 12/18/2020
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 9cbb6bb03d9add4324c3fc57a6426435850a001c
-ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
+ms.openlocfilehash: 2e89dc43f467aec8edcefaa4ecdbd2fc6cbf6dea
+ms.sourcegitcommit: b8e4dd67c59db079fdfa82a8a01c2a28fd1673ca
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96578170"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97699468"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrer Power BI på administrationsportalen
 
-På administrationsportalen kan du administrere Power BI-indstillingerne for din virksomhed. Portalen indeholder elementer såsom forbrugsdata, adgang til Microsoft 365 Administration og lejerindstillinger.
+På administrationsportalen kan du administrere Power BI-indstillingerne for din virksomhed. Portalen indeholder elementer såsom forbrugsdata, adgang til Microsoft 365 Administration og indstillinger, der styrer Power BI for alle dine brugere.
 
 Globale administratorer og brugere, der har rollen som Power BI-tjeneste administrator, kan få adgang til hele administrationsportalen. Hvis du ikke har en af disse roller, kan du kun se **Kapacitetsindstillinger** på portalen. Du kan finde flere oplysninger om Power BI-tjenesteadministratorrollen under [Beskrivelse af rollen som Power BI-administrator](service-admin-role.md).
 
@@ -31,14 +31,15 @@ Du skal være global administrator eller Power BI-tjenesteadministrator for at f
 
 1. Vælg **Indstillinger** > **Administrationportal** i sidehovedet.
 
-    ![Indstillinger på administrationsportalen](media/service-admin-portal/powerbi-admin-settings.png)
+   :::image type="content" source="media/service-admin-portal/settings-portal.png" alt-text="Menuen Indstillinger, hvor administrationsportalen er valgt.":::
 
 Der er flere afsnit på administrationsportalen. Resten af denne artikel indeholder oplysninger om hver af disse afsnit.
 
-![Navigation på administrationsportalen](media/service-admin-portal/powerbi-admin-landing-page.png)
+   :::image type="content" source="media/service-admin-portal/portal-menu.png" alt-text="Menuen Administrationsportal.":::
 
 * [Forbrugsdata](#usage-metrics)
 * [Brugere](#users)
+* [Premium pr. bruger (prøveversion)](#premium-per-user-preview)
 * [Overvågningslogge](#audit-logs)
 * [Lejerindstillinger](#tenant-settings)
 * [Kapacitetsindstillinger](#capacity-settings)
@@ -125,6 +126,14 @@ Vær forsigtig med at gøre dette, da sletning af eksisterende forbrugsdataindho
 Du kan administrere Power BI-brugere, -grupper og -administratorer i Microsoft 365 Administration. Fanen **Brugere** indeholder et link til Administration.
 
 ![Gå til Microsoft 365 Administration](media/service-admin-portal/powerbi-admin-manage-users.png)
+
+## <a name="premium-per-user-preview"></a>Premium pr. bruger (prøveversion)
+
+Premium pr. bruger er en ny måde at licensere Premium-funktioner på pr. bruger. Denne funktion er i øjeblikket en prøveversion. Når mindst én bruger har fået tildelt en Premium pr. bruger-licens, kan de tilknyttede funktioner slås til i et hvilket som helst arbejdsområde. Administratorer kan administrere indstillingerne for automatisk opdatering og arbejdsbelastning med datasæt, der vises til brugerne, og deres standardværdier. Adgangen til XMLA-slutpunktet kan f.eks. slås fra, angives til skrivebeskyttet eller indstilles til læse/skrive.
+
+   :::image type="content" source="media/service-admin-portal/premium-per-user-options.png" alt-text="Indstillinger for Premium pr. bruger.":::
+
+Se [Ofte stillede spørgsmål om Power BI Premium pr. bruger (prøveversion)](service-premium-per-user-faq.md) for at få mere at vide om denne licensmodel.
 
 ## <a name="audit-logs"></a>Overvågningslogge
 
@@ -383,7 +392,7 @@ Brugere i organisationen kan oprette mailabonnementer. Få mere at vide om [abon
 
 ![Aktivér mailabonnementer](media/service-admin-portal/power-bi-manage-email-subscriptions.png)
 
-### <a name="featured-content"></a>Udvalgt indhold
+### <a name="featured-content"></a>Fremhævet indhold
 
 Gør det muligt for nogle af eller alle rapportforfattere i din organisation at fremhæve deres indhold i afsnittet Udvalgte Power BI Start. Nye brugere kan se fremhævet indhold øverst på deres Power BI Start-side. Fremhævet indhold flyttes ned på startsiden, efterhånden som brugerne tilføjer **favoritter**, **ofte viste** og **seneste viste**. 
 

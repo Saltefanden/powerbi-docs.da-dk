@@ -7,14 +7,14 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 10/10/2020
+ms.date: 12/21/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: 450c14d05f9a7855d51d7aa2f073e48a0b016013
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 140ca42dc34e98133beac5fff671cf1ef244501c
+ms.sourcegitcommit: 0711972326521944fdd8572403c0b15f31b916da
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96400954"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97721426"
 ---
 # <a name="buttons-in-the-power-bi-service"></a>Knapper i Power BI-tjenesten
 I de rapporter, du modtager fra kolleger, har du måske lagt mærke til knapperne og spekuleret på, hvordan du bruger dem. Nogle har ord, nogle har pile, andre har grafik og nogle har endda rullemenuer. I denne artikel gennemgår vi, hvordan du genkender en knap og finder ud af, hvad du kan foretage dig med den.
@@ -53,23 +53,23 @@ Når du vælger bogmærkeknappen, kommer du til den placering og de indstillinge
 ## <a name="drillthrough-buttons"></a>Detaljeadgangsknapper
 Der er to måder at få vist detailudledning på i Power BI-tjenesten. Detaljeadgang fører dig til en anden rapportside, og dataene på denne destinationsside præsenteres i henhold til de filtre og valg, du har angivet på kildesiden.
 
-En måde at få detaljeadgang på i en rapport er ved at højreklikke på et datapunkt i en visualisering, vælge **Detaljeadgang** og vælge destinationen. Denne metode er beskrevet ovenfor i afsnittet **Tilbage-knappen**. Nogle gange bruger rapportdesignere dog en *detaljeadgangsknap* for at gøre handlingen tydeligere og henlede opmærksomheden på vigtig indsigt.  
+En måde at bruge detaljeadgang i en rapport på er ved at højreklikke på et datapunkt i en visualisering, vælge **Detaljeadgang** og vælge destinationen. Denne metode er beskrevet ovenfor i afsnittet **Tilbage-knappen**. Nogle gange bruger rapportdesignere dog en *detaljeadgangsknap* for at gøre handlingen tydeligere og henlede opmærksomheden på vigtig indsigt.  
 
 Detaljeadgangsknapper kan have mere end én forudsætning. Medmindre du opfylder alle forudsætningerne, fungerer knappen ikke. Lad os tage et kig på et eksempel.
 
 Her er en detaljeadgangsknap, der vil tage os til siden *Butiksoplysninger*. Hvis du holder markøren over knappen, vises et værktøjstip, der gør det muligt at finde ud af, om du skal vælge både en butik og et produkt. Knappen forbliver inaktiv, indtil vi har valgt en af mulighederne.
 
-![Skærmbillede af knappen Detaljeadgang med pegefølsomt værktøjstip.](media/end-user-buttons/power-bi-drill-two-selections.png)
+![Skærmbillede af knappen til detaljeadgang med pegefølsomt værktøjstip.](media/end-user-buttons/power-bi-drill-two-selections.png)
 
 Nu, hvor vi har valgt et produkt (**Word**) og en butik (**Leo**), skifter knappen farven for at fortælle os, at den nu er aktiv.
 
-![Skærmbillede af knappen Detaljeadgang for Butiksoplysninger.](media/end-user-buttons/power-bi-select-both.png)
+![Skærmbillede af knappen Detaljeadgang til Butiksoplysninger.](media/end-user-buttons/power-bi-select-both.png)
 
 Når du vælger detaljeadgangsknappen, kommer du til rapportsiden *Butik*. Siden *Butik* er filtreret efter vores valg af **Word** og **Leo**.
 
 ![Skærmbillede af siden Butiksrapporter.](media/end-user-buttons/power-bi-store.png)
 
-Detaljeadgangsknapper kan også have rullemenuer, der giver dig mulighed for at vælge mellem destinationer. Når du har foretaget dine valg på kilderapportsiden, skal du vælge destinationsrapportsiden for detaljeadgangen. I eksemplet nedenfor ændrer vi vores valg for at få detaljeadgang til rapportsiden med *Markedsdetaljer*. 
+Detaljeadgangsknapper kan også have rullemenuer, der giver dig mulighed for at vælge mellem destinationer. Når du har foretaget dine valg på kilderapportsiden, skal du vælge destinationsrapportsiden for detaljeadgangen. I eksemplet nedenfor ændrer vi vores valg for at få detaljeadgang til rapportsiden *Markedsdetaljer*. 
 
 ![skærmbillede af detaljeadgangsrullemenuen med flere destinationer](media/end-user-buttons/power-bi-destination.png)
 
@@ -94,4 +94,4 @@ Eftersom siden åbnes i et separat vindue, skal du lukke vinduet eller vælge Po
 
 ## <a name="next-steps"></a>Næste trin
 [Bogmærker](end-user-bookmarks.md)    
-[Analysér op, analysér ned](end-user-drill.md)
+[Zoom ind på detaljeniveauet, zoom ud fra detaljeniveauet](end-user-drill.md)

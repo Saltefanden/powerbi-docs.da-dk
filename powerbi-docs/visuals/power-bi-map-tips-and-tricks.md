@@ -11,12 +11,12 @@ ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 05/05/2020
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 3e0d944f8058ddc5dfb64c8f960bd354571bb23c
-ms.sourcegitcommit: 8250187368d3de48663eb516a816ff701119b579
+ms.openlocfilehash: 24ad57ca976fa7a7a859b1c0d07523895236787e
+ms.sourcegitcommit: 0711972326521944fdd8572403c0b15f31b916da
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96999053"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97721610"
 ---
 # <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Tips og tricks til Power BI-kortvisualiseringer
 
@@ -88,9 +88,9 @@ Hvis dit datasæt allerede indeholder forskellige niveauer af placeringsdata, ka
 
 Når du bruger detailudledning med geografiske hierarkier, er det vigtigt at vide, hvordan knapperne virker, og hvad der sendes til Bing Maps. 
 
-* Analyseknappen yderst til højre med navnet Analysetilstand ![Ikonet Analysetilstand](media/power-bi-map-tips-and-tricks/power-bi-drill-down.png) , kan bruges til at vælge en kortplacering og gå længere ned i placeringen ét niveau ad gangen. Hvis du for eksempel aktiverer Analysér ned og klikker på North America, kommer du til næste niveau i hierarkiet, som er stater i Nordamerika. For geokodning sender Power BI kun data om lande og stater for Nordamerika til Bing Maps.  
+* Analyseknappen yderst til højre med navnet Analysetilstand ![Ikonet Analysetilstand](media/power-bi-map-tips-and-tricks/power-bi-drill-down.png) , kan bruges til at vælge en kortplacering og gå længere ned i placeringen ét niveau ad gangen. Hvis du f.eks. aktiverer Zoom ind på detaljeniveauet og klikker på Nordamerika, bevæger du dig ned i hierarkiet til det næste niveau, som er stater i Nordamerika. For geokodning sender Power BI kun data om lande og stater for Nordamerika til Bing Maps.  
 * Til venstre er der 2 andre analyseindstillinger. Den første indstilling, ![ikon for første analyse](media/power-bi-map-tips-and-tricks/power-bi-drill-down2.png) , går til det næste niveau i hierarkiet for alle placeringer på en gang. Hvis du for eksempel ser på lande og derefter bruger denne indstilling for at få til det næste niveau, som er stater, vil Power BI vise data om stater for alle lande. For geokodning sender Power BI data om stater (ikke om lande) til Bing Maps for alle placeringer. Denne indstilling er praktisk, hvis hvert niveau i hierarkiet ikke relaterer til det overliggende niveau. 
-* Den anden indstilling, ![detaljeret visning med kort](./media/power-bi-map-tips-and-tricks/power-bi-drill-down3.png) , svarer til Analysér ned, men du behøver ikke at klikke på kortet.  Det udvides ned til det næste niveau i hierarkiet og husker konteksten for det aktuelle niveau. Hvis du for eksempel kigger på lande og vælger dette ikon, flytter du ned til næste niveau i hierarkiet, som er stater. For geokodning vil Power BI sende data for hver stat og det relaterede land til Bing Maps for at få en mere korrekt geokodning. På de fleste kort vil du enten bruge denne indstilling eller indstillingen Analysér ned længst til højre, så du kan sende flest mulige oplysninger til Bing for at få de mest præcise placeringsoplysninger. 
+* Den anden indstilling, ![zoom ind på detaljeniveauet med kort](./media/power-bi-map-tips-and-tricks/power-bi-drill-down3.png) , svarer til at zoome ind på detaljeniveauet bortset fra, at du ikke behøver at klikke på kortet.  Det udvides ned til det næste niveau i hierarkiet og husker konteksten for det aktuelle niveau. Hvis du for eksempel kigger på lande og vælger dette ikon, flytter du ned til næste niveau i hierarkiet, som er stater. For geokodning vil Power BI sende data for hver stat og det relaterede land til Bing Maps for at få en mere korrekt geokodning. På de fleste kort vil du enten bruge denne indstilling eller indstillingen til at zoome ind på detaljeniveauet længst til højre, så du kan sende flest mulige oplysninger til Bing for at få de mest præcise placeringsoplysninger. 
 
 ## <a name="next-steps"></a>Næste trin
 [Detailudledning i en visualisering i Power BI](../consumer/end-user-drill.md)

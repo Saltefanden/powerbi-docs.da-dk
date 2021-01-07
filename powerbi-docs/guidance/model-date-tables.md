@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 06/24/2020
-ms.openlocfilehash: 9040fb54e51dfeecad853e5ba980f423ab48e908
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: a2616b5f77a03056de03b213369d55e9b590b1b6
+ms.sourcegitcommit: 7599622381f35a161bfc54726675ed3c9cf13816
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96417836"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97827566"
 ---
 # <a name="create-date-tables-in-power-bi-desktop"></a>Opret datotabeller i Power BI Desktop
 
@@ -54,10 +54,7 @@ Hvis du udvikler en DirectQuery-model, og din datakilde ikke omfatter en datotab
 
 ## <a name="generate-with-power-query"></a>Opret med Power Query
 
-Du kan oprette en datotabel ved hjælp af Power Query. Her er to blogindlæg, der viser dig, hvordan du gør:
-
-- [Oprettelse af en datodimension med et Power Query-script](https://www.mattmasson.com/2014/02/creating-a-date-dimension-with-a-power-query-script/) af Matt Masson
-- [Oprettelse af en datodimensionstabel i Power Query](https://blog.crossjoin.co.uk/2013/11/19/generating-a-date-dimension-table-in-power-query/) af Chris Webb
+Du kan oprette en datotabel ved hjælp af Power Query. Du kan finde flere oplysninger i Chris Webbs blogindlæg [Generating A Date Dimension Table In Power Query](https://blog.crossjoin.co.uk/2013/11/19/generating-a-date-dimension-table-in-power-query/).
 
 > [!TIP]
 > Hvis du ikke har et data warehouse eller en anden konsistent definition af tiden i din organisation, kan du overveje at bruge Power Query til at publicere et [dataflow](../transform-model/dataflows/dataflows-introduction-self-service.md). Derefter kan alle udviklere af datamodeller oprette forbindelse til dataflowet for at føje datotabeller til deres modeller. Dataflowet bliver den eneste På denne måde bruger din model en enkelt kilde til sandhed til datoerne i din organisation.

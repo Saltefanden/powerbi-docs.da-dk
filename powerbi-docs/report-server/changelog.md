@@ -7,13 +7,13 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 11/18/2020
-ms.openlocfilehash: 2331785b14cd8cbcf9aec1232293cb601b1e2dc6
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.date: 12/16/2020
+ms.openlocfilehash: c292e1ccaa03904ee0bfa4825a539430fed71867
+ms.sourcegitcommit: 7bf09116163afaae312eb2b232eb7967baee2c92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96418112"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97621872"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Ændringslog for Power BI-rapportserver
 
@@ -40,8 +40,12 @@ Se [Nyheder i Power BI-rapportserver](whats-new.md) for at få flere oplysninger
             - Løste problem med eksport af rapporter med punktummer i deres navn.
             - Løste problemer med skærmbilleder i et tablix.
             - Løste problem med logfiler, der i nogle tilfælde var tomme.
-            - Løste problem med, at dialogboksen Opret forbindelse til Power BI ikke lukkede
-            - Opdaterede MHTML-gengivelsesprogram til brug af nyere HTML-dokumenttyper
+            - Løste problem med overskrivning af Excel-fil under upload.
+            - Løste problem med REST API-metoden for Model.UpdateCacheSnapshot.
+            - Løste problem med SAP BW-datakildeforbindelser via XMLA.
+            - Løste problem med, at dialogboksen "Opret forbindelse til Power BI" ikke lukker.
+            - Løste problem med standardværdien for den avancerede CustomHeaders-funktion.
+            - Opdaterede MHTML-gengivelsesprogrammet til at bruge en nyere HTML-dokumenttype.
 
 - **Power BI Desktop (optimeret til Power BI-rapportserver)**
    - *Version: 2.86.961.0 (oktober 2020), udgivet: 27. september 2020* (nyt build og ny version)

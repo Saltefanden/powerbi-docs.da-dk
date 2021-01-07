@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 10/22/2020
+ms.date: 12/16/2020
 LocalizationGroup: Gateways
-ms.openlocfilehash: 0f971013d5f57174a26d92281cafe673f1487329
-ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
+ms.openlocfilehash: 21371e931aa123aa6a339bfbcb939bde943b3f9f
+ms.sourcegitcommit: 5c09d121d3205e65fb33a2eca0e60bc30e777773
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96577549"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97675505"
 ---
 # <a name="use-security-assertion-markup-language-saml-for-sso-from-power-bi-to-on-premises-data-sources"></a>Brug SAML (Security Assertion Markup Language) til SSO fra Power BI til datakilder i det lokale miljø
 
@@ -29,7 +29,7 @@ Vi understøtter flere datakilder med [Kerberos](service-gateway-sso-kerberos.md
 I forbindelse SAP HANA anbefales det, at du aktiverer kryptering, før du etablerer en SAML SSO-forbindelse. Du aktiverer kryptering ved at konfigurere HANA-serveren til at acceptere krypterede forbindelser og ved at konfigurere gatewayen til at bruge kryptering til at kommunikere med din HANA-server. Da HANA ODBC-driveren ikke krypterer SAML-udsagn som standard, sendes det signerede SAML-udsagn fra gatewayen til HANA-serveren som *godkendt* og er sårbar over for opfangelse og genbrug af tredjeparter.
 
 > [!IMPORTANT]
-> SAP understøtter ikke længere OpenSSL, og derfor har Microsoft også stoppet sin support. Eksisterende og nye forbindelser fungerer fortsat korrekt indtil udgangen af 2020, men holder op med at fungerer fra den 1. januar 2021 og frem. Brug i stedet CommonCryptoLib.
+> Da [SAP ikke længere understøtter OpenSSL](https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/2.0.05/en-US/de15ffb1bb5710148386ffdfd857482a.html), er Microsoft også ophørt med at understøtte det. Eksisterende forbindelser vil fortsat fungere, men du kan ikke oprette nye forbindelser fra og med februar 2021. Fremadrettet skal du bruge CommonCryptoLib i stedet.
 
 ## <a name="configuring-the-gateway-and-data-source"></a>Konfiguration af gatewayen og datakilden
 

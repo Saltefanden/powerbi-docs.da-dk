@@ -7,16 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 10/10/2019
+ms.date: 12/16/2020
 LocalizationGroup: Gateways
-ms.openlocfilehash: eb65741a0fd65ed7df73e3012d7f07fdbeb527f1
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 3f50b174e8293d75a0077e1799cb64ff4fdcd696
+ms.sourcegitcommit: 5c09d121d3205e65fb33a2eca0e60bc30e777773
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85235765"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97675114"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-to-sap-hana"></a>Brug Kerberos til enkeltlogon (SSO) til SAP HANA
+
+> [!IMPORTANT]
+> Da [SAP ikke længere understøtter OpenSSL](https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/2.0.05/en-US/de15ffb1bb5710148386ffdfd857482a.html), er Microsoft også ophørt med at understøtte det. Eksisterende forbindelser vil fortsat fungere, men du kan ikke oprette nye forbindelser fra og med februar 2021. Fremadrettet skal du bruge CommonCryptoLib i stedet.
 
 I denne artikel beskrives, hvordan du konfigurerer din SAP HANA-datakilde for at aktivere SSO fra Power BI-tjenesten.
 

@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/01/2020
-ms.openlocfilehash: 81a387d2f87e857cb56dcbc1fb22c8da72bbd27e
-ms.sourcegitcommit: 2fd64f96b5bfbc14ff47e5c892171e5c921fb525
+ms.date: 12/17/2020
+ms.openlocfilehash: 7779976e7897b31e5f3dde2c4c3306c909ecf0f0
+ms.sourcegitcommit: 5c09d121d3205e65fb33a2eca0e60bc30e777773
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96502045"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97675538"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Hvad er nyt i mobilapps til Power BI
 Du kan finde relaterede oplysninger om nyheder under:
@@ -26,8 +26,17 @@ Du kan finde relaterede oplysninger om nyheder under:
 >Understøttelsen af Power BI-mobilapp til **telefoner, der bruger Windows 10 Mobile**, ophører den 16. marts 2021. [Få mere at vide](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 ## <a name="december-2020"></a>December 2020
-### <a name="weve-added-dark-mode-to-power-bi-mobile-android"></a>Vi har føjet mørk tilstand til Power BI - Mobil (Android)
+### <a name="weve-added-anomaly-detection-to-the-mobile-apps"></a>Vi har føjet registrering af uregelmæssigheder til mobilapps
+Hvis forfatteren af rapporten har konfigureret registrering af uregelmæssigheder for en rapportvisualisering, kan du se, om der er uventet høje toppunkter eller lave fald i dine data, som skyldes udenforliggende værdier i dataene (dvs. uregelmæssigheder). [Få mere at vide!](mobile-reports-in-the-mobile-apps.md#investigate-anomalies-in-time-series-data)
 
+![Skærmbillede af registrering af uregelmæssigheder.](media/mobile-whats-new-in-the-mobile-apps/mobile-anomaly-detection.png)
+
+### <a name="easily-find-your-orgs-endorsed-content"></a>Find nemt din organisations anbefalede indhold
+Indhold, der er blevet [fremhævet eller certificeret](../../collaborate-share/service-endorsement-overview.md) i Power BI-tjenesten, er nu markeret med et badge i appen. Forfattere af rapporter fremhæver deres indhold for at vise, at det er klar til brug (fremhævet), eller certificerer deres indhold for at vise, at det er blevet godkendt af din organisation (certificeret).
+
+![Skærmbillede af en certificeret rapport under rapportoplysninger på en mobil.](media/mobile-whats-new-in-the-mobile-apps/mobile-apps-certified-badge.png)
+
+### <a name="weve-added-dark-mode-to-power-bi-mobile-android"></a>Vi har føjet mørk tilstand til Power BI - Mobil (Android)
 Prøv den nye mørke tilstand i Power BI-mobilappen til Android-enheder. I mørk tilstand kan du se lys tekst på en mørk baggrund, hvilket reducerer skærmens lysstyrke og gør den nemmere at se dit indhold. Du kan skifte mellem temaer i indstillingerne for appens udseende. [Få mere at vide](mobile-apps-dark-mode.md)
 
 ![Skærmbillede af mørk tilstand i Power BI-mobilappen til Android.](media/mobile-whats-new-in-the-mobile-apps/mobile-apps-dark-mode-android.png)
@@ -50,7 +59,7 @@ Vi har tilføjet understøttelse af skærme med hak foroven på iPhone og iPads,
 ## <a name="september-2020"></a>September 2020
 ### <a name="power-bi-app-preview-for-hololens-2-is-out-in-the-stores"></a>Power BI-app (eksempelvisning) til HoloLens 2 er i butikkerne!
 
-Power BI-appen til HoloLens 2 giver dig en fuldstændig fængslende oplevelse. Ved hjælp af håndbevægelsessystemet i HoloLens 2 kan du få dine foretrukne rapporter og dashboards væk fra værktøjsbæltet, tilpasse størrelsen og placere dem rundt omkring på det sted, hvor du har brug for dem, og du kan også gennemse rapportens sider. Opdatering af rapporter og dashboards, mens du bruger appen, så hvis dataene ændres, vil ændringerne blive vist med det samme. Få mere at vide i vores [dokumentation](mobile-hololens2-app.md) og [blog](https://powerbi.microsoft.com/blog/power-bi-app-for-mixed-reality-now-available-for-hololens-2/)!
+Power BI-appen til HoloLens 2 giver dig en fuldstændig fængslende oplevelse. Ved hjælp af håndbevægelsessystemet i HoloLens 2 kan du få dine foretrukne rapporter og dashboards væk fra værktøjsbæltet, tilpasse størrelsen og placere dem steder, hvor du har brug for dem. Du kan tilmed gennemse rapportens sider. Opdatering af rapporter og dashboards, mens du bruger appen, så hvis dataene ændres, vil ændringerne blive vist med det samme. Få mere at vide i vores [dokumentation](mobile-hololens2-app.md) og [blog](https://powerbi.microsoft.com/blog/power-bi-app-for-mixed-reality-now-available-for-hololens-2/)!
 
 
 ## <a name="august-2020"></a>August 2020
@@ -433,7 +442,7 @@ Din it-administrator kan nu bruge et MDM-værktøj til at konfigurere adgang til
 
 #### <a name="power-bi-for-mixed-reality-app-preview"></a>Power BI til Mixed Reality-app (Eksempel)
 
-Appen Power BI for Mixed Reality er nu tilgængelig i Microsoft Store. Se dine dashboards og rapporter i en virtuel verden, eller placer dem, så du kan se dem på særlige steder i dine omgivelser. Se den nye video [Introduktion til Power BI på Hololens](https://www.youtube.com/watch?v=J_X_nOFUBss) for at se konteksten, eller læst artiklen om den nye [Power BI for Mixed Reality-app](mobile-mixed-reality-app.md).
+Appen Power BI for Mixed Reality er nu tilgængelig i Microsoft Store. Se dine dashboards og rapporter i en virtuel verden, eller placer dem, så du kan se dem på særlige steder i dine omgivelser. Se den nye video [Introduktion til Power BI på HoloLens](https://www.youtube.com/watch?v=J_X_nOFUBss) for at se kontekst, eller læs artiklen om den nye [Power BI for Mixed Reality-app](mobile-mixed-reality-app.md).
 
 
 ### <a name="april-2018"></a>April 2018
@@ -521,7 +530,7 @@ Hvis du opretter en rapport med telefonoptimerede sider i Power BI Desktop, og r
 
 #### <a name="show-data-in-reports"></a>Vis data i rapporter
 
-Du kan nu udskifte visuelle elementer i dine rapporter med en tabel for at få vist tallene bag dataene. For at få adgang til denne funktion, skal du trykke på "Vis data" fra den visuelle menu på rapporten eller det nye ikon på det udvidede visuelle element i menuen handling.
+Du kan nu udskifte visualiseringer i dine rapporter med en tabel for at få vist tallene bag dataene. For at få adgang til denne funktion, skal du trykke på "Vis data" fra den visuelle menu på rapporten eller det nye ikon på den udvidede visualisering i menuen handling.
 
 ### <a name="september-2017"></a>September 2017
 #### <a name="filters-for-phone-reports-in-iphones"></a>Filtre til telefonrapporter på iPhones
@@ -537,8 +546,8 @@ Læs [oversigten over funktioner i mobilapps for juli 2017](https://powerbi.micr
 #### <a name="ios-devices"></a>iOS-enheder
 **Ny oplevelse med spørgsmål og svar på iOS (prøveversion)** I stedet for blot at få svar på dit spørgsmål kan du nu bruge naturligt sprog for at få afgrænset indsigt. Også selvom du ikke helt ved, hvad du søger efter, vises indsigt, der er relevant for dine data, i Spørgsmål og svar. Den nye oplevelse på mobiltelefonen med spørgsmål og svar, der er udviklet i samarbejde med Microsoft Research-teamet, viser de effektive teknologier i vores produkt. Prøv selvstudiet [Stil spørgsmål om dine data i iOS-mobilapps](mobile-apps-ios-qna.md).
 
-### <a name="responsive-visuals"></a>Dynamiske visuelle elementer
-**Dynamiske visuelle elementer til telefonrapporter og dashboards** Du kan angive, at de visuelle elementer i dit dashboard eller en rapport skal være *dynamiske*, så de ændres dynamisk for at vise det maksimale antal data og indsigt uanset skærmstørrelse. Læs [bloggen om dynamiske visuelle elementer](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#responsiveVisuals).
+### <a name="responsive-visuals"></a>Dynamiske visualiseringer
+**Dynamiske visualiseringer til telefonrapporter og dashboards** Du kan angive, at visualiseringerne på dit dashboard eller i din rapport skal være *dynamiske*, så de ændres dynamisk for at vise det maksimale antal data og indsigt uanset skærmstørrelse. Læs [bloggen om dynamiske visualiseringer](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#responsiveVisuals).
 
 ### <a name="june-2107"></a>Juni 2017
 #### <a name="all-devices"></a>Alle enheder

@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 07/30/2020
+ms.date: 12/14/2020
 LocalizationGroup: Data from files
-ms.openlocfilehash: 99f562ee315a74c9de6765308272e5e33153c4f0
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: a3ee3ac5cd23942878395f942a32dbe573cb0798
+ms.sourcegitcommit: 0711972326521944fdd8572403c0b15f31b916da
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96388856"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97721587"
 ---
 # <a name="tutorial-from-excel-workbook-to-a-report-in-the-power-bi-service-to-microsoft-teams"></a>Selvstudium: Fra Excel-projektmappe til en rapport i Power BI-tjenesten til Microsoft Teams
-Din chef vil gerne se en rapport over dine seneste salgs- og avancetal sidst på dagen. Men de seneste data ligger i forskellige tredjepartssystemer og filer på din bærbare computer. Tidligere har det taget timer at oprette visuelle elementer og formatere en rapport, og du er ved at være lidt nervøs.
+Din chef vil gerne se en rapport over dine seneste salgs- og avancetal sidst på dagen. Men de nyeste data findes i filer på din bærbare computer. Tidligere har det taget timer at oprette en rapport, og du er ved at være lidt nervøs.
 
 Bare rolig. Med Power BI kan du oprette en imponerende rapport og dele den i Microsoft teams på ingen tid!
 
@@ -32,6 +32,11 @@ I dette selvstudium uploader vi en Excel-fil, opretter en ny rapport og deler de
 > * Fastgør visualiseringerne i rapporten til et dashboard.
 > * Deler et link til dashboardet.
 > * Deler dashboardet i Microsoft Teams
+
+## <a name="prerequisites"></a>Forudsætninger
+- [Tilmeld dig Power BI-tjenesten](../fundamentals/service-self-service-signup-for-power-bi.md). 
+- Download [projektmappen Økonomieksempel](https://go.microsoft.com/fwlink/?LinkID=521962), og gem den på din computer eller i OneDrive for Business.
+
 
 ## <a name="prepare-data-in-excel"></a>Forbereder data i Excel
 Lad os tage en simpel Excel-fil som eksempel. 
@@ -49,10 +54,7 @@ Lad os tage en simpel Excel-fil som eksempel.
    ![Skærmbillede af data formateres som en tabel.](media/service-from-excel-to-stunning-report/pbi_excel_table.png)
 
 ## <a name="upload-your-excel-file-to-the-power-bi-service"></a>Upload din Excel-fil til Power BI-tjenesten
-Power BI-tjenesten opretter forbindelse til mange datakilder, herunder Excel-filer, der findes på din computer. 
-
- > [!NOTE] 
- > Download [projektmappen Økonomieksempel](https://go.microsoft.com/fwlink/?LinkID=521962) for at følge med i resten af dette selvstudium.
+Power BI-tjenesten opretter forbindelse til mange datakilder, herunder Excel-filer, der findes på din computer.
 
 1. Log på Power BI-tjenesten for at komme i gang. Hvis du ikke har tilmeldt dig, [kan du gøre det gratis](https://powerbi.com).
 1. I **Mit arbejdsområde** skal du vælge **Nyt** > **Upload en fil**.
@@ -190,9 +192,9 @@ Nu er det tid til at dele dit dashboard med din chef. Du kan dele dit dashboard 
 
 Du kan også dele rapporter og dashboards direkte med dine kolleger i Microsoft Teams.
 
-1. Hvis du vil dele i Teams, skal du vælge **Del til Teams** øverst på dashboardet.
+1. Hvis du vil dele i Teams, skal du vælge **Chat i Teams** øverst på dashboardet.
 
-   ![Skærmbillede af indstillingen Del i Teams.](media/service-from-excel-to-stunning-report/power-bi-share-teams.png)
+   ![Skærmbillede af indstillingen Chat i Teams.](media/service-from-excel-to-stunning-report/power-bi-share-teams.png)
 
 2. Power BI viser dialogboksen **Del til Teams**. Angiv navnet på en person, gruppe eller kanal, og vælg **Del**. 
    

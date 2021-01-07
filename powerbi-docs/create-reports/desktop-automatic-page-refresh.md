@@ -10,12 +10,12 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 08/13/2020
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 3f68a056e6e31acaf5432c4e323ba8a293ee09ce
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: eb572c17705f06b989f15323322c0da11b1d85ac
+ms.sourcegitcommit: b472236df99b490db30f0168bd7284ae6e6095fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96414409"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97600685"
 ---
 # <a name="automatic-page-refresh-in-power-bi"></a>Automatisk sideopdatering i Power BI
 
@@ -33,11 +33,11 @@ Med denne opdateringstype kan du opdatere alle visuals på en rapportside på gr
 
 ### <a name="change-detection"></a>Ændre registrering
 
-Denne opdateringstype giver dig mulighed for at opdatere visuals på en side på grundlag af registrering af ændringer i dataene i stedet for et bestemt opdateringsinterval. Denne måling forespørger, om der er ændringer af [DirectQuery-kilden](../connect-data/desktop-directquery-about.md). Udover at definere målingen skal du også vælge, hvor ofte Power BI Desktop skal kontrollere, om der er ændringer. Når du publicerer til tjenesten, understøttes denne opdateringstype kun i arbejdsområder, der er en del af en Premium-kapacitet.
+Denne opdateringstype giver dig mulighed for at opdatere visuals på en side på grundlag af registrering af ændringer i dataene i stedet for et bestemt opdateringsinterval. Denne måling forespørger, om der er ændringer af [DirectQuery-kilden](../connect-data/desktop-directquery-about.md). Udover at definere målingen skal du også vælge, hvor ofte Power BI Desktop skal kontrollere, om der er ændringer. Når du publicerer til tjenesten, understøttes denne opdateringstype kun i arbejdsområder, der er en del af en Premium-kapacitet. LiveConnect-kilder såsom Analysis Services og Power BI-datasæt understøttes ikke.
 
 ## <a name="authoring-reports-with-automatic-page-refresh-in-power-bi-desktop"></a>Oprettelse af rapporter med automatisk sideopdatering i Power BI Desktop
 
-Automatisk sideopdatering er kun tilgængelig for [DirectQuery-kilder](../connect-data/desktop-directquery-about.md) så muligheden er kun tilgængelig, når du har oprettet forbindelse til en DirectQuery-datakilde. Denne begrænsning gælder for begge automatiske sideopdateringstyper.
+Automatisk sideopdatering er tilgængelig til [DirectQuery-kilder](../connect-data/desktop-directquery-about.md) og nogle LiveConnect-scenarier, så det er kun tilgængeligt, når du har oprettet forbindelse til en understøttet datakilde. Denne begrænsning gælder for begge automatiske sideopdateringstyper.
 
 Hvis du vil bruge automatisk sideopdatering i Power BI Desktop, skal du vælge den rapportside, du vil aktivere automatisk sideopdatering for. Vælg knappen **Formatering** (en malerulle) i ruden **Visualiseringer**, og find afsnittet **Sideopdatering** nederst i ruden.
 
@@ -160,7 +160,7 @@ Power BI Desktop har ingen begrænsninger for opdateringsintervaller, og opdater
 
 ### <a name="restrictions-on-refresh-intervals"></a>Begrænsninger for opdateringsintervaller
 
-I Power BI-tjenesten gælder der begrænsninger for automatisk sideopdatering, som er baseret på det arbejdsområde, hvor rapporten publiceres, om du bruger Premium-tjenester og administratorindstillingerne for Premium-kapaciteten.
+I Power BI-tjenesten gælder der begrænsninger for automatisk sideopdatering baseret på det arbejdsområde, hvor rapporten publiceres, om du bruger Premium-tjenester, administratorindstillingerne for Premium-kapaciteten og typen af datakilde.
 
 Vi vil tydeliggøre, hvordan disse begrænsninger fungerer, ved at begynde med nogle baggrundsoplysninger om kapaciteter og arbejdsområder.
 
@@ -182,32 +182,35 @@ Her er nogle oplysninger om de to forskellige arbejdsområdescenarier:
 
  - **Minimuminterval for udførelse**. Når Ændre registrering aktiveres, skal din kapacitetsadministrator konfigurere et minimuminterval for udførelse (standardværdien er 5 minutter). Hvis intervallet er lavere end minimumsintervallet, tilsidesætter Power BI-tjenesten intervallet for at overholde det minimumsinterval, der er angivet af kapacitetsadministratoren.
 
+> [!WARNING]
+> Når funktionen er aktiveret i dit datasæt, åbnes der en forbindelse til din DirectQuery-datakilde, når der registreres ændringer, for at beregne målingen og afstemningen af ændringer. Denne forbindelse adskiller sig fra de opdateringsforbindelser med lav prioritet, Power BI allerede foretager.
+
 ![Indstillinger for automatisk sideopdatering på kapacitetsadministratorportalen](media/desktop-automatic-page-refresh/automatic-page-refresh-09.png)
 
 I denne tabel beskrives flere detaljer, hvor denne funktion er tilgængelig, og grænserne for hver kapacitetstype og [lagertilstand](../connect-data/service-dataset-modes-understand.md):
 
-| Lagertilstand | Dedikeret kapacitet | Delt kapacitet |
-| --- | --- | --- |
-| DirectQuery | **FI understøttes**: Ja <br>**ÆR understøttes**: Ja <br>**Minimum**: 1 sekund <br>**Tilsidesættelse af administrator**: Ja | **FI understøttes**: Ja <br>**ÆR understøttes**: Nej <br>**Minimum**: 30 minutter <br>**Tilsidesættelse af administrator**: Nej |
-| Importér | **FI understøttes**: Nej <br>**ÆR understøttes**: Nej <br>**Minimum**: I/T <br>**Tilsidesættelse af administrator**: I/T | **FI understøttes**: Nej <br>**ÆR understøttes**: Nej <br>**Minimum**: I/T <br>**Tilsidesættelse af administrator**: I/T |
-| Blandet tilstand (DirectQuery + andre datakilder) | **FI understøttes**: Ja <br>**ÆR understøttes**: Ja <br>**Minimum**: 1 sekund <br>**Tilsidesættelse af administrator**: Ja | **FI understøttes**: Ja <br>**ÆR understøttes**: Nej <br>**Minimum**: 30 minutter <br>**Tilsidesættelse af administrator**: Nej |
-| Live connect AS | **FI understøttes**: Nej <br>**ÆR understøttes**: Nej <br>**Minimum**: I/T <br>**Tilsidesættelse af administrator**: I/T | **FI understøttes**: Nej <br>**ÆR understøttes**: Nej <br>**Minimum**: I/T <br>**Tilsidesættelse af administrator**: I/T |
-| Live connect PBI | **FI understøttes**: Nej <br>**ÆR understøttes**: Nej <br>**Minimum**: I/T <br>**Tilsidesættelse af administrator**: I/T | **FI understøttes**: Nej <br>**ÆR understøttes**: Nej <br>**Minimum**: I/T <br>**Tilsidesættelse af administrator**: I/T |
+| Lagertilstand                                  | Dedikeret kapacitet                                                                                     | Delt kapacitet                                                                                       |
+|-----------------------------------------------|--------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
+| DirectQuery                                   | **FI understøttes**: Ja <br>**ÆR understøttes**: Ja <br>**Minimum**: 1 sekund <br>**Tilsidesættelse af administrator**: Ja  | **FI understøttes**: Ja <br>**ÆR understøttes**: Nej <br>**Minimum**: 30 minutter <br>**Tilsidesættelse af administrator**: Nej |
+| Importér                                        | **FI understøttes**: Nej <br>**ÆR understøttes**: Nej <br>**Minimum**: I/T <br>**Tilsidesættelse af administrator**: I/T         | **FI understøttes**: Nej <br>**ÆR understøttes**: Nej <br>**Minimum**: I/T <br>**Tilsidesættelse af administrator**: I/T        |
+| Blandet tilstand (DirectQuery + andre datakilder) | **FI understøttes**: Ja <br>**ÆR understøttes**: Ja <br>**Minimum**: 1 sekund <br>**Tilsidesættelse af administrator**: Ja  | **FI understøttes**: Ja <br>**ÆR understøttes**: Nej <br>**Minimum**: 30 minutter <br>**Tilsidesættelse af administrator**: Nej |
+| Analysis Services (Azure og i det lokale miljø)     | **FI understøttes**: Ja <br>**ÆR understøttes**: Nej <br>**Minimum**: 30 minutter <br>**Tilsidesættelse af administrator**: Ja | **FI understøttes**: Ja <br>**ÆR understøttes**: Nej <br>**Minimum**: 30 minutter <br>**Tilsidesættelse af administrator**: Nej |
+| Power BI-datasæt (med DirectQuery-kilde)   | **FI understøttes**: Ja <br>**ÆR understøttes**: Nej <br>**Minimum**: 1 sekund <br>**Tilsidesættelse af administrator**: Ja  | **FI understøttes**: Ja <br>**ÆR understøttes**: Nej <br>**Minimum**: 30 minutter <br>**Tilsidesættelse af administrator**: Nej |
+| Power BI Push-datasæt                        | **FI understøttes**: Ja <br>**ÆR understøttes**: Nej <br>**Minimum**: 30 minutter <br>**Tilsidesættelse af administrator**: Ja | **FI understøttes**: Ja <br>**ÆR understøttes**: Nej <br>**Minimum**: 30 minutter <br>**Tilsidesættelse af administrator**: Nej        |
 
 *Tabelforklaring:*
 1. *FI: Fast interval*
 2. *ÆR: Ændre registrering*
 
 > [!WARNING]
-> Når funktionen er aktiveret i dit datasæt, åbnes der en forbindelse til din DirectQuery-datakilde, når der registreres ændringer, for at beregne målingen og afstemningen af ændringer. Denne forbindelse adskiller sig fra de opdateringsforbindelser med lav prioritet, Power BI allerede foretager.
+> Der er et kendt problem, når du opretter forbindelse fra Power BI Desktop til Analysis Services eller Power BI-datasæt, og opdateringsintervallet er 30 minutter eller mere. Der kan blive vist en fejl i visualiseringer på en rapportside efter 30 minutter.
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 
 Der er et par ting, du skal være opmærksom på, når du bruger automatisk sideopdatering i Power BI Desktop eller Power BI-tjenesten:
 
-* Tilstandene Import, LiveConnect og pushlagring understøttes ikke for automatisk sideopdatering.  
+* Importér lagringstilstand understøttes ikke for automatisk sideopdatering.  
 * Sammensatte modeller, der har mindst én DirectQuery-datakilde, understøttes.
-* Power BI Desktop har ingen begrænsninger for opdateringsintervaller. Intervallet kan være så hyppigt som hvert sekund for både opdateringstypen Fast interval og opdateringstypen Ændre registrering. Når rapporter publiceres i Power BI-tjenesten, kan der dog være visse begrænsninger, hvilket blev beskrevet [tidligere](#restrictions-on-refresh-intervals) i denne artikel.
 * Du kan kun have én måling af typen Ændre registrering pr. datasæt.
 * Der kan maksimalt være 10 modeller med målingen Ændre registrering i en Power BI-lejer.
 
@@ -277,6 +280,10 @@ Hvis du bemærker, at din kapacitet er overbelastet med forespørgsler med lav p
 * Kontrollér, om du har uploadet til et arbejdsområde med en tilknyttet Premium-kapacitet. Hvis du ikke har gjort det, fungerer registrering af ændringer ikke.
 * Hvis din rapport er i et Premium-arbejdsområde, skal du spørge din administrator, om denne funktion er aktiveret for den vedhæftede kapacitet. Sørg desuden for, at minimumintervallet for udførelse for kapaciteten er det samme som eller lavere end intervallet for din rapport.
 * Hvis du har kontrolleret alle de elementer, der er nævnt før, skal du kontrollere Power BI Desktop eller redigeringstilstand, om målingen overhovedet ændrer sig. Det gør du ved at trække den til lærredet og kontrollere, om værdien ændres. Hvis det ikke er tilfældet, er målingen muligvis ikke et godt valg til ændringer i datakilden.
+
+**Jeg kan ikke se APR-skifteren, når jeg har oprettet forbindelse til Analysis Services**
+
+* Sørg for, at din Analysis Services-model er i [DirectQuery-tilstand](https://docs.microsoft.com/analysis-services/tabular-models/directquery-mode-ssas-tabular).
 
 
 ## <a name="next-steps"></a>Næste trin

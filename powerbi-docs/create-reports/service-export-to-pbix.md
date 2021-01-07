@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 07/14/2020
+ms.date: 11/14/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: c83b7d1e52a0d443c52348bec91f935e288830d4
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 1a196d149a6519f9bcad6bd70ef02d62ef16f69b
+ms.sourcegitcommit: b472236df99b490db30f0168bd7284ae6e6095fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96388672"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97600662"
 ---
 # <a name="download-a-report-from-the-power-bi-service-to-power-bi-desktop-preview"></a>Download en rapport fra Power BI-tjenesten til Power BI Desktop (prøveversion)
       
@@ -54,7 +54,7 @@ Der er nogle få vigtige overvejelser og begrænsninger knyttet til download af 
 * Rapporten skal være oprettet ved hjælp af Power BI Desktop og være *publiceret* i Power BI-tjenesten, eller .pbix-filen skal være *uploadet* til Power BI-tjenesten.
 * Rapporter skal være publiceret eller opdateret efter 23. november 2016. Rapporter, der er publiceret tidligere, kan ikke downloades.
 * Denne funktion fungerer ikke sammen med rapporter og indholdspakker, der oprindeligt er oprettet i Power BI-tjenesten.
-* Du skal altid bruge den nyeste version af Power BI Desktop, når du åbner downloadede filer. Downloadede .pbix-filer åbnes muligvis ikke i versioner af Power BI Desktop, der ikke er de nyeste.
+* Du skal altid bruge den nyeste version af Power BI Desktop, når du åbner downloadede filer. Downloadede .pbix-filer åbnes muligvis ikke i versioner af Power BI Desktop, der ikke er de nyeste. Du kan f.eks. ikke åbne downloadede .pbix-filer ved hjælp af en Desktop-version, der ikke understøtter Information Protection.
 * Hvis administratoren har deaktiveret muligheden for at downloade data, er denne funktion ikke synlig i Power BI-tjenesten.
 * Datasæt med trinvis opdatering kan ikke downloades til en .pbix-fil.
 * Datasæt, der er aktiveret for [store modeller,](../admin/service-premium-large-models.md) kan ikke downloades til en. pbix-fil.

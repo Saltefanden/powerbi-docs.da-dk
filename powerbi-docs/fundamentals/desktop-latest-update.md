@@ -7,20 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 11/11/2020
+ms.date: 12/16/2020
 LocalizationGroup: Get started
-ms.openlocfilehash: f2eacca4571b8d00c8fc7e5ca5c6ef7935afaf29
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: e239b95fe18ba9ddfad399c5b53b10a3f1f4a4c2
+ms.sourcegitcommit: 5c09d121d3205e65fb33a2eca0e60bc30e777773
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96419492"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97674884"
 ---
 # <a name="whats-new-in-power-bi-desktop"></a>Nyheder i Power BI Desktop
 
-## <a name="november-2020-update-2872610"></a>Opdatering i november 2020 (2.87.261.0)
+## <a name="december-2020-update-2883210"></a>Opdatering fra december 2020 (2.88.321.0)
 
-Vores Power BI Desktop-opdateringer fra november omfatter en hel familie af nye og forbedrede funktioner. 
+Vores opdateringer af Power BI Desktop i december vil helt sikkert betage dig ligesom en slædetur på snedækket vej fyldt med julelys. 
 
 De månedlige blog- og videoopdateringer til Power BI Desktop indeholder nu også nye opdateringer til Power BI – Mobil og Power BI-tjenesten. I denne artikel beskrives opdateringerne til Power BI Desktop. Hvis du vil vide mere om opdateringer til mobilenheder og Power BI-tjenesten, kan du se de tilhørende artikler om nyheder:
 
@@ -46,30 +46,29 @@ Du kan også se hele [videoen om den månedlige opdatering til Power BI](#power-
 
 Følgende opdateringer er nye i Power BI Desktop i denne måned:
 
-
 ### <a name="reporting"></a>Rapportering
-* Ny feltliste (prøveversion) [[video]](https://youtu.be/DT_tOas5YIo?t=15)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467053) 
-* Ny modelvisning (prøveversion) [[video]](https://youtu.be/DT_tOas5YIo?t=61)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467054) [[artikel]](../create-reports/power-bi-personalize-visuals.md)
-* Anvend alle filtre er nu generelt tilgængelig [[video]](https://youtu.be/DT_tOas5YIo?t=98)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467055)  [[artikel]](../create-reports/desktop-multi-select.md#select-multiple-elements-using-rectangle-select-preview)
-* Skyder til visualiseringszoom [[video]](https://youtu.be/DT_tOas5YIo?t=160)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467056)  [[artikel]](../create-reports/desktop-multi-select.md#select-multiple-elements-using-rectangle-select-preview)
-* Valg af datapunktrektangel udvidet til kortvisualisering [[video]](https://youtu.be/DT_tOas5YIo?t=185)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467057)  [[artikel]](../create-reports/desktop-multi-select.md#select-multiple-elements-using-rectangle-select-preview)
-* Kontrol af certifikattilbagekaldelse for webforbindelser [[video]](https://youtu.be/DT_tOas5YIo?t=292)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467058)  [[artikel]](../create-reports/desktop-multi-select.md#select-multiple-elements-using-rectangle-select-preview)
-* Opdateringer af sideinddelte rapporter [[video]](https://youtu.be/DT_tOas5YIo?t=292)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467059)  [[artikel]](../create-reports/desktop-multi-select.md#select-multiple-elements-using-rectangle-select-preview)
+* DirectQuery til Power BI-datasæt og Azure Analysis Services (prøveversion) [[video]](https://youtu.be/68YvRs49VZM?t=33) [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831296) [[artikel]](../connect-data/desktop-directquery-datasets-azure-analysis-services.md)
+* Små multipla (prøveversion) [[video]](https://youtu.be/68YvRs49VZM?t=378) [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831297)
+* Følsomhedsmærkater for databeskyttelse i Power BI Desktop (prøveversion) [[video]](https://youtu.be/68YvRs49VZM?t=656) [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831298) 
+* Øget grænse for valg af datapunkt i rektangel [[video]](https://youtu.be/68YvRs49VZM?t=734) [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831299) 
+* Valgrude nu tilgængelig i visning med mobillayout [[video]](https://youtu.be/68YvRs49VZM?t=757) [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831300) 
+* Automatisk sideopdatering i Analysis Services-kilder [[video]](https://youtu.be/68YvRs49VZM?t=789) [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831301) 
 
-### <a name="analytics"></a>Analyse
-* Registrering af uregelmæssigheder (prøveversion) [[video]](https://youtu.be/DT_tOas5YIo?t=199)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467061) 
-* Spørgsmål og svar understøtter nu delvist matchende dataværdier [[video]](https://youtu.be/DT_tOas5YIo?t=438)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467062)  [[artikel]](../create-reports/desktop-multi-select.md#select-multiple-elements-using-rectangle-select-preview)
+
+### <a name="data-preparation"></a>Dataforberedelse
+* Ændringer af Power Query og dataflow [[video]](https://youtu.be/68YvRs49VZM?t=851) [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831302)
 
 ### <a name="data-connectivity"></a>Dataforbindelse
-* Hive LLAP-connector er nu offentlig tilgængelig [[video]](https://youtu.be/DT_tOas5YIo?t=461)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467064)
-* Nye dataconnectors – Actian, Anaplan, stjerne Presto [[video]](https://youtu.be/DT_tOas5YIo?t=487)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467065)
+* Microsoft Dataverse-connector [[video]](https://youtu.be/68YvRs49VZM?t=886) [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831566)
+* Opdatering af Azure Time Series Insights [[video]](https://youtu.be/68YvRs49VZM?t=919) [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831305)
+* Opdatering af SurveyMonkey [[video]](https://youtu.be/68YvRs49VZM?t=926) [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831568)
+* Opdatering af Cognite [[video]](https://youtu.be/68YvRs49VZM?t=933) [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831307)
 
 
-### <a name="visuals"></a>Visuelle elementer
-* Nye visualiseringer fra forskellige udbydere [[video]](https://youtu.be/DT_tOas5YIo?t=688)[[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467072)
+### <a name="visuals"></a>Visualiseringer
+* Nye visualiseringer fra forskellige udbydere [[video]](https://youtu.be/68YvRs49VZM?t=1330)[[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831588)
 
-
-Du kan finde detaljerede oplysninger om hver af disse nye funktioner i [oversigten over funktioner i Power BI Desktop](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/).
+Du kan finde detaljerede oplysninger om hver af disse nye funktioner i [oversigten over funktioner i Power BI Desktop](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/).
 
 
 > [!NOTE]
@@ -79,7 +78,7 @@ Du kan finde detaljerede oplysninger om hver af disse nye funktioner i [oversigt
 ### <a name="power-bi-desktop-monthly-update-video"></a>Video om månedlig opdatering til Power BI Desktop
 I følgende video beskrives hver af disse opdateringer. Du kan også se videoen fra blogindlægget:
 
-> [!VIDEO https://www.youtube.com/embed/DT_tOas5YIo]
+> [!VIDEO https://www.youtube.com/embed/68YvRs49VZM]
 
 ## <a name="more-videos"></a>Flere videoer
 

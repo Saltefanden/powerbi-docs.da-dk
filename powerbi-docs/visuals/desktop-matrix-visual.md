@@ -9,12 +9,12 @@ ms.subservice: pbi-visuals
 ms.topic: conceptual
 ms.date: 06/18/2020
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 33e0ee83815c739d8201fad995d84c7ee397bc6c
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 401d8905c4fe2ca0f27a8f0c58bd756c87a10456
+ms.sourcegitcommit: 0711972326521944fdd8572403c0b15f31b916da
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96398056"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97721495"
 ---
 # <a name="create-matrix-visualizations-in-power-bi"></a>Opret matrixvisualiseringer i Power BI
 
@@ -65,13 +65,13 @@ Matrixens udvidelsestilstand gemmes sammen med rapporten. En matrix kan fastgør
 > Hvis du bygger en rapport oven på en multidimensionel Analysis Services-model, er der nogle særlige overvejelser, når du skal udvide/skjule, hvis modellen bruger funktionen Standardmedlem. Du kan få flere oplysninger under [Arbejde med flerdimensionelle modeller i Power BI](../connect-data/desktop-default-member-multidimensional-models.md)
 
 ## <a name="using-drill-down-with-the-matrix-visual"></a>Brug detailudledning til matrixvisualiseringen
-Med matrixvisualiseringen kan du foretage en mængde interessante aktiviteter for detailudledning, der ikke var tilgængelige før. Du kan f.eks. foretage detailudledning ved hjælp af rækker, kolonner og endda til individuelle afsnit og celler. Lad os se på, hvordan hver enkelt af disse fungerer.
+Med matrixvisualiseringen kan du foretage mange forskellige interessante aktiviteter til at zoome ind på detaljeniveauet, der ikke var tilgængelige før. Du kan f.eks. foretage detailudledning ved hjælp af rækker, kolonner og endda til individuelle afsnit og celler. Lad os se på, hvordan hver enkelt af disse fungerer.
 
 ### <a name="drill-down-on-row-headers"></a>Detailudledning på rækkeoverskrifter
 
 Når du føjer flere felter til sektionen **Rækker** i området **Felter** i ruden Visualiseringer, aktiverer du detailudledning på rækkerne i matrixvisualiseringen. Dette minder om oprettelse af et hierarki, hvor du derefter kan foretage detailudledning (og så sikkerhedskopiering) via hierarkiet og analysere dataene på hvert niveau.
 
-I det følgende billede indeholder sektionen **Rækker** *Sales stage* og *Opportunity size* og opretter en gruppering (eller et hierarki) i rækkerne, som vi kan foretage detailudledning af.
+På følgende billede indeholder afsnittet **Rækker** *Salgsfase* og *Størrelse af salgsmulighed*, hvilket skaber en gruppering (eller et hierarki) i de rækker, som vi kan zoome ind på detaljeniveauet i for at se oplysninger.
 
 ![Filtrerer kort, der viser, hvilke rækker der er valgt](media/desktop-matrix-visual/power-bi-rows-matrix.png)
 
@@ -79,7 +79,7 @@ Når der er oprettet gruppering for visualiseringen i sektionen **Rækker**, vis
 
 ![matrix med viste kontrolelementer til detailudledning](media/desktop-matrix-visual/power-bi-matrix-drilldown.png)
 
-Som det er tilfældet med funktionsmåden til detailudledning og udvidelse i andre visualiseringer kan vi ved at vælge disse knapper bruge detailudledning (eller sikkerhedskopiering) gennem hierarkiet. I dette tilfælde kan vi foretage detailudledning fra *Sales stage* til *Opportunity size* som vist på følgende billede, hvor ikonet for detailudledning ét niveau ned (fork) er valgt.
+Som det er tilfældet med funktionsmåden til detailudledning og udvidelse i andre visualiseringer kan vi ved at vælge disse knapper bruge detailudledning (eller sikkerhedskopiering) gennem hierarkiet. I dette tilfælde kan vi zoome ind på detaljeniveauet fra *Salgsfase* til *Størrelse af salgsmulighed* som vist på følgende billede, hvor ikonet for **zoom ind på ét detaljeniveau** (fork) er valgt.
 
 ![matrix med vist fork](media/desktop-matrix-visual/power-bi-matrix-drill3.png)
 
@@ -93,7 +93,7 @@ Hvis du vælger **Foretag detailudledning**, udvides matricen for *det pågælde
 
 ![matrix med detailudledning ét niveau ned](media/desktop-matrix-visual/power-bi-drill-down-matrix.png)
 
-Vælg ikonet **Færre detaljer** for at komme tilbage til den forrige visning af øverste niveau. Hvis du derefter vælger **Forslag** > **Vis næste niveau**, får du vist en liste i stigende rækkefølge over alle elementer på næste niveau (i dette tilfælde feltet *Opportunity size*) uden den hierarkiske kategorisering på højere niveau.
+Vælg ikonet **Zoom ud fra detaljeniveauet** for at vende tilbage til forrige visning af øverste niveau. Hvis du derefter vælger **Forslag** > **Vis næste niveau**, får du vist en liste i stigende rækkefølge over alle elementer på næste niveau (i dette tilfælde feltet *Opportunity size*) uden den hierarkiske kategorisering på højere niveau.
 
 ![matrix, der bruger Vis næste niveau](media/desktop-matrix-visual/power-bi-next-level-matrix.png)
 

@@ -6,27 +6,30 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 08/16/2020
+ms.date: 12/09/2020
 LocalizationGroup: Data from files
-ms.openlocfilehash: 07b9ae9522437500da1386974548f420dc0cc1c5
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 14b3329ea2b8636c1e5cf2412ca9843bc777bed1
+ms.sourcegitcommit: b472236df99b490db30f0168bd7284ae6e6095fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96413374"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97600455"
 ---
 # <a name="how-to-apply-sensitivity-labels-in-power-bi"></a>Sådan anvendes følsomhedsmærkater i Power BI
 
-Microsoft Information Protection-følsomhedsmærkater til dine rapporter, dashboards, datasæt og dataflows kan beskytte dit følsomme indhold mod uautoriseret dataadgang og -lækage. Hvis du forsyner dine data med følsomhedsmærkater korrekt, sikrer du, at det kun er godkendte personer, som kan få adgang til dine data. I denne artikel kan du se, hvordan du anvender følsomhedsmærkater i dit indhold.
-
-Sådan kan du anvende følsomhedsmærkater i Power BI:
-* Du skal have en Power BI Pro-licens og redigeringstilladelser til det indhold, du vil forsyne med en mærkat.
-* Du skal tilhøre en sikkerhedsgruppe, der har tilladelse til at anvende følsomhedsmærkater, som beskrevet i artiklen med titlen [Aktivér følsomhedsmærkater i Power BI](./service-security-enable-data-sensitivity-labels.md).
-* Alle [licenskrav og andre krav](./service-security-enable-data-sensitivity-labels.md#licensing-and-requirements) skal være opfyldt.
+Følsomhedsmærkater for Microsoft Information Protection på dine rapporter, dashboards, datasæt, dataflow og .pbix-filer kan beskytte dit følsomme indhold mod uautoriseret dataadgang og -lækage. Hvis du forsyner dine data med følsomhedsmærkater korrekt, sikrer du, at det kun er godkendte personer, som kan få adgang til dine data. I denne artikel kan du se, hvordan du anvender følsomhedsmærkater i Power BI-tjenesten og Power BI Desktop.
 
 Du kan finde flere oplysninger om følsomhedsmærkater i Power BI under [Følsomhedsmærkater i Power BI](service-security-sensitivity-label-overview.md).
 
-## <a name="applying-sensitivity-labels"></a>Datafølsomhedsmærkater
+## <a name="apply-sensitivity-labels-in-the-power-bi-service"></a>Anvend følsomhedsmærkater i Power BI-tjenesten
+
+I Power BI-tjenesten kan du anvende følsomhedsmærkater på rapporter, dashboards, datasæt og dataflow.
+
+Hvis du vil anvende følsomhedsmærkater i Power BI-tjenesten, skal du gøre følgende:
+* Du skal have en [Power BI Pro-licens](./service-admin-purchasing-power-bi-pro.md) og redigeringstilladelser til det indhold, du vil forsyne med en mærkat.
+* Følsomhedsmærkater skal være aktiveret for din organisation. Kontakt din Power BI-administrator, hvis du ikke er sikker på dette.
+* Du skal tilhøre en sikkerhedsgruppe, der har tilladelse til at anvende følsomhedsmærkater, som beskrevet i [Aktivér følsomhedsmærkater i Power BI](./service-security-enable-data-sensitivity-labels.md).
+* Alle [licenskrav og andre krav](./service-security-enable-data-sensitivity-labels.md#licensing-and-requirements) skal være opfyldt.
 
 Når databeskyttelse er aktiveret på din lejer, vises følsomhedsmærkater i kolonnen med følsomhed i listevisningen af dashboards, rapporter, datasæt og dataflow.
 
@@ -46,7 +49,8 @@ Følgende billede illustrerer disse trin i en rapport
 
 1. Klik på **Flere indstillinger (...)** .
 1. Vælg **Indstillinger**.
-1. I ruden med indstillinger skal du vælge den relevante følsomhedsmærkat.
+1. Vælg fanen Datasæt eller Dataflow, afhængigt af hvad der er relevant.
+1. Udvid afsnittet om følsomhedsmærkater, og vælg den relevante følsomhedsmærkat.
 1. Anvend indstillingerne.
 
 De følgende to billeder illustrerer disse trin i et datasæt.
@@ -55,12 +59,52 @@ Vælg **Flere indstillinger (...)** og derefter **Indstillinger**.
 
 ![Åbn indstillinger for datasæt](media/service-security-apply-data-sensitivity-labels/apply-data-sensitivity-labels-05.png)
 
-Åbn afsnittet med følsomhedsmærkater på siden Indstillinger, vælg den ønskede følsomhedsmærkat, og klik på **Anvend**.
+Åbn afsnittet med følsomhedsmærkater under fanen med indstillinger for datasættet, vælg den ønskede følsomhedsmærkat, og klik på **Anvend**.
 
 ![Vælg følsomhedsmærkat](media/service-security-apply-data-sensitivity-labels/apply-data-sensitivity-labels-06.png)
 
-## <a name="removing-sensitivity-labels"></a>Fjernelse af følsomhedsmærkater
-Hvis du vil fjerne en følsomhedsmærkat fra en rapport, et dashboard, et datasæt eller et dataflow, skal du følge [samme fremgangsmåde som for at anvende mærkater](#applying-sensitivity-labels), men du kan vælge **(Ingen)** , når du bliver bedt om at klassificere dataenes følsomhed. 
+## <a name="apply-sensitivity-labels-in-power-bi-desktop-preview"></a>Anvend følsomhedsmærkater i Power BI Desktop (prøveversion)
+
+>[!NOTE]
+>I løbet af de første 48 timer, efter du har tilmeldt dig prøveversionsfunktionen Information Protection i Power BI Desktop, **oplever du muligvis problemer med .pbix-filer, hvor der er anvendt følsomhedsmærkater (f.eks. publicering af .pbix-filen til tjenesten, download af .pbix-filen fra tjenesten)** . Sådanne problemer er forventet og løses automatisk inden for 48 timer.
+
+Sådan bruger du følsomhedsmærkater i Power BI Desktop:
+* Du skal have en [Power BI Pro-licens](./service-admin-purchasing-power-bi-pro.md).
+* Følsomhedsmærkater skal være aktiveret for din organisation. Kontakt din Power BI-administrator, hvis du ikke er sikker på dette.
+* Du skal tilhøre en sikkerhedsgruppe, der har tilladelse til at anvende følsomhedsmærkater, som beskrevet i [Aktivér følsomhedsmærkater i Power BI](./service-security-enable-data-sensitivity-labels.md).
+* Alle [licenskrav og andre krav](./service-security-enable-data-sensitivity-labels.md#licensing-and-requirements) skal være opfyldt.
+* Kontakten til prøveversionsfunktionen Information Protection i Power BI Desktop skal være slået til. Hvis du kan se knappen for følsomhed under fanen Hjem, er prøveversionsfunktionen slået til. Hvis du ikke kan se knappen, skal du gå til **Filer > Indstillinger > Indstillinger > Prøveversionsfunktioner** og markere afkrydsningsfeltet ud for **Information Protection**.
+
+    ![Skærmbillede af siden med prøveversionsfunktioner i Desktop.](media/service-security-apply-data-sensitivity-labels/desktop-preview-features-page.png)
+
+    Hvis du ikke kan se indstillingen til prøveversionen Information Protection, kan prøveversionsfunktionen Information Protection være blokeret af din organisation. I dette tilfælde skal du kontakte din Power BI-administrator.
+
+    >[!NOTE]
+    >Efter du har slået prøveversionsfunktionen Information Protection til, skal du genstarte Desktop for at begynde at bruge følsomhedsmærkater.
+* Du skal være logget på.
+
+Hvis du vil anvende en følsomhedsmærkat på den fil, du arbejder på, skal du klikke på knappen for følsomhed under fanen Hjem og vælge den ønskede mærkat i den viste menu.
+
+![Skærmbillede af menuen for følsomhedsmærkat i Desktop.](media/service-security-apply-data-sensitivity-labels/sensitivity-label-menu-desktop.png)
+
+>[!NOTE]
+> Hvis du har slået funktionen for følsomhedsmærkater til under Prøveversionsfunktioner, men stadig ikke kan se knappen for følsomhed, kan det indikere, at du ikke har en passende licens, eller at du ikke er medlem af en sikkerhedsgruppe, der har tilladelse til at anvende følsomhedsmærkater, som beskrevet i [Aktivér følsomhedsmærkater i Power BI](./service-security-enable-data-sensitivity-labels.md).
+
+Når du har anvendt mærkaten, bliver den synlig på statuslinjen.
+
+![Skærmbillede af følsomhedsmærkat på statuslinjen i Desktop.](media/service-security-apply-data-sensitivity-labels/sensitivity-label-in-desktop-status-bar.png)
+
+### <a name="sensitivity-labels-when-uploading-or-downloading-pbix-files-tofrom-the-service"></a>Følsomhedsmærkater i forbindelse med upload eller download af .pbix-filer til/fra tjenesten
+* Når du publicerer en .pbix-fil til Power BI-tjenesten fra Desktop, eller når du uploader en .pbix-fil til Power BI-tjenesten direkte ved hjælp af **Hent data**, anvendes .pbix-filens mærkat både på rapporten og det datasæt, der oprettes i tjenesten. Hvis den .pbix-fil, du publicerer eller uploader, erstatter eksisterende ressourcer (dvs. ressourcer, der har det samme navn som .pbix-filen), overskriver .pbix-filens mærkat alle mærkater på disse ressourcer.
+* Hvis den rapport og det datasæt, der downloades, begge har mærkater, og hvis disse mærkater er forskellige, anvendes den mærkat, der er mest restriktiv af de to, når du bruger "Download til .pbix" i Power BI-tjenesten.
+
+## <a name="remove-sensitivity-labels"></a>Fjern følsomhedsmærkater
+
+### <a name="service"></a>Tjeneste
+Hvis du vil fjerne en følsomhedsmærkat fra en rapport, et dashboard, et datasæt eller et dataflow, skal du følge [samme fremgangsmåde som for at anvende mærkater i Power BI-tjenesten](#apply-sensitivity-labels-in-the-power-bi-service), men vælge **(Ingen)** , når du bliver bedt om at klassificere dataenes følsomhed.
+
+### <a name="desktop"></a>Desktop
+Fjernelse af følsomhedsmærkaten fra en .pbix-fil, efter den er blevet gemt med mærkaten, understøttes ikke i Desktop i øjeblikket. I sådanne tilfælde anbefales det, at du publicerer filen i Power BI-tjenesten og derefter fjerner mærkaten i tjenesten fra den efterfølgende rapport og det efterfølgende datasæt.
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 

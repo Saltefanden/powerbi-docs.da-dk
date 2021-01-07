@@ -6,14 +6,14 @@ ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment
-ms.custom: contperfq1
-ms.date: 10/21/2020
-ms.openlocfilehash: c9ae23a88bd557681ca89e541f082a69d449ed8c
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.custom: contperf-fy21q1
+ms.date: 12/28/2020
+ms.openlocfilehash: 4bb709e41698bc0dc32341f517593717f64f9b6d
+ms.sourcegitcommit: a465a0c80ffc0f24ba6b8331f88420a0d21ac0b2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96415007"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "97805205"
 ---
 # <a name="understand-the-deployment-process"></a>Om udrulningsprocessen
 
@@ -149,13 +149,21 @@ Følgende datasætegenskaber kopieres ikke under udrulningen:
 
 * Indstillinger for godkendelser
 
-## <a name="incremental-refresh"></a>Trinvis opdatering
+## <a name="supported-dataset-features"></a>Understøttede funktioner i datasæt
+
+Udrulningspipelines understøtter mange funktioner i Power BI-datasæt. Dette afsnit indeholder to funktioner i Power BI-datasæt, der kan forbedre dine udrulningspipelines:
+
+* [Trinvis opdatering](#incremental-refresh)
+
+* [Sammensatte modeller](#composite-models)
+
+### <a name="incremental-refresh"></a>Trinvis opdatering
 
 Udrulningspipelines understøtter funktionen [trinvis opdatering](../admin/service-premium-incremental-refresh.md), der gør det muligt at gøre opdateringen af store datasæt både hurtigere og mere pålidelig med et lavere forbrug.
 
 Med udrulningspipelines kan du foretage opdateringer af et datasæt med trinvis opdatering, samtidig med at du bevarer både data og partitioner. Når du installerer datasættet, kopieres politikken også.
 
-### <a name="activating-incremental-refresh-in-a-pipeline"></a>Aktivering af trinvis opdatering i en pipeline
+#### <a name="activating-incremental-refresh-in-a-pipeline"></a>Aktivering af trinvis opdatering i en pipeline
 
 Hvis du vil aktivere trinvis opdatering, skal du [slå funktionen til i Power BI Desktop](../admin/service-premium-incremental-refresh.md#configure-incremental-refresh) og derefter udgive dit datasæt. Når du har publiceret datasættet, er den trinvise opdateringspolitik den samme på tværs af pipelinen og kan kun redigeres i Power BI Desktop.
 
@@ -169,7 +177,7 @@ Når din pipeline er konfigureret med trinvis opdatering, anbefaler vi, at du br
 
 4. Gennemse de ændringer, du har foretaget i *testfasen*, og når du har kontrolleret dem, skal du installere dem i *produktionsfasen*.
 
-### <a name="usage-examples"></a>Eksempler på brug
+#### <a name="usage-examples"></a>Eksempler på brug
 
 Nedenfor kan du se nogle eksempler på, hvordan du kan integrere trinvis opdatering med udrulningspipelines.
 
@@ -181,7 +189,7 @@ Nedenfor kan du se nogle eksempler på, hvordan du kan integrere trinvis opdater
 
 * Publicer et datasæt, der bruger trinvis opdatering til et arbejdsområde, som er en del af en eksisterende pipeline.
 
-### <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
+#### <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
 
 Ved trinvis opdatering understøtter udrulningspipelines kun datasæt, der bruger [udvidede metadata for datasæt](../connect-data/desktop-enhanced-dataset-metadata.md). Fra og med udgivelsen af Power BI Desktop i september 2020 kan alle datasæt, der oprettes eller ændres med Power BI Desktop, automatisk implementere udvidede metadata for datasæt.
 
@@ -194,6 +202,24 @@ Når du genudgiver et datasæt til en aktiv pipeline med trinvis opdatering akti
 * Omdøbning af ikke-beregnede kolonner i en tabel, hvor trinvis opdatering er aktiveret.
 
 Andre ændringer, f.eks. tilføjelse af en kolonne, fjernelse af en kolonne og omdøbning af en beregnet kolonne, er tilladt. Hvis ændringerne påvirker visningen, skal du dog opdatere, før ændringen er synlig.
+
+### <a name="composite-models"></a>Sammensatte modeller
+
+Ved hjælp af [sammensatte modeller](../transform-model/desktop-composite-models.md) kan du konfigurere en rapport med flere dataforbindelser.
+
+Du kan bruge funktionaliteten til sammensatte modeller til at forbinde et Power BI-datasæt til et eksternt datasæt, f.eks. Azure Analysis Services. Du kan finde flere oplysninger under [Brug af DirectQuery til Power BI-datasæt og Azure Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md).
+
+I en udrulningspipeline kan du bruge sammensatte modeller til at forbinde ét datasæt til et andet Power BI-datasæt, der er uden for pipelinen.  
+
+#### <a name="limitations"></a>Begrænsninger
+
+Følgende forbindelser med sammensatte modeller understøttes ikke:
+
+* Forbindelse af datasæt, der er placeret i det samme arbejdsområde.
+
+* Forbindelse af datasæt, der er placeret i specifikke pipelines.
+
+* Forbindelse af datasæt, der er placeret i den samme pipeline. 
 
 ## <a name="deploying-power-bi-apps"></a>Installation af Power BI-apps
 
