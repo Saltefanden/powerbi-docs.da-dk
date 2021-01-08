@@ -46,7 +46,7 @@
           href: sample-supplier-quality.md
         - name: Download projektmappen Økonomisk eksempel
           href: sample-financial-download.md
-    - name: Begreber
+    - name: Koncepter
       expanded: true
       items:
         - name: Power BI-rapporter
@@ -63,8 +63,6 @@
               href: power-bi-reports-filters-and-highlighting.md
             - name: Stikprøvetagning i forbindelse med højdensitetslinje
               href: desktop-high-density-sampling.md
-            - name: Om visualiseringer af Spørgsmål og svar
-              href: ../visuals/power-bi-visualization-q-and-a.md
             - name: Om tilgængelighed
               href: desktop-accessibility-overview.md
             - name: Naturligt sprog i Spørgsmål og svar
@@ -320,7 +318,7 @@
               href: ../visuals/power-bi-visualization-waterfall-charts.md
         - name: Naturligt sprog i Spørgsmål og svar
           items:
-            - name: Visualisering til Spørgsmål og svar
+            - name: Opret en visualisering til Spørgsmål og svar
               href: ../visuals/power-bi-visualization-q-and-a.md
             - name: Træn Spørgsmål og svar til at forstå spørgsmål
               href: ../natural-language/q-and-a-tooling-teach-q-and-a.md
