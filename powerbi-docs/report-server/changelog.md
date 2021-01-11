@@ -7,13 +7,13 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 12/16/2020
-ms.openlocfilehash: c292e1ccaa03904ee0bfa4825a539430fed71867
-ms.sourcegitcommit: 7bf09116163afaae312eb2b232eb7967baee2c92
+ms.date: 12/31/2020
+ms.openlocfilehash: 7c1df405c80f50b7b98803b68ae2d3887013a623
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97621872"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97886183"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Ændringslog for Power BI-rapportserver
 
@@ -48,6 +48,8 @@ Se [Nyheder i Power BI-rapportserver](whats-new.md) for at få flere oplysninger
             - Opdaterede MHTML-gengivelsesprogrammet til at bruge en nyere HTML-dokumenttype.
 
 - **Power BI Desktop (optimeret til Power BI-rapportserver)**
+   - *Version: 2.86.1321.0 (oktober 2020), udgivet: 18. november 2020*
+        - Fejlrettelser
    - *Version: 2.86.961.0 (oktober 2020), udgivet: 27. september 2020* (nyt build og ny version)
         - Indeholder ændringer, der kræves for at oprette forbindelse med Power BI-rapportserver (oktober 2020)        
    

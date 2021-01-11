@@ -1,6 +1,6 @@
 ---
-title: Konfigurer et miljø for at udvikle en Power BI-visualisering
-description: I denne artikel forklares det, hvordan du konfigurerer dit miljø, så du kan udvikle en Power BI-visualisering
+title: Konfiguration af et miljø til udvikling af en Power BI-visualisering i en integreret Power BI-analyse for at få bedre integreret BI-indsigt
+description: I denne artikel forklares det, hvordan du konfigurerer dit miljø, så du kan udvikle en Power BI-visualisering. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 09/02/2020
-ms.openlocfilehash: e5b176ac9e8d334b6dec9af70c189d2767bace1c
-ms.sourcegitcommit: a465a0c80ffc0f24ba6b8331f88420a0d21ac0b2
+ms.openlocfilehash: 43c5a636a7e3d0396210370df4427e1e13494551
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97805228"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97885884"
 ---
 # <a name="set-up-your-environment-for-developing-a-power-bi-visual"></a>Konfigurer dit miljø for at udvikle en Power BI-visualisering
 

@@ -1,6 +1,6 @@
 ---
-title: Integrer Power BI-indhold i et program til integreret analyse med en tjenesteprincipal og en programhemmelighed
-description: Få mere at vide om, hvordan du godkender for integreret analyse ved hjælp af en tjenesteprincipal i et Azure Active Director-program og en programhemmelighed.
+title: Integrer Power BI-indhold i et program til integreret analyse med en tjenesteprincipal og en programsikkerhed for at muliggøre bedre integreret BI-indsigt
+description: Få mere at vide om, hvordan du godkender for integreret analyse ved hjælp af en tjenesteprincipal i et Azure Active Director-program og en programhemmelighed. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: ''
 ms.date: 11/23/2020
-ms.openlocfilehash: 8cf7b46687491f446d4e17fc96b020dbc08de5fc
-ms.sourcegitcommit: a92a3570eb14793a758a32e8fa1a756ec5d83f8c
+ms.openlocfilehash: 35bdaa8af06187767975126daa1f2445908fed9f
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97708059"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97886781"
 ---
 # <a name="embed-power-bi-content-with-service-principal-and-an-application-secret"></a>Integrer Power BI-indhold med tjenesteprincipal og en programhemmelighed
 

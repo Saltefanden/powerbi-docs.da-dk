@@ -1,18 +1,18 @@
 ---
-title: Eksportér API-rapporter for integreret analyse i Power BI
-description: Få mere at vide om, hvordan du eksporterer en integreret Power BI-rapport for at forbedre din integrerede Power BI-analyse
+title: Eksportér API-rapporter for integreret Power BI-analyse, der giver bedre integreret BI-indsigt
+description: Få mere at vide om, hvordan du eksporterer en integreret Power BI-rapport for at forbedre din integrerede Power BI-analyse. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 12/28/2020
-ms.openlocfilehash: da0f5f155552a8a53b53789f3bfb6ebe839367c5
-ms.sourcegitcommit: a465a0c80ffc0f24ba6b8331f88420a0d21ac0b2
+ms.openlocfilehash: acd9d98b55697e8ca3729cad65a1ead8f01f6e62
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97805136"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887011"
 ---
 # <a name="export-power-bi-report-to-file-preview"></a>Eksportér Power BI-rapport til fil (prøveversion)
 
