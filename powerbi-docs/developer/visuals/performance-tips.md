@@ -1,6 +1,6 @@
 ---
-title: Tip til ydeevne
-description: Sådan får du høj ydeevne i en visualisering i Power BI
+title: Tip til ydeevnen i en integreret Power BI-analyse for at få bedre integreret BI-indsigt
+description: Sådan får du høj ydeevne i en visualisering i Power BI. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 04/20/2020
-ms.openlocfilehash: c22c634ef59a1aae2994dcacaae62dc8ebed7474
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: c8bcf5e13ba769b976ab123adb3ba37f46b0359e
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91746069"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97885930"
 ---
 # <a name="how-to-build-a-high-performance-power-bi-visual"></a>Sådan får du høj ydeevne i en visualisering i Power BI
 I denne artikel gennemgås teknikker til, hvordan en udvikler kan opnå høj ydeevne ved gengivelse af visualiseringer. 

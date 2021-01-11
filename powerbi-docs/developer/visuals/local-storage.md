@@ -1,6 +1,6 @@
 ---
-title: API til lokalt lager i Power BI-visualiseringer
-description: I artiklen beskrives det, hvordan du bruger API til Power BI-visualiseringer til at få adgang til browserens lokale lager
+title: API til lokal lagring i Power BI-visualiseringer i en integreret Power BI-analyse for at få bedre integreret BI-indsigt
+description: I artiklen beskrives det, hvordan du bruger en API til Power BI-visualiseringer til at få adgang til browserens lokale lager. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: rkarlin
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 01/21/2019
-ms.openlocfilehash: e2cb11ea9be85916e6b5557e7933f6a6b5a7159a
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: abec68c5622d3dcd96746148ed7a6da4f06c8ec0
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79380588"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888184"
 ---
 # <a name="local-storage-api"></a>Lokalt lager-API
 

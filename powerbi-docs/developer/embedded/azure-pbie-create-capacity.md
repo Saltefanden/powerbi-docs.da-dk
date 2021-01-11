@@ -1,6 +1,6 @@
 ---
-title: Opret Power BI Embedded-kapacitet på Azure-portalen | Microsoft Docs
-description: I denne artikel beskriver vi, hvordan du opretter Power BI Embedded-kapacitet i Microsoft Azure.
+title: Opret en Power BI Embedded-kapacitet i Azure Portal til din integrerede BI-løsning til en integreret Power BI-analyse
+description: I denne artikel beskriver vi, hvordan du opretter en Power BI Embedded-kapacitet i Microsoft Azure til din integrerede BI-løsning til en integreret Power BI-analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.service: powerbi
@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.reviewer: zakharb
 ms.custom: subject-armqs, devx-track-azurecli
 ms.date: 08/02/2020
-ms.openlocfilehash: 3ba075c33f689d76fb0c94aec09ed9fd309c718d
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 898da0f5e4284183f2ffa08fba8e6a50d9474d15
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96395135"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887517"
 ---
 # <a name="create-power-bi-embedded-capacity-in-the-azure-portal"></a>Opret Power BI Embedded-kapacitet på Azure-portalen
 
@@ -115,7 +115,7 @@ Power BI-integrerede kapacitetskommandoer kræver version 2.3.1 eller nyere af A
 
 ### <a name="create-a-capacity-with-azure-cli"></a>Opret en kapacitet med Azure-kommandolinjegrænsefladen
 
-Brug kommandoen [az Power BI embedded-capacity create](/cli/azure/ext/powerbidedicated/powerbi/embedded-capacity?view=azure-cli-latest#ext-powerbidedicated-az-powerbi-embedded-capacity-create) for at oprette en kapacitet.
+Brug kommandoen [az Power BI embedded-capacity create](/cli/azure/ext/powerbidedicated/powerbi/embedded-capacity#ext-powerbidedicated-az-powerbi-embedded-capacity-create) for at oprette en kapacitet.
 
 ```azurecli
 az powerbi embedded-capacity create --location westeurope
@@ -127,7 +127,7 @@ az powerbi embedded-capacity create --location westeurope
 
 ### <a name="delete-a-capacity-with-azure-cli"></a>Slet en kapacitet med Azure-kommandolinjegrænsefladen
 
-Hvis du vil slette en kapacitet ved hjælp af Azure-kommandolinjegrænsefladen, skal du bruge kommandoen [az powerbi embedded-capacity delete](/cli/azure/ext/powerbidedicated/powerbi/embedded-capacity?view=azure-cli-latest#ext-powerbidedicated-az-powerbi-embedded-capacity-delete).
+Hvis du vil slette en kapacitet ved hjælp af Azure-kommandolinjegrænsefladen, skal du bruge kommandoen [az powerbi embedded-capacity delete](/cli/azure/ext/powerbidedicated/powerbi/embedded-capacity#ext-powerbidedicated-az-powerbi-embedded-capacity-delete).
 
 ```azurecli
 az powerbi embedded-capacity delete --name
@@ -136,7 +136,7 @@ az powerbi embedded-capacity delete --name
 
 ### <a name="manage-your-capacity-with-azure-cli"></a>Administrer din kapacitet med Azure-kommandolinjegrænsefladen
 
-Du kan få vist alle kommandoer i Power BI Embedded Azure-kommandolinjegrænsefladen i [az powerbi](/cli/azure/ext/powerbidedicated/powerbi?view=azure-cli-latest).
+Du kan få vist alle kommandoer i Power BI Embedded Azure-kommandolinjegrænsefladen i [az powerbi](/cli/azure/ext/powerbidedicated/powerbi).
 
 # <a name="arm-template"></a>[ARM-skabelon](#tab/ARM-template)
 

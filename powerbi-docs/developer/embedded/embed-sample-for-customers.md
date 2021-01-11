@@ -1,6 +1,6 @@
 ---
-title: Integreret indhold i dit program til integreret analyse i Power BI for dine kunder
-description: Lær, hvordan du integrerer en rapport, et dashboard eller et felt i et eksempel på integreret analyse i Power BI.
+title: Integrer indhold i dit program til integreret analyse i Power BI for at give dine kunder bedre integreret BI-indsigt
+description: Lær, hvordan du integrerer en rapport, et dashboard eller et felt i et eksempel på integreret analyse i Power BI. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: rkarlin
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 12/22/2020
-ms.openlocfilehash: 5417266658a493bc81da882761431aa3db072dbe
-ms.sourcegitcommit: 1691ce556ab5b22e6f9d06086a054d165d482809
+ms.openlocfilehash: f6ca898bafff0b3375df65b63f913eb81d8dc006
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97745110"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888943"
 ---
 # <a name="tutorial-embed-power-bi-content-using-a-sample-embed-for-your-customers-application"></a>Selvstudium: Integrer Power BI-indhold ved hjælp af et eksempelprogram til *integrering for dine kunder*
 

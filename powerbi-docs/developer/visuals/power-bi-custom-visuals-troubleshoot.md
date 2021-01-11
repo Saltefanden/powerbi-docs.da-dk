@@ -1,6 +1,6 @@
 ---
-title: Fejlfinding af, hvordan man udvikler en brugerdefineret visualisering i Power BI
-description: I denne artikel beskrives nogle almindelige problemer, som kan opstå under udviklingen eller oprettelsen af en brugerdefineret visualisering i Power BI.
+title: Sådan finder du fejl i udviklingen af Power BI-visualiseringer i en integreret Power BI-analyse for at få bedre integreret BI-indsigt
+description: I denne artikel beskrives nogle almindelige problemer, som kan opstå under udviklingen eller oprettelsen af en brugerdefineret visualisering i Power BI. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: troubleshooting
 ms.date: 11/06/2018
-ms.openlocfilehash: fda4bbddb2f0b1a878e0ddf85f31795405c66331
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 440bb6648dca1eaa85b697a10e9fd41180c66d7e
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96417146"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888092"
 ---
 # <a name="troubleshoot-power-bi-visuals"></a>Fejlfind visualiseringer i Power BI
 
@@ -40,6 +40,6 @@ Kør visualiseringsserveren med kommandoen `pbiviz start` i terminalens kommando
 
 Du er meget velkommen til at kontakte supportteamet for Power BI-visuals (pbicvsupport@microsoft.com), hvis du har spørgsmål, kommentarer eller problemer.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 Du kan finde flere oplysninger under [Ofte stillede spørgsmål om Power BI-visualiseringer](power-bi-custom-visuals-faq.md#organizational-power-bi-visuals).

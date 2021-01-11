@@ -1,6 +1,6 @@
 ---
-title: Ændringslog for visualiserings-API i Power BI
-description: I denne artikel beskrives vigtige ændringer i forskellige versioner af visualiserings-API'en i Power BI
+title: API-ændringslog til Power BI-visualiseringer i en integreret Power BI-analyse for at få bedre integreret BI-indsigt
+description: I denne artikel beskrives vigtige ændringer i forskellige versioner af visualiserings-API'en i Power BI. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 03/13/2019
-ms.openlocfilehash: c43542bc6c2bb0699403062f68024f9718bbbb60
-ms.sourcegitcommit: 54e571a10b0fdde5cd6036017eac9ef228de5116
+ms.openlocfilehash: 4ed42f8c9c3acf740b68bf6c28aaa201efb0d5ba
+ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "92501943"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97927137"
 ---
 # <a name="power-bi-visuals-api-changelog"></a>Ændringslog for visualiserings-API i Power BI
 Denne side indeholder en hurtig oversigt over API-versionerne. De versioner, der er angivet her, anses som stabile og ændres ikke.
@@ -43,6 +43,7 @@ Denne side indeholder en hurtig oversigt over API-versionerne. De versioner, der
 ## <a name="api-v220"></a>API v2.2.0
   * Understøtter **[gendannelse af JSON-filter fra DataView](./filter-api.md#restore-the-json-filter-from-the-data-view)**
   * **[ContextMenu-API](./context-menu.md)**
+  * Understøtter funktionen **[Detaljeadgang](../../create-reports/desktop-drillthrough.md)**
 
 ## <a name="api-v210"></a>API v2.1.0
   * Forbedret ydeevne:

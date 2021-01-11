@@ -7,14 +7,14 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 04/27/2020
+ms.date: 01/04/2021
 LocalizationGroup: Share your work
-ms.openlocfilehash: a7f8c6d52acff8cbaaa00004448a3fae300afb9b
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: cf056581c7c1f472e1e7ce20baf3d7afd8815bda
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96411902"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97886004"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>Integrer en rapport på en sikker portal eller et websted
 
@@ -26,11 +26,11 @@ Indstillingen **Integrer** understøtter [Filtre for URL-adresser](service-url-f
 
 1. Åbn en rapport i Power BI-tjenesten.
 
-2. I menuen **Flere indstillinger (...)** skal du vælge **Integrer** >  **Websted eller portal**.
+2. I menuen **Del** skal du vælge **Integrer rapport** >  **Websted eller portal**.
 
     ![Indstillingen Websted eller portal](media/service-embed-secure/power-bi-more-options-website.png)
 
-2. Vælg indstillingen **Integrer** for at åbne en dialogboks, der indeholder et link og en iFrame, som du kan bruge til at integrere rapporten på en sikker måde.
+2. I dialogboksen **Kode til sikker integration** skal du vælge **det link, som du kan bruge til at integrere dette indhold** eller den **HTML-kode, som du kan indsætte i din blog eller på dit websted** i en iFrame.
 
     ![Dialogboksen til indstillingen Integrer](media/service-embed-secure/secure-embed-code-dialog.png)
 

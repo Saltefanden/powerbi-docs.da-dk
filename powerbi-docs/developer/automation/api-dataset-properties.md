@@ -1,6 +1,6 @@
 ---
-title: Egenskaber for Power BI-datasæt
-description: Få mere at vide om Power BI-datasæt API'ers egenskaber
+title: Egenskaber for Power BI-datasæt i en integreret Power BI-analyse, der giver bedre integreret BI-indsigt
+description: Få mere at vide om egenskaber for Power BI-datasæt-API'er. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/08/2018
-ms.openlocfilehash: e0092003cbf019bcf720eeb7aa32e8a9e800f143
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: b4bd173c2f3730a0a6082214afbfdf5760048102
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91747292"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887678"
 ---
 # <a name="dataset-properties"></a>Egenskaber for datasæt
 
@@ -22,56 +22,56 @@ Den aktuelle v1 for datasæts API giver kun mulighed for at oprette et datasæt 
 > [!IMPORTANT]
 > Der kan tilgås på siden [Datasæts handlingsgrupper](/rest/api/power-bi/datasets).
 
-## <a name="dataset"></a>Dataset
+## <a name="dataset"></a>Datasæt
 
-Navn  |Type  |Beskrivelse  |Skrivebeskyttet  |Påkrævet
+Name  |Type  |Beskrivelse  |Skrivebeskyttet  |Påkrævet
 ---------|---------|---------|---------|---------
-id     |  Guid       | Entydigt id for datasættet overalt i systemet.        | Sand        | Falsk        
-name     | Streng        | Datasættets brugerdefinerede navn.        | Falsk        | Sand        
+id     |  Guid       | Entydigt id for datasættet overalt i systemet.        | Sandt        | Falsk        
+name     | Streng        | Datasættets brugerdefinerede navn.        | Falsk        | Sandt        
 tabeller     | Tabel[]        | Samling af tabeller.        |  Falsk       | Falsk        
 relationer     | Relation[]        | Samling af relationer mellem tabeller.        | Falsk        |  Falsk  
 standardtilstand     | Streng        | Bestemmer, om datasættet sendes via push, streames elle begge dele, med værdierne "Push" og "Streaming".         | Falsk        |  Falsk
 
 ## <a name="table"></a>Tabel
 
-Navn  |Type  |Beskrivelse  |Skrivebeskyttet  |Påkrævet
+Name  |Type  |Beskrivelse  |Skrivebeskyttet  |Påkrævet
 ---------|---------|---------|---------|---------
-name     | Streng        |  Tabellens brugerdefinerede navn. Bruges også som id for tabellen.       | Falsk        |  Sand       
-kolonner     |  Kolonne[]       |  Samling af kolonner.       | Falsk        |  Sand       
+name     | Streng        |  Tabellens brugerdefinerede navn. Bruges også som id for tabellen.       | Falsk        |  Sandt       
+kolonner     |  Kolonne[]       |  Samling af kolonner.       | Falsk        |  Sandt       
 målinger     | måling[]        |  Samling af målinger.       | Falsk        |  Falsk       
-isHidden     | Boolean        | Hvis true, er tabellen skjult for klientværktøjer.        | Falsk        | Falsk        
+isHidden     | Boolesk        | Hvis true, er tabellen skjult for klientværktøjer.        | Falsk        | Falsk        
 
 ## <a name="column"></a>Kolonne
 
-Navn  |Type  |Beskrivelse  |Skrivebeskyttet  |Påkrævet
+Name  |Type  |Beskrivelse  |Skrivebeskyttet  |Påkrævet
 ---------|---------|---------|---------|---------
-name     |  Streng        | Kolonnens brugerdefinerede navn.        |  Falsk       | Sand       
-dataType     |  Streng       |  Understøttede [EDM-datatyper](/dotnet/framework/data/adonet/entity-data-model-primitive-data-types) og begrænsninger. Se [Begrænsninger for datatypen](#data-type-restrictions).      |  Falsk       | Sand        
+name     |  Streng        | Kolonnens brugerdefinerede navn.        |  Falsk       | Sandt       
+dataType     |  Streng       |  Understøttede [EDM-datatyper](/dotnet/framework/data/adonet/entity-data-model-primitive-data-types) og begrænsninger. Se [Begrænsninger for datatypen](#data-type-restrictions).      |  Falsk       | Sandt        
 formatString     | Streng        | En streng, der beskriver, hvordan værdien skal formateres, når den vises. Hvis du vil vide mere om strengformatering, se [FORMAT_STRING-indholdet](/analysis-services/multidimensional-models/mdx/mdx-cell-properties-format-string-contents).      | Falsk        | Falsk        
 sortByColumn    | Streng        |   Strengnavnet på en kolonne i samme tabel, der bruges til at bestille den aktuelle kolonne.     | Falsk        | Falsk       
 dataCategory     | Streng        |  Strengværdi, der bruges til datakategorien, som beskriver dataene i denne kolonne. Almindelige værdier omfatter: adresse, by, kontinent, land, billede, BilledUrl, breddegrad, længdegrad, organisation, sted, postnummer, stat eller land, WebUrl       |  Falsk       | Falsk        
-isHidden    |  Boolean       |  Egenskaben, der angiver, om kolonnen er skjult i visningen. Standardindstillingen er false.       | Falsk        | Falsk        
+isHidden    |  Boolesk       |  Egenskaben, der angiver, om kolonnen er skjult i visningen. Standard er false.       | Falsk        | Falsk        
 summarizeBy     | Streng        |  Standardmetode for sammenlægning til kolonnen. Værdier omfatter: standard, ingen, sum, min, maks, antal, gennemsnit, distinctCount     |  Falsk       | Falsk
 
 ## <a name="measure"></a>Måling
 
-Navn  |Type  |Beskrivelse  |Skrivebeskyttet  |Påkrævet
+Name  |Type  |Beskrivelse  |Skrivebeskyttet  |Påkrævet
 ---------|---------|---------|---------|---------
-name     | Streng        |  Målingens brugerdefinerede navn.       |  Falsk       | Sand        
-udtryk     | Streng        | Et gyldigt DAX-udtryk.        | Falsk        |  Sand       
+name     | Streng        |  Målingens brugerdefinerede navn.       |  Falsk       | Sandt        
+udtryk     | Streng        | Et gyldigt DAX-udtryk.        | Falsk        |  Sandt       
 formatString     | Streng        |  En streng, der beskriver, hvordan værdien skal formateres, når den vises. Hvis du vil vide mere om strengformatering, se [FORMAT_STRING-indholdet](/analysis-services/multidimensional-models/mdx/mdx-cell-properties-format-string-contents).       | Falsk        | Falsk        
 isHidden     | Streng        |  Hvis true, er tabellen skjult for klientværktøjer.       |  Falsk       | Falsk       
 
 ## <a name="relationship"></a>Relation
 
-Navn  |Type  |Beskrivelse  |Skrivebeskyttet  |Påkrævet 
+Name  |Type  |Beskrivelse  |Skrivebeskyttet  |Påkrævet 
 ---------|---------|---------|---------|---------
-name     | Streng        | Relationens brugerdefinerede navn. Bruges også som id for relationen.        | Falsk       | Sand        
+name     | Streng        | Relationens brugerdefinerede navn. Bruges også som id for relationen.        | Falsk       | Sandt        
 crossFilteringBehavior     | Streng        |    Relationens filterretning: OneDirection (standard), BothDirections, automatisk       | Falsk        | Falsk        
-fromTable     | Streng        | Navnet på fremmed nøgle-tabellen.        | Falsk        | Sand         
-fromColumn    | Streng        | Navnet på fremmed nøgle-kolonnen.        | Falsk        | Sand         
-toTable    | Streng        | Navnet på tabellen med den primære nøgle.        | Falsk        | Sand         
-toColumn     | Streng        | Navnet på kolonnen med den primære nøgle.        | Falsk        | Sand        
+fromTable     | Streng        | Navnet på fremmed nøgle-tabellen.        | Falsk        | Sandt         
+fromColumn    | Streng        | Navnet på fremmed nøgle-kolonnen.        | Falsk        | Sandt         
+toTable    | Streng        | Navnet på tabellen med den primære nøgle.        | Falsk        | Sandt         
+toColumn     | Streng        | Navnet på kolonnen med den primære nøgle.        | Falsk        | Sandt        
 
 ## <a name="data-type-restrictions"></a>Begrænsninger for datatypen
 
@@ -81,7 +81,7 @@ Datatype  |Begrænsninger
 ---------|---------
 Int64     |   Int64.MaxValue og Int64.MinValue er ikke tilladt.      
 Double     |  Værdierne Double.MaxValue og Double.MinValue er ikke tilladt. NaN understøttes ikke. +Infinity og -Infinity understøttes ikke i visse funktioner (f.eks. Min, Max).       
-Boolean     |   Sand eller falsk.
+Boolesk     |   Sand eller falsk.
 Datetime    |   Under indlæsning af data beregnes værdier baseret på brøkdele af dagen i hele multipler af 1/300 sekunder (3,33 ms).      
 Streng     |  Tillader i øjeblikket op til 4.000 tegn pr. strengværdi.
 Decimal|præcision = 28, skala = 4

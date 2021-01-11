@@ -1,6 +1,6 @@
 ---
-title: Fejlfinding af dit program til integreret analyse i Power BI
-description: Denne artikel beskriver nogle almindelige problemer, som kan opstå under integrationen af indhold fra Power BI.
+title: Fejlfinding af dit integrerede Power BI-analyseprogram for at få bedre integreret BI-indsigt
+description: Denne artikel beskriver nogle almindelige problemer, som kan opstå under integrationen af indhold fra Power BI. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: troubleshooting
 ms.date: 02/05/2019
-ms.openlocfilehash: f46bdf5aec254763257fa4b121b4b8c135a0d58a
-ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
+ms.openlocfilehash: db2ae20436eddc4cb06287b6266488b65588dcb5
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97098070"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887195"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Foretag fejlfinding af dit integrerede program
 
@@ -119,7 +119,7 @@ Vi anbefaler, at du kun aktiverer denne politik for ét program ad gangen.
 
 Hvis du vil oprette denne politik, skal du være en _ *Global administrator** for den mappe, hvor du opretter politikken og tildelingen. Her er et eksempel på et script til oprettelse af politikken og tildeling af den til SP for dette program:
 
-1. Installér [Azure AD PowerShell-modulet som prøveversion](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
+1. Installér [Azure AD PowerShell-modulet som prøveversion](/powershell/azure/active-directory/install-adv2).
 
 2. Kør følgende PowerShell-kommandoer linje for linje. Sørg for, at variablen $sp ikke har mere end ét program som resultat.
 

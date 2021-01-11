@@ -1,6 +1,6 @@
 ---
-title: Integreret indhold i dit program til integreret analyse i Power BI for din organisation
-description: Få mere at vide om, hvordan du integrerer en rapport (Power BI eller sideinddelt), et dashboard eller et felt i et program ved hjælp af Power BI-API'er til integreret analyse for din organisation. Få mere at vide om, hvordan du integrerer Power BI i dit program ved hjælp af software til integreret analyse, integrerede analyseværktøjer eller integrerede værktøjer til business intelligence.
+title: Integrer indhold i dit program til integreret analyse i Power BI for at give din organisation bedre integreret BI-indsigt
+description: Få mere at vide om, hvordan du integrerer Power BI i dit program ved hjælp af software til integreret analyse, integrerede analyseværktøjer eller integrerede værktøjer til business intelligence. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/04/2020
-ms.openlocfilehash: 223495b68f160b637f5bcf40b37f1f1a1365fffd
-ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
+ms.openlocfilehash: 78ba14c8a715c927f35c32244734e66a5fb80473
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97098162"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888966"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Selvstudium: Integrer Power BI-indhold i en app til din organisation
 

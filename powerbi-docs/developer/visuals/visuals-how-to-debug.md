@@ -1,6 +1,6 @@
 ---
-title: Sådan foretager du fejlfinding af Power BI-visualiseringer
-description: Denne artikel indeholder en beskrivelse af, hvordan du foretager fejlfinding af Power BI-visualiseringer.
+title: Sådan finder du fejl i Power BI-visualiseringer i en integreret Power BI-analyse for at få bedre integreret BI-indsigt
+description: Denne artikel indeholder en beskrivelse af, hvordan du foretager fejlfinding af Power BI-visualiseringer. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 02/14/2020
-ms.openlocfilehash: f3a3551db1d7d995db0194ff7fa9b7141415c9eb
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: 0005fe6cfd14f0377cdd7ff648aaa3c5cc96a751
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91525541"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888368"
 ---
 # <a name="how-to-debug-power-bi-visuals"></a>Sådan foretager du fejlfinding af Power BI-visualiseringer
 

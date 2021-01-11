@@ -1,6 +1,6 @@
 ---
-title: Introduktion til brug af farvehjælpeprogrammer i Power BI-visualiseringer
-description: I denne artikel beskrives det, hvordan brugen af farvehjælpeprogrammer forenkler anvendelsen af temaer og paletter for visualiseringens datapunkter i Power BI-visualiseringer
+title: Introduktion til brug af farvehjælpeprogrammer i Power BI-visualiseringer i en integreret Power BI-analyse for at opnå bedre integreret BI-indsigt
+description: I denne artikel beskrives det, hvordan brugen af farvehjælpeprogrammer forenkler anvendelsen af temaer og paletter for visualiseringens datapunkter i Power BI-visualiseringer. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 02/14/2020
-ms.openlocfilehash: 8de530871739a18c1afc72cee3e0da5fc70ebb16
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: cc75188d806d653766860b2fada9028477a75f71
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79379346"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887839"
 ---
-# <a name="color-utils"></a>Farvehjælpeprogrammer
+# <a name="color-utils"></a>Hjælpeprogrammer til farver
 Denne artikel kan hjælpe dig med at installere, importere og bruge hjælpeprogrammer til farver. I denne artikel beskrives det, hvordan brugen af farvehjælpeprogrammer forenkler anvendelsen af temaer og paletter for visualiseringens datapunkter i Power BI-visualiseringer.
 
 ## <a name="requirements"></a>Krav

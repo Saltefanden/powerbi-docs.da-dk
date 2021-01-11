@@ -1,6 +1,6 @@
 ---
-title: Føj rækker til en tabel
-description: Se, hvordan du overfører data – føj rækker til en Power BI-tabel
+title: Føj rækker til en tabel i en integreret Power BI-analyse for at få bedre integreret BI-indsigt
+description: Se, hvordan du overfører data – føj rækker til en Power BI-tabel. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: madia
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 02/05/2019
-ms.openlocfilehash: b43e9c93499f60039a924051c30b0ed631c85e8e
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: b34bc292d832938f34766ef94c5d9addd7b9e271
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91748373"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887540"
 ---
 # <a name="step-5-add-rows-to-a-power-bi-table"></a>Trin 5: Føj rækker til en Power BI-tabel
 

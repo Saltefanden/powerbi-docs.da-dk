@@ -1,6 +1,6 @@
 ---
-title: Introduktion til brug af formateringshjælpeprogrammer i Power BI-visual
-description: I denne artikel beskrives det, hvordan du bruger formateringshjælpeprogrammer til at formatere værdier og anvende lokalisering på værdier i Power BI-visual
+title: Introduktion til brug af formateringshjælpeprogrammer i Power BI-visualiseringer i en integreret Power BI-analyse for at opnå bedre integreret BI-indsigt
+description: I denne artikel beskrives det, hvordan du bruger formateringshjælpeprogrammer til at formatere værdier og anvende lokalisering på værdier i Power BI-visualiseringer. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: rkarlin
@@ -9,14 +9,14 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 06/18/2019
-ms.openlocfilehash: dc2d036ab1e3e3dab551269163ced2f066a71626
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 564f6587ff361e3b2860bafb4ae43bc19ad8c2ba
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79378018"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887793"
 ---
-# <a name="formatting-utils"></a>Formateringshjælpeprogrammer
+# <a name="formatting-utils"></a>Hjælpeprogrammer til formatering
 
 Formateringshjælpeprogrammer indeholder de klasser, grænseflader og metoder til formatering af værdier. Det indeholder også udvidermetoder til at behandle strenge og måle tekstens størrelse i SVG/HTML-dokumentet.
 
@@ -650,6 +650,6 @@ valueFormatter.create({});
 // returns: an instance of IValueFormatter.
 ```
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 [Føj lokaliseringer til en brugerdefineret visual i Power BI](localization.md)  

@@ -1,6 +1,6 @@
 ---
-title: Avanceret redigeringstilstand i Power BI-visualiseringer
-description: I denne artikel beskrives det, hvordan du angiver avancerede kontrolelementer til brugergrænsefladen i Power BI-visualiseringer.
+title: Avanceret redigeringstilstand i Power BI-visualiseringer i en integreret Power BI-analyse for at få bedre integreret BI-indsigt
+description: I denne artikel beskrives det, hvordan du angiver avancerede kontrolelementer til brugergrænsefladen i Power BI-visualiseringer. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 97242883fe90c8f5e115818a24e4bb1c49f69b77
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 02f02f23d3dfd7ec514e17d1bab17be715e9cd7d
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79380546"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97889127"
 ---
 # <a name="advanced-edit-mode-in-power-bi-visuals"></a>Avanceret redigeringstilstand i Power BI-visualiseringer
 

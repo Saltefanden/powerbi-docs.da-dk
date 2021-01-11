@@ -9,12 +9,12 @@ ms.subservice: pbi-fundamentals
 ms.topic: conceptual
 ms.date: 04/14/2020
 LocalizationGroup: Get started
-ms.openlocfilehash: 71ed2610ea77900fe51542b2257f4795f201694f
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: aac8eac050a3c864833d16a12016a1cc0ae398b7
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96394951"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888345"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheder i Power BI-tjenesten
 Kontrollér denne side for at læse om kendte problemer og nyudgivne funktioner i **Power BI-tjenesten**. Du kan finde relaterede oplysninger om nyheder under:
@@ -55,13 +55,13 @@ Du kan også få mere at vide om nyheder og funktioner på YouTube-kanalerne.
 * Ny aktivitetslog-API, der gør det muligt for administratorer af Power BI-tjenesten at spore bruger- og administratoraktiviteter i deres lejer.
 
 ### <a name="november-2019"></a>November 2019
-* Offentlig prøveversion af [store modeller i Power BI Premium] (admin/service-premium-large-models.md].
+* Offentlig prøveversion af [store modeller i Power BI Premium](../admin/service-premium-large-models.md).
 * Offentlig prøveversion af brugen kontrolelementer til Microsoft Cloud App Security i Power BI.
 
 ### <a name="october-2019"></a>Oktober 2019
 * Ny Power Automate-handling, der opdaterer Power BI-datasæt.
 * [Kontaktliste](https://powerbi.microsoft.com/blog/announcing-new-contact-lists-for-reports-and-dashboards-in-the-power-bi-service/) til rapporter og dashboards i Power BI-tjenesten.
-* Generel tilgængelighed af [automatiseret maskinel indlæring] (transform-model/service-machine-learning-automated
+* Generel tilgængelighed af [Automatiseret maskinel indlæring](../transform-model/service-machine-learning-automated.md)
 * Offentlig prøveversion af visning af dataafstamning i Power BI.
 
 ### <a name="september-2019"></a>September 2019

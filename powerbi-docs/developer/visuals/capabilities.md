@@ -1,6 +1,6 @@
 ---
-title: Funktioner og egenskaber for visualiseringer i Power BI
-description: I denne artikel beskrives egenskaberne og funktionerne for visualiseringer i Power BI.
+title: Egenskaber for Power BI-visualiseringer i en integreret Power BI-analyse for at få bedre integreret BI-indsigt
+description: I denne artikel beskrives egenskaberne og funktionerne for visualiseringer i Power BI. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: e3af800696fd593f092cc46f9a59df2d0a5f94e2
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: e0fb17053ff8e6d17321994d515d8b69dbe8e22b
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79380293"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888253"
 ---
 # <a name="capabilities-and-properties-of-power-bi-visuals"></a>Funktioner og egenskaber for visualiseringer i Power BI 
 

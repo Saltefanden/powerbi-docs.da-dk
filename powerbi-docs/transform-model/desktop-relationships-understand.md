@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
 ms.date: 10/15/2019
-ms.openlocfilehash: 32e6cccf738d85ed58922c199c3a6093a54019db
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 7aeae77efeadfa3b39f9c39cadc36b2a046286b2
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96413788"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888564"
 ---
 # <a name="model-relationships-in-power-bi-desktop"></a>Modelrelationer i Power BI Desktop
 
@@ -146,21 +146,21 @@ For det første kræves der modelteori for at forstå relationsevalueringer.
 
 En import eller DirectQuery-model henter alle sine data fra enten VertiPaq-cachen eller kildedatabasen. I begge tilfælde kan Power BI afgøre, om der findes en "en"-side af en relation.
 
-En sammensat model kan dog bestå af tabeller ved hjælp af forskellige lagringstilstande (import, DirectQuery eller dobbelt) eller flere DirectQuery-kilder. Hver kilde, herunder VertiPaq-cachen for importdata, anses for at være en _dataø_. Modelrelationer kan derefter klassificeres som _intern_ eller _på tværs_. En intern forbindelse er en, der relaterer til to tabeller inden for en dataø, mens en tværgående relation er relateret til tabeller fra forskellige dataøer. Bemærk, at relationer i import- eller DirectQuery-modeller altid er interne.
+En sammensat model kan dog bestå af tabeller ved hjælp af forskellige lagringstilstande (import, DirectQuery eller dobbelt) eller flere DirectQuery-kilder. Hver kilde, herunder VertiPaq-cachen for importdata, anses for at være en _kildegruppe_. Modelrelationer kan derefter klassificeres som en _intern kildegruppe_ eller en _intern/tværgående kildegruppe_. En relation, der er en intern kildegruppe, er en, der forbinder to tabeller i en kildegruppe, mens en relation med en intern/tværgående kildegruppe forbinder tabeller fra forskellige kildegrupper. Bemærk, at relationer i import- eller DirectQuery-modeller altid er en intern kildegruppe.
 
 Lad os se et eksempel på en sammensat model.
 
-:::image type="content" source="media/desktop-relationships-understand/data-island-example.png" alt-text="Eksempel på en sammensat model bestående af to øer.":::
+:::image type="content" source="media/desktop-relationships-understand/source-group-example.png" alt-text="Eksempel på en sammensat model bestående af to kildegrupper.":::
 
-I dette eksempel består den sammensatte model af to øer: en VertiPaq-dataø og en DirectQuery-kildedataø. VertiPaq-dataøen indeholder tre tabeller, og DirectQuery-kildedataøen indeholder to tabeller. Der eksisterer en tværgående relation, som kan relatere en tabel i VertiPaq-dataøen til en tabel i DirectQuery-kildedataøen.
+I dette eksempel består den sammensatte model af to kildegrupper: en VertiPaq-kildegruppe og en DirectQuery-kildegruppe. VertiPaq-kildegruppen indeholder tre tabeller, og DirectQuery-kildegruppen indeholder to tabeller. Der er en tværgående relation, som kan forbinde en tabel i VertiPaq-kildegruppen med en tabel i DirectQuery-kildegruppen.
 
 ### <a name="regular-relationships"></a>Almindelige relationer
 
-En modelrelation er _almindelig_, når forespørgselsprogrammet kan bestemme relationens "en"-side. Det har bekræftelse på, at kolonnen "en" indeholder entydige værdier. Alle en til mange-relationer mellem øer er almindelige relationer.
+En modelrelation er _almindelig_, når forespørgselsprogrammet kan bestemme relationens "en"-side. Det har bekræftelse på, at kolonnen "en" indeholder entydige værdier. Alle relationer med en intern en til mange-kildegruppe er almindelige relationer.
 
-I følgende eksempel er der to almindelige relationer, der begge er markeret som **R**. Relationerne omfatter en til mange-relationen inden for Vertipaq-øen og mange-relationerne inden for DirectQuery-kilden.
+I følgende eksempel er der to almindelige relationer, der begge er markeret som **R**. Relationerne omfatter en til mange-relationen inden for Vertipaq-kildegruppen og en til mange-relationen inden for DirectQuery-kilden.
 
-:::image type="content" source="media/desktop-relationships-understand/data-island-example-regular.png" alt-text="Eksempel på en sammensat model bestående af to øer med almindelige relationer markeret.":::
+:::image type="content" source="media/desktop-relationships-understand/source-group-example-regular.png" alt-text="Eksempel på en sammensat model bestående af to kildegrupper, hvor almindelige relationer er markeret.":::
 
 I forbindelse med importmodeller, hvor alle data er gemt i VertiPaq-cachen, oprettes der en datastruktur for hver almindelig relation på dataopdateringstidspunktet. Datastrukturerne består af indekserede tilknytninger af alle kolonne til kolonne-værdier, og formålet er at fremskynde sammenkædningen af tabeller på forespørgselstidspunktet.
 
@@ -186,11 +186,11 @@ I dette eksempel består modellen af tre tabeller: **Kategori**, **Produkt** og 
 En modelrelation er _begrænset_, når der ikke er nogen garanteret "en"-side. Det kan skyldes to årsager:
 
 - Relationen bruger en mange til mange-kardinalitetstype (selvom en eller begge kolonner indeholder entydige værdier)
-- Relationen er på tværs af øen (hvilket kun kan være tilfældet for sammensatte modeller)
+- Relationen er på tværs af kildegruppen (hvilket kun kan være tilfældet for sammensatte modeller)
 
-I følgende eksempel er der to begrænsede relationer, der begge er markeret som **L**. De to relationer omfatter mange til mange-relationen inden for Vertipaq-øen og en til mange-relationen på tværs af øen.
+I følgende eksempel er der to begrænsede relationer, der begge er markeret som **L**. De to relationer omfatter mange til mange-relationen inden for Vertipaq-kildegruppen og en til mange-relationen på tværs af kildegruppen.
 
-:::image type="content" source="media/desktop-relationships-understand/data-island-example-limited.png" alt-text="Eksempel på en sammensat model bestående af to øer med begrænsede relationer markeret.":::
+:::image type="content" source="media/desktop-relationships-understand/source-group-example-limited.png" alt-text="Eksempel på en sammensat model bestående af to kildegrupper, hvor begrænsede relationer er markeret.":::
 
 I forbindelse med importmodeller oprettes der aldrig datastrukturer for begrænsede relationer. Det betyder, at tabellens joinforbindelser skal løses på forespørgselstidspunktet.
 
@@ -202,7 +202,7 @@ Der er yderligere begrænsninger i forbindelse med begrænsede relationer:
 - Gennemtvingning af RLS har topologibegrænsninger
 
 > [!NOTE]
-> I Power BI Desktops modelvisning er det ikke altid muligt at afgøre, om en modelrelation er almindelig eller begrænset. En mange til mange-relation er altid begrænset, da den er en en til mange-relation, når den er en tværgående relation. Hvis du vil finde ud af, om det er en tværgående relation, skal du inspicere tabellagingstilstandene og datakilderne for at nå frem til den korrekte afgørelse.
+> I Power BI Desktops modelvisning er det ikke altid muligt at afgøre, om en modelrelation er almindelig eller begrænset. En mange til mange-relation er altid begrænset på samme måde som en en til mange-relation, når der er tale om en relation på tværs af en kildegruppe. Hvis du vil finde ud af, om det er en relation på tværs af en kildegruppe, skal du inspicere tabellagringstilstandene og datakilderne for at nå frem til den korrekte afgørelse.
 
 ### <a name="precedence-rules"></a>Rangplaceringsregler
 
@@ -216,10 +216,10 @@ Tovejs relationer kan introducere flere – og derfor tvetydige – filteroverf�
 
 Følgende liste viser en oversigt over filtres overførselsydeevne fra den hurtigste til langsomste:
 
-1. En til mange-relationer mellem øer
+1. En til mange-relationer i en intern kildegruppe
 2. Mange til mange-kardinalitetsrelationer
 3. Mange til mange-modelrelationer, der opnås med en mellemliggende tabel, og som omfatter mindst én tovejs relation
-4. Relationer på tværs af øer
+4. Relationer i en tværgående kildegruppe
 
 ## <a name="next-steps"></a>Næste trin
 

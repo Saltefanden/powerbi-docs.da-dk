@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 12/03/2020
+ms.date: 01/04/2021
 LocalizationGroup: Share your work
-ms.openlocfilehash: 76f45ac7aee01cb907e727bc8cb12a69bd234d72
-ms.sourcegitcommit: 513c4b884a58e1da2680579339c24c46091bbfb2
+ms.openlocfilehash: 800e81b8fe5e9c2f108b71a4d8fb6bf9732a29ac
+ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96613871"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97926824"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publicer på internettet fra Power BI
 
@@ -50,18 +50,19 @@ I fremgangsmåden nedenfor beskrives det, hvordan du bruger **Publicer på inter
 
    ![Gennemse advarslen](media/service-publish-to-web/publish_to_web3_ga.png)
 
-5. Der vises en dialogboks med et link. Vælg linket for at sende det i en mail, eller kopiér HTML-filen. Du kan integrere linket i kode, f.eks. en iFrame-kode, eller indsætte det direkte på en webside eller i en blog.
+5. I dialogboksen **Udført** kan du se et eksempel på, hvordan rapporten vil se ud. Vælg **størrelse** og **standardside**. 
+
+    Du kan også tilføje et **pladsholderbillede** for at få websiden til at blive indlæst hurtigere. Med et pladsholderbillede kan personer, der besøger din rapport på internettet, se knappen **Vis interaktivt indhold**, som de kan vælge for at få vist selve rapporten. 
+
+    Foretag disse ændringer først. Kopiér derefter linket for at sende det i en mail, eller kopiér HTML-koden, som skal indsættes på et websted. Du kan integrere linket i kode, f.eks. en iFrame-kode, eller indsætte det direkte på en webside eller i en blog.
 
    ![Fuldført: et link og HTML](media/service-publish-to-web/publish_to_web4.png)
 
-6. Hvis du tidligere har oprettet en integreringskode for en rapport, og du vælger **Publicer på internettet**, kan du ikke se dialogboksene i trin 2-4. I stedet vises dialogboksen **Integreringskode**:
+6. Hvis du tidligere har oprettet en integreringskode for en rapport, og du vælger **Publicer på internettet**, kan du ikke se dialogboksene i trin 2-4. I stedet vises dialogboksen **Integreringskode**.
 
    ![Dialogboksen Integrer kode](media/service-publish-to-web/publish_to_web5.png)
 
    Du kan kun oprette én integreringskode til hver enkelt rapport.
-
-Hvis du foretager ændringer i dialogboksen, skal du sørge for at kopiere den opdaterede URL-adresse eller iFrame for at bruge de opdaterede indstillinger på din side.
-
 
 ### <a name="tips-for-view-modes"></a>Tip til visningstilstande
 
@@ -128,7 +129,7 @@ Der kan opstå overbelastning, når en rapport modtager for mange forespørgsler
 
 Vi anbefaler, at du angiver et pladsholderbillede til din rapport. Hvis overbelastning finder sted, kan brugerne se pladsholderbilledet. 
 
-Hvis du vil undgå overbelastning, skal du begrænse antallet af forskellige forespørgsler, som din rapport kan generere, og hyppigheden af dataopdatering.
+Hvis du vil undgå overbelastning, skal du begrænse antallet af forskellige forespørgsler, som din rapport kan generere, og hyppigheden af dataopdatering. Se [optimeringsvejledningen til Power BI](../guidance/power-bi-optimization.md) for at få tip til at strømline dine rapporter.
 
 ## <a name="power-bi-visuals"></a>Power BI-visualiseringer
 

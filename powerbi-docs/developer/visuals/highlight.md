@@ -1,19 +1,19 @@
 ---
-title: Fremhævning
-description: Fremhævning af markerede datapunkter i Power BI-visualiseringer
+title: Fremhævning i en integreret Power BI-analyse for at få bedre integreret BI-indsigt
+description: Fremhævning af markerede datapunkter i Power BI-visualiseringer. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/31/2019
-ms.openlocfilehash: a472db6c6dcc1266a11e78d72ab8465df7682042
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: f45b363ce4616a725d19d0b06f4f9fb96110ac8a
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80114146"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97886528"
 ---
 # <a name="highlight-data-points-in-power-bi-visuals"></a>Fremhæv datapunkter i Power BI-visualiseringer
 
@@ -645,7 +645,7 @@ Som resultatet får du visualiseringen med knapper og værdier `highlighted valu
 
 ![Visualiseringen med tilknytning og fremhævning af matrixdatavisninger](media/highlight/dev-matrix-visual-highlight-demo.gif)
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 * [Læs om tilknytninger af matrixdatavisning](dataview-mappings.md#matrix-data-mapping)
 

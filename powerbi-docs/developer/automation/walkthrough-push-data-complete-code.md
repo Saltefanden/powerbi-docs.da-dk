@@ -1,6 +1,6 @@
 ---
-title: Færdiggør kodeliste
-description: Gennemgang af push af data – komplet kodeliste
+title: En komplet kodeoversigt i en integreret Power BI-analyse for at få bedre integreret BI-indsigt
+description: Se, hvordan du overfører data – en komplet kodeoversigt. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: madia
@@ -8,16 +8,16 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: f2e421297eb942e6e9a622c91e9d5a074cb042ba
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: d478c742112c15c80657ec424f5a4d6739a3c6d7
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91746487"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887471"
 ---
 # <a name="push-data-to-a-dataset-complete-code-listing"></a>Komplet kodeliste til push af data til et datasæt
 
-Denne artikel er en del af en trinvis vejledning til, hvordan du [overfører data til et datasæt](walkthrough-push-data.md).
+Denne artikel er en del af en trinvis gennemgang af, hvordan du [sender data til et datasæt](walkthrough-push-data.md).
 
 Når du har fulgt trin 2 til 5 i **Push af data til et datasæt**, bør din komplette kildekode se ud som følger.
 
@@ -222,15 +222,15 @@ Når du har fulgt trin 2 til 5 i **Push af data til et datasæt**, bør din komp
       }
 ```
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
-* [Push data til et Power BI-datasæt](walkthrough-push-data.md)
+* [Overfør data til et Power BI-datasæt](walkthrough-push-data.md)
 * [Registrer en app med Azure AD](../embedded/register-app.md)  
-* [Hent en adgangstoken til godkendelse](walkthrough-push-data-get-token.md)  
+* [Hent et adgangstoken til godkendelse](walkthrough-push-data-get-token.md)  
 * [Opret et datasæt i Power BI](walkthrough-push-data-create-dataset.md)  
 * [Hent et datasæt for at føje rækker til en Power BI-tabel](walkthrough-push-data-get-datasets.md)  
 * [Føj rækker til en Power BI-tabel](walkthrough-push-data-add-rows.md)  
 * [Reference til Power BI REST-API](/rest/api/power-bi/)  
-* [Oversigt over Power BI REST-API'en](overview-of-power-bi-rest-api.md)  
+* [Oversigt over Power BI REST-API](overview-of-power-bi-rest-api.md)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

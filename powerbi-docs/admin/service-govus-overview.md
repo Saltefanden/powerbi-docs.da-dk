@@ -1,21 +1,21 @@
 ---
 title: Power BI til US Government-kunder – oversigt
-description: US Government-kunder kan føje et Power BI Pro-abonnement til deres Microsoft 365 Government-abonnement. Få mere at vide om, hvordan du tilmelder dig, opretter forbindelse og gennemser tilgængelige funktioner i denne tjenestebeskrivelse.
+description: US Government-kunder kan føje et Power BI-abonnement til deres Microsoft 365 Government-abonnement. Få mere at vide om, hvordan du tilmelder dig, opretter forbindelse og gennemser tilgængelige funktioner i denne tjenestebeskrivelse.
 author: kfollis
 ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/17/2020
-ms.custom: licensing support
+ms.date: 01/05/2021
+ms.custom: gcc
 LocalizationGroup: Get started
-ms.openlocfilehash: e8cf03d90165463fd1e59bf4c4394c1da94e995e
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 9b52e0698f6b9c1ae779bf21738acee30db7447d
+ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96407854"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97927085"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI til US Government-kunder
 
@@ -113,9 +113,14 @@ Hvis du vil konfigurere firewalls for SQL-databaser, skal du følge fremgangsmå
 
 ## <a name="power-bi-feature-availability"></a>Tilgængelighed af funktioner i Power BI
 
-Der er visse forskelle mellem offentlige planer og kommercielle planer for at imødekomme kravene til offentlige cloudkunder. Vores mål er at gøre alle funktioner tilgængelige i cloudmiljøer for de offentlige myndigheder inden for 30 dage fra, de bliver generelt tilgængelige. I nogle tilfælde forhindrer underliggende afhængigheder os i at gøre en funktion tilgængelig.
+Der er visse forskelle mellem offentlige planer og kommercielle planer for at imødekomme kravene til offentlige cloudkunder. Vores mål er at gøre alle funktioner tilgængelige i cloudmiljøer for de offentlige myndigheder inden for 30 dage fra, de bliver generelt tilgængelige. I nogle tilfælde forhindrer underliggende afhængigheder os i at gøre en funktion tilgængelig. På listen nedenfor vises de funktioner, der endnu ikke er tilgængelige i et bestemt offentligt miljø, eller som er tilgængelige med begrænset funktionalitet. Listen bruger følgende nøgle:
 
-Følgende tabel indeholder en liste over de funktioner, der ikke er tilgængelige i et bestemt miljø for de offentlige myndigheder. Vi medtager den anslåede tilgængelighed, hvis udgivelsen er planlagt:
+|Nøgle |Beskrivelse|
+|-----|------|
+|![tilgængelig](../media/yes.png)|Funktionen er tilgængelig i miljøet med eventuelle undtagelser, der er defineret i fodnoter.|
+|![ikke tilgængelig](../media/no.png)| Funktionen er ikke tilgængelig i miljøet, og vi har ikke en forventet tidsramme for levering.|
+
+Vi medtager kvartalet for anslået tilgængelighed, hvis udgivelsen planlægges for et miljø.
 
 |Funktion |GCC |GCC High |DoD|
 |------|------|------|------|
@@ -123,18 +128,18 @@ Følgende tabel indeholder en liste over de funktioner, der ikke er tilgængelig
 |[Integrer i SharePoint Online ved hjælp af Power BI-webdelen](/sharepoint/dev/spfx/web-parts/overview-client-side-web-parts)|![tilgængelig](../media/yes.png)|![Tilgængelig](../media/yes.png)|![ikke tilgængelig](../media/no.png)|
 |[Power Automate-forbindelse til datadrevne underretninger](../connect-data/power-bi-data-sources.md)|![tilgængelig](../media/yes.png)|![tilgængelig](../media/yes.png)|![ikke tilgængelig](../media/no.png)|
 |[Fanen Power BI i Teams](../collaborate-share/service-collaborate-microsoft-teams.md)<sup>2</sup>|![tilgængelig](../media/yes.png)|![ikke tilgængelig](../media/no.png)|![ikke tilgængelig](../media/no.png)|
-|[Store modeller](service-premium-large-models.md) | 4\. kvartal 2020 |4\. kvartal 2020| ![ikke tilgængelig](../media/no.png) |
-|[Dataflow – SQL Compute-programoptimering](../transform-model/dataflows/dataflows-premium-features.md) | 4\. kvartal 2020 |4\. kvartal 2020| ![ikke tilgængelig](../media/no.png) |
-|[Dataflow – -direkte forespørgsel](../transform-model/dataflows/dataflows-configure-consume.md) | 4\. kvartal 2020 |4\. kvartal 2020|![ikke tilgængelig](../media/no.png)|
-|[Data beskyttelse (MIP-mærkater)](service-security-sensitivity-label-overview.md)|4\. kvartal 2020|4\. kvartal 2020 |4\. kvartal 2020|
-|[Skabelonapps](../connect-data/service-template-apps-overview.md)<sup>3</sup>|4\. kvartal 2020 |4\. kvartal 2020| 4\. kvartal 2020|
-|[Brugerdefinerede visualiseringer](../developer/visuals/power-bi-custom-visuals.md)<sup>3</sup>|4\. kvartal 2020 |4\. kvartal 2020| 4\. kvartal 2020|
-|[Azure Stream Analytics](/azure/stream-analytics/stream-analytics-power-bi-dashboard)| 4\. kvartal 2020|4\. kvartal 2020|4\. kvartal 2020|
+|[Store modeller](service-premium-large-models.md) | ![ikke tilgængelig](../media/no.png) |![ikke tilgængelig](../media/no.png)| ![ikke tilgængelig](../media/no.png) |
+|[Dataflow – SQL Compute-programoptimering](../transform-model/dataflows/dataflows-premium-features.md) | ![ikke tilgængelig](../media/no.png) |![ikke tilgængelig](../media/no.png)| ![ikke tilgængelig](../media/no.png) |
+|[Dataflow – -direkte forespørgsel](../transform-model/dataflows/dataflows-configure-consume.md) | ![ikke tilgængelig](../media/no.png) |![ikke tilgængelig](../media/no.png)|![ikke tilgængelig](../media/no.png)|
+|[Data beskyttelse (MIP-mærkater)](service-security-sensitivity-label-overview.md)|![ikke tilgængelig](../media/no.png)|![ikke tilgængelig](../media/no.png) |![ikke tilgængelig](../media/no.png)|
+|[Skabelonapps](../connect-data/service-template-apps-overview.md)<sup>3</sup>|![ikke tilgængelig](../media/no.png) |![ikke tilgængelig](../media/no.png)| ![ikke tilgængelig](../media/no.png)|
+|[Brugerdefinerede visualiseringer](../developer/visuals/power-bi-custom-visuals.md)<sup>3</sup>|![ikke tilgængelig](../media/no.png) |![ikke tilgængelig](../media/no.png)| ![ikke tilgængelig](../media/no.png)|
+|[Azure Stream Analytics](/azure/stream-analytics/stream-analytics-power-bi-dashboard)| ![ikke tilgængelig](../media/no.png)|![ikke tilgængelig](../media/no.png)|![ikke tilgængelig](../media/no.png)|
 |[Foretag et kald til kvalitetsdata-connector](/microsoftteams/cqd-power-bi-connector)|![ikke tilgængelig](../media/no.png)|![ikke tilgængelig](../media/no.png)|![ikke tilgængelig](../media/no.png)|
 |[Bring Your Own Storage (Azure Data Lake Gen 2)](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md)|![ikke tilgængelig](../media/no.png)|![ikke tilgængelig](../media/no.png)|![ikke tilgængelig](../media/no.png)|
 |[QR-kodeoprettelse](../create-reports/service-create-qr-code-for-tile.md)|![ikke tilgængelig](../media/no.png)|![ikke tilgængelig](../media/no.png)|![ikke tilgængelig](../media/no.png)|
 
-<sup>1</sup> Selvom B2B Collaboration er tilgængelig til GCC, skal der udstedes en licens til eksterne brugere i dette miljø. Kommercielle cloudlicenser er ikke gyldige i GCC. Du kan finde flere oplysninger om kendte begrænsninger med B2B Collaboration til US Government ved at [sammenligne Azure Government og global Azure](/azure/azure-government/compare-azure-government-global-azure#azure-active-directory-premium-p1-and-p2)
+<sup>1</sup> Selvom B2B Collaboration er tilgængelig til GCC, skal der udstedes en licens til eksterne brugere i dette miljø. Kommercielle cloudlicenser er ikke gyldige i GCC. Du kan finde flere oplysninger om kendte begrænsninger med B2B Collaboration til US Government ved at [sammenligne Azure Government og global Azure](/azure/azure-government/compare-azure-government-global-azure#azure-active-directory-premium-p1-and-p2).
 
 <sup>2</sup> Power BI-oplevelsen i Teams til GCC er begrænset, fungerer kun for klassiske arbejdsområder og indeholder ikke de forbedrede funktioner, der er beskrevet i [Integrerer Power BI-indhold i Microsoft Teams](../collaborate-share/service-embed-report-microsoft-teams.md).
 

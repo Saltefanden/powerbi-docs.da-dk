@@ -1,6 +1,6 @@
 ---
-title: Sorteringsmuligheder for Power BI-visualiseringer
-description: I denne artikel beskrives standardsorteringen af visualiseringer i Power BI.
+title: Sorteringsindstillinger til Power BI-visualiseringer i en integreret Power BI-analyse for at få bedre integreret BI-indsigt
+description: I denne artikel beskrives standardsorteringen af visualiseringer i Power BI. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 06/18/2019
-ms.openlocfilehash: 3cb8f5af63960667dc46cab1d818ba48943fd582
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 0d24719b486608c283ec73f0188092a1ece3155e
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79378062"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97889242"
 ---
 # <a name="sorting-options-for-power-bi-visuals"></a>Sorteringsmuligheder for Power BI-visualiseringer
 

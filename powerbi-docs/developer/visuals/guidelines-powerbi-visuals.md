@@ -1,6 +1,6 @@
 ---
-title: Retningslinjer for Power BI-visualiseringer
-description: Du kan få mere at vide om, hvordan du publicerer din brugerdefinerede visualisering i Microsoft AppSource, så andre kan finde, købe og bruge den.
+title: Retningslinjer til Power BI-visualiseringer i en integreret Power BI-analyse for at få bedre integreret BI-indsigt
+description: Du kan få mere at vide om, hvordan du publicerer din brugerdefinerede visualisering i Microsoft AppSource, så andre kan finde, købe og bruge den. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 08/12/2020
-ms.openlocfilehash: 427fba66b34fefb0b7ca9d70a29b08ebe7d743cb
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 67875f9b571e0a0376046a3cb080551d23e579e4
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96416134"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97889288"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Retningslinjer for Power BI-visualiseringer
 Før du [publicerer](office-store.md) din Power BI-visualisering i Microsoft AppSource, så andre kan finde og bruge den, skal du sørge for at følge retningslinjerne for at skabe en fantastisk oplevelse for dine brugere.

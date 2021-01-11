@@ -8,12 +8,12 @@ ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.date: 10/26/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 65a83bf0e91d4f3004445ffcd8cd6f78d5a77fc3
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 2389290fedd26c9e88af614e1fbf6afb29c02d35
+ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96411833"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97926805"
 ---
 # <a name="endorsement---promoting-and-certifying-power-bi-content"></a>Anbefaling – fremhævning og certificering af Power BI-indhold
 
@@ -27,11 +27,15 @@ Der er to typer anbefalinger: **fremhævning** og **certificering**.
 
     Enhver ejer af indhold eller et hvilket som helst medlem med skriverettigheder til det arbejdsområde, hvor indholdet er placeret, kan blot fremhæve indholdet, når de mener, at det er godt nok til deling.
 
+    [Få mere at vide om, hvordan du fremhæver dit indhold](service-endorse-content.md#promote-content).
+
 * **Certificering**: Certificering betyder, at indholdet opfylder organisationens kvalitetsstandarder og kan anses for at være pålideligt, autoritativt indhold, der er klar til brug i hele organisationen.
 
-    Det er kun en udvalgt gruppe validatorer (defineret af Power BI-administratoren), der er autoriseret til at certificere indhold. Ejere af indhold, der gerne vil have deres indhold certificeret, men som ikke er autoriseret til at certificere det selv, skal følge deres organisations retningslinjer for at få deres indhold certificeret.
+    Det er kun en [udvalgt gruppe validatorer (defineret af Power BI-administratoren)](../admin/service-admin-setup-certification.md), der er autoriseret til at certificere indhold. Ejere af indhold, der gerne vil have deres indhold certificeret, men som ikke er autoriseret til at certificere det selv, skal følge deres organisations retningslinjer for at få deres indhold certificeret.
 
-    **Certificering er kun tilgængelig, hvis en Power BI-administrator har aktiveret og konfigureret det for din organisation**.
+    Få mere at vide om, hvordan du [certificerer indhold](service-endorse-content.md#certify-content) eller [anmoder om certificering](service-endorse-content.md#request-content-certification).
+
+    **Certificering er kun tilgængelig, hvis en Power BI-administrator har [aktiveret og konfigureret](../admin/service-admin-setup-certification.md) det for din organisation**.
 
 Nedenstående billede viser, hvordan anbefalet indhold (fremhævet og certificeret) er tydeligt markeret, når du søger efter et datasæt at basere en rapport på.
 

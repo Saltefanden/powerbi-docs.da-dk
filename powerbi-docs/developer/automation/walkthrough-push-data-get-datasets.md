@@ -1,6 +1,6 @@
 ---
-title: Hent et datasæt for at indsætte rækker
-description: Se, hvordan du overfører data – hent et datasæt for at indsætte rækker i en Power BI-tabel
+title: Hent et datasæt for at tilføje rækker i en integreret Power BI-analyse for at få bedre integreret BI-indsigt
+description: Se, hvordan du overfører data – hent et datasæt for at indsætte rækker i en Power BI-tabel. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: madia
@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 02/05/2019
-ms.openlocfilehash: a150666eafd8dc11b573150455775d2ecf6f7f1b
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: e1be761f68dfcd58de8623618acd859694b95bde
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91748304"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887448"
 ---
-# <a name="step-4-get-a-dataset-to-add-rows-into-a-power-bi-table"></a>Trin 4: Hent et datasæt for at føje rækker til en Power BI-tabel
+# <a name="step-4-get-a-dataset-to-add-rows-into-a-power-bi-table"></a>Trin 4: Hent et datasæt for at indsætte rækker i en Power BI-tabel
 
 Denne artikel er en del af en trinvis gennemgang af, hvordan du [sender data til et datasæt](walkthrough-push-data.md).
 
@@ -27,9 +27,9 @@ Sådan henter du et datasæt.
 
 ## <a name="get-a-power-bi-dataset"></a>Hent et Power BI-datasæt
 
-> **BEMÆRK**! Før du begynder, skal du kontrollere, at du har fulgt de foregående trin i gennemgangen [Send data til et datasæt](walkthrough-push-data.md).
+> **Bemærk!** Inden du går i gang, skal du sikre, at du har fulgt de tidligere trin i gennemgangen [Push data til et datasæt](walkthrough-push-data.md).
 
-1. I projektet konsolprogram, som du oprettede i trin 2: Gennemgang til push af data, [Hent et adgangstoken til godkendelse](walkthrough-push-data-get-token.md), og installer pakken Newtonsoft.Json NuGet. Sådan installerer du pakken:
+1. Installer pakken Newtonsoft.Json NuGet i projektet Console Application, som du oprettede i Trin 2: Vejledning til overførsel af data, [Hent et adgangstoken til godkendelse](walkthrough-push-data-get-token.md). Sådan installerer du pakken:
 
      a. Vælg **Tools** > **NuGet Package Manager** > **Package Manager Console** i Visual Studio 2015.
 
@@ -40,7 +40,7 @@ Sådan henter du et datasæt.
 
 **Eksempel på at hente et datasæt**
 
-Indsæt denne kode i Program.cs.
+Føj denne kode til Program.cs.
 
 * I static void Main(string[] args):
   
@@ -266,7 +266,7 @@ namespace walkthrough_push_data
 
 ## <a name="next-steps"></a>Næste trin
 
-* [Indsæt rækker i en Power BI-tabel](walkthrough-push-data-add-rows.md)  
+* [Føj rækker til en Power BI-tabel](walkthrough-push-data-add-rows.md)  
 * [Newtonsoft.Json](https://www.newtonsoft.com/json)  
 * [Hent datasæt](/rest/api/power-bi/datasets/getdatasets)  
 * [Overfør data til Power BI](walkthrough-push-data.md)  

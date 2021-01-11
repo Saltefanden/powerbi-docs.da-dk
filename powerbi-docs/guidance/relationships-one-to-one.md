@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 03/02/2020
-ms.openlocfilehash: 19fe2aa003c3d39169bc449dab83c09702f49b1d
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: b9cff6a4a59db3a30fc4bbe2373a723700d00fee
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96419147"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97885010"
 ---
 # <a name="one-to-one-relationship-guidance"></a>Vejledning til en til en-relationer
 
@@ -99,11 +99,11 @@ Når det er muligt, anbefaler vi dig at undlade at oprette modeller med en til e
 - Begrænse muligheden for at oprette hierarkier, da deres niveauer skal være baseret på kolonner fra den _samme tabel_
 - Give uventede resultater, når der ikke er et komplet match af rækker mellem tabellerne
 
-Bestemte anbefalinger varierer, afhængigt af om en til en-relationen er i _et internt område_ eller _mellem områder_. Du kan finde flere oplysninger om evaluering af relationer i [Modelrelationer i Power BI Desktop (evaluering af relationer)](../transform-model/desktop-relationships-understand.md#relationship-evaluation).
+Bestemte anbefalinger varierer, afhængigt af om en til en-relationen er i en _intern kildegruppe_ eller _på tværs af kildegrupper_. Du kan finde flere oplysninger om evaluering af relationer i [Modelrelationer i Power BI Desktop (evaluering af relationer)](../transform-model/desktop-relationships-understand.md#relationship-evaluation).
 
-### <a name="intra-island-one-to-one-relationship"></a>En til en-relation i et internt område
+### <a name="intra-source-group-one-to-one-relationship"></a>En til en-relation i forbindelse med en intern kildegruppe
 
-Når der er en én til en-relation i et _internt område_ mellem tabeller, anbefaler vi, at du konsoliderer dataene i en enkelt modeltabel. Det gøres ved at flette Power Query-forespørgslerne.
+Når der er en én til en-relation i en _intern kildegruppe_ mellem tabeller, anbefaler vi, at du konsoliderer dataene i en enkelt modeltabel. Det gøres ved at flette Power Query-forespørgslerne.
 
 I følgende trin præsenteres en metodik til at konsolidere og udforme en til en-relaterede data:
 
@@ -131,11 +131,11 @@ I vores eksempel kan rapportforfattere finde feltet **Kategori** i visningsmappe
 
 ![Feltet Kategori vises i ruden Felter i en visningsmappe med navnet Marketing.](media/relationships-one-to-one/product-to-product-category-fields-pane-consolidated-display-folder.png)
 
-Hvis du stadig beslutter dig for at definere en til en-relationer i et internt område i din model, skal du sikre, at der er matchende rækker i de relaterede tabeller, når det er muligt. Da en til en-relationer i et internt område evalueres som en [almindelig relation](../transform-model/desktop-relationships-understand.md#regular-relationships), kan problemer med dataintegritet i dine rapportvisualiseringer blive vist som TOMME. Du kan se et eksempel på en TOM gruppering i den første tabelvisualisering, som er præsenteret i denne artikel.
+Hvis du stadig beslutter dig for at definere en til en-relationer i en intern kildegruppe i din model, skal du sikre, at der er matchende rækker i de relaterede tabeller, når det er muligt. Da en til en-relationer i en intern kildegruppe evalueres som en [almindelig relation](../transform-model/desktop-relationships-understand.md#regular-relationships), kan problemer med dataintegritet i dine rapportvisualiseringer blive vist som TOMME. Du kan se et eksempel på en TOM gruppering i den første tabelvisualisering, som er præsenteret i denne artikel.
 
-### <a name="inter-island-one-to-one-relationship"></a>En til en-relation mellem områder
+### <a name="cross-source-group-one-to-one-relationship"></a>En til en-relation på tværs af en kildegruppe
 
-Når der er en én til en-relation _mellem områder_ mellem tabeller, er der ingen alternative modeldesign – medmindre du konsoliderer dataene i dine datakilder på forhånd. Power BI evaluerer en til en-relationen i modellen som en [begrænset relation](../transform-model/desktop-relationships-understand.md#limited-relationships). Du skal derfor nøje sikre, at der er matchende rækker i de relaterede tabeller, da rækker, som ikke matches, fjernes fra forespørgselsresultaterne.
+Når der er en én til en-relation _på tværs af en kildegruppe_ mellem tabeller, er der ingen alternative modeldesign – medmindre du konsoliderer dataene i dine datakilder på forhånd. Power BI evaluerer en til en-relationen i modellen som en [begrænset relation](../transform-model/desktop-relationships-understand.md#limited-relationships). Du skal derfor nøje sikre, at der er matchende rækker i de relaterede tabeller, da rækker, som ikke matches, fjernes fra forespørgselsresultaterne.
 
 Lad os se, hvad der sker, når felter fra begge tabeller føjes til en tabelvisualisering, og der er en begrænset relation mellem tabellerne.
 

@@ -7,15 +7,15 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 11/16/2020
+ms.date: 01/04/2021
 ms.custom: seodec18, css_fy20Q4
 LocalizationGroup: Premium
-ms.openlocfilehash: ca9dd1b18fb037013e6d1d5c6e6c3510065068b4
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 191cf3ce71ca30f257276df78ad43cdb2e49a1e1
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96413282"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97886072"
 ---
 # <a name="troubleshoot-xmla-endpoint-connectivity"></a>Foretag fejlfinding af XMLA-slutpunktsforbindelse
 
@@ -151,7 +151,7 @@ Executing the query ...
 Error -1052311437:
 ```
 
-Dette skyldes, at klientbiblioteker, der er installeret med SQL Server Management Studio v 18.7.1, ikke understøtter sessionssporing. Problemet løses i en kommende version af SQL Server Management Studio.
+Dette skyldes, at klientbiblioteker, der er installeret med SQL Server Management Studio v 18.7.1, ikke understøtter sessionssporing. Dette er løst i SSMS 18.8 og nyere. [Download det nyeste SSMS](/sql/ssms/download-sql-server-management-studio-ssms).
 
 ### <a name="refresh-operations"></a>Opdateringshandlinger
 
@@ -168,7 +168,51 @@ Date (UTC): 11/13/2020 7:57:16 PM
 Run complete
 ```
 
-Dette skyldes et kendt problem i de klientbiblioteker, hvor statussen for opdateringsanmodningen er sporet forkert. Problemet løses i en kommende version af SQL Server Management Studio.
+Dette skyldes et kendt problem i de klientbiblioteker, hvor statussen for opdateringsanmodningen er sporet forkert. Dette er løst i SSMS 18.8 og nyere. [Download det nyeste SSMS](/sql/ssms/download-sql-server-management-studio-ssms).
+
+## <a name="editing-role-memberships-in-ssms"></a>Redigering af rollemedlemskaber i SSMS
+
+Når du bruger SSMS (SQL Server Management Studio) version 18.8 til at redigere et rollemedlemskab for et datasæt, kan SSMS vise følgende fejl:
+
+```
+Failed to save modifications to the server. 
+Error returned: ‘Metadata change of current operation cannot be resolved, please check the command or try again later.’ 
+```
+
+Det skyldes et kendt problem i apptjenesternes REST API. Problemet løses i en kommende version. Du løser denne fejl ved at indtaste og udføre følgende TMSL-kommando ved at klikke på **Script** i **Rolleegenskaber**:
+
+```json
+{ 
+  "createOrReplace": { 
+    "object": { 
+      "database": "AdventureWorks", 
+      "role": "Role" 
+    }, 
+    "role": { 
+      "name": "Role", 
+      "modelPermission": "read", 
+      "members": [ 
+        { 
+          "memberName": "xxxx", 
+          "identityProvider": "AzureAD" 
+        }, 
+        { 
+          "memberName": “xxxx” 
+          "identityProvider": "AzureAD" 
+        } 
+      ] 
+    } 
+  } 
+} 
+```
+
+## <a name="publish-error---live-connected-dataset"></a>Publicer fejl – datasæt med direkte forbindelse
+
+Når du genudgiver et datasæt med direkte forbindelse ved hjælp af Analysis Services Connector, kan følgende fejl blive vist:
+
+:::image type="content" source="media/troubleshoot-xmla-endpoint/couldnt-publish-to-power-bi.png" alt-text="Fejl vedrørende manglende udgivelse til Power BI.":::
+
+Som angivet i fejlmeddelelsen kan du løse problemet ved enten at slette eller omdøbe det eksisterende datasæt. Sørg også for at publicere alle de apps, der er afhængige af rapporten, igen. Hvis det er nødvendigt, skal brugerne også have besked om at opdatere bogmærker med den nye rapportadresse for at sikre, at de har adgang til den nyeste rapport.  
 
 ## <a name="see-also"></a>Se også
 

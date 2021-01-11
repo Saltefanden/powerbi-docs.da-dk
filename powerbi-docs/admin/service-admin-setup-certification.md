@@ -8,12 +8,12 @@ ms.subservice: powerbi-eim
 ms.topic: how-to
 ms.date: 10/26/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 17fc02131f13fe7fe7d8fb17af4380f6a013b9e7
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 520a3673d34019c6045988cd5d501e187849a5c6
+ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96413512"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97927067"
 ---
 # <a name="enable-content-certification"></a>Aktivér certificering af indhold
 
@@ -39,7 +39,7 @@ Certificering er en del af funktionen til *anbefalinger* i Power BI. Se [Anbefal
 
 1. Slå **Aktiveret** til.
 1. Hvis din organisation har en publiceret certificeringspolitik, kan du angive URL-adressen til den her. Dette bliver linket til at **få mere at vide** under certificeringsafsnittet i [dialogboksen med indstillinger for anbefalinger](../collaborate-share/service-endorse-content.md#request-content-certification). Hvis du ikke angiver et link, bliver de brugere, der gerne vil anmode om certificering af deres indhold, bedt om at kontakte deres Power BI-administrator.
-1. Angiv en eller flere sikkerhedsgrupper, hvis medlemmer vil være autoriseret til at certificere indhold. Disse autoriserede certificeringseksperter kan bruge knappen Certificering under certificeringsafsnittet i [dialogboksen med indstillinger for anbefalinger](../collaborate-share/service-endorse-content.md#certify-content).
+1. Angiv en eller flere sikkerhedsgrupper, hvis medlemmer vil være autoriseret til at certificere indhold. Disse autoriserede certificeringseksperter kan bruge knappen Certificering under certificeringsafsnittet i [dialogboksen med indstillinger for anbefalinger](../collaborate-share/service-endorse-content.md#certify-content). Dette felt accepterer kun sikkerhedsgrupper. Du kan ikke angive navngivne brugere.
     
     Hvis en sikkerhedsgruppe indeholder undersikkerhedsgrupper, som du ikke vil give certificeringsrettigheder til, kan du markere afkrydsningsfeltet **Undtagen bestemte sikkerhedsgrupper** og angive navnene på disse grupper i det tekstfelt, der vises.
 1. Klik på **Anvend**.

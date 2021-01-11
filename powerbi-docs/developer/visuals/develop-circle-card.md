@@ -1,6 +1,6 @@
 ---
-title: Få mere at vide om, hvordan du udvikler din egen Power BI-visualisering ved hjælp af cirkelkortvisualiseringen som eksempel
-description: Dette selvstudium indeholder en forklaring af, hvordan du udvikler en Power BI-visualisering
+title: Få mere at vide om, hvordan du udvikler din egen Power BI-visualisering ved hjælp af visualiseringen Cirkelkort som et eksempel i en integreret Power BI-analyse for at få bedre integreret BI-indsigt
+description: Dette selvstudium indeholder en forklaring af, hvordan du udvikler en Power BI-visualisering. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 09/02/2020
-ms.openlocfilehash: ff73c07fb08e80938fae34c19205885722c33672
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 0bfc36a37dbcc4c595ea467eb3b365c30d4ed781
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96418710"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97885631"
 ---
 # <a name="tutorial-develop-a-power-bi-circle-card-visual"></a>Selvstudium: Udvikl en Power BI-cirkelkortvisualisering
 

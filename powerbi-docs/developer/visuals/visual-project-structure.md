@@ -1,6 +1,6 @@
 ---
-title: Struktur for visual-projekter i Power BI
-description: I denne artikel beskrives mappe- og filstrukturen i et visuelt projekt i Power BI
+title: Strukturen af et Power BI-visualiseringsprojekt i en integreret Power BI-analyse for at få bedre integreret BI-indsigt
+description: I denne artikel beskrives mappe- og filstrukturen i et Power BI-visualiseringsprojekt. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 01/12/2020
-ms.openlocfilehash: df7a2909e3ccd745fdaa990ba5281a723ef6360d
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 4c946021138e49c0aed9668d9b3ea6079f458ccd
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96416709"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888023"
 ---
 # <a name="power-bi-visual-project-structure"></a>Struktur for visual-projekter i Power BI
 

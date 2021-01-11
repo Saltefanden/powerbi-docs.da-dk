@@ -1,6 +1,6 @@
 ---
-title: Tilføj understøttelse af detailudledning
-description: I denne artikel beskrives det, hvordan du føjer understøttelse af detailudledning i Power BI-visualiseringer
+title: Tilføj understøttelse af detailudledning i en integreret Power BI-analyse for at få bedre integreret BI-indsigt
+description: I denne artikel beskrives det, hvordan du tilføjer understøttelse af detailudledning i Power BI-visualiseringer. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: 602c13964e5364f9d21ec4e761fd42ea8d3e85f7
-ms.sourcegitcommit: 9d033abd9c01a01bba132972497dda428d7d5c12
+ms.openlocfilehash: 40c8d7f362ca461b4295507c0ddff8db4bcc3509
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95514119"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97885450"
 ---
 # <a name="add-drill-down-support"></a>Tilføj understøttelse af detailudledning
 

@@ -1,18 +1,18 @@
 ---
-title: Sådan overfører du indhold fra Power BI-arbejdsområdesamling til Power BI
-description: Se, hvordan du overfører fra Power BI Workspace Collection til Power BI Embedded og udnytter fordelene ved at integrere i apps.
+title: Sådan overfører du indhold i en arbejdsområdesamling i Power BI til en løsning til en integreret Power BI-analyse i Power BI Embedded for at få bedre integreret BI-indsigt
+description: Se, hvordan du overfører fra Power BI Workspace Collection til Power BI Embedded og udnytter fordelene ved at integrere i apps. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 06/30/2018
-ms.openlocfilehash: afff3023942352a25ff89fbed5f4a855b23d724d
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: a2e73ced427daa8aebf6b5c9836aa060d3591e3e
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96416548"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97886367"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Sådan overfører du indhold fra Power BI Workspace Collection til Power BI Embedded
 

@@ -1,6 +1,6 @@
 ---
-title: Versionering af datamodel i Power BI
-description: Datamodel, der eksponeres af en OData-tjeneste
+title: Versionsstyring af Power BI-datamodeller i en integreret Power BI-analyse for at få bedre integreret BI-indsigt
+description: Datamodel, der eksponeres af en OData-tjeneste. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/08/2018
-ms.openlocfilehash: d8ab94bd33aa2f0674f6dc45a93da0d2f42b1647
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 0c645774f7af1a8575ca3c755a74fd65b652031a
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91749293"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887701"
 ---
 # <a name="data-model-versioning"></a>Versionering af datamodel
 
@@ -32,9 +32,9 @@ Følgende datamodeltilføjelser betragtes som sikre og kræver ikke, at tjeneste
 * Tilføjelse af en typedefinition eller optælling  
 * Tilføjelse af en hvilken som helst anmærkning til et modelelement, der ikke behøver at være forståeligt for klienten for at interagere med tjenesten korrekt  
   
-Klienter ***SKAL*** være forberedt på, at tjenester foretager sådanne trinvise ændringer af deres model. Klienter skal især være forberedt på at modtage egenskaber og afledte typer, der ikke tidligere er blevet defineret af tjenesten.  
+Kunderne ***SKAL** _ være forberedt til tjenesterne for at kunne foretage disse trinvise ændringer af deres model. Klienter skal især være forberedt på at modtage egenskaber og afledte typer, der ikke tidligere er blevet defineret af tjenesten.  
   
-Tjenester ***MÅ IKKE*** ændre deres datamodel, afhængigt af den godkendte bruger. Hvis datamodellen er afhængig af bruger eller brugergruppe, SKAL alle ændringer være sikre ændringer, jf. dette afsnit, når den fulde model sammenlignes med den model, der er synlig for brugere med begrænsede godkendelser.  
+Tjenesternes datamodeller _ *_MÅ IKKE_** ændres, afhængigt af den bruger der er godkendt. Hvis datamodellen er afhængig af bruger eller brugergruppe, SKAL alle ændringer være sikre ændringer, jf. dette afsnit, når den fulde model sammenlignes med den model, der er synlig for brugere med begrænsede godkendelser.  
   
 Du kan få flere oplysninger om standarder for OData-datamodeller i [OData Version 4.0 Part 1: Protocol Plus Errata 02](https://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html).  
   

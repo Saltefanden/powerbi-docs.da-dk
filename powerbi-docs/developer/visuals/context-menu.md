@@ -1,6 +1,6 @@
 ---
-title: Føj en genvejsmenu til Power BI-visual
-description: Få mere at vide om, hvordan du føjer en genvejsmenu til en Power BI-visualisering.
+title: Føj en kontekstmenu til en Power BI-visualisering i en integreret Power BI-analyse for at få bedre integreret BI-indsigt
+description: Få mere at vide om, hvordan du føjer en genvejsmenu til en Power BI-visualisering. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: rkarlin
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: 9e63a1196ddc7557fcf8b2fceb424415a63d4df9
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 1c19ba94588628e002cdb9e65f59bd4182020e1c
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91748074"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888690"
 ---
 # <a name="add-context-menu-to-power-bi-visual"></a>Føj en genvejsmenu til Power BI-visual
 

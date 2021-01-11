@@ -1,6 +1,6 @@
 ---
-title: Funktionen supportsKeyboardFocus
-description: I denne artikel beskrives det, hvordan du bruger funktionen supportsKeyboardFocus i Power BI-visualiseringer, og de tilhørende krav.
+title: Funktionen supportsKeyboardFocus i en integreret Power BI-analyse, der giver bedre integreret BI-indsigt
+description: I denne artikel beskrives det, hvordan du bruger funktionen supportsKeyboardFocus i Power BI-visualiseringer, og de tilhørende krav. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 04/30/2020
-ms.openlocfilehash: 1e5a4cf8c80d8123d39fd2ab76898abc0c439ad9
-ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
+ms.openlocfilehash: 5ba87db8118076de4bf13abc0280223f9f04f871
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92049378"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887954"
 ---
 # <a name="use-the-supportskeyboardfocus-feature"></a>Brug af funktionen supportsKeyboardFocus
 

@@ -1,6 +1,6 @@
 ---
-title: Introduktion til brug af diagramhjælpeprogrammer i Power BI-visuals
-description: I denne artikel beskrives det, hvordan du bruger diagramhjælpeprogrammer til tegning af akser og forklaringer i Power BI-visuals
+title: Introduktion til brug af diagramhjælpeprogrammer i Power BI-visualiseringer i en integreret Power BI-analyse for at opnå bedre integreret BI-indsigt
+description: I denne artikel beskrives det, hvordan du bruger diagramhjælpeprogrammer til tegning af akser og forklaringer i Power BI-visualiseringer. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
@@ -9,14 +9,14 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 06/18/2019
-ms.openlocfilehash: 531da1ede8b83af9fb8093a3178c945f374b835c
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 9094d639225eb82cbcf427346d1ad78943ddc90f
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79379384"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887862"
 ---
-# <a name="chart-utils"></a>Diagramhjælpeprogrammer
+# <a name="chart-utils"></a>Hjælpeprogrammer til diagrammer
 
 ChartUtils er et sæt grænseflader og metoder til oprettelse af akser, datamærkater og forklaringer i Power BI-visuals.
 
@@ -771,6 +771,6 @@ private renderLegend(): void {
 }
 ```
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 - [Læs om, hvordan du bruger interaktivitetsutils til at føje valg til Power BI-visuals](utils-interactivity-selections.md)

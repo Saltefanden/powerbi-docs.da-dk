@@ -1,6 +1,6 @@
 ---
-title: Kodestykker til overførsel af indhold fra Power BI Embedded
-description: Her får du nogle kodestykker til de grundlæggende handlinger, der skal bruges til overførsel af indhold
+title: Kodestykker til overførsel af indhold fra arbejdsområdesamlinger til en Power BI Embedded-løsning i en integreret Power BI-analyse for at få bedre BI-indsigt
+description: Her får du nogle kodestykker til de grundlæggende handlinger, der skal bruges til overførsel af indhold. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 02/05/2019
-ms.openlocfilehash: 9ed021ce95fd1e978916c188c93ca77fa88ccdb6
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: f6b6023ac77d007b07662e200d6f165d56d67628
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96416502"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888713"
 ---
 # <a name="code-snippets-for-migrating-content-from-power-bi-workspace-collection"></a>Kodestykker til overførsel af indhold fra Power BI Workspace Collection
 
@@ -227,16 +227,16 @@ I dette kodestykke antager vi, at det datasæt, der skal sendes via push, allere
     }
 ```
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 [Overførselsværktøj i Power BI Embedded](migrate-tool.md)  
 [Integrer med Power BI](embedding.md)  
-[Sådan overfører du indhold fra arbejdsområdesamlinger i Power BI Embedded til Power BI](migrate-from-powerbi-embedded.md)  
+[Sådan overfører du indhold i arbejdsområdesamlingen i Power BI Embedded til Power BI](migrate-from-powerbi-embedded.md)  
 [Sådan integrerer du Power BI-dashboards, -rapporter og -felter](embed-sample-for-your-organization.md)  
 [Power BI Premium – hvad er det?](../../admin/service-premium-what-is.md)  
 [Git-lager for JavaScript-API](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Git-lager til Power BI C#](https://github.com/Microsoft/PowerBI-CSharp)  
-[Integreringseksempel til JavaScript](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
+[Integreret JavaScript-eksempel](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
 [Hvidbog til Power BI Premium](https://aka.ms/pbipremiumwhitepaper)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

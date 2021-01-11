@@ -1,6 +1,6 @@
 ---
-title: Integrer sideinddelte rapporter i dit program til integreret analyse i Power BI for dine kunder
-description: Få mere at vide om, hvordan du integrerer en sideinddelt Power BI-rapport i et program ved hjælp af Power BI-API'er.
+title: Integrer sideinddelte rapporter i dit program til integreret analyse i Power BI for at give dine kunder bedre integreret BI-indsigt
+description: Få mere at vide om, hvordan du integrerer en sideinddelt Power BI-rapport i et program ved hjælp af Power BI-API'er. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: rkarlin
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 01/04/2019
-ms.openlocfilehash: 3aecfa7e00528217dc5b6fa27b03a5ac4302d9dd
-ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
+ms.openlocfilehash: a06553a3e0c090d4e4b0e007b61148115f8f5eb5
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97098231"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97885217"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-customers"></a>Selvstudium: Integrer sideinddelte Power BI-rapporter i et program til dine kunder
 

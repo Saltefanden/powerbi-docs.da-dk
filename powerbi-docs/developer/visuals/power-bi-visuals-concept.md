@@ -1,6 +1,6 @@
 ---
-title: Koncepter i forbindelse med visualiseringer i Power BI
-description: I artiklen beskrives det, hvordan visualiseringer integreres med Power BI, og hvordan en bruger kan interagere med en visualisering i Power BI.
+title: Power BI-visualiseringskoncepter i en integreret Power BI-analyse, der giver bedre integreret BI-indsigt
+description: I artiklen beskrives det, hvordan visualiseringer integreres med Power BI, og hvordan en bruger kan interagere med en visualisering i Power BI. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 8971c07b39de5b01b945218659fb8ead711c3f3c
-ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
+ms.openlocfilehash: 4a6d78e332ae6e6c29b11a4ee79b05718c30f355
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94511935"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97884987"
 ---
 # <a name="power-bi-visuals-system-integration"></a>Systemintegration af Power BI-visualiseringer
 

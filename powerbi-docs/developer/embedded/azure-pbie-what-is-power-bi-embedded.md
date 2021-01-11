@@ -1,6 +1,6 @@
 ---
-title: Hvad er Azure Power BI Embedded og integreret analyse? | Microsoft Docs
-description: Power BI Embedded er beregnet til som et integreret analyseværktøj at forenkle, hvordan uafhængige softwareproducenter og udviklere bruger Power BI-funktioner, og til at hjælpe dem med hurtigt at tilføje imponerende visualiseringer, rapporter og dashboards i deres apps. Få mere at vide om, hvordan du bruger integreret analysesoftwrae, integrerede analyseværktøjer eller integrerede værktøjer til business intelligence vha. Power BI Embedded.
+title: Hvad er integreret BI i Power BI Embedded i Power BI Azure i en integreret Power BI-analyse?
+description: Power BI Embedded er et integreret analyseværktøj, der har til formål at forenkle, hvordan uafhængige softwareproducenter og udviklere bruger Power BI-funktioner til at hjælpe dem med hurtigt at tilføje imponerende visualiseringer, rapporter og dashboards i deres apps. Få mere at vide om, hvordan du bruger integreret analysesoftwrae, integrerede analyseværktøjer eller integrerede værktøjer til business intelligence vha. Power BI Embedded.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: nishalit
@@ -10,12 +10,12 @@ ms.devlang: csharp, javascript
 ms.topic: overview
 ms.custom: seodec18
 ms.date: 12/10/2018
-ms.openlocfilehash: fb2c9046b5812ae027e60f5661c50f573bea8976
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 1c2227e376879693833af18c5c30acda9f6b16dd
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96417238"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887218"
 ---
 # <a name="what-is-power-bi-embedded-in-azure"></a>Hvad er Power BI Embedded i Azure?
 

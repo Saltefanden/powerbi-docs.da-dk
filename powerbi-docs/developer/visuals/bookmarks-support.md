@@ -1,6 +1,6 @@
 ---
-title: Tilføj understøttelse af bogmærker i Power BI-visualiseringer
-description: Power BI-visualiseringer kan håndtere skift mellem bogmærker
+title: Føj understøttelse af bogmærker til Power BI-visualiseringer i en integreret Power BI-analyse for at få bedre integreret BI-indsigt
+description: Power BI-visualiseringer kan håndteres. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse. Skift af bogmærker
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: aeea5ea3a9d1d2bd375c44b6c6b7eac57eb65aff
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 6a4f0e8ad8890e85db54e8d77a2ec19bb0d02ea8
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91748994"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97889104"
 ---
 # <a name="add-bookmark-support-for-power-bi-visuals"></a>Tilføj understøttelse af bogmærker i Power BI-visualiseringer
 

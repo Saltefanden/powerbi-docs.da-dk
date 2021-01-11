@@ -8,21 +8,21 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 06/26/2020
+ms.date: 01/04/2021
 LocalizationGroup: Share your work
-ms.openlocfilehash: 7a85021ee1931b2d5f7c247d7caa4c2813f86a8c
-ms.sourcegitcommit: 7bf09116163afaae312eb2b232eb7967baee2c92
+ms.openlocfilehash: 1069a000daf3f46055f45118f4442e4b19037234
+ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97621596"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97926705"
 ---
 # <a name="share-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Del Power BI-dashboards og -rapporter med kolleger og andre
 *Deling* er den nemmeste måde, når du vil brugerne adgang til dine dashboards og rapporter i Power BI-tjenesten. Du kan dele med brugere i og uden for din organisation.
 
 Når du deler et dashboard eller en rapport, kan de personer, du deler med, få det/den vist og interagere med det/den, men ikke redigere det/den. De kan se de samme data, som du kan se i dashboardet og rapporterne og få adgang til hele det underliggende datasæt, medmindre sikkerhed på rækkeniveau (RLS) anvendes på det underliggende datasæt.  De kolleger, du deler med, kan også dele med deres kolleger, hvis du giver dem lov til det. Personer uden for organisationen kan få vist og interagere med dashboardet eller rapporten, men kan ikke dele det/den. 
 
-![Delingsikon på en liste over dashboards](media/service-share-dashboards/power-bi-share-new-look.png)
+![Del et ikon for en rapport](media/service-share-dashboards/power-bi-share-new-look.png)
 
 Du kan dele dashboards og rapporter fra mange steder i Power BI-tjenesten: Favoritter, Seneste, Mit arbejdsområde. Du kan også dele fra andre arbejdsområder, hvis du har rollen som [administrator, medlem eller bidragyder](service-new-workspaces.md#roles-in-the-new-workspaces) i arbejdsområdet. Og du kan dele dashboards og rapporter i Delt med mig, hvis ejeren tillader det. 
 

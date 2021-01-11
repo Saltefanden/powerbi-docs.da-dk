@@ -1,6 +1,6 @@
 ---
-title: Forstå tilknytning af datavisning i Power BI-visualiseringer
-description: I denne artikel beskrives det, hvordan Power BI transformerer data, før de sendes til visualiseringer.
+title: Forstå tilknytning af datavisning i Power BI-visualiseringer i en integreret Power BI-analyse for at få bedre integreret BI-indsigt
+description: I denne artikel beskrives det, hvordan Power BI transformerer data, før de sendes til visualiseringer. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 86572383e2e88f5a1efcf5126828e3365933cbc2
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 063750445f3c8ef1fb50f77535ccf01295bd45ec
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91635947"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97885654"
 ---
 # <a name="understand-data-view-mapping-in-power-bi-visuals"></a>Forstå tilknytning af datavisning i Power BI-visualiseringer
 

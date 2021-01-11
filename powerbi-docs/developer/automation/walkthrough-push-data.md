@@ -1,6 +1,6 @@
 ---
-title: Overfør data til et datasæt
-description: Overfør data til et Power BI-datasæt
+title: Overfør data til et datasæt i en integreret Power BI-analyse for at få bedre integreret BI-indsigt
+description: Overfør data til et Power BI-datasæt. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: rkarlin
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 05/22/2019
-ms.openlocfilehash: 792afe42cf302ae552b7f8f1c14d5f232ade320f
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 3c5805f4d498e8e2d8a788c5703a09a8109e024b
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91746694"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887425"
 ---
 # <a name="push-data-into-a-power-bi-dataset"></a>Overfør data til et Power BI-datasæt
 
@@ -23,7 +23,7 @@ Inden du går i gang, skal du have en Azure AD- (Azure Active Directory) og [Pow
 
 ## <a name="steps-to-push-data-into-a-dataset"></a>Sådan overfører du data til et datasæt
 
-* Trin 1: [Registrer en app med Azure AD](../embedded/register-app.md)
+* Trin 1: [Registrer en app i Azure AD](../embedded/register-app.md)
 * Trin 2: [Hent et adgangstoken til godkendelse](walkthrough-push-data-get-token.md)
 * Trin 3: [Opret et datasæt i Power BI](walkthrough-push-data-create-dataset.md)
 * Trin 4: [Hent et datasæt for at føje rækker til en Power BI-tabel](walkthrough-push-data-get-datasets.md)
@@ -60,7 +60,7 @@ JSON-strengen til et datasæt har følgende format:
 }
 ```
 
-For eksemplet med SalesMarketing-datasættet ville du overføre en JSON-streng som vist i nedenstående eksempel. I dette eksempel er **SalesMarketing** navnet på datasættet, og **Product** er navnet på tabellen. Når du har defineret tabellen, kan du definere tabelskemaet. For datasættet **SalesMarketing** indeholder tabelskemaet disse kolonner: ProductID, Manufacturer, Category, Segment, Product og IsCompete.
+For eksemplet med SalesMarketing-datasættet ville du overføre en JSON-streng som vist i nedenstående eksempel. I dette eksempel er **SalesMarketing** navnet på datasættet, og **Product** er navnet på tabellen. Når du har defineret tabellen, kan du definere tabelskemaet. Tabelskemaet indeholder kolonnerne ProductID, Manufacturer, Category, Segment, Product og IsComplete for datasættet **SalesMarketing**.
 
 **Eksempeldatasæt JSON-objekt**
 

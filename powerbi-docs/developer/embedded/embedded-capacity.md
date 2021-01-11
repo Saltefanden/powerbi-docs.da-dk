@@ -1,6 +1,6 @@
 ---
-title: Kapacitet og SKU'er i integrerede Power BI-analyser
-description: Om kapacitet og SKU'er i integrerede Power BI-analyser.
+title: Kapacitet og SKU'er i en integreret Power BI-analyse, der giver bedre integreret BI-indsigt
+description: Om kapacitet og SKU'er i integrerede Power BI-analyser. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,16 +8,16 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/17/2020
-ms.openlocfilehash: 4102ed7307c9b7be40fb682befc4056094cbe6ad
-ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
+ms.openlocfilehash: 7ff6ada14128a6231b84adf83d90b3871e1c7537
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92916929"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888805"
 ---
 # <a name="capacity-and-skus-in-power-bi-embedded-analytics"></a>Kapacitet og SKU'er i integrerede Power BI-analyser
 
-Når du går videre til produktion, kræver integreret analyse i Power BI en kapacitet ( *A* , *EM* eller *P* SKU) til udgivelse af integreret Power BI-indhold.
+Når du går videre til produktion, kræver integreret analyse i Power BI en kapacitet (*A*, *EM* eller *P* SKU) til udgivelse af integreret Power BI-indhold.
 
 Kapacitet er et dedikeret sæt af ressourcer, som er reserveret til eksklusiv brug. Det gør det muligt for dig at publicere dashboards, rapporter og datasæt til brugere uden at være nødt til at købe licenser til hver enkelt bruger. Det garanterer også pålidelig, ensartet ydeevne for dit indhold.
 
@@ -54,12 +54,12 @@ Brug disse link til at planlægge og teste din kapacitet:
 
 ### <a name="power-bi-embedded-skus"></a>Power BI Embedded-SKU'er
 
-Power BI Embedded leveres med en [*a* -SKU](../../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios).
+Power BI Embedded leveres med en [*a*-SKU](../../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios).
 
 ### <a name="power-bi-premium-skus"></a>Power BI Premium-SKU'er
 
 Power BI Premium tilbyder to SKU'er, *P* og *EM*.
-* [Forstå forskellene mellem *P* - og *EM* -SKU'er](../../admin/service-premium-what-is.md#subscriptions-and-licensing)
+* [Forstå forskellene mellem *P*- og *EM*-SKU'er](../../admin/service-premium-what-is.md#subscriptions-and-licensing)
 * [Køb en Premium-SKU](../../admin/service-admin-premium-purchase.md)
 
 ### <a name="which-sku-should-i-use"></a>Hvilken SKU skal jeg bruge?

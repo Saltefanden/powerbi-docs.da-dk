@@ -1,6 +1,6 @@
 ---
-title: Introduktion til brug af værktøjstip i Power BI-visualiseringer
-description: Denne artikel indeholder en beskrivelse af, hvordan du bruger hjælpeprogrammer til værktøjstip til at forenkle tilpasning af værktøjstip for Power BI-visualiseringer
+title: Introduktion til brug af hjælpeprogrammer til værktøjstip i Power BI-visualiseringer i en integreret Power BI-analyse for at få bedre integreret BI-indsigt
+description: Denne artikel indeholder en beskrivelse af, hvordan du bruger hjælpeprogrammer til værktøjstip til at forenkle tilpasningen af værktøjstip for Power BI-visualiseringer. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 02/14/2020
-ms.openlocfilehash: 69650982bd3e71c235ffb09b00a99959bc02c231
-ms.sourcegitcommit: 1428acb6334649fc2d3d8ae4c42cfbc17e8f7476
+ms.openlocfilehash: b2ddc85d9ba2530dc394b4106d72b4af702bd9b4
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92197627"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888644"
 ---
 # <a name="tooltip-utils"></a>Hjælpeprogrammer til værktøjstip
 Denne artikel kan hjælpe dig med at installere, importere og bruge hjælpeprogrammer til værktøjstip. Dette hjælpeprogram er nyttigt til en hvilken som helst tilpasning af værktøjstip i Power BI-visualiseringer.

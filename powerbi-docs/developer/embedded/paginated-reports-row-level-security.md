@@ -1,6 +1,6 @@
 ---
-title: Brug sikkerhed på rækkeniveau med indhold fra integreret analyse i Power BI
-description: Få mere at vide om, hvordan du integrerer Power BI-indhold i din app.
+title: Brug af sikkerhed på rækkeniveau med integreret Power BI-analyseindhold for at få bedre integreret BI-indsigt
+description: Få mere at vide om fremgangsmåden til at integrere Power BI-indhold i et program til integreret Power BI-analyse for at få bedre integreret BI-indsigt.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: nishalit
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/04/2019
-ms.openlocfilehash: 00f818754c560768392aec0aa1df4555fe5d7ffa
-ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
+ms.openlocfilehash: bd62a9da0c773f39d7cef91a405340b0ba403130
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97098300"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97885056"
 ---
 # <a name="implementing-row-level-security-in-embedded-paginated-reports"></a>Implementering af sikkerhed på rækkeniveau i integrerede sideinddelte rapporter
 

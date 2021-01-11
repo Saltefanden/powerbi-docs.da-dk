@@ -1,6 +1,6 @@
 ---
-title: Ruden Analyse i Power BI-visualiseringer
-description: I denne artikel beskrives det, hvordan du opretter dynamiske referencelinjer i Power BI-visualiseringer.
+title: Ruden Analyse i Power BI-visualiseringer i en integreret Power BI-analyse for at få bedre integreret BI-indsigt
+description: I denne artikel beskrives det, hvordan du opretter dynamiske referencelinjer i Power BI-visualiseringer. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: 85dc34a2dbdfba02623f4d369d72311d9a93e997
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: dd3d3a8a3553dc9c3ab8c2867c6fee319ad74a07
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96414179"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97889150"
 ---
 # <a name="the-analytics-pane-in-power-bi-visuals"></a>Ruden Analyse i Power BI-visualiseringer
 

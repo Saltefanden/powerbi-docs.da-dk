@@ -1,6 +1,6 @@
 ---
-title: Ofte stillede spørgsmål om integreret analyse i Power BI
-description: Gennemse en liste med ofte stillede spørgsmål og svar om Power BI Embedded.
+title: Ofte stillede spørgsmål om integrerede Power BI-analyser, der hjælper dig med at få bedre integreret BI-indsigt
+description: Gennemse en liste over ofte stillede spørgsmål og svar om integrerede Power BI-analyser, der forbedrer kundernes integrerede BI-indsigt.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/11/2020
-ms.openlocfilehash: 5d402a32571f70f3a5a3b5686e3fc40ef07126c9
-ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
+ms.openlocfilehash: 4d8096793c4663cbed71c3149bde11305ebee71e
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97098323"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97886689"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Ofte stillede spørgsmål om Power BI Embedded
 

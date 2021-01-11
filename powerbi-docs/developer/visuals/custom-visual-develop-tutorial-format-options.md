@@ -1,6 +1,6 @@
 ---
-title: Føj formateringsindstillinger til en brugerdefineret visual i Power BI
-description: Et selvstudium i, hvordan du udvikler formateringsindstillinger for en brugerdefineret visual i Power BI
+title: Føj formateringsindstillinger til en brugerdefineret visualisering i Power BI i en integreret Power BI-analyse for at få bedre integreret BI-indsigt
+description: Et selvstudium i, hvordan du udvikler formateringsindstillinger for en brugerdefineret visualisering i Power BI. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 11/21/2018
-ms.openlocfilehash: ec3ba601eb6cd5db4fbc19298d76ce0cd7346f53
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: ec5dbe338cc27379d69781a83f58091d94011f08
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96418733"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97886566"
 ---
 # <a name="tutorial-adding-formatting-options-to-a-power-bi-visual"></a>Selvstudium: Føj formateringsindstillinger til en visualisering i Power BI
 
@@ -116,7 +116,7 @@ Du kan tilføje brugerdefinerede egenskaber for at gøre det muligt at konfigure
 
     ![Modulklasser](media/custom-visual-develop-tutorial-format-options/module-classes.png)
 
-    Dette modul definerer de to klasser. Klassen **CircleSettings** definerer to egenskaber med navne, der svarer til de objekter, som er defineret i filen **capabilities.json** (**circleColor** og  **circleThickness**), og angiver også standardværdier. Klassen **VisualSettings** arver klassen **DataViewObjectParser** og tilføjer en **cirkel** med et egenskabsnavn, der svarer til det objekt, som er defineret i filen  *capabilities.json*, og returnerer en instans af **CircleSettings**.
+    Dette modul definerer de to klasser. Klassen **CircleSettings** definerer to egenskaber med navne, der svarer til de objekter, som er defineret i filen **capabilities.json** (**circleColor** og **circleThickness**), og angiver også standardværdier. Klassen **VisualSettings** arver klassen **DataViewObjectParser** og tilføjer en **cirkel** med et egenskabsnavn, der svarer til det objekt, som er defineret i filen *capabilities.json*, og returnerer en instans af **CircleSettings**.
 
 6. Gem filen **settings.ts**.
 
@@ -186,7 +186,7 @@ Du kan tilføje brugerdefinerede egenskaber for at gøre det muligt at konfigure
 
 13. Gem filen visual.ts.
 
-14. I PowerShell skal du starte visualen.
+14. I PowerShell skal du starte visualiseringen.
 
     ```powershell
     pbiviz start
@@ -235,7 +235,7 @@ Angiv egenskabsværdier for projektet med det brugerdefinerede visual, opdater i
 
 7. Gem filen **pbiviz.json**.
 
-8. I objektet **assets** kan du se, at dokumentet definerer en sti til et ikon. Ikonet er det billede, der vises i ruden **_Visualiseringer_** . Det skal være en **PNG**-fil, *20 pixel gange 20 pixel*.
+8. I objektet **assets** kan du se, at dokumentet definerer en sti til et ikon. Ikonet er det billede, der vises i ruden **_Visualiseringer_**. Det skal være en **PNG**-fil, *20 pixel gange 20 pixel*.
 
 9. I Windows Stifinder skal du kopiere icon.png-filen og derefter indsætte den for at erstatte standardfilen, der er placeret i mappen assets.
 
@@ -275,7 +275,7 @@ Du kan nu åbne rapporten i Power BI Desktop og importere den brugerdefinerede v
 
 6. Når visualen er importeret, skal du vælge **OK**.
 
-7. Kontrollér, at visualen er tilføjet i ruden **_Visualiseringer_** .
+7. Kontrollér, at visualen er tilføjet i ruden **_Visualiseringer_**.
 
     ![Få vist i PBI Desktop-visualiseringsruden](media/custom-visual-develop-tutorial-format-options/view-in-desktop-viz-pane.png)
 

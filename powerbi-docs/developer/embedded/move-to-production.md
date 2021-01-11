@@ -1,6 +1,6 @@
 ---
-title: Flyt dit integrerede Power BI-analyseprogram til produktion
-description: Få mere at vide om, hvilke trin der kræves for at flytte dit Power BI-program til produktion.
+title: Flyt dit program til en integreret Power BI-analyse til produktion for at få bedre integreret BI-indsigt
+description: Få mere at vide om, hvilke trin der kræves for at flytte dit Power BI-program til produktion. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: rkarlin
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 06/02/2020
-ms.openlocfilehash: 188974531f7b78e04c2cf0f8072dcef7efe3b888
-ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
+ms.openlocfilehash: 71eff0f09c0e34ffd8789f1b56347d754b6589bc
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97098185"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97886666"
 ---
 # <a name="move-your-embedded-app-to-production"></a>Flyt et integreret program til produktion
 

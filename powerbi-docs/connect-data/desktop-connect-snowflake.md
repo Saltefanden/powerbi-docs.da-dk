@@ -7,16 +7,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/08/2019
+ms.date: 01/04/2021
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 115fba44c69fceb3a4f309cd92358ef5bc2eff42
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 00f78fef9f1abd11d7c553009db5541822c59c85
+ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96405738"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97926361"
 ---
-# <a name="connect-to-a-snowflake-computing-warehouse-in-power-bi-desktop"></a>Opret forbindelse til et Snowflake-databehandlingswarehouse i Power BI Desktop
+# <a name="connect-to-snowflake-in-power-bi-desktop"></a>Opret forbindelse til Snowflake i Power BI Desktop
 I Power BI Desktop kan du oprette forbindelse til et **Snowflake**-databehandlingswarehouse og bruge de underliggende data på samme måde som enhver anden datakilde i Power BI Desktop. 
 
 ## <a name="connect-to-a-snowflake-computing-warehouse"></a>Opret forbindelse til et Snowflake-databehandlingswarehouse
@@ -33,7 +33,7 @@ Når du bliver bedt om det, skal du angive dit brugernavn og din adgangskode.
 ![Skærmbillede af anmodningen om Snowflake-legitimationsoplysninger, hvor felterne Brugernavn og Adgangskode vises.](media/desktop-connect-snowflake/connect-snowflake-4.png)
 
 > [!NOTE]
-> Når du angiver dit brugernavn og din adgangskode for en bestemt **Snowflake**-server, anvendes de samme legitimationsoplysninger i efterfølgende forsøg på at oprette forbindelse via Power BI Desktop. Du kan ændre disse legitimationsoplysninger ved at gå til **Filer > Indstillinger > Indstillinger for datakilde**.
+> Når du indtaster dit brugernavn og din adgangskode for en bestemt **Snowflake**-server, anvendes de samme legitimationsoplysninger i efterfølgende forsøg på at oprette forbindelse via Power BI Desktop. Du kan ændre disse legitimationsoplysninger ved at gå til **Filer > Indstillinger > Indstillinger for datakilde**.
 > 
 > 
 

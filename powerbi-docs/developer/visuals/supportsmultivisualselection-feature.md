@@ -1,6 +1,6 @@
 ---
-title: Funktionen supportsMultiVisualSelection
-description: I denne artikel beskrives det, hvordan du bruger funktionen supportsMultiVisualSelection i Power BI-visualiseringer, og de tilhørende krav.
+title: Funktionen supportsMultiVisualSelection i en integreret Power BI-analyse, der giver bedre integreret BI-indsigt
+description: I denne artikel beskrives det, hvordan du bruger funktionen supportsMultiVisualSelection i Power BI-visualiseringer, og de tilhørende krav. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 04/30/2020
-ms.openlocfilehash: 091bdeb4eeb4c979ccf0e79476eb081895fae2e1
-ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
+ms.openlocfilehash: 9e6b17a4576f2354a5cbecc0c3a965a5611784ee
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92049401"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887931"
 ---
 # <a name="use-the-supportsmultivisualselection-feature"></a>Brug af funktionen supportsMultiVisualSelection
 

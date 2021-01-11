@@ -1,6 +1,6 @@
 ---
-title: Opret en Azure Active Directory-lejer, du kan bruge med Power BI
-description: Du kan få mere at vide om, hvordan du opretter en ny Azure Active Directory-lejer (Azure AD) til et brugerdefineret program, der kalder REST API'er for Power BI.
+title: Opret en Azure Active Directory-lejer, du kan bruge sammen med integreret BI i en integreret Power BI-analyse
+description: Du kan få mere at vide om, hvordan du opretter en ny Azure Active Directory-lejer (Azure AD) til et integreret brugerdefineret program, der kalder REST API'er for Power BI og muliggør integreret BI-intelligens til kunderne.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 05/28/2019
-ms.openlocfilehash: 03ba0a3090a4224cdc97a2f5bdcf80dc4b59dc64
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 24e1d8678234b7b355d99985f8e8a567954d6211
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91748764"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888989"
 ---
 # <a name="create-an-azure-active-directory-tenant-to-use-with-power-bi"></a>Opret en Azure Active Directory-lejer, du kan bruge med Power BI
 

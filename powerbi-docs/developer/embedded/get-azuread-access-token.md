@@ -1,6 +1,6 @@
 ---
-title: Godkend brugere, og få et Azure AD-adgangstoken til din applikation
-description: Få mere at vide om, hvordan du registrerer et program i Azure Active Directory, som skal bruges til at integrere Power BI-indhold.
+title: Godkend brugere, og få et Azure AD-adgangstoken til dit integrerede Power BI-analyseprogram for at forbedre kundernes oplevelse med integreret BI
+description: Få mere at vide om, hvordan du registrerer et program i Azure Active Directory, som skal bruges til at integrere Power BI-indhold. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 06/04/2019
-ms.openlocfilehash: cb7c874fc68da361971c34879f2ea44006402bf4
-ms.sourcegitcommit: 30d0668434283c633bda9ae03bc2aca75401ab94
+ms.openlocfilehash: 8001dd0e15ef713fa67256a45f645b0d7a0890c0
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96906928"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888437"
 ---
 # <a name="get-an-azure-ad-access-token-for-your-power-bi-application"></a>Få et Azure AD-adgangstoken til dit Power BI-program
 
@@ -200,7 +200,7 @@ m_tokenCredentials = new TokenCredentials(authenticationResult.AccessToken, "Bea
 
 ## <a name="troubleshoot"></a>Fejlfind
 
-Fejlmeddelelse: "'AuthenticationContext' indeholder ikke en definition for 'AcquireToken', og der blev ikke fundet en tilgængelig 'AcquireToken', der accepterer et første argument af typen 'AuthenticationContext' (mangler du en reference til et direktiv eller en assembly?)".
+Fejlmeddelelse: "'AuthenticationContext' doesn't contain a definition for 'AcquireToken' and no accessible 'AcquireToken' accepting a first argument of type 'AuthenticationContext' could be found (are you missing a using directive or an assembly reference?)".
 
    Prøv at hente [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727), hvis du får vist denne fejl.
 

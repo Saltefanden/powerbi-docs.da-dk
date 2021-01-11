@@ -9,17 +9,17 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 06/28/2020
-ms.openlocfilehash: 6a1f8a69db20d44fc814c7e63e4ad13ed5fc955c
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.date: 01/04/2021
+ms.openlocfilehash: e4d31a7bf83d4e94e2f3b71ca43924d468268f76
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96407371"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888395"
 ---
 # <a name="embed-a-report-web-part-in-sharepoint-online"></a>Integrer en rapportwebdel i SharePoint Online
 
-Med Power BI’s nye rapportwebdel til SharePoint Online kan du nemt kan integrere interaktive Power BI-rapporter på SharePoint Online-sider.
+Med Power BI's nye rapportwebdel til SharePoint Online kan du nemt integrere interaktive Power BI-rapporter på SharePoint Online-sider.
 
 Når du bruger den nye indstilling **Integrer i SharePoint Online**, respekterer de integrerede rapporter alle elementtilladelser og al datasikkerhed via [sikkerhed på rækkeniveau](../admin/service-admin-rls.md), så du nemt kan oprette sikre interne portaler.
 
@@ -39,9 +39,9 @@ Hvis du vil integrere din rapport i SharePoint Online, skal du have URL-adressen
 
 ### <a name="get-a-report-url"></a>Hent en URL-adresse til en rapport
 
-1. Få vist rapporten i Power BI.
+1. Åbn en rapport i Power BI-tjenesten.
 
-2. I rullemenuen **Flere indstillinger (...)** skal du vælge **Integrer** > **SharePoint Online**.
+2. I menuen **Del** skal du vælge **Integrer rapport** > **SharePoint Online**.
 
     ![Menuen Flere indstillinger, SharePoint Online](media/service-embed-report-spo/power-bi-more-options-sharepoint-online.png)
 

@@ -1,6 +1,6 @@
 ---
-title: Integreret indhold i dit program til integreret analyse i Power BI for offentlige og nationale cloudmiljøer
-description: Få mere at vide om, hvordan du integrerer en rapport, et dashboard eller et felt i et program ved hjælp af Power BI-API'er for at bruge integreret analyse for dine kunder. Få mere at vide om, hvordan du integrerer Power BI i dit program ved hjælp af software til integreret analyse, integrerede analyseværktøjer eller integrerede værktøjer til business intelligence til offentlige og nationale cloudmiljøer.
+title: Integrer indhold i dit program til integreret analyse i Power BI for at muliggøre bedre integreret BI-indsigt for offentlige og nationale cloudmiljøer
+description: Få mere at vide om, hvordan du integrerer Power BI i dit program ved hjælp af software til integreret analyse, integrerede analyseværktøjer eller integrerede værktøjer til business intelligence til offentlige og nationale cloudmiljøer. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18, devx-track-js
 ms.date: 02/05/2019
-ms.openlocfilehash: 9aa49e9f9df048b5c71b644c40a414159341c321
-ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
+ms.openlocfilehash: e1a6b5f82145df86668b92b1894789b7a48ef149
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97098139"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888851"
 ---
 # <a name="tutorial-embed-a-power-bi-content-into-your-application-for-national-clouds"></a>Selvstudium: Integrer Power BI-indhold i dit program for nationale cloudmiljøer
 

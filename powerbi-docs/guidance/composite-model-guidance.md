@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 12/24/2019
-ms.openlocfilehash: 53c0af04a76d4cf8cfacd49002434ecbc246fbe8
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: e4ddc487f81835edfdc5ad8a4074a91204ee0336
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96394376"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97884780"
 ---
 # <a name="composite-model-guidance-in-power-bi-desktop"></a>Vejledning til sammensatte modeller i Power BI Desktop
 
@@ -54,8 +54,8 @@ I en sammensat model kan du konfigurere lagringstilstanden for hver tabel (undta
 Der er flere mulige scenarier, når Power BI forespørger en sammensat model:
 
 - **Kun import- eller Dual-tabel(ler) forespørges**: Alle data hentes fra modelcachen. Der leveres den hurtigst mulige ydeevne. Dette scenarie er almindeligt for dimensionstypetabeller, der forespørges efter filtre eller udsnitsværktøjvisuals.
-- **Dual-tabel(ler) eller DirectQuery-tabel (r) fra den samme kilde forespørges**: Alle data hentes, ved at der sendes en eller flere oprindelige forespørgsler til DirectQuery-kilden. Der leveres den hurtigst mulige ydeevne, især når der findes relevante indekser i kildetabellerne. Dette scenarie er almindeligt for forespørgsler, der relaterer Dual-dimensionstypetabeller og DirectQuery-faktatypetabeller. Disse forespørgsler er _på tværs af_, så alle en-til-en- eller en-til-mange-relationer evalueres som [almindelige relationer](../transform-model/desktop-relationships-understand.md#regular-relationships).
-- **Alle andre forespørgsler**: Disse forespørgsler omfatter relationer på tværs af øer. Det skyldes enten, at en import tabel relaterer til en DirectQuery-tabel, eller at en Dual-tabel relaterer til en DirectQuery-tabel fra en anden kilde – i det tilfælde fungerer den som en importtabel. Alle relationer evalueres som [begrænsede relationer](../transform-model/desktop-relationships-understand.md#limited-relationships). Det betyder også, at grupperinger, der anvendes på ikke-DirectQuery-tabeller, skal sendes til DirectQuery-kilden som en virtuel tabel. I dette tilfælde kan den oprindelige forespørgsel være ineffektiv, især for store grupperingssæt. Der er også en risiko for, at følsomme data vises i den oprindelige forespørgsel.
+- **Dual-tabel(ler) eller DirectQuery-tabel (r) fra den samme kilde forespørges**: Alle data hentes, ved at der sendes en eller flere oprindelige forespørgsler til DirectQuery-kilden. Der leveres den hurtigst mulige ydeevne, især når der findes relevante indekser i kildetabellerne. Dette scenarie er almindeligt for forespørgsler, der relaterer Dual-dimensionstypetabeller og DirectQuery-faktatypetabeller. Disse forespørgsler finder sted _internt i kildegruppen_, hvorfor alle en til en- eller en til mange-relationer evalueres som [almindelige relationer](../transform-model/desktop-relationships-understand.md#regular-relationships).
+- **Alle andre forespørgsler**: Disse forespørgsler omfatter relationer på tværs af kildegrupper. Det skyldes enten, at en import tabel relaterer til en DirectQuery-tabel, eller at en Dual-tabel relaterer til en DirectQuery-tabel fra en anden kilde – i det tilfælde fungerer den som en importtabel. Alle relationer evalueres som [begrænsede relationer](../transform-model/desktop-relationships-understand.md#limited-relationships). Det betyder også, at grupperinger, der anvendes på ikke-DirectQuery-tabeller, skal sendes til DirectQuery-kilden som en virtuel tabel. I dette tilfælde kan den oprindelige forespørgsel være ineffektiv, især for store grupperingssæt. Der er også en risiko for, at følsomme data vises i den oprindelige forespørgsel.
 
 Kort sagt anbefaler vi, at du:
 

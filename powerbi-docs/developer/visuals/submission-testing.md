@@ -1,6 +1,6 @@
 ---
-title: Indsendelsestest af en Power BI-visualisering
-description: I denne artikel beskrives de testsager, som din visualisering skal bestå, før den publiceres i AppSource. Der er også valgfri testsager.
+title: Indsendelsestest af en Power BI-visualisering i en integreret Power BI-analyse for at få bedre integreret BI-indsigt
+description: I denne artikel beskrives de testsager, som din visualisering skal bestå, før den publiceres i AppSource. Der er også valgfri testsager. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 04/15/2020
-ms.openlocfilehash: 515813aeb98010f838cfff75febbb1ef206bc2cf
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: b5054d821dc797f1606fea8ec5d0bb43569a57e5
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94397478"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888460"
 ---
 # <a name="submission-testing-of-a-power-bi-visual"></a>Indsendelsestest af en Power BI-visualisering
 
@@ -76,8 +76,8 @@ Kontrollér, at visualiseringen består de generelle testcases.
 | Gennemse formateringen af værdier for værktøjstip, aksemærkater, datanavne og andre visuelle elementer med formatering. | Alle elementer er formateret korrekt. |
 | Kontrollér, at datanavne bruger formatstrengen. | Alle datanavne er formateret korrekt. |
 | Slå automatisk formatering til og fra for numeriske værdier i værktøjstip. | Værdierne i værktøjstippet vises korrekt. |
-| Test dataposter med forskellige typer data, herunder numeriske, tekst, dato/klokkeslæt og forskellige formatstrenge fra modellen. Test forskellige datamængder, f.eks. tusindvis af rækker, én række og to rækker. | Alle vises, og funktionerne fungerer korrekt. |
-| Angiv forkerte data i din visualisering, f.eks. null, uendelige værdier, negative værdier og forkerte værdityper. | Alle vises, og funktionerne fungerer korrekt. |
+| Test dataposter med forskellige typer data, herunder numeriske, tekst, dato/klokkeslæt og forskellige formatstrenge fra modellen. Test forskellige datamængder, f.eks. tusindvis af rækker, én række og to rækker. | Alt vises, og funktionerne fungerer korrekt. |
+| Angiv forkerte data i din visualisering, f.eks. null, uendelige værdier, negative værdier og forkerte værdityper. | Alt vises, og funktionerne fungerer korrekt. |
 
 ## <a name="optional-browser-testing"></a>Valgfri browsertest
 

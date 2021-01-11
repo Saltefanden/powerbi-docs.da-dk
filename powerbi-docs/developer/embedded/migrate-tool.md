@@ -1,6 +1,6 @@
 ---
-title: Overførselsværktøj i Power BI Embedded
-description: Du kan bruge dette overførselsværktøj til at kopiere dine rapporter fra Power BI Embedded Azure-tjenesten (PaaS) til Power BI-tjenesten (SaaS).
+title: Overførselsværktøj fra arbejdsområdesamlinger til løsningen til integreret Power BI-analyse i Power BI Embedded for at få bedre integreret BI-indsigt
+description: Du kan bruge dette overførselsværktøj til at kopiere dine rapporter fra Power BI Embedded Azure-tjenesten (PaaS) til Power BI-tjenesten (SaaS). Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 06/30/2018
-ms.openlocfilehash: 60e80311ff12da2bc79b7f844c81c7b5c8f4c3ac
-ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
+ms.openlocfilehash: 7156d0e414a4469cb4e0cba5ea5958e02e4e2e43
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85354863"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97885268"
 ---
 # <a name="power-bi-embedded-migration-tool"></a>Overførselsværktøj i Power BI Embedded
 
@@ -272,9 +272,9 @@ Du kan finde flere oplysninger under [Sådan overfører du indhold fra arbejdsom
 [Integrer med Power BI](embedding.md)  
 [Sådan overfører du indhold i arbejdsområdesamlingen i Power BI Embedded til Power BI](migrate-from-powerbi-embedded.md)  
 [Power BI Premium – hvad er det?](../../admin/service-premium-what-is.md)  
-[Git-lager til JavaScript-API](https://github.com/Microsoft/PowerBI-JavaScript)  
+[Git-lager for JavaScript-API](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Git-lager til Power BI C#](https://github.com/Microsoft/PowerBI-CSharp)  
 [Integreret JavaScript-eksempel](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
 [Hvidbog til Power BI Premium](https://aka.ms/pbipremiumwhitepaper)  
 
-Flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

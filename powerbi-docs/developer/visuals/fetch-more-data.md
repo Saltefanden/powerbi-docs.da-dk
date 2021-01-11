@@ -1,6 +1,6 @@
 ---
-title: Hent flere data fra Power BI
-description: I denne artikel gennemgås det, hvordan segmenteret hentning af store datasæt for Power BI-visualiseringer aktiveres.
+title: Hent flere data fra Power BI i en integreret Power BI-analyse for at få bedre integreret BI-indsigt
+description: I denne artikel gennemgås det, hvordan segmenteret hentning af store datasæt for Power BI-visualiseringer aktiveres. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 12/13/2020
-ms.openlocfilehash: 3dc94a24e5e6a84992745775b1639b7a186ed19d
-ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
+ms.openlocfilehash: 345efe91be1af5ee61d713c576f04657b182ad47
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97492075"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97886298"
 ---
 # <a name="fetch-more-data-from-power-bi"></a>Hent flere data fra Power BI
 

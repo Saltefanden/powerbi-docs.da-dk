@@ -1,6 +1,6 @@
 ---
-title: Opret SSL-certifikater til Power BI-visualiseringer
-description: Få mere at vide om, hvordan du genererer SSL-certifikater ved hjælp af Power BI Visual Tools i Windows, Mac eller Linux eller manuelt.
+title: Opret SSL-certifikater til Power BI-visualiseringer i en integreret Power BI-analyse for at få bedre integreret BI-indsigt
+description: Få mere at vide om, hvordan du genererer SSL-certifikater ved hjælp af Power BI Visual Tools i Windows, Mac eller Linux eller manuelt. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 05/08/2020
-ms.openlocfilehash: f6f458d2fe82668074d7cfb046cb5a72afa35c38
-ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
+ms.openlocfilehash: 7897d25f3ac49c0f1b728f2aaf05b8612de67055
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92048780"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97885516"
 ---
 # <a name="create-an-ssl-certificate"></a>Opret et SSL-certifikat
 

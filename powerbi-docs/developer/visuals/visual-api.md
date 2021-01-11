@@ -1,6 +1,6 @@
 ---
-title: Visualiserings-API
-description: I denne artikel beskrives det, hvordan du bruger IVisual API i Power BI-visualiseringer
+title: Visualiserings-API i en integreret Power BI-analyse, der giver bedre integreret BI-indsigt
+description: I denne artikel beskrives det, hvordan du bruger IVisual API i Power BI-visualiseringer. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 03/19/2020
-ms.openlocfilehash: 6ec30fdd4812427ae855ff9a167d946d2a415c28
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 7b81ecfa1b97b202b6c1ff306cf858f2ea00acde
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83302960"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888529"
 ---
 # <a name="visual-api"></a>Visualiserings-API
 Alle visualiseringer starter med en klasse, der implementerer grænsefladen `IVisual`. Du kan navngive klassen, så længe der er nøjagtig én klasse, der implementerer grænsefladen `IVisual`.

@@ -8,12 +8,12 @@ ms.subservice: powerbi-eim
 ms.topic: how-to
 ms.date: 10/26/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 7232cad4fc1216ac6e1aa7c8a01136239a2f09d2
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 5485f59e11f3c971c719b2604b9e1280a072c5b1
+ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96407049"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97926755"
 ---
 # <a name="endorse-your-content"></a>Anbefal dit indhold
 
@@ -25,7 +25,7 @@ Power BI indeholder to metoder til at anbefale dit værdifulde indhold af høj k
 
 * **Certificering**: Certificering betyder, at indholdet opfylder organisationens kvalitetsstandarder og kan anses for at være pålideligt, autoritativt og klar til brug i hele organisationen.
 
-    Det er kun autoriserede validatorer, der kan certificere indhold. Ejere af indhold, der gerne vil have deres indhold certificeret, men som ikke er autoriseret til at certificere det selv, skal følge deres organisations retningslinjer for at få deres indhold certificeret.
+    Det er kun [godkendte validatorer (defineret af Power BI-administratoren)](../admin/service-admin-setup-certification.md), der kan certificere indhold. Ejere af indhold, der gerne vil have deres indhold certificeret, men som ikke er autoriseret til at certificere det selv, skal følge deres organisations retningslinjer for at få deres indhold certificeret.
 
 Det er i øjeblikket muligt at anbefale
 * Datasæt

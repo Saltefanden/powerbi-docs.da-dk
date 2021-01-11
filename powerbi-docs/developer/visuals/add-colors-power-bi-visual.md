@@ -1,6 +1,6 @@
 ---
-title: Føj farver til dine Power BI-visualiseringer
-description: I denne artikel beskrives det, hvordan du kan føje farver til dine Power BI-visualiseringer, og hvordan du håndterer datapunkter for en visualisering med farve.
+title: Føj farver til dine Power BI-visualiseringer i en integreret Power BI-analyse for at få bedre integreret BI-indsigt
+description: I denne artikel beskrives det, hvordan du kan føje farver til dine Power BI-visualiseringer, og hvordan du håndterer datapunkter for en visualisering med farve. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 03/27/2020
-ms.openlocfilehash: 3a68f3dedbef9e97b6c29d3a0923d43872a5f01a
-ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
+ms.openlocfilehash: e6b6fb1dbc1397b93ac12692c8610e6f36d0b8bf
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92048803"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887977"
 ---
 # <a name="add-colors-to-your-power-bi-visuals"></a>Føj farver til dine Power BI-visualiseringer
 

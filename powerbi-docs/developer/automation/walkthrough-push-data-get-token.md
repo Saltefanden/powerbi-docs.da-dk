@@ -1,6 +1,6 @@
 ---
-title: Hent en adgangstoken til godkendelse
-description: Gå videre til overførsel af data – hent et adgangstoken til godkendelse
+title: Få et adgangstoken til godkendelse i en integreret Power BI-analyse for at få bedre integreret BI-indsigt
+description: Se, hvordan du overfører data – hent et adgangstoken til godkendelse. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: madia
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 05/29/2019
-ms.openlocfilehash: b66c87d88e08a4c1f9ee4f9aebdbf44516d9cb43
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 22d30e14256a2e58e05e17207380842392fe0c23
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91746510"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887402"
 ---
 # <a name="step-2-get-an-authentication-access-token"></a>Trin 2: Hent et adgangstoken til godkendelse
 
@@ -21,7 +21,7 @@ Denne artikel er det andet trin i serien [Overfør data til et datasæt i Power 
 
 I trin 1 [registrerede du en klientapp i Azure AD](../embedded/register-app.md). På dette trin henter du et adgangstoken til godkendelse. Power BI-apps er integreret med Azure Active Directory for at give sikker logon og godkendelse til din app. Din app bruger et token til at godkende til Azure AD og få adgang til Power BI-ressourcer.
 
-## <a name="get-an-authentication-access-token"></a>Hent en adgangstoken til godkendelse
+## <a name="get-an-authentication-access-token"></a>Hent et adgangstoken til godkendelse
 
 Før du starter, skal du sikre, at du har fuldført det [forrige trin](../embedded/register-app.md) i serien [Overfør data til et datasæt i Power BI](walkthrough-push-data.md). 
 
@@ -58,7 +58,7 @@ Tilføj denne kode i Program {...}.
   {
   }
   ```
-* In static void Main(string[] args):
+* I static void Main(string[] args):
   
   ```csharp
   static void Main(string[] args)
@@ -115,7 +115,7 @@ Når du har hentet et godkendelsestoken, kan du kalde enhver Power BI-handling.
 I næste artikel i serien kan du se, hvordan du [opretter et datasæt i Power BI](walkthrough-push-data-create-dataset.md).
 
 
-## <a name="complete-code-listing"></a>Færdiggør kodeliste
+## <a name="complete-code-listing"></a>Komplet kodeliste
 
 ```csharp
 using System;
@@ -180,10 +180,10 @@ namespace walkthrough_push_data
 
 
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 * Den næste artikel i denne serie er [Opret et datasæt i Power BI](walkthrough-push-data-create-dataset.md)
-* [Oversigt over Power BI REST-API'en](overview-of-power-bi-rest-api.md)  
+* [Oversigt over Power BI REST-API](overview-of-power-bi-rest-api.md)  
 * [REST-API'er til Power BI](/rest/api/power-bi/)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

@@ -7,25 +7,26 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 03/02/2018
+ms.date: 01/05/2021
 LocalizationGroup: Dashboards
-ms.openlocfilehash: ec0b384efb4b43afad76e18feb1b5a53d5f3738c
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 5ae148feaa294c8779a7140ef450c832bd3376d8
+ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96395204"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97927169"
 ---
 # <a name="pin-a-tile-to-a-dashboard-from-qa"></a>Fastgør et felt til et dashboard fra Spørgsmål og svar
-## <a name="how-to-pin-a-tile-from-qa"></a>Sådan fastgør du et felt fra Spørgsmål og svar
-Spørgsmål og svar er Power BI's ad hoc-rapporteringsværktøj. Brug for at finde en bestemt indsigt? Stil et spørgsmål om dine data, og få svar i form af en visualisering.
 
-I denne vejledning bruger vi Power BI-tjenesten (app.powerbi.com) til at åbne et dashboard, stille et spørgsmål i et naturligt sprog for at oprette en visualisering, og fastgøre denne visualisering til et dashboard. Dashboards er ikke tilgængelige i Power BI Desktop. Du kan finde oplysninger om brug af Spørgsmål og svar med andre Power BI-værktøjer og andet Power Bi-indhold under [Spørgsmål og svar i Power BI – Oversigt](../consumer/end-user-q-and-a.md). 
+Spørgsmål og svar er et værktøj i Power BI til at udforske data ved hjælp af et naturligt sprog. Brug for at finde en bestemt indsigt? Stil et spørgsmål om dine data, og få svar i form af en visualisering.
+
+I denne vejledning åbner vi et [dashboard](../consumer/end-user-dashboards.md) i Power BI-tjenesten (app.powerbi.com), stiller et spørgsmål på et naturligt sprog for at oprette en visualisering og fastgør denne visualisering til et dashboard. Dashboards er ikke tilgængelige i Power BI Desktop. Du kan finde oplysninger om brug af Spørgsmål og svar med andre Power BI-værktøjer og andet Power Bi-indhold under [Spørgsmål og svar i Power BI – Oversigt](../consumer/end-user-q-and-a.md). 
 
 Åbn [dashboardet Retail Analysis Sample](sample-retail-analysis.md) (Eksempel på detailhandelsanalyse) for at følge med.
 
+## <a name="how-to-pin-a-tile-from-qa"></a>Sådan fastgør du et felt fra Spørgsmål og svar
 
-1. Åbn et [dashboard](../consumer/end-user-dashboards.md) med mindst ét felt fastgjort fra en rapport. Når du stiller et spørgsmål, leder Power BI efter svaret i de datasæt, hvor et felt er fastgjort til dette dashboard.  Du kan få flere oplysninger i [Hent data](../connect-data/service-get-data.md).
+1. Åbn et dashboard med mindst ét felt fastgjort fra en rapport. Når du stiller et spørgsmål, leder Power BI efter svaret i de datasæt, hvor et felt er fastgjort til dette dashboard.
 2. I spørgsmålsfeltet øverst i dit dashboard skal du begynde at indtaste, hvad du vil vide om dine data.  
    ![Boks med spørgsmål og svar](media/service-dashboard-pin-tile-from-q-and-a/power-bi-question-box.png)
 3. Mens du f.eks. skriver "last year sales by month and territory"...  
@@ -62,5 +63,5 @@ I denne vejledning bruger vi Power BI-tjenesten (app.powerbi.com) til at åbne e
 ## <a name="next-steps"></a>Næste trin
 [Omdøb, tilpas størrelse, tilføj et hyperlink, flyt feltet og meget mere](service-dashboard-edit-tile.md)    
 [Få vist dit dashboardfelt i fokustilstand](../consumer/end-user-focus.md)     
-[Tilbage til Spørgsmål og svar i Power BI](../consumer/end-user-q-and-a.md)  
+[Oversigt over Spørgsmål og svar i Power BI](../consumer/end-user-q-and-a.md)  
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

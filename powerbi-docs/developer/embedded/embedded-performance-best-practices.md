@@ -1,6 +1,6 @@
 ---
-title: Bedste praksis for ydeevnen i Power BI Embedded
-description: Denne artikel indeholder en vejledning til bedste praksis for integreret analyse
+title: Den bedste praksis i forbindelse med ydeevnen i en integreret Power BI-analyse for at få bedre integreret BI-indsigt
+description: Denne artikel indeholder en vejledning til bedste praksis for integreret analyse i Power BI. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/12/2018
-ms.openlocfilehash: 2d33ed5a707a3b4bc3e0a77a38128e7e00154798
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: f8bf41ae9a4b6f2e16aae2c05df8fa4448a0457c
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91746671"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888782"
 ---
-# <a name="power-bi-embedded-performance-best-practices"></a>Bedste praksis for ydeevnen i Power BI Embedded
+# <a name="power-bi-embedded-analytics-performance-best-practices"></a>Bedste praksis for ydeevnen i en integreret Power BI-analyse
 
 Denne artikel indeholder anbefalinger til hurtigere gengivelse af rapporter, dashboards og felter i dit program.
 
@@ -65,7 +65,7 @@ Organisationer med Power BI Premium-kapacitet eller Power BI Embedded-kapacitet 
 
 Brug `powerbi.preload()` til at forbedre ydeevnen for slutbrugeren. Metoden `powerbi.preload()` downloader javascript, css-filer og andre artefakter, der senere bruges til at integrere en rapport.
 
-Kald `powerbi.preload()`, hvis du ikke integrerer rapporten med det samme. Hvis det Power BI-integrerede indhold f.eks. ikke vises på startsiden, skal du bruge `powerbi.preload()` til at downloade og cachelagre de artefakter, der bruges til at integrere indholdet.
+Kald `powerbi.preload()`, hvis du ikke integrerer rapporten med det samme. Hvis det integrerede Power BI-indhold f.eks. ikke vises på startsiden, skal du bruge `powerbi.preload()` til at downloade og cachelagre de artefakter, der bruges til at integrere indholdet.
 
 ## <a name="bootstrapping-the-iframe"></a>Bootstrap af iframe
 
@@ -107,5 +107,5 @@ Med Effektivitetsanalyse kan du se og registrere logge, der måler, hvordan hver
 ## <a name="next-steps"></a>Næste trin
 
 * [Optimeringsvejledning til Power BI](../../guidance/power-bi-optimization.md)
-* [Sådan foretager du fejlfinding af problemer med Power BI Embedded](embedded-troubleshoot.md)
-* [Ofte stillede spørgsmål om Power BI Embedded](embedded-faq.md)
+* [Sådan foretager du fejlfinding af problemer med en integreret Power BI-analyse](embedded-troubleshoot.md)
+* [Ofte stillede spørgsmål om en integreret Power BI-analyse](embedded-faq.md)

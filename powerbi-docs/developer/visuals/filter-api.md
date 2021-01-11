@@ -1,6 +1,6 @@
 ---
-title: Visuelle filtres API i Power BI-visualiseringer
-description: I denne artikel gennemgås det, hvordan Power BI-visualiseringer kan filtrere andre visualiseringer.
+title: Visualiseringsfilter-API'en i Power BI-visualiseringer i en integreret Power BI-analyse for at få bedre integreret BI-indsigt
+description: I denne artikel gennemgås det, hvordan Power BI-visualiseringer kan filtrere andre visualiseringer. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: 24e8ac32fb89db2fdc0d1f4ad3fbaffdadaf57bb
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: c03c64c2835ff8bf0b0f1ad3bd555da94aaf3126
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237421"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888736"
 ---
 # <a name="the-visual-filters-api-in-power-bi-visuals"></a>Visuelle filtres API i Power BI-visualiseringer
 

@@ -1,6 +1,6 @@
 ---
-title: Objekter og egenskaber for visualiseringer i Power BI
-description: I denne artikel beskrives egenskaber, der kan brugertilpasses, for visualiseringer i Power BI.
+title: Objekter og egenskaber for Power BI-visualiseringer i en integreret Power BI-analyse for at få bedre integreret BI-indsigt
+description: I denne artikel beskrives egenskaber, der kan brugertilpasses, for visualiseringer i Power BI. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: ae548abd0d579414a69b0d970213ff9d69ff2f08
-ms.sourcegitcommit: 9d033abd9c01a01bba132972497dda428d7d5c12
+ms.openlocfilehash: 4596465fcd9f59768b18282ec3ad39d2531b7768
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96120207"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97885953"
 ---
 # <a name="objects-and-properties-of-power-bi-visuals"></a>Objekter og egenskaber for visualiseringer i Power BI
 

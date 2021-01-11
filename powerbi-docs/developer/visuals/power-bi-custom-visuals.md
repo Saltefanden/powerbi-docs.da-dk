@@ -1,6 +1,6 @@
 ---
-title: Visualiseringer i Power BI
-description: Denne artikel indeholder en beskrivelse af brugerdefinerede Power BI-visualiseringer
+title: Visualiseringer i Power BI i en integreret Power BI-analyse for at få bedre integreret BI-indsigt
+description: Denne artikel indeholder en beskrivelse af brugerdefinerede Power BI-visualiseringer. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
@@ -10,12 +10,12 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: overview
 ms.date: 07/14/2020
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 91c9115f7d9ca0eb15606fcd77f99070e949842e
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 3d2e8f46605238a87eb23c32765f0a4ffaa02400
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96416755"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888069"
 ---
 # <a name="visuals-in-power-bi"></a>Visualiseringer i Power BI
 

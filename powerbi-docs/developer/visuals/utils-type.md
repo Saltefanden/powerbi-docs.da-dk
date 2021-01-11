@@ -1,6 +1,6 @@
 ---
-title: Introduktion til brug af typehjælpeprogrammer i Power BI-visuals
-description: I denne artikel beskrives det, hvordan du bruger SVG-hjælpeprogrammer til udvidelse af basistyperne for Power BI-visuals
+title: Introduktion til brug af typehjælpeprogrammer i Power BI-visualiseringer i en integreret Power BI-analyse for at opnå bedre integreret BI-indsigt
+description: I denne artikel beskrives det, hvordan du bruger SVG-hjælpeprogrammer til udvidelse af basistyperne for Power BI-visualiseringer. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
@@ -9,14 +9,14 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 06/18/2019
-ms.openlocfilehash: 5a3cfb7ea9c9f398193b45652aa43c6b83c8f70b
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 4f81f55f8d5cfc54020b3b4e02e8be55fb65b0d1
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79377989"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888115"
 ---
-# <a name="type-utils"></a>Typehjælpeprogrammer
+# <a name="type-utils"></a>Hjælpeprogrammer til typer
 
 Typehjælpeprogrammer er en række funktioner og klasser, der udvider basistyperne for Power BI-visuals.
 

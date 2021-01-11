@@ -1,6 +1,6 @@
 ---
-title: Interaktivitetsutils til Power BI-visuals
-description: I artikIen beskrives det, hvordan du føjer valg til Power BI-visuals ved hjælp af interaktivitetsutils
+title: Hjælpeprogrammer til interaktivitet mellem Power BI-visualiseringer i en integreret Power BI-analyse for at få bedre integreret BI-indsigt
+description: I artikIen beskrives det, hvordan du føjer valg til Power BI-visualiseringer ved hjælp af hjælpeprogrammer til interaktivitet. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: rkarlin
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 02/24/2020
-ms.openlocfilehash: f4d47347c98d19afdfbf07615842bfb4649dc1b9
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 533cf90ed9192a8d9e595cdea6320207b841b559
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79379254"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887770"
 ---
 # <a name="power-bi-visuals-interactivity-utils"></a>Interaktivitetsutils til Power BI-visuals
 
@@ -285,7 +285,7 @@ Datapunkter indeholder normalt valg og værdier. Grænsefladen udvider `Selectab
         // ...
       }
       ```
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 * [Læs om, hvordan du kan håndtere valg ved skift af bogmærker](bookmarks-support.md#visuals-with-selection)
 

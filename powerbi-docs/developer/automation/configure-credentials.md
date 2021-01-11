@@ -1,6 +1,6 @@
 ---
-title: Konfigurer legitimationsoplysninger programmatisk for Power BI
-description: Sådan konfigurerer du legitimationsoplysninger programmatisk, når Power BI automatiseres
+title: Konfigurer legitimationsoplysninger programmeringsmæssigt til en integreret Power BI-analyse for at få bedre integreret BI-indsigt
+description: Sådan konfigurerer du legitimationsoplysninger programmeringsmæssigt, når Power BI automatiseres. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 06/23/2020
-ms.openlocfilehash: 902fb0534eee307a84b24fe30496a32cccadb147
-ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
+ms.openlocfilehash: c87ca689d804c909ca3a6ca9544ac1a4568c8b86
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97097978"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887632"
 ---
 # <a name="configure-credentials-programmatically-for-power-bi"></a>Konfigurer legitimationsoplysninger programmatisk for Power BI
 

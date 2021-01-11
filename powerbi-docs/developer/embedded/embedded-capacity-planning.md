@@ -1,6 +1,6 @@
 ---
-title: Kapacitetsplanlægning af integreret analyse i Power BI
-description: Kapacitetsplanlægning af integreret analyse i Power BI.
+title: Kapacitetsplanlægning for en integreret Power BI-analyse for at få bedre integreret BI-indsigt
+description: Få mere at vide om, hvordan du planlægger kapacitet i en integreret Power BI-analyse. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 03/03/2020
-ms.openlocfilehash: b172b48517ccc8c55821fa8e8217d5e2df398b2d
-ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
+ms.openlocfilehash: 69eeae495f66a4f41f25d5234f1b995d1e3d4986
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97098346"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888828"
 ---
 # <a name="capacity-planning-in-power-bi-embedded-analytics"></a>Kapacitetsplanlægning af integreret analyse i Power BI
 
@@ -65,7 +65,7 @@ Lageret har åben kildekode, og brugerne opfordres til at bidrage og tilføje yd
 ## <a name="next-steps"></a>Næste trin
 
 > [!div class="nextstepaction"]
->[Kapacitet og SKU'er i integreret analyse i Power BI](embedded-capacity.md)
+>[Kapacitet og SKU'er i Power BI Embedded-analyser](embedded-capacity.md)
 
 > [!div class="nextstepaction"]
 >[Bedste praksis for ydeevnen i Power BI Embedded](embedded-performance-best-practices.md)

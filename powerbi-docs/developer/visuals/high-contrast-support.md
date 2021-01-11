@@ -1,19 +1,19 @@
 ---
-title: Understøttelse af stor kontrast til visualiseringer i Power BI
-description: I denne artikel beskrives det, hvordan du føjer tilstanden med understøttelse af stor kontrast til visualiseringer i Power BI.
+title: Understøttelse af tilstand med høj kontrast i Power BI-visualiseringer i en integreret Power BI-analyse for at få bedre integreret BI-indsigt
+description: I denne artikel beskrives det, hvordan du føjer tilstanden med understøttelse af stor kontrast til visualiseringer i Power BI. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: 9372187ae1fdfac27f6b3e7267a1c0622c063464
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: f55427511a76fc65b3ae6b3933dca68ef742039c
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80114330"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97889196"
 ---
 # <a name="high-contrast-mode-support-in-power-bi-visuals"></a>Understøttelse af stor kontrast til visualiseringer i Power BI
 
