@@ -9,6 +9,8 @@
           href: embedding.md
         - name: Hvad er Power BI Embedded i Azure?
           href: azure-pbie-what-is-power-bi-embedded.md
+        - name: Hvad er Power BI Embedded Generation 2
+          href: power-bi-embedded-generation-2.md
     - name: Selvstudier
       expanded: true
       items:
@@ -22,7 +24,7 @@
           href: embed-paginated-reports-organization.md
         - name: Integrer indhold for nationale cloudmiljøer
           href: embed-sample-for-customers-national-clouds.md
-    - name: Begreber
+    - name: Koncepter
       items:
         - name: Kapacitet og SKU'er i integrerede Power BI-analyser
           href: embedded-capacity.md

@@ -10,16 +10,16 @@ ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 ms.date: 12/15/2020
 LocalizationGroup: Dashboards
-ms.openlocfilehash: b7184f00af46ce5f49df2510ea5e676c89a37a7a
-ms.sourcegitcommit: fef29a5c5bf1e0dae663c42c9ce5ae50e29ae9be
+ms.openlocfilehash: dc3ce931664a3c125504865c6cccfe3fdfa404c4
+ms.sourcegitcommit: f791eef8e885f18c48997c9af63ab56211f1ceb8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97558487"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "98053414"
 ---
 # <a name="monitor-usage-metrics-in-classic-workspaces"></a>Overvåg forbrugsdata i klassiske arbejdsområder
 
-Forbrugsdata hjælper dig med at forestå indvirkningen af dashboards og rapporter. Når du kører enten forbrugsdata for dashboards eller rapporter, opdager du, hvordan disse dashboards og rapporter anvendes i hele organisationen: Hvem bruger dem og til hvilket formål. I denne artikel beskrives rapporter om forbrugsdata for [klassiske arbejdsområder](service-create-workspaces.md). Hvis dine rapporter er i et af de nye arbejdsområder, skal du se artiklen [Overvåg forbrugsdata i den nye arbejdsområdeoplevelse](service-usage-metrics.md)  
+Forbrugsdata hjælper dig med at forestå indvirkningen af dashboards og rapporter. Når du kører enten forbrugsdata for dashboards eller rapporter, opdager du, hvordan disse dashboards og rapporter anvendes i hele organisationen: Hvem bruger dem og til hvilket formål. I denne artikel beskrives rapporter om forbrugsdata for [klassiske arbejdsområder](service-create-workspaces.md). Hvis dine rapporter er i et af de nye arbejdsområder, skal du se artiklen [Overvåg forbrugsdata i den nye arbejdsområdeoplevelse](service-modern-usage-metrics.md)  
 
 Forbrugsdatarapporter er skrivebeskyttede. Du kan dog kopiere en forbrugsdatarapport. Når du kopierer den, oprettes en almindelig Power BI-rapport, som du kan redigere. Du kan også udarbejde dine egne rapporter i Power BI Desktop, der er baseret på det underliggende datasæt, der indeholder forbrugsdata for alle dashboards eller alle rapporter i et arbejdsområde. Som udgangspunkt viser den kopierede rapport kun forbrugsdata for det valgte dashboard eller den valgte rapport. Du kan fjerne standardfilteret og få adgang til det underliggende datasæt med alle forbrugsdata for det valgte arbejdsområde. Du kan se endda se navnene på specifikke brugere, hvis din administrator har tilladt dette.
 

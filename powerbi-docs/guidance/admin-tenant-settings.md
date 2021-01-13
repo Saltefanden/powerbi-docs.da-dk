@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 08/10/2020
-ms.openlocfilehash: 66d721670f90efb17f6167aba3c074bdf6ea0ae1
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 39357ec461ae96ef566719739aa76a61c7e7c539
+ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96394859"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97969782"
 ---
 # <a name="tenant-settings-guidance"></a>Vejledning til indstillinger for lejer
 
@@ -39,7 +39,7 @@ Hvis du har gjort det, anbefaler vi, at du derefter aktiverer indstillingen **Pu
 Disse URL-adresser bliver tilgængelige som links i menuen Hjælp i Power BI.
 
 > [!NOTE]
-> Hvis du angiver URL-adressen for **licensanmodninger**, kan enkeltbrugere ikke købe en Power BI Pro-licens. De henvises i stedet til dit interne websted med oplysninger om, hvordan de anskaffer sig en licens. Indstillingen **Tillad brugere at prøve Power BI Pro** er aktiveret som standard og adskiller købs-og prøveversionsoplevelsen. Hvis du vil vide mere om, hvordan disse indstillinger fungerer sammen, skal du se [Tillad brugere at prøve Power BI Pro](../admin/service-admin-portal.md#allow-users-to-try-power-bi-pro).
+> Hvis du angiver URL-adressen for **licensanmodninger**, kan enkeltbrugere ikke købe en Power BI Pro-licens. De henvises i stedet til dit interne websted med oplysninger om, hvordan de anskaffer sig en licens. Indstillingen **Tillad brugere at prøve Power BI Pro** er aktiveret som standard og adskiller købs-og prøveversionsoplevelsen. Hvis du vil vide mere om, hvordan disse indstillinger fungerer sammen, skal du se [Tillad brugere at prøve Power BI Pro](../admin/service-admin-portal.md#allow-users-to-try-power-bi-paid-features).
 >
 >
 

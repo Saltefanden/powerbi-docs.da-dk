@@ -9,12 +9,12 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 07/27/2018
 LocalizationGroup: Create reports
-ms.openlocfilehash: 35c118171ef5202e24e5997e321b698e3b137387
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: e2a610e12da1a91db6e22ab493ed39410ec1c091
+ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96396469"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97969736"
 ---
 # <a name="use-r-powered-power-bi-visuals-in-power-bi"></a>Brug R-drevne Power BI-visualiseringer i Power BI
 
@@ -92,7 +92,7 @@ Her er den fremgangsmåde, du skal benytte for at gennemse og vælge visuals på
 
 Hvis du opretter dine egne R-visualiseringer til brug i dine rapporter, kan du dele disse visualiseringer globalt ved at bidrage med dine brugerdefinerede visualiseringer i **galleriet med Power BI-visualiseringer**. Bidrag er oprettet via GitHub, og processen er beskrevet på følgende placering:
 
-* [Bidrag til galleriet med R-drevne Power BI-visualiseringer](https://github.com/Microsoft/PowerBI-visuals#building-r-powered-custom-visual-corrplot)
+* [Bidrag til galleriet med R-drevne Power BI-visualiseringer](https://github.com/PowerBi-Projects/PowerBI-visuals#building-r-powered-custom-visual-corrplot)
 
 ## <a name="troubleshoot-r-powered-power-bi-visuals"></a>Foretag fejlfinding af R-drevne Power BI-visualiseringer
 

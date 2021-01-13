@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/17/2020
-ms.openlocfilehash: 7779976e7897b31e5f3dde2c4c3306c909ecf0f0
-ms.sourcegitcommit: 5c09d121d3205e65fb33a2eca0e60bc30e777773
+ms.openlocfilehash: 6eebe7b75db06b97d116ca0c17e67e9ee7b0562e
+ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97675538"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97969644"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Hvad er nyt i mobilapps til Power BI
 Du kan finde relaterede oplysninger om nyheder under:
@@ -570,7 +570,7 @@ Læs [oversigten over funktioner i mobilapps for april 2017](https://powerbi.mic
 #### <a name="all-devices"></a>Alle enheder
 **Baggrundsfarve for telefonrapporter** Når du definerer en baggrundsfarve for en rapport i Power BI Desktop, får telefonrapporten den samme baggrundsfarve. Mere om [optimering af rapportsider for telefoner](../../create-reports/desktop-create-phone-report.md).
 
-**Udarbejd mobilvenlige Power BI-visuals** Læs denne [Udviklerguide](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/MobileGuideline.md) med tip til oprettelse af Power BI-visuals, der ser godt ud og fungerer godt på mobilenheder.
+**Udarbejd mobilvenlige Power BI-visuals** Læs denne [Udviklerguide](https://github.com/PowerBi-Projects/PowerBI-visuals/blob/master/Tutorial/MobileGuideline.md) med tip til oprettelse af Power BI-visuals, der ser godt ud og fungerer godt på mobilenheder.
 
 #### <a name="ios-devices"></a>iOS-enheder
 **Tal med dataene: Stil spørgsmål ved at tale** Nu kan du [stille spørgsmål til dine data med Q&A](mobile-apps-ios-qna.md) ved at tale i stedet for at skrive. 

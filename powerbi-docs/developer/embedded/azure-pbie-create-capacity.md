@@ -1,6 +1,6 @@
 ---
-title: Opret en Power BI Embedded-kapacitet i Azure Portal til din integrerede BI-løsning til en integreret Power BI-analyse
-description: I denne artikel beskriver vi, hvordan du opretter en Power BI Embedded-kapacitet i Microsoft Azure til din integrerede BI-løsning til en integreret Power BI-analyse.
+title: Opret Power BI Embedded-kapacitet på Azure-portalen | Microsoft Docs
+description: I denne artikel beskriver vi, hvordan du opretter Power BI Embedded-kapacitet i Microsoft Azure.
 author: KesemSharabi
 ms.author: kesharab
 ms.service: powerbi
@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.reviewer: zakharb
 ms.custom: subject-armqs, devx-track-azurecli
 ms.date: 08/02/2020
-ms.openlocfilehash: 898da0f5e4284183f2ffa08fba8e6a50d9474d15
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: 73be957feae7fb869cca0af7bce0eeeb8daab03f
+ms.sourcegitcommit: b4c457bfb4676381dc4a0d04d965e8dab0bc230e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97887517"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98155708"
 ---
 # <a name="create-power-bi-embedded-capacity-in-the-azure-portal"></a>Opret Power BI Embedded-kapacitet på Azure-portalen
 
@@ -47,7 +47,8 @@ Før du opretter en Power BI Embedded-kapacitet, skal du sørge for, at du har l
 
 4. Angiv de påkrævede oplysninger, og klik derefter på **Gennemse + Opret**.
 
-    ![Skærmbillede, der viser fanen Grundlæggende på siden Power BI Embedded for at oprette ny kapacitet på Azure Portal.](media/azure-pbie-create-capacity/azure-create-capacity.png)
+    >[!div class="mx-imgBorder"]
+    >![Skærmbillede, der viser fanen Grundlæggende på siden Power BI Embedded for at oprette ny kapacitet på Azure Portal.](media/azure-pbie-create-capacity/azure-create-capacity-old.png)
 
     * **Abonnement** – det abonnement, som kapaciteten skal oprettes for.
 

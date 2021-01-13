@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 06/18/2019
-ms.openlocfilehash: ee7ed48043a902a9b5ebd3c548ebec7505e76ab1
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: 784f41e8efa5c6d02a95ef451488883a4422b854
+ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97887908"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97969483"
 ---
 # <a name="tutorial-add-unit-tests-for-power-bi-visual-projects"></a>Selvstudium: Tilføj enhedstests i visuelle projekter i Power BI
 
@@ -457,7 +457,7 @@ Når du placerer data i datafelt-buckets, opretter Power BI et `dataview`-katego
 
 I enhedstests har du ikke Power BI-kernefunktioner til at genskabe dataene. Du skal dog knytte dine statiske data til `dataview`-kategorien. Klassen `TestDataViewBuilder` kan hjælpe dig med at tilknytte den.
 
-Du kan finde flere oplysninger om tilknytning af datavisning i [DataViewMappings](https://github.com/Microsoft/PowerBI-visuals/blob/master/Capabilities/DataViewMappings.md).
+Du kan finde flere oplysninger om tilknytning af datavisning i [DataViewMappings](https://github.com/PowerBi-Projects/PowerBI-visuals/blob/master/Capabilities/DataViewMappings.md).
 
 I metoden `getDataView` kan du kalde metoden `createCategoricalDataViewBuilder` med dine data.
 

@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
 LocalizationGroup: Administration
-ms.openlocfilehash: ee7954cff7863ff58370bbe1e58f26c64644c8e8
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 9019ed9e64bca94a87e2ab9b6febdb7a25055b75
+ms.sourcegitcommit: c700e78dfedc34f5a74b23bbefdaef77e2a87f8a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90857053"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97961149"
 ---
 # <a name="power-bi-security"></a>Power BI-sikkerhed
 
@@ -53,7 +53,7 @@ Platformssikkerhed i forbindelse med Power BI indeholder også miljøsikkerhed m
 
 ## <a name="data-and-service-security"></a>Data- og tjenestesikkerhed
 
-Besøg [Microsoft Trust Center](https://www.microsoft.com/trustcenter) for at få flere oplysninger.
+Besøg [Microsoft Trust Center](https://www.microsoft.com/trust-center/product-overview) for at få flere oplysninger.
 
 Som beskrevet tidligere i denne artikel anvendes en brugers Power BI-logon af lokale Active Directory-servere til at blive tilknyttet et UPN for legitimationsoplysninger. Det er dog **vigtigt** at være opmærksom på, at brugerne er ansvarlige for de data, de deler: Hvis en bruger opretter forbindelse til datakilder ved hjælp af sine legitimationsoplysninger og derefter deler en rapport (eller et dashboard eller et datasæt) baseret på disse data, er brugere, som dashboardet deles med, ikke godkendt i forhold til den oprindelige datakilde og får tildelt adgang til rapporten.
 

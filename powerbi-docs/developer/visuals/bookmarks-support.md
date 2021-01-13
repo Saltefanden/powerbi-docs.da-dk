@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: 6a4f0e8ad8890e85db54e8d77a2ec19bb0d02ea8
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: a1bd0f694bbc2bc40fc35aef3c6017e7f4a8196a
+ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97889104"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97969690"
 ---
 # <a name="add-bookmark-support-for-power-bi-visuals"></a>Tilføj understøttelse af bogmærker i Power BI-visualiseringer
 
@@ -47,7 +47,7 @@ Visualiseringen skal gendanne filterværdierne for at vise den tilsvarende tilst
 
 ### <a name="visuals-with-selection"></a>Visualiseringer med markeringer
 
-Hvis din visualisering interagerer med andre visualiseringer ved hjælp af [markering](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/Selection.md), kan du tilføje bogmærker på en af to måder:
+Hvis din visualisering interagerer med andre visualiseringer ved hjælp af [markering](https://github.com/PowerBi-Projects/PowerBI-visuals/blob/master/Tutorial/Selection.md), kan du tilføje bogmærker på en af to måder:
 
 * Hvis visualiseringen ikke allerede har brugt [InteractivityService](https://github.com/microsoft/powerbi-visuals-utils-interactivityutils/blob/master/src/interactivityService.ts), kan du bruge metoden `FilterManager.restoreSelectionIds`.
 

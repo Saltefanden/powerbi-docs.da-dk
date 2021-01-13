@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/11/2020
-ms.openlocfilehash: 4d8096793c4663cbed71c3149bde11305ebee71e
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: d787dfbb926a3a1224d5b4949003e0b0d260260f
+ms.sourcegitcommit: b4c457bfb4676381dc4a0d04d965e8dab0bc230e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97886689"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98155635"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Ofte stillede spørgsmål om Power BI Embedded
 
@@ -35,7 +35,6 @@ Udviklere og softwarefirmaer, også kaldet uafhængige softwareleverandører (el
 Power BI er en software-as-a-service-analyseløsning, der giver virksomheder et enkelt overblik over deres vigtigste virksomhedsdata.
 
 Microsoft udviklede Power BI Embedded til ISV'er, der vil integrere visuals i deres programmer for at hjælpe deres kunder med at tage analytisk beslutninger. Dette betyder, at ISV'er ikke selv behøver at oprette deres egne analyseløsning. [Integreret analyse](embedding.md) gør det muligt for virksomhedsbrugere at få adgang til virksomhedsdata og udføre forespørgsler mod dem for at generere indsigter i programmet.
-
 
 ### <a name="what-is-the-difference-between-power-bi-premium-and-power-bi-embedded"></a>Hvad er forskellen mellem Power BI Premium og Power BI Embedded?
 

@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 03/08/2020
-ms.openlocfilehash: 1331543973680879e4fcc2dbafc7323e72a27694
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: 5f337197655d41b830b237c04faa2642991c34ee
+ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97888161"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97969805"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>Få en Power BI-visualisering certificeret
 
@@ -92,7 +92,7 @@ Følg nedenstående kodekrav for at sikre dig, at din kode er i overensstemmelse
 * Du kan kun bruge OSS-komponenter, der kan gennemses offentligt, f.eks. offentlige Javascript- eller TypeScript-biblioteker.
 * Koden skal understøtte [API'en til gengivelse af hændelser](event-service.md).
 * Sørg for, at DOM er sikkert manipuleret. Brug sanering til brugerinput eller brugerdata, før du føjer det til DOM.
-* Brug denne [eksempelrapport](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) som et testdatasæt.
+* Brug denne [eksempelrapport](https://github.com/PowerBi-Projects/PowerBI-visuals/tree/gh-pages/assets) som et testdatasæt.
 
 **Ikke tilladt**
 * Adgang til eksterne tjenester eller ressourcer. Der må f.eks. ikke sendes nogen HTTP/S- eller WebSocket-anmodninger fra Power BI til nogen tjeneste.

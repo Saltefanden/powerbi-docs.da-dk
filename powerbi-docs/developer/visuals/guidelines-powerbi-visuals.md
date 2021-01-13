@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 08/12/2020
-ms.openlocfilehash: 67875f9b571e0a0376046a3cb080551d23e579e4
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: adb238b918d01bcdefe247a5452a0432b97d2e0c
+ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97889288"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97969506"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Retningslinjer for Power BI-visualiseringer
 Før du [publicerer](office-store.md) din Power BI-visualisering i Microsoft AppSource, så andre kan finde og bruge den, skal du sørge for at følge retningslinjerne for at skabe en fantastisk oplevelse for dine brugere.
@@ -57,7 +57,7 @@ Efter Power BI-visualiseringen er blevet valideret og godkendt, angives "Yderlig
 ## <a name="context-menu"></a>Genvejsmenu
 Genvejsmenuen er den menu, du kommer til ved at højreklikke, som vises, når brugeren holder markøren over en visualisering.
 Genvejsmenuen bør være aktiveret i alle Power BI-visualiseringer for at sikre en ensartet oplevelse.
-Læs [denne artikel](https://github.com/Microsoft/PowerBI-visuals/blob/gh-pages/tutorials/building-bar-chart/adding-context-menu-to-the-bar.md) for at få mere at vide om, hvordan du tilføjer en genvejsmenu.
+Læs [denne artikel](https://github.com/PowerBi-Projects/PowerBI-visuals/tree/gh-pages/tutorials/building-bar-chart) for at få mere at vide om, hvordan du tilføjer en genvejsmenu.
 
 >[!div class="mx-imgBorder"]
 >![Et skærmbillede af genvejsmenuen i en Power BI-visualisering.](media/guidelines-powerbi-visuals/context-menu.png)
