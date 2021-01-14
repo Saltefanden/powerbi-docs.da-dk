@@ -266,6 +266,8 @@
               href: ../visuals/power-bi-map-tips-and-tricks.md
             - name: Tilpas egenskaberne for x- og y-aksen
               href: ../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
+            - name: Registrering af uregelmæssigheder
+              href: ../visuals/power-bi-visualization-anomaly-detection.md
             - name: Interager med ArcGIS Maps i Power BI-visualiseringer
               href: ../visuals/power-bi-visualizations-arcgis.md
             - name: Basisområdediagrammer
@@ -276,10 +278,6 @@
               href: ../visuals/power-bi-visualization-combo-chart.md
             - name: Visualiseringer med opdelingstræ
               href: ../visuals/power-bi-visualization-decomposition-tree.md
-            - name: Smarte fortællinger
-              href: ../visuals/power-bi-visualization-smart-narrative.md
-            - name: Registrering af uregelmæssigheder
-              href: ../visuals/power-bi-visualization-anomaly-detection.md
             - name: Kransediagrammer
               href: ../visuals/power-bi-visualization-doughnut-charts.md
             - name: Kartogrammer (choropleth)
@@ -310,6 +308,8 @@
               href: ../visuals/desktop-high-density-scatter-charts.md
             - name: Figurkort-visualiseringer (eksempelvisning)
               href: ../visuals/desktop-shape-map.md
+            - name: Smarte fortællinger
+              href: ../visuals/power-bi-visualization-smart-narrative.md
             - name: Tabeller i rapporter og på dashboards
               href: ../visuals/power-bi-visualization-tables.md
             - name: Træstrukturer
