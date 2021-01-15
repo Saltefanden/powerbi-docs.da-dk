@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/17/2020
+ms.date: 01/08/2021
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 4b5c076837ea5f70a84c1782349fd27ced4d866c
-ms.sourcegitcommit: b8e4dd67c59db079fdfa82a8a01c2a28fd1673ca
+ms.openlocfilehash: d7dfcdadd4becddb46127106b390d566faa2f9b9
+ms.sourcegitcommit: f791eef8e885f18c48997c9af63ab56211f1ceb8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "97699343"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "98053437"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>Abonner på en rapport eller et dashboard i Power BI-tjenesten 
 
@@ -96,7 +96,7 @@ Et abonnement slutter, hvis Pro-licensen udløber, dashboardet eller rapporten s
 * Hvis linkene i din mail (til indholdet) ikke længere fungerer, kan det være, at indholdet er blevet slettet. Under skærmbilledet i mailen kan du se, om du eller en anden har tilmeldt dig. Hvis en anden person har, kan du bede denne kollega om enten at annullere mailene eller at tilmelde dig igen.
 * Visse typer felter understøttes endnu ikke for dashboardabonnementer. Det omfatter: streamingfelter, videofelter, felter med brugerdefineret webindhold. 
 * Rapportsideabonnementer er bundet til navnet på siden i rapporten. Hvis du abonnerer på en rapportside, og den bliver omdøbt, skal du genoprette dit abonnement.
-* Hvis du ikke kan bruge abonnementsfunktionen, skal du kontakte din systemadministrator eller IT HelpDesk. Din organisation kan have deaktiveret denne funktion.  
+* Hvis du ikke kan bruge abonnementsfunktionen, skal du kontakte din systemadministrator eller IT HelpDesk. Din organisation har muligvis deaktiveret denne funktion, eller maksimumgrænsen for abonnenter kan være nået.  
 * Mailabonnementer understøtter ikke de fleste [brugerdefinerede visuelle elementer](../developer/visuals/power-bi-custom-visuals.md).  Undtagelsen er de brugerdefinerede Power BI-visuals, der er blevet [certificeret](../developer/visuals/power-bi-custom-visuals-certified.md).    
 * Mailabonnementer sendes med rapportens tilstande for standardfilter og -udsnit. Hvis du ændrer standardværdierne, efter du har oprettet abonnementet, vises de ikke i mailen. Sideinddelte rapporter understøtter denne egenskab og giver dig mulighed for at angive de specifikke parameterværdier pr. abonnement.  
 * Mailabonnementer understøtter ikke R-drevne Power BI-visuals på nuværende tidspunkt.  

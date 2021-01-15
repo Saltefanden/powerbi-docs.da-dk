@@ -8,12 +8,12 @@ ms.subservice: powerbi-eim
 ms.topic: how-to
 ms.date: 12/09/2020
 LocalizationGroup: Data from files
-ms.openlocfilehash: 14b3329ea2b8636c1e5cf2412ca9843bc777bed1
-ms.sourcegitcommit: b472236df99b490db30f0168bd7284ae6e6095fb
+ms.openlocfilehash: 09188b3b03fd5bfb720b98045ee9d895d337d677
+ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97600455"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97969161"
 ---
 # <a name="how-to-apply-sensitivity-labels-in-power-bi"></a>Sådan anvendes følsomhedsmærkater i Power BI
 
@@ -65,9 +65,6 @@ Vælg **Flere indstillinger (...)** og derefter **Indstillinger**.
 
 ## <a name="apply-sensitivity-labels-in-power-bi-desktop-preview"></a>Anvend følsomhedsmærkater i Power BI Desktop (prøveversion)
 
->[!NOTE]
->I løbet af de første 48 timer, efter du har tilmeldt dig prøveversionsfunktionen Information Protection i Power BI Desktop, **oplever du muligvis problemer med .pbix-filer, hvor der er anvendt følsomhedsmærkater (f.eks. publicering af .pbix-filen til tjenesten, download af .pbix-filen fra tjenesten)** . Sådanne problemer er forventet og løses automatisk inden for 48 timer.
-
 Sådan bruger du følsomhedsmærkater i Power BI Desktop:
 * Du skal have en [Power BI Pro-licens](./service-admin-purchasing-power-bi-pro.md).
 * Følsomhedsmærkater skal være aktiveret for din organisation. Kontakt din Power BI-administrator, hvis du ikke er sikker på dette.
@@ -77,10 +74,13 @@ Sådan bruger du følsomhedsmærkater i Power BI Desktop:
 
     ![Skærmbillede af siden med prøveversionsfunktioner i Desktop.](media/service-security-apply-data-sensitivity-labels/desktop-preview-features-page.png)
 
+    >[!Important]
+    >Efter du har slået prøveversionsfunktionen Information Protection til, skal du genstarte Desktop for at begynde at bruge følsomhedsmærkater.
+    >
+    >Hvis Desktop går ned, når du genstarter den, kan det skyldes, at computeren mangler den påkrævede version af Visual C++ Redistributable-runtimebiblioteket. Hvis du oplever et sådant nedbrud, kan du gå til [siden Microsoft Visual C++ 2015 Distributed Update 3 download](https://www.microsoft.com/download/details.aspx?id=53587) for at få oplysninger om, hvordan du downloader og installerer opdateringen. Når du har installeret opdateringen, kan du prøve at starte computeren igen.
+
     Hvis du ikke kan se indstillingen til prøveversionen Information Protection, kan prøveversionsfunktionen Information Protection være blokeret af din organisation. I dette tilfælde skal du kontakte din Power BI-administrator.
 
-    >[!NOTE]
-    >Efter du har slået prøveversionsfunktionen Information Protection til, skal du genstarte Desktop for at begynde at bruge følsomhedsmærkater.
 * Du skal være logget på.
 
 Hvis du vil anvende en følsomhedsmærkat på den fil, du arbejder på, skal du klikke på knappen for følsomhed under fanen Hjem og vælge den ønskede mærkat i den viste menu.

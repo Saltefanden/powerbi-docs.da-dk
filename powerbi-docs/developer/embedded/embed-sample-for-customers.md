@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 12/22/2020
-ms.openlocfilehash: f6ca898bafff0b3375df65b63f913eb81d8dc006
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: de954c5950f550c3ed2f3c340714851f5233d3e8
+ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97888943"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97969759"
 ---
 # <a name="tutorial-embed-power-bi-content-using-a-sample-embed-for-your-customers-application"></a>Selvstudium: Integrer Power BI-indhold ved hjælp af et eksempelprogram til *integrering for dine kunder*
 
@@ -147,7 +147,7 @@ I nedenstående tabel beskrives nogle få vigtige forskelle mellem godkendelsesm
 
 |Overvejelse  |Tjenesteprincipal  |Masterbruger  |
 |---------|---------|---------|
-|Mekanisme     |[Objektet for din tjenesteprincipal](/azure/active-directory/develop/app-objects-and-service-principals.md#service-principal-object) for dit Azure AD-program giver Azure AD mulighed for at godkende dit integrerede løsningsprogram i Power BI.        |Azure AD-programmet bruger legitimationsoplysningerne (brugernavn og adgangskode) for en Power BI-bruger til at godkende i Power BI.         |
+|Mekanisme     |[Objektet for din tjenesteprincipal](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) for dit Azure AD-program giver Azure AD mulighed for at godkende dit integrerede løsningsprogram i Power BI.        |Azure AD-programmet bruger legitimationsoplysningerne (brugernavn og adgangskode) for en Power BI-bruger til at godkende i Power BI.         |
 |Sikkerhed     |*Tjenesteprincipal* er den anbefalede godkendelsesmetode for Azure AD. Hvis du bruger en tjenesteprincipal*, kan du godkende ved hjælp af enten en *programhemmelighed* eller et *certifikat*.</br></br>Dette selvstudium indeholder kun en beskrivelse af brug af en *tjenesteprincipal* med en *programhemmelighed*. Hvis du vil integrere ved hjælp af en *tjenesteprincipal* og et *certifikat*, skal du se artiklen om [tjenesteprincipal med et certifikat](embed-service-principal-certificate.md).         |Denne godkendelsesmetode anses ikke for at være lige så sikker som brug af en *tjenesteprincipal*. Det skyldes, at du skal være påpasselig med legitimationsoplysningerne for *masterbrugeren* (brugernavn og adgangskode). Du må f.eks. ikke fremvise dem i dit integreringsprogram, og du bør ændre adgangskoden ofte.         |
 |Delegerede tilladelser i Azure AD |Ikke påkrævet. |Din *masterbruger* eller en administrator skal give deres samtykke til, at dit program kan få adgang til REST API-[tilladelser](/azure/active-directory/develop/v2-permissions-and-consent) til Power BI (også kendt som områder). For eksempel *Report.ReadWrite.All*. |
 |Adgang til Power BI-tjenesten |Du kan ikke få adgang til Power BI-tjenesten med en *tjenesteprincipal*.|Du kan få adgang til Power BI-tjenesten med legitimationsoplysningerne for din *masterbruger*.|
@@ -185,7 +185,7 @@ Gør følgende for at oprette et arbejdsområde:
 
 ## <a name="step-4---create-and-publish-a-power-bi-report"></a>Trin 4 – Opret og publicer en Power BI-rapport
 
-Det næste trin er at oprette en rapport og uploade den til dit arbejdsområde. Du kan [oprette din egen rapport](/powerbi-docs/fundamentals/desktop-getting-started#build-reports) ved hjælp af Power BI Desktop og derefter [publicere](/powerbi-docs/fundamentals/desktop-getting-started#share-your-work) den til dit arbejdsområde. Eller du kan uploade en eksempelrapport til dit arbejdsområde.
+Det næste trin er at oprette en rapport og uploade den til dit arbejdsområde. Du kan [oprette din egen rapport](/power-bi/fundamentals/desktop-getting-started#build-reports) ved hjælp af Power BI Desktop og derefter [publicere](/powerbi-docs/fundamentals/desktop-getting-started#share-your-work) den til dit arbejdsområde. Eller du kan uploade en eksempelrapport til dit arbejdsområde.
 
 >[!Tip]
 >Hvis du allerede har et arbejdsområde med en rapport, kan du springe dette trin over.
@@ -536,7 +536,7 @@ Følg disse trin for at ændre eksempelprogrammet til *integrering for dine kund
 
     a. På IDE-terminalen skal du udføre `npm start`.
 
-    b. Åbn en ny fane i browseren, og naviger til [http://localhost:5300](http://localhost:5300).
+    b. Åbn en ny fane i browseren, og naviger til `http://localhost:5300`.
 
 # <a name="python"></a>[Python](#tab/python)
 
@@ -571,7 +571,7 @@ Følg disse trin for at ændre eksempelprogrammet til *integrering for dine kund
 
     a. I **PowerShell** eller **Kommandoprompt** skal du navigere til **Python** > **Integrer for dine kunder** > mappen **AppOwnesData** og udføre `flask run`.
 
-    b. Åbn en ny fane i browseren, og naviger til [http://localhost:5300](http://localhost:5300).
+    b. Åbn en ny fane i browseren, og naviger til `http://localhost:5300`.
 
 ---
 

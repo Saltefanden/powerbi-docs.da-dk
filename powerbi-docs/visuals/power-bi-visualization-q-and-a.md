@@ -1,59 +1,55 @@
 ---
-title: Brug visualiseringen til Spørgsmål og svar i Power BI
-description: Sådan konfigurerer du visualiseringen til Spørgsmål og svar i Power BI
-author: rien
-ms.author: rien
-ms.reviewer: mihart
+title: Opret en visualisering til Spørgsmål og svar i Power BI
+description: Sådan opretter og formaterer du en visualisering til Spørgsmål og svar i Power BI Desktop eller Power BI-tjenesten.
+author: maggiesMSFT
+ms.author: maggies
+ms.reviewer: rien
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 11/19/2019
-ms.openlocfilehash: 43da67114808538d64aa2ceb7f59af590ee23857
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.date: 01/05/2021
+ms.openlocfilehash: 1cf80593458c12a1bee07ed40202e3613fdcb5e9
+ms.sourcegitcommit: c700e78dfedc34f5a74b23bbefdaef77e2a87f8a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96418935"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97961356"
 ---
-# <a name="introduction-to-power-bi-qa-visualizations"></a>Introduktion til visualiseringer til Spørgsmål og svar i Power BI
+# <a name="create-a-qa-visual-in-power-bi"></a>Opret en visualisering til Spørgsmål og svar i Power BI
 
 [!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+Visualiseringen til Spørgsmål og svar giver brugerne mulighed for at stille spørgsmål på et naturligt sprog og få svar i form af en visualisering. *Forbrugere* kan bruge den til hurtigt at få svar på deres data. *Designere* kan også bruge den til hurtigt at oprette visualiseringer. Hvis du er rapportdesigner, er denne artikel til dig. Du kan dobbeltklikke et vilkårligt sted i en rapport og bruge et naturligt sprog for at komme i gang. I denne artikel beskrives det, hvordan du opretter, formaterer og tilpasser en visualisering til Spørgsmål og svar. Den understøtter temaer og andre standardformateringsindstillinger, der er tilgængelige i Power BI. Når du har oprettet den, fungerer den som alle andre visualiseringer, der understøtter tværgående filtrering, tværgående fremhævning og bogmærker. 
 
-## <a name="what-are-qa-visualizations"></a>Hvad er visualiseringer til Spørgsmål og svar?
-
-Visualiseringen til Spørgsmål og svar giver brugerne mulighed for at stille spørgsmål på et naturligt sprog og få svar i form af en visualisering. 
+Er du på udkig efter mere baggrund om Spørgsmål og svar i Power BI? Se [Introduktion til Spørgsmål og svar](../natural-language/q-and-a-intro.md). 
 
 ![Gennemgang af visualiseringen til Spørgsmål og svar](../natural-language/media/qna-visual-walkthrough.gif)
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
-Visualiseringen til Spørgsmål og svar kan både bruges som et værktøj til at give *forbrugerne* svar på deres data hurtigt og af *designere* til at oprette visualiseringer i rapporter ved blot at dobbeltklikke et vilkårligt sted i en rapport og bruge et naturligt sprog til at komme i gang. Da det fungerer som en hvilken som helst anden visualisering, kan visualiseringen til Spørgsmål og svar krydsfiltreres/-fremhæves, og den understøtter også bogmærker. Visualiseringen til Spørgsmål og svar understøtter også temaer og andre standardformateringsindstillinger, der er tilgængelige i Power BI.
-
-Visualiseringen til Spørgsmål og svar består af fire kernekomponenter.
+Visualiseringen til Spørgsmål og svar består af fire kernekomponenter:
 
 - Spørgsmålsfeltet. Det er her, brugerne skriver deres spørgsmål og får vist forslag, der kan hjælpe dem med at fuldføre deres spørgsmål.
 - En foruddefineret liste over foreslåede spørgsmål.
 - Ikonet for at konvertere visualiseringen til Spørgsmål og svar til en standardvisualisering. 
-- Ikonet for at åbne værktøjet Spørgsmål og svar, der giver designere mulighed for at konfigurere det underliggende program til naturligt sprog.
+- Ikon til åbning af værktøjer til Spørgsmål og svar, der giver designere mulighed for at konfigurere det underliggende program til naturligt sprog.
 
 ## <a name="prerequisites"></a>Forudsætninger
 
-1. I dette selvstudium bruges [PBIX-filen med eksemplet til Salg og marketing](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix). 
+1. Download [PBIX-eksempelfilen Sales & Marketing](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix) for at følge med.
 
-1. Vælg **Fil** > **Åbn** på menulinjen i øverste venstre afsnit af Power BI Desktop
+1. Vælg **Fil** > **Åbn** øverst til venstre i Power BI Desktop.
    
-2. Find din kopi af **PBIX-filen med eksemplet til Salg og marketing**
+2. Find din kopi af **PBIX-eksempelfilen Sales & Marketing**.
 
 1. Åbn filen i rapportvisning ![Skærmbillede af ikonet for rapportvisning.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
-1. Markér ![Skærmbillede af den gule fane.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) for at tilføje en ny side.
+1. Vælg plustegnet ![Skærmbillede af den gule fane.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) for at tilføje en ny side.
 
-Hvis du får vist en fejl, når du opretter visualiseringen til Spørgsmål og svar, skal du kontrollere afsnittet med [begrænsninger](../natural-language/q-and-a-limitations.md) for at se, om konfigurationen af datakilden understøttes.    
+Hvis du får vist en fejl, når du opretter visualiseringen til Spørgsmål og svar, skal du se artiklen [Begrænsninger i Spørgsmål og svar](../natural-language/q-and-a-limitations.md) for at få oplysninger om, hvorvidt konfigurationen af datakilden understøttes.    
 
 > [!NOTE]
-> Når du deler din rapport med en Power BI-kollega, kræves det, at I begge har individuelle Power BI Pro-licenser, eller at rapporten er gemt i en Premium-kapacitet. Se [deling af rapporter](../collaborate-share/service-share-reports.md).
+> Når du deler din rapport med en Power BI-kollega, kræves det, at I begge har individuelle Power BI Pro-licenser, eller at rapporten er gemt i et arbejdsområde i en Premium-kapacitet. Se [deling af rapporter](../collaborate-share/service-share-dashboards.md).
 
 ## <a name="create-a-qa-visual-using-a-suggested-question"></a>Opret visualiseringen til Spørgsmål og svar ved hjælp af et foreslået spørgsmål
 I denne øvelse vælger vi et af de foreslåede spørgsmål til at oprette vores visualisering til Spørgsmål og svar. 
@@ -77,7 +73,7 @@ I denne øvelse vælger vi et af de foreslåede spørgsmål til at oprette vores
 ## <a name="create-a-qa-visual-using-a-natural-language-query"></a>Opret en visualisering til Spørgsmål og svar ved hjælp af en forespørgsel på et naturligt sprog
 I ovenstående eksempel valgte vi et af de foreslåede spørgsmål til at oprette vores visualisering til Spørgsmål og svar.  I denne øvelse skriver vi vores spørgsmål. I takt med at vi skriver vores spørgsmål, hjælper Power BI os med autofuldførelse, forslag og feedback.
 
-Hvis du er usikker på, hvilken type spørgsmål du skal stille, eller hvilken terminologi du skal bruge, skal du udvide **Vis alle forslag** eller gennemse ruden Felter, som findes i højre side af lærredet. På den måde bliver du bekendt med begreberne og indholdet i datasættet Salg og marketing.
+Hvis du er usikker på, hvilken type spørgsmål du skal stille, eller hvilken terminologi du skal bruge, skal du udvide **Vis alle forslag** eller gennemse ruden Felter i højre side af lærredet. I ruden Felter kan du blive fortrolig med begreberne og indholdet i datasættet Salg og marketing.
 
 ![lærred med Vis alle forslag og ruden Felter fremhævet](media/power-bi-visualization-q-and-a/power-bi-terminology.png)
 
@@ -125,7 +121,7 @@ Formatér visualiseringen til Spørgsmål og svar, spørgsmålsfeltet og den må
 ![Visualiseringen til Spørgsmål og svar med resultaterne af vores formatering](media/power-bi-visualization-q-and-a/power-bi-q-and-a-format.png)
 
 ## <a name="convert-your-qa-visual-into-a-standard-visual"></a>Konvertér din visualisering til Spørgsmål og svar til en standardvisualisering
-Vi har formateret vores visualisering som et søjlediagram, der kan bruges af farveblinde, og tilføjet en titel og en kant. Nu er vi klar til at konvertere den til en standardvisualisering i vores rapport samt fastgøre den til et dashboard.
+Vi har formateret vores visualisering som et søjlediagram, der kan bruges af farveblinde: Vi har tilføjet en titel og en kant. Nu er vi klar til at konvertere den til en standardvisualisering i vores rapport samt fastgøre den til et dashboard.
 
 Vælg ikonet ![tandhjulsikonet](media/power-bi-visualization-q-and-a/power-bi-convert-icon.png) for at **omdanne dette resultat fra Spørgsmål og svar til en standardvisualisering**.
 
@@ -144,7 +140,7 @@ Når du vælger tandhjulsikonet, åbnes ruden med værktøjer til visualiseringe
 
 ![Visualiseringen til Spørgsmål og svar med ikonet Værktøjer valgt](media/power-bi-visualization-q-and-a/power-bi-q-and-a-tooling.png)
 
-Brug ruden Værktøjer til at lære Spørgsmål og svar begreber, det ikke genkender, til at administrere disse begreber og administrere de foreslåede spørgsmål til dette datasæt og denne rapport. I ruden Værktøjer kan du også gennemse spørgsmål, der er blevet stillet ved hjælp af denne visualisering til Spørgsmål og svar, og se spørgsmål, som brugerne har markeret med et flag. Hvis du vil vide mere, skal du se [Værktøjer til Spørgsmål og svar](../natural-language/q-and-a-tooling-intro.md).
+Brug ruden Værktøjer til at lære Spørgsmål og svar begreber, det ikke genkender, til at administrere disse begreber og administrere de foreslåede spørgsmål til dette datasæt og denne rapport. I ruden Værktøjer kan du også gennemse spørgsmål, brugere har stillet i denne visualisering til Spørgsmål og svar, og se spørgsmål, som brugerne har markeret med et flag. Hvis du vil vide mere, kan du se [Introduktion til værktøjer til Spørgsmål og svar for at træne Spørgsmål og svar i Power BI](../natural-language/q-and-a-tooling-intro.md).
 
 ![Ruden Værktøjer til Spørgsmål og svar](media/power-bi-visualization-q-and-a/power-bi-q-and-a-tooling-pane.png)
 

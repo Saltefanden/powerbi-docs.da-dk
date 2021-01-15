@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/10/2019
-ms.openlocfilehash: 408b5a03b415e6b1dabdb762eefee81e1a4fe483
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: cdb3543bc65e21f53cc21dea0f4da62910a7bd55
+ms.sourcegitcommit: c86ce723d5db16fb960d1731795d84f4654e4b4e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97887356"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98110837"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Sikkerhed på rækkeniveau med Power BI Embedded
 
@@ -320,15 +320,18 @@ Værdien i den pågældende identitetsblob skal være et gyldigt adgangstoken ti
 
 ## <a name="on-premises-data-gateway-with-service-principal"></a>Datagateway i det lokale miljø med tjenesteprincipal
 
-Kunder, der konfigurerer sikkerhed på rækkeniveau ved hjælp af en datakilde med direkte forbindelse via SQL Server Analysis Services (SSAS) kan benytte sig af den nye funktionalitet med en [tjenesteprincipal](embed-service-principal.md) til at administrere brugere og deres adgang til data i SSAS, når der integreres med **Power BI Embedded**.
+Kunder, der bruger SSAS (SQL Server Analysis Services) ved hjælp af en datakilde med direkte forbindelse via SQL Server Analysis Services (SSAS) kan anvende den nye funktionalitet med en [tjenesteprincipal](embed-service-principal.md) til at administrere brugere og deres adgang til data i SSAS, når der integreres med **Power BI Embedded**.
 
 Ved hjælp af [REST API'er til Power BI](/rest/api/power-bi/) kan du angive den eksisterende identitet for direkte forbindelser via SSAS i det lokale miljø for et integreringstoken ved hjælp af et [objekt for tjenesteprincipal](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object).
 
-Indtil nu skulle masterbrugeren, som skulle generere integreringstokenet, være gatewayadministrator for at kunne angive den eksisterende identitet for direkte forbindelser via SSAS. I stedet for at kræve at brugeren er gatewayadministrator, kan gatewayadministratoren give brugeren dedikeret tilladelse til den pågældende datakilde, hvilket giver brugeren mulighed for at tilsidesætte den eksisterende identitet, når integreringstokenet genereres. Denne nye funktionalitet gør det muligt at integrere med en tjenesteprincipal i forbindelse med en direkte forbindelse via SSAS.
+Indtil nu skulle *masterbrugeren*, som skulle generere integreringstokenet, være gatewayadministrator for at kunne angive den eksisterende identitet for direkte forbindelser via SSAS. I stedet for at kræve at brugeren er gatewayadministrator, kan gatewayadministratoren give brugeren dedikeret tilladelse til den pågældende datakilde, hvilket giver brugeren mulighed for at tilsidesætte den eksisterende identitet, når integreringstokenet genereres. Denne nye funktionalitet gør det muligt at integrere med en tjenesteprincipal i forbindelse med en direkte forbindelse via SSAS.
 
-For at muliggøre dette scenarie bruger gatewayadministratoren [Tilføj REST API for bruger af datakilde](/rest/api/power-bi/gateways/adddatasourceuser) for at tildele tjenesteprincipalen tilladelsen *ReadOverrideEffectiveIdentity* for Power BI Embedded.
+For at muliggøre dette scenarie bruger gatewayadministratoren [Tilføj REST API for bruger af datakilde](/rest/api/power-bi/gateways/adddatasourceuser) for at tildele tjenesteprincipalen tilladelsen *ReadOverrideEffectiveIdentity* for SSAS-datakilden.
 
 Du kan ikke angive denne tilladelse ved hjælp af administrationsportalen. Denne tilladelse kan kun angives ved hjælp af API'en. På administrationsportalen kan du se en angivelse for brugere og tjenesters hovednavne med disse tilladelser.
+
+>[!NOTE]
+>Hvis du har oprettet forbindelse til en SSAS-database, hvor RLS ikke er konfigureret, skal du stadig angive en gyldig identitet (SSAS-serveradministratorens identitet) i kaldet til oprettelse af et integreret token.
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 

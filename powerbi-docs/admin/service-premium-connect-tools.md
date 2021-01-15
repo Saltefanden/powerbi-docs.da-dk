@@ -7,15 +7,15 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 12/09/2020
+ms.date: 1/11/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 383c9bd20c86d89c5bf51c64c8027f86c1bfaab9
-ms.sourcegitcommit: 8250187368d3de48663eb516a816ff701119b579
+ms.openlocfilehash: 3a3a0f44fd9f02942ecc8f6646d219ace649b295
+ms.sourcegitcommit: c86ce723d5db16fb960d1731795d84f4654e4b4e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96998961"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98110750"
 ---
 # <a name="dataset-connectivity-with-the-xmla-endpoint"></a>Netværksmulighed for datasæt med XMLA-slutpunktet
 
@@ -36,9 +36,9 @@ Nedenfor er nogle af de mest almindelige værktøjer, der bruges sammen med Azur
 
 **Visual Studio med Analysis Services-projekter** – også kendt som SQL Server Data Tools eller blot **SSDT**, er et modeloprettelsesværktøj i virksomhedsklasse til oprettelse af tabellariske Analysis Services-modeller. Analysis Services-projektudvidelser understøttes i alle Visual Studio 2017-udgaver og nyere udgaver, herunder den gratis Community-udgave. Udvidelsesversion 2.9.14 eller nyere er påkrævet for at udrulle tabellariske modeller i et Premium-arbejdsområde. Når du udruller til et Premium-arbejdsområde, skal modellen have et kompatibilitetsniveau på 1500 eller derover. Læse-/skriveadgang til XMLA er påkrævet til arbejdsbelastningen for datasæt. Du kan få mere at vide under [Værktøjer til Analysis Services](/analysis-services/tools-and-applications-used-in-analysis-services?view=power-bi-premium-current&preserve-view=true).
 
-**SQL Server Management Studio (SSMS)**   – understøtter DAX-, MDX- og XMLA-forespørgsler. Udfør detaljerede opdateringshandlinger og scripting af metadata for datasæt ved hjælp af [TMSL](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference) (Tabular Model Scripting Language). Skrivebeskyttet adgang er påkrævet til forespørgselshandlinger. Læse-/skriveadgang er påkrævet til scripting af metadata. Kræver SSMS-version 18.7.1 eller nyere. Download  [her](/sql/ssms/download-sql-server-management-studio-ssms).
+**SQL Server Management Studio (SSMS)**   – understøtter DAX-, MDX- og XMLA-forespørgsler. Udfør detaljerede opdateringshandlinger og scripting af metadata for datasæt ved hjælp af [TMSL](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference) (Tabular Model Scripting Language). Skrivebeskyttet adgang er påkrævet til forespørgselshandlinger. Læse-/skriveadgang er påkrævet til scripting af metadata. Kræver SQL Server Management Studio-version **18.8** eller nyere. Download  [her](/sql/ssms/download-sql-server-management-studio-ssms).
 
-**SQL Server Profiler**  – Dette værktøj installeres sammen med SSMS og gør det muligt at spore og foretage fejlfinding af datasæthændelser. Profiler frarådes officielt til SQL Server, men er fortsat inkluderet i SSMS, og det understøttes stadig af Analysis Services og Power BI Premium. Skrivebeskyttet adgang til XMLA er påkrævet. Du kan få mere at vide under  [SQL Server Profiler for Analysis Services](/analysis-services/instances/use-sql-server-profiler-to-monitor-analysis-services?view=power-bi-premium-current&preserve-view=true).
+**SQL Server Profiler**  – Dette værktøj installeres sammen med SSMS og gør det muligt at spore og foretage fejlfinding af datasæthændelser. Profiler frarådes officielt til SQL Server, men er fortsat inkluderet i SSMS, og det understøttes stadig af Analysis Services og Power BI Premium. Kræver SQL Server Profiler version **18.8** eller nyere, og at skrivebeskyttet indstilling for XMLA er aktiveret på Premium-kapaciteten. Brugeren skal angive datasættet ([første katalog](#initial-catalog)), når der oprettes forbindelse til XMLA-slutpunktet. Du kan få mere at vide under  [SQL Server Profiler for Analysis Services](/analysis-services/instances/use-sql-server-profiler-to-monitor-analysis-services?view=power-bi-premium-current&preserve-view=true).
 
 **Analysis Services-installationsguide** – Dette værktøj, der installeres sammen med SSMS, giver mulighed for udrulning af tabellariske modelprojekter, der er oprettet af Visual Studio, til Analysis Services og Power BI Premium-arbejdsområder. Det kan køres interaktivt eller automatiseret fra kommandolinjen. Læse-/skriveadgang til XMLA er påkrævet. Du kan få mere at vide under [Analysis Services-installationsguide](/analysis-services/deployment/deploy-model-solutions-using-the-deployment-wizard?view=power-bi-premium-current&preserve-view=true).
 
@@ -99,7 +99,9 @@ Under **Indstillinger** > **Premium** > **Forbindelse til arbejdsområde** i arb
 
 ### <a name="initial-catalog"></a>Oprindeligt katalog
 
-For nogle funktioner, f.eks. SQL Server Profiler, skal du muligvis angive et *oprindeligt katalog*. Angiv et datasæt (en database) i dit arbejdsområde. I dialogboksen **Opret forbindelse til server** skal du vælge **Indstillinger** > **Egenskaber for forbindelse** > **Opret forbindelse til database** og angive navnet på datasættet.
+Ved nogle værktøjer, f. eks SQL Server Profiler, skal du angive et *oprindeligt katalog*, som er det datasæt (den database), der skal oprettes forbindelse til i arbejdsområdet. I dialogboksen **Opret forbindelse til server** skal du vælge **Indstillinger** > **Egenskaber for forbindelse** > **Opret forbindelse til database** og angive navnet på datasættet.
+
+![Valg af datasættet i SQL Server Profiler](media/service-premium-connect-tools/sql-profiler-connection-properties.png)
 
 ### <a name="duplicate-workspace-names"></a>Identiske navne på arbejdsområder
 
@@ -126,6 +128,10 @@ Følgende datasæt er ikke tilgængelige for XMLA-slutpunkter. Disse datasæt vi
 - Datasæt, der er baseret på en direkte forbindelse til et Power BI-datasæt i et andet arbejdsområde. Du kan få mere at vide under [Introduktion til datasæt på tværs af arbejdsområder](../connect-data/service-datasets-across-workspaces.md).
 - Datasæt med pushdata ved hjælp af REST-API'en.
 - Datasæt for Excel-projektmapper.
+
+### <a name="serverworkspace-alias"></a>Alias for server/arbejdsområde
+
+Aliasser for servernavne, der understøttes i Azure Analysis Services, understøttes ikke for Power BI Premium-arbejdsområder.
 
 ## <a name="security"></a>Sikkerhed
 

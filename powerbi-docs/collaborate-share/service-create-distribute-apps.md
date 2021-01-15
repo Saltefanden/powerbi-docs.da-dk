@@ -8,12 +8,12 @@ ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 03/23/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: f15508f030a1fa2ee0112134faf71e94e752984c
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 981b4aa0f9e8bb12e4231476d27b8f58152ff3fd
+ms.sourcegitcommit: c86ce723d5db16fb960d1731795d84f4654e4b4e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96407693"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98110906"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Publicer en app i Power BI
 
@@ -70,7 +70,7 @@ Når dashboards og rapporter i dit arbejdsområde er klar, skal du vælge, hvilk
     
     >[!IMPORTANT]
     >Hvis din app er afhængig af datasæt fra andre arbejdsområder, er det dit ansvar at sikre, at alle brugere af appen har adgang til de underliggende datasæt.
-    >
+    >Hvis appen eller rapporten er i samme arbejdsområde som datasættet, skal du sørge for, at du også føjer den rapport, der er knyttet til datasættet, til appen.
 
 6. Du kan installere appen automatisk for modtagerne, hvis din Power BI-administrator har aktiveret denne indstilling for dig på Power BI-administrationsportalen. Læs mere om, hvordan du [installerer en app automatisk](#automatically-install-apps-for-end-users), i denne artikel.
 

@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 12/14/2020
 ms.custom: ''
 LocalizationGroup: Administration
-ms.openlocfilehash: da5ee837345b6f26dd6636bc93f6b38c1e0f5ea7
-ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
+ms.openlocfilehash: 56ac55ceec480d6d33d6974b97871c5fa4d2d799
+ms.sourcegitcommit: 73ca86f7633317fe3831839c4dd14a333b2f514c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97491845"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "97979970"
 ---
 # <a name="private-links-for-accessing-power-bi"></a>Private links, der giver adgang til Power BI
 
@@ -305,7 +305,7 @@ Og det er det hele – efter at have fulgt disse trin er Power BI kun tilgængel
 
 Der er et par overvejelser, du skal gøre dig, når du arbejder med private links i Power BI:
 
-* Enhver brug af eksterne billeder eller temaer er ikke tilgængelige, når du bruger et miljø med private links, og det kan påvirke brugerdefinerede visualiseringer.
+* Enhver brug af eksterne billeder eller temaer er ikke tilgængelige, når du bruger et miljø med private links.
 * Hvis internetadgang er deaktiveret, og hvis datasættet eller dataflowet opretter forbindelse til et Power BI-datasæt eller et dataflow som en datakilde, vil forbindelsen ikke blive oprettet.
 * Forbrugsdata fungerer *ikke*, når Private Links er aktiveret.
 * Publicer på internettet understøttes ikke (og er nedtonet), når du aktiverer **Bloker offentlig internetadgang** i Power BI.

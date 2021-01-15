@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
 ms.date: 12/01/2020
-ms.openlocfilehash: 1c0c572072fd085feab1533eb346d745b56f66b0
-ms.sourcegitcommit: 2fd64f96b5bfbc14ff47e5c892171e5c921fb525
+ms.openlocfilehash: 1ca4db3ad43553521c55866fd16b2440e3b64a65
+ms.sourcegitcommit: 73ca86f7633317fe3831839c4dd14a333b2f514c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96502012"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "97979947"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webinarer
 [//]: # "Tatevik Tatero (tatevik.teroyan@simple-concepts.com) er en leverandør, der arbejder med Chauncy Freels og hjælper med at vedligeholde listen over webinarer"
@@ -28,52 +28,56 @@ Tilmeld dig vores kommende livewebinarer, eller se vores optagne sessioner, når
 
 Kom i gang med disse populære webinarer, når det passer dig:
 
+**Data-driven Insights for Real-time Decisions and Stronger Customer Connections (Datadrevet indsigt til brug ved beslutninger i realtid og styrkelse af kundeforbindelser)**  
+af Shruti Shukla og Chandra Stevens  
+[Se nu](https://info.microsoft.com/ww-Landing-DataDrivenInsights.html)
+
 **Kom hurtigt i gang med Power BI**  
 ved Miguel Martinez, Microsoft  
-[Tilmeld dig for at se med d. 5. november 2020 kl. 10:00-11:00 PDT](https://info.microsoft.com/ww-landing-get-up-and-running-quickly-with-power-bi.html?lcid=en-us)
+[Se nu](https://info.microsoft.com/ww-landing-get-up-and-running-quickly-with-power-bi.html)
 
 **Driv en kultur med fjerndata med Power BI og Microsoft Teams**  
 ved Lukasz Pawlowski  
-[Se nu](https://info.microsoft.com/ww-Landing-RemoteDataCulturePowerBIandMicrosoftTeams.html?LCID=EN-US)
+[Se nu](https://info.microsoft.com/ww-Landing-RemoteDataCulturePowerBIandMicrosoftTeams.html)
 
 **Bedre sammen: Fem fordele Excel-brugere får ved at bruge Power BI**  
 ved Miguel Martinez og Carlos Otero  
-[Se nu](https://info.microsoft.com/ww-Landing-FiveBenefitsExcelUsersWillGetFromUsingPowerBI-Webinar.html?LCID=EN-US)
+[Se nu](https://info.microsoft.com/ww-Landing-FiveBenefitsExcelUsersWillGetFromUsingPowerBI-Webinar.html)
 
 **Overvåg dine data i realtid med Microsoft Power BI**  
 ved Miguel Martinez og Peter Myers  
-[Se nu](https://info.microsoft.com/ww-landing-Monitor-Your-Data-in-Real-time-with-Microsoft-Power-BI.html?lcid=en-us)
+[Se nu](https://info.microsoft.com/ww-landing-Monitor-Your-Data-in-Real-time-with-Microsoft-Power-BI.html)
 
 **Sæt fart på Power BI på Azure Data Lake Storage med Dremio**  
-ved Chris Webb og Tomer Shiran [Se nu]( https://info.microsoft.com/ww-landing-Accelerate-Power-BI-on-Azure-Data-Lake-Storage-with-Dremio.html?lcid=en-us)
+ved Chris Webb og Tomer Shiran [Se nu]( https://info.microsoft.com/ww-landing-Accelerate-Power-BI-on-Azure-Data-Lake-Storage-with-Dremio.html)
 
 **Byg skalerbare BI-løsninger ved hjælp af Power BI og Snowflake**  
 ved Chris Webb, Craig Colliers og Chris Holliday  
-[Se nu](https://info.microsoft.com/ww-landing-build-scalable-BI-solutions-using-power-BI-and-snowflake.html?lcid=en-us)
+[Se nu](https://info.microsoft.com/ww-landing-build-scalable-BI-solutions-using-power-BI-and-snowflake.html)
 
 **Øg brugernes tilfredshed med de bedste fremgangsmåder for administration af BI-indhold**  
 ved Nimrod Shalit  
-[Se nu](https://info.microsoft.com/ww-landing-Boost-User-Satisfaction-with-Best-Practices-for-Managing-BI-Content.html?lcid=en-us)
+[Se nu](https://info.microsoft.com/ww-landing-Boost-User-Satisfaction-with-Best-Practices-for-Managing-BI-Content.html)
 
 **Fra indsigt til handling: Sådan etablerer du en datakultur med Power BI**  
 af Arun Ulagaratchagan og Amir Netz  
-[Se nu]( https://info.microsoft.com/ww-landing-From-Insight-to-Action-Driving-a-Data-Culture-with-Power-BI.html?lcid=en-us)
+[Se nu]( https://info.microsoft.com/ww-landing-From-Insight-to-Action-Driving-a-Data-Culture-with-Power-BI.html)
 
 **Skab bedre analyser med Power BI Embedded**  
 af Alon Baram  
-[Se nu](https://info.microsoft.com/ww-landing-Enable-Better-Analytics-with-Power-BI-Embedded.html?Lcid=EN-US)
+[Se nu](https://info.microsoft.com/ww-landing-Enable-Better-Analytics-with-Power-BI-Embedded.html)
 
 **Sådan brugte Miami HEAT Power BI til at tage gode forretningsbeslutninger**  
 af Edson Crevecoeur, Henrik Mesa og Xinrou Tan  
-[Se nu]( https://info.microsoft.com/ww-Landing-How-the-Miami-HEAT-Used-Power-BI-to-Drive-Business-Decisions.html?Lcid=EN-US)
+[Se nu]( https://info.microsoft.com/ww-Landing-How-the-Miami-HEAT-Used-Power-BI-to-Drive-Business-Decisions.html)
 
 **Gør det nemmere at forberede og analysere big data med Power BI**  
 af Priya Sathy  
-[Se nu](https://info.microsoft.com/ww-landing-simplify-big-data-prep-and-analysis-with-power-BI.html?lcid=en-us)
+[Se nu](https://info.microsoft.com/ww-landing-simplify-big-data-prep-and-analysis-with-power-BI.html)
 
 **Gør beslutningsprocessen bedre med Power BI**  
 af Kim Manis og Lukasz Pawlowski  
-[Se nu](https://info.microsoft.com/ww-Landing-Improve-Decision-Making-with-Power-BI.html?LCID=EN-US)
+[Se nu](https://info.microsoft.com/ww-Landing-Improve-Decision-Making-with-Power-BI.html)
 
 ## <a name="on-demand-webinars"></a>On-demand-webinarer
 
@@ -81,7 +85,7 @@ Se optagne sessioner når som helst.
 
 **Udforsk den samlede økonomiske indvirkning af Microsoft Power BI**  
 ved Megan Tomlin, Microsoft, og Jonathan Lipsitz, Forrester Consulting  
-[Se nu]( https://info.microsoft.com/ww-landing-Explore-the-Total-Economic-Impact-Of-Microsoft-Power-BI.html?Lcid=EN-US)
+[Se nu]( https://info.microsoft.com/ww-landing-Explore-the-Total-Economic-Impact-Of-Microsoft-Power-BI.html)
 
 **Analyse i virtuel Azure-hændelse: Opnå hurtigere indsigt med Azure Synapse Analytics**  
 af Gayle Sheppard og John MacIntyre  
@@ -89,23 +93,23 @@ af Gayle Sheppard og John MacIntyre
 
 **Sådan ændrer Microsoft BI-databeskyttelse**  
 af Anton Fritz og ADI Regev  
-[Tilmeld dig, og se det nu](https://info.microsoft.com/ww-landing-How-Microsoft-Is-Changing-BI-Data-Protection.html?lcid=EN-US)
+[Tilmeld dig, og se det nu](https://info.microsoft.com/ww-landing-How-Microsoft-Is-Changing-BI-Data-Protection.html)
 
 **Sådan bliver din virksomhed drevet af indsigt**  
 ved Amir Netz, Microsoft og Boris Evelson, Forrester  
-[Tilmeld dig, og se det nu](https://info.microsoft.com/ww-landing-how-to-become-an-insights-driven-business.html?lcid=en-us)
+[Tilmeld dig, og se det nu](https://info.microsoft.com/ww-landing-how-to-become-an-insights-driven-business.html)
 
 **Kunstig intelligens på tre måder, der ændrer BI**  
 med Justyna Lucznik  
-[Tilmeld dig, og se det nu](https://info.microsoft.com/ww-landing-Three-Ways-AI-Is-Changing-BI.html?lcid=EN-US&ocid=mkto_eml_EM581230A1LA1)
+[Tilmeld dig, og se det nu](https://info.microsoft.com/ww-landing-Three-Ways-AI-Is-Changing-BI.html&ocid=mkto_eml_EM581230A1LA1)
 
 **Power BI og fremtiden for moderne BI og virksomheds-BI**  
 ved Arun Ulag og Amir Netz  
-[Tilmeld dig, og se det nu](https://info.microsoft.com/ww-landing-The-Future-of-Modern-and-Enterprise-BI-video.html?LCID=EN-US)
+[Tilmeld dig, og se det nu](https://info.microsoft.com/ww-landing-The-Future-of-Modern-and-Enterprise-BI-video.html)
 
 **Ni tendenser, der former fremtiden inden for analyse af big data**  
 med Vijay Gopalakrishnan  
-[Tilmeld dig, og se det nu](https://info.microsoft.com/ww-landing-Nine-Trends-Shaping-the-Future-of-Big-Data-Analytics.html?Lcid=EN-US)
+[Tilmeld dig, og se det nu](https://info.microsoft.com/ww-landing-Nine-Trends-Shaping-the-Future-of-Big-Data-Analytics.html)
 
 **Introduktion til Power BI**  
 ved Miguel Martinez  
@@ -113,7 +117,7 @@ ved Miguel Martinez
 
 **Kom i gang med Power BI-mobilappen**  
 ved Maya Shenhav  
-[Tilmeld dig, og se det nu](https://info.microsoft.com/ww-Landing-Getting-Started-with-the-Power-BI-Mobile-App-Video.html?LCID=EN-US)
+[Tilmeld dig, og se det nu](https://info.microsoft.com/ww-Landing-Getting-Started-with-the-Power-BI-Mobile-App-Video.html)
 
 **Få mere at vide om at navigere i et Power BI Dashboard på 20 minutter** (webinaret er på engelsk)  
 ved Miguel Martinez  
@@ -125,7 +129,7 @@ ved Kasper de Jonge
 
 **Brug af Power BI med Dynamics 365 Finance and Operations**  
 ved Kristian Horlock  
-[Tilmeld dig, og se det nu](https://info.microsoft.com/ww-landing-Using-Power-BI-with-Dynamics-365-Finance-and-Operations.html?LCID=EN-US)
+[Tilmeld dig, og se det nu](https://info.microsoft.com/ww-landing-Using-Power-BI-with-Dynamics-365-Finance-and-Operations.html)
 
 **Microsoft kører på Power BI – finansiel planlægning og analyse på den nemme måde**  
 ved Cory Hrncirik og Miguel Martinez  
@@ -133,7 +137,7 @@ ved Cory Hrncirik og Miguel Martinez
 
 **Microsoft kører på Power BI: Brug af Power BI i moderne Treasury**  
 ved Pankaj Gudimella og Guru Kirthigavasan  
-[Tilmeld dig, og se det nu](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-Using-Power-BI-in-Modern-Treasury-Registration.html?LCID=EN-US)
+[Tilmeld dig, og se det nu](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-Using-Power-BI-in-Modern-Treasury-Registration.html)
 
 **Optimer dine programmer ved hjælp af Power BI JavaScript-API’en**  
 ved Nimrod Shalit  
@@ -157,7 +161,7 @@ ved Wim Coorevits og Enrique Plaza Garcia
 
 **Bedste praksis for administration af Power BI Embedded-analyser til udrulninger med flere lejere**  
 ved Nimrod Shalit  
-[Tilmeld dig, og se det nu](https://info.microsoft.com/ww-landing-PBI-webinar-Best-Practices-for-Managing-Power-BI-Embedded-video.html?LCID=EN-US)
+[Tilmeld dig, og se det nu](https://info.microsoft.com/ww-landing-PBI-webinar-Best-Practices-for-Managing-Power-BI-Embedded-video.html)
 
 **Power BI: Udfør analyse korrekt**  
 af Gohul Shanmugalingam  
@@ -200,7 +204,7 @@ ved Reid Havens
 
 **Power BI: Sådan får du indsigt fra HR-data for din arbejdsdag**  
 ved Iman Eftekhari, Julia Paton fra Agile Analytics og Shahram Karimi fra QBE Insurance  
-[Tilmeld dig, og se det nu](https://info.microsoft.com/How-to-Get-insights-from-Your-Workday-HR-Data-Registration.html?Lcid=en-us)
+[Tilmeld dig, og se det nu](https://info.microsoft.com/How-to-Get-insights-from-Your-Workday-HR-Data-Registration.html)
 
 **Opnåelse af en win-win-situation for producenter og forhandlere af forbrugsvarer**  
 ved Liz McCreesh fra Thorogood  
@@ -208,7 +212,7 @@ ved Liz McCreesh fra Thorogood
 
 **Omdan kundedata til en detailhandelssucces med Power BI**  
 ved Angad Soni fra Hitachi Solutions  
-[Tilmeld dig, og se det nu](https://info.microsoft.com/Transform-Your-Customer-Data-into-Retail-Success-OnDemandRegistration.html?LCID=EN-US?wt.mc_id=undefined)
+[Tilmeld dig, og se det nu](https://info.microsoft.com/Transform-Your-Customer-Data-into-Retail-Success-OnDemandRegistration.html?wt.mc_id=undefined)
 
 **Dokumenterede sundhedsmæssige løsninger for at forbedre både resultaterne for patienterne og rentabiliteten**  
 ved Stephen Cracknell og Stuart Macanliss fra US Medical IT  
@@ -228,7 +232,7 @@ af Scott Ball fra Esri og Enrique Plaza fra Microsoft
 
 **En succesfuld fremtidsspotters 5 indkøbsvaner – Rohit Bhargava**  
 af Rohit Bhargava fra Non-Obvious  
-[Tilmeld dig, og se det nu](https://info.microsoft.com/ww-landing-5-Habits-of-a-Successful-Trend-Curator-Video.html?LCID=EN-US)
+[Tilmeld dig, og se det nu](https://info.microsoft.com/ww-landing-5-Habits-of-a-Successful-Trend-Curator-Video.html)
 
 ### <a name="community"></a>Community ###
 

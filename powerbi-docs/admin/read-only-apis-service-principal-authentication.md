@@ -10,12 +10,12 @@ ms.date: 12/01/2020
 ms.author: painbar
 ms.custom: ''
 LocalizationGroup: Administration
-ms.openlocfilehash: ec3cd60916630fe355b9ea4f54d5a025788800bf
-ms.sourcegitcommit: 30d0668434283c633bda9ae03bc2aca75401ab94
+ms.openlocfilehash: 332101009946c64cb5e97bd40b9949f6daa67b7b
+ms.sourcegitcommit: b4c457bfb4676381dc4a0d04d965e8dab0bc230e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96906813"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98155681"
 ---
 # <a name="enable-service-principal-authentication-for-read-only-admin-apis-preview"></a>Aktivér godkendelse med tjenesteprincipal for skrivebeskyttede administrator-API'er (prøveversion)
 
@@ -42,7 +42,7 @@ Følg disse trin for at aktivere godkendelse med tjenesteprincipal for skrivebes
         * Vælg **Tilladelser**. Sørg for, at der ikke er angivet tilladelser af typen admin-consent-required i Power BI for dette program. Se [Administration af samtykke til programmer og evaluering af anmodninger om indhold](https://docs.microsoft.com/azure/active-directory/manage-apps/manage-consent-requests) for at få flere oplysninger. 
 4. Aktivér indstillingerne for Power BI-tjenesteadministration. Hvis du vil dette, skal du gøre som følger:
     1. Log på Power BI-administrationsportalen. Du skal være Power BI-administrator for at se siden med lejerindstillinger.
-    1. Under **Udviklerindstillinger** kan du se **Giv tjenesteprincipaler tilladelse til at bruge skrivebeskyttede administrator-API'er i Power BI (prøveversion)** . Indstil til/fra-knappen til Aktiveret, og vælg derefter alternativknappen for **specifikke sikkerhedsgrupper**. Føj den sikkerhedsgruppe, du oprettede i Trin 2, til den tekstfelt, som vises under den, som vist på nedenstående figur.
+    1. Under **API-indstillinger for administrator** kan du se **Giv tjenesteprincipaler tilladelse til at bruge skrivebeskyttede administrator-API'er i Power BI (prøveversion)** . Indstil til/fra-knappen til Aktiveret, og vælg derefter alternativknappen for **specifikke sikkerhedsgrupper**. Føj den sikkerhedsgruppe, du oprettede i Trin 2, til den tekstfelt, som vises under den, som vist på nedenstående figur.
 
         ![Skærmbillede af lejerindstillingen for tilladelse af tjenesteprincipaler.](media/read-only-apis-service-principal-auth/allow-service-principals-tenant-setting.png)
 
@@ -53,7 +53,7 @@ Følg disse trin for at aktivere godkendelse med tjenesteprincipal for skrivebes
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 * Du kan ikke logge på Power BI-portalen ved hjælp af en tjenesteprincipal.
-* Der kræves rettigheder som Power BI-administrator for at kunne aktivere tjenesteprincipalen under udviklerindstillingerne på Power BI-administrationsportalen.
+* Du skal have rettigheder som Power BI-administrator for at aktivere tjenesteprincipalen under API-indstillinger for administrator på Power BI-administrationsportalen.
 * Tjenesteprincipalen understøtter i øjeblikket følgende API'er:
     * [GetGroupsAsAdmin](https://docs.microsoft.com/rest/api/power-bi/admin/groups_getgroupsasadmin) med $expand for dashboards, datasæt, rapporter og dataflow 
     * [GetDashboardsAsAdmin](https://docs.microsoft.com/rest/api/power-bi/admin/dashboards_getdashboardsasadmin) med $expand-felter

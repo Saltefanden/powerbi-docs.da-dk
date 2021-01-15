@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 09/19/2019
+ms.date: 01/08/2021
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 092ce10b527c6160cb27de5e3de0ed5852219f6a
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 2d5eb4047b467544110a5802fa1d41b7ed65bb6a
+ms.sourcegitcommit: f791eef8e885f18c48997c9af63ab56211f1ceb8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96417284"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "98053345"
 ---
 # <a name="introduction-to-dashboards-for-power-bi-designers"></a>Introduktion til dashboards for Power BI-designere
 
@@ -53,9 +53,9 @@ Muligheden for at oprette et dashboard anses som en *opretterfunktion*  og kræv
 | Datakilder |Én eller flere rapporter og et eller flere datasæt pr. dashboard |Et enkelt datasæt pr. rapport |
 | Tilgængelig i Power BI Desktop |Nej | Ja. Kan udarbejde og få vist rapporter i Power BI Desktop |
 | Abonner |Ja. Der kan abonneres på et dashboard |Ja. Muligt at abonnere på en rapportside |
-| Filtrering |Nej. Der kan ikke filtreres eller laves udsnit |Ja. Der er mange forskellige måder at filtrere, fremhæve og lave udsnit på |
+| Filtrering |Nej. Der kan ikke filtreres eller oprettes et dashboard. Der *kan* filtreres et [dashboardfelt i fokustilstand](../consumer/end-user-focus.md#working-in-focus-mode), men filteret kan ikke gemmes. |Ja. Der er mange forskellige måder at filtrere, fremhæve og lave udsnit på |
 | Fremhævet |Ja. Muligt at angive ét dashboard som dit *udvalgte* dashboard |Nej |
-| Favorit | Ja. Muligt at vælge flere dashboards som *favoritter* | Ja. Muligt at vælge flere rapporter som *favoritter*
+| Favorit | Ja. Muligt at vælge flere dashboards som *favoritter* | Ja. Muligt at vælge flere rapporter som *favoritter* |
 | Angivelse af beskeder |Ja. Tilgængelig for dashboardfelter i visse tilfælde |Nej |
 | Forespørgsler på et naturligt sprog (Spørgsmål og svar) |Ja | Ja, hvis du har tilladelse til at redigere rapporten og det underliggende datasæt |
 | Kan underliggende datasættabeller og felter ses? |Nej. Data kan eksporteres, men tabeller og felter på selve dashboardet kan ikke ses |Ja |

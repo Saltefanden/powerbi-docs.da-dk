@@ -7,13 +7,13 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 12/31/2020
-ms.openlocfilehash: 7c1df405c80f50b7b98803b68ae2d3887013a623
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.date: 01/06/2021
+ms.openlocfilehash: 51df40463a02c2c165ca6cde59ef2b16cda8860c
+ms.sourcegitcommit: f791eef8e885f18c48997c9af63ab56211f1ceb8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97886183"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "98053322"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Ændringslog for Power BI-rapportserver
 
@@ -23,6 +23,10 @@ Se [Nyheder i Power BI-rapportserver](whats-new.md) for at få flere oplysninger
 
 ## <a name="october-2020"></a>Oktober 2020
 - **Power BI-rapportserver**
+    - *Version: 1.9.7675.15620 (Build 15.0.1104.300), udgivet: 8. januar 2021*
+        - Fejlrettelser
+            - Løste problem med opdatering af rapporter med to eller flere datakilder, som kun adskiller sig ved brugen af store/små bogstaver.
+            - Løste problem med opdatering af rapporter med bestemte kombinationer af indlejrede joinforbindelser.
     - *Version: 1.9.7627.11028 (build 15.0.1104.264), udgivet: 18. november 2020*
         - Fejlrettelser
             - Løste et problem, hvor brugerne blev forhindret i af ændre felter under webstedsindstillingerne via portalen.

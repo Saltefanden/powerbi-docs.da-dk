@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 06/18/2020
 LocalizationGroup: Administration
-ms.openlocfilehash: ff41f702edc605ee346aa10a759e633377597504
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 9ed9b42a42e497eaa332b3b1eb93be6247ddc542
+ms.sourcegitcommit: c700e78dfedc34f5a74b23bbefdaef77e2a87f8a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96408958"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97961218"
 ---
 # <a name="power-bi-high-availability-failover-and-disaster-recovery-faq"></a>Ofte stillede spørgsmål om høj tilgængelighed, failover og it-katastrofeberedskab i Power BI
 
@@ -26,7 +26,7 @@ Power BI er fuldt administreret software som en service (SaaS).  Microsoft udvik
 
 ## <a name="what-is-a-power-bi-failover"></a>Hvad er en Power BI-failover?
 
-Power BI opretholder flere forekomster af hver komponent i Azure-datacentre (også kendt som områder) for at sikre forretningskontinuitet. Hvis der er et nedbrud eller et problem, som medfører, at Power BI bliver utilgængelig eller ikke fungerer i et område, udfører Power BI failover for alle sine komponenter i dette område til en sikkerhedskopi. I forbindelse med denne failover gendannes tilgængeligheden og funktionaliteten til forekomsten af Power BI-tjenesten i et nyt område (som regel inden for samme geografiske placering, som noteret i [Microsofts Center for sikkerhed og rettighedsadministration](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location)).
+Power BI opretholder flere forekomster af hver komponent i Azure-datacentre (også kendt som områder) for at sikre forretningskontinuitet. Hvis der er et nedbrud eller et problem, som medfører, at Power BI bliver utilgængelig eller ikke fungerer i et område, udfører Power BI failover for alle sine komponenter i dette område til en sikkerhedskopi. I forbindelse med denne failover gendannes tilgængeligheden og funktionaliteten til forekomsten af Power BI-tjenesten i et nyt område (som regel inden for samme geografiske placering, som noteret i [Microsofts Center for sikkerhed og rettighedsadministration](https://www.microsoft.com/trust-center/product-overview)).
 
 Der understøttes kun _læsehandlinger_ for en forekomst af Power BI-tjenesten med failover, hvilket betyder, at følgende handlinger ikke understøttes under failover: opdateringer, publiceringshandlinger for rapporter, ændringer af dashboards eller rapporter og andre handlinger, der kræver ændringer af Power BI-metadata (f.eks. indsætning af en kommentar i en rapport).  Læsehandlinger, f.eks. visning af dashboards og rapporter, der ikke er baseret på DirectQuery eller Live Connect til datakilder i det lokale miljø, fungerer fortsat normalt.
 
@@ -36,7 +36,7 @@ Alle Power BI-tjenestekomponenter synkroniserer jævnligt deres sikkerhedskopier
 
 ## <a name="where-are-the-failover-clusters-located"></a>Hvor er failoverklyngerne placeret?
 
-Sikkerhedskopier befinder sig inden for den samme geografiske placering (geo), som du valgte, da din organisation tilmeldte sig Power BI undtagen de undtagelser, der er nævnt i [Microsofts Center for sikkerhed og rettighedsadministration](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location). En geografisk placering kan indeholde flere områder, og Microsoft kan replikere data til et hvilket som helst område inden for en bestemt geografisk placering for at sikre datarobusthed. Microsoft replikerer og flytter ikke kundedata uden for den geografiske placering. Du kan finde en kortoversigt over de geografiske placeringer, der tilbydes af Power BI, og områderne i dem i [Microsofts Center for sikkerhed og rettighedsadministration](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location).
+Sikkerhedskopier befinder sig inden for den samme geografiske placering (geo), som du valgte, da din organisation tilmeldte sig Power BI undtagen de undtagelser, der er nævnt i [Microsofts Center for sikkerhed og rettighedsadministration](https://www.microsoft.com/trust-center/product-overview). En geografisk placering kan indeholde flere områder, og Microsoft kan replikere data til et hvilket som helst område inden for en bestemt geografisk placering for at sikre datarobusthed. Microsoft replikerer og flytter ikke kundedata uden for den geografiske placering. Du kan finde en kortoversigt over de geografiske placeringer, der tilbydes af Power BI, og områderne i dem i [Microsofts Center for sikkerhed og rettighedsadministration](https://www.microsoft.com/trust-center/product-overview).
 
 ## <a name="how-does-microsoft-decide-to-fail-over"></a>Hvordan beslutter Microsoft sig for at udføre failover?
 

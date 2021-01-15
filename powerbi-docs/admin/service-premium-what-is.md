@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 12/09/2020
+ms.date: 01/06/2021
 ms.custom: licensing support
 LocalizationGroup: Premium
-ms.openlocfilehash: 2265559b9b978681b2f7b210a15f7200fbba7971
-ms.sourcegitcommit: 0711972326521944fdd8572403c0b15f31b916da
+ms.openlocfilehash: c1e5cad6ab1da796d2f10a64e867d5848e86aea4
+ms.sourcegitcommit: b4c457bfb4676381dc4a0d04d965e8dab0bc230e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97721449"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98155612"
 ---
 # <a name="what-is-power-bi-premium"></a>Hvad er Power BI Premium?
 
@@ -37,7 +37,7 @@ I denne artikel introduceres vigtige funktioner i Power BI Premium. Hvor det er 
 
 ## <a name="power-bi-premium-generation-2-preview"></a>Power BI Premium Generation 2 (prøveversion)
 
-Power BI Premium har for nylig udgivet en ny version af Power BI Premium, **Power BI Premium Generation 2**, der også kaldes **Premium Gen2**. Premium Gen2 fås i øjeblikket som prøveversion og er tilgængelig for de Premium-abonnenter, der skal bruges i prøveperioden. Du kan vælge at bruge den oprindelige version af Premium eller skifte til at bruge Premium Gen2. Du kan kun bruge én af dem til din Premium-kapacitet. 
+Power BI Premium har for nylig udgivet en ny version af Power BI Premium, **Power BI Premium Generation 2**, der også kaldes **Premium Gen2**. Premium Gen2 fås i øjeblikket som prøveversion og er tilgængelig for de Premium-abonnenter, der skal bruges i prøveperioden. Du kan vælge at bruge den oprindelige version af Premium eller skifte til at bruge Premium Gen2. Du kan kun bruge én af dem til din Premium-kapacitet.
 
 Premium Gen2 omfatter følgende opdateringer eller forbedrede oplevelser:
 
@@ -95,10 +95,6 @@ Power BI Premium er et Microsoft 365-abonnement på lejerniveau, der er tilgæng
 - **P**-SKU'er (P1-P5) til integrering og virksomhedsfunktioner kræver en månedlig eller årlig forpligtelse, faktureres månedsvis og indeholder en licens til at installere Power BI-rapportserveren i det lokale miljø.
 
 - **EM**-SKU'er (EM1-EM3) til integrering i _organisationer_ kræver en årlig forpligtelse og faktureres månedsvis. EM1- og EM2-SKU'er er kun tilgængelige via volumenlicensplaner. Du kan ikke købe dem direkte.
-
-### <a name="updates-for-premium-gen2-preview"></a>Opdateringer til Premium Gen2 (prøveversion)
-Premium Gen2 er i øjeblikket tilgængelig som en fuldt understøttet prøveversionsfunktion kun til **P**- og **EM**-SKU'er. **En** SKU's kapacitet omfatter endnu ikke alle ekstra fordele, der introduceres i opdateringen til Premium Gen2-prøveversionen.
-
 
 ### <a name="purchasing"></a>Indkøb
 
@@ -161,7 +157,6 @@ Ressourcerne og grænserne for hver Premium-SKU (og A-SKU'er i en tilsvarende st
 #### <a name="updates-for-premium-gen2-preview"></a>Opdateringer til Premium Gen2 (prøveversion)
 
 Med **Premium Gen2** er den mængde hukommelse, der er tilgængelig på hver nodestørrelse, angivet til grænsen for hukommelsesforbrug for en enkelt artefakt og ikke for det samlede hukommelsesforbrug. I Premium Gen2 er størrelsesgrænsen for et enkelt datasæt f.eks. 25 GB i forhold til det oprindelige Premium, hvor det samlede hukommelsesforbrug for de datasæt, der håndteres på samme tid, er begrænset til 25 GB.
-
 
 ### <a name="capacity-workloads"></a>Kapacitetsarbejdsbelastninger
 
@@ -247,9 +242,7 @@ I programmets dashboard kan du klikke på en celle med målepunkter for at åbne
 Du kan få mere at vide om overvågning af kapaciteter under [Overvågning på Power BI-administrationsportalen](service-admin-premium-monitor-portal.md) og [Overvågning med programmet Power BI Premium Capacity Metrics](service-admin-premium-monitor-capacity.md).
 
 #### <a name="updates-for-premium-gen2-preview"></a>Opdateringer til Premium Gen2 (prøveversion)
-**Premium Gen2**-kapaciteter bruger ikke Metrics-programmet. De bruger Capacity Utilization-programmet, som bliver tilgængelig i forbindelse med prøveversionen. Kunder, der ønsker at gennemse deres udnyttelse, kan modtage en kopi af deres udnyttelsesrapport for de sidste 7 dage ved at anmode om én fra kundesupport. Rapporten leveres i løbet af 72 timer efter anmodningen. Programmet Kapacitetsudnyttelse startes fra siden til kapacitetsstyring på **administrationsportalen** for hver kapacitet og muliggør analyse af data m.m. i 30 dage.
-
-
+**Premium Gen2**-kapaciteter bruger ikke Metrics-programmet. De bruger Capacity Utilization-programmet, som bliver tilgængelig i forbindelse med prøveversionen. Kunder, der ønsker at gennemse deres udnyttelse, kan modtage en kopi af deres udnyttelsesrapport for de sidste 7 dage ved at anmode om en fra kundesupport. Rapporten leveres i løbet af 72 timer efter anmodningen. Programmet Kapacitetsudnyttelse startes fra siden til kapacitetsstyring på **administrationsportalen** for hver kapacitet og muliggør analyse af data m.m. i 30 dage.
 
 ### <a name="optimizing-capacities"></a>Optimering af kapaciteter
 
@@ -303,10 +296,10 @@ Du kan få mere at vide under [Trinvis opdatering i Power BI Premium](service-pr
 
 Sideinddelte rapporter, der understøttes på P1-P3- og A4-A6-SKU'er, er baseret på RDL-teknologi (Report Definition Language) i SQL Server Reporting Services. De er baseret på RDL-teknologien, men er ikke det samme som Power BI-rapportserveren, som er en rapporteringsplatform, der kan downloades, og som du kan installere i det lokale miljø. Også inkluderet i Power BI Premium. Sideinddelte rapporter formateres, så de passer til en side, der kan udskrives eller deles. Data vises i en tabel, også selvom tabellen strækker sig over flere sider. Ved hjælp af det gratis Windows-skrivebordsprogram [**Power BI Report Builder**](https://aka.ms/pbireportbuilder) kan brugere oprette sideinddelte rapporter og publicere dem til tjenesten.
 
-I Power BI Premium er sideinddelte rapporter en arbejdsbelastning, der skal aktiveres for en kapacitet ved hjælp af administrationsportalen. Kapacitetsadministratorer kan aktivere og derefter angive mængden af hukommelse som en procentdel af kapacitetens overordnede hukommelsesressourcer. I modsætning til andre typer arbejdsbelastninger kører Power BI Premium sideinddelte rapporter i et afgrænset område i kapaciteten. Den maksimale hukommelse, der angives for dette område, bruges, uanset om arbejdsbelastningen er aktiv eller ej. Standarden er 20 %. 
+I Power BI Premium er sideinddelte rapporter en arbejdsbelastning, der skal aktiveres for en kapacitet ved hjælp af administrationsportalen. Kapacitetsadministratorer kan aktivere og derefter angive mængden af hukommelse som en procentdel af kapacitetens overordnede hukommelsesressourcer. I modsætning til andre typer arbejdsbelastninger kører Power BI Premium sideinddelte rapporter i et afgrænset område i kapaciteten. Den maksimale hukommelse, der angives for dette område, bruges, uanset om arbejdsbelastningen er aktiv eller ej. Standarden er 20 %.
 
 > [!NOTE]
-> I **Premium Gen2 (prøveversion)** er der ingen hukommelsesadministration for sideinddelte rapporter. Med Premium Gen2 understøttes sideinddelte rapporter på EM1-EM3-SKU'erne.
+> I **Premium Gen2 (prøveversion)** er der ingen hukommelsesadministration for sideinddelte rapporter. Med Premium Gen2 understøttes sideinddelte rapporter på EM1-EM3- og A1-A3-SKU'erne.
 
 ### <a name="paginated-reports-and-premium-gen2"></a>Sideinddelte rapporter og Premium Gen2
 
@@ -340,7 +333,7 @@ Du kan få mere at vide under [Power BI-licenser](service-admin-licensing-organi
 
 ## <a name="analysis-services-in-power-bi-premium"></a>Analysis Services i Power BI Premium
 
-Under overfladen styres Power BI Premium-arbejdsområder og -datasæt af det gennemtestede Microsoft-program **Analysis Services Vertipaq**. Analysis Services understøtter programmerings- og klientprogrammer og -værktøjer via klientbiblioteker og API'er, der understøtter XMLA-protokollen med åbne standarder. Arbejdsbelastninger for datasæt i en Power BI Premium-kapacitet understøtter som standard *skrivebeskyttede* forbindelser fra klientprogrammer og værktøjer fra Microsoft og tredjeparter via **XMLA-slutpunkter**. Kapacitetsadministratorer kan også vælge at deaktivere eller tillade *læse-/skrive* handlinger via slutpunktet.
+Under overfladen styres Power BI Premium-arbejdsområder og -datasæt af det gennemtestede Microsoft-program **Analysis Services Vertical**. Analysis Services understøtter programmerings- og klientprogrammer og -værktøjer via klientbiblioteker og API'er, der understøtter XMLA-protokollen med åbne standarder. Arbejdsbelastninger for datasæt i en Power BI Premium-kapacitet understøtter som standard *skrivebeskyttede* forbindelser fra klientprogrammer og værktøjer fra Microsoft og tredjeparter via **XMLA-slutpunkter**. Kapacitetsadministratorer kan også vælge at deaktivere eller tillade *læse-/skrive* handlinger via slutpunktet.
 
 Med skrivebeskyttet adgang kan Microsoft-værktøjer, f.eks.SSMS (SQL Server Management Studio) og SQL Server Profiler, og tredjepartsapps, f.eks. DAX Studio og programmer til datavisualisering, kan oprette forbindelse til og forespørge om Premium-datasæt ved hjælp af XMLA, DAX, MDX, DMV'er og sporingshændelser. Med læse-/skriveadgang kan værktøjer til modellering af virksomhedsdata, f. eks. Visual Studio med Analysis Services-projektudvidelse eller Tabular Editor med åben kildekode, udrulle tabellariske modeller som et datasæt til et Premium-arbejdsområde. Og med værktøjer som SSMS kan administratorer bruge TMSL (Tabular Model Scripting Language) til scenarier med script af metadataændringer og avancerede dataopdateringer. 
 

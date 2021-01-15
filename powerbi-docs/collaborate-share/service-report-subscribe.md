@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 12/18/2020
+ms.date: 01/08/2021
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 4a8234176dd44fd265ff2d4a6af8e1b5568a642c
-ms.sourcegitcommit: b8e4dd67c59db079fdfa82a8a01c2a28fd1673ca
+ms.openlocfilehash: 1253c2b2548a7e6333840b8d33fdf255d5634be5
+ms.sourcegitcommit: f791eef8e885f18c48997c9af63ab56211f1ceb8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "97699300"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "98053391"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Meld dig selv og andre til abonnementer på rapporter og dashboards i Power BI-tjenesten
 
@@ -128,6 +128,7 @@ Power BI-administratorer kan bruge Power BI-overvågningslogge til at få vist o
 - Indstillingen for at give adgang til rapporten/dashboardet vises altid som aktiveret, når du redigerer et eksisterende abonnement.  Hvis du fjerner markeringen i denne indstilling og gemmer abonnementet, gemmes den pågældende tilstand. Men når du skifter til at redigere rapporten igen, bliver den som standard markeret.
 - Hvis du har en alternativ mailadresse, men ingen primær, bruges den alternative i Power BI til at levere abonnementet.
 - Hvis du giver brugere abonnement på en rapport eller et dashboard, modtager de en meddelelse om deling med det samme, når du har valgt **Gem og luk** i ruden Abonnement. Denne meddelelse sendes kun til eksterne brugere, ikke interne brugere, da det kræver et invitationslink at få vist rapporten eller dashboardet. 
+- Der er en grænse for antallet af abonnenter for én rapport eller et dashboard. Når du har passeret 200 abonnenter, kan der opstå problemer med levering.
 
 ### <a name="dashboards"></a>Dashboards
 

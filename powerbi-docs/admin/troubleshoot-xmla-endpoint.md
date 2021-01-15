@@ -7,15 +7,15 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 01/04/2021
+ms.date: 01/11/2021
 ms.custom: seodec18, css_fy20Q4
 LocalizationGroup: Premium
-ms.openlocfilehash: 191cf3ce71ca30f257276df78ad43cdb2e49a1e1
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: 16a07065507abfe825c39677f234d626070827b4
+ms.sourcegitcommit: c86ce723d5db16fb960d1731795d84f4654e4b4e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97886072"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98110722"
 ---
 # <a name="troubleshoot-xmla-endpoint-connectivity"></a>Foretag fejlfinding af XMLA-slutpunktsforbindelse
 
@@ -213,6 +213,10 @@ Når du genudgiver et datasæt med direkte forbindelse ved hjælp af Analysis Se
 :::image type="content" source="media/troubleshoot-xmla-endpoint/couldnt-publish-to-power-bi.png" alt-text="Fejl vedrørende manglende udgivelse til Power BI.":::
 
 Som angivet i fejlmeddelelsen kan du løse problemet ved enten at slette eller omdøbe det eksisterende datasæt. Sørg også for at publicere alle de apps, der er afhængige af rapporten, igen. Hvis det er nødvendigt, skal brugerne også have besked om at opdatere bogmærker med den nye rapportadresse for at sikre, at de har adgang til den nyeste rapport.  
+
+## <a name="workspaceserver-alias"></a>Alias for arbejdsområde/server
+
+[Aliasser](/azure/analysis-services/analysis-services-server-alias) for servernavne, der understøttes i Azure Analysis Services, **understøttes ikke** for Power BI Premium-arbejdsområder. 
 
 ## <a name="see-also"></a>Se også
 

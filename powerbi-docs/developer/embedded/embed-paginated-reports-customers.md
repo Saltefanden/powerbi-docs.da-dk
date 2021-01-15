@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 01/04/2019
-ms.openlocfilehash: a06553a3e0c090d4e4b0e007b61148115f8f5eb5
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: b9623b91555efe01817e4ffca3c6f80bd73c5243
+ms.sourcegitcommit: c86ce723d5db16fb960d1731795d84f4654e4b4e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97885217"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98110883"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-customers"></a>Selvstudium: Integrer sideinddelte Power BI-rapporter i et program til dine kunder
 
@@ -58,10 +58,16 @@ Før du importerer eller uploader en sideinddelt rapport, der skal integreres, s
 * **Power BI Premium** – når du integrerer en sideinddelt rapport, kræves der en *P*-SKU-kapacitet. Når du integrerer Power BI-indhold, kaldes denne løsning for *Power BI integration*. Du kan finde flere oplysninger om dette abonnement under [Hvad er Power BI Premium?](../../admin/service-premium-what-is.md)
 * **Azure Power BI Embedded** – Du kan købe en kapacitet på [Microsoft Azure-portalen](https://portal.azure.com). Dette abonnement bruger *A*-SKU'erne. Hvis du vil integrere sideinddelte rapporter, skal du mindst have et *A4*-abonnement. Du kan finde flere oplysninger om, hvordan du opretter en kapacitet til Power BI Embedded, under [Opret kapacitet til Power BI Embedded på Azure-portalen](azure-pbie-create-capacity.md).
 
+    >[!NOTE]
+    >Power BI Embedded har for nylig udgivet en ny version med navnet **Embedded Gen2**. Embedded Gen2 forenkler administrationen af integrerede kapaciteter og forbedrer Power BI Embedded-oplevelsen. Se [Power BI Embedded Generation 2](power-bi-embedded-generation-2.md) for at få flere oplysninger.
+
 I nedenstående tabel beskrives ressourcerne og grænserne for de enkelte SKU'er. Hvis du vil finde ud af, hvilken kapacitet der passer bedst til dine behov, skal du se tabellen [Hvilken SKU skal jeg købe til mit scenarie?](./embedded-faq.md#which-solution-should-i-choose)
 
 | Kapacitetsnoder | V-kerner i alt | Backend-v-kerner | RAM (GB) | Frontend-v-kerner | 
 | --- | --- | --- | --- | --- |
+| A1 med [Embedded Gen2](power-bi-embedded-generation-2.md) | 1 | 0,5 | 2.5 | 0,5 |
+| A2 med [Embedded Gen2](power-bi-embedded-generation-2.md) | 2 | 1 | 5 | 1 |
+| A3 med [Embedded Gen2](power-bi-embedded-generation-2.md) | 4 | 2 | 10 | 2 |
 | P1/A4 | 8 | 4 | 25 | 4 |
 | P2/A5 | 16 | 8 | 50 | 8 |
 | P3/A6 | 32 | 16 | 100 | 16 |

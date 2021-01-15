@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.custom: contperf-fy21q2
 ms.date: 12/20/2020
 LocalizationGroup: Data from files
-ms.openlocfilehash: de7715fc37748ee80cba61f9cc246ad9e1df5c33
-ms.sourcegitcommit: a92a3570eb14793a758a32e8fa1a756ec5d83f8c
+ms.openlocfilehash: d47d9b973eadb06095c2a2aebb8fe93cf6ab4414
+ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97708036"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97969529"
 ---
 # <a name="sensitivity-labels-in-power-bi"></a>Følsomhedsmærkater i Power BI
 
@@ -80,7 +80,7 @@ Der kan også anvendes følsomhedsmærkater i Power BI Desktop. Det gør det mul
 
 >[!NOTE]
 >* I denne prøveversion kan nogle begrænsninger være gældende. Se [Begrænsninger](#limitations).
->* I løbet af de første 48 timer, efter du har tilmeldt dig prøveversionsfunktionen Information Protection, **oplever du muligvis problemer med .pbix-filer, hvor der er anvendt følsomhedsmærkater (f.eks. publicering af .pbix-filen til tjenesten, download af .pbix-filen fra tjenesten)** . Sådanne problemer er forventet og løses automatisk inden for 48 timer.
+>* Hvis du vil kunne bruge følsomhedsmærkater i Power BI Desktop, skal du først [aktivere prøveversionsfunktionen Information Protection](service-security-apply-data-sensitivity-labels.md#apply-sensitivity-labels-in-power-bi-desktop-preview) og derefter genstarte programmet. Hvis programmet går ned efter genstart, kan det skyldes, at computeren mangler den påkrævede version af Visual C++ Redistributable-runtimebiblioteket. Hvis du oplever et sådant nedbrud, kan du gå til [siden Microsoft Visual C++ 2015 Distributed Update 3 download](https://www.microsoft.com/download/details.aspx?id=53587) for at få oplysninger om, hvordan du downloader og installerer opdateringen. Når du har installeret opdateringen, kan du prøve at starte computeren igen.
 
 Hvis du anvender en følsomhedsmærkat i Desktop, når du publicerer dit arbejde til tjenesten, eller når du uploader en .pbix-fil af det pågældende arbejde til tjenesten, følger mærkaten med dataene til tjenesten. I tjenesten anvendes mærkaten både på det datasæt og den rapport, du får med filen. Hvis datasættet og rapporten allerede indeholder følsomhedsmærkater, vil disse mærkater blive overskrevet af mærkaten, der kommer fra Desktop.
  

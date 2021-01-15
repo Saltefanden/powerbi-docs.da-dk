@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 12/18/2020
+ms.date: 01/05/2020
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 2e89dc43f467aec8edcefaa4ecdbd2fc6cbf6dea
-ms.sourcegitcommit: b8e4dd67c59db079fdfa82a8a01c2a28fd1673ca
+ms.openlocfilehash: 554cce8c0313ad6624a2991aa09f60c98ff454be
+ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "97699468"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97969584"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrer Power BI på administrationsportalen
 
@@ -193,7 +193,7 @@ Administratorer kan angive interne URL-adresser for at tilsidesætte linkdestina
 
 * **Community**. Hvis du vil sende brugerne til et internt forum fra menuen Hjælp i stedet for til [Power BI-community](https://community.powerbi.com/), skal du angive en brugerdefineret URL-adresse til **Diskussionsforum**.
 
-* **Opgraderinger af licenser**. Brugere med en Power BI (gratis)-licens bliver muligvis præsenteret for muligheden for at opgradere deres konto til Power BI Pro, mens de bruger tjenesten. Hvis du angiver en intern URL-adresse til **Licensanmodninger**, omdirigerer du brugerne til en intern anmodning og et købsflow og forhindrer selvbetjeningskøb. Hvis du vil forhindre brugere i at købe licenser, men ikke har noget i mod, at de starter en Power BI Pro-prøveversion, kan du se [Tillad brugere at prøve Power BI Pro](#allow-users-to-try-power-bi-pro) for at adskille købs-og prøveoplevelsen.
+* **Opgraderinger af licenser**. Brugere med en Power BI (gratis)-licens bliver muligvis præsenteret for muligheden for at opgradere deres konto til Power BI Pro, mens de bruger tjenesten. Hvis du angiver en intern URL-adresse til **Licensanmodninger**, omdirigerer du brugerne til en intern anmodning og et købsflow og forhindrer selvbetjeningskøb. Hvis du vil forhindre brugere i at købe licenser, men ikke har noget i mod, at de starter en Power BI Pro-prøveversion, kan du se [Tillad brugere at prøve Power BI Pro](#allow-users-to-try-power-bi-paid-features) for at adskille købs-og prøveoplevelsen.
 
 * **Få hjælp**. Hvis du vil sende brugerne til en intern helpdesk fra menuen Hjælp i stedet for til [Power BI-support](https://powerbi.microsoft.com/support/), skal du angive en brugerdefineret URL-adresse til **Helpdesk**.
 
@@ -201,11 +201,11 @@ Administratorer kan angive interne URL-adresser for at tilsidesætte linkdestina
 
 Mailaktiverede sikkerhedsgrupper modtager mails, hvis lejeren påvirkes af en tjenesteafbrydelse eller -hændelse. Få mere at vide om [Meddelelser om tjenesteafbrydelser](service-interruption-notifications.md).
 
-### <a name="allow-users-to-try-power-bi-pro"></a>Tillad brugere at prøve Power BI Pro
+### <a name="allow-users-to-try-power-bi-paid-features"></a>Giv brugere mulighed for at prøve betalte funktioner i Power BI
 
 ![Brugergrænseflade med indstillingen Tillad brugere at prøve Power BI Pro](media/service-admin-portal/allow-pro-trial.png)
 
-Indstillingen til at **gøre det muligt for brugere at prøve Power BI Pro** er aktiveret som standard. Denne indstilling øger din kontrol over, hvordan brugerne får Power BI Pro licenser. I scenarier hvor du har blokeret selvbetjening, kan du bruge denne indstilling for at gøre det muligt for brugerne at starte en Power BI Pro-prøveversion. Slutbrugeroplevelsen afhænger af, hvordan du kombinerer licensindstillingerne. I tabellen nedenfor kan du se, hvordan opgraderingsoplevelsen fra Power BI (gratis) til Power BI Pro påvirkes af forskellige indstillingskombinationer:
+Indstillingen **Giv brugere mulighed for at prøve betalte funktioner i Power BI** er aktiveret som standard. Denne indstilling øger din kontrol over, hvordan brugerne får Power BI Pro licenser. I scenarier hvor du har blokeret selvbetjening, kan du bruge denne indstilling for at gøre det muligt for brugerne at starte en Power BI Pro-prøveversion. Slutbrugeroplevelsen afhænger af, hvordan du kombinerer licensindstillingerne. I tabellen nedenfor kan du se, hvordan opgraderingsoplevelsen fra Power BI (gratis) til Power BI Pro påvirkes af forskellige indstillingskombinationer:
 
 | Indstillingen Køb via selvbetjening | Indstillingen Tillad brugere at prøve Power BI Pro | Slutbrugeroplevelse |
 | ------ | ------ | ----- |
@@ -218,6 +218,30 @@ Indstillingen til at **gøre det muligt for brugere at prøve Power BI Pro** er 
 > Du kan tilføje en intern URL-adresse til licensanmodninger i [Indstillinger for Hjælp og support](#help-and-support-settings). Hvis du angiver URL-adressen, tilsidesættes standardprocessen for køb via selvbetjening. Du kommer ikke til tilmeldingen for en licens til en prøveversion af Power BI Pro. Brugere, der kan købe en licens i de scenarier, der er beskrevet i ovenstående tabel, omdirigeres til din interne URL-adresse.
 
 Du kan finde flere oplysninger i [Aktivér eller deaktiver tilmelding og køb via selvbetjening](service-admin-disable-self-service.md).
+
+### <a name="show-a-custom-message-before-publishing-reports"></a>Vis en brugerdefineret meddelelse, før der publiceres rapporter  
+
+Administratorer kan angive en brugerdefineret meddelelse, der vises, før en bruger publicerer en rapport fra Power BI Desktop. Når du har aktiveret indstillingen, skal du angive en **brugerdefineret meddelelses**. Den brugerdefinerede meddelelse kan være almindelig tekst eller følge Markdown-syntaks som vist i følgende eksempel på en meddelelse:
+
+```markdown
+#### Important Disclaimer 
+
+Before publishing the report to a workspace, be sure to validate that the appropriate users or groups have access to the destination workspace. If some users or groups should *not* have access to the content and underlying artifacts, remove or modify their access to the workspace, or publish the report to a different workspace. [Learn more](https://docs.microsoft.com/power-bi/collaborate-share/service-create-the-new-workspaces#give-access-to-your-workspace). 
+```
+
+Tekstområdet **Bugerdefineret meddelelse** understøtter rulning, så du kan oprette en meddelelse på op til 5.000 tegn.
+
+:::image type="content" source="media/service-admin-portal/admin-show-custom-message.png" alt-text="Skærmbillede af feltet Brugerdefinerede meddelelse.":::
+
+Når brugerne publicerer rapporter til arbejdsområder i Power BI, kan de se den meddelelse, du har skrevet.
+
+:::image type="content" source="media/service-admin-portal/admin-user-show-custom-message.png" alt-text="Den dialogboks, dine brugere ser, når de udgiver rapporter til et arbejdsområde.":::
+
+Som med andre lejerindstillinger kan du vælge, hvem den **brugerdefinerede meddelelse** gælder for:
+
+- **Hele organisationen**.
+- **Specifikke sikkerhedsgrupper**.
+- Eller **Undtagen specifikke sikkerhedsgrupper**.
 
 ## <a name="workspace-settings"></a>Indstillinger for arbejdsområde
 
@@ -388,7 +412,7 @@ Brugere i organisationen kan bruge API'en for eksport af rapport til fil til at 
 Giv brugere i denne organisation tilladelse til at certificere datasæt, dataflow, rapporter og programmer. Du kan finde flere oplysninger under [Aktivér certificering af indhold](service-admin-setup-certification.md).
 
 ### <a name="email-subscriptions"></a>Mailabonnementer
-Brugere i organisationen kan oprette mailabonnementer. Få mere at vide om [abonnementer](../collaborate-share/service-publish-to-web.md).
+Brugere i organisationen kan oprette mailabonnementer. Få mere at vide om [abonnementer](../collaborate-share/service-report-subscribe.md).
 
 ![Aktivér mailabonnementer](media/service-admin-portal/power-bi-manage-email-subscriptions.png)
 
