@@ -9,8 +9,6 @@
           href: embedding.md
         - name: Hvad er Power BI Embedded i Azure?
           href: azure-pbie-what-is-power-bi-embedded.md
-        - name: Hvad er Power BI Embedded Generation 2
-          href: power-bi-embedded-generation-2.md
     - name: Selvstudier
       expanded: true
       items:
@@ -40,6 +38,8 @@
           href: paginated-reports-row-level-security.md
         - name: Administrer flere lejere
           href: embed-multi-tenancy.md
+        - name: Opret forbindelse til en rapport ved hjælp af dynamisk binding
+          href: embed-dynamic-binding.md
         - name: Azure-logføring af diagnosticering for Power BI Embedded
           href: azure-pbie-diag-logs.md
         - name: Ofte stillede spørgsmål om integrering
@@ -64,8 +64,6 @@
           href: register-app.md
         - name: Hent et Azure AD-adgangstoken
           href: get-azuread-access-token.md
-        - name: Opret forbindelse til en rapport ved hjælp af dynamisk binding
-          href: embed-dynamic-binding.md
         - name: Integration af Q&A
           href: qanda.md
         - name: Foretag fejlfinding af dit integrerede program
