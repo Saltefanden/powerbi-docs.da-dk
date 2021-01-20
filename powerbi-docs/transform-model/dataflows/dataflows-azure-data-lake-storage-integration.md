@@ -9,12 +9,12 @@ ms.subservice: pbi-dataflows
 ms.topic: how-to
 ms.date: 12/10/2020
 LocalizationGroup: Data from files
-ms.openlocfilehash: 646f3d37bb0200cf423ccdffb42dc4ce866ade9f
-ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
+ms.openlocfilehash: bf9740e0f4f6a2e25e1d5d0cc49671bd6eb90b37
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97098254"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565403"
 ---
 # <a name="configuring-dataflow-storage-to-use-azure-data-lake-gen-2"></a>Konfiguration af dataflowlager til brug af Azure Data Lake Gen 2 
 
@@ -26,7 +26,7 @@ Der er to måder til konfiguration af, hvilket ADLS Gen 2-lager du skal bruge: D
 
 Hvis du vil hente din egen ADLS Gen 2-konto, skal du have ejertilladelse til enten lagerkontoen, ressourcegruppen eller abonnementslaget. Hvis du er administrator, skal du stadig tildele dig selv ejertilladelse. 
 
-Lagerkontoen skal oprettes med det [hierarkiske navneområde](https://docs.microsoft.com/azure/storage/blobs/create-data-lake-storage-account) aktiveret. 
+Lagerkontoen skal oprettes med det [hierarkiske navneområde](/azure/storage/blobs/create-data-lake-storage-account) aktiveret. 
 
 ADLS Gen 2-kontoen skal udrulles i det samme område som din Power BI-lejer. Der opstår en fejl, hvis ressourcernes placering ikke er i det samme område.
 

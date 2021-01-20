@@ -9,12 +9,12 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 01/23/2020
 LocalizationGroup: Create reports
-ms.openlocfilehash: 6168a1fb8d64444b703c6acac21c3bac67c4219a
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: a622da545d4fa9fca8b9478f6d5293d2b34296e9
+ms.sourcegitcommit: 396633fc5f7cff1f7d518f558b20043b2e05a513
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96396492"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98191699"
 ---
 # <a name="use-performance-analyzer-to-examine-report-element-performance"></a>Brug Effektivitetsanalyse til at undersøge ydeevnen for rapportelementer
 
@@ -58,7 +58,7 @@ Hvert enkelt visuals logoplysninger omfatter den tid, der er brugt (varighed) ti
 * **Visuel visning** – den tid, det tager for visual'et at tegne på skærmen, herunder den tid, der kræves for at hente eventuelle webbilleder eller geokodning. 
 * **Andet** – den tid, det tager for visual'et at forberede forespørgsler, vente på, at andre visuals fuldføres, eller udføre anden baggrundsbehandling.
 
-Værdierne for **Varighed (ms)** angiver forskellen mellem et *start-* og *slut-* tidsstempel for hver handling. De fleste lærredshandlinger og visuahandlinger udføres sekventielt på en enkelt brugergrænsefladetråd, som deles af flere handlinger. De rapporterede varigheder omfatter den tid, der er brugt i kø, mens andre handlinger udføres. [Effektivitetsanalyse-eksemplet](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Performance%20Analyzer) på GitHub og den tilknyttede [dokumentation](https://github.com/microsoft/powerbi-desktop-samples/blob/master/Performance%20Analyzer/Power%20BI%20Performance%20Analyzer%20Export%20File%20Format.docx) indeholder oplysninger om, hvordan visuals forespørger data, og hvordan de gengiver.
+Værdierne for **Varighed (ms)** angiver forskellen mellem et *start-* og *slut-* tidsstempel for hver handling. De fleste lærredshandlinger og visuahandlinger udføres sekventielt på en enkelt brugergrænsefladetråd, som deles af flere handlinger. De rapporterede varigheder omfatter den tid, der er brugt i kø, mens andre handlinger udføres. [Effektivitetsanalyse-eksemplet](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Performance%20Analyzer) på GitHub og den tilknyttede [dokumentation](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Performance%20Analyzer/Power%20BI%20Performance%20Analyzer%20Export%20File%20Format.docx) indeholder oplysninger om, hvordan visuals forespørger data, og hvordan de gengiver.
 
 
 ![elementer i logoplysninger](media/desktop-performance-analyzer/performance-analyzer-06.png)
@@ -94,5 +94,5 @@ Du kan finde flere oplysninger om **Power BI Desktop**, og hvordan du kommer i g
 
 Du kan finde oplysninger om Effektivitetsanalyse-eksemplet i følgende ressourcer.
 
-* [Effektivitetsanalyse-eksempel](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Performance%20Analyzer)
-* [Dokumentation til Effektivitetsanalyse-eksempel](https://github.com/microsoft/powerbi-desktop-samples/blob/master/Performance%20Analyzer/Power%20BI%20Performance%20Analyzer%20Export%20File%20Format.docx)
+* [Effektivitetsanalyse-eksempel](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Performance%20Analyzer)
+* [Dokumentation til Effektivitetsanalyse-eksempel](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Performance%20Analyzer/Power%20BI%20Performance%20Analyzer%20Export%20File%20Format.docx)

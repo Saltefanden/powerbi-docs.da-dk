@@ -9,12 +9,12 @@ ms.subservice: pbi-fundamentals
 ms.topic: conceptual
 ms.date: 04/14/2020
 LocalizationGroup: Get started
-ms.openlocfilehash: aac8eac050a3c864833d16a12016a1cc0ae398b7
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: 262f6d4ba95828ed77f1a3161ac1a9fca46f99f3
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97888345"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565019"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheder i Power BI-tjenesten
 Kontrollér denne side for at læse om kendte problemer og nyudgivne funktioner i **Power BI-tjenesten**. Du kan finde relaterede oplysninger om nyheder under:
@@ -61,7 +61,7 @@ Du kan også få mere at vide om nyheder og funktioner på YouTube-kanalerne.
 ### <a name="october-2019"></a>Oktober 2019
 * Ny Power Automate-handling, der opdaterer Power BI-datasæt.
 * [Kontaktliste](https://powerbi.microsoft.com/blog/announcing-new-contact-lists-for-reports-and-dashboards-in-the-power-bi-service/) til rapporter og dashboards i Power BI-tjenesten.
-* Generel tilgængelighed af [Automatiseret maskinel indlæring](../transform-model/service-machine-learning-automated.md)
+* Generel tilgængelighed af [Automatiseret maskinel indlæring](../transform-model/dataflows/dataflows-machine-learning-integration.md)
 * Offentlig prøveversion af visning af dataafstamning i Power BI.
 
 ### <a name="september-2019"></a>September 2019

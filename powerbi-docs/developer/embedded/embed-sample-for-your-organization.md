@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/04/2020
-ms.openlocfilehash: 78ba14c8a715c927f35c32244734e66a5fb80473
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: da356800a49e6d8876a147862dd08541ed2999bc
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97888966"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565680"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Selvstudium: Integrer Power BI-indhold i en app til din organisation
 
@@ -57,7 +57,7 @@ Hvis du vælger at konfigurere miljøet manuelt, kan du fortsætte nedenfor.
 
 >[!NOTE]
 >Gå til *Godkendelse* i din egen app, og indsæt omdirigeringsadressen i feltet *Omdirigerings-URI'er*.
-Du kan få mere at vide om omdirigering under [Begrænsninger for omdirigerings-URI'er (URL-adresse til svar)](https://docs.microsoft.com/azure/active-directory/develop/reply-url) (findes muligvis kun på engelsk).
+Du kan få mere at vide om omdirigering under [Begrænsninger for omdirigerings-URI'er (URL-adresse til svar)](/azure/active-directory/develop/reply-url) (findes muligvis kun på engelsk).
 
 ## <a name="set-up-your-power-bi-environment"></a>Konfigurer dit Power BI-miljø
 
@@ -428,7 +428,7 @@ Globale administratorer, eller Power BI-tjenesteadministratorer, kan slå muligh
 I dette selvstudium har du fået at vide, hvordan du integrerer Power BI-indhold i et program ved hjælp af din Power BI-organisationskonto. Nu kan du prøve at integrere Power BI-indhold i et program ved hjælp af apps. Du kan også prøve at integrere Power BI-indhold for dine kunder (understøttes endnu ikke til integrering af sideinddelte rapporter):
 
 > [!div class="nextstepaction"]
-> [Integrer fra apps](embed-from-apps.md)
+> [Integrer fra apps](./index.yml)
 
 > [!div class="nextstepaction"]
 >[Integrer indhold for dine kunder](embed-sample-for-customers.md)

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 04/02/2019
-ms.openlocfilehash: c30b8f7ebe403e38fa59fa248aacc4b3086bf9ed
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: 624e0a2838a08d1cf68ae58223fe979a56312b48
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97885861"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565939"
 ---
 # <a name="register-an-azure-ad-application-to-use-with-power-bi"></a>Registrer et Azure AD-program, som skal bruges sammen med Power BI
 
@@ -247,7 +247,7 @@ Hvis du vil ændre dine Microsoft Azure Active Directory-apptilladelser via prog
 
 # <a name="c"></a>[C#](#tab/CSharp)
 
-Du kan også ændre tilladelser til din Microsoft Azure Active Directory-app ved hjælp af C#. Du kan finde flere oplysninger under API'en [oAuth2PermissionGrant](https://docs.microsoft.com/graph/api/oauth2permissiongrant-get). Denne metode kan være nyttig, hvis du overvejer at automatisere nogle af dine processer.
+Du kan også ændre tilladelser til din Microsoft Azure Active Directory-app ved hjælp af C#. Du kan finde flere oplysninger under API'en [oAuth2PermissionGrant](/graph/api/oauth2permissiongrant-get). Denne metode kan være nyttig, hvis du overvejer at automatisere nogle af dine processer.
 
 Du kan finde flere oplysninger om HTTP-anmodninger under [fanen HTTP](register-app.md?tabs=customers%2CHTTP#change-your-azure-ad-apps-permissions).
 

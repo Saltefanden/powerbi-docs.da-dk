@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 12/02/2019
-ms.openlocfilehash: ab6d8f208300350a613cc63dab948f42376b905e
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 96859efbaf86c8c6e9abf459500c38d49ee4f112
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96414547"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565487"
 ---
 # <a name="scan-a-power-bi-qr-code-from-your-mobile-device"></a>Scan en Power BI QR-kode fra din mobilenhed
 Gælder for:
@@ -31,7 +31,7 @@ Du kan scanne QR-koden for at få direkte adgang til feltet eller rapporten dire
 Hvis din kollega ikke har delt dashboardet eller rapporten med dig, kan du anmode om adgang direkte fra mobilappen. 
 
 > [!NOTE]
-> Du kan også [scanne en QR-kode for en rapport med Power BI til Mixed Reality-appen](mobile-mixed-reality-app.md#scan-a-report-qr-code-in-holographic-view).
+> Du kan også [scanne en QR-kode for en rapport med Power BI til Mixed Reality-appen](./mobile-hololens2-app.md#open-reports-with-qr-codes).
 
 ## <a name="scan-a-power-bi-qr-code-on-your-iphone-with-the-power-bi-scanner"></a>Scan en Power BI QR-kode på din iPhone med Power BI-scanneren
 
@@ -77,5 +77,5 @@ Hvis din kollega ikke har delt dashboardet eller rapporten med dig, kan du anmod
 * [Opret forbindelse til Power BI-data fra den virkelige verden](mobile-apps-data-in-real-world-context.md) med mobilappen
 * [Opret en QR-kode for et felt i Power BI-tjenesten](../../create-reports/service-create-qr-code-for-tile.md)
 * [Opret en QR-kode for en rapport i Power BI-tjenesten](../../create-reports/service-create-qr-code-for-report.md)
-* Du kan også [scanne en QR-kode med Power BI til Mixed Reality-appen](mobile-mixed-reality-app.md).
+* Du kan også [scanne en QR-kode med Power BI til Mixed Reality-appen](./mobile-hololens2-app.md).
 * Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

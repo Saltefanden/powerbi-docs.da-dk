@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.custom: contperf-fy21q2
 ms.date: 12/20/2020
 LocalizationGroup: Data from files
-ms.openlocfilehash: d47d9b973eadb06095c2a2aebb8fe93cf6ab4414
-ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
+ms.openlocfilehash: df109f279a43826e164a461ae213bc74c0498cea
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97969529"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565041"
 ---
 # <a name="sensitivity-labels-in-power-bi"></a>Følsomhedsmærkater i Power BI
 
@@ -34,7 +34,7 @@ Microsoft Information Protections følsomhedsmærkater giver brugerne en nem må
 
 I Power BI-tjenesten kan følsomhedsmærkater kun anvendes på datasæt, rapporter, dashboards og dataflow. Når data, der er forsynet med mærkater, forlader Power BI, enten via eksport til Excel, PowerPoint, PDF eller .pbix-filer eller via andre understøttede eksportscenarier, f.eks. Analysér i Excel eller pivottabeller i Excel med direkte forbindelse, anvender Power BI automatisk mærkaten på den eksporterede fil og beskytter den i henhold til indstillingerne for mærkatens filkryptering. På denne måde forbliver dine følsomme data beskyttet, selv når de forlader Power BI.
 
-Desuden kan følsomhedsmærkater anvendes på .pbix-filer i Power BI Desktop, så dine data og dit indhold er sikre, når de deles uden for Power BI (f.eks. så det kun er brugere i din organisation, der kan åbne en fortrolig .pbix, der er blevet delt eller vedhæftet i en mail), også selvom de er blevet publiceret i Power BI-tjenesten. Du kan finde flere oplysninger under [Begræns adgang til indhold ved hjælp af følsomhedsmærkater for at anvende kryptering](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide).
+Desuden kan følsomhedsmærkater anvendes på .pbix-filer i Power BI Desktop, så dine data og dit indhold er sikre, når de deles uden for Power BI (f.eks. så det kun er brugere i din organisation, der kan åbne en fortrolig .pbix, der er blevet delt eller vedhæftet i en mail), også selvom de er blevet publiceret i Power BI-tjenesten. Du kan finde flere oplysninger under [Begræns adgang til indhold ved hjælp af følsomhedsmærkater for at anvende kryptering](/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide).
 
 Følsomhedsmærkater, der anvendes på rapporter, dashboards, datasæt og dataflows, er synlige fra mange forskellige steder i Power BI-tjenesten. Følsomhedsmærkater på rapporter og dashboards er også synlige i Power BI iOS- og Android-mobilapps og i integrerede visualiseringer. I Desktop kan du se følsomhedsmærkater på statuslinjen.
 
@@ -185,7 +185,7 @@ Hvis du vil have adgang til følsomhedsmærkater i et af disse centre, skal du n
 
 ### <a name="power-bi-desktop-preview"></a>Power BI Desktop (prøveversion)
 
-* Beskyttede .pbix-filer kan kun åbnes og/eller publiceres af en bruger, som er RMS-ejeren af filen (den bruger, der oprindeligt anvendte mærkaten på filen), eller som har brugsrettighederne [**Fuld kontrol** og/eller **Eksportér** brugsrettigheder](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide) til den relevante mærkat. RMS-ejeren har Fuld kontrol og kan aldrig låses ude. [Se flere oplysninger](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)
+* Beskyttede .pbix-filer kan kun åbnes og/eller publiceres af en bruger, som er RMS-ejeren af filen (den bruger, der oprindeligt anvendte mærkaten på filen), eller som har brugsrettighederne [**Fuld kontrol** og/eller **Eksportér** brugsrettigheder](/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide) til den relevante mærkat. RMS-ejeren har Fuld kontrol og kan aldrig låses ude. [Se flere oplysninger](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)
 
 * Hvis den mærkat, der anvendes på en .pbix-fil, ikke er blevet publiceret til brugeren enten i Microsoft 365 Sikkerhedscenter eller Microsoft 365 Overholdelsescenter, kan brugeren ikke gemme filen i Desktop.
 

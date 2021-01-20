@@ -7,12 +7,12 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 11/23/2020
-ms.openlocfilehash: 1bf62e99d666c05af8efc05ecbc496d69c586ae6
-ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
+ms.openlocfilehash: a44bd7837e7605fd23e49a91e3e9eba106d5a933
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97927101"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565767"
 ---
 # <a name="tutorial-automate-configuration-of-template-app-installation-using-an-azure-function"></a>Selvstudium: Automatiser konfigurationen af installationen af skabelonprogrammer ved hjælp af en Azure-funktion
 
@@ -38,7 +38,7 @@ I dette selvstudium skal du bruge et eksempel på en automatiseret installation 
 
 Du kan finde flere oplysninger om det generelle automatiseringsflow og de API'er, som appen bruger, i [Automatiser konfigurationen af installationen af en skabelonapp](template-apps-auto-install.md).
 
-Vores simple program bruger en Azure-funktion. Du kan finde flere oplysninger om Azure Functions i [dokumentationen til Azure Functions](https://docs.microsoft.com/azure/azure-functions/).
+Vores simple program bruger en Azure-funktion. Du kan finde flere oplysninger om Azure Functions i [dokumentationen til Azure Functions](/azure/azure-functions/).
 
 ## <a name="basic-flow"></a>Grundlæggende flow
 
@@ -48,7 +48,7 @@ Følgende er det grundlæggende flow for, hvad programmet gør, når kunden star
 
 1. ISV'en henter et token *kun til apps*, der er baseret på en [tjenesteprincipal (token kun til apps)](../embedded/embed-service-principal.md), der er registreret i ISV'ens lejer.
 
-1. Ved hjælp af [REST API'er til Power BI](https://docs.microsoft.com/rest/api/power-bi/) opretter ISV'en en *installationsbillet*, der indeholder den brugerspecifikke parameterkonfiguration, som ISV'en har forberedt.
+1. Ved hjælp af [REST API'er til Power BI](/rest/api/power-bi/) opretter ISV'en en *installationsbillet*, der indeholder den brugerspecifikke parameterkonfiguration, som ISV'en har forberedt.
 
 1. ISV'en omdirigerer brugeren til Power BI ved hjælp af en ```POST```-omdirigeringsmetode, der indeholder installationsbilletten.
 
@@ -59,18 +59,18 @@ Følgende er det grundlæggende flow for, hvad programmet gør, når kunden star
 
 ## <a name="prerequisites"></a>Forudsætninger
 
-* Konfigurer din egen Microsoft Azure Active Directory-lejer. Se [Opret en Azure Active Directory-lejer](https://docs.microsoft.com/power-bi/developer/embedded/create-an-azure-active-directory-tenant) for at få oplysninger om, hvordan du konfigurerer en.
-* En [tjenesteprincipal (token kun til apps)](https://docs.microsoft.com/power-bi/developer/embedded/embed-service-principal), der er registreret i ovennævnte lejer.
-* En [parameteriseret skabelonapp](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-overview), der er klar til installation. Skabelonappen skal være oprettet i den samme lejer, som du registrerer programmet i Azure Active Directory i. Se [Tip til skabelonapp](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-tips.md) eller [Opret en skabelonapp i Power BI](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-create) for at få flere oplysninger.
+* Konfigurer din egen Microsoft Azure Active Directory-lejer. Se [Opret en Azure Active Directory-lejer](../embedded/create-an-azure-active-directory-tenant.md) for at få oplysninger om, hvordan du konfigurerer en.
+* En [tjenesteprincipal (token kun til apps)](../embedded/embed-service-principal.md), der er registreret i ovennævnte lejer.
+* En [parameteriseret skabelonapp](../../connect-data/service-template-apps-overview.md), der er klar til installation. Skabelonappen skal være oprettet i den samme lejer, som du registrerer programmet i Azure Active Directory i. Se [Tip til skabelonapp](../../connect-data/service-template-apps-tips.md) eller [Opret en skabelonapp i Power BI](../../connect-data/service-template-apps-create.md) for at få flere oplysninger.
 * En Power BI Pro-licens. Hvis du ikke er tilmeldt Power BI Pro, kan du [tilmelde dig en gratis prøveversion](https://powerbi.microsoft.com/pricing/), før du begynder.
 
 ## <a name="set-up-your-template-apps-automation-development-environment"></a>Konfigurer dit udviklingsmiljø til automatisering af skabelonprogrammer
 
-Før du fortsætter med at konfigurere dit program, skal du følge vejledningen i [Hurtig start: Opret en Azure Functions-app med Azure App Configuration](https://docs.microsoft.com/azure/azure-app-configuration/quickstart-azure-functions-csharp) for at udvikle en Azure-funktion sammen med konfigurationen af en Azure-app. Opret din appkonfiguration som beskrevet i artiklen.
+Før du fortsætter med at konfigurere dit program, skal du følge vejledningen i [Hurtig start: Opret en Azure Functions-app med Azure App Configuration](/azure/azure-app-configuration/quickstart-azure-functions-csharp) for at udvikle en Azure-funktion sammen med konfigurationen af en Azure-app. Opret din appkonfiguration som beskrevet i artiklen.
 
 ### <a name="register-an-application-in-azure-ad"></a>Registrer en app i Azure Active Directory
 
-Opret en tjenesteprincipal som beskrevet i [Integrer Power BI-indhold med en tjenesteprincipal og en programhemmelighed](https://docs.microsoft.com/power-bi/developer/embedded/embed-service-principal).
+Opret en tjenesteprincipal som beskrevet i [Integrer Power BI-indhold med en tjenesteprincipal og en programhemmelighed](../embedded/embed-service-principal.md).
 
 Sørg for at registrere programmet som et **serverbaseret webprogram**. Du registrerer et serverbaseret webprogram for at oprette en programhemmelighed.
 
@@ -89,12 +89,12 @@ Når du har oprettet din skabelonapp, og den er klar til installation, skal du g
 * *Parameternavne*, som defineret i datasættet for skabelonappen. Der skelnes mellem store og små bogstaver i parameternavne. De kan også hentes via fanen **Parameterindstillinger**, når du [definerer egenskaberne for skabelonappen](../../connect-data/service-template-apps-create.md#define-the-properties-of-the-template-app), eller fra indstillingerne for datasæt i Power BI.
 
 >[!NOTE]
->Du kan teste det forudkonfigurerede installationsprogram for din skabelonapp, hvis skabelonappen er klar til installation, selvom den endnu ikke er offentligt tilgængelig på AppSource. Men før brugere uden for din lejer kan bruge det automatiserede installationsprogram til at installere din skabelonapp, skal skabelonappen være offentligt tilgængelig på [markedspladsen til Power BI-programmer](https://app.powerbi.com/getdata/services). Før du distribuerer skabelonappen ved hjælp af det automatiserede installationsprogram, du opretter, skal du sørge for at publicere det i [Partnercenter](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
+>Du kan teste det forudkonfigurerede installationsprogram for din skabelonapp, hvis skabelonappen er klar til installation, selvom den endnu ikke er offentligt tilgængelig på AppSource. Men før brugere uden for din lejer kan bruge det automatiserede installationsprogram til at installere din skabelonapp, skal skabelonappen være offentligt tilgængelig på [markedspladsen til Power BI-programmer](https://app.powerbi.com/getdata/services). Før du distribuerer skabelonappen ved hjælp af det automatiserede installationsprogram, du opretter, skal du sørge for at publicere det i [Partnercenter](/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
 
 
 ## <a name="install-and-configure-your-template-app"></a>Installér og konfigurer din skabelonapp
 
-I dette afsnit skal du bruge et eksempel på en automatiseret installation af Azure Functions, som vi har oprettet, for at forudkonfigurere og installere din skabelonapp. Denne prøve er lavet simpel med vilje med henblik på demonstration. Det giver dig mulighed for at gøre brug af en [Azure-funktion](https://docs.microsoft.com/azure/azure-functions/functions-overview) og [Azure App Configuration](https://docs.microsoft.com/azure/azure-app-configuration/overview) for nemt at udrulle og bruge API'en til automatiseret installation til dine skabelonapps.
+I dette afsnit skal du bruge et eksempel på en automatiseret installation af Azure Functions, som vi har oprettet, for at forudkonfigurere og installere din skabelonapp. Denne prøve er lavet simpel med vilje med henblik på demonstration. Det giver dig mulighed for at gøre brug af en [Azure-funktion](/azure/azure-functions/functions-overview) og [Azure App Configuration](/azure/azure-app-configuration/overview) for nemt at udrulle og bruge API'en til automatiseret installation til dine skabelonapps.
 
 ### <a name="download-visual-studio-version-2017-or-later"></a>Download [Visual Studio](https://www.visualstudio.com/) (version 2017 eller nyere)
 
@@ -200,7 +200,7 @@ Hvis du vil hente programhemmeligheden, skal du benytte denne fremgangsmåde:
 
 ## <a name="test-your-function-locally"></a>Test din funktion lokalt
 
-Følg trinnene som beskrevet i [Kør funktionen lokalt](https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio#run-the-function-locally) for at køre funktionen.
+Følg trinnene som beskrevet i [Kør funktionen lokalt](/azure/azure-functions/functions-create-your-first-function-visual-studio#run-the-function-locally) for at køre funktionen.
 
 Konfigurer din portal for at sende en ```POST```-anmodning til URL-adressen for funktionen. Et eksempel er ```POST http://localhost:7071/api/install```. Anmodningens brødtekst skal være et JSON-objekt, der beskriver nøgleværdipar. Nøgler er de *navne på parametre*, som er defineret i Power BI Desktop. Værdier er de ønskede værdier, der skal angives for hver parameter i skabelonappen.
 
@@ -218,4 +218,4 @@ Det ønskede flow skal være:
 
 ### <a name="publish-your-project-to-azure"></a>Publicer dit projekt på Azure
 
-Hvis du vil udgive dit projekt i Azure, skal du følge vejledningen i [dokumentationen til Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio#publish-the-project-to-azure). Derefter kan du integrere API'er til automatisk installation af skabelonappen i dit produkt og begynde at teste den i produktionsmiljøer.
+Hvis du vil udgive dit projekt i Azure, skal du følge vejledningen i [dokumentationen til Azure Functions](/azure/azure-functions/functions-create-your-first-function-visual-studio#publish-the-project-to-azure). Derefter kan du integrere API'er til automatisk installation af skabelonappen i dit produkt og begynde at teste den i produktionsmiljøer.

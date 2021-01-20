@@ -8,16 +8,16 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: ''
 ms.date: 04/16/2019
-ms.openlocfilehash: f6418f8a9b927b05b3809032b28a740553ec625c
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: 66ba3b7d573c86b32a91bc0a98cd5ec0775fec75
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97888920"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565836"
 ---
 # <a name="auto-install-power-bi-apps-when-embedding-for-your-organization"></a>Installér Power BI-apps automatisk, når du integrerer for din organisation
 
-Hvis du vil integrere indhold fra en app, skal den bruger, der integrerer, have [adgang til appen](../../collaborate-share/service-create-distribute-apps.md). Hvis appen er installeret for brugeren, fungerer integrering uden problemer. Du kan finde flere oplysninger i [Integrer rapporter eller dashboards fra app](embed-from-apps.md). Det er muligt at definere, at alle apps kan [installeres automatisk](https://powerbi.microsoft.com/blog/automatically-install-apps/) på PowerBI.com. Denne handling udføres dog på lejerniveau og gælder for alle apps.
+Hvis du vil integrere indhold fra en app, skal den bruger, der integrerer, have [adgang til appen](../../collaborate-share/service-create-distribute-apps.md). Hvis appen er installeret for brugeren, fungerer integrering uden problemer. Du kan finde flere oplysninger i [Integrer rapporter eller dashboards fra app](./index.yml). Det er muligt at definere, at alle apps kan [installeres automatisk](https://powerbi.microsoft.com/blog/automatically-install-apps/) på PowerBI.com. Denne handling udføres dog på lejerniveau og gælder for alle apps.
 
 ## <a name="auto-install-app-on-embedding"></a>Installér appen automatisk i forbindelse med integrering
 

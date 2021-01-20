@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 11/16/2020
-ms.openlocfilehash: 1c2260fdc3df201a655e6641c351319e366eac6b
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 8c5b3c394d54df390d690d58b56e9084f9829733
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96413121"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565653"
 ---
 # <a name="create-a-link-to-a-specific-location-in-the-power-bi-mobile-apps"></a>Opret et link til en bestemt placering i Power BI-mobilappsene
 Du kan bruge links til at oprette direkte adgang til specifikt Power BI-indhold, f. eks. en bestemt rapport, en rapportside, et dashboard, et felt osv.
@@ -193,7 +193,7 @@ Links med dette format kan pege direkte på dashboards, felter og rapporter. Des
 
 I Power BI-mobilappsene fungerer links i Power BI på samme måde, som i Power BI-tjenesten.
 
-Hvis du vil føje et link til din rapport, der peger på et andet Power BI-element, kan du blot kopiere dette elements URL-adresse fra browserens adresselinje. Læs mere om, [hvordan du føjer et link til et tekstfelt i en rapport](https://docs.microsoft.com/power-bi/service-add-hyperlink-to-text-box).
+Hvis du vil føje et link til din rapport, der peger på et andet Power BI-element, kan du blot kopiere dette elements URL-adresse fra browserens adresselinje. Læs mere om, [hvordan du føjer et link til et tekstfelt i en rapport](../../create-reports/service-add-hyperlink-to-text-box.md).
 
 ## <a name="next-steps"></a>Næste trin
 Din feedback hjælper os med at afgøre, hvad der skal implementeres fremover, så husk at stemme på andre funktioner, du gerne vil se i Power BI-mobilapps. 
@@ -201,4 +201,4 @@ Din feedback hjælper os med at afgøre, hvad der skal implementeres fremover, s
 * [Power BI-apps til mobilenheder](mobile-apps-for-mobile-devices.md)
 * Følg @MSPowerBI på Twitter
 * Deltag i samtalen i [Power BI-communityet](http://community.powerbi.com/)
-* [Hvad er Power BI?](../../power-bi-overview.md)
+* [Hvad er Power BI?](../../fundamentals/power-bi-overview.md)

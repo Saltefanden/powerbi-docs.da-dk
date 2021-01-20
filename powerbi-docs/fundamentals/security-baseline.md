@@ -8,16 +8,16 @@ ms.subservice: pbi-security
 ms.topic: conceptual
 ms.date: 11/20/2020
 ms.custom: subject-security-benchmark
-ms.openlocfilehash: ef74b3bcddd981c9f63172fa2e641335a081836d
-ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
+ms.openlocfilehash: a76c7f9d205fe47322768a514a1e5d89a36a2306
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96577710"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565745"
 ---
 # <a name="azure-security-baseline-for-power-bi"></a>Azure-sikkerhedsbaseline til Power BI
 
-I denne sikkerhedsbaseline anvendes vejledning fra [Azure Security Benchmark version 2.0](https://docs.microsoft.com/azure/security/benchmarks/overview) til Power BI. Azure Security Benchmark leverer anbefalinger til, hvordan du kan beskytte dine cloudløsninger i Azure. Indholdet er grupperet efter de **sikkerhedskontroller**, der er defineret af Azure Security Benchmark og den relaterede vejledning, der gælder for Power BI. **Kontroller**, der ikke er relevante for Power BI, er blevet udeladt.
+I denne sikkerhedsbaseline anvendes vejledning fra [Azure Security Benchmark version 2.0](/azure/security/benchmarks/overview) til Power BI. Azure Security Benchmark leverer anbefalinger til, hvordan du kan beskytte dine cloudløsninger i Azure. Indholdet er grupperet efter de **sikkerhedskontroller**, der er defineret af Azure Security Benchmark og den relaterede vejledning, der gælder for Power BI. **Kontroller**, der ikke er relevante for Power BI, er blevet udeladt.
 
 Hvis du vil se, hvordan Power BI helt knyttes til Azure Security Benchmark, skal du se [den fulde fil med tilknytning til Power BI-sikkerhedsbaseline](https://github.com/MicrosoftDocs/SecurityBenchmarks/tree/master/Azure%20Offer%20Security%20Baselines).
 
@@ -29,7 +29,7 @@ Hvis du vil se, hvordan Power BI helt knyttes til Azure Security Benchmark, skal
 
 **Vejledning**: Power BI understøtter oprettelse af forbindelse mellem din Power BI-lejer og et Private Link-slutpunkt og deaktiverer adgang til det offentlige internet.
 
-- [Private links, der giver adgang til Power BI](https://docs.microsoft.com/power-bi/admin/service-security-private-links)
+- [Private links, der giver adgang til Power BI](../admin/service-security-private-links.md)
 
 **Overvågning af Azure Security Center**: Ikke tilgængelig
 
@@ -47,13 +47,13 @@ Beskyttelse af Azure AD bør være en høj prioritet i din organisations cloudsi
 
 Bemærk! Azure AD understøtter eksterne identiteter, der giver brugere uden en Microsoft-konto mulighed for at logge på deres programmer og ressourcer med deres eksterne identitet.
 
-- [Lejemål i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/single-and-multi-tenant-apps)
+- [Lejemål i Azure Active Directory](/azure/active-directory/develop/single-and-multi-tenant-apps)
 
-- [Sådan opretter og konfigurerer du en Azure AD-instans](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-access-create-new-tenant)
+- [Sådan opretter og konfigurerer du en Azure AD-instans](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant)
 
-- [Brug eksterne identitetsudbydere til programmet](https://docs.microsoft.com/azure/active-directory/b2b/identity-providers)
+- [Brug eksterne identitetsudbydere til programmet](/azure/active-directory/b2b/identity-providers)
 
-- [Hvad er sikkerhedsscoren for identitet i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score)
+- [Hvad er sikkerhedsscoren for identitet i Azure Active Directory](/azure/active-directory/fundamentals/identity-secure-score)
 
 **Overvågning af Azure Security Center**: Ikke tilgængelig
 
@@ -73,7 +73,7 @@ Automatiser Premium-opgaver for arbejdsområde og datasæt med tjenesteprincipal
 
 **Vejledning**: Power BI bruger Azure Active Directory til at levere identitets- og adgangsstyring for Azure-ressourcer, cloudbaserede programmer og programmer i det lokale miljø. Dette omfatter virksomhedsidentiteter såsom medarbejdere samt eksterne identiteter såsom partnere, forhandlere og leverandører. Dette muliggør enkeltlogon (SSO) til administration og beskyttelse af din organisations data og ressourcer i det lokale miljø og i cloudmiljøet. Forbind alle dine brugere, programmer og enheder til Azure AD for at få problemfri, sikker adgang og større synlighed og styring.
 
-- [Forstå enkeltlogon til programmer med Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on)
+- [Forstå enkeltlogon til programmer med Azure AD](/azure/active-directory/manage-apps/what-is-single-sign-on)
 
 **Overvågning af Azure Security Center**: Ikke tilgængelig
 
@@ -89,9 +89,9 @@ For administratorer og privilegerede brugere skal du sørge for, at det højeste
 
 Bemærk! MFA kan kun håndhæves for brugerkonti, der er aktiveret i Azure AD. Power BI-tjenesteprincipaler understøtter ikke brugen af MFA.
 
-- [Sådan aktiveres MFA i Azure](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted)
+- [Sådan aktiveres MFA i Azure](/azure/active-directory/authentication/howto-mfa-getstarted)
 
-- [Introduktion til godkendelsesmuligheder uden adgangskode til Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-passwordless)
+- [Introduktion til godkendelsesmuligheder uden adgangskode til Azure Active Directory](/azure/active-directory/authentication/concept-authentication-passwordless)
 
 **Overvågning af Azure Security Center**: Ikke tilgængelig
 
@@ -101,7 +101,7 @@ Bemærk! MFA kan kun håndhæves for brugerkonti, der er aktiveret i Azure AD. P
 
 **Vejledning**: Definer politikker for registrering af uregelmæssigheder i Microsoft Cloud App Security, der kan tildeles uafhængigt af hinanden, så de kun gælder for de brugere og grupper, som du vil inkludere. Disse politikker for registrering af uregelmæssigheder kan hjælpe med at registrere og overvåge uregelmæssigheder i adfærd relateret til brugere, der har adgang til og bruger Power BI.
 
-- [Brug af Microsoft Cloud App Security-kontroller i Power BI](https://docs.microsoft.com/power-bi/admin/service-security-using-microsoft-cloud-app-security-controls)
+- [Brug af Microsoft Cloud App Security-kontroller i Power BI](../admin/service-security-using-microsoft-cloud-app-security-controls.md)
 
 **Overvågning af Azure Security Center**: Ikke tilgængelig
 
@@ -111,13 +111,13 @@ Bemærk! MFA kan kun håndhæves for brugerkonti, der er aktiveret i Azure AD. P
 
 **Vejledning**: Power BI understøtter betinget adgang til Azure AD for at opnå en mere detaljeret adgangskontrol baseret på brugerdefinerede betingelser, f.eks. at brugerlogon fra bestemte IP-intervaller skal bruge MFA for at logge på. Politik for administration af session med detaljeret godkendelse kan også bruges til forskellige use cases.
 
-- [Oversigt over betinget adgang til Azure](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)
+- [Oversigt over betinget adgang til Azure](/azure/active-directory/conditional-access/overview)
 
-- [Almindelige politikker for betinget adgang](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common)
+- [Almindelige politikker for betinget adgang](/azure/active-directory/conditional-access/concept-conditional-access-policy-common)
 
-- [Konfigurer administration af session med godkendelse med betinget adgang](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime)
+- [Konfigurer administration af session med godkendelse med betinget adgang](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime)
 
-- [Brug af Microsoft Cloud App Security-kontroller i Power BI](https://docs.microsoft.com/power-bi/admin/service-security-using-microsoft-cloud-app-security-controls)
+- [Brug af Microsoft Cloud App Security-kontroller i Power BI](../admin/service-security-using-microsoft-cloud-app-security-controls.md)
 
 **Overvågning af Azure Security Center**: Ikke tilgængelig
 
@@ -131,7 +131,7 @@ Gem alle krypteringsnøgler eller legitimationsoplysninger til tjenesteprincipal
  
 Til GitHub kan du bruge funktionen til scanning efter oprindelig hemmelighed til at identificere legitimationsoplysninger eller andre former for hemmeligheder i koden.
 
-- [Medbring dine egne krypteringsnøgler til Power BI](https://docs.microsoft.com/power-bi/admin/service-encryption-byok)
+- [Medbring dine egne krypteringsnøgler til Power BI](../admin/service-encryption-byok.md)
 
  
 Sådan konfigurerer du legitimationsoplysninger
@@ -164,11 +164,11 @@ Power BI understøtter sessionspolitikker i Azure AD for at aktivere politikker 
 
 Aktivér privilegeret JIT-adgang (just-in-time) til Power BI-administratorkonti ved hjælp af privilegeret adgangsstyring i M365.
 
-- [Administratorroller, der er relateret til Power BI](https://docs.microsoft.com/power-bi/admin/service-admin-administering-power-bi-in-your-organization#administrator-roles-related-to-power-bi)
+- [Administratorroller, der er relateret til Power BI](../admin/service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi)
 
-- [Privilegeret adgangsstyring i M365](https://docs.microsoft.com/microsoft-365/compliance/privileged-access-management-overview?view=o365-worldwide&amp;preserve-view=true)
+- [Privilegeret adgangsstyring i M365](/microsoft-365/compliance/privileged-access-management-overview?amp;preserve-view=true&view=o365-worldwide)
 
-- [Cloud App Security-kontroller i Power BI](https://docs.microsoft.com/power-bi/admin/service-security-using-microsoft-cloud-app-security-controls)
+- [Cloud App Security-kontroller i Power BI](../admin/service-security-using-microsoft-cloud-app-security-controls.md)
 
 **Overvågning af Azure Security Center**: Ikke tilgængelig
 
@@ -178,7 +178,7 @@ Aktivér privilegeret JIT-adgang (just-in-time) til Power BI-administratorkonti 
 
 **Vejledning**: Begræns antallet af yderst privilegerede konti eller roller med øget adgang til Power BI.
 
-Du kan aktivere privilegeret JIT-adgang (just-in-time) ved hjælp af vejledningen til privilegeret adgangsstyring i M365 [her](https://docs.microsoft.com/microsoft-365/compliance/privileged-access-management-overview?view=o365-worldwide&amp;preserve-view=true).
+Du kan aktivere privilegeret JIT-adgang (just-in-time) ved hjælp af vejledningen til privilegeret adgangsstyring i M365 [her](/microsoft-365/compliance/privileged-access-management-overview?amp;preserve-view=true&view=o365-worldwide).
 
 Du kan finde yderligere oplysninger på side 183 i dokumentet om udrulning af Power BI i store virksomheder [her](https://aka.ms/PBIEnterpriseDeploymentWP).
 
@@ -196,7 +196,7 @@ Du skal opfylde disse krav for at få adgang til Power BI-aktivitetsloggen:
 
 Når disse krav er opfyldt, kan du følge vejledningen nedenfor for at spore brugeraktivitet i Power BI:
 
-- [Spor brugernes aktivitet i Power BI](https://docs.microsoft.com/power-bi/admin/service-admin-auditing)
+- [Spor brugernes aktivitet i Power BI](../admin/service-admin-auditing.md)
 
 **Overvågning af Azure Security Center**: Ikke tilgængelig
 
@@ -208,9 +208,9 @@ Når disse krav er opfyldt, kan du følge vejledningen nedenfor for at spore bru
 
 Du skal sørge for, at legitimationsoplysningerne (f.eks. adgangskode, certifikat eller chipkort) for akutadgangskonti holdes sikre og kun kendes af personer, der kun er autoriseret til at bruge dem i nødstilfælde.
 
-- [Administrer akutadgangskonti i Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-emergency-access)
+- [Administrer akutadgangskonti i Azure AD](/azure/active-directory/users-groups-roles/directory-emergency-access)
 
-- [Beskyt dine M365-konti](https://docs.microsoft.com/microsoft-365/campaigns/m365-campaigns-protect-admin-accounts)
+- [Beskyt dine M365-konti](/microsoft-365/campaigns/m365-campaigns-protect-admin-accounts)
 
 **Overvågning af Azure Security Center**: Ikke tilgængelig
 
@@ -221,9 +221,9 @@ Du skal sørge for, at legitimationsoplysningerne (f.eks. adgangskode, certifika
 **Vejledning**: Sikre, isolerede arbejdsstationer er meget vigtige i forbindelse med sikkerheden af følsomme roller såsom administratorer, udviklere og kritiske tjenesteoperatører. Brug yderst sikre brugerarbejdsstationer og/eller Azure Bastion til administrative opgaver, der er relateret til administration af Power BI. Brug Azure Active Directory, Microsoft Defender Advanced Threat Protection (ATP) og/eller Microsoft Intune til at udrulle en sikker og administreret brugerarbejdsstation til administrative opgaver. De sikre arbejdsstationer kan administreres centralt for at håndhæve sikker konfiguration, herunder stærk godkendelse, software- og hardwarebaselines, begrænset logisk adgang og netværksadgang.
 
 Forstå privilegeret adgang
-- [arbejdsstationer](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-managed-workstation)
+- [arbejdsstationer](/azure/active-directory/devices/concept-azure-managed-workstation)
 
-- [Udrul en privilegeret arbejdsstation til adgang](https://docs.microsoft.com/azure/active-directory/devices/howto-azure-managed-workstation)
+- [Udrul en privilegeret arbejdsstation til adgang](/azure/active-directory/devices/howto-azure-managed-workstation)
 
 **Overvågning af Azure Security Center**: Ikke tilgængelig
 
@@ -239,7 +239,7 @@ Forstå privilegeret adgang
 
 Brug følsomhedsmærkater fra Microsoft Information Protection til at klassificere dine rapporter, dashboards, datasæt og dataflow samt forsyne dem med mærkat i Power BI-tjenesten. Beskyt desuden dit følsomme indhold mod uautoriseret adgang og lækage af data, når indhold eksporteres fra Power BI-tjenesten til Excel-, PowerPoint- og PDF-filer.
 
-- [Sådan anvendes følsomhedsmærkater i Power BI](https://docs.microsoft.com/power-bi/admin/service-security-apply-data-sensitivity-labels)
+- [Sådan anvendes følsomhedsmærkater i Power BI](../admin/service-security-apply-data-sensitivity-labels.md)
 
 **Overvågning af Azure Security Center**: Ikke tilgængelig
 
@@ -247,13 +247,13 @@ Brug følsomhedsmærkater fra Microsoft Information Protection til at klassifice
 
 ### <a name="dp-2-protect-sensitive-data"></a>DP-2: Beskyt følsomme data
 
-**Vejledning**: Power BI kan integreres med følsomhedsmærkater fra Microsoft Information Protection med henblik på beskyttelse af følsomme data. Du kan finde flere oplysninger i [Følsomhedsmærkater fra Microsoft Information Protection i Power BI](https://docs.microsoft.com/power-bi/admin/service-security-sensitivity-label-overview)
+**Vejledning**: Power BI kan integreres med følsomhedsmærkater fra Microsoft Information Protection med henblik på beskyttelse af følsomme data. Du kan finde flere oplysninger i [Følsomhedsmærkater fra Microsoft Information Protection i Power BI](../admin/service-security-sensitivity-label-overview.md)
 
-Power BI gør det muligt for brugerne af tjenesten at medbringe deres egen nøgle for at beskytte inaktive data. Du kan finde flere oplysninger i [Medbring dine egne krypteringsnøgler til Power BI](https://docs.microsoft.com/power-bi/admin/service-encryption-byok)
+Power BI gør det muligt for brugerne af tjenesten at medbringe deres egen nøgle for at beskytte inaktive data. Du kan finde flere oplysninger i [Medbring dine egne krypteringsnøgler til Power BI](../admin/service-encryption-byok.md)
 
-Kunderne har mulighed for at bevare datakilder i det lokale miljø og gøre brug af Direct Query eller Live Connect med en datagateway i det lokale miljø for at minimere dataeksponering til cloudtjenesten. Du kan finde flere oplysninger i [Hvad er en datagateway i det lokale miljø?](https://docs.microsoft.com/data-integration/gateway/service-gateway-onprem)
+Kunderne har mulighed for at bevare datakilder i det lokale miljø og gøre brug af Direct Query eller Live Connect med en datagateway i det lokale miljø for at minimere dataeksponering til cloudtjenesten. Du kan finde flere oplysninger i [Hvad er en datagateway i det lokale miljø?](/data-integration/gateway/service-gateway-onprem)
 
-Power BI understøtter sikkerhed på rækkeniveau. Du kan finde flere oplysninger i [Sikkerhed på rækkeniveau med Power BI](https://docs.microsoft.com/power-bi/admin/service-admin-rls). Bemærk, at sikkerhed på rækkeniveau tilmed kan anvendes på Direct Query-datakilder, og i det tilfælde fungerer PBIX-filer som en proxy, der muliggør sikkerhed.
+Power BI understøtter sikkerhed på rækkeniveau. Du kan finde flere oplysninger i [Sikkerhed på rækkeniveau med Power BI](../admin/service-admin-rls.md). Bemærk, at sikkerhed på rækkeniveau tilmed kan anvendes på Direct Query-datakilder, og i det tilfælde fungerer PBIX-filer som en proxy, der muliggør sikkerhed.
 
 **Overvågning af Azure Security Center**: Ikke tilgængelig
 
@@ -266,7 +266,7 @@ Power BI understøtter sikkerhed på rækkeniveau. Du kan finde flere oplysninge
 Når du bruger Cloud App Security med Power BI, kan du hjælpe med at beskytte dine Power BI-rapporter, -data og -tjenester mod utilsigtede lækager eller brud. Med Cloud App Security kan du oprette politikker for betinget adgang for din organisations data ved hjælp af kontrolelementerne for sessioner i realtid i Azure Active Directory (Azure AD), der hjælper med at sikre, at din Power BI-analyse er sikker. Når disse politikker er angivet, kan administratorer overvåge brugeradgang og -aktivitet, udføre risikoanalyse i realtid og angive mærkatspecifikke kontrolelementer.
 
 Brug af 
-- [Microsoft Cloud App Security-kontroller i Power BI](https://docs.microsoft.com/power-bi/admin/service-security-using-microsoft-cloud-app-security-controls)
+- [Microsoft Cloud App Security-kontroller i Power BI](../admin/service-security-using-microsoft-cloud-app-security-controls.md)
 
 **Overvågning af Azure Security Center**: Ikke tilgængelig
 
@@ -276,9 +276,9 @@ Brug af
 
 **Vejledning**: For HTTP-trafik skal du sørge for, at alle klienter og datakilder, der opretter forbindelse til dine Power BI-ressourcer, kan forhandle TLS v1.2 eller nyere.
 
-- [Gennemtvingelse af brug af TLS-version](https://docs.microsoft.com/power-bi/admin/service-admin-power-bi-security#enforcing-tls-version-usage)
+- [Gennemtvingelse af brug af TLS-version](../admin/service-admin-power-bi-security.md#enforcing-tls-version-usage)
 
-- [Oplysninger om TLS-sikkerhed](https://docs.microsoft.com/security/engineering/solving-tls1-problem)
+- [Oplysninger om TLS-sikkerhed](/security/engineering/solving-tls1-problem)
 
 **Overvågning af Azure Security Center**: Ikke tilgængelig
 
@@ -288,7 +288,7 @@ Brug af
 
 **Vejledning**: Power BI krypterer inaktive og igangværende data. Power BI bruger som standard Microsoft-administrerede nøgler til kryptering af dine data. Organisationer kan vælge at bruge deres egne nøgler til kryptering af inaktivt brugerindhold i hele Power BI, fra rapportbilleder til importerede datasæt i Premium-kapaciteter.
 
-- [Brug Bring Your Own Key i Power BI](https://docs.microsoft.com/power-bi/admin/service-encryption-byok)
+- [Brug Bring Your Own Key i Power BI](../admin/service-encryption-byok.md)
 
 **Overvågning af Azure Security Center**: Ikke tilgængelig
 
@@ -302,7 +302,7 @@ Brug af
 
 **Vejledning**: Brug Azure Sentinel med dine Power BI Office Audit-logge for at sikre, at dit sikkerhedsteam har indblik i risiciene for dine Power BI-ressourcer.
 
-- [Forbind Office 365-logge til Azure Sentinel](https://docs.microsoft.com/azure/sentinel/connect-office-365)
+- [Forbind Office 365-logge til Azure Sentinel](/azure/sentinel/connect-office-365)
 
 **Overvågning af Azure Security Center**: Ikke tilgængelig
 
@@ -316,9 +316,9 @@ Azure Resource Graph kan forespørge efter og finde alle Power BI Embedded-resso
 
 Organiser ressourcer logisk i henhold til din organisations taksonomi ved hjælp af tags samt andre metadata i Azure (navn, beskrivelse og kategori).  
 
-- [Sådan opretter du forespørgsler med Azure Resource Graph Explorer](https://docs.microsoft.com/azure/governance/resource-graph/first-query-portal)
+- [Sådan opretter du forespørgsler med Azure Resource Graph Explorer](/azure/governance/resource-graph/first-query-portal)
 
-- [Vejledning til beslutning om navngivning og tagging af ressourcer](https://docs.microsoft.com/azure/cloud-adoption-framework/decision-guides/resource-tagging/?toc=/azure/azure-resource-manager/management/toc.json)
+- [Vejledning til beslutning om navngivning og tagging af ressourcer](/azure/cloud-adoption-framework/decision-guides/resource-tagging/?toc=%2fazure%2fazure-resource-manager%2fmanagement%2ftoc.json)
 
 **Overvågning af Azure Security Center**: Ikke tilgængelig
 
@@ -330,13 +330,13 @@ Organiser ressourcer logisk i henhold til din organisations taksonomi ved hjælp
 
 Brug Azure Policy til at overvåge og begrænse, hvilke tjenester brugerne kan klargøre i dit miljø. Brug Azure Resource Graph til at forespørge efter og finde ressourcer i deres abonnementer. Du kan også bruge Azure Monitor til at oprette regler, der udløser vigtige beskeder, når der registreres en ikke-godkendt tjeneste.
 
-- [Sådan konfigureres og administreres Azure Policy](https://docs.microsoft.com/azure/governance/policy/tutorials/create-and-manage)
+- [Sådan konfigureres og administreres Azure Policy](/azure/governance/policy/tutorials/create-and-manage)
 
 Sådan afvises en bestemt ressourcetype med
-- [Azure Policy](https://docs.microsoft.com/azure/governance/policy/samples/built-in-policies#general)
+- [Azure Policy](/azure/governance/policy/samples/built-in-policies#general)
 
 Sådan oprettes forespørgsler med Azure
-- [Resource Graph Explorer](https://docs.microsoft.com/azure/governance/resource-graph/first-query-portal)
+- [Resource Graph Explorer](/azure/governance/resource-graph/first-query-portal)
 
 **Overvågning af Azure Security Center**: Ikke tilgængelig
 
@@ -348,9 +348,9 @@ Sådan oprettes forespørgsler med Azure
 
 ### <a name="lt-2-enable-threat-detection-for-azure-identity-and-access-management"></a>LT-2: Aktivér trusselsregistrering for identitets- og adgangsstyring i Azure
 
-**Vejledning**: Videresend logge fra Power BI til din SIEM, som kan bruges til at konfigurere brugerdefinerede trusselsregistreringer. Derudover kan du bruge Microsoft Cloud App Security-kontroller (MCAS) i Power BI til at aktivere registrering af uregelmæssigheder ved hjælp af vejledningen [her](https://docs.microsoft.com/power-bi/admin/service-security-using-microsoft-cloud-app-security-controls).
+**Vejledning**: Videresend logge fra Power BI til din SIEM, som kan bruges til at konfigurere brugerdefinerede trusselsregistreringer. Derudover kan du bruge Microsoft Cloud App Security-kontroller (MCAS) i Power BI til at aktivere registrering af uregelmæssigheder ved hjælp af vejledningen [her](../admin/service-security-using-microsoft-cloud-app-security-controls.md).
 
-- [Spor brugeraktiviteter i Power BI](https://docs.microsoft.com/power-bi/admin/service-admin-auditing)
+- [Spor brugeraktiviteter i Power BI](../admin/service-admin-auditing.md)
 
 **Overvågning af Azure Security Center**: Ikke tilgængelig
 
@@ -360,7 +360,7 @@ Sådan oprettes forespørgsler med Azure
 
 **Vejledning**: Power BI er et fuldt administreret SaaS-tilbud, og den underliggende netværkskonfiguration og logføring er Microsofts ansvar. For kunder, der anvender Private Links, er en del logføring og overvågning tilgængelig, hvilket kan konfigureres.
 
-- [Logføring og overvågning af Private Link](https://docs.microsoft.com/azure/private-link/private-link-overview#logging-and-monitoring)
+- [Logføring og overvågning af Private Link](/azure/private-link/private-link-overview#logging-and-monitoring)
 
 **Overvågning af Azure Security Center**: Ikke tilgængelig
 
@@ -411,11 +411,11 @@ Power BI-aktivitetslog:
  
 - Bevarer ikke aktivitetsdata, når lejeren flyttes til et andet Azure-område.
 
-- [Power BI-overvågningsdata](https://docs.microsoft.com/power-bi/admin/service-admin-auditing#operations-available-in-the-audit-and-activity-logs)
+- [Power BI-overvågningsdata](../admin/service-admin-auditing.md#operations-available-in-the-audit-and-activity-logs)
 
-- [Power BI-aktivitetslog](https://docs.microsoft.com/power-bi/admin/service-admin-auditing#use-the-activity-log)
+- [Power BI-aktivitetslog](../admin/service-admin-auditing.md#use-the-activity-log)
 
-- [Power BI-overvågningslog](https://docs.microsoft.com/power-bi/admin/service-admin-auditing#use-the-audit-log)
+- [Power BI-overvågningslog](../admin/service-admin-auditing.md#use-the-audit-log)
 
 **Overvågning af Azure Security Center**: Ikke tilgængelig
 
@@ -456,11 +456,11 @@ Power BI-aktivitetslog:
 
 - Bevarer ikke aktivitetsdata, når lejeren flyttes til et andet Azure-område.
 
-- [Power BI-overvågningsdata](https://docs.microsoft.com/power-bi/admin/service-admin-auditing#operations-available-in-the-audit-and-activity-logs)
+- [Power BI-overvågningsdata](../admin/service-admin-auditing.md#operations-available-in-the-audit-and-activity-logs)
 
-- [Power BI-aktivitetslog](https://docs.microsoft.com/power-bi/admin/service-admin-auditing#use-the-activity-log)
+- [Power BI-aktivitetslog](../admin/service-admin-auditing.md#use-the-activity-log)
 
-- [Power BI-overvågningslog](https://docs.microsoft.com/power-bi/admin/service-admin-auditing#use-the-audit-log)
+- [Power BI-overvågningslog](../admin/service-admin-auditing.md#use-the-audit-log)
 
 **Overvågning af Azure Security Center**: Ikke tilgængelig
 
@@ -470,7 +470,7 @@ Power BI-aktivitetslog:
 
 **Vejledning**: Konfigurer politikker for lageropbevaring for dine Office-overvågningslogge i henhold til dine krav om overholdelse af angivne standarder, regler og virksomheder.
 
-- [Politikker for opbevaring af Office-overvågningslog](https://docs.microsoft.com/microsoft-365/compliance/audit-log-retention-policies)
+- [Politikker for opbevaring af Office-overvågningslog](/microsoft-365/compliance/audit-log-retention-policies)
 
 **Overvågning af Azure Security Center**: Ikke tilgængelig
 
@@ -484,9 +484,9 @@ Power BI-aktivitetslog:
 
 **Vejledning**: Sørg for, at din organisation har processer til at svare på sikkerhedshændelser, har opdateret disse processer for Azure og udøver dem regelmæssigt for at sikre, at de er klar.
 
-- [Implementer sikkerhed på tværs af virksomhedsmiljøet](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#4-process-update-incident-response-ir-processes-for-cloud)
+- [Implementer sikkerhed på tværs af virksomhedsmiljøet](/azure/cloud-adoption-framework/security/security-top-10#4-process-update-incident-response-ir-processes-for-cloud)
 
-- [Vejledning til reference for svar på hændelse](https://docs.microsoft.com/microsoft-365/downloads/IR-Reference-Guide.pdf)
+- [Vejledning til reference for svar på hændelse](/microsoft-365/downloads/IR-Reference-Guide.pdf)
 
 **Overvågning af Azure Security Center**: Ikke tilgængelig
 
@@ -496,7 +496,7 @@ Power BI-aktivitetslog:
 
 **Vejledning**: Konfigurer kontaktoplysninger for sikkerhedshændelser i Azure Security Center. Disse kontaktoplysninger bruges af Microsoft til at kontakte dig, hvis Microsoft Security Response Center (MSRC) registrerer, at en ulovlig og uautoriseret part har fået adgang til dine data. Du har også mulighed for at tilpasse vigtige beskeder om hændelser og meddelelser i forskellige Azure-tjenester baseret på behov for svar på hændelser. 
 
-- [Sådan konfigureres Azure Security Center-sikkerhedskontakt](https://docs.microsoft.com/azure/security-center/security-center-provide-security-contact-details)
+- [Sådan konfigureres Azure Security Center-sikkerhedskontakt](/azure/security-center/security-center-provide-security-contact-details)
 
 **Overvågning af Azure Security Center**: Ikke tilgængelig
 
@@ -508,7 +508,7 @@ Power BI-aktivitetslog:
 
 Overvåg vigtige beskeder, der er relateret til Power BI i Microsoft Cloud App Security. Beskeder af høj kvalitet kan oprettes på baggrund af erfaringer fra tidligere hændelser, validerede communitykilder og værktøjer, der er designet til at generere og rydde op i vigtige beskeder ved at fusionere og korrelere forskelligartede signalkilder.
 
-- [Overvåg vigtige beskeder i Cloud App Security](https://docs.microsoft.com/cloud-app-security/monitor-alerts)
+- [Overvåg vigtige beskeder i Cloud App Security](/cloud-app-security/monitor-alerts)
 
 **Overvågning af Azure Security Center**: Ikke tilgængelig
 
@@ -520,7 +520,7 @@ Overvåg vigtige beskeder, der er relateret til Power BI i Microsoft Cloud App S
 
 Sørg for, at der er nedskrevne planer for svar på hændelser, der definerer alle personalets roller samt faser i håndteringen/administrationen af hændelser fra registrering til gennemsyn efter hændelsen.
 
-- [Oversigt over hændelser i Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/incidents-overview)
+- [Oversigt over hændelser i Microsoft Threat Protection](/microsoft-365/security/mtp/incidents-overview)
 
 **Overvågning af Azure Security Center**: Ikke tilgængelig
 
@@ -533,7 +533,7 @@ Sørg for, at der er nedskrevne planer for svar på hændelser, der definerer al
  
 Microsoft Threat Protection anvender korrelationsanalyser og samler alle relaterede vigtige beskeder og undersøgelser fra forskellige produkter i én hændelse. Microsoft Threat Protection udløser også entydige vigtige beskeder om aktiviteter, der kun kan identificeres som skadelige pga. det omfattende indblik, som Microsoft Threat Protection har på tværs af hele ejendommen og pakken af produkter. Ved at gøre det fortæller Microsoft Threat Protection om den bredere angrebshistorie, hvilket giver en analytiker af sikkerhedshandlinger mulighed for at forstå og håndtere komplekse trusler på tværs af organisationen.
 
-- [Prioriter hændelser i Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/incident-queue?view=o365-worldwide&amp;preserve-view=true)
+- [Prioriter hændelser i Microsoft Threat Protection](/microsoft-365/security/mtp/incident-queue?amp;preserve-view=true&view=o365-worldwide)
 
 **Overvågning af Azure Security Center**: Ikke tilgængelig
 
@@ -545,7 +545,7 @@ Microsoft Threat Protection anvender korrelationsanalyser og samler alle relater
  
 Brug funktioner til automatisering af arbejdsprocesser i Microsoft Threat Protection for at udløse undersøgelser og afhjælpning automatisk som svar på indgående sikkerhedsbeskeder. 
  
-- [Automatiseret undersøgelse og svar i Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+- [Automatiseret undersøgelse og svar i Microsoft Threat Protection](/microsoft-365/security/mtp/mtp-autoir)
 
 **Overvågning af Azure Security Center**: Ikke tilgængelig
 
@@ -569,7 +569,7 @@ Brug funktioner til automatisering af arbejdsprocesser i Microsoft Threat Protec
 
 **Vejledning**: Overvåg din Power BI-forekomst ved hjælp af REST API'er til administration af Power BI.
 
-- [REST API'er til administration af Power BI](https://docs.microsoft.com/rest/api/power-bi/admin)
+- [REST API'er til administration af Power BI](/rest/api/power-bi/admin)
 
 - [White om udrulning af Power BI i store virksomheder](https://aka.ms/PBIEnterpriseDeploymentWP)
 
@@ -583,7 +583,7 @@ Brug funktioner til automatisering af arbejdsprocesser i Microsoft Threat Protec
 
 Følg operationsreglerne for Microsoft Cloud-indtrængningstest for at sikre, at dine indtrængningstest ikke overtræder Microsofts politikker. Brug Microsofts strategi for og udførelse af Red Teaming- og indtrængningstest af livewebsteder i forhold til Microsoft-administrerede cloudinfrastruktur, -tjenester og -programmer.
 
-- [Indtrængningstest i Azure](https://docs.microsoft.com/azure/security/fundamentals/pen-testing)
+- [Indtrængningstest i Azure](/azure/security/fundamentals/pen-testing)
 
 - [Operationsregler for indtrængningstest](https://www.microsoft.com/msrc/pentest-rules-of-engagement?rtc=1)
 
@@ -601,7 +601,7 @@ Følg operationsreglerne for Microsoft Cloud-indtrængningstest for at sikre, at
 
 **Vejledning**: Hvis du bruger funktionen Bring Your Own Key (BYOK) i Power BI skal du regelmæssigt kontrollere, at du har adgang til og kan gendanne dine kundeadministrerede nøgler.
 
-- [BYOK i Power BI](https://docs.microsoft.com/power-bi/admin/service-encryption-byok)
+- [BYOK i Power BI](../admin/service-encryption-byok.md)
 
 **Overvågning af Azure Security Center**: Ikke tilgængelig
 
@@ -611,13 +611,13 @@ Følg operationsreglerne for Microsoft Cloud-indtrængningstest for at sikre, at
 
 **Vejledning**: Hvis du bruger funktionen Bring Your Own Key (BYOK) i Power BI skal du sikre, at Key Vault, der styrer dine kundeadministrerede nøgler, er konfigureret i henhold til vejledningen i dokumentationen til BYOK i Power BI nedenfor. Aktivér blød sletning og beskyttelse mod tømning i Azure Key Vault for at beskytte nøgler mod utilsigtet eller ondsindet sletning.
 
-- [BYOK i Power BI](https://docs.microsoft.com/power-bi/admin/service-encryption-byok)
+- [BYOK i Power BI](../admin/service-encryption-byok.md)
 
-- [Sådan aktiveres blød sletning og beskyttelse mod tømning i Key Vault](https://docs.microsoft.com/azure/storage/blobs/storage-blob-soft-delete?tabs=azure-portal)
+- [Sådan aktiveres blød sletning og beskyttelse mod tømning i Key Vault](/azure/storage/blobs/storage-blob-soft-delete?tabs=azure-portal)
 
 For ressourcer om gatewaynøgle skal du sikre, at du følger vejledningen i dokumentationen til genoprettelsesnøgle til gateway nedenfor.
 
-- [Genoprettelsesnøgle til datagateway i det lokale miljø](https://docs.microsoft.com/data-integration/gateway/service-gateway-recovery-key)
+- [Genoprettelsesnøgle til datagateway i det lokale miljø](/data-integration/gateway/service-gateway-recovery-key)
 
 **Overvågning af Azure Security Center**: Ikke tilgængelig
 
@@ -650,13 +650,13 @@ Denne strategi bør omfatte dokumenteret vejledning, politik og standarder for f
 -   Passende kryptografiske standarder
 
 Du kan finde flere oplysninger i følgende referencer:
-- [Anbefaling af Azure-sikkerhedsarkitektur – lager, data og kryptering](https://docs.microsoft.com/azure/architecture/framework/security/storage-data-encryption?toc=/security/compass/toc.json&amp;bc=/security/compass/breadcrumb/toc.json)
+- [Anbefaling af Azure-sikkerhedsarkitektur – lager, data og kryptering](/azure/architecture/framework/security/storage-data-encryption?amp;bc=%2fsecurity%2fcompass%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fcompass%2ftoc.json)
 
-- [Grundlæggende oplysninger om Azure-sikkerhed – sikkerhed, kryptering og lagring af data i Azure](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview)
+- [Grundlæggende oplysninger om Azure-sikkerhed – sikkerhed, kryptering og lagring af data i Azure](/azure/security/fundamentals/encryption-overview)
 
-- [Cloud Adoption Framework – bedste praksis for kryptering og sikkerhed af data i Azure](https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices?toc=/azure/cloud-adoption-framework/toc.json&amp;bc=/azure/cloud-adoption-framework/_bread/toc.json)
+- [Cloud Adoption Framework – bedste praksis for kryptering og sikkerhed af data i Azure](/azure/security/fundamentals/data-encryption-best-practices?amp;bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)
 
-- [Azure Security Benchmark – ressourcestyring](https://docs.microsoft.com/azure/security/benchmarks/security-controls-v2-asset-management)
+- [Azure Security Benchmark – ressourcestyring](/azure/security/benchmarks/security-controls-v2-asset-management)
 
 - [Azure Security Benchmark – databeskyttelse](/azure/security/benchmarks/security-controls-v2-data-protection)
 
@@ -672,11 +672,11 @@ Balancer nøje behovet for adskillelse af sikkerhed i forhold til behovet for da
 
 Sørg for, at segmenteringsstrategien er implementeret på tværs af kontroltyper på en ensartet måde, herunder netværkssikkerhed, identitets- og adgangsmodeller samt programtilladelse/adgangsmodeller og kontroller af menneskelige processer.
 
-- [Vejledning til segmenteringsstrategi i Azure (video)](https://docs.microsoft.com/security/compass/microsoft-security-compass-introduction#azure-components-and-reference-model-2151)
+- [Vejledning til segmenteringsstrategi i Azure (video)](/security/compass/microsoft-security-compass-introduction#azure-components-and-reference-model-2151)
 
-- [Vejledning til segmenteringsstrategi i Azure (dokument)](https://docs.microsoft.com/security/compass/governance#enterprise-segmentation-strategy)
+- [Vejledning til segmenteringsstrategi i Azure (dokument)](/security/compass/governance#enterprise-segmentation-strategy)
 
-- [Afstem netværkssegmentering i forhold til virksomhedens segmenteringsstrategi](https://docs.microsoft.com/security/compass/network-security-containment#align-network-segmentation-with-enterprise-segmentation-strategy)
+- [Afstem netværkssegmentering i forhold til virksomhedens segmenteringsstrategi](/security/compass/network-security-containment#align-network-segmentation-with-enterprise-segmentation-strategy)
 
 **Overvågning af Azure Security Center**: Ikke tilgængelig
 
@@ -686,7 +686,7 @@ Sørg for, at segmenteringsstrategien er implementeret på tværs af kontroltype
 
 **Vejledning**: Mål og afhjælp løbende risici for dine individuelle ressourcer og de miljø, de hostes i. Prioriter ressourcer med høj værdi og angrebsoverflader, der er meget eksponeret, f.eks. publicerede programmer, punkter for indgående data og udgående data på netværk, slutpunkter for bruger og administrator osv.
 
-- [Azure Security Benchmark – administration af niveau og sårbarhed](https://docs.microsoft.com/azure/security/benchmarks/security-controls-v2-posture-vulnerability-management)
+- [Azure Security Benchmark – administration af niveau og sårbarhed](/azure/security/benchmarks/security-controls-v2-posture-vulnerability-management)
 
 **Overvågning af Azure Security Center**: Ikke tilgængelig
 
@@ -696,11 +696,11 @@ Sørg for, at segmenteringsstrategien er implementeret på tværs af kontroltype
 
 **Vejledning**: Sørg for at dokumentere og kommunikere en tydelig strategi for roller og ansvar i organiseringen af sikkerhed. Prioriter at angive tydeligt ansvar for sikkerhedsbeslutninger, at uddanne alle i modellen for delt ansvar samt at uddanne tekniske teams i teknologien til at beskytte cloudmiljøet.
 
-- [Bedste praksis for sikkerhed i Azure 1 – mennesker: Uddan teams i cloudsikkerhedsrejsen](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#1-people-educate-teams-about-the-cloud-security-journey)
+- [Bedste praksis for sikkerhed i Azure 1 – mennesker: Uddan teams i cloudsikkerhedsrejsen](/azure/cloud-adoption-framework/security/security-top-10#1-people-educate-teams-about-the-cloud-security-journey)
 
-- [Bedste praksis for sikkerhed i Azure 2 – mennesker: Uddan teams i teknologi til cloudsikkerhed](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#2-people-educate-teams-on-cloud-security-technology)
+- [Bedste praksis for sikkerhed i Azure 2 – mennesker: Uddan teams i teknologi til cloudsikkerhed](/azure/cloud-adoption-framework/security/security-top-10#2-people-educate-teams-on-cloud-security-technology)
 
-- [Bedste praksis for sikkerhed i Azure 3 – processer: Tildel ansvar for sikkerhedsbeslutninger i cloudmiljøet](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#4-process-update-incident-response-ir-processes-for-cloud)
+- [Bedste praksis for sikkerhed i Azure 3 – processer: Tildel ansvar for sikkerhedsbeslutninger i cloudmiljøet](/azure/cloud-adoption-framework/security/security-top-10#4-process-update-incident-response-ir-processes-for-cloud)
 
 **Overvågning af Azure Security Center**: Ikke tilgængelig
 
@@ -725,13 +725,13 @@ Denne strategi bør omfatte dokumenteret vejledning, politik og standarder for f
 -   Opdaterede artefakter for netværkssikkerhed (f.eks. netværksdiagrammer, netværksarkitektur til reference)
 
 Du kan finde flere oplysninger i følgende referencer:
-- [Bedste praksis for sikkerhed i Azure 11 – arkitektur. Enkelt samlet sikkerhedsstrategi](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#11-architecture-establish-a-single-unified-security-strategy)
+- [Bedste praksis for sikkerhed i Azure 11 – arkitektur. Enkelt samlet sikkerhedsstrategi](/azure/cloud-adoption-framework/security/security-top-10#11-architecture-establish-a-single-unified-security-strategy)
 
 - [Azure Security Benchmark – netværkssikkerhed](/azure/security/benchmarks/security-controls-v2-network-security)
 
-- [Oversigt over netværkssikkerhed i Azure](https://docs.microsoft.com/azure/security/fundamentals/network-overview)
+- [Oversigt over netværkssikkerhed i Azure](/azure/security/fundamentals/network-overview)
 
-- [Strategi for netværksarkitektur i virksomheden](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/enterprise-scale/architecture)
+- [Strategi for netværksarkitektur i virksomheden](/azure/cloud-adoption-framework/ready/enterprise-scale/architecture)
 
 **Overvågning af Azure Security Center**: Ikke tilgængelig
 
@@ -755,13 +755,13 @@ Denne strategi bør omfatte dokumenteret vejledning, politik og standarder for f
 
 Du kan finde flere oplysninger i følgende referencer:
 
-- [Azure Security Benchmark – identitetsstyring](https://docs.microsoft.com/azure/security/benchmarks/security-controls-v2-identity-management)
+- [Azure Security Benchmark – identitetsstyring](/azure/security/benchmarks/security-controls-v2-identity-management)
 
 - [Azure Security Benchmark – privilegeret adgang](/azure/security/benchmarks/security-controls-v2-privileged-access)
 
-- [Bedste praksis for sikkerhed i Azure 11 – arkitektur. Enkelt samlet sikkerhedsstrategi](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#11-architecture-establish-a-single-unified-security-strategy)
+- [Bedste praksis for sikkerhed i Azure 11 – arkitektur. Enkelt samlet sikkerhedsstrategi](/azure/cloud-adoption-framework/security/security-top-10#11-architecture-establish-a-single-unified-security-strategy)
 
-- [Oversigt over sikkerhed og identitetsstyring i Azure](https://docs.microsoft.com/azure/security/fundamentals/identity-management-overview)
+- [Oversigt over sikkerhed og identitetsstyring i Azure](/azure/security/fundamentals/identity-management-overview)
 
 **Overvågning af Azure Security Center**: Ikke tilgængelig
 
@@ -793,11 +793,11 @@ Du kan finde flere oplysninger i følgende referencer:
 
 - [Azure Security Benchmark – svar på hændelser](/azure/security/benchmarks/security-controls-v2-incident-response)
 
-- [Bedste praksis for sikkerhed i Azure 4 – processer. Opdater processer for svar på hændelser i cloudmiljøet](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#4-process-update-incident-response-ir-processes-for-cloud)
+- [Bedste praksis for sikkerhed i Azure 4 – processer. Opdater processer for svar på hændelser i cloudmiljøet](/azure/cloud-adoption-framework/security/security-top-10#4-process-update-incident-response-ir-processes-for-cloud)
 
-- [Vejledning til Azure Adoption Framework, logføring og rapportering af beslutninger](https://docs.microsoft.com/azure/cloud-adoption-framework/decision-guides/logging-and-reporting/)
+- [Vejledning til Azure Adoption Framework, logføring og rapportering af beslutninger](/azure/cloud-adoption-framework/decision-guides/logging-and-reporting/)
 
-- [Virksomhedsskala, administration og overvågning i Azure](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/enterprise-scale/management-and-monitoring)
+- [Virksomhedsskala, administration og overvågning i Azure](/azure/cloud-adoption-framework/ready/enterprise-scale/management-and-monitoring)
 
 **Overvågning af Azure Security Center**: Ikke tilgængelig
 

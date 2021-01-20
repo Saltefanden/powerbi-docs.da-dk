@@ -8,12 +8,12 @@ ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 12/22/2020
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 730a997a6d1d304fe868dd5bdd5bfbed6e359d91
-ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
+ms.openlocfilehash: bff53ac0e230a91dd980b461340ae4109f551999
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97927148"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565557"
 ---
 # <a name="microsoft-sustainability-calculator-support-page"></a>Supportside til Microsoft Sustainability Calculator
 
@@ -165,7 +165,7 @@ Dine emissioner kan rapporteres som en del af din virksomheds indirekte anvendel
 
 **Hvad kan jeg gøre for at reducere emissionerne yderligere?**
 
-Ressource- og omkostningseffektivitet i Azure kan reducere miljøpåvirkningen af din brug af Azure. Ubrugte virtuelle maskiner er f.eks. spild, uanset om de er i cloudmiljøet eller i det lokale miljø. Tilpasning af virtuelle maskiner til den rette størrelse for at forbedre faktorer til udnyttelse af beregning reducerer energiforbruget pr. nyttige output, ligesom det gør med fysiske servere. [Azure Cost Management](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices) giver dig de værktøjer, du skal bruge til at planlægge, analysere og reducere dit forbrug for at maksimere din cloudinvestering.
+Ressource- og omkostningseffektivitet i Azure kan reducere miljøpåvirkningen af din brug af Azure. Ubrugte virtuelle maskiner er f.eks. spild, uanset om de er i cloudmiljøet eller i det lokale miljø. Tilpasning af virtuelle maskiner til den rette størrelse for at forbedre faktorer til udnyttelse af beregning reducerer energiforbruget pr. nyttige output, ligesom det gør med fysiske servere. [Azure Cost Management](/azure/cost-management-billing/costs/cost-mgt-best-practices) giver dig de værktøjer, du skal bruge til at planlægge, analysere og reducere dit forbrug for at maksimere din cloudinvestering.
 
 #### <a name="methodology"></a>Metodologi
 

@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 11/23/2020
-ms.openlocfilehash: 33de464a1bb1389fadfbc7a85ded9365321e0a62
-ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
+ms.openlocfilehash: 0852fcb2c932680f6c20aeee94a89c68f473e46d
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97926296"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565716"
 ---
 # <a name="automated-configuration-of-a-template-app-installation"></a>Automatiseret konfiguration af installationen af et skabelonprogram
 
@@ -42,7 +42,7 @@ Det grundlæggende flow til automatisering af konfigurationen af installationen 
 
 1. ISV'en henter et token *kun til apps*, der er baseret på en [tjenesteprincipal (token kun til apps)](../embedded/embed-service-principal.md), der er registreret i ISV'ens lejer.
 
-1. Ved hjælp af [REST API'er til Power BI](https://docs.microsoft.com/rest/api/power-bi/) opretter ISV'en en *installationsbillet*, der indeholder den brugerspecifikke parameterkonfiguration, som ISV'en har forberedt.
+1. Ved hjælp af [REST API'er til Power BI](/rest/api/power-bi/) opretter ISV'en en *installationsbillet*, der indeholder den brugerspecifikke parameterkonfiguration, som ISV'en har forberedt.
 
 1. ISV'en omdirigerer brugeren til Power BI ved hjælp af en ```POST```-omdirigeringsmetode, der indeholder installationsbilletten.
 
@@ -56,23 +56,23 @@ Det grundlæggende flow til automatisering af konfigurationen af installationen 
 Følgende forudsætninger er påkrævet for at levere en forudkonfigureret installationsoplevelse for dit skabelonprogram:
 
 * En Power BI Pro-licens. Hvis du ikke er tilmeldt Power BI Pro, kan du [tilmelde dig en gratis prøveversion](https://powerbi.microsoft.com/pricing/), før du begynder.
-* Konfigurer din egen Microsoft Azure Active Directory-lejer. Se [Opret en Azure Active Directory-lejer](https://docs.microsoft.com/power-bi/developer/embedded/create-an-azure-active-directory-tenant) for at få oplysninger om, hvordan du konfigurerer en.
-* En **tjenesteprincipal (token kun til apps)** , der er registreret i ovennævnte lejer. Se [Integrer Power BI-indhold med en tjenesteprincipal og en programhemmelighed](https://docs.microsoft.com/power-bi/developer/embedded/embed-service-principal) for at få flere oplysninger. Sørg for at registrere programmet som et **serverbaseret webprogram**. Du registrerer et serverbaseret webprogram for at oprette en programhemmelighed. Fra denne proces skal du gemme *app-id'et* (ClientID) og *programhemmeligheden* (ClientSecret) til senere trin.
-* En **parameteriseret skabelonapp**, der er klar til installation. Skabelonappen skal være oprettet i den samme lejer, som du registrerer programmet i Azure Active Directory i. Se [Tip til skabelonapp](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-tips) eller [Opret en skabelonapp i Power BI](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-create) for at få flere oplysninger. Fra skabelonappen skal du notere følgende oplysninger til de næste trin:
+* Konfigurer din egen Microsoft Azure Active Directory-lejer. Se [Opret en Azure Active Directory-lejer](../embedded/create-an-azure-active-directory-tenant.md) for at få oplysninger om, hvordan du konfigurerer en.
+* En **tjenesteprincipal (token kun til apps)** , der er registreret i ovennævnte lejer. Se [Integrer Power BI-indhold med en tjenesteprincipal og en programhemmelighed](../embedded/embed-service-principal.md) for at få flere oplysninger. Sørg for at registrere programmet som et **serverbaseret webprogram**. Du registrerer et serverbaseret webprogram for at oprette en programhemmelighed. Fra denne proces skal du gemme *app-id'et* (ClientID) og *programhemmeligheden* (ClientSecret) til senere trin.
+* En **parameteriseret skabelonapp**, der er klar til installation. Skabelonappen skal være oprettet i den samme lejer, som du registrerer programmet i Azure Active Directory i. Se [Tip til skabelonapp](../../connect-data/service-template-apps-tips.md) eller [Opret en skabelonapp i Power BI](../../connect-data/service-template-apps-create.md) for at få flere oplysninger. Fra skabelonappen skal du notere følgende oplysninger til de næste trin:
      * *App-id*, *pakkenøgle* og *ejer-id*, som de vises i URL-adressen til installation i slutningen af processen med at [definere egenskaber for skabelonappen](../../connect-data/service-template-apps-create.md#define-the-properties-of-the-template-app), da appen blev oprettet. Du kan også få det samme link ved at vælge **Hent link** i [Udgivelsesadministration](../../connect-data/service-template-apps-create.md#manage-the-template-app-release) for skabelonappen.
     * *Parameternavne*, som defineret i datasættet for skabelonappen. Der skelnes mellem store og små bogstaver i parameternavne, og de kan også hentes via fanen **Parameterindstillinger**, når du [definerer egenskaberne for skabelonappen](../../connect-data/service-template-apps-create.md#define-the-properties-of-the-template-app), eller fra indstillingerne for datasæt i Power BI.
 
     >[!NOTE]
-    >Du kan teste det forudkonfigurerede installationsprogram for din skabelonapp, hvis skabelonappen er klar til installation, selvom den endnu ikke er offentligt tilgængelig på AppSource. Men før brugere uden for din lejer kan bruge det automatiserede installationsprogram til at installere din skabelonapp, skal skabelonappen være offentligt tilgængelig på [markedspladsen til Power BI-programmer](https://app.powerbi.com/getdata/services). Før du distribuerer skabelonappen ved hjælp af det automatiserede installationsprogram, du opretter, skal du sørge for at publicere det i [Partnercenter](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
+    >Du kan teste det forudkonfigurerede installationsprogram for din skabelonapp, hvis skabelonappen er klar til installation, selvom den endnu ikke er offentligt tilgængelig på AppSource. Men før brugere uden for din lejer kan bruge det automatiserede installationsprogram til at installere din skabelonapp, skal skabelonappen være offentligt tilgængelig på [markedspladsen til Power BI-programmer](https://app.powerbi.com/getdata/services). Før du distribuerer skabelonappen ved hjælp af det automatiserede installationsprogram, du opretter, skal du sørge for at publicere det i [Partnercenter](/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
 
 ## <a name="main-steps-and-apis"></a>Primære trin og API'er
 
-Nedenstående afsnit indeholder en beskrivelse af de primære trin til at automatisere konfigurationen af installationen af en skabelonapp og de API'er, du har brug for. Selvom de fleste af trinnene udføres ved hjælp af [REST API'er til Power BI](https://docs.microsoft.com/rest/api/power-bi/), udføres de nedenfor beskrevne kodeeksempler ved hjælp af .NET SDK.
+Nedenstående afsnit indeholder en beskrivelse af de primære trin til at automatisere konfigurationen af installationen af en skabelonapp og de API'er, du har brug for. Selvom de fleste af trinnene udføres ved hjælp af [REST API'er til Power BI](/rest/api/power-bi/), udføres de nedenfor beskrevne kodeeksempler ved hjælp af .NET SDK.
 
 ## <a name="step-1-create-a-power-bi-client-object"></a>Trin 1: Opret et Power BI-klientobjekt
 
-Brug af REST API'er til Power BI kræver, at du henter et *adgangstoken* til din [tjenesteprincipal](../embedded/embed-service-principal.md) fra Azure AD. Du skal have et [Azure AD-adgangstoken](../embedded/get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) til dit Power BI-program, før du kan foretage kald til [REST API'erne til Power BI](https://docs.microsoft.com/rest/api/power-bi/).
-Hvis du skal oprette en Power BI-klient med dit adgangstoken, skal du oprette et Power BI-klientobjekt, som giver dig mulighed for at interagere med [REST API'erne til Power BI](https://docs.microsoft.com/rest/api/power-bi/). Du kan oprette dit Power BI-klientobjekt ved at omgive **AccessToken** med objektet **Microsoft.Rest.TokenCredentials**.
+Brug af REST API'er til Power BI kræver, at du henter et *adgangstoken* til din [tjenesteprincipal](../embedded/embed-service-principal.md) fra Azure AD. Du skal have et [Azure AD-adgangstoken](../embedded/get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) til dit Power BI-program, før du kan foretage kald til [REST API'erne til Power BI](/rest/api/power-bi/).
+Hvis du skal oprette en Power BI-klient med dit adgangstoken, skal du oprette et Power BI-klientobjekt, som giver dig mulighed for at interagere med [REST API'erne til Power BI](/rest/api/power-bi/). Du kan oprette dit Power BI-klientobjekt ved at omgive **AccessToken** med objektet **Microsoft.Rest.TokenCredentials**.
 
 ```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -91,7 +91,7 @@ using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 ## <a name="step-2-create-an-install-ticket"></a>Trin 2: Opret en installationsbillet
 
 Opret en installationsbillet, som bruges til at omdirigere brugerne til Power BI. Den API, der bruges til denne handling, er API'en **CreateInstallTicket**.
-* [CreateInstallTicket til skabelonprogrammer](https://docs.microsoft.com/rest/api/power-bi/templateapps/createinstallticket)
+* [CreateInstallTicket til skabelonprogrammer](/rest/api/power-bi/templateapps/createinstallticket)
 
 Der findes et eksempel på oprettelse af en installationsbillet til konfiguration og installation af skabelonapps i filen [InstallTemplateApp/InstallAppFunction.cs](https://github.com/microsoft/Template-apps-examples/blob/master/Developer%20Samples/Automated%20Install%20Azure%20Function/InstallTemplateAppSample/InstallTemplateApp/InstallAppFunction.cs) i [prøveprogrammet](https://github.com/microsoft/Template-apps-examples/tree/master/Developer%20Samples/Automated%20Install%20Azure%20Function/InstallTemplateAppSample).
 

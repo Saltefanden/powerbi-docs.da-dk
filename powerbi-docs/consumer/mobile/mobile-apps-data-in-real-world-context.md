@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
-ms.openlocfilehash: b6564cafe087000fd0ce4409fac2cbfc78d0e8fa
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 5710f70dafbb01aca68cfc03107a1f1ededaf015
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96413144"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565892"
 ---
 # <a name="get-data-from-the-real-world-with-the-power-bi-mobile-apps"></a>Hent data fra den virkelige verden med Power BI-mobilappsene
 Power BI-mobilapps kan forbinde den virkelige verden direkte med relaterede BI-oplysninger på en række forskellige måder. 
@@ -27,7 +27,7 @@ Mere om:
 
 * [Oprettelse af en QR-kode for et felt i Power BI](../../create-reports/service-create-qr-code-for-tile.md)
 * [Scanning af en Power BI-QR-kode fra din mobilenhed](mobile-apps-qr-code.md)
-* [Scanning af en QR-kode med Power BI til Mixed Reality-appen](mobile-mixed-reality-app.md#scan-a-report-qr-code-in-holographic-view).
+* [Scanning af en QR-kode med Power BI til Mixed Reality-appen](./mobile-hololens2-app.md#open-reports-with-qr-codes).
 
 ## <a name="qr-codes-for-reports"></a>QR-koder for rapporter
 Opret en QR-kode for en rapport.  Når dine kollegaer scanner koden med deres iPhones (snart også muligt med Android-telefoner), får de vist den rapport, du har knyttet til den pågældende QR-kode. 

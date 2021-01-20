@@ -9,12 +9,12 @@ ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 01/10/2020
 LocalizationGroup: Visualizations
-ms.openlocfilehash: fd4f984be74c0408eae5c476fa30994de55961a0
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 47a8ef221caadfabebc5da00793b7fff0b8687f8
+ms.sourcegitcommit: 396633fc5f7cff1f7d518f558b20043b2e05a513
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96386360"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98191860"
 ---
 # <a name="create-and-view-decomposition-tree-visuals-in-power-bi"></a>Opret og få vist fordelingstrævisualiseringer i Power BI
 
@@ -22,7 +22,7 @@ ms.locfileid: "96386360"
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
-Visualiseringen med fordelingstræet i Power BI giver dig mulighed for at visualisere data på tværs af flere dimensioner. Den samler automatisk data og giver dig mulighed for at foretage detailudledning i dine dimensioner i vilkårlig rækkefølge. Det er også en AI-visualisering (kunstig intelligens), så du kan bede den om at finde den næste dimension, så du kan foretage detailudledning på baggrund af bestemte kriterier. Det gør det til et værdifuldt værktøj til ad hoc-udforskning og udførelse af rodårsags analyser.
+Fordelingstrævisual'et i Power BI giver dig mulighed for at visualisere data på tværs af flere dimensioner. Den samler automatisk data og giver dig mulighed for at foretage detailudledning i dine dimensioner i vilkårlig rækkefølge. Det er også en AI-visualisering (kunstig intelligens), så du kan bede den om at finde den næste dimension, så du kan foretage detailudledning på baggrund af bestemte kriterier. Det gør det til et værdifuldt værktøj til ad hoc-udforskning og udførelse af rodårsags analyser.
 
 ![Fordelingstræ](media/power-bi-visualization-decomposition-tree/tree-full.png)
 
@@ -32,7 +32,7 @@ I dette selvstudium bruges der to eksempler:
 - Et salgsscenarie, der analyserer salg af videospil i efter mange faktorer, f. eks. spilgenre og udgiver.
 
 Du kan finde den pbix, der er anvendt i forsyningskædescenariet her: [Eksempel på forsyningskæde.pbix](
-https://github.com/microsoft/powerbi-desktop-samples/blob/master/Sample%20Reports/Supply%20Chain%20Sample.pbix).
+https://github.com/microsoft/powerbi-desktop-samples/blob/main/Sample%20Reports/Supply%20Chain%20Sample.pbix).
 
 > [!NOTE]
 > Når du deler din rapport med en Power BI-kollega, kræves det, at I begge har individuelle Power BI Pro-licenser, eller at rapporten er gemt i en Premium-kapacitet.    
@@ -62,7 +62,7 @@ Når du vælger en node fra det sidste niveau, filtreres dataene i tværgående 
 
 ![Animation, der viser valg af en node fra et tidligere niveau, og hvordan det ændrer visningen, så de underordnede noder vises.](media/power-bi-visualization-decomposition-tree/tree-interaction.gif)
 
-Ved interaktion med andre visualiseringer filtreres fordelingstræet i tværgående retning. Det kan betyde af nodernes rækkefølge på de enkelte niveauer ændres.
+Ved interaktion med andre visuals filtreres fordelingstræet i tværgående retning. Det kan betyde af nodernes rækkefølge på de enkelte niveauer ændres.
 I eksemplet nedenfor har vi filtreret træet i tværgående retning efter Ubisoft. Stien opdateres, og Xbox-salget flyttes fra første til anden placering og overhales af PlayStation. 
 
 Hvis vi derefter filtrerer træet i tværgående retning efter Nintendo, er Xbox Sales tomt, da der ikke er udviklet Nintendo-spil til Xbox. Xbox filtreres ud af visningen sammen med den efterfølgende sti.
@@ -89,7 +89,7 @@ Der vises en elpære ud for **Produkttype**, der angiver, at dette var en 'AI-op
 
 Peg på elpæren for at se et værktøjstip. I dette eksempel er værktøjstippet "restordre-% er højest, når Produkttype er Patientovervågning".
 
-Du kan konfigurere visualiseringen for at finde **relative** AI-opdelinger i modsætning til **absolutte** opdelinger. 
+Du kan konfigurere visual'et for at finde **relative** AI-opdelinger i modsætning til **absolutte** opdelinger. 
 
 I relativ tilstand søges der efter høje værdier, der skiller sig ud (sammenlignet med de øvrige data i kolonnen). Lad os tage et kig på et eksempel, der illustrerer dette:
 

@@ -10,12 +10,12 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 08/13/2020
 LocalizationGroup: Connect to data
-ms.openlocfilehash: eb572c17705f06b989f15323322c0da11b1d85ac
-ms.sourcegitcommit: b472236df99b490db30f0168bd7284ae6e6095fb
+ms.openlocfilehash: 4e9d5783dd0c7d956f438358a5c20ad334a67aca
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97600685"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565967"
 ---
 # <a name="automatic-page-refresh-in-power-bi"></a>Automatisk sideopdatering i Power BI
 
@@ -283,7 +283,7 @@ Hvis du bemærker, at din kapacitet er overbelastet med forespørgsler med lav p
 
 **Jeg kan ikke se APR-skifteren, når jeg har oprettet forbindelse til Analysis Services**
 
-* Sørg for, at din Analysis Services-model er i [DirectQuery-tilstand](https://docs.microsoft.com/analysis-services/tabular-models/directquery-mode-ssas-tabular).
+* Sørg for, at din Analysis Services-model er i [DirectQuery-tilstand](/analysis-services/tabular-models/directquery-mode-ssas-tabular).
 
 
 ## <a name="next-steps"></a>Næste trin
@@ -297,4 +297,4 @@ Du kan finde flere oplysninger i disse artikler:
 * [Datakilder i Power BI Desktop](../connect-data/desktop-data-sources.md)
 * [Udform og kombiner data i Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
 * [Opret forbindelse til Excel-projektmapper i Power BI Desktop](../connect-data/desktop-connect-excel.md)   
-* [Angiv data direkte i Power BI Desktop](../connect-data/desktop-enter-data-directly-into-desktop.md)   
+* [Angiv data direkte i Power BI Desktop](../connect-data/desktop-enter-data-directly-into-desktop.md)

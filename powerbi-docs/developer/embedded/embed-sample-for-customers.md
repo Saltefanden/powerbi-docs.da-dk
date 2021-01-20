@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 12/22/2020
-ms.openlocfilehash: de954c5950f550c3ed2f3c340714851f5233d3e8
-ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
+ms.openlocfilehash: a0cfeaece56594c52a8d747350c5f9bfb0886cad
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97969759"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565482"
 ---
 # <a name="tutorial-embed-power-bi-content-using-a-sample-embed-for-your-customers-application"></a>Selvstudium: Integrer Power BI-indhold ved hjælp af et eksempelprogram til *integrering for dine kunder*
 
@@ -185,7 +185,7 @@ Gør følgende for at oprette et arbejdsområde:
 
 ## <a name="step-4---create-and-publish-a-power-bi-report"></a>Trin 4 – Opret og publicer en Power BI-rapport
 
-Det næste trin er at oprette en rapport og uploade den til dit arbejdsområde. Du kan [oprette din egen rapport](/power-bi/fundamentals/desktop-getting-started#build-reports) ved hjælp af Power BI Desktop og derefter [publicere](/powerbi-docs/fundamentals/desktop-getting-started#share-your-work) den til dit arbejdsområde. Eller du kan uploade en eksempelrapport til dit arbejdsområde.
+Det næste trin er at oprette en rapport og uploade den til dit arbejdsområde. Du kan [oprette din egen rapport](../../fundamentals/desktop-getting-started.md#build-reports) ved hjælp af Power BI Desktop og derefter [publicere](/powerbi-docs/fundamentals/desktop-getting-started#share-your-work) den til dit arbejdsområde. Eller du kan uploade en eksempelrapport til dit arbejdsområde.
 
 >[!Tip]
 >Hvis du allerede har et arbejdsområde med en rapport, kan du springe dette trin over.

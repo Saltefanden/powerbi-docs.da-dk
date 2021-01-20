@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 06/25/2020
-ms.openlocfilehash: d4ef44cb0e03c5de7807f0e95cefa532353f4685
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: b98e761a9ac2578a1af43bdb2c536f73fc3cc5af
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97885171"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565707"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-organization"></a>Selvstudium: Integrer sideinddelte Power BI-rapporter i et program til din organisation
 
@@ -209,7 +209,7 @@ Hvis du vil integrere med en gæst, skal du bruge URL-adressen – *`https://log
 I dette selvstudium har du fået at vide, hvordan du integrerer sideinddelte Power BI-rapporter i et program ved hjælp af din Power BI-organisationskonto. 
 
 > [!div class="nextstepaction"]
-> [Integrer fra apps](embed-from-apps.md)
+> [Integrer fra apps](./index.yml)
 
 > [!div class="nextstepaction"]
 >[Integrer Power BI-indhold til dine kunder](embed-sample-for-customers.md)
