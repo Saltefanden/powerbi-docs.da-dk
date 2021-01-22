@@ -8,14 +8,14 @@ ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.reviewer: ''
 ms.cunstom: ''
-ms.date: 09/16/2019
+ms.date: 01/12/2021
 LocalizationGroup: Get started
-ms.openlocfilehash: 4b2ce1624bcbbc352ab4f4eaaeb97927c09c2d78
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: b22ecdd806371455149f277b9114b1eaf315ce6d
+ms.sourcegitcommit: ab28cf07b483cb4b01a42fa879b788932bba919d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96411649"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98227048"
 ---
 # <a name="get-started-with-third-party-apps"></a>Kom i gang med tredjepartsapps
 
@@ -27,18 +27,18 @@ Her er de adgangstyper, et program kan anmode om.
 
 * **Vis alle dashboards**
   
-  * Denne tilladelse giver et program mulighed for at få vist alle dashboards, du har adgang til. Det omfatter dashboards, som du ejer, som du har fået fra indholdspakker, og som er blevet delt med dig og findes i grupper, du er medlem af. Programmet kan ikke foretage nogen ændringer i dashboardet. Blandt andet kan denne tilladelse bruges af et program til at integrere indholdet af dit dashboard i dets grænseflader.
+  * Denne tilladelse giver et program mulighed for at få vist alle dashboards, du har adgang til. Det omfatter dashboards, som du ejer, som du har fået fra apps, og som er blevet delt med dig og findes i grupper, du er medlem af. Programmet kan ikke foretage nogen ændringer i dashboardet. Blandt andet kan denne tilladelse bruges af et program til at integrere indholdet af dit dashboard i dets grænseflader.
 
 * **Vis alle rapporter**
   
-  * Denne tilladelse giver et program mulighed for at få vist alle rapporter, du har adgang til. Det omfatter rapporter, som du ejer, som du har fået fra indholdspakker, og som findes i grupper, du er medlem af. En del af at få vist rapporten betyder, at programmet også kan få vist dataene i den. Programmet kan ikke foretage nogen ændringer i dashboardet. Blandt andet kan denne tilladelse bruges af et program til at integrere indholdet af din rapport i dets grænseflader.
+  * Denne tilladelse giver et program mulighed for at få vist alle rapporter, du har adgang til. Det omfatter rapporter, som du ejer, som du har fået fra apps, og som findes i grupper, du er medlem af. En del af at få vist rapporten betyder, at programmet også kan få vist dataene i den. Programmet kan ikke foretage nogen ændringer i dashboardet. Blandt andet kan denne tilladelse bruges af et program til at integrere indholdet af din rapport i dets grænseflader.
 
 * **Vis alle datasæt**
   
-  * Denne tilladelse giver et program mulighed for at opstille alle datasæt, du har adgang til. Det omfatter datasæt, som du ejer, som du har fået fra indholdspakker, og som findes i grupper, du er medlem af. Et program kan se navnene på alle dine datasæt samt deres struktur, herunder tabel- og kolonnenavne. Denne tilladelse giver rettigheder til at læse dataene i et datasæt. Tilladelsen giver ikke programmet ret til at tilføje eller foretage ændringer i et datasæt.
+  * Denne tilladelse giver et program mulighed for at opstille alle datasæt, du har adgang til. Det omfatter datasæt, som du ejer, som du har fået fra apps, og som findes i grupper, du er medlem af. Et program kan se navnene på alle dine datasæt samt deres struktur, herunder tabel- og kolonnenavne. Denne tilladelse giver rettigheder til at læse dataene i et datasæt. Tilladelsen giver ikke programmet ret til at tilføje eller foretage ændringer i et datasæt.
 * **Læs og skriv alle datasæt**
   
-  * Denne tilladelse giver et program mulighed for at opstille alle datasæt, du har adgang til. Det omfatter datasæt, som du ejer, som du har fået fra indholdspakker, og som findes i grupper, du er medlem af. Et program kan se navnene på alle dine datasæt samt deres struktur, herunder tabel- og kolonnenavne. Denne tilladelse giver rettigheder til at læse og skrive dataene i et datasæt. Programmet kan også oprette nye datasæt eller foretage ændringer i eksisterende datasæt. Det bruges ofte af et program til at sende data direkte til Power BI.
+  * Denne tilladelse giver et program mulighed for at opstille alle datasæt, du har adgang til. Det omfatter datasæt, som du ejer, som du har fået fra apps, og som findes i grupper, du er medlem af. Et program kan se navnene på alle dine datasæt samt deres struktur, herunder tabel- og kolonnenavne. Denne tilladelse giver rettigheder til at læse og skrive dataene i et datasæt. Programmet kan også oprette nye datasæt eller foretage ændringer i eksisterende datasæt. Det bruges ofte af et program til at sende data direkte til Power BI.
 
 * **Få vist brugerens grupper**
   

@@ -7,14 +7,14 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 10/29/2020
+ms.date: 01/12/2021
 LocalizationGroup: Share your work
-ms.openlocfilehash: 024696aa69fc1c6e95b103a679b11de4fe468169
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 0ff0d072bd36c7e49a7ce6d450b7a35410caa94f
+ms.sourcegitcommit: ab28cf07b483cb4b01a42fa879b788932bba919d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96411948"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98227301"
 ---
 # <a name="create-classic-workspaces-in-power-bi"></a>Opret klassiske arbejdsområder i Power BI
 
@@ -68,7 +68,7 @@ Når du har oprettet et arbejdsområde, skal du føje indhold til det. Det foreg
 
 Apps leveres til alle de tredjepartstjenester, som Power BI understøtter, hvilket gør det nemt for dig at hente data fra de tjenester, du bruger, f.eks. Microsoft Dynamics CRM, Salesforce eller Google Analytics. Du kan publicere organisationsapps for at give dine brugere de data, de har brug for.
 
-I de aktuelle arbejdsområder kan du også oprette forbindelse via organisationsindholdspakker og indholdspakker fra tredjepart, f.eks. Microsoft Dynamics CRM, Salesforce eller Google Analytics. Du kan overveje at overføre organisationsindholdspakker til apps.
+I klassiske arbejdsområder kan du også oprette forbindelse via indholdspakker til organisationer og tredjepartsapps, f.eks. Microsoft Dynamics CRM, Salesforce eller Google Analytics. Indholdspakker til organisationer udgår. Nu er det et godt tidspunkt at opgradere dine indholdspakker til apps, hvis du ikke er startet endnu. Se afsnittet med oversigten over opgradering af arbejdsområder i dette blogindlæg [Meddelelse om at Power BI-administratorer kan opgradere klassiske arbejdsområder](https://powerbi.microsoft.com/blog/announcing-power-bi-admins-can-upgrade-classic-workspaces-and-roadmap-update/) for at se tidslinjen.
 
 ## <a name="distribute-an-app"></a>Distribuer en app
 
@@ -84,12 +84,11 @@ Brugere ser opdateret appindhold automatisk, efter du har publiceret en opdateri
 ## <a name="power-bi-classic-apps-faq"></a>Ofte stillede spørgsmål om klassiske apps i Power BI
 
 ### <a name="how-are-apps-different-from-organizational-content-packs"></a>Hvordan adskiller apps sig fra organisationsindholdspakker?
-Apps er en udviklet form af organisationsindholdspakker. Hvis du allerede har organisationsindholdspakker, vil de fortsætte med at fungere side om side med apps. Der er et par større forskelle mellem apps og indholdspakker. 
+Apps er en udviklet form af indholdspakker til organisationer, som udgår. Nu er det et godt tidspunkt at opgradere dine indholdspakker til apps, hvis du ikke er startet endnu. Se afsnittet med oversigten over opgradering af arbejdsområder i dette blogindlæg [Meddelelse om at Power BI-administratorer kan opgradere klassiske arbejdsområder](https://powerbi.microsoft.com/blog/announcing-power-bi-admins-can-upgrade-classic-workspaces-and-roadmap-update/) for at se tidslinjen. 
 
 * Når forretningsbrugere installerer en indholdspakke, mister den sin grupperede identitet: Den er bare en liste over dashboards og rapporter blandet med andre dashboards og rapporter. Apps bevarer på den anden side deres gruppering og identitet, også efter installationen. Denne gruppering gør det nemt for forretningsbrugere at fortsætte med at navigere til dem hen over tid.
 * Du kan oprette flere indholdspakker fra et vilkårligt arbejdsområde, men en app har en en til en-relation til dens arbejdsområde. 
-* Vi vil over tid fraråde organisationsindholdspakker, og vi anbefaler derfor, at du begynder at oprette apps fra nu af.  
-* Med den nye arbejdsområdeoplevelse tager vi det første skridt mod udfasning af organisationsindholdspakker. Du kan ikke forbruge eller oprette dem i de nye arbejdsområder.
+* Du kan ikke forbruge eller oprette indholdspakker i de nye arbejdsområder.
 
 Se [Forskelle på det nye og klassiske arbejdsområde](service-new-workspaces.md#new-and-classic-workspace-differences) for at sammenligne de to. 
 

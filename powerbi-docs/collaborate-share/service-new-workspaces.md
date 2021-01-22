@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 10/21/2020
+ms.date: 01/12/2021
 ms.custom: contperf-fy20q4
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5aabc825ecd22ed49d05428148133be17156645d
-ms.sourcegitcommit: 7bf09116163afaae312eb2b232eb7967baee2c92
+ms.openlocfilehash: 5aa4fb617bc4a6d362bcf17a5e6b4d6d7f355086
+ms.sourcegitcommit: ab28cf07b483cb4b01a42fa879b788932bba919d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97621481"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98227255"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organiser arbejde i nye arbejdsområder i Power BI
 
@@ -37,7 +37,7 @@ Vi har givet nogle af funktionerne i de nye arbejdsområder et nyt design. Her e
 - **Kontaktliste**: I de nye arbejdsområder kan du angive, hvem der modtager besked om aktiviteten i arbejdsområdet.
 - **Opret skabelonapps**: Du kan kun oprette *skabelonapps* i de nye arbejdsområder. Skabelonapps er apps, du kan distribuere til kunder uden for din organisation. Disse kunder kan derefter oprette forbindelse til deres egne data med din skabelonapp. Få mere at vide om [skabelonapps](../connect-data/service-template-apps-overview.md).
 - **Del datasæt**: Hvis du vil dele et datasæt uden for et bestemt arbejdsområde, skal du gemme den rapport, der indeholder datasættet, i et af de nye arbejdsområder. Du kan ikke dele datasæt fra klassiske arbejdsområder. Læs mere om [delte datasæt](../connect-data/service-datasets-across-workspaces.md).
-- **Organisationsindholdspakker**: Du opretter og bruger organisationsindholdspakker i klassiske arbejdsområder. Du kan ikke oprette eller forbruge dem i de nye arbejdsområder. Apps- og skabelonapps erstatter organisationsindholdspakker i de nye arbejdsområder.
+- **Organisationsindholdspakker**: Du opretter og bruger organisationsindholdspakker i klassiske arbejdsområder. Du kan ikke oprette eller forbruge dem i de nye arbejdsområder. Apps- og skabelonapps erstatter organisationsindholdspakker i de nye arbejdsområder. Indholdspakker til organisationer udgår. Det er nu et godt tidspunkt at opgradere dine indholdspakker til programmer. Se afsnittet med oversigten over opgradering af arbejdsområder i dette blogindlæg [Meddelelse om at Power BI-administratorer kan opgradere klassiske arbejdsområder](https://powerbi.microsoft.com/blog/announcing-power-bi-admins-can-upgrade-classic-workspaces-and-roadmap-update/) for at se tidslinjen.
 
 I denne artikel forklares disse funktioner mere detaljeret.
 
@@ -112,7 +112,7 @@ Følgende aktiviteter overvåges af Power BI for arbejdsområder i den nye arbej
 | Power BI-mappe er oprettet | CreateFolder |
 | Power BI-mappe er slettet | DeleteFolder |
 | Power BI-mappe er opdateret | UpdateFolder |
-| Adgang til Power BI-mappe er opdateret| UpdateFolderAccess |
+| Opdaterede adgang til Power BI-mappe| UpdateFolderAccess |
 
 Læs mere om [overvågning i Power BI](../admin/service-admin-auditing.md).
 

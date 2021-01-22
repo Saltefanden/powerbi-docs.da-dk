@@ -10,12 +10,12 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 04/06/2020
 LocalizationGroup: Create reports
-ms.openlocfilehash: 83ba0234ef4f4e350f413f3c934e2f09f0a9a3f2
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 59e88818adee9aaf893d9f32fe96386c3f7ac47e
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96412776"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565788"
 ---
 # <a name="use-the-numeric-range-slicer-in-power-bi"></a>Brug udsnitsværktøjet til numeriske områder i Power BI
 
@@ -84,3 +84,4 @@ Følgende begrænsninger og overvejelser gælder for udsnitsværktøjet til nume
 * Udsnitsværktøjet til numerisk område filtrerer alle underliggende rækker i dataene, men ingen samlede værdier. Lad os f.eks. sige, at du bruger feltet *Salgsbeløb*. Udsnitsværktøjet filtrerer derefter hver transaktion baseret på salgsbeløbet og ikke summen af salgsbeløbet for hvert enkelt datapunkt i en visualisering.
 * Det fungerer i øjeblikket ikke sammen med målinger.
 * Du kan skrive et vilkårligt tal i et numerisk udsnitsværktøj, selvom det er uden for området af værdier i den underliggende kolonne. Denne indstilling giver dig mulighed for at konfigurere filtre, hvis du ved, at dataene kan blive ændret i fremtiden.
+* Udsnittet til datoområdet muliggør en hvilken som helst datoværdi, også selvom den ikke findes i den underliggende datokolonne.

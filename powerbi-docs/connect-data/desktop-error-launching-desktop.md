@@ -9,12 +9,12 @@ ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
 ms.date: 11/14/2020
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 62b3c9bb10cb47df0d21eb05e381c5c4784b3106
-ms.sourcegitcommit: b472236df99b490db30f0168bd7284ae6e6095fb
+ms.openlocfilehash: c41f8f9b23ef57d5dd6fd4b851918b7ffa5904a0
+ms.sourcegitcommit: ab28cf07b483cb4b01a42fa879b788932bba919d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97600225"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98226933"
 ---
 # <a name="troubleshoot-opening-power-bi-desktop"></a>Fejlfind åbning af Power BI Desktop
 
@@ -58,7 +58,7 @@ Når du forsøger at oprette forbindelse til en SQL Server-database, kan du stø
 
 Du kan ofte løse problemet, hvis du åbner Power BI Desktop som administrator, før du opretter SQL Server-forbindelsen.
 
-Når du har åbnet Power BI Desktop som administrator og opretter forbindelse, registreres de påkrævede DLL'er korrekt. Herefter er det ikke nødvendigt at åbne Power BI Desktop som administrator.
+Når du har åbnet Power BI Desktop som administrator og opretter forbindelse, registreres de påkrævede DLL'er korrekt. Herefter er det ikke nødvendigt at åbne Power BI Desktop som administrator. I de tilfælde, hvor du opretter forbindelse til SQL Server med alternative legitimationsoplysninger, skal du åbne Power BI Desktop som administrator, hver gang du opretter forbindelse.
 
 ## <a name="get-help-with-other-launch-issues"></a>Få hjælp til andre startproblemer
 

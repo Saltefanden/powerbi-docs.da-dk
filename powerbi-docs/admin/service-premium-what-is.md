@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 01/06/2021
+ms.date: 01/18/2021
 ms.custom: licensing support
 LocalizationGroup: Premium
-ms.openlocfilehash: c1e5cad6ab1da796d2f10a64e867d5848e86aea4
-ms.sourcegitcommit: b4c457bfb4676381dc4a0d04d965e8dab0bc230e
+ms.openlocfilehash: c89cf7b00d5167ffb68a491a9cfdcea21378dfd5
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98155612"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565151"
 ---
 # <a name="what-is-power-bi-premium"></a>Hvad er Power BI Premium?
 
@@ -87,6 +87,15 @@ Følgende kendte begrænsninger gælder i øjeblikket for Premium Gen2:
     |SQL Server Management Studio (SSMS)|18.8|8\. december 2020|
     |SQL Server Data Tools (SSDT)|2.9.15|Generel tilgængelighed – 30. november 2020|
     | AS PowerShell| Større end 21.1.18229|26. november 2020|
+
+5.  Videreoverdragelse af et arbejdsområde, der indeholder dataflow, fra én Premium Gen2-kapacitet til en anden Premium-kapacitet i et andet område understøttes ikke. Flytning af modeller med et stort lagerformat fra én Premium-kapacitet til en anden understøttes heller ikke. Hvis du allerede er migreret til en kapacitet i et andet område, skal du følge et af følgende trin for at gendanne funktionaliteten:
+ 
+    1.  Opret et nyt arbejdsområde, og kopiér dataflowene
+    2.  Migrer arbejdsområdet tilbage til kapaciteten i det tidligere område
+    3.  Skift tilbage til Premium Gen1
+
+Denne begrænsning kan fjernes, når Premium Gen2 bliver offentlig tilgængelig.
+
 
 ## <a name="subscriptions-and-licensing"></a>Abonnementer og licenser
 
@@ -299,7 +308,7 @@ Sideinddelte rapporter, der understøttes på P1-P3- og A4-A6-SKU'er, er baseret
 I Power BI Premium er sideinddelte rapporter en arbejdsbelastning, der skal aktiveres for en kapacitet ved hjælp af administrationsportalen. Kapacitetsadministratorer kan aktivere og derefter angive mængden af hukommelse som en procentdel af kapacitetens overordnede hukommelsesressourcer. I modsætning til andre typer arbejdsbelastninger kører Power BI Premium sideinddelte rapporter i et afgrænset område i kapaciteten. Den maksimale hukommelse, der angives for dette område, bruges, uanset om arbejdsbelastningen er aktiv eller ej. Standarden er 20 %.
 
 > [!NOTE]
-> I **Premium Gen2 (prøveversion)** er der ingen hukommelsesadministration for sideinddelte rapporter. Med Premium Gen2 understøttes sideinddelte rapporter på EM1-EM3- og A1-A3-SKU'erne.
+> I **Premium Gen2 (prøveversion)** er der ingen hukommelsesadministration for sideinddelte rapporter. Med Premium Gen2 understøttes Sideinddelte rapporter på SKU'er af typen EM1-EM3.
 
 ### <a name="paginated-reports-and-premium-gen2"></a>Sideinddelte rapporter og Premium Gen2
 
@@ -333,7 +342,7 @@ Du kan få mere at vide under [Power BI-licenser](service-admin-licensing-organi
 
 ## <a name="analysis-services-in-power-bi-premium"></a>Analysis Services i Power BI Premium
 
-Under overfladen styres Power BI Premium-arbejdsområder og -datasæt af det gennemtestede Microsoft-program **Analysis Services Vertical**. Analysis Services understøtter programmerings- og klientprogrammer og -værktøjer via klientbiblioteker og API'er, der understøtter XMLA-protokollen med åbne standarder. Arbejdsbelastninger for datasæt i en Power BI Premium-kapacitet understøtter som standard *skrivebeskyttede* forbindelser fra klientprogrammer og værktøjer fra Microsoft og tredjeparter via **XMLA-slutpunkter**. Kapacitetsadministratorer kan også vælge at deaktivere eller tillade *læse-/skrive* handlinger via slutpunktet.
+Under overfladen styres Power BI Premium-arbejdsområder og -datasæt af det gennemtestede Microsoft-program **Analysis Services Vertipaq**. Analysis Services understøtter programmerings- og klientprogrammer og -værktøjer via klientbiblioteker og API'er, der understøtter XMLA-protokollen med åbne standarder. Arbejdsbelastninger for datasæt i en Power BI Premium-kapacitet understøtter som standard *skrivebeskyttede* forbindelser fra klientprogrammer og værktøjer fra Microsoft og tredjeparter via **XMLA-slutpunkter**. Kapacitetsadministratorer kan også vælge at deaktivere eller tillade *læse-/skrive* handlinger via slutpunktet.
 
 Med skrivebeskyttet adgang kan Microsoft-værktøjer, f.eks.SSMS (SQL Server Management Studio) og SQL Server Profiler, og tredjepartsapps, f.eks. DAX Studio og programmer til datavisualisering, kan oprette forbindelse til og forespørge om Premium-datasæt ved hjælp af XMLA, DAX, MDX, DMV'er og sporingshændelser. Med læse-/skriveadgang kan værktøjer til modellering af virksomhedsdata, f. eks. Visual Studio med Analysis Services-projektudvidelse eller Tabular Editor med åben kildekode, udrulle tabellariske modeller som et datasæt til et Premium-arbejdsområde. Og med værktøjer som SSMS kan administratorer bruge TMSL (Tabular Model Scripting Language) til scenarier med script af metadataændringer og avancerede dataopdateringer. 
 

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 11/11/2020
+ms.date: 1/13/2021
 LocalizationGroup: Premium
-ms.openlocfilehash: 005f6c72dd67282e2f15ceb3c91fb74d7e723712
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: e5edcde0f367c573c86aaac1b7f14397614eeedf
+ms.sourcegitcommit: 396633fc5f7cff1f7d518f558b20043b2e05a513
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96412247"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98191635"
 ---
 # <a name="power-bi-premium-per-user-faq-preview"></a>Ofte stillede spørgsmål om Power BI Premium pr. bruger (prøveversion)
 
@@ -46,15 +46,21 @@ I denne artikel grupperes spørgsmål og svar i følgende kategorier:
 4.  **Hvordan får jeg en prøveversion?**
 
     Der er en prøveversionsoplevelse, der er tilgængelig via produktet, og en prøveversionsoplevelse, der er tilgængelig via Microsoft 365. Forudsat, at virksomheden ikke har begrænset Premium pr. bruger, kan enhver bruger få adgang til prøveversionsoplevelsen i produktet, ved at slå Premium pr. bruger til for et arbejdsområde. Prøveversionsoplevelser via Microsoft 365 kan aktiveres via portalen, fuldstændig ligesom Power BI Pro-prøveversioner initieres i dag.  
+    
+5.  **Min indledende prøveversion er udløbet, og vi er stadig i prøveperioden.  Hvordan forlænger/fornyr jeg min prøveversion af Premium pr. bruger i prøveperioden?**
 
-5.  **Hvilke funktioner er tilgængelige i Premium pr. bruger?**
+    Kunder, der bruger prøveversionen i produktet, kan starte en ny prøveversion, når den oprindelige prøveversion udløber, ved at klikke på profilikonet i øverste højre hjørne af portalen.  Der vises en mulighed for at tilmelde sig prøveversionen igen.  Det starter endnu en 60-dages prøveversion.  Dette vil fortsat være en mulighed i prøveperioden.  
+    
+    For kunder, der bruger den prøveversion, der tilbydes via Microsoft 365, kan lejeradministratoren forlænge den oprindelige 30-dages prøveversion i yderligere 30 dage. Dette er den maksimale tidsperiode, som en prøveversion kan forlænges.
+
+6.  **Hvilke funktioner er tilgængelige i Premium pr. bruger?**
 
     Funktionssammenligningen ses nedenfor:    
 
     ![Sammenligning af Premium pr. bruger-funktioner](media/service-premium-per-user-faq/premium-per-user-faq-02.png)
 
 
-6.  **Min organisation har allerede Power BI Premium. Skal jeg nu have Premium pr. bruger-licens for at udgive indhold til min kapacitet?**
+7.  **Min organisation har allerede Power BI Premium. Skal jeg nu have Premium pr. bruger-licens for at udgive indhold til min kapacitet?**
     
     Din organisation kan vælge at supplere deres Premium-kapacitet med Premium pr. bruger-licenser, men Premium pr. bruger er ikke påkrævet for at udgive indhold til eksisterende kapaciteter.  
 
@@ -89,6 +95,10 @@ I denne artikel grupperes spørgsmål og svar i følgende kategorier:
 7.  **Er kapacitets-API'erne tilgængelige for Premium pr. bruger?**
 
     Der er et begrænset sæt af API'er, der tillader flytning af arbejdsområder, men du kan f.eks. ikke slå arbejdsbelastninger og lignende aktiviteter fra.  
+    
+7.  **Understøttes tjenesteprincipaler med Premium pr. bruger-arbejdsområder?**
+
+    Nej, vi understøtter i øjeblikket ikke tjenesteprincipaler i Premium pr. bruger-arbejdsområder.  
 
 
 ## <a name="end-user-experience-questions"></a>Spørgsmål vedrørende slutbrugeroplevelsen
@@ -113,9 +123,10 @@ I denne artikel grupperes spørgsmål og svar i følgende kategorier:
 
     Premium pr. bruger fungerer på samme måde, som integrerede use cases fungerer, når du bruger en Pro-licens. Du kan integrere indholdet, og hver enkelt bruger skal have en Premium pr. bruger-licens for at få det vist.
 
-5.  **Hvad sker der med mit Premium pr. bruger-arbejdsområde, hvis min prøveperiode udløber?**
+5.  **Hvad sker der med mit Premium pr. bruger-arbejdsområde i slutningen af prøveperioden, hvis jeg vælger ikke at købe Premium pr. bruger-licenser?**
 
-    Brugerne har stadig adgang til arbejdsområdet, men indhold, der kræver den pågældende licenstype, er dog ikke tilgængeligt. Du skal enten flytte arbejdsområdet til en Premium-kapacitet eller blot slå kravet fra. 
+    Du og brugerne har stadig adgang til arbejdsområdet, men indhold, der kræver den pågældende licenstype, er dog ikke tilgængeligt. Du skal enten flytte arbejdsområdet til en Premium-kapacitet eller blot slå kravet fra. 
+
 6.  **Hvor meget samlet lagerplads får jeg med Premium pr. bruger?**
 
     Hele lejeren har de samme 100 TB, som en Premium-kapacitet har, hvad angår lager.

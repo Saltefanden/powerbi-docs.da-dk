@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 12/15/2020
+ms.date: 01/15/2021
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 6ce7afedb43aa7abaffb3ad5afdb00b4749addb5
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: 573180ef4087af7654480da8ca581e1881729243
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97885388"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565292"
 ---
 # <a name="monitor-usage-metrics-in-the-new-workspace-experience-preview"></a>Overvåg forbrugsdata i den nye arbejdsområdeoplevelse (prøveversion)
 
@@ -297,6 +297,7 @@ Foruden ovenstående forskelle mellem tidligere og forbedrede rapporter med forb
 - Initialiseringen af datasættet til rapporten med forbrugsdata mislykkes muligvis, hvis der opstår timeout under opdateringen. Se afsnittet Fejlfinding herunder for at løse dette problem.
 - Deling er deaktiveret for rapporten med forbrugsdata. Hvis du vil give personer læseadgang til rapporten, skal du først give dem adgang til arbejdsområdet.
 - I nogle scenarier kan du opleve, at der mangler data for ydeevne. Det kan ske, hvis en bruger åbner en rapport og interagerer med den, før den er helt indlæst, eller hvis der opstod en fejl under indlæsningen af rapporten. 
+- Hvis din organisation bruger [Private Links](../admin/service-security-private-links.md), indeholde de moderne rapporter om forbrugsdata delvise data (kun Rapportvisninger). En aktuel begrænsning for overførsel af klientoplysninger via private links forhindrer os i at registrere Visninger af rapportsider og data om ydeevne via private links. 
 
 ## <a name="frequently-asked-questions"></a>Ofte stillede spørgsmål
 

@@ -8,14 +8,14 @@ ms.reviewer: cmfinlan
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/03/2020
+ms.date: 01/11/2021
 LocalizationGroup: Share your work
-ms.openlocfilehash: 2c88cca174f5deeededcaef3f242d6ea00a83379
-ms.sourcegitcommit: 513c4b884a58e1da2680579339c24c46091bbfb2
+ms.openlocfilehash: 932149fc117568cffd94e6d551878f706a58ec65
+ms.sourcegitcommit: 396633fc5f7cff1f7d518f558b20043b2e05a513
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96613687"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98191952"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Eksportér rapporter fra Power BI til PDF
 
@@ -58,6 +58,7 @@ Der er nogle få overvejelser og begrænsninger, du skal huske på, når du arbe
 * Power BI-visuals, der er blevet certificeret, understøttes. I [Få en Power BI-visual certificeret](../developer/visuals/power-bi-custom-visuals-certified.md) kan du finde flere oplysninger om certificerede Power BI-visuals, herunder hvordan du får en Power BI-visual certificeret. Power BI-visuals, der ikke er blevet certificeret, understøttes ikke. De vises med en fejlmeddelelse i PDF'en.
 * ESRI-visualiseringen understøttes ikke.
 * Rapporter med mere end 50 rapportsider kan ikke eksporteres i øjeblikket.
+* Rapporter, der er større end 500 MB, kan ikke eksporteres i øjeblikket. 
 * Processen med at eksportere rapporten til PDF kan tage nogle minutter at fuldføre, så vær tålmodig. Faktorer, som kan påvirke den tid, det kræver, omfatter rapportens struktur og den aktuelle belastning på Power BI-tjenesten.
 * Hvis menupunktet **Eksportér til PDF** ikke er tilgængeligt i Power BI-tjenesten, er det sandsynligvis fordi, din Power BI-administrator har deaktiveret funktionen. Kontakt administratoren for at få detaljer.
 * Baggrundsbilleder beskæres med diagrammets omgivende område. Det anbefales, at du fjerner baggrundsbilleder, før du eksporterer til PDF.

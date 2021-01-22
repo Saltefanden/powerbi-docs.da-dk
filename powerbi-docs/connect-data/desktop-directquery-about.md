@@ -9,12 +9,12 @@ ms.subservice: pbi-data-sources
 ms.topic: conceptual
 ms.date: 12/14/2020
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 84d60fce95172b419663ed7889d69e22ae1947cd
-ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
+ms.openlocfilehash: 340f29394d0c6c83659d77f2545a4f76eef99a9a
+ms.sourcegitcommit: 96080432af4c8e3fe46c23274478ccffa0970efb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97491983"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98597659"
 ---
 # <a name="about-using-directquery-in-power-bi"></a>Om brug af DirectQuery i Power BI
 
@@ -98,7 +98,7 @@ I følgende tabel beskrives scenarier, hvor det kan være nyttigt at oprette for
 
 | Begrænsning | Beskrivelse |
 | --- | --- |
-| Data ændres ofte, og derfor er der behov for rapportering næsten i realtid |Modeller med importerede data kan opdateres højst én gang pr. time (oftere med Power BI Pro- eller Power BI Premium-abonnementer). Hvis dataene ændres hele tiden, og det er nødvendigt for rapporter at få vist de nyeste data, kan det være, at brugen af import med planlagt opdatering ikke opfylder disse behov. Du kan streame data direkte til Power BI, selvom der i disse tilfælde er en begrænsning på de understøttede datamængder. <br/> <br/> I modsætning hertil vil brugen af DirectQuery betyde, at der ved åbning eller opdatering af en rapport eller et dashboard altid vises de seneste data i kilden. Derudover kan dashboardfelterne opdateres oftere, helt op til hvert kvarter. |
+| Data ændres ofte, og derfor er der behov for rapportering næsten i realtid |Modeller med importerede data kan opdateres højst én gang pr. time (oftere med Power BI Pro- eller Power BI Premium-abonnementer). Hvis dataene ændres hele tiden, og det er nødvendigt, at rapporterne viser de nyeste data, kan det være, at brugen af import med planlagt opdatering ikke opfylder disse behov. Du kan streame data direkte til Power BI, selvom der i disse tilfælde er en begrænsning på de understøttede datamængder. <br/> <br/> I modsætning hertil vil brugen af DirectQuery betyde, at der ved åbning eller opdatering af en rapport eller et dashboard altid vises de seneste data i kilden. Derudover kan dashboardfelterne opdateres oftere, helt op til hvert kvarter. |
 | Datamængden er meget stor |Hvis datamængden er meget stort, vil det ikke være praktisk at importere den overhovedet. I modsætning hertil kræver DirectQuery ingen stor dataoverførsel, da der sendes en forespørgsel til dem der, hvor de ligger. <br/> <br/> Dog kan store datamængder også medføre, at ydeevnen af forespørgsler i forhold til den underliggende datakilde er for langsom som beskrevet i [Konsekvenser ved brugen af DirectQuery](#implications-of-using-directquery). Du behøver ikke altid at importere alle de detaljerede data. Dataene kan i stedet samles på forhånd under importen. *Forespørgselseditor* gør det nemt at samle data på forhånd under importen. I helt særlige tilfælde vil det være muligt at importere præcis de samlede data, der er brug for, for hver enkelt visualisering. Mens DirectQuery er den nemmeste måde at få adgang til store datamængder på, kan import af samlede data være en løsning, hvis den underliggende kilde er for langsom. |
 | Sikkerhedsregler defineres i den underliggende kilde |Når dataene er importeret, opretter Power BI forbindelse til datakilden vha. legitimationsoplysningerne for den aktuelle bruger fra Power BI Desktop eller vha. de legitimationsoplysninger, der er defineret som en del af konfiguration af den planlagte opdatering fra Power BI-tjenesten. Det er vigtigt kun at dele en rapport med brugere, der har tilladelse til at se de samme data, når sådan en rapport publiceres og deles i *importtilstand*. Ellers skal der defineres sikkerhed på rækkeniveau som en del af datasættet. <br/> <br/> Med DirectQuery kan legitimationsoplysningerne for en person, der får vist rapporten, sendes via den underliggende kilde, og sikkerhedsregler kan anvendes der. Enkeltlogon understøttes til SQL Azure-datakilder og via datagatewayen i det lokale miljø til SQL Server. Dette dækkes grundigere i [Oversigt over enkeltlogon for gateways i Power BI](service-gateway-sso-overview.md). |
 | Der kan være begrænsninger for datasuverænitet |Nogle organisationer har politikker omkring datasuverænitet, hvilket betyder, at data ikke kan forlade det lokale miljø i en organisation. En løsning, der er baseret på import, vil tydeligvis medføre problemer. I modsætning hertil, forbliver dataene i den underliggende kilde med DirectQuery. <br/> <br/> Selv med DirectQuery bevares nogle cashelagrede data dog på visualiseringsniveau i Power BI-tjenesten på grund af planlagt opdatering af felter. |

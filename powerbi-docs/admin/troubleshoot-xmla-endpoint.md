@@ -7,15 +7,15 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 01/11/2021
+ms.date: 01/13/2021
 ms.custom: seodec18, css_fy20Q4
 LocalizationGroup: Premium
-ms.openlocfilehash: 16a07065507abfe825c39677f234d626070827b4
-ms.sourcegitcommit: c86ce723d5db16fb960d1731795d84f4654e4b4e
+ms.openlocfilehash: 0753a9c3d5b832275f65ac11b87f90c38606f289
+ms.sourcegitcommit: ab28cf07b483cb4b01a42fa879b788932bba919d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98110722"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98226979"
 ---
 # <a name="troubleshoot-xmla-endpoint-connectivity"></a>Foretag fejlfinding af XMLA-slutpunktsforbindelse
 
@@ -217,6 +217,10 @@ Som angivet i fejlmeddelelsen kan du løse problemet ved enten at slette eller o
 ## <a name="workspaceserver-alias"></a>Alias for arbejdsområde/server
 
 [Aliasser](/azure/analysis-services/analysis-services-server-alias) for servernavne, der understøttes i Azure Analysis Services, **understøttes ikke** for Power BI Premium-arbejdsområder. 
+
+## <a name="dataset-refresh-through-the-xmla-endpoint"></a>Opdatering af datasæt via XMLA-slutpunktet
+
+Dato og klokkeslæt for seneste opdatering vises flere steder i Power BI, f.eks. i kolonnen Opdaterede i rapporter og på lister, oplysninger om datasæt, indstillinger for datasæt og historik over opdatering af datasæt. I øjeblikket indeholder den dato og det klokkeslæt for opdatering, som vises i Power BI, **ikke** opdateringshandlinger, der udføres via XMLA-slutpunktet ved hjælp af TMSL/TOM, SSMS eller tredjepartsværktøjer.
 
 ## <a name="see-also"></a>Se også
 

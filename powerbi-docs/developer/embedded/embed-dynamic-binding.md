@@ -1,18 +1,18 @@
 ---
-title: Forbind en rapport til et datasæt ved hjælp af dynamisk binding for at få integreret BI-indsigt i en integreret Power BI-analyse
-description: Få mere at vide om, hvordan du integrerer en rapport ved hjælp af dynamisk binding i en integreret Power BI-analyse, så du kan oprette bedre integreret BI-indsigt til dine kunder.
+title: Forbind en Power BI-rapport til et datasæt ved hjælp af dynamisk binding
+description: Få mere at vide om, hvordan du integrerer en Power BI-rapport ved hjælp af dynamisk binding i integreret analyse i Power BI.
 author: KesemSharabi
 ms.author: kesharab
-ms.topic: how-to
+ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 11/07/2019
-ms.openlocfilehash: aacae4dbfae30d72468419a717340c806c6c4bca
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.date: 01/17/2021
+ms.openlocfilehash: 0bc33ed37e389b42f5c27f8271cc461eb99e229a
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97888897"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565811"
 ---
 # <a name="connect-a-report-to-a-dataset-using-dynamic-binding"></a>Forbind en rapport til et datasæt ved hjælp af dynamisk binding 
 
@@ -36,33 +36,15 @@ Dynamisk binding understøttes til scenarier både med *Integrering for din orga
 |*Integrering for dine kunder*     |Appen ejer data         |Adgangstoken til brugere, der ikke har Power BI         |Skal indeholde tilladelser til både rapporten og det dynamisk bundne datasæt. Brug [API'en til generering af et integreringstoken til flere elementer](/rest/api/power-bi/embedtoken/generatetoken) for at generere et integreringstoken, der understøtter flere artefakter.         |
 
 ## <a name="adjusting-the-config-object"></a>Tilpasning af konfigurationsobjektet
-Føj `datasetBinding` til konfigurationsobjektet. Brug eksemplet nedenfor som reference.
 
-```javascript
-var config = {
-    type: 'report',
-    tokenType: models.TokenType.Embed,
-    accessToken: accessToken,
-    embedUrl: embedUrl,
-    id: "reportId", // The wanted report id
-    permissions: permissions,
-
-    // -----  Adjustment required for dynamic binding ---- //
-    datasetBinding: {
-        datasetId: "notOriginalDatasetId",  // </The wanted dataset id
-    }
-    // ---- End of dynamic binding adjustment ---- //
-};
-
-// Get a reference to the embedded report HTML element
-var embedContainer = $('#embedContainer')[0];
-
-// Embed the report and display it within the div container
-var report = powerbi.embed(embedContainer, config);
-```
+Du skal føje `datasetBinding` til konfigurationsobjektet, før dynamisk binding fungerer. Du kan få mere at vide om, hvordan dette gøres i [Bind datasæt dynamisk til en rapport](/javascript/api/overview/powerbi/bind-report-datasets). 
 
 ## <a name="next-steps"></a>Næste trin
 
-Hvis du er nybegynder i forhold til at integrere i Power BI, kan du gennemse disse selvstudier for at få mere at vide om, hvordan du integrerer dit Power BI-indhold:
-* [Selvstudium: Integrer Power BI-indhold i en applikation for dine kunder](embed-sample-for-customers.md)
-* [Selvstudium: Integrer Power BI-indhold i en applikation for din organisation](embed-sample-for-your-organization.md)
+Hvis du er nybegynder i forhold til at integrere i Power BI, kan du gennemse disse selvstudier for at få mere at vide om, hvordan du integrerer dit Power BI-indhold.
+
+>[!div class="nextstepaction"]
+>[Integrer Power BI-indhold i en applikation for dine kunder](embed-sample-for-customers.md)
+
+>[!div class="nextstepaction"]
+>[Integrer Power BI-indhold i en app til din organisation](embed-sample-for-your-organization.md)

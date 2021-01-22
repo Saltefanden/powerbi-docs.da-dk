@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 07/06/2020
+ms.date: 01/19/2021
 LocalizationGroup: Create reports
-ms.openlocfilehash: cadb8d45af40c91e7008e771f2a52ef2ea508341
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: abed7e9f6da352d5461868e6371ffefb814eb3ff
+ms.sourcegitcommit: 96080432af4c8e3fe46c23274478ccffa0970efb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96393456"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98597643"
 ---
 # <a name="add-multiple-fields-to-a-hierarchy-slicer"></a>Føj flere felter til et hierarki-udsnitsværktøj
 
@@ -76,6 +76,11 @@ Hvis der ikke er meget plads i din rapport, kan det være en god idé at reducer
 1. Udvid **Elementer**, og træk **Trinvis layoutindrykning** mindre eller større. Du kan også blot angive et tal i feltet.
 
     :::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-indentation.png" alt-text="Angiv indrykningen for hierarki-udsnitsværktøjet.":::
+    
+## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
+
+- Til tabelmodeller kræver denne funktion SQL Server Analysis Services 2017 eller nyere.
+- Til flerdimensionelle modeller kræver denne funktion SQL Server Analysis Services 2019 CU5 eller nyere med SuperDAXMD aktiveret. Læs mere om [SuperDAXMD](/analysis-services/multidimensional-models/dax-for-multidimensional-models#superdaxmd).
 
 ## <a name="next-steps"></a>Næste trin
 

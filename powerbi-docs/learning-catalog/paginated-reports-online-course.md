@@ -8,13 +8,13 @@ featuredvideoid: DN1t5p9aui0
 ms.service: powerbi
 ms.subservice: powerbi
 ms.topic: tutorial
-ms.date: 11/11/2020
-ms.openlocfilehash: e05078bf51cd33fb565dc783386258fe9ea305d1
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.date: 12/31/2020
+ms.openlocfilehash: 504b5bcb63fa8c8897ae0b44922d3dc144a02730
+ms.sourcegitcommit: ab28cf07b483cb4b01a42fa879b788932bba919d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96416364"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98227347"
 ---
 # <a name="power-bi-paginated-reports-in-a-day-course"></a>Kurset Sideinddelte Power BI-rapporter på én dag
 
@@ -43,7 +43,7 @@ Se velkomst- og introduktionsvideoen for at starte kurset.
 
 ## <a name="course-outline"></a>Kursusoversigt
 
-[Kursusforløbet på 24 videoer](https://www.youtube.com/playlist?list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT) er organiseret i otte moduler. Vi anbefaler, at du ser videoerne i den indspillede sekvens, der starter med video 01 og slutter med video 24.
+[Kursusforløbet på 25 videoer](https://www.youtube.com/playlist?list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT) er organiseret i otte moduler. Vi anbefaler, at du ser videoerne i den optagne rækkefølge, der starter med video 01 og slutter med video 25.
 
 - **Introduktion**
   - Video 01: [Velkomst og kursusintroduktion](https://www.youtube.com/watch?v=DN1t5p9aui0&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
@@ -78,6 +78,7 @@ Se velkomst- og introduktionsvideoen for at starte kurset.
   - Video 22: [Bonusindhold: Gennemgang](https://www.youtube.com/watch?v=w5zlJ8BodxI&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
   - Video 23: [Bonusindhold: Udviklingen inden for sideinddelte rapporter](https://www.youtube.com/watch?v=pevpai65MvY&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
   - Video 24: [Bonusindhold: Sænkning af indgangsbarrieren](https://www.youtube.com/watch?v=vu32LfckCt8&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
+  - Video 25: [Bonusindhold: Opdatering fra december 2020](https://www.youtube.com/watch?v=-7M4muS_3BI&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
 
 ## <a name="self-study-kit"></a>Selvstudiepakke
 

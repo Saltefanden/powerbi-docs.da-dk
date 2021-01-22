@@ -7,18 +7,19 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 08/02/2018
+ms.date: 01/12/2021
 LocalizationGroup: Share your work
-ms.openlocfilehash: fb47df4f81225d8e55fbc637331f85f36337aade
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 59966919b64a9e8cb615b0b9dfc05fb9a2ff245c
+ms.sourcegitcommit: ab28cf07b483cb4b01a42fa879b788932bba919d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96406428"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98227144"
 ---
 # <a name="manage-update-and-delete-organizational-content-packs"></a>Administrer, opdater og slet organisationsindholdspakker
+
 > [!NOTE]
-> Du kan ikke oprette organisationsindholdspakker eller installere dem i de nye arbejdsområdeoplevelser. Nu er det et godt tidspunkt at opgradere dine indholdspakker til apps, hvis du ikke er startet endnu. Få [mere at vide om den nye arbejdsområdeoplevelse](service-create-the-new-workspaces.md).
+> Indholdspakker til organisationer udgår. Nu er det et godt tidspunkt at opgradere dine indholdspakker til apps, hvis du ikke er startet endnu. Se afsnittet med oversigten over opgradering af arbejdsområder i dette blogindlæg [Meddelelse om at Power BI-administratorer kan opgradere klassiske arbejdsområder](https://powerbi.microsoft.com/blog/announcing-power-bi-admins-can-upgrade-classic-workspaces-and-roadmap-update/) for at se tidslinjen.
 > 
 
 Du kan pakke og dele dine dashboards, rapporter, Excel-projektmapper og datasæt med dine kollegaer som [organisationsindholdspakker](service-organizational-content-pack-introduction.md). Dine kollegaer kan bruge dem, som de er, eller de kan oprette deres egne kopier.

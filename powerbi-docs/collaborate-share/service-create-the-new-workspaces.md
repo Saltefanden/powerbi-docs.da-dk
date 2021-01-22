@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 09/04/2020
+ms.date: 01/12/2021
 ms.custom: contperf-fy21q1, contperf-fy20q4
 LocalizationGroup: Share your work
-ms.openlocfilehash: 2c15c6afbf1a84ab5e8103a8d73792705418d2e6
-ms.sourcegitcommit: 7bf09116163afaae312eb2b232eb7967baee2c92
+ms.openlocfilehash: b849921b0ec9c5bbad46394343d266179ba547b8
+ms.sourcegitcommit: ab28cf07b483cb4b01a42fa879b788932bba919d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97621711"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98227278"
 ---
 # <a name="create-the-new-workspaces-in-power-bi"></a>Opret nye arbejdsområder i Power BI
 
@@ -24,7 +24,8 @@ I denne artikel forklares det, hvordan du opretter et af de *nye arbejdsområder
 Er du klar til at overføre dit klassiske arbejdsområde? Se [Opgrader klassiske arbejdsområder til de nye arbejdsområder i Power BI](service-upgrade-workspaces.md) for at få flere oplysninger.
 
 > [!NOTE]
-> Hvis du vil gennemtvinge sikkerhed på rækkeniveau for Power BI Pro-brugere, der gennemser indhold i et arbejdsområde, skal du tildele brugerne læseadgang. Se [Roller i de nye arbejdsområder](service-new-workspaces.md#roles-in-the-new-workspaces) for at få en forklaring på de forskellige roller.
+> Leder du efter indhold om, hvordan du opretter indholdspakker? De udgår. Det er nu et godt tidspunkt at opgradere dine indholdspakker til programmer. Se afsnittet med oversigten over opgradering af arbejdsområder i dette blogindlæg [Meddelelse om at Power BI-administratorer kan opgradere klassiske arbejdsområder](https://powerbi.microsoft.com/blog/announcing-power-bi-admins-can-upgrade-classic-workspaces-and-roadmap-update/) for at se tidslinjen.
+> 
 
 ## <a name="create-one-of-the-new-workspaces"></a>Opret et af de nye apparbejdsområder
 
@@ -59,6 +60,9 @@ Er du klar til at overføre dit klassiske arbejdsområde? Se [Opgrader klassiske
 ## <a name="give-access-to-your-workspace"></a>Giv adgang til dit arbejdsområde
 
 Alle, der har en administratorrolle i et arbejdsområde, kan give andre adgang til arbejdsområdet ved at føje dem til forskellige roller. Oprettere af arbejdsområder er automatisk administratorer. Se [Roller i de nye arbejdsområder](service-new-workspaces.md#roles-in-the-new-workspaces) for at få en forklaring på de roller.
+
+> [!NOTE]
+> Hvis du vil gennemtvinge sikkerhed på rækkeniveau for Power BI Pro-brugere, der gennemser indhold i et arbejdsområde, skal du tildele brugerne læseadgang. Se [Roller i de nye arbejdsområder](service-new-workspaces.md#roles-in-the-new-workspaces) for at få en forklaring på de forskellige roller.
 
 1. Da du er administrator, kan du på indholdslisten for arbejdsområder se **Adgang**.
 

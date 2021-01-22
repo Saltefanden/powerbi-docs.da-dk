@@ -7,19 +7,19 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 08/02/2018
+ms.date: 01/12/2021
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5cd1ebd1502241cf07e7de8cff5f0eb769a1b59f
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: e95634f8bf41d8e969612b247645577bfef5ef32
+ms.sourcegitcommit: ab28cf07b483cb4b01a42fa879b788932bba919d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96406405"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98227071"
 ---
 # <a name="remove-your-connection-to-a-power-bi-organizational-content-pack"></a>Fjern din forbindelse til en Power BI-organisationsindholdspakke
 
 > [!NOTE]
-> Du kan ikke oprette organisationsindholdspakker eller installere dem i de nye arbejdsområdeoplevelser. Nu er det et godt tidspunkt at opgradere dine indholdspakker til apps, hvis du ikke er startet endnu. Få [mere at vide om den nye arbejdsområdeoplevelse](service-create-the-new-workspaces.md).
+> Indholdspakker til organisationer udgår. Nu er det et godt tidspunkt at opgradere dine indholdspakker til apps, hvis du ikke er startet endnu. Se afsnittet med oversigten over opgradering af arbejdsområder i dette blogindlæg [Meddelelse om at Power BI-administratorer kan opgradere klassiske arbejdsområder](https://powerbi.microsoft.com/blog/announcing-power-bi-admins-can-upgrade-classic-workspaces-and-roadmap-update/) for at se tidslinjen.
 > 
 
 En kollega har oprettet en indholdspakke. Du har fundet den i AppSource og føjet den til dit Power BI-arbejdsområde. Nu har du ikke længere brug for den.  Hvordan fjerner du den?

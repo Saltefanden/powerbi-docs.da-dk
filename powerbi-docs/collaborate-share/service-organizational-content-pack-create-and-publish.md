@@ -7,25 +7,26 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 08/06/2019
+ms.date: 01/12/2021
 LocalizationGroup: Share your work
-ms.openlocfilehash: 0a72582a54903c97dd9594f6a4a1c5980aea8e16
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: b0b57967ed86c25f51c08a94e4c252c250e85304
+ms.sourcegitcommit: ab28cf07b483cb4b01a42fa879b788932bba919d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96411718"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98227186"
 ---
 # <a name="tutorial-create-and-publish-a-power-bi-organizational-content-pack"></a>Selvstudium: Opret og publicer en organisationsindholdspakke til Power BI
+
+> [!NOTE]
+> Indholdspakker til organisationer udgår. Nu er det et godt tidspunkt at opgradere dine indholdspakker til apps, hvis du ikke er startet endnu. Se afsnittet med oversigten over opgradering af arbejdsområder i dette blogindlæg [Meddelelse om at Power BI-administratorer kan opgradere klassiske arbejdsområder](https://powerbi.microsoft.com/blog/announcing-power-bi-admins-can-upgrade-classic-workspaces-and-roadmap-update/) for at se tidslinjen.
+> 
 
 I dette selvstudium opretter du en organisationsindholdspakke, giver adgang til en bestemt gruppe og publicerer den i biblioteket til din organisationsindholdspakke i Power BI.
 
 Oprettelse af indholdspakker adskiller sig fra deling af dashboards eller samarbejde på dem i en gruppe. Læs [Måder at dele dit arbejde i Power BI](service-how-to-collaborate-distribute-dashboards-reports.md) for at afgøre, hvad der passer bedst til din situation.
 
 Oprettelse af en organisationsindholdspakke kræver en [Power BI Pro-konto](https://powerbi.microsoft.com/pricing) til dig og dine kollegaer.
-
-> [!NOTE]
-> Du kan ikke oprette eller installere organisationsindholdspakker i de nye arbejdsområdeoplevelser. Hvis du ikke er startet endnu, er det et godt tidspunkt at opgradere dine indholdspakker til apps. Få [mere at vide om den nye arbejdsområdeoplevelse](service-create-the-new-workspaces.md).
 
 ## <a name="create-and-publish-a-content-pack"></a>Opret og udgiv en indholdspakke
 

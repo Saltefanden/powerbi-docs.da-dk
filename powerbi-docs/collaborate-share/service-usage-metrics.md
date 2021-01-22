@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 12/15/2020
+ms.date: 01/15/2021
 LocalizationGroup: Dashboards
-ms.openlocfilehash: dc3ce931664a3c125504865c6cccfe3fdfa404c4
-ms.sourcegitcommit: f791eef8e885f18c48997c9af63ab56211f1ceb8
+ms.openlocfilehash: acb1a1550c0ab216e4934e99f871df9321561314
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "98053414"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565424"
 ---
 # <a name="monitor-usage-metrics-in-classic-workspaces"></a>Overvåg forbrugsdata i klassiske arbejdsområder
 
@@ -162,7 +162,11 @@ Det er vigtigt at forstå, at der kan opstå forskelle, når du sammenligner for
 
 ### <a name="discrepancies-between-rest-apis-and-usage-metrics"></a>Uoverensstemmelser mellem REST API'er og forbrugsdata
 
-[REST API'er for rapporter](https://docs.microsoft.com/rest/api/power-bi/reports) i Power BI og [REST API'er for administratorer](https://docs.microsoft.com/rest/api/power-bi/admin) bruger også data fra Power BI-tjenesten. Af de årsager, der er beskrevet i forrige afsnit, kan antallet af rapporter fra API'erne være forskellig fra antallet af rapport i forbrugsdata. Antallet af rapporter, der udledes af API'er, påvirkes ikke af klientproblemer og kan anses for at være nøjagtige.
+[REST API'er for rapporter](/rest/api/power-bi/reports) i Power BI og [REST API'er for administratorer](/rest/api/power-bi/admin) bruger også data fra Power BI-tjenesten. Af de årsager, der er beskrevet i forrige afsnit, kan antallet af rapporter fra API'erne være forskellig fra antallet af rapport i forbrugsdata. Antallet af rapporter, der udledes af API'er, påvirkes ikke af klientproblemer og kan anses for at være nøjagtige.
+
+### <a name="classic-usage-metrics-are-not-supported-with-private-links"></a>Klassiske forbrugsdata understøttes ikke med Private Links 
+
+Hvis din organisation bruger [Private Links](../admin/service-security-private-links.md), indeholde de klassiske rapporter om forbrugsdata ingen data. Der er i øjeblikket en begrænsning for overførsel af klientoplysninger via private links. 
 
 ### <a name="other-considerations"></a>Andre overvejelser
 

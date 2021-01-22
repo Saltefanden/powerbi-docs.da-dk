@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 12/16/2020
+ms.date: 01/19/2021
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: c29728641560502e19486f47e3ec06e370399640
-ms.sourcegitcommit: b472236df99b490db30f0168bd7284ae6e6095fb
+ms.openlocfilehash: cbf41315f6b33483b7fdd0797bf4dfbcebb605c3
+ms.sourcegitcommit: 96080432af4c8e3fe46c23274478ccffa0970efb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97600524"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98597679"
 ---
 # <a name="use-composite-models-in-power-bi-desktop"></a>Brug af sammensatte modeller i Power BI Desktop
 
@@ -22,7 +22,7 @@ Tidligere i Power BI Desktop når du brugte en DirectQuery i en rapport, var ing
 
 Sammensatte modeller-funktionaliteten i Power BI Desktop består af tre relaterede funktioner:
 
-* **Sammensatte modeller**: Gør det muligt for en rapport at have flere dataforbindelser, herunder DirectQuery-forbindelser eller Import, i en hvilken som helst kombination. I denne artikel beskrives sammensatte modeller i detaljer.
+* **Sammensatte modeller**: Gør det muligt for en rapport at have to eller flere dataforbindelser fra forskellige kildegrupper, f.eks. som en eller flere DirectQuery-forbindelser og en importforbindelse, to eller flere DirectQuery-forbindelser eller en hvilken som helst kombination af disse. I denne artikel beskrives sammensatte modeller i detaljer.
 
 * **Mange til mange-relationer**: Med sammensatte modeller kan du etablere *mange til mange-relationer* mellem tabeller. Med denne tilgang fjernes kravene for entydige værdier i tabeller. Tidligere midlertidige løsninger, f.eks. introduktion af nye tabeller kun for at oprette relationer, fjernes også. Du kan finde flere oplysninger under [Anvend mange til mange-relationer i Power BI Desktop](desktop-many-to-many-relationships.md).
 
@@ -141,6 +141,8 @@ Oplysninger, der er lagret i regnearket, inkluderes derfor nu i en forespørgsel
 * Krypteringsindstillingerne for de enkelte kilder skal overvejes. Du vil helst undgå at hente oplysninger fra én kilde af en krypteret forbindelse og derefter ved en fejl inkludere dem i en forespørgsel, der sendes til en anden kilde af en ukrypteret forbindelse.
 
 Der vises en advarsel i Power BI Desktop, når du opretter en sammensat model, for at det kan bekræftes, at du har taget alle sikkerhedsmæssige konsekvenser i betragtning.  
+
+Hvis en forfatter desuden føjer *Tabel1* fra *Model A* til en sammensat model (vi kalder den som reference *Model C*), kan en bruger, der får vist en rapport, som er baseret på *Model C*, sende en forespørgsel til **en hvilken som helst tabel** i *Model A*, der ikke er beskyttet af sikkerhed på rækkeniveau.
 
 Af samme årsager skal du være forsigtig, når du åbner en Power BI Desktop-fil, der er sendt fra en kilde, der ikke er tillid til. Hvis filen indeholder sammensatte modeller, sendes der oplysninger, som en person henter fra én kilde ved hjælp af legitimationsoplysningerne for den bruger, der åbner filen, til en anden datakilde som en del af forespørgslen. Oplysningerne kan ses af den ondsindede forfatter af Power BI Desktop-filen. Når du første gang åbner en Power BI Desktop-fil, der indeholder flere kilder, viser Power BI Desktop en advarsel. Advarslen svarer til den, der vises, når du åbner en fil, der indeholder oprindelige SQL-forespørgsler.  
 

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 01/04/2021
+ms.date: 01/14/2021
 LocalizationGroup: Share your work
-ms.openlocfilehash: 800e81b8fe5e9c2f108b71a4d8fb6bf9732a29ac
-ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
+ms.openlocfilehash: 6b28537c9ea757fb43179196f9d7cb053955c5e0
+ms.sourcegitcommit: ab28cf07b483cb4b01a42fa879b788932bba919d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97926824"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98227209"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publicer på internettet fra Power BI
 
@@ -189,7 +189,7 @@ Du skal [finde en af disse personer](/office365/admin/admin-overview/admin-overv
 - Rapporter, der bruger en vilkårlig Live Connection-datakilde, herunder Analysis Services Tabular, der hostes i det lokale miljø, Analysis Service Multidimensional og Azure Analysis Services.
 - Rapporter, der bruger et [delt datasæt](../connect-data/service-datasets-across-workspaces.md), som er gemt i et andet arbejdsområde end rapporten.
 - [Delte og certificerede datasæt](../connect-data/service-datasets-share.md).
-- Rapporter, der er delt med dig direkte eller via en organisationsindholdspakke.
+- Rapporter, der er delt med dig direkte eller via et program.
 - Rapporter i et arbejdsområde, hvor du ikke er redigeringsmedlem.
 - "R"- og Python-visualiseringerne understøttes i øjeblikket ikke i **Publicer på internettet**-rapporter.
 - Eksport af data fra visualiseringer i en rapport, som er publiceret på internettet.

@@ -8,17 +8,17 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi
 ms.topic: conceptual
-ms.date: 02/16/2020
-ms.openlocfilehash: bd700ae7c6c175f4e9cf7841ce308a275ba9babb
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.date: 01/14/2021
+ms.openlocfilehash: a7da63efcc991da57eba9c6b9bb6b9527ad66e1f
+ms.sourcegitcommit: ab28cf07b483cb4b01a42fa879b788932bba919d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96393024"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98227370"
 ---
 # <a name="monitor-report-performance-in-power-bi"></a>Overvåg rapportens ydeevne i Power BI
 
-Overvåg rapportens ydeevne i Power BI Desktop ved at bruge [appen Power BI Premium Metrics](../admin/service-premium-metrics-app.md), få mere at vide om, hvor flaskehalsene er, og om hvordan du kan forbedre rapportens ydeevne.
+Overvåg rapportens ydeevne i Power BI Desktop ved hjælp af [Effektivitetsanalyse](../create-reports/desktop-performance-analyzer.md), og overvåg ydeevnen af det indhold, der er udrullet i din organisations Power BI Premium-kapacitet, ved hjælp af [Power BI Premium Metrics-appen](../admin/service-premium-metrics-app.md). Få mere at vide om, hvor flaskehalsene er, og få mere at vide om, hvordan du forbedrer rapportens ydeevne.
 
 Overvågning af ydeevne er relevant i følgende situationer:
 

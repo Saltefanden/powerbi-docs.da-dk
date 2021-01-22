@@ -5,24 +5,25 @@ author: mihart
 ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: removed
+ms.custom: video-OgjX-pFGgfM, video-RE4IY3L
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 12/18/2020
+ms.date: 1/13/2021
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2a8c125a37e0d70ea735d9f1962f64deb69061c8
-ms.sourcegitcommit: 1691ce556ab5b22e6f9d06086a054d165d482809
+ms.openlocfilehash: b285d699d71001d8015615fdeb3652ba35274896
+ms.sourcegitcommit: 396633fc5f7cff1f7d518f558b20043b2e05a513
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97745133"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98191782"
 ---
 # <a name="customize-visualization-titles-backgrounds-labels-and-legends"></a>Tilpas titler, baggrunde, mærkater og signaturforklaringer i visualiseringer
 
 [!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
 
 
-I dette selvstudium lærer du, hvordan du kan tilpasse dine visualiseringer, på flere måder. Du har mange muligheder for at tilpasse dine visualiseringer. Den bedste måde, du kan lære om dem alle på, er at udforske ruden **Format** (vælg malerrulleikonet). For at hjælpe dig i gang kan du i denne artikel se, hvordan du tilpasser en titel, en signaturforklaring, en baggrund og en mærkat samt tilføjer et tema i en visualisering.
+I dette selvstudium lærer du, hvordan du kan tilpasse dine visualiseringer, på flere måder. Du har mange muligheder for at tilpasse dine visualiseringer. Den bedste måde, du kan lære om dem alle på, er at udforske ruden **Format** (vælg malerrulleikonet). For at hjælpe dig i gang kan du i denne artikel se, hvordan du tilpasser en titel, en signaturforklaring, en baggrund, en mærkat og et lag samt tilføjer et tema i en visualisering.
 
 Du kan ikke tilpasse alle visualiseringer. Se den [komplette liste](#visualization-types-that-you-can-customize) over visualiseringer for at få flere oplysninger.
 
@@ -148,6 +149,36 @@ Se, hvordan Rien føjer totalmærkater til et stablet diagram, og følg derefter
 1. Alternativt kan du formatere totalmærkaterne. I dette eksempel har vi ændret farven til sort, øget skriftstørrelsen og valgt at vise værdierne som **tusinder**.
 
     ![Skærmbillede af det nye stablede liggende søjlediagram med totalmærkater.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-bar-totals.png)
+
+
+## <a name="customize-layer-order"></a>Tilpas rækkefølgen af lag
+Skift rækkefølgen af lagene for visualiseringer og figurer i dine rapporter. Rækkefølgen af lag bestemmer, hvilke objekter der kommer forrest, når de vælges. Når du vælger et objekt på rapportlærredet, aktiveres det og flyttes til det øverste lag. I forbindelse med visualiseringer gør dette det lettere at interagere med den valgte visualisering. Men for figurer og baggrunde vil du måske gerne fastgøre dem til det nederste lag, så du ikke vælger dem ved et uheld og dækker eller skjuler visualiseringerne i dine rapporter. 
+
+Kontrolelementer til lag er tilgængelige i Power BI-tjenesten, Power BI Desktop, Mobil og rapportserver. I denne artikel kan du se, hvordan du ændrer funktionsmåden for rækkefølgen af lag i Power BI-tjenesten.
+
+Se, hvordan Rien ændrer funktionsmåden for rækkefølgen af lag, og følg derefter nedenstående trin, så du selv kan prøve det.
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4IY3L]
+
+1. Tilføj en ny rapportside ved at vælge det gule plustegn. 
+
+1. Føj en figur til lærredet. Her har vi tilføjet et blåt rektangel. 
+
+    ![Skærmbillede af den nye rapportside med et blåt rektangel.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-shape.png)
+
+1. Kopiér og indsæt en visualisering fra en anden side i rapporten. 
+
+    ![Skærmbillede af den nye rapportside med et blåt rektangel og et cirkeldiagram.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-layer.png)
+
+    Nu, hvor du har to lag, kan du prøve at vælge cirkeldiagrammet og derefter baggrunden. Når du vælger cirkeldiagrammet, aktiverer Power BI dette objekt og viser dets overskriftsmenu. Når du vælger rektanglet, aktiverer Power BI dette objekt og placerer det forrest, hvor det skjuler cirkeldiagrammet. Du kan ændre denne standardfunktionsmåde.
+
+1. Vælg rektanglet, og åbn formateringsruden. Udvid **Generelt**, og find til/fra-knappen **Bevar rækkefølge af lag**. Gem rapportændringerne, og skift til læsevisning.
+
+    ![Skærmbillede af den nye rapportside og Bevar rækkefølge af lag angivet til Til.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-maintain-layer.png)
+
+1. Når du vælger det blå rektangel i læsevisning, forbliver det på det bageste lag.
+
 
 ## <a name="customize-colors-using-a-theme"></a>Tilpas farver ved hjælp af et tema
 
