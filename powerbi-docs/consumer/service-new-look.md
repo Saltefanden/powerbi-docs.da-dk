@@ -9,12 +9,12 @@ ms.subservice: pbi-explore
 ms.topic: conceptual
 ms.date: 12/09/2020
 LocalizationGroup: Get started
-ms.openlocfilehash: 5e357b275cd6648721b021f68a9b8496e266e003
-ms.sourcegitcommit: 8250187368d3de48663eb516a816ff701119b579
-ms.translationtype: HT
+ms.openlocfilehash: 1ed6da298645de77a4ddfc7cba2fde9c89c30f0f
+ms.sourcegitcommit: 77912d4f6ef2a2b1ef8ffccc50691fe5b38ee97a
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96999080"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98687321"
 ---
 # <a name="the-new-look-of-the-power-bi-service"></a>Power BI-tjenestens nye udseende
 
@@ -70,5 +70,4 @@ Der er også en forenklet handlingslinje på dashboards. For at skabe en ensarte
 ## <a name="next-steps"></a>Næste trin
 
 - [Brug det opdaterede bånd i Power BI Desktop](../create-reports/desktop-ribbon.md)
-- [Tilmed dig det nye udseende af arbejdsområder](../collaborate-share/service-workspaces-new-look.md)
 - [Power BI for forbrugere](end-user-consumer.md)

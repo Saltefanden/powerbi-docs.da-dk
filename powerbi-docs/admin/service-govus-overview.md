@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/19/2021
 ms.custom: gcc
 LocalizationGroup: Get started
-ms.openlocfilehash: e7100be7890673cecc77a8a1147a25a942fc4666
-ms.sourcegitcommit: 96080432af4c8e3fe46c23274478ccffa0970efb
-ms.translationtype: HT
+ms.openlocfilehash: 06a2dff78cc2367afb153111e080e29a16fc82ab
+ms.sourcegitcommit: 77912d4f6ef2a2b1ef8ffccc50691fe5b38ee97a
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98597603"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686976"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI til US Government-kunder
 
@@ -129,9 +129,9 @@ Vi medtager kvartalet for anslået tilgængelighed, hvis udgivelsen planlægges 
 |[Integrer i SharePoint Online ved hjælp af Power BI-webdelen](/sharepoint/dev/spfx/web-parts/overview-client-side-web-parts)|![tilgængelig](../media/yes.png)|![tilgængelig](../media/yes.png)|![ikke tilgængelig](../media/no.png)|
 |[Data beskyttelse (MIP-mærkater)](service-security-sensitivity-label-overview.md)|![tilgængelig](../media/yes.png)|![tilgængelig](../media/yes.png) |1\. kvt. 2021|
 |[Dataflow – -direkte forespørgsel](../transform-model/dataflows/dataflows-configure-consume.md) | ![tilgængelig](../media/yes.png) |![tilgængelig](../media/yes.png)|Ikke planlagt |
+|[Dataflow – SQL Compute-programoptimering](../transform-model/dataflows/dataflows-premium-features.md) | ![tilgængelig](../media/yes.png) |![tilgængelig](../media/yes.png)|Ikke planlagt |
 |[Power BI-fanen i Teams](../collaborate-share/service-collaborate-microsoft-teams.md)<sup>3</sup>|![tilgængelig](../media/yes.png)|![ikke tilgængelig](../media/no.png)|![ikke tilgængelig](../media/no.png)|
 |[Store modeller](service-premium-large-models.md) | 1\. kvt. 2021 |1\. kvt. 2021| Ikke planlagt |
-|[Dataflow – SQL Compute-programoptimering](../transform-model/dataflows/dataflows-premium-features.md) | ![ikke tilgængelig](../media/no.png) |![ikke tilgængelig](../media/no.png)| ![ikke tilgængelig](../media/no.png) |
 |[Foretag et kald til kvalitetsdata-connector](/microsoftteams/cqd-power-bi-connector)|![ikke tilgængelig](../media/no.png)|![ikke tilgængelig](../media/no.png)|![ikke tilgængelig](../media/no.png)|
 |[Bring Your Own Storage (Azure Data Lake Gen 2)](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md)|![ikke tilgængelig](../media/no.png)|![ikke tilgængelig](../media/no.png)|![ikke tilgængelig](../media/no.png)|
 

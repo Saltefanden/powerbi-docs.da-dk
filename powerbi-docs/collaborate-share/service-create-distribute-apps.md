@@ -8,12 +8,12 @@ ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 03/23/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 981b4aa0f9e8bb12e4231476d27b8f58152ff3fd
-ms.sourcegitcommit: c86ce723d5db16fb960d1731795d84f4654e4b4e
-ms.translationtype: HT
+ms.openlocfilehash: 77f206ef59a4aa082e04053d28567480f4d01bb0
+ms.sourcegitcommit: 77912d4f6ef2a2b1ef8ffccc50691fe5b38ee97a
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98110906"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98687256"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Publicer en app i Power BI
 
@@ -207,7 +207,7 @@ Ting, du skal være opmærksom i forbindelse med publicering af apps:
 * Tilladelsessiden ændrer ikke tilladelsen for datasæt i andre arbejdsområder. Du får vist en advarsel om, at du skal give adgang til disse datasæt uafhængigt af hinanden. Det er en god idé at kontakte ejeren af datasættet, før du begynder at oprette din app, for at sikre, at det er OK at give alle dine appbrugere adgang til disse datasæt. 
 * Du kan højst have 100 brugere eller grupper på adgangslisten til appen. Du kan dog give mere end 100 brugere adgang til appen. Hvis du vil gøre det, skal du bruge en eller flere brugergrupper, der indeholder alle de ønskede brugere.
 * Hvis den bruger, der blev føjet til adgangslisten, allerede havde adgang til appen via arbejdsområdet, vises vedkommende ikke på adgangslisten til appen i forbindelse med den nye arbejdsområdeoplevelse.  
-* Når du bruger det nye udseende for Power BI-tjenesten, vises URL-adressen til supportwebstedet på kortet med oplysninger om elementet. Læs mere om [det nye udseende i Power BI](../consumer/service-new-look.md).
+* URL-adressen til supportwebstedet vises på kortet vareoplysninger.
 * I forbindelse med apps kan du give brugerne mulighed for at dele appen og appens underliggende datasæt ved hjælp af tilladelsen til deling. Denne indstilling er som standard slået fra for nye apps. Vi anbefaler, at du aktiverer denne indstilling for dine eksisterende apps og opdaterer tilladelsen til de underliggende datasæt. Indstillingen blev aktiveret for eksisterende apps, fordi apps indledningsvis blev udviklet til at erstatte indholdspakker, der havde denne funktionsmåde.
 * Apps kan maksimalt have 200 dashboards. 
 

@@ -7,16 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/24/2018
-ms.openlocfilehash: 7658e1943c1f0ac85904fc7b985f2bd764451052
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
-ms.translationtype: HT
+ms.date: 01/21/2021
+ms.openlocfilehash: 71ee66c6cd531a35a53a3263feaf94115b528114
+ms.sourcegitcommit: 77912d4f6ef2a2b1ef8ffccc50691fe5b38ee97a
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96414754"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98687482"
 ---
 # <a name="browser-support-for-power-bi-report-server"></a>Browsersupport til Power BI Report Server
 Få mere at vide om, hvilke browserversioner der understøtter administration og visning af Power BI Report Server og Report Viewer-kontrolelementerne.
+
+> [!NOTE]
+> Understøttelsen af den ældre Microsoft Edge-browser stopper starten af 9. marts 2021, og understøttelsen af Microsoft Internet Explorer 11 stopper starten den 17. august 2021.
 
 ## <a name="browser-requirements-for-the-web-portal"></a>Krav til browseren for webportalen
 Herunder finder du den aktuelle liste over browsere, der understøtter webportalen.
@@ -46,7 +49,7 @@ Herunder finder du den aktuelle liste over browsere, der understøtter webportal
 
 * Google Chrome (+)
   
-  **(+)**  Seneste offentligt udgivne version
+  **(+)** Seneste offentligt udgivne version
 
 ## <a name="browser-requirements-for-the-report-viewer-web-control-2015"></a>Krav til browseren for Report Viewer-webkontrollen (2015)
 Herunder finder du den aktuelle liste over browsere, der understøtter Report Viewer-webportalen. Rapportfremviseren understøtter visning af rapporter fra webportalen.
@@ -64,7 +67,7 @@ Herunder finder du den aktuelle liste over browsere, der understøtter Report Vi
 
 * Apple Safari (+)
   
-  **(+)**  Seneste offentligt udgivne version
+  **(+)** Seneste offentligt udgivne version
 
 ### <a name="authentication-requirements"></a>Krav til godkendelse
 Browserne understøtter specifikke godkendelsesmetoder, der skal håndteres af rapportserveren, for at klientanmodningen kan fuldføres. I følgende tabel angives de standardgodkendelsestyper, der understøttes af alle de browsere, der fungerer med et Windows-operativsystem.
@@ -75,9 +78,9 @@ Browserne understøtter specifikke godkendelsesmetoder, der skal håndteres af r
 | **Microsoft Internet Explorer** |Negotiate, Kerberos, NTLM, Basic |Negotiate |Ja. Standardgodkendelsesindstillingerne fungerer sammen med Internet Explorer. |
 | **Google Chrome**(+) |Negotiate, NTLM, Basic |Negotiate |Ja. Standardgodkendelsesindstillingerne fungerer sammen med Chrome. |
 | **Mozilla Firefox**(+) |NTLM, Basic |NTLM |Ja. Standardgodkendelsesindstillingerne fungerer sammen med Firefox. |
-| **Apple Safari**(+) |NTLM, Basic |Basic |Ja. Standardgodkendelsesindstillingerne fungerer sammen med Safari. |
+| **Apple Safari**(+) |NTLM, Basic |Grundlæggende |Ja. Standardgodkendelsesindstillingerne fungerer sammen med Safari. |
 
- **(+)**  Seneste offentligt udgivne version
+ **(+)** Seneste offentligt udgivne version
 
 ### <a name="script-requirements-for-viewing-reports"></a>Scriptkrav for at få vist rapporter
 Konfigurer webbrowseren til at køre scripts for at kunne bruge rapportfremviseren.
@@ -108,11 +111,11 @@ Brug en browser med aktivering af scriptsupport. Hvis browseren ikke kan køre s
 * Google Chrome (+)
 * Mozilla Firefox (+)
   
-  **(+)**  Seneste offentligt udgivne version
+  **(+)** Seneste offentligt udgivne version
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 [Administratoroversigt](admin-handbook-overview.md)  
-[Installér Power BI-rapportserver](install-report-server.md)  
+[Installer Power BI-rapportserver](install-report-server.md)  
 [Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
 [Download SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt)
 

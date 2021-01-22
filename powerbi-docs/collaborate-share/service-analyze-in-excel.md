@@ -8,14 +8,14 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 09/22/2020
+ms.date: 01/20/2021
 LocalizationGroup: Reports
-ms.openlocfilehash: 4ce463cb82fec7da8d7ec43db7914fb028368bc3
-ms.sourcegitcommit: 7bf09116163afaae312eb2b232eb7967baee2c92
-ms.translationtype: HT
+ms.openlocfilehash: e708e5001e49841d01b60cfc8712d37b990102f2
+ms.sourcegitcommit: 77912d4f6ef2a2b1ef8ffccc50691fe5b38ee97a
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97621251"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98687114"
 ---
 # <a name="analyze-in-excel"></a>Analysér i Excel
 Med **Analysér i Excel** kan du hente Power BI-datasæt til Excel og derefter få vist og interagere med dem ved hjælp af pivottabeller, diagrammer, udsnit og andre Excel-funktioner. Hvis du vil bruge **Analysér i Excel**, skal du først downloade funktionen fra Power BI, installere den og derefter vælge et eller flere datasæt, der skal bruges i Excel. 
@@ -34,11 +34,11 @@ Lad os komme i gang og få startet installationsprocessen.
 
 ## <a name="install-analyze-in-excel"></a>Installere Analysér i Excel
 
-Du skal installere **Analysér i Excel** fra links, der er angivet i Power BI-tjenesten. Power BI registrerer den version af Excel, du har på din computer, og henter automatisk den relevante version (32-bit eller 64-bit). Power BI-tjenesten kører i en browser. Du kan logge på Power BI ved hjælp af følgende link:
+Du skal installere **Analysér i Excel** fra links, der er angivet i Power BI-tjenesten. Power BI registrerer den version af Excel, du har på din computer, og henter automatisk den relevante version (32-bit eller 64-bit). Du kan logge på Power BI-tjeneste ved hjælp af følgende link:
 
 * [Log på Power BI](https://app.powerbi.com)
 
-Når du er logget på, og Power BI-tjeneste kører i din browser, skal du vælge elementet **flere indstillinger** (...) i øverste højre hjørne og derefter vælge **Download > Analysér i Excel-opdateringer**. Dette menupunkt gælder for nye installationer af opdateringer til Analysér i Excel.
+Når du er logget på, og Power BI-tjeneste kører i din browser, skal du vælge **flere indstillinger** (...) i øverste højre hjørne og derefter vælge **Hent > Analysér i Excel-opdateringer**. Dette menupunkt gælder for nye installationer af opdateringer til Analysér i Excel.
 
 ![Hent Analysér i Excel fra Power BI Start](media/service-analyze-in-excel/analyze-excel-02.png)
 
@@ -160,23 +160,24 @@ Du kan finde flere oplysninger om, hvordan du henter data til Excel på denne m�
 Du kan også få adgang til **udvalgte tabeller** i Excel i galleriet **Datatyper**. Hvis du vil vide mere om de udvalgte tabeller, og hvordan du får adgang til dem, kan du se [Få adgang til udvalgte Power BI-tabeller i Excel (prøveversion)](service-excel-featured-tables.md).
 
 ## <a name="requirements"></a>Krav
-Der er et par krav til brugen af **Analysér i Excel**:
+Her er nogle krav til brug af **Analysér i Excel**:
 
 * **Analysér i Excel** understøttes for Microsoft Excel 2010 SP1 og nyere.
-
 * Pivottabeller i Excel understøtter ikke træk og slip-sammenlægning af numeriske felter. Dit datasæt i Power BI *skal have foruddefinerede målinger*. Læs om [oprettelse af målinger](../transform-model/desktop-measures.md).
 * Nogle organisationer har muligvis gruppepolitikregler, der forhindrer installation af de krævede **Analysér i Excel**-opdateringer i Excel. Hvis du ikke kan installere opdateringerne, skal du kontakte din administrator.
 * **Analysér i Excel** kræver, at datasættet er i Power BI Premium, eller at brugeren har en Power BI Pro-licens. Hvis du vil vide mere om forskellene i funktionaliteten mellem de forskellige Power BI-licenstyper, skal du se _Sammenligning af Power BI-funktioner_ i afsnittet [Power BI-priser](https://powerbi.microsoft.com/pricing/).
-* Brugere kan oprette forbindelse til datasæt via Analysér i Excel, hvis de har læsetilladelse til det underliggende datasæt.  En bruger kan have denne tilladelse på flere måder: Brugeren kan f.eks. være medlem af det arbejdsområde, der indeholder datasættet. Der kan deles en rapport eller et dashboard, hvor datasættet bruges, med brugeren. Eller brugeren kan have tilladelse til at oprette for datasættet i enten et arbejdsområde eller i en app, der indeholder datasættet. Læs mere om [tilladelsen Opret for datasæt](../connect-data/service-datasets-build-permissions.md).
-* Gæstebrugere kan ikke bruge **Analysér i Excel** til datasæt, der er sendt fra (stammer fra) en anden lejer. 
-* **Analysér i Excel** er en funktion i Power BI-tjenesten og er ikke tilgængelig i Power BI-rapportserver eller Power BI Embedded. 
+* Brugere kan oprette forbindelse til datasæt via Analysér i Excel, hvis de har læsetilladelse til det underliggende datasæt.  En bruger kan have denne tilladelse på nogle få måder, f. eks. at have rollen i arbejdsområdet, der indeholder datasættet eller har oprettet tilladelse til et datasæt i et arbejdsområde eller i en app, der indeholder datasættet. Læs mere om [tilladelsen Opret for datasæt](../connect-data/service-datasets-build-permissions.md).
+* Gæstebrugere kan ikke bruge **Analysér i Excel** til datasæt, der sendes fra (fra) en anden lejer. 
+* **Analysér i Excel** er en Power bi-tjeneste funktion, som ikke er tilgængelig i Power BI-rapportserver eller Power bi Embedded. 
 * **Analysér i Excel** understøttes kun på computere, der kører Microsoft Windows.
 
 
-For de brugere, der har brug for at fjerne funktionen **Analysér i Excel**, kan du gøre ved hjælp af systemindstillingen **Tilføj eller fjern programmer** på din Windows-computer.
+Hvis du har brug for at fjerne funktionen **Analysér i Excel** , skal du bruge systemindstillingen **Tilføj eller fjern programmer** på computeren.
 
-## <a name="troubleshooting"></a>Fejlfinding
-Når du bruger Analysér i Excel, kan du i nogle tilfælde få et uventet resultat, eller funktionen fungerer måske ikke som forventet. [Denne side indeholder løsninger på almindelige problemer med brug af Analysér i Excel](desktop-troubleshooting-analyze-in-excel.md).
+## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
+
+- Sikkerhed på rækkeniveau (RLS) understøttes for Analysér i Excel. RLS gennemtvinges på datamodel niveau og anvendes altid til alle brugere, der har adgang til data i rapporten. Læs mere om [sikkerhed på rækkeniveau](../admin/service-admin-rls.md).
+- Når du bruger Analysér i Excel, kan du i nogle tilfælde få et uventet resultat, eller funktionen fungerer måske ikke som forventet. Se [fejlfinding i forbindelse med Analysér i Excel](desktop-troubleshooting-analyze-in-excel.md) , hvis du har løsninger til almindelige problemer.
 
 ## <a name="next-steps"></a>Næste trin
 

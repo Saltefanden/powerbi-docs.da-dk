@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 04/05/2020
-ms.openlocfilehash: 42f110356c891235d17810dbb1f220f0a006c066
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
-ms.translationtype: HT
+ms.openlocfilehash: 4096ba77bc8733ff2e3d24cd646aa480aa53819d
+ms.sourcegitcommit: 77912d4f6ef2a2b1ef8ffccc50691fe5b38ee97a
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97887080"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98687528"
 ---
 # <a name="export-paginated-report-to-file-preview"></a>Eksportér sideinddelt rapport til fil (prøveversion)
 
@@ -122,6 +122,41 @@ Her er et eksempel på, hvordan du kan angive et effektivt brugernavn til RLS.
       }
 }
 ```
+
+### <a name="single-sign-on-sql-and-dataverse-sso"></a>SQL og Dataverse til enkeltlogon (SSO)
+
+I Power BI har du mulighed for at angive OAuth med SSO. Når du gør det, bruges legitimationsoplysningerne for den bruger, der får vist rapporten, til at hente data. Adgangstokenet i requrest-headeren bruges ikke til at få adgang til dataene. tokenet skal overføres med den gyldige identitet i Postens brødtekst.
+
+Hvad kan gøre adgangs tokens forvirring ved at få det rette adgangstoken til den ressource, du vil have adgang til. 
+- For Azure SQL er ressourcen https://database.windows.net
+- For Dataverse er ressourcen https://-adressen for dit miljø. Plet https://contoso.crm.dynamics.com
+
+API til adgangs token [her](https://docs.microsoft.com/dotnet/api/microsoft.identitymodel.clients.activedirectory.authenticationcontext.acquiretokenasync?view=azure-dotnet)
+
+Her er et eksempel på, hvordan du kan angive et effektivt Brugernavn med et adgangstoken.
+
+```json
+{
+       "format":"PDF",
+       "paginatedReportConfiguration":{
+          "formatSettings":{
+             "AccessiblePDF":"true",
+             "PageHeight":"11in",
+             "PageWidth":"8.5in",
+             "MarginBottom":"2in"
+          },
+          "identities":[
+             {
+                "username":"john@contoso.com",
+                "identityBlob": {
+                "value": "eyJ0eX....full access token"
+         }
+        }
+     ]
+   }
+}
+```
+
 ## <a name="ppu-concurrent-requests"></a>Samtidige anmodninger for Premium pr. bruger
 `exportToFile`-API'en tillader én anmodning i et 5-minutters-vindue, når du bruger [Premium pr. bruger](../../admin/service-premium-per-user-faq.md). Flere (mere end én) anmodninger inden for et 5-minutters-vindue resulterer i fejlen *For mange anmodninger* (429).
 

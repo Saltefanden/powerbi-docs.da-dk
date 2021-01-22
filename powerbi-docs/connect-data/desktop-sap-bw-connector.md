@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/13/2020
+ms.date: 01/21/2021
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 1808638ad0ccaa2adc57d56bf1677dea0ca24440
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
-ms.translationtype: HT
+ms.openlocfilehash: fec45c895b4b4eb43bd6efd2e5428d789ff4f44d
+ms.sourcegitcommit: 77912d4f6ef2a2b1ef8ffccc50691fe5b38ee97a
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96404657"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98687091"
 ---
 # <a name="use-the-sap-business-warehouse-connector-in-power-bi-desktop"></a>Brug af SAP BW Connector (Business Warehouse) i Power BI Desktop
 
@@ -45,8 +45,8 @@ Du kan downloade [SAP .NET Connector 3.0](https://support.sap.com/en/product/con
 
 Connectoren leveres i 32-bit- og 64-bit-versioner. Vælg den version, der stemmer overens med din Power BI Desktop-installation. I øjeblikket er der to versioner på webstedet til .NET 4.0-framework:
 
-* SAP Connector til Microsoft .NET 3.0.22.0 til Windows 32-bit (x86) som ZIP-fil (6.896 KB), 1. juni 2019
-* SAP Connector til Microsoft .NET 3.0.22.0 til Windows 64-bit (x64) som ZIP-fil (7.180 KB), 1. juni 2019
+* SAP-Connector til Microsoft .NET 3.0.22.0 til Windows 32-bit (x86) eller nyere (Microsoft .NET Framework 4,0)
+* SAP-Connector til Microsoft .NET 3.0.22.0 til Windows 64-bit (x64) eller nyere (Microsoft .NET Framework 4,0)
 
 Når du installerer, skal du i **Valgfri installationstrin** sørge for, at du vælger *Installer assemblies til GAC*.
 

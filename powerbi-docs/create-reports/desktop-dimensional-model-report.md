@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 01/11/2021
+ms.date: 01/19/2021
 LocalizationGroup: Reports
-ms.openlocfilehash: f5d35d7fc189f055a6f51e493fd313eb31f0564f
-ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
-ms.translationtype: HT
+ms.openlocfilehash: 03eac7aefdebb31eac353c969db2bf8810173395
+ms.sourcegitcommit: 77912d4f6ef2a2b1ef8ffccc50691fe5b38ee97a
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98565973"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98687349"
 ---
 # <a name="tutorial-from-dimensional-model-to-stunning-report-in-power-bi-desktop"></a>Selvstudium: Fra dimensionsmodel til enestående rapport i Power BI Desktop 
 
@@ -64,11 +64,10 @@ Vælg alle tabeller, og vælg **Transformér data**. Undlad at markere arkene 
 
 :::image type="content" source="media/desktop-dimensional-model-report/desktop-load-tables.png" alt-text="Indlæs tabeller i Navigator.":::
 
-Kontrollér, at kolonnernes datatyper stemmer overens med datatyperne i følgende tabel. Hvis du vil foretage ændringer, skal du vælge en forespørgsel og derefter vælge en eller flere kolonner.
+Kontrollér, at kolonnernes datatyper stemmer overens med datatyperne i følgende tabel. Hvis du vil lade Power BI registrere datatyper for dig, skal du vælge en forespørgsel og derefter vælge en eller flere kolonner. På fanen **Omdan** skal du vælge **Find data type**. Hvis du vil foretage ændringer af den registrerede datatype, skal du under fanen **hjem** vælge **datatype** og derefter vælge den relevante datatype fra tabellen.
 
 :::image type="content" source="media/desktop-dimensional-model-report/power-query-change-data-types.png" alt-text="Kontrollér kolonnernes datatyper.":::
 
-På fanen **Hjem** skal du vælge **Datatype** og derefter vælge den relevante datatype fra tabellen.
 
 |Forespørgsel  |Kolonne  |Datatype  |
 |---------|---------|---------|
@@ -330,8 +329,9 @@ Derefter skal vi oprette et søjlediagram for at undersøge, hvilke produkter de
 
 1. Vælg et tomt område i den nederste halvdel af rapportlærredet. 
 
-1. I ruden Felter skal du vælge **Salgsbeløb** fra **Salg**, **Produktkategori** fra **Produkt** og **Forretningstype** fra **Forhandler**. 
-
+1. I ruden Felter skal du vælge **Salgsbeløb** fra **Salg**, **Produktkategori** fra **Produkt** og **Forretningstype** fra **Forhandler**.
+    :::image type="content" source="media/desktop-dimensional-model-report/report-sales-amount-by-product-category-field-well.png" alt-text="Kontrollér, at kategorien og forretnings typen er på rækker, og at salgsbeløbet er valgt som værdier.":::
+    
     Power BI opretter automatisk et grupperet søjlediagram. Skift visualiseringen til en **Matrix**: 
 
     :::image type="content" source="media/desktop-dimensional-model-report/report-sales-amount-by-product-category-change-to-matrix.png" alt-text="Skift det grupperede søjlediagram til en matrix.":::
@@ -346,7 +346,7 @@ Derefter skal vi oprette et søjlediagram for at undersøge, hvilke produkter de
 
 1. Åbn afsnittet **Betinget formatering** i ruden Formatering for matrixen, og slå **Datalinjer** til. Vælg **Avancerede kontrolelementer**, og angiv en lysere farve for den positive linje. Vælg **OK**. 
 
-1. Øg bredden af kolonnen Salgsbeløb, så den dækker hele området. 
+1. Øg bredden af kolonnen Sales Amount, så den dækker hele området ved at trække matrixen.
 
     :::image type="content" source="media/desktop-dimensional-model-report/report-sales-amount-by-product-category-add-databars.png" alt-text="Matrix med datalinjer for Salgsbeløb.":::
 
@@ -393,7 +393,7 @@ Foretag følgende ændringer under fanen  **Formatér** i ruden Visualiserin
 
     Hvis du tilføjede DAX-målingen, skal du ændre **Titeltekst** til "Salgsbeløb efter Ordredato/Forfaldsdato". 
 
-1. Angiv størrelsen af **teksten** til **16 pkt**. 
+1. Angiv størrelsen af **teksten** til  **16 pkt**. 
 1. Slå **Skygge**  **Til**. 
 
 **Visualisering 3, Ordreantal efter Forhandlerland**
@@ -401,14 +401,14 @@ Foretag følgende ændringer under fanen  **Formatér** i ruden Visualiserin
 1. Vælg Visualisering 3, Ordreantal efter Forhandlerland. 
 1. I afsnittet **Korttypografier** skal du ændre **Tema** til **Gråtoneskala**. 
 1. I afsnittet  **Titel** skal du ændre **Titeltekst** til "Ordreantal efter Forhandlerland".
-1. Angiv **Tekststørrelse** til **16 pkt**. 
+1. Angiv **Tekststørrelse** til  **16 pkt**. 
 1. Slå **Skygge**  **Til**.  
 
 **Visualisering 4, Salgsbeløb efter Produktkategori og Forretningstype som forhandler**
 
 1. Vælg Visualisering 4, Salgsbeløb efter Produktkategori og Forretningstype som forhandler. 
 1. I afsnittet  **Titel** skal du ændre **Titelteksten** til "Salgsbeløb efter Produktkategori og Forretningstype som forhandler".
-1. Angiv **Tekststørrelse** til **16 pkt**. 
+1. Angiv **Tekststørrelse** til  **16 pkt**. 
 1. Slå **Skygge**  **Til**. 
 
 **Visualisering 5, Udsnit af regnskabskalender**
@@ -424,7 +424,7 @@ Foretag følgende ændringer under fanen  **Formatér** i ruden Visualiserin
 1. I ruden **Formatér figur** under afsnittet **Linje** skal du ændre **Gennemsigtighed** til  **100 %** . 
 1. I afsnittet **Udfyld** skal du ændre **Udfyldningsfarve** til **Temafarve 5 #6B91C9 (blå)** . 
 1. Under fanen **Formatér** skal du vælge **Send bagud** > **Placer bagest**. 
-1. Vælg teksten i Visualisering 1, titlen, og skift **Skriftfarve** til **Hvid**. 
+1. Vælg teksten i Visualisering 1, titlen, og skift **Skriftfarve** til  **Hvid**. 
 
 ## <a name="finished-report"></a>Færdig rapport 
 

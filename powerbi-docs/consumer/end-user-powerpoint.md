@@ -10,12 +10,12 @@ ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 01/12/2021
 LocalizationGroup: Share your work
-ms.openlocfilehash: df0591e7ae934ffa945e0e780b2764c7170358f1
-ms.sourcegitcommit: ab28cf07b483cb4b01a42fa879b788932bba919d
-ms.translationtype: HT
+ms.openlocfilehash: b94d943c54ade1f3a18e496ecae8235e47553059
+ms.sourcegitcommit: 77912d4f6ef2a2b1ef8ffccc50691fe5b38ee97a
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98227025"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98687390"
 ---
 # <a name="export-reports-to-powerpoint"></a>Eksportér rapporter til PowerPoint
 
@@ -37,8 +37,6 @@ Du kan også kopiere én visualisering ad gangen fra Power BI-tjenesten og inds�
 
 ## <a name="export-your-power-bi-report-to-powerpoint"></a>Eksportér en Power BI-rapport til PowerPoint
 Vælg en rapport i **Power BI-tjenesten** for at få den vist på lærredet. Du kan også vælge en rapport fra **Startside**, **Apps** eller en hvilken som helst objektbeholder i navigationsruden.
-
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 Når den rapport, du vil eksportere til PowerPoint, vises på lærredet, skal du vælge **Fil** > **Eksportér > PowerPoint** på menulinjen.
 
@@ -89,9 +87,7 @@ Hvad du herefter gør med dit PowerPoint-slidesæt eller nogen af billederne i h
 Der er nogle få overvejelser og begrænsninger, du skal huske på, når du arbejder med funktionen **Eksportér til PowerPoint**.
  
 
-* Hvis du ikke kan se indstillingen **Eksportér**, skal du sikre, at du har aktiveret det nye udseende, og at du får vist en rapport (ikke et dashboard).
-
-    ![Skærmbillede af det nye udseende, der kan slås til/fra](media/end-user-powerpoint/power-bi-new-look.png)
+* Hvis du ikke kan se **eksport** indstillingen, skal du sørge for, at du får vist en rapport (ikke et dashboard).
 
 * Filtre for [URL-adresser](../collaborate-share/service-url-filters.md) respekteres ikke i øjeblikket, når du vælger **Aktuelle værdier** til din eksport.
 

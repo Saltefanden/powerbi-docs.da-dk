@@ -11,12 +11,12 @@ ms.subservice: pbi-fundamentals
 ms.topic: conceptual
 ms.date: 11/14/2019
 LocalizationGroup: Get started
-ms.openlocfilehash: 8da3446814d2c356acb24100eaa03df23be8f567
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
-ms.translationtype: HT
+ms.openlocfilehash: d61ed128827572198e24bb8f31e190f328e273ff
+ms.sourcegitcommit: 77912d4f6ef2a2b1ef8ffccc50691fe5b38ee97a
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96416778"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98687564"
 ---
 # <a name="basic-concepts-for-designers-in-the-power-bi-service"></a>Grundlæggende begreber for designere i Power BI-tjenesten
 
@@ -218,7 +218,7 @@ Spørgsmål og svar søger efter et svar i den/de datasæt, der har forbindelse 
 Så snart du begynder at skrive dit spørgsmål, fører Spørgsmål og svar dig til siden Spørgsmål og svar. Mens du skriver, hjælper Spørgsmål og svar dig med at stille det rette spørgsmål og finde det bedste svar med omformuleringer, autofyld, forslag og meget mere. Når du har en visualisering (svar), som du synes om, kan du fastgøre den til dashboardet. Du kan få mere at vide i [Spørgsmål og svar i Power BI](../consumer/end-user-q-and-a.md).
 
 ### <a name="4-icons-in-the-black-header-bar"></a>4. **Ikoner på den sorte overskriftslinje**
-Ikonerne øverst til højre er dine ressourcer til indstillinger, beskeder, downloads samt til at få hjælp, slå **Nyt udseende** til og fra og give feedback til Power BI-teamet.  
+Ikonerne øverst til højre er dine ressourcer til indstillinger, beskeder, downloads samt til at få hjælp fra og give feedback til Power BI-teamet.  
 
 ![Skærmbillede af Power BI-tjenesten, der viser ikonknapperne.](media/service-basic-concepts/power-bi-icons.png)
 
