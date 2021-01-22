@@ -1,6 +1,6 @@
 ### YamlMime:Landing
-title: Dokumentation til Power BI-visualiseringer i Power BI-integreret analyse, der giver bedre integreret BI-indsigt
-summary: Du kan også udvikle dine egne Power BI-visualiseringer, der skal bruges af dig, din organisation eller hele Power BI-community'et. Vores dokumentation indeholder de oplysninger, du har brug for. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
+title: Dokumentation til Power BI-visualiseringer
+summary: Du kan også udvikle dine egne Power BI-visualiseringer, der skal bruges af dig, din organisation eller hele Power BI-community'et. Vores dokumentation indeholder de oplysninger, du har brug for.
 metadata:
   title: Dokumentation til Power BI-visualiseringer
   description: Du kan også udvikle dine egne Power BI-visualiseringer, der skal bruges af dig, din organisation eller hele Power BI-community'et. Vores dokumentation indeholder de oplysninger, du har brug for.
@@ -12,12 +12,12 @@ metadata:
   author: KesemSharabi
   ms.author: kesharab
   ms.date: 31/03/2020
-  ms.openlocfilehash: 79d5b385bab83d07423184518a00106f660b8d68
-  ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
+  ms.openlocfilehash: b2b7a23174b4790232139ae6137d518d8578d8d1
+  ms.sourcegitcommit: 77912d4f6ef2a2b1ef8ffccc50691fe5b38ee97a
   ms.translationtype: HT
   ms.contentlocale: da-DK
-  ms.lasthandoff: 01/07/2021
-  ms.locfileid: "97969391"
+  ms.lasthandoff: 01/22/2021
+  ms.locfileid: "98687436"
 landingContent:
 - title: Kom i gang
   linkLists:

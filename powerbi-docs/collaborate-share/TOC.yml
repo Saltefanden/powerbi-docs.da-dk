@@ -7,7 +7,7 @@
       items:
         - name: Måder at dele dit arbejde på
           href: service-how-to-collaborate-distribute-dashboards-reports.md
-    - name: Begreber
+    - name: Koncepter
       expanded: true
       items:
         - name: Organiser arbejde i arbejdsområder
@@ -25,8 +25,6 @@
           items:
             - name: Opret de nye arbejdsområder
               href: service-create-the-new-workspaces.md
-            - name: Tilmed dig det nye udseende for arbejdsområder
-              href: service-workspaces-new-look.md
             - name: Opgrader klassiske arbejdsområder
               href: service-upgrade-workspaces.md
             - name: Opret klassiske arbejdsområder
