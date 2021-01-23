@@ -7,31 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 11/11/2020
+ms.date: 01/20/2021
 LocalizationGroup: Premium
-ms.openlocfilehash: b0132996be1ed70f228ce96d413c4925dc1a3e48
-ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
-ms.translationtype: HT
+ms.openlocfilehash: f68c01e503400b83fe3e0488fdc49e15f55d7067
+ms.sourcegitcommit: 77912d4f6ef2a2b1ef8ffccc50691fe5b38ee97a
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94512763"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98687045"
 ---
 # <a name="configure-multi-geo-support-for-power-bi-premium"></a>Konfigurer understøttelse af Multi-Geo til Power BI Premium
 
-Multi-Geo er en Power BI Premium-funktion, som hjælper multinationale kunder med at opfylde regionale, industrispecifikke eller organisatoriske krav til dataopbevaring. Som en Power BI Premium-kunde kan du udrulle indhold til datacentre i andre områder end i Power BI-lejerens lokalområde. Et geografisk område (geografi) kan dække mere end ét område. F.eks. er USA et geografisk område, og det vestlige centrale USA og det sydcentrale USA er områder i USA. Du kan vælge at udrulle indhold til en af de følgende geografiske områder:
+Multi-Geo er en Power BI Premium-funktion, som hjælper multinationale kunder med at opfylde regionale, industrispecifikke eller organisatoriske krav til dataopbevaring. Som en Power BI Premium-kunde kan du udrulle indhold til datacentre i andre områder end i Power BI-lejerens lokalområde. Et geografisk område (geografi) kan dække mere end ét område. F.eks. er USA et geografisk område, og det vestlige centrale USA og det sydcentrale USA er områder i USA. Du kan vælge at udrulle indhold til en af følgende geografiske områder (geografiske områder), der er defineret i [Azure-geografi kortet](https://azure.microsoft.com/global-infrastructure/geographies/).
 
-- USA
-- Canada
-- Storbritannien
-- Brasilien
-- Europa
-- Japan
-- Indien
-- Asien og Stillehavsområdet
-- Australien
-- Afrika
+Suveræne skyer understøtter flere geografiske områder på tværs af områder i den pågældende Cloud.
 
-Multi-Geo fås ikke til Power BI Germany, Power BI China drevet af 21Vianet eller Power BI til myndigheder i USA.
+> [!NOTE]
+> Det nordlige Kina understøtter i øjeblikket ikke flere geografiske områder til Premium Gen2-kapaciteter.
 
 Multi-Geo er nu også tilgængelig i Power BI Embedded. Læs mere i [Multi-Geo-understøttelse i Power BI Embedded](../developer/embedded/embedded-multi-geo.md).
 

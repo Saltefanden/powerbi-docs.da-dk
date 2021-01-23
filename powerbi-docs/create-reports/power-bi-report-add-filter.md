@@ -7,18 +7,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 10/20/2019
+ms.date: 01/20/2021
 LocalizationGroup: Reports
-ms.openlocfilehash: 113370dd6b3aa19546f1facada6abc07c12b9d1a
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
-ms.translationtype: HT
+ms.openlocfilehash: b9aecda1f4ec3dfd1a4ab65cb78fd2a8e577c01d
+ms.sourcegitcommit: 77912d4f6ef2a2b1ef8ffccc50691fe5b38ee97a
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96389086"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98687154"
 ---
 # <a name="add-a-filter-to-a-report-in-power-bi"></a>Føj et filter til en rapport i Power BI
-
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 I denne artikel forklares det, hvordan du føjer et sidefilter, visualiseringsfilter, rapportfilter eller detaljeadgangsfilter til en rapport i Power BI. Eksemplerne i denne artikel er i Power BI-tjenesten. Trinnene er stort set de samme i Power BI Desktop.
 

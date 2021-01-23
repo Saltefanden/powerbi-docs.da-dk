@@ -7,25 +7,29 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 12/10/2020
+ms.date: 01/21/2021
 ms.custom: references_regions
 LocalizationGroup: Premium
-ms.openlocfilehash: 7256e17f561aa79d63b7fefd268df560903de6b2
-ms.sourcegitcommit: 772c65b7b440ab082510bf3f64b871d19139d451
-ms.translationtype: HT
+ms.openlocfilehash: 4fd953eac998e954579af83f2acec975f66e7436
+ms.sourcegitcommit: 77912d4f6ef2a2b1ef8ffccc50691fe5b38ee97a
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97353099"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98687022"
 ---
 # <a name="large-datasets-in-power-bi-premium"></a>Store datasæt i Power BI Premium
 
-Power BI-datasæt kan gemme data i en yderst komprimeret cache i hukommelsen, hvilket sikrer en optimeret forespørgselsydeevne og muliggør hurtig brugerinteraktivitet. Med Premium-kapaciteter muliggøres store datasæt over standardgrænsen på 10 GB via indstillingen **Lagerformat af store datasæt**. Når funktionen er aktiveret, begrænses størrelsen af datasættet af størrelsen af Premium-*kapaciteten* eller den maksimale størrelse, som administratoren har angivet.
+Power BI-datasæt kan gemme data i en yderst komprimeret cache i hukommelsen, hvilket sikrer en optimeret forespørgselsydeevne og muliggør hurtig brugerinteraktivitet. Med Premium-kapaciteter kan store datasæt, der er uden for standardgrænsen, aktiveres med indstillingen **Large DataSets storage format** . Når funktionen er aktiveret, begrænses størrelsen af datasættet af størrelsen af Premium-*kapaciteten* eller den maksimale størrelse, som administratoren har angivet.
 
 Store datasæt er mulige for alle Premium P SKU'er og integrerede A SKU'er. Grænsen for størrelsen af store datasæt i Premium kan sammenlignes med Azure Analysis Services, hvad angår begrænsninger for størrelsen af datamodellen.
 
 Indstillingen Lagerformat af store datasæt kræves, før størrelsen af datasæt kan øges til mere end 10 GB, men den giver også yderligere fordele. Hvis du har planer om at bruge værktøjer, der er baseret på XMLA-slutpunkter, til skrivehandlinger for datasættet, skal du sørge for at aktivere indstillingen, selv for datasæt, som du ikke nødvendigvis ville karakterisere som et *stort* datasæt. Når indstillingen er aktiveret, kan Lagerformat af store datasæt forbedre ydeevnen af XMLA-skrivehandlinger.
 
-Store datasæt i tjenesten påvirker ikke størrelsen af upload af Power BI Desktop-modeller, som stadig er begrænset til 10 GB. Datasæt kan i stedet øges til mere end 10 GB i tjenesten i forbindelse med opdatering.
+Store datasæt i tjenesten påvirker ikke størrelsen af upload af Power BI Desktop-modeller, som stadig er begrænset til 10 GB. I stedet kan datasæt blive større end den grænse i tjenesten, når de opdateres.
+
+> [!IMPORTANT]
+> Power BI Premium understøtter store datasæt. Aktivér **lagrings formatet for store datasæt** for at bruge datasæt i Power bi Premium, der er større end standardgrænsen. 
+
 
 ## <a name="enable-large-datasets"></a>Muliggør store datasæt
 
