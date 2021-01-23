@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 06/18/2020
 LocalizationGroup: Administration
-ms.openlocfilehash: 9ed9b42a42e497eaa332b3b1eb93be6247ddc542
-ms.sourcegitcommit: c700e78dfedc34f5a74b23bbefdaef77e2a87f8a
-ms.translationtype: HT
+ms.openlocfilehash: 09e215dbb32dcb93b2ae8ca51953eb636e1aad81
+ms.sourcegitcommit: e8c3f327ac0fc73c118874a24d2601733f8f9e45
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97961218"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718479"
 ---
 # <a name="power-bi-high-availability-failover-and-disaster-recovery-faq"></a>Ofte stillede spørgsmål om høj tilgængelighed, failover og it-katastrofeberedskab i Power BI
 
@@ -23,6 +23,10 @@ Denne artikel omhandler, hvordan Power BI-tjenesten leverer høj tilgængelighed
 ## <a name="what-does-high-availability-mean-for-power-bi"></a>Hvad betyder "høj tilgængelighed" for Power BI?
 
 Power BI er fuldt administreret software som en service (SaaS).  Microsoft udvikler og styrer denne software, så den er modstandsdygtigt over for fejl i infrastrukturer, og så brugerne altid kan få adgang til deres rapporter.  Tjenesten understøttes af en [SLA på 99,9 %](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37).
+
+Power BI bruger **Azure Tilgængelighedszoner** til at beskytte Power bi rapporter, programmer og data fra datacenter fejl, og de anvendes automatisk og bruges til Power bi. Tilgængelighedszoner er fejlbehæftede placeringer i et Azure-område, der giver tre eller flere forskellige og entydige placeringer i et Azure-område, der har redundant strøm, køling og netværk. Tilgængelighedszoner give Power BI kunder mulighed for at køre missionskritiske programmer med høj tilgængelighed og fejltolerance for datacenter fejl. Tilgængelighedszoner giver kunderne mulighed for at modstå fejl i datacentret via redundans og logisk isolering af tjenester. 
+
+Du kan finde flere oplysninger om **Tilgængelighedszoner** i følgende artikel, som går i detaljer om [områder og Tilgængelighedszoner i Azure](https://docs.microsoft.com/azure/availability-zones/az-overview).
 
 ## <a name="what-is-a-power-bi-failover"></a>Hvad er en Power BI-failover?
 
