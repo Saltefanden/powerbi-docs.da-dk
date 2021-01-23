@@ -10,12 +10,12 @@ ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 01/13/2021
 LocalizationGroup: Common tasks
-ms.openlocfilehash: df2083effaec83639d5c14cd62d81ee4b44ffcd7
-ms.sourcegitcommit: 396633fc5f7cff1f7d518f558b20043b2e05a513
-ms.translationtype: HT
+ms.openlocfilehash: 9f02d3785c5a74c1f2658c3c00fb16c076558213
+ms.sourcegitcommit: e8c3f327ac0fc73c118874a24d2601733f8f9e45
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98191607"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718594"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>Abonner på en rapport eller et dashboard i Power BI-tjenesten 
 
@@ -36,7 +36,9 @@ Når du modtager mailen, indeholder den et link til at "gå til rapport eller da
 ## <a name="requirements"></a>Krav
 **Oprettelse** af et abonnement til dig selv kræver en *Power BI Pro*- eller *Premium pr. bruger*-[licens](end-user-license.md). Du kan også oprette et abonnement til dig selv, hvis rapporten eller dashboardet er placeret i et Premium-arbejdsområde, og du har fået adgang til arbejdsområdet. Hvis du ikke kan oprette et abonnement, skal du kontakte din Power BI-administrator eller IT HelpDesk. 
 
-**Tilmelding af andre til et abonnement** er kun tilgængelig for de ejere af dashboardet eller rapporten, som har en *Power BI Pro*-licens. Det er lidt anderledes at abonnere på sideinddelte rapporter. Du kan finde flere oplysninger i [Meld dig selv og andre til et abonnement på en sideinddelt rapport i Power BI-tjenesten](paginated-reports-subscriptions.md). 
+**Tilmelding af andre til et abonnement** er kun tilgængelig for de ejere af dashboardet eller rapporten, som har en *Power BI Pro*-licens.
+
+Det er lidt anderledes **at abonnere på sideinddelte rapporter** . Se [Abonner på en sideinddelt rapport i Power bi-tjeneste for at](paginated-reports-subscriptions.md) få flere oplysninger. 
 
 ## <a name="subscribe-to-a-dashboard-or-a-report-page"></a>Abonner på et dashboard eller en rapportside
 Uanset om du abonnerer på et dashboard eller en rapport, er processen den samme. Du bruger den samme knap til at abonnere på dashboards og rapporter i Power BI-tjenesten.

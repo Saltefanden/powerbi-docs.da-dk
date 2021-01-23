@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/11/2020
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 00c375267ceaede23b317fb71d76e31e4ae66a83
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
-ms.translationtype: HT
+ms.openlocfilehash: 0c13d0f54d18527e6b8614f40b5b15fd46187968
+ms.sourcegitcommit: e8c3f327ac0fc73c118874a24d2601733f8f9e45
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96408636"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718502"
 ---
 # <a name="licensing-the-power-bi-service-for-users-in-your-organization"></a>Licens til Power BI-tjenesten for brugere i din organisation
 
@@ -121,7 +121,7 @@ Power BI Pro har den samme licenslivscyklus som Microsoft 365. Du kan finde fler
 
 Power BI har introduceret Power BI Premium Gen2 som et prøveversionstilbud, der forbedrer Power BI Premium-oplevelsen på følgende områder:
 * Ydeevne
-* Licens pr. bruger
+* Licenser pr. bruger. Du kan finde flere oplysninger under [ofte stillede spørgsmål om Premium pr. bruger](service-premium-per-user-faq.md) .
 * Større skalering
 * Forbedrede målepunkter
 * Automatisk skalering

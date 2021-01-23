@@ -10,12 +10,12 @@ ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 01/12/2021
 LocalizationGroup: Share your work
-ms.openlocfilehash: b94d943c54ade1f3a18e496ecae8235e47553059
-ms.sourcegitcommit: 77912d4f6ef2a2b1ef8ffccc50691fe5b38ee97a
+ms.openlocfilehash: 6001cbd1b503084012b358c4dabf7db27405b9c4
+ms.sourcegitcommit: e8c3f327ac0fc73c118874a24d2601733f8f9e45
 ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98687390"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718617"
 ---
 # <a name="export-reports-to-powerpoint"></a>Eksportér rapporter til PowerPoint
 
@@ -101,7 +101,7 @@ Der er nogle få overvejelser og begrænsninger, du skal huske på, når du arbe
 
 * Nogle rapporter kan ikke eksporteres. Disse omfatter:
     - Hvis du deler et dashboard med en person uden for din organisation og dermed en bruger, der ikke er i din Power BI-lejer, kan denne bruger ikke eksportere det delte dashboards tilknyttede rapporter til PowerPoint. Hvis du f.eks. er aaron@contoso.com, kan du dele med david@cohowinery.com. Men david@cohowinery.com kan ikke eksportere de tilknyttede rapporter til PowerPoint.
-    - Rapporter med mere end 50 rapportsider.
+    - Rapporter med mere end 50 rapportsider. Sideinddelte rapporter har ikke denne begrænsning. Se [udskrive en sideinddelt rapport](end-user-paginated-report.md#interact-with-a-paginated-report) for at få flere oplysninger.
     - Rapporter, der er større end 500 MB, når de eksporteres. 
     - Rapporter, der eksporteres til ældre versioner af PowerPoint.
     - Rapporter, som det tager mere end en time at behandle. 

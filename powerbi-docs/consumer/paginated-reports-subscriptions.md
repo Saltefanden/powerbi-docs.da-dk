@@ -7,13 +7,13 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 01/04/2021
-ms.openlocfilehash: 67efe0e7abd23792f46561f78b0b048b431561a4
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
-ms.translationtype: HT
+ms.date: 01/22/2021
+ms.openlocfilehash: 88293bbfc39f75472422e6785099421efcd45802
+ms.sourcegitcommit: e8c3f327ac0fc73c118874a24d2601733f8f9e45
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97888000"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718525"
 ---
 # <a name="subscribe-yourself-and-others-to-paginated-reports-in-the-power-bi-service"></a>Meld dig selv og andre til et abonnement på sideinddelte rapporter i Power BI-tjenesten 
 
@@ -23,13 +23,15 @@ Når du konfigurerer abonnementer, vælger du ofte, hvordan du vil modtage mails
 
 ## <a name="considerations-for-paginated-report-subscriptions"></a>Overvejelser i forbindelse med abonnementer på sideinddelte rapporter 
 
+- Du skal ikke have redigeringstilladelser til sideinddelte rapporter for at oprette et abonnement, men du skal have redigeringstilladelse til at oprette et til en anden. Hvis du mindst har en bidragyder rolle i arbejdsområdet, hvor rapporten sideinddelt er, kan du oprette abonnementer til andre. Læs mere om [roller i arbejdsområder](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces).
+
 - I modsætning til abonnementer på dashboards eller rapporter i Power BI indeholder dit abonnement en vedhæftet fil af hele outputtet for rapporten.  Følgende vedhæftede filtyper understøttes: PDF, PowerPoint-præsentation (PPTX), Excel-projektmappe (XLSX), Word-dokument (DOCX), CSV-fil og XML.
 
 - Du kan inkludere et billede som forhåndsvisning af rapporten i mailens brødtekst.  Dette er valgfrit og kan variere en smule for den første side i din vedhæftede rapport, afhængigt af det valgte format for den vedhæftede fil. 
 
 - Den maksimale størrelse for vedhæftede rapporter er 24 MB. 
 
-- Du kan tilmelde andre brugere et abonnement på sideinddelte rapporter, der har forbindelse til en hvilken som helst understøttet datakilde, herunder Azure Analysis Services eller Power BI-datasæt. Husk på, at den vedhæftede rapport afspejler dataene baseret på dine tilladelser, ligesom SQL Server Reporting Services gør i dag. 
+- Du kan abonnere på andre brugere til sideinddelte rapporter, der opretter forbindelse til alle aktuelt understøttede datakilder, herunder Azure Analysis Services eller Power BI datasæt. Husk på, at den vedhæftede rapport afspejler dataene baseret på dine tilladelser, ligesom SQL Server Reporting Services gør i dag. 
 
 - Mailabonnementer kan sendes med enten de aktuelt valgte parametre eller standardparametrene for din rapport.  Du kan angive forskellige parameterværdier for hvert abonnement, du opretter for din rapport. 
 

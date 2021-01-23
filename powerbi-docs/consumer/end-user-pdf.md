@@ -10,12 +10,12 @@ ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 01/11/2021
 LocalizationGroup: Share your work
-ms.openlocfilehash: 932149fc117568cffd94e6d551878f706a58ec65
-ms.sourcegitcommit: 396633fc5f7cff1f7d518f558b20043b2e05a513
-ms.translationtype: HT
+ms.openlocfilehash: d9d4677e8f0fe415f7a0169fb48ede7187c3fcf5
+ms.sourcegitcommit: e8c3f327ac0fc73c118874a24d2601733f8f9e45
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98191952"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718548"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Eksportér rapporter fra Power BI til PDF
 
@@ -57,7 +57,7 @@ Der er nogle få overvejelser og begrænsninger, du skal huske på, når du arbe
 * R-visualiseringer og Python understøttes ikke i øjeblikket. Disse visualiseringer er tomme i PDF'en, og der vises en fejlmeddelelse. 
 * Power BI-visuals, der er blevet certificeret, understøttes. I [Få en Power BI-visual certificeret](../developer/visuals/power-bi-custom-visuals-certified.md) kan du finde flere oplysninger om certificerede Power BI-visuals, herunder hvordan du får en Power BI-visual certificeret. Power BI-visuals, der ikke er blevet certificeret, understøttes ikke. De vises med en fejlmeddelelse i PDF'en.
 * ESRI-visualiseringen understøttes ikke.
-* Rapporter med mere end 50 rapportsider kan ikke eksporteres i øjeblikket.
+* Power BI rapporter med mere end 50 rapportsider kan ikke eksporteres i øjeblikket. Sideinddelte rapporter har ikke denne begrænsning. Se [udskrive en sideinddelt rapport](end-user-paginated-report.md#interact-with-a-paginated-report) for at få flere oplysninger. 
 * Rapporter, der er større end 500 MB, kan ikke eksporteres i øjeblikket. 
 * Processen med at eksportere rapporten til PDF kan tage nogle minutter at fuldføre, så vær tålmodig. Faktorer, som kan påvirke den tid, det kræver, omfatter rapportens struktur og den aktuelle belastning på Power BI-tjenesten.
 * Hvis menupunktet **Eksportér til PDF** ikke er tilgængeligt i Power BI-tjenesten, er det sandsynligvis fordi, din Power BI-administrator har deaktiveret funktionen. Kontakt administratoren for at få detaljer.

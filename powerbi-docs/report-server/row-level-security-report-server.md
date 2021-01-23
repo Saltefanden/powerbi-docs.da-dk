@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 01/22/2019
-ms.openlocfilehash: eb06bc41aaaeea9790c34bb808548506963b8cb8
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
-ms.translationtype: HT
+ms.date: 01/22/2021
+ms.openlocfilehash: 50c89bdaa47aa8a687178a33627cf9148720acf2
+ms.sourcegitcommit: e8c3f327ac0fc73c118874a24d2601733f8f9e45
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90861837"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718571"
 ---
 # <a name="row-level-security-rls-in-power-bi-report-server"></a>Sikkerhed på rækkeniveau i Power BI-rapportserver
 
@@ -51,7 +51,7 @@ Når du har gemt din rapport i Power BI-rapportserver, kan du administrere sikke
 
      ![Administrer sikkerhed på rækkeniveau](media/row-level-security-report-server/power-bi-report-server-rls-dialog.png)
 
-    Du kan føje medlemmer til en rolle, du har oprettet i Power BI Desktop, på siden**Sikkerhed på rækkeniveau**.
+    Du kan føje medlemmer til en rolle, du har oprettet i Power BI Desktop, på siden **Sikkerhed på rækkeniveau**.
 
 5. Du tilføjer et medlem ved at vælge **Tilføj medlem**.
 
@@ -95,6 +95,7 @@ Hvis du bruger integreret sikkerhed med DirectQuery, oplever dine brugere muligv
 
 Forfattere til rapporter har ikke adgang til at få vist rapportdataene i Power BI-rapportserver, før de har tildelt sig selv roller, der er i overensstemmelse hermed, efter overførsel af rapporten. 
 
+Rolletildelinger via gruppemedlemskaber understøttes kun, når Power BI-rapportserver er konfigureret til at køre med NTLM-eller Kerberos-godkendelse. Servere, der kører med Custom Authentication eller Windows Basic, kræver, at brugerne eksplicit har fået tildelt roller.
  
 
 ## <a name="faq"></a>Ofte stillede spørgsmål 
