@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
 LocalizationGroup: Administration
-ms.openlocfilehash: 9019ed9e64bca94a87e2ab9b6febdb7a25055b75
-ms.sourcegitcommit: c700e78dfedc34f5a74b23bbefdaef77e2a87f8a
-ms.translationtype: HT
+ms.openlocfilehash: b21443fd334e465ca5ced3efd00fe66828367615
+ms.sourcegitcommit: 84f0e7f31e62cae3bea2dcf2d62c2f023cc2d404
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97961149"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98780918"
 ---
 # <a name="power-bi-security"></a>Power BI-sikkerhed
 
@@ -39,7 +39,7 @@ Hver installation af Power BI består af to klynger – en Web Front End (**WFE*
 
 ## <a name="data-storage-security"></a>Datalagringssikkerhed
 
-Power BI bruger to primære lagre til at gemme og administrere data: Data, der er uploadet fra brugere, sendes typisk til **Azure BLOB**-lageret, og alle metadata samt artefakter for selve systemet gemmes i **Azure SQL Database**.
+Power BI bruger to primære lagre til lagring og administration af data: data, der overføres fra brugere, sendes normalt til **Azure blob Storage**, og alle metadata samt alle metadata samt artefakter for selve systemet er gemt i **Azure-SQL database**.
 
 Den stiplede linje i billedet herover af **Back-End**-klyngen viser grænsen mellem de to eneste komponenter, der er tilgængelige for brugere (til venstre for den stiplede linje), og roller, der kun kan tilgås af systemet. Når en godkendt bruger opretter forbindelse til Power BI-tjenesten, accepteres og administreres forbindelsen og anmodninger fra klienten af **gatewayrollen** (som til sidst skal håndteres af **Azure API Management**), som derefter interagerer på brugerens vegne med resten af Power BI-tjenesten. Når en klient f.eks. forsøger at få vist et dashboard, accepterer **gatewayrollen** den pågældende anmodning og sender derefter separat en anmodning til **præsentationsrollen** om at hente de data, der skal bruges af browseren til at gengive dashboardet.
 

@@ -1,5 +1,5 @@
 ### YamlMime:Landing
-title: Dokumentation om Power BI-automatisering, der giver mulighed for bedre integreret BI-indsigt i Power BI-integreret analyse
+title: Dokumentation til Power BI Automation
 summary: Med Power BI Automation kan du udføre administrationsopgaver på Power BI-objekter som rapporter, datasæt og arbejdsområder.
 metadata:
   title: Dokumentation til Power BI Automation
@@ -12,12 +12,12 @@ metadata:
   author: KesemSharabi
   ms.author: kesharab
   ms.date: 31/03/2020
-  ms.openlocfilehash: def78e481474b7186457d019404f4604406ce967
-  ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
-  ms.translationtype: HT
+  ms.openlocfilehash: eb357c5a89afec8f42b86ec80bca688e37101322
+  ms.sourcegitcommit: 84f0e7f31e62cae3bea2dcf2d62c2f023cc2d404
+  ms.translationtype: MT
   ms.contentlocale: da-DK
-  ms.lasthandoff: 01/05/2021
-  ms.locfileid: "97887586"
+  ms.lasthandoff: 01/26/2021
+  ms.locfileid: "98781542"
 landingContent:
 - title: Kom i gang
   linkLists:
@@ -39,6 +39,12 @@ landingContent:
       url: walkthrough-push-data-add-rows.md
     - text: 'Selvstudium: Automatiser konfiguration af skabelonapp'
       url: ../template-apps/template-apps-auto-install-tutorial.md
+- title: Klient-API'er
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: Power BI integrerede API'er til analyse klient
+      url: /javascript/api/overview/powerbi/
 - title: Arbejd med data
   linkLists:
   - linkListType: concept

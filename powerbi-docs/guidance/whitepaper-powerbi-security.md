@@ -9,12 +9,12 @@ ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 05/14/2020
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 5cee5dd701f7ac40b3f363e1bdcee039037fcde9
-ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
+ms.openlocfilehash: f46da004e554027eae1943444bdcf40791d6c76e
+ms.sourcegitcommit: 84f0e7f31e62cae3bea2dcf2d62c2f023cc2d404
 ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98565134"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98781609"
 ---
 # <a name="power-bi-security-whitepaper"></a>Whitepaper om sikkerhed i Power BI
 
@@ -87,7 +87,7 @@ Power BI bruger to primære lagre til at gemme og administrere data: Data, der u
 
 Når en bruger f.eks. importerer en Excel-projektmappe i Power BI-tjenesten, oprettes der en tabeldatabase i hukommelsen i Analysis Services, og dataene gemmes i hukommelsen i op til én time (eller indtil der kommer pres på systemets hukommelse). Dataene sendes også til **Azure Blob** Storage.
 
-Metadata om en brugers Power BI-abonnement, f.eks. dashboards, rapporter, seneste datakilder, arbejdsområder, organisationsoplysninger, lejeroplysninger og andre metadata om systemet, gemmes og opdateres i **Azure SQL Database**. Alle oplysninger, der gemmes i Azure SQL Database, krypteres fuldt ud ved hjælp af teknologien [Transparent Data Encryption (TDE) i Azure SQL](/azure/sql-database/transparent-data-encryption-azure-sql). Alle data, der gemmes i Azure Blob Storage, krypteres også. Du kan finde flere oplysninger om processen til indlæsning, lagring og flytning af data i afsnittet **Datalager og -flytning**.
+Metadata om en brugers Power BI-abonnement, f.eks. dashboards, rapporter, seneste datakilder, arbejdsområder, organisationsoplysninger, lejeroplysninger og andre metadata om systemet, gemmes og opdateres i **Azure SQL Database**. Alle oplysninger, der gemmes i Azure SQL Database, krypteres fuldt ud ved hjælp af teknologien [Transparent Data Encryption (TDE) i Azure SQL](/azure/sql-database/transparent-data-encryption-azure-sql). Alle data, der er gemt i Azure Blob Storage, er også krypteret. Du kan finde flere oplysninger om processen til indlæsning, lagring og flytning af data i afsnittet **Datalager og -flytning**.
 
 ## <a name="tenant-creation"></a>Oprettelse af lejer
 
@@ -107,7 +107,7 @@ Der er flere tekniske detaljer, der skal evalueres i forbindelse med lokale love
 
 - Der findes et eksternt forespørgsels udførelses lag i området Fjern kapacitet for at sikre, at datamodellen, cache lagrene og de fleste databehandling forbliver i området for fjern kapacitet. Der er nogle undtagelser, som beskrevet i det [fler geografiske område for Power bi Premium](../admin/service-admin-premium-multi-geo.md) artikel.
 - En cachelagret forespørgselstekst og et tilsvarende resultat, der er gemt i en fjern region, forbliver i det pågældende område, men andre data i transit kan gå frem og tilbage mellem flere geografiske områder.
-- PBIX-eller XLSX-filer, der publiceres (overføres) til en kapacitet med flere områder af Power BI-tjeneste, kan medføre, at en kopi gemmes midlertidigt i Azure blob Storage i Power BI Rens lejer område. I sådanne tilfælde krypteres dataene ved hjælp af Azure Storage service Encryption (SSE), og kopien planlægges for spildopsamling, så snart indholdet af filindholdet og overførsel til fjern området er fuldført. 
+- PBIX-eller XLSX-filer, der publiceres (overføres) til en kapacitet med flere områder af Power BI-tjeneste, kan medføre, at en kopi gemmes midlertidigt i Azure Blob Storage i den Power BI Rens lejer område. I sådanne tilfælde krypteres dataene ved hjælp af Azure Storage service Encryption (SSE), og kopien planlægges for spildopsamling, så snart indholdet af filindholdet og overførsel til fjern området er fuldført. 
 - Når der flyttes data på tværs af områder i et miljø med flere områder, slettes forekomsten af dataene i kildeområdet inden for 7-30 dage. 
 
 ### <a name="datacenters-and-locales"></a>Datacentre og landestandarder
@@ -205,7 +205,7 @@ I forbindelse med cloudbaserede datakilder krypterer rollen for Dataflytning kry
 
     a. I forbindelse med Analysis Services i det lokale miljø gemmes intet i tjenesten med undtagelse af en reference til den pågældende database, der er gemt krypteret i Azure SQL.
 
-    b. Alle andre metadata for ETL, DirectQuery og pushdata krypteres og gemmes i Azure Blob Storage.
+    b. Alle andre metadata for ETL-, DirectQuery-og push-data krypteres og gemmes i Azure Blob Storage.
 
 1. Legitimationsoplysninger til de oprindelige datakilder
   
@@ -226,19 +226,19 @@ I forbindelse med cloudbaserede datakilder krypterer rollen for Dataflytning kry
 
     a. Analysis Services i det lokale miljø og DirectQuery – intet gemmes i Power BI-tjenesten.
 
-    b. ETL – krypteret i Azure Blob Storage, men alle data, der i øjeblikket er i Azure Blob Storage i Power BI-tjenesten, bruger [Azure Storage Service Encryption (SSE)](/azure/storage/common/storage-service-encryption), som også kaldes for kryptering på serversiden. Multi-geo bruger også SSE.
+    b. ETL – krypteret i Azure Blob Storage, men alle data, der i øjeblikket er i Azure Blob Storage på Power BI-tjeneste bruger [SSE (Azure storage service Encryption)](/azure/storage/common/storage-service-encryption), også kendt som kryptering på serversiden. Multi-geo bruger også SSE.
 
-    c. Pushdata v1 – gemmes krypteret i Azure Blob Storage, men alle data, der i øjeblikket er i Azure Blob Storage i Power BI-tjenesten, bruger [Azure Storage Service Encryption (SSE)](/azure/storage/common/storage-service-encryption), som også kaldes for kryptering på serversiden. Multi-geo bruger også SSE. Push data v1 udgik fra 2016. 
+    c. Push data v1 – gemt krypteret i Azure Blob Storage, men alle data, der i øjeblikket er i Azure Blob Storage i Power BI-tjeneste bruger [SSE (Azure storage service Encryption)](/azure/storage/common/storage-service-encryption), også kendt som kryptering på serversiden. Multi-geo bruger også SSE. Push data v1 udgik fra 2016. 
 
     d. Pushdata v2 – gemmes krypteret i Azure SQL.
 
-Power BI bruger tilgangen med kryptering på klientsiden ved hjælp af CBC-tilstanden (cipher block chaining) med Advanced Encryption Standard (AES) til at kryptere Azure Blob Storage. Du kan [få mere at vide om kryptering på klientsiden](/azure/storage/common/storage-client-side-encryption).
+Power BI bruger krypteringsmetoden på klientsiden ved hjælp af CBC-tilstand (Advanced Encryption Standard) med AES (Advanced Encryption Standard) til at kryptere dens Azure Blob Storage. Du kan [få mere at vide om kryptering på klientsiden](/azure/storage/common/storage-client-side-encryption).
 
 Power BI sikrer overvågning af dataintegritet på følgende måder:
 
 * I forbindelse med inaktive data i Azure SQL bruger Power BI dbcc, TDE og konstant kontrolsum for side som en del af det oprindelige tilbud i SQL.
 
-* I forbindelse med inaktive data i Azure Blob Storage bruger Power BI kryptering på klientsiden og HTTPS til at overføre data til lageret, som omfatter integritetskontroller under hentning af dataene. Du kan [få mere at vide om sikkerhed i Azure Blob Storage](/azure/storage/blobs/security-recommendations).
+* For data, der hviler i Azure Blob Storage, bruger Power BI kryptering på klientsiden og HTTPS til at overføre data til lager, som omfatter integritetskontrol under hentning af dataene. Du kan [få mere at vide om Azure blob Storage sikkerhed](/azure/storage/blobs/security-recommendations).
 
 #### <a name="reports"></a>Rapporter
 
@@ -256,7 +256,7 @@ Power BI sikrer overvågning af dataintegritet på følgende måder:
 
     &ensp;&ensp;a. For rapporter, der er oprettet med Excel til Microsoft 365, er intet gemt.
 
-    &ensp;&ensp;b. I forbindelse med Power BI-rapporter gemmes og krypteres statiske data i Azure Blob Storage.
+    &ensp;&ensp;b. For Power BI rapporter gemmes de statiske data og krypteres i Azure Blob Storage.
 
 3. Cacher
 
@@ -267,13 +267,13 @@ Power BI sikrer overvågning af dataintegritet på følgende måder:
 
 4. Oprindelige .pbix-filer (Power BI Desktop) eller .xlsx-filer (Excel), der er publiceret i Power BI
 
-    Nogle gange gemmes en kopi eller et øjebliksbillede af .xlsx- eller .pbix-filerne i Azure Blob Storage i Power BI. Når det sker, krypteres dataene. I Azure Blob Storage bruger alle sådanne rapporter, som er gemt i Power BI-tjenesten, [Azure Storage Service Encryption (SSE)](/azure/storage/common/storage-service-encryption), der også kaldes for kryptering på serversiden. Multi-geo bruger også SSE.
+    Nogle gange gemmes en kopi eller et øjebliksbillede af. xlsx-eller. pbix-filerne i Power BI Azure Blob Storage, og når det sker, krypteres dataene. Alle sådanne rapporter, der gemmes i Power BI-tjeneste, i Azure Blob Storage, bruger [SSE (Azure storage service Encryption)](/azure/storage/common/storage-service-encryption), som også kaldes kryptering på serversiden. Multi-geo bruger også SSE.
 
 #### <a name="dashboards-and-dashboard-tiles"></a>Dashboards og dashboardfelter
 
 1. Cache lagre – de data, der skal bruges af de visuelle elementer på dashboardet, er normalt cachelagret og lagret i den visuelle data cache, der er beskrevet i det følgende afsnit. Andre felter såsom fastgjorte visualiseringer fra Excel eller SQL Server Reporting Services (SSRS) gemmes i Azure Blob som billeder og krypteres også.
 
-2. Statiske data – der omfatter artefakter, f. eks. baggrundsbilleder og Power BI visuelle elementer, der er gemt, krypteret, i Azure blob Storage.
+2. Statiske data – der indeholder artefakter som f. eks. baggrundsbilleder og Power BI visuelle elementer, der er gemt, krypteret, i Azure Blob Storage.
 
 Uanset hvilken krypteringsmetode der bruges, administrerer Microsoft sig nøglekryptering på vegne af kunder.
 

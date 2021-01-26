@@ -12,7 +12,7 @@
       items:
         - name: 'Selvstudium: Udvikling af en cirkelkortvisualisering i Power BI'
           href: develop-circle-card.md
-        - name: Opret React-baserede visualiseringer
+        - name: 'Selvstudium: Opret et Power BI visuelt element ved hjælp af Reager'
           href: create-react-visual.md
         - name: Opret et liggende søjlediagram
           href: create-bar-chart.md

@@ -7,18 +7,18 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 10/22/2020
+ms.date: 1/25/2021
 LocalizationGroup: Get started
-ms.openlocfilehash: 1c16405ff211620580f739facda8556e81774935
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
-ms.translationtype: HT
+ms.openlocfilehash: 46d7c0247cfd644b9a085862bbf7d0d41557a371
+ms.sourcegitcommit: 84f0e7f31e62cae3bea2dcf2d62c2f023cc2d404
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96415122"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98780829"
 ---
 # <a name="the-new-look-where-did-the-actions-go"></a>Det "nye udseende": Hvor blev handlingerne af?
 
-Power BI-tjenesten (app.powerbi.com) har fået et nyt udseende, der gør det lettere at få vist og interagere med dine rapporter. Derfor er mange af menuhandlingerne blevet flyttet. Tabellerne i denne artikel knytter den gamle placering til den nye. Hvis du vil have flere oplysninger om baggrunden, skal du se [det "nye udseende" af Power BI-tjenesten](service-new-look.md).
+Power BI-tjeneste (app.powerbi.com) er flyttet til et nyt udseende, der gør det lettere at få vist og interagere med dine rapporter. Derfor er mange af menuhandlingerne blevet flyttet. Hvis din organisation har gennemført flytningen til det nye udseende, men du er mere bekendt med det gamle udseende, kan du bruge denne artikel til at finde din vej. Tabellerne i denne artikel knytter den gamle placering til den nye. 
 
 Leder du efter oplysninger om det nye udseende af **Power BI Desktop**? Se [Brug det opdaterede bånd i Power BI Desktop](../create-reports/desktop-ribbon.md).
 
@@ -70,7 +70,3 @@ Leder du efter oplysninger om det nye udseende af **Power BI Desktop**? Se [Brug
 | Opdater dashboardfelter | Menulinjen Flere indstillinger (...) > Opdater dashboardfelter | Opdater visualiseringer (højre side) |
 | Inspektion af ydeevne | Menulinjen Flere indstillinger (...) > Inspektion af ydeevne | Filer > Inspektion af ydeevne |
 | Indstillinger | Menulinjen Flere indstillinger (...) > Indstillinger | Filer > Indstillinger |
-
-## <a name="next-steps"></a>Næste trin
-
-[Det "nye udseende" af Power BI-tjenesten](service-new-look.md)

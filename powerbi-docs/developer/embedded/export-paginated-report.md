@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 04/05/2020
-ms.openlocfilehash: 4096ba77bc8733ff2e3d24cd646aa480aa53819d
-ms.sourcegitcommit: 77912d4f6ef2a2b1ef8ffccc50691fe5b38ee97a
+ms.openlocfilehash: befb64ec85c02f8993d828202df06aafc5901482
+ms.sourcegitcommit: 84f0e7f31e62cae3bea2dcf2d62c2f023cc2d404
 ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98687528"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98781530"
 ---
 # <a name="export-paginated-report-to-file-preview"></a>Eksportér sideinddelt rapport til fil (prøveversion)
 
@@ -127,11 +127,12 @@ Her er et eksempel på, hvordan du kan angive et effektivt brugernavn til RLS.
 
 I Power BI har du mulighed for at angive OAuth med SSO. Når du gør det, bruges legitimationsoplysningerne for den bruger, der får vist rapporten, til at hente data. Adgangstokenet i requrest-headeren bruges ikke til at få adgang til dataene. tokenet skal overføres med den gyldige identitet i Postens brødtekst.
 
-Hvad kan gøre adgangs tokens forvirring ved at få det rette adgangstoken til den ressource, du vil have adgang til. 
-- For Azure SQL er ressourcen https://database.windows.net
-- For Dataverse er ressourcen https://-adressen for dit miljø. Plet https://contoso.crm.dynamics.com
+Hvad kan gøre adgangs tokens forvirring ved at få det rette adgangstoken til den ressource, du vil have adgang til.
 
-API til adgangs token [her](https://docs.microsoft.com/dotnet/api/microsoft.identitymodel.clients.activedirectory.authenticationcontext.acquiretokenasync?view=azure-dotnet)
+- I forbindelse med Azure SQL er ressourcen `https://database.windows.net` .
+- For Dataverse er ressourcen `https://` adressen på dit miljø. F. eks. for eksempel `https://contoso.crm.dynamics.com` .
+
+Få adgang til token API ved hjælp af metoden [AuthenticationContext. AcquireTokenAsync](https://docs.microsoft.com/dotnet/api/microsoft.identitymodel.clients.activedirectory.authenticationcontext.acquiretokenasync) .
 
 Her er et eksempel på, hvordan du kan angive et effektivt Brugernavn med et adgangstoken.
 

@@ -1,5 +1,5 @@
 ### YamlMime:Hub
-title: Dokumentation til Power BI-udviklere, der giver bedre integreret BI-indsigt i Power BI-integreret analyse
+title: Dokumentation til Power BI-udvikler
 summary: Som Power BI-udvikler kan du integrere Power BI-indhold, udvikle en Power BI-visualisering og automatisere Power BI-processer.
 brand: power-bi
 metadata:
@@ -13,12 +13,12 @@ metadata:
   author: KesemSharabi
   ms.author: kesharab
   ms.date: 31/03/2020
-  ms.openlocfilehash: 701f9e5e02d8b8cb8d019deebd9ae226560e07df
-  ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
-  ms.translationtype: HT
+  ms.openlocfilehash: 51bd353206d605cd0627e10e226d0950adf8de0f
+  ms.sourcegitcommit: 84f0e7f31e62cae3bea2dcf2d62c2f023cc2d404
+  ms.translationtype: MT
   ms.contentlocale: da-DK
-  ms.lasthandoff: 01/05/2021
-  ms.locfileid: "97885677"
+  ms.lasthandoff: 01/26/2021
+  ms.locfileid: "98781450"
 highlightedContent:
   items:
   - title: Integreret analyse med Power BI
@@ -30,6 +30,9 @@ highlightedContent:
   - title: Visualiseringer i Power BI
     itemType: overview
     url: visuals/power-bi-custom-visuals.md
+  - title: Power BI integrerede API'er til analyse klient
+    itemType: whats-new
+    url: /javascript/api/overview/powerbi/
   - title: Automatiseret konfiguration af skabelonapp
     itemType: concept
     url: template-apps/template-apps-auto-install.md
@@ -105,6 +108,6 @@ additionalContent:
     - title: Teststed
       summary: Prøv funktioner, og udforsk API'er.
       url: https://aka.ms/pbieplayground
-    - title: JavaScript-wiki
-      summary: Udforsk JavaScript-videnbasen.
-      url: https://github.com/Microsoft/powerbi-javascript/wiki
+    - title: Power BI integrerede API'er til analyse klient
+      summary: Udforsk Power BI integrerede API'er til Analytics-klienten.
+      url: /javascript/api/overview/powerbi/

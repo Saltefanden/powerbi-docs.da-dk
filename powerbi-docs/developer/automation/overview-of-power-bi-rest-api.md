@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
 ms.date: 03/25/2019
-ms.openlocfilehash: 122028b2ac838763318ab5a0c4e6208138d93188
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
-ms.translationtype: HT
+ms.openlocfilehash: 8fac168bf4e2d1cb7b386a1e22da99f39b579da8
+ms.sourcegitcommit: 84f0e7f31e62cae3bea2dcf2d62c2f023cc2d404
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97887609"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98781578"
 ---
 # <a name="what-can-developers-do-with-the-power-bi-api"></a>Hvad kan udviklere bruge Power BI-API'en til?
 
@@ -37,8 +37,8 @@ Her er nogle af de ting, du kan bruge Power BI-API'erne til.
 
 | Værktøj(er) | Beskrivelse |
 |---------|-------------|
-| [Værktøj til teststed](https://microsoft.github.io/PowerBI-JavaScript/demo) | Oplev et komplet eksempel på brug af JavaScript-API'er for Power BI. Med dette værktøj kan du nemt prøve dig frem med forskellige typer Power BI Embedded-eksempler. |
-| [JavaScript-wiki til Power BI](https://github.com/Microsoft/powerbi-javascript/wiki) | For at få flere oplysninger om JavaScript-API'er for Power BI. |
+| [Værktøj til teststed](https://microsoft.github.io/PowerBI-JavaScript/demo) | Få et komplet eksempel på, hvordan du bruger Power BI integrerede API'er til analyse klient. Med dette værktøj kan du nemt prøve dig frem med forskellige typer Power BI Embedded-eksempler. |
+| [Power BI integrerede API'er til analyse klient](/javascript/api/overview/powerbi/) | Du kan få flere oplysninger om Power BI-klient-API'erne. |
 | [Postman](https://www.getpostman.com/) | Kør anmodninger, test, find fejl, overvåg, kør automatiserede test og meget mere. |
 
 ## <a name="push-data-into-power-bi"></a>Overfør data til Power BI
@@ -51,7 +51,7 @@ Du kan bruge Power BI-API'en til at [sende data til et datasæt via push](walkth
 
 * [Eksempler på Power BI Developer](https://github.com/Microsoft/PowerBI-Developer-Samples)
 * [.NET-SDK](https://github.com/Microsoft/PowerBI-CSharp)
-* [JavaScript-API](https://github.com/Microsoft/PowerBI-JavaScript)
+* [Power BI integrerede API'er til analyse klient](/javascript/api/overview/powerbi/)
 
 ## <a name="next-steps"></a>Næste trin
 

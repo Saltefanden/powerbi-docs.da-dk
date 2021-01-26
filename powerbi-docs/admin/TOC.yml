@@ -11,7 +11,7 @@
           href: service-admin-where-is-my-tenant-located.md
         - name: Hvad er Power BI Premium?
           href: service-premium-what-is.md
-    - name: Begreber
+    - name: Koncepter
       expanded: true
       items:
         - name: Administrationsrolle i Microsoft 365
@@ -161,7 +161,7 @@
           href: service-interruption-notifications.md
         - name: Har du glemt din adgangskode til Power BI?
           href: service-admin-forgot-your-password.md
-        - name: Hentning af yderligere diagnosticeringsoplysninger til Power BI
+        - name: Registrer diagnosticeringsoplysninger fra Power BI-tjeneste
           href: service-admin-capturing-additional-diagnostic-information-for-power-bi.md
         - name: Alternativ mailadresse til Power BI
           href: service-admin-alternate-email-address-for-power-bi.md
