@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 05/04/2020
-ms.openlocfilehash: 28058161672de9db0cac5093e652e1d551f6a80a
-ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
-ms.translationtype: HT
+ms.date: 01/25/2021
+ms.openlocfilehash: bbe88b206c4c07e2e296b9c85d46be7901f5972a
+ms.sourcegitcommit: 5c5a27aa7ba21612df4c4096e635dfe4b9aaebcf
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93297312"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98861278"
 ---
 # <a name="publish-a-paginated-report-to-the-power-bi-service"></a>Publicer en sideinddelt rapport i Power BI-tjenesten
 
@@ -27,7 +27,7 @@ Hvis din datakilde til rapporten er i det lokale miljø, skal du oprette en gate
 
 Hvis arbejdsområdet ikke har rombeikonet ![Rombeikon for Power BI Premium-kapacitet](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) ud for navnet, skal du føje arbejdsområdet til en Premium-kapacitet. 
 
-1. Vælg **Arbejdsområder** , vælg ellipsen ( **...** ) ud for navnet på arbejdsområdet, og vælg derefter **Rediger arbejdsområde**.
+1. Vælg **Arbejdsområder**, vælg ellipsen (**...**) ud for navnet på arbejdsområdet, og vælg derefter **Rediger arbejdsområde**.
 
     ![Vælg Rediger arbejdsområde](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-edit-workspace.png)
 
@@ -37,13 +37,13 @@ Hvis arbejdsområdet ikke har rombeikonet ![Rombeikon for Power BI Premium-kapac
 
    Du kan muligvis ikke kan ændre den. Hvis ikke, skal du kontakte administratoren af Power BI Premium-kapacitet for at får tildelt rettigheder, så du kan føje dit arbejdsområde til en Premium-kapacitet.
 
-## <a name="from-report-builder-publish-a-paginated-report"></a>Udgiv en sideinddelt rapport fra Power BI Report Builder
+## <a name="from-report-builder-publish-a-paginated-report-to-the-power-bi-service"></a>Publicer en sideinddelt rapport til Power BI tjeneste fra Report Builder
 
-1. Opret din sideinddelte rapport i Report Builder, og gem den på din lokale computer.
+1. Opret en ny sideinddelt rapport, eller Åbn en eksisterende sideinddelt rapport fra Power BI-tjenesten i Report Builder. Hvis du åbner en eksisterende sideinddelt rapport fra tjenesten, er indstillingen **Gem** deaktiveret, da du opdaterer en rapport, der er direkte i Power bi tjeneste.
 
-1. I menuen **Filer** i Power BI Report Builder skal du vælge **Gem som**.
+1. Vælg **Publicer** i menuen Report Builder **filer** .
 
-    ![Menuen Filer > Gem > Gem som](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-save-as.png)
+    ![Vælg menuen filer, og Udgiv derefter.](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-save-as.png)
 
     Hvis du ikke er logget på Power BI endnu, skal du logge på eller oprette en konto nu. I øverste højre hjørne af Power BI Report Builder skal du vælge **Log på** og udføre trinnene.
 

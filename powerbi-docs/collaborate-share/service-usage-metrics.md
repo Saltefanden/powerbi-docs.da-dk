@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 01/15/2021
+ms.date: 01/26/2021
 LocalizationGroup: Dashboards
-ms.openlocfilehash: acb1a1550c0ab216e4934e99f871df9321561314
-ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
-ms.translationtype: HT
+ms.openlocfilehash: 2710143ddd0474e38e7c0c1e6f82ba9c3d1fbba3
+ms.sourcegitcommit: 5c5a27aa7ba21612df4c4096e635dfe4b9aaebcf
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98565424"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98861232"
 ---
 # <a name="monitor-usage-metrics-in-classic-workspaces"></a>Overvåg forbrugsdata i klassiske arbejdsområder
 
@@ -157,12 +157,12 @@ Det er vigtigt at forstå, at der kan opstå forskelle, når du sammenligner for
 
 * Forbrugsdata kan nogle gange tælle et lavere antal aktiviteter på grund af uensartede netværksforbindelser, programmer til blokering af annoncer eller andre problemer, der kan afbryde afsendelse af hændelserne fra klienten.
 * Visse typer af visninger er ikke inkluderet i forbrugsdata, som det er beskrevet tidligere i denne artikel.
-* Forbrugsdata kan nogle gange tælle et højere antal aktiviteter i situationer, hvor klienten opdateres, uden at der er behov for at sende en anmodning tilbage til Power BI-tjenesten.
-* Deling er deaktiveret for rapporten med forbrugsmålepunkter. Hvis du vil give personer læseadgang til rapporten, skal du først give dem adgang til arbejdsområdet.
+* Forbrugsdata kan nogle gange tælle et højere antal aktiviteter i situationer, hvor klienten opdateres, uden at der er behov for at sende en anmodning tilbage til Power BI-tjenesten. Skift af rapportsider udsteder f. eks. ikke en anmodning om, at en rapport indlæses på serveren, da side definitionen allerede findes i browseren.
+* Deling er deaktiveret for rapporten med forbrugsdata. Hvis du vil give personer læseadgang til rapporten, skal du først give dem adgang til arbejdsområdet.
 
 ### <a name="discrepancies-between-rest-apis-and-usage-metrics"></a>Uoverensstemmelser mellem REST API'er og forbrugsdata
 
-[REST API'er for rapporter](/rest/api/power-bi/reports) i Power BI og [REST API'er for administratorer](/rest/api/power-bi/admin) bruger også data fra Power BI-tjenesten. Af de årsager, der er beskrevet i forrige afsnit, kan antallet af rapporter fra API'erne være forskellig fra antallet af rapport i forbrugsdata. Antallet af rapporter, der udledes af API'er, påvirkes ikke af klientproblemer og kan anses for at være nøjagtige.
+[REST API'er for rapporter](/rest/api/power-bi/reports) i Power BI og [REST API'er for administratorer](/rest/api/power-bi/admin) bruger også data fra Power BI-tjenesten. Af de årsager, der er beskrevet i forrige afsnit, kan antallet af rapporter fra API'erne være forskellig fra antallet af rapport i forbrugsdata. Antallet af rapporter, der udledes af API'er, påvirkes ikke af klientproblemer og kan anses for at være nøjagtige. Bemærk også, at administrator API'erne giver dig "aktuel tilstand" for den Power BI installation, og Overvej kun det, der findes på tidspunktet for anmodningen. Den klassiske rapport med forbrugsdata har 90 dage af data, og "samlet antal" repræsenterer entydige rapporter, der ses over 90 dage. Hvis rapporter slettes, når de er blevet vist, tælles de ikke af administrator API'erne, men tælles i de historiske data, der fodringer forbrugsrapporten.
 
 ### <a name="classic-usage-metrics-are-not-supported-with-private-links"></a>Klassiske forbrugsdata understøttes ikke med Private Links 
 

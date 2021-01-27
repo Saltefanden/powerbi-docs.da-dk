@@ -8,15 +8,15 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 Ms.custom: css_fy20Q4
 ms.topic: how-to
-ms.date: 11/16/2020
+ms.date: 01/25/2021
 ms.custom: licensing support
 LocalizationGroup: consumers
-ms.openlocfilehash: 852ac027903dc974e84691dc714a7e7e220dd36d
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
-ms.translationtype: HT
+ms.openlocfilehash: a3492383d5341518de178419afe29df1af8fa26b
+ms.sourcegitcommit: 5c5a27aa7ba21612df4c4096e635dfe4b9aaebcf
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96390443"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98861255"
 ---
 # <a name="licenses-and-subscriptions-for-business-users"></a>Licenser og abonnementer til *forretningsbrugere*
 
@@ -36,60 +36,65 @@ Denne artikel indeholder en beskrivelse af funktionerne for hver licenstype, og 
 
 ## <a name="licenses"></a>Licenser
 
-En bruger af Power BI-tjenesten har enten en *gratis* licens eller en *Pro-licens*. Hvis du er *erhvervsbruger* i Power BI, bruger du sandsynligvis en gratis licens, der administreres af din Power BI-administrator.
+Hver bruger af Power BI-tjeneste har enten en *gratis* licens, en *Pro* -licens, en Premium licenser pr. *bruger *-* licens. Hvis du er *erhvervsbruger* i Power BI, bruger du sandsynligvis en gratis licens, der administreres af din Power BI-administrator.
 
 Det er muligt at have mere end én licens på samme tid.  Tjenesten giver dig altid den funktionalitet, der svarer til licensen med flest tilladelser, som du har i øjeblikket.
 
-## <a name="power-bi-premium-capacity"></a>Power BI Premium-kapacitet
+## <a name="power-bi-premium-capacity-subscription"></a>Power BI Premium kapacitets abonnement
 
-Premium er et abonnement for organisationer, der giver dig en anden måde at gemme indhold på, nemlig en kapacitet. Med Premium kan alle med tilladelser – uanset om de befinder sig i eller uden for organisationen – få vist indhold, der er gemt i denne Premium-kapacitet, uden at købe individuelle Power BI Pro-licenser. 
+Premium er et organisations *abonnement* , der giver dig en anden måde at gemme indhold på – i en virtuel beholder, der kaldes en *kapacitet*. Med Premium-kapacitet kan alle, der har tilladelser, uanset om de er i eller uden for din organisation, få vist indhold, der er gemt i denne Premium-kapacitet, uden at købe individuelle Power BI Pro eller Premium licenser pr. bruger. 
 
-Premium muliggør omfattende distribution af indhold for Pro-brugere uden at kræve Pro-licenser for modtagere, der får vist indholdet. Der kræves Pro-licenser til indholdsdesignere. Designerne opretter forbindelse til datakilder og modeldata og opretter rapporter og dashboards, der er pakket som arbejdsområdeapps. Brugere uden en Pro-licens kan stadig få adgang til et arbejdsområde, der er i en Power BI Premium-kapacitet, så længe de har en [rolle i det pågældende arbejdsområde](end-user-workspaces.md).
+Premium-kapacitet giver mulighed for omfattende distribution af indhold via professionelle brugere uden krav om Pro-licenser til de modtagere, der får vist indholdet. Den person, der opretter indholdet i Premium-kapaciteten, bruger en Pro-licens til at oprette forbindelse til datakilder, modeldata og oprette rapporter og dashboards, der gemmes i et arbejdsområde i Premium-kapacitet. Brugere uden en Pro-licens kan stadig få adgang til et arbejdsområde, der er i en Power BI Premium-kapacitet, så længe de har en [rolle i det pågældende arbejdsområde](end-user-workspaces.md). Hvis arbejdsområdets ejer opretter en app, der er baseret på indhold i det pågældende arbejdsområde, kan brugere uden en Pro-licens stadig få vist den pågældende app i Premium-kapacitet, så længe de har fået tilladelser til den pågældende app. 
 
 I disse arbejdsområder tildeler designere roller, f.eks. **Seer**, **Bidragyder**, **Medlem** og **Administrator**. Disse roller bestemmer, i hvor høj grad kollegaer kan interagere med indholdet. Du kan finde flere oplysninger under [tilladelser og roller i arbejdsområder](end-user-workspaces.md). 
+
+Når en designer opretter og udgiver en app, giver de adgang til hele organisationer eller enkeltpersoner. Det afhænger af, hvilket omfang du kan interagere med appens indhold, afhængigt af de specifikke adgangstilladelser, der gives til dig. Du kan f. eks. få adgang til at få vist appen, oprette forbindelse til de underliggende datasæt, oprette kopier af rapporter eller dele indholdet.
 
 Du kan finde flere oplysninger om Premium-kapacitet under [Hvad er Microsoft Power BI Premium?](../admin/service-premium-what-is.md)
 
 ## <a name="find-out-which-licenses-you-have"></a>Find ud af, hvilke licenser du har
-Vælg dit profilbillede for at få vist kontooplysninger. Zalan bruger en gratis licens. 
+Vælg dit profilbillede for at få vist kontooplysninger. Zalan bruger en gratis licens. Andre typer licenser er: **Pro** og **Premium pr. bruger**. 
 
 ![Skærmbillede af rullemenu, der vises, når du klikker på dit profilbillede](media/end-user-license/power-bi-profiles.png)
 
 
-Hvis du vil have vist flere oplysninger om din konto, skal du vælge **Vis konto**. Siden [Din Microsoft **Min konto**](https://portal.office.com/account) åbnes i en ny fane i browseren.  Her kan du se, hvilke licenser der er tildelt til dig.  Vælg fanen **Abonnementer**.
+Hvis du vil have vist flere oplysninger om din konto, skal du vælge **Vis konto**. 
 
-![Skærmbillede, der viser siden Microsoft 365-konti.](media/end-user-license/power-bi-subscriptions.png)
+<!-- [Your Microsoft **My account** page](https://portal.office.com/account) opens in a new browser tab.  To see what licenses are assigned to you.  Select the tab for  **Subscriptions**.
 
+![Screenshot of Microsoft 365 Accounts page.](media/end-user-license/power-bi-subscriptions.png)
 
+This first user, Pradtanna, has Office 365 E5, which includes a Power BI Pro license.
 
+![Office portal subscriptions tab showing Office 365 E5 subscription](media/end-user-license/power-bi-license-office.png)
 
-Den første bruger, Pradtanna, har Office 365 E5, som omfatter en Power BI Pro-licens.
+This second user, Zalan, has a Power BI free license. 
 
-![Abonnementsfanen i Office-portalen, der viser Office 365 E5-abonnement](media/end-user-license/power-bi-license-office.png)
+![Office portal subscriptions tab](media/end-user-license/power-bi-license-free.png) 
 
-Den anden bruger, Zalan, har en gratis Power BI-licens. 
+## Find out if you have access to Premium capacity
 
-![Fanen Abonnementer i Office Portal](media/end-user-license/power-bi-license-free.png)
+Next, check to see if you're part of an organization that has Premium capacity. Either of the users above, Pro or free, could belong to an organization that has Premium capacity.  Let's check for our second user, Zalan.  
 
-## <a name="find-out-if-you-have-access-to-premium-capacity"></a>Find ud af, om du har adgang til Premium-kapacitet
+We can determine whether Zalan's organization has Premium capacity by looking up the amount of storage available. 
 
-Derefter skal du kontrollere, om du er en del af en organisation, der har Premium-kapacitet. Begge brugere ovenfor, Pro eller gratis, kan tilhøre en organisation, som har Premium-kapacitet.  Lad os se på den anden bruger, Zalan.  
+- In the Power BI service, select **My workspace** and then select the cog icon from the upper right corner. Choose **Manage personal storage**.
 
-Vi kan afgøre, om Zalans organisation har Premium-kapacitet ved at slå den tilgængelige lagermængde op. 
+    ![Cog Settings menu displays](media/end-user-license/power-bi-license-personal.png)
 
-- Vælg **Mit arbejdsområde** i Power BI-tjenesten, og vælg derefter tandhjulsikonet øverst til højre. Vælg **Administrer personligt lager**.
+    If you see more than 10 GB, then you're a member of an organization that has a Premium subscription. The image below shows that Zalan's organization has up to 100 GB of storage. Zalan, personally, doesn't own 100GB as indicated by the heading **Owned by us**.  
 
-    ![Menuen Indstillinger vises](media/end-user-license/power-bi-license-personal.png)
+    ![Manage storage showing 100 GB](media/end-user-license/power-bi-free-capacity.png)
 
-    Hvis du kan se mere end 10 GB, er du medlem af en organisation, der har et Premium-abonnement. Billedet nedenfor viser, at Zalans organisation har op til 100 GB lagerplads.  
+    Notice that a Pro user has already shared a workspace with Zalan. The diamond icon shows that this workspace is stored in Premium capacity. 
 
-    ![Administrer lager med 100 GB](media/end-user-license/power-bi-free-capacity.png)
+    If you see any amount of storage, the words **Pro user** next to your name, and the heading **Owned by me**, then you have a Premium per-user license.  
 
-Bemærk, at en Pro-bruger allerede har delt et arbejdsområde med Zalan. Rombeikonet viser, at dette arbejdsområde er gemt i en Premium-kapacitet. 
+    -->
 
 ## <a name="identify-content-hosted-in-premium-capacity"></a>Identificer indhold, der hostes i en Premium-kapacitet
 
-En anden måde at finde ud af, om din organisation har Premium-kapacitet på, er ved at søge efter apps og apparbejdsområder med et rombeikon. Romben indikerer, at indholder er gemt i en Premium-kapacitet. 
+Der er et par måder til at identificere indhold, der er gemt i Premium-kapacitet. På en måde kan du søge efter apps og app-arbejdsområder med et diamant ikon. Romben indikerer, at indholder er gemt i en Premium-kapacitet. 
 
 På billedet nedenfor er tre af disse apps gemt i en Premium-kapacitet.
 
@@ -99,21 +104,21 @@ Så længe *designeren* placerer arbejdsområdet i en Premium-kapacitet, kan du 
 
 ## <a name="putting-it-all-together"></a>Samling af det hele
 
-Når en organisation køber et Premium-abonnement, tildeler administratoren normalt Pro-licenser til de medarbejdere, der skal arbejde i en Premium-kapacitet og oprette og dele indhold. Pro-brugerne opretter [arbejdsområder](end-user-workspaces.md) og føjer indhold (dashboards, rapporter og apps) til disse arbejdsområder. Hvis du vil give brugere af den gratis version mulighed for at samarbejde i disse arbejdsområder, skal administratoren eller Pro-brugeren tildele arbejdsområderne til en *kapacitet*.  
+Der er mange forskellige måder, hvorpå organisationer kan organisere deres Power BI abonnementer og licenser. Fra et *erhvervsbruger* perspektiv er et af de mest almindelige scenarier, når en organisation køber et Premium-abonnement. administratoren tildeler Pro-licenser til en lille gruppe af brugere, og alle andre brugere arbejder med gratis licenser. Normalt tildeler administratoren Pro-licenserne til de medarbejdere, der vil oprette og dele indhold. Pro-brugerne opretter [arbejdsområder](end-user-workspaces.md) og føjer indhold (dashboards, rapporter, datasæt, apps) til disse arbejdsområder. Hvis du vil give gratis brugere mulighed for at samarbejde i disse arbejdsområder, tildeler administrator-eller Pro-brugeren derefter arbejdsområderne til en *Premium-kapacitet*.  
 
-|Licenstype  |Delt kapacitet | Premium-kapacitet  |
+|Licenstype  |Ikke i Premium-kapacitet | Premium-kapacitet  |
 |---------|---------|---------|
-|**Gratis**     |  Bruges som en personlig sandkasse, hvor du opretter indhold til dig selv og interagerer med dette indhold. En gratislicens er en god måde at prøve Power BI-tjenesten på. Du kan ikke bruge indhold fra andre eller dele dit indhold med andre <sup>1</sup>     |   Mulighed for at interagere med indhold, der er tildelt en Premium-kapacitet og delt med dig. Brugere af den gratis version og Pro-brugere kan samarbejde, uden at det kræves, at brugerne af den gratis version har Pro-konti.      |
-|**Pro**     |  Mulighed for at samarbejde med andre Pro-brugere ved at oprette og dele indhold.        |  Mulighed for at samarbejde med brugere af den gratis version og Pro-brugere ved at oprette og dele indhold.       |
+|**Gratis**     |  Brug som personlig Sandbox, hvor du selv opretter indhold og interagerer med dette indhold. En gratislicens er en god måde at prøve Power BI-tjenesten på. Du kan ikke bruge indhold fra andre eller dele dit indhold med andre <sup>1</sup>     |   Mulighed for at interagere med indhold, der er tildelt en Premium-kapacitet og delt med dig. Gratis, Premium pr. bruger og Pro-brugere kan samarbejde uden at kræve, at de gratis brugere har Pro-konti.      |
+|**Pro**     |  Samarbejd med Premium-brugere pr. bruger og Pro ved at oprette og dele indhold.        |  Samarbejd med gratis, Premium pr. bruger og Pro-brugere ved at oprette og dele indhold.       |
 
 
 <sup>1</sup> Se [Overvejelser og fejlfinding](#considerations-and-troubleshooting).
 
 I diagrammet nedenfor repræsenterer venstre side de Pro-brugere, der opretter og deler indhold i apparbejdsområder.
 
-- **Arbejdsområde A** blev oprettet i en organisation, der ikke har en Premium-kapacitet.
+- Der blev ikke oprettet **et arbejdsområde** i en Premium-kapacitet.
 
-- **Arbejdsområde B** er oprettet i en organisation, der har et Premium-abonnement. Arbejdsområdet er gemt i en kapacitet. Dette arbejdsområde har et rombeikon.  
+- **Arbejdsområdet B** blev oprettet og gemt i Premium-kapacitet. Dette arbejdsområde har et rombeikon.  
 
     ![billede af tre arbejdsområder](media/end-user-license/power-bi-dedicated.jpg)
 
@@ -123,7 +128,7 @@ Power BI Pro-*designeren* kan dele og samarbejde med andre Pro-brugere i et hvil
 
 - Det er muligt at have mere end én Power BI-licens. Power BI-tjenesten giver dig altid den funktionalitet, der svarer til den bedste licens, som du har i øjeblikket. Hvis du f.eks. både har en Pro-licens og en gratis licens, bruger Power BI-tjenesten Pro-licensen.
 
-- Hvis du vil oprette og dele indhold (dashboards, rapporter, apps) eller åbne indhold, som en anden har delt med dig, skal du have en Pro-brugerlicens. Du kan tilmelde dig en gratis 60-dages individuel prøveversion af Power BI Pro. Vælg den opgraderingsdialogboks, der vises i Power BI-tjenesten, når du forsøger at bruge en Pro-funktion.
+- Hvis du vil oprette og dele indhold (dashboards, rapporter, apps) eller åbne indhold, som en anden har delt med dig, skal du have en Pro-brugerlicens eller Premium pr. brugerlicens. Du kan tilmelde dig en gratis 60-dages individuel prøveversion af Power BI Pro. Vælg den opgraderingsdialogboks, der vises i Power BI-tjenesten, når du forsøger at bruge en Pro-funktion.
 
     ![dialogboks med link til Pro-prøveversion](media/end-user-license/power-bi-trial.png)
 

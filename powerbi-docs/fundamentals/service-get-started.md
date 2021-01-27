@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial
-ms.date: 07/08/2020
+ms.date: 01/13/2021
 LocalizationGroup: Get started
-ms.openlocfilehash: 4e74bec243faad281c457caaa15a6edacf2b10cb
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
-ms.translationtype: HT
+ms.openlocfilehash: 04777ba93b6a4639b55406b3952a80de963cb540
+ms.sourcegitcommit: 5c5a27aa7ba21612df4c4096e635dfe4b9aaebcf
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96417123"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98861209"
 ---
 # <a name="tutorial-get-started-creating-in-the-power-bi-service"></a>Selvstudium: Kom i gang med at oprette i Power BI-tjenesten
 Dette selvstudium er en introduktion til nogle af funktionerne i *Power BI-tjenesten.* I selvstudiet lærer du, hvordan du opretter forbindelse til data, opretter en rapport og et dashboard samt stiller spørgsmål til dine data. Du kan udføre mange flere opgaver i Power BI-tjenesten, og dette selvstudium er kun ment som en appetitvækker. Hvis du vil have en forståelse af, hvordan Power BI-tjenesten passer sammen med de andre Power BI-tilbud, anbefaler vi, at du læser artiklen [Hvad er Power BI](power-bi-overview.md).
@@ -40,7 +40,7 @@ Du skal have en Power BI Pro-licens for at oprette indhold i Power BI. Hvis du i
 
 ## <a name="step-1-get-data"></a>Trin 1: Hent data
 
-Når du vil oprette en Power BI-rapport, starter du ofte i Power BI Desktop. Med Power BI Desktop bliver du endnu mere effektiv. Du kan omdanne, forme og modellere data, før du begynder at designe rapporten. Denne gang går vi dog i gang med at oprette en rapport fra bunden i Power BI-tjenesten.
+Når du vil oprette en Power BI rapport, starter du ofte Power BI Desktop. Med Power BI Desktop bliver du endnu mere effektiv. Du kan transformere, forme og udforme data, før du går i gang med at designe rapporter. Denne gang går vi dog i gang med at oprette en rapport fra bunden i Power BI-tjenesten.
 
 I dette selvstudium henter vi data fra en enkel Microsoft Excel-fil. Vil du følge med? [Download filen Økonomieksempel](https://go.microsoft.com/fwlink/?LinkID=521962).
 
@@ -223,6 +223,8 @@ Nu, hvor du har gennemført selvstudiet, kan du slette datasættet, rapporten og
 4. Vælg **Slet**.
 
 ## <a name="next-steps"></a>Næste trin
+
+[Opret hurtigt en rapport ved at indsætte data i Power BI-tjeneste](https://powerbi.microsoft.com/en-us/blog/quickly-create-reports-power-bi-service/)
 
 Udforsk disse samlinger af Microsoft Learn-indhold til Power BI:
 
