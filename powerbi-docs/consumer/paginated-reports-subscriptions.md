@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 01/22/2021
-ms.openlocfilehash: 88293bbfc39f75472422e6785099421efcd45802
-ms.sourcegitcommit: e8c3f327ac0fc73c118874a24d2601733f8f9e45
+ms.openlocfilehash: 5817bf3752a03361be4e982faf10dffb67bda0b5
+ms.sourcegitcommit: 1872a167d1e4d731ad00cf8a6d951c31aa54bcce
 ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98718525"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98925775"
 ---
 # <a name="subscribe-yourself-and-others-to-paginated-reports-in-the-power-bi-service"></a>Meld dig selv og andre til et abonnement på sideinddelte rapporter i Power BI-tjenesten 
 
@@ -29,7 +29,7 @@ Når du konfigurerer abonnementer, vælger du ofte, hvordan du vil modtage mails
 
 - Du kan inkludere et billede som forhåndsvisning af rapporten i mailens brødtekst.  Dette er valgfrit og kan variere en smule for den første side i din vedhæftede rapport, afhængigt af det valgte format for den vedhæftede fil. 
 
-- Den maksimale størrelse for vedhæftede rapporter er 24 MB. 
+- Den maksimale størrelse af vedhæftede rapporter er 25 MB. 
 
 - Du kan abonnere på andre brugere til sideinddelte rapporter, der opretter forbindelse til alle aktuelt understøttede datakilder, herunder Azure Analysis Services eller Power BI datasæt. Husk på, at den vedhæftede rapport afspejler dataene baseret på dine tilladelser, ligesom SQL Server Reporting Services gør i dag. 
 

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
 ms.date: 10/15/2019
-ms.openlocfilehash: 7aeae77efeadfa3b39f9c39cadc36b2a046286b2
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
-ms.translationtype: HT
+ms.openlocfilehash: 0f9edc247401ccf72ec1a5b0aebb5b3a074a5494
+ms.sourcegitcommit: 1872a167d1e4d731ad00cf8a6d951c31aa54bcce
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97888564"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98925711"
 ---
 # <a name="model-relationships-in-power-bi-desktop"></a>Modelrelationer i Power BI Desktop
 
@@ -53,7 +53,7 @@ En modelrelation relaterer en kolonne i en tabel til en kolonne i en anden tabel
 
 ### <a name="cardinality"></a>Kardinalitet
 
-Alle modelrelationer skal defineres med en kardinalitetstype. Der er fire mulige kardinalitetstyper, der repræsenterer dataegenskaberne for de "fra"- og "til"-relaterede kolonner. "Et"-siden betyder, at kolonnen indeholder entydige værdier. "To"-siden betyder, at kolonnen kan indeholde dubletværdier.
+Alle modelrelationer skal defineres med en kardinalitetstype. Der er fire mulige kardinalitetstyper, der repræsenterer dataegenskaberne for de "fra"- og "til"-relaterede kolonner. "One-siden" betyder, at kolonnen indeholder entydige værdier. "mange-siden" betyder, at kolonnen kan indeholde dubletværdier.
 
 > [!NOTE]
 > Hvis en dataopdateringshandling forsøger at indlæse dubletværdier i en "et"-sidekolonne, kan hele dataopdateringen mislykkes.

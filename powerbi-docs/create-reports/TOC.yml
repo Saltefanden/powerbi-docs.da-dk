@@ -85,6 +85,8 @@
           items:
             - name: Report Builder i Power BI
               href: ../paginated-reports/report-builder-power-bi.md
+            - name: Report Builder Ændringslog
+              href: ../paginated-reports/paginated-reports-change-log.md
             - name: Eksempel på sideinddelte rapporter i Power BI
               href: ../paginated-reports/paginated-reports-samples.md
             - name: Rundt om visningen Rapportdesign

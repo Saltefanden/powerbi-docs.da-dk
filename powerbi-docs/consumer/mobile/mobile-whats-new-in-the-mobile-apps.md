@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/17/2020
-ms.openlocfilehash: 8301b51ccbb2ac344e24a297f9a309fc3601b3e1
-ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
-ms.translationtype: HT
+ms.openlocfilehash: 4a50d35ee3aa25932537846a13fc2d75c6fa38df
+ms.sourcegitcommit: 1872a167d1e4d731ad00cf8a6d951c31aa54bcce
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98565584"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98925801"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Hvad er nyt i mobilapps til Power BI
 Du kan finde relaterede oplysninger om nyheder under:
@@ -24,6 +24,10 @@ Du kan finde relaterede oplysninger om nyheder under:
 
 >[!NOTE]
 >Understøttelsen af Power BI-mobilapp til **telefoner, der bruger Windows 10 Mobile**, ophører den 16. marts 2021. [Få mere at vide](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+
+## <a name="january-2021"></a>Januar 2021
+### <a name="workspace-support-with-a-power-bi-free-license"></a>Arbejdsområde support med en gratis Power BI gratis licens
+Brugere med en Power BI gratis licens kan nu se og få adgang til arbejdsområder, hvor de er blevet tilføjet som seere direkte fra listen over arbejdsområder. Denne ændring gælder for indhold, der hostes på en Power BI Premium kapacitet.
 
 ## <a name="december-2020"></a>December 2020
 ### <a name="weve-added-anomaly-detection-to-the-mobile-apps"></a>Vi har føjet registrering af uregelmæssigheder til mobilapps

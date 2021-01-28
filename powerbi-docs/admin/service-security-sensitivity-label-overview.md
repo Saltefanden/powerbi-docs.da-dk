@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.custom: contperf-fy21q2
 ms.date: 12/20/2020
 LocalizationGroup: Data from files
-ms.openlocfilehash: df109f279a43826e164a461ae213bc74c0498cea
-ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
-ms.translationtype: HT
+ms.openlocfilehash: 52c3d5dea171f34fbbe5133eda6fd51fd471bbd4
+ms.sourcegitcommit: 1872a167d1e4d731ad00cf8a6d951c31aa54bcce
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98565041"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98925668"
 ---
 # <a name="sensitivity-labels-in-power-bi"></a>Følsomhedsmærkater i Power BI
 
@@ -202,6 +202,8 @@ Hvis du vil have adgang til følsomhedsmærkater i et af disse centre, skal du n
 * **Eksportér til PDF** understøtter ikke følsomhedsmærkater. Hvis du eksporterer en fil, der har en følsomhedsmærkat, til PDF, modtager PDF-filen ikke mærkaten, og der anvendes ingen beskyttelse.
 
 * Information Protection i Power BI Desktop understøtter ikke **B2B** og **scenarier med flere lejere**.
+
+* Hvis du overskriver et mærket datasæt eller en rapport i tjenesten med en ikke-navngivet. pbix-fil, gemmes etiketterne i tjenesten.
 
 ## <a name="next-steps"></a>Næste trin
 

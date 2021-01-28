@@ -8,12 +8,12 @@ ms.subservice: powerbi-eim
 ms.topic: how-to
 ms.date: 12/09/2020
 LocalizationGroup: Data from files
-ms.openlocfilehash: 09188b3b03fd5bfb720b98045ee9d895d337d677
-ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
-ms.translationtype: HT
+ms.openlocfilehash: a50a8c8514a4316f16a6a38647804aabf878d5ad
+ms.sourcegitcommit: 1872a167d1e4d731ad00cf8a6d951c31aa54bcce
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97969161"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98925689"
 ---
 # <a name="how-to-apply-sensitivity-labels-in-power-bi"></a>Sådan anvendes følsomhedsmærkater i Power BI
 
@@ -95,7 +95,7 @@ Når du har anvendt mærkaten, bliver den synlig på statuslinjen.
 ![Skærmbillede af følsomhedsmærkat på statuslinjen i Desktop.](media/service-security-apply-data-sensitivity-labels/sensitivity-label-in-desktop-status-bar.png)
 
 ### <a name="sensitivity-labels-when-uploading-or-downloading-pbix-files-tofrom-the-service"></a>Følsomhedsmærkater i forbindelse med upload eller download af .pbix-filer til/fra tjenesten
-* Når du publicerer en .pbix-fil til Power BI-tjenesten fra Desktop, eller når du uploader en .pbix-fil til Power BI-tjenesten direkte ved hjælp af **Hent data**, anvendes .pbix-filens mærkat både på rapporten og det datasæt, der oprettes i tjenesten. Hvis den .pbix-fil, du publicerer eller uploader, erstatter eksisterende ressourcer (dvs. ressourcer, der har det samme navn som .pbix-filen), overskriver .pbix-filens mærkat alle mærkater på disse ressourcer.
+* Når du publicerer en .pbix-fil til Power BI-tjenesten fra Desktop, eller når du uploader en .pbix-fil til Power BI-tjenesten direkte ved hjælp af **Hent data**, anvendes .pbix-filens mærkat både på rapporten og det datasæt, der oprettes i tjenesten. Hvis den .pbix-fil, du publicerer eller uploader, erstatter eksisterende ressourcer (dvs. ressourcer, der har det samme navn som .pbix-filen), overskriver .pbix-filens mærkat alle mærkater på disse ressourcer. Hvis. pbix-filen ikke er navngivet, bevares etiketterne i tjenesten.
 * Hvis den rapport og det datasæt, der downloades, begge har mærkater, og hvis disse mærkater er forskellige, anvendes den mærkat, der er mest restriktiv af de to, når du bruger "Download til .pbix" i Power BI-tjenesten.
 
 ## <a name="remove-sensitivity-labels"></a>Fjern følsomhedsmærkater
