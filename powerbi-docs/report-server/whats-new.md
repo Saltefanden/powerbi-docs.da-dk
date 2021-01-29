@@ -7,33 +7,98 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/30/2020
-ms.openlocfilehash: 14b629eed17eca2d1e016913dcfffb5858d4ddc3
-ms.sourcegitcommit: 9d033abd9c01a01bba132972497dda428d7d5c12
-ms.translationtype: HT
+ms.date: 01/27/2021
+ms.openlocfilehash: 0a0bef5c438abfc9ddf0417e95ff57534a64f67e
+ms.sourcegitcommit: 7ed995eed0fd6e718748accf87bae384211cd95d
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96120750"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99043573"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nyheder i Power BI-rapportserver
 
-Få mere at vide om de nyeste versioner af Power BI-rapportserver og Power BI Desktop optimeret til Power BI-rapportserver. I denne artikel beskrives de primære funktionsområder, og den opdateres, hver gang der udgives en ny version. Se [Ændringslog for Power BI-rapportserver](changelog.md) for at få mere at vide om, hvad der er nyt i Power BI-rapportserver og Power BI Desktop, der er optimeret til Power BI-rapportserver.
+Få mere at vide om nyheder i de nyeste versioner af Power BI-rapportserver og Power BI Desktop til Power BI-rapportserver. I denne artikel beskrives de primære funktionsområder, og den opdateres, hver gang der udgives en ny version. Se [Ændringslog for Power BI-rapportserver](changelog.md) for at få mere at vide om, hvad der er nyt i Power BI-rapportserver og Power BI Desktop, der er optimeret til Power BI-rapportserver.
 
-Download [Power BI-rapportserver og Power BI Desktop optimeret til Power BI-rapportserver](https://powerbi.microsoft.com/report-server/).
+Download [Power bi-rapportserver og Power bi desktop for Power bi-rapportserver](https://powerbi.microsoft.com/report-server/).
+
+## <a name="january-2021"></a>Januar 2021
+
+Nedenfor kan du få vist en liste over nye og opdaterede funktioner. Du kan finde flere oplysninger i [Power bi-rapportserver blogindlæg for januar 2021](https://powerbi.microsoft.com/blog/power-bi-report-server-january-2021-feature-summary/).
+
+### <a name="power-bi-desktop-for-power-bi-report-server"></a>Power BI Desktop til Power BI-rapportserver
+
+Her er nogle af de nye funktioner.
+
+**Power BI-rapporter**
+
+- Anvend alle filtre er nu offentligt tilgængelige
+- Skyder til visuel zoom
+- Kontrol af certifikater, der er tilbagekaldt for web-forbindelser
+- Valgrude i visningen mobil layout
+- ArcGIS for Power BI support
+
+**Data forbindelse**
+
+- Hive LLAP-forbindelse er offentligt tilgængelig
+- Nye connectors: Actian, Anaplan, stjerne Presto
+
+### <a name="new-connection-metadata-format-preview"></a>Nyt metadata format for forbindelse (eksempelvisning)
+
+Vi har opdateret den måde, hvorpå forbindelses metadata gemmes i filformatet. pbix i oktober. Denne opdatering er en del af en langsigtet rejse, hvor du kan oprette. pbix-filer, der kan bruges til at oprette og redigere mere programmeringsmæssigt. Vi har allerede aktiveret ændringen i den version af Power BI Desktop, der frigiver månedligt i overensstemmelse med Power BI-tjeneste. Vi får vist ændringerne i denne version af Power BI Desktop for Report Server, der starter denne måned.
+
+Fra og med denne udgave får du vist følgende meddelelse, hvor du bliver bedt om at aktivere eksempelvisningen og opgradere til det udvidede format:
+
+"Kommer snart – aktiverer det udvidede eksempel på metadata format for at få bedre ydeevne og sikkerhedsopdateringer i Power BI".
+
+Vær opmærksom på følgende:
+
+- Eksisterende datasæt fungerer fortsat, selv uden opgradering. De bliver opgraderet, når det udvidede format er gjort offentligt tilgængeligt.
+- Power BI Desktop for Report Server opgraderer automatisk et eksisterende datasæt til det udvidede format for dig. Vi anbefaler, at du ikke overskriver eksisterende rapporter på rapportserveren med denne opgraderede version, hvis du vil vende tilbage til det forrige format.
+- Det er valgfrit, om du vil deltage i denne prøveversion, selvom vi opfordrer dig til at prøve den, og vi giver os din feedback! Vi har til formål at gøre det udvidede format offentligt tilgængeligt som den eneste mulighed i den næste version af Report Server.
+ 
+Som administrator kan du deaktivere denne prøveversion, Gennemtving v3 fra og skjule afkrydsningsfeltet for eksempel funktion. Indstil følgende DWORD-værdi til 0 i registreringsdatabasen: AllowV3Models i enten:
+
+```
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Microsoft Power BI Desktop SSRS]
+"AllowV3Models"=dword:00000000
+```
+
+eller
+
+```
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Microsoft Power BI Desktop SSRS]
+"AllowV3Models"=dword:00000000
+```
+
+Du kan finde flere oplysninger under [brug af udvidede meta](../connect-data/desktop-enhanced-dataset-metadata.md) data for datasæt.
+
+### <a name="power-bi-report-server"></a>Power BI-rapportserver
+
+**Browser understøttelse frarådelse**
+
+Hvis du bruger Edge Legacy eller Internet Explorer 11, er det tid til at opgradere din browser. Understøttelse af den Edge Legacy-browser slutter, der starter den 9. marts 2021. Understøttelsen af Internet Explorer 11 ender fra den 17. august 2021. 
+
+Du får vist en advarsel på Power BI-rapportserver-portalen, som Internet Explorer 11 frarådes. Tid at opgradere! Du kan finde flere oplysninger i [browser support til Power bi-rapportserver](browser-support.md) .
+
+**Nyt produkt ikon**
+
+Power BI-rapportserver har et nyt produkt ikon, hvor du beholder med de nye ikoner, der udrulles på tværs af alle Microsoft-produkter.
+
+:::image type="content" source="media/whats-new/power-bi-report-server-new-logo.png" alt-text="Power BI-rapportserver nyt logo.":::
 
 ## <a name="october-2020"></a>Oktober 2020
 
 Det følgende er en komplet liste over nye og opdaterede funktioner. Du kan finde flere oplysninger i [Blogindlægget om Power BI-rapportserver fra oktober 2020](https://powerbi.microsoft.com/blog/power-bi-report-server-october-2020-feature-summary/). 
 
-### <a name="power-bi-desktop-optimized-for-power-bi-report-server"></a>Power BI Desktop optimeret til Power BI-rapportserver
+### <a name="power-bi-desktop-for-power-bi-report-server"></a>Power BI Desktop til Power BI-rapportserver
 
 Her er nogle af de nye funktioner.
 
 **Moderne bånd**  
 
-Det moderne bånd fås nu i Power BI Desktop optimeret til Power BI-rapportserver. Vi vil fortsætte med at foretage tilføjelser og føje flere funktioner til båndet. Se [Brug af det opdaterede bånd i Power BI Desktop](../create-reports/desktop-ribbon.md) for at få mere at vide om ændringerne og fordelene.
+Det moderne bånd er kommet til Power BI Desktop for Power BI-rapportserver. Vi vil fortsætte med at foretage tilføjelser og føje flere funktioner til båndet. Se [Brug af det opdaterede bånd i Power BI Desktop](../create-reports/desktop-ribbon.md) for at få mere at vide om ændringerne og fordelene.
 
-:::image type="content" source="media/whats-new/report-server-new-ribbon.png" alt-text="Skærmbillede af det nye bånd i Power BI Desktop optimeret til Power BI-rapportserver.":::
+:::image type="content" source="media/whats-new/report-server-new-ribbon.png" alt-text="Skærmbillede af et nyt bånd i Power BI Desktop for Power BI-rapportserver.":::
 
 **Hierarki-udsnitsværktøjer**
 
@@ -44,13 +109,13 @@ Du kan oprette det, der kaldes et *hierarki-udsnitsværktøj*, til at filtrere f
 - Brugerdefinerbar indrykning for underordnede elementer.
 - Yderligere tilpasning af teksten i udsnittets header.
 
-:::image type="content" source="media/whats-new/report-server-slicer-hierarchy.png" alt-text="Hierarki-udsnitsværktøj i Power BI Desktop optimeret til Power BI-rapportserver.":::
+:::image type="content" source="media/whats-new/report-server-slicer-hierarchy.png" alt-text="Hierarki udsnittet i Power BI Desktop for Power BI-rapportserver.":::
 
 Se [Udsnit i Power BI](../visuals/power-bi-visualization-slicers.md) i dokumentationen for at få flere oplysninger.
 
 **Forbedringer af mobiloprettelse** 
 
-I denne version introducerer vi en forbedret funktionalitet til oprettelse af mobillayout og yderligere funktioner til mobillayout. Da flere og flere organisationer benytter Power BI-mobilapps, har vi modtaget feedback om at få flere muligheder og forbedringer til mobiloprettelse. Forbedringerne i denne version vil hjælpe dig med lettere at oprette overbevisende interaktive rapporter, der er optimeret til mobilenheder.
+I denne version introducerer vi en forbedret funktionalitet til oprettelse af mobil layout og flere mobil layoutfunktioner. Efterhånden som flere organisationer har indført Power BI mobilapps, har vi modtaget feedback, der spørger om flere funktioner og forbedringer til mobil oprettelses oplevelser. Forbedringerne i denne version vil hjælpe dig med lettere at oprette overbevisende interaktive rapporter, der er optimeret til mobilenheder.
 
 Her er de nye funktioner til oprettelse af mobiloptimerede rapporter:  
 
@@ -60,7 +125,7 @@ Her er de nye funktioner til oprettelse af mobiloptimerede rapporter: 
 - Bogmærker, der er tilgængelige i mobillayoutvisningen  
 - Deaktivering af gitterlinjer og fastgørelse til gitter  
 
-:::image type="content" source="media/whats-new/report-server-mobile-layout.png" alt-text="Forbedret mobillayout i Power BI Desktop optimeret til Power BI-rapportserver.":::
+:::image type="content" source="media/whats-new/report-server-mobile-layout.png" alt-text="Forbedret mobil layout i Power BI Desktop til Power BI-rapportserver.":::
 
 Se dette blogindlæg [Forbedringer af mobiloprettelse](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_mobile) for at få flere oplysninger.
 
@@ -68,7 +133,7 @@ Se dette blogindlæg [Forbedringer af mobiloprettelse](https://powerbi.microsoft
 
 Denne nye funktion i Excel Connector identificerer automatisk sektioner i hvert Excel-regneark til udtrækning til en tabel. Den viser dem under gruppen Foreslåede tabeller i navigatoren. Tidligere skulle data formateres som en tabel eller et navngivet område i Excel. Ellers skulle du kassere de relevante rækker/kolonner med bestemte transformeringer, f.eks. ved at springe rækker over og fjerne kolonner fra regnearksobjekter, som i Ark1 i følgende eksempel. Hvis du vil bruge denne funktion, skal du aktivere den i dialogboksen **Indstillinger**.
 
-:::image type="content" source="media/whats-new/report-server-excel-table.png" alt-text="Genkendelse af en Excel-tabel i Power BI Desktop optimeret til Power BI-rapportserver.":::
+:::image type="content" source="media/whats-new/report-server-excel-table.png" alt-text="Genkendelse af en Excel-tabel i Power BI Desktop for Power BI-rapportserver.":::
 
 **Udformning: metadata for forbedrede datasæt**
 
@@ -81,15 +146,15 @@ Eksempel:
 - Når eksterne værktøjer tilføjes i Power BI Desktop (i øjeblikket som prøveversion), vises de tabeller, du tilføjer via disse eksterne værktøjer, nu som forespørgsler, når du åbner din rapport igen.
 - Hvis du har prøvet at eksportere en PBIT-fil og udpakke filen, kan du nu se modellen i JSON og får ikke længere fejl om beskadigede filer. 
 
-Hvis du har en ældre PBIX, der ikke automatisk kan opdateres, f.eks. på grund af ikke-anvendte ændringer, skal du opgradere din model korrekt, før du kan foretage yderligere udformningsændringer. 
+Hvis du har en ældre PBIX, der ikke automatisk kan opdateres af årsager, f. eks. ikke-anvendte ændringer, skal du opgradere din model korrekt, før du kan foretage andre modellerings ændringer. 
 
 **Understøttelse af Windows 7 stopper**
 
-Understøttelsen af Windows 7 ophørte efter 10 år den 14. januar 2020. I tråd med dette vil vi stoppe understøttelsen af Power BI Desktop i Windows 7 den 31. januar 2021. Herefter understøttes Power BI Desktop udelukkende i Windows 8 og nyere. Januar 2021-udgivelsen af Power BI Desktop optimeret til rapportserver understøttes i henhold til den moderne politik for livscyklus. Det vil med andre ord sige, at den understøttes fuldt ud indtil den næste version (der er planlagt til maj 2021). Efter maj 2021 vil den kun modtage sikkerhedsopdateringer indtil januar 2022. Al support stopper efter januar 2022. Se [Supporttidslinje for Power BI-rapportserver](support-timeline.md) for at få flere oplysninger. 
+Understøttelsen af Windows 7 ophørte efter 10 år den 14. januar 2020. På linje med denne ændring vil vi stoppe understøttelsen af Power BI Desktop på Windows 7 den 31. januar 2021. Herefter understøttes Power BI Desktop udelukkende i Windows 8 og nyere. Januar 2021-udgivelsen af Power BI Desktop optimeret til rapportserver understøttes i henhold til den moderne politik for livscyklus. Det vil med andre ord sige, at den understøttes fuldt ud indtil den næste version (der er planlagt til maj 2021). Efter maj 2021 vil den kun modtage sikkerhedsopdateringer indtil januar 2022. Al support stopper efter januar 2022. Se [Supporttidslinje for Power BI-rapportserver](support-timeline.md) for at få flere oplysninger. 
 
 **Komplet liste over opdateringer**
 
-Her er en komplet liste over opdateringerne i oktober-udgaven af Power BI Desktop optimeret til Power BI-rapportserver. 
+Her er en komplet liste over opdateringerne i oktober-udgaven af Power BI Desktop til Power BI-rapportserver. 
 
 **Rapportering**
 
@@ -141,11 +206,11 @@ Her er en komplet liste over opdateringerne i oktober-udgaven af Power BI Deskto
 
 **Skift forbindelsesstrenge til datakilden i Power BI-rapporter ved hjælp af PowerShell**
 
-I versionen af Power BI-rapportserver fra oktober aktiverer vi muligheden for at opdatere forbindelser for Power BI-rapporter til DirectQuery og opdatering. Dette er også en banebrydende ændring af, hvordan du kunne konfigurere dette i tidligere versioner. Du kan få mere at vide i [Skift forbindelsesstrenge til datakilden i Power BI-rapporter ved hjælp af PowerShell – Power BI-rapportserver](connect-data-source-apis.md). 
+I versionen af Power BI-rapportserver fra oktober aktiverer vi muligheden for at opdatere forbindelser for Power BI-rapporter til DirectQuery og opdatering. Denne mulighed er også en ændring af, hvordan du kan konfigurere den i tidligere versioner. Du kan få mere at vide i [Skift forbindelsesstrenge til datakilden i Power BI-rapporter ved hjælp af PowerShell – Power BI-rapportserver](connect-data-source-apis.md). 
 
 ## <a name="may-2020"></a>Maj 2020
 
-### <a name="power-bi-desktop-optimized-for-power-bi-report-server"></a>Power BI Desktop optimeret til Power BI-rapportserver
+### <a name="power-bi-desktop-for-power-bi-report-server"></a>Power BI Desktop til Power BI-rapportserver
 
 Blandt de fremhævede elementer i denne opdatering er de hierarkiske udsnitsværktøjer og visualiseringer med opdelingstræ og forespørgselsdiagnosticering. Det følgende er en komplet liste over nye og opdaterede funktioner. Du kan finde flere oplysninger i [Blogindlægget om Power BI-rapportserver fra maj 2020](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2020-feature-summary/). 
 
@@ -203,7 +268,7 @@ API-version 3.2 leveres med denne udgivelse.
 
 Du kan finde flere oplysninger i blogindlægget om Power BI-rapportserver fra januar 2020.
 
-### <a name="power-bi-desktop-optimized-for-power-bi-report-server"></a>Power BI Desktop optimeret til Power BI-rapportserver
+### <a name="power-bi-desktop-for-power-bi-report-server"></a>Power BI Desktop til Power BI-rapportserver
 
 Denne udgivelse indeholder mange nye funktioner, f.eks. betinget formatering af knapper, forbedringer af dataprofilering og flere formateringsindstillinger for KPI'er og tabelvisualiseringer. Her er en opsummeret liste over opdateringer:
 
@@ -503,7 +568,7 @@ Administratorer kan angive følgende egenskaber for serverfarmen under Avancered
 
 ## <a name="august-2018"></a>August 2018
 
-I august 2018 kommer der mange nye funktioner i Power BI Desktop, som er optimeret til Power BI-rapportserver. Her er de nye funktioner efter område:
+August 2018 ser mange nye funktioner, der er føjet til versionen af Power BI Desktop for Power BI-rapportserver. Her er de nye funktioner efter område:
 
 - [Rapportering](#reporting)
 - [Analyse](#analytics)
@@ -609,7 +674,7 @@ Som it-administrator kan du bruge din organisations MDM-værktøj til eksternt a
 
 ## <a name="march-2018"></a>Marts 2018
 
-Den nye version af Power BI Desktop optimeret til Power BI-rapportserver fra marts 2018 indeholder en lang række nye funktioner. Her er de nye funktioner efter område:
+Marts 2018 får vist mange nye funktioner, der er føjet til versionen af Power BI Desktop for Power BI-rapportserver. Her er de nye funktioner efter område:
 
 - [Visualisering](#visuals-updates)
 - [Rapportering](#reporting)
@@ -628,7 +693,7 @@ Opret regler baseret på betingelser. Du kan f.eks. farvelægge baggrunden eller
 
 #### <a name="show-and-hide-pages"></a>[Vis og skjul sider](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#hidePages)
 
-Du ønsker at give læserne adgang til din rapport, men nogle af siderne er ikke helt færdige. Nu kan du skjule dem, til de er færdige. Du kan også skjule sider i den normale navigation og give læsere adgang til en side ved hjælp af bogmærker eller detaljeadgang.
+Du ønsker, at læserne skal have adgang til din rapport, men nogle af siderne er ikke færdige. Nu kan du skjule dem, til de er færdige. Du kan også skjule sider i den normale navigation og give læsere adgang til en side ved hjælp af bogmærker eller detaljeadgang.
 
 #### <a name="bookmarking"></a>[Bogmærker](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#bookmarking)
 

@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.custom: ''
 ms.date: 09/22/2020
-ms.openlocfilehash: 890b3c8124cc1711e08415cdcfda1f51b548fa63
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
-ms.translationtype: HT
+ms.openlocfilehash: 68494784e3c5b21c0c3e15bd5a3a816fd07e5f8b
+ms.sourcegitcommit: 7ed995eed0fd6e718748accf87bae384211cd95d
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91983062"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99043545"
 ---
 # <a name="upgrade-power-bi-report-server"></a>Opgrader Power BI Report Server
 
@@ -22,7 +22,7 @@ Find ud af, hvordan du opgraderer Power BI Report Server.
 
  **Download** ![ikon for download](media/upgrade/download.png "ikon for download")
 
-Hvis du vil downloade Power BI-rapportserver og Power BI Desktop optimeret til Power BI-rapportserver, skal du gå til [Rapportering i det lokale miljø med Power BI-rapportserver](https://powerbi.microsoft.com/report-server/).
+Hvis du vil downloade Power BI-rapportserver og Power BI Desktop for Power BI-rapportserver, skal du gå til [rapportering i det lokale miljø med Power bi-rapportserver](https://powerbi.microsoft.com/report-server/).
 
 ## <a name="before-you-begin"></a>Inden du starter
 
@@ -82,12 +82,12 @@ Power BI-rapportserver modtager sikkerhedsrettelser via Microsoft Update. Hvis d
 
 ## <a name="upgrade-power-bi-desktop"></a>Opgrader Power BI Desktop
 
-Når du har opgraderet rapportserveren, skal du sørge for, at Power BI-rapportforfattere opgraderer til den version af Power BI Desktop, der er optimeret til Power BI-rapportserver, som stemmer overens med serveren.
+Når du har opgraderet rapportserveren, skal du sørge for, at alle Power BI rapport forfattere opgraderer til den version af Power BI Desktop for Power BI-rapportserver, der svarer til serveren.
 
 ## <a name="next-steps"></a>Næste trin
 
 * [Administratoroversigt](admin-handbook-overview.md)  
-* [Installer Power BI Desktop optimeret til Power BI-rapportserver](install-powerbi-desktop.md)  
+* [Installér Power BI Desktop for Power BI-rapportserver](install-powerbi-desktop.md)  
 * [Bekræft installationen af Reporting Services](/sql/reporting-services/install-windows/verify-a-reporting-services-installation)  
 * [Konfigurer kontoen til rapportservertjenesten](/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager)  
 * [Konfigurer rapportserverens URL-adresser](/sql/reporting-services/install-windows/configure-report-server-urls-ssrs-configuration-manager)  

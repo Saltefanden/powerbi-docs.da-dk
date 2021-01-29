@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
-ms.openlocfilehash: 698f12f4bf5266373be8393d2add45d70979ab41
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
-ms.translationtype: HT
+ms.openlocfilehash: 8141b5049d777d27208e2db4b026a3fad4b74cfe
+ms.sourcegitcommit: 7ed995eed0fd6e718748accf87bae384211cd95d
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96418434"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99043108"
 ---
 # <a name="embed-a-power-bi-report-server-report-using-an-iframe-in-sharepoint-server"></a>Integrer en rapport på Power BI-rapportserveren ved hjælp af en iFrame på SharePoint Server
 
@@ -23,7 +23,7 @@ I denne artikel får du mere at vide om, hvordan du integrerer en rapport fra Po
 
 ## <a name="prerequisites"></a>Forudsætninger
 * [Power BI-rapportserveren](https://powerbi.microsoft.com/report-server/) skal være installeret og konfigureret.
-* [Power BI Desktop optimeret til Power BI-rapportserveren](install-powerbi-desktop.md) skal være installeret.
+* [Power bi desktop for Power bi-rapportserver](install-powerbi-desktop.md) installeret.
 * Et [SharePoint 2013-, 2016- eller 2019-miljø](/sharepoint/install/install) installeret og konfigureret.
 * Internet Explorer 11 understøttes kun, hvis dokumenttilstanden er angivet til IE11 (Edge), eller når du bruger SharePoint Online. Du kan bruge andre understøttede browsere med SharePoint i det lokale miljø og SharePoint Online.
 
@@ -33,7 +33,7 @@ I denne artikel får du mere at vide om, hvordan du integrerer en rapport fra Po
 
     ![Download PBIX-eksempelfilen](media/quickstart-embed/quickstart_embed_14.png)
 
-2. Pak filen ud, og åbn .pbix-eksempelfilen i Power BI Desktop, der er optimeret til Power BI-rapportserver.
+2. Pak filen ud, og Åbn filen sample. pbix i Power BI Desktop for Power BI-rapportserver.
 
     ![Værktøjet PBI RS Desktop](media/quickstart-embed/quickstart_embed_02.png)
 

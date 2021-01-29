@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/22/2019
-ms.openlocfilehash: a1c8e11fbf3b157a0d9fc1a897347875b82226fa
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
-ms.translationtype: HT
+ms.openlocfilehash: 9b4b7557a977c5975920e0ef414b7daf8183c062
+ms.sourcegitcommit: 7ed995eed0fd6e718748accf87bae384211cd95d
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96387252"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99044235"
 ---
 # <a name="admin-overview-power-bi-report-server"></a>Administratoroversigt, Power BI-rapportserver
 Denne artikel indeholder en administrationsoversigt over Power BI-rapportserveren, der er en placering i det lokale miljø til lagring og administration af dine Power BI- og mobilrapporter samt dine sideinddelte rapporter. I denne artikel introduceres begreber i forbindelse med planlægning, udrulning og administration af din Power BI-rapportserver, og den indeholder links til flere oplysninger.
@@ -46,7 +46,7 @@ Sikkerhed og beskyttelse er vigtigt for alle organisationer. Du kan få mere at 
 ## <a name="next-steps"></a>Næste trin
 [Installer Power BI-rapportserver](install-report-server.md)  
 [Find produktnøglen til din rapportserver](find-product-key.md)  
-[Installer Power BI Desktop optimeret til Power BI-rapportserver](install-powerbi-desktop.md)  
+[Installér Power BI Desktop for Power BI-rapportserver](install-powerbi-desktop.md)  
 [Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
 [Download SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt)
 

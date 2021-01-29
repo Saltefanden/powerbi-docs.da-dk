@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 10/26/2020
-ms.openlocfilehash: 72b81f10b6337530ab05f1fcef0a17a5869af867
-ms.sourcegitcommit: ab28cf07b483cb4b01a42fa879b788932bba919d
-ms.translationtype: HT
+ms.openlocfilehash: f0dd30e721d8325fdbfd8b562083fbedef2af9c0
+ms.sourcegitcommit: 7ed995eed0fd6e718748accf87bae384211cd95d
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98226737"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99044189"
 ---
 # <a name="change-data-source-connection-strings-in-power-bi-reports-with-powershell---power-bi-report-server-pre-october-2020"></a>Skift forbindelsesstrenge til datakilden i Power BI-rapporter ved hjælp af PowerShell – Power BI-rapportserver fra før oktober 2020
 
@@ -21,7 +21,7 @@ ms.locfileid: "98226737"
 Du kan ændre datakildeforbindelsesstrenge for Power BI-rapporter, der hostes i Power BI-rapportserver, ved at bruge PowerShell til at kommunikere med de nødvendige API'er. 
 
 > [!IMPORTANT]
-> Hvis du bruger den nyeste version af Power BI-rapportserver fra oktober 2020, kan du se [Skift af forbindelsesstrenge for datakilden i Power BI-rapporter med PowerShell – Power BI-rapportserver](connect-data-source-apis.md).
+> Hvis du bruger den nyeste version af Power BI-rapportserver, kan du se [ændre forbindelsesstrenge til datakilden i Power bi rapporter med PowerShell-Power bi-rapportserver](connect-data-source-apis.md).
 
 > [!NOTE]
 > Denne funktionalitet fungerer i øjeblikket kun for DirectQuery. Understøttelse af import og dataopdatering er på vej.

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 07/24/2020
-ms.openlocfilehash: 965c3837b2d0153716442ea37b52b468be9742fb
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
-ms.translationtype: HT
+ms.openlocfilehash: e3c4d97ba6d5ba43e05feecca6a1f0d0c27c89aa
+ms.sourcegitcommit: 7ed995eed0fd6e718748accf87bae384211cd95d
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96414110"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99043726"
 ---
 # <a name="create-a-power-bi-report-for-power-bi-report-server"></a>Opret en Power BI-rapport til Power BI-rapportserveren
 Du kan gemme og administrere Power BI-rapporter i det lokale miljø på Microsoft Power BI-rapportservers webportal, på samme måde som du kan gemme Power BI-rapporter i skyen i Power BI-tjenesten (https://powerbi.com). Du kan oprette og redigere rapporter i Power BI Desktop og publicere dem på webportalen. Derefter kan rapportlæsere i din organisation få dem vist i en browser eller i en Power BI-mobilapp på en mobilenhed.
@@ -22,13 +22,13 @@ Du kan gemme og administrere Power BI-rapporter i det lokale miljø på Microsof
 
 Her er fire hurtige trin til at komme i gang.
 
-## <a name="step-1-install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Trin 1: Installér Power BI Desktop optimeret til Power BI-rapportserver
+## <a name="step-1-install-power-bi-desktop-for-power-bi-report-server"></a>Trin 1: Installér Power BI Desktop for Power BI-rapportserver
 
-Hvis du allerede har oprettet Power BI-rapporter i Power BI Desktop, er du næsten klar til at oprette Power BI-rapporter til Power BI-rapportserver. Vi anbefaler, at du installerer den version af Power BI Desktop, som er optimeret til Power BI-rapportserver, så du ved, at serveren og appen altid er synkroniseret. Du kan have begge versioner af Power BI Desktop på den samme computer.
+Hvis du allerede har oprettet Power BI-rapporter i Power BI Desktop, er du næsten klar til at oprette Power BI-rapporter til Power BI-rapportserver. Vi anbefaler, at du installerer den version af Power BI Desktop for Power BI-rapportserver, så du ved, at serveren og appen altid er synkroniseret. Du kan have begge versioner af Power BI Desktop på samme computer.
 
 1. På webportalen Rapportserver skal du vælge pilen **Download** > **Power BI Desktop**.
 
-    ![Download Power BI Desktop fra webportalen](media/quickstart-create-powerbi-report/report-server-download-web-portal.png)
+    ![Download Power BI Desktop fra webportalen](media/install-powerbi-desktop/report-server-download-web-portal.png)
 
     Eller gå til hjemmesiden for [Power BI-rapportserver](https://powerbi.microsoft.com/report-server/), og vælg **Avancerede indstillinger for download**.
 
@@ -44,9 +44,9 @@ Hvis du allerede har oprettet Power BI-rapporter i Power BI Desktop, er du næst
 
 2. Til sidst i installationsprocessen skal du markere **Start Power BI Desktop nu**.
    
-    Programmet starter automatisk, og du er klar til at gå i gang. Du kan se, at du har den rigtige version, fordi der står **Power BI Desktop (oktober 2020)** i titellinjen.
+    Programmet starter automatisk, og du er klar til at gå i gang. Du kan se, at du har den rigtige version, da **Power bi Desktop (januar 2021)** er på titellinjen.
 
-    ![Power BI Desktop oktober 2020](media/quickstart-create-powerbi-report/power-bi-report-server-desktop-may-2020.png)
+    ![Power BI Desktop januar 2021](media/install-powerbi-desktop/power-bi-report-server-desktop.png)
 
 3. Hvis du ikke kender til Power BI Desktop, bør du overveje at se videoerne på velkomstskærmbilledet.
    
@@ -102,7 +102,7 @@ Der er så mange fantastiske ressourcer til at oprette rapporter i Power BI Desk
 * Kursus med vejledning: [Udforsk Power BI Desktop](/learn/modules/get-data-power-bi/2-getting-started-power-bi-desktop)
 
 ### <a name="power-bi-report-server"></a>Power BI-rapportserver
-* [Installer Power BI Desktop optimeret til Power BI-rapportserver](install-powerbi-desktop.md)  
+* [Installér Power BI Desktop for Power BI-rapportserver](install-powerbi-desktop.md)  
 * [Hvad er Power BI-rapportserveren?](get-started.md)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

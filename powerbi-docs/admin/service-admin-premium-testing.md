@@ -7,20 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 11/11/2020
+ms.date: 01/28/2021
 LocalizationGroup: Premium
-ms.openlocfilehash: 597ae36aaddcbabbedcd084061410dab9334a702
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
-ms.translationtype: HT
+ms.openlocfilehash: 9e0cd283728afad43ddf37f765b1fda66c300270
+ms.sourcegitcommit: 7ed995eed0fd6e718748accf87bae384211cd95d
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96413581"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99043407"
 ---
 # <a name="purchase-power-bi-premium-for-testing"></a>Køb Power BI Premium til test
 
 I denne artikel beskrives det hvordan du køber Power BI Premium-A-SKU'er til test af scenarier og i tilfælde, hvor du ikke har de nødvendige tilladelser til at købe P-SKU'er (rollen Global administrator eller rollen Faktureringsadministrator i Microsoft 365). A-SKU'er kræver ingen tidsforpligtelser og faktureres pr. time. Du køber A-SKU'er via [Azure Portal](https://portal.azure.com).
 
-Du kan finde flere oplysninger om Power BI Premium under [Hvad er Power BI Premium?](service-premium-what-is.md). Du kan finde aktuelle priser og oplysninger om planlægning på [siden Priser for Power BI](https://powerbi.microsoft.com/pricing/) og under [Power BI Premium-beregner](https://powerbi.microsoft.com/calculator/). Indholdsforfattere skal stadig have en [Power BI Pro-licens](service-admin-purchasing-power-bi-pro.md), også selvom organisationen bruger Power BI Premium. Sørg for at købe mindst én Power BI Pro-licens til din organisation. Med A-SKU'er skal _alle brugere_, der forbruger indhold, også have Pro-licenser.
+Du kan finde flere oplysninger om Power BI Premium under [Hvad er Power BI Premium?](service-premium-what-is.md). Du kan finde oplysninger om aktuelle priser og planlægning på [siden Power bi priser](https://powerbi.microsoft.com/pricing/). Indholdsforfattere skal stadig have en [Power BI Pro-licens](service-admin-purchasing-power-bi-pro.md), også selvom organisationen bruger Power BI Premium. Sørg for at købe mindst én Power BI Pro-licens til din organisation. Med A-SKU'er skal _alle brugere_, der forbruger indhold, også have Pro-licenser.
 
 > [!NOTE]
 > Hvis et Premium-abonnement udløber, har du 30 dages fuld adgang til din kapacitet. Derefter vil dit indhold igen blive en delt kapacitet. Modeller, der er større 1 GB, understøttes ikke i delt kapacitet.
@@ -92,7 +92,6 @@ Når du har købt kapacitet, kan du få mere at vide om, hvordan du [administrer
 [Sådan køber du Power BI Premium](service-admin-premium-purchase.md)
 [Konfigurer og administrer kapaciteter i Power BI Premium](service-admin-premium-manage.md)\
 [Side med Power BI-prisfastsættelse](https://powerbi.microsoft.com/pricing/)\
-[Power BI Premium-beregner](https://powerbi.microsoft.com/calculator/)\
 [Ofte stillede spørgsmål om Power BI Premium](service-premium-faq.md)\
 [Hvidbog om planlægning af en Power BI Enterprise-installation](https://aka.ms/pbienterprisedeploy)
 

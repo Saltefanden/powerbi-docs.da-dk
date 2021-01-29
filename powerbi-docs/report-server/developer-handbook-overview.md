@@ -8,18 +8,18 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
-ms.openlocfilehash: d485c7ab7583d2604cd9da9e4c122c6cceeeb4fe
-ms.sourcegitcommit: 8afdd3601209636c9ab92d75f967d4ee0a2cab26
-ms.translationtype: HT
+ms.openlocfilehash: 8fbe19beddbb95b27828ee1fae73860fe92e6b4f
+ms.sourcegitcommit: 7ed995eed0fd6e718748accf87bae384211cd95d
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95011996"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99044147"
 ---
 # <a name="developer-handbook-overview-power-bi-report-server"></a>Oversigt over udviklerhåndbog, Power BI-rapportserver
 
 Velkommen til udviklerhåndbogen til Power BI-rapportserver, der er en placering i det lokale miljø til lagring og administration af dine Power BI- og mobilrapporter samt dine sideinddelte rapporter.
 
-![Håndbog til administratorer](media/developer-handbook-overview/admin-handbook.png)
+![Power BI-rapportserver oversigt.](media/admin-handbook-overview/admin-handbook.png)
 
 I denne håndbog fremhæves de muligheder, du har som udvikler, for at arbejde med Power BI-rapportserver.
 

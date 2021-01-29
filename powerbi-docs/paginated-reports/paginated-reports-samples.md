@@ -7,13 +7,13 @@ ms.reviewer: swgupt
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 11/10/2020
-ms.openlocfilehash: cfa4b46e521079802ec87b63d6323e01213625c3
-ms.sourcegitcommit: 132b3f6ba6d2b1948ddc15969d64cf629f7fb280
-ms.translationtype: HT
+ms.date: 01/28/2021
+ms.openlocfilehash: 282700151e605bd3571847b3b75f08e65f948e08
+ms.sourcegitcommit: 7ed995eed0fd6e718748accf87bae384211cd95d
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94483842"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99044335"
 ---
 # <a name="sample-power-bi-paginated-reports"></a>Eksempel på sideinddelte rapporter i Power BI
 
@@ -119,6 +119,32 @@ Salgsresultater pr. land er et eksempel på en komplet sideinddelt rapport. Scen
 - Datalinjer.
 - Tendenslinjer.
 - Målerpaneler.
+
+Datakilde: Inkluderet i RDL-filen
+
+## <a name="regional-sales"></a>Regionalt salg
+
+:::image type="content" source="media/paginated-reports-samples/paginated-report-regional-sales.png" alt-text="Skærmbillede af eksempel Power BI sideinddelt rapport til regions salg.":::
+
+Det regionale salg er et selv inkluderet rapport eksempel på en sideinddelt rapport. Scenariet for denne rapport er, at du vil have en rapport, der kan udskrives i pixel, og se det samlede salg i forhold til kvoten. Følgende funktioner er inkluderet:
+
+- Brug af en parameter til at vise valgte detaljer i tabellen.
+- Sidehoveder og sidefødder.
+- Rapportelementer som f.eks. tekstfelter, linjer og rektangler ved hjælp af udtrykspladsholdere.
+- Målerpaneler.
+- Kurvediagram, der er placeret inde i tabellen.
+
+Datakilde: Inkluderet i RDL-filen
+
+## <a name="organization-expenditures"></a>Udgifter til virksomheder
+
+:::image type="content" source="media/paginated-reports-samples/paginated-report-organization-expenditures.png" alt-text="Skærmbillede af eksempel Power BI sideinddelt rapport til udgifter til virksomheden.":::
+
+Organisationens udgifter er et selvstændigt sideinddelt rapport eksempel. Scenariet for denne rapport er, at du vil have en udgiftsrapport med en pixel, der kan udskrives, for at se fordelingen af udgifter i din organisation. Følgende funktioner er inkluderet:
+
+- Sidehoveder og sidefødder.
+- Rapportelementer som f.eks. tekstfelter, linjer og rektangler ved hjælp af udtrykspladsholdere.
+- Diagrammer som træstruktur og Sun burst.
 
 Datakilde: Inkluderet i RDL-filen
   

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 01/16/2020
-ms.openlocfilehash: 049f6f563c9ac6e7494b0680b69e0df8909304d4
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
-ms.translationtype: HT
+ms.openlocfilehash: 3347bb18306497781ab5915225db8c3e071cfa3f
+ms.sourcegitcommit: 7ed995eed0fd6e718748accf87bae384211cd95d
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90861883"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99044097"
 ---
 # <a name="install-power-bi-report-server"></a>Installér Power BI-rapportserver
 
@@ -152,7 +152,7 @@ Hvis du tilgår rapportserveren fra en fjerncomputer, skal du sikre dig, at du h
 
 [Administratoroversigt](admin-handbook-overview.md)  
 [Sådan finder du produktnøglen til din rapportserver](find-product-key.md)  
-[Installér Power BI Desktop optimeret til Power BI Report Server](install-powerbi-desktop.md)  
+[Installér Power BI Desktop for Power BI-rapportserver](install-powerbi-desktop.md)  
 [Bekræft installationen af Reporting Services](/sql/reporting-services/install-windows/verify-a-reporting-services-installation)  
 [Konfigurer kontoen til rapportservertjenesten](/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager)  
 [Konfigurer rapportserverens URL-adresser](/sql/reporting-services/install-windows/configure-report-server-urls-ssrs-configuration-manager)  

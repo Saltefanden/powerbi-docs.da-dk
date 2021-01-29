@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: tutorial
 ms.date: 05/06/2019
-ms.openlocfilehash: 85fcd6249a833c35cb98fca6abf2881ab1a4bf7e
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
-ms.translationtype: HT
+ms.openlocfilehash: e66b15498f7ba66005448d88dc26cf715947f7da
+ms.sourcegitcommit: 7ed995eed0fd6e718748accf87bae384211cd95d
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96418411"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99043877"
 ---
 # <a name="tutorial-explore-the-power-bi-report-server-web-portal-in-a-vm"></a>Selvstudium: Udforsk webportalen til Power BI-rapportserver i en VM
 I dette selvstudium skal du oprette en virtuel Azure-maskine med Power BI-rapportserver, der allerede er installeret, så du kan få vist, redigere og administrere eksempler på Power BI og sideinddelte rapporter samt KPI'er.
@@ -103,7 +103,7 @@ Når din VM åbner, vises følgende elementer på skrivebordet.
 |---------|---------|
 |![Nummer 1](media/tutorial-explore-report-server-web-portal/number-1.png) | Eksempel på Power BI-rapporter (.PBIX) |
 |![Nummer 2](media/tutorial-explore-report-server-web-portal/number-2.png) | Links til dokumentation til Power BI-rapportserveren |
-|![Nummer 3](media/tutorial-explore-report-server-web-portal/number-3.png) | Starter Power BI Desktop optimeret til Power BI-rapportserver (januar 2019) |
+|![Nummer 3](media/tutorial-explore-report-server-web-portal/number-3.png) | Starter Power BI Desktop for Power BI-rapportserver (januar 2021) |
 |![Nummer 4](media/tutorial-explore-report-server-web-portal/number-4.png) | Åbner webportalen til Power BI-rapportserveren i browseren |
 |![Nummer 5](media/tutorial-explore-report-server-web-portal/number-5.png) | Starter SQL Server Data Tools for at oprette sideinddelte rapporter (. RDL) |
 
@@ -162,7 +162,7 @@ Du kan få vist og interagere med Power BI-rapporter på webportalen og starte P
 
 1. Vælg **Tillad** for at give dette websted tilladelse til at åbne et program på din computer. 
 
-     Rapporten åbnes i Power BI Desktop. Bemærk navnet på den øverste linje "Power BI Desktop (januar 2019)". Det er den version, der er optimeret til Power BI-rapportserveren.
+     Rapporten åbnes i Power BI Desktop. Bemærk navnet på den øverste linje, "Power BI Desktop (januar 2021)". Det er den version, der er optimeret til Power BI-rapportserveren.
 
     Brug den version af Power BI Desktop, der er installeret på VM'en. Du kan ikke skifte mellem domæner for at uploade en rapport.
 

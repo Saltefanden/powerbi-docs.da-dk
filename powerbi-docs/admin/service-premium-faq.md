@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 11/11/2020
+ms.date: 01/28/2021
 LocalizationGroup: Premium
-ms.openlocfilehash: 8fad09221caafd66467e8e183304ab408b803720
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
-ms.translationtype: HT
+ms.openlocfilehash: 51c006a076a34764791a7da6f952b416b89e6a5a
+ms.sourcegitcommit: 7ed995eed0fd6e718748accf87bae384211cd95d
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96412201"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99043062"
 ---
 # <a name="power-bi-premium-faq"></a>Ofte stillede spørgsmål om Power BI Premium
 
@@ -61,7 +61,7 @@ I følgende eksempler beskrives, hvordan kunder kan imødekomme deres BI-behov v
 | **Løsning:**<br/><br/>1. Power BI Pro til alle brugere.<br/><br/>2. Udvidelse af mulighederne ved at tilføje Power BI Premium – se de øvrige scenarier. |**Løsning:**<br/><br/>1. Power BI Pro til de brugere, der har behov for selvbetjeningsportalen BI, og som samarbejder.<br/><br/>2. Tilføj Power BI Premium for at kunne distribuere BI-indhold til de brugere, der kun skal forbruge indholdet. |**Løsning:**<br/><br/>1. Power BI Pro til de brugere, der har behov for selvbetjeningsportalen BI, og som samarbejder.<br/><br/>2. Tilføj Power BI Premium for at kunne publicere rapporter i det lokale miljø – og flytte til clouden efter behov. |**Løsning:**<br/><br/>1. Power BI Pro til alle brugere i økonomiafdelingen.<br/><br/>2. Føj Power BI Premium til de dedikerede ressourcer – i clouden – som udelukkende skal bruges af økonomiteamet, hvilket giver større skala og bedre ydeevne. |
 
 **Hvor meget koster Power BI Premium? Hvor SKU'er bliver tilgængelige?**  
-Du kan købe Power BI Premium baseret på antallet af virtuelle kerner. Du kan se priser på [siden med Power BI-priser](https://powerbi.microsoft.com/pricing/). Du kan få flere oplysninger om noder og v-kerner i [Microsoft Power BI Premium-hvidbogen](https://aka.ms/pbipremiumwhitepaper). Du kan også bruge denne [beregning](https://powerbi.microsoft.com/calculator/) til at få et estimat over, hvor meget Premium-kapacitet du kan få brug for.
+Du kan købe Power BI Premium baseret på antallet af virtuelle kerner. Du kan se priser på [siden med Power BI-priser](https://powerbi.microsoft.com/pricing/). Du kan få flere oplysninger om noder og v-kerner i [Microsoft Power BI Premium-hvidbogen](https://aka.ms/pbipremiumwhitepaper).
 
 **Hvad menes der med "kapacitet"?**  
 En kapacitet er en mængde databehandlingskapacitet, der er reserveret til din organisation i forbindelse med dens brug af Power BI. Den er klargjort af en tjenesteadministrator via Power BI Premium-administrationsportalen på siden **Kapacitetsadministration**.
@@ -71,9 +71,6 @@ Power BI Premium faktureres månedligt med en årlig binding.
 
 **Hvordan køber jeg Power BI Premium?**  
 Power BI Premium er tilgængelig via Microsoft 365 Administration. Du kan finde flere oplysninger under [Sådan køber du Power BI Premium](service-admin-premium-purchase.md). Du kan også kontakte din Microsoft-repræsentant for at få flere oplysninger.
-
-**Hvordan kan jeg vide, hvor meget Power BI Premium-kapacitet jeg skal købe?**  
-Du kan bruge denne [beregning](https://powerbi.microsoft.com/calculator/) til at få et estimat over, hvor meget Power BI Premium-kapacitet du kan få brug for.
 
 **Fås Power BI Premium sammen med Office 365 E5?**  
 Power BI Premium fås som et tilføjelsesprogram til Power BI Pro. Office 365 E5 indeholder Power BI Pro. E5-kunder kan købe Premium som et tilføjelsesprogram til deres eksisterende Pro-licenser.

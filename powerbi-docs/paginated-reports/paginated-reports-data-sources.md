@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 01/21/2021
-ms.openlocfilehash: abb91ef54167f4a7d50f2dc36e23b2fc5833a65d
-ms.sourcegitcommit: 77912d4f6ef2a2b1ef8ffccc50691fe5b38ee97a
+ms.date: 01/27/2021
+ms.openlocfilehash: c544126132ce18d8093f8c07359418f2052e9c74
+ms.sourcegitcommit: 7ed995eed0fd6e718748accf87bae384211cd95d
 ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98687459"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99044396"
 ---
 # <a name="supported-data-sources-for-power-bi-paginated-reports"></a>Understøttede datakilder for sideinddelte rapporter i Power BI
 
@@ -33,6 +33,7 @@ Følgende liste over datakilder understøttes i det oprindelige miljø i sideind
 | Power BI-datasæt | SSO | Power BI Premium-datasæt og datasæt, der ikke er Premium. Kræver læserettigheder. Det er kun Importtilstand og DirectQuery Power BI-datasæt, der understøttes. |
 | Power BI Premium-datasæt (XMLA) | SSO | Power BI-datasæt understøttes ikke som en datakilde for integrerede sideinddelte rapporter i "app ejer data"-scenarier.  Hvis du vil sikre korrekt forbindelse til Power BI Report Builder, skal du kontrollere, at indstillingen **Brug ikke legitimationsoplysninger** er valgt, når du angiver din datakilde.<br />Adgang via XMLA respekterer medlemskabet af sikkerhedsgrupper, der er angivet på arbejdsområdet eller på App-niveau.<br />Brugere med mindst [rollen bidragyder i et arbejdsområde](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces) kan gengive sideinddelte rapporter med Premium Power bi datasæt. Andre brugere skal have [Build-tilladelse til de underliggende datasæt](../connect-data/service-datasets-build-permissions.md).    |
 | Angiv data | I/T | Data er integreret i rapporten. |
+| Dataverse | SSO, OAuth2 | En gateway kan ikke bruges som multi-Factor Authentication (MFA) understøttes ikke.
 
 Med undtagelse af Azure SQL Database er alle datakilder klar til brug, når du har uploadet rapporten til Power BI-tjenesten. Datakilderne bruges som standard til enkeltlogon (SSO), hvor det er relevant. Du kan ændre godkendelsestypen til OAuth2 for Azure Analysis Services. Men når godkendelsestypen for en given datakilde ændres til OAuth2, kan den ikke vende tilbage til at bruge SSO.  Denne ændring gælder desuden alle de rapporter, der bruger den pågældende datakilde på tværs af alle arbejdsområder for en given lejer.  Sikkerhed på rækkeniveau i sideinddelte rapporter fungerer ikke, medmindre brugerne vælger SSO som godkendelsestype.
 

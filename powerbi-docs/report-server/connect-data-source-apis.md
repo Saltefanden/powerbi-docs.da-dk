@@ -8,24 +8,24 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 10/26/2020
-ms.openlocfilehash: 4e1947abe0fa0f17e1db92619f0aa7fba5df5575
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
-ms.translationtype: HT
+ms.openlocfilehash: b7f431ba6b8f559380916c17689d0eab74a0c9a7
+ms.sourcegitcommit: 7ed995eed0fd6e718748accf87bae384211cd95d
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96415467"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99044304"
 ---
 # <a name="change-data-source-connection-strings-in-power-bi-reports-with-powershell---power-bi-report-server"></a>Skift forbindelsesstrenge til datakilden i Power BI-rapporter ved hjælp PowerShell – Power BI-rapportserver
 
 
-Fra og med versionen af Power BI-rapportserver fra oktober 2020 aktiverer vi muligheden for at opdatere forbindelser for Power BI-rapporter til DirectQuery og opdatering.
+Fra og med den 2020. oktober-udgaven af Power BI-rapportserver aktiverede vi muligheden for at opdatere forbindelser for Power BI rapporter til DirectQuery og opdatering.
 
 > [!IMPORTANT]
 > Dette er også en banebrydende ændring af, hvordan du kunne konfigurere dette i tidligere versioner. Hvis du bruger en version af Power BI-rapportserver fra før oktober 2020, kan du se [Skift af forbindelsesstrenge for datakilden i Power BI-rapporter med PowerShell – Power BI-rapportserver fra før oktober 2020](connect-data-source-apis-pre-oct-2020.md)
 
 ## <a name="prerequisites"></a>Forudsætninger:
-- Download versionen af [Power BI-rapportserver og Power BI Desktop optimeret til Power BI-rapportserver](https://powerbi.microsoft.com/report-server/) fra oktober 2020.
-- En rapport, der er gemt med udgivelsen af Power BI Desktop optimeret til rapportserver fra oktober 2020, med **forbedret metadata for datasæt** aktiveret.
+- Download oktober 2020 eller senere udgivelse af [Power bi-rapportserver og Power bi Desktop til Power bi-rapportserver](https://powerbi.microsoft.com/report-server/).
+- En rapport, der er gemt i oktober 2020 eller senere version af Power BI Desktop optimeret til rapport server med **udvidet metadata for datasæt** aktiveret.
 - En rapport, der bruger parameteriserede forbindelser. Det er kun rapporter med parameteriserede forbindelser og databaser, der kan opdateres efter udgivelsen.
 - Dette eksempel bruger værktøjerne til Reporting Services PowerShell. Du kan opnå det samme ved at bruge de nye REST API'er.
 

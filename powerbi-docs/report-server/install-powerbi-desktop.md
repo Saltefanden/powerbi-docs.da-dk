@@ -1,6 +1,6 @@
 ---
-title: Installér Power BI Desktop optimeret til Power BI-rapportserver
-description: Se, hvordan du kan installere Power BI Desktop optimeret til Power BI-rapportserver
+title: Installér Power BI Desktop for Power BI-rapportserver
+description: Få mere at vide om, hvordan du installerer Power BI Desktop til Power BI-rapportserver
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -8,22 +8,22 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 10/16/2020
-ms.openlocfilehash: 62add0b1268b06bb227bdc1b8ec2e4ae59358c57
-ms.sourcegitcommit: a5fa368abad54feb44a267fe26c383a731c7ec0d
-ms.translationtype: HT
+ms.openlocfilehash: 068d4a025bda878899e2d54f93bc56eaea336f3e
+ms.sourcegitcommit: 7ed995eed0fd6e718748accf87bae384211cd95d
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93044747"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99044074"
 ---
-# <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Installér Power BI Desktop optimeret til Power BI-rapportserver
+# <a name="install-power-bi-desktop-for-power-bi-report-server"></a>Installér Power BI Desktop for Power BI-rapportserver
 
 Hvis du vil oprette Power BI-rapporter for Power BI-rapportserver, skal du downloade og installere den Power BI Desktop-version, der er optimeret til Power BI-rapportserver. Dette er en anden udgivelse end Power BI Desktop, der bruges med Power BI-tjenesten. Versionen af Power BI Desktop til Power BI-tjenesten indeholder f.eks. prøveversionsfunktioner. Disse funktioner findes ikke i versionen af Power BI-rapportserveren, før de er offentligt tilgængelige. Når du bruger denne udgivelse, sikrer du, at rapportserveren kan interagere med en kendt version af rapporterne og modellen. 
 
-Men bare rolig. Du kan installere Power BI Desktop og Power BI Desktop optimeret til Power BI-rapportserveren side om side på samme computer.
+Men bare rolig. Du kan installere Power BI Desktop og Power BI Desktop for Power BI-rapportserver ved siden af hinanden på den samme computer.
 
 ## <a name="download-and-install-power-bi-desktop"></a>Download og installér Power BI Desktop
 
-Den nemmeste måde til at sikre, at du har den nyeste version af Power BI Desktop optimeret til Power BI-rapportserver, er ved at starte fra webportalen på rapportserveren.
+Den nemmeste måde at sikre, at du har den nyeste version af Power BI Desktop til Power BI-rapportserver, er at starte fra webportalen på din rapport server.
 
 1. På webportalen Rapportserver skal du vælge pilen **Download** > **Power BI Desktop**.
 
@@ -45,16 +45,16 @@ Den nemmeste måde til at sikre, at du har den nyeste version af Power BI Deskto
     Programmet starter automatisk, og du er klar til at gå i gang.
 
 ## <a name="verify-youre-using-the-correct-version"></a>Kontrollér, at du bruger den korrekte version
-Det er nemt at kontrollere, at du bruger den korrekte version af Power BI Desktop: Se på startskærmen eller titellinjen i Power BI Desktop. Du kan se, at du har den rigtige version, fordi der står **Power BI Desktop (oktober 2020)** i titellinjen. Farverne i Power BI-logoet er også omvendt: gul på sort i stedet for sort på gul.
+Det er nemt at kontrollere, at du bruger den korrekte version af Power BI Desktop: Se på startskærmen eller titellinjen i Power BI Desktop. Du kan se, at du har den rigtige version, fordi **Power bi Desktop (januar 2021)** eller nyere er på titellinjen. Farverne i Power BI-logoet er også omvendt: gul på sort i stedet for sort på gul.
 
-![Power BI Desktop oktober 2020](media/install-powerbi-desktop/power-bi-report-server-desktop-may-2020.png)
+![Power BI Desktop januar 2021](media/install-powerbi-desktop/power-bi-report-server-desktop.png)
 
 I versionen af Power BI Desktop til Power BI-tjenesten vises måned og årstal ikke på titellinjen.
 
 ## <a name="file-extension-association"></a>Tilknytning af filtypenavne
-Lad os antage, at du har installeret både Power BI Desktop og Power BI Desktop optimeret til Power BI-rapportserveren på samme computer. Den seneste installation af Power BI Desktop er knyttet til .pbix-filer. Det betyder, at den version af Power BI Desktop, du senest har installeret, startes, når du dobbeltklikker på en .pbix-fil.
+Lad os sige, at du har installeret både Power BI Desktop og Power BI Desktop for Power BI-rapportserver på den samme computer. Den seneste installation af Power BI Desktop er knyttet til .pbix-filer. Det betyder, at den version af Power BI Desktop, du senest har installeret, startes, når du dobbeltklikker på en .pbix-fil.
 
-Hvis du har installeret Power BI Desktop og derefter installerer Power BI Desktop optimeret til Power BI-rapportserver, åbnes alle .pbix-filer i Power BI Desktop optimeret til Power BI-rapportserver som standard. Hvis du foretrækker, at Power BI Desktop åbnes som standard, når du dobbeltklikker på en .pbix-fil, kan du geninstallere [Power BI Desktop fra Microsoft Store](https://aka.ms/pbidesktopstore).
+Hvis du har Power BI Desktop og derefter installerer Power BI Desktop for Power BI-rapportserver, åbnes alle. pbix-filer i Power BI Desktop for Power BI-rapportserver som standard. Hvis du foretrækker, at Power BI Desktop åbnes som standard, når du dobbeltklikker på en .pbix-fil, kan du geninstallere [Power BI Desktop fra Microsoft Store](https://aka.ms/pbidesktopstore).
 
 Du kan til enhver tid starte med at åbne den version af Power BI Desktop, du vil bruge. Og derefter kan du åbne filen fra Power BI Desktop.
 
@@ -66,14 +66,13 @@ Power BI-rapporter i Power BI-rapportserver, i Power BI-tjenesten (`https://app.
 
 ### <a name="selecting-a-language"></a>Vælg et sprog
 
-I forbindelse med Power BI Desktop, der er optimeret til Power BI-rapportserver, skal du vælge sproget, når du installerer appen. Du kan ikke ændre det bagefter, men du kan installere en version på et andet sprog.
+For Power BI Desktop for Power BI-rapportserver skal du vælge sproget, når du installerer appen. Du kan ikke ændre det bagefter, men du kan installere en version på et andet sprog.
 
 ### <a name="report-visuals-in-a-browser"></a>Rapportvisualiseringer i en browser
 
 Rapporter i Power BI-rapportserver understøtter alle visualiseringer, herunder Power BI-visuals. Rapporter i Power BI-rapportserver understøtter ikke:
 
 * R-visuals
-* ArcGIS-kort
 * Brødkrummer
 * Prøveversionsfunktioner i Power Bi Desktop
 
@@ -88,14 +87,13 @@ Rapporter i Power BI-rapportserver understøtter al den grundlæggende funktiona
 Rapporter i Power BI-rapportserver understøtter ikke disse funktioner i Power BI-mobilappsene:
 
 * R-visualiseringer
-* ArcGIS-kort
 * Power BI-visualiseringer
 * Brødkrummer
 * Geofiltrering eller stregkoder
 
 ### <a name="custom-security"></a>Brugerdefineret sikkerhed
 
-Power BI Desktop optimeret til Power BI-rapportserver understøtter ikke brugerdefineret sikkerhed. Hvis din Power BI-rapportserver er konfigureret med en brugerdefineret sikkerhedsudvidelse, kan du ikke gemme en Power BI-rapport fra Power BI Desktop (optimeret til Power BI-rapportserver) til instansen af Power BI-rapportserveren. Du skal gemme PBIX-rapportfilen fra Power BI Desktop og uploade den til portalwebstedet for Power BI-rapportserver.
+Power BI Desktop for Power BI-rapportserver understøtter ikke brugerdefineret sikkerhed. Hvis din Power BI-rapportserver er konfigureret med en brugerdefineret sikkerhedsudvidelse, kan du ikke gemme en Power BI-rapport fra Power BI Desktop (optimeret til Power BI-rapportserver) til instansen af Power BI-rapportserveren. Du skal gemme PBIX-rapportfilen fra Power BI Desktop og uploade den til portalwebstedet for Power BI-rapportserver.
 
 ### <a name="saving-reports-to-a-power-bi-report-server-in-a-different-domain"></a>Gem rapporter på en Power BI-rapportserver på et andet domæne
 
