@@ -2,19 +2,19 @@
 title: Optimer visuelle farver i Power BI-rapporter
 description: Otte tip til, hvordan du optimerer visuelle farver i Power BI-rapportvisualiseringer, i Power BI Desktop eller i Power BI-tjenesten.
 author: peter-myers
-ms.author: v-pemyer
+ms.author: kfollis
 ms.reviewer: asaxton
 featuredvideoid: RhYcEsdPqJg
 ms.service: powerbi
 ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 02/15/2020
-ms.openlocfilehash: 1bd49ef488e8daa8f78faca71a7a195707cd833e
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
-ms.translationtype: HT
+ms.openlocfilehash: f2e42bcb331ed91a6cd76d70bdbccc081ef97c50
+ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96417744"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99088758"
 ---
 # <a name="tips-to-optimize-visual-colors-in-power-bi-reports"></a>Tip til optimering af visuelle farver i Power BI-rapporter
 
