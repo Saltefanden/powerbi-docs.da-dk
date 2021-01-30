@@ -9,17 +9,17 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
 LocalizationGroup: Administration
-ms.openlocfilehash: 6afc49e0d2fe67c89d906d4715959892868b0027
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
-ms.translationtype: HT
+ms.openlocfilehash: 2218889e170519e651127d4246ab61a7505735fb
+ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96408084"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99085589"
 ---
 # <a name="powershell-cmdlets-rest-apis-and-net-client-library-for-power-bi-administration"></a>PowerShell-cmdlet'er, REST-API'er og .NET-klientbiblioteker til Power BI-administration
 Power BI gør det muligt for administratorer at scripte almindelige opgaver med PowerShell-cmdlet'er. Den eksponerer også REST API'er og giver et .NET-klientbibliotek til udvikling af administrative løsninger. Dette emne viser en liste over cmdlet'er og de tilsvarende API'er og REST API-slutpunktet. Her finder du flere oplysninger:
 
-- PowerShell [download](https://www.powershellgallery.com/packages/MicrosoftPowerBIMgmt/) og [dokumentation](/powershell/power-bi/overview?view=powerbi-ps)
+- PowerShell [download](https://www.powershellgallery.com/packages/MicrosoftPowerBIMgmt/) og [dokumentation](/powershell/power-bi/overview?view=powerbi-ps&preserve-view=true)
 - REST API-[dokumentation](/rest/api/power-bi/admin)
 - [Download](https://www.nuget.org/packages/Microsoft.PowerBI.Api/) af .NET-klientbibliotek
 

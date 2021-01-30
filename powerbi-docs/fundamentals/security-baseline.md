@@ -8,12 +8,12 @@ ms.subservice: pbi-security
 ms.topic: conceptual
 ms.date: 11/20/2020
 ms.custom: subject-security-benchmark
-ms.openlocfilehash: a76c7f9d205fe47322768a514a1e5d89a36a2306
-ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
-ms.translationtype: HT
+ms.openlocfilehash: b99f6f53f64e57bc262ea5aa518efa529b73f44e
+ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98565745"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99088137"
 ---
 # <a name="azure-security-baseline-for-power-bi"></a>Azure-sikkerhedsbaseline til Power BI
 
@@ -166,7 +166,7 @@ Aktivér privilegeret JIT-adgang (just-in-time) til Power BI-administratorkonti 
 
 - [Administratorroller, der er relateret til Power BI](../admin/service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi)
 
-- [Privilegeret adgangsstyring i M365](/microsoft-365/compliance/privileged-access-management-overview?amp;preserve-view=true&view=o365-worldwide)
+- [Privilegeret adgangsstyring i M365](/microsoft-365/compliance/privileged-access-management-overview?view=o365-worldwide&preserve-view=true)
 
 - [Cloud App Security-kontroller i Power BI](../admin/service-security-using-microsoft-cloud-app-security-controls.md)
 
@@ -178,7 +178,7 @@ Aktivér privilegeret JIT-adgang (just-in-time) til Power BI-administratorkonti 
 
 **Vejledning**: Begræns antallet af yderst privilegerede konti eller roller med øget adgang til Power BI.
 
-Du kan aktivere privilegeret JIT-adgang (just-in-time) ved hjælp af vejledningen til privilegeret adgangsstyring i M365 [her](/microsoft-365/compliance/privileged-access-management-overview?amp;preserve-view=true&view=o365-worldwide).
+Du kan aktivere privilegeret JIT-adgang (just-in-time) ved hjælp af vejledningen til privilegeret adgangsstyring i M365 [her](/microsoft-365/compliance/privileged-access-management-overview?view=o365-worldwide&preserve-view=true).
 
 Du kan finde yderligere oplysninger på side 183 i dokumentet om udrulning af Power BI i store virksomheder [her](https://aka.ms/PBIEnterpriseDeploymentWP).
 
@@ -533,7 +533,7 @@ Sørg for, at der er nedskrevne planer for svar på hændelser, der definerer al
  
 Microsoft Threat Protection anvender korrelationsanalyser og samler alle relaterede vigtige beskeder og undersøgelser fra forskellige produkter i én hændelse. Microsoft Threat Protection udløser også entydige vigtige beskeder om aktiviteter, der kun kan identificeres som skadelige pga. det omfattende indblik, som Microsoft Threat Protection har på tværs af hele ejendommen og pakken af produkter. Ved at gøre det fortæller Microsoft Threat Protection om den bredere angrebshistorie, hvilket giver en analytiker af sikkerhedshandlinger mulighed for at forstå og håndtere komplekse trusler på tværs af organisationen.
 
-- [Prioriter hændelser i Microsoft Threat Protection](/microsoft-365/security/mtp/incident-queue?amp;preserve-view=true&view=o365-worldwide)
+- [Prioriter hændelser i Microsoft Threat Protection](/microsoft-365/security/mtp/incident-queue?view=o365-worldwide&preserve-view=true)
 
 **Overvågning af Azure Security Center**: Ikke tilgængelig
 

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/27/2021
-ms.openlocfilehash: 0a0bef5c438abfc9ddf0417e95ff57534a64f67e
-ms.sourcegitcommit: 7ed995eed0fd6e718748accf87bae384211cd95d
+ms.openlocfilehash: bb69df893a3a9841d911e558e2ef2afb09230122
+ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
 ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99043573"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99087079"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nyheder i Power BI-rapportserver
 
@@ -492,7 +492,7 @@ Power BI-rapporter er interaktive. Det giver mening, at titler i en rapport er d
 
 #### <a name="cross-highlight-by-axis-labels"></a>Krydsfremhævning af aksemærkater
 
-Vælg kategorimærkaterne på aksen i en visualisering for at krydsfremhæve andre elementer på en side, ligesom du ville vælge datapunkter i en visualisering. Læs mere om [krydsfremhævning](../create-reports/power-bi-reports-filters-and-highlighting.md#ad-hoc-highlighting).
+Vælg kategorimærkaterne på aksen i en visualisering for at krydsfremhæve andre elementer på en side, ligesom du ville vælge datapunkter i en visualisering. Læs mere om [krydsfremhævning](../create-reports/power-bi-reports-filters-and-highlighting.md#ad-hoc-cross-filtering-and-cross-highlighting).
 
 #### <a name="all-the-new-features"></a>Alle de nye funktioner
 
