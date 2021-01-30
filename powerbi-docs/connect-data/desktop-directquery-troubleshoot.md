@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
 ms.date: 10/24/2019
-ms.openlocfilehash: 943c8283d48b4281d2ddb5d7eeed0e69db4ee6fc
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
-ms.translationtype: HT
+ms.openlocfilehash: ae73a14763babb4bf3d2c2a80d1b90d8a1cff76f
+ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96405301"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99086481"
 ---
 # <a name="troubleshoot-developing-directquery-models-in-power-bi-desktop"></a>Fejlfind udvikling af DirectQuery-modeller i Power BI Desktop
 
@@ -54,7 +54,7 @@ Når du navigerer til denne mappes overordnede mappe vises mappen, der indeholde
 
 I mappen er der en undermappe af typen _\Data_, som indeholder sporingsfilen FlightRecorderCurrent.trc for den aktuelle Power BI-session. Den tilsvarende arbejdsområdemappe slettes, når den tilknyttede Power BI Desktop-session afsluttes.
 
-Sporingsfilerne kan åbnes ved hjælp af værktøjet SQL Server Profiler, der kan downloades gratis som en del af SQL Server Management Studio. Du kan hente det på [denne placering](/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017).
+Sporingsfilerne kan åbnes ved hjælp af værktøjet SQL Server Profiler, der kan downloades gratis som en del af SQL Server Management Studio. Du kan hente det på [denne placering](/sql/ssms/download-sql-server-management-studio-ssms).
 
 Når du downloader og installerer SQL Server Management Studio, skal du køre SQL Server Profiler.
 

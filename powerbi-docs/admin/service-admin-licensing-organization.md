@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/11/2020
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 0c13d0f54d18527e6b8614f40b5b15fd46187968
-ms.sourcegitcommit: e8c3f327ac0fc73c118874a24d2601733f8f9e45
+ms.openlocfilehash: 0da3b5134db770c97b5b86b215998df91c1f646c
+ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
 ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98718502"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99085975"
 ---
 # <a name="licensing-the-power-bi-service-for-users-in-your-organization"></a>Licens til Power BI-tjenesten for brugere i din organisation
 
@@ -27,7 +27,7 @@ I denne artikel fokuseres der på køb af tjenester og licenser pr. bruger set f
 
 ## <a name="who-can-purchase-and-assign-licenses"></a>Hvem kan købe og tildele licenser?
 
-Du skal have tildelt en administratorrolle for at kunne købe eller tildele licenser for din organisation. Administratorroller tildeles ved hjælp af Azure Active Directory Administration eller Microsoft 365 Administration. I følgende tabel kan du se, hvilken rolle der kræves for at udføre opgaver relateret til køb og licenser. Du kan finde flere oplysninger om administratorroller i Azure Active Directory under [Få vist og tildel administratorroller i Azure Active Directory](/azure/active-directory/users-groups-roles/directory-manage-roles-portal). Hvis du vil have mere at vide om administratorroller i Microsoft 365, herunder bedste praksis, skal du se [Om administratorroller](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
+Du skal have tildelt en administratorrolle for at kunne købe eller tildele licenser for din organisation. Administratorroller tildeles ved hjælp af Azure Active Directory Administration eller Microsoft 365 Administration. I følgende tabel kan du se, hvilken rolle der kræves for at udføre opgaver relateret til køb og licenser. Du kan finde flere oplysninger om administratorroller i Azure Active Directory under [Få vist og tildel administratorroller i Azure Active Directory](/azure/active-directory/users-groups-roles/directory-manage-roles-portal). Hvis du vil have mere at vide om administratorroller i Microsoft 365, herunder bedste praksis, skal du se [Om administratorroller](/microsoft-365/admin/add-users/about-admin-roles).
 
 | Hvem kan købe tjenester og licenser? | Hvem kan administrere brugerlicenser? |
 | --------------- | --------------- |
@@ -114,7 +114,7 @@ Power BI Pro har den samme licenslivscyklus som Microsoft 365. Du kan finde fler
 ## <a name="next-steps"></a>Næste trin
 
 - [Køb og tildel Power BI Pro-licenser](service-admin-purchasing-power-bi-pro.md)
-- [Virksomhedsabonnementer og faktureringsdokumentation](/microsoft-365/commerce/?view=o365-worldwide)
+- [Virksomhedsabonnementer og faktureringsdokumentation](/microsoft-365/commerce/)
 - [Find Power BI-brugere, der er logget på](service-admin-access-usage.md)
 - Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

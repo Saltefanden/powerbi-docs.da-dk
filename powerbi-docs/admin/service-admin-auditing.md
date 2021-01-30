@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 08/20/2020
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 3c1e2b4513b3ac920d447ef0b8195c76c1ec2a04
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
-ms.translationtype: HT
+ms.openlocfilehash: cf10ac72f387438a60d3840c69ad1ee713c26708
+ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96413742"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99086206"
 ---
 # <a name="track-user-activities-in-power-bi"></a>Spor brugeraktiviteter i Power BI
 
@@ -122,7 +122,7 @@ Du kan filtrere overvågningsdataene efter datointerval, bruger, dashboard, rapp
 
 Du skal opfylde disse krav for at få adgang til overvågningslogfiler:
 
-- Du skal enten være global administrator eller være tildelt rollen Overvågningslogge eller Skrivebeskyttede overvågningslogge i Exchange Online for at få adgang til overvågningsloggen. Disse roller er som standard tildelt rollegrupperne Administration af overholdelse og Organisationsstyring på siden **Tilladelser** i Exchange Administration. Du kan finde flere oplysninger om de roller, der kan få vist overvågningslogge, under [Krav til søgning i overvågningsloggen](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide#requirements-to-search-the-audit-log).
+- Du skal enten være global administrator eller være tildelt rollen Overvågningslogge eller Skrivebeskyttede overvågningslogge i Exchange Online for at få adgang til overvågningsloggen. Disse roller er som standard tildelt rollegrupperne Administration af overholdelse og Organisationsstyring på siden **Tilladelser** i Exchange Administration. Du kan finde flere oplysninger om de roller, der kan få vist overvågningslogge, under [Krav til søgning i overvågningsloggen](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#requirements-to-search-the-audit-log).
 
     Hvis du vil give konti, der ikke er administratorer, adgang til overvågningslogfilerne, skal du tilføje brugeren som medlem af en af disse rollegrupper. Hvis du vil gøre det på en anden måde, kan du oprette en brugerdefineret rollegruppe i Exchange Administration, tildele rollen Overvågningslogge eller Skrivebeskyttede overvågningslogge til denne gruppe og derefter føje den konto, der ikke er administrator, til den nye rollegruppe. Du kan finde flere oplysninger under [Administrer rollegrupper i Exchange Online](/Exchange/permissions-exo/role-groups).
 
@@ -211,7 +211,7 @@ Følg disse trin for at eksportere Power BI-overvågningsloggen til en csv-fil.
 
 ### <a name="use-powershell-to-search-audit-logs"></a>Brug PowerShell til at søge efter overvågningslogs
 
-Du kan også bruge PowerShell til at få adgang til overvågningslogfilerne baseret på dit logon. I følgende eksempel kan du se, hvordan du opretter forbindelse til Exchange Online PowerShell og derefter bruger kommandoen [Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps/) til at trække poster fra Power BI-overvågningsloggen. Hvis du vil køre scriptet, skal en administrator tildele de nødvendige tilladelser til dig, som beskrevet i afsnittet [Krav til overvågningslog](#audit-log-requirements).
+Du kan også bruge PowerShell til at få adgang til overvågningslogfilerne baseret på dit logon. I følgende eksempel kan du se, hvordan du opretter forbindelse til Exchange Online PowerShell og derefter bruger kommandoen [Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps&preserve-view=true/) til at trække poster fra Power BI-overvågningsloggen. Hvis du vil køre scriptet, skal en administrator tildele de nødvendige tilladelser til dig, som beskrevet i afsnittet [Krav til overvågningslog](#audit-log-requirements).
 
 ```powershell
 Set-ExecutionPolicy RemoteSigned
@@ -226,7 +226,7 @@ Search-UnifiedAuditLog -StartDate 9/11/2018 -EndDate 9/15/2018 -RecordType Power
 
 ### <a name="use-powershell-to-export-audit-logs"></a>Brug PowerShell til at eksportere overvågningslogge
 
-Du kan også bruge PowerShell til at eksportere resultaterne af søgningen i overvågningsloggen. I følgende eksempel kan du se, hvordan du sender fra kommandoen [Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps/) og eksporterer resultaterne ved hjælp af cmdlet'en [Export-Csv](/powershell/module/microsoft.powershell.utility/export-csv). Hvis du vil køre scriptet, skal en administrator tildele de nødvendige tilladelser til dig, som beskrevet i afsnittet [Krav til overvågningslog](#audit-log-requirements).
+Du kan også bruge PowerShell til at eksportere resultaterne af søgningen i overvågningsloggen. I følgende eksempel kan du se, hvordan du sender fra kommandoen [Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps&preserve-view=true/) og eksporterer resultaterne ved hjælp af cmdlet'en [Export-Csv](/powershell/module/microsoft.powershell.utility/export-csv). Hvis du vil køre scriptet, skal en administrator tildele de nødvendige tilladelser til dig, som beskrevet i afsnittet [Krav til overvågningslog](#audit-log-requirements).
 
 ```powershell
 $UserCredential = Get-Credential
@@ -248,34 +248,34 @@ Følgende handlinger er tilgængelige både i overvågnings- og aktivitetslogge.
 
 | Brugervenligt navn                                     | Handlingsnavn                              | Noter                                  |
 |---------------------------------------------------|---------------------------------------------|------------------------------------------|
-| Tilgik udvalgte Power BI-tabeller i Excel | AnalyzedByExternalApplication |    |
-| Føjede datakilde til Power BI-gateway             | AddDatasourceToGateway                      |                                          |
-| Tilføjede adgang til Power BI-mapper                      | AddFolderAccess                             | Anvendes ikke i øjeblikket                       |
-| Tilføjede Power BI-gruppemedlemmer                      | AddGroupMembers                             |                                          |
+| Udvalgte Power BI-tabeller i Excel, der er blevet tilgået | AnalyzedByExternalApplication |    |
+| Datakilde er føjet til Power BI-gateway             | AddDatasourceToGateway                      |                                          |
+| Adgang til Power BI-mapper er tilføjet                      | AddFolderAccess                             | Anvendes ikke i øjeblikket                       |
+| Power BI-gruppemedlemmer er tilføjet                      | AddGroupMembers                             |                                          |
 | Administratoren har knyttet dataflowlagerkontoen til lejer | AdminAttachedDataflowStorageAccountToTenant | Anvendes ikke i øjeblikket                       |
 | Analyseret Power BI-datasæt                         | AnalyzedByExternalApplication               | Genereres, når brugerne interagerer med tjenesten                                         |
-| Analyserede Power BI-rapport                          | AnalyzeInExcel                              |                                          |
+| Power BI-rapport er analyseret                          | AnalyzeInExcel                              |                                          |
 | Tildelt et arbejdsområde til en udrulningspipeline                          | AssignWorkspaceToPipeline                              |                                          |
 | Tilknyttet lagerkonto for dataflow                 | AttachedDataflowStorageAccount              |                                          |
 | Bundne Power BI-datasæt til gateway                | BindToGateway                               |                                          |
 | Annulleret opdatering af dataflow                        | CancelDataflowRefresh                       |                                          |
-| Ændrede kapacitetstilstand                            | ChangeCapacityState                         |                                          |
-| Ændrede kapacitet for brugertildeling                  | UpdateCapacityUsersAssignment               |                                          |
-| Ændrede Power BI-datasætforbindelser              | SetAllConnections                           |                                          |
+| Kapacitetstilstand er ændret                            | ChangeCapacityState                         |                                          |
+| Kapacitet for brugertildeling er ændret                  | UpdateCapacityUsersAssignment               |                                          |
+| Power BI-datasætforbindelser er ændret              | SetAllConnections                           |                                          |
 | Ændrede administratorer af Power BI-gateway                   | ChangeGatewayAdministrators                 |                                          |
 | Ændrede brugere af datakilde fra Power BI-gateway        | ChangeGatewayDatasourceUsers                |                                          |
 | Oprettede en brugerdefineret visualisering til virksomheder                          | InsertOrganizationalGalleryItem                                |                                          |
-| Oprettede Power BI-indholdspakke til organisationer      | CreateOrgApp                                |                                          |
-| Oprettede installationspipeline      | CreateAlmPipeline                                |                                          |
-| Oprettede Power BI-app                              | CreateApp                                   |                                          |
-| Oprettede Power BI-dashboard                        | CreateDashboard                             |                                          |
-| Oprettede Power BI-dataflow                         | CreateDataflow                              |                                          |
-| Oprettede Power BI-datasæt                          | CreateDataset                               |                                          |
-| Oprettede Power BI-mailabonnement               | CreateEmailSubscription                     |                                          |
-| Oprettede Power BI-mappe                           | CreateFolder                                |                                          |
-| Oprettede Power BI-gateway                          | CreateGateway                               |                                          |
-| Oprettede Power BI-gruppe                            | CreateGroup                                 |                                          |
-| Oprettede Power BI-rapport                           | CreateReport <sup>1</sup>                                |                                          |
+| Power BI organisationsindholdspakke er oprettet      | CreateOrgApp                                |                                          |
+| Opret installationspipeline      | CreateAlmPipeline                                |                                          |
+| Power BI-app er oprettet                              | CreateApp                                   |                                          |
+| Power BI-dashboard er oprettet                        | CreateDashboard                             |                                          |
+| Power BI-dataflow er oprettet                         | CreateDataflow                              |                                          |
+| Power BI-datasæt er oprettet                          | CreateDataset                               |                                          |
+| Power BI-mailabonnement er oprettet               | CreateEmailSubscription                     |                                          |
+| Power BI-mappe er oprettet                           | CreateFolder                                |                                          |
+| Oprettet Power BI-gateway                          | CreateGateway                               |                                          |
+| Power BI-gruppe er oprettet                            | CreateGroup                                 |                                          |
+| Power BI-rapport er oprettet                           | CreateReport <sup>1</sup>                                |                                          |
 | Opret arbejdsområde for Power BI-skabelonprogram | CreateTemplateApp   |
 | Opret installationsanmodning for Power BI-skabelonprogram | CreateTemplateAppInstallTicket |
 | Opret pakke til Power BI-skabelonprogram | CreateTemplateAppPackage |
@@ -292,7 +292,7 @@ Følgende handlinger er tilgængelige både i overvågnings- og aktivitetslogge.
 | Slettede Power BI-dataflow                         | DeleteDataflow                              | Anvendes ikke i øjeblikket                       |
 | Slettede Power BI-datasæt                          | DeleteDataset                               |                                          |
 | Slettede Power BI-mailabonnement               | DeleteEmailSubscription                     |                                          |
-| Slettede Power BI-mappe                           | DeleteFolder                                |                                          |
+| Power BI-mappe er slettet                           | DeleteFolder                                |                                          |
 | Slettede adgang til Power BI-mapper                    | DeleteFolderAccess                          | Anvendes ikke i øjeblikket                       |
 | Slettede Power BI-gateway                          | DeleteGateway                               |                                          |
 | Slettede Power BI-gruppe                            | DeleteGroup                                 |                                          |
@@ -364,7 +364,7 @@ Følgende handlinger er tilgængelige både i overvågnings- og aktivitetslogge.
 | Opdaterede datakilder til Power BI-datasæt             | UpdateDatasources                           |                                          |
 | Opdaterede parametre for Power BI-datasæt               | UpdateDatasetParameters                     |                                          |
 | Opdaterede Power BI-mailabonnement               | UpdateEmailSubscription                     |                                          |
-| Opdaterede Power BI-mappe                           | UpdateFolder                                |                                          |
+| Power BI-mappe er opdateret                           | UpdateFolder                                |                                          |
 | Opdaterede adgang til Power BI-mappe                    | UpdateFolderAccess                          |                                          |
 | Opdaterede legitimationsoplysninger for Power BI-gatewaydatakilde  | UpdateDatasourceCredentials                 |                                          |
 | Opdaterede indstillinger for Power BI-skabelonprogram | UpdateTemplateAppSettings |

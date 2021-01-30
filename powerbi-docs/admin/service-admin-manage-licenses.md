@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 04/08/2020
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 6e00474d81d4de1c8316625c6e3a7ade1bf73197
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
-ms.translationtype: HT
+ms.openlocfilehash: 929540e0f04fb6f8fa7b3f71da2a2f34f5fd273b
+ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96408590"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99085561"
 ---
 # <a name="view-and-manage-power-bi-user-licenses"></a>Få vist og administrer Power BI-brugerlicenser
 
@@ -37,11 +37,11 @@ Dine aktive Power BI-abonnementer vises sammen med dine andre abonnementer. Du k
 
   ![Skærmbillede af Power BI-abonnementet, der viser et gratis abonnement.](media/service-admin-manage-licenses/power-bi-free-user-activated.png)
 
-Denne type abonnement oprettes for dig, når brugerne benytter sig af tilmelding via selvbetjening. Hvis du vil vide mere, skal du se [Power BI i din organisation](/microsoft-365/admin/misc/power-bi-in-your-organization?view=o365-worldwide).
+Denne type abonnement oprettes for dig, når brugerne benytter sig af tilmelding via selvbetjening. Hvis du vil vide mere, skal du se [Power BI i din organisation](/microsoft-365/admin/misc/power-bi-in-your-organization).
 
 ## <a name="manage-user-licenses-in-microsoft-365"></a>Administrer brugerlicenser i Microsoft 365
 
-Hvis du vil bruge Microsoft 365 Administration til at administrere brugerlicenser, skal du se [Dokumentation til virksomhedsabonnementer og fakturering](/microsoft-365/commerce/?view=o365-worldwide).
+Hvis du vil bruge Microsoft 365 Administration til at administrere brugerlicenser, skal du se [Dokumentation til virksomhedsabonnementer og fakturering](/microsoft-365/commerce/).
 
 ## <a name="manage-user-licenses-in-azure-portal"></a>Administrer brugerlicenser på Azure Portal
 

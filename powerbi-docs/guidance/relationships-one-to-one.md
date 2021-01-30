@@ -2,18 +2,18 @@
 title: Vejledning til en til en-relationer
 description: Vejledning til udvikling af modeller med en til en-relationer.
 author: peter-myers
-ms.author: v-pemyer
+ms.author: kfollis
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 03/02/2020
-ms.openlocfilehash: b9cff6a4a59db3a30fc4bbe2373a723700d00fee
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
-ms.translationtype: HT
+ms.openlocfilehash: e94db82041d25a9485d2ccd96eefd9f11f0fd7db
+ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97885010"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99087907"
 ---
 # <a name="one-to-one-relationship-guidance"></a>Vejledning til en til en-relationer
 

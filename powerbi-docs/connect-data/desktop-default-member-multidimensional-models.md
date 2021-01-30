@@ -9,18 +9,18 @@ ms.subservice: pbi-data-sources
 ms.topic: conceptual
 ms.date: 01/10/2019
 LocalizationGroup: Data from files
-ms.openlocfilehash: 333651ad89e50a3debe73dfdafc0dced865553a5
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
-ms.translationtype: HT
+ms.openlocfilehash: b339117e8cba73da35759a600d3f303b93415711
+ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96405439"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99086391"
 ---
 # <a name="work-with-multidimensional-models-in-power-bi"></a>Arbejd med flerdimensionelle modeller i Power BI
 
 Du kan oprette forbindelse til flerdimensionelle modeller i Power BI og oprette rapporter, som visualiserer alle mulige forskellige data i modellen. Når du arbejder med flerdimensionelle modeller, anvender Power BI regler for, hvordan data behandles, ud fra hvilken kolonne der er defineret som *standardmedlemmet*. 
 
-Når du arbejder med flerdimensionelle modeller, håndterer Power BI data fra modellen, afhængigt af hvor den kolonne, der indeholder **DefaultMember**, bruges. Attributten *DefaultMember* er angivet i CSDL (Conceptual Schema Definition Language) for en bestemt kolonne i en flerdimensionel model. Du kan få mere at vide om standardmedlemmet i [artiklen om egenskaber for attributter](/sql/analysis-services/multidimensional-models/attribute-properties-define-a-default-member?view=sql-server-2017). Når der udføres en DAX-forespørgsel, anvendes det standardmedlem, der er angivet i modellen, automatisk.
+Når du arbejder med flerdimensionelle modeller, håndterer Power BI data fra modellen, afhængigt af hvor den kolonne, der indeholder **DefaultMember**, bruges. Attributten *DefaultMember* er angivet i CSDL (Conceptual Schema Definition Language) for en bestemt kolonne i en flerdimensionel model. Du kan få mere at vide om standardmedlemmet i [artiklen om egenskaber for attributter](/sql/analysis-services/multidimensional-models/attribute-properties-define-a-default-member). Når der udføres en DAX-forespørgsel, anvendes det standardmedlem, der er angivet i modellen, automatisk.
 
 I denne artikel beskrives, hvordan Power BI fungerer under forskellige omstændigheder, når du arbejder med flerdimensionelle modeller, afhængigt af hvor *standardmedlemmet* befinder sig. 
 

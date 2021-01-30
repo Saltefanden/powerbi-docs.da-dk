@@ -2,18 +2,18 @@
 title: Vejledning til fejlfinding af relationer
 description: Vejledning til fejlfinding af problemer med modelrelationer.
 author: peter-myers
-ms.author: v-pemyer
+ms.author: kfollis
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 03/02/2020
-ms.openlocfilehash: e8f76bf1e1947815176a1b24be2b758489093071
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
-ms.translationtype: HT
+ms.openlocfilehash: 6018cf1b26f704efefd5ec9b9fd29e72ad0f3fef
+ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96418526"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99088229"
 ---
 # <a name="relationship-troubleshooting-guidance"></a>Vejledning til fejlfinding af relationer
 

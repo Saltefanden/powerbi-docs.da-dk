@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 04/08/2020
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 5845e56bdcb2257d67d541e35d26c9285a5e9319
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
-ms.translationtype: HT
+ms.openlocfilehash: 0184e549911afb784e06b1ee829bf113ff97e067
+ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96408130"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99086297"
 ---
 # <a name="purchase-and-assign-power-bi-pro-user-licenses"></a>Køb og tildel Power BI Pro-brugerlicenser
 
@@ -40,7 +40,7 @@ Du skal være ejer af det Azure-abonnement, som Power BI bruger til opslag i Azu
 ### <a name="purchase-licenses-in-microsoft-365"></a>Køb licenser i Microsoft 365
 
 > [!NOTE]
-> Hvis du normalt køber licenser via en volumenlicensaftale, f.eks. en Enterprise Aftale, og ønsker at modtage en faktura i stedet for at købe med et kreditkort eller en bankkonto, skal du indsende ordren anderledes. Kontakt din Microsoft-forhandler, eller gå gennem Volume Licensing Service Center for at tilføje eller fjerne licenser. Du kan finde flere oplysninger under [Administrer abonnementslicenser](/microsoft-365/commerce/licenses/buy-licenses?view=o365-worldwide).
+> Hvis du normalt køber licenser via en volumenlicensaftale, f.eks. en Enterprise Aftale, og ønsker at modtage en faktura i stedet for at købe med et kreditkort eller en bankkonto, skal du indsende ordren anderledes. Kontakt din Microsoft-forhandler, eller gå gennem Volume Licensing Service Center for at tilføje eller fjerne licenser. Du kan finde flere oplysninger under [Administrer abonnementslicenser](/microsoft-365/commerce/licenses/buy-licenses).
 
 Følg disse trin for at købe Power BI Pro-licenser via Microsoft 365 Administration:
 

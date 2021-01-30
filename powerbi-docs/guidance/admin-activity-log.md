@@ -2,18 +2,18 @@
 title: Få adgang til Power BI-aktivitetsloggen
 description: Vejledning og eksempel på PowerShell-scriptkode, som fungerer med Power BI-aktivitetslog.
 author: peter-myers
-ms.author: v-pemyer
+ms.author: kfollis
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: sample
 ms.date: 09/03/2020
-ms.openlocfilehash: 18ce155419f712cce2c4973949cd02ffbd870724
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
-ms.translationtype: HT
+ms.openlocfilehash: 0e86966225060c24aa154c0b29ea533dad89908b
+ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96394652"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99088689"
 ---
 # <a name="access-the-power-bi-activity-log"></a>Få adgang til Power BI-aktivitetsloggen
 
@@ -30,7 +30,7 @@ Der er et PowerShell-eksempel tilgængelig, så du kan få hjælp til at lære, 
 - Hent en liste over brugere til direkte deling af rapporter.
 
 > [!NOTE]
-> Du skal have kendskab til [API'en for Power BI-administratorer](/rest/api/power-bi/admin) og [Power BI PowerShell-moduler](/powershell/power-bi/overview?view=powerbi-ps). PowerShell-moduler skal være installeret, før disse scriptblokke udføres. Du kan finde flere oplysninger under [Spor brugeraktiviteter i Power BI](../admin/service-admin-auditing.md#use-the-activity-log).
+> Du skal have kendskab til [API'en for Power BI-administratorer](/rest/api/power-bi/admin) og [Power BI PowerShell-moduler](/powershell/power-bi/overview?view=powerbi-ps&preserve-view=true). PowerShell-moduler skal være installeret, før disse scriptblokke udføres. Du kan finde flere oplysninger under [Spor brugeraktiviteter i Power BI](../admin/service-admin-auditing.md#use-the-activity-log).
 >
 > Der kan være en forsinkelse på op til 30 minutter i forbindelse med hentning af Power BI-hændelser.
 

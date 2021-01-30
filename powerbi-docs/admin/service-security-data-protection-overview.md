@@ -9,12 +9,12 @@ ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.date: 09/17/2020
 LocalizationGroup: Data from files
-ms.openlocfilehash: 4405b83dae3d517b16099725ab10990cc8e503f4
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
-ms.translationtype: HT
+ms.openlocfilehash: d3d5721ff3b00b4a739a95dea9070d4c5c9d26b5
+ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96413351"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99086274"
 ---
 # <a name="data-protection-in-power-bi"></a>Databeskyttelse i Power BI
 
@@ -36,7 +36,7 @@ Med databeskyttelsesfunktionerne i Power BI kan du:
 * **Overvåge og beskytte brugeraktivitet i forbindelse med følsomme data i realtid** med beskeder, sessionsovervågning og risikoafhjælpning ved hjælp af Cloud App Security.
 * **Give sikkerhedsadministratorer**, der benytter databeskyttelsesrapporter og funktioner til sikkerhedsundersøgelser, Microsoft Cloud App Security for at forbedre den organisatoriske oversigt.
 
-Læs mere om [Microsoft Information Protection-følsomhedsmærkater](/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide) og [Cloud App Security](/cloud-app-security/what-is-cloud-app-security).
+Læs mere om [Microsoft Information Protection-følsomhedsmærkater](/microsoft-365/compliance/sensitivity-labels) og [Cloud App Security](/cloud-app-security/what-is-cloud-app-security).
 
 
 ## <a name="next-steps"></a>Næste trin

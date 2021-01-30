@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 10/23/2019
+ms.date: 01/29/2021
 LocalizationGroup: Reports
-ms.openlocfilehash: 9a793ff966f7560924f53357ce7518f0ede65c56
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
-ms.translationtype: HT
+ms.openlocfilehash: 572bbc8b24fc3ebf8ee2890480eff25eab87d37d
+ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96393571"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99087815"
 ---
 # <a name="filters-and-highlighting-in-power-bi-reports"></a>Filtre og fremhævning i Power BI-rapporter
- Denne artikel introducerer dig for filtrering og fremhævning i Power BI-tjenesten. Brugeroplevelsen er stort den samme i Power BI Desktop. *Filtre* fjerner alt andet end de data, du vil fokusere på. *Fremhævning* er ikke filtrering. Det fjerner ikke data, men fremhæver i stedet et undersæt af de synlige data – data, der ikke fremhæves, forbliver synlige, men nedtonede.
+ Denne artikel introducerer dig for filtrering og fremhævning i Power BI-tjenesten. Brugeroplevelsen er stort den samme i Power BI Desktop. *Filtre* fjerner alt andet end de data, du vil fokusere på. *Fremhævning* filtreres generelt ikke. I de fleste visuelle elementer fjernes de ikke-relaterede data ikke. I stedet fremhæves delmængden af relaterede data. Resten af dataene forbliver synlige, men nedtonede. Se [ad hoc-kryds filtrering og tværgående fremhævning](#ad-hoc-cross-filtering-and-cross-highlighting) senere i denne artikel for at få flere oplysninger.
 
 Du kan filtrere og fremhæve rapporter i Power BI på mange forskellige måder. Hvis vi havde inkluderet alle oplysningerne i én artikel, ville det være forvirrende, så vi har opdelt dem i følgende afsnit:
 
@@ -41,7 +41,7 @@ Du kan anvende filtre i ruden **Filtre** eller ved [at foretage valg i udsnitsv�
 Der findes fire typer filtre.
 
 - **Sidefilter** gælder for alle visuelle elementer på rapportsiden.     
-- **Visuelt filter** gælder for et enkelt visuelt element på rapportsiden. Du kan kun se filtre på visualiseringsniveau, hvis du har valgt en visual på rapportlærredet.    
+- **Visuelt filter** gælder for et enkelt visuelt element på rapportsiden. Du kan kun få vist filtre på visualiseringsniveau, hvis du har valgt en visualisering på rapportcanvasset.    
 - **Rapportfilter** gælder for alle sider i rapporten.    
 - **Detaljeadgangsfilter** gælder for en bestemt enhed i en rapport.    
 
@@ -70,7 +70,7 @@ Hver visual kan have filtre til alle felterne, og forfatteren til en rapport kan
 
 Udforsk data ved at ændre eksisterende filtre i læsevisning. De ændringer, du foretager, gemmes sammen med rapporten, også selvom rapporten er åbnet i en mobilapp. Se hvordan ved at [få en præsentation af ruden Rapportfiltre](../consumer/end-user-report-filter.md)
 
-Dine filtre gemmes, når du lukker rapporten. Hvis du vil fortryde filtreringen og vende tilbage til standarden for filtrering, udsnit, detailudledning og sortering som angivet af rapportens forfatter, skal du vælge **Nulstil til standard** på den øverste menulinje.
+Når du lukker rapporten, gemmes dine filtre. Hvis du vil fortryde filtreringen og vende tilbage til standarden for filtrering, udsnit, detailudledning og sortering som angivet af rapportens forfatter, skal du vælge **Nulstil til standard** på den øverste menulinje.
 
 ![Ikon for Nulstil til standard](media/power-bi-reports-filters-and-highlighting/power-bi-reset-to-default.png)
 
@@ -83,13 +83,16 @@ Som i læsevisningen kan vi se, at denne side i rapporten har seks filtre på si
 
 Vi kan udrette mere med filtre og fremhævning i læsevisning. Primært kan vi tilføje nye filtre. Se, hvordan du [tilføjer et filter i en rapport](power-bi-report-add-filter.md) og meget mere.
 
-## <a name="ad-hoc-highlighting"></a>Ad hoc-fremhævning
-Vælg en værdi eller aksemærkat i en visualisering for at fremhæve de andre visualiseringer på siden. Hvis du vil fjerne fremhævningen, skal du vælge værdien igen eller vælge et blankt område i den samme visualisering. Fremhævning er en sjov og hurtig måde at udforske dataeffekter på. Hvis du vil finjustere funktionsmåden for denne type krydsfremhævning, kan du se mere under [Visuelle interaktioner](service-reports-visual-interactions.md).
+## <a name="ad-hoc-cross-filtering-and-cross-highlighting"></a>Ad hoc-kryds filtrering og tværgående fremhævning
+Vælg en værdi-eller akseetiket i ét visuelt element for at kryds filtrere eller tværgående fremhævning af de relaterede værdier i andre visualiseringer på siden. I de fleste visuelle elementer fjerner du ikke de ikke-relaterede data i de andre visualiseringer, hvis du vælger en værdi i en visualisering. I stedet fremhæves delmængden af relaterede data. De ikke-relaterede data forbliver synlige, men nedtonede. I nogle visuelle elementer fungerer det imidlertid, at hvis du vælger en værdi i en visualisering, fungerer det mere som et filter i de andre visualiseringer. I kurvediagrammer og punktdiagrammer er det f. eks. kun de relaterede data, der forbliver synlige. De ikke-relaterede data er ikke synlige, på samme måde som du ville se med et filter. 
 
-![Tværgående fremhævning](media/power-bi-reports-filters-and-highlighting/power-bi-adhoc-filter.gif)
+Hvis du vil fjerne fremhævningen, skal du vælge værdien igen eller vælge et blankt område i den samme visualisering. Fremhævning er en sjov og hurtig måde at udforske dataeffekter på. Du kan finde flere eksempler i [afsnittet kryds filtrering og tværgående fremhævning](../consumer/end-user-interactions.md#cross-filtering-and-cross-highlighting) af "hvordan visuelle elementer kryds filtrerer hinanden i en Power BI rapport".
 
+![Animation, der viser kryds filtrering og tværgående fremhævning.](media/power-bi-reports-filters-and-highlighting/power-bi-adhoc-filter.gif)
 
-## <a name="next-steps"></a>De næste trin
+Rapport editorer kan ændre den måde, visualiseringer interagerer på. Hvis du vil finjustere, hvordan tværgående fremhævning fungerer, skal du se [Rediger, hvordan visualiseringer interagerer i rapport](service-reports-visual-interactions.md).
+
+## <a name="next-steps"></a>Næste trin
 
 [Den nye filtreringsoplevelse i Power BI-rapporter](power-bi-report-filter.md)
 
@@ -97,6 +100,6 @@ Vælg en værdi eller aksemærkat i en visualisering for at fremhæve de andre v
 
 [Få en præsentation af rapportfiltre](../consumer/end-user-report-filter.md)
 
-[Rediger, hvordan visuals i rapporter krydsfiltrerer og krydsfremhæver hinanden](../consumer/end-user-interactions.md)
+[Hvordan visuelle elementer i rapporter kryds filtrerer og kryds fremhævning af hinanden i en rapport](../consumer/end-user-interactions.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

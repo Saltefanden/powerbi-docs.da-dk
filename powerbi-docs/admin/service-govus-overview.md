@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/19/2021
 ms.custom: gcc
 LocalizationGroup: Get started
-ms.openlocfilehash: 06a2dff78cc2367afb153111e080e29a16fc82ab
-ms.sourcegitcommit: 77912d4f6ef2a2b1ef8ffccc50691fe5b38ee97a
+ms.openlocfilehash: 93198628677966208609892ee45ea4a28932c091
+ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
 ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98686976"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99085837"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI til US Government-kunder
 
@@ -66,7 +66,7 @@ Din konto kan være konfigureret i mere end ét cloudmiljø. Hvis din konto er k
 
 Hvis du vil bruge Power BI-tjenesten, skal du tillade forbindelser til påkrævede slutpunkter på internettet. Disse destinationer skal være tilgængelige for at muliggøre kommunikation mellem dit eget netværk, Power BI og andre afhængige tjenester.
 
-I nedenstående tabel viser vi de påkrævede slutpunkter, som du kan føje til din liste over tilladte for at aktivere forbindelsen til Power BI-tjenesten med henblik på generel brug af webstedet. Disse slutpunkter er entydige for US Government-cloudmiljøet. Power BI-tjenesten kræver kun, at TCP-port 443 er åben for de viste slutpunkter. Slutpunkterne for hentning af data, dashboard- og rapportintegration, Power BI-visualiseringer og andre valgfri tjenester er ikke unikke for US Government-cloudmiljøet. Hvis du også vil føje disse URL-adresser til listen over tilladte, skal du se [Føj Power BI URL-adresser til listen over tilladte](power-bi-whitelist-urls.md).
+I nedenstående tabel viser vi de påkrævede slutpunkter, som du kan føje til din liste over tilladte for at aktivere forbindelsen til Power BI-tjenesten med henblik på generel brug af webstedet. Disse slutpunkter er entydige for US Government-cloudmiljøet. Power BI-tjenesten kræver kun, at TCP-port 443 er åben for de viste slutpunkter. Slutpunkterne for hentning af data, dashboard- og rapportintegration, Power BI-visualiseringer og andre valgfri tjenester er ikke unikke for US Government-cloudmiljøet. Hvis du også vil føje disse URL-adresser til listen over tilladte, skal du se [Føj Power BI URL-adresser til listen over tilladte](power-bi-allow-list-urls.md).
 
 Godkendelse, identitet og administration for Power BI afhænger af forbindelsen til Microsoft 365-tjenester. Du skal også oprette forbindelse til Microsoft 365 for at få vist overvågningslogge. Hvis du vil identificere slutpunkterne for disse tjenester, skal du se Microsoft 365-integration i nedenstående tabel.
 

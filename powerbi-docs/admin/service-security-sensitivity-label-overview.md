@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.custom: contperf-fy21q2
 ms.date: 12/20/2020
 LocalizationGroup: Data from files
-ms.openlocfilehash: 52c3d5dea171f34fbbe5133eda6fd51fd471bbd4
-ms.sourcegitcommit: 1872a167d1e4d731ad00cf8a6d951c31aa54bcce
+ms.openlocfilehash: 3bc9a946d8f9091f8a2939ad9865460c1f22a446
+ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
 ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98925668"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99085796"
 ---
 # <a name="sensitivity-labels-in-power-bi"></a>Følsomhedsmærkater i Power BI
 
@@ -34,7 +34,7 @@ Microsoft Information Protections følsomhedsmærkater giver brugerne en nem må
 
 I Power BI-tjenesten kan følsomhedsmærkater kun anvendes på datasæt, rapporter, dashboards og dataflow. Når data, der er forsynet med mærkater, forlader Power BI, enten via eksport til Excel, PowerPoint, PDF eller .pbix-filer eller via andre understøttede eksportscenarier, f.eks. Analysér i Excel eller pivottabeller i Excel med direkte forbindelse, anvender Power BI automatisk mærkaten på den eksporterede fil og beskytter den i henhold til indstillingerne for mærkatens filkryptering. På denne måde forbliver dine følsomme data beskyttet, selv når de forlader Power BI.
 
-Desuden kan følsomhedsmærkater anvendes på .pbix-filer i Power BI Desktop, så dine data og dit indhold er sikre, når de deles uden for Power BI (f.eks. så det kun er brugere i din organisation, der kan åbne en fortrolig .pbix, der er blevet delt eller vedhæftet i en mail), også selvom de er blevet publiceret i Power BI-tjenesten. Du kan finde flere oplysninger under [Begræns adgang til indhold ved hjælp af følsomhedsmærkater for at anvende kryptering](/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide).
+Desuden kan følsomhedsmærkater anvendes på .pbix-filer i Power BI Desktop, så dine data og dit indhold er sikre, når de deles uden for Power BI (f.eks. så det kun er brugere i din organisation, der kan åbne en fortrolig .pbix, der er blevet delt eller vedhæftet i en mail), også selvom de er blevet publiceret i Power BI-tjenesten. Du kan finde flere oplysninger under [Begræns adgang til indhold ved hjælp af følsomhedsmærkater for at anvende kryptering](/microsoft-365/compliance/encryption-sensitivity-labels).
 
 Følsomhedsmærkater, der anvendes på rapporter, dashboards, datasæt og dataflows, er synlige fra mange forskellige steder i Power BI-tjenesten. Følsomhedsmærkater på rapporter og dashboards er også synlige i Power BI iOS- og Android-mobilapps og i integrerede visualiseringer. I Desktop kan du se følsomhedsmærkater på statuslinjen.
 
@@ -185,7 +185,7 @@ Hvis du vil have adgang til følsomhedsmærkater i et af disse centre, skal du n
 
 ### <a name="power-bi-desktop-preview"></a>Power BI Desktop (prøveversion)
 
-* Beskyttede .pbix-filer kan kun åbnes og/eller publiceres af en bruger, som er RMS-ejeren af filen (den bruger, der oprindeligt anvendte mærkaten på filen), eller som har brugsrettighederne [**Fuld kontrol** og/eller **Eksportér** brugsrettigheder](/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide) til den relevante mærkat. RMS-ejeren har Fuld kontrol og kan aldrig låses ude. [Se flere oplysninger](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)
+* Beskyttede .pbix-filer kan kun åbnes og/eller publiceres af en bruger, som er RMS-ejeren af filen (den bruger, der oprindeligt anvendte mærkaten på filen), eller som har brugsrettighederne [**Fuld kontrol** og/eller **Eksportér** brugsrettigheder](/microsoft-365/compliance/encryption-sensitivity-labels) til den relevante mærkat. RMS-ejeren har Fuld kontrol og kan aldrig låses ude. [Se flere oplysninger](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)
 
 * Hvis den mærkat, der anvendes på en .pbix-fil, ikke er blevet publiceret til brugeren enten i Microsoft 365 Sikkerhedscenter eller Microsoft 365 Overholdelsescenter, kan brugeren ikke gemme filen i Desktop.
 

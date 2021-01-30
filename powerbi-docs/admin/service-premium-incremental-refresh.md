@@ -9,12 +9,12 @@ ms.subservice: powerbi-premium
 ms.topic: how-to
 ms.date: 11/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 68d12c69afadb3d5d82782c239381844c1d58b5e
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
-ms.translationtype: HT
+ms.openlocfilehash: b019ed8177a4300b39d41c53c2e7d6a4d84e673a
+ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96413535"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99086550"
 ---
 # <a name="incremental-refresh-in-power-bi"></a>Trinvis opdatering i Power BI
 
@@ -116,7 +116,7 @@ Under den første opdatering i Power BI-tjenesten kan det tage længere tid at i
 
 #### <a name="current-date"></a>Aktuel dato
 
-Den *aktuelle dato* er baseret på systemdatoen for opdateringstidspunktet. Hvis en planlagt opdatering er aktiveret for datasættet i Power BI-tjenesten, tages der hensyn til den pågældende tidszone, når den aktuelle dato fastsættes. Der tages hensyn til tidszonen for både manuelt udløste og planlagte opdateringer gennem Power BI-tjenesten, hvis tidszonen er tilgængelig. En opdatering, der finder sted kl. 20.00 Pacific Time (USA og Canada) og har en angiven tidszone, fastsætter den aktuelle dato ud fra Pacific Time og ikke GMT (hvilket i så fald ville være den efterfølgende dag). Opdateringshandlinger, der ikke blev kaldt via Power BI-tjenesten, f.eks. [TMSL-opdateringskommandoen](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current), tager ikke hensyn til tidszonen for planlagt opdatering
+Den *aktuelle dato* er baseret på systemdatoen for opdateringstidspunktet. Hvis en planlagt opdatering er aktiveret for datasættet i Power BI-tjenesten, tages der hensyn til den pågældende tidszone, når den aktuelle dato fastsættes. Der tages hensyn til tidszonen for både manuelt udløste og planlagte opdateringer gennem Power BI-tjenesten, hvis tidszonen er tilgængelig. En opdatering, der finder sted kl. 20.00 Pacific Time (USA og Canada) og har en angiven tidszone, fastsætter den aktuelle dato ud fra Pacific Time og ikke GMT (hvilket i så fald ville være den efterfølgende dag). Opdateringshandlinger, der ikke blev kaldt via Power BI-tjenesten, f.eks. [TMSL-opdateringskommandoen](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current&preserve-view=true), tager ikke hensyn til tidszonen for planlagt opdatering
 
 ![Tidszone](media/service-premium-incremental-refresh/time-zone2.png)
 
@@ -180,7 +180,7 @@ Med XMLA-slutpunktet kan læse-/skriveaktiveret SSMS bruges til at få vist og a
 
 #### <a name="override-incremental-refresh-behavior"></a>Tilsidesæt funktionsmåde for trinvis opdatering
 
-Med SSMS får du også mere kontrol over, hvordan du aktiverer trinvise opdateringer ved hjælp af [TMSL (Tabular Model Scripting Language)](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=power-bi-premium-current) og [TOM (Tabular Object Model)](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo?view=power-bi-premium-current). I SSMS kan du f. eks. højreklikke på en tabel i Object Explorer og derefter vælge menupunktet **Behandl tabel**. Klik derefter på knappen **Script** for at generere en TMSL-opdateringskommando.
+Med SSMS får du også mere kontrol over, hvordan du aktiverer trinvise opdateringer ved hjælp af [TMSL (Tabular Model Scripting Language)](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=power-bi-premium-current&preserve-view=true) og [TOM (Tabular Object Model)](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo?view=power-bi-premium-current&preserve-view=true). I SSMS kan du f. eks. højreklikke på en tabel i Object Explorer og derefter vælge menupunktet **Behandl tabel**. Klik derefter på knappen **Script** for at generere en TMSL-opdateringskommando.
 
 ![Knappen Script i dialogboksen Behandl tabel](media/service-premium-incremental-refresh/ssms-process-table.png)
 
@@ -208,7 +208,7 @@ Følgende parametre kan indsættes i TMSL-opdateringskommandoen for at tilsides�
 }
 ```
 
-Du kan få mere at vide om, hvordan du tilsidesætter standardfunktionen til trinvis opdatering med TMSL, under [Opdater kommando](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current).
+Du kan få mere at vide om, hvordan du tilsidesætter standardfunktionen til trinvis opdatering med TMSL, under [Opdater kommando](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current&preserve-view=true).
 
 ### <a name="custom-queries-for-detect-data-changes"></a>Brugerdefinerede forespørgsler om registrering af dataændringer
 

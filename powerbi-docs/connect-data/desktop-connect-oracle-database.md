@@ -9,12 +9,12 @@ ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 01/04/2021
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 134c11108da77c87ba087df9ac5564521d7a303d
-ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
-ms.translationtype: HT
+ms.openlocfilehash: 32029ee1c5b19205fafe10c77babfe9bf764341d
+ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97926404"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99086458"
 ---
 # <a name="connect-to-an-oracle-database-with-power-bi-desktop"></a>Opret forbindelse til en Oracle-database med Power BI Desktop
 Hvis du vil oprette forbindelse til en Oracle-database med Power BI Desktop, skal den korrekte Oracle-klientsoftware være installeret på den computer, der kører Power BI Desktop. Den Oracle-klientsoftware, du bruger, afhænger af, hvilken version af Power BI Desktop du har installeret: 32-bit eller 64-bit. Det afhænger også af din version af Oracle-serveren.
@@ -24,7 +24,7 @@ Understøttede Oracle-versioner:
 - ODAC-software (Oracle Data Access Client) 11.2 og nyere
 
 > [!NOTE]
-> Hvis du konfigurerer en Oracle-database til Power BI Desktop, en datagateway i det lokale miljø eller Power BI-rapportserver, kan du se oplysningerne i artiklen [Oracle-forbindelsestype](/sql/reporting-services/report-data/oracle-connection-type-ssrs?view=sql-server-ver15). 
+> Hvis du konfigurerer en Oracle-database til Power BI Desktop, en datagateway i det lokale miljø eller Power BI-rapportserver, kan du se oplysningerne i artiklen [Oracle-forbindelsestype](/sql/reporting-services/report-data/oracle-connection-type-ssrs). 
 
 
 ## <a name="determining-which-version-of-power-bi-desktop-is-installed"></a>Sådan finder du ud af, hvilken version af Power BI Desktop der er installeret
@@ -58,7 +58,7 @@ Når den rette Oracle-klientdriver er installeret, kan du oprette forbindelse ti
    > [!NOTE]
    > Hvis du bruger en lokal database eller autonome databaseforbindelser, skal du muligvis sætte servernavnet i anførselstegn for at undgå forbindelsesfejl. 
       
-4. Hvis du vil importere data ved hjælp af en oprindelig databaseforespørgsel, kan du placere din forespørgsel i feltet **SQL-sætning**, der vises, når du udvider afsnittet **Avancerede indstillinger** i dialogboksen **Oracle-database**.
+4. Hvis du vil importere data ved hjælp af en oprindelig databaseforespørgsel, kan du placere din forespørgsel i feltet **SQL-sætning**, der vises, når du udvider afsnittet **Avancerede indstillinger** i dialogboksen **Oracle-database**.  Power BI Desktop understøtter ikke Oracle-oprindelige forespørgsler, der udfører en stored procedure og Oracle-oprindelige forespørgsler i "Start... end "returnerer ikke resultatsæt.  
    
    ![Udvid Avancerede indstillinger](media/desktop-connect-oracle-database/connect-oracle-database_4.png)
 
@@ -89,4 +89,5 @@ Hvis du har downloadet Power BI Desktop via Microsoft Store, kan du muligvis ikk
 
 Hvis du får vist fejlmeddelelsen *Objektreference er ikke angivet* i Power BI Gateway, når du opretter forbindelse til en Oracle-database, skal du følge vejledningen under [Administrer din datakilde – Oracle](service-gateway-onprem-manage-oracle.md).
 
-Hvis du bruger Power BI-rapportserver, kan du se vejledningen i artiklen [Oracle-forbindelsestype](/sql/reporting-services/report-data/oracle-connection-type-ssrs?view=sql-server-ver15).
+Hvis du bruger Power BI-rapportserver, kan du se vejledningen i artiklen [Oracle-forbindelsestype](/sql/reporting-services/report-data/oracle-connection-type-ssrs).
+

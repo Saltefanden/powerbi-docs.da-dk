@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 05/13/2020
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 7db1b6c2df9a8ad32b76ae452ee76828df5823c0
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
-ms.translationtype: HT
+ms.openlocfilehash: cd55b23bf6f8d86fbb31b261e9f63ec6b8ebc775
+ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96408498"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99085653"
 ---
 # <a name="get-a-power-bi-service-subscription-for-your-organization"></a>Få et Power BI-tjenesteabonnement til din organisation
 
@@ -55,7 +55,7 @@ Følg disse trin for at købe Power BI Pro-licenser via Microsoft 365 Administra
 
 8. Du bekræfter dit køb ved at gå til **Fakturering** > **Produkter og tjenester** og finde **Power BI Pro**.
 
-Du kan læse mere om, hvordan din organisation kan styre og få Power BI-tjenesten i [Power BI i din organisation](/microsoft-365/admin/misc/power-bi-in-your-organization?view=o365-worldwide).
+Du kan læse mere om, hvordan din organisation kan styre og få Power BI-tjenesten i [Power BI i din organisation](/microsoft-365/admin/misc/power-bi-in-your-organization).
 
 ## <a name="more-ways-to-get-power-bi-for-your-organization"></a>Flere måder at få Power BI til organisationen på
 
@@ -98,4 +98,4 @@ Den konto, du har oprettet, er nu den globale administrator af en ny prøveversi
 
 - [Få vist og administrer brugerlicenser](service-admin-manage-licenses.md)
 - [Aktivér eller deaktiver tilmelding og køb via selvbetjening](service-admin-disable-self-service.md)
-- [Virksomhedsabonnementer og faktureringsdokumentation](/microsoft-365/commerce/?view=o365-worldwide)
+- [Virksomhedsabonnementer og faktureringsdokumentation](/microsoft-365/commerce/)

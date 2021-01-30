@@ -9,12 +9,12 @@ ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 01/15/2020
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 9567c0511a771b9b92de74171dec5fed3110e2d8
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
-ms.translationtype: HT
+ms.openlocfilehash: b3ff42b33ccf2d93217d9d88ada4dfbe45a5436c
+ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96410890"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99085446"
 ---
 # <a name="connect-to-ssas-multidimensional-models-in-power-bi-desktop"></a>Opret forbindelse til SSAS flerdimensionelle modeller i Power BI Desktop
 
@@ -98,7 +98,7 @@ Der er visse begrænsninger for brug af SSAS MD:
 
 ## <a name="supported-features-of-ssas-md-in-power-bi-desktop"></a>Understøttede funktioner i SSAS MD i Power BI Desktop
 
-Forbrug af følgende elementer understøttes i denne version af SSAS MD. Du kan finde flere oplysninger om disse funktioner under [Om Power-visning til flerdimensionelle modeller](/sql/analysis-services/multidimensional-models/understanding-power-view-for-multidimensional-models?view=sql-server-2014).
+Forbrug af følgende elementer understøttes i denne version af SSAS MD. Du kan finde flere oplysninger om disse funktioner under [Om Power-visning til flerdimensionelle modeller](/sql/analysis-services/multidimensional-models/understanding-power-view-for-multidimensional-models).
 
 * Standardmedlemmer
 * Dimensionsattributter
