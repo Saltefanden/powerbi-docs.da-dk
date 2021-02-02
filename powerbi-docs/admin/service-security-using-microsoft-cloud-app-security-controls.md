@@ -2,41 +2,41 @@
 title: Brug af Microsoft Cloud App Security-kontrolelementer i Power BI
 description: Find ud af, hvordan du bruger Microsoft Cloud App Security sammen med Power BI
 author: paulinbar
-ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
 ms.date: 06/15/2020
+ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: f7bd3a59395e9f5f1ea167b7e7988aeb9882a72f
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
-ms.translationtype: HT
+ms.openlocfilehash: 8a09de5777332d69332cae6928022e7e99fe689e
+ms.sourcegitcommit: 2e81649476d5cb97701f779267be59e393460097
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96413328"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99422277"
 ---
 # <a name="using-microsoft-cloud-app-security-controls-in-power-bi"></a>Brug af Microsoft Cloud App Security-kontrolelementer i Power BI
 
-Når du bruger Cloud App Security med Power BI, kan du hjælpe med at beskytte dine Power BI-rapporter, -data og -tjenester mod utilsigtede lækager eller brud. Med Cloud App Security kan du oprette politikker for betinget adgang for din organisations data ved hjælp af kontrolelementerne for sessioner i realtid i Azure Active Directory (Azure AD), der hjælper med at sikre, at din Power BI-analyse er sikker. Når disse politikker er angivet, kan administratorer overvåge brugeradgang og -aktivitet, udføre risikoanalyse i realtid og angive mærkatspecifikke kontrolelementer. 
+Når du bruger Cloud App Security med Power BI, kan du hjælpe med at beskytte dine Power BI-rapporter, -data og -tjenester mod utilsigtede lækager eller brud. Med Cloud App Security kan du oprette politikker for betinget adgang til din organisationsdata ved hjælp af kontrolelementerne i realtid i Azure Active Directory (Azure AD), der hjælper med at sikre, at din Power BI analyse er sikker. Når disse politikker er angivet, kan administratorer overvåge brugeradgang og -aktivitet, udføre risikoanalyse i realtid og angive mærkatspecifikke kontrolelementer. 
 
 ![Brug af ruden for Cloud App Security-kontrolelementer](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-01.png)
 
 Du kan konfigurere Cloud App Security for mange forskellige slags programmer og tjenester og ikke kun Power BI. Du skal konfigurere Cloud App Security for at kunne arbejde med Power BI, så du kan drage fordel af Cloud App Security-beskyttelsen til dine Power BI-data og -analyser. Du kan finde flere oplysninger om Cloud App Security, herunder en oversigt over dashboardet og scorer for programrisici, samt hvordan det fungerer, i dokumentationen til [Cloud App Security](/cloud-app-security/).
 
+## <a name="cloud-app-security-licensing"></a>Licenser til Cloud App Security
 
-## <a name="using-cloud-app-security-with-power-bi"></a>Brug af Cloud App Security med Power BI
-
-Hvis du vil bruge Cloud App Security med Power BI, skal du bruge og konfigurere relevante Microsoft-sikkerhedstjenester, hvoraf nogle findes uden for Power BI.
-
-### <a name="cloud-app-security-licensing"></a>Licenser til Cloud App Security
-
-For at have Cloud App Security i din lejer skal du have en af følgende [licenser](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2NXYO):
+Hvis du vil bruge Cloud App Security med Power BI, skal du bruge og konfigurere relevante Microsoft-sikkerhedstjenester, hvoraf nogle findes uden for Power BI. For at have Cloud App Security i din lejer skal du have en af følgende [licenser](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2NXYO):
 * Microsoft Cloud App Security: Leverer Cloud App Security-funktioner til alle understøttede apps, en del af EMS E5- og Microsoft 365 E5-pakker.
 * Office 365 Cloud App Security: Leverer kun Cloud App Security-egenskaber til Office 365, som er en del af Office 365 E5-pakken.
-* Azure Active Directory Premium P1 for at kunne drage fordel af de større Cloud App Security-egenskaber.
 
-I afsnittene nedenfor beskrives trinnene til brug af Cloud App Security i Power BI.
+
+## <a name="configure-real-time-controls-for-power-bi-with-cloud-app-security"></a>Konfigurer realtids kontrol for Power BI med Cloud App Security
+
+> [!NOTE]
+> * Der kræves en Azure Active Directory Premium P1-licens for at kunne drage fordel af Cloud App Security realtids kontrolelementer.
+
+I nedenstående afsnit beskrives trinnene til konfiguration af kontrolelementer i realtid for Power BI med Cloud App Security.
 
 ### <a name="set-session-policies-in-azure-ad-required"></a>Angiv sessionspolitikker i Azure AD (påkrævet)
 De trin, der er nødvendige for at angive sessionskontrolelementer, fuldføres på portalerne til Azure AD og Cloud App Security. På Azure AD-portalen opretter du en politik for betinget adgang i Power BI og dirigerer sessioner, der bruges i Power BI, via Cloud App Security-tjenesten. 
@@ -60,6 +60,20 @@ Cloud App Security indeholder også to dedikerede, indbyggede registreringer til
 Med følsomhedsmærkater kan du klassificere og hjælpe med at beskytte følsomt indhold, så personer i din organisation kan samarbejde med partnere uden for din organisation, men stadig være påpasselige og opmærksomme på følsomt indhold og data. 
 
 Du kan læse artiklen om [følsomhedsmærkater i Power BI](service-security-sensitivity-label-overview.md), der indeholder detaljer om processen med at bruge følsomhedsmærkater i Power BI. Nedenfor kan du se et [eksempel på en Power BI-politik, der er baseret på følsomhedsmærkater](#example).
+
+## <a name="custom-policies-to-alert-on-suspicious-user-activity-in-power-bi"></a>Brugerdefinerede politikker til at advare om mistænkelig brugeraktivitet i Power BI
+
+Cloud App Security-aktivitets politik giver administratorer mulighed for at definere deres egne brugerdefinerede regler for at hjælpe med at registrere brugeradfærd, der afviger fra normen, og endda muligvis reagere på den automatisk, hvis den tilsyneladende er for risikabel. Eksempel:
+
+* **Fjernelse af omfattende følsomheds etiket.** Eksempel: Giv mig besked, når følsomheds etiketter fjernes af en enkelt bruger fra 20 forskellige rapporter i et tidsvindue, der er kortere end 5 minutter.
+
+* **Kryptering af følsomheds etikettens nedgradering.** Eksempel: Giv mig besked, når en rapport, der havde en "yderst fortrolig" følsomheds etiket, nu er klassificeret som ' Public '.
+
+> [!NOTE]
+> * De entydige id'er for Power BI artefakter og følsomheds navne kan findes ved hjælp af [Power bi rest-API'er](/rest/api/power-bi/). Se [Hent datasæt](/rest/api/power-bi/datasets/getdatasets) , eller [Hent rapporter](/rest/api/power-bi/reports/getreports).
+
+
+Der er konfigureret brugerdefinerede aktivitets politikker på Cloud App Security Portal. [Få mere at vide](/cloud-app-security/user-activity-policies). 
 
 ## <a name="built-in-cloud-app-security-detections-for-power-bi"></a>Indbygget Cloud App Security-registreringer til Power BI
 

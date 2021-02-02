@@ -7,13 +7,13 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/28/2021
-ms.openlocfilehash: d7fc9437af37052e95eaa771aab98f1331227c14
-ms.sourcegitcommit: 7ed995eed0fd6e718748accf87bae384211cd95d
+ms.date: 02/01/2021
+ms.openlocfilehash: 6742b915cf4418cd0f9f735eaffea8da1d010e79
+ms.sourcegitcommit: 2e81649476d5cb97701f779267be59e393460097
 ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99044212"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99422369"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Ændringslog for Power BI-rapportserver
 
@@ -27,6 +27,7 @@ Se [Nyheder i Power BI-rapportserver](whats-new.md) for at få flere oplysninger
     - *Version: 1.10.7698.12811 (build 15.0.1105.194), udgivet: 21. januar 2021*
         - Funktioner
             - Nye ikoner, der releate til Power BI og Power BI rapporter.
+            - Brugerdefineret Visual API blev leveret med version-version 3.5.0
             - Der er tilføjet en ny prøveversion af portalen, der er føjet til funktions parameteren ' UsePortalV2 ' i katalog tabellen ConfigurationInfo.
         - Fejlrettelser
             - Fast problem med planlagt opdatering af Power BI rapporter med visse modeller, der bruger udvidede model metadata.

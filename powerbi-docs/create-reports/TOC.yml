@@ -248,7 +248,7 @@
               href: ../visuals/power-bi-report-visualizations.md
             - name: Skift visualiseringer i rapporter
               href: ../visuals/power-bi-report-change-visualization-type.md
-            - name: 'Tilpas titler, baggrunde og forklaringer i forbindelse med visualiseringer'
+            - name: 'Tilpas visuelle titler, baggrunde, forklaringer og meget mere'
               href: ../visuals/power-bi-visualization-customize-title-background-and-legend.md
             - name: Vis elementer uden data
               href: desktop-show-items-no-data.md

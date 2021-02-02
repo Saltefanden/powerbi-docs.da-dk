@@ -6,13 +6,13 @@ ms.author: kesharab
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 12/28/2020
-ms.openlocfilehash: acd9d98b55697e8ca3729cad65a1ead8f01f6e62
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
-ms.translationtype: HT
+ms.date: 02/01/2021
+ms.openlocfilehash: 64a9472960195c8d4f91013a778bb61cdf029ab4
+ms.sourcegitcommit: 2e81649476d5cb97701f779267be59e393460097
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97887011"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99422346"
 ---
 # <a name="export-power-bi-report-to-file-preview"></a>Eksportér Power BI-rapport til fil (prøveversion)
 
@@ -40,15 +40,41 @@ Før du bruger API'en, skal du bekræfte, at følgende [lejerindstillinger for a
 
 API'en er asynkron. Når API'en [exportToFile](/rest/api/power-bi/reports/exporttofile) kaldes, udløses et eksportjob. Efter et eksportjob er udløst, kan du bruge [polling](/rest/api/power-bi/reports/getexporttofilestatus) til at spore jobbet, indtil det er fuldført.
 
-Under polling returnerer API'en et tal, der repræsenterer den mængde arbejde, der er fuldført. Arbejdet i hvert eksportjob beregnes på baggrund af det antal sider, rapporten indeholder. Alle sider har samme vægt. Hvis du f.eks. eksporterer en rapport med 10 sider, og polling returnerer 70, betyder det, at API'en har behandlet 7 ud af de 10 sider i eksportjobbet.
+Under polling returnerer API'en et tal, der repræsenterer den mængde arbejde, der er fuldført. Arbejdet i hvert eksportjob beregnes på baggrund af det samlede antal Eksporter i jobbet. En eksport omfatter eksport af en enkelt Visual eller en side med eller uden bogmærker. Alle Eksporter har samme vægt. Hvis dit eksport-job f. eks. omfatter eksport af en rapport med 10 sider, og polling returnerer 70, betyder det, at API'EN har behandlet syv ud af de 10 sider i eksportjobbet.
 
 Når eksporten er fuldført, returnerer API-kaldet for polling en [URL-adresse til Power BI](/rest/api/power-bi/reports/getfileofexporttofile), så filen kan hentes. URL-adressen er tilgængelig i 24 timer.
 
 ## <a name="supported-features"></a>Understøttede funktioner
 
+I dette afsnit beskrives, hvordan følgende understøttede funktioner udføres:
+
+* [Valg af, hvilke sider der skal udskrives](#selecting-which-pages-to-print)
+* [Eksport af en side eller en enkelt Visual](#exporting-a-page-or-a-single-visual)
+* [Bogmærker](#bookmarks)
+* [Filtre](#filters)
+* [Godkendelse](#authentication)
+* [Sikkerhed på rækkeniveau](#row-level-security-rls)
+* [Databeskyttelse](#data-protection)
+* [Lokalisering](#localization)
+
 ### <a name="selecting-which-pages-to-print"></a>Valg af, hvilke sider der skal udskrives
 
 Angiv de sider, du vil udskrive i henhold til returværdierne [Hent sider](/rest/api/power-bi/reports/getpages) eller [Hent sider i gruppe](/rest/api/power-bi/reports/getpagesingroup). Du kan også angive rækkefølgen af de sider, du vil eksportere.
+
+### <a name="exporting-a-page-or-a-single-visual"></a>Eksport af en side eller en enkelt Visual
+
+Du kan angive en side eller en enkelt visualisering, der skal eksporteres. Sider kan eksporteres med eller uden bogmærker.
+
+Afhængigt af typen af eksport skal du overfører forskellige attributter til objektet [ExportReportPage](/rest/api/power-bi/reports/exporttofile#exportreportpage) . I nedenstående tabel kan du se, hvilke attributter der kræves til hvert eksportjob.  
+
+>[!NOTE]
+>Eksport af en enkelt Visual har samme vægt som at eksportere en side (med eller uden bogmærker). Det betyder, at i forbindelse med system beregninger overfører begge handlinger samme værdi.
+
+|Attribut   |Side     |Enkelt Visual  |Kommentarer|
+|------------|---------|---------|---|
+|`bookmark`  |Valgfrit |![Gælder ikke for.](../../media/no.png)|Brug denne til at eksportere en side i en bestemt tilstand|
+|`pageName`  |![Gælder for.](../../media/yes.png)|![Gælder for.](../../media/yes.png)|Brug [GetPages](/rest/api/power-bi/reports/getpage) rest API eller klient- `getPages` API'en. Du kan finde flere oplysninger under [Hent sider og visualiseringer](/javascript/api/overview/powerbi/get-visuals).   |
+|`visualName`|![Gælder ikke for.](../../media/no.png)|![Gælder for.](../../media/yes.png)|Der er to måder at få vist navnet på det visuelle element på:<li>Brug `getVisuals` klient-API'en. Du kan finde flere oplysninger under [Hent sider og visualiseringer](/javascript/api/overview/powerbi/get-visuals).</li><li>Lyt til, og log *visualClicked* -hændelsen, der udløses, når der vælges et visuelt element. Du kan finde flere oplysninger under [Sådan håndterer du hændelser](/javascript/api/overview/powerbi/handle-events)</li>. |
 
 ### <a name="bookmarks"></a>Bogmærker
 
@@ -127,10 +153,10 @@ Et job, der overskrider sit antal af samtidige anmodninger, afsluttes ikke. Hvis
 
 * Den rapport, du eksporterer, skal være placeret i en Premium- eller Embedded-kapacitet.
 * Datasættet for den rapport, du eksporterer, skal være placeret i en Premium- eller Embedded-kapacitet.
-* I forbindelse med en offentlig prøveversion er antallet af Power BI-rapportsider, der kan eksporteres pr. time, begrænset til 50 pr. kapacitet.
+* I forbindelse med den offentlige prøveversion er antallet af Power BI eksport pr. time begrænset til 50 pr. kapacitet. En eksport henviser til at eksportere en enkelt Visual eller en rapport side med eller uden bogmærker og omfatter ikke eksport af sideinddelte rapporter.
 * Eksporterede rapporter må ikke overstige en filstørrelse på 250 MB.
 * Følsomhedsmærkater understøttes ikke, når du eksporterer til PNG.
-* Det antal sider, der kan inkluderes i en eksporteret rapport, er 50. Hvis rapporten indeholder flere sider, returnerer API'en en fejl, og eksportjobbet annulleres.
+* Antallet af Eksporter (enkelte visuelle elementer eller rapportsider), der kan inkluderes i en eksporteret rapport, er 50 (Dette omfatter ikke eksport af sideinddelte rapporter). Hvis anmodningen omfatter flere Eksporter, returnerer API'EN en fejl, og eksportjobbet annulleres.
 * [Personlige bogmærker](../../consumer/end-user-bookmarks.md#personal-bookmarks) og [vedvarende filtre](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) understøttes ikke.
 * De Power BI-visualiseringer, der er angivet nedenfor, understøttes ikke. Når der eksporteres en rapport, som indeholder disse visualiseringer, bliver de dele af rapporten, der indeholder disse visualiseringer, ikke gengivet, og der vises et fejlsymbol.
     * Ikke-certificerede Power BI-visualiseringer
