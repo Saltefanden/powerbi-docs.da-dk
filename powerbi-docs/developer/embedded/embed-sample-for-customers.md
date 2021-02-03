@@ -3,24 +3,25 @@ title: Integrer indhold i dit program til integreret analyse i Power BI for at g
 description: Lær, hvordan du integrerer en rapport, et dashboard eller et felt i et eksempel på integreret analyse i Power BI. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
 author: KesemSharabi
 ms.author: kesharab
-ms.reviewer: rkarlin
+ms.reviewer: ''
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 12/22/2020
-ms.openlocfilehash: a0cfeaece56594c52a8d747350c5f9bfb0886cad
-ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
-ms.translationtype: HT
+ms.openlocfilehash: 28081342763ca297648f67f953a29b46d02bf478
+ms.sourcegitcommit: 2e81649476d5cb97701f779267be59e393460097
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98565482"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99494713"
 ---
 # <a name="tutorial-embed-power-bi-content-using-a-sample-embed-for-your-customers-application"></a>Selvstudium: Integrer Power BI-indhold ved hjælp af et eksempelprogram til *integrering for dine kunder*
 
 Med **integreret analyse** og **Power BI Embedded** (Azure-tilbuddet) kan du integrere Power BI-indhold såsom rapporter, dashboards og felter i dit program.
 
 I dette selvstudium lærer du, hvordan du:
+
 >[!div class="checklist"]
 >* Konfigurer dit integrerede miljø.
 >* Konfigurer et eksempelprogram til *integrering for dine kunder* (også kendt som *programmet ejer data*).
@@ -31,7 +32,7 @@ Vi anbefaler, at du bruger metoden til *integrering for dine kunder* til at inte
 
 ## <a name="code-sample-specifications"></a>Specifikationer for kodeeksempel
 
-Dette selvstudium indeholder instruktioner til, hvordan du konfigurerer et eksempelprogram til *integrering for dine kunder* på et af følgende sprog:
+Dette selvstudium indeholder instruktioner til, hvordan du konfigurerer et integreret program til eksempelvisning *af en kunde* i en af følgende strukturer:
 
 * .NET Framework
 * .NET Core
@@ -41,10 +42,8 @@ Dette selvstudium indeholder instruktioner til, hvordan du konfigurerer et eksem
 
 Kodeeksemplerne understøtter følgende browsere:
 
-* Google Chrome
-
 * Microsoft Edge
-
+* Google Chrome
 * Mozilla Firefox
 
 ## <a name="prerequisites"></a>Forudsætninger
@@ -68,13 +67,6 @@ Før du starter dette selvstudium, skal du bekræfte, at du har både de Power B
 
 * **Kodeafhængigheder**
 
-    # <a name="net-framework"></a>[.NET Framework](#tab/net-framework)
-    
-    * [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/)
-    
-    * [Visual Studio](https://visualstudio.microsoft.com/)
-    
-    
     # <a name="net-core"></a>[.NET Core](#tab/net-core)
     
     * [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) (eller nyere)
@@ -84,6 +76,12 @@ Før du starter dette selvstudium, skal du bekræfte, at du har både de Power B
         * [Visual Studio](https://visualstudio.microsoft.com/)
     
         * [Visual Studio Code](https://code.visualstudio.com/)
+
+    # <a name="net-framework"></a>[.NET Framework](#tab/net-framework)
+    
+    * [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/)
+    
+    * [Visual Studio](https://visualstudio.microsoft.com/)
 
     # <a name="java"></a>[Java](#tab/java)
     
@@ -161,50 +159,22 @@ Når du registrerer dit program med Azure AD, kan du:
 >* Give dit program adgang til [REST API'erne til Power BI](/rest/api/power-bi/)
 >* Angive [REST-tilladelser til Power BI](/azure/active-directory/develop/v2-permissions-and-consent) for programmet – hvis du bruger en *masterbruger*
 
-Hvis du vil registrere dit program i Azure AD, skal du følge vejledningen under [Registrer dit program](register-app.md).
+[!INCLUDE[Register Azure AD app](../../includes/embed-tutorial-register-app.md)]
 
 >[!NOTE]
 >Før du registrerer dit program, skal du beslutte, hvilken godkendelsesmetode du vil bruge, *tjenesteprincipal* eller *masterbruger*.
 
 ## <a name="step-3---create-a-power-bi-workspace"></a>Trin 3 – Opret et Power BI-arbejdsområde
 
-Power BI opbevarer dine rapporter, dashboards og felter i et arbejdsområde. Hvis du vil integrere disse elementer, skal du oprette dem og uploade dem til et arbejdsområde.
-
->[!TIP]
->Hvis du allerede har et arbejdsområde, kan du springe dette trin over.
-
-Gør følgende for at oprette et arbejdsområde:
-
-1. Log på Power BI.
-
-2. Vælg **Arbejdsområder**.
-
-3. Vælg **Opret et arbejdsområde**.
-
-4. Navngiv dit arbejdsområde, og vælg **Gem**.
+[!INCLUDE[Create a Power BI workspace](../../includes/embed-tutorial-create-workspace.md)]
 
 ## <a name="step-4---create-and-publish-a-power-bi-report"></a>Trin 4 – Opret og publicer en Power BI-rapport
 
-Det næste trin er at oprette en rapport og uploade den til dit arbejdsområde. Du kan [oprette din egen rapport](../../fundamentals/desktop-getting-started.md#build-reports) ved hjælp af Power BI Desktop og derefter [publicere](/powerbi-docs/fundamentals/desktop-getting-started#share-your-work) den til dit arbejdsområde. Eller du kan uploade en eksempelrapport til dit arbejdsområde.
-
->[!Tip]
->Hvis du allerede har et arbejdsområde med en rapport, kan du springe dette trin over.
-
-Hvis du vil downloade en eksempelrapport og publicere den i dit arbejdsområde, skal du følge disse trin:
-
-1. Åbn GitHub-mappen [Power BI Desktop-eksempler](https://github.com/Microsoft/PowerBI-Desktop-Samples).
-
-2. Vælg **Kode**, og vælg derefter **Download zip**.
-
-    :::image type="content" source="media/embed-sample-for-customers/download-sample-report.png" alt-text="Et skærmbillede af indstillingen til download af ZIP i GitHub med Power BI Desktop-eksempler":::
-
-3. Udpak den downloadede ZIP, og naviger til mappen **Eksempelrapporter**.
-
-4. Vælg en rapport, der skal integreres, og [publicer](/powerbi-docs/fundamentals/desktop-getting-started#share-your-work) den i dit arbejdsområde.
+[!INCLUDE[Create a Power BI report](../../includes/embed-tutorial-create-report.md)]
 
 ## <a name="step-5---get-the-embedding-parameter-values"></a>Trin 5 – Hent de integrerede parameterværdier
 
-Hvis du vil integrere dit indhold, skal du hente bestemte parameterværdier. Nedenstående tabel viser de påkrævede værdier og angiver, om de gælder for godkendelsesmetoden med *tjenesteprincipal*, godkendelsesmetoden *masterbruger* eller begge.
+Hvis du vil integrere dit indhold, skal du hente bestemte parameterværdier. I nedenstående tabel vises de påkrævede værdier, som angiver, om de gælder for *tjenestens hoved* godkendelsesmetode, metoden til godkendelse af *Master bruger* eller begge.
 
 Før du integrerer dit indhold, skal du sørge for, at du har alle de værdier, der er angivet nedenfor. Nogle af værdierne vil variere, afhængigt af den valgte godkendelsesmetode.
 
@@ -223,64 +193,28 @@ Før du integrerer dit indhold, skal du sørge for, at du har alle de værdier, 
 >[!TIP]
 >**Gælder for:** ![Gælder for.](../../media/yes.png)Tjenesteprincipal ![Gælder for.](../../media/yes.png)Masterbruger
 
-Følg disse trin for at hente GUID for klient-id'et (også kaldet *program-id*):
-
-1. Log på [Microsoft Azure](https://ms.portal.azure.com/#allservices).
-
-2. Søg efter **Programregistreringer**, og vælg linket **Programregistreringer**.
-
-3. Vælg det Azure AD-program, du bruger til at integrere dit Power BI-indhold.
-
-4. I afsnittet **Oversigt** skal du kopiere GUID for **program-id'et (klient)** .
+[!INCLUDE[Get the client ID](../../includes/embed-tutorial-client-id.md)]
 
 ### <a name="workspace-id"></a>Id for arbejdsområde
 
 >[!TIP]
 >**Gælder for:** ![Gælder for.](../../media/yes.png)Tjenesteprincipal ![Gælder for.](../../media/yes.png)Masterbruger
 
-Følg disse trin for at hente GUID for arbejdsområde-id'et:
-
-1. Log på Power BI-tjenesten.
-
-2. Åbn den rapport, du vil integrere.
-
-3. Kopiér GUID'et fra URL-adressen. GUID'et er tallet mellem **/groups/** og **/reports/** .
-
-    :::image type="content" source="media/embed-sample-for-customers/workspace-id.png" alt-text="Et skærmbillede, der viser GUID for arbejdsområde-id'et i for URL-adressen til Power BI-tjenesten":::
+[!INCLUDE[Get the workspace ID](../../includes/embed-tutorial-workspace-id.md)]
 
 ### <a name="report-id"></a>Rapport-id
 
 >[!TIP]
 >**Gælder for:** ![Gælder for.](../../media/yes.png)Tjenesteprincipal ![Gælder for.](../../media/yes.png)Masterbruger
 
-1. Log på Power BI-tjenesten.
-
-2. Åbn den rapport, du vil integrere.
-
-3. Kopiér GUID'et fra URL-adressen. GUID'et er tallet mellem **/reports/** og **/ReportSection**.
-
-    :::image type="content" source="media/embed-sample-for-customers/report-id.png" alt-text="Et skærmbillede, der viser GUID for rapport-id'et i for URL-adressen til Power BI-tjenesten":::
+[!INCLUDE[Get the report ID](../../includes/embed-tutorial-report-id.md)]
 
 ### <a name="client-secret"></a>Klienthemmelighed
 
 >[!TIP]
 >**Gælder for:** ![Gælder for.](../../media/yes.png)Tjenesteprincipal ![Gælder ikke for.](../../media/no.png)Masterbruger
 
-Følg disse trin for at hente klienthemmeligheden:
-
-1. Log på [Microsoft Azure](https://ms.portal.azure.com/#allservices).
-
-2. Søg efter **Programregistreringer**, og vælg linket **Programregistreringer**.
-
-3. Vælg det Azure AD-program, du bruger til at integrere dit Power BI-indhold.
-
-4. Under **Administrer** skal du vælge **Certifikater og hemmeligheder**.
-
-5. Under **Klienthemmeligheder** skal du vælge **Ny klienthemmelighed**.
-
-6. I pop op-vinduet **Tilføj en klienthemmelighed** skal du angive en beskrivelse af din programhemmelighed, vælge, hvornår programhemmeligheden udløber, og vælge **Tilføj**.
-
-7. I afsnittet **Klienthemmeligheder** skal du kopiere strengen i kolonnen **Værdi** i den nyoprettede programhemmelighed. Værdien for klienthemmeligheden er dit *klient-id*.
+[!INCLUDE[Get the client secret](../../includes/embed-tutorial-client-secret.md)]
 
 ### <a name="tenant-id"></a>Lejer-id
 
@@ -343,7 +277,7 @@ Hvis du vil aktivere artefakterne for adgang til dit Azure AD-program, f.eks. ra
     >[!NOTE]
     >Hvis du bruger en *tjenesteprincipal*, er dens navn det navn, du gav dit Azure AD-program.
 
-5. Vælg **Tilføj**
+4. Vælg **Tilføj**
 
 ## <a name="step-8---embed-your-content"></a>Trin 8 – Integrer dit indhold
 
@@ -351,23 +285,18 @@ Det integrerede Power BI-eksempelprogram giver dig mulighed for at oprette et Po
 
 Følg disse trin for at ændre eksempelprogrammet til *integrering for dine kunder*, så du kan integrere din Power BI-rapport.  
 
-1. Åbn mappen [Power BI-udviklereksempler](https://github.com/microsoft/PowerBI-Developer-Samples).
-
-2. Vælg **Kode**, og vælg derefter **Download zip**.
-
-    :::image type="content" source="media/embed-sample-for-customers/developer-samples.png" alt-text="Et skærmbillede af indstillingen til download af ZIP i GitHub med Power BI-udviklereksempler":::
-
-3. Udpak den downloadede ZIP, og naviger til mappen **PowerBI-Developer-Samples-master**.
+[!INCLUDE[Embedding steps](../../includes/embed-tutorial-embedding-steps.md)]
 
 4. Afhængigt af det sprog du vil have, at dit program skal bruge, skal du åbne en af disse mapper:
 
-* .NET Core
-* .NET Framework
-* Java
-* Node JS
-* Python
+    * .NET Core
+    * .NET Framework
+    * Java
+    * Node JS
+    * Python
+
     >[!NOTE]
-    >Eksempelprogrammerne til *integrering for dine kunder* understøtter kun de sprog, der er angivet ovenfor. Eksempelprogrammet *React TS* understøtter kun løsningen til *[integrering for din organisation](embed-sample-for-your-organization.md)* .
+    >Det *integrerede program til eksempler på dine kunder* understøtter kun de strukturer, der er angivet ovenfor. The *reaktans* Sample Application understøtter kun *[integreringen til din organisations](embed-sample-for-your-organization.md)* løsning.
 
 5. Åbn mappen **Integrer for dine kunder**.
 
@@ -377,7 +306,7 @@ Følg disse trin for at ændre eksempelprogrammet til *integrering for dine kund
 
     * Hvis du bruger [Visual Studio](https://visualstudio.microsoft.com/), skal du åbne filen **AppOwnsData.sln**.
 
-    * Hvis du bruger [Visual Studio Code](https://code.visualstudio.com/), skal du åbne mappen **Programmet ejer data**.
+    * Hvis du bruger [Visual Studio kode](https://code.visualstudio.com/), skal du åbne mappen **AppOwnsData** .
 
 7. Åbn **appsettings.json**.
 
@@ -421,13 +350,6 @@ Følg disse trin for at ændre eksempelprogrammet til *integrering for dine kund
 
 9. Kør projektet ved at vælge **IIS Express** (afspil).
 
->[!NOTE]
->Hvis du ikke kan se den integrerede rapport, når du kører eksempelprogrammet, skal du opdatere Power BI-pakkerne ved at følge disse trin:
->1. Højreklik på projektnavnet (AppOwnesData), og vælg **Administrer NuGet-pakker**.
->2. Søg efter **Power BI JavaScript**, og geninstaller derefter pakken.
->
->Du kan finde flere oplysninger under [Sådan geninstallerer og opdaterer du pakker](/nuget/consume-packages/reinstalling-and-updating-packages).
-
 # <a name="java"></a>[Java](#tab/java)
 
 6. Åbn **Eclipse**, og følg nedenstående vejledning.
@@ -468,7 +390,7 @@ Følg disse trin for at ændre eksempelprogrammet til *integrering for dine kund
 
     a. I ruden **Package Explorer** skal du højreklikke på **AppOwnsData** og vælge **Egenskaber**.
 
-    b. I vinduet **Egenskaber for AppOwnesData** skal du vælge **Målrettede kørsler** og derefter vælge **Apache Tomcat**. Dette valg omfatter den version af *Apache Tomcat*, du bruger, f.eks. *Apache Tomact v9.0*.
+    b. I vinduet **Egenskaber for AppOwnesData** skal du vælge **Målrettede kørsler** og derefter vælge **Apache Tomcat**. Dette valg omfatter den version af *Apache-Tomcat* , du bruger, f. eks. *Apache Tomcat v 9.0*.
 
     c. Vælg **Anvend og luk**.
 
@@ -579,8 +501,7 @@ Følg disse trin for at ændre eksempelprogrammet til *integrering for dine kund
 
 Når du har konfigureret og kørt eksempelprogrammet til *integrering for dine kunder*, kan du begynde at udvikle dit program.
 
-Når du er klar, kan du gennemse kravene til [flyt til produktion](move-to-production.md). Du har også brug for en [kapacitet](embedded-capacity.md), og du bør gennemse artiklen [Kapacitetsplanlægning](embedded-capacity-planning.md) for at etablere, hvilken SKU der passer bedst til dine behov.
-
+[!INCLUDE[Move to production](../../includes/embed-tutorial-production.md)]
 
 ## <a name="next-steps"></a>Næste trin
 

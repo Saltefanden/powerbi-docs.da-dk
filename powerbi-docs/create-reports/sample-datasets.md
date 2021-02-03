@@ -10,12 +10,12 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 03/27/2020
 LocalizationGroup: Samples
-ms.openlocfilehash: 2e14a81c6ae04048f85fae417b354a110436fc50
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
-ms.translationtype: HT
+ms.openlocfilehash: f69be1cd602c0b20c48581a5d6ee1ff034749b2a
+ms.sourcegitcommit: f7330dabb9cd8bce90bb2efec3e3273a11578f10
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96396194"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99495127"
 ---
 # <a name="get-samples-for-power-bi"></a>Hent eksempler til Power BI
 Lad os antage, at du ikke kender Power BI og vil afprøve det, men ikke har nogen data.  Eller måske vil du se rapporter, der illustrerer nogle af funktionerne i Power BI. Du kan få nogen af os.
@@ -42,7 +42,7 @@ Scenariet for denne rapport er en virksomhed, der sælger skateboards med Micros
 Du kan udforske det på følgende måder:
 
 - Få vist og interagere med den i Power BI Community's [datahistoriegalleri](https://community.powerbi.com/t5/Data-Stories-Gallery/Sales-amp-Returns-Sample-Report/m-p/876607).
-- Download. pbix-filen, og udforsk den i dybden. Tag et kig "bag kulisserne" for at se, hvordan Miguel gjorde det. Hvis du vælger dette link, hentes filen automatisk: [Eksempelrapporten Sales & Returns](https://go.microsoft.com/fwlink/?linkid=2113239).
+- Download. pbix-filen, og udforsk den i dybden. Tag et kig "bag kulisserne" for at se, hvordan Miguel gjorde det. Hvis du vælger dette link, hentes filen automatisk: [Eksempelrapporten Sales & Returns](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Sample%20Reports/Sales%20%26%20Returns%20Sample%20v201912.pbix).
 - Læs om rapporten i Power BI's blogindlæg [Få en rundvisning i den nye eksempelrapport (Take a tour of the new Sales & Returns sample report)](https://powerbi.microsoft.com/blog/take_a_tour_of_the_new_sales_returns_sample_report/).
 
 ## <a name="sample-app-from-appsource"></a>Eksempelapp fra AppSource

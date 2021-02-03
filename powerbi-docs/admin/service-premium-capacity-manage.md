@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 11/11/2020
+ms.date: 02/01/2021
 ms.custom: ''
 LocalizationGroup: Premium
-ms.openlocfilehash: ced239ba0ac8f34314caf559a04126bf64ca7c50
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
-ms.translationtype: HT
+ms.openlocfilehash: 32ef0845c2482b4f8a71240f432071b44cb518ea
+ms.sourcegitcommit: f7330dabb9cd8bce90bb2efec3e3273a11578f10
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96412339"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99494322"
 ---
 # <a name="managing-premium-capacities"></a>Administration af Premium-kapaciteter
 
@@ -44,7 +44,7 @@ Der skal være udpeget mindst én kapacitetsadministrator. Brugere, der er udpeg
 
 Kapacitetsadministratorer kan ikke få adgang til indhold i arbejdsområdet, medmindre der udtrykkeligt er tildelt tilladelser til arbejdsområdet. De har heller ikke adgang til alle områder i Power BI-administration (medmindre det udtrykkeligt er tildelt), f.eks. forbrugsdata, overvågningslogge eller lejerindstillinger. Kapacitetsadministratorer har heller ikke tilladelse til at konfigurere nye kapaciteter eller skalere eksisterende kapaciteter. Administratorer bliver tildelt pr. kapacitet, hvilket sikrer, at de kun kan få vist og administrere de kapaciteter, som de er blevet tildelt.
 
-Kapacitetsstørrelsen vælges på en tilgængelig liste over SKU-muligheder, som er begrænset af antallet af tilgængelige v-kerner i puljen. Det er muligt at oprette flere kapaciteter fra puljen, som kan købes fra en eller flere købte SKU'er. En P3-SKU (32 v-kerner) kan f.eks. bruges til at oprette tre kapaciteter: én P2 (16 v-kerner) og to P1 (2 x 8 v-kerner). Der kan opnås forbedret ydeevne og skalering ved at oprette mindre kapaciteter, som beskrevet i artiklen [Optimering af Premium-kapaciteter](service-premium-capacity-optimize.md). På følgende billede vises et eksempel på konfiguration af den fiktive virksomhed Contoso bestående af fem Premium-kapaciteter (3 x P1 og 2 x P3), som hver især indeholder arbejdsområder herunder flere arbejdsområder i en delt kapacitet.
+Kapacitetsstørrelsen vælges på en tilgængelig liste over SKU-muligheder, som er begrænset af antallet af tilgængelige v-kerner i puljen. Det er muligt at oprette flere kapaciteter fra puljen, som kan købes fra en eller flere købte SKU'er. En P3-SKU (32 v-kerner) kan f.eks. bruges til at oprette tre kapaciteter: én P2 (16 v-kerner) og to P1 (2 x 8 v-kerner). På følgende billede vises et eksempel på konfiguration af den fiktive virksomhed Contoso bestående af fem Premium-kapaciteter (3 x P1 og 2 x P3), som hver især indeholder arbejdsområder herunder flere arbejdsområder i en delt kapacitet.
 
 ![Et eksempel på opsætning for den fiktive virksomhed Contoso](media/service-premium-capacity-manage/contoso-organization-example.png)
 
@@ -63,6 +63,8 @@ Tildelingstilladelser er påkrævede for at kunne tildele et arbejdsområde til 
 Premium-kapaciteter understøtter som standard kun de arbejdsbelastninger, der er tilknyttet kørende Power BI-forespørgsler. Premium-kapaciteter understøtter også yderligere arbejdsbelastninger: **Kunstig intelligens (Cognitive Services)** , **sideinddelte rapporter** og **dataflow**. Hver arbejdsbelastning kræver, at den maksimale hukommelse (som en procentdel af den samlede tilgængelige hukommelse), der kan bruges af arbejdsbelastningen, konfigureres. Det er vigtigt at forstå, at forøgelse af de maksimale hukommelsesallokeringer kan påvirke antallet af aktive modeller, der kan hostes og gennemløbet af opdateringer. 
 
 Hukommelse allokeres dynamisk til dataflow, men den allokeres statisk til sideinddelte rapporter. Årsagen til statisk allokering af den maksimale hukommelse er, at sideinddelte rapporter kører i et sikret område i kapaciteten. Man bør konfigurere hukommelse til sideinddelte rapporter med omhu, da det reducerer den tilgængelige hukommelse til indlæsning af modeller. Du kan få mere at vide ved at se [Standardindstillingerne for hukommelse](service-admin-premium-workloads.md#default-memory-settings).
+
+Der kræves ingen hukommelsesindstillinger eller opdateringer til Premium Gen2. Alle arbejdsbelastninger har den hukommelse, de har brug for, inden for rammerne af din kapacitets-SKU.
 
 Det er muligt at slette en Premium-kapacitet, og det medfører ikke sletning af de tilhørende arbejdsområder og indhold. I stedet flyttes tildelte arbejdsområder til en delt kapacitet. Når Premium-kapaciteten oprettes i et andet område, flyttes arbejdsområdet til en delt kapacitet i hjemmeområdet.
 

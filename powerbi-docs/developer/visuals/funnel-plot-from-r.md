@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 04/02/2020
-ms.openlocfilehash: f1f8c037a3ceb66d8ffb5abab6bccd4ec9bc7adc
-ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
-ms.translationtype: HT
+ms.openlocfilehash: 3d618735f2783e0fce0be938fbdcac7beb5d399e
+ms.sourcegitcommit: f7330dabb9cd8bce90bb2efec3e3273a11578f10
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97969552"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99495104"
 ---
 # <a name="tutorial-build-a-funnel-plot-from-r-script-to-r-visual"></a>Selvstudium: Byg en tragtformet afbildning fra R-script til R-visualisering
 I denne artikel beskrives det, hvordan du opretter en tragtformet afbildning ved hjælp af R-script i R-visualisering trin for trin.
@@ -270,7 +270,7 @@ Da det resulterende visuelle element i PNG-format ikke reagerer på musemarkøre
 
 * Du behøver ikke at udvikle R-drevne visuelle elementer fra bunden med den kode, der er tilgængelig på [GitHub](https://github.com/Microsoft?utf8=%E2%9C%93&q=PowerBI&type=&language=R). Du kan vælge det visuelle element, der skal bruges som skabelon, og kopiere koden til et nyt projekt.
 
-   Prøv f.eks. at bruge den [brugerdefinerede visualisering som sløjfe](https://github.com/PowerBi-Projects/PowerBI-visuals-spline).
+   Prøv f.eks. at bruge den [brugerdefinerede visualisering som sløjfe](https://github.com/microsoft/PowerBI-visuals-spline).
 
 * Hver R-visualisering anvender `unique`-operatoren på dens inputtabel. Hvis du vil undgå, at identiske rækker fjernes, kan du overveje at tilføje et ekstra inputfelt med et entydigt ID og ignorere det i R-koden.   
 

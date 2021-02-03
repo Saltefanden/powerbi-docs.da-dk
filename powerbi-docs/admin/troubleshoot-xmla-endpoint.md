@@ -7,15 +7,15 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 01/13/2021
+ms.date: 02/02/2021
 ms.custom: seodec18, css_fy20Q4
 LocalizationGroup: Premium
-ms.openlocfilehash: 0753a9c3d5b832275f65ac11b87f90c38606f289
-ms.sourcegitcommit: ab28cf07b483cb4b01a42fa879b788932bba919d
-ms.translationtype: HT
+ms.openlocfilehash: 98bc3da33f38974f3dfcb9e155111e7d16e6c069
+ms.sourcegitcommit: f7330dabb9cd8bce90bb2efec3e3273a11578f10
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98226979"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99494459"
 ---
 # <a name="troubleshoot-xmla-endpoint-connectivity"></a>Foretag fejlfinding af XMLA-slutpunktsforbindelse
 
@@ -221,6 +221,10 @@ Som angivet i fejlmeddelelsen kan du løse problemet ved enten at slette eller o
 ## <a name="dataset-refresh-through-the-xmla-endpoint"></a>Opdatering af datasæt via XMLA-slutpunktet
 
 Dato og klokkeslæt for seneste opdatering vises flere steder i Power BI, f.eks. i kolonnen Opdaterede i rapporter og på lister, oplysninger om datasæt, indstillinger for datasæt og historik over opdatering af datasæt. I øjeblikket indeholder den dato og det klokkeslæt for opdatering, som vises i Power BI, **ikke** opdateringshandlinger, der udføres via XMLA-slutpunktet ved hjælp af TMSL/TOM, SSMS eller tredjepartsværktøjer.
+
+## <a name="discover_m_expressions"></a>DISCOVER_M_EXPRESSIONS 
+
+DMV DISCOVER_M_EXPRESSIONS data management View (DMV) understøttes ikke i øjeblikket i Power BI ved hjælp af XMLA-slutpunktet. Programmer kan bruge en tabelobjekt model (TOM) til at hente M-udtryk, der bruges af datamodellen.
 
 ## <a name="see-also"></a>Se også
 

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 01/18/2021
+ms.date: 02/01/2021
 ms.custom: licensing support
 LocalizationGroup: Premium
-ms.openlocfilehash: c89cf7b00d5167ffb68a491a9cfdcea21378dfd5
-ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
-ms.translationtype: HT
+ms.openlocfilehash: 05f2523e468759444a731d5484e8ce17350a46ae
+ms.sourcegitcommit: f7330dabb9cd8bce90bb2efec3e3273a11578f10
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98565151"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99494897"
 ---
 # <a name="what-is-power-bi-premium"></a>Hvad er Power BI Premium?
 
@@ -76,25 +76,15 @@ Følgende kendte begrænsninger gælder i øjeblikket for Premium Gen2:
 
 1.    Premium Gen2-kapacitetsudnyttelse kan ikke spores i målepunktsappen.
 
-2.    Indstillinger for Premium Gen2-kapacitet for bestemte arbejdsbelastninger er endnu ikke synlige på siden med indstillinger for Premium Gen2-kapacitet på administrationsportalen. Hvis du vil ændre indstillingerne, skal du overføre kapaciteten til den oprindelige version af Premium, ændre indstillingerne og derefter angive kapaciteten til at bruge Premium Gen2 en gang til. Indstillinger for allokering af hukommelse gælder ikke for Premium Gen2-kapaciteter.
+2.  Hvis du bruger XMLA på Premium Gen2, skal du sørge for, at du bruger de nyeste versioner af [datamodellerings- og administrationsværktøjer](service-premium-connect-tools.md#data-modeling-and-management-tools). 
 
-3.  Hvis du bruger XMLA på Premium Gen2, skal du sørge for, at du bruger de nyeste versioner af [datamodellerings- og administrationsværktøjer](service-premium-connect-tools.md#data-modeling-and-management-tools). 
-
-4.  Funktioner til analysetjenester i Premium Gen2 understøttes kun på de nyeste klientbiblioteker. Anslåede udgivelsesdatoer for afhængige værktøjer, der understøtter dette krav, er:
+3.  Funktioner til analysetjenester i Premium Gen2 understøttes kun på de nyeste klientbiblioteker. Anslåede udgivelsesdatoer for afhængige værktøjer, der understøtter dette krav, er:
 
     |Værktøj|Påkrævet minimumversion|Anslået udgivelsesdato|
     |---|---|---|
     |SQL Server Management Studio (SSMS)|18.8|8\. december 2020|
     |SQL Server Data Tools (SSDT)|2.9.15|Generel tilgængelighed – 30. november 2020|
     | AS PowerShell| Større end 21.1.18229|26. november 2020|
-
-5.  Videreoverdragelse af et arbejdsområde, der indeholder dataflow, fra én Premium Gen2-kapacitet til en anden Premium-kapacitet i et andet område understøttes ikke. Flytning af modeller med et stort lagerformat fra én Premium-kapacitet til en anden understøttes heller ikke. Hvis du allerede er migreret til en kapacitet i et andet område, skal du følge et af følgende trin for at gendanne funktionaliteten:
- 
-    1.  Opret et nyt arbejdsområde, og kopiér dataflowene
-    2.  Migrer arbejdsområdet tilbage til kapaciteten i det tidligere område
-    3.  Skift tilbage til Premium Gen1
-
-Denne begrænsning kan fjernes, når Premium Gen2 bliver offentlig tilgængelig.
 
 
 ## <a name="subscriptions-and-licensing"></a>Abonnementer og licenser
@@ -126,11 +116,6 @@ Med Power BI Premium får du *reserverede kapaciteter*. I modsætning til en del
 Der er placeret arbejdsområder i kapaciteter. Hver bruger af Power BI har et personligt arbejdsområde, der er kendt som **Mit arbejdsområde**. Der kan oprettes flere arbejdsområder – kendt som **arbejdsområder** – for at muliggøre samarbejde. Arbejdsområder, herunder personlige arbejdsområder, oprettes som standard i den delte kapacitet. Når du har Premium-kapaciteter, kan både Mine arbejdsområder og arbejdsområder tildeles til Premium-kapaciteter.
 
 Kapacitetsadministratorer får automatisk deres egne arbejdsområder tildelt til Premium-kapaciteter.
-
-### <a name="updates-for-premium-gen2-preview"></a>Opdateringer til Premium Gen2 (prøveversion)
-
-Premium gen 2-noder bruger ikke længere en reserveret infrastruktur. Tjenesten sørger i stedet for, at der er tilstrækkelig beregningskraft til hver kørende arbejdsbelastning ved at tildele tilstrækkeligt mange ressourcer til en delt pulje af beregningsnoder med høj kapacitet.
-
 
 ### <a name="capacity-nodes"></a>Kapacitetsnoder
 

@@ -8,12 +8,12 @@ ms.subservice: pbi-security
 ms.topic: conceptual
 ms.date: 11/20/2020
 ms.custom: subject-security-benchmark
-ms.openlocfilehash: b99f6f53f64e57bc262ea5aa518efa529b73f44e
-ms.sourcegitcommit: fb529c4532fbbdfde7ce28e2b4b35f990e8f21d9
+ms.openlocfilehash: 04a971aa6d1e584866ff7740676ab35b2e0e17af
+ms.sourcegitcommit: f7330dabb9cd8bce90bb2efec3e3273a11578f10
 ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99088137"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99494874"
 ---
 # <a name="azure-security-baseline-for-power-bi"></a>Azure-sikkerhedsbaseline til Power BI
 
@@ -221,7 +221,7 @@ Du skal sørge for, at legitimationsoplysningerne (f.eks. adgangskode, certifika
 **Vejledning**: Sikre, isolerede arbejdsstationer er meget vigtige i forbindelse med sikkerheden af følsomme roller såsom administratorer, udviklere og kritiske tjenesteoperatører. Brug yderst sikre brugerarbejdsstationer og/eller Azure Bastion til administrative opgaver, der er relateret til administration af Power BI. Brug Azure Active Directory, Microsoft Defender Advanced Threat Protection (ATP) og/eller Microsoft Intune til at udrulle en sikker og administreret brugerarbejdsstation til administrative opgaver. De sikre arbejdsstationer kan administreres centralt for at håndhæve sikker konfiguration, herunder stærk godkendelse, software- og hardwarebaselines, begrænset logisk adgang og netværksadgang.
 
 Forstå privilegeret adgang
-- [arbejdsstationer](/azure/active-directory/devices/concept-azure-managed-workstation)
+- [arbejdsstationer](https://4sysops.com/archives/understand-the-microsoft-privileged-access-workstation-paw-security-model/)
 
 - [Udrul en privilegeret arbejdsstation til adgang](/azure/active-directory/devices/howto-azure-managed-workstation)
 
