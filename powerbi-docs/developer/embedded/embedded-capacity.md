@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 01/06/2021
-ms.openlocfilehash: c27d95715fe436b59825390b1cc16111e83ffc1d
-ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
-ms.translationtype: HT
+ms.date: 01/14/2021
+ms.openlocfilehash: b37182cbdf030e8b32fdfe307d0a652fef678b9b
+ms.sourcegitcommit: c33e53e1fab1f29872297524a7b4f5af6c806798
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98564992"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99533021"
 ---
 # <a name="capacity-and-skus-in-power-bi-embedded-analytics"></a>Kapacitet og SKU'er i integrerede Power BI-analyser
 
@@ -37,6 +37,9 @@ Integreret analyse i Power BI omfatter to løsninger:
 Power BI Embedded er til ISV'er og udviklere, der vil integrere visualiseringer i deres programmer.
 
 Programmer, der bruger Power BI Embedded, gør det muligt for brugerne at forbruge indhold, der er lagret på en Power BI Embedded-kapacitet.
+
+>[!NOTE]
+>Power BI Embedded har for nylig udgivet en ny version med navnet **Embedded Gen2**. Embedded Gen2 forenkler administrationen af integrerede kapaciteter og forbedrer Power BI Embedded-oplevelsen. Se [Power BI Embedded Generation 2](power-bi-embedded-generation-2.md) for at få flere oplysninger.
 
 ### <a name="power-bi-premium"></a>Power BI Premium
 
@@ -142,6 +145,10 @@ I nedenstående tabel beskrives ressourcerne og begrænsningerne for hver SKU.
 | P4 | 64 | 32 | 200 | 32 | 240 | 48 |
 | P5 | 128 | 64 | 400 | 64 | 480 | 96 |
 | | | | | | | |
+
+#### <a name="embedded-gen-2-memory-enhancements-preview"></a>Forbedret hukommelse i op til 2 (eksempelvisning)
+
+Med [Power bi Embedded generation 2](power-bi-embedded-generation-2.md) (også kaldet Embedded gen 2) er den mængde hukommelse, der er tilgængelig på hver node størrelse, angivet til grænsen for hukommelsesforbrug for et enkelt Power bi element (f. eks. en rapport eller et dashboard) og ikke det akkumulerede forbrug af hukommelse. I en integreret Gen2 A4-kapacitet er det f. eks. begrænset til 25 GB i forhold til den oprindelige Power BI Embedded kapacitet, hvor det samlede hukommelsesforbrug for de datasæt, der håndteres på samme tid, begrænset til 25 GB.
 
 ## <a name="next-steps"></a>Næste trin
 

@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 06/15/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: 8a09de5777332d69332cae6928022e7e99fe689e
-ms.sourcegitcommit: 2e81649476d5cb97701f779267be59e393460097
+ms.openlocfilehash: 7907242c3ef71b1b621820cbb66bd93e88ff1c99
+ms.sourcegitcommit: c33e53e1fab1f29872297524a7b4f5af6c806798
 ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99422277"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99532699"
 ---
 # <a name="using-microsoft-cloud-app-security-controls-in-power-bi"></a>Brug af Microsoft Cloud App Security-kontrolelementer i Power BI
 
@@ -63,7 +63,7 @@ Du kan læse artiklen om [følsomhedsmærkater i Power BI](service-security-sens
 
 ## <a name="custom-policies-to-alert-on-suspicious-user-activity-in-power-bi"></a>Brugerdefinerede politikker til at advare om mistænkelig brugeraktivitet i Power BI
 
-Cloud App Security-aktivitets politik giver administratorer mulighed for at definere deres egne brugerdefinerede regler for at hjælpe med at registrere brugeradfærd, der afviger fra normen, og endda muligvis reagere på den automatisk, hvis den tilsyneladende er for risikabel. Eksempel:
+Cloud App Security aktivitets politikker gør det muligt for administratorer at definere deres egne brugerdefinerede regler for at hjælpe med at registrere brugeradfærd, der afviger fra normen, og endda muligvis reagere på den automatisk, hvis den tilsyneladende er for risikabel. Eksempel:
 
 * **Fjernelse af omfattende følsomheds etiket.** Eksempel: Giv mig besked, når følsomheds etiketter fjernes af en enkelt bruger fra 20 forskellige rapporter i et tidsvindue, der er kortere end 5 minutter.
 

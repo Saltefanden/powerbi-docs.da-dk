@@ -12,24 +12,24 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT
   ms.author: maggies
-  ms.date: 12/16/2020
-  ms.openlocfilehash: be6ec499d78d3ba5f3899fcb8556296568a40319
-  ms.sourcegitcommit: 7bf09116163afaae312eb2b232eb7967baee2c92
-  ms.translationtype: HT
+  ms.date: 02/03/2021
+  ms.openlocfilehash: 8f8956075030eee75077b9da9b6fccca94b73546
+  ms.sourcegitcommit: c33e53e1fab1f29872297524a7b4f5af6c806798
+  ms.translationtype: MT
   ms.contentlocale: da-DK
-  ms.lasthandoff: 12/17/2020
-  ms.locfileid: "97621849"
+  ms.lasthandoff: 02/04/2021
+  ms.locfileid: "99533044"
 highlightedContent:
   items:
   - title: Kom i gang med Power BI Desktop
     itemType: get-started
     url: fundamentals/desktop-getting-started.md
-  - title: DirectQuery til Power BI-datasæt og Azure Analysis
+  - title: Power BI integrerede API'er til analyse klient
+    itemType: overview
+    url: /javascript/api/overview/powerbi/
+  - title: Registrering af datasæt ved hjælp af datasæt hub (prøveversion)
     itemType: concept
-    url: connect-data/desktop-directquery-datasets-azure-analysis-services.md
-  - title: Brug Azure Machine Learning-modeller i Power BI
-    itemType: tutorial
-    url: connect-data/service-aml-integrate.md
+    url: connect-data/service-datasets-hub.md
   - title: Power BI på Microsoft Learn
     itemType: learn
     url: /learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link
@@ -234,13 +234,24 @@ conceptualContent:
 additionalContent:
   sections:
   - title: Relaterede værktøjer
-  - items:
+    items:
     - title: Power BI-rapportserver
       summary: Udforsk Power BI-rapportserver, som er en rapportserver med en webportal i det lokale miljø, hvor du kan få vist og administrere Power BI-rapporter, sideinddelte rapporter og KPI'er.
       url: report-server/index.yml
     - title: REST-API'er til Power BI
       summary: Power BI REST-API'er leverer tjenesteslutpunkter til integration, administration og brugerressourcer.
       url: /rest/api/power-bi/
-    - title: Dokumentation til Power Platform
-      summary: Få mere at vide om, hvordan Power BI, Power Apps, Power Automate og Power Virtual Agents fungerer sammen for at forbedre hinanden.
-      url: /power-platform/
+    - title: Power BI integrerede API'er til analyse klient
+      summary: Et bibliotek på klientsiden til integration af Power BI ved hjælp af JavaScript eller type maskine.
+      url: /javascript/api/overview/powerbi/
+  - title: Andre Microsoft Power platform-produkter
+    items:
+    - title: Power Apps
+      summary: Byg hurtigt apps med lav kode, der moderniserr precesses, og løs robuste forretnings udfordringer i din organisation.
+      url: /powerapps/
+    - title: Power Automate
+      summary: Opret automatiserede arbejdsprocesser mellem dine foretrukne apps og tjenester for at synkronisere filer, få beskeder med mere.
+      url: /power-automate/
+    - title: Power Virtual Agents
+      summary: Skab effektive robotter ved hjælp af en ikke-kode grafisk grænseflade uden brug af data eksperter eller udviklere.
+      url: /power-virtual-agents/

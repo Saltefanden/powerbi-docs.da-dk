@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 12/02/2019
-ms.openlocfilehash: 3d35df1c38a0a62325f88fa19ee7267a3b209647
-ms.sourcegitcommit: f7330dabb9cd8bce90bb2efec3e3273a11578f10
+ms.openlocfilehash: 28baefb80037d1f78d2a2fd51b3989aa5d2a1ebb
+ms.sourcegitcommit: c33e53e1fab1f29872297524a7b4f5af6c806798
 ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99494493"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99533090"
 ---
 # <a name="scan-barcodes-from-the-mobile-app-to-get-filtered-data"></a>Scan stregkoder fra mobilappen for at få filtrerede data 
 Scan stregkoder i den virkelige verden, så du kan få dem direkte til filtrerede BI-oplysninger i Power BI-mobilappen.
@@ -73,7 +73,7 @@ Sådan ryddes stregkode filtreringen i en filtreret rapport:
 * Mobile Apps understøtter kun stregkode filtrering for rapporter, der kun indeholder én stregkode kolonne på tværs af alle rapportdata tabeller. Hvis du scanner en stregkode for en rapport, der har mere end én stregkode kolonne, foretages der ingen filtrering.
 
 ## <a name="issues-with-scanning-a-barcode"></a>Problemer med at scanne en stregkode
-Her er nogle issus, du kan støde på, når du scanner en stregkode på et element.
+Her er nogle problemer, der kan opstå, når du scanner en stregkode på et element.
 
 * Du modtager en meddelelse, der **ikke kan filtreres. det ser ud til, at denne stregkode ikke findes i rapportdataene**: det betyder, at værdien af den stregkode, du har scannet, ikke vises i datamodel for den rapport, du valgte at filtrere. Det kan f. eks. være tilfældet, hvis det produkt, hvis stregkode du har scannet, ikke er inkluderet i rapporten. Du kan scanne et andet produkt, vælge en anden rapport (hvis der findes flere rapporter) eller få vist rapporten ufiltreret.
 

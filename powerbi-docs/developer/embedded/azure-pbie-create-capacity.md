@@ -1,6 +1,6 @@
 ---
-title: Opret Power BI Embedded-kapacitet på Azure-portalen | Microsoft Docs
-description: I denne artikel beskriver vi, hvordan du opretter Power BI Embedded-kapacitet i Microsoft Azure.
+title: Opret en Power BI Embedded-kapacitet i Azure Portal til din integrerede BI-løsning til en integreret Power BI-analyse
+description: I denne artikel beskriver vi, hvordan du opretter en Power BI Embedded-kapacitet i Microsoft Azure til din integrerede BI-løsning til en integreret Power BI-analyse.
 author: KesemSharabi
 ms.author: kesharab
 ms.service: powerbi
@@ -9,13 +9,13 @@ ms.devlang: csharp, javascript
 ms.topic: how-to
 ms.reviewer: zakharb
 ms.custom: subject-armqs, devx-track-azurecli
-ms.date: 08/02/2020
-ms.openlocfilehash: 73be957feae7fb869cca0af7bce0eeeb8daab03f
-ms.sourcegitcommit: b4c457bfb4676381dc4a0d04d965e8dab0bc230e
-ms.translationtype: HT
+ms.date: 01/14/2021
+ms.openlocfilehash: e006d4fe23c85daf941ba7274027ee21b0f44eac
+ms.sourcegitcommit: c33e53e1fab1f29872297524a7b4f5af6c806798
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98155708"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99532653"
 ---
 # <a name="create-power-bi-embedded-capacity-in-the-azure-portal"></a>Opret Power BI Embedded-kapacitet på Azure-portalen
 
@@ -27,9 +27,9 @@ For at følge denne hurtige start skal du have følgende:
 
 * **Azure-abonnement:** Gå til [den gratis prøveversion af Azure](https://azure.microsoft.com/free/) for at oprette en konto.
 
-* **Azure Active Directory:** Abonnementet skal være tilknyttet en AAD-lejer (Microsoft Azure Active Directory). * *_Du skal også være logget på Azure med en konto i den pågældende lejer_* _. Microsoft-konti understøttes ikke. Du kan finde flere oplysninger under [Godkendelse og brugertilladelser](/azure/analysis-services/analysis-services-manage-users).
+* **Azure Active Directory:** Abonnementet skal være tilknyttet en AAD-lejer (Microsoft Azure Active Directory). Du skal også **_være logget på Azure med en konto i den pågældende lejer_**. Microsoft-konti understøttes ikke. Du kan finde flere oplysninger under [Godkendelse og brugertilladelser](/azure/analysis-services/analysis-services-manage-users).
 
-_ **Power BI-lejer:** Mindst én konto i din AAD-lejer skal være tilmeldt Power BI.
+* **Power BI-lejer:** Mindst én konto i din AAD-lejer skal være tilmeldt Power BI.
 
 * **Ressourcegruppe:** Brug en eksisterende ressourcegruppe, eller [opret en ny](/azure/azure-resource-manager/resource-group-overview).
 
@@ -46,9 +46,9 @@ Før du opretter en Power BI Embedded-kapacitet, skal du sørge for, at du har l
 3. Vælg **Tilføj** i Power BI Embedded.
 
 4. Angiv de påkrævede oplysninger, og klik derefter på **Gennemse + Opret**.
-
-    >[!div class="mx-imgBorder"]
-    >![Skærmbillede, der viser fanen Grundlæggende på siden Power BI Embedded for at oprette ny kapacitet på Azure Portal.](media/azure-pbie-create-capacity/azure-create-capacity-old.png)
+    
+    > [!div class="mx-imgBorder"]
+    >![Skærmbillede, der viser fanen Grundlæggende på siden Power BI Embedded for at oprette ny kapacitet på Azure Portal.](media/azure-pbie-create-capacity/azure-create-capacity.png)
 
     * **Abonnement** – det abonnement, som kapaciteten skal oprettes for.
 
@@ -66,7 +66,19 @@ Før du opretter en Power BI Embedded-kapacitet, skal du sørge for, at du har l
         >* Du kan vælge en anden bruger eller tjenesteprincipal som kapacitetsadministrator.
         >* Kapacitetsadministratoren skal tilhøre lejeren, hvor kapaciteten er klargjort. B2B-brugere (business to business) kan ikke være kapacitetsadministratorer.
 
+    * **Ressource tilstand** – Vælg mellem disse to Power bi Embedded ressource tilstande:
+
+        * **Integreret generation 1** – den klassiske Power bi Embedded ressource.
+
+        * **Integreret generation 2** – den nye Power bi Embedded ressource, der tilbyder en forbedret erfaring. Du kan finde flere oplysninger under [Power bi Embedded Premium generation 2](power-bi-embedded-generation-2.md).
+        
+        >[!IMPORTANT]
+        >Når du har oprettet en kapacitets ressource, kan du ikke skifte generationer. Hvis du vil ændre din Power BI Embedded oprettelse, kan du oprette en anden ressource ved hjælp af en anden generation og tildele dine arbejdsområder til det igen. Du kan også automatisere denne proces ved hjælp af Azure Resource Manager API'er.
+
 # <a name="azure-cli"></a>[Azure-kommandolinjegrænseflade](#tab/CLI)
+
+>[!NOTE]
+>Azure CLI understøttes ikke for [Power bi Embedded generation 2 (prøveversion)](power-bi-embedded-generation-2.md).
 
 ### <a name="use-azure-cloud-shell"></a>Brug Azure Cloud Shell
 
@@ -128,7 +140,7 @@ az powerbi embedded-capacity create --location westeurope
 
 ### <a name="delete-a-capacity-with-azure-cli"></a>Slet en kapacitet med Azure-kommandolinjegrænsefladen
 
-Hvis du vil slette en kapacitet ved hjælp af Azure-kommandolinjegrænsefladen, skal du bruge kommandoen [az powerbi embedded-capacity delete](/cli/azure/ext/powerbidedicated/powerbi/embedded-capacity#ext-powerbidedicated-az-powerbi-embedded-capacity-delete).
+Hvis du vil slette en kapacitet ved hjælp af Azure CLI, skal du bruge kommandoen [Slet i azure Power bi Embedded-kapacitet](/cli/azure/ext/powerbidedicated/powerbi/embedded-capacity#ext-powerbidedicated-az-powerbi-embedded-capacity-delete) .
 
 ```azurecli
 az powerbi embedded-capacity delete --name
@@ -137,7 +149,7 @@ az powerbi embedded-capacity delete --name
 
 ### <a name="manage-your-capacity-with-azure-cli"></a>Administrer din kapacitet med Azure-kommandolinjegrænsefladen
 
-Du kan få vist alle kommandoer i Power BI Embedded Azure-kommandolinjegrænsefladen i [az powerbi](/cli/azure/ext/powerbidedicated/powerbi).
+Du kan få vist alle Power BI Embedded Azure CLI-kommandoer i [Azure Power bi](/cli/azure/ext/powerbidedicated/powerbi).
 
 # <a name="arm-template"></a>[ARM-skabelon](#tab/ARM-template)
 
@@ -149,7 +161,13 @@ Hvis du ikke har et Azure-abonnement, skal du oprette en [gratis konto](https://
 
 ### <a name="review-the-template"></a>Gennemse skabelonen
 
-Den skabelon, der anvendes i denne hurtigstart, er fra [Azure-skabeloner til hurtig start](https://azure.microsoft.com/resources/templates/101-power-bi-embedded).
+De skabeloner, der anvendes i dette hurtig start, er fra [Azure-skabeloner til hurtig](https://azure.microsoft.com/resources/templates/101-power-bi-embedded)introduktion.
+
+Når Azure-ressourcen er defineret i skabelonen, [Microsoft. PowerBIDedicated/kapaciteter AZ](/azure/templates/microsoft.powerbidedicated/allversions) – opret en Power bi Embedded kapacitet.
+
+#### <a name="embedded-gen1"></a>Integreret Gen1
+
+Brug denne skabelon til at oprette en klassisk Power BI Embedded ressource.
 
 ```json
 {
@@ -159,14 +177,14 @@ Den skabelon, der anvendes i denne hurtigstart, er fra [Azure-skabeloner til hur
         "name": {
             "type": "string",
             "metadata": {
-              "description": "The capacity name, which is displayed in the Azure portal and the Power BI admin portal"
+                "description": "The capacity name, which is displayed in the Azure portal and the Power BI admin portal"
             }
         },
         "location": {
             "type": "string",
             "defaultValue": "[resourceGroup().location]",
             "metadata": {
-              "description": "The location where Power BI is hosted for your tenant"
+                "description": "The location where Power BI is hosted for your tenant"
             }
         },
         "sku": {
@@ -180,13 +198,13 @@ Den skabelon, der anvendes i denne hurtigstart, er fra [Azure-skabeloner til hur
                 "A6"
             ],
             "metadata": {
-              "description": "The pricing tier, which determines the v-core count and memory size for the capacity"
+                "description": "The pricing tier, which determines the v-core count and memory size for the capacity"
             }
         },
         "admin": {
             "type": "string",
             "metadata": {
-              "description": "A user within your Power BI tenant, who will serve as an admin for this capacity"
+                "description": "A user within your Power BI tenant, who will serve as an admin for this capacity"
             }
         }
     },
@@ -211,7 +229,70 @@ Den skabelon, der anvendes i denne hurtigstart, er fra [Azure-skabeloner til hur
 }
 ```
 
-Én Azure-ressource er defineret i skabelonen, [Microsoft.PowerBIDedicated/capacities Az](/azure/templates/microsoft.powerbidedicated/allversions) – Opret en Power BI Embedded-kapacitet.
+#### <a name="embedded-gen2-preview"></a>Integreret Gen2 (prøveversion)
+
+Brug denne skabelon til at oprette en [integreret gen 2](power-bi-embedded-generation-2.md) -ressource.
+
+```json
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "name": {
+            "type": "string",
+            "metadata": {
+                "description": "The capacity name, which is displayed in the Azure portal and the Power BI admin portal"
+            }
+        },
+        "location": {
+            "type": "string",
+            "defaultValue": "[resourceGroup().location]",
+            "metadata": {
+                "description": "The location where Power BI is hosted for your tenant"
+            }
+        },
+        "sku": {
+            "type": "string",
+            "allowedValues": [
+                "A1",
+                "A2",
+                "A3",
+                "A4",
+                "A5",
+                "A6"
+            ],
+            "metadata": {
+                "description": "The pricing tier, which determines the v-core count and memory size for the capacity"
+            }
+        },
+        "admin": {
+            "type": "string",
+            "metadata": {
+                "description": "A user within your Power BI tenant, who will serve as an admin for this capacity"
+            }
+        }
+    },
+    "resources": [
+        {
+            "type": "Microsoft.PowerBIDedicated/capacities",
+            "apiVersion": "2018-09-01-preview",
+            "name": "[parameters('name')]",
+            "location": "[parameters('location')]",
+            "sku": {
+                "name": "[parameters('sku')]"
+            },
+            "properties": {
+                "administration": {
+                    "members": [
+                        "[parameters('admin')]"
+                    ]
+                },
+                "mode": "Gen2"
+            }
+        }
+    ]
+}
+```
 
 ### <a name="deploy-the-template"></a>Anvend skabelonen
 

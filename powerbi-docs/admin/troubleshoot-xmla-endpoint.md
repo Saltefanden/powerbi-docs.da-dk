@@ -10,12 +10,12 @@ ms.topic: troubleshooting
 ms.date: 02/02/2021
 ms.custom: seodec18, css_fy20Q4
 LocalizationGroup: Premium
-ms.openlocfilehash: 98bc3da33f38974f3dfcb9e155111e7d16e6c069
-ms.sourcegitcommit: f7330dabb9cd8bce90bb2efec3e3273a11578f10
+ms.openlocfilehash: 0ae9a37d8d3a54d02811b9f3051d11cb1ab82ff8
+ms.sourcegitcommit: c33e53e1fab1f29872297524a7b4f5af6c806798
 ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99494459"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99532561"
 ---
 # <a name="troubleshoot-xmla-endpoint-connectivity"></a>Foretag fejlfinding af XMLA-slutpunktsforbindelse
 
@@ -144,7 +144,7 @@ Tilsidesættelser i [kommandoen Opdater (TMSL)](/analysis-services/tmsl/refresh-
 
 ### <a name="query-execution"></a>Udførelse af forespørgsler
 
-Når du har oprettet forbindelse til et arbejdsområde i en [Premium Gen2](service-premium-what-is.md#power-bi-premium-generation-2-preview)-kapacitet, kan SQL Server Management Studio vise følgende fejl:
+Når du har forbindelse til et arbejdsområde i en [Premium-Gen2](service-premium-what-is.md#power-bi-premium-generation-2-preview) eller en [integreret Gen2](../developer/embedded/power-bi-embedded-generation-2.md) -kapacitet, kan SQL Server Management Studio vise følgende fejl:
 
 ```
 Executing the query ...
@@ -155,7 +155,7 @@ Dette skyldes, at klientbiblioteker, der er installeret med SQL Server Managemen
 
 ### <a name="refresh-operations"></a>Opdateringshandlinger
 
-Når du bruger SQL Server Management Studio v 18.7.1 eller tidligere til at udføre en langvarig opdateringshandling (> 1 min) på et datasæt i en Premium Gen2-kapacitet, kan SQL Server Management Studio vise en fejl som den følgende, selvom opdateringshandlingen lykkes:
+Når du bruger SSMS v 18.7.1 eller lavere til at udføre en langvarig opdateringshandling (>1 min) på et datasæt i en Premium Gen2 eller en [integreret Gen2](../developer/embedded/power-bi-embedded-generation-2.md) -kapacitet, kan SSMS vise en fejl som følgende, selvom opdateringshandlingen er fuldført:
 
 ```
 Executing the query ...
