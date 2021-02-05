@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
 ms.date: 12/01/2020
-ms.openlocfilehash: 5b4c32296c7121fa3d161461af7e86caba617ee1
-ms.sourcegitcommit: 2fd64f96b5bfbc14ff47e5c892171e5c921fb525
-ms.translationtype: HT
+ms.openlocfilehash: 5f03a994085e139da714219ce2e9095bde3a35d6
+ms.sourcegitcommit: afdc9d41da6a4fced63030648d3f976425131732
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96501943"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99570031"
 ---
 # <a name="dataset-modes-in-the-power-bi-service"></a>Tilstande for datasæt i Power BI-tjenesten
 
@@ -80,7 +80,7 @@ Der er flere fordele ved at bruge DirectQuery-modeller:
 Men der er dog visse begrænsninger forbundet med DirectQuery-modeller:
 
 - DAX-formularer er begrænset til kun at bruge funktioner, der kan omdannes til oprindelige forespørgsler, som forstås af datakilden. Beregnede kolonner understøttes ikke.
-- Funktionerne Spørgsmål og svar og Hurtig indsigt understøttes ikke.
+- Hurtig indsigt funktioner understøttes ikke
 
 Fra et ressourcemæssigt perspektiv i Power BI-tjenesten kræver DirectQuery-modeller:
 

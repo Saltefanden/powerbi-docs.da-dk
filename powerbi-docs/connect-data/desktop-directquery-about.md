@@ -9,12 +9,12 @@ ms.subservice: pbi-data-sources
 ms.topic: conceptual
 ms.date: 12/14/2020
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 340f29394d0c6c83659d77f2545a4f76eef99a9a
-ms.sourcegitcommit: 96080432af4c8e3fe46c23274478ccffa0970efb
-ms.translationtype: HT
+ms.openlocfilehash: a35b8e127c008f78cb9348704b9e049f9fa3b46f
+ms.sourcegitcommit: afdc9d41da6a4fced63030648d3f976425131732
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98597659"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99569985"
 ---
 # <a name="about-using-directquery-in-power-bi"></a>Om brug af DirectQuery i Power BI
 
@@ -163,7 +163,6 @@ Når du bruger DirectQuery, kan mange af disse modelforbedringer stadig foretage
 Næsten alle rapporteringsegenskaber understøttes for DirectQuery-modeller. Så længe den underliggende kilde tilbyder en passende ydeevne, kan det samme sæt visualiseringer bruges. Der er nogle vigtige begrænsninger i nogle af de andre egenskaber, der findes i Power BI-tjenesten, når en rapport publiceres:
 
 * **Hurtig indsigt understøttes ikke:** Hurtig indsigt i Power BI søger gennem forskellige undersæt i datasættet og anvender samtidig et sæt avancerede algoritmer for at finde indsigt, der kan være interessant. På grund af behovet for forespørgsler med meget høj ydeevne er denne funktion ikke tilgængelig for datasæt, der bruger DirectQuery.
-* **Spørgsmål og svar understøttes ikke:** Spørgsmål og svar i Power BI gør det muligt for dig at udforske dine data vha. intuitive egenskaber for naturligt sprog og modtage svar i form af diagrammer og grafer. Det understøttes dog ikke i øjeblikket for datasæt, der bruger DirectQuery.
 * **Brug af Udforsk i Excel vil sandsynligvis resultere i dårligere ydeevne:** Du kan udforske dine data vha. egenskaben Udforsk i Excel i et datasæt. Denne fremgangsmåde vil gøre det muligt at oprette pivottabeller og pivotdiagrammer i Excel. Selvom denne egenskab understøttes i forbindelse med datasæt, der bruger DirectQuery, vil ydeevnen normalt være langsommere end oprettelsen af visualiseringer i Power BI. Hvis brugen af Excel er vigtige for dine scenarier, skal der derfor tages højde for dette faktum, når du beslutter dig for at bruge DirectQuery.
 * **Maksimal længde for tekstkolonner:** Den maksimale længde af dataene i en tekstkolonne for datasæt, der bruger DirectQuery, er 32.764 tegn. Rapportering for længere tekster end det, resulterer i en fejl.
 

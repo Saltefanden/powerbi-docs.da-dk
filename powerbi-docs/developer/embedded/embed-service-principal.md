@@ -8,13 +8,13 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: ''
-ms.date: 11/23/2020
-ms.openlocfilehash: 35bdaa8af06187767975126daa1f2445908fed9f
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
-ms.translationtype: HT
+ms.date: 02/04/2021
+ms.openlocfilehash: 6a322d331dce9fd989a93545745cf7feb2d9eb70
+ms.sourcegitcommit: afdc9d41da6a4fced63030648d3f976425131732
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97886781"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99569962"
 ---
 # <a name="embed-power-bi-content-with-service-principal-and-an-application-secret"></a>Integrer Power BI-indhold med tjenesteprincipal og en programhemmelighed
 
@@ -243,7 +243,7 @@ Når dit indhold er integreret, er du klar til at [gå videre til produktionen](
 * Der kræves rettigheder som Power BI-administrator for at kunne aktivere tjenesteprincipalen under Indstillinger for udvikler på Power BI-administrationsportalen.
 * Programmer til [integration i din organisation](embed-sample-for-your-organization.md) kan ikke bruge en tjenesteprincipal.
 * Administration af [dataflow](../../transform-model/dataflows/dataflows-introduction-self-service.md) understøttes ikke.
-* Tjenesteprincipaler understøtter i øjeblikket ingen administrator-API'er.
+* Service principalen understøtter kun nogle skrivebeskyttede administrator API'er. Hvis du vil aktivere tjeneste Principal support til skrivebeskyttede administrator API'er, skal du aktivere Power BI-tjeneste administratorindstillinger i din lejer. Du kan finde flere oplysninger under [Aktivér tjeneste Principal Authentication til skrivebeskyttede administrator API'er](../../admin/read-only-apis-service-principal-authentication.md).
 * Når du bruger en tjenesteprincipal med en [Azure Analysis Services](/azure/analysis-services/analysis-services-overview)-datakilde, skal selve tjenesteprincipalen have tilladelser til en forekomst af Azure Analysis Services. Brug af en sikkerhedsgruppe, der indeholder tjenesteprincipalen til dette formål, fungerer ikke.
 
 ## <a name="next-steps"></a>Næste trin
