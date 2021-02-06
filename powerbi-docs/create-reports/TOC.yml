@@ -312,6 +312,10 @@
               href: ../visuals/power-bi-visualization-scatter.md
             - name: Brug punktdiagrammer med høj tæthed
               href: ../visuals/desktop-high-density-scatter-charts.md
+            - name: Opret små multipla (prøveversion)
+              href: ../visuals/power-bi-visualization-small-multiples.md
+            - name: Arbejd med små multipla (prøveversion)
+              href: ../visuals/power-bi-visualization-small-multiples-interact.md
             - name: Figurkort-visualiseringer (eksempelvisning)
               href: ../visuals/desktop-shape-map.md
             - name: Smarte fortællinger
