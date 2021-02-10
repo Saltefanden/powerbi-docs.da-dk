@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 02/10/2021
-ms.openlocfilehash: 83c7a778b6c799bd759443e7601e1f624ed5f9e5
-ms.sourcegitcommit: 5c943a05071efb69a17ca4c501c6b89f2f351f1a
+ms.openlocfilehash: fbd43600e67e4ac544df65bba6d9d2072293132d
+ms.sourcegitcommit: 7e0cc3b1ed9cf38da134ef7221648cb758ceea98
 ms.translationtype: MT
 ms.contentlocale: da-DK
 ms.lasthandoff: 02/10/2021
-ms.locfileid: "100089476"
+ms.locfileid: "100100850"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Hvad er nyt i mobilapps til Power BI
 Du kan finde relaterede oplysninger om nyheder under:
@@ -26,7 +26,7 @@ Du kan finde relaterede oplysninger om nyheder under:
 >Understøttelsen af Power BI-mobilapp til **telefoner, der bruger Windows 10 Mobile**, ophører den 16. marts 2021. [Få mere at vide](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 ## <a name="february-2021"></a>Februar 2021
-### <a name="support-for-power-bi-in-split-screens-android-tablets-only"></a>Understøttelse af Power BI i dele af skærmbilleder (kun Android-tablets)
+### <a name="support-for-power-bi-in-split-screens-android-tablets"></a>Understøttelse af Power BI i dele af skærmbilleder (Android-tablets)
 
 Hvis din Android-Tablet har understøttelse af flere vinduer, kan du få vist og interagere med dine dataside om side med en anden app ved hjælp af opdelt skærms tilstand. [Få mere at vide!](mobile-apps-split-screen.md)
 
