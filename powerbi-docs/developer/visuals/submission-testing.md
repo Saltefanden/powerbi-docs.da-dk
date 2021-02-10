@@ -1,21 +1,21 @@
 ---
-title: Indsendelsestest af en Power BI-visualisering i en integreret Power BI-analyse for at få bedre integreret BI-indsigt
-description: I denne artikel beskrives de testsager, som din visualisering skal bestå, før den publiceres i AppSource. Der er også valgfri testsager. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
+title: Indsendelsestest af en Power BI-visualisering
+description: I denne artikel beskrives de testsager, som din visualisering skal bestå, før den publiceres i AppSource. Der er også valgfri testsager.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 04/15/2020
-ms.openlocfilehash: b5054d821dc797f1606fea8ec5d0bb43569a57e5
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
-ms.translationtype: HT
+ms.date: 02/09/2021
+ms.openlocfilehash: 391282b7868ba24b14c0859d431e6868b3fcbc2d
+ms.sourcegitcommit: 7e0cc3b1ed9cf38da134ef7221648cb758ceea98
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97888460"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100100827"
 ---
-# <a name="submission-testing-of-a-power-bi-visual"></a>Indsendelsestest af en Power BI-visualisering
+# <a name="testing-a-power-bi-visual-before-submission"></a>Test af en Power BI visualisering før indsendelse
 
 Før du publicerer din visualisering i [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals), skal den bestå de tests, der er angivet i denne artikel. Test din visualisering, før du sender den. Hvis din visualisering ikke består de påkrævede testsager, afvises den.
 
@@ -23,7 +23,13 @@ Du kan finde flere oplysninger om udgivelsesprocessen under [Publicer Power BI-v
 
 ## <a name="testing-a-new-version-of-a-published-visual"></a>Test af en ny version af en publiceret visualisering
 
-Hvis du tester eller foretager fejlfinding af en ny version af en visualisering, der allerede er udgivet, kan du tilsidesætte AppSource-versionen med en lokal filversion ved at aktivere udviklertilstand i Power BI Desktop.
+Som standard indlæser Power BI den seneste udgivne version af det visuelle element fra AppSource, også selvom du importerer det visuelle element fra en lokal fil.
+
+Hvis du tester eller foretager fejlfinding af en ny version af en Visual, der allerede er udgivet, kan du tilsidesætte AppSource-versionen med en lokal filversion ved at aktivere udviklertilstand enten i Power BI Desktop eller Power BI-tjeneste.
+
+### <a name="enable-developer-mode-in-power-bi-desktop"></a>Aktivér udviklertilstand i Power BI Desktop
+
+Udviklertilstand er kun gyldig for én session i Power BI Desktop. Hvis du åbner en ny Power BI Desktop-forekomst til test, skal du aktivere udviklertilstand igen.
 
 Hvis du vil aktivere udviklertilstand, skal du følge disse trin:
 
@@ -37,8 +43,11 @@ Hvis du vil aktivere udviklertilstand, skal du følge disse trin:
 
 5. Vælg indstillingen **Aktivér udviklertilstand for denne session** i udviklertilstand.
 
->[!NOTE]
->Udviklertilstand er kun gyldig for én session i Power BI Desktop. Hvis du åbner en ny Power BI Desktop-forekomst til test, skal du aktivere udviklertilstand igen.
+### <a name="enable-developer-mode-in-power-bi-service"></a>Aktivér udviklertilstand i Power BI-tjeneste
+
+I Power BI-tjeneste opbevares udviklertilstand pr. brugerkonto. Hver gang en bruger indlæser pakken fra den lokale fil, vil Power BI ignorere den AppSource version af visualiseringen.
+
+Hvis du vil aktivere udviklertilstand i Power BI-tjeneste, skal du følge vejledningen i [konfigurer Power bi-tjeneste til udvikling af et visuelt element](environment-setup.md#set-up-power-bi-service-for-developing-a-visual).
 
 ## <a name="general-test-cases"></a>Generelle testsager
 

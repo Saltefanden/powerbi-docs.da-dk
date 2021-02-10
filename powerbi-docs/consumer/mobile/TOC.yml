@@ -72,6 +72,8 @@
               href: mobile-apps-scan-barcode-iphone.md
             - name: Konfigurer indstillinger for interaktion
               href: mobile-app-interaction-settings.md
+            - name: Opdelt skærms tilstand
+              href: mobile-apps-split-screen.md
             - name: Mørk tilstand
               href: mobile-apps-dark-mode.md
             - name: Konfigurer ved hjælp af administration af mobilenheder
