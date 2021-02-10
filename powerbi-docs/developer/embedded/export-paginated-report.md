@@ -1,20 +1,20 @@
 ---
 title: Eksportér sideinddelte API-rapporter for integreret Power BI-analyse, der giver bedre integreret BI-indsigt
-description: Få mere at vide om, hvordan du eksporterer en integreret og sideinddelt Power BI-rapport. Aktivér bedre integreret BI-indsigt ved hjælp af Power BI-integreret analyse.
+description: Få mere at vide om, hvordan du eksporterer en integreret og sideinddelt Power BI-rapport.
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 04/05/2020
-ms.openlocfilehash: befb64ec85c02f8993d828202df06aafc5901482
-ms.sourcegitcommit: 84f0e7f31e62cae3bea2dcf2d62c2f023cc2d404
+ms.date: 02/09/2021
+ms.openlocfilehash: 9757b19e4faf4537cf4ff3c1e6f06dc9d499bc8c
+ms.sourcegitcommit: de3b45cad5ae21c77692ce4490e21de01d21e6f3
 ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98781530"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100013584"
 ---
-# <a name="export-paginated-report-to-file-preview"></a>Eksportér sideinddelt rapport til fil (prøveversion)
+# <a name="export-paginated-report-to-file"></a>Eksportér den sideinddelte rapport til fil
 
 `exportToFile`-API'en muliggør eksport af en sideinddelt Power BI-rapport ved hjælp af et REST-kald. Følgende filformater understøttes:
 * **PPTX** (PowerPoint)

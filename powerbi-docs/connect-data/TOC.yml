@@ -39,7 +39,7 @@
           href: service-aml-integrate.md
         - name: Opdater data fra SQL Server
           href: service-gateway-sql-tutorial.md
-    - name: Begreber
+    - name: Koncepter
       expanded: true
       items:
         - name: Power BI-datakilder
@@ -257,6 +257,8 @@
           items:
             - name: Opret forbindelse til tjenester med apps
               href: service-connect-to-services.md
+            - name: Analysér populære lagre med Power BI
+              href: service-connect-to-analyze-stocks.md
             - name: Amerikansk sporingsrapport for COVID-19
               href: service-connect-to-covid-19-tracking.md
             - name: Rapport om eksisterende krisekommunikation

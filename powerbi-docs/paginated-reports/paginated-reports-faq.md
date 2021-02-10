@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 10/19/2020
-ms.openlocfilehash: 7cba43ff6339ce890ca2f4f1744282648eaf877b
-ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
-ms.translationtype: HT
+ms.date: 02/09/2021
+ms.openlocfilehash: d8460fe1a3eb199848f47181837225f1e540bb08
+ms.sourcegitcommit: de3b45cad5ae21c77692ce4490e21de01d21e6f3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93297901"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100013630"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Sideinddelte rapporter i Power BI: Ofte stillede spørgsmål 
 
@@ -28,6 +28,13 @@ I denne artikel finde du svar på mange almindelige spørgsmål, som folk har om
 ### <a name="what-size-premium-capacity-do-i-need-for-paginated-reports"></a>Hvilken størrelse Premium-kapacitet for sideinddelte rapporter skal jeg bruge?
 
 Arbejdsbelastningen for sideinddelte rapporter er tilgængelig på P1-P3 SKU'er.  Du kan også bruge den med A4 – A6 SKU'er til integrerings- eller test/dev-scenarier.
+
+> [!NOTE]
+> Power BI har for nylig udgivet en ny version af Premium, der kaldes **Premium Gen2**, som i øjeblikket er tilgængelig som prøveversion. I **Premium Gen2** er sideinddelte rapporters arbejdsbelastning tilgængelig på P1-efter-SKU'er og a1-A6-SKU'er. 
+>
+>Premium Gen2 forenkler administrationen af Premium-kapaciteter og reducerer belastningen i administrationen. Du kan finde flere oplysninger under [Power BI Premium – Generation 2 (prøveversion)](../admin/service-premium-what-is.md#power-bi-premium-generation-2-preview).
+>
+>Se [Power bi Embedded generation 2](../developer/embedded/power-bi-embedded-generation-2.md)for at gennemse Power bi Embedded Gen2-forbedringer.
 
 ### <a name="what-is-the-maximum-memory-threshold-i-can-put-for-paginated-reports-in-my-capacity"></a>Hvad er den maksimale hukommelsestærskel, jeg kan angive, for sideinddelte rapporter i min kapacitet?
 
@@ -74,13 +81,16 @@ Du får vist en fejlmeddelelse, og du kan ikke få vist rapporten, før arbejdsb
 
 Standardhukommelsen for hver Premium SKU for sideinddelte rapporter er:
 
-- **P1/A4** : 20 % som standard, minimum 10 %
-- **P2/A5** : 20 % som standard, minimum 5 %
-- **P3/A6** : 20 % som standard, minimum 2,5 %
+- **P1/A4**: 20 % som standard, minimum 10 %
+- **P2/A5**: 20 % som standard, minimum 5 %
+- **P3/A6**: 20 % som standard, minimum 2,5 %
 
 Power BI-administratorer kan ændre standardprocenten for maksimal hukommelse i administrationsportalen. Se arbejdsbelastningsafsnittet **Sideinddelte rapporter** under **Power BI Premium** under fanen **Kapacitetsindstillinger**.
 
 :::image type="content" source="media/paginated-reports-faq/paginated-reports-capacity-settings.png" alt-text="Sideinddelte rapporter under fanen Kapacitetsindstillinger":::
+
+> [!NOTE]
+> **Premium-Gen2**, som i øjeblikket er tilgængelig som prøveversion, kræver ikke, at du ændrer hukommelsesindstillingerne. Det underliggende system administrerer hukommelse automatisk i Premium-Gen2. Sideinddelte rapporters arbejdsbelastning er tilgængelig på P1-og a1-SKU'er, og a1-A6-SKU'er i **Premium Gen2**.
 
 ## <a name="general"></a>Generelt
 
