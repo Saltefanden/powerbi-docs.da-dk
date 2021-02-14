@@ -7,12 +7,12 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 11/23/2020
-ms.openlocfilehash: a44bd7837e7605fd23e49a91e3e9eba106d5a933
-ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
-ms.translationtype: HT
+ms.openlocfilehash: 9a652531b90d65df985c0698d3fade7927a1907b
+ms.sourcegitcommit: 24887643bd3e1b3749ce325dc0ae407432d7fee4
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98565767"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100490055"
 ---
 # <a name="tutorial-automate-configuration-of-template-app-installation-using-an-azure-function"></a>Selvstudium: Automatiser konfigurationen af installationen af skabelonprogrammer ved hjælp af en Azure-funktion
 
@@ -62,6 +62,7 @@ Følgende er det grundlæggende flow for, hvad programmet gør, når kunden star
 * Konfigurer din egen Microsoft Azure Active Directory-lejer. Se [Opret en Azure Active Directory-lejer](../embedded/create-an-azure-active-directory-tenant.md) for at få oplysninger om, hvordan du konfigurerer en.
 * En [tjenesteprincipal (token kun til apps)](../embedded/embed-service-principal.md), der er registreret i ovennævnte lejer.
 * En [parameteriseret skabelonapp](../../connect-data/service-template-apps-overview.md), der er klar til installation. Skabelonappen skal være oprettet i den samme lejer, som du registrerer programmet i Azure Active Directory i. Se [Tip til skabelonapp](../../connect-data/service-template-apps-tips.md) eller [Opret en skabelonapp i Power BI](../../connect-data/service-template-apps-create.md) for at få flere oplysninger.
+* Hvis du vil teste dit arbejdsforløb til automatisering, skal du føje tjeneste principalen til arbejdsområdet skabelon app som administrator.
 * En Power BI Pro-licens. Hvis du ikke er tilmeldt Power BI Pro, kan du [tilmelde dig en gratis prøveversion](https://powerbi.microsoft.com/pricing/), før du begynder.
 
 ## <a name="set-up-your-template-apps-automation-development-environment"></a>Konfigurer dit udviklingsmiljø til automatisering af skabelonprogrammer
@@ -77,6 +78,8 @@ Sørg for at registrere programmet som et **serverbaseret webprogram**. Du regis
 Gem *app-id'et* (ClientID) og *programhemmeligheden* (ClientSecret) til senere trin.
 
 Du kan gennemgå [konfigurationsværktøjet til integrering](https://aka.ms/embedsetup/AppOwnsData) for hurtigt at komme i gang med at oprette en appregistrering. Hvis du bruger [værktøjet til registrering af Power BI-program](https://app.powerbi.com/embedsetup), skal du vælge indstillingen **Integrer for dine kunder**.
+
+Føj tjeneste principalen til arbejdsområdet skabelon-app som administrator, så du kan teste dit arbejdsforløb for automatisering.
 
 ## <a name="template-app-preparation"></a>Forberedelse af skabelonprogram
 

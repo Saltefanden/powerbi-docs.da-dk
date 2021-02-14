@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 02/10/2020
-ms.openlocfilehash: da06c02620272deb0648e0706f73d92540385e3b
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
-ms.translationtype: HT
+ms.openlocfilehash: 4963b60fb7560bb52bd05f0c3b4abc55bb78e966
+ms.sourcegitcommit: 24887643bd3e1b3749ce325dc0ae407432d7fee4
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96388810"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100490032"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-ios-devices"></a>Introduktion til Power BI-mobilappen på iOS-enheder
 Microsoft Power BI til iOS-appen på iPhone eller iPad leverer BI-mobiloplevelsen til Power BI, Power BI-rapportserver og Reporting Services. Få vist og interager med dit firmas dashboards lokalt og i skyen overalt – med direkte, berøringsfølsom mobiladgang. Udforsk data i dashboards, og del dem med dine kollegaer i mails eller sms-beskeder. Og hold dig ajour med dine mest tidsfølsomme data på dit [Apple Watch](mobile-apple-watch.md).  
@@ -32,7 +32,7 @@ Find ud af, [hvad der er nyt i Power BI-mobilappene](mobile-whats-new-in-the-mob
 ## <a name="download-the-app"></a>Download appen
 [Download iOS-appen](https://go.microsoft.com/fwlink/?LinkId=522062 "Download iOS-appen") fra Apple App Store på din iPhone eller iPad.
 
-Du kan køre Power BI-mobilappen til iOS på alle enheder, der kører iOS 11 eller nyere. 
+Du kan køre den Power BI mobilapps til iOS på en hvilken som helst enhed, der kører iOS 12,2 eller nyere. 
 
 ## <a name="sign-up-for-the-power-bi-service"></a>Tilmeld dig Power BI-tjenesten
 Hvis du ikke allerede har tilmeldt dig, kan du gå til [powerbi.com](https://powerbi.microsoft.com/get-started/). Under **Power BI – Cloudsamarbejde og -deling** skal du vælge **Prøv gratis**.

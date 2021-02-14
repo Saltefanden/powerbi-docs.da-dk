@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 11/23/2020
-ms.openlocfilehash: 0852fcb2c932680f6c20aeee94a89c68f473e46d
-ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
-ms.translationtype: HT
+ms.openlocfilehash: 2ecb47513ada6ab2f4b81d5e26a1ca41717b7676
+ms.sourcegitcommit: 24887643bd3e1b3749ce325dc0ae407432d7fee4
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98565716"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100490009"
 ---
 # <a name="automated-configuration-of-a-template-app-installation"></a>Automatiseret konfiguration af installationen af et skabelonprogram
 
@@ -61,6 +61,7 @@ Følgende forudsætninger er påkrævet for at levere en forudkonfigureret insta
 * En **parameteriseret skabelonapp**, der er klar til installation. Skabelonappen skal være oprettet i den samme lejer, som du registrerer programmet i Azure Active Directory i. Se [Tip til skabelonapp](../../connect-data/service-template-apps-tips.md) eller [Opret en skabelonapp i Power BI](../../connect-data/service-template-apps-create.md) for at få flere oplysninger. Fra skabelonappen skal du notere følgende oplysninger til de næste trin:
      * *App-id*, *pakkenøgle* og *ejer-id*, som de vises i URL-adressen til installation i slutningen af processen med at [definere egenskaber for skabelonappen](../../connect-data/service-template-apps-create.md#define-the-properties-of-the-template-app), da appen blev oprettet. Du kan også få det samme link ved at vælge **Hent link** i [Udgivelsesadministration](../../connect-data/service-template-apps-create.md#manage-the-template-app-release) for skabelonappen.
     * *Parameternavne*, som defineret i datasættet for skabelonappen. Der skelnes mellem store og små bogstaver i parameternavne, og de kan også hentes via fanen **Parameterindstillinger**, når du [definerer egenskaberne for skabelonappen](../../connect-data/service-template-apps-create.md#define-the-properties-of-the-template-app), eller fra indstillingerne for datasæt i Power BI.
+* Hvis du vil teste dit arbejdsforløb til automatisering, skal du føje tjeneste principalen til arbejdsområdet skabelon app som administrator.
 
     >[!NOTE]
     >Du kan teste det forudkonfigurerede installationsprogram for din skabelonapp, hvis skabelonappen er klar til installation, selvom den endnu ikke er offentligt tilgængelig på AppSource. Men før brugere uden for din lejer kan bruge det automatiserede installationsprogram til at installere din skabelonapp, skal skabelonappen være offentligt tilgængelig på [markedspladsen til Power BI-programmer](https://app.powerbi.com/getdata/services). Før du distribuerer skabelonappen ved hjælp af det automatiserede installationsprogram, du opretter, skal du sørge for at publicere det i [Partnercenter](/azure/marketplace/partner-center-portal/create-power-bi-app-offer).

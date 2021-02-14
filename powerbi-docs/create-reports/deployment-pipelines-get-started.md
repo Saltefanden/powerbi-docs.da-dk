@@ -7,13 +7,13 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: pbi-deployment
 ms.custom: contperf-fy21q1
-ms.date: 11/11/2020
-ms.openlocfilehash: 9d0c10b80aeb1bf4745bb8a646933bcfea9bafc6
-ms.sourcegitcommit: 7bf09116163afaae312eb2b232eb7967baee2c92
-ms.translationtype: HT
+ms.date: 02/09/2021
+ms.openlocfilehash: 53e6e7401caff5b4334af67f5de54a3669214851
+ms.sourcegitcommit: 24887643bd3e1b3749ce325dc0ae407432d7fee4
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97621205"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100489986"
 ---
 # <a name="get-started-with-deployment-pipelines"></a>Kom i gang med udrulningspipelines
 
@@ -143,6 +143,8 @@ Regler for datasæt er defineret for datakilder og parametre i hvert datasæt. D
 
 ### <a name="create-a-dataset-rule"></a>Opret en datasætregel
 
+Hvis du vil oprette en DataSet-regel, skal du følge trinnene i dette afsnit. Når du har oprettet alle de regler for datasæt, du har brug for, skal du installere datasættene med de regler, der netop er blevet oprettet, fra kilde stadiet til det destinations trin, hvor reglerne blev oprettet. Reglerne gælder ikke, før du installerer datasæt fra kilden til destinations fasen.
+
 1. I den pipelinefase, du vil oprette en datasætregel for, skal du vælge **Udrulningsindstillinger**.
 
     ![Et skærmbillede af knappen Indstillinger for installation, der er placeret øverst til højre i hvert trin i udrulningsspipelinen.](media/deployment-pipelines-get-started/deployment-settings.png)
@@ -222,6 +224,8 @@ Når to sekventielle faser ikke er ens, vises der et link til **sammenligningen*
 * **Nyt** – et nyt element i kildefasen. Dette er et element, der ikke findes i destinationsfasen. Efter udrulningen klones dette element til destinationsfasen.
 
 * **Forskelligt** – et element, der findes både i kilde- og i destinationsfasen, hvor en af versionerne blev ændret efter den seneste udrulning. Efter udrulningen overskriver elementet i kildefasen elementet i destinationsfasen, uanset hvor ændringen blev udført.
+
+    Datasæt med konfigurerede regler for datasæt, der ikke er blevet udrullet, er også markeret som *forskellige*. Dette skyldes, at der ikke anvendes regler for datasæt, før datasæt installeres fra kilde stadiet til det destinations trin, der inkluderer de konfigurerede regler.
 
 * **Mangler i** – dette mærkat angiver, at et element vises i destinationsfasen, men ikke i kildefasen.
 

@@ -10,12 +10,12 @@ ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 05/08/2019
 LocalizationGroup: Data from files
-ms.openlocfilehash: 7807968bad989895fa60df122c0e31ba4b823aa2
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
-ms.translationtype: HT
+ms.openlocfilehash: 2ed532986dd31e97e535f27d70c9f5cfd8c66fd5
+ms.sourcegitcommit: 24887643bd3e1b3749ce325dc0ae407432d7fee4
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96410154"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100489871"
 ---
 # <a name="get-data-from-files-for-power-bi"></a>Hent data fra filer til Power BI
 ![Ikon for Excel, Power BI Desktop og CSV](media/service-get-data-from-files/file_icons.png)
@@ -43,7 +43,7 @@ Vi kan også tage det ét trin videre. En brændstofbeholder i en bil skal fylde
 ## <a name="where-your-file-is-saved-makes-a-difference"></a>Det gør en forskel, hvor din fil gemmes
 **Lokalt** – Hvis du gemmer din fil på et lokalt drev på din computer eller en anden placering i din organisation fra Power BI, kan du *importere* filen til Power BI. Filen forbliver på den lokale harddisk, så det er ikke hele filen, der importeres til Power BI. Der sker det, at et nyt datasæt oprettes på dit Power BI-websted, og data, og i nogle tilfælde datamodellen, indlæses i datasættet. Hvis filen indeholder rapporter, vises de på Power BI-webstedet under Rapporter.
 
-**OneDrive – Business** – Hvis du har OneDrive for Business, og du logger på med den samme konto, som du bruger til at logge på Power BI, er det den klart mest effektive måde at holde dit arbejde i Excel, Power BI Desktop eller en .CSV-fil og dine datasæt, rapporter og dashboards i Power BI synkroniseret. Da både Power BI og OneDrive findes i skyen, opretter Power BI forbindelse til din fil på OneDrive ca. hver time. Hvis der findes ændringer, opdateres datasættet, rapporter og dashboards automatisk i Power BI.
+**Onedrive – erhverv** – hvis du har OneDrive for Business, og du logger på med den samme konto, som du bruger til at logge på Power bi med, er det yderst den mest effektive måde at bevare dit arbejde i Excel, Power bi desktop eller a. CSV-filen og dit datasæt, rapporter og dashboards i Power BI i synkronisering. Da både Power BI og OneDrive findes i skyen, kan Power BI oprette forbindelse til din fil på OneDrive ca. hver time. Hvis der findes ændringer, opdateres datasættet, rapporter og dashboards automatisk i Power BI.
 
 **OneDrive – personlig** – Hvis du gemmer dine filer på din egen OneDrive-konto, får du mange af de samme fordele som med OneDrive for Business. Den største forskel er, at når du første gang opretter forbindelse til din fil (med funktionen Hent data > Filer > OneDrive - personlig), skal du logge på OneDrive med din Microsoft-konto, som normalt er forskellig fra, hvad du bruger til at logge på Power BI. Når du logger på med OneDrive med din Microsoft-konto, skal du sørge for at vælge indstillingen Forbliv logget på. På denne måde kan Power BI oprette forbindelse til din fil ca. hver time og sikre, at dit datasæt i Power BI er synkroniseret.
 

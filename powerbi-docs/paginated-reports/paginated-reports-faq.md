@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 02/09/2021
-ms.openlocfilehash: d8460fe1a3eb199848f47181837225f1e540bb08
-ms.sourcegitcommit: de3b45cad5ae21c77692ce4490e21de01d21e6f3
+ms.openlocfilehash: 788f6cbd840b2c260b00033e27d39f56ed7ce964
+ms.sourcegitcommit: 24887643bd3e1b3749ce325dc0ae407432d7fee4
 ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100013630"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100489825"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Sideinddelte rapporter i Power BI: Ofte stillede spørgsmål 
 
@@ -30,7 +30,7 @@ I denne artikel finde du svar på mange almindelige spørgsmål, som folk har om
 Arbejdsbelastningen for sideinddelte rapporter er tilgængelig på P1-P3 SKU'er.  Du kan også bruge den med A4 – A6 SKU'er til integrerings- eller test/dev-scenarier.
 
 > [!NOTE]
-> Power BI har for nylig udgivet en ny version af Premium, der kaldes **Premium Gen2**, som i øjeblikket er tilgængelig som prøveversion. I **Premium Gen2** er sideinddelte rapporters arbejdsbelastning tilgængelig på P1-efter-SKU'er og a1-A6-SKU'er. 
+> Power BI har for nylig udgivet en ny version af Premium, der kaldes **Premium Gen2**, som i øjeblikket er tilgængelig som prøveversion. I **Premium Gen2** er sideinddelte rapporters arbejdsbelastning tilgængelig på EM1-EM3-SKU'er, P1-og-varenumre og a1-A6-SKU'er.  Det er også tilgængeligt pr. bruger til Premium pr. bruger, som er bygget på Premium-Gen2 og også i offentlig prøveversion. 
 >
 >Premium Gen2 forenkler administrationen af Premium-kapaciteter og reducerer belastningen i administrationen. Du kan finde flere oplysninger under [Power BI Premium – Generation 2 (prøveversion)](../admin/service-premium-what-is.md#power-bi-premium-generation-2-preview).
 >

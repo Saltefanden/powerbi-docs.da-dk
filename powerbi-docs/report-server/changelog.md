@@ -7,13 +7,13 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 02/01/2021
-ms.openlocfilehash: 6742b915cf4418cd0f9f735eaffea8da1d010e79
-ms.sourcegitcommit: 2e81649476d5cb97701f779267be59e393460097
+ms.date: 02/11/2021
+ms.openlocfilehash: edbb742cfb9d19e47c50ed7c43fa3ba4ba36f779
+ms.sourcegitcommit: 24887643bd3e1b3749ce325dc0ae407432d7fee4
 ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99422369"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100489848"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Ændringslog for Power BI-rapportserver
 
@@ -24,7 +24,7 @@ Se [Nyheder i Power BI-rapportserver](whats-new.md) for at få flere oplysninger
 
 ## <a name="january-2021"></a>Januar 2021
 - **Power BI-rapportserver**
-    - *Version: 1.10.7698.12811 (build 15.0.1105.194), udgivet: 21. januar 2021*
+    - *Version: 1.10.7698.27886 (build 15.0.1105.195), udgivet: 21. januar 2021*
         - Funktioner
             - Nye ikoner, der releate til Power BI og Power BI rapporter.
             - Brugerdefineret Visual API blev leveret med version-version 3.5.0

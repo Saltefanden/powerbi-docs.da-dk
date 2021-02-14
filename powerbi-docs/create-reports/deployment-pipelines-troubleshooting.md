@@ -6,13 +6,13 @@ ms.author: kesharab
 ms.topic: troubleshooting
 ms.service: powerbi
 ms.subservice: pbi-deployment
-ms.date: 11/11/2020
-ms.openlocfilehash: 3787f1cb61262f9f1fa64e04487c7d6395b4e549
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
-ms.translationtype: HT
+ms.date: 02/09/2021
+ms.openlocfilehash: f502649c08a71dc1cc602f0f69f4134a10a5a879
+ms.sourcegitcommit: 24887643bd3e1b3749ce325dc0ae407432d7fee4
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96417629"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100489894"
 ---
 # <a name="deployment-pipelines-troubleshooting"></a>Fejlfinding af udrulningspipelines
 
@@ -146,6 +146,10 @@ Når du har oprettet pipelinen, kan du bruge udviklingsfasen til at udvikle dit 
 
 >[!NOTE]
 >Udrulning bagud understøtter kun [fuld udrulning](deployment-pipelines-get-started.md#deploying-all-content). [Selektiv udrulning](deployment-pipelines-get-started.md#selective-deployment) understøttes ikke
+
+### <a name="why-do-i-need-to-deploy-after-configuring-dataset-rules"></a>Hvorfor skal jeg installere, når jeg har konfigureret regler for datasæt?
+
+Regler for datasæt anvendes ikke med det samme, når de er konfigureret. Hvis du vil anvende regler for datasæt, skal du installere datasættene fra kilde stadiet til det destinations stadie, der indeholder de oprettede regler for datasæt. Når reglerne for datasæt er konfigureret, og før du installerer, vises den *anden* indikator ud for datasættet med de konfigurerede regler. Det betyder, at du skal installere dette datasæt fra kilde stadiet til destinations fasen. Når du har implementeret, og der ikke er foretaget andre ændringer, forsvinder den *anden* indikator, hvilket betyder, at reglerne blev anvendt korrekt.
 
 ### <a name="does-deployment-pipelines-support-multi-geo"></a>Understøtter udrulningspipelines flere geografiske områder?
 

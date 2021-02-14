@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 10/13/2020
+ms.date: 02/10/2021
 LocalizationGroup: Data from files
-ms.openlocfilehash: b984c0f6ebee6cdcc9982956701f3a112be74ab7
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
-ms.translationtype: HT
+ms.openlocfilehash: cf63c16822e04e160da2765ae0be20bd707e89da
+ms.sourcegitcommit: 24887643bd3e1b3749ce325dc0ae407432d7fee4
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96413190"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100489926"
 ---
 # <a name="tutorial-from-excel-workbook-to-stunning-report-in-power-bi-desktop"></a>Selvstudium: Fra Excel-projektmappe til imponerende rapport i Power BI Desktop
 
@@ -120,7 +120,9 @@ Skrivning af *målinger* i formelsproget *DAX* er et meget effektivt middel til 
 
 1. Indtast denne måling for at generere en kalendertabel med alle datoer mellem den 1. januar 2013 og den 31. december 2014.  
 
-    `Calendar = CALENDAR(DATE(2013,01,01),Date(2014,12,31))` 
+    ```dax
+    Calendar = CALENDAR(DATE(2013,01,01),Date(2014,12,31))    
+    ```
 
 2. Vælg markeringen for at bekræfte.
 
@@ -207,9 +209,23 @@ Opret et liggende søjlediagram for at bestemme, hvilke virksomheder og segmente
 
 ### <a name="visual-5-year-slicer"></a>Visualisering 5: Årsudsnit 
 
-Udsnit er et værdifuldt værktøj til filtrering af visualiseringer på en rapportside til en bestemt markering. I dette tilfælde kan vi oprette et udsnit for at fokusere på resultaterne for hver måned og hvert år.  
+Udsnit er et værdifuldt værktøj til filtrering af visualiseringer på en rapportside til en bestemt markering. I dette tilfælde kan vi oprette to forskellige udsnit for at begrænse ydeevnen for hver måned og hvert år. Et udsnitsværktøj bruger datofeltet i den oprindelige tabel. Den anden bruger den [datotabel, du kan have oprettet til "ekstra kredit"](#extra-credit-write-a-measure-in-dax) tidligere i dette selvstudium.
 
-1. I ruden Felter skal du vælge feltet **Dato** og trække det til det tomme område til venstre på lærredet. 
+
+**Dato udsnit med den oprindelige tabel**
+
+1. I ruden felter skal du vælge feltet **dato** i tabellen Finans. Træk den til det tomme område til venstre på lærredet. 
+2. I ruden Visualiseringer skal du vælge **Udsnit**. 
+
+    Power BI opretter automatisk et udsnit med numerisk område. 
+
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-date-numeric-range.png" alt-text="Skærmbillede af udsnitsværktøjet til dato numerisk område.":::
+
+1. Du kan trække enderne for at filtrere, eller du kan vælge pilen i øverste højre hjørne og ændre den til en anden type udsnit.
+
+**Dato udsnit med DAX-tabellen**
+
+1. I ruden felter skal du vælge feltet **dato** i tabellen kalender. Træk den til det tomme område til venstre på lærredet. 
 2. I ruden Visualiseringer skal du vælge **Udsnit**. 
 3. I afsnittet Felter i ruden Visualiseringer skal du vælge rullelisten i **Felter**. Fjern Kvartal og Dag, så kun År og Måned er tilbage. 
 
@@ -219,7 +235,9 @@ Udsnit er et værdifuldt værktøj til filtrering af visualiseringer på en rapp
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-hierarchy-date-slicer.png" alt-text="Skærmbillede af udsnit af datohierarki.":::
 
-Hvis din chef beder om kun at se data fra 2013, kan du bruge udsnittet til at skifte mellem år eller bestemte måneder i hvert år. 
+    Dette er det udsnit, vi bruger i den færdige rapport.
+
+Hvis din leder f. eks. beder om kun 2013 data, kan du bruge et udsnit til at vælge år eller bestemte måneder i hvert år.
 
 ### <a name="extra-credit-format-the-report"></a>Ekstra kredit: Formatér rapporten
 
