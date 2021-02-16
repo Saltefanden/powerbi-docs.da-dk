@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 01/14/2021
-ms.openlocfilehash: b37182cbdf030e8b32fdfe307d0a652fef678b9b
-ms.sourcegitcommit: c33e53e1fab1f29872297524a7b4f5af6c806798
+ms.date: 02/15/2021
+ms.openlocfilehash: 0c6686b667f96e45fc1e21d4cb9512196053f288
+ms.sourcegitcommit: 00e3eb2ec4f18d48a73cfd020bb42d08e859ad06
 ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99533021"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100531947"
 ---
 # <a name="capacity-and-skus-in-power-bi-embedded-analytics"></a>Kapacitet og SKU'er i integrerede Power BI-analyser
 
@@ -148,7 +148,7 @@ I nedenstående tabel beskrives ressourcerne og begrænsningerne for hver SKU.
 
 #### <a name="embedded-gen-2-memory-enhancements-preview"></a>Forbedret hukommelse i op til 2 (eksempelvisning)
 
-Med [Power bi Embedded generation 2](power-bi-embedded-generation-2.md) (også kaldet Embedded gen 2) er den mængde hukommelse, der er tilgængelig på hver node størrelse, angivet til grænsen for hukommelsesforbrug for et enkelt Power bi element (f. eks. en rapport eller et dashboard) og ikke det akkumulerede forbrug af hukommelse. I en integreret Gen2 A4-kapacitet er det f. eks. begrænset til 25 GB i forhold til den oprindelige Power BI Embedded kapacitet, hvor det samlede hukommelsesforbrug for de datasæt, der håndteres på samme tid, begrænset til 25 GB.
+Den mængde hukommelse, der er tilgængelig på hver node størrelse, er beskrevet i kolonnen *RAM (GB)* i [SKU-hukommelsen og computer Power-](#sku-memory-and-computing-power) tabellen. Med [Power bi Embedded generation 2](power-bi-embedded-generation-2.md) (også kaldet Embedded gen 2) er denne mængde hukommelse angivet til hukommelses forbrugsgrænsen for et enkelt Power bi element (f. eks. et datasæt, en rapport eller et dashboard) og ikke det akkumulerede forbrug af hukommelse. I en integreret Gen2 A4-kapacitet er det f. eks. begrænset til 25 GB i forhold til den oprindelige Power BI Embedded kapacitet, hvor det samlede hukommelsesforbrug for de datasæt, der håndteres på samme tid, begrænset til 25 GB.
 
 ## <a name="next-steps"></a>Næste trin
 

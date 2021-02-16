@@ -59,8 +59,6 @@
               href: desktop-ribbon.md
             - name: Arbejd med rapportvisning
               href: desktop-report-view.md
-            - name: Filtertyper i rapporter
-              href: power-bi-report-filter-types.md
             - name: Filtre og fremhævninger i rapporter
               href: power-bi-reports-filters-and-highlighting.md
             - name: Stikprøvetagning i forbindelse med højdensitetslinje
@@ -142,6 +140,26 @@
               href: desktop-tooltips.md
             - name: Eksportér rapporter til PDF-filer
               href: desktop-export-to-pdf.md
+            - name: Filtre og udsnitsværktøjer i rapporter
+              items:
+                - name: Tilføj et filter i en rapport
+                  href: power-bi-report-add-filter.md
+                - name: Formatér filtre i rapporter
+                  href: power-bi-report-filter.md
+                - name: Filtertyper i rapporter
+                  href: power-bi-report-filter-types.md
+                - name: Udsnit
+                  href: ../visuals/power-bi-visualization-slicers.md
+                - name: Udsnitsværktøjer til numerisk område
+                  href: desktop-slicer-numeric-range.md
+                - name: Relative datoudsnitsværktøjer og -filtre
+                  href: ../visuals/desktop-slicer-filter-date-range.md
+                - name: Relative klokkeslætsværktøjer og -filtre
+                  href: slicer-filter-relative-time.md
+                - name: 'Opret et udsnit, du kan tilpasse størrelsen på'
+                  href: power-bi-slicer-filter-responsive.md
+                - name: Føj flere felter til et udsnitsværktøj
+                  href: power-bi-slicer-hierarchy-multiple-fields.md
             - name: Anvend indsigt til at forklare udsving i visualiseringer (eksempelvisning)
               href: desktop-insights.md
             - name: 'Brug indsigt til at se, hvordan distributioner varierer (eksempelvisning)'
@@ -158,10 +176,6 @@
               href: desktop-bookmarks.md
             - name: Arbejd med rapporttemaer
               href: desktop-report-themes.md
-            - name: Arbejd med filtre i rapporter
-              href: power-bi-report-filter.md
-            - name: Tilføj et filter i en rapport
-              href: power-bi-report-add-filter.md
             - name: Anvend gruppering
               href: desktop-grouping-and-binning.md
             - name: Anvend gitterlinjer og fastgørelse til gitter
@@ -174,18 +188,6 @@
               href: desktop-add-custom-column.md
             - name: Brug integrerede hierarkimærkater
               href: desktop-inline-hierarchy-labels.md
-            - name: Udsnit
-              href: ../visuals/power-bi-visualization-slicers.md
-            - name: Udsnitsværktøjer til numerisk område
-              href: desktop-slicer-numeric-range.md
-            - name: Relative datoudsnitsværktøjer og -filtre
-              href: ../visuals/desktop-slicer-filter-date-range.md
-            - name: Relative klokkeslætsværktøjer og -filtre
-              href: slicer-filter-relative-time.md
-            - name: 'Opret et udsnit, du kan tilpasse størrelsen på'
-              href: power-bi-slicer-filter-responsive.md
-            - name: Føj flere felter til et udsnitsværktøj
-              href: power-bi-slicer-hierarchy-multiple-fields.md
             - name: Begræns dataadgang med sikkerhed på rækkeniveau
               href: desktop-rls.md
             - name: Tilpas værktøjstips

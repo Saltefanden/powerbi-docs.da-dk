@@ -9,12 +9,12 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 03/12/2020
 LocalizationGroup: Create reports
-ms.openlocfilehash: cec22acab7cc44b96f3137df04777671964707a8
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
-ms.translationtype: HT
+ms.openlocfilehash: 134bce772ff9375e179efe966dfd69c9d257c8f0
+ms.sourcegitcommit: 00e3eb2ec4f18d48a73cfd020bb42d08e859ad06
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96414225"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100531303"
 ---
 # <a name="set-up-drill-through-in-power-bi-reports"></a>Konfigurer detaljeadgang i Power BI-rapporter
 Med *detaljeadgang* i Power BI-rapporter kan du oprette en side i rapporten, som fokuserer på et bestemt objekt, f.eks. en leverandør, en kunde eller en producent. Når dine rapportlæsere bruger detaljeadgang, højreklikker de på et datapunkt på andre rapportsider og går videre ned til siden med fokus for at få de oplysninger, der er filtreret i forhold til konteksten. Du kan også [oprette en knap, der giver adgang](desktop-drill-through-buttons.md) til detaljer, når de klikker på den.
@@ -37,7 +37,7 @@ Du kan konfigurere detaljeadgang i dine rapporter i Power BI Desktop eller i Pow
     ![Billede til detaljeadgang](media/desktop-drillthrough/drillthrough_03.png)
 
 > [!IMPORTANT]
-> Du kan konfigurere og udføre detaljeadgang på en side i den pågældende rapport, du kan dog ikke udføre detaljeadgang på en side i en anden rapport.  
+> Du kan konfigurere og udføre detailudledning til en side i den samme rapport, men du kan ikke få detaljeadgang til en side i en anden rapport.  
 
 
 

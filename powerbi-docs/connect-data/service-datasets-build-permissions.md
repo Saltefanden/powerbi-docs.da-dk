@@ -7,20 +7,20 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 10/21/2020
+ms.date: 02/12/2021
 LocalizationGroup: Share your work
-ms.openlocfilehash: 914477d8b4bed0b6f90f700afcbfdfbfc263bb1d
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
-ms.translationtype: HT
+ms.openlocfilehash: b646237bddeaae8b73ef809504ab3aea2257c0e6
+ms.sourcegitcommit: 00e3eb2ec4f18d48a73cfd020bb42d08e859ad06
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96410453"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100531464"
 ---
 # <a name="build-permission-for-shared-datasets"></a>Opret tilladelse til delte datasæt
 
 Når du opretter en rapport i Power BI Desktop, gemmes dataene i den pågældende rapport i en *datamodel*. Når du publicerer dine rapporter i Power BI-tjenesten, publicerer du også dataene som et *datasæt*. Du kan give andre *tilladelsen Opret* for den pågældende rapport, så de kan finde og genbruge det datasæt, du har delt. I denne artikel forklares det, hvordan du styrer adgang til dataene ved hjælp af tilladelsen Opret.
 
-Tilladelsen Opret anvendes på datasæt. Når du giver brugerne tilladelsen Opret, kan de oprette nyt indhold i dit datasæt, f.eks. rapporter, dashboards, fastgjorte felter fra Spørgsmål og svar samt Søgning efter indsigt. 
+Tilladelsen Opret anvendes på datasæt. Når du giver brugerne Build-tilladelse, kan de oprette nyt indhold i dit datasæt, f. eks. rapporter, dashboards, fastgjorte felter fra Q&A, sideinddelte rapporter og registrering af indsigter. 
 
 Brugerne skal også have tilladelsen Opret for at kunne arbejde med data *uden for* Power BI:
 

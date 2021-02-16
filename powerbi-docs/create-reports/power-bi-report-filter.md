@@ -1,30 +1,30 @@
 ---
-title: Design filtre i Power BI-rapporter
-description: Du har god kontrol over rapportfilterets design og funktionalitet.
+title: Formatér filtre i Power BI rapporter
+description: Du har meget kontrol over rapportfilter format, design og funktionalitet.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/11/2020
+ms.date: 02/08/2021
 LocalizationGroup: Reports
-ms.openlocfilehash: 2ddefcfa7a9381cf6d45466d5115045ea4274a16
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
-ms.translationtype: HT
+ms.openlocfilehash: 6b509576a3fe76e3565f9c0c354155957d7ad069
+ms.sourcegitcommit: 00e3eb2ec4f18d48a73cfd020bb42d08e859ad06
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96415168"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100531648"
 ---
-# <a name="design-filters-in-power-bi-reports"></a>Design filtre i Power BI-rapporter
+# <a name="format-filters-in-power-bi-reports"></a>Formatér filtre i Power BI rapporter
 
 [!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)] [!INCLUDE [yes-service](../includes/yes-service.md)]
 
-Med den nye filteroplevelse har du god kontrol over rapportfilterets design og funktionalitet. Du kan formatere filtreringsruden, så den ser ud som resten af rapporten. Du kan låse og endda skjule filtre. Når du designer din rapport, kan du slet ikke længere se den gamle filtreringsrude i ruden Visualiseringer. Du kan udføre al redigering og formatering af dine filtre i en enkelt filtreringsrude. 
+Du har god kontrol over rapportfilterets design og funktionalitet. I denne artikel forklares det, hvordan du kan formatere ruden filtre, så det ser ud som resten af rapporten. Du kan låse og endda skjule filtre.
 
 ![Filteroplevelsen](media/power-bi-report-filter/power-bi-filter-new-look.png)
 
-Her er nogle af de opgaver, som du som rapportdesigner kan udføre i den nye Filterrude:
+Det første trin er at [føje filtre til din rapport](power-bi-report-add-filter.md). Som Rapportdesigner er der mange måder, hvorpå du kan formatere ruden filtre:
 
 - Tilføj og fjern felter, der kan filtreres efter. 
 - Rediger filtertilstanden.
@@ -38,50 +38,33 @@ Når forbrugerne læser en rapport, kan de pege på en hvilken som helst visuali
 
 ![Liste over filtre for en visualisering](media/power-bi-report-filter/power-bi-filter-visual.png)
 
-Læs om, [hvordan læsere af rapporten bruger filtre](../consumer/end-user-report-filter.md) i din rapport.
-
-## <a name="view-filters-for-a-visual-in-reading-mode"></a>Vis filtre for en visualisering i Læsetilstand
-
-I Læsetilstand kan du holde markøren over filterikonet for en visualisering og se en pop op-filterliste med alle de filtre, udsnitsværktøjer m.m., der påvirker denne visualisering. Formateringen af pop op-filterlisten er den samme som formateringen af filtreringsruden.
-
-![Filtre, der påvirker en visualisering](media/power-bi-report-filter/power-bi-filter-per-visual.png)
-
-Her er de filtertyper, der vises i denne visning:
-
-- Grundlæggende filtre
-- Udsnit
-- Tværgående fremhævning 
-- Tværgående filtrering
-- Avancerede filtre
-- Top N-filtre
-- Filtre for Relativ dato
-- Udsnitsværktøjer til synkronisering
-- Filtre for Inkluder/Ekskluder
-- Filtre sendt via en URL-adresse
-
-Læs mere om [interaktion med filtre i læsetilstand](../consumer/end-user-report-filter.md).
+Læs om, [hvordan rapport læsere bruger filtre](../consumer/end-user-report-filter.md) i læsetilstand i rapporter.
 
 ## <a name="build-the-filters-pane"></a>Opbyg filtreringsruden
 
-Efter du har aktiveret den nye filtreringsrude, kan du se den til højre for den rapportside, der som standard er formateret på baggrund af de aktuelle rapportindstillinger. I filtreringsruden konfigurerer du, hvilke filtre du vil inkludere, og opdaterer eksisterende filtre. Filtreringsruden ser ud på samme måde for forbrugerne af din rapport, når du publicerer rapporten. 
+Ruden filtre er som standard formateret på baggrund af de aktuelle rapportindstillinger. I filtreringsruden konfigurerer du, hvilke filtre du vil inkludere, og opdaterer eksisterende filtre. Ruden filtre ser ens ud for dine rapport forbrugere, når du publicerer rapporten. 
 
-1. Dine rapportforbrugere kan som standard se filtreringsruden. Hvis de ikke skal kunne se den, skal du vælge ikonet med øjet ud for **Filtre**.
+1. Når du føjer en visualisering til et rapportlærred, tilføjer Power BI automatisk et filter i filtreringsruden for hvert felt i visualiseringen.
 
-    ![Ikon med øje for Power BI-filter](media/power-bi-report-filter/power-bi-filter-eye-icon.png)
+2. Hvis du vil oprette ruden filtre, skal du trække andre interessante felter til ruden filtre, enten som filtre for visualisering, side eller rapport niveau.
 
-2. Du begynder at bygge din filtreringsrude ved at trække de ønskede felter til filtreringsruden enten som en visualisering, en side eller som filtre på rapporteringsniveau.
+## <a name="show-or-hide-the-filters-pane"></a>Vis eller Skjul ruden filtre
 
-Når du føjer en visualisering til et rapportlærred, tilføjer Power BI automatisk et filter i filtreringsruden for hvert felt i visualiseringen. 
+### <a name="hide-the-filters-pane-in-reading-mode"></a>Skjul ruden filtre i læsetilstand
 
-## <a name="hide-the-filters-pane-while-editing"></a>Skjul ruden Filtre, mens du redigerer
+Hvis du ikke ønsker, at dine rapport læsere skal se ruden filtre, skal du vælge ikonet med **øjet** ud for **filtre**.
 
-Power BI Desktop har fået et nyt bånd, der er tilgængeligt som prøveversion. Med til/fra-knappen **Filtre** under fanen **Vis** kan du få vist eller skjule ruden Filtre. Denne funktion er nyttig, når du ikke bruger ruden Filtre og har brug for ekstra plads på skærmen. Denne tilføjelse justerer ruden Filtre med de andre ruder, som du kan åbne og lukke, f. eks. ruderne Bogmærker og Valg. 
+![Ikonet med øjet](media/power-bi-report-filter/power-bi-filter-eye.png) 
+
+### <a name="hide-the-filters-pane-while-editing"></a>Skjul ruden Filtre, mens du redigerer
+
+Du kan skjule ruden filtre, mens du redigerer din rapport, når du ikke bruger ruden filtre, og du har brug for ekstra plads på skærmen. 
+
+- På fanen **View** kan du bruge knappen **filtre** til at få vist eller skjule ruden filtre.
 
 ![Vis eller skjul ruden Filtre under redigering](media/power-bi-report-filter/power-bi-filter-hide.png)
 
-Denne indstilling skjuler kun ruden filtre i Power BI Desktop. Hvis du vil skjule ruden Filtre for dine slutbrugere, skal du i stedet vælge **øje**-ikonet ud for **Filtre**.
-
-![Ikonet med øjet](media/power-bi-report-filter/power-bi-filter-eye.png) 
+Denne indstilling skjuler kun ruden filtre i Power BI Desktop. Der er ingen tilsvarende i redigeringstilstand i Power BI-tjeneste.
 
 ## <a name="lock-or-hide-filters"></a>Lås eller skjul filtre
 
@@ -205,7 +188,7 @@ Brugerdefinerede sorteringsfunktioner er tilgængelige i filtreringsruden. Når 
 
 ![Omarranger sorteringsrækkefølge for filtre](media/power-bi-report-filter/power-bi-filter-sort.gif)
 
-Standardsorteringsrækkefølgen er alfabetisk for filtre. Hvis du vil starte en brugerdefineret sorteringstilstand, skal du bare trække et filter til en ny placering. Du kan kun sortere filtre inden for det niveau, som de gælder for – f.eks. et filter på visualiseringsniveau, sideniveau eller rapportniveau.
+Standardsorteringsrækkefølgen er alfabetisk for filtre. Hvis du vil starte en brugerdefineret sorteringstilstand, skal du bare trække et filter til en ny placering. Du kan kun omarrangere filtre på det niveau, de gælder for. Du kan f. eks. ændre rækkefølgen af filtrene på visualiserings niveau i afsnittet visualiserings niveau i ruden filtre.
 
 ## <a name="improved-filters-pane-accessibility"></a>Forbedret tilgængelighed i filtreringsruden
 
@@ -275,7 +258,7 @@ Du kan i øjeblikket styre en del af formateringen af teksten **Anvend** til kna
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 
-Ruden Filtre vises ikke i Publicer på internettet. Hvis du planlægger at udgive en rapport på internettet, skal du overveje at tilføje udsnit til filtrering.
+Ruden Filtre vises ikke i Publicer på internettet. Hvis du planlægger at udgive en rapport på internettet, kan du overveje at tilføje udsnit til filtrering i stedet for.
 
 ## <a name="next-steps"></a>Næste trin
 
