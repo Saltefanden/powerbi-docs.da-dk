@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 12/14/2020
-ms.openlocfilehash: f9a3558bd83f9c2e263d69ad37c3e985c2c6199a
-ms.sourcegitcommit: 96080432af4c8e3fe46c23274478ccffa0970efb
-ms.translationtype: HT
+ms.openlocfilehash: 4a7156259dbc1273ab14ce4e44d91b54794736e0
+ms.sourcegitcommit: bae5e9a37772360d0aae8624905d5f33951a187f
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98597591"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100560984"
 ---
 # <a name="what-are-power-bi-template-apps"></a>Hvad er Power BI-skabelonprogrammer?
 
@@ -23,11 +23,11 @@ Som Power BI-partner kan du oprette indhold, der er klar til brug, for dine kund
 
 Du kan udarbejde skabelonprogrammer, som gør det muligt for dine kunder at oprette forbindelse til og instantiere fra deres egne konti. Som domæneeksperter kan de låse op for data på en måde, så deres virksomhedsbrugere nemt kan bruge dem.  
 
-Du sender skabelonprogrammer til Partnercenter. Programmerne bliver derefter offentligt tilgængelige på [markedspladsen til Power BI-programmer](https://app.powerbi.com/getdata/services) og på [Microsoft AppSource](https://appsource.microsoft.com/?product=power-bi). Her er en overordnet oversigt over oplevelsen med at oprette en offentlig skabelon.
+Du sender skabelonprogrammer til Partnercenter. Programmerne bliver derefter offentligt tilgængelige på [markedspladsen til Power BI-programmer](https://app.powerbi.com/groups/me/getapps/apps) og på [Microsoft AppSource](https://appsource.microsoft.com/?product=power-bi). Her er en overordnet oversigt over oplevelsen med at oprette en offentlig skabelon.
 
 ## <a name="power-bi-apps-marketplace"></a>Markedsplads til Power BI-programmer
 
-Med Power BI-skabelonprogrammer kan brugere af Power BI Pro eller Power BI Premium få øjeblikkelig indsigt via dashboards og rapporter, der er pakket på forhånd, og som kan forbindes til livedatakilder. Mange Power BI-programmer er allerede tilgængelige på [markedspladsen til Power BI-programmer](https://app.powerbi.com/getdata/services).
+Med Power BI-skabelonprogrammer kan brugere af Power BI Pro eller Power BI Premium få øjeblikkelig indsigt via dashboards og rapporter, der er pakket på forhånd, og som kan forbindes til livedatakilder. Mange Power BI-programmer er allerede tilgængelige på [markedspladsen til Power BI-programmer](https://app.powerbi.com/groups/me/getapps/apps).
 
 :::row:::
     :::column:::
@@ -118,6 +118,7 @@ Du kan finde flere forslag under [Tip til udarbejdelse af skabelonprogrammer i P
 | Datakilder | Der tillades datakilder, som understøttes for planlagt dataopdatering i cloudmiljøet. <br>Understøttes ikke: <li>Direkte forbindelser (ingen Azure AS)</li> <li>Datakilder i det lokale miljø (personlige gateways og virksomhedsgateways understøttes ikke)</li> <li>Realtid (pushdatasæt understøttes ikke)</li> <li>Sammensatte modeller</li></ul> |
 | Datasæt: på tværs af arbejdsområde | Datasæt på tværs af arbejdsområder er ikke tilladt  |
 | Forespørgselsparametre | Understøttes ikke: Parametre af typen "Any", "Date" or "Binary" blokerer opdateringshandlinger for datasæt |
+| Trinvis opdatering | Skabelon Apps understøtter ikke trinvis opdatering |
 | Power BI-visualiseringer | Der understøttes kun offentligt tilgængelige Power BI-visuals. [Power BI-visuals til organisationer](../developer/visuals/power-bi-custom-visuals-organization.md) understøttes ikke |
 | Nationale cloudmiljøer | Skabelonapps er ikke tilgængelige i nationale cloudmiljøer |
 

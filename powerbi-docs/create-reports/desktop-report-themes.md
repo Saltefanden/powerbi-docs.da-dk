@@ -10,12 +10,12 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 12/14/2020
 LocalizationGroup: Create reports
-ms.openlocfilehash: 67264868fdbba42856169ca586066f650fca5c38
-ms.sourcegitcommit: 7bf09116163afaae312eb2b232eb7967baee2c92
-ms.translationtype: HT
+ms.openlocfilehash: 61b909ba5c90c7ecf801b4ce448e73353d2334c4
+ms.sourcegitcommit: 9a00abaca80d0cdb2bd0cd9270f99db62df8a2ce
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97621964"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100569621"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Brug af rapporttemaer i Power BI Desktop
 
@@ -171,7 +171,7 @@ Denne JSON-fil til rapporttemaer indeholder følgende linjer:
 
 - **name**: Navnet på rapporttemaet. Dette felt er det eneste påkrævede felt.
 - **dataColors**: Listen over hexadecimale farvekoder til brug sammen med data i visualiseringer i Power BI Desktop. Listen kan indeholde et vilkårligt antal farver.
-- **background**, **firstLevelElements** og **tableAccent** (osv.): Farveklasser. Med farveklasser kan du angive mange strukturelle farver i din rapport på én gang.
+- **baggrunds**-, **forgrunds**-og **tableAccent** (osv.): farve klasser. Med farveklasser kan du angive mange strukturelle farver i din rapport på én gang.
 
 Du kan bruge denne JSON-fil som udgangspunkt til at oprette din egen brugerdefinerede rapporttemafil, som du vil importere. Hvis du kun vil justere rapportens grundfarver, skal du ændre navnet og hexadecimalkoderne i filen.
 
