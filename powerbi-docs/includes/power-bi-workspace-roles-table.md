@@ -5,15 +5,15 @@ services: powerbi
 author: maggiesMSFT
 ms.service: powerbi
 ms.topic: include
-ms.date: 10/21/2020
+ms.date: 02/17/2021
 ms.author: maggies
 ms.custom: include file
-ms.openlocfilehash: 3828a11f4b4447f6484e121fec84fb44d702c86a
-ms.sourcegitcommit: 8861dac6724202a5b3be456a6aff8f3584e0cccf
-ms.translationtype: HT
+ms.openlocfilehash: f9ac328df2f24ef9993b6f9bd9c86aa94ee017de
+ms.sourcegitcommit: fb408dfd39943dbec990a16bcf204671beb4f0aa
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93135520"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "100655745"
 ---
 |Funktion   | Administrator  | Medlem  | Bidragsyder  | Fremviser |
 |---|---|---|---|---|
@@ -26,12 +26,12 @@ ms.locfileid: "93135520"
 | Dele et element eller dele en app.<sup>2</sup> |  ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |   |
 | Give andre tilladelse til at dele elementer igen.<sup>2</sup> |  ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |   |
 | Fremhæve apps på kollegaers startside |  ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |   |
+| Administrer tilladelser for datasæt.<sup>3</sup> | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) |  |  |
 | Fremhæve dashboards og rapporter på kollegaers startside |  ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) |   |
 | Oprette, redigere og slette indhold i arbejdsområdet.  |  ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |
 | Publicere rapporter til arbejdsområdet, slette indhold.  |  ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |
 | Opret en rapport i et andet arbejdsområde, der er baseret på et datasæt i dette arbejdsområde.<sup>2</sup> |  ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |
 | Kopiere en rapport.<sup>3</sup> | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) |  |
-| Administrer tilladelser for datasæt.<sup>3</sup> | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) |  |
 | Planlægge dataopdateringer via gatewayen i det lokale miljø.<sup>4</sup> | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) |  |
 | Redigere indstillinger for gatewayforbindelse.<sup>4</sup> | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) |  |
 | Få vist og interagere med et element.<sup>5</sup> |  ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png)  |

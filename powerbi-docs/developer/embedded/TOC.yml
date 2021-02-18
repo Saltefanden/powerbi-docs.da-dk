@@ -30,6 +30,8 @@
           href: embedded-capacity.md
         - name: Kapacitetsplanlægning
           href: embedded-capacity-planning.md
+        - name: Tokens til integrerede analyseprogrammer
+          href: embed-tokens.md
         - name: Overvejelser i forbindelse med generering af et integreringstoken
           href: generate-embed-token.md
         - name: Bedste fremgangsmåder for ydelse

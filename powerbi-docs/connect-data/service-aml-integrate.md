@@ -9,13 +9,13 @@ ms.topic: tutorial
 ms.author: samkemp
 author: samuel100
 ms.reviewer: sdgilley, maggies
-ms.date: 12/10/2020
-ms.openlocfilehash: 6c68fff575e4da0c9126904df2de5292747c209c
-ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
-ms.translationtype: HT
+ms.date: 02/17/2021
+ms.openlocfilehash: 91ba29a09cfdd434c52794e83651736c2b796b1e
+ms.sourcegitcommit: fb408dfd39943dbec990a16bcf204671beb4f0aa
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97491776"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "100655640"
 ---
 # <a name="tutorial-consume-azure-machine-learning-models-in-power-bi"></a>Selvstudium: Brug af en Azure Machine Learning-model i Power BI
 
@@ -57,6 +57,10 @@ https://www4.stat.ncsu.edu/~boos/var.select/diabetes.tab.txt
 
 Vælg **OK**.
 
+Vælg **Anonym** forbindelse i **Access web-indhold**  >  .
+
+:::image type="content" source="media/service-aml-integrate/anonymous-access-web-content.png" alt-text="Skærmbillede, der viser anonym adgang til web-indhold.":::
+
 Vælg **Transformer data** for at åbne vinduet **Power Query-editor**.
 
 Vælg knappen **Azure Machine Learning** på båndet Hjem i Power Query-editor.
@@ -84,7 +88,9 @@ De data, som tjenesten returnerer, er en **liste**.
 > [!NOTE]
 > Hvis du har installeret en designermodel, kan du se en **post**.
 
-Hvis du vil hente forudsigelser, skal du på båndet **Transformer** vælge knappen **Udvid kolonne** > **Udvid til nye rækker**.
+Hvis du vil hente forudsigelser, skal du vælge den dobbeltpil i kolonneoverskriften **AzureML.My-diabetes-model** > **Udvid til nye rækker**.
+
+:::image type="content" source="media/service-aml-integrate/expand-column.png" alt-text="Skærmbillede, der viser ikonet Udvid kolonne.":::
 
 Efter udvidelsen kan du se forudsigelserne i kolonnen AzureML.my-diabetes-model.
 

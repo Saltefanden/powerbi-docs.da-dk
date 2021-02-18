@@ -9,18 +9,18 @@ ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 02/11/2021
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 9752eddb82fa8f612b9d740cf010c0649ba5b3f8
-ms.sourcegitcommit: 803653e8aa79ed38ec555c27c13b3b6835f98a5d
+ms.openlocfilehash: 655fde0ef19c15f368cb2219498bb26d4411d5d3
+ms.sourcegitcommit: fb408dfd39943dbec990a16bcf204671beb4f0aa
 ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100569746"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "100655680"
 ---
 # <a name="power-bi-security-white-paper"></a>Whitepaper om Power BI-sikkerhedsrapport
 
 **Oversigt:** Power BI er et tilbud via online software service (*SaaS* eller software som en service) fra Microsoft, der gør det muligt for dig nemt og hurtigt at oprette dashboards til Business Intelligence, rapporter, datasæt og visualiseringer, der er selvbetjenings baseret. Med Power BI kan du oprette forbindelse til mange forskellige datakilder, kombinere og forme data fra disse forbindelser og derefter oprette rapporter og dashboards, som kan deles med andre.
 
-**Skrivere:** Yitzhak Kesselman, uafskallet Osborne, Matt Neely, Tony Bencic, Srinivasan Turuvekere, Cristian Petculescu, ADI Regev, Naveen Sivaraj, Benjamin Glastein, Evgeny Tshiorny, Arthi Ramasubramanian Iyer, SID Jayadevan, Ronald Chang, ori Eduar, Anton Fritz, Idan Sheinberg, Ron Gilad, Sagiv Hadaya, Inbar Igor, Uzhviev Roth, Tarquino Gennady, Pats Orion, Yury Berezansky, Maya Shenhav Romit Chattopadhyay, Yariv Maimon
+**Skrivere:** Yitzhak Kesselman, uafskallet Osborne, Matt Neely, Tony Bencic, Srinivasan Turuvekere, Cristian Petculescu, ADI Regev, Naveen Sivaraj, Benjamin Glastein, Evgeny Tshiorny, Arthi Ramasubramanian Iyer, SID Jayadevan, Ronald Chang, ori Eduar, Anton Fritz, Idan Sheinberg, Ron Gilad, Sagiv Hadaya, Inbar, Igor Uzhviev, Roth Jaime, Tarquino Gennady, Pats Orion, Yury Berezansky, Maya Shenhav
 
 **Tekniske reviewere:** Cristian Petculescu, Amir Netz, Sergei Gundorov
 

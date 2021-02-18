@@ -9,12 +9,12 @@ ms.subservice: pbi-dataflows
 ms.topic: how-to
 ms.date: 12/10/2020
 LocalizationGroup: Data from files
-ms.openlocfilehash: bf9740e0f4f6a2e25e1d5d0cc49671bd6eb90b37
-ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
-ms.translationtype: HT
+ms.openlocfilehash: 44e8af257bc4b4e2a83747f79505caed8f3cc72a
+ms.sourcegitcommit: fb408dfd39943dbec990a16bcf204671beb4f0aa
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98565403"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "100655753"
 ---
 # <a name="configuring-dataflow-storage-to-use-azure-data-lake-gen-2"></a>Konfiguration af dataflowlager til brug af Azure Data Lake Gen 2 
 
@@ -24,7 +24,7 @@ Der er to måder til konfiguration af, hvilket ADLS Gen 2-lager du skal bruge: D
 
 ## <a name="pre-requisites"></a>Forudsætninger
 
-Hvis du vil hente din egen ADLS Gen 2-konto, skal du have ejertilladelse til enten lagerkontoen, ressourcegruppen eller abonnementslaget. Hvis du er administrator, skal du stadig tildele dig selv ejertilladelse. 
+Hvis du vil hente din egen ADLS Gen 2-konto, skal du have ejertilladelse til enten lagerkontoen, ressourcegruppen eller abonnementslaget. Hvis du er administrator, skal du stadig tildele dig selv ejertilladelse.  **Understøtter i øjeblikket ikke ADLS Gen2 lagerkonti bag en firewall**
 
 Lagerkontoen skal oprettes med det [hierarkiske navneområde](/azure/storage/blobs/create-data-lake-storage-account) aktiveret. 
 
