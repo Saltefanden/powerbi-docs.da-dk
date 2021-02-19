@@ -51,10 +51,10 @@ Benyt følgende fremgangsmåde for at starte et Python-IDE fra **Power BI Deskto
 2. Vælg nogle felter fra ruden **Felter**, som du vil arbejde med. Hvis du endnu ikke har aktiveret visuelle script-elementer, bliver du bedt om at gøre dette.
    
    ![Skærmbillede af dialogboksen Aktivér scriptvisualiseringer, der anmoder om at aktivere den.](media/desktop-python-ide/python-ide-3.png)
-3. Når scriptvisuals er aktiveret, kan du vælge en Python-visual i ruden **Visualiseringer**, hvilket bevirker, at der oprettes en tom Python-visual, der er klar til at vise resultaterne af scriptet. Ruden **Phyton Scripteditor** vises også.
+3. Når scriptvisuals er aktiveret, kan du vælge en Python-visual i ruden **Visualiseringer**, hvilket bevirker, at der oprettes en tom Python-visual, der er klar til at vise resultaterne af scriptet. Ruden **Python Scripteditor** vises også.
    
    ![Skærmbillede af ruden Visualiseringer, der viser en tom Python-visualisering.](media/desktop-python-ide/python-ide-4.png)
-4. Nu kan du vælge de felter, som du ønsker at bruge i Python-scriptet. Når du vælger et felt, opretter feltet **Phyton Scripteditor** automatisk script-kode, der er baseret på det eller de felter, du vælger. Du kan enten oprette (eller indsætte) Python-scriptet direkte i ruden **Phyton Scripteditor** eller lade feltet være tomt.
+4. Nu kan du vælge de felter, som du ønsker at bruge i Python-scriptet. Når du vælger et felt, opretter feltet **Python Scripteditor** automatisk script-kode, der er baseret på det eller de felter, du vælger. Du kan enten oprette (eller indsætte) Python-scriptet direkte i ruden **Python Scripteditor** eller lade feltet være tomt.
    
    ![Skærmbillede af ruden Visualiseringer, der viser en tom Python-visualisering med scriptkoder i scripteditoren.](media/desktop-python-ide/python-ide-5.png)
    
@@ -62,7 +62,7 @@ Benyt følgende fremgangsmåde for at starte et Python-IDE fra **Power BI Deskto
    > Standardsammenlægningstypen for Python-visuals er *Opsummer ikke*.
    > 
    > 
-5. Du kan nu starte dit Python-IDE direkte fra **Power BI Desktop**. Vælg knappen **Launch Python-IDE** (Start Python-IDE), der findes til højre for titellinjen **Phyton Scripteditor**, som vist nedenfor.
+5. Du kan nu starte dit Python-IDE direkte fra **Power BI Desktop**. Vælg knappen **Launch Python-IDE** (Start Python-IDE), der findes til højre for titellinjen **Python Scripteditor**, som vist nedenfor.
    
    ![Skærmbillede af Python-scripteditoren, der viser, hvordan Python-IDE'et startes.](media/desktop-python-ide/python-ide-6.png)
 6. Det angivne Python-IDE startes af Power BI Desktop, som det vises på følgende billede (på dette billede er **Visual Studio Code** standard-Python-IDE'et).
@@ -73,7 +73,7 @@ Benyt følgende fremgangsmåde for at starte et Python-IDE fra **Power BI Deskto
    > **Power BI Desktop** tilføjer de første tre linjer af scriptet, således at den kan importere dine data **Power BI Desktop**, når du kører scriptet.
    > 
    > 
-7. De scripts, som du har oprettet i **ruden Phyton Scripteditor** i **Power BI Desktop**, vises med start i linje 4 i dit Python-IDE. Herefter kan du oprette Python-scriptet i Python-IDE'et. Når Python-scriptet er fuldført i dit Python-IDE, skal du kopiere det og sætte det tilbage i ruden **Phyton Scripteditor** i **Power BI Desktop** og *udelade* de første tre linjer i det script, som **Power BI Desktop** automatisk oprettede. Kopier ikke de første tre linjer af scriptet tilbage til **Power BI Desktop**. Disse linjer blev kun brugt til at importere dine data til Python-IDE'et fra **Power BI Desktop**.
+7. De scripts, som du har oprettet i **ruden Python Scripteditor** i **Power BI Desktop**, vises med start i linje 4 i dit Python-IDE. Herefter kan du oprette Python-scriptet i Python-IDE'et. Når Python-scriptet er fuldført i dit Python-IDE, skal du kopiere det og sætte det tilbage i ruden **Python Scripteditor** i **Power BI Desktop** og *udelade* de første tre linjer i det script, som **Power BI Desktop** automatisk oprettede. Kopier ikke de første tre linjer af scriptet tilbage til **Power BI Desktop**. Disse linjer blev kun brugt til at importere dine data til Python-IDE'et fra **Power BI Desktop**.
 
 ### <a name="known-limitations"></a>Kendte begrænsninger
 Start af et Python-IDE direkte fra Power BI Desktop har nogle få begrænsninger:
